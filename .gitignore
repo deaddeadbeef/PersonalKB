@@ -1,0 +1,15 @@
+# Obsidian workspace/cache state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+

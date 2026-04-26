@@ -1,0 +1,474 @@
+[
+  {
+    "filename": "filler2-001-ne.mp3",
+    "text": "ね"
+  },
+  {
+    "filename": "filler2-002-yo.mp3",
+    "text": "よ"
+  },
+  {
+    "filename": "filler2-003-naa.mp3",
+    "text": "なあ"
+  },
+  {
+    "filename": "filler2-004-kana.mp3",
+    "text": "かな"
+  },
+  {
+    "filename": "filler2-005-kedo.mp3",
+    "text": "けど"
+  },
+  {
+    "filename": "filler2-006-sorede.mp3",
+    "text": "それで"
+  },
+  {
+    "filename": "filler2-007-demo.mp3",
+    "text": "でも"
+  },
+  {
+    "filename": "filler2-008-dakara.mp3",
+    "text": "だから"
+  },
+  {
+    "filename": "pronun2-001-ra.mp3",
+    "text": "ら"
+  },
+  {
+    "filename": "pronun2-002-ri.mp3",
+    "text": "り"
+  },
+  {
+    "filename": "pronun2-003-ru.mp3",
+    "text": "る"
+  },
+  {
+    "filename": "pronun2-004-re.mp3",
+    "text": "れ"
+  },
+  {
+    "filename": "pronun2-005-ro.mp3",
+    "text": "ろ"
+  },
+  {
+    "filename": "pronun2-006-obasan.mp3",
+    "text": "おばさん"
+  },
+  {
+    "filename": "pronun2-007-obaasan.mp3",
+    "text": "おばあさん"
+  },
+  {
+    "filename": "pronun2-008-koko.mp3",
+    "text": "ここ"
+  },
+  {
+    "filename": "pronun2-009-koukou.mp3",
+    "text": "高校"
+  },
+  {
+    "filename": "pronun2-010-biru.mp3",
+    "text": "ビル"
+  },
+  {
+    "filename": "pronun2-011-biiru.mp3",
+    "text": "ビール"
+  },
+  {
+    "filename": "pronun2-012-small-tsu.mp3",
+    "text": "っ"
+  },
+  {
+    "filename": "pronun2-013-kite.mp3",
+    "text": "きて"
+  },
+  {
+    "filename": "pronun2-014-kitte.mp3",
+    "text": "きって"
+  },
+  {
+    "filename": "pronun2-015-n.mp3",
+    "text": "ん"
+  },
+  {
+    "filename": "pronun2-016-sanpo.mp3",
+    "text": "さんぽ"
+  },
+  {
+    "filename": "pronun2-017-kingaku.mp3",
+    "text": "きんがく"
+  },
+  {
+    "filename": "pronun2-018-gakkou.mp3",
+    "text": "がっこう"
+  },
+  {
+    "filename": "pronun2-019-i.mp3",
+    "text": "い"
+  },
+  {
+    "filename": "pronun2-020-u.mp3",
+    "text": "う"
+  },
+  {
+    "filename": "pronun2-021-desu.mp3",
+    "text": "です"
+  },
+  {
+    "filename": "pronun2-022-shita.mp3",
+    "text": "した"
+  },
+  {
+    "filename": "selfintro2-001-jiko-shoukai.mp3",
+    "text": "自己紹介"
+  },
+  {
+    "filename": "selfintro2-002-hajimemashite-basic.mp3",
+    "text": "はじめまして。"
+  },
+  {
+    "filename": "selfintro2-003-tanaka-desu.mp3",
+    "text": "田中です。"
+  },
+  {
+    "filename": "selfintro2-004-america-kara-kimashita.mp3",
+    "text": "アメリカから来ました。"
+  },
+  {
+    "filename": "selfintro2-005-engineer-wo-shiteimasu.mp3",
+    "text": "エンジニアをしています。"
+  },
+  {
+    "filename": "selfintro2-006-shumi-wa-ongaku-desu.mp3",
+    "text": "趣味は音楽です。"
+  },
+  {
+    "filename": "selfintro2-007-yoroshiku-onegaishimasu.mp3",
+    "text": "よろしくおねがいします。"
+  },
+  {
+    "filename": "selfintro2-008-hajimemashite-formal.mp3",
+    "text": "はじめまして。"
+  },
+  {
+    "filename": "selfintro2-009-tanaka-to-moushimasu.mp3",
+    "text": "田中と申します。"
+  },
+  {
+    "filename": "selfintro2-010-kaisha-de-hataraitemasu.mp3",
+    "text": "ABC株式会社の営業部で働いております。"
+  },
+  {
+    "filename": "selfintro2-011-nihongo-benkyouchuu.mp3",
+    "text": "日本語はまだ勉強中ですが、がんばります。"
+  },
+  {
+    "filename": "selfintro2-012-douzo-yoroshiku.mp3",
+    "text": "どうぞよろしくおねがいいたします。"
+  },
+  {
+    "filename": "selfintro2-013-toukyou-ni-sundeimasu.mp3",
+    "text": "東京に住んでいます。"
+  },
+  {
+    "filename": "selfintro2-014-ichinen-nihongo.mp3",
+    "text": "一年日本語を勉強しています。"
+  },
+  {
+    "filename": "selfintro2-015-nihon-no-bunka.mp3",
+    "text": "日本の文化が好きです。"
+  },
+  {
+    "filename": "speakov-001-re.mp3",
+    "text": "れ"
+  },
+  {
+    "filename": "speakov-002-aizuchi.mp3",
+    "text": "うん、そうですね、なるほど。"
+  },
+  {
+    "filename": "speakov-003-taberu.mp3",
+    "text": "食べる？"
+  },
+  {
+    "filename": "speakov-004-tabemasu-ka.mp3",
+    "text": "食べますか？"
+  },
+  {
+    "filename": "speakov-005-omeshiagarini-narimasu-ka.mp3",
+    "text": "お召し上がりになりますか？"
+  },
+  {
+    "filename": "daily2-001-daijoubu-desu.mp3",
+    "text": "大丈夫です。"
+  },
+  {
+    "filename": "daily2-002-itadakimasu.mp3",
+    "text": "いただきます。"
+  },
+  {
+    "filename": "daily2-003-gochisousamadeshita.mp3",
+    "text": "ごちそうさまでした。"
+  },
+  {
+    "filename": "daily2-004-shashin-wo-tottemoraemasu-ka.mp3",
+    "text": "写真を撮ってもらえますか。"
+  },
+  {
+    "filename": "daily2-005-watashi-wa-to-omoimasu.mp3",
+    "text": "私はと思います。"
+  },
+  {
+    "filename": "daily2-006-sou-omoimasu.mp3",
+    "text": "そう思います。"
+  },
+  {
+    "filename": "daily2-007-chotto-chigau-to-omoimasu.mp3",
+    "text": "ちょっと違うと思います。"
+  },
+  {
+    "filename": "greet2-001-ohayou.mp3",
+    "text": "おはよう"
+  },
+  {
+    "filename": "greet2-002-oyasumi.mp3",
+    "text": "おやすみ"
+  },
+  {
+    "filename": "greet2-003-self-intro.mp3",
+    "text": "はじめまして。田中と申します。アメリカから来ました。エンジニアです。音楽が好きです。どうぞよろしくおねがいします。"
+  },
+  {
+    "filename": "shop-001-irasshaimase.mp3",
+    "text": "いらっしゃいませ。"
+  },
+  {
+    "filename": "shop-002-nai-desu.mp3",
+    "text": "ないです。"
+  },
+  {
+    "filename": "shop-003-onegaishimasu.mp3",
+    "text": "おねがいします。"
+  },
+  {
+    "filename": "shop-004-daijoubu-desu.mp3",
+    "text": "大丈夫です。"
+  },
+  {
+    "filename": "shop-005-yoyaku-shiteirun-desu-ga.mp3",
+    "text": "予約しているんですが。"
+  },
+  {
+    "filename": "shop-006-allergy-ga-arun-desu-ga.mp3",
+    "text": "アレルギーがあるんですが。"
+  },
+  {
+    "filename": "shop-007-karasa-hikaeme-de-onegaishimasu.mp3",
+    "text": "辛さ控えめでおねがいします。"
+  },
+  {
+    "filename": "shop-008-oomori-de-onegaishimasu.mp3",
+    "text": "大盛りでおねがいします。"
+  },
+  {
+    "filename": "shop-009-omizu-onegaishimasu.mp3",
+    "text": "お水おねがいします。"
+  },
+  {
+    "filename": "shop-010-kore-ni-shimasu.mp3",
+    "text": "これにします。"
+  },
+  {
+    "filename": "pitch2-001-genki.mp3",
+    "text": "元気"
+  },
+  {
+    "filename": "pitch2-002-sensei.mp3",
+    "text": "先生"
+  },
+  {
+    "filename": "pitch2-003-tomodachi.mp3",
+    "text": "友達"
+  },
+  {
+    "filename": "pitch2-004-nihon.mp3",
+    "text": "日本"
+  },
+  {
+    "filename": "pitch2-005-densha.mp3",
+    "text": "電車"
+  },
+  {
+    "filename": "pitch2-006-karee.mp3",
+    "text": "カレー"
+  },
+  {
+    "filename": "pitch2-007-terebi.mp3",
+    "text": "テレビ"
+  },
+  {
+    "filename": "pitch2-008-eiga.mp3",
+    "text": "映画"
+  },
+  {
+    "filename": "pitch2-009-ohayou.mp3",
+    "text": "おはよう"
+  },
+  {
+    "filename": "pitch2-010-atamadaka.mp3",
+    "text": "頭高"
+  },
+  {
+    "filename": "pitch2-011-nakadaka.mp3",
+    "text": "中高"
+  },
+  {
+    "filename": "pitch2-012-odaka.mp3",
+    "text": "尾高"
+  },
+  {
+    "filename": "pitch2-013-heiban.mp3",
+    "text": "平板"
+  },
+  {
+    "filename": "listen-001-koten-radio.mp3",
+    "text": "コテンラジオ"
+  },
+  {
+    "filename": "listen-002-bilingual-news.mp3",
+    "text": "バイリンガルニュース"
+  },
+  {
+    "filename": "listen-003-manzai.mp3",
+    "text": "漫才"
+  },
+  {
+    "filename": "listen-004-ore-daze-kure.mp3",
+    "text": "俺、だぜ、くれ。"
+  },
+  {
+    "filename": "listen-005-wa-noyo.mp3",
+    "text": "わ、のよ。"
+  },
+  {
+    "filename": "listen-006-yotsubato.mp3",
+    "text": "よつばと"
+  },
+  {
+    "filename": "listen-007-shirokuma.mp3",
+    "text": "しろくま"
+  },
+  {
+    "filename": "listen-008-doraemon.mp3",
+    "text": "ドラえもん"
+  },
+  {
+    "filename": "listen-009-chibi-maruko-chan.mp3",
+    "text": "チビまる子ちゃん"
+  },
+  {
+    "filename": "listen-010-ki-no-katachi.mp3",
+    "text": "聴の形"
+  },
+  {
+    "filename": "listen-011-nichijou.mp3",
+    "text": "日常"
+  },
+  {
+    "filename": "listen-012-boku-dake-ga-inai-machi.mp3",
+    "text": "僕だけがいない街"
+  },
+  {
+    "filename": "listen-013-hanzawa-naoki.mp3",
+    "text": "半沢直樹"
+  },
+  {
+    "filename": "listen-014-nigeru-wa-haji-da-ga-yaku-ni-tatsu.mp3",
+    "text": "逃げるは恥だが役に立つ"
+  },
+  {
+    "filename": "listen-015-unnatural.mp3",
+    "text": "アンナチュラル"
+  },
+  {
+    "filename": "listen-016-yuru-gengogaku-radio.mp3",
+    "text": "ゆる言語学ラジオ"
+  },
+  {
+    "filename": "listen-017-nihongo-no-mori.mp3",
+    "text": "日本語の森"
+  },
+  {
+    "filename": "listen-018-nakata-atsuhiko.mp3",
+    "text": "中田敦彦"
+  },
+  {
+    "filename": "listen-019-particles-ha-wo.mp3",
+    "text": "は、を、を。"
+  },
+  {
+    "filename": "listen-020-hashi-hashi-hashi.mp3",
+    "text": "橋、端、箸。"
+  },
+  {
+    "filename": "listen-021-teiru-teru-teoku-toku.mp3",
+    "text": "ている、てる、ておく、とく。"
+  },
+  {
+    "filename": "listen-022-kirakira-boshi.mp3",
+    "text": "きらきら星"
+  },
+  {
+    "filename": "listen-023-sakura.mp3",
+    "text": "さくら"
+  },
+  {
+    "filename": "listen-024-umi-no-koe.mp3",
+    "text": "海の声"
+  },
+  {
+    "filename": "listen-025-sekai-ni-hitotsu-dake-no-hana.mp3",
+    "text": "世界に一つだけの花"
+  },
+  {
+    "filename": "listen-026-lemon.mp3",
+    "text": "レモン"
+  },
+  {
+    "filename": "listen-027-zenzenzense.mp3",
+    "text": "前前前世"
+  },
+  {
+    "filename": "listen-028-suzume.mp3",
+    "text": "すずめ"
+  },
+  {
+    "filename": "listen-029-doraemon-no-uta.mp3",
+    "text": "ドラえもんのうた"
+  },
+  {
+    "filename": "listen-030-kashi.mp3",
+    "text": "歌詞"
+  },
+  {
+    "filename": "listen-031-yasashii-nihongo-news.mp3",
+    "text": "やさしい日本語ニュース"
+  },
+  {
+    "filename": "listen-032-hikakin.mp3",
+    "text": "ヒカキン"
+  },
+  {
+    "filename": "listen-033-fermi-kenkyuujo.mp3",
+    "text": "フェルミ研究所"
+  },
+  {
+    "filename": "listen-034-yamada-gorou.mp3",
+    "text": "山田五郎"
+  },
+  {
+    "filename": "listen-035-yobikou-no-nori.mp3",
+    "text": "予備校のノリ"
+  }
+]

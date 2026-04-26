@@ -1,0 +1,754 @@
+[
+  {
+    "filename": "hira-001-hiragana.mp3",
+    "text": "ひらがな"
+  },
+  {
+    "filename": "hira-002-a.mp3",
+    "text": "あ"
+  },
+  {
+    "filename": "hira-003-i.mp3",
+    "text": "い"
+  },
+  {
+    "filename": "hira-004-u.mp3",
+    "text": "う"
+  },
+  {
+    "filename": "hira-005-e.mp3",
+    "text": "え"
+  },
+  {
+    "filename": "hira-006-o.mp3",
+    "text": "お"
+  },
+  {
+    "filename": "hira-007-ka.mp3",
+    "text": "か"
+  },
+  {
+    "filename": "hira-008-ga.mp3",
+    "text": "が"
+  },
+  {
+    "filename": "hira-009-ki.mp3",
+    "text": "き"
+  },
+  {
+    "filename": "hira-010-gi.mp3",
+    "text": "ぎ"
+  },
+  {
+    "filename": "hira-011-ku.mp3",
+    "text": "く"
+  },
+  {
+    "filename": "hira-012-gu.mp3",
+    "text": "ぐ"
+  },
+  {
+    "filename": "hira-013-ke.mp3",
+    "text": "け"
+  },
+  {
+    "filename": "hira-014-ge.mp3",
+    "text": "げ"
+  },
+  {
+    "filename": "hira-015-ko.mp3",
+    "text": "こ"
+  },
+  {
+    "filename": "hira-016-go.mp3",
+    "text": "ご"
+  },
+  {
+    "filename": "hira-017-sa.mp3",
+    "text": "さ"
+  },
+  {
+    "filename": "hira-018-za.mp3",
+    "text": "ざ"
+  },
+  {
+    "filename": "hira-019-shi.mp3",
+    "text": "し"
+  },
+  {
+    "filename": "hira-020-ji.mp3",
+    "text": "じ"
+  },
+  {
+    "filename": "hira-021-su.mp3",
+    "text": "す"
+  },
+  {
+    "filename": "hira-022-zu.mp3",
+    "text": "ず"
+  },
+  {
+    "filename": "hira-023-se.mp3",
+    "text": "せ"
+  },
+  {
+    "filename": "hira-024-ze.mp3",
+    "text": "ぜ"
+  },
+  {
+    "filename": "hira-025-so.mp3",
+    "text": "そ"
+  },
+  {
+    "filename": "hira-026-zo.mp3",
+    "text": "ぞ"
+  },
+  {
+    "filename": "hira-027-ta.mp3",
+    "text": "た"
+  },
+  {
+    "filename": "hira-028-da.mp3",
+    "text": "だ"
+  },
+  {
+    "filename": "hira-029-chi.mp3",
+    "text": "ち"
+  },
+  {
+    "filename": "hira-030-di.mp3",
+    "text": "ぢ"
+  },
+  {
+    "filename": "hira-031-tsu.mp3",
+    "text": "つ"
+  },
+  {
+    "filename": "hira-032-du.mp3",
+    "text": "づ"
+  },
+  {
+    "filename": "hira-033-te.mp3",
+    "text": "て"
+  },
+  {
+    "filename": "hira-034-de.mp3",
+    "text": "で"
+  },
+  {
+    "filename": "hira-035-to.mp3",
+    "text": "と"
+  },
+  {
+    "filename": "hira-036-do.mp3",
+    "text": "ど"
+  },
+  {
+    "filename": "hira-037-na.mp3",
+    "text": "な"
+  },
+  {
+    "filename": "hira-038-ni.mp3",
+    "text": "に"
+  },
+  {
+    "filename": "hira-039-nu.mp3",
+    "text": "ぬ"
+  },
+  {
+    "filename": "hira-040-ne.mp3",
+    "text": "ね"
+  },
+  {
+    "filename": "hira-041-no.mp3",
+    "text": "の"
+  },
+  {
+    "filename": "hira-042-ha.mp3",
+    "text": "は"
+  },
+  {
+    "filename": "hira-043-ba.mp3",
+    "text": "ば"
+  },
+  {
+    "filename": "hira-044-pa.mp3",
+    "text": "ぱ"
+  },
+  {
+    "filename": "hira-045-hi.mp3",
+    "text": "ひ"
+  },
+  {
+    "filename": "hira-046-bi.mp3",
+    "text": "び"
+  },
+  {
+    "filename": "hira-047-pi.mp3",
+    "text": "ぴ"
+  },
+  {
+    "filename": "hira-048-fu.mp3",
+    "text": "ふ"
+  },
+  {
+    "filename": "hira-049-bu.mp3",
+    "text": "ぶ"
+  },
+  {
+    "filename": "hira-050-pu.mp3",
+    "text": "ぷ"
+  },
+  {
+    "filename": "hira-051-he.mp3",
+    "text": "へ"
+  },
+  {
+    "filename": "hira-052-be.mp3",
+    "text": "べ"
+  },
+  {
+    "filename": "hira-053-pe.mp3",
+    "text": "ぺ"
+  },
+  {
+    "filename": "hira-054-ho.mp3",
+    "text": "ほ"
+  },
+  {
+    "filename": "hira-055-bo.mp3",
+    "text": "ぼ"
+  },
+  {
+    "filename": "hira-056-po.mp3",
+    "text": "ぽ"
+  },
+  {
+    "filename": "hira-057-ma.mp3",
+    "text": "ま"
+  },
+  {
+    "filename": "hira-058-mi.mp3",
+    "text": "み"
+  },
+  {
+    "filename": "hira-059-mu.mp3",
+    "text": "む"
+  },
+  {
+    "filename": "hira-060-me.mp3",
+    "text": "め"
+  },
+  {
+    "filename": "hira-061-mo.mp3",
+    "text": "も"
+  },
+  {
+    "filename": "hira-062-ya.mp3",
+    "text": "や"
+  },
+  {
+    "filename": "hira-063-yu.mp3",
+    "text": "ゆ"
+  },
+  {
+    "filename": "hira-064-yo.mp3",
+    "text": "よ"
+  },
+  {
+    "filename": "hira-065-ra.mp3",
+    "text": "ら"
+  },
+  {
+    "filename": "hira-066-ri.mp3",
+    "text": "り"
+  },
+  {
+    "filename": "hira-067-ru.mp3",
+    "text": "る"
+  },
+  {
+    "filename": "hira-068-re.mp3",
+    "text": "れ"
+  },
+  {
+    "filename": "hira-069-ro.mp3",
+    "text": "ろ"
+  },
+  {
+    "filename": "hira-070-wa.mp3",
+    "text": "わ"
+  },
+  {
+    "filename": "hira-071-wo.mp3",
+    "text": "を"
+  },
+  {
+    "filename": "hira-072-n.mp3",
+    "text": "ん"
+  },
+  {
+    "filename": "hira-073-youon.mp3",
+    "text": "拗音"
+  },
+  {
+    "filename": "hira-074-small-ya.mp3",
+    "text": "ゃ"
+  },
+  {
+    "filename": "hira-075-small-yu.mp3",
+    "text": "ゅ"
+  },
+  {
+    "filename": "hira-076-small-yo.mp3",
+    "text": "ょ"
+  },
+  {
+    "filename": "hira-077-kya.mp3",
+    "text": "きゃ"
+  },
+  {
+    "filename": "hira-078-kyu.mp3",
+    "text": "きゅ"
+  },
+  {
+    "filename": "hira-079-kyo.mp3",
+    "text": "きょ"
+  },
+  {
+    "filename": "hira-080-sha.mp3",
+    "text": "しゃ"
+  },
+  {
+    "filename": "hira-081-shu.mp3",
+    "text": "しゅ"
+  },
+  {
+    "filename": "hira-082-sho.mp3",
+    "text": "しょ"
+  },
+  {
+    "filename": "hira-083-cha.mp3",
+    "text": "ちゃ"
+  },
+  {
+    "filename": "hira-084-chu.mp3",
+    "text": "ちゅ"
+  },
+  {
+    "filename": "hira-085-cho.mp3",
+    "text": "ちょ"
+  },
+  {
+    "filename": "hira-086-nya.mp3",
+    "text": "にゃ"
+  },
+  {
+    "filename": "hira-087-nyu.mp3",
+    "text": "にゅ"
+  },
+  {
+    "filename": "hira-088-nyo.mp3",
+    "text": "にょ"
+  },
+  {
+    "filename": "hira-089-hya.mp3",
+    "text": "ひゃ"
+  },
+  {
+    "filename": "hira-090-hyu.mp3",
+    "text": "ひゅ"
+  },
+  {
+    "filename": "hira-091-hyo.mp3",
+    "text": "ひょ"
+  },
+  {
+    "filename": "hira-092-mya.mp3",
+    "text": "みゃ"
+  },
+  {
+    "filename": "hira-093-myu.mp3",
+    "text": "みゅ"
+  },
+  {
+    "filename": "hira-094-myo.mp3",
+    "text": "みょ"
+  },
+  {
+    "filename": "hira-095-rya.mp3",
+    "text": "りゃ"
+  },
+  {
+    "filename": "hira-096-ryu.mp3",
+    "text": "りゅ"
+  },
+  {
+    "filename": "hira-097-ryo.mp3",
+    "text": "りょ"
+  },
+  {
+    "filename": "hira-098-okaasan.mp3",
+    "text": "おかあさん"
+  },
+  {
+    "filename": "hira-099-small-tsu.mp3",
+    "text": "っ"
+  },
+  {
+    "filename": "hira-100-gakkou.mp3",
+    "text": "がっこう"
+  },
+  {
+    "filename": "hira-101-particle-wa.mp3",
+    "text": "は"
+  },
+  {
+    "filename": "hira-102-particle-e.mp3",
+    "text": "へ"
+  },
+  {
+    "filename": "kata-001-katakana.mp3",
+    "text": "カタカナ"
+  },
+  {
+    "filename": "kata-002-a.mp3",
+    "text": "ア"
+  },
+  {
+    "filename": "kata-003-i.mp3",
+    "text": "イ"
+  },
+  {
+    "filename": "kata-004-u.mp3",
+    "text": "ウ"
+  },
+  {
+    "filename": "kata-005-e.mp3",
+    "text": "エ"
+  },
+  {
+    "filename": "kata-006-o.mp3",
+    "text": "オ"
+  },
+  {
+    "filename": "kata-007-ka.mp3",
+    "text": "カ"
+  },
+  {
+    "filename": "kata-008-ki.mp3",
+    "text": "キ"
+  },
+  {
+    "filename": "kata-009-ku.mp3",
+    "text": "ク"
+  },
+  {
+    "filename": "kata-010-ke.mp3",
+    "text": "ケ"
+  },
+  {
+    "filename": "kata-011-ko.mp3",
+    "text": "コ"
+  },
+  {
+    "filename": "kata-012-sa.mp3",
+    "text": "サ"
+  },
+  {
+    "filename": "kata-013-shi.mp3",
+    "text": "シ"
+  },
+  {
+    "filename": "kata-014-su.mp3",
+    "text": "ス"
+  },
+  {
+    "filename": "kata-015-se.mp3",
+    "text": "セ"
+  },
+  {
+    "filename": "kata-016-so.mp3",
+    "text": "ソ"
+  },
+  {
+    "filename": "kata-017-ta.mp3",
+    "text": "タ"
+  },
+  {
+    "filename": "kata-018-chi.mp3",
+    "text": "チ"
+  },
+  {
+    "filename": "kata-019-tsu.mp3",
+    "text": "ツ"
+  },
+  {
+    "filename": "kata-020-te.mp3",
+    "text": "テ"
+  },
+  {
+    "filename": "kata-021-to.mp3",
+    "text": "ト"
+  },
+  {
+    "filename": "kata-022-na.mp3",
+    "text": "ナ"
+  },
+  {
+    "filename": "kata-023-ni.mp3",
+    "text": "ニ"
+  },
+  {
+    "filename": "kata-024-nu.mp3",
+    "text": "ヌ"
+  },
+  {
+    "filename": "kata-025-ne.mp3",
+    "text": "ネ"
+  },
+  {
+    "filename": "kata-026-no.mp3",
+    "text": "ノ"
+  },
+  {
+    "filename": "kata-027-ha.mp3",
+    "text": "ハ"
+  },
+  {
+    "filename": "kata-028-hi.mp3",
+    "text": "ヒ"
+  },
+  {
+    "filename": "kata-029-fu.mp3",
+    "text": "フ"
+  },
+  {
+    "filename": "kata-030-he.mp3",
+    "text": "ヘ"
+  },
+  {
+    "filename": "kata-031-ho.mp3",
+    "text": "ホ"
+  },
+  {
+    "filename": "kata-032-ma.mp3",
+    "text": "マ"
+  },
+  {
+    "filename": "kata-033-mi.mp3",
+    "text": "ミ"
+  },
+  {
+    "filename": "kata-034-mu.mp3",
+    "text": "ム"
+  },
+  {
+    "filename": "kata-035-me.mp3",
+    "text": "メ"
+  },
+  {
+    "filename": "kata-036-mo.mp3",
+    "text": "モ"
+  },
+  {
+    "filename": "kata-037-ya.mp3",
+    "text": "ヤ"
+  },
+  {
+    "filename": "kata-038-yu.mp3",
+    "text": "ユ"
+  },
+  {
+    "filename": "kata-039-yo.mp3",
+    "text": "ヨ"
+  },
+  {
+    "filename": "kata-040-ra.mp3",
+    "text": "ラ"
+  },
+  {
+    "filename": "kata-041-ri.mp3",
+    "text": "リ"
+  },
+  {
+    "filename": "kata-042-ru.mp3",
+    "text": "ル"
+  },
+  {
+    "filename": "kata-043-re.mp3",
+    "text": "レ"
+  },
+  {
+    "filename": "kata-044-ro.mp3",
+    "text": "ロ"
+  },
+  {
+    "filename": "kata-045-wa.mp3",
+    "text": "ワ"
+  },
+  {
+    "filename": "kata-046-wo.mp3",
+    "text": "ヲ"
+  },
+  {
+    "filename": "kata-047-n.mp3",
+    "text": "ン"
+  },
+  {
+    "filename": "kata-048-konpyuutaa.mp3",
+    "text": "コンピューター"
+  },
+  {
+    "filename": "kata-049-biiru.mp3",
+    "text": "ビール"
+  },
+  {
+    "filename": "kata-050-amerika.mp3",
+    "text": "アメリカ"
+  },
+  {
+    "filename": "kata-051-maikeru.mp3",
+    "text": "マイケル"
+  },
+  {
+    "filename": "kata-052-wanwan.mp3",
+    "text": "ワンワン"
+  },
+  {
+    "filename": "kata-053-pikapika.mp3",
+    "text": "ピカピカ"
+  },
+  {
+    "filename": "kata-054-fa.mp3",
+    "text": "ファ"
+  },
+  {
+    "filename": "kata-055-fan.mp3",
+    "text": "ファン"
+  },
+  {
+    "filename": "kata-056-ti.mp3",
+    "text": "ティ"
+  },
+  {
+    "filename": "kata-057-paatii.mp3",
+    "text": "パーティー"
+  },
+  {
+    "filename": "kata-058-di.mp3",
+    "text": "ディ"
+  },
+  {
+    "filename": "kata-059-dizunii.mp3",
+    "text": "ディズニー"
+  },
+  {
+    "filename": "kata-060-wi.mp3",
+    "text": "ウィ"
+  },
+  {
+    "filename": "kata-061-windou.mp3",
+    "text": "ウィンドウ"
+  },
+  {
+    "filename": "kata-062-we.mp3",
+    "text": "ウェ"
+  },
+  {
+    "filename": "kata-063-webu.mp3",
+    "text": "ウェブ"
+  },
+  {
+    "filename": "kata-064-long-vowel-mark.mp3",
+    "text": "長音符"
+  },
+  {
+    "filename": "kata-065-koohii.mp3",
+    "text": "コーヒー"
+  },
+  {
+    "filename": "kata-066-small-tsu.mp3",
+    "text": "ッ"
+  },
+  {
+    "filename": "kata-067-beddo.mp3",
+    "text": "ベッド"
+  },
+  {
+    "filename": "kata-068-makudonarudo.mp3",
+    "text": "マクドナルド"
+  },
+  {
+    "filename": "kata-069-sumaatofon.mp3",
+    "text": "スマートフォン"
+  },
+  {
+    "filename": "kata-070-resutoran.mp3",
+    "text": "レストラン"
+  },
+  {
+    "filename": "kata-071-takushii.mp3",
+    "text": "タクシー"
+  },
+  {
+    "filename": "kata-072-hoteru.mp3",
+    "text": "ホテル"
+  },
+  {
+    "filename": "kata-073-intaanetto.mp3",
+    "text": "インターネット"
+  },
+  {
+    "filename": "kata-074-apaato.mp3",
+    "text": "アパート"
+  },
+  {
+    "filename": "kata-075-suupaa.mp3",
+    "text": "スーパー"
+  },
+  {
+    "filename": "kata-076-arubaito.mp3",
+    "text": "アルバイト"
+  },
+  {
+    "filename": "writing-001-hiragana.mp3",
+    "text": "ひらがな"
+  },
+  {
+    "filename": "writing-002-katakana.mp3",
+    "text": "カタカナ"
+  },
+  {
+    "filename": "writing-003-kanji.mp3",
+    "text": "漢字"
+  },
+  {
+    "filename": "writing-004-watashi-wa-mainichi-kohii-o-nomimasu.mp3",
+    "text": "私は毎日コーヒーを飲みます。"
+  },
+  {
+    "filename": "writing-005-watashi.mp3",
+    "text": "私"
+  },
+  {
+    "filename": "writing-006-particle-wa.mp3",
+    "text": "は"
+  },
+  {
+    "filename": "writing-007-mainichi.mp3",
+    "text": "毎日"
+  },
+  {
+    "filename": "writing-008-kohii.mp3",
+    "text": "コーヒー"
+  },
+  {
+    "filename": "writing-009-particle-o.mp3",
+    "text": "を"
+  },
+  {
+    "filename": "writing-010-nomimasu.mp3",
+    "text": "飲みます"
+  }
+]

@@ -1,0 +1,1158 @@
+[
+  {
+    "text": "私",
+    "filename": "core100-001-watashi.mp3"
+  },
+  {
+    "text": "あなた",
+    "filename": "core100-002-anata.mp3"
+  },
+  {
+    "text": "これ",
+    "filename": "core100-003-kore.mp3"
+  },
+  {
+    "text": "それ",
+    "filename": "core100-004-sore.mp3"
+  },
+  {
+    "text": "あれ",
+    "filename": "core100-005-are.mp3"
+  },
+  {
+    "text": "ここ",
+    "filename": "core100-006-koko.mp3"
+  },
+  {
+    "text": "そこ",
+    "filename": "core100-007-soko.mp3"
+  },
+  {
+    "text": "何",
+    "filename": "core100-008-nani.mp3"
+  },
+  {
+    "text": "誰",
+    "filename": "core100-009-dare.mp3"
+  },
+  {
+    "text": "どこ",
+    "filename": "core100-010-doko.mp3"
+  },
+  {
+    "text": "いつ",
+    "filename": "core100-011-itsu.mp3"
+  },
+  {
+    "text": "なぜ",
+    "filename": "core100-012-naze.mp3"
+  },
+  {
+    "text": "はい",
+    "filename": "core100-013-hai.mp3"
+  },
+  {
+    "text": "いいえ",
+    "filename": "core100-014-iie.mp3"
+  },
+  {
+    "text": "おねがいします",
+    "filename": "core100-015-onegaishimasu.mp3"
+  },
+  {
+    "text": "ありがとう",
+    "filename": "core100-016-arigatou.mp3"
+  },
+  {
+    "text": "ごめんなさい",
+    "filename": "core100-017-gomen nasai.mp3"
+  },
+  {
+    "text": "大丈夫",
+    "filename": "core100-018-daijoubu.mp3"
+  },
+  {
+    "text": "分かりました",
+    "filename": "core100-019-wakarimashita.mp3"
+  },
+  {
+    "text": "食べる",
+    "filename": "core100-020-taberu.mp3"
+  },
+  {
+    "text": "飲む",
+    "filename": "core100-021-nomu.mp3"
+  },
+  {
+    "text": "行く",
+    "filename": "core100-022-iku.mp3"
+  },
+  {
+    "text": "来る",
+    "filename": "core100-023-kuru.mp3"
+  },
+  {
+    "text": "見る",
+    "filename": "core100-024-miru.mp3"
+  },
+  {
+    "text": "聞く",
+    "filename": "core100-025-kiku.mp3"
+  },
+  {
+    "text": "話す",
+    "filename": "core100-026-hanasu.mp3"
+  },
+  {
+    "text": "読む",
+    "filename": "core100-027-yomu.mp3"
+  },
+  {
+    "text": "書く",
+    "filename": "core100-028-kaku.mp3"
+  },
+  {
+    "text": "買う",
+    "filename": "core100-029-kau.mp3"
+  },
+  {
+    "text": "する",
+    "filename": "core100-030-suru.mp3"
+  },
+  {
+    "text": "ある",
+    "filename": "core100-031-aru.mp3"
+  },
+  {
+    "text": "いる",
+    "filename": "core100-032-iru.mp3"
+  },
+  {
+    "text": "なる",
+    "filename": "core100-033-naru.mp3"
+  },
+  {
+    "text": "思う",
+    "filename": "core100-034-omou.mp3"
+  },
+  {
+    "text": "言う",
+    "filename": "core100-035-iu.mp3"
+  },
+  {
+    "text": "大きい",
+    "filename": "core100-036-ookii.mp3"
+  },
+  {
+    "text": "小さい",
+    "filename": "core100-037-chiisai.mp3"
+  },
+  {
+    "text": "新しい",
+    "filename": "core100-038-atarashii.mp3"
+  },
+  {
+    "text": "古い",
+    "filename": "core100-039-furui.mp3"
+  },
+  {
+    "text": "良い",
+    "filename": "core100-040-yoi.mp3"
+  },
+  {
+    "text": "悪い",
+    "filename": "core100-041-warui.mp3"
+  },
+  {
+    "text": "高い",
+    "filename": "core100-042-takai.mp3"
+  },
+  {
+    "text": "安い",
+    "filename": "core100-043-yasui.mp3"
+  },
+  {
+    "text": "人",
+    "filename": "core100-044-hito.mp3"
+  },
+  {
+    "text": "友達",
+    "filename": "core100-045-tomodachi.mp3"
+  },
+  {
+    "text": "家族",
+    "filename": "core100-046-kazoku.mp3"
+  },
+  {
+    "text": "先生",
+    "filename": "core100-047-sensei.mp3"
+  },
+  {
+    "text": "学生",
+    "filename": "core100-048-gakusei.mp3"
+  },
+  {
+    "text": "子供",
+    "filename": "core100-049-kodomo.mp3"
+  },
+  {
+    "text": "水",
+    "filename": "core100-050-mizu.mp3"
+  },
+  {
+    "text": "ご飯",
+    "filename": "core100-051-gohan.mp3"
+  },
+  {
+    "text": "お茶",
+    "filename": "core100-052-ocha.mp3"
+  },
+  {
+    "text": "お金",
+    "filename": "core100-053-okane.mp3"
+  },
+  {
+    "text": "時間",
+    "filename": "core100-054-jikan.mp3"
+  },
+  {
+    "text": "今日",
+    "filename": "core100-055-kyou.mp3"
+  },
+  {
+    "text": "明日",
+    "filename": "core100-056-ashita.mp3"
+  },
+  {
+    "text": "昨日",
+    "filename": "core100-057-kinou.mp3"
+  },
+  {
+    "text": "朝",
+    "filename": "core100-058-asa.mp3"
+  },
+  {
+    "text": "夜",
+    "filename": "core100-059-yoru.mp3"
+  },
+  {
+    "text": "家",
+    "filename": "core100-060-ie.mp3"
+  },
+  {
+    "text": "駅",
+    "filename": "core100-061-eki.mp3"
+  },
+  {
+    "text": "学校",
+    "filename": "core100-062-gakkou.mp3"
+  },
+  {
+    "text": "病院",
+    "filename": "core100-063-byouin.mp3"
+  },
+  {
+    "text": "電車",
+    "filename": "core100-064-densha.mp3"
+  },
+  {
+    "text": "日本",
+    "filename": "core100-065-nihon.mp3"
+  },
+  {
+    "text": "日本語",
+    "filename": "core100-066-nihongo.mp3"
+  },
+  {
+    "text": "毎日",
+    "filename": "core500-001-mainichi.mp3"
+  },
+  {
+    "text": "仕事",
+    "filename": "core500-002-shigoto.mp3"
+  },
+  {
+    "text": "電話",
+    "filename": "core500-003-denwa.mp3"
+  },
+  {
+    "text": "写真",
+    "filename": "core500-004-shashin.mp3"
+  },
+  {
+    "text": "天気",
+    "filename": "core500-005-tenki.mp3"
+  },
+  {
+    "text": "元気",
+    "filename": "core500-006-genki.mp3"
+  },
+  {
+    "text": "問題",
+    "filename": "core500-007-mondai.mp3"
+  },
+  {
+    "text": "質問",
+    "filename": "core500-008-shitsumon.mp3"
+  },
+  {
+    "text": "答え",
+    "filename": "core500-009-kotae.mp3"
+  },
+  {
+    "text": "意味",
+    "filename": "core500-010-imi.mp3"
+  },
+  {
+    "text": "練習",
+    "filename": "core500-011-renshuu.mp3"
+  },
+  {
+    "text": "勉強",
+    "filename": "core500-012-benkyou.mp3"
+  },
+  {
+    "text": "散歩",
+    "filename": "core500-013-sanpo.mp3"
+  },
+  {
+    "text": "旅行",
+    "filename": "core500-014-ryokou.mp3"
+  },
+  {
+    "text": "料理",
+    "filename": "core500-015-ryouri.mp3"
+  },
+  {
+    "text": "音楽",
+    "filename": "core500-016-ongaku.mp3"
+  },
+  {
+    "text": "映画",
+    "filename": "core500-017-eiga.mp3"
+  },
+  {
+    "text": "新聞",
+    "filename": "core500-018-shinbun.mp3"
+  },
+  {
+    "text": "雑誌",
+    "filename": "core500-019-zasshi.mp3"
+  },
+  {
+    "text": "手紙",
+    "filename": "core500-020-tegami.mp3"
+  },
+  {
+    "text": "荷物",
+    "filename": "core500-021-nimotsu.mp3"
+  },
+  {
+    "text": "約束",
+    "filename": "core500-022-yakusoku.mp3"
+  },
+  {
+    "text": "準備",
+    "filename": "core500-023-junbi.mp3"
+  },
+  {
+    "text": "経験",
+    "filename": "core500-024-keiken.mp3"
+  },
+  {
+    "text": "趣味",
+    "filename": "core500-025-shumi.mp3"
+  },
+  {
+    "text": "将来",
+    "filename": "core500-026-shourai.mp3"
+  },
+  {
+    "text": "社会",
+    "filename": "core500-027-shakai.mp3"
+  },
+  {
+    "text": "文化",
+    "filename": "core500-028-bunka.mp3"
+  },
+  {
+    "text": "歴史",
+    "filename": "core500-029-rekishi.mp3"
+  },
+  {
+    "text": "自然",
+    "filename": "core500-030-shizen.mp3"
+  },
+  {
+    "text": "危険",
+    "filename": "core500-031-kiken.mp3"
+  },
+  {
+    "text": "安全",
+    "filename": "core500-032-anzen.mp3"
+  },
+  {
+    "text": "必要",
+    "filename": "core500-033-hitsuyou.mp3"
+  },
+  {
+    "text": "特別",
+    "filename": "core500-034-tokubetsu.mp3"
+  },
+  {
+    "text": "普通",
+    "filename": "core500-035-futsuu.mp3"
+  },
+  {
+    "text": "簡単",
+    "filename": "core500-036-kantan.mp3"
+  },
+  {
+    "text": "難しい",
+    "filename": "core500-037-muzukashii.mp3"
+  },
+  {
+    "text": "忙しい",
+    "filename": "core500-038-isogashii.mp3"
+  },
+  {
+    "text": "嬉しい",
+    "filename": "core500-039-ureshii.mp3"
+  },
+  {
+    "text": "悲しい",
+    "filename": "core500-040-kanashii.mp3"
+  },
+  {
+    "text": "楽しい",
+    "filename": "core500-041-tanoshii.mp3"
+  },
+  {
+    "text": "美しい",
+    "filename": "core500-042-utsukushii.mp3"
+  },
+  {
+    "text": "優しい",
+    "filename": "core500-043-yasashii.mp3"
+  },
+  {
+    "text": "厳しい",
+    "filename": "core500-044-kibishii.mp3"
+  },
+  {
+    "text": "珍しい",
+    "filename": "core500-045-mezurashii.mp3"
+  },
+  {
+    "text": "走る",
+    "filename": "core500-046-hashiru.mp3"
+  },
+  {
+    "text": "歩く",
+    "filename": "core500-047-aruku.mp3"
+  },
+  {
+    "text": "座る",
+    "filename": "core500-048-suwaru.mp3"
+  },
+  {
+    "text": "立つ",
+    "filename": "core500-049-tatsu.mp3"
+  },
+  {
+    "text": "開ける",
+    "filename": "core500-050-akeru.mp3"
+  },
+  {
+    "text": "閉める",
+    "filename": "core500-051-shimeru.mp3"
+  },
+  {
+    "text": "始まる",
+    "filename": "core500-052-hajimaru.mp3"
+  },
+  {
+    "text": "終わる",
+    "filename": "core500-053-owaru.mp3"
+  },
+  {
+    "text": "届ける",
+    "filename": "core500-054-todokeru.mp3"
+  },
+  {
+    "text": "届く",
+    "filename": "core500-055-todoku.mp3"
+  },
+  {
+    "text": "送る",
+    "filename": "core500-056-okuru.mp3"
+  },
+  {
+    "text": "受ける",
+    "filename": "core500-057-ukeru.mp3"
+  },
+  {
+    "text": "持つ",
+    "filename": "core500-058-motsu.mp3"
+  },
+  {
+    "text": "使う",
+    "filename": "core500-059-tsukau.mp3"
+  },
+  {
+    "text": "作る",
+    "filename": "core500-060-tsukuru.mp3"
+  },
+  {
+    "text": "知る",
+    "filename": "core500-061-shiru.mp3"
+  },
+  {
+    "text": "考える",
+    "filename": "core500-062-kangaeru.mp3"
+  },
+  {
+    "text": "決める",
+    "filename": "core500-063-kimeru.mp3"
+  },
+  {
+    "text": "変わる",
+    "filename": "core500-064-kawaru.mp3"
+  },
+  {
+    "text": "変える",
+    "filename": "core500-065-kaeru.mp3"
+  },
+  {
+    "text": "朝ごはん",
+    "filename": "food-001-asagohan.mp3"
+  },
+  {
+    "text": "昼ごはん",
+    "filename": "food-002-hirugohan.mp3"
+  },
+  {
+    "text": "晩ごはん",
+    "filename": "food-003-bangohan.mp3"
+  },
+  {
+    "text": "肉",
+    "filename": "food-004-niku.mp3"
+  },
+  {
+    "text": "魚",
+    "filename": "food-005-sakana.mp3"
+  },
+  {
+    "text": "野菜",
+    "filename": "food-006-yasai.mp3"
+  },
+  {
+    "text": "卵",
+    "filename": "food-007-tamago.mp3"
+  },
+  {
+    "text": "パン",
+    "filename": "food-008-pan.mp3"
+  },
+  {
+    "text": "豆腐",
+    "filename": "food-009-toufu.mp3"
+  },
+  {
+    "text": "牛乳",
+    "filename": "food-010-gyuunyuu.mp3"
+  },
+  {
+    "text": "コーヒー",
+    "filename": "food-011-koohii.mp3"
+  },
+  {
+    "text": "ビール",
+    "filename": "food-012-biiru.mp3"
+  },
+  {
+    "text": "ジュース",
+    "filename": "food-013-juusu.mp3"
+  },
+  {
+    "text": "甘い",
+    "filename": "food-014-amai.mp3"
+  },
+  {
+    "text": "辛い",
+    "filename": "food-015-karai.mp3"
+  },
+  {
+    "text": "しょっぱい",
+    "filename": "food-016-shoppai.mp3"
+  },
+  {
+    "text": "苦い",
+    "filename": "food-017-nigai.mp3"
+  },
+  {
+    "text": "酸っぱい",
+    "filename": "food-018-suppai.mp3"
+  },
+  {
+    "text": "おいしい",
+    "filename": "food-019-oishii.mp3"
+  },
+  {
+    "text": "いただきます",
+    "filename": "food-020-itadakimasu.mp3"
+  },
+  {
+    "text": "ごちそうさまでした",
+    "filename": "food-021-gochisousama-deshita.mp3"
+  },
+  {
+    "text": "切符",
+    "filename": "travel-001-kippu.mp3"
+  },
+  {
+    "text": "片道",
+    "filename": "travel-002-katamichi.mp3"
+  },
+  {
+    "text": "往復",
+    "filename": "travel-003-oufuku.mp3"
+  },
+  {
+    "text": "乗り換え",
+    "filename": "travel-004-norikae.mp3"
+  },
+  {
+    "text": "出口",
+    "filename": "travel-005-deguchi.mp3"
+  },
+  {
+    "text": "入口",
+    "filename": "travel-006-iriguchi.mp3"
+  },
+  {
+    "text": "空港",
+    "filename": "travel-007-kuukou.mp3"
+  },
+  {
+    "text": "新幹線",
+    "filename": "travel-008-shinkansen.mp3"
+  },
+  {
+    "text": "地下鉄",
+    "filename": "travel-009-chikatetsu.mp3"
+  },
+  {
+    "text": "タクシー",
+    "filename": "travel-010-takushii.mp3"
+  },
+  {
+    "text": "バス",
+    "filename": "travel-011-basu.mp3"
+  },
+  {
+    "text": "自転車",
+    "filename": "travel-012-jitensha.mp3"
+  },
+  {
+    "text": "予約",
+    "filename": "travel-013-yoyaku.mp3"
+  },
+  {
+    "text": "ホテル",
+    "filename": "travel-014-hoteru.mp3"
+  },
+  {
+    "text": "旅館",
+    "filename": "travel-015-ryokan.mp3"
+  },
+  {
+    "text": "頭",
+    "filename": "body-001-atama.mp3"
+  },
+  {
+    "text": "顔",
+    "filename": "body-002-kao.mp3"
+  },
+  {
+    "text": "目",
+    "filename": "body-003-me.mp3"
+  },
+  {
+    "text": "耳",
+    "filename": "body-004-mimi.mp3"
+  },
+  {
+    "text": "口",
+    "filename": "body-005-kuchi.mp3"
+  },
+  {
+    "text": "鼻",
+    "filename": "body-006-hana.mp3"
+  },
+  {
+    "text": "手",
+    "filename": "body-007-te.mp3"
+  },
+  {
+    "text": "足",
+    "filename": "body-008-ashi.mp3"
+  },
+  {
+    "text": "お腹",
+    "filename": "body-009-onaka.mp3"
+  },
+  {
+    "text": "背中",
+    "filename": "body-010-senaka.mp3"
+  },
+  {
+    "text": "頭が痛いです",
+    "filename": "body-011-atama-ga-itai-desu.mp3"
+  },
+  {
+    "text": "熱があります",
+    "filename": "body-012-netsu-ga-arimasu.mp3"
+  },
+  {
+    "text": "風邪をひきました",
+    "filename": "body-013-kaze-wo-hikimashita.mp3"
+  },
+  {
+    "text": "薬をください",
+    "filename": "body-014-kusuri-wo-kudasai.mp3"
+  },
+  {
+    "text": "病院",
+    "filename": "body-015-byouin2.mp3"
+  },
+  {
+    "text": "薬局",
+    "filename": "body-016-yakkyoku.mp3"
+  },
+  {
+    "text": "晴れ",
+    "filename": "nature-001-hare.mp3"
+  },
+  {
+    "text": "曇り",
+    "filename": "nature-002-kumori.mp3"
+  },
+  {
+    "text": "雨",
+    "filename": "nature-003-ame.mp3"
+  },
+  {
+    "text": "雪",
+    "filename": "nature-004-yuki.mp3"
+  },
+  {
+    "text": "風",
+    "filename": "nature-005-kaze.mp3"
+  },
+  {
+    "text": "台風",
+    "filename": "nature-006-taifuu.mp3"
+  },
+  {
+    "text": "蒸し暑い",
+    "filename": "nature-007-mushiatsui.mp3"
+  },
+  {
+    "text": "春",
+    "filename": "nature-008-haru.mp3"
+  },
+  {
+    "text": "夏",
+    "filename": "nature-009-natsu.mp3"
+  },
+  {
+    "text": "秋",
+    "filename": "nature-010-aki.mp3"
+  },
+  {
+    "text": "冬",
+    "filename": "nature-011-fuyu.mp3"
+  },
+  {
+    "text": "山",
+    "filename": "nature-012-yama.mp3"
+  },
+  {
+    "text": "川",
+    "filename": "nature-013-kawa.mp3"
+  },
+  {
+    "text": "海",
+    "filename": "nature-014-umi.mp3"
+  },
+  {
+    "text": "森",
+    "filename": "nature-015-mori.mp3"
+  },
+  {
+    "text": "花",
+    "filename": "nature-016-hana2.mp3"
+  },
+  {
+    "text": "木",
+    "filename": "nature-017-ki.mp3"
+  },
+  {
+    "text": "空",
+    "filename": "nature-018-sora.mp3"
+  },
+  {
+    "text": "桜",
+    "filename": "nature-019-sakura.mp3"
+  },
+  {
+    "text": "紅葉",
+    "filename": "nature-020-kouyou.mp3"
+  },
+  {
+    "text": "会社",
+    "filename": "work-001-kaisha.mp3"
+  },
+  {
+    "text": "事務所",
+    "filename": "work-002-jimusho.mp3"
+  },
+  {
+    "text": "会議室",
+    "filename": "work-003-kaigishitsu.mp3"
+  },
+  {
+    "text": "上司",
+    "filename": "work-004-joushi.mp3"
+  },
+  {
+    "text": "同僚",
+    "filename": "work-005-douryou.mp3"
+  },
+  {
+    "text": "部下",
+    "filename": "work-006-buka.mp3"
+  },
+  {
+    "text": "社長",
+    "filename": "work-007-shachou.mp3"
+  },
+  {
+    "text": "部長",
+    "filename": "work-008-buchou.mp3"
+  },
+  {
+    "text": "課長",
+    "filename": "work-009-kachou.mp3"
+  },
+  {
+    "text": "働く",
+    "filename": "work-010-hataraku.mp3"
+  },
+  {
+    "text": "出勤する",
+    "filename": "work-011-shukkin-suru.mp3"
+  },
+  {
+    "text": "残業する",
+    "filename": "work-012-zangyou-suru.mp3"
+  },
+  {
+    "text": "休む",
+    "filename": "work-013-yasumu.mp3"
+  },
+  {
+    "text": "転職する",
+    "filename": "work-014-tenshoku-suru.mp3"
+  },
+  {
+    "text": "台所",
+    "filename": "home-001-daidokoro.mp3"
+  },
+  {
+    "text": "居間",
+    "filename": "home-002-ima.mp3"
+  },
+  {
+    "text": "寝室",
+    "filename": "home-003-shinshitsu.mp3"
+  },
+  {
+    "text": "お風呂",
+    "filename": "home-004-ofuro.mp3"
+  },
+  {
+    "text": "トイレ",
+    "filename": "home-005-toire.mp3"
+  },
+  {
+    "text": "玄関",
+    "filename": "home-006-genkan.mp3"
+  },
+  {
+    "text": "冷蔵庫",
+    "filename": "home-007-reizouko.mp3"
+  },
+  {
+    "text": "洗濯機",
+    "filename": "home-008-sentakuki.mp3"
+  },
+  {
+    "text": "起きる",
+    "filename": "home-009-okiru.mp3"
+  },
+  {
+    "text": "寝る",
+    "filename": "home-010-neru.mp3"
+  },
+  {
+    "text": "シャワーを浴びる",
+    "filename": "home-011-shawaa-wo-abiru.mp3"
+  },
+  {
+    "text": "着替える",
+    "filename": "home-012-kigaeru.mp3"
+  },
+  {
+    "text": "出かける",
+    "filename": "home-013-dekakeru.mp3"
+  },
+  {
+    "text": "一つ",
+    "filename": "counter-001-hitotsu.mp3"
+  },
+  {
+    "text": "二つ",
+    "filename": "counter-002-futatsu.mp3"
+  },
+  {
+    "text": "三つ",
+    "filename": "counter-003-mittsu.mp3"
+  },
+  {
+    "text": "四つ",
+    "filename": "counter-004-yottsu.mp3"
+  },
+  {
+    "text": "五つ",
+    "filename": "counter-005-itsutsu.mp3"
+  },
+  {
+    "text": "六つ",
+    "filename": "counter-006-muttsu.mp3"
+  },
+  {
+    "text": "七つ",
+    "filename": "counter-007-nanatsu.mp3"
+  },
+  {
+    "text": "八つ",
+    "filename": "counter-008-yattsu.mp3"
+  },
+  {
+    "text": "九つ",
+    "filename": "counter-009-kokonotsu.mp3"
+  },
+  {
+    "text": "一人",
+    "filename": "counter-010-hitori.mp3"
+  },
+  {
+    "text": "二人",
+    "filename": "counter-011-futari.mp3"
+  },
+  {
+    "text": "三人",
+    "filename": "counter-012-sannin.mp3"
+  },
+  {
+    "text": "一本",
+    "filename": "counter-013-ippon.mp3"
+  },
+  {
+    "text": "二本",
+    "filename": "counter-014-nihon.mp3"
+  },
+  {
+    "text": "三本",
+    "filename": "counter-015-sanbon.mp3"
+  },
+  {
+    "text": "六本",
+    "filename": "counter-016-roppon.mp3"
+  },
+  {
+    "text": "八本",
+    "filename": "counter-017-happon.mp3"
+  },
+  {
+    "text": "十本",
+    "filename": "counter-018-juppon.mp3"
+  },
+  {
+    "text": "一枚",
+    "filename": "counter-019-ichimai.mp3"
+  },
+  {
+    "text": "一杯",
+    "filename": "counter-020-ippai.mp3"
+  },
+  {
+    "text": "三杯",
+    "filename": "counter-021-sanbai.mp3"
+  },
+  {
+    "text": "一冊",
+    "filename": "counter-022-issatsu.mp3"
+  },
+  {
+    "text": "一匹",
+    "filename": "counter-023-ippiki.mp3"
+  },
+  {
+    "text": "三匹",
+    "filename": "counter-024-sanbiki.mp3"
+  },
+  {
+    "text": "一台",
+    "filename": "counter-025-ichidai.mp3"
+  },
+  {
+    "text": "一個",
+    "filename": "counter-026-ikko.mp3"
+  },
+  {
+    "text": "一",
+    "filename": "number-001-ichi.mp3"
+  },
+  {
+    "text": "二",
+    "filename": "number-002-ni.mp3"
+  },
+  {
+    "text": "三",
+    "filename": "number-003-san.mp3"
+  },
+  {
+    "text": "四",
+    "filename": "number-004-yon.mp3"
+  },
+  {
+    "text": "五",
+    "filename": "number-005-go.mp3"
+  },
+  {
+    "text": "六",
+    "filename": "number-006-roku.mp3"
+  },
+  {
+    "text": "七",
+    "filename": "number-007-nana.mp3"
+  },
+  {
+    "text": "八",
+    "filename": "number-008-hachi.mp3"
+  },
+  {
+    "text": "九",
+    "filename": "number-009-kyuu.mp3"
+  },
+  {
+    "text": "十",
+    "filename": "number-010-juu.mp3"
+  },
+  {
+    "text": "百",
+    "filename": "number-011-hyaku.mp3"
+  },
+  {
+    "text": "千",
+    "filename": "number-012-sen.mp3"
+  },
+  {
+    "text": "万",
+    "filename": "number-013-man.mp3"
+  },
+  {
+    "text": "一時",
+    "filename": "number-014-ichiji.mp3"
+  },
+  {
+    "text": "四時",
+    "filename": "number-015-yoji.mp3"
+  },
+  {
+    "text": "七時",
+    "filename": "number-016-shichiji.mp3"
+  },
+  {
+    "text": "九時",
+    "filename": "number-017-kuji.mp3"
+  },
+  {
+    "text": "一分",
+    "filename": "number-018-ippun.mp3"
+  },
+  {
+    "text": "三分",
+    "filename": "number-019-sanpun.mp3"
+  },
+  {
+    "text": "六分",
+    "filename": "number-020-roppun.mp3"
+  },
+  {
+    "text": "月曜日",
+    "filename": "number-021-getsuyoubi.mp3"
+  },
+  {
+    "text": "火曜日",
+    "filename": "number-022-kayoubi.mp3"
+  },
+  {
+    "text": "水曜日",
+    "filename": "number-023-suiyoubi.mp3"
+  },
+  {
+    "text": "木曜日",
+    "filename": "number-024-mokuyoubi.mp3"
+  },
+  {
+    "text": "金曜日",
+    "filename": "number-025-kinyoubi.mp3"
+  },
+  {
+    "text": "土曜日",
+    "filename": "number-026-doyoubi.mp3"
+  },
+  {
+    "text": "日曜日",
+    "filename": "number-027-nichiyoubi.mp3"
+  },
+  {
+    "text": "一月",
+    "filename": "number-028-ichigatsu.mp3"
+  },
+  {
+    "text": "ついたち",
+    "filename": "number-029-tsuitachi.mp3"
+  },
+  {
+    "text": "ふつか",
+    "filename": "number-030-futsuka.mp3"
+  },
+  {
+    "text": "みっか",
+    "filename": "number-031-mikka.mp3"
+  },
+  {
+    "text": "よっか",
+    "filename": "number-032-yokka.mp3"
+  },
+  {
+    "text": "はつか",
+    "filename": "number-033-hatsuka.mp3"
+  }
+]

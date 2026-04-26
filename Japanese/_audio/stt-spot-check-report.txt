@@ -1,0 +1,677 @@
+================================================================================
+  STT SPOT-CHECK REPORT
+  Generated: 2026-04-13 00:10:16
+================================================================================
+
+SUMMARY
+  Total clips tested : 98
+  Matched            : 59/98
+  Mismatched         : 36/98
+  Errors             : 3/98
+  Match rate         : 60.2%
+
+--------------------------------------------------------------------------------
+
+CATEGORY BREAKDOWN
+  adj           7/10 match, 3/10 mismatch, 0/10 error
+  core100       7/10 match, 3/10 mismatch, 0/10 error
+  daily         5/5 match, 0/5 mismatch, 0/5 error
+  gap           0/10 match, 10/10 mismatch, 0/10 error
+  greet         5/5 match, 0/5 mismatch, 0/5 error
+  hira          7/10 match, 2/10 mismatch, 1/10 error
+  kanjin4       3/5 match, 2/5 mismatch, 0/5 error
+  kanjin5       3/5 match, 2/5 mismatch, 0/5 error
+  kata          6/10 match, 3/10 mismatch, 1/10 error
+  nontbl        7/10 match, 3/10 mismatch, 0/10 error
+  pitch         5/8 match, 2/8 mismatch, 1/8 error
+  verb          4/10 match, 6/10 mismatch, 0/10 error
+
+--------------------------------------------------------------------------------
+
+DETAILED RESULTS
+
+  [OK] MATCH     core100-015-onegaishimasu.mp3
+      Category    : core100
+      Expected    : お願いします / おねがいします / オネガイシマス
+      Transcribed : お願いします。
+
+  [XX] MISMATCH  core100-004-sore.mp3
+      Category    : core100
+      Expected    : それ / ソレ
+      Transcribed : 素礼。
+
+  [XX] MISMATCH  core100-036-ookii.mp3
+      Category    : core100
+      Expected    : 大きい / おおきい / オオキイ
+      Transcribed : 大木井。
+
+  [OK] MATCH     core100-016-arigatou.mp3
+      Category    : core100
+      Expected    : ありがとう / アリガトウ
+      Transcribed : ありがとう。
+
+  [OK] MATCH     core100-066-nihongo.mp3
+      Category    : core100
+      Expected    : 日本語 / にほんご / ニホンゴ
+      Transcribed : 日本語。
+
+  [OK] MATCH     core100-009-dare.mp3
+      Category    : core100
+      Expected    : だれ / 誰 / ダレ
+      Transcribed : 誰。
+
+  [OK] MATCH     core100-048-gakusei.mp3
+      Category    : core100
+      Expected    : 学生 / がくせい / ガクセイ
+      Transcribed : 学生。
+
+  [XX] MISMATCH  core100-007-soko.mp3
+      Category    : core100
+      Expected    : そこ / ソコ
+      Transcribed : 曽古。
+
+  [OK] MATCH     core100-044-hito.mp3
+      Category    : core100
+      Expected    : 人 / ひと / ヒト
+      Transcribed : 人。
+
+  [OK] MATCH     core100-060-ie.mp3
+      Category    : core100
+      Expected    : 家 / いえ / 依江 / イエ
+      Transcribed : 依江。
+
+  [OK] MATCH     hira-070-wa.mp3
+      Category    : hira
+      Expected    : わ / は / ワ
+      Transcribed : は。
+
+  [OK] MATCH     hira-012-gu.mp3
+      Category    : hira
+      Expected    : ぐ / グ
+      Transcribed : グ。
+
+  [XX] MISMATCH  hira-076-small-yo.mp3
+      Category    : hira
+      Expected    : ょ / ョ / sまll-よ / sマll-ヨ / sまllよ
+      Transcribed : 与。
+
+  [!!] ERROR     hira-055-bo.mp3
+      Category    : hira
+      Expected    : ぼ / ボ
+      Transcribed : [NO_MATCH]
+
+  [OK] MATCH     hira-005-e.mp3
+      Category    : hira
+      Expected    : え / エ
+      Transcribed : え？
+
+  [OK] MATCH     hira-004-u.mp3
+      Category    : hira
+      Expected    : う / ウ
+      Transcribed : う。
+
+  [OK] MATCH     hira-028-da.mp3
+      Category    : hira
+      Expected    : だ / ダ
+      Transcribed : だ。
+
+  [OK] MATCH     hira-030-di.mp3
+      Category    : hira
+      Expected    : ぢ / ヂ / じ / 字
+      Transcribed : 字。
+
+  [OK] MATCH     hira-065-ra.mp3
+      Category    : hira
+      Expected    : ら / ラ
+      Transcribed : ラ。
+
+  [XX] MISMATCH  hira-078-kyu.mp3
+      Category    : hira
+      Expected    : きゅ / キュ
+      Transcribed : 九。
+
+  [OK] MATCH     kata-004-u.mp3
+      Category    : kata
+      Expected    : う / ウ
+      Transcribed : う。
+
+  [OK] MATCH     kata-072-hoteru.mp3
+      Category    : kata
+      Expected    : ホテル / ほてる
+      Transcribed : ホテル。
+
+  [!!] ERROR     kata-026-no.mp3
+      Category    : kata
+      Expected    : の / ノ
+      Transcribed : [NO_MATCH]
+
+  [OK] MATCH     kata-070-resutoran.mp3
+      Category    : kata
+      Expected    : レストラン / れすとらん
+      Transcribed : レストラン。
+
+  [XX] MISMATCH  kata-054-fa.mp3
+      Category    : kata
+      Expected    : ファ / ふぁ / fあ / fア
+      Transcribed : 華。
+
+  [XX] MISMATCH  kata-029-fu.mp3
+      Category    : kata
+      Expected    : ふ / フ
+      Transcribed : 不。
+
+  [XX] MISMATCH  kata-058-di.mp3
+      Category    : kata
+      Expected    : ぢ / ヂ / じ / 字
+      Transcribed : 理。
+
+  [OK] MATCH     kata-036-mo.mp3
+      Category    : kata
+      Expected    : も / モ
+      Transcribed : も。
+
+  [OK] MATCH     kata-001-katakana.mp3
+      Category    : kata
+      Expected    : カタカナ / かたかな / 片仮名
+      Transcribed : 片仮名。
+
+  [OK] MATCH     kata-021-to.mp3
+      Category    : kata
+      Expected    : と / ト
+      Transcribed : と。
+
+  [OK] MATCH     verb-045-tabe-masen.mp3
+      Category    : verb
+      Expected    : 食べません / たべ-ません / タベ-マセン / たべません / タベマセン
+      Transcribed : 食べません。
+
+  [OK] MATCH     verb-028-iku.mp3
+      Category    : verb
+      Expected    : 行く / いく / イク
+      Transcribed : 行く。
+
+  [XX] MISMATCH  verb-022-nde.mp3
+      Category    : verb
+      Expected    : んで / ンデ
+      Transcribed : 出。
+
+  [XX] MISMATCH  verb-018-kyuu-gu.mp3
+      Category    : verb
+      Expected    : きゅう-ぐ / キュウ-グ / きゅうぐ / キュウグ
+      Transcribed : 奈久。
+
+  [XX] MISMATCH  verb-010-kakimasu.mp3
+      Category    : verb
+      Expected    : 書きます / かきます / カキマス
+      Transcribed : 柿升。
+
+  [OK] MATCH     verb-014-te.mp3
+      Category    : verb
+      Expected    : て / テ
+      Transcribed : って。
+
+  [XX] MISMATCH  verb-047-shimasen.mp3
+      Category    : verb
+      Expected    : しません / シマセン
+      Transcribed : 島仙。
+
+  [XX] MISMATCH  verb-007-suru.mp3
+      Category    : verb
+      Expected    : する / スル
+      Transcribed : 摺。
+
+  [OK] MATCH     verb-006-okiru.mp3
+      Category    : verb
+      Expected    : 起きる / おきる / オキル
+      Transcribed : 起きる。
+
+  [XX] MISMATCH  verb-025-tte.mp3
+      Category    : verb
+      Expected    : って / ッテ
+      Transcribed : 手。
+
+  [OK] MATCH     daily-004-kaado-de-onegaishimasu.mp3
+      Category    : daily
+      Expected    : カードでお願いします / かあど-で-おねがいします / カアド-デ-オネガイシマス / かあどでおねがいします / カアドデオネガイシマス
+      Transcribed : カードでお願いします。
+
+  [OK] MATCH     daily-012-atatamemasu-ka.mp3
+      Category    : daily
+      Expected    : 温めますか / あたためますか / あたためます-か / アタタメマス-カ / アタタメマスカ
+      Transcribed : 温めますか？
+
+  [OK] MATCH     greet-011-ittekimasu.mp3
+      Category    : greet
+      Expected    : 行ってきます / いってきます / イッテキマス
+      Transcribed : いってきます。
+
+  [OK] MATCH     greet-013-tadaima.mp3
+      Category    : greet
+      Expected    : ただいま / タダイマ
+      Transcribed : ただいま。
+
+  [OK] MATCH     greet-003-konbanwa.mp3
+      Category    : greet
+      Expected    : こんばんは / こんばんわ / コンバンワ
+      Transcribed : こんばんは。
+
+  [OK] MATCH     daily-009-mou-ichido-onegaishimasu.mp3
+      Category    : daily
+      Expected    : もう一度お願いします / もう-いちど-おねがいします / モウ-イチド-オネガイシマス / もういちどおねがいします / モウイチドオネガイシマス
+      Transcribed : もう一度、お願いします。
+
+  [OK] MATCH     daily-002-kore-wo-kudasai.mp3
+      Category    : daily
+      Expected    : これをください / これ-を-ください / コレ-ヲ-クダサイ / コレヲクダサイ
+      Transcribed : これをください。
+
+  [OK] MATCH     greet-007-ohisashiburi-desu.mp3
+      Category    : greet
+      Expected    : お久しぶりです / おひさしぶりです / おひさしぶり-です / オヒサシブリ-デス / オヒサシブリデス
+      Transcribed : お久しぶりです。
+
+  [OK] MATCH     daily-015-hoka-no-iro-wa-arimasu-ka.mp3
+      Category    : daily
+      Expected    : 他の色はありますか / ほかの色はありますか / ほか-の-いろ-わ-あります-か / ホカ-ノ-イロ-ワ-アリマス-カ / ほかのいろわありますか
+      Transcribed : ほかの色はありますか？
+
+  [OK] MATCH     greet-001-ohayou-gozaimasu.mp3
+      Category    : greet
+      Expected    : おはようございます / おはよう-ございます / オハヨウ-ゴザイマス / オハヨウゴザイマス
+      Transcribed : おはようございます。
+
+  [XX] MISMATCH  adj-008-samui.mp3
+      Category    : adj
+      Expected    : 寒い / さむい / サムイ
+      Transcribed : 寒井。
+
+  [OK] MATCH     adj-025-genki-na-hito.mp3
+      Category    : adj
+      Expected    : 元気な人 / げんき-な-ひと / ゲンキ-ナ-ヒト / げんきなひと / ゲンキナヒト
+      Transcribed : 元気な人。
+
+  [XX] MISMATCH  adj-006-oishii.mp3
+      Category    : adj
+      Expected    : おいしい / 美味しい / オイシイ
+      Transcribed : 御石井。
+
+  [OK] MATCH     adj-019-yumei-na.mp3
+      Category    : adj
+      Expected    : 有名な / ゆめい-な / ユメイ-ナ / ゆめいな / ユメイナ
+      Transcribed : 有名な。
+
+  [OK] MATCH     adj-024-taihen-na.mp3
+      Category    : adj
+      Expected    : 大変な / たいへん-な / タイヘン-ナ / たいへんあ / タイヘンア
+      Transcribed : 大変な。
+
+  [OK] MATCH     adj-013-oishii-desu.mp3
+      Category    : adj
+      Expected    : おいしいです / おいしい-です / オイシイ-デス / オイシイデス
+      Transcribed : おいしいです。
+
+  [OK] MATCH     adj-005-utsukushii.mp3
+      Category    : adj
+      Expected    : 美しい / うつくしい / ウツクシイ
+      Transcribed : 美し。
+
+  [OK] MATCH     adj-002-chiisai.mp3
+      Category    : adj
+      Expected    : 小さい / ちいさい / チイサイ
+      Transcribed : 小さい。
+
+  [OK] MATCH     adj-022-suki-na.mp3
+      Category    : adj
+      Expected    : 好きな / すき-な / スキ-ナ / すきな / スキナ
+      Transcribed : 好きな。
+
+  [XX] MISMATCH  adj-038-describe-things-around-you-using-both-i-na-adjectives.mp3
+      Category    : adj
+      Expected    : でscりべ-tひんgs-あろうんd-よう-うしんg-ぼth-い-な-あdjえcちvえs / デscリベ-tヒンgs-アロウンd-ヨウ-ウシンg-ボth-イ-ナ-アdjエcチvエs / でscりべtひんgさろうんdよううしんgぼtひなあdjえcちvえs / デscリベtヒンgサロウンdヨウウシンgボtヒナアdjエcチvエs
+      Transcribed : ディスクリバーシングスaround you using boss Eアンドnerjectives。
+
+  [OK] MATCH     kanjin5-057-bun.mp3
+      Category    : kanjin5
+      Expected    : 文 / ぶん / ブン
+      Transcribed : 文。
+
+  [OK] MATCH     kanjin4-038-sha.mp3
+      Category    : kanjin4
+      Expected    : 車 / しゃ / 社 / 謝 / シャ
+      Transcribed : 謝。
+
+  [XX] MISMATCH  kanjin4-011-dou.mp3
+      Category    : kanjin4
+      Expected    : 道 / どう / 同 / ドウ
+      Transcribed : 堂。
+
+  [OK] MATCH     kanjin4-030-hana.mp3
+      Category    : kanjin4
+      Expected    : 花 / はな / 鼻 / ハナ
+      Transcribed : 花奈。
+
+  [XX] MISMATCH  kanjin4-013-ji.mp3
+      Category    : kanjin4
+      Expected    : 時 / じ / 字 / ジ
+      Transcribed : 餅。
+
+  [OK] MATCH     kanjin5-007-shichi.mp3
+      Category    : kanjin5
+      Expected    : 七 / しち / シチ
+      Transcribed : 七、菜。
+
+  [OK] MATCH     kanjin4-036-shitsu.mp3
+      Category    : kanjin4
+      Expected    : 室 / しつ / 質 / シツ
+      Transcribed : 室。
+
+  [XX] MISMATCH  kanjin5-017-hi.mp3
+      Category    : kanjin5
+      Expected    : 日 / ひ / 火 / ヒ
+      Transcribed : 妃。
+
+  [XX] MISMATCH  kanjin5-040-nama.mp3
+      Category    : kanjin5
+      Expected    : 生 / なま / ナマ
+      Transcribed : 静。
+
+  [OK] MATCH     kanjin5-065-bai.mp3
+      Category    : kanjin5
+      Expected    : 倍 / ばい / 梅 / 売 / バイ
+      Transcribed : 梅。
+
+  [XX] MISMATCH  gap-187-(dasu)-put-out.mp3
+      Category    : gap
+      Expected    : (だす)-ぷt-おうt / (ダス)-プt-オウt / (だす)ぷとうt / (ダス)プトウt
+      Transcribed : Das Das put out。
+
+  [XX] MISMATCH  gap-084-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : 私は。と思います。
+
+  [XX] MISMATCH  gap-190-(sageru)-lower.mp3
+      Category    : gap
+      Expected    : (さげる)-lおゑr / (サゲル)-lオヱr / (さげる)lおゑr / (サゲル)lオヱr
+      Transcribed : 下げる。下げるろう。
+
+  [XX] MISMATCH  gap-182-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : 参加する。
+
+  [XX] MISMATCH  gap-108-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : そわ。そわ。
+
+  [XX] MISMATCH  gap-137-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : トイレはどこですか？
+
+  [XX] MISMATCH  gap-037-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : 七、治。
+
+  [XX] MISMATCH  gap-088-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : 女仁。
+
+  [XX] MISMATCH  gap-274-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : 野武。
+
+  [XX] MISMATCH  gap-126-phrase.mp3
+      Category    : gap
+      Expected    : phらせ / phラセ
+      Transcribed : この人。
+
+  [OK] MATCH     nontbl-011-oisogashii-tokoro.mp3
+      Category    : nontbl
+      Expected    : お忙しいところ / おいそがしい-ところ / オイソガシイ-トコロ / おいそがしいところ / オイソガシイトコロ
+      Transcribed : お忙しいところ恐縮ですが。
+
+  [OK] MATCH     nontbl-030-arubaito.mp3
+      Category    : nontbl
+      Expected    : アルバイト / あるばいと
+      Transcribed : アルバイト。
+
+  [XX] MISMATCH  nontbl-025-shita-whispered.mp3
+      Category    : nontbl
+      Expected    : した / した-wひsぺれd / シタ-wヒsペレd / したwひsぺれd / シタwヒsペレd
+      Transcribed : 志多。
+
+  [OK] MATCH     nontbl-018-ame-ga-zaazaa.mp3
+      Category    : nontbl
+      Expected    : 雨がザーザー / あめ-が-ざあざあ / アメ-ガ-ザアザア / あめがざあざあ / アメガザアザア
+      Transcribed : 雨がザーザーと降っている。
+
+  [XX] MISMATCH  nontbl-041-imasu-arimasu.mp3
+      Category    : nontbl
+      Expected    : いますあります / います-あります / イマス-アリマス / イマスアリマス
+      Transcribed : 井増。
+
+  [OK] MATCH     nontbl-045-jiko-shoukai.mp3
+      Category    : nontbl
+      Expected    : 自己紹介 / じこ-しょうかい / ジコ-ショウカイ / じこしょうかい / ジコショウカイ
+      Transcribed : 自己紹介。
+
+  [XX] MISMATCH  nontbl-036-kenjougo.mp3
+      Category    : nontbl
+      Expected    : 謙譲語 / けんじょうご / ケンジョウゴ
+      Transcribed : 見上五。
+
+  [OK] MATCH     nontbl-015-okawari.mp3
+      Category    : nontbl
+      Expected    : おかわり / お代わり / オカワリ
+      Transcribed : おかわり。
+
+  [OK] MATCH     nontbl-021-dokidoki-suru.mp3
+      Category    : nontbl
+      Expected    : ドキドキする / どきどき-する / ドキドキ-スル / どきどきする / ドキドキスル
+      Transcribed : ドキドキする。
+
+  [OK] MATCH     nontbl-004-shumi-wa-desu.mp3
+      Category    : nontbl
+      Expected    : 趣味はです / 趣味は / しゅみ-わ-です / シュミ-ワ-デス / しゅみわです
+      Transcribed : 趣味はハビです。
+
+  [OK] MATCH     pitch-001-hashi-chopsticks.mp3
+      Category    : pitch
+      Expected    : 箸 / はし / はし-ちょpsちcks / ハシ-チョpsチcks / はしちょpsちcks
+      Transcribed : 箸。
+
+  [OK] MATCH     pitch-002-hashi-bridge.mp3
+      Category    : pitch
+      Expected    : 橋 / はし / はし-bりdげ / ハシ-bリdゲ / はしbりdげ
+      Transcribed : 橋。
+
+  [OK] MATCH     pitch-003-ame-rain.mp3
+      Category    : pitch
+      Expected    : 雨 / あめ / あめ-らいん / アメ-ライン / あめらいん
+      Transcribed : 雨。
+
+  [!!] ERROR     pitch-004-ame-candy.mp3
+      Category    : pitch
+      Expected    : 飴 / あめ / あめ-cあんdy / アメ-cアンdy / あめcあんdy
+      Transcribed : [NO_MATCH]
+
+  [OK] MATCH     pitch-005-hana-flower.mp3
+      Category    : pitch
+      Expected    : 花 / はな / はな-flおゑr / ハナ-flオヱr / はなflおゑr
+      Transcribed : 花。
+
+  [XX] MISMATCH  pitch-006-hana-nose.mp3
+      Category    : pitch
+      Expected    : 鼻 / はな / はな-のせ / ハナ-ノセ / はなのせ
+      Transcribed : 花菜。
+
+  [OK] MATCH     pitch-007-sake-alcohol.mp3
+      Category    : pitch
+      Expected    : 酒 / さけ / さけ-あlcおほl / サケ-アlcオホl / さけあlcおほl
+      Transcribed : 酒。
+
+  [XX] MISMATCH  pitch-008-sake-salmon.mp3
+      Category    : pitch
+      Expected    : 鮭 / さけ / シャケ / 鮮 / さけ-さlもん
+      Transcribed : 酒。
+
+--------------------------------------------------------------------------------
+
+MISMATCHES (36 clips)
+
+  core100-004-sore.mp3
+    Expected    : それ / ソレ
+    Transcribed : 素礼。
+
+  core100-036-ookii.mp3
+    Expected    : 大きい / おおきい / オオキイ
+    Transcribed : 大木井。
+
+  core100-007-soko.mp3
+    Expected    : そこ / ソコ
+    Transcribed : 曽古。
+
+  hira-076-small-yo.mp3
+    Expected    : ょ / ョ / sまll-よ / sマll-ヨ / sまllよ
+    Transcribed : 与。
+
+  hira-078-kyu.mp3
+    Expected    : きゅ / キュ
+    Transcribed : 九。
+
+  kata-054-fa.mp3
+    Expected    : ファ / ふぁ / fあ / fア
+    Transcribed : 華。
+
+  kata-029-fu.mp3
+    Expected    : ふ / フ
+    Transcribed : 不。
+
+  kata-058-di.mp3
+    Expected    : ぢ / ヂ / じ / 字
+    Transcribed : 理。
+
+  verb-022-nde.mp3
+    Expected    : んで / ンデ
+    Transcribed : 出。
+
+  verb-018-kyuu-gu.mp3
+    Expected    : きゅう-ぐ / キュウ-グ / きゅうぐ / キュウグ
+    Transcribed : 奈久。
+
+  verb-010-kakimasu.mp3
+    Expected    : 書きます / かきます / カキマス
+    Transcribed : 柿升。
+
+  verb-047-shimasen.mp3
+    Expected    : しません / シマセン
+    Transcribed : 島仙。
+
+  verb-007-suru.mp3
+    Expected    : する / スル
+    Transcribed : 摺。
+
+  verb-025-tte.mp3
+    Expected    : って / ッテ
+    Transcribed : 手。
+
+  adj-008-samui.mp3
+    Expected    : 寒い / さむい / サムイ
+    Transcribed : 寒井。
+
+  adj-006-oishii.mp3
+    Expected    : おいしい / 美味しい / オイシイ
+    Transcribed : 御石井。
+
+  adj-038-describe-things-around-you-using-both-i-na-adjectives.mp3
+    Expected    : でscりべ-tひんgs-あろうんd-よう-うしんg-ぼth-い-な-あdjえcちvえs / デscリベ-tヒンgs-アロウンd-ヨウ-ウシンg-ボth-イ-ナ-アdjエcチvエs / でscりべtひんgさろうんdよううしんgぼtひなあdjえcちvえs / デscリベtヒンgサロウンdヨウウシンgボtヒナアdjエcチvエs
+    Transcribed : ディスクリバーシングスaround you using boss Eアンドnerjectives。
+
+  kanjin4-011-dou.mp3
+    Expected    : 道 / どう / 同 / ドウ
+    Transcribed : 堂。
+
+  kanjin4-013-ji.mp3
+    Expected    : 時 / じ / 字 / ジ
+    Transcribed : 餅。
+
+  kanjin5-017-hi.mp3
+    Expected    : 日 / ひ / 火 / ヒ
+    Transcribed : 妃。
+
+  kanjin5-040-nama.mp3
+    Expected    : 生 / なま / ナマ
+    Transcribed : 静。
+
+  gap-187-(dasu)-put-out.mp3
+    Expected    : (だす)-ぷt-おうt / (ダス)-プt-オウt / (だす)ぷとうt / (ダス)プトウt
+    Transcribed : Das Das put out。
+
+  gap-084-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : 私は。と思います。
+
+  gap-190-(sageru)-lower.mp3
+    Expected    : (さげる)-lおゑr / (サゲル)-lオヱr / (さげる)lおゑr / (サゲル)lオヱr
+    Transcribed : 下げる。下げるろう。
+
+  gap-182-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : 参加する。
+
+  gap-108-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : そわ。そわ。
+
+  gap-137-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : トイレはどこですか？
+
+  gap-037-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : 七、治。
+
+  gap-088-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : 女仁。
+
+  gap-274-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : 野武。
+
+  gap-126-phrase.mp3
+    Expected    : phらせ / phラセ
+    Transcribed : この人。
+
+  nontbl-025-shita-whispered.mp3
+    Expected    : した / した-wひsぺれd / シタ-wヒsペレd / したwひsぺれd / シタwヒsペレd
+    Transcribed : 志多。
+
+  nontbl-041-imasu-arimasu.mp3
+    Expected    : いますあります / います-あります / イマス-アリマス / イマスアリマス
+    Transcribed : 井増。
+
+  nontbl-036-kenjougo.mp3
+    Expected    : 謙譲語 / けんじょうご / ケンジョウゴ
+    Transcribed : 見上五。
+
+  pitch-006-hana-nose.mp3
+    Expected    : 鼻 / はな / はな-のせ / ハナ-ノセ / はなのせ
+    Transcribed : 花菜。
+
+  pitch-008-sake-salmon.mp3
+    Expected    : 鮭 / さけ / シャケ / 鮮 / さけ-さlもん
+    Transcribed : 酒。
+
+--------------------------------------------------------------------------------
+
+ERRORS (3 clips)
+
+  hira-055-bo.mp3  ->  [NO_MATCH]
+  kata-026-no.mp3  ->  [NO_MATCH]
+  pitch-004-ame-candy.mp3  ->  [NO_MATCH]

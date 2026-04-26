@@ -1,0 +1,670 @@
+[
+  {
+    "text": "私は学生です",
+    "filename": "gramn5-001-watashi-wa-gakusei-desu.mp3"
+  },
+  {
+    "text": "これは本です",
+    "filename": "gramn5-002-kore-wa-hon-desu.mp3"
+  },
+  {
+    "text": "猫がいます",
+    "filename": "gramn5-003-neko-ga-imasu.mp3"
+  },
+  {
+    "text": "本があります",
+    "filename": "gramn5-004-hon-ga-arimasu.mp3"
+  },
+  {
+    "text": "水がほしいです",
+    "filename": "gramn5-005-mizu-ga-hoshii-desu.mp3"
+  },
+  {
+    "text": "食べたいです",
+    "filename": "gramn5-006-tabetai-desu.mp3"
+  },
+  {
+    "text": "日本に行きたいです",
+    "filename": "gramn5-007-nihon-ni-ikitai-desu.mp3"
+  },
+  {
+    "text": "教えてください",
+    "filename": "gramn5-008-oshiete-kudasai.mp3"
+  },
+  {
+    "text": "写真を撮ってもいいですか",
+    "filename": "gramn5-009-shashin-wo-tottemo-ii-desu-ka.mp3"
+  },
+  {
+    "text": "一緒に食べませんか",
+    "filename": "gramn5-010-issho-ni-tabemasen-ka.mp3"
+  },
+  {
+    "text": "雨だから行きません",
+    "filename": "gramn5-011-ame-dakara-ikimasen.mp3"
+  },
+  {
+    "text": "起きてシャワーを浴びて朝ごはんを食べます",
+    "filename": "gramn5-012-okite-shawaa-asagohan.mp3"
+  },
+  {
+    "text": "学生ですか",
+    "filename": "gramn5-013-gakusei-desu-ka.mp3"
+  },
+  {
+    "text": "何を食べますか",
+    "filename": "gramn5-014-nani-wo-tabemasu-ka.mp3"
+  },
+  {
+    "text": "どこに行きますか",
+    "filename": "gramn5-015-doko-ni-ikimasu-ka.mp3"
+  },
+  {
+    "text": "雨が降ったら行きません",
+    "filename": "gramn4-001-ame-ga-futtara.mp3"
+  },
+  {
+    "text": "練習すれば上手になります",
+    "filename": "gramn4-002-renshuu-sureba.mp3"
+  },
+  {
+    "text": "日本に行くなら京都がおすすめです",
+    "filename": "gramn4-003-nihon-ni-iku-nara.mp3"
+  },
+  {
+    "text": "春になると花が咲きます",
+    "filename": "gramn4-004-haru-ni-naru-to.mp3"
+  },
+  {
+    "text": "先生にほめられた",
+    "filename": "gramn4-005-sensei-ni-homerareta.mp3"
+  },
+  {
+    "text": "雨に降られた",
+    "filename": "gramn4-006-ame-ni-furareta.mp3"
+  },
+  {
+    "text": "先生は学生に本を読ませた",
+    "filename": "gramn4-007-sensei-wa-yomaseta.mp3"
+  },
+  {
+    "text": "野菜を食べさせられた",
+    "filename": "gramn4-008-yasai-wo-tabesaserareta.mp3"
+  },
+  {
+    "text": "友達にプレゼントをあげた",
+    "filename": "gramn4-009-tomodachi-ni-ageta.mp3"
+  },
+  {
+    "text": "先生に教えてもらった",
+    "filename": "gramn4-010-sensei-ni-oshiete-moratta.mp3"
+  },
+  {
+    "text": "母が作ってくれた",
+    "filename": "gramn4-011-haha-ga-tsukutte-kureta.mp3"
+  },
+  {
+    "text": "食べている",
+    "filename": "gramn4-012-tabete-iru.mp3"
+  },
+  {
+    "text": "窓が開けてある",
+    "filename": "gramn4-013-mado-ga-akete-aru.mp3"
+  },
+  {
+    "text": "予約しておく",
+    "filename": "gramn4-014-yoyaku-shite-oku.mp3"
+  },
+  {
+    "text": "食べてしまった",
+    "filename": "gramn4-015-tabete-shimatta.mp3"
+  },
+  {
+    "text": "食べてみる",
+    "filename": "gramn4-016-tabete-miru.mp3"
+  },
+  {
+    "text": "来てほしい",
+    "filename": "gramn4-017-kite-hoshii.mp3"
+  },
+  {
+    "text": "書ける",
+    "filename": "gramn4-018-kakeru.mp3"
+  },
+  {
+    "text": "食べられる",
+    "filename": "gramn4-019-taberareru.mp3"
+  },
+  {
+    "text": "食べよう",
+    "filename": "gramn4-020-tabeyou.mp3"
+  },
+  {
+    "text": "ありがとうございます",
+    "filename": "gramn3-001-arigatou-gozaimasu2.mp3"
+  },
+  {
+    "text": "確認いたします",
+    "filename": "gramn3-002-kakunin-itashimasu.mp3"
+  },
+  {
+    "text": "雨にもかかわらず来てくれました",
+    "filename": "gramn3-003-ame-nimo-kakawarazu.mp3"
+  },
+  {
+    "text": "この問題に関して説明します",
+    "filename": "gramn3-004-kono-mondai-ni-kanshite.mp3"
+  },
+  {
+    "text": "インターネットを通じて",
+    "filename": "gramn3-005-intaanetto-wo-tsuujite.mp3"
+  },
+  {
+    "text": "読むことが好きです",
+    "filename": "gramn3-006-yomu-koto-ga-suki.mp3"
+  },
+  {
+    "text": "走るのが見えた",
+    "filename": "gramn3-007-hashiru-no-ga-mieta.mp3"
+  },
+  {
+    "text": "東京というまち",
+    "filename": "gramn3-008-toukyou-to-iu-machi.mp3"
+  },
+  {
+    "text": "日本は安全だと思います",
+    "filename": "gramn3-009-nihon-wa-anzen-da-to-omoimasu.mp3"
+  },
+  {
+    "text": "おはようございます",
+    "filename": "greet-001-ohayou-gozaimasu.mp3"
+  },
+  {
+    "text": "こんにちは",
+    "filename": "greet-002-konnichiwa.mp3"
+  },
+  {
+    "text": "こんばんは",
+    "filename": "greet-003-konbanwa.mp3"
+  },
+  {
+    "text": "おやすみなさい",
+    "filename": "greet-004-oyasuminasai.mp3"
+  },
+  {
+    "text": "はじめまして",
+    "filename": "greet-005-hajimemashite.mp3"
+  },
+  {
+    "text": "よろしくおねがいします",
+    "filename": "greet-006-yoroshiku-onegaishimasu.mp3"
+  },
+  {
+    "text": "お久しぶりです",
+    "filename": "greet-007-ohisashiburi-desu.mp3"
+  },
+  {
+    "text": "さようなら",
+    "filename": "greet-008-sayounara.mp3"
+  },
+  {
+    "text": "またね",
+    "filename": "greet-009-matane.mp3"
+  },
+  {
+    "text": "お先に失礼します",
+    "filename": "greet-010-osaki-ni-shitsurei-shimasu.mp3"
+  },
+  {
+    "text": "いってきます",
+    "filename": "greet-011-ittekimasu.mp3"
+  },
+  {
+    "text": "いってらっしゃい",
+    "filename": "greet-012-itterasshai.mp3"
+  },
+  {
+    "text": "ただいま",
+    "filename": "greet-013-tadaima.mp3"
+  },
+  {
+    "text": "おかえりなさい",
+    "filename": "greet-014-okaerinasai.mp3"
+  },
+  {
+    "text": "いらっしゃいませ",
+    "filename": "daily-001-irasshaimase.mp3"
+  },
+  {
+    "text": "これをください",
+    "filename": "daily-002-kore-wo-kudasai.mp3"
+  },
+  {
+    "text": "いくらですか",
+    "filename": "daily-003-ikura-desu-ka.mp3"
+  },
+  {
+    "text": "カードでおねがいします",
+    "filename": "daily-004-kaado-de-onegaishimasu.mp3"
+  },
+  {
+    "text": "二人です",
+    "filename": "daily-005-futari-desu.mp3"
+  },
+  {
+    "text": "おすすめは何ですか",
+    "filename": "daily-006-osusume-wa-nan-desu-ka.mp3"
+  },
+  {
+    "text": "おかいけいおねがいします",
+    "filename": "daily-007-okaikei-onegaishimasu.mp3"
+  },
+  {
+    "text": "すみません",
+    "filename": "daily-008-sumimasen2.mp3"
+  },
+  {
+    "text": "もう一度おねがいします",
+    "filename": "daily-009-mou-ichido-onegaishimasu.mp3"
+  },
+  {
+    "text": "ゆっくりおねがいします",
+    "filename": "daily-010-yukkuri-onegaishimasu.mp3"
+  },
+  {
+    "text": "ポイントカードはお持ちですか",
+    "filename": "daily-011-pointo-kaado.mp3"
+  },
+  {
+    "text": "あたためますか",
+    "filename": "daily-012-atatamemasu-ka.mp3"
+  },
+  {
+    "text": "お箸はおつけしますか",
+    "filename": "daily-013-ohashi-wa-otsukeshimasu-ka.mp3"
+  },
+  {
+    "text": "試着してもいいですか",
+    "filename": "daily-014-shichaku-shitemo-ii-desu-ka.mp3"
+  },
+  {
+    "text": "他の色はありますか",
+    "filename": "daily-015-hoka-no-iro-wa-arimasu-ka.mp3"
+  },
+  {
+    "text": "この電車は東京に行きますか",
+    "filename": "daily-016-kono-densha-wa-toukyou.mp3"
+  },
+  {
+    "text": "次の駅はどこですか",
+    "filename": "daily-017-tsugi-no-eki-wa-doko.mp3"
+  },
+  {
+    "text": "はじめまして。田中です。日本から来ました。趣味は読書です。よろしくおねがいします。",
+    "filename": "selfintro-001-selfintro-casual.mp3"
+  },
+  {
+    "text": "はじめまして。田中と申します。東京の会社で働いております。日本語はまだ勉強中ですが頑張ります。どうぞよろしくおねがいいたします。",
+    "filename": "selfintro-002-selfintro-formal.mp3"
+  },
+  {
+    "text": "お読みになる",
+    "filename": "keigo-001-oyomi-ni-naru.mp3"
+  },
+  {
+    "text": "いらっしゃる",
+    "filename": "keigo-002-irassharu.mp3"
+  },
+  {
+    "text": "召し上がる",
+    "filename": "keigo-003-meshiagaru.mp3"
+  },
+  {
+    "text": "おっしゃる",
+    "filename": "keigo-004-ossharu.mp3"
+  },
+  {
+    "text": "ご覧になる",
+    "filename": "keigo-005-goran-ni-naru.mp3"
+  },
+  {
+    "text": "なさる",
+    "filename": "keigo-006-nasaru.mp3"
+  },
+  {
+    "text": "お持ちする",
+    "filename": "keigo-007-omochi-suru.mp3"
+  },
+  {
+    "text": "参る",
+    "filename": "keigo-008-mairu.mp3"
+  },
+  {
+    "text": "申す",
+    "filename": "keigo-009-mousu.mp3"
+  },
+  {
+    "text": "いただく",
+    "filename": "keigo-010-itadaku.mp3"
+  },
+  {
+    "text": "拝見する",
+    "filename": "keigo-011-haiken-suru.mp3"
+  },
+  {
+    "text": "いたす",
+    "filename": "keigo-012-itasu.mp3"
+  },
+  {
+    "text": "存じております",
+    "filename": "keigo-013-zonjite-orimasu.mp3"
+  },
+  {
+    "text": "社長はもうお帰りになりました",
+    "filename": "keigo-014-shachou-okaeiri.mp3"
+  },
+  {
+    "text": "先生は何とおっしゃいましたか",
+    "filename": "keigo-015-sensei-osshaimashita.mp3"
+  },
+  {
+    "text": "私からお伝えいたします",
+    "filename": "keigo-016-watashi-kara-otsutae.mp3"
+  },
+  {
+    "text": "資料を拝見しました",
+    "filename": "keigo-017-shiryou-wo-haiken.mp3"
+  },
+  {
+    "text": "明日参ります",
+    "filename": "keigo-018-ashita-mairimasu.mp3"
+  },
+  {
+    "text": "部長が申しておりました",
+    "filename": "keigo-019-buchou-moushite-orimashita.mp3"
+  },
+  {
+    "text": "お疲れ様です",
+    "filename": "business-001-otsukaresama-desu.mp3"
+  },
+  {
+    "text": "失礼します",
+    "filename": "business-002-shitsurei-shimasu.mp3"
+  },
+  {
+    "text": "少々おまちください",
+    "filename": "business-003-shoushou-omachi-kudasai.mp3"
+  },
+  {
+    "text": "かしこまりました",
+    "filename": "business-004-kashikomarimashita.mp3"
+  },
+  {
+    "text": "承知しました",
+    "filename": "business-005-shouchi-shimashita.mp3"
+  },
+  {
+    "text": "申し訳ございません",
+    "filename": "business-006-moushiwake-gozaimasen.mp3"
+  },
+  {
+    "text": "お世話になっております",
+    "filename": "business-007-osewa-ni-natte-orimasu.mp3"
+  },
+  {
+    "text": "ご確認よろしくおねがいいたします",
+    "filename": "business-008-gokakunin-yoroshiku.mp3"
+  },
+  {
+    "text": "会議を始めましょう",
+    "filename": "business-009-kaigi-wo-hajimemashou.mp3"
+  },
+  {
+    "text": "以上です",
+    "filename": "business-010-ijou-desu.mp3"
+  },
+  {
+    "text": "いただきます",
+    "filename": "culture-001-itadakimasu2.mp3"
+  },
+  {
+    "text": "ごちそうさまでした",
+    "filename": "culture-002-gochisousama2.mp3"
+  },
+  {
+    "text": "おじゃまします",
+    "filename": "culture-003-ojama-shimasu.mp3"
+  },
+  {
+    "text": "お大事に",
+    "filename": "culture-004-odaiji-ni.mp3"
+  },
+  {
+    "text": "がんばってください",
+    "filename": "culture-005-ganbatte-kudasai.mp3"
+  },
+  {
+    "text": "あけましておめでとうございます",
+    "filename": "culture-006-akemashite-omedetou.mp3"
+  },
+  {
+    "text": "今年もよろしくおねがいします",
+    "filename": "culture-007-kotoshi-mo-yoroshiku.mp3"
+  },
+  {
+    "text": "よいお年を",
+    "filename": "culture-008-yoi-otoshi-wo.mp3"
+  },
+  {
+    "text": "つまらないものですが",
+    "filename": "culture-009-tsumaranai-mono-desu-ga.mp3"
+  },
+  {
+    "text": "乾杯",
+    "filename": "culture-010-kanpai.mp3"
+  },
+  {
+    "text": "えーと",
+    "filename": "filler-001-eeto.mp3"
+  },
+  {
+    "text": "あのー",
+    "filename": "filler-002-anoo.mp3"
+  },
+  {
+    "text": "まあ",
+    "filename": "filler-003-maa.mp3"
+  },
+  {
+    "text": "ちょっと",
+    "filename": "filler-004-chotto.mp3"
+  },
+  {
+    "text": "やっぱり",
+    "filename": "filler-005-yappari.mp3"
+  },
+  {
+    "text": "一応",
+    "filename": "filler-006-ichiou.mp3"
+  },
+  {
+    "text": "とりあえず",
+    "filename": "filler-007-toriaezu.mp3"
+  },
+  {
+    "text": "なるほど",
+    "filename": "filler-008-naruhodo.mp3"
+  },
+  {
+    "text": "そうですね",
+    "filename": "filler-009-sou-desu-ne.mp3"
+  },
+  {
+    "text": "へえ",
+    "filename": "filler-010-hee.mp3"
+  },
+  {
+    "text": "本当に",
+    "filename": "filler-011-hontou-ni.mp3"
+  },
+  {
+    "text": "すごいですね",
+    "filename": "filler-012-sugoi-desu-ne.mp3"
+  },
+  {
+    "text": "ところで",
+    "filename": "filler-013-tokoro-de.mp3"
+  },
+  {
+    "text": "つまり",
+    "filename": "filler-014-tsumari.mp3"
+  },
+  {
+    "text": "箸",
+    "filename": "pitch-001-hashi-chopsticks.mp3"
+  },
+  {
+    "text": "橋",
+    "filename": "pitch-002-hashi-bridge.mp3"
+  },
+  {
+    "text": "雨",
+    "filename": "pitch-003-ame-rain.mp3"
+  },
+  {
+    "text": "飴",
+    "filename": "pitch-004-ame-candy.mp3"
+  },
+  {
+    "text": "花",
+    "filename": "pitch-005-hana-flower.mp3"
+  },
+  {
+    "text": "鼻",
+    "filename": "pitch-006-hana-nose.mp3"
+  },
+  {
+    "text": "酒",
+    "filename": "pitch-007-sake-alcohol.mp3"
+  },
+  {
+    "text": "鮭",
+    "filename": "pitch-008-sake-salmon.mp3"
+  },
+  {
+    "text": "らりるれろ",
+    "filename": "pronun-001-ra-ri-ru-re-ro.mp3"
+  },
+  {
+    "text": "おばさん",
+    "filename": "pronun-002-obasan-aunt.mp3"
+  },
+  {
+    "text": "おばあさん",
+    "filename": "pronun-003-obaasan-grandmother.mp3"
+  },
+  {
+    "text": "ビル",
+    "filename": "pronun-004-biru-building.mp3"
+  },
+  {
+    "text": "ビール",
+    "filename": "pronun-005-biiru-beer.mp3"
+  },
+  {
+    "text": "きて",
+    "filename": "pronun-006-kite-come.mp3"
+  },
+  {
+    "text": "きって",
+    "filename": "pronun-007-kitte-stamp.mp3"
+  },
+  {
+    "text": "がっこう",
+    "filename": "pronun-008-gakkou.mp3"
+  },
+  {
+    "text": "さんぽ",
+    "filename": "pronun-009-sanpo.mp3"
+  },
+  {
+    "text": "です",
+    "filename": "pronun-010-desu-whispered.mp3"
+  },
+  {
+    "text": "ドキドキ",
+    "filename": "onomat-001-dokidoki.mp3"
+  },
+  {
+    "text": "ワクワク",
+    "filename": "onomat-002-wakuwaku.mp3"
+  },
+  {
+    "text": "キラキラ",
+    "filename": "onomat-003-kirakira.mp3"
+  },
+  {
+    "text": "ふわふわ",
+    "filename": "onomat-004-fuwafuwa.mp3"
+  },
+  {
+    "text": "ピカピカ",
+    "filename": "onomat-005-pikapika.mp3"
+  },
+  {
+    "text": "イライラ",
+    "filename": "onomat-006-iraira.mp3"
+  },
+  {
+    "text": "ニコニコ",
+    "filename": "onomat-007-nikoniko.mp3"
+  },
+  {
+    "text": "ガタガタ",
+    "filename": "onomat-008-gatagata.mp3"
+  },
+  {
+    "text": "ザーザー",
+    "filename": "onomat-009-zaazaa.mp3"
+  },
+  {
+    "text": "のんびり",
+    "filename": "onomat-010-nonbiri.mp3"
+  },
+  {
+    "text": "ゆっくり",
+    "filename": "onomat-011-yukkuri.mp3"
+  },
+  {
+    "text": "ドキッとした",
+    "filename": "onomat-012-dokitto-shita.mp3"
+  },
+  {
+    "text": "うん",
+    "filename": "aizuchi-001-un.mp3"
+  },
+  {
+    "text": "ええ",
+    "filename": "aizuchi-002-ee.mp3"
+  },
+  {
+    "text": "そうですか",
+    "filename": "aizuchi-003-sou-desu-ka.mp3"
+  },
+  {
+    "text": "なるほど",
+    "filename": "aizuchi-004-naruhodo2.mp3"
+  },
+  {
+    "text": "へえ",
+    "filename": "aizuchi-005-hee2.mp3"
+  },
+  {
+    "text": "本当ですか",
+    "filename": "aizuchi-006-hontou-desu-ka.mp3"
+  },
+  {
+    "text": "すごい",
+    "filename": "aizuchi-007-sugoi.mp3"
+  }
+]

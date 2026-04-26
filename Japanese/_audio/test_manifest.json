@@ -1,0 +1,12 @@
+[
+    {"text": "\u3053\u3093\u306b\u3061\u306f", "filename": "greetings-001-konnichiwa.mp3"},
+    {"text": "\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059", "filename": "greetings-002-ohayou-gozaimasu.mp3"},
+    {"text": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059", "filename": "greetings-003-arigatou-gozaimasu.mp3"},
+    {"text": "\u3059\u307f\u307e\u305b\u3093", "filename": "greetings-004-sumimasen.mp3"},
+    {"text": "\u79c1\u306f\u5b66\u751f\u3067\u3059", "filename": "grammar-001-watashi-wa-gakusei-desu.mp3"},
+    {"text": "\u3053\u308c\u306f\u672c\u3067\u3059", "filename": "grammar-002-kore-wa-hon-desu.mp3"},
+    {"text": "\u6c34\u3092\u304f\u3060\u3055\u3044", "filename": "vocab-001-mizu-wo-kudasai.mp3"},
+    {"text": "\u7bb8", "filename": "pitch-001-hashi-chopsticks.mp3"},
+    {"text": "\u6a4b", "filename": "pitch-002-hashi-bridge.mp3", "voice": "ja-JP-KeitaNeural"},
+    {"text": "\u306f\u3058\u3081\u307e\u3057\u3066\u3002\u7530\u4e2d\u3068\u7533\u3057\u307e\u3059\u3002\u3088\u308d\u3057\u304f\u304a\u306d\u304c\u3044\u3057\u307e\u3059\u3002", "filename": "conversation-001-hajimemashite.mp3"}
+]

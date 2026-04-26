@@ -1,0 +1,1883 @@
+[
+  {
+    "filename": "particle-001-wa.mp3",
+    "text": "は",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 8,
+    "anchor_line": 8,
+    "insert_mode": "direct",
+    "source_line": "### は (wa) — Topic Marker"
+  },
+  {
+    "filename": "particle-002-watashi-wa-gakusei-desu.mp3",
+    "text": "私は学生です。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 10,
+    "anchor_line": 10,
+    "insert_mode": "direct",
+    "source_line": "- 私は学生です。 (Watashi wa gakusei desu.) — \"I am a student.\""
+  },
+  {
+    "filename": "particle-003-kore-wa-hon-desu.mp3",
+    "text": "これは本です。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 11,
+    "anchor_line": 11,
+    "insert_mode": "direct",
+    "source_line": "- これは本です。 (Kore wa hon desu.) — \"This is a book.\""
+  },
+  {
+    "filename": "particle-004-ga.mp3",
+    "text": "が",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 13,
+    "anchor_line": 13,
+    "insert_mode": "direct",
+    "source_line": "### が (ga) — Subject Marker"
+  },
+  {
+    "filename": "particle-005-ame-ga-futte-imasu.mp3",
+    "text": "雨が降っています。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 15,
+    "anchor_line": 15,
+    "insert_mode": "direct",
+    "source_line": "- 雨が降っています。 (Ame ga futte imasu.) — \"It's raining.\""
+  },
+  {
+    "filename": "particle-006-dare-ga-kimashita-ka.mp3",
+    "text": "誰が来ましたか。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 16,
+    "anchor_line": 16,
+    "insert_mode": "direct",
+    "source_line": "- 誰が来ましたか。 (Dare ga kimashita ka.) — \"Who came?\""
+  },
+  {
+    "filename": "particle-007-o.mp3",
+    "text": "を",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 18,
+    "anchor_line": 18,
+    "insert_mode": "direct",
+    "source_line": "### を (o) — Object Marker"
+  },
+  {
+    "filename": "particle-008-hon-o-yomimasu.mp3",
+    "text": "本を読みます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 20,
+    "anchor_line": 20,
+    "insert_mode": "direct",
+    "source_line": "- 本を読みます。 (Hon o yomimasu.) — \"I read a book.\""
+  },
+  {
+    "filename": "particle-009-kohi-o-nomimasu.mp3",
+    "text": "コーヒーを飲みます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 21,
+    "anchor_line": 21,
+    "insert_mode": "direct",
+    "source_line": "- コーヒーを飲みます。 (Kōhī o nomimasu.) — \"I drink coffee.\""
+  },
+  {
+    "filename": "particle-010-ni.mp3",
+    "text": "に",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 23,
+    "anchor_line": 23,
+    "insert_mode": "direct",
+    "source_line": "### に (ni) — Direction / Time / Indirect Object"
+  },
+  {
+    "filename": "particle-011-direction-gakkou-ni-iki-masu.mp3",
+    "text": "学校に行きます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 25,
+    "anchor_line": 25,
+    "insert_mode": "direct",
+    "source_line": "- **Direction:** 学校に行きます。 (Gakkō ni ikimasu.) — \"I go to school.\""
+  },
+  {
+    "filename": "particle-012-time-shichiji-ni-oki-masu.mp3",
+    "text": "七時に起きます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 26,
+    "anchor_line": 26,
+    "insert_mode": "direct",
+    "source_line": "- **Time:** 七時に起きます。 (Shichiji ni okimasu.) — \"I wake up at 7.\""
+  },
+  {
+    "filename": "particle-013-existence-heya-ni-neko-gaimasu.mp3",
+    "text": "部屋に猫がいます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 27,
+    "anchor_line": 27,
+    "insert_mode": "direct",
+    "source_line": "- **Existence:** 部屋に猫がいます。 (Heya ni neko ga imasu.) — \"There's a cat in the room.\""
+  },
+  {
+    "filename": "particle-014-indirect-object-tomodachi-niagemasu.mp3",
+    "text": "友達にあげます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 28,
+    "anchor_line": 28,
+    "insert_mode": "direct",
+    "source_line": "- **Indirect object:** 友達にあげます。 (Tomodachi ni agemasu.) — \"I give to my friend.\""
+  },
+  {
+    "filename": "particle-015-de.mp3",
+    "text": "で",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 29,
+    "anchor_line": 29,
+    "insert_mode": "direct",
+    "source_line": "### で (de) — Location of Action / Means"
+  },
+  {
+    "filename": "particle-016-location-toshokan-de-benkyou-shimasu.mp3",
+    "text": "図書館で勉強します。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 30,
+    "anchor_line": 30,
+    "insert_mode": "direct",
+    "source_line": "- **Location:** 図書館で勉強します。 (Toshokan de benkyō shimasu.) — \"I study at the library.\""
+  },
+  {
+    "filename": "particle-017-means-basu-de-iki-masu.mp3",
+    "text": "バスで行きます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 31,
+    "anchor_line": 31,
+    "insert_mode": "direct",
+    "source_line": "- **Means:** バスで行きます。 (Basu de ikimasu.) — \"I go by bus.\""
+  },
+  {
+    "filename": "particle-018-e.mp3",
+    "text": "へ",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 33,
+    "anchor_line": 33,
+    "insert_mode": "direct",
+    "source_line": "### へ (e) — Direction (toward)"
+  },
+  {
+    "filename": "particle-019-nihon-e-ikimasu.mp3",
+    "text": "日本へ行きます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 35,
+    "anchor_line": 35,
+    "insert_mode": "direct",
+    "source_line": "- 日本へ行きます。 (Nihon e ikimasu.) — \"I'm going to Japan.\""
+  },
+  {
+    "filename": "particle-020-audio.mp3",
+    "text": "と",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 37,
+    "anchor_line": 37,
+    "insert_mode": "direct",
+    "source_line": "### と (to) — And / With / Quotation"
+  },
+  {
+    "filename": "particle-021-tomodachi-iki-masu.mp3",
+    "text": "友達と行きます。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 39,
+    "anchor_line": 39,
+    "insert_mode": "direct",
+    "source_line": "- **With:** 友達と行きます。 (Tomodachi to ikimasu.) — \"I go with my friend.\""
+  },
+  {
+    "filename": "particle-022-quotation-iku-ii-mashita.mp3",
+    "text": "「行く」と言いました。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 40,
+    "anchor_line": 40,
+    "insert_mode": "direct",
+    "source_line": "- **Quotation:** 「行く」と言いました。 (\"Iku\" to iimashita.) — 'Said \"I'll go.\"'"
+  },
+  {
+    "filename": "particle-023-mo.mp3",
+    "text": "も",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 41,
+    "anchor_line": 41,
+    "insert_mode": "direct",
+    "source_line": "### も (mo) — Also / Too"
+  },
+  {
+    "filename": "particle-024-watashi-mo-gakusei-desu.mp3",
+    "text": "私も学生です。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 43,
+    "anchor_line": 43,
+    "insert_mode": "direct",
+    "source_line": "- 私も学生です。 (Watashi mo gakusei desu.) — \"I'm also a student.\""
+  },
+  {
+    "filename": "particle-025-kore-mo-ii-desu.mp3",
+    "text": "これもいいです。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 44,
+    "anchor_line": 44,
+    "insert_mode": "direct",
+    "source_line": "- これもいいです。 (Kore mo ii desu.) — \"This is also good.\""
+  },
+  {
+    "filename": "particle-026-no.mp3",
+    "text": "の",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 45,
+    "anchor_line": 45,
+    "insert_mode": "direct",
+    "source_line": "### の (no) — Possession / Modifier"
+  },
+  {
+    "filename": "particle-027-watashi-no-hon.mp3",
+    "text": "私の本",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 47,
+    "anchor_line": 47,
+    "insert_mode": "direct",
+    "source_line": "- 私の本 (watashi no hon) — \"my book\""
+  },
+  {
+    "filename": "particle-028-nihon-no-tabemono.mp3",
+    "text": "日本の食べ物",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 48,
+    "anchor_line": 48,
+    "insert_mode": "direct",
+    "source_line": "- 日本の食べ物 (Nihon no tabemono) — \"Japanese food\""
+  },
+  {
+    "filename": "particle-029-kara.mp3",
+    "text": "から",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 49,
+    "anchor_line": 49,
+    "insert_mode": "direct",
+    "source_line": "### から (kara) — From"
+  },
+  {
+    "filename": "particle-030-place-toukyou-kara-kima-shita.mp3",
+    "text": "東京から来ました。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 50,
+    "anchor_line": 50,
+    "insert_mode": "direct",
+    "source_line": "- **Place:** 東京から来ました。 (Tōkyō kara kimashita.) — \"I came from Tokyo.\""
+  },
+  {
+    "filename": "particle-031-time-kuji-karadesu.mp3",
+    "text": "九時からです。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 51,
+    "anchor_line": 51,
+    "insert_mode": "direct",
+    "source_line": "- **Time:** 九時からです。 (Kuji kara desu.) — \"It's from 9 o'clock.\""
+  },
+  {
+    "filename": "particle-032-made.mp3",
+    "text": "まで",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 52,
+    "anchor_line": 52,
+    "insert_mode": "direct",
+    "source_line": "### まで (made) — Until / Up to"
+  },
+  {
+    "filename": "particle-033-goji-made-desu.mp3",
+    "text": "五時までです。",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 53,
+    "anchor_line": 53,
+    "insert_mode": "direct",
+    "source_line": "- 五時までです。 (Goji made desu.) — \"It's until 5 o'clock.\""
+  },
+  {
+    "filename": "particle-034-tokyo-kara-osaka-made.mp3",
+    "text": "東京から大阪まで",
+    "page_key": "particles",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Particles.md",
+    "line_index": 54,
+    "anchor_line": 54,
+    "insert_mode": "direct",
+    "source_line": "- 東京から大阪まで (Tōkyō kara Ōsaka made) — \"From Tokyo to Osaka\""
+  },
+  {
+    "filename": "adj-001-okii.mp3",
+    "text": "大きい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 10,
+    "anchor_line": 10,
+    "insert_mode": "direct",
+    "source_line": "- 大きい (ōkii) — big"
+  },
+  {
+    "filename": "adj-002-chiisai.mp3",
+    "text": "小さい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 11,
+    "anchor_line": 11,
+    "insert_mode": "direct",
+    "source_line": "- 小さい (chiisai) — small"
+  },
+  {
+    "filename": "adj-003-atarashii.mp3",
+    "text": "新しい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 12,
+    "anchor_line": 12,
+    "insert_mode": "direct",
+    "source_line": "- 新しい (atarashii) — new"
+  },
+  {
+    "filename": "adj-004-furui.mp3",
+    "text": "古い",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 13,
+    "anchor_line": 13,
+    "insert_mode": "direct",
+    "source_line": "- 古い (furui) — old"
+  },
+  {
+    "filename": "adj-005-utsukushii.mp3",
+    "text": "美しい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 14,
+    "anchor_line": 14,
+    "insert_mode": "direct",
+    "source_line": "- 美しい (utsukushii) — beautiful"
+  },
+  {
+    "filename": "adj-006-oishii.mp3",
+    "text": "おいしい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 15,
+    "anchor_line": 15,
+    "insert_mode": "direct",
+    "source_line": "- おいしい (oishii) — delicious"
+  },
+  {
+    "filename": "adj-007-atsui.mp3",
+    "text": "暮い",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 16,
+    "anchor_line": 16,
+    "insert_mode": "direct",
+    "source_line": "- 暮い (atsui) — hot"
+  },
+  {
+    "filename": "adj-008-samui.mp3",
+    "text": "寒い",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 17,
+    "anchor_line": 17,
+    "insert_mode": "direct",
+    "source_line": "- 寒い (samui) — cold"
+  },
+  {
+    "filename": "adj-009-oishikunai.mp3",
+    "text": "おいしくない",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 22,
+    "anchor_line": 26,
+    "insert_mode": "table",
+    "source_line": "| Negative | Drop い, add くない | おいしくない (oishikunai) |"
+  },
+  {
+    "filename": "adj-010-oishikatta.mp3",
+    "text": "おいしかった",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 23,
+    "anchor_line": 26,
+    "insert_mode": "table",
+    "source_line": "| Past | Drop い, add かった | おいしかった (oishikatta) |"
+  },
+  {
+    "filename": "adj-011-oishikunakatta.mp3",
+    "text": "おいしくなかった",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 24,
+    "anchor_line": 26,
+    "insert_mode": "table",
+    "source_line": "| Past neg | Drop い, add くなかった | おいしくなかった |"
+  },
+  {
+    "filename": "adj-012-oishiku.mp3",
+    "text": "おいしく",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 25,
+    "anchor_line": 26,
+    "insert_mode": "table",
+    "source_line": "| Adverb | Drop い, add く | おいしく (oishiku) |"
+  },
+  {
+    "filename": "adj-013-oishii-desu.mp3",
+    "text": "おいしいです",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 26,
+    "anchor_line": 26,
+    "insert_mode": "table",
+    "source_line": "| Polite | Add です | おいしいです (oishii desu) |"
+  },
+  {
+    "filename": "adj-014-yokunai.mp3",
+    "text": "よくない",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 28,
+    "anchor_line": 28,
+    "insert_mode": "direct",
+    "source_line": "- よくない, よかった, よくなかった"
+  },
+  {
+    "filename": "adj-015-yokatta.mp3",
+    "text": "よかった",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 28,
+    "anchor_line": 28,
+    "insert_mode": "direct",
+    "source_line": "- よくない, よかった, よくなかった"
+  },
+  {
+    "filename": "adj-016-yokunakatta.mp3",
+    "text": "よくなかった",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 28,
+    "anchor_line": 28,
+    "insert_mode": "direct",
+    "source_line": "- よくない, よかった, よくなかった"
+  },
+  {
+    "filename": "adj-017-genki-na.mp3",
+    "text": "元気な",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 31,
+    "anchor_line": 31,
+    "insert_mode": "direct",
+    "source_line": "- 元気な (genki na) — energetic"
+  },
+  {
+    "filename": "adj-018-shizuka-na.mp3",
+    "text": "静かな",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 32,
+    "anchor_line": 32,
+    "insert_mode": "direct",
+    "source_line": "- 静かな (shizuka na) — quiet"
+  },
+  {
+    "filename": "adj-019-yumei-na.mp3",
+    "text": "有名な",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 33,
+    "anchor_line": 33,
+    "insert_mode": "direct",
+    "source_line": "- 有名な (yūmei na) — famous"
+  },
+  {
+    "filename": "adj-020-kirei-na.mp3",
+    "text": "綺麗な",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 34,
+    "anchor_line": 34,
+    "insert_mode": "direct",
+    "source_line": "- 綺麗な (kirei na) — beautiful/clean"
+  },
+  {
+    "filename": "adj-021-benri-na.mp3",
+    "text": "便利な",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 35,
+    "anchor_line": 35,
+    "insert_mode": "direct",
+    "source_line": "- 便利な (benri na) — convenient"
+  },
+  {
+    "filename": "adj-022-suki-na.mp3",
+    "text": "好きな",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 36,
+    "anchor_line": 36,
+    "insert_mode": "direct",
+    "source_line": "- 好きな (suki na) — liked/favorite"
+  },
+  {
+    "filename": "adj-023-kirai-na.mp3",
+    "text": "嫌いな",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 37,
+    "anchor_line": 37,
+    "insert_mode": "direct",
+    "source_line": "- 嫌いな (kirai na) — disliked"
+  },
+  {
+    "filename": "adj-024-taihen-na.mp3",
+    "text": "大変な",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 38,
+    "anchor_line": 38,
+    "insert_mode": "direct",
+    "source_line": "- 大変な (taihen na) — tough/terrible"
+  },
+  {
+    "filename": "adj-025-genki-na-hito.mp3",
+    "text": "元気な人",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 42,
+    "anchor_line": 47,
+    "insert_mode": "table",
+    "source_line": "| Before noun | + な | 元気な人 (genki na hito) |"
+  },
+  {
+    "filename": "adj-026-genki-desu.mp3",
+    "text": "元気です",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 43,
+    "anchor_line": 47,
+    "insert_mode": "table",
+    "source_line": "| Predicate | + です | 元気です (genki desu) |"
+  },
+  {
+    "filename": "adj-027-genki-ja-nai.mp3",
+    "text": "元気じゃない",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 44,
+    "anchor_line": 47,
+    "insert_mode": "table",
+    "source_line": "| Negative | + じゃない | 元気じゃない (genki ja nai) |"
+  },
+  {
+    "filename": "adj-028-genki-deshita.mp3",
+    "text": "元気でした",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 45,
+    "anchor_line": 47,
+    "insert_mode": "table",
+    "source_line": "| Past | + でした | 元気でした (genki deshita) |"
+  },
+  {
+    "filename": "adj-029-genki-janakatta.mp3",
+    "text": "元気じゃなかった",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 46,
+    "anchor_line": 47,
+    "insert_mode": "table",
+    "source_line": "| Past neg | + じゃなかった | 元気じゃなかった |"
+  },
+  {
+    "filename": "adj-030-genki-ni.mp3",
+    "text": "元気に",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 47,
+    "anchor_line": 47,
+    "insert_mode": "table",
+    "source_line": "| Adverb | + に | 元気に (genki ni) |"
+  },
+  {
+    "filename": "adj-031-kirei.mp3",
+    "text": "きれい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 49,
+    "anchor_line": 49,
+    "insert_mode": "direct",
+    "source_line": "- きれい (kirei) looks like an い-adj but is actually な-adj"
+  },
+  {
+    "filename": "adj-032-kirai.mp3",
+    "text": "嫌い",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 50,
+    "anchor_line": 50,
+    "insert_mode": "direct",
+    "source_line": "- 嫌い (kirai) also looks like い-adj but is な-adj"
+  },
+  {
+    "filename": "adj-033-cheap-delicious.mp3",
+    "text": "安くておいしい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 55,
+    "anchor_line": 56,
+    "insert_mode": "table",
+    "source_line": "| い-adj | Drop い, add くて | 安くておいしい (cheap and delicious) |"
+  },
+  {
+    "filename": "adj-034-quiet-beautiful.mp3",
+    "text": "静かできれい",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 56,
+    "anchor_line": 56,
+    "insert_mode": "table",
+    "source_line": "| な-adj | Add で | 静かできれい (quiet and beautiful) |"
+  },
+  {
+    "filename": "adj-035-inu-ha-neko-yori-ookii-desu.mp3",
+    "text": "犬は猫より大きいです",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 60,
+    "anchor_line": 62,
+    "insert_mode": "table",
+    "source_line": "| A is more ~ than B | Aは Bより ~ です | 犬は猫より大きいです |"
+  },
+  {
+    "filename": "adj-036-fujisan-ga-ichiban-takai-desu.mp3",
+    "text": "富士山が一番高いです",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 61,
+    "anchor_line": 62,
+    "insert_mode": "table",
+    "source_line": "| A is the most ~ | Aが一番 ~ です | 富士山が一番高いです |"
+  },
+  {
+    "filename": "adj-037-dochiraga-yasui-desuka.mp3",
+    "text": "どちらが安いですか",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 62,
+    "anchor_line": 62,
+    "insert_mode": "table",
+    "source_line": "| Which is more ~? | どちらが ~ ですか | どちらが安いですか |"
+  },
+  {
+    "filename": "adj-038-describe-things-around-you-using-both-i-na-adjectives.mp3",
+    "text": "Describe things around you using both い and な adjectives",
+    "page_key": "adjectives",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
+    "line_index": 65,
+    "anchor_line": 65,
+    "insert_mode": "direct",
+    "source_line": "- Describe things around you using both い and な adjectives",
+    "skip_embed": true
+  },
+  {
+    "filename": "verb-001-kaku.mp3",
+    "text": "書く",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 9,
+    "anchor_line": 9,
+    "insert_mode": "direct",
+    "source_line": "- End in an u-sound consonant + u: 書く (kaku), 話す (hanasu), 買う (kau)"
+  },
+  {
+    "filename": "verb-002-hanasu.mp3",
+    "text": "話す",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 9,
+    "anchor_line": 9,
+    "insert_mode": "direct",
+    "source_line": "- End in an u-sound consonant + u: 書く (kaku), 話す (hanasu), 買う (kau)"
+  },
+  {
+    "filename": "verb-003-kau.mp3",
+    "text": "買う",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 9,
+    "anchor_line": 9,
+    "insert_mode": "direct",
+    "source_line": "- End in an u-sound consonant + u: 書く (kaku), 話す (hanasu), 買う (kau)"
+  },
+  {
+    "filename": "verb-004-taberu.mp3",
+    "text": "食べる",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 12,
+    "anchor_line": 12,
+    "insert_mode": "direct",
+    "source_line": "- End in -iru or -eru: 食べる (taberu), 見る (miru), 起きる (okiru)"
+  },
+  {
+    "filename": "verb-005-miru.mp3",
+    "text": "見る",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 12,
+    "anchor_line": 12,
+    "insert_mode": "direct",
+    "source_line": "- End in -iru or -eru: 食べる (taberu), 見る (miru), 起きる (okiru)"
+  },
+  {
+    "filename": "verb-006-okiru.mp3",
+    "text": "起きる",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 12,
+    "anchor_line": 12,
+    "insert_mode": "direct",
+    "source_line": "- End in -iru or -eru: 食べる (taberu), 見る (miru), 起きる (okiru)"
+  },
+  {
+    "filename": "verb-007-suru.mp3",
+    "text": "する",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 15,
+    "anchor_line": 15,
+    "insert_mode": "direct",
+    "source_line": "- Only two verbs: する (suru, to do) and くる (kuru, to come)"
+  },
+  {
+    "filename": "verb-008-kuru.mp3",
+    "text": "くる",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 15,
+    "anchor_line": 15,
+    "insert_mode": "direct",
+    "source_line": "- Only two verbs: する (suru, to do) and くる (kuru, to come)"
+  },
+  {
+    "filename": "verb-009-masu.mp3",
+    "text": "ます",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 18,
+    "anchor_line": 18,
+    "insert_mode": "direct",
+    "source_line": "### 1. ます-form (Polite Present/Future)"
+  },
+  {
+    "filename": "verb-010-kakimasu.mp3",
+    "text": "書きます",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 21,
+    "anchor_line": 23,
+    "insert_mode": "table",
+    "source_line": "| G1 | Change final -u to -imasu | 書く → 書きます (kakimasu) |"
+  },
+  {
+    "filename": "verb-011-tabemasu.mp3",
+    "text": "食べます",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 22,
+    "anchor_line": 23,
+    "insert_mode": "table",
+    "source_line": "| G2 | Drop る, add ます | 食べる → 食べます (tabemasu) |"
+  },
+  {
+    "filename": "verb-012-shimasu.mp3",
+    "text": "します",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 23,
+    "anchor_line": 23,
+    "insert_mode": "table",
+    "source_line": "| Irr | する → します, くる → きます | |"
+  },
+  {
+    "filename": "verb-013-kimasu.mp3",
+    "text": "きます",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 23,
+    "anchor_line": 23,
+    "insert_mode": "table",
+    "source_line": "| Irr | する → します, くる → きます | |"
+  },
+  {
+    "filename": "verb-014-te.mp3",
+    "text": "て",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 25,
+    "anchor_line": 25,
+    "insert_mode": "direct",
+    "source_line": "### 2. て-form (Connective — THE most important form)"
+  },
+  {
+    "filename": "verb-015-ite.mp3",
+    "text": "いて",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 30,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| く | いて | 書く → 書いて (kaite) |"
+  },
+  {
+    "filename": "verb-016-kaite.mp3",
+    "text": "書いて",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 30,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| く | いて | 書く → 書いて (kaite) |"
+  },
+  {
+    "filename": "verb-017-ide.mp3",
+    "text": "いで",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 31,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| ぐ | いで | 泣ぐ → 泣いで (oyoide) |"
+  },
+  {
+    "filename": "verb-018-kyuu-gu.mp3",
+    "text": "泣ぐ",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 31,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| ぐ | いで | 泣ぐ → 泣いで (oyoide) |"
+  },
+  {
+    "filename": "verb-019-oyoide.mp3",
+    "text": "泣いで",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 31,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| ぐ | いで | 泣ぐ → 泣いで (oyoide) |"
+  },
+  {
+    "filename": "verb-020-shite.mp3",
+    "text": "して",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 32,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| す | して | 話す → 話して (hanashite) |"
+  },
+  {
+    "filename": "verb-021-hanashite.mp3",
+    "text": "話して",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 32,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| す | して | 話す → 話して (hanashite) |"
+  },
+  {
+    "filename": "verb-022-nde.mp3",
+    "text": "んで",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 33,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| ぶ/む/ぬ | んで | 飛ぶ → 飛んで (tonde) |"
+  },
+  {
+    "filename": "verb-023-tobu.mp3",
+    "text": "飛ぶ",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 33,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| ぶ/む/ぬ | んで | 飛ぶ → 飛んで (tonde) |"
+  },
+  {
+    "filename": "verb-024-tonde.mp3",
+    "text": "飛んで",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 33,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| ぶ/む/ぬ | んで | 飛ぶ → 飛んで (tonde) |"
+  },
+  {
+    "filename": "verb-025-tte.mp3",
+    "text": "って",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 34,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| つ/る/う | って | 待つ → 待って (matte) |"
+  },
+  {
+    "filename": "verb-026-matsu.mp3",
+    "text": "待つ",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 34,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| つ/る/う | って | 待つ → 待って (matte) |"
+  },
+  {
+    "filename": "verb-027-matte.mp3",
+    "text": "待って",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 34,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| つ/る/う | って | 待つ → 待って (matte) |"
+  },
+  {
+    "filename": "verb-028-iku.mp3",
+    "text": "行く",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 35,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| Exception: 行く | 行って | (itte, NOT iite) |"
+  },
+  {
+    "filename": "verb-029-itte.mp3",
+    "text": "行って",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 35,
+    "anchor_line": 35,
+    "insert_mode": "table",
+    "source_line": "| Exception: 行く | 行って | (itte, NOT iite) |"
+  },
+  {
+    "filename": "verb-030-teimasu.mp3",
+    "text": "ています",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 41,
+    "anchor_line": 41,
+    "insert_mode": "direct",
+    "source_line": "- ています = Currently doing ~ (食べています = I am eating)"
+  },
+  {
+    "filename": "verb-031-tabete-imasu.mp3",
+    "text": "食べています",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 41,
+    "anchor_line": 41,
+    "insert_mode": "direct",
+    "source_line": "- ています = Currently doing ~ (食べています = I am eating)"
+  },
+  {
+    "filename": "verb-032-tehaikemasen.mp3",
+    "text": "てはいけません",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 44,
+    "anchor_line": 44,
+    "insert_mode": "direct",
+    "source_line": "- てはいけません = Must not ~ (食べてはいけません = Must not eat)"
+  },
+  {
+    "filename": "verb-033-tabete-haikemasen.mp3",
+    "text": "食べてはいけません",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 44,
+    "anchor_line": 44,
+    "insert_mode": "direct",
+    "source_line": "- てはいけません = Must not ~ (食べてはいけません = Must not eat)"
+  },
+  {
+    "filename": "verb-034-nai.mp3",
+    "text": "ない",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 45,
+    "anchor_line": 45,
+    "insert_mode": "direct",
+    "source_line": "### 3. ない-form (Negative Plain)"
+  },
+  {
+    "filename": "verb-035-kakanai.mp3",
+    "text": "書かない",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 48,
+    "anchor_line": 51,
+    "insert_mode": "table",
+    "source_line": "| G1 | Change final -u to -anai | 書く → 書かない (kakanai) |"
+  },
+  {
+    "filename": "verb-036-tabenai.mp3",
+    "text": "食べない",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 49,
+    "anchor_line": 51,
+    "insert_mode": "table",
+    "source_line": "| G2 | Drop る, add ない | 食べる → 食べない (tabenai) |"
+  },
+  {
+    "filename": "verb-037-shinai.mp3",
+    "text": "しない",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 50,
+    "anchor_line": 51,
+    "insert_mode": "table",
+    "source_line": "| Irr | する → しない, くる → こない | |"
+  },
+  {
+    "filename": "verb-038-konai.mp3",
+    "text": "こない",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 50,
+    "anchor_line": 51,
+    "insert_mode": "table",
+    "source_line": "| Irr | する → しない, くる → こない | |"
+  },
+  {
+    "filename": "verb-039-aru.mp3",
+    "text": "ある",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 51,
+    "anchor_line": 51,
+    "insert_mode": "table",
+    "source_line": "| Exception | ある → ない (NOT あらない) | |"
+  },
+  {
+    "filename": "verb-040-ta.mp3",
+    "text": "た",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 52,
+    "anchor_line": 52,
+    "insert_mode": "direct",
+    "source_line": "### 4. た-form (Past Plain)"
+  },
+  {
+    "filename": "verb-041-kaita.mp3",
+    "text": "書いた",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 54,
+    "anchor_line": 54,
+    "insert_mode": "direct",
+    "source_line": "- 書く → 書いた (kaita)"
+  },
+  {
+    "filename": "verb-042-tabeta.mp3",
+    "text": "食べた",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 55,
+    "anchor_line": 55,
+    "insert_mode": "direct",
+    "source_line": "- 食べる → 食べた (tabeta)"
+  },
+  {
+    "filename": "verb-043-kaki-masen.mp3",
+    "text": "書きません",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 62,
+    "anchor_line": 64,
+    "insert_mode": "table",
+    "source_line": "| 書く | 書きます | 書きません | 書きました | 書く | 書かない | 書いた |"
+  },
+  {
+    "filename": "verb-044-kaki-mashita.mp3",
+    "text": "書きました",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 62,
+    "anchor_line": 64,
+    "insert_mode": "table",
+    "source_line": "| 書く | 書きます | 書きません | 書きました | 書く | 書かない | 書いた |"
+  },
+  {
+    "filename": "verb-045-tabe-masen.mp3",
+    "text": "食べません",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 63,
+    "anchor_line": 64,
+    "insert_mode": "table",
+    "source_line": "| 食べる | 食べます | 食べません | 食べました | 食べる | 食べない | 食べた |"
+  },
+  {
+    "filename": "verb-046-tabe-mashita.mp3",
+    "text": "食べました",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 63,
+    "anchor_line": 64,
+    "insert_mode": "table",
+    "source_line": "| 食べる | 食べます | 食べません | 食べました | 食べる | 食べない | 食べた |"
+  },
+  {
+    "filename": "verb-047-shimasen.mp3",
+    "text": "しません",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 64,
+    "anchor_line": 64,
+    "insert_mode": "table",
+    "source_line": "| する | します | しません | しました | する | しない | した |"
+  },
+  {
+    "filename": "verb-048-shimashita.mp3",
+    "text": "しました",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 64,
+    "anchor_line": 64,
+    "insert_mode": "table",
+    "source_line": "| する | します | しません | しました | する | しない | した |"
+  },
+  {
+    "filename": "verb-049-shita.mp3",
+    "text": "した",
+    "page_key": "verb_forms",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
+    "line_index": 64,
+    "anchor_line": 64,
+    "insert_mode": "table",
+    "source_line": "| する | します | しません | しました | する | しない | した |"
+  },
+  {
+    "filename": "time-001-ji.mp3",
+    "text": "時",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 12,
+    "anchor_line": 12,
+    "insert_mode": "direct",
+    "source_line": "### Hours (時 ji)"
+  },
+  {
+    "filename": "time-002-ichiji.mp3",
+    "text": "一時",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 15,
+    "anchor_line": 18,
+    "insert_mode": "table",
+    "source_line": "| 1:00 | 一時 | ichiji | |"
+  },
+  {
+    "filename": "time-003-yoji.mp3",
+    "text": "四時",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 16,
+    "anchor_line": 18,
+    "insert_mode": "table",
+    "source_line": "| 4:00 | 四時 | **yoji** | Not shiji |"
+  },
+  {
+    "filename": "time-004-shichiji.mp3",
+    "text": "七時",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 17,
+    "anchor_line": 18,
+    "insert_mode": "table",
+    "source_line": "| 7:00 | 七時 | **shichiji** | |"
+  },
+  {
+    "filename": "time-005-kuji.mp3",
+    "text": "九時",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 18,
+    "anchor_line": 18,
+    "insert_mode": "table",
+    "source_line": "| 9:00 | 九時 | **kuji** | |"
+  },
+  {
+    "filename": "time-006-gozen.mp3",
+    "text": "午前",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 20,
+    "anchor_line": 20,
+    "insert_mode": "direct",
+    "source_line": "午前 (gozen) = AM, 午後 (gogo) = PM. Placed BEFORE the time."
+  },
+  {
+    "filename": "time-007-gogo.mp3",
+    "text": "午後",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 20,
+    "anchor_line": 20,
+    "insert_mode": "direct",
+    "source_line": "午前 (gozen) = AM, 午後 (gogo) = PM. Placed BEFORE the time."
+  },
+  {
+    "filename": "time-008-fun.mp3",
+    "text": "分",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 22,
+    "anchor_line": 22,
+    "insert_mode": "direct",
+    "source_line": "### Minutes (分 fun/pun)"
+  },
+  {
+    "filename": "time-009-ippun.mp3",
+    "text": "いっぷん",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 26,
+    "anchor_line": 28,
+    "insert_mode": "table",
+    "source_line": "| 1 | いっぷん | 6 | ろっぷん |"
+  },
+  {
+    "filename": "time-010-roppun.mp3",
+    "text": "ろっぷん",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 26,
+    "anchor_line": 28,
+    "insert_mode": "table",
+    "source_line": "| 1 | いっぷん | 6 | ろっぷん |"
+  },
+  {
+    "filename": "time-011-sanpun.mp3",
+    "text": "さんぷん",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 27,
+    "anchor_line": 28,
+    "insert_mode": "table",
+    "source_line": "| 3 | さんぷん | 8 | はっぷん |"
+  },
+  {
+    "filename": "time-012-happun.mp3",
+    "text": "はっぷん",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 27,
+    "anchor_line": 28,
+    "insert_mode": "table",
+    "source_line": "| 3 | さんぷん | 8 | はっぷん |"
+  },
+  {
+    "filename": "time-013-gofun.mp3",
+    "text": "ごふん",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 28,
+    "anchor_line": 28,
+    "insert_mode": "table",
+    "source_line": "| 5 | ごふん | 10 | じゅっぷん |"
+  },
+  {
+    "filename": "time-014-juppun.mp3",
+    "text": "じゅっぷん",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 28,
+    "anchor_line": 28,
+    "insert_mode": "table",
+    "source_line": "| 5 | ごふん | 10 | じゅっぷん |"
+  },
+  {
+    "filename": "time-015-han.mp3",
+    "text": "半",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 30,
+    "anchor_line": 30,
+    "insert_mode": "direct",
+    "source_line": "### Half (半 han)"
+  },
+  {
+    "filename": "time-016-sanji-han.mp3",
+    "text": "三時半",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 31,
+    "anchor_line": 31,
+    "insert_mode": "direct",
+    "source_line": "3:30 = 三時半 (sanji han)"
+  },
+  {
+    "filename": "time-017-tsuitachi.mp3",
+    "text": "ついたち",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 37,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 1st | ついたち | 6th | むいか |"
+  },
+  {
+    "filename": "time-018-muika.mp3",
+    "text": "むいか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 37,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 1st | ついたち | 6th | むいか |"
+  },
+  {
+    "filename": "time-019-futsuka.mp3",
+    "text": "ふつか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 38,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 2nd | ふつか | 7th | なのか |"
+  },
+  {
+    "filename": "time-020-nanoka.mp3",
+    "text": "なのか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 38,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 2nd | ふつか | 7th | なのか |"
+  },
+  {
+    "filename": "time-021-mikka.mp3",
+    "text": "みっか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 39,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 3rd | みっか | 8th | ようか |"
+  },
+  {
+    "filename": "time-022-youka.mp3",
+    "text": "ようか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 39,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 3rd | みっか | 8th | ようか |"
+  },
+  {
+    "filename": "time-023-yokka.mp3",
+    "text": "よっか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 40,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 4th | よっか | 9th | ここのか |"
+  },
+  {
+    "filename": "time-024-kokonoka.mp3",
+    "text": "ここのか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 40,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 4th | よっか | 9th | ここのか |"
+  },
+  {
+    "filename": "time-025-itsuka.mp3",
+    "text": "いつか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 41,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 5th | いつか | 10th | とおか |"
+  },
+  {
+    "filename": "time-026-tooka.mp3",
+    "text": "とおか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 41,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 5th | いつか | 10th | とおか |"
+  },
+  {
+    "filename": "time-027-hatsuka.mp3",
+    "text": "はつか",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 42,
+    "anchor_line": 42,
+    "insert_mode": "table",
+    "source_line": "| 20th | はつか | | |"
+  },
+  {
+    "filename": "time-028-tsu.mp3",
+    "text": "つ",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 47,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| つ (tsu) | General objects | 一つ (hitotsu), 二つ (futatsu) |"
+  },
+  {
+    "filename": "time-029-hitotsu.mp3",
+    "text": "一つ",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 47,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| つ (tsu) | General objects | 一つ (hitotsu), 二つ (futatsu) |"
+  },
+  {
+    "filename": "time-030-futatsu.mp3",
+    "text": "二つ",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 47,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| つ (tsu) | General objects | 一つ (hitotsu), 二つ (futatsu) |"
+  },
+  {
+    "filename": "time-031-nin.mp3",
+    "text": "人",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 48,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 人 (nin) | People | 一人 (hitori), 二人 (futari), 三人 (sannin) |"
+  },
+  {
+    "filename": "time-032-hitori.mp3",
+    "text": "一人",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 48,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 人 (nin) | People | 一人 (hitori), 二人 (futari), 三人 (sannin) |"
+  },
+  {
+    "filename": "time-033-futari.mp3",
+    "text": "二人",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 48,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 人 (nin) | People | 一人 (hitori), 二人 (futari), 三人 (sannin) |"
+  },
+  {
+    "filename": "time-034-sannin.mp3",
+    "text": "三人",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 48,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 人 (nin) | People | 一人 (hitori), 二人 (futari), 三人 (sannin) |"
+  },
+  {
+    "filename": "time-035-hon.mp3",
+    "text": "本",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 49,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 本 (hon) | Long objects | 一本 (ippon), 三本 (sanbon) |"
+  },
+  {
+    "filename": "time-036-ippon.mp3",
+    "text": "一本",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 49,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 本 (hon) | Long objects | 一本 (ippon), 三本 (sanbon) |"
+  },
+  {
+    "filename": "time-037-sanbon.mp3",
+    "text": "三本",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 49,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 本 (hon) | Long objects | 一本 (ippon), 三本 (sanbon) |"
+  },
+  {
+    "filename": "time-038-mai.mp3",
+    "text": "枚",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 50,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 枚 (mai) | Flat objects | 一枚 (ichimai) |"
+  },
+  {
+    "filename": "time-039-ichimai.mp3",
+    "text": "一枚",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 50,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 枚 (mai) | Flat objects | 一枚 (ichimai) |"
+  },
+  {
+    "filename": "time-040-hai.mp3",
+    "text": "杯",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 51,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 杯 (hai) | Cups/glasses | 一杯 (ippai), 三杯 (sanbai) |"
+  },
+  {
+    "filename": "time-041-ippai.mp3",
+    "text": "一杯",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 51,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 杯 (hai) | Cups/glasses | 一杯 (ippai), 三杯 (sanbai) |"
+  },
+  {
+    "filename": "time-042-sanbai.mp3",
+    "text": "三杯",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 51,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 杯 (hai) | Cups/glasses | 一杯 (ippai), 三杯 (sanbai) |"
+  },
+  {
+    "filename": "time-043-satsu.mp3",
+    "text": "冊",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 52,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 冊 (satsu) | Books | 一冊 (issatsu) |"
+  },
+  {
+    "filename": "time-044-issatsu.mp3",
+    "text": "一冊",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 52,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 冊 (satsu) | Books | 一冊 (issatsu) |"
+  },
+  {
+    "filename": "time-045-dai.mp3",
+    "text": "台",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 53,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 台 (dai) | Machines | 一台 (ichidai) |"
+  },
+  {
+    "filename": "time-046-ichidai.mp3",
+    "text": "一台",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 53,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 台 (dai) | Machines | 一台 (ichidai) |"
+  },
+  {
+    "filename": "time-047-hiki.mp3",
+    "text": "匹",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 54,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 匹 (hiki) | Small animals | 一匹 (ippiki) |"
+  },
+  {
+    "filename": "time-048-ippiki.mp3",
+    "text": "一匹",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 54,
+    "anchor_line": 54,
+    "insert_mode": "table",
+    "source_line": "| 匹 (hiki) | Small animals | 一匹 (ippiki) |"
+  },
+  {
+    "filename": "time-049-ichijikan.mp3",
+    "text": "一時間",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 59,
+    "anchor_line": 62,
+    "insert_mode": "table",
+    "source_line": "| 一時間 (ichijikan) | one hour |"
+  },
+  {
+    "filename": "time-050-isshukan.mp3",
+    "text": "一週間",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 60,
+    "anchor_line": 62,
+    "insert_mode": "table",
+    "source_line": "| 一週間 (isshūkan) | one week |"
+  },
+  {
+    "filename": "time-051-ikkagetsu.mp3",
+    "text": "一か月",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 61,
+    "anchor_line": 62,
+    "insert_mode": "table",
+    "source_line": "| 一か月 (ikkagetsu) | one month |"
+  },
+  {
+    "filename": "time-052-ichinenkan.mp3",
+    "text": "一年間",
+    "page_key": "time_counting",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Time and Counting.md",
+    "line_index": 62,
+    "anchor_line": 62,
+    "insert_mode": "table",
+    "source_line": "| 一年間 (ichinenkan) | one year |"
+  },
+  {
+    "filename": "sentpat-001-jaarimasen.mp3",
+    "text": "じゃありません",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 16,
+    "anchor_line": 16,
+    "insert_mode": "direct",
+    "source_line": "- **Negative:** じゃありません / じゃないです"
+  },
+  {
+    "filename": "sentpat-002-janaidesu.mp3",
+    "text": "じゃないです",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 16,
+    "anchor_line": 16,
+    "insert_mode": "direct",
+    "source_line": "- **Negative:** じゃありません / じゃないです"
+  },
+  {
+    "filename": "sentpat-003-deshita.mp3",
+    "text": "でした",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 17,
+    "anchor_line": 17,
+    "insert_mode": "direct",
+    "source_line": "- **Past:** でした"
+  },
+  {
+    "filename": "sentpat-004-jaarimasendeshita.mp3",
+    "text": "じゃありませんでした",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 18,
+    "anchor_line": 18,
+    "insert_mode": "direct",
+    "source_line": "- **Past negative:** じゃありませんでした"
+  },
+  {
+    "filename": "sentpat-005-nani-what.mp3",
+    "text": "何",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 24,
+    "anchor_line": 24,
+    "insert_mode": "direct",
+    "source_line": "- **Question words:** 何 (nani/what), 誰 (dare/who), どこ (doko/where), いつ (itsu/when), なぜ (naze/why), どう (dō/how)"
+  },
+  {
+    "filename": "sentpat-006-dare-who.mp3",
+    "text": "誰",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 24,
+    "anchor_line": 24,
+    "insert_mode": "direct",
+    "source_line": "- **Question words:** 何 (nani/what), 誰 (dare/who), どこ (doko/where), いつ (itsu/when), なぜ (naze/why), どう (dō/how)"
+  },
+  {
+    "filename": "sentpat-007-doko-where.mp3",
+    "text": "どこ",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 24,
+    "anchor_line": 24,
+    "insert_mode": "direct",
+    "source_line": "- **Question words:** 何 (nani/what), 誰 (dare/who), どこ (doko/where), いつ (itsu/when), なぜ (naze/why), どう (dō/how)"
+  },
+  {
+    "filename": "sentpat-008-itsu-when.mp3",
+    "text": "いつ",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 24,
+    "anchor_line": 24,
+    "insert_mode": "direct",
+    "source_line": "- **Question words:** 何 (nani/what), 誰 (dare/who), どこ (doko/where), いつ (itsu/when), なぜ (naze/why), どう (dō/how)"
+  },
+  {
+    "filename": "sentpat-009-naze-why.mp3",
+    "text": "なぜ",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 24,
+    "anchor_line": 24,
+    "insert_mode": "direct",
+    "source_line": "- **Question words:** 何 (nani/what), 誰 (dare/who), どこ (doko/where), いつ (itsu/when), なぜ (naze/why), どう (dō/how)"
+  },
+  {
+    "filename": "sentpat-010-how.mp3",
+    "text": "どう",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 24,
+    "anchor_line": 24,
+    "insert_mode": "direct",
+    "source_line": "- **Question words:** 何 (nani/what), 誰 (dare/who), どこ (doko/where), いつ (itsu/when), なぜ (naze/why), どう (dō/how)"
+  },
+  {
+    "filename": "sentpat-011-imasu.mp3",
+    "text": "います",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 30,
+    "anchor_line": 30,
+    "insert_mode": "direct",
+    "source_line": "## Existence: います / あります"
+  },
+  {
+    "filename": "sentpat-012-arimasu.mp3",
+    "text": "あります",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 30,
+    "anchor_line": 30,
+    "insert_mode": "direct",
+    "source_line": "## Existence: います / あります"
+  },
+  {
+    "filename": "sentpat-013-hoshii.mp3",
+    "text": "ほしい",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 37,
+    "anchor_line": 37,
+    "insert_mode": "direct",
+    "source_line": "## Wanting: ほしい / たい"
+  },
+  {
+    "filename": "sentpat-014-tai.mp3",
+    "text": "たい",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 37,
+    "anchor_line": 37,
+    "insert_mode": "direct",
+    "source_line": "## Wanting: ほしい / たい"
+  },
+  {
+    "filename": "sentpat-015-masenka.mp3",
+    "text": "ませんか",
+    "page_key": "sentence_patterns",
+    "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Sentence Patterns.md",
+    "line_index": 54,
+    "anchor_line": 54,
+    "insert_mode": "direct",
+    "source_line": "## Invitations: ませんか"
+  }
+]

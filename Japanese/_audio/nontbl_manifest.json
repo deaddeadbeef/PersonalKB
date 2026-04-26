@@ -1,0 +1,202 @@
+[
+  {
+    "filename": "nontbl-001-hajimemashite.mp3",
+    "text": "はじめまして"
+  },
+  {
+    "filename": "nontbl-002-desu.mp3",
+    "text": "[Name]です"
+  },
+  {
+    "filename": "nontbl-003-kara-kimashita.mp3",
+    "text": "[Country]から来ました"
+  },
+  {
+    "filename": "nontbl-004-shumi-wa-desu.mp3",
+    "text": "趣味は[hobby]です"
+  },
+  {
+    "filename": "nontbl-005-yoroshiku-onegaishimasu.mp3",
+    "text": "よろしくおねがいします"
+  },
+  {
+    "filename": "nontbl-006-to-moushimasu.mp3",
+    "text": "[Name]と申します"
+  },
+  {
+    "filename": "nontbl-007-hataraiteorimasu.mp3",
+    "text": "[Company]の[Department]で働いております"
+  },
+  {
+    "filename": "nontbl-008-nihongo-benkyouchuu.mp3",
+    "text": "日本語はまだ勉強中ですが、がんばります"
+  },
+  {
+    "filename": "nontbl-009-douzo-yoroshiku.mp3",
+    "text": "どうぞよろしくおねがいいたします"
+  },
+  {
+    "filename": "nontbl-010-osewa-ni-natte.mp3",
+    "text": "お世話になっております"
+  },
+  {
+    "filename": "nontbl-011-oisogashii-tokoro.mp3",
+    "text": "お忙しいところ恐縮ですが"
+  },
+  {
+    "filename": "nontbl-012-gokakunin-nohodo.mp3",
+    "text": "ご確認のほど、よろしくおねがいいたします"
+  },
+  {
+    "filename": "nontbl-013-onaka-ga-suita.mp3",
+    "text": "おなかがすいた"
+  },
+  {
+    "filename": "nontbl-014-nodo-ga-kawaita.mp3",
+    "text": "のどがかわいた"
+  },
+  {
+    "filename": "nontbl-015-okawari.mp3",
+    "text": "おかわり"
+  },
+  {
+    "filename": "nontbl-016-biiru-nihai.mp3",
+    "text": "ビールを二杯ください"
+  },
+  {
+    "filename": "nontbl-017-sannin-no-gakusei.mp3",
+    "text": "三人の学生"
+  },
+  {
+    "filename": "nontbl-018-ame-ga-zaazaa.mp3",
+    "text": "雨がザーザーと降っている"
+  },
+  {
+    "filename": "nontbl-019-pikapika-na-hoshi.mp3",
+    "text": "ピカピカな星"
+  },
+  {
+    "filename": "nontbl-020-nikoniko-warau.mp3",
+    "text": "ニコニコに笑う"
+  },
+  {
+    "filename": "nontbl-021-dokidoki-suru.mp3",
+    "text": "ドキドキする"
+  },
+  {
+    "filename": "nontbl-022-kite-come.mp3",
+    "text": "きて"
+  },
+  {
+    "filename": "nontbl-023-kitte-stamp.mp3",
+    "text": "きって"
+  },
+  {
+    "filename": "nontbl-024-desu-whispered.mp3",
+    "text": "です"
+  },
+  {
+    "filename": "nontbl-025-shita-whispered.mp3",
+    "text": "した"
+  },
+  {
+    "filename": "nontbl-026-yama.mp3",
+    "text": "山"
+  },
+  {
+    "filename": "nontbl-027-taberu.mp3",
+    "text": "食べる"
+  },
+  {
+    "filename": "nontbl-028-utsukushii.mp3",
+    "text": "美しい"
+  },
+  {
+    "filename": "nontbl-029-konpyuutaa.mp3",
+    "text": "コンピューター"
+  },
+  {
+    "filename": "nontbl-030-arubaito.mp3",
+    "text": "アルバイト"
+  },
+  {
+    "filename": "nontbl-031-toshokan.mp3",
+    "text": "図書館"
+  },
+  {
+    "filename": "nontbl-032-kagaku.mp3",
+    "text": "科学"
+  },
+  {
+    "filename": "nontbl-033-keizai.mp3",
+    "text": "経済"
+  },
+  {
+    "filename": "nontbl-034-keigo.mp3",
+    "text": "敬語"
+  },
+  {
+    "filename": "nontbl-035-sonkeigo.mp3",
+    "text": "尊敬語"
+  },
+  {
+    "filename": "nontbl-036-kenjougo.mp3",
+    "text": "謙譲語"
+  },
+  {
+    "filename": "nontbl-037-teineigo.mp3",
+    "text": "丁寧語"
+  },
+  {
+    "filename": "nontbl-038-uchi.mp3",
+    "text": "内"
+  },
+  {
+    "filename": "nontbl-039-soto.mp3",
+    "text": "外"
+  },
+  {
+    "filename": "nontbl-040-wa-ha-particle.mp3",
+    "text": "Xは Yです"
+  },
+  {
+    "filename": "nontbl-041-imasu-arimasu.mp3",
+    "text": "います。あります"
+  },
+  {
+    "filename": "nontbl-042-tabete-form.mp3",
+    "text": "食べて"
+  },
+  {
+    "filename": "nontbl-043-kaite-form.mp3",
+    "text": "書いて"
+  },
+  {
+    "filename": "nontbl-044-josuushi.mp3",
+    "text": "助数詞"
+  },
+  {
+    "filename": "nontbl-045-jiko-shoukai.mp3",
+    "text": "自己紹介"
+  },
+  {
+    "filename": "nontbl-046-bikago.mp3",
+    "text": "美化語"
+  },
+  {
+    "filename": "nontbl-047-tatemae.mp3",
+    "text": "建前"
+  },
+  {
+    "filename": "nontbl-048-honne.mp3",
+    "text": "本音"
+  },
+  {
+    "filename": "nontbl-049-wa-harmony.mp3",
+    "text": "和"
+  },
+  {
+    "filename": "nontbl-050-amae.mp3",
+    "text": "甘え"
+  }
+]

@@ -1,0 +1,1186 @@
+[
+  {
+    "filename": "gap-001-phrase.mp3",
+    "text": "もらう"
+  },
+  {
+    "filename": "gap-002-phrase.mp3",
+    "text": "尊敬語"
+  },
+  {
+    "filename": "gap-003-phrase.mp3",
+    "text": "謙譲語"
+  },
+  {
+    "filename": "gap-004-phrase.mp3",
+    "text": "丁寧語"
+  },
+  {
+    "filename": "gap-005-Plain-().mp3",
+    "text": "Plain (タメ口)"
+  },
+  {
+    "filename": "gap-006-.mp3",
+    "text": "行く/来る"
+  },
+  {
+    "filename": "gap-007-(oishii).mp3",
+    "text": "おいしい (oishii)"
+  },
+  {
+    "filename": "gap-008-Drop-,-add.mp3",
+    "text": "Drop い, add くない"
+  },
+  {
+    "filename": "gap-009-Drop-,-add.mp3",
+    "text": "Drop い, add かった"
+  },
+  {
+    "filename": "gap-010-Drop-,-add.mp3",
+    "text": "Drop い, add くなかった"
+  },
+  {
+    "filename": "gap-011-Drop-,-add.mp3",
+    "text": "Drop い, add く"
+  },
+  {
+    "filename": "gap-012-Add.mp3",
+    "text": "Add です"
+  },
+  {
+    "filename": "gap-013-+.mp3",
+    "text": "+ な"
+  },
+  {
+    "filename": "gap-014-+.mp3",
+    "text": "+ です"
+  },
+  {
+    "filename": "gap-015-+.mp3",
+    "text": "+ じゃない"
+  },
+  {
+    "filename": "gap-016-+.mp3",
+    "text": "+ でした"
+  },
+  {
+    "filename": "gap-017-+.mp3",
+    "text": "+ じゃなかった"
+  },
+  {
+    "filename": "gap-018-+.mp3",
+    "text": "+ に"
+  },
+  {
+    "filename": "gap-019-adj.mp3",
+    "text": "い-adj"
+  },
+  {
+    "filename": "gap-020-adj.mp3",
+    "text": "な-adj"
+  },
+  {
+    "filename": "gap-021-A-B-~.mp3",
+    "text": "Aは Bより ~ です"
+  },
+  {
+    "filename": "gap-022-A-~.mp3",
+    "text": "Aが一番 ~ です"
+  },
+  {
+    "filename": "gap-023-~.mp3",
+    "text": "どちらが ~ ですか"
+  },
+  {
+    "filename": "gap-024-phrase.mp3",
+    "text": "は"
+  },
+  {
+    "filename": "gap-025-phrase.mp3",
+    "text": "が"
+  },
+  {
+    "filename": "gap-026-phrase.mp3",
+    "text": "を"
+  },
+  {
+    "filename": "gap-027-phrase.mp3",
+    "text": "に"
+  },
+  {
+    "filename": "gap-028-phrase.mp3",
+    "text": "で"
+  },
+  {
+    "filename": "gap-029-phrase.mp3",
+    "text": "へ"
+  },
+  {
+    "filename": "gap-030-phrase.mp3",
+    "text": "と"
+  },
+  {
+    "filename": "gap-031-phrase.mp3",
+    "text": "も"
+  },
+  {
+    "filename": "gap-032-phrase.mp3",
+    "text": "の"
+  },
+  {
+    "filename": "gap-033-phrase.mp3",
+    "text": "から"
+  },
+  {
+    "filename": "gap-034-phrase.mp3",
+    "text": "まで"
+  },
+  {
+    "filename": "gap-035-phrase.mp3",
+    "text": "一時"
+  },
+  {
+    "filename": "gap-036-phrase.mp3",
+    "text": "四時"
+  },
+  {
+    "filename": "gap-037-phrase.mp3",
+    "text": "七時"
+  },
+  {
+    "filename": "gap-038-phrase.mp3",
+    "text": "九時"
+  },
+  {
+    "filename": "gap-039-phrase.mp3",
+    "text": "いっぷん"
+  },
+  {
+    "filename": "gap-040-phrase.mp3",
+    "text": "さんぷん"
+  },
+  {
+    "filename": "gap-041-phrase.mp3",
+    "text": "ごふん"
+  },
+  {
+    "filename": "gap-042-phrase.mp3",
+    "text": "ついたち"
+  },
+  {
+    "filename": "gap-043-phrase.mp3",
+    "text": "ふつか"
+  },
+  {
+    "filename": "gap-044-phrase.mp3",
+    "text": "みっか"
+  },
+  {
+    "filename": "gap-045-phrase.mp3",
+    "text": "よっか"
+  },
+  {
+    "filename": "gap-046-phrase.mp3",
+    "text": "いつか"
+  },
+  {
+    "filename": "gap-047-phrase.mp3",
+    "text": "はつか"
+  },
+  {
+    "filename": "gap-048-(tsu).mp3",
+    "text": "つ (tsu)"
+  },
+  {
+    "filename": "gap-049-(nin).mp3",
+    "text": "人 (nin)"
+  },
+  {
+    "filename": "gap-050-(hon).mp3",
+    "text": "本 (hon)"
+  },
+  {
+    "filename": "gap-051-(mai).mp3",
+    "text": "枚 (mai)"
+  },
+  {
+    "filename": "gap-052-(hai).mp3",
+    "text": "杯 (hai)"
+  },
+  {
+    "filename": "gap-053-(satsu).mp3",
+    "text": "冊 (satsu)"
+  },
+  {
+    "filename": "gap-054-(dai).mp3",
+    "text": "台 (dai)"
+  },
+  {
+    "filename": "gap-055-(hiki).mp3",
+    "text": "匹 (hiki)"
+  },
+  {
+    "filename": "gap-056-(ichijikan).mp3",
+    "text": "一時間 (ichijikan)"
+  },
+  {
+    "filename": "gap-057-(isshkan).mp3",
+    "text": "一週間 (isshūkan)"
+  },
+  {
+    "filename": "gap-058-(ikkagetsu).mp3",
+    "text": "一か月 (ikkagetsu)"
+  },
+  {
+    "filename": "gap-059-(ichinenkan).mp3",
+    "text": "一年間 (ichinenkan)"
+  },
+  {
+    "filename": "gap-060-(kakimasu).mp3",
+    "text": "書く → 書きます (kakimasu)"
+  },
+  {
+    "filename": "gap-061-Drop-,-add.mp3",
+    "text": "Drop る, add ます"
+  },
+  {
+    "filename": "gap-062-,.mp3",
+    "text": "する → します, くる → きます"
+  },
+  {
+    "filename": "gap-063-phrase.mp3",
+    "text": "く"
+  },
+  {
+    "filename": "gap-064-phrase.mp3",
+    "text": "ぐ"
+  },
+  {
+    "filename": "gap-065-phrase.mp3",
+    "text": "す"
+  },
+  {
+    "filename": "gap-066-.mp3",
+    "text": "ぶ/む/ぬ"
+  },
+  {
+    "filename": "gap-067-.mp3",
+    "text": "つ/る/う"
+  },
+  {
+    "filename": "gap-068-Exception.mp3",
+    "text": "Exception: 行く"
+  },
+  {
+    "filename": "gap-069-(kakanai).mp3",
+    "text": "書く → 書かない (kakanai)"
+  },
+  {
+    "filename": "gap-070-Drop-,-add.mp3",
+    "text": "Drop る, add ない"
+  },
+  {
+    "filename": "gap-071-,.mp3",
+    "text": "する → しない, くる → こない"
+  },
+  {
+    "filename": "gap-072-(NOT-).mp3",
+    "text": "ある → ない (NOT あらない)"
+  },
+  {
+    "filename": "gap-073-phrase.mp3",
+    "text": "書く"
+  },
+  {
+    "filename": "gap-074-phrase.mp3",
+    "text": "食べる"
+  },
+  {
+    "filename": "gap-075-phrase.mp3",
+    "text": "する"
+  },
+  {
+    "filename": "gap-076-(obasan).mp3",
+    "text": "おばさん (obasan)"
+  },
+  {
+    "filename": "gap-077-(koko).mp3",
+    "text": "ここ (koko)"
+  },
+  {
+    "filename": "gap-078-(sampo).mp3",
+    "text": "さんぽ (sampo)"
+  },
+  {
+    "filename": "gap-079-(kingaku).mp3",
+    "text": "きんがく (kingaku)"
+  },
+  {
+    "filename": "gap-080-phrase.mp3",
+    "text": "大丈夫です"
+  },
+  {
+    "filename": "gap-081-phrase.mp3",
+    "text": "いただきます"
+  },
+  {
+    "filename": "gap-082-phrase.mp3",
+    "text": "ごちそうさまでした"
+  },
+  {
+    "filename": "gap-083-phrase.mp3",
+    "text": "写真を撮ってもらえますか"
+  },
+  {
+    "filename": "gap-084-phrase.mp3",
+    "text": "私は…と思います"
+  },
+  {
+    "filename": "gap-085-phrase.mp3",
+    "text": "そう思います"
+  },
+  {
+    "filename": "gap-086-phrase.mp3",
+    "text": "ちょっと違うと思います"
+  },
+  {
+    "filename": "gap-087-phrase.mp3",
+    "text": "十"
+  },
+  {
+    "filename": "gap-088-phrase.mp3",
+    "text": "四人"
+  },
+  {
+    "filename": "gap-089-(wa).mp3",
+    "text": "羽 (wa)"
+  },
+  {
+    "filename": "gap-090-(kai).mp3",
+    "text": "階 (kai)"
+  },
+  {
+    "filename": "gap-091-(kai).mp3",
+    "text": "回 (kai)"
+  },
+  {
+    "filename": "gap-092-(ban).mp3",
+    "text": "番 (ban)"
+  },
+  {
+    "filename": "gap-093-(soku).mp3",
+    "text": "足 (soku)"
+  },
+  {
+    "filename": "gap-094-(chaku).mp3",
+    "text": "着 (chaku)"
+  },
+  {
+    "filename": "gap-095-phrase.mp3",
+    "text": "ワンワン"
+  },
+  {
+    "filename": "gap-096-phrase.mp3",
+    "text": "ニャーニャー"
+  },
+  {
+    "filename": "gap-097-phrase.mp3",
+    "text": "ドンドン"
+  },
+  {
+    "filename": "gap-098-phrase.mp3",
+    "text": "バタン"
+  },
+  {
+    "filename": "gap-099-phrase.mp3",
+    "text": "ゴロゴロ"
+  },
+  {
+    "filename": "gap-100-phrase.mp3",
+    "text": "ピンポン"
+  },
+  {
+    "filename": "gap-101-phrase.mp3",
+    "text": "ガチャン"
+  },
+  {
+    "filename": "gap-102-phrase.mp3",
+    "text": "ヌルヌル"
+  },
+  {
+    "filename": "gap-103-phrase.mp3",
+    "text": "サラサラ"
+  },
+  {
+    "filename": "gap-104-phrase.mp3",
+    "text": "ベタベタ"
+  },
+  {
+    "filename": "gap-105-phrase.mp3",
+    "text": "ツルツル"
+  },
+  {
+    "filename": "gap-106-phrase.mp3",
+    "text": "ボロボロ"
+  },
+  {
+    "filename": "gap-107-phrase.mp3",
+    "text": "ピッタリ"
+  },
+  {
+    "filename": "gap-108-phrase.mp3",
+    "text": "ソワソワ"
+  },
+  {
+    "filename": "gap-109-phrase.mp3",
+    "text": "ビクビク"
+  },
+  {
+    "filename": "gap-110-phrase.mp3",
+    "text": "ホッと"
+  },
+  {
+    "filename": "gap-111-phrase.mp3",
+    "text": "ウキウキ"
+  },
+  {
+    "filename": "gap-112-phrase.mp3",
+    "text": "ノロノロ"
+  },
+  {
+    "filename": "gap-113-phrase.mp3",
+    "text": "テキパキ"
+  },
+  {
+    "filename": "gap-114-phrase.mp3",
+    "text": "ブラブラ"
+  },
+  {
+    "filename": "gap-115-phrase.mp3",
+    "text": "ペラペラ"
+  },
+  {
+    "filename": "gap-116-phrase.mp3",
+    "text": "ボンヤリ"
+  },
+  {
+    "filename": "gap-117-phrase.mp3",
+    "text": "コツコツ"
+  },
+  {
+    "filename": "gap-118-phrase.mp3",
+    "text": "バタバタ"
+  },
+  {
+    "filename": "gap-119-phrase.mp3",
+    "text": "ダラダラ"
+  },
+  {
+    "filename": "gap-120-phrase.mp3",
+    "text": "こんにちは"
+  },
+  {
+    "filename": "gap-121-phrase.mp3",
+    "text": "おはようございます"
+  },
+  {
+    "filename": "gap-122-phrase.mp3",
+    "text": "こんばんは"
+  },
+  {
+    "filename": "gap-123-phrase.mp3",
+    "text": "さようなら"
+  },
+  {
+    "filename": "gap-124-phrase.mp3",
+    "text": "すみません"
+  },
+  {
+    "filename": "gap-125-.mp3",
+    "text": "彼 / 彼女"
+  },
+  {
+    "filename": "gap-126-phrase.mp3",
+    "text": "この人"
+  },
+  {
+    "filename": "gap-127-phrase.mp3",
+    "text": "どう"
+  },
+  {
+    "filename": "gap-128-phrase.mp3",
+    "text": "いくら"
+  },
+  {
+    "filename": "gap-129-phrase.mp3",
+    "text": "どれ"
+  },
+  {
+    "filename": "gap-130-phrase.mp3",
+    "text": "分かる"
+  },
+  {
+    "filename": "gap-131-phrase.mp3",
+    "text": "おいしい"
+  },
+  {
+    "filename": "gap-132-phrase.mp3",
+    "text": "楽しい"
+  },
+  {
+    "filename": "gap-133-phrase.mp3",
+    "text": "トイレ"
+  },
+  {
+    "filename": "gap-134-phrase.mp3",
+    "text": "会社"
+  },
+  {
+    "filename": "gap-135-phrase.mp3",
+    "text": "これをください"
+  },
+  {
+    "filename": "gap-136-phrase.mp3",
+    "text": "いくらですか"
+  },
+  {
+    "filename": "gap-137-phrase.mp3",
+    "text": "トイレはどこですか"
+  },
+  {
+    "filename": "gap-138-phrase.mp3",
+    "text": "英語を話せますか"
+  },
+  {
+    "filename": "gap-139-phrase.mp3",
+    "text": "もう一度おねがいします"
+  },
+  {
+    "filename": "gap-140-phrase.mp3",
+    "text": "分かりません"
+  },
+  {
+    "filename": "gap-141-phrase.mp3",
+    "text": "助けて"
+  },
+  {
+    "filename": "gap-142-phrase.mp3",
+    "text": "意見"
+  },
+  {
+    "filename": "gap-143-phrase.mp3",
+    "text": "理由"
+  },
+  {
+    "filename": "gap-144-phrase.mp3",
+    "text": "目的"
+  },
+  {
+    "filename": "gap-145-phrase.mp3",
+    "text": "結果"
+  },
+  {
+    "filename": "gap-146-phrase.mp3",
+    "text": "問題"
+  },
+  {
+    "filename": "gap-147-phrase.mp3",
+    "text": "答え"
+  },
+  {
+    "filename": "gap-148-phrase.mp3",
+    "text": "質問"
+  },
+  {
+    "filename": "gap-149-phrase.mp3",
+    "text": "説明"
+  },
+  {
+    "filename": "gap-150-phrase.mp3",
+    "text": "経験"
+  },
+  {
+    "filename": "gap-151-phrase.mp3",
+    "text": "関係"
+  },
+  {
+    "filename": "gap-152-phrase.mp3",
+    "text": "影響"
+  },
+  {
+    "filename": "gap-153-phrase.mp3",
+    "text": "条件"
+  },
+  {
+    "filename": "gap-154-phrase.mp3",
+    "text": "内容"
+  },
+  {
+    "filename": "gap-155-phrase.mp3",
+    "text": "情報"
+  },
+  {
+    "filename": "gap-156-phrase.mp3",
+    "text": "機会"
+  },
+  {
+    "filename": "gap-157-phrase.mp3",
+    "text": "嬉しい"
+  },
+  {
+    "filename": "gap-158-phrase.mp3",
+    "text": "悲しい"
+  },
+  {
+    "filename": "gap-159-phrase.mp3",
+    "text": "怖い"
+  },
+  {
+    "filename": "gap-160-phrase.mp3",
+    "text": "寂しい"
+  },
+  {
+    "filename": "gap-161-phrase.mp3",
+    "text": "怒る"
+  },
+  {
+    "filename": "gap-162-phrase.mp3",
+    "text": "驚く"
+  },
+  {
+    "filename": "gap-163-phrase.mp3",
+    "text": "困る"
+  },
+  {
+    "filename": "gap-164-phrase.mp3",
+    "text": "疑う"
+  },
+  {
+    "filename": "gap-165-phrase.mp3",
+    "text": "信じる"
+  },
+  {
+    "filename": "gap-166-phrase.mp3",
+    "text": "期待する"
+  },
+  {
+    "filename": "gap-167-phrase.mp3",
+    "text": "心配する"
+  },
+  {
+    "filename": "gap-168-phrase.mp3",
+    "text": "安心する"
+  },
+  {
+    "filename": "gap-169-phrase.mp3",
+    "text": "調べる"
+  },
+  {
+    "filename": "gap-170-phrase.mp3",
+    "text": "比べる"
+  },
+  {
+    "filename": "gap-171-phrase.mp3",
+    "text": "選ぶ"
+  },
+  {
+    "filename": "gap-172-phrase.mp3",
+    "text": "決める"
+  },
+  {
+    "filename": "gap-173-phrase.mp3",
+    "text": "変える"
+  },
+  {
+    "filename": "gap-174-phrase.mp3",
+    "text": "変わる"
+  },
+  {
+    "filename": "gap-175-phrase.mp3",
+    "text": "続ける"
+  },
+  {
+    "filename": "gap-176-phrase.mp3",
+    "text": "止める"
+  },
+  {
+    "filename": "gap-177-phrase.mp3",
+    "text": "始める"
+  },
+  {
+    "filename": "gap-178-phrase.mp3",
+    "text": "終わる"
+  },
+  {
+    "filename": "gap-179-phrase.mp3",
+    "text": "集める"
+  },
+  {
+    "filename": "gap-180-phrase.mp3",
+    "text": "集まる"
+  },
+  {
+    "filename": "gap-181-phrase.mp3",
+    "text": "準備する"
+  },
+  {
+    "filename": "gap-182-phrase.mp3",
+    "text": "参加する"
+  },
+  {
+    "filename": "gap-183-phrase.mp3",
+    "text": "紹介する"
+  },
+  {
+    "filename": "gap-184-(akeru)-open.mp3",
+    "text": "開ける (akeru) open"
+  },
+  {
+    "filename": "gap-185-(shimeru)-close.mp3",
+    "text": "閉める (shimeru) close"
+  },
+  {
+    "filename": "gap-186-(ireru)-put-in.mp3",
+    "text": "入れる (ireru) put in"
+  },
+  {
+    "filename": "gap-187-(dasu)-put-out.mp3",
+    "text": "出す (dasu) put out"
+  },
+  {
+    "filename": "gap-188-(kesu)-turn-off.mp3",
+    "text": "消す (kesu) turn off"
+  },
+  {
+    "filename": "gap-189-(ageru)-raise.mp3",
+    "text": "上げる (ageru) raise"
+  },
+  {
+    "filename": "gap-190-(sageru)-lower.mp3",
+    "text": "下げる (sageru) lower"
+  },
+  {
+    "filename": "gap-191-(kowasu)-break.mp3",
+    "text": "壊す (kowasu) break"
+  },
+  {
+    "filename": "gap-192-(yogosu)-make-dirty.mp3",
+    "text": "汚す (yogosu) make dirty"
+  },
+  {
+    "filename": "gap-193-phrase.mp3",
+    "text": "起きる"
+  },
+  {
+    "filename": "gap-194-phrase.mp3",
+    "text": "寇る"
+  },
+  {
+    "filename": "gap-195-phrase.mp3",
+    "text": "洗う"
+  },
+  {
+    "filename": "gap-196-phrase.mp3",
+    "text": "着る"
+  },
+  {
+    "filename": "gap-197-phrase.mp3",
+    "text": "脱ぐ"
+  },
+  {
+    "filename": "gap-198-phrase.mp3",
+    "text": "出かける"
+  },
+  {
+    "filename": "gap-199-phrase.mp3",
+    "text": "休む"
+  },
+  {
+    "filename": "gap-200-phrase.mp3",
+    "text": "働く"
+  },
+  {
+    "filename": "gap-201-phrase.mp3",
+    "text": "遊ぶ"
+  },
+  {
+    "filename": "gap-202-phrase.mp3",
+    "text": "待つ"
+  },
+  {
+    "filename": "gap-203-phrase.mp3",
+    "text": "肉"
+  },
+  {
+    "filename": "gap-204-phrase.mp3",
+    "text": "魚"
+  },
+  {
+    "filename": "gap-205-phrase.mp3",
+    "text": "野菜"
+  },
+  {
+    "filename": "gap-206-phrase.mp3",
+    "text": "果物"
+  },
+  {
+    "filename": "gap-207-phrase.mp3",
+    "text": "パン"
+  },
+  {
+    "filename": "gap-208-phrase.mp3",
+    "text": "卸"
+  },
+  {
+    "filename": "gap-209-phrase.mp3",
+    "text": "牛乳"
+  },
+  {
+    "filename": "gap-210-phrase.mp3",
+    "text": "砂糖"
+  },
+  {
+    "filename": "gap-211-phrase.mp3",
+    "text": "塩"
+  },
+  {
+    "filename": "gap-212-phrase.mp3",
+    "text": "醬油"
+  },
+  {
+    "filename": "gap-213-phrase.mp3",
+    "text": "朋ごはん"
+  },
+  {
+    "filename": "gap-214-phrase.mp3",
+    "text": "昧ごはん"
+  },
+  {
+    "filename": "gap-215-phrase.mp3",
+    "text": "晩ごはん"
+  },
+  {
+    "filename": "gap-216-phrase.mp3",
+    "text": "お茶"
+  },
+  {
+    "filename": "gap-217-phrase.mp3",
+    "text": "コーヒー"
+  },
+  {
+    "filename": "gap-218-phrase.mp3",
+    "text": "ビール"
+  },
+  {
+    "filename": "gap-219-phrase.mp3",
+    "text": "コンビニ"
+  },
+  {
+    "filename": "gap-220-phrase.mp3",
+    "text": "スーパー"
+  },
+  {
+    "filename": "gap-221-phrase.mp3",
+    "text": "デパート"
+  },
+  {
+    "filename": "gap-222-phrase.mp3",
+    "text": "郵便局"
+  },
+  {
+    "filename": "gap-223-phrase.mp3",
+    "text": "銀行"
+  },
+  {
+    "filename": "gap-224-phrase.mp3",
+    "text": "図書館"
+  },
+  {
+    "filename": "gap-225-phrase.mp3",
+    "text": "公園"
+  },
+  {
+    "filename": "gap-226-phrase.mp3",
+    "text": "空港"
+  },
+  {
+    "filename": "gap-227-phrase.mp3",
+    "text": "ホテル"
+  },
+  {
+    "filename": "gap-228-phrase.mp3",
+    "text": "レストラン"
+  },
+  {
+    "filename": "gap-229-phrase.mp3",
+    "text": "屋"
+  },
+  {
+    "filename": "gap-230-phrase.mp3",
+    "text": "交番"
+  },
+  {
+    "filename": "gap-231-phrase.mp3",
+    "text": "電車"
+  },
+  {
+    "filename": "gap-232-phrase.mp3",
+    "text": "バス"
+  },
+  {
+    "filename": "gap-233-phrase.mp3",
+    "text": "タクシー"
+  },
+  {
+    "filename": "gap-234-phrase.mp3",
+    "text": "自転車"
+  },
+  {
+    "filename": "gap-235-phrase.mp3",
+    "text": "車"
+  },
+  {
+    "filename": "gap-236-phrase.mp3",
+    "text": "飛行機"
+  },
+  {
+    "filename": "gap-237-phrase.mp3",
+    "text": "切符"
+  },
+  {
+    "filename": "gap-238-phrase.mp3",
+    "text": "乗り換え"
+  },
+  {
+    "filename": "gap-239-phrase.mp3",
+    "text": "出口"
+  },
+  {
+    "filename": "gap-240-phrase.mp3",
+    "text": "入口"
+  },
+  {
+    "filename": "gap-241-phrase.mp3",
+    "text": "頭"
+  },
+  {
+    "filename": "gap-242-phrase.mp3",
+    "text": "目"
+  },
+  {
+    "filename": "gap-243-phrase.mp3",
+    "text": "耳"
+  },
+  {
+    "filename": "gap-244-phrase.mp3",
+    "text": "口"
+  },
+  {
+    "filename": "gap-245-phrase.mp3",
+    "text": "鼻"
+  },
+  {
+    "filename": "gap-246-phrase.mp3",
+    "text": "手"
+  },
+  {
+    "filename": "gap-247-phrase.mp3",
+    "text": "足"
+  },
+  {
+    "filename": "gap-248-phrase.mp3",
+    "text": "お腹"
+  },
+  {
+    "filename": "gap-249-phrase.mp3",
+    "text": "背中"
+  },
+  {
+    "filename": "gap-250-phrase.mp3",
+    "text": "晴れ"
+  },
+  {
+    "filename": "gap-251-phrase.mp3",
+    "text": "曇り"
+  },
+  {
+    "filename": "gap-252-phrase.mp3",
+    "text": "雨"
+  },
+  {
+    "filename": "gap-253-phrase.mp3",
+    "text": "雪"
+  },
+  {
+    "filename": "gap-254-phrase.mp3",
+    "text": "風"
+  },
+  {
+    "filename": "gap-255-phrase.mp3",
+    "text": "暑い"
+  },
+  {
+    "filename": "gap-256-phrase.mp3",
+    "text": "寒い"
+  },
+  {
+    "filename": "gap-257-phrase.mp3",
+    "text": "液しい"
+  },
+  {
+    "filename": "gap-258-phrase.mp3",
+    "text": "暖かい"
+  },
+  {
+    "filename": "gap-259-phrase.mp3",
+    "text": "アレルギーがあります"
+  },
+  {
+    "filename": "gap-260-phrase.mp3",
+    "text": "咳"
+  },
+  {
+    "filename": "gap-261-phrase.mp3",
+    "text": "鼻水"
+  },
+  {
+    "filename": "gap-262-phrase.mp3",
+    "text": "めまい"
+  },
+  {
+    "filename": "gap-263-phrase.mp3",
+    "text": "吐き気"
+  },
+  {
+    "filename": "gap-264-phrase.mp3",
+    "text": "おやつ"
+  },
+  {
+    "filename": "gap-265-phrase.mp3",
+    "text": "ご飯"
+  },
+  {
+    "filename": "gap-266-phrase.mp3",
+    "text": "水"
+  },
+  {
+    "filename": "gap-267-phrase.mp3",
+    "text": "お茶"
+  },
+  {
+    "filename": "gap-268-phrase.mp3",
+    "text": "まずい"
+  },
+  {
+    "filename": "gap-269-phrase.mp3",
+    "text": "テーブル"
+  },
+  {
+    "filename": "gap-270-phrase.mp3",
+    "text": "椅子"
+  },
+  {
+    "filename": "gap-271-phrase.mp3",
+    "text": "布団"
+  },
+  {
+    "filename": "gap-272-phrase.mp3",
+    "text": "ベッド"
+  },
+  {
+    "filename": "gap-273-phrase.mp3",
+    "text": "食べる"
+  },
+  {
+    "filename": "gap-274-phrase.mp3",
+    "text": "飲む"
+  },
+  {
+    "filename": "gap-275-phrase.mp3",
+    "text": "十万"
+  },
+  {
+    "filename": "gap-276-phrase.mp3",
+    "text": "百万"
+  },
+  {
+    "filename": "gap-277-phrase.mp3",
+    "text": "一億"
+  },
+  {
+    "filename": "gap-278-phrase.mp3",
+    "text": "二月"
+  },
+  {
+    "filename": "gap-279-phrase.mp3",
+    "text": "三月"
+  },
+  {
+    "filename": "gap-280-phrase.mp3",
+    "text": "四月"
+  },
+  {
+    "filename": "gap-281-phrase.mp3",
+    "text": "五月"
+  },
+  {
+    "filename": "gap-282-phrase.mp3",
+    "text": "六月"
+  },
+  {
+    "filename": "gap-283-(ky).mp3",
+    "text": "今日 (kyō)"
+  },
+  {
+    "filename": "gap-284-(kin).mp3",
+    "text": "昨日 (kinō)"
+  },
+  {
+    "filename": "gap-285-(ashita).mp3",
+    "text": "明日 (ashita)"
+  },
+  {
+    "filename": "gap-286-(ima).mp3",
+    "text": "今 (ima)"
+  },
+  {
+    "filename": "gap-287-(sensh).mp3",
+    "text": "先週 (senshū)"
+  },
+  {
+    "filename": "gap-288-(raigetsu).mp3",
+    "text": "来月 (raigetsu)"
+  },
+  {
+    "filename": "gap-289-phrase.mp3",
+    "text": "電車"
+  },
+  {
+    "filename": "gap-290-phrase.mp3",
+    "text": "飛行機"
+  },
+  {
+    "filename": "gap-291-phrase.mp3",
+    "text": "駅"
+  },
+  {
+    "filename": "gap-292-phrase.mp3",
+    "text": "観光地"
+  },
+  {
+    "filename": "gap-293-phrase.mp3",
+    "text": "この電車は東京に行きますか"
+  },
+  {
+    "filename": "gap-294-phrase.mp3",
+    "text": "次の駅はどこですか"
+  },
+  {
+    "filename": "gap-295-phrase.mp3",
+    "text": "社員"
+  },
+  {
+    "filename": "gap-296-phrase.mp3",
+    "text": "退勤する"
+  }
+]

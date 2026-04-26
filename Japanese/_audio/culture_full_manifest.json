@@ -1,0 +1,326 @@
+[
+  {
+    "text": "お忙しいところ恐縮ですが",
+    "filename": "biz2-001-oisogashii-tokoro-kyoushuku-desu-ga.mp3"
+  },
+  {
+    "text": "ご意見をおねがいします",
+    "filename": "biz2-002-goiken-wo-onegaishimasu.mp3"
+  },
+  {
+    "text": "もしもし",
+    "filename": "biz2-003-moshimoshi.mp3"
+  },
+  {
+    "text": "伝言をおあずかりいたします",
+    "filename": "biz2-004-dengon-wo-oazukari-itashimasu.mp3"
+  },
+  {
+    "text": "敬語",
+    "filename": "cultov-001-keigo.mp3"
+  },
+  {
+    "text": "内、外",
+    "filename": "cultov-002-uchi-soto.mp3"
+  },
+  {
+    "text": "建前、本音",
+    "filename": "cultov-003-tatemae-honne.mp3"
+  },
+  {
+    "text": "和",
+    "filename": "cultov-004-wa.mp3"
+  },
+  {
+    "text": "甘え",
+    "filename": "cultov-005-amae.mp3"
+  },
+  {
+    "text": "お花見",
+    "filename": "cultov-006-ohanami.mp3"
+  },
+  {
+    "text": "お盆",
+    "filename": "cultov-007-obon.mp3"
+  },
+  {
+    "text": "紅葉",
+    "filename": "cultov-008-momiji.mp3"
+  },
+  {
+    "text": "お正月",
+    "filename": "cultov-009-oshougatsu.mp3"
+  },
+  {
+    "text": "お世話になりました",
+    "filename": "cultov-010-osewa-ni-narimashita.mp3"
+  },
+  {
+    "text": "食欲の秋",
+    "filename": "cultov-011-shokuyoku-no-aki.mp3"
+  },
+  {
+    "text": "猿も木から落ちる",
+    "filename": "idiom-001-saru-mo-ki-kara-ochiru.mp3"
+  },
+  {
+    "text": "七転び八起き",
+    "filename": "idiom-002-nanakorobi-yaoki.mp3"
+  },
+  {
+    "text": "石の上にも三年",
+    "filename": "idiom-003-ishi-no-ue-ni-mo-sannen.mp3"
+  },
+  {
+    "text": "出る杭は打たれる",
+    "filename": "idiom-004-deru-kui-wa-utareru.mp3"
+  },
+  {
+    "text": "一期一会",
+    "filename": "idiom-005-ichigo-ichie.mp3"
+  },
+  {
+    "text": "花より団子",
+    "filename": "idiom-006-hana-yori-dango.mp3"
+  },
+  {
+    "text": "一石二鳥",
+    "filename": "idiom-007-isseki-nichou.mp3"
+  },
+  {
+    "text": "十人十色",
+    "filename": "idiom-008-juunin-toiro.mp3"
+  },
+  {
+    "text": "自業自得",
+    "filename": "idiom-009-jigou-jitoku.mp3"
+  },
+  {
+    "text": "以心伝心",
+    "filename": "idiom-010-ishin-denshin.mp3"
+  },
+  {
+    "text": "首を長くする",
+    "filename": "idiom-011-kubi-wo-nagaku-suru.mp3"
+  },
+  {
+    "text": "目が高い",
+    "filename": "idiom-012-me-ga-takai.mp3"
+  },
+  {
+    "text": "腹が立つ",
+    "filename": "idiom-013-hara-ga-tatsu.mp3"
+  },
+  {
+    "text": "し",
+    "filename": "numsuper-001-shi.mp3"
+  },
+  {
+    "text": "く",
+    "filename": "numsuper-002-ku.mp3"
+  },
+  {
+    "text": "しに",
+    "filename": "numsuper-003-shini.mp3"
+  },
+  {
+    "text": "しく",
+    "filename": "numsuper-004-shiku.mp3"
+  },
+  {
+    "text": "七福神",
+    "filename": "numsuper-005-shichifukujin.mp3"
+  },
+  {
+    "text": "末広がり",
+    "filename": "numsuper-006-suehirogari.mp3"
+  },
+  {
+    "text": "よん",
+    "filename": "numsuper-007-yon.mp3"
+  },
+  {
+    "text": "正月",
+    "filename": "season2-001-shougatsu.mp3"
+  },
+  {
+    "text": "年賀状",
+    "filename": "season2-002-nengajou.mp3"
+  },
+  {
+    "text": "暑中お見舞い申し上げます",
+    "filename": "season2-003-shochuu-omimai-moushiagemasu.mp3"
+  },
+  {
+    "text": "贈り物",
+    "filename": "season2-004-okurimono.mp3"
+  },
+  {
+    "text": "お中元",
+    "filename": "season2-005-ochuugen.mp3"
+  },
+  {
+    "text": "お歳暮",
+    "filename": "season2-006-oseibo.mp3"
+  },
+  {
+    "text": "タメ口",
+    "filename": "register-001-tameguchi.mp3"
+  },
+  {
+    "text": "です、ます",
+    "filename": "register-002-desu-masu.mp3"
+  },
+  {
+    "text": "召し上がりますか",
+    "filename": "register-003-meshiagarimasu-ka.mp3"
+  },
+  {
+    "text": "召し上がっていただけますか",
+    "filename": "register-004-meshiagatte-itadakemasu-ka.mp3"
+  },
+  {
+    "text": "最高敬語",
+    "filename": "register-005-saikou-keigo.mp3"
+  },
+  {
+    "text": "飲み会",
+    "filename": "register-006-nomikai.mp3"
+  },
+  {
+    "text": "もっとラフでいいよ",
+    "filename": "register-007-motto-rafu-de-ii-yo.mp3"
+  },
+  {
+    "text": "謙譲語",
+    "filename": "kenjo2-001-kenjougo.mp3"
+  },
+  {
+    "text": "お送りする",
+    "filename": "kenjo2-002-o-okuri-suru.mp3"
+  },
+  {
+    "text": "おる",
+    "filename": "kenjo2-003-oru.mp3"
+  },
+  {
+    "text": "存じている",
+    "filename": "kenjo2-004-zonjite-iru.mp3"
+  },
+  {
+    "text": "差し上げる",
+    "filename": "kenjo2-005-sashiageru.mp3"
+  },
+  {
+    "text": "部長がおっしゃいました",
+    "filename": "kenjo2-006-buchou-ga-osshaimashita.mp3"
+  },
+  {
+    "text": "尊敬語",
+    "filename": "keigoov-001-sonkeigo.mp3"
+  },
+  {
+    "text": "謙譲語",
+    "filename": "keigoov-002-kenjougo.mp3"
+  },
+  {
+    "text": "丁寧語",
+    "filename": "keigoov-003-teineigo.mp3"
+  },
+  {
+    "text": "タメ口",
+    "filename": "keigoov-004-tameguchi.mp3"
+  },
+  {
+    "text": "内",
+    "filename": "keigoov-005-uchi.mp3"
+  },
+  {
+    "text": "外",
+    "filename": "keigoov-006-soto.mp3"
+  },
+  {
+    "text": "お読みになられる",
+    "filename": "keigoov-007-oyomi-ni-narareru.mp3"
+  },
+  {
+    "text": "尊敬語",
+    "filename": "sonkei2-001-sonkeigo.mp3"
+  },
+  {
+    "text": "お書きになる",
+    "filename": "sonkei2-002-o-kaki-ni-naru.mp3"
+  },
+  {
+    "text": "お使いになる",
+    "filename": "sonkei2-003-o-tsukai-ni-naru.mp3"
+  },
+  {
+    "text": "ご存じだ",
+    "filename": "sonkei2-004-gozonji-da.mp3"
+  },
+  {
+    "text": "くださる",
+    "filename": "sonkei2-005-kudasaru.mp3"
+  },
+  {
+    "text": "先生が来られました",
+    "filename": "sonkei2-006-sensei-ga-koraremashita.mp3"
+  },
+  {
+    "text": "丁寧語",
+    "filename": "teinei-001-teineigo.mp3"
+  },
+  {
+    "text": "です、ます",
+    "filename": "teinei-002-desu-masu.mp3"
+  },
+  {
+    "text": "です",
+    "filename": "teinei-003-desu.mp3"
+  },
+  {
+    "text": "食べます",
+    "filename": "teinei-004-tabemasu.mp3"
+  },
+  {
+    "text": "食べました",
+    "filename": "teinei-005-tabemashita.mp3"
+  },
+  {
+    "text": "食べません",
+    "filename": "teinei-006-tabemasen.mp3"
+  },
+  {
+    "text": "食べませんでした",
+    "filename": "teinei-007-tabemasen-deshita.mp3"
+  },
+  {
+    "text": "美化語",
+    "filename": "teinei-008-bikago.mp3"
+  },
+  {
+    "text": "お、ご",
+    "filename": "teinei-009-o-go.mp3"
+  },
+  {
+    "text": "お水",
+    "filename": "teinei-010-omizu.mp3"
+  },
+  {
+    "text": "お茶",
+    "filename": "teinei-011-ocha.mp3"
+  },
+  {
+    "text": "お金",
+    "filename": "teinei-012-okane.mp3"
+  },
+  {
+    "text": "ご返事",
+    "filename": "teinei-013-gohenji.mp3"
+  },
+  {
+    "text": "ご住所",
+    "filename": "teinei-014-gojuusho.mp3"
+  }
+]
