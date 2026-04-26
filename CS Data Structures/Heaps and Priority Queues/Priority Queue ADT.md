@@ -97,8 +97,12 @@ Beyond graph algorithms, priority queues appear in event-driven simulation, OS s
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-041 Dijkstras complexity depends on priority queue choice|Dijkstra's complexity depends on priority queue choice]]
+- [[CS Data Structures/_chunks/chunk-ds-125 Indexed priority queue enables Ologn decrease-key|Indexed priority queues enable O(log n) decrease-key]]
+- [[CS Data Structures/_chunks/chunk-ds-037 Binomial heaps support Ologn merge|Binomial heaps support O(log n) merge]]
+- [[CS Data Structures/_chunks/chunk-ds-036 Fibonacci heaps achieve O1 amortized decrease-key|Fibonacci heaps achieve O(1) amortized decrease-key]]
+- [[CS Data Structures/_chunks/chunk-ds-154 Fibonacci heaps rarely used despite optimal theory|Fibonacci heaps are rarely used despite optimal theory]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

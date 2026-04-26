@@ -163,14 +163,16 @@ def build_link_index(files: list[Path]) -> tuple[set[str], set[str], dict[str, P
 
 def resolve_wikilink(target: str, note_keys: set[str], file_keys: set[str]) -> bool:
     normalized = target.replace("\\", "/").strip().lower()
+    if normalized in note_keys:
+        return True
+    if Path(normalized).name in note_keys:
+        return True
     suffix = Path(target).suffix.lower()
     if suffix:
         if file_keys.__contains__(Path(target).name.lower()):
             return True
         return (ROOT / target).exists()
-    if normalized in note_keys:
-        return True
-    return Path(normalized).name in note_keys
+    return False
 
 
 def obsidian_link(path: Path, title: str | None = None) -> str:

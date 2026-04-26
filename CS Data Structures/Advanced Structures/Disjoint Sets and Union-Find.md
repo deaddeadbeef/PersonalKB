@@ -104,9 +104,12 @@ Union-Find is the canonical data structure behind **Kruskal's MST**, where edges
 
 *See also:* [[Skip Lists]], [[Segment Trees]], [[Fenwick Trees]], [[k-d Trees and Spatial Data Structures]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
+- [[CS Data Structures/_chunks/chunk-ds-016 Union-Find achieves near-constant time via path compression|Union-Find achieves near-constant time via path compression]]
+- [[CS Data Structures/_chunks/chunk-ds-073 Union by rank keeps Union-Find trees shallow|Union by rank keeps Union-Find trees shallow]]
+- [[CS Data Structures/_chunks/chunk-ds-091 Path splitting and halving are practical compression alternatives|Path splitting and halving are practical compression alternatives]]
+- [[CS Data Structures/_chunks/chunk-ds-153 Union-Find solves dynamic connectivity in near O1|Union-Find solves dynamic connectivity in near O(1)]]
 
-### References
--> Sources Index
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

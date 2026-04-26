@@ -1,6 +1,6 @@
 # Placeholder Hits
 
-Count: 124
+Count: 114
 
 | file | line | text |
 | --- | --- | --- |
@@ -9,34 +9,24 @@ Count: 124
 | CS Algorithms/_templates/Tiered Page Template.md | 13 | **The Core Idea:** {One sentence} |
 | CS Algorithms/_templates/Tiered Page Template.md | 15 | **Analogy:** {Real-world comparison} |
 | CS Algorithms/_templates/Tiered Page Template.md | 26 | {Step-by-step description} |
-| CS Data Structures/Advanced Structures/Disjoint Sets and Union-Find.md | 109 | *Pending chunk extraction.* |
-| CS Data Structures/Advanced Structures/Fenwick Trees.md | 115 | *Pending chunk extraction.* |
 | CS Data Structures/Advanced Structures/Interval Trees and Range Trees.md | 106 | *Pending chunk extraction.* |
 | CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures.md | 111 | *Pending chunk extraction.* |
-| CS Data Structures/Advanced Structures/Segment Trees.md | 112 | *Pending chunk extraction.* |
-| CS Data Structures/Advanced Structures/Skip Lists.md | 110 | *Pending chunk extraction.* |
 | CS Data Structures/Foundational Concepts/Abstract Data Types.md | 105 | *Pending chunk extraction.* |
 | CS Data Structures/Foundational Concepts/Amortized Analysis.md | 113 | *Pending chunk extraction.* |
 | CS Data Structures/Foundational Concepts/Asymptotic Analysis and Big-O Notation.md | 119 | *Pending chunk extraction.* |
 | CS Data Structures/Foundational Concepts/Data Structure Comparison and Selection.md | 113 | *Pending chunk extraction.* |
 | CS Data Structures/Foundational Concepts/Memory Layout and Cache Performance.md | 110 | *Pending chunk extraction.* |
 | CS Data Structures/Foundational Concepts/Pointer-Based vs Array-Based Structures.md | 108 | *Pending chunk extraction.* |
-| CS Data Structures/Graphs/Adjacency List and Adjacency Matrix.md | 111 | *Pending chunk extraction.* |
-| CS Data Structures/Graphs/Graph Properties and Terminology.md | 104 | *Pending chunk extraction.* |
 | CS Data Structures/Graphs/Graph Representations Overview.md | 52 | *Pending chunk extraction.* |
 | CS Data Structures/Graphs/Implicit and Compressed Graph Representations.md | 87 | *Pending chunk extraction.* |
 | CS Data Structures/Graphs/Weighted and Directed Graphs.md | 101 | *Pending chunk extraction.* |
-| CS Data Structures/Hash-Based Structures/Bloom Filters and Probabilistic Structures.md | 117 | *Pending chunk extraction.* |
 | CS Data Structures/Hash-Based Structures/Collision Resolution Strategies.md | 117 | *Pending chunk extraction.* |
 | CS Data Structures/Hash-Based Structures/Consistent Hashing.md | 108 | *Pending chunk extraction.* |
 | CS Data Structures/Hash-Based Structures/Cuckoo Hashing.md | 115 | *Pending chunk extraction.* |
-| CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions.md | 112 | *Pending chunk extraction.* |
 | CS Data Structures/Hash-Based Structures/Universal and Perfect Hashing.md | 94 | *Pending chunk extraction.* |
-| CS Data Structures/Heaps and Priority Queues/Binary Heaps.md | 110 | *Pending chunk extraction.* |
 | CS Data Structures/Heaps and Priority Queues/Binomial Heaps.md | 113 | *Pending chunk extraction.* |
 | CS Data Structures/Heaps and Priority Queues/Fibonacci Heaps.md | 92 | *Pending chunk extraction.* |
 | CS Data Structures/Heaps and Priority Queues/Heap Applications and d-ary Heaps.md | 96 | *Pending chunk extraction.* |
-| CS Data Structures/Heaps and Priority Queues/Priority Queue ADT.md | 100 | *Pending chunk extraction.* |
 | CS Data Structures/Linear Structures/Arrays and Dynamic Arrays.md | 124 | *Pending chunk extraction.* |
 | CS Data Structures/Linear Structures/Circular Buffers.md | 139 | *Pending chunk extraction.* |
 | CS Data Structures/Linear Structures/Doubly Linked Lists and Circular Lists.md | 129 | *Pending chunk extraction.* |

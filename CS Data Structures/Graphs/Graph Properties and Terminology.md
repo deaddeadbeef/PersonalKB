@@ -97,11 +97,13 @@ These terms are the language of modeling road networks, social graphs, dependenc
 
 ---
 
-*See also:* [[Graph Representations Overview]] | [[Weighted and Directed Graphs]] | [[Trees and Tree Traversals]] | [[Adjacency List and Adjacency Matrix]] | Cross-wiki links
+*See also:* [[Graph Representations Overview]] | [[Weighted and Directed Graphs]] | [[Binary Trees and Traversals]] | [[Adjacency List and Adjacency Matrix]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
+- [[CS Data Structures/_chunks/chunk-ds-039 DFS edge classification detects cycles and enables topo sort|DFS edge classification detects cycles and enables topological sort]]
+- [[CS Data Structures/_chunks/chunk-ds-040 Tarjans SCC finds all strongly connected components in one DFS|Tarjan's SCC finds all strongly connected components in one DFS]]
+- [[CS Data Structures/_chunks/chunk-ds-117 Articulation points and bridges partition biconnected components|Articulation points and bridges partition biconnected components]]
 
-### References
-→ [[Sources Index]]
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

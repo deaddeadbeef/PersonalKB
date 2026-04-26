@@ -107,9 +107,12 @@ Segment trees are ubiquitous in **competitive programming** because they handle 
 
 *See also:* [[Fenwick Trees]], [[Interval Trees and Range Trees]], [[Skip Lists]], [[Disjoint Sets and Union-Find]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
+- [[CS Data Structures/_chunks/chunk-ds-017 Segment trees answer range queries in Ologn|Segment trees answer range queries in O(log n)]]
+- [[CS Data Structures/_chunks/chunk-ds-074 Persistent segment trees enable version queries|Persistent segment trees enable version queries]]
+- [[CS Data Structures/_chunks/chunk-ds-144 Iterative segment tree uses 2n array for cache performance|Iterative segment tree uses 2n array for cache performance]]
+- [[CS Data Structures/_chunks/chunk-ds-092 Merge sort tree answers range kth-smallest in Olog3n|Merge sort trees answer range k-th-smallest queries]]
 
-### References
--> Sources Index
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

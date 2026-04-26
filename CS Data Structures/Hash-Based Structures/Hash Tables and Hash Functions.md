@@ -109,8 +109,11 @@ flowchart TD
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-010 Hash tables achieve expected O1 via load factor management|Hash tables achieve expected O(1) via load-factor management]]
+- [[CS Data Structures/_chunks/chunk-ds-152 Multiplicative hashing distributes keys using golden ratio|Multiplicative hashing distributes keys using the golden ratio]]
+- [[CS Data Structures/_chunks/chunk-ds-066 Universal hashing eliminates adversarial worst-case|Universal hashing eliminates adversarial worst-case behavior]]
+- [[CS Data Structures/_chunks/chunk-ds-034 Linear probing has best cache performance|Linear probing has strong cache performance]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

@@ -1,6 +1,6 @@
 # Broken Wiki Links
 
-Count: 973
+Count: 953
 
 | file | target | embedded |
 | --- | --- | --- |
@@ -377,7 +377,6 @@ Count: 973
 | CS Data Structures/Foundational Concepts/Succinct and Compressed Data Structures.md | Suffix Trees and Arrays | False |
 | CS Data Structures/Foundational Concepts/Succinct and Compressed Data Structures.md | Information Theory | False |
 | CS Data Structures/Foundational Concepts/Succinct and Compressed Data Structures.md | Compression Algorithms | False |
-| CS Data Structures/Graphs/Graph Properties and Terminology.md | Trees and Tree Traversals | False |
 | CS Data Structures/Graphs/Implicit and Compressed Graph Representations.md | Graph Search — BFS and DFS | False |
 | CS Data Structures/Graphs/Implicit and Compressed Graph Representations.md | External Memory and Streaming Algorithms | False |
 | CS Data Structures/Graphs/Weighted and Directed Graphs.md | Shortest Path Algorithms | False |
@@ -902,25 +901,6 @@ Count: 973
 | Programming Languages/_queries/QnA System Roadmap.md | CSP and Channels | False |
 | Programming Languages/_templates/Chunk Template.md | raw-pl-NNN | False |
 | Programming Languages/_templates/Chunk Template.md | Parent Page | False |
-| Project Hail Mary/Project Hail Mary.md | Astrophage - Neutrino production is the mechanism for Astrophage's 96.415 C temperature lock | False |
-| Project Hail Mary/Project Hail Mary.md | Astrophage - Petrova-line breeding band at Adrian is 91.2 km altitude and less than 200 metres thick | False |
-| Project Hail Mary/Project Hail Mary.md | Taumoeba - Strain 82.5 achieves nitrogen tolerance at the threshold needed for Venus and Threeworld deployment | False |
-| Project Hail Mary/Project Hail Mary.md | Engineering - Beetle probes are autonomous mission-insurance vehicles at 500g acceleration to 0.93c | False |
-| Project Hail Mary/Project Hail Mary.md | Engineering - Autonomous Beetle deployment delivers Taumoeba-82.5 to Earth without requiring Grace's return | False |
-| Project Hail Mary/Astronomy/Stellar Dimming and the Petrova Line.md | Astrophage - Petrova-line breeding band at Adrian is 91.2 km altitude and less than 200 metres thick | False |
-| Project Hail Mary/Astrophage/Astrophage Energy Physics.md | Astrophage - Neutrino production is the mechanism for Astrophage's 96.415 C temperature lock | False |
-| Project Hail Mary/Astrophage/Taumoeba and the Biological Solution.md | Astrophage - Petrova-line breeding band at Adrian is 91.2 km altitude and less than 200 metres thick | False |
-| Project Hail Mary/Astrophage/Taumoeba and the Biological Solution.md | Taumoeba - Strain 82.5 achieves nitrogen tolerance at the threshold needed for Venus and Threeworld deployment | False |
-| Project Hail Mary/Astrophage/The Adrian Ecology.md | Astrophage - Petrova-line breeding band at Adrian is 91.2 km altitude and less than 200 metres thick | False |
-| Project Hail Mary/Astrophage/The Adrian Ecology.md | Astrophage - Petrova-line breeding band at Adrian is 91.2 km altitude and less than 200 metres thick | False |
-| Project Hail Mary/Novel/PHM Novel - Chapter 16.md | Astrophage - Petrova-line breeding band at Adrian is 91.2 km altitude and less than 200 metres thick | False |
-| Project Hail Mary/Novel/PHM Novel - Chapter 17.md | Engineering - Beetle probes are autonomous mission-insurance vehicles at 500g acceleration to 0.93c | False |
-| Project Hail Mary/Novel/PHM Novel - Chapter 24.md | Taumoeba - Strain 82.5 achieves nitrogen tolerance at the threshold needed for Venus and Threeworld deployment | False |
-| Project Hail Mary/Novel/PHM Novel - Chapter 28.md | Engineering - Autonomous Beetle deployment delivers Taumoeba-82.5 to Earth without requiring Grace's return | False |
-| Project Hail Mary/Novel/Resolution and Aftermath.md | Engineering - Autonomous Beetle deployment delivers Taumoeba-82.5 to Earth without requiring Grace's return | False |
-| Project Hail Mary/Propulsion/Hail Mary Ship Design and Systems.md | Engineering - Beetle probes are autonomous mission-insurance vehicles at 500g acceleration to 0.93c | False |
-| Project Hail Mary/Propulsion/Hail Mary Ship Design and Systems.md | Engineering - Autonomous Beetle deployment delivers Taumoeba-82.5 to Earth without requiring Grace's return | False |
-| Project Hail Mary/Propulsion/The Hail Mary Drive.md | Engineering - Beetle probes are autonomous mission-insurance vehicles at 500g acceleration to 0.93c | False |
 | Project Hail Mary/_templates/Chapter Summary Template.md | <Topic> Chapter Summaries - Secondary Sources Registry | False |
 | Project Hail Mary/_templates/Chapter Summary Template.md | Related Concept A | False |
 | Project Hail Mary/_templates/Chapter Summary Template.md | Related Concept B | False |

@@ -106,9 +106,12 @@ Adjacency lists dominate sparse real-world graphs such as social networks, biolo
 
 *See also:* [[Graph Representations Overview]] | [[Implicit and Compressed Graph Representations]] | [[Weighted and Directed Graphs]] | [[Graph Properties and Terminology]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
+- [[CS Data Structures/_chunks/chunk-ds-019 Adjacency lists dominate for sparse graphs|Adjacency lists dominate for sparse graphs]]
+- [[CS Data Structures/_chunks/chunk-ds-094 Adjacency matrix enables O1 edge queries but wastes space|Adjacency matrices enable O(1) edge queries but waste space]]
+- [[CS Data Structures/_chunks/chunk-ds-076 CSR stores graphs in flat arrays for cache efficiency|CSR stores graphs in flat arrays for cache efficiency]]
+- [[CS Data Structures/_chunks/chunk-ds-127 Edge list is simplest graph representation|Edge lists are the simplest graph representation]]
 
-### References
-→ [[Sources Index]]
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

@@ -105,9 +105,12 @@ Skip lists underpin **Redis ZSET** sorted sets, **LevelDB/RocksDB MemTables**, a
 
 *See also:* [[Disjoint Sets and Union-Find]], [[Segment Trees]], [[Fenwick Trees]], [[Interval Trees and Range Trees]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
+- [[CS Data Structures/_chunks/chunk-ds-015 Skip lists achieve Ologn with probabilistic layering|Skip lists achieve O(log n) with probabilistic layering]]
+- [[CS Data Structures/_chunks/chunk-ds-090 Skip list expected space is On despite multiple levels|Skip list expected space is O(n) despite multiple levels]]
+- [[CS Data Structures/_chunks/chunk-ds-072 Skip lists support lock-free concurrent operations|Skip lists support lock-free concurrent operations]]
+- [[CS Data Structures/_chunks/chunk-ds-137 Memtables use skip lists or red-black trees|Memtables use skip lists or red-black trees]]
 
-### References
--> Sources Index
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

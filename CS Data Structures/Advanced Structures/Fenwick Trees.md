@@ -110,9 +110,12 @@ Fenwick trees were introduced by **Peter Fenwick in 1994** for arithmetic coding
 
 *See also:* [[Segment Trees]], [[Interval Trees and Range Trees]], [[Skip Lists]], [[Disjoint Sets and Union-Find]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
+- [[CS Data Structures/_chunks/chunk-ds-018 Fenwick trees use bit manipulation for prefix sums|Fenwick trees use bit manipulation for prefix sums]]
+- [[CS Data Structures/_chunks/chunk-ds-093 Fenwick trees are buildable in On via propagation|Fenwick trees are buildable in O(n) via propagation]]
+- [[CS Data Structures/_chunks/chunk-ds-146 Fenwick range update uses difference array trick|Fenwick range update uses the difference-array trick]]
+- [[CS Data Structures/_chunks/chunk-ds-075 2D Fenwick tree answers rectangle sum queries|2D Fenwick trees answer rectangle sum queries]]
 
-### References
--> Sources Index
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

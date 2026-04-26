@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 286
+Count: 280
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -39,17 +39,11 @@ Count: 286
 - [[CS Algorithms/Study/Strings - Review Drill|Strings — Review Drill]] (`CS Algorithms/Study/Strings - Review Drill.md`)
 - [[CS Algorithms/Techniques/Techniques Overview|Techniques Overview]] (`CS Algorithms/Techniques/Techniques Overview.md`)
 - [[CS Data Structures/Advanced Structures/Advanced Structures Overview|Advanced Structures Overview]] (`CS Data Structures/Advanced Structures/Advanced Structures Overview.md`)
-- [[CS Data Structures/Advanced Structures/Disjoint Sets and Union-Find|Disjoint Sets and Union-Find]] (`CS Data Structures/Advanced Structures/Disjoint Sets and Union-Find.md`)
-- [[CS Data Structures/Advanced Structures/Fenwick Trees|Fenwick Trees]] (`CS Data Structures/Advanced Structures/Fenwick Trees.md`)
 - [[CS Data Structures/Advanced Structures/Interval Trees and Range Trees|Interval Trees and Range Trees]] (`CS Data Structures/Advanced Structures/Interval Trees and Range Trees.md`)
 - [[CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures|k-d Trees and Spatial Data Structures]] (`CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures.md`)
-- [[CS Data Structures/Advanced Structures/Segment Trees|Segment Trees]] (`CS Data Structures/Advanced Structures/Segment Trees.md`)
-- [[CS Data Structures/Advanced Structures/Skip Lists|Skip Lists]] (`CS Data Structures/Advanced Structures/Skip Lists.md`)
 - [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures — Learning Path]] (`CS Data Structures/CS Data Structures — Learning Path.md`)
 - [[CS Data Structures/CS Data Structures|CS Data Structures]] (`CS Data Structures/CS Data Structures.md`)
 - [[CS Data Structures/Foundational Concepts/Foundational Concepts Overview|Foundational Concepts Overview]] (`CS Data Structures/Foundational Concepts/Foundational Concepts Overview.md`)
-- [[CS Data Structures/Graphs/Adjacency List and Adjacency Matrix|Adjacency List and Adjacency Matrix]] (`CS Data Structures/Graphs/Adjacency List and Adjacency Matrix.md`)
-- [[CS Data Structures/Graphs/Graph Properties and Terminology|Graph Properties and Terminology]] (`CS Data Structures/Graphs/Graph Properties and Terminology.md`)
 - [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] (`CS Data Structures/Graphs/Graphs Overview.md`)
 - [[CS Data Structures/Graphs/Implicit and Compressed Graph Representations|Implicit and Compressed Graph Representations]] (`CS Data Structures/Graphs/Implicit and Compressed Graph Representations.md`)
 - [[CS Data Structures/Graphs/Weighted and Directed Graphs|Weighted and Directed Graphs]] (`CS Data Structures/Graphs/Weighted and Directed Graphs.md`)

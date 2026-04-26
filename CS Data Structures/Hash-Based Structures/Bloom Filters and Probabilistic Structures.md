@@ -114,8 +114,11 @@ flowchart TD
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-012 Bloom filters use 9.6 bits per element for 1pct FP|Bloom filters use about 9.6 bits per element for 1% false positives]]
+- [[CS Data Structures/_chunks/chunk-ds-114 Counting Bloom filters allow deletion at 4x space|Counting Bloom filters allow deletion at higher space cost]]
+- [[CS Data Structures/_chunks/chunk-ds-051 Cuckoo filters support deletion unlike Bloom filters|Cuckoo filters support deletion unlike standard Bloom filters]]
+- [[CS Data Structures/_chunks/chunk-ds-056 Bloom filters in LSM avoid 90pct unnecessary reads|Bloom filters in LSM trees avoid many unnecessary reads]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

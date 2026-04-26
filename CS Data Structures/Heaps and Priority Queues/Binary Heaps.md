@@ -107,8 +107,10 @@ The celebrated **build-heap** algorithm constructs a heap from an unordered arra
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-067 Binary heap array layout has implicit parent-child|Binary heap array layout has implicit parent-child relationships]]
+- [[CS Data Structures/_chunks/chunk-ds-068 Build-heap runs in On not Onlogn via bottom-up sift-down|Build-heap runs in O(n) via bottom-up sift-down]]
+- [[CS Data Structures/_chunks/chunk-ds-088 Heapsort is On log n worst-case and in-place|Heapsort is O(n log n) worst-case and in-place]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]
