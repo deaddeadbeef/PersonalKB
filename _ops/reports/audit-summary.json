@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-04-27T00:21:06",
+  "root": "D:\\Vaults\\PersonalKB",
+  "files_total": 4721,
+  "by_extension": {
+    "(none)": 2,
+    ".base": 1,
+    ".html": 1,
+    ".jpg": 22,
+    ".json": 17,
+    ".md": 2852,
+    ".mp3": 1810,
+    ".py": 11,
+    ".pyc": 3,
+    ".txt": 2
+  },
+  "markdown_files": 2852,
+  "candidate_articles": 767,
+  "empty_notes": 2,
+  "stubs_under_1500_bytes": 28,
+  "missing_up": 31,
+  "missing_confidence": 268,
+  "missing_references": 286,
+  "placeholder_hits": 124,
+  "broken_link_occurrences": 973,
+  "orphan_articles": 1
+}
