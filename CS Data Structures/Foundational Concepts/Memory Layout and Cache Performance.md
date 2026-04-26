@@ -107,8 +107,12 @@ These effects reshape data-structure selection. B-trees outperform binary search
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-061 Cache locality makes arrays 10-100x faster for iteration|Cache locality makes arrays much faster for iteration]]
+- [[CS Data Structures/_chunks/chunk-ds-128 Sequential scan is always On over B cache transfers|Sequential scans use O(n/B) cache transfers]]
+- [[CS Data Structures/_chunks/chunk-ds-160 Memory wall means layout matters more than algorithm|The memory wall makes layout matter]]
+- [[CS Data Structures/_chunks/chunk-ds-023 Cache-oblivious structures optimize for all cache levels|Cache-oblivious structures optimize across cache levels]]
+- [[CS Data Structures/_chunks/chunk-ds-151 Memory alignment affects struct layout and padding|Memory alignment affects struct layout and padding]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

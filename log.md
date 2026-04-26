@@ -48,3 +48,34 @@ Audit deltas:
 Verification:
 - `python _ops/personal_kb.py audit`
 - `python _ops/personal_kb.py index`
+
+## [2026-04-27] refine | CS Data Structures batch 2
+
+Scope: bounded refinement of 10 CS Data Structures wiki notes in foundational concepts, graph representations, and collision resolution.
+
+Changed content files:
+- `CS Data Structures/Foundational Concepts/Abstract Data Types.md`
+- `CS Data Structures/Foundational Concepts/Amortized Analysis.md`
+- `CS Data Structures/Foundational Concepts/Asymptotic Analysis and Big-O Notation.md`
+- `CS Data Structures/Foundational Concepts/Data Structure Comparison and Selection.md`
+- `CS Data Structures/Foundational Concepts/Memory Layout and Cache Performance.md`
+- `CS Data Structures/Foundational Concepts/Pointer-Based vs Array-Based Structures.md`
+- `CS Data Structures/Graphs/Graph Representations Overview.md`
+- `CS Data Structures/Graphs/Implicit and Compressed Graph Representations.md`
+- `CS Data Structures/Graphs/Weighted and Directed Graphs.md`
+- `CS Data Structures/Hash-Based Structures/Collision Resolution Strategies.md`
+
+Maintenance changes:
+- Regenerated `_ops/reports/` and `index.md`.
+- Normalized references to `[[CS Data Structures/Sources/Sources Index|Sources Index]]`.
+- Replaced pending chunk placeholders with existing chunk links and explicit source-gap notes where extracted chunk coverage is incomplete.
+
+Audit deltas:
+- Missing references: 280 -> 278
+- Placeholder hits: 114 -> 104
+- Broken link occurrences: 953 -> 953
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`

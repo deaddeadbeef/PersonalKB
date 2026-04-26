@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 280
+Count: 278
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -45,8 +45,6 @@ Count: 280
 - [[CS Data Structures/CS Data Structures|CS Data Structures]] (`CS Data Structures/CS Data Structures.md`)
 - [[CS Data Structures/Foundational Concepts/Foundational Concepts Overview|Foundational Concepts Overview]] (`CS Data Structures/Foundational Concepts/Foundational Concepts Overview.md`)
 - [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] (`CS Data Structures/Graphs/Graphs Overview.md`)
-- [[CS Data Structures/Graphs/Implicit and Compressed Graph Representations|Implicit and Compressed Graph Representations]] (`CS Data Structures/Graphs/Implicit and Compressed Graph Representations.md`)
-- [[CS Data Structures/Graphs/Weighted and Directed Graphs|Weighted and Directed Graphs]] (`CS Data Structures/Graphs/Weighted and Directed Graphs.md`)
 - [[CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview|Hash-Based Structures Overview]] (`CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview.md`)
 - [[CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview|Heaps and Priority Queues Overview]] (`CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview.md`)
 - [[CS Data Structures/Linear Structures/Linear Structures Overview|Linear Structures Overview]] (`CS Data Structures/Linear Structures/Linear Structures Overview.md`)

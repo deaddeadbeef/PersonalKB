@@ -96,9 +96,14 @@ Directed graphs model hyperlinks, prerequisite chains, call graphs, and one-way 
 
 *See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[Graph Properties and Terminology]] | [[Shortest Path Algorithms]] | [[Minimum Spanning Trees]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
 
-### References
-→ [[Sources Index]]
+- [[CS Data Structures/_chunks/chunk-ds-039 DFS edge classification detects cycles and enables topo sort|DFS edge classification detects cycles and enables topological sort]]
+- [[CS Data Structures/_chunks/chunk-ds-040 Tarjans SCC finds all strongly connected components in one DFS|Tarjan's SCC algorithm finds all strongly connected components in one DFS]]
+- [[CS Data Structures/_chunks/chunk-ds-157 Kosarajus SCC uses two DFS on forward and reverse graph|Kosaraju's SCC algorithm uses forward and reverse graph passes]]
+- [[CS Data Structures/_chunks/chunk-ds-041 Dijkstras complexity depends on priority queue choice|Dijkstra's complexity depends on priority queue choice]]
+- [[CS Data Structures/_chunks/chunk-ds-132 Bellman-Ford detects negative cycles in round V|Bellman-Ford detects negative cycles after V relaxation rounds]]
+
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

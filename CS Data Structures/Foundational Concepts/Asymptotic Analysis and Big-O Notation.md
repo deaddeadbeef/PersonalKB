@@ -116,8 +116,12 @@ For loops, multiply the number of iterations by the cost per iteration. For recu
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-088 Heapsort is On log n worst-case and in-place|Heapsort illustrates O(n log n) comparison-sort complexity]]
+- [[CS Data Structures/_chunks/chunk-ds-061 Cache locality makes arrays 10-100x faster for iteration|Cache locality illustrates Big-O's constant-factor limits]]
+- [[CS Data Structures/_chunks/chunk-ds-159 Information-theoretic lower bound sets minimum bits|Information-theoretic lower bounds set space baselines]]
+
+No dedicated chunk has been extracted yet for the formal Big-O/Ω/Θ definitions or the Master Theorem; use the source index for broader textbook coverage.
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

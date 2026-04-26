@@ -114,8 +114,12 @@ flowchart TD
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-087 Chaining degrades gracefully but wastes memory|Chaining degrades gracefully but wastes memory]]
+- [[CS Data Structures/_chunks/chunk-ds-034 Linear probing has best cache performance|Linear probing has strong cache performance]]
+- [[CS Data Structures/_chunks/chunk-ds-011 Robin Hood hashing reduces probe variance|Robin Hood hashing reduces probe variance]]
+- [[CS Data Structures/_chunks/chunk-ds-103 Backward-shift deletion avoids tombstones|Backward-shift deletion avoids tombstones]]
+- [[CS Data Structures/_chunks/chunk-ds-035 Swiss Table uses SIMD to probe 16 slots in parallel|Swiss Table uses SIMD metadata probing]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

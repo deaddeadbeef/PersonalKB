@@ -49,8 +49,11 @@ The representation you choose propagates into every algorithm's constant factor 
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-019 Adjacency lists dominate for sparse graphs|Adjacency lists dominate for sparse graphs]]
+- [[CS Data Structures/_chunks/chunk-ds-094 Adjacency matrix enables O1 edge queries but wastes space|Adjacency matrices enable O(1) edge queries but waste space]]
+- [[CS Data Structures/_chunks/chunk-ds-127 Edge list is simplest graph representation|Edge lists are the simplest graph representation]]
+- [[CS Data Structures/_chunks/chunk-ds-076 CSR stores graphs in flat arrays for cache efficiency|CSR stores graphs in flat arrays for cache efficiency]]
 
 ## References
 
-→ [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

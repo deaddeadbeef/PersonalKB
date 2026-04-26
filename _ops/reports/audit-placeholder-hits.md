@@ -1,6 +1,6 @@
 # Placeholder Hits
 
-Count: 114
+Count: 104
 
 | file | line | text |
 | --- | --- | --- |
@@ -11,16 +11,6 @@ Count: 114
 | CS Algorithms/_templates/Tiered Page Template.md | 26 | {Step-by-step description} |
 | CS Data Structures/Advanced Structures/Interval Trees and Range Trees.md | 106 | *Pending chunk extraction.* |
 | CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures.md | 111 | *Pending chunk extraction.* |
-| CS Data Structures/Foundational Concepts/Abstract Data Types.md | 105 | *Pending chunk extraction.* |
-| CS Data Structures/Foundational Concepts/Amortized Analysis.md | 113 | *Pending chunk extraction.* |
-| CS Data Structures/Foundational Concepts/Asymptotic Analysis and Big-O Notation.md | 119 | *Pending chunk extraction.* |
-| CS Data Structures/Foundational Concepts/Data Structure Comparison and Selection.md | 113 | *Pending chunk extraction.* |
-| CS Data Structures/Foundational Concepts/Memory Layout and Cache Performance.md | 110 | *Pending chunk extraction.* |
-| CS Data Structures/Foundational Concepts/Pointer-Based vs Array-Based Structures.md | 108 | *Pending chunk extraction.* |
-| CS Data Structures/Graphs/Graph Representations Overview.md | 52 | *Pending chunk extraction.* |
-| CS Data Structures/Graphs/Implicit and Compressed Graph Representations.md | 87 | *Pending chunk extraction.* |
-| CS Data Structures/Graphs/Weighted and Directed Graphs.md | 101 | *Pending chunk extraction.* |
-| CS Data Structures/Hash-Based Structures/Collision Resolution Strategies.md | 117 | *Pending chunk extraction.* |
 | CS Data Structures/Hash-Based Structures/Consistent Hashing.md | 108 | *Pending chunk extraction.* |
 | CS Data Structures/Hash-Based Structures/Cuckoo Hashing.md | 115 | *Pending chunk extraction.* |
 | CS Data Structures/Hash-Based Structures/Universal and Perfect Hashing.md | 94 | *Pending chunk extraction.* |

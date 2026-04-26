@@ -110,8 +110,12 @@ Three techniques formalize this:
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-120 Aggregate method proves amortized bounds by averaging|Aggregate method proves amortized bounds by averaging over sequences]]
+- [[CS Data Structures/_chunks/chunk-ds-080 Accounting method assigns credits for amortized analysis|Accounting method assigns credits for amortized analysis]]
+- [[CS Data Structures/_chunks/chunk-ds-079 Potential method proves amortized bounds|Potential method proves amortized bounds via virtual savings]]
+- [[CS Data Structures/_chunks/chunk-ds-001 Dynamic arrays achieve amortized O1 append via geometric resizing|Dynamic arrays achieve amortized O(1) append via geometric resizing]]
+- [[CS Data Structures/_chunks/chunk-ds-036 Fibonacci heaps achieve O1 amortized decrease-key|Fibonacci heaps achieve O(1) amortized decrease-key]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

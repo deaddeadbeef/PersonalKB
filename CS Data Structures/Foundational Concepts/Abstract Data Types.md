@@ -102,8 +102,10 @@ Thinking in ADTs lets you defer implementation decisions until you understand th
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-062 Two stacks simulate a queue with O1 amortized|Two stacks simulate a queue with O(1) amortized operations]]
+- [[CS Data Structures/_chunks/chunk-ds-004 DLL plus hash map gives O1 LRU cache operations|DLL plus hash map gives O(1) LRU cache operations]]
+- [[CS Data Structures/_chunks/chunk-ds-067 Binary heap array layout has implicit parent-child|Binary heap array layout implements a tree interface without pointers]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

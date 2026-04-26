@@ -105,8 +105,12 @@ created: 2025-07-14
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-002 Arrays provide O1 random access via base address arithmetic|Arrays provide O(1) random access via address arithmetic]]
+- [[CS Data Structures/_chunks/chunk-ds-001 Dynamic arrays achieve amortized O1 append via geometric resizing|Dynamic arrays achieve amortized O(1) append]]
+- [[CS Data Structures/_chunks/chunk-ds-061 Cache locality makes arrays 10-100x faster for iteration|Cache locality makes arrays much faster for iteration]]
+- [[CS Data Structures/_chunks/chunk-ds-122 Intrusive linked lists embed pointers inside elements|Intrusive linked lists embed pointers inside elements]]
+- [[CS Data Structures/_chunks/chunk-ds-139 Arena allocation frees all memory in one shot|Arena allocation can recover locality for node-heavy structures]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

@@ -82,9 +82,14 @@ Implicit graphs power state-space search in Rubik's Cube solvers, game trees, pr
 
 *See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[Graph Search — BFS and DFS]] | [[External Memory and Streaming Algorithms]] | [[Weighted and Directed Graphs]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
 
-### References
-→ [[Sources Index]]
+- [[CS Data Structures/_chunks/chunk-ds-076 CSR stores graphs in flat arrays for cache efficiency|CSR stores graphs in flat arrays for cache efficiency]]
+- [[CS Data Structures/_chunks/chunk-ds-019 Adjacency lists dominate for sparse graphs|Adjacency lists dominate for sparse graph storage]]
+- [[CS Data Structures/_chunks/chunk-ds-127 Edge list is simplest graph representation|Edge lists are compact edge-centric graph representations]]
+
+No dedicated chunk has been extracted yet for implicit state-space graphs, property-graph databases, RDF, or WebGraph-style compression; use the source index for broader graph-representation coverage.
+
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

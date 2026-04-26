@@ -110,8 +110,11 @@ Context determines the right answer. A 50-element collection rarely needs anythi
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-004 DLL plus hash map gives O1 LRU cache operations|DLL plus hash map gives O(1) LRU cache operations]]
+- [[CS Data Structures/_chunks/chunk-ds-010 Hash tables achieve expected O1 via load factor management|Hash tables achieve expected O(1) via load-factor management]]
+- [[CS Data Structures/_chunks/chunk-ds-061 Cache locality makes arrays 10-100x faster for iteration|Cache locality makes arrays much faster for iteration]]
+- [[CS Data Structures/_chunks/chunk-ds-154 Fibonacci heaps rarely used despite optimal theory|Fibonacci heaps illustrate theory-vs-practice trade-offs]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]
