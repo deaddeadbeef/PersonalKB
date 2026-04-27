@@ -111,5 +111,11 @@ Use path copying. Given an initial array of N elements and Q updates, analyze to
 
 *See also:* [[Red-Black Trees]] · [[Concurrent Data Structures]] · [[Rope Data Structure]] | **CS Algorithms:** [[Functional Programming Patterns]] · [[Version Control Internals]]
 
+## Supporting Chunks
+- [[chunk-ds-026 Path copying makes BSTs persistent with Ologn overhead]]
+- [[chunk-ds-027 Clojure persistent vectors use 32-way tries]]
+- [[chunk-ds-102 Git is a persistent content-addressed tree structure]]
+- [[chunk-ds-156 Finger trees give O1 at both ends with Ologn split]]
+
 ## References
--> [[Sources Index]]
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

@@ -1,6 +1,6 @@
 # Broken Wiki Links
 
-Count: 953
+Count: 950
 
 | file | target | embedded |
 | --- | --- | --- |
@@ -344,7 +344,6 @@ Count: 953
 | CS Data Structures/Advanced Structures/Concurrent Data Structures.md | Hash Tables | False |
 | CS Data Structures/Advanced Structures/Concurrent Data Structures.md | Parallel Algorithms | False |
 | CS Data Structures/Advanced Structures/Concurrent Data Structures.md | Synchronization Primitives | False |
-| CS Data Structures/Advanced Structures/External Memory Structures.md | B-Trees and B+ Trees | False |
 | CS Data Structures/Advanced Structures/External Memory Structures.md | External Sorting | False |
 | CS Data Structures/Advanced Structures/External Memory Structures.md | Disk-Based Algorithms | False |
 | CS Data Structures/Advanced Structures/LRU and LFU Caches.md | Hash Tables | False |
@@ -412,8 +411,6 @@ Count: 953
 | CS Data Structures/Trees/B-Trees and B-Plus Trees.md | External Sorting | False |
 | CS Data Structures/Trees/B-Trees and B-Plus Trees.md | External Sorting | False |
 | CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md | Trees and BSTs Overview | False |
-| CS Data Structures/Tries and String Structures/Rope Data Structure.md | Tries | False |
-| CS Data Structures/Tries and String Structures/Rope Data Structure.md | Suffix Trees and Arrays | False |
 | CS Data Structures/Tries and String Structures/Rope Data Structure.md | String Algorithms | False |
 | CS Data Structures/Tries and String Structures/Rope Data Structure.md | Text Editor Internals | False |
 | CS Data Structures/Tries and String Structures/Suffix Trees.md | Graph Structures Overview | False |

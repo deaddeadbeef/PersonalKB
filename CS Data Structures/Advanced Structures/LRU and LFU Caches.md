@@ -119,5 +119,10 @@ Design an **adaptive cache** that dynamically switches between LRU and LFU behav
 
 *See also:* [[Hash Tables]] · [[Doubly Linked Lists]] · [[Cache-Oblivious Structures]] | **CS Algorithms:** [[Online Algorithms]] · [[Competitive Analysis]]
 
+## Supporting Chunks
+- [[chunk-ds-004 DLL plus hash map gives O1 LRU cache operations]]
+- [[chunk-ds-069 Count-Min Sketch estimates frequency in sublinear space]]
+- Source gap: no dedicated extracted LFU cache chunk was found in this pass; LFU policy details remain supported by [[CS Data Structures/Sources/Sources Index|Sources Index]].
+
 ## References
--> [[Sources Index]]
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

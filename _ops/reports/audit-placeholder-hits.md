@@ -1,6 +1,6 @@
 # Placeholder Hits
 
-Count: 84
+Count: 79
 
 | file | line | text |
 | --- | --- | --- |
@@ -9,11 +9,6 @@ Count: 84
 | CS Algorithms/_templates/Tiered Page Template.md | 13 | **The Core Idea:** {One sentence} |
 | CS Algorithms/_templates/Tiered Page Template.md | 15 | **Analogy:** {Real-world comparison} |
 | CS Algorithms/_templates/Tiered Page Template.md | 26 | {Step-by-step description} |
-| CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md | 101 | *Pending chunk extraction.* |
-| CS Data Structures/Tries and String Structures/Suffix Arrays.md | 100 | *Pending chunk extraction.* |
-| CS Data Structures/Tries and String Structures/Suffix Trees.md | 102 | *Pending chunk extraction.* |
-| CS Data Structures/Tries and String Structures/Ternary Search Trees.md | 111 | *Pending chunk extraction.* |
-| CS Data Structures/Tries and String Structures/Tries and Prefix Trees.md | 103 | *Pending chunk extraction.* |
 | CS Data Structures/_templates/Tiered Page Template.md | 5 | # {Topic Name} |
 | CS Data Structures/_templates/Tiered Page Template.md | 7 | > **One-line summary**: {What this is and why it matters} |
 | CS Data Structures/_templates/Tiered Page Template.md | 13 | **The Core Idea:** {One sentence} |

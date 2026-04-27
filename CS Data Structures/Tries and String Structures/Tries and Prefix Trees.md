@@ -100,7 +100,7 @@ Tries underpin autocomplete engines, spell checkers, DNS resolvers, T9 predictiv
 
 ## Supporting Chunks / References
 ### Supporting Chunks
-*Pending chunk extraction.*
+- [[chunk-ds-013 Trie lookup is Om independent of stored keys]]
 
 ### References
-→ Sources Index
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

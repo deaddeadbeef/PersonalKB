@@ -112,6 +112,37 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-04-28] refine | CS Data Structures batch 5 rerun
+
+Scope: bounded refinement of 10 CS Data Structures wiki notes in tries, string structures, and advanced structures.
+
+Changed content files:
+- `CS Data Structures/Advanced Structures/Concurrent Data Structures.md`
+- `CS Data Structures/Advanced Structures/External Memory Structures.md`
+- `CS Data Structures/Advanced Structures/LRU and LFU Caches.md`
+- `CS Data Structures/Advanced Structures/Persistent and Immutable Structures.md`
+- `CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md`
+- `CS Data Structures/Tries and String Structures/Rope Data Structure.md`
+- `CS Data Structures/Tries and String Structures/Suffix Arrays.md`
+- `CS Data Structures/Tries and String Structures/Suffix Trees.md`
+- `CS Data Structures/Tries and String Structures/Ternary Search Trees.md`
+- `CS Data Structures/Tries and String Structures/Tries and Prefix Trees.md`
+
+Maintenance changes:
+- Regenerated `_ops/reports/` and `index.md`.
+- Normalized references to `[[CS Data Structures/Sources/Sources Index|Sources Index]]`.
+- Replaced selected-note pending chunk placeholders with existing chunk links and explicit source-gap notes where extracted chunk coverage is incomplete.
+
+Audit counts:
+- Missing references: 271
+- Placeholder hits: 81
+- Broken link occurrences: 951
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `git diff --check`
+
 ## [2026-04-27] refine | CS Data Structures batch 4
 
 Scope: bounded refinement of 10 CS Data Structures wiki notes in linear structures and trees.

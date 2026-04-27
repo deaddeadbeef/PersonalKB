@@ -99,7 +99,8 @@ Suffix trees support exact substring search, longest repeated substring, longest
 
 ## Supporting Chunks / References
 ### Supporting Chunks
-*Pending chunk extraction.*
+- [[chunk-ds-032 Ukkonens algorithm builds suffix trees in On time]]
+- Source gap: the vault has no more specific extracted chunks for suffix-tree query variants yet; broader support remains in [[CS Data Structures/Sources/Sources Index|Sources Index]] via `raw-ds-027`.
 
 ### References
-→ Sources Index
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

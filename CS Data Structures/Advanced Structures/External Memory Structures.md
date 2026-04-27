@@ -107,7 +107,12 @@ Design and implement an **LSM-tree storage engine** with: (a) an in-memory AVL/r
 
 ---
 
-*See also:* [[B-Trees and B+ Trees]] · [[Cache-Oblivious Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[External Sorting]] · [[Disk-Based Algorithms]]
+*See also:* [[B-Trees and B-Plus Trees]] · [[Cache-Oblivious Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[External Sorting]] · [[Disk-Based Algorithms]]
+
+## Supporting Chunks
+- [[chunk-ds-009 B-trees minimize disk IO by matching node size to pages]]
+- [[chunk-ds-055 LSM trees trade read performance for write throughput]]
+- [[chunk-ds-056 Bloom filters in LSM avoid 90pct unnecessary reads]]
 
 ## References
--> [[Sources Index]]
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

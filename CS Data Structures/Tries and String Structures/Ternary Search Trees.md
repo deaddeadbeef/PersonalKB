@@ -108,7 +108,7 @@ TSTs are well suited to large alphabets, ordered dictionaries, autocomplete, spe
 
 ## Supporting Chunks / References
 ### Supporting Chunks
-*Pending chunk extraction.*
+- [[chunk-ds-071 TST uses less memory than tries for sparse alphabets]]
 
 ### References
--> Sources Index
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

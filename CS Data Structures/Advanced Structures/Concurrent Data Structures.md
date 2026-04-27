@@ -116,5 +116,11 @@ Test with 8 threads performing mixed read/write workloads and measure throughput
 
 *See also:* [[Lock-Free Queues and Stacks]] · [[Hash Tables]] · [[Skip Lists]] | **CS Algorithms:** [[Parallel Algorithms]] · [[Synchronization Primitives]]
 
+## Supporting Chunks
+- [[chunk-ds-024 Lock-free guarantees system-wide progress without deadlock]]
+- [[chunk-ds-025 The ABA problem corrupts lock-free algorithms]]
+- [[chunk-ds-101 RCU lets readers proceed with zero synchronization]]
+- [[chunk-ds-140 Epoch-based reclamation batches memory frees]]
+
 ## References
--> [[Sources Index]]
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

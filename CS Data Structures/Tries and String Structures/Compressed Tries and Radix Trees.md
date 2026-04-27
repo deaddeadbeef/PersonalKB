@@ -98,7 +98,8 @@ Compressed tries dominate longest-prefix-match in IP routing, including LC tries
 
 ## Supporting Chunks / References
 ### Supporting Chunks
-*Pending chunk extraction.*
+- [[chunk-ds-089 Compressed tries reduce space via path compression]]
+- [[chunk-ds-126 Radix trees store entire edges as strings]]
 
 ### References
-→ Sources Index
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]
