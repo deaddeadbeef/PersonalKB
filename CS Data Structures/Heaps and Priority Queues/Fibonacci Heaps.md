@@ -89,8 +89,11 @@ A key result is that the maximum degree of any node is $O(\log n)$, because a no
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-036 Fibonacci heaps achieve O1 amortized decrease-key|Fibonacci heaps achieve O(1) amortized decrease-key]]
+- [[CS Data Structures/_chunks/chunk-ds-078 Cascading cuts maintain Fibonacci heap degree bounds|Cascading cuts maintain Fibonacci heap degree bounds]]
+- [[CS Data Structures/_chunks/chunk-ds-096 Fibonacci heap consolidation merges trees like binary addition|Fibonacci heap consolidation merges trees like binary addition]]
+- [[CS Data Structures/_chunks/chunk-ds-154 Fibonacci heaps rarely used despite optimal theory|Fibonacci heaps are rarely used in practice despite optimal theory]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

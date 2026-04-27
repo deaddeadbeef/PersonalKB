@@ -136,8 +136,9 @@ function peek(cb):
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-005 Circular buffers use modular arithmetic for O1 queue ops|Circular buffers use modular arithmetic for O(1) queue operations]]
+- [[CS Data Structures/_chunks/chunk-ds-141 Power-of-two buffer makes modulo a bitmask|Power-of-two buffer sizes make modulo a bitmask]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

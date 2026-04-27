@@ -79,3 +79,35 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
+
+## [2026-04-27] refine | CS Data Structures batch 3
+
+Scope: bounded refinement of 10 CS Data Structures wiki notes in advanced structures, hash-based structures, heaps, and linear structures.
+
+Changed content files:
+- `CS Data Structures/Advanced Structures/Interval Trees and Range Trees.md`
+- `CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures.md`
+- `CS Data Structures/Hash-Based Structures/Consistent Hashing.md`
+- `CS Data Structures/Hash-Based Structures/Cuckoo Hashing.md`
+- `CS Data Structures/Hash-Based Structures/Universal and Perfect Hashing.md`
+- `CS Data Structures/Heaps and Priority Queues/Binomial Heaps.md`
+- `CS Data Structures/Heaps and Priority Queues/Fibonacci Heaps.md`
+- `CS Data Structures/Heaps and Priority Queues/Heap Applications and d-ary Heaps.md`
+- `CS Data Structures/Linear Structures/Arrays and Dynamic Arrays.md`
+- `CS Data Structures/Linear Structures/Circular Buffers.md`
+
+Maintenance changes:
+- Regenerated `_ops/reports/` and `index.md`.
+- Normalized references to `[[CS Data Structures/Sources/Sources Index|Sources Index]]`.
+- Replaced selected-note pending chunk placeholders with existing chunk links and explicit source-gap notes where extracted chunk coverage is incomplete.
+
+Audit deltas:
+- Missing references: 278 -> 276
+- Placeholder hits: 104 -> 94
+- Broken link occurrences: 953 -> 953
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`

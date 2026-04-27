@@ -101,9 +101,12 @@ Interval trees are standard for **meeting conflict detection**, **genomic region
 
 *See also:* [[Segment Trees]], [[Fenwick Trees]], [[k-d Trees and Spatial Data Structures]], [[Skip Lists]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
 
-### References
--> Sources Index
+- [[CS Data Structures/_chunks/chunk-ds-031 Interval trees find overlapping intervals in Ologn plus k|Interval trees find overlapping intervals in O(log n + k)]]
+- [[CS Data Structures/_chunks/chunk-ds-048 Range trees answer 2D queries in Olog2n plus k|Range trees answer 2D orthogonal queries in O(log^2 n + k)]]
+- [[CS Data Structures/_chunks/chunk-ds-116 Augmentation theorem rotations preserve derivable metadata|Augmentation theorem: rotations preserve derivable metadata]]
+
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

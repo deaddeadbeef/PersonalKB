@@ -106,9 +106,14 @@ k-d trees are common in **ray tracing** and **photon mapping**, where spatial pr
 
 *See also:* [[Interval Trees and Range Trees]], [[Segment Trees]], [[Skip Lists]], [[Disjoint Sets and Union-Find]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
-*Pending chunk extraction.*
+## Supporting Chunks
 
-### References
--> Sources Index
+- [[CS Data Structures/_chunks/chunk-ds-049 K-d trees partition space alternating dimensions On space|K-d trees partition space by alternating dimensions]]
+- [[CS Data Structures/_chunks/chunk-ds-098 K-d trees degrade in high dimensions|K-d trees degrade in high dimensions]]
+- [[CS Data Structures/_chunks/chunk-ds-115 K-d tree nearest neighbor uses priority queue|K-d tree nearest-neighbor search uses best-first pruning]]
+- [[CS Data Structures/_chunks/chunk-ds-148 Ball trees handle high dimensions better than k-d trees|Ball trees handle higher dimensions better than k-d trees]]
+- [[CS Data Structures/_chunks/chunk-ds-119 R-trees index spatial objects with bounding rectangles|R-trees index spatial objects with bounding rectangles]]
+
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

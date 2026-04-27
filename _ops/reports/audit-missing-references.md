@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 278
+Count: 276
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -39,8 +39,6 @@ Count: 278
 - [[CS Algorithms/Study/Strings - Review Drill|Strings — Review Drill]] (`CS Algorithms/Study/Strings - Review Drill.md`)
 - [[CS Algorithms/Techniques/Techniques Overview|Techniques Overview]] (`CS Algorithms/Techniques/Techniques Overview.md`)
 - [[CS Data Structures/Advanced Structures/Advanced Structures Overview|Advanced Structures Overview]] (`CS Data Structures/Advanced Structures/Advanced Structures Overview.md`)
-- [[CS Data Structures/Advanced Structures/Interval Trees and Range Trees|Interval Trees and Range Trees]] (`CS Data Structures/Advanced Structures/Interval Trees and Range Trees.md`)
-- [[CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures|k-d Trees and Spatial Data Structures]] (`CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures.md`)
 - [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures — Learning Path]] (`CS Data Structures/CS Data Structures — Learning Path.md`)
 - [[CS Data Structures/CS Data Structures|CS Data Structures]] (`CS Data Structures/CS Data Structures.md`)
 - [[CS Data Structures/Foundational Concepts/Foundational Concepts Overview|Foundational Concepts Overview]] (`CS Data Structures/Foundational Concepts/Foundational Concepts Overview.md`)

@@ -91,8 +91,9 @@ where *p* is a prime larger than the key universe, and *a*, *b* are chosen unifo
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-066 Universal hashing eliminates adversarial worst-case|Universal hashing eliminates adversarial worst-case input]]
+- [[CS Data Structures/_chunks/chunk-ds-124 Perfect hashing gives O1 worst-case for static sets|Perfect hashing gives O(1) worst-case lookup for static key sets]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

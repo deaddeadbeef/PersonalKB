@@ -112,8 +112,11 @@ flowchart TD
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-050 Cuckoo hashing provides worst-case O1 lookup|Cuckoo hashing provides worst-case O(1) lookup]]
+- [[CS Data Structures/_chunks/chunk-ds-134 Cuckoo eviction chain has Ologn expected length|Cuckoo eviction chains have expected logarithmic length]]
+- [[CS Data Structures/_chunks/chunk-ds-107 Bucketized cuckoo supports 95pct load factor|Bucketized cuckoo hashing supports high load factors]]
+- [[CS Data Structures/_chunks/chunk-ds-051 Cuckoo filters support deletion unlike Bloom filters|Cuckoo filters support deletion unlike Bloom filters]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

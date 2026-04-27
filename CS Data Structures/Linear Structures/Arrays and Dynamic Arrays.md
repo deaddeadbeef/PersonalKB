@@ -121,8 +121,11 @@ function deleteAt(arr, index):
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-002 Arrays provide O1 random access via base address arithmetic|Arrays provide O(1) random access via base-address arithmetic]]
+- [[CS Data Structures/_chunks/chunk-ds-001 Dynamic arrays achieve amortized O1 append via geometric resizing|Dynamic arrays achieve amortized O(1) append via geometric resizing]]
+- [[CS Data Structures/_chunks/chunk-ds-061 Cache locality makes arrays 10-100x faster for iteration|Cache locality makes arrays much faster for iteration]]
+- [[CS Data Structures/_chunks/chunk-ds-111 Growth factor 1.5x vs 2x trades memory for copies|Growth factor 1.5x vs 2x trades memory for copy frequency]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

@@ -93,8 +93,9 @@ A **d-ary heap** is a complete d-ary tree stored implicitly in an array (general
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-104 D-ary heaps optimize for cache and reduce height|D-ary heaps optimize for cache and reduce height]]
+- [[CS Data Structures/_chunks/chunk-ds-088 Heapsort is On log n worst-case and in-place|Heapsort is O(n log n) worst-case and in-place]]
 
 ## References
 
-→ Sources Index
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

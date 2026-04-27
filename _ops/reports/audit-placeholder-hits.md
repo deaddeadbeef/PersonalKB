@@ -1,6 +1,6 @@
 # Placeholder Hits
 
-Count: 104
+Count: 94
 
 | file | line | text |
 | --- | --- | --- |
@@ -9,16 +9,6 @@ Count: 104
 | CS Algorithms/_templates/Tiered Page Template.md | 13 | **The Core Idea:** {One sentence} |
 | CS Algorithms/_templates/Tiered Page Template.md | 15 | **Analogy:** {Real-world comparison} |
 | CS Algorithms/_templates/Tiered Page Template.md | 26 | {Step-by-step description} |
-| CS Data Structures/Advanced Structures/Interval Trees and Range Trees.md | 106 | *Pending chunk extraction.* |
-| CS Data Structures/Advanced Structures/k-d Trees and Spatial Data Structures.md | 111 | *Pending chunk extraction.* |
-| CS Data Structures/Hash-Based Structures/Consistent Hashing.md | 108 | *Pending chunk extraction.* |
-| CS Data Structures/Hash-Based Structures/Cuckoo Hashing.md | 115 | *Pending chunk extraction.* |
-| CS Data Structures/Hash-Based Structures/Universal and Perfect Hashing.md | 94 | *Pending chunk extraction.* |
-| CS Data Structures/Heaps and Priority Queues/Binomial Heaps.md | 113 | *Pending chunk extraction.* |
-| CS Data Structures/Heaps and Priority Queues/Fibonacci Heaps.md | 92 | *Pending chunk extraction.* |
-| CS Data Structures/Heaps and Priority Queues/Heap Applications and d-ary Heaps.md | 96 | *Pending chunk extraction.* |
-| CS Data Structures/Linear Structures/Arrays and Dynamic Arrays.md | 124 | *Pending chunk extraction.* |
-| CS Data Structures/Linear Structures/Circular Buffers.md | 139 | *Pending chunk extraction.* |
 | CS Data Structures/Linear Structures/Doubly Linked Lists and Circular Lists.md | 129 | *Pending chunk extraction.* |
 | CS Data Structures/Linear Structures/Queues and Deques.md | 139 | *Pending chunk extraction.* |
 | CS Data Structures/Linear Structures/Singly Linked Lists.md | 144 | *Pending chunk extraction.* |

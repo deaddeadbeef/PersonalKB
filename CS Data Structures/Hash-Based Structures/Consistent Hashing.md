@@ -105,8 +105,10 @@ flowchart TD
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-020 Consistent hashing remaps only K over N keys|Consistent hashing remaps only K/N keys when nodes change]]
+- [[CS Data Structures/_chunks/chunk-ds-097 Virtual nodes solve load imbalance in consistent hashing|Virtual nodes solve load imbalance in consistent hashing]]
+- [[CS Data Structures/_chunks/chunk-ds-145 Jump consistent hashing requires zero memory|Jump consistent hashing requires zero memory]]
 
 ## References
 
--> [[Sources Index]]
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]
