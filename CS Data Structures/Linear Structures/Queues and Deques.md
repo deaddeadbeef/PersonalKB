@@ -136,8 +136,9 @@ function addFirst(dq, item):
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-112 Deque with circular buffer gives O1 at both ends|Deque with circular buffer gives O(1) operations at both ends]]
+- [[CS Data Structures/_chunks/chunk-ds-062 Two stacks simulate a queue with O1 amortized|Two stacks simulate a queue with O(1) amortized operations]]
 
 ## References
 
-→ Sources Index
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

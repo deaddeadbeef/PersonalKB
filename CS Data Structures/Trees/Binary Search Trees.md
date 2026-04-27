@@ -136,8 +136,13 @@ Plain BSTs have **no rotations** — that's precisely the problem. The BST-to-qu
 
 *See also:* [[Binary Trees and Traversals]] | [[AVL Trees]] | [[Red-Black Trees]] | [[Splay Trees and Treaps]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], [[Comparison Sort Lower Bound]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-006 BST in-order traversal yields sorted output|BST in-order traversal yields sorted output]]
+- [[CS Data Structures/_chunks/chunk-ds-063 BST degenerates to linked list with sorted input|BST degenerates to a linked list with sorted input]]
+- [[CS Data Structures/_chunks/chunk-ds-084 BST delete with two children uses inorder successor|BST delete with two children uses the inorder successor]]
+- [[CS Data Structures/_chunks/chunk-ds-123 BST iterator uses Oh space stack for in-order traversal|BST iterator uses O(h) stack space for in-order traversal]]
 
-→ Sources Index
+## References
+
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

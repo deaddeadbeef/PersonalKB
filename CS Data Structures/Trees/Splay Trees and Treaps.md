@@ -167,8 +167,14 @@ TREAP-MERGE(left, right):
 
 *See also:* [[Binary Search Trees]] | [[AVL Trees]] | [[Red-Black Trees]] | [[Binary Heaps]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], [[Comparison Sort Lower Bound]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-077 Splay trees achieve Ologn amortized via splaying|Splay trees achieve O(log n) amortized operations via splaying]]
+- [[CS Data Structures/_chunks/chunk-ds-147 Splay zig-zig differentiates from naive move-to-root|Splay zig-zig differentiates splaying from naive move-to-root]]
+- [[CS Data Structures/_chunks/chunk-ds-028 Treaps combine BST and heap properties with random priorities|Treaps combine BST and heap properties with random priorities]]
+- [[CS Data Structures/_chunks/chunk-ds-129 Treap split and merge enable persistent BST operations|Treap split and merge enable persistent BST operations]]
+- [[CS Data Structures/_chunks/chunk-ds-029 Implicit treaps enable array operations in Ologn|Implicit treaps enable array operations in O(log n) expected time]]
 
-→ Sources Index
+## References
+
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

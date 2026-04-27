@@ -126,8 +126,9 @@ function moveToFront(dll, node):
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-004 DLL plus hash map gives O1 LRU cache operations|DLL plus hash map gives O(1) LRU cache operations]]
+- [[CS Data Structures/_chunks/chunk-ds-082 XOR linked lists halve DLL pointer overhead|XOR linked lists halve DLL pointer overhead]]
 
 ## References
 
--> [[Sources Index]]
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

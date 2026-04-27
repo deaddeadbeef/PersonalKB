@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 276
+Count: 270
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -54,12 +54,6 @@ Count: 276
 - [[CS Data Structures/Study/DS Review — Heaps and Priority Queues|DS Review — Heaps and Priority Queues]] (`CS Data Structures/Study/DS Review — Heaps and Priority Queues.md`)
 - [[CS Data Structures/Study/DS Review — Linear Structures|DS Review — Linear Structures]] (`CS Data Structures/Study/DS Review — Linear Structures.md`)
 - [[CS Data Structures/Study/DS Review — Trees and Balancing|DS Review — Trees and Balancing]] (`CS Data Structures/Study/DS Review — Trees and Balancing.md`)
-- [[CS Data Structures/Trees/AVL Trees|AVL Trees]] (`CS Data Structures/Trees/AVL Trees.md`)
-- [[CS Data Structures/Trees/B-Trees and B-Plus Trees|B-Trees and B+ Trees]] (`CS Data Structures/Trees/B-Trees and B-Plus Trees.md`)
-- [[CS Data Structures/Trees/Binary Search Trees|Binary Search Trees]] (`CS Data Structures/Trees/Binary Search Trees.md`)
-- [[CS Data Structures/Trees/Binary Trees and Traversals|Binary Trees and Traversals]] (`CS Data Structures/Trees/Binary Trees and Traversals.md`)
-- [[CS Data Structures/Trees/Red-Black Trees|Red-Black Trees]] (`CS Data Structures/Trees/Red-Black Trees.md`)
-- [[CS Data Structures/Trees/Splay Trees and Treaps|Splay Trees and Treaps]] (`CS Data Structures/Trees/Splay Trees and Treaps.md`)
 - [[CS Data Structures/Trees/Trees Overview|Trees Overview]] (`CS Data Structures/Trees/Trees Overview.md`)
 - [[CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees|Compressed Tries and Radix Trees]] (`CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md`)
 - [[CS Data Structures/Tries and String Structures/Suffix Arrays|Suffix Arrays]] (`CS Data Structures/Tries and String Structures/Suffix Arrays.md`)

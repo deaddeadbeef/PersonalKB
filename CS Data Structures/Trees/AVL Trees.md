@@ -150,8 +150,12 @@ AVL trees offer the **tightest height guarantee** among practical BSTs, making t
 
 *See also:* [[Binary Search Trees]] | [[Red-Black Trees]] | [[Splay Trees and Treaps]] | [[B-Trees and B-Plus Trees]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], [[Comparison Sort Lower Bound]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-007 AVL trees guarantee height at most 1.44 log2 n|AVL trees guarantee height at most 1.44 log2 n]]
+- [[CS Data Structures/_chunks/chunk-ds-064 AVL rotations restore balance in O1 time after insert|AVL rotations restore balance in O(1) time after insert]]
+- [[CS Data Structures/_chunks/chunk-ds-142 AVL outperforms Red-Black for read-heavy workloads|AVL outperforms red-black for read-heavy workloads]]
 
-→ Sources Index
+## References
+
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

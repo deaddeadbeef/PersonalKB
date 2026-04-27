@@ -130,8 +130,9 @@ function isEmpty(s):
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-083 Monotonic stacks solve next-greater-element in On|Monotonic stacks solve next-greater-element in O(n)]]
+- [[CS Data Structures/_chunks/chunk-ds-062 Two stacks simulate a queue with O1 amortized|Two stacks simulate a queue with O(1) amortized operations]]
 
 ## References
 
-→ Sources Index
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

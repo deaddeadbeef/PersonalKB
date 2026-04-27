@@ -162,8 +162,11 @@ Plain binary trees have no balancing. The **Morris traversal** is the key advanc
 
 *See also:* [[Binary Search Trees]] | [[AVL Trees]] | [[Binary Heaps]] | [[Splay Trees and Treaps]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], [[Comparison Sort Lower Bound]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-138 Succinct trees need only 2n bits for n nodes|Binary-tree Catalan counts support succinct tree bounds]]
+- Source gap: no traversal-specific chunk has been extracted yet; traversal mechanics are currently backed by the domain [[CS Data Structures/Sources/Sources Index|Sources Index]].
 
-→ Sources Index
+## References
+
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

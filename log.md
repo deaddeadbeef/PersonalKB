@@ -111,3 +111,35 @@ Verification:
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
+
+## [2026-04-27] refine | CS Data Structures batch 4
+
+Scope: bounded refinement of 10 CS Data Structures wiki notes in linear structures and trees.
+
+Changed content files:
+- `CS Data Structures/Linear Structures/Doubly Linked Lists and Circular Lists.md`
+- `CS Data Structures/Linear Structures/Queues and Deques.md`
+- `CS Data Structures/Linear Structures/Singly Linked Lists.md`
+- `CS Data Structures/Linear Structures/Stacks.md`
+- `CS Data Structures/Trees/AVL Trees.md`
+- `CS Data Structures/Trees/B-Trees and B-Plus Trees.md`
+- `CS Data Structures/Trees/Binary Search Trees.md`
+- `CS Data Structures/Trees/Binary Trees and Traversals.md`
+- `CS Data Structures/Trees/Red-Black Trees.md`
+- `CS Data Structures/Trees/Splay Trees and Treaps.md`
+
+Maintenance changes:
+- Regenerated `_ops/reports/` and `index.md`.
+- Normalized references to `[[CS Data Structures/Sources/Sources Index|Sources Index]]`.
+- Replaced selected-note pending chunk placeholders with existing chunk links and explicit source-gap notes where extracted chunk coverage is incomplete.
+
+Audit deltas:
+- Missing references: 276 -> 270
+- Placeholder hits: 94 -> 84
+- Broken link occurrences: 953 -> 953
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`

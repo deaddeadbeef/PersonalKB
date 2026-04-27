@@ -145,8 +145,13 @@ B-trees don't use rotations — they use **splits** and **merges**:
 
 *See also:* [[Binary Search Trees]] | [[Red-Black Trees]] | [[AVL Trees]] | [[Heaps and Priority Queues Overview]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], [[External Sorting]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-009 B-trees minimize disk IO by matching node size to pages|B-trees minimize disk I/O by matching node size to pages]]
+- [[CS Data Structures/_chunks/chunk-ds-065 B-plus trees link leaves for Ok range scans|B+ trees link leaves for efficient range scans]]
+- [[CS Data Structures/_chunks/chunk-ds-086 B-tree node splitting propagates upward at most Ologn|B-tree node splitting propagates upward at most O(log n) levels]]
+- [[CS Data Structures/_chunks/chunk-ds-143 B-tree minimum fill factor bounds space waste|B-tree minimum fill factor bounds space waste]]
 
-→ Sources Index
+## References
+
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

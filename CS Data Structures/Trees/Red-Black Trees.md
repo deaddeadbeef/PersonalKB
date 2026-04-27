@@ -163,8 +163,11 @@ This is looser than AVL's 1.44 log₂ n bound, but the **constant rotation bound
 
 *See also:* [[Binary Search Trees]] | [[AVL Trees]] | [[B-Trees and B-Plus Trees]] | [[Splay Trees and Treaps]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], [[Comparison Sort Lower Bound]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-008 Red-Black trees need at most 3 rotations per mutation|Red-black trees need at most three rotations per mutation]]
+- [[CS Data Structures/_chunks/chunk-ds-085 Red-Black tree height is at most 2 log2n plus 1|Red-black tree height is at most 2 log2(n+1)]]
 
-→ Sources Index
+## References
+
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]

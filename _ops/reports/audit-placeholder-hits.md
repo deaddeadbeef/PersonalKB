@@ -1,6 +1,6 @@
 # Placeholder Hits
 
-Count: 94
+Count: 84
 
 | file | line | text |
 | --- | --- | --- |
@@ -9,16 +9,6 @@ Count: 94
 | CS Algorithms/_templates/Tiered Page Template.md | 13 | **The Core Idea:** {One sentence} |
 | CS Algorithms/_templates/Tiered Page Template.md | 15 | **Analogy:** {Real-world comparison} |
 | CS Algorithms/_templates/Tiered Page Template.md | 26 | {Step-by-step description} |
-| CS Data Structures/Linear Structures/Doubly Linked Lists and Circular Lists.md | 129 | *Pending chunk extraction.* |
-| CS Data Structures/Linear Structures/Queues and Deques.md | 139 | *Pending chunk extraction.* |
-| CS Data Structures/Linear Structures/Singly Linked Lists.md | 144 | *Pending chunk extraction.* |
-| CS Data Structures/Linear Structures/Stacks.md | 133 | *Pending chunk extraction.* |
-| CS Data Structures/Trees/AVL Trees.md | 155 | *Pending chunk extraction.* |
-| CS Data Structures/Trees/B-Trees and B-Plus Trees.md | 150 | *Pending chunk extraction.* |
-| CS Data Structures/Trees/Binary Search Trees.md | 141 | *Pending chunk extraction.* |
-| CS Data Structures/Trees/Binary Trees and Traversals.md | 167 | *Pending chunk extraction.* |
-| CS Data Structures/Trees/Red-Black Trees.md | 168 | *Pending chunk extraction.* |
-| CS Data Structures/Trees/Splay Trees and Treaps.md | 172 | *Pending chunk extraction.* |
 | CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md | 101 | *Pending chunk extraction.* |
 | CS Data Structures/Tries and String Structures/Suffix Arrays.md | 100 | *Pending chunk extraction.* |
 | CS Data Structures/Tries and String Structures/Suffix Trees.md | 102 | *Pending chunk extraction.* |

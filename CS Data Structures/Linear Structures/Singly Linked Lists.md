@@ -141,8 +141,9 @@ function hasCycle(head):
 
 ## Supporting Chunks
 
-*Pending chunk extraction.*
+- [[CS Data Structures/_chunks/chunk-ds-003 Floyds cycle detection in On time O1 space|Floyd's cycle detection in O(n) time and O(1) space]]
+- [[CS Data Structures/_chunks/chunk-ds-081 Sentinel nodes eliminate edge cases in linked lists|Sentinel nodes eliminate linked-list edge cases]]
 
 ## References
 
--> [[Sources Index]]
+- [[CS Data Structures/Sources/Sources Index|Sources Index]]
