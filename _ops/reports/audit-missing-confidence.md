@@ -1,6 +1,6 @@
 # Missing confidence Frontmatter
 
-Count: 265
+Count: 263
 
 - [[Body Recomp/Body Recomp|Body Recomp — Status Report]] (`Body Recomp/Body Recomp.md`)
 - [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
@@ -39,7 +39,6 @@ Count: 265
 - [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures — Learning Path]] (`CS Data Structures/CS Data Structures — Learning Path.md`)
 - [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] (`CS Data Structures/Graphs/Graphs Overview.md`)
 - [[CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview|Hash-Based Structures Overview]] (`CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview.md`)
-- [[CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview|Heaps and Priority Queues Overview]] (`CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview.md`)
 - [[CS Data Structures/Linear Structures/Linear Structures Overview|Linear Structures Overview]] (`CS Data Structures/Linear Structures/Linear Structures Overview.md`)
 - [[CS Data Structures/Sources/Sources Index|Sources Index — CS Data Structures]] (`CS Data Structures/Sources/Sources Index.md`)
 - [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures -- Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
@@ -134,7 +133,6 @@ Count: 265
 - [[NES Emulation/Study/Review Drill — Emulator Architecture|Review Drill — Emulator Architecture]] (`NES Emulation/Study/Review Drill — Emulator Architecture.md`)
 - [[NES Emulation/Study/Review Drill — Mappers and Bank Switching|Review Drill — Mappers and Bank Switching]] (`NES Emulation/Study/Review Drill — Mappers and Bank Switching.md`)
 - [[NES Emulation/Study/Review Drill — PPU Rendering Pipeline|Review Drill — PPU Rendering Pipeline]] (`NES Emulation/Study/Review Drill — PPU Rendering Pipeline.md`)
-- [[Priority Queues and Heaps]] (`Priority Queues and Heaps.md`)
 - [[Programming Languages/Compilation and Runtime/Compilation and Runtime Overview|Compilation and Runtime Overview]] (`Programming Languages/Compilation and Runtime/Compilation and Runtime Overview.md`)
 - [[Programming Languages/Concurrency Models/Concurrency Models Overview|Concurrency Models Overview]] (`Programming Languages/Concurrency Models/Concurrency Models Overview.md`)
 - [[Programming Languages/Error Handling/Error Handling Overview|Error Handling Overview]] (`Programming Languages/Error Handling/Error Handling Overview.md`)

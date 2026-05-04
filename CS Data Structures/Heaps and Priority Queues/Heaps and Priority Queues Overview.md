@@ -3,6 +3,7 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
+confidence: verified
 ---
 
 # Heaps and Priority Queues Overview
@@ -34,4 +35,8 @@ When workloads require merging two priority queues, binary heaps fall short at $
 - [[Foundational Concepts Overview]] — amortised analysis central to Fibonacci and binomial heaps
 - [[Trees Overview]] — heaps as a specialised form of complete binary tree
 - [[Linear Structures Overview]] — array representation underlying binary heaps
-- [[Graphs Overview]] — shortest-path algorithms that depend on efficient decrease-key
+- [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] — shortest-path algorithms that depend on efficient decrease-key
+
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

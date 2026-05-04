@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 267
+Count: 265
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -41,7 +41,6 @@ Count: 267
 - [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures — Learning Path]] (`CS Data Structures/CS Data Structures — Learning Path.md`)
 - [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] (`CS Data Structures/Graphs/Graphs Overview.md`)
 - [[CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview|Hash-Based Structures Overview]] (`CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview.md`)
-- [[CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview|Heaps and Priority Queues Overview]] (`CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview.md`)
 - [[CS Data Structures/Linear Structures/Linear Structures Overview|Linear Structures Overview]] (`CS Data Structures/Linear Structures/Linear Structures Overview.md`)
 - [[CS Data Structures/Sources/Sources Index|Sources Index — CS Data Structures]] (`CS Data Structures/Sources/Sources Index.md`)
 - [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures -- Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
@@ -160,7 +159,6 @@ Count: 267
 - [[NES Emulation/Study/Review Drill — Emulator Architecture|Review Drill — Emulator Architecture]] (`NES Emulation/Study/Review Drill — Emulator Architecture.md`)
 - [[NES Emulation/Study/Review Drill — Mappers and Bank Switching|Review Drill — Mappers and Bank Switching]] (`NES Emulation/Study/Review Drill — Mappers and Bank Switching.md`)
 - [[NES Emulation/Study/Review Drill — PPU Rendering Pipeline|Review Drill — PPU Rendering Pipeline]] (`NES Emulation/Study/Review Drill — PPU Rendering Pipeline.md`)
-- [[Priority Queues and Heaps]] (`Priority Queues and Heaps.md`)
 - [[Programming Languages/Compilation and Runtime/AOT vs JIT Compilation|AOT vs JIT Compilation]] (`Programming Languages/Compilation and Runtime/AOT vs JIT Compilation.md`)
 - [[Programming Languages/Compilation and Runtime/Compilation Pipeline Stages|Compilation Pipeline Stages]] (`Programming Languages/Compilation and Runtime/Compilation Pipeline Stages.md`)
 - [[Programming Languages/Compilation and Runtime/Linking and Loading|Linking and Loading]] (`Programming Languages/Compilation and Runtime/Linking and Loading.md`)

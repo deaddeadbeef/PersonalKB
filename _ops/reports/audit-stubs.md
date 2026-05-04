@@ -1,6 +1,6 @@
 # Stubs Under 1500 Bytes
 
-Count: 28
+Count: 29
 
 - [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
 - [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures -- Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
@@ -23,6 +23,7 @@ Count: 28
 - [[NES Emulation/NES Hardware Overview/NES Hardware Overview|NES Hardware Overview]] (`NES Emulation/NES Hardware Overview/NES Hardware Overview.md`)
 - [[NES Emulation/PPU — Picture Processing Unit/PPU — Picture Processing Unit Overview|PPU — Picture Processing Unit Overview]] (`NES Emulation/PPU — Picture Processing Unit/PPU — Picture Processing Unit Overview.md`)
 - [[NES Emulation/Study/NES Emulation Study Index|NES Emulation — Study Index]] (`NES Emulation/Study/NES Emulation Study Index.md`)
+- [[Priority Queues and Heaps]] (`Priority Queues and Heaps.md`)
 - [[Recipes/Recipe Library/Bento Boxes/Bento Boxes|Bento Boxes]] (`Recipes/Recipe Library/Bento Boxes/Bento Boxes.md`)
 - [[Recipes/Recipe Library/Burritos & Wraps/Burritos & Wraps|Burritos & Wraps]] (`Recipes/Recipe Library/Burritos & Wraps/Burritos & Wraps.md`)
 - [[Recipes/Recipe Library/Crunchwraps/Crunchwraps|Crunchwraps]] (`Recipes/Recipe Library/Crunchwraps/Crunchwraps.md`)

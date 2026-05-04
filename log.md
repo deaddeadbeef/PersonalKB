@@ -203,3 +203,21 @@ Verification:
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
+
+## [2026-05-05] refine | heaps hub redirect note
+
+Scope: replaced the empty root heap note with a compact redirect/index note and added verification metadata plus references to the heaps overview.
+
+Changed content files:
+- `Priority Queues and Heaps.md`
+- `CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview.md`
+
+Maintenance changes:
+- Updated `log.md` and repaired a path-qualified ambiguous related-hub link.
+- Planned/generated audit and index outputs via the standard `_ops/personal_kb.py` maintenance workflow.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`
