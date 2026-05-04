@@ -3,6 +3,7 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
+confidence: verified
 ---
 
 # Foundational Concepts Overview
@@ -40,3 +41,7 @@ At the extreme end of the space spectrum, **succinct and compressed data structu
 - [[Linear Structures Overview]] — array-based and pointer-based structures in practice
 - [[Heaps and Priority Queues Overview]] — amortized analysis applied to heap variants
 - [[Hash-Based Structures Overview]] — expected-case vs worst-case complexity trade-offs
+
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]

@@ -1,6 +1,6 @@
 # Missing confidence Frontmatter
 
-Count: 268
+Count: 265
 
 - [[Body Recomp/Body Recomp|Body Recomp — Status Report]] (`Body Recomp/Body Recomp.md`)
 - [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
@@ -36,10 +36,7 @@ Count: 268
 - [[CS Algorithms/Study/Sorting and Searching - Review Drill|Sorting and Searching — Review Drill]] (`CS Algorithms/Study/Sorting and Searching - Review Drill.md`)
 - [[CS Algorithms/Study/Strings - Review Drill|Strings — Review Drill]] (`CS Algorithms/Study/Strings - Review Drill.md`)
 - [[CS Algorithms/Techniques/Techniques Overview|Techniques Overview]] (`CS Algorithms/Techniques/Techniques Overview.md`)
-- [[CS Data Structures/Advanced Structures/Advanced Structures Overview|Advanced Structures Overview]] (`CS Data Structures/Advanced Structures/Advanced Structures Overview.md`)
 - [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures — Learning Path]] (`CS Data Structures/CS Data Structures — Learning Path.md`)
-- [[CS Data Structures/CS Data Structures|CS Data Structures]] (`CS Data Structures/CS Data Structures.md`)
-- [[CS Data Structures/Foundational Concepts/Foundational Concepts Overview|Foundational Concepts Overview]] (`CS Data Structures/Foundational Concepts/Foundational Concepts Overview.md`)
 - [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] (`CS Data Structures/Graphs/Graphs Overview.md`)
 - [[CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview|Hash-Based Structures Overview]] (`CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview.md`)
 - [[CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview|Heaps and Priority Queues Overview]] (`CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview.md`)

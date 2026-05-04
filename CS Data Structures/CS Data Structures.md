@@ -1,5 +1,7 @@
 ---
 tags: [cs-ds, moc]
+up: "[[Welcome]]"
+confidence: verified
 ---
 
 # CS Data Structures
@@ -63,6 +65,10 @@ Sophisticated structures for specialised problems: range queries, spatial indexi
 - [[QnA System Roadmap]] — expansion plans
 
 ---
+
+## References
+
+→ [[CS Data Structures/Sources/Sources Index|Sources Index]]
 
 *Part of the [[Welcome|PersonalKB]] knowledge system.*
 *Primary sources: 4 total — see [[Sources Index]].*
