@@ -112,27 +112,6 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
-## [2026-05-04] ops | engineer daemon monitor
-
-Scope: added a daemon-facing monitor for PersonalKB curation health checks.
-
-Changed files:
-- `_ops/personal_kb_monitor.py`
-- `_ops/README.md`
-- `_ops/engineer-daemon-mission.md`
-- `_ops/reports/monitor-summary.md`
-- `_ops/reports/monitor-summary.json`
-
-Maintenance changes:
-- Added a monitor command that reports git dirtiness, protected-path changes, audit health, pilot budget state, warnings, blockers, and next actions.
-- Documented monitor usage in `_ops/README.md`.
-- Added monitor checks to the daemon mission baseline and verification command list.
-
-Verification:
-- `python -m py_compile _ops/personal_kb_monitor.py`
-- `python _ops/personal_kb_monitor.py`
-- `git diff --check`
-
 ## [2026-05-04] ops/refine | engineer daemon mission and CS Data Structures pilot cycle 1
 
 Scope: saved the long-running engineer-daemon curation mission, created the CS Data Structures pilot report, and completed the first bounded pilot pass on 3 safe hub notes.
