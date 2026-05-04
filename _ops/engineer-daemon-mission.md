@@ -57,6 +57,7 @@ Risk notes:
 1. Baseline:
    - `cd D:\Vaults\PersonalKB`
    - `git status --short`
+   - `python _ops/personal_kb_monitor.py`
    - `python _ops/personal_kb.py audit`
 2. Select one domain or one issue cluster.
 3. Exclude protected paths and unrelated dirty files.
@@ -109,9 +110,11 @@ Run these every cycle:
 ```powershell
 cd D:\Vaults\PersonalKB
 git status --short
+python _ops/personal_kb_monitor.py
 python _ops/personal_kb.py audit
 python _ops/personal_kb.py index
 python _ops/personal_kb.py audit
+python _ops/personal_kb_monitor.py
 git diff --check
 git diff --stat
 git status --short
