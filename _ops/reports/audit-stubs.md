@@ -1,8 +1,7 @@
 # Stubs Under 1500 Bytes
 
-Count: 22
+Count: 21
 
-- [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
 - [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index — Modern Operating Systems]] (`CS Operating Systems/Books/Modern Operating Systems/Chapter Index.md`)
 - [[LLM/Study/LLM Study Index|LLM Study Index]] (`LLM/Study/LLM Study Index.md`)

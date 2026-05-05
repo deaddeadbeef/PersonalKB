@@ -44,13 +44,12 @@ Default rotation:
 8. `LLM`
 9. `SpaceX`
 10. `Recipes`
-11. `Body Recomp`
 
 Risk notes:
 
 - `LLM` and `SpaceX` require live web verification for current claims.
 - `Project Hail Mary` is copyright-sensitive; summarize and avoid long quotes.
-- `Recipes` and `Body Recomp` may contain personal voice or personal data; avoid unnecessary stylistic rewrites.
+- `Recipes` may contain personal voice or personal data; avoid unnecessary stylistic rewrites.
 
 ## Per-Cycle Workflow
 

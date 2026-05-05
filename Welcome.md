@@ -77,7 +77,6 @@ Every topic follows a **four-layer pipeline**:
 | 🎮 **[[NES Emulation]]** | Active | NES hardware theory and OxideNES emulator deep dive — CPU, PPU, APU, mappers, rendering pipeline — 50 wiki pages, 30 raw, 120 chunks |
 | 💻 **[[Programming Languages]]** | Active | Design philosophies across 16 languages — type systems, memory, concurrency, paradigms — 78 wiki pages, 50 raw, 200 chunks |
 | 🇯🇵 **[[Japanese]]** | Active | Japanese language learning wiki — writing systems, grammar (N5–N3), vocabulary, listening, speaking, culture, keigo — 5-phase learning path, 75 wiki pages, 40 raw, 150 chunks |
-| 💪 **[[Body Recomp]]** | Active | Personal body recomposition tracking — weight trends, macro analysis, Mermaid diagrams, evidence-based strategy — 10 wiki pages, interactive Chart.js dashboard |
 | 🍱 **[[Recipes]]** | Active | High-protein portable meal wiki — burritos, crunchwraps, rice bowls, bentos, subs, stir-fries — 12 recipes, weekly meal plans with consolidated shopping lists |
 
 ---

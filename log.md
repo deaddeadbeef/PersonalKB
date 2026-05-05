@@ -112,6 +112,33 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-05-06] remove | Body Recomp section
+
+Scope: removed the Body Recomp topic from the active vault and maintenance rotation.
+
+Removed files:
+- `Body Recomp/`
+
+Maintenance changes:
+- Removed the Body Recomp row from `Welcome.md`.
+- Removed Body Recomp from `_ops/engineer-daemon-mission.md` scope rotation and risk notes.
+- Regenerated `_ops/reports/` and `index.md`.
+
+Audit counts:
+- Files total: 4711
+- Markdown files: 2842
+- Candidate articles: 755
+- Stubs under 1500 bytes: 21
+- Missing confidence: 251
+- Missing references: 252
+- Broken link occurrences: 941
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-05-05] refine | supervised CS Data Structures review and graphs pass
 
 Scope: supervised integration of Engineer curation cycles 2 and 3 into the main vault.

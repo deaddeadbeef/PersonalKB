@@ -1,9 +1,7 @@
 # Missing confidence Frontmatter
 
-Count: 253
+Count: 251
 
-- [[Body Recomp/Body Recomp|Body Recomp — Status Report]] (`Body Recomp/Body Recomp.md`)
-- [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
 - [[CS Algorithms/Books/Algorithms Unlocked/Algorithms Unlocked|Algorithms Unlocked]] (`CS Algorithms/Books/Algorithms Unlocked/Algorithms Unlocked.md`)
