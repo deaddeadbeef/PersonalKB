@@ -1,6 +1,6 @@
 # Missing confidence Frontmatter
 
-Count: 255
+Count: 253
 
 - [[Body Recomp/Body Recomp|Body Recomp — Status Report]] (`Body Recomp/Body Recomp.md`)
 - [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
@@ -37,10 +37,8 @@ Count: 255
 - [[CS Algorithms/Study/Strings - Review Drill|Strings — Review Drill]] (`CS Algorithms/Study/Strings - Review Drill.md`)
 - [[CS Algorithms/Techniques/Techniques Overview|Techniques Overview]] (`CS Algorithms/Techniques/Techniques Overview.md`)
 - [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures — Learning Path]] (`CS Data Structures/CS Data Structures — Learning Path.md`)
-- [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] (`CS Data Structures/Graphs/Graphs Overview.md`)
 - [[CS Data Structures/Linear Structures/Linear Structures Overview|Linear Structures Overview]] (`CS Data Structures/Linear Structures/Linear Structures Overview.md`)
 - [[CS Data Structures/Sources/Sources Index|Sources Index — CS Data Structures]] (`CS Data Structures/Sources/Sources Index.md`)
-- [[CS Data Structures/Study/DS Review — Advanced Structures|DS Review — Advanced Structures]] (`CS Data Structures/Study/DS Review — Advanced Structures.md`)
 - [[CS Data Structures/Trees/Trees Overview|Trees Overview]] (`CS Data Structures/Trees/Trees Overview.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index — Modern Operating Systems]] (`CS Operating Systems/Books/Modern Operating Systems/Chapter Index.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapters/MOS - Chapter 01|MOS — Chapter 01: Introduction]] (`CS Operating Systems/Books/Modern Operating Systems/Chapters/MOS - Chapter 01.md`)

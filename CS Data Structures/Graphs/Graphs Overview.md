@@ -3,35 +3,58 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
+confidence: verified
+tier-coverage: [intuition, core, navigation]
 ---
 
 # Graphs Overview
 
-Graphs model pairwise relationships — friendships in a social network, roads between cities, dependencies in a build system. A graph is simply a set of **vertices** connected by **edges**, yet this minimal definition supports an astonishing variety of real-world problems. Before any graph algorithm can run, the graph must be stored in memory, and the choice of representation profoundly affects both time and space performance. This hub focuses on how graphs are represented and characterised, laying the groundwork for algorithm-oriented study.
+> **One-line summary**: Graphs model pairwise relationships, and the data-structure choice determines whether traversal, edge queries, updates, and storage scale well.
 
-## Core Representations
+## Core Idea
 
-The two classic representations are the **adjacency list** and the **adjacency matrix**. An adjacency list stores, for each vertex, a collection of its neighbours — typically a dynamic array or linked list. It uses $O(V + E)$ space and excels when the graph is sparse. An adjacency matrix uses a V × V array of booleans (or weights), offering $O(1)$ edge lookup at the cost of $O(V²)$ space. Dense graphs or algorithms that repeatedly query edge existence (e.g., Floyd-Warshall) favour the matrix; most other workloads favour the list.
+Graphs model pairwise relationships: friendships in a social network, roads between cities, prerequisites in a build system, or states connected by legal moves. A graph is a set of **vertices** connected by **edges**, but the useful implementation question is more specific: how will the program store neighbors, test edge existence, attach direction or weights, and avoid materializing impossible-to-store state spaces?
 
-## Directed, Weighted, and Special Graphs
+The default representation for sparse traversal-heavy graphs is the **adjacency list**, which stores only realized edges and uses $O(V + E)$ space. An **adjacency matrix** uses $O(V^2)$ space but gives $O(1)$ edge-existence queries, making it attractive for dense graphs or algorithms that repeatedly ask whether an edge exists. **Edge lists**, **CSR/CSC**, and **implicit neighbor generators** cover edge-centric, cache-sensitive, and state-space workloads.
 
-Edges may carry direction (**directed graphs / digraphs**), numerical weights (**weighted graphs**), or both. These attributes influence representation details — a directed edge appears only once in an adjacency list, while an undirected edge appears twice. Understanding fundamental **graph properties and terminology** — degree, connectivity, bipartiteness, planarity, DAGs — is essential for selecting the right algorithm later.
+## Representation Decision Guide
 
-## Implicit and Compressed Representations
+| If the graph workload mostly needs... | Start with... | Why |
+| --- | --- | --- |
+| BFS, DFS, Dijkstra, topological sort, or sparse traversal | [[Adjacency List and Adjacency Matrix|Adjacency list]] | Neighbor iteration costs $O(\deg(v))$ and storage is $O(V + E)$. |
+| Constant-time edge queries or dense all-pairs algorithms | [[Adjacency List and Adjacency Matrix|Adjacency matrix]] | Edge lookup is $O(1)$, trading speed for $O(V^2)$ space. |
+| Sorting or streaming edges, such as Kruskal-style processing | [[Graph Representations Overview|Edge list]] | A flat edge array is compact and easy to sort, but poor for repeated neighbor lookup. |
+| One-way links, costs, capacities, or dependencies | [[Weighted and Directed Graphs]] | Direction and weights change valid algorithms and storage details. |
+| Huge static graphs or generated state spaces | [[Implicit and Compressed Graph Representations]] | CSR/CSC compress explicit graphs; implicit graphs compute neighbors on demand. |
 
-Not every graph is materialised in memory. Game-state spaces, procedural maps, and web crawls generate neighbours on the fly via **implicit representations**. At the other extreme, massive static graphs (web graphs, social networks) use **compressed representations** like CSR (Compressed Sparse Row) to slash memory while retaining fast traversal.
+## Terminology First
+
+Before choosing algorithms, pin down the graph's structural promises: directed vs undirected, weighted vs unweighted, connected vs disconnected, cyclic vs acyclic, simple graph vs multigraph, and sparse vs dense. These properties determine whether a graph can be treated as a tree, topologically sorted as a DAG, searched by BFS/DFS, or decomposed into strongly connected components.
 
 ## Pages in This Hub
 
-- [[Graph Representations Overview]]
-- [[Adjacency List and Adjacency Matrix]]
-- [[Weighted and Directed Graphs]]
-- [[Graph Properties and Terminology]]
-- [[Implicit and Compressed Graph Representations]]
+- [[Graph Representations Overview]] - broad map of adjacency lists, matrices, edge lists, and hybrids.
+- [[Adjacency List and Adjacency Matrix]] - detailed operations and complexity trade-offs for the two workhorse structures.
+- [[Weighted and Directed Graphs]] - direction, weights, DAGs, SCCs, and shortest-path implications.
+- [[Graph Properties and Terminology]] - vocabulary for degree, paths, cycles, connectivity, bipartiteness, planarity, and trees.
+- [[Implicit and Compressed Graph Representations]] - generated neighbors, CSR/CSC, graph databases, and web-scale compression.
 
 ## Related Hubs
 
-- [[Foundational Concepts Overview]] — complexity analysis for graph algorithms
-- [[Trees Overview]] — trees as connected acyclic graphs
-- [[Hash-Based Structures Overview]] — hash maps for adjacency-list storage
-- [[Advanced Structures Overview]] — disjoint sets and spatial structures used in graph problems
+- [[Foundational Concepts Overview]] - asymptotic analysis and memory/cache trade-offs used throughout graph implementations.
+- [[Trees Overview]] - trees as connected acyclic graphs, plus tree-specific traversal and balancing structures.
+- [[Hash-Based Structures Overview]] - hash maps and hash sets as adjacency-list backends for fast membership tests.
+- [[Advanced Structures Overview]] - disjoint sets, spatial structures, and external-memory structures used in graph problems.
+
+## Supporting Chunks
+
+- [[CS Data Structures/_chunks/chunk-ds-019 Adjacency lists dominate for sparse graphs|Adjacency lists dominate for sparse graphs]]
+- [[CS Data Structures/_chunks/chunk-ds-094 Adjacency matrix enables O1 edge queries but wastes space|Adjacency matrices enable O(1) edge queries but waste space]]
+- [[CS Data Structures/_chunks/chunk-ds-127 Edge list is simplest graph representation|Edge lists are the simplest graph representation]]
+- [[CS Data Structures/_chunks/chunk-ds-076 CSR stores graphs in flat arrays for cache efficiency|CSR stores graphs in flat arrays for cache efficiency]]
+- [[CS Data Structures/_chunks/chunk-ds-040 Tarjans SCC finds all strongly connected components in one DFS|Tarjan's SCC finds strongly connected components in one DFS]]
+- [[CS Data Structures/_chunks/chunk-ds-157 Kosarajus SCC uses two DFS on forward and reverse graph|Kosaraju's SCC uses forward and reverse graph passes]]
+
+## References
+
+-> [[CS Data Structures/Sources/Sources Index|Sources Index]]

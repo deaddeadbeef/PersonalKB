@@ -112,6 +112,31 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-05-05] refine | supervised CS Data Structures review and graphs pass
+
+Scope: supervised integration of Engineer curation cycles 2 and 3 into the main vault.
+
+Changed content files:
+- `CS Data Structures/Study/DS Review — Advanced Structures.md`
+- `CS Data Structures/Graphs/Graphs Overview.md`
+
+Maintenance changes:
+- Applied only note-content changes from the successful Engineer worktree commits.
+- Regenerated `_ops/reports/` and `index.md` from the combined vault state.
+- Preserved the two unrelated dirty user files without staging or modifying them.
+
+Audit counts:
+- Stubs under 1500 bytes: 22
+- Missing confidence: 253
+- Missing references: 252
+- Broken link occurrences: 941
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-05-05] refine | Engineer recurring CS Data Structures integration
 
 Scope: supervised integration of the successful Engineer recurring wiki-curation cycles into the main vault.

@@ -1,10 +1,9 @@
 # Stubs Under 1500 Bytes
 
-Count: 23
+Count: 22
 
 - [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
 - [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
-- [[CS Data Structures/Study/DS Review — Advanced Structures|DS Review — Advanced Structures]] (`CS Data Structures/Study/DS Review — Advanced Structures.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index — Modern Operating Systems]] (`CS Operating Systems/Books/Modern Operating Systems/Chapter Index.md`)
 - [[LLM/Study/LLM Study Index|LLM Study Index]] (`LLM/Study/LLM Study Index.md`)
 - [[NES Emulation/APU — Audio Processing Unit/APU — Audio Processing Unit Overview|APU — Audio Processing Unit Overview]] (`NES Emulation/APU — Audio Processing Unit/APU — Audio Processing Unit Overview.md`)
