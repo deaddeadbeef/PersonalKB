@@ -3,6 +3,7 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
+confidence: verified
 ---
 
 # Tries and String Structures Overview
@@ -25,6 +26,14 @@ When the task shifts from prefix lookup to arbitrary substring search, **suffix 
 
 For applications that require frequent insertions, deletions, and concatenations within large strings — text editors, collaborative editing, and rendering engines — the **rope** data structure replaces flat arrays with balanced binary trees of string fragments, delivering $O(\log n)$ edits without copying entire buffers.
 
+## Selection Guide
+
+- Choose a standard trie when exact-key lookup must also support prefix enumeration, autocomplete, or longest-prefix matching.
+- Choose a compressed trie or radix tree when long single-child paths make a standard trie too space-heavy.
+- Choose a ternary search tree when the alphabet is sparse or large and fixed child arrays would waste memory.
+- Choose suffix trees or suffix arrays when queries are about arbitrary substrings rather than prefixes.
+- Choose a rope when the workload edits or concatenates large mutable strings instead of mostly searching a fixed dictionary.
+
 ## Pages in This Hub
 
 - [[Tries and Prefix Trees]]
@@ -39,3 +48,7 @@ For applications that require frequent insertions, deletions, and concatenations
 - [[Trees Overview]] — general tree concepts and balancing strategies
 - [[Hash-Based Structures Overview]] — hash-based alternatives for string key lookup
 - [[Foundational Concepts Overview]] — complexity and memory considerations for string structures
+
+## References
+
+- [[CS Data Structures/Sources/Sources Index|Sources Index]] (raw-ds-010, raw-ds-027, raw-ds-034)

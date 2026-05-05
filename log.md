@@ -112,6 +112,37 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-05-05] refine | Engineer recurring CS Data Structures integration
+
+Scope: supervised integration of the successful Engineer recurring wiki-curation cycles into the main vault.
+
+Changed content files:
+- `CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview.md`
+- `CS Data Structures/Study/CS Data Structures Study Index.md`
+- `CS Data Structures/Study/DS Cheatsheet — Operation Complexities.md`
+- `CS Data Structures/Study/DS Review — Hash Tables.md`
+- `CS Data Structures/Study/DS Review — Heaps and Priority Queues.md`
+- `CS Data Structures/Study/DS Review — Linear Structures.md`
+- `CS Data Structures/Study/DS Review — Trees and Balancing.md`
+- `CS Data Structures/Tries and String Structures/Tries and String Structures Overview.md`
+- `Priority Queues and Heaps.md`
+
+Maintenance changes:
+- Applied only note-content changes from the successful Engineer worktree commits.
+- Regenerated `_ops/reports/` and `index.md` from the combined vault state.
+- Reconciled independently-authored overlapping edits in the hash-table, heap, and hash-based overview notes.
+
+Audit counts:
+- Missing references: 257
+- Placeholder hits: 79
+- Broken link occurrences: 945
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-05-04] ops/refine | engineer daemon mission and CS Data Structures pilot cycle 1
 
 Scope: saved the long-running engineer-daemon curation mission, created the CS Data Structures pilot report, and completed the first bounded pilot pass on 3 safe hub notes.

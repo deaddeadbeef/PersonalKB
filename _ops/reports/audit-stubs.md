@@ -1,15 +1,10 @@
 # Stubs Under 1500 Bytes
 
-Count: 29
+Count: 23
 
 - [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
-- [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures -- Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
-- [[CS Data Structures/Study/DS Cheatsheet — Operation Complexities|DS Cheatsheet — Operation Complexities]] (`CS Data Structures/Study/DS Cheatsheet — Operation Complexities.md`)
+- [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
 - [[CS Data Structures/Study/DS Review — Advanced Structures|DS Review — Advanced Structures]] (`CS Data Structures/Study/DS Review — Advanced Structures.md`)
-- [[CS Data Structures/Study/DS Review — Hash Tables|DS Review — Hash Tables]] (`CS Data Structures/Study/DS Review — Hash Tables.md`)
-- [[CS Data Structures/Study/DS Review — Heaps and Priority Queues|DS Review — Heaps and Priority Queues]] (`CS Data Structures/Study/DS Review — Heaps and Priority Queues.md`)
-- [[CS Data Structures/Study/DS Review — Linear Structures|DS Review — Linear Structures]] (`CS Data Structures/Study/DS Review — Linear Structures.md`)
-- [[CS Data Structures/Study/DS Review — Trees and Balancing|DS Review — Trees and Balancing]] (`CS Data Structures/Study/DS Review — Trees and Balancing.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index — Modern Operating Systems]] (`CS Operating Systems/Books/Modern Operating Systems/Chapter Index.md`)
 - [[LLM/Study/LLM Study Index|LLM Study Index]] (`LLM/Study/LLM Study Index.md`)
 - [[NES Emulation/APU — Audio Processing Unit/APU — Audio Processing Unit Overview|APU — Audio Processing Unit Overview]] (`NES Emulation/APU — Audio Processing Unit/APU — Audio Processing Unit Overview.md`)
@@ -23,7 +18,6 @@ Count: 29
 - [[NES Emulation/NES Hardware Overview/NES Hardware Overview|NES Hardware Overview]] (`NES Emulation/NES Hardware Overview/NES Hardware Overview.md`)
 - [[NES Emulation/PPU — Picture Processing Unit/PPU — Picture Processing Unit Overview|PPU — Picture Processing Unit Overview]] (`NES Emulation/PPU — Picture Processing Unit/PPU — Picture Processing Unit Overview.md`)
 - [[NES Emulation/Study/NES Emulation Study Index|NES Emulation — Study Index]] (`NES Emulation/Study/NES Emulation Study Index.md`)
-- [[Priority Queues and Heaps]] (`Priority Queues and Heaps.md`)
 - [[Recipes/Recipe Library/Bento Boxes/Bento Boxes|Bento Boxes]] (`Recipes/Recipe Library/Bento Boxes/Bento Boxes.md`)
 - [[Recipes/Recipe Library/Burritos & Wraps/Burritos & Wraps|Burritos & Wraps]] (`Recipes/Recipe Library/Burritos & Wraps/Burritos & Wraps.md`)
 - [[Recipes/Recipe Library/Crunchwraps/Crunchwraps|Crunchwraps]] (`Recipes/Recipe Library/Crunchwraps/Crunchwraps.md`)

@@ -1,6 +1,6 @@
 # Missing confidence Frontmatter
 
-Count: 263
+Count: 255
 
 - [[Body Recomp/Body Recomp|Body Recomp — Status Report]] (`Body Recomp/Body Recomp.md`)
 - [[Body Recomp/Sources/Sources Index|Sources Index — Body Recomp]] (`Body Recomp/Sources/Sources Index.md`)
@@ -38,18 +38,10 @@ Count: 263
 - [[CS Algorithms/Techniques/Techniques Overview|Techniques Overview]] (`CS Algorithms/Techniques/Techniques Overview.md`)
 - [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures — Learning Path]] (`CS Data Structures/CS Data Structures — Learning Path.md`)
 - [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] (`CS Data Structures/Graphs/Graphs Overview.md`)
-- [[CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview|Hash-Based Structures Overview]] (`CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview.md`)
 - [[CS Data Structures/Linear Structures/Linear Structures Overview|Linear Structures Overview]] (`CS Data Structures/Linear Structures/Linear Structures Overview.md`)
 - [[CS Data Structures/Sources/Sources Index|Sources Index — CS Data Structures]] (`CS Data Structures/Sources/Sources Index.md`)
-- [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures -- Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
-- [[CS Data Structures/Study/DS Cheatsheet — Operation Complexities|DS Cheatsheet — Operation Complexities]] (`CS Data Structures/Study/DS Cheatsheet — Operation Complexities.md`)
 - [[CS Data Structures/Study/DS Review — Advanced Structures|DS Review — Advanced Structures]] (`CS Data Structures/Study/DS Review — Advanced Structures.md`)
-- [[CS Data Structures/Study/DS Review — Hash Tables|DS Review — Hash Tables]] (`CS Data Structures/Study/DS Review — Hash Tables.md`)
-- [[CS Data Structures/Study/DS Review — Heaps and Priority Queues|DS Review — Heaps and Priority Queues]] (`CS Data Structures/Study/DS Review — Heaps and Priority Queues.md`)
-- [[CS Data Structures/Study/DS Review — Linear Structures|DS Review — Linear Structures]] (`CS Data Structures/Study/DS Review — Linear Structures.md`)
-- [[CS Data Structures/Study/DS Review — Trees and Balancing|DS Review — Trees and Balancing]] (`CS Data Structures/Study/DS Review — Trees and Balancing.md`)
 - [[CS Data Structures/Trees/Trees Overview|Trees Overview]] (`CS Data Structures/Trees/Trees Overview.md`)
-- [[CS Data Structures/Tries and String Structures/Tries and String Structures Overview|Tries and String Structures Overview]] (`CS Data Structures/Tries and String Structures/Tries and String Structures Overview.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index — Modern Operating Systems]] (`CS Operating Systems/Books/Modern Operating Systems/Chapter Index.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapters/MOS - Chapter 01|MOS — Chapter 01: Introduction]] (`CS Operating Systems/Books/Modern Operating Systems/Chapters/MOS - Chapter 01.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapters/MOS - Chapter 02|MOS — Chapter 02: Processes and Threads]] (`CS Operating Systems/Books/Modern Operating Systems/Chapters/MOS - Chapter 02.md`)

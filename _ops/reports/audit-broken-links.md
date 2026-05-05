@@ -1,6 +1,6 @@
 # Broken Wiki Links
 
-Count: 950
+Count: 945
 
 | file | target | embedded |
 | --- | --- | --- |
@@ -403,11 +403,6 @@ Count: 950
 | CS Data Structures/Linear Structures/Stacks.md | Backtracking | False |
 | CS Data Structures/Linear Structures/Stacks.md | Recursion and the Call Stack | False |
 | CS Data Structures/Linear Structures/Stacks.md | Backtracking | False |
-| CS Data Structures/Study/CS Data Structures Study Index.md | DS Review -- Linear Structures | False |
-| CS Data Structures/Study/CS Data Structures Study Index.md | DS Review -- Trees and Balancing | False |
-| CS Data Structures/Study/CS Data Structures Study Index.md | DS Review -- Hash Tables | False |
-| CS Data Structures/Study/CS Data Structures Study Index.md | DS Review -- Advanced Structures | False |
-| CS Data Structures/Study/CS Data Structures Study Index.md | DS Cheatsheet -- Operation Complexities | False |
 | CS Data Structures/Trees/B-Trees and B-Plus Trees.md | External Sorting | False |
 | CS Data Structures/Trees/B-Trees and B-Plus Trees.md | External Sorting | False |
 | CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md | Trees and BSTs Overview | False |
