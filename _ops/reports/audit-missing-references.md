@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 257
+Count: 254
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -44,11 +44,8 @@ Count: 257
 - [[CS Data Structures/Sources/Sources Index|Sources Index — CS Data Structures]] (`CS Data Structures/Sources/Sources Index.md`)
 - [[CS Data Structures/Study/DS Review — Advanced Structures|DS Review — Advanced Structures]] (`CS Data Structures/Study/DS Review — Advanced Structures.md`)
 - [[CS Data Structures/Trees/Trees Overview|Trees Overview]] (`CS Data Structures/Trees/Trees Overview.md`)
-- [[CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees|Compressed Tries and Radix Trees]] (`CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md`)
 - [[CS Data Structures/Tries and String Structures/Suffix Arrays|Suffix Arrays]] (`CS Data Structures/Tries and String Structures/Suffix Arrays.md`)
-- [[CS Data Structures/Tries and String Structures/Suffix Trees|Suffix Trees]] (`CS Data Structures/Tries and String Structures/Suffix Trees.md`)
 - [[CS Data Structures/Tries and String Structures/Ternary Search Trees|Ternary Search Trees]] (`CS Data Structures/Tries and String Structures/Ternary Search Trees.md`)
-- [[CS Data Structures/Tries and String Structures/Tries and Prefix Trees|Tries and Prefix Trees]] (`CS Data Structures/Tries and String Structures/Tries and Prefix Trees.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index — Modern Operating Systems]] (`CS Operating Systems/Books/Modern Operating Systems/Chapter Index.md`)
 - [[CS Operating Systems/Case Studies/Case Studies Overview|Case Studies Overview]] (`CS Operating Systems/Case Studies/Case Studies Overview.md`)
 - [[CS Operating Systems/CS Operating Systems — Learning Path|CS Operating Systems — Learning Path]] (`CS Operating Systems/CS Operating Systems — Learning Path.md`)

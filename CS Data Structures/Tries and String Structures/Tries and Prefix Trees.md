@@ -96,11 +96,10 @@ Tries underpin autocomplete engines, spell checkers, DNS resolvers, T9 predictiv
 
 ---
 
-*See also:* [[Compressed Tries and Radix Trees]], [[Ternary Search Trees]], [[Suffix Trees]], [[Hash Tables Overview]], [[Trees and BSTs Overview]] | Cross-wiki links
+*See also:* [[Compressed Tries and Radix Trees]], [[Ternary Search Trees]], [[Suffix Trees]], [[CS Data Structures/Hash-Based Structures/Hash-Based Structures Overview|Hash-Based Structures Overview]], [[CS Data Structures/Trees/Trees Overview|Trees Overview]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
+## Supporting Chunks
 - [[chunk-ds-013 Trie lookup is Om independent of stored keys]]
 
-### References
-- [[CS Data Structures/Sources/Sources Index|Sources Index]]
+## References
+- [[CS Data Structures/Sources/Sources Index|Sources Index]] — `raw-ds-010` ("Tries and String Indexing") backs the trie lookup, prefix-query, and string-indexing claims summarized here.

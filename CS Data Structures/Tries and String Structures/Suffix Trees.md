@@ -95,12 +95,11 @@ Suffix trees support exact substring search, longest repeated substring, longest
 
 ---
 
-*See also:* [[Suffix Arrays]], [[Compressed Tries and Radix Trees]], [[Tries and Prefix Trees]], [[Graph Structures Overview]] | Cross-wiki links
+*See also:* [[Suffix Arrays]], [[Compressed Tries and Radix Trees]], [[Tries and Prefix Trees]], [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
+## Supporting Chunks
 - [[chunk-ds-032 Ukkonens algorithm builds suffix trees in On time]]
 - Source gap: the vault has no more specific extracted chunks for suffix-tree query variants yet; broader support remains in [[CS Data Structures/Sources/Sources Index|Sources Index]] via `raw-ds-027`.
 
-### References
-- [[CS Data Structures/Sources/Sources Index|Sources Index]]
+## References
+- [[CS Data Structures/Sources/Sources Index|Sources Index]] — `raw-ds-027` ("Suffix Trees") backs the suffix-tree construction, query, and suffix-tree versus suffix-array claims summarized here.

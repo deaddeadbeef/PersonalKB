@@ -1,6 +1,6 @@
 # Broken Wiki Links
 
-Count: 945
+Count: 941
 
 | file | target | embedded |
 | --- | --- | --- |
@@ -405,12 +405,8 @@ Count: 945
 | CS Data Structures/Linear Structures/Stacks.md | Backtracking | False |
 | CS Data Structures/Trees/B-Trees and B-Plus Trees.md | External Sorting | False |
 | CS Data Structures/Trees/B-Trees and B-Plus Trees.md | External Sorting | False |
-| CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md | Trees and BSTs Overview | False |
 | CS Data Structures/Tries and String Structures/Rope Data Structure.md | String Algorithms | False |
 | CS Data Structures/Tries and String Structures/Rope Data Structure.md | Text Editor Internals | False |
-| CS Data Structures/Tries and String Structures/Suffix Trees.md | Graph Structures Overview | False |
-| CS Data Structures/Tries and String Structures/Tries and Prefix Trees.md | Hash Tables Overview | False |
-| CS Data Structures/Tries and String Structures/Tries and Prefix Trees.md | Trees and BSTs Overview | False |
 | CS Data Structures/_chunks/chunk-ds-049 K-d trees partition space alternating dimensions On space.md | k-d Trees and Spatial Data | False |
 | CS Data Structures/_chunks/chunk-ds-054 Leftist heaps enable Ologn merge via right-spine bias.md | Binary Heaps and Heapsort | False |
 | CS Data Structures/_chunks/chunk-ds-062 Two stacks simulate a queue with O1 amortized.md | Stacks and Queues | False |

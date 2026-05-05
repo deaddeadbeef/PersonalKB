@@ -252,3 +252,27 @@ Verification:
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
+
+## [2026-05-05] refine | CS Data Structures trie leaf references
+
+Scope: bounded curation of 3 CS Data Structures trie/string leaf notes outside the 0886df0 integration set.
+
+Changed content files:
+- `CS Data Structures/Tries and String Structures/Compressed Tries and Radix Trees.md`
+- `CS Data Structures/Tries and String Structures/Suffix Trees.md`
+- `CS Data Structures/Tries and String Structures/Tries and Prefix Trees.md`
+
+Maintenance changes:
+- Regenerated `_ops/reports/` and `index.md`.
+- Split combined supporting/reference headings into audit-recognized `## Supporting Chunks` and `## References` sections.
+- Repaired obvious broken cross-links to existing CS Data Structures overview notes.
+
+Audit deltas:
+- Missing references: 257 -> 254
+- Broken link occurrences: 945 -> 941
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`

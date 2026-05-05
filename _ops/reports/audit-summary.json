@@ -1,17 +1,16 @@
 {
-  "generated_at": "2026-05-05T22:36:15",
-  "root": "D:\\Vaults\\PersonalKB",
-  "files_total": 4724,
+  "generated_at": "2026-05-05T22:45:41",
+  "root": "C:\\Users\\fpan1\\harness\\.worktrees\\personalkb-wiki-curation-supervised-20260505",
+  "files_total": 4719,
   "by_extension": {
     "(none)": 2,
     ".base": 1,
     ".html": 1,
     ".jpg": 22,
-    ".json": 17,
+    ".json": 16,
     ".md": 2854,
     ".mp3": 1810,
     ".py": 11,
-    ".pyc": 4,
     ".txt": 2
   },
   "markdown_files": 2854,
@@ -20,8 +19,8 @@
   "stubs_under_1500_bytes": 23,
   "missing_up": 29,
   "missing_confidence": 255,
-  "missing_references": 257,
+  "missing_references": 254,
   "placeholder_hits": 79,
-  "broken_link_occurrences": 945,
+  "broken_link_occurrences": 941,
   "orphan_articles": 1
 }

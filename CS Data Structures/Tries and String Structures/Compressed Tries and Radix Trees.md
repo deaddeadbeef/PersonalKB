@@ -94,12 +94,11 @@ Compressed tries dominate longest-prefix-match in IP routing, including LC tries
 
 ---
 
-*See also:* [[Tries and Prefix Trees]], [[Suffix Trees]], [[Ternary Search Trees]], [[Trees and BSTs Overview]] | Cross-wiki links
+*See also:* [[Tries and Prefix Trees]], [[Suffix Trees]], [[Ternary Search Trees]], [[CS Data Structures/Trees/Trees Overview|Trees Overview]] | Cross-wiki links
 
-## Supporting Chunks / References
-### Supporting Chunks
+## Supporting Chunks
 - [[chunk-ds-089 Compressed tries reduce space via path compression]]
 - [[chunk-ds-126 Radix trees store entire edges as strings]]
 
-### References
-- [[CS Data Structures/Sources/Sources Index|Sources Index]]
+## References
+- [[CS Data Structures/Sources/Sources Index|Sources Index]] — `raw-ds-010` ("Tries and String Indexing") backs the path-compression, radix-tree, and Patricia-trie claims summarized here.
