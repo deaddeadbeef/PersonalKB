@@ -112,6 +112,33 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-05-17] refine | Japanese audio pronunciation regeneration
+
+Scope: rebuilt the Japanese audio generation path and regenerated the full audio inventory from pronunciation-safe TTS inputs.
+
+Changed content files:
+- `Japanese/Vocabulary/Core Words/Core 500 — Daily Life Vocabulary.md`
+- `Japanese/_audio/*.mp3`
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `Japanese/_audio/generate_tts.py`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Maintenance changes:
+- Added a canonical pronunciation manifest covering all 1,810 Japanese MP3 files.
+- Replaced bad TTS inputs harvested from rule text, placeholders, romanization notes, particle spellings, and OCR-corrupted terms with pronounceable Japanese.
+- Regenerated all 1,810 audio clips with Azure Japanese neural TTS; unchanged TTS inputs remained byte-identical where Azure output matched the previous clip.
+- Corrected visible OCR errors in the Core 500 daily-life vocabulary table so the page text and fixed audio agree.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- manifest/audio inventory check: `1810` entries, `1810` MP3 files, `0` missing, `0` extra, `0` zero-size
+- `ffprobe` duration check across all `1810` MP3 files: `0` failures
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-05-06] remove | Body Recomp section
 
 Scope: removed the Body Recomp topic from the active vault and maintenance rotation.

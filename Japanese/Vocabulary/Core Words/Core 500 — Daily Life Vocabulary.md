@@ -31,7 +31,7 @@ flowchart LR
 | Japanese | Reading | English | Audio |
 | ---------- | --------- | --------- | ----- |
 | 起きる | okiru | Wake up | ![[gap-193-phrase.mp3]] |
-| 寇る | neru | Sleep | ![[gap-194-phrase.mp3]] |
+| 寝る | neru | Sleep | ![[gap-194-phrase.mp3]] |
 | 洗う | arau | Wash | ![[gap-195-phrase.mp3]] |
 | 着る | kiru | Wear | ![[gap-196-phrase.mp3]] |
 | 脱ぐ | nugu | Take off (clothes) | ![[gap-197-phrase.mp3]] |
@@ -56,13 +56,13 @@ flowchart LR
 | 野菜 | yasai | Vegetables | ![[gap-205-phrase.mp3]] |
 | 果物 | kudamono | Fruit | ![[gap-206-phrase.mp3]] |
 | パン | pan | Bread | ![[gap-207-phrase.mp3]] |
-| 卸 | tamago | Egg | ![[gap-208-phrase.mp3]] |
+| 卵 | tamago | Egg | ![[gap-208-phrase.mp3]] |
 | 牛乳 | gyūnyū | Milk | ![[gap-209-phrase.mp3]] |
 | 砂糖 | satō | Sugar | ![[gap-210-phrase.mp3]] |
 | 塩 | shio | Salt | ![[gap-211-phrase.mp3]] |
-| 醬油 | shōyu | Soy sauce | ![[gap-212-phrase.mp3]] |
-| 朋ごはん | asagohan | Breakfast | ![[gap-213-phrase.mp3]] |
-| 昧ごはん | hirugohan | Lunch | ![[gap-214-phrase.mp3]] |
+| 醤油 | shōyu | Soy sauce | ![[gap-212-phrase.mp3]] |
+| 朝ごはん | asagohan | Breakfast | ![[gap-213-phrase.mp3]] |
+| 昼ごはん | hirugohan | Lunch | ![[gap-214-phrase.mp3]] |
 | 晩ごはん | bangohan | Dinner | ![[gap-215-phrase.mp3]] |
 | お茶 | ocha | Green tea | ![[gap-216-phrase.mp3]] |
 | コーヒー | kōhī | Coffee | ![[gap-217-phrase.mp3]] |
@@ -83,7 +83,7 @@ flowchart LR
 | 空港 | kūkō | Airport | ![[gap-226-phrase.mp3]] |
 | ホテル | hoteru | Hotel | ![[gap-227-phrase.mp3]] |
 | レストラン | resutoran | Restaurant | ![[gap-228-phrase.mp3]] |
-| 屋 | kyūkyūsha | Ambulance | ![[gap-229-phrase.mp3]] |
+| 救急車 | kyūkyūsha | Ambulance | ![[gap-229-phrase.mp3]] |
 | 交番 | kōban | Police box | ![[gap-230-phrase.mp3]] |
 
 
@@ -130,7 +130,7 @@ flowchart LR
 | 風 | kaze | Wind | ![[gap-254-phrase.mp3]] |
 | 暑い | atsui | Hot | ![[gap-255-phrase.mp3]] |
 | 寒い | samui | Cold | ![[gap-256-phrase.mp3]] |
-| 液しい | suzushii | Cool | ![[gap-257-phrase.mp3]] |
+| 涼しい | suzushii | Cool | ![[gap-257-phrase.mp3]] |
 | 暖かい | atatakai | Warm | ![[gap-258-phrase.mp3]] |
 
 
