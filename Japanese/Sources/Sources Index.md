@@ -7,21 +7,28 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 # Sources Index — Japanese
 
-## 🎯 Intuition
+This page records the source layer behind the Japanese vault. Raw notes and chunks remain the internal evidence base; checked external sources are used for current resource links and learning-policy claims.
 
-**The Core Idea:** Understanding Sources Index — Japanese is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+## Checked External Sources
 
-## ⚙️ Core Mechanics
+Accessed: 2026-05-17
+
+| Source | URL | Use in vault |
+| --- | --- | --- |
+| Official JLPT level summary | https://www.jlpt.jp/sp/e/about/levelsummary.html | Skill-based interpretation of N1-N5, including N3 as a bridge level and N4/N5 as basic classroom Japanese |
+| Irodori Japanese Online Course | https://www.irodori-online.jpf.go.jp/guide/ | Free official course option, built around daily-life/work communication and the JF Standard |
+| Genki official site | https://genki3.japantimes.co.jp/en/ | Paid textbook spine option for a structured beginner curriculum |
+| Tae Kim's Guide to Japanese | https://guidetojapanese.org/basicgram.html | Free grammar reference for foundational grammar after learning writing systems |
+| Anki Manual | https://docs.ankiweb.net/background.html | Rationale for active recall and spaced repetition in the review system |
+| WaniKani SRS explanation | https://knowledge.wanikani.com/wanikani/srs/ | Optional kanji/vocabulary SRS tool context |
 
 ## Textbooks and Curricula
-- **Genki I & II** — The gold standard beginner textbook series (The Japan Times)
-- **Tobira** — Gateway to Advanced Japanese (intermediate bridge)
-- **Tae Kim's Guide to Japanese** — Free online grammar reference
-- **A Dictionary of Basic/Intermediate/Advanced Japanese Grammar** — Seiichi Makino & Michio Tsutsui
-- **Remembering the Kanji** — James Heisig (mnemonic kanji learning)
-
+- **Genki I & II** — structured beginner textbook series from The Japan Times Publishing.
+- **Irodori Japanese Online Course** — free Japan Foundation online course for basic daily-life and work communication.
+- **Tobira** — intermediate bridge after the beginner course spine.
+- **Tae Kim's Guide to Japanese** — free online grammar reference.
+- **A Dictionary of Basic/Intermediate/Advanced Japanese Grammar** — Seiichi Makino and Michio Tsutsui.
+- **Remembering the Kanji** — James Heisig mnemonic kanji learning method.
 
 ## Audio and Listening
 - **Forvo.com** — Native speaker pronunciation database
@@ -29,12 +36,12 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - **JapanesePod101** — Structured podcast lessons
 - **Nihongo con Teppei** — Natural Japanese podcast for learners
 
-
 ## Apps and Tools
 - **Anki** — Spaced repetition flashcards
+- **WaniKani** — Kanji and vocabulary SRS
+- **Bunpro** — Grammar SRS
 - **Takoboto** — Offline Japanese dictionary
 - **Shirabe Jisho** — iOS Japanese dictionary
-
 
 ## Raw Notes Index
 
@@ -80,37 +87,6 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | raw-jp-038 | Seasonal and Cultural Expressions |
 | raw-jp-039 | Common Idioms and Proverbs |
 | raw-jp-040 | Language Exchange and Immersion |
-
-
-## 🔬 Deep Dive
-
-### Nuances and Exceptions
-- Context is king in Japanese — the same expression can have different nuances in different situations.
-- Pay attention to how native speakers use these patterns in real conversation.
-
-### Formal vs Informal Usage
-- Most patterns have both polite (です/ます) and casual (dictionary form) variants.
-- Choose formality based on your relationship with the listener and the situation.
-
-### Common Mistakes by English Speakers
-- Transferring English pronunciation habits to Japanese sounds.
-- Missing register differences that are critical in Japanese social contexts.
-- Underestimating the importance of non-verbal communication.
-
-## 🏋️ Practice
-
-### Warm-Up — Recognition
-1. Which particle completes this sentence? 私＿学生です。 → (は)
-2. Is this sentence correct? 本が読みます。 → (No — should be 本を読みます)
-3. What does この mean in: この本は面白い → (this)
-
-### Core Exercises — Production
-1. **Translate:** "I go to school by bus every day."
-   → 毎日バスで学校に行きます。
-2. **Fill in:** 友達＿映画＿見ました。 → (と / を)
-
-### Challenge — Real World
-You're at a konbini (convenience store). The clerk asks これでよろしいですか？ How do you respond if you also want to add a drink? Use appropriate particles and polite form.
 
 ## Online Resources
 - **Jisho.org** — Comprehensive Japanese-English dictionary

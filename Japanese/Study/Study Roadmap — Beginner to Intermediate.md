@@ -79,7 +79,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [ ] Formal expressions and complex conjunctions
 - [ ] Nominalization and quotation patterns
 - [ ] Begin recognizing keigo patterns
-- **Resources:** [[N3 Grammar — Formal Expressions]], [[Keigo — Politeness Levels Overview]]
+- **Resources:** [[N3 Grammar — Formal Expressions]], [[Keigo — Overview and Register System]]
 
 ### Immersion
 - [ ] Read first graded reader or simple manga

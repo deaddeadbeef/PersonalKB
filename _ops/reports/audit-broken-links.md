@@ -1,6 +1,6 @@
 # Broken Wiki Links
 
-Count: 941
+Count: 938
 
 | file | target | embedded |
 | --- | --- | --- |
@@ -534,7 +534,6 @@ Count: 941
 | CS Operating Systems/_templates/Chunk Template.md | raw note name | False |
 | CS Operating Systems/_templates/Chunk Template.md | wiki note name | False |
 | CS Operating Systems/_templates/Raw Material Template.md | note name | False |
-| Japanese/Culture/Culture Overview.md | Keigo — Politeness Levels Overview | False |
 | Japanese/Culture/Culture Overview.md | Keigo — Sonkeigo | False |
 | Japanese/Culture/Culture Overview.md | Keigo — Kenjougo | False |
 | Japanese/Culture/Culture Overview.md | Keigo — Teineigo | False |
@@ -542,9 +541,7 @@ Count: 941
 | Japanese/Culture/Culture Overview.md | Seasonal Greetings and Customs | False |
 | Japanese/Culture/Culture Overview.md | Common Idioms and Proverbs | False |
 | Japanese/Speaking/Speaking Overview.md | Conversation Patterns — Expressing Opinions | False |
-| Japanese/Speaking/Speaking Overview.md | Keigo — Politeness Levels Overview | False |
 | Japanese/Study/Japanese Study Index.md | Common Idioms and Proverbs | False |
-| Japanese/Study/Study Roadmap — Beginner to Intermediate.md | Keigo — Politeness Levels Overview | False |
 | Japanese/Study/Study Roadmap — Intermediate to Advanced.md | Japanese Business Culture and Language | False |
 | Japanese/Study/Study Roadmap — Intermediate to Advanced.md | Keigo — Sonkeigo | False |
 | Japanese/Vocabulary/Vocabulary Overview.md | Thematic — Food and Dining | False |

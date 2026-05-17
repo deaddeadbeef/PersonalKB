@@ -9,7 +9,7 @@ Japanese language and culture are deeply intertwined. Understanding cultural con
 
 ## Keigo (敬語) — Honorific Language ![[cultov-001-keigo.mp3]]
 The most important cultural-linguistic feature. Three levels:
-- [[Keigo — Politeness Levels Overview]] — when and why
+- [[Keigo — Overview and Register System]] — when and why
 - [[Keigo — Sonkeigo]] — respectful language (elevating others)
 - [[Keigo — Kenjougo]] — humble language (lowering yourself)
 - [[Keigo — Teineigo]] — polite language (です/ます system)

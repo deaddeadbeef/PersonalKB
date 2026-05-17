@@ -7,104 +7,76 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 # Resources Index — Textbooks, Apps, and Tools
 
-> **A curated list of the best Japanese learning resources, organized by type and level.**
+> Use this page to choose a small, stable tool stack. The main failure mode is not lack of resources; it is switching resources before the first one has done its job.
 
-## 🎯 Intuition
+## Resource Policy
 
-**The Core Idea:** Understanding Resources Index — Textbooks, Apps, and Tools is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+Use one course spine at a time. Add tools only when they serve a specific job.
 
-## ⚙️ Core Mechanics
+| Job | Recommended default | Avoid |
+| --- | --- | --- |
+| Course sequence | Genki I if you want a textbook; Irodori A1 if you want a free official online route | Running Genki, Irodori, Marugoto, YouTube, and app courses in parallel |
+| Grammar explanation | Tae Kim and the vault grammar pages | Memorizing grammar-point lists without sentences |
+| Memory | Anki for personally useful cards | Huge premade decks with no context |
+| Kanji | Course kanji first; WaniKani only if you want a separate kanji pipeline | Learning isolated kanji far ahead of reading ability |
+| Listening | Beginner audio daily from week 1 | Waiting until you "know enough" to listen |
 
-## Textbooks
+## Recommended Beginner Stack
 
-### Beginner (N5-N4)
+| Component | Resource | Use |
+| --- | --- | --- |
+| Main course | [Genki I](https://genki3.japantimes.co.jp/en/) | Textbook + workbook spine for lessons, exercises, and graded progression |
+| Review | [Anki](https://docs.ankiweb.net/background.html) | Daily active recall and spaced repetition for kana, words, and example sentences |
+| Grammar support | [Tae Kim's Guide](https://guidetojapanese.org/basicgram.html) | Reference when particles, adjectives, verbs, or sentence structure need another explanation |
+| Listening | [[Beginner Listening Resources]] plus [[Audio Index]] | Short daily audio exposure |
+| Navigation | [[Japanese Learning Dashboard]] | Keeps the week focused |
 
-| Resource | Type | Cost | Notes |
-|----------|------|------|-------|
-| **Genki I & II** | Textbook + workbook | ~ each | Gold standard. Structured, comprehensive |
-| **Minna no Nihongo** | Textbook | ~ | All-Japanese from page 1. Immersive |
-| **Tae Kim's Guide** | Online/free | Free | Excellent grammar reference |
-| **Japanese From Zero** | Textbook/YouTube | ~ | Good for self-study, video support |
+## Free Official Alternative
 
-### Intermediate (N3-N2)
+If you do not want to buy a textbook yet, use [Irodori Japanese Online Course](https://www.irodori-online.jpf.go.jp/guide/) as the course spine. It is operated by the Japan Foundation and is built around communication tasks for daily life and work in Japan.
 
-| Resource | Type | Cost | Notes |
-|----------|------|------|-------|
-| **Tobira** | Textbook | ~ | The standard N3 bridge textbook |
-| **Kanzen Master N3/N2** | Test prep | ~ each | Focused JLPT preparation |
-| **Shin Kanzen Master** | Test prep | ~ each | More rigorous than Kanzen Master |
-| **A Dictionary of Intermediate Japanese Grammar** | Reference | ~ | Essential reference book |
+Use Irodori when your priority is practical communication. Use Genki when your priority is a conventional, exercise-heavy classroom-style curriculum. Do not try to complete both at the same time during Phase 1.
 
-## Apps and Digital Tools
+## Grammar References
 
-### SRS (Spaced Repetition)
+| Resource | Best use |
+| --- | --- |
+| [Tae Kim's Guide](https://guidetojapanese.org/basicgram.html) | Clear explanations of foundational grammar after kana |
+| A Dictionary of Basic Japanese Grammar | Deep reference for confusing basic patterns |
+| [[Grammar Overview]] | Vault map into N5, N4, and N3 grammar notes |
 
-| App | Focus | Cost | Notes |
-|-----|-------|------|-------|
-| **Anki** | Flashcards (any) | Free (desktop) | Best customizable SRS. Use Core 2K/6K decks |
-| **WaniKani** | Kanji + vocab | /mo | Radicals → kanji → vocab pipeline |
-| **Bunpro** | Grammar | /mo | SRS for grammar points, maps to JLPT |
+## SRS and Review
 
-### Dictionaries
+| Tool | Use | Notes |
+| --- | --- | --- |
+| [Anki](https://docs.ankiweb.net/background.html) | General flashcard system | Best for custom cards from your course, vault notes, and example sentences |
+| [WaniKani](https://knowledge.wanikani.com/wanikani/srs/) | Kanji and kanji-derived vocabulary | Useful if you want a managed kanji pipeline; optional, not required |
+| Bunpro | Grammar SRS | Useful later if grammar review becomes the bottleneck |
 
-| App | Platform | Notes |
-|-----|----------|-------|
-| **Jisho.org** | Web | Free, comprehensive, example sentences |
-| **Takoboto** | Android | Offline capable, excellent search |
-| **Shirabe Jisho** | iOS | Beautiful UI, offline |
-| **Yomichan/10ten** | Browser extension | Hover-to-translate while reading |
+Anki should reinforce things you understand. If a card keeps failing, rewrite it with a simpler prompt, an example sentence, or a clearer answer.
 
-### Practice
+## Dictionaries and Reading Tools
 
-| App | Focus | Notes |
-|-----|-------|-------|
-| **HelloTalk** | Language exchange | Chat with native speakers |
-| **iTalki** | Tutoring | Professional tutors, ~-30/hr |
-| **Tandem** | Language exchange | Video/voice calls |
-| **NativShark** | All-in-one | Structured curriculum |
+| Tool | Use |
+| --- | --- |
+| Jisho.org | Web dictionary and kanji lookup |
+| Takoboto | Android dictionary |
+| Shirabe Jisho | iOS dictionary |
+| 10ten Reader / Yomichan-style tools | Browser lookup once you begin reading real pages |
+
+## Intermediate and Later
+
+Do not buy or configure these during Phase 1 unless there is a specific reason.
+
+| Stage | Resources |
+| --- | --- |
+| N4 -> N3 bridge | Tobira, graded readers, NHK Easy, intermediate podcasts |
+| JLPT-focused review | Shin Kanzen Master or Sou Matome for the level you are actually preparing for |
+| Advanced reference | Dictionary of Intermediate/Advanced Japanese Grammar |
 
 ## Audio and Listening
+
 See [[Listening Overview]] for detailed audio resource curation.
-
-## 🔬 Deep Dive
-
-### Advanced (N1)
-
-| Resource | Type | Cost | Notes |
-|----------|------|------|-------|
-| **Kanzen Master N1** | Test prep | ~ | Standard N1 prep |
-| **Nihongo Sou Matome N1** | Test prep | ~ | 6-week study plans |
-| **A Dictionary of Advanced Japanese Grammar** | Reference | ~ | The final reference volume |
-
-### Nuances and Exceptions
-- Context is king in Japanese — the same expression can have different nuances in different situations.
-- Pay attention to how native speakers use these patterns in real conversation.
-
-### Formal vs Informal Usage
-- Most patterns have both polite (です/ます) and casual (dictionary form) variants.
-- Choose formality based on your relationship with the listener and the situation.
-
-### Common Mistakes by English Speakers
-- Transferring English pronunciation habits to Japanese sounds.
-- Missing register differences that are critical in Japanese social contexts.
-- Underestimating the importance of non-verbal communication.
-
-## 🏋️ Practice
-
-### Warm-Up — Recognition
-1. Which particle completes this sentence? 私＿学生です。 → (は)
-2. Is this sentence correct? 本が読みます。 → (No — should be 本を読みます)
-3. What does この mean in: この本は面白い → (this)
-
-### Core Exercises — Production
-1. **Translate:** "I go to school by bus every day."
-   → 毎日バスで学校に行きます。
-2. **Fill in:** 友達＿映画＿見ました。 → (と / を)
-
-### Challenge — Real World
-You're at a konbini (convenience store). The clerk asks これでよろしいですか？ How do you respond if you also want to add a drink? Use appropriate particles and polite form.
 
 ## References
 - [[Sources Index]]

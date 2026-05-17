@@ -328,3 +328,29 @@ Verification:
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
+
+## [2026-05-17] refine | Japanese learning cockpit
+
+Scope: first human-facing curation pass for the Japanese vault, focused on making the topic consumable for systematic self-study.
+
+Changed content files:
+- `Japanese/Japanese.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Sources/Sources Index.md`
+- `Japanese/Study/Study Roadmap — Beginner to Intermediate.md`
+- `Japanese/Speaking/Speaking Overview.md`
+- `Japanese/Culture/Culture Overview.md`
+
+Maintenance changes:
+- Added a day-to-day study dashboard with current phase, twelve-week runway, daily loop, checkpoints, reading order, and curation backlog.
+- Replaced generic generated prose in the Japanese hub and study index with navigation aimed at a human learner.
+- Added checked external source links for JLPT, Irodori, Genki, Tae Kim, Anki, and WaniKani.
+- Repaired existing Japanese navigation links that pointed to the non-existent `Keigo — Politeness Levels Overview` page.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`

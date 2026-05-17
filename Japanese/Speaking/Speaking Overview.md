@@ -41,7 +41,7 @@ Speaking Japanese requires mastering pronunciation, pitch accent, appropriate fo
 | Polite (です/ます) | Default with strangers | 食べますか? (tabemasu ka?) | ![[speakov-004-tabemasu-ka.mp3]] |
 | Formal (keigo) | Business, service | お召し上がりになりますか? | ![[speakov-005-omeshiagarini-narimasu-ka.mp3]] |
 
-See: [[Culture Overview]] and [[Keigo — Politeness Levels Overview]]
+See: [[Culture Overview]] and [[Keigo — Overview and Register System]]
 
 ## Speaking Practice Methods
 1. **Shadowing** — repeat immediately after native audio ([[Shadowing — Technique and Practice Guide]])
