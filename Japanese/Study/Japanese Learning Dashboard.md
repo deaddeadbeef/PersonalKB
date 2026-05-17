@@ -13,6 +13,8 @@ tier-coverage: [intuition, core, practice]
 
 The goal is systematic Japanese learning, not browsing every interesting Japanese resource at once. Use one course spine, one review system, one daily input habit, and this vault as the map.
 
+For the full content order, use [[Japanese#Start Here]]. The dashboard is for daily execution; the Japanese hub is the table of contents for the whole learning sequence.
+
 | Role | Default choice | Why |
 | --- | --- | --- |
 | Course spine | [[Resources Index — Textbooks, Apps, and Tools#Recommended Beginner Stack|Genki I]] or [[Resources Index — Textbooks, Apps, and Tools#Free Official Alternative|Irodori A1]] | Gives sequence, exercises, and accountability |
@@ -87,15 +89,15 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 
 ## Reading Order
 
-1. [[Japanese]]
-2. [[Japanese Study Index]]
-3. [[Phase 1 — Foundation]]
-4. [[Resources Index — Textbooks, Apps, and Tools]]
-5. [[Daily Study Routine Templates]]
-6. [[Hiragana Complete Guide]]
-7. [[Katakana Complete Guide]]
-8. [[Core 100 — Survival Japanese]]
-9. [[N5 Grammar — Sentence Patterns]]
+1. [[Japanese#Start Here]]
+2. [[Resources Index — Textbooks, Apps, and Tools]]
+3. [[Daily Study Routine Templates]]
+4. [[Phase 1 — Foundation]]
+5. [[Hiragana Complete Guide]]
+6. [[Katakana Complete Guide]]
+7. [[Core 100 — Survival Japanese]]
+8. [[N5 Grammar — Sentence Patterns]]
+9. [[Phase 1 Weekly Review]]
 
 ## Curation Backlog
 
@@ -107,5 +109,6 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 ## References
 
 - [[Sources Index#Checked External Sources]]
+- [[Japanese#Start Here]]
 - [[Daily Study Routine Templates]]
 - [[JLPT Overview — N5 to N1]]

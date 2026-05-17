@@ -17,18 +17,146 @@ The main rule is focus. Use one course spine, keep reviews daily, and use the re
 
 ## Start Here
 
-| Need | Open |
-| --- | --- |
-| What should I do today? | [[Japanese Learning Dashboard]] |
-| What is the whole study system? | [[Japanese Study Index]] |
-| What is the first month? | [[Phase 1 — Foundation]] |
-| What resources should I use? | [[Resources Index — Textbooks, Apps, and Tools]] |
-| What does a daily routine look like? | [[Daily Study Routine Templates]] |
-| What does JLPT mean? | [[JLPT Overview — N5 to N1]] |
+Read this section in order. It is the consumption path through the Japanese vault.
+
+### 0. Orientation and Setup
+
+| Order | Page | Purpose |
+| --- | --- | --- |
+| 0.1 | [[Japanese Learning Dashboard]] | Daily operating page: current stage, routine, checkpoints |
+| 0.2 | [[Resources Index — Textbooks, Apps, and Tools]] | Pick one course spine and one review system |
+| 0.3 | [[Daily Study Routine Templates]] | Choose a repeatable daily routine |
+| 0.4 | [[JLPT Overview — N5 to N1]] | Understand level labels without letting JLPT dominate study |
+
+Rule: do this once, then start Phase 1. Do not spend days optimizing tools.
+
+### 1. Phase 1 — Foundation
+
+Goal: read kana, understand first sentence frames, know survival words, and build the review habit.
+
+| Order | Page | Consume for |
+| --- | --- | --- |
+| 1.1 | [[Phase 1 — Foundation]] | The 4-week plan and checkpoint |
+| 1.2 | [[Writing Systems Overview]] | Why Japanese uses hiragana, katakana, and kanji together |
+| 1.3 | [[Hiragana Complete Guide]] | Hiragana recognition and drill ladder |
+| 1.4 | [[Katakana Complete Guide]] | Katakana recognition and common loanwords |
+| 1.5 | [[Core 100 — Survival Japanese]] | First words and practical sentence combos |
+| 1.6 | [[N5 Grammar — Sentence Patterns]] | XはYです, questions, existence, and first requests |
+| 1.7 | [[Conversation Patterns — Greetings and Introductions]] | Social set phrases |
+| 1.8 | [[Self-Introduction Template]] | First memorized speaking script |
+| 1.9 | [[Beginner Listening Resources]] | Beginner audio workflow |
+| 1.10 | [[Phase 1 Weekly Review]] | Weekly checkpoint and next-task selection |
+
+Do not read kanji, keigo, business Japanese, native media, or advanced grammar as required work in Phase 1.
+
+### 2. Phase 2 — Building Blocks
+
+Goal: reach usable N5 foundations: particles, verb forms, adjectives, first kanji, and basic interactions.
+
+| Order | Page | Consume for |
+| --- | --- | --- |
+| 2.1 | [[Phase 2 — Building Blocks]] | Month 2-3 sequence |
+| 2.2 | [[N5 Grammar — Particles]] | は, が, を, に, で and core sentence structure |
+| 2.3 | [[N5 Grammar — Verb Forms]] | Verb groups and masu/nai/te/ta forms |
+| 2.4 | [[N5 Grammar — Adjectives]] | い-adjectives and な-adjectives |
+| 2.5 | [[N5 Grammar — Time and Counting]] | Time expressions and first counters |
+| 2.6 | [[Counters — The Japanese Counting System]] | Counting objects without treating counters as optional |
+| 2.7 | [[Core 500 — Daily Life Vocabulary]] | Daily-life vocabulary expansion |
+| 2.8 | [[Thematic Vocabulary — Food and Drink]] | Restaurant and food situations |
+| 2.9 | [[Thematic Vocabulary — Home and Daily Life]] | Daily routines and home vocabulary |
+| 2.10 | [[Kanji — How Kanji Work]] | Kanji system model |
+| 2.11 | [[Radicals — The Building Blocks]] | Components used to learn kanji |
+| 2.12 | [[Kanji Learning Strategies]] | How to study kanji without brute force |
+| 2.13 | [[Kanji N5 Essentials]] | First kanji set |
+| 2.14 | [[Pronunciation — Difficult Sounds for English Speakers]] | Fix high-impact pronunciation issues early |
+| 2.15 | [[Conversation Patterns — Daily Interactions]] | Everyday scripts |
+| 2.16 | [[Conversation Patterns — Shopping and Restaurants]] | Shop and restaurant scripts |
+| 2.17 | [[Shadowing — Technique and Practice Guide]] | Daily listening and speaking loop |
+| 2.18 | [[Podcast Guide — Japanese Learning Podcasts]] | Controlled beginner listening |
+| 2.19 | [[Keigo — Teineigo (Polite)]] | です/ます as the baseline register |
+| 2.20 | [[Social Register — When to Use What]] | When formality matters |
+
+### 3. Phase 3 — Expansion
+
+Goal: move toward N4: conditionals, passive/causative, giving/receiving, 1000 words, pitch accent awareness, and more listening.
+
+| Order | Page | Consume for |
+| --- | --- | --- |
+| 3.1 | [[Phase 3 — Expansion]] | Month 3-6 sequence |
+| 3.2 | [[N4 Grammar — Conditional Forms]] | たら, ば, なら, と |
+| 3.3 | [[N4 Grammar — Passive and Causative]] | Action direction and affectedness |
+| 3.4 | [[N4 Grammar — Giving and Receiving]] | あげる, もらう, くれる |
+| 3.5 | [[N4 Grammar — Compound Sentences]] | Longer sentence construction |
+| 3.6 | [[N4 Grammar — Potential and Volitional]] | Can-do and intention forms |
+| 3.7 | [[Core 1000 — Conversational Fluency]] | Conversational vocabulary threshold |
+| 3.8 | [[Thematic Vocabulary — Travel and Transportation]] | Travel situations |
+| 3.9 | [[Thematic Vocabulary — Body and Health]] | Health situations |
+| 3.10 | [[Thematic Vocabulary — Numbers, Time, and Dates]] | Practical date/time vocabulary |
+| 3.11 | [[Onomatopoeia — Sound and State Words]] | Sound/state words that appear constantly in natural Japanese |
+| 3.12 | [[Kanji N4 Essentials]] | Expand kanji recognition |
+| 3.13 | [[Pitch Accent — Introduction]] | Awareness before perfection |
+| 3.14 | [[Pitch Accent — Common Patterns]] | Pattern recognition |
+| 3.15 | [[Common Filler Words and Discourse Markers]] | Natural conversation glue |
+| 3.16 | [[Intermediate Listening Resources]] | Move beyond beginner audio |
+| 3.17 | [[YouTube Channels for Japanese Learners]] | Visual and graded input |
+| 3.18 | [[Anime and Drama — Immersion Listening]] | Entertainment as study, with guardrails |
+| 3.19 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
+| 3.20 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
+| 3.21 | [[Culture Overview]] | Cultural orientation |
+
+### 4. Phase 4 — Intermediate Mastery
+
+Goal: N3-level reading, longer conversations, intermediate grammar, 650 kanji, and active register control.
+
+| Order | Page | Consume for |
+| --- | --- | --- |
+| 4.1 | [[Phase 4 — Intermediate Mastery]] | Month 6-12 sequence |
+| 4.2 | [[N3 Grammar — Formal Expressions]] | Formal expressions |
+| 4.3 | [[N3 Grammar — Complex Conjunctions]] | Complex sentence links |
+| 4.4 | [[N3 Grammar — Nominalization and Quotation]] | こと, の, という, と思う |
+| 4.5 | [[Grammar — Comparison Across Levels]] | How patterns deepen across N5-N3 |
+| 4.6 | [[Kanji N3 Essentials]] | Functional literacy target |
+| 4.7 | [[Thematic Vocabulary — Work and Office]] | Workplace vocabulary |
+| 4.8 | [[Thematic Vocabulary — Nature and Weather]] | Nature and weather vocabulary |
+| 4.9 | [[Keigo — Sonkeigo (Honorific)]] | Honorific forms |
+| 4.10 | [[Keigo — Kenjōgo (Humble)]] | Humble forms |
+| 4.11 | [[Business Japanese — Workplace Communication]] | Workplace register and phrases |
+| 4.12 | [[Seasonal Greetings and Cultural Expressions]] | Seasonal language |
+| 4.13 | [[Idioms and Proverbs — ことわざ]] | Idioms and proverbs |
+| 4.14 | [[Numbers and Superstitions]] | Culture-linked number usage |
+| 4.15 | [[Advanced Listening Resources]] | Faster and more natural audio |
+| 4.16 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
+
+### 5. Phase 5 — Advanced
+
+Goal: N2 to N1 direction: native-speed input, professional register, native content, and nuanced output.
+
+| Order | Page | Consume for |
+| --- | --- | --- |
+| 5.1 | [[Phase 5 — Advanced]] | Year 2+ sequence |
+| 5.2 | [[Advanced Listening Resources]] | Native-speed listening |
+| 5.3 | [[Business Japanese — Workplace Communication]] | Professional output |
+| 5.4 | [[Keigo — Overview and Register System]] | Full register coordination |
+| 5.5 | [[Keigo — Sonkeigo (Honorific)]] | Honorific production |
+| 5.6 | [[Keigo — Kenjōgo (Humble)]] | Humble production |
+| 5.7 | [[Idioms and Proverbs — ことわざ]] | Cultural fluency |
+| 5.8 | [[Study Roadmap — Intermediate to Advanced]] | Long-term maintenance and refinement |
+
+### Reference Shelf
+
+Use these when you need lookup or comparison, not as required first-pass reading:
+
+- [[Vocabulary Overview]]
+- [[Grammar Overview]]
+- [[Listening Overview]]
+- [[Speaking Overview]]
+- [[Culture Overview]]
+- [[Japanese Study Index]]
+- [[Sources Index]]
 
 ## Learning Path
 
-Follow these phases in order. Advanced pages remain indexed, but the current queue starts at Phase 1.
+The phase pages are the backbone. The Start Here sequence above tells you the content order inside each phase.
 
 | Phase | Focus | Time | Level |
 |-------|-------|------|-------|

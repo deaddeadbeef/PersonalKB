@@ -13,6 +13,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 | Layer | Page | Use |
 | --- | --- | --- |
+| Full order | [[Japanese#Start Here]] | Consume the vault content in sequence |
 | Dashboard | [[Japanese Learning Dashboard]] | Decide what to do today and this week |
 | Phase path | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] | Work through the language in order |
 | Routine | [[Daily Study Routine Templates]] | Choose a 30-minute, 60-minute, or intensive day |

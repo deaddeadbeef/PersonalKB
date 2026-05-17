@@ -381,3 +381,22 @@ Verification:
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
+
+## [2026-05-17] refine | Japanese Start Here sequence
+
+Scope: expanded the Japanese hub into the canonical ordered consumption path for the whole Japanese wiki.
+
+Changed content files:
+- `Japanese/Japanese.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+
+Maintenance changes:
+- Replaced the shallow Start Here link table with a staged order covering orientation, Phase 1, Phase 2, Phase 3, Phase 4, Phase 5, and reference-only pages.
+- Linked the dashboard and study index back to `[[Japanese#Start Here]]` so daily execution and full navigation agree.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`
