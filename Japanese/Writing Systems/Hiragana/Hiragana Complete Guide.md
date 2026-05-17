@@ -28,6 +28,17 @@ flowchart LR
 **Analogy:** Think of hiragana as the Japanese ABCs — each character = one syllable sound.
 **Why It Matters:** You need hiragana to read anything in Japanese — textbooks, signs, and all other scripts build on it.
 
+## How To Use This Page
+
+This is a drill page, not an article to read once. Use it in four passes:
+
+1. Read each row aloud while looking at romaji.
+2. Cover the romaji and read the kana only.
+3. Mix rows together so recognition is not tied to chart order.
+4. Read short real words: さくら, すし, せんせい, がっこう.
+
+Do not wait for handwriting to be beautiful before moving on. Reading recognition is the blocker for Phase 1.
+
 ## ⚙️ Core Mechanics
 
 Hiragana (ひらがな ![[hira-001-hiragana.mp3]]) is the foundation of Japanese writing. Master this first — everything else builds on it.
@@ -174,34 +185,41 @@ Small ゃ ![[hira-074-small-ya.mp3]] / ゅ ![[hira-075-small-yu.mp3]] / ょ ![[h
 4. Test yourself: cover romaji, read only kana
 
 
-## 🔬 Deep Dive
+## Practice Ladder
 
-### Nuances and Exceptions
-- Some characters have variant forms or readings that appear in names or classical texts.
-- Context determines the correct reading — especially for kanji with multiple readings.
+### Recognition
 
-### Formal vs Informal Usage
-- Most patterns have both polite and casual variants.
-- Choose formality based on your relationship with the listener and the situation.
+1. Read the vowel row: あ い う え お.
+2. Read one consonant row without romaji.
+3. Shuffle rows and read 20 random kana.
+4. Read dakuten pairs: か/が, さ/ざ, た/だ, は/ば/ぱ.
 
-### Common Mistakes by English Speakers
-- Transferring English pronunciation habits to Japanese sounds.
-- Missing register differences that are critical in Japanese social contexts.
-- Underestimating the importance of non-verbal communication.
+### Production
 
-## 🏋️ Practice
+Write these in hiragana:
 
-### Warm-Up — Recognition
-1. How many basic hiragana characters are there? → (46)
-2. What are dakuten? → (Two dots that voice consonants: か→が)
-3. Which writing system is used for foreign words? → (Katakana)
+| Romaji | Hiragana |
+| --- | --- |
+| sakura | さくら |
+| sushi | すし |
+| sensei | せんせい |
+| gakkou | がっこう |
+| okaasan | おかあさん |
 
-### Core Exercises — Production
-1. **Write in hiragana:** sakura → さくら | tokyo → とうきょう
-2. **Write in katakana:** coffee → コーヒー | America → アメリカ
+### Checkpoint
 
-### Challenge — Real World
-Write a short self-introduction using all three scripts: your name in katakana, a greeting in hiragana, and at least one common kanji (人, 大, 日).
+You are ready to move to katakana when you can read a mixed hiragana row without saying the English letter names in your head.
+
+## Common Traps
+
+- は is pronounced "wa" only when it marks the topic.
+- へ is pronounced "e" only when it marks direction.
+- Small っ doubles the next consonant: がっこう.
+- Long vowels matter. おばさん and おばあさん are different words.
 
 ## References
 - [[Sources Index]]
+- [[chunk-jp-001]]
+- [[chunk-jp-002]]
+- [[chunk-jp-003]]
+- [[chunk-jp-004]]

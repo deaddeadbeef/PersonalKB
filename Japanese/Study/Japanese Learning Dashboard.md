@@ -67,7 +67,7 @@ Use JLPT levels as a map, not as the first goal. The official JLPT descriptions 
 
 ### Weekly Review: 20 Minutes
 
-Every Sunday, update this page mentally or in a separate study log:
+Every Sunday, open [[Phase 1 Weekly Review]] and record:
 
 - What did I finish?
 - What is still fuzzy?
@@ -99,7 +99,6 @@ Every Sunday, update this page mentally or in a separate study log:
 
 ## Curation Backlog
 
-- Build a lightweight weekly study log template.
 - Replace generic generated prose in the Phase 1-2 pages with human-facing instructions.
 - Add active-recall drill pages for N5 particles, verb forms, and kana.
 - Audit Japanese broken links and fix outdated resource names.

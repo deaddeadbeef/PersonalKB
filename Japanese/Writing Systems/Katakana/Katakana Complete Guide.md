@@ -28,6 +28,16 @@ flowchart LR
 **Analogy:** Like CAPITAL LETTERS or italics in English — katakana stands out and signals foreign or special.
 **Why It Matters:** You will see katakana on menus, in manga sound effects, and for any borrowed English words.
 
+## How To Use This Page
+
+Katakana is easy to recognize in a chart and hard to read quickly in the wild. Practice it with real loanwords from the start.
+
+Use this page in three passes:
+
+1. Learn the base chart by matching each katakana to its hiragana sound.
+2. Drill confusing pairs: シ/ツ and ソ/ン.
+3. Read common words aloud: コーヒー, タクシー, ホテル, スーパー.
+
 ## ⚙️ Core Mechanics
 
 Katakana (カタカナ ![[kata-001-katakana.mp3]]) mirrors hiragana but is used for foreign words, onomatopoeia, emphasis, and scientific terms.
@@ -103,34 +113,40 @@ Modern katakana adds sounds for foreign words:
 4. Write your name in katakana
 
 
-## 🔬 Deep Dive
+## Practice Ladder
 
-### Nuances and Exceptions
-- Some characters have variant forms or readings that appear in names or classical texts.
-- Context determines the correct reading — especially for kanji with multiple readings.
+### Recognition
 
-### Formal vs Informal Usage
-- Most patterns have both polite and casual variants.
-- Choose formality based on your relationship with the listener and the situation.
+1. Read one row at a time.
+2. Pair each katakana with its hiragana sound: ア = あ, カ = か.
+3. Drill シ/ツ and ソ/ン until the stroke direction feels obvious.
+4. Read a menu or product label and circle every katakana word.
 
-### Common Mistakes by English Speakers
-- Transferring English pronunciation habits to Japanese sounds.
-- Missing register differences that are critical in Japanese social contexts.
-- Underestimating the importance of non-verbal communication.
+### Production
 
-## 🏋️ Practice
+Write these in katakana:
 
-### Warm-Up — Recognition
-1. How many basic hiragana characters are there? → (46)
-2. What are dakuten? → (Two dots that voice consonants: か→が)
-3. Which writing system is used for foreign words? → (Katakana)
+| English | Katakana |
+| --- | --- |
+| coffee | コーヒー |
+| taxi | タクシー |
+| hotel | ホテル |
+| supermarket | スーパー |
+| internet | インターネット |
 
-### Core Exercises — Production
-1. **Write in hiragana:** sakura → さくら | tokyo → とうきょう
-2. **Write in katakana:** coffee → コーヒー | America → アメリカ
+### Checkpoint
 
-### Challenge — Real World
-Write a short self-introduction using all three scripts: your name in katakana, a greeting in hiragana, and at least one common kanji (人, 大, 日).
+You are ready to move on when you can read common katakana words without converting each character back into hiragana first.
+
+## Common Traps
+
+- シ and ツ differ mainly by stroke direction and angle.
+- ソ and ン are visually close; drill them as a pair.
+- Katakana loanwords are Japanese words, not English pronounced with a Japanese accent. Learn the Japanese form as its own word.
+- Long vowels usually use ー: コーヒー.
 
 ## References
 - [[Sources Index]]
+- [[chunk-jp-005]]
+- [[chunk-jp-006]]
+- [[chunk-jp-007]]

@@ -1,11 +1,23 @@
 ---
 tags: [japanese, writing-systems, hub]
 up: "[[Japanese]]"
+confidence: verified
+tier-coverage: [intuition, core, practice]
 ---
 
 # Writing Systems Overview
 
-Japanese uses three writing systems simultaneously — a feature unique among modern languages.
+Japanese uses three writing systems at the same time. Phase 1 does not require mastery of all three; it requires knowing what each script does and learning kana well enough that later grammar study is not blocked.
+
+## Phase 1 Priority
+
+| Priority | Script | What to do now |
+| --- | --- | --- |
+| 1 | Hiragana | Learn first; it carries grammar endings, particles, and native words |
+| 2 | Katakana | Learn next; it appears in loanwords, names, menus, signs, and emphasis |
+| 3 | Kanji | Understand the concept; begin slowly through course vocabulary |
+
+Do not start by memorizing giant kanji lists. In Phase 1, kanji is context: learn the characters attached to words you are already using.
 
 ## The Three Scripts
 
@@ -45,9 +57,10 @@ A typical Japanese sentence mixes all three:
 | 飲みます ![[writing-010-nomimasu.mp3]] (nomimasu) | Kanji + Hiragana | Verb stem (kanji) + ending (hiragana) |
 
 ## Learning Order
-1. **Week 1-2:** Master hiragana (reading + writing)
-2. **Week 2-3:** Master katakana
-3. **Week 3+:** Begin kanji (never stops — lifelong learning)
+
+1. Week 1: [[Hiragana Complete Guide]]
+2. Week 2: [[Katakana Complete Guide]]
+3. Week 3+: kanji through course words, supported by [[Kanji — How Kanji Work]]
 
 ## JLPT Kanji Targets
 
@@ -60,6 +73,7 @@ A typical Japanese sentence mixes all three:
 | N1 | ~2,000 | ~10,000 |
 
 ## Related Pages
+- [[Phase 1 — Foundation]]
 - [[Kanji N5 Essentials]]
 - [[Kanji N4 Essentials]]
 - [[Kanji N3 Essentials]]

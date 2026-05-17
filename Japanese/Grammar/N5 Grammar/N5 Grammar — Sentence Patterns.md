@@ -25,9 +25,21 @@ flowchart LR
 
 ## 🎯 Intuition
 
-**The Core Idea:** Core sentence patterns are the templates that all Japanese sentences follow.
+**The Core Idea:** Core sentence patterns are reusable templates for building your first Japanese sentences.
 **Analogy:** Japanese sentences are like fill-in-the-blank templates: [Topic] は [Comment] です is the most basic one.
-**Why It Matters:** These patterns are the skeleton of Japanese — learn them and you can express anything.
+**Why It Matters:** These patterns let you stop memorizing isolated phrases and start making controlled sentences.
+
+## Study Order
+
+Do these in order:
+
+1. XはYです.
+2. Questions with か.
+3. います / あります.
+4. Wanting with ほしい and たい.
+5. Requests and invitations after you know enough verb forms.
+
+Do not try to master every pattern here in one sitting. Phase 1 only needs the first three well enough to recognize and produce simple examples.
 
 ## ⚙️ Core Mechanics
 
@@ -103,35 +115,46 @@ Add か to make a question:
   ![[gramn5-010-issho-ni-tabemasen-ka.mp3]]
 
 
-## 🔬 Deep Dive
+## Common Beginner Mistakes
 
-### Nuances and Exceptions
-- Pay attention to context — the same grammar point can have different nuances in formal vs casual speech.
-- Exceptions often come from classical Japanese or set phrases that don't follow modern rules.
+- Treating は as the subject marker. In Phase 1, think "topic" or "as for X."
+- Translating English word order directly. Japanese puts the main verb or copula at the end.
+- Overusing 私. Japanese drops obvious subjects.
+- Using あります for people or animals. Use います for animate beings.
+- Trying to express someone else's wants with たい too early.
 
-### Formal vs Informal Usage
-- Most patterns have both polite (です/ます) and casual (dictionary form) variants.
-- Choose formality based on your relationship with the listener and the situation.
+## Practice
 
-### Common Mistakes by English Speakers
-- Applying English word order (SVO) instead of Japanese (SOV).
-- Overusing pronouns — Japanese drops subjects when context is clear.
-- Translating literally instead of using natural Japanese patterns.
+### Recognition
 
-## 🏋️ Practice
+1. 私＿学生です。 -> は
+2. 猫＿います。 -> が
+3. 本＿あります。 -> が
+4. 学生です＿。 -> か
 
-### Warm-Up — Recognition
-1. Which particle completes this sentence? 私＿学生です。 → (は)
-2. Is this sentence correct? 本が読みます。 → (No — should be 本を読みます)
-3. What does この mean in: この本は面白い → (this)
+### Production
 
-### Core Exercises — Production
-1. **Translate:** "I go to school by bus every day."
-   → 毎日バスで学校に行きます。
-2. **Fill in:** 友達＿映画＿見ました。 → (と / を)
+Make five sentences using this frame:
 
-### Challenge — Real World
-You're at a konbini (convenience store). The clerk asks これでよろしいですか？ How do you respond if you also want to add a drink? Use appropriate particles and polite form.
+| Frame | Example |
+| --- | --- |
+| XはYです | 私は学生です。 |
+| XはYですか | これは本ですか。 |
+| PlaceにThingがあります | ここに本があります。 |
+| PlaceにPerson/Animalがいます | そこに猫がいます。 |
+| Thingがほしいです | 水がほしいです。 |
+
+### Phase 1 Checkpoint
+
+You are done with this page for now when you can explain:
+
+- What は does in XはYです.
+- Why 猫がいます and 本があります use different verbs.
+- How to turn 学生です into a question.
 
 ## References
 - [[Sources Index]]
+- [[chunk-jp-028]]
+- [[chunk-jp-029]]
+- [[chunk-jp-030]]
+- [[chunk-jp-031]]

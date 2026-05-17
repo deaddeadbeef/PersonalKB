@@ -354,3 +354,30 @@ Verification:
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
+
+## [2026-05-17] refine | Japanese Phase 1 wiki curation
+
+Scope: first content-level curation batch for the Japanese wiki, focused on the pages a human learner consumes during Phase 1.
+
+Changed content files:
+- `Japanese/Learning Path/Phase 1 — Foundation.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Phase 1 Weekly Review.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Writing Systems/Writing Systems Overview.md`
+- `Japanese/Writing Systems/Hiragana/Hiragana Complete Guide.md`
+- `Japanese/Writing Systems/Katakana/Katakana Complete Guide.md`
+- `Japanese/Grammar/N5 Grammar/N5 Grammar — Sentence Patterns.md`
+- `Japanese/Vocabulary/Core Words/Core 100 — Survival Japanese.md`
+
+Maintenance changes:
+- Replaced generated filler in key Phase 1 pages with concrete study instructions, checkpoints, and practice ladders.
+- Added a weekly review note for Phase 1 so the learner can track actual study evidence.
+- Preserved existing audio references, kana charts, and supporting chunk links.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- `git diff --check`

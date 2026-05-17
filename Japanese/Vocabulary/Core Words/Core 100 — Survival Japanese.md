@@ -20,9 +20,21 @@ flowchart LR
 
 ## 🎯 Intuition
 
-**The Core Idea:** The 100 most essential Japanese words — with these alone, you can survive basic situations in Japan.
+**The Core Idea:** These words are the first survival layer: greetings, question words, basic verbs, basic adjectives, and everyday nouns.
 **Analogy:** Like learning 'hello', 'please', 'where', 'how much' before traveling — the absolute survival minimum.
-**Why It Matters:** These words cover ~50% of daily Japanese text and speech.
+**Why It Matters:** High-frequency function words and basic verbs give structure to almost every beginner sentence.
+
+## How To Study This List
+
+Do not memorize the page top to bottom. Study it in layers:
+
+1. Greetings and request phrases.
+2. Question words.
+3. Core verbs in dictionary and ます form.
+4. Nouns you can use in real requests.
+5. Ko-so-a-do words: これ, それ, あれ, どれ; ここ, そこ, あそこ, どこ.
+
+Make cards from short phrases, not isolated English prompts. Prefer これをください over "this one, please."
 
 ## ⚙️ Core Mechanics
 
@@ -138,35 +150,35 @@ flowchart LR
 | 分かりません | I don't understand | ![[gap-140-phrase.mp3]] |
 | 助けて | Help! | ![[gap-141-phrase.mp3]] |
 
+## First Sentence Combos
 
-## 🔬 Deep Dive
+Use the vocabulary with [[N5 Grammar — Sentence Patterns]].
 
-### Nuances and Exceptions
-- Many words have subtle differences that dictionaries don't capture — context and collocations matter.
-- Some words change meaning with different kanji or different pitch accent.
+| Goal | Pattern | Example |
+| --- | --- | --- |
+| Identify yourself | XはYです | 私は学生です。 |
+| Ask location | Xはどこですか | トイレはどこですか。 |
+| Ask price | いくらですか | これはいくらですか。 |
+| Request an item | Xをください | 水をください。 |
+| Say you do not understand | Xが分かりません | 日本語が分かりません。 |
 
-### Formal vs Informal Usage
-- Most patterns have both polite (です/ます) and casual (dictionary form) variants.
-- Choose formality based on your relationship with the listener and the situation.
+## Practice
 
-### Common Mistakes by English Speakers
-- False friends — words borrowed from English that changed meaning (マンション ≠ mansion).
-- Using the wrong counter or no counter when counting objects.
-- Directly translating English idioms instead of learning Japanese equivalents.
+### Recognition
 
-## 🏋️ Practice
-
-### Warm-Up — Recognition
 1. What does だいじょうぶ mean? → (It's OK / Are you OK?)
 2. How do you say "excuse me" to get someone's attention? → (すみません)
 3. What's the difference between いる and ある? → (いる = living things; ある = non-living things)
 
-### Core Exercises — Production
-1. **Translate:** "Where is the station?" → 駅はどこですか？
-2. **Fill in:** ＿を＿ください。(I'll have water, please) → (水 / 一つ)
+### Production
 
-### Challenge — Real World
-You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
+1. **Translate:** "Where is the station?" → 駅はどこですか？
+2. **Request:** "Water, please." → 水をください。
+3. **Ask price:** "How much is this?" → これはいくらですか。
+
+### Checkpoint
+
+You are ready to move on when you can produce five practical sentences from this page without reading the answer column.
 
 ## 🔊 Audio
 - Practice these with TTS — pronunciation of these basics must be perfect
@@ -175,3 +187,5 @@ You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for d
 
 ## References
 - [[Sources Index]]
+- [[chunk-jp-051]]
+- [[chunk-jp-052]]

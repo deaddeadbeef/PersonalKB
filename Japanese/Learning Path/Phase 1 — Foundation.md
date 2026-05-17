@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 # Phase 1 — Foundation
 
-> **Weeks 1–4 · Goal: Read kana, say basic phrases, build study habits***
+> Weeks 1-4. Goal: read kana, understand first sentence patterns, say a basic self-introduction, and build a daily review habit.
 
 ```mermaid
 flowchart LR
@@ -22,128 +22,103 @@ flowchart LR
     style E fill:#f3e5f5
 ```
 
-## 🎯 Intuition
+## What This Phase Is For
 
-**The Core Idea:** Phase 1 builds your foundation — kana, first 100 words, basic patterns, and study habits.
-**Analogy:** Like learning to walk before running — this phase gives you the tools everything else depends on.
-**Why It Matters:** Without a solid Phase 1, everything later becomes harder. Invest the time here.
+Phase 1 is not about "learning all beginner Japanese." It is about removing the first blockers:
 
-## ⚙️ Core Mechanics
+- You can read hiragana and katakana without constantly checking a chart.
+- You know enough survival vocabulary to recognize the shape of simple sentences.
+- You understand the first reusable sentence frames.
+- You have a repeatable daily routine, so reviews do not pile up.
 
-## Week 1–2: The Writing System
+If a page feels advanced, skip it for now. The work queue is the sequence below.
 
+## Phase 1 Map
 
-### Step 1: Learn Hiragana
-Read and drill until you can read all 46 characters without hesitation.
-- 📖 [[Hiragana Complete Guide]]
-- 🧩 Chunks: [[chunk-jp-001|Origin]], [[chunk-jp-002|Gojūon Chart]], [[chunk-jp-003|Dakuten & Handakuten]], [[chunk-jp-004|Modern Usage]]
+| Week | Primary outcome | Pages | Proof |
+| --- | --- | --- | --- |
+| 1 | Hiragana recognition | [[Hiragana Complete Guide]] | Read the base kana chart without romaji |
+| 2 | Katakana recognition | [[Katakana Complete Guide]], [[Writing Systems Overview]] | Read common loanwords like コーヒー and タクシー |
+| 3 | First sentences | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]] | Parse and produce XはYです questions |
+| 4 | Routine and first output | [[Daily Study Routine Templates]], [[Conversation Patterns — Greetings and Introductions]], [[Self-Introduction Template]] | Deliver a short self-introduction from memory |
 
+## Week 1: Hiragana
 
-### Step 2: Learn Katakana
-Same approach — drill until automatic.
-- 📖 [[Katakana Complete Guide]]
-- 🧩 Chunks: [[chunk-jp-005|Origin]], [[chunk-jp-006|Primary Uses]], [[chunk-jp-007|Confusing Pairs]]
+Read [[Hiragana Complete Guide]] once, then treat it as a drill sheet. You do not need deep history yet; you need fast recognition.
 
+Daily:
 
-### Step 3: Understand How Japanese Writing Works
-Get the big picture of the three-script system before diving into kanji.
-- 📖 [[Writing Systems Overview]]
+- Review one row at a time: あ row, か row, さ row, etc.
+- Say each sound aloud.
+- Cover the romaji and read only kana.
+- Mix old rows with new rows before moving on.
 
----
+Supporting evidence: [[chunk-jp-001|Hiragana origin]], [[chunk-jp-002|gojūon chart]], [[chunk-jp-003|dakuten and handakuten]], [[chunk-jp-004|modern usage]].
 
+## Week 2: Katakana and the Three-Script System
 
-## Week 2–3: Survival Grammar & Vocabulary
+Read [[Katakana Complete Guide]] and [[Writing Systems Overview]]. Katakana is easy to neglect because it appears less often at first, but it is essential for menus, signs, names, technology, and loanwords.
 
+Daily:
 
-### Step 4: First 100 Words
-These cover ~50% of all Japanese text.
-- 📖 [[Core 100 — Survival Japanese]]
-- 🧩 Chunks: [[chunk-jp-051|Top 100 Coverage]], [[chunk-jp-052|Ko-So-A-Do System]]
+- Drill シ/ツ and ソ/ン deliberately.
+- Read real katakana words, not isolated characters only.
+- Keep hiragana warm with 5 minutes of mixed review.
 
+Supporting evidence: [[chunk-jp-005|katakana origin]], [[chunk-jp-006|primary uses]], [[chunk-jp-007|confusing pairs]].
 
-### Step 5: Basic Sentence Patterns
-XはYです, existence (います/あります), questions with か.
-- 📖 [[N5 Grammar — Sentence Patterns]]
-- 🧩 Chunks: [[chunk-jp-028|Copula XはYです]], [[chunk-jp-029|います vs あります]], [[chunk-jp-030|Wanting — ほしい/たい]], [[chunk-jp-031|Requests & Permissions]]
+## Week 3: First Words and First Sentences
 
+Study [[Core 100 — Survival Japanese]] and [[N5 Grammar — Sentence Patterns]] together. Vocabulary without sentence frames is inert; sentence frames without words are empty.
 
-### Step 6: Essential Set Phrases
-These are social contracts, not optional niceties.
-- 📖 [[Conversation Patterns — Greetings and Introductions]]
-- 📖 [[Self-Introduction Template]]
-- 🧩 Chunks: [[chunk-jp-085|Self-Intro Fixed Format]], [[chunk-jp-113|Set Phrases — Social Contracts]]
+Priority patterns:
 
----
+- XはYです: 私は学生です。
+- XはYですか: 学生ですか。
+- PlaceにThingがあります / います.
+- これをください.
+- どこですか.
 
+Supporting evidence: [[chunk-jp-028|copula sentences]], [[chunk-jp-029|います vs あります]], [[chunk-jp-031|requests and permissions]], [[chunk-jp-051|top 100 words]], [[chunk-jp-052|ko-so-a-do system]].
 
-## Week 3–4: Study Setup & First Listening
+## Week 4: Routine, Listening, and Self-Introduction
 
+Set your routine with [[Daily Study Routine Templates]], then practice [[Conversation Patterns — Greetings and Introductions]] and [[Self-Introduction Template]] until your intro is automatic.
 
-### Step 7: Set Up Your Study System
-Choose textbook, install Anki, establish daily routine.
-- 📖 [[Resources Index — Textbooks, Apps, and Tools]]
-- 📖 [[Daily Study Routine Templates]]
-- 🧩 Chunks: [[chunk-jp-126|SRS — The #1 Technique]], [[chunk-jp-127|Optimal Anki Card Format]], [[chunk-jp-133|Beginner Daily Routine]]
+Daily:
 
+- Do due reviews first.
+- Spend 15-25 minutes on the course spine.
+- Listen to 5-10 minutes of beginner audio, even if comprehension is partial.
+- Speak the self-introduction out loud once.
 
-### Step 8: Start Listening from Day 1
-Even if you understand almost nothing, start training your ears.
-- 📖 [[Beginner Listening Resources]]
-- �� [[NHK World — News Listening Practice]]
-- 🧩 Chunks: [[chunk-jp-089|Four Levels of Listening]], [[chunk-jp-095|NHK Easy News]]
+Supporting evidence: [[chunk-jp-085|self-introduction fixed format]], [[chunk-jp-089|four levels of listening]], [[chunk-jp-126|spaced repetition]], [[chunk-jp-127|card format]], [[chunk-jp-133|beginner routine]], [[chunk-jp-150|learning milestones]].
 
+## First-Pass Rule
 
-### Step 9: Understand the JLPT Roadmap
-Know where you're headed.
-- 📖 [[JLPT Overview — N5 to N1]]
-- 📖 [[Study Roadmap — Beginner to Intermediate]]
-- 🧩 Chunks: [[chunk-jp-130|JLPT Structure]], [[chunk-jp-131|Level Requirements]], [[chunk-jp-150|Learning Milestones]]
+Do not optimize the system before it exists. For the first month:
 
----
+- Keep one course spine.
+- Keep one SRS tool.
+- Do not chase kanji lists beyond the beginner course.
+- Do not add native TV, manga, business Japanese, or keigo as required work.
+- Make the daily habit boring and repeatable.
 
+Use [[Phase 1 Weekly Review]] at the end of each week.
 
-## ✅ Phase 1 Checkpoint
-Before moving to Phase 2, verify:
+## Phase 1 Checkpoint
+
+Before moving to [[Phase 2 — Building Blocks]], verify:
+
 - [ ] Can read all hiragana without hesitation
-- [ ] Can read all katakana (may be slower — that's OK)
+- [ ] Can read all katakana, even if slower than hiragana
 - [ ] Know ~100 basic words
-- [ ] Can say self-introduction smoothly
-- [ ] Anki set up with daily habit started
-- [ ] Listening to beginner audio daily (even 5 min)
+- [ ] Can explain XはYです, questions with か, and います vs あります
+- [ ] Can say a basic self-introduction smoothly
+- [ ] Have SRS or review routine set up
+- [ ] Have listened to beginner audio on at least 10 days
 
 **Next:** [[Phase 2 — Building Blocks]]
-
----
-
-
-## 🔬 Deep Dive
-
-### Nuances and Exceptions
-- Context is king in Japanese — the same expression can have different nuances in different situations.
-- Pay attention to how native speakers use these patterns in real conversation.
-
-### Formal vs Informal Usage
-- Most patterns have both polite (です/ます) and casual (dictionary form) variants.
-- Choose formality based on your relationship with the listener and the situation.
-
-### Common Mistakes by English Speakers
-- Transferring English pronunciation habits to Japanese sounds.
-- Missing register differences that are critical in Japanese social contexts.
-- Underestimating the importance of non-verbal communication.
-
-## 🏋️ Practice
-
-### Warm-Up — Self-Assessment
-1. Can you read all hiragana without hesitation? → (If no, stay in current phase)
-2. Can you introduce yourself in Japanese? → (Test with a native speaker or tutor)
-3. Do you study Japanese every day, even briefly? → (Consistency > intensity)
-
-### Core Exercises — Application
-1. **Set a goal:** Write one SMART goal for this phase (Specific, Measurable, Achievable, Relevant, Time-bound).
-2. **Build a routine:** Create a 30-minute daily study plan that covers reading, listening, and review.
-
-### Challenge — Real World
-Find one Japanese person to have a 5-minute conversation with (in person, online, or via language exchange app). Use ONLY what you've learned in this phase.
 
 ## References
 - [[Sources Index]]
