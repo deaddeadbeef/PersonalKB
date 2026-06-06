@@ -23,7 +23,7 @@ Use [[Phase 3 Local Audio Practice]] for daily execution. It is a curated subset
 
 Use [[Phase 3 Audio Assignment Ladder]] when you need the copy-ready block assignment, evidence target, and advancement rule.
 
-For Block 1, use [[Fourth Month Japanese Study Plan]] when you need the learner-facing daily path through the N4 grammar transition. For Block 2, use [[Fifth Month Japanese Study Plan]] when you need the learner-facing daily path through longer N4 sentences, potential/volitional forms, and Core 1000 output. For Block 3, use [[Sixth Month Japanese Study Plan]] when you need the learner-facing daily path through practical vocabulary, onomatopoeia in context, and N4 kanji reading checks.
+For Block 1, use [[Fourth Month Japanese Study Plan]] when you need the learner-facing daily path through the N4 grammar transition. For Block 2, use [[Fifth Month Japanese Study Plan]] when you need the learner-facing daily path through longer N4 sentences, potential/volitional forms, and Core 1000 output. For Block 3, use [[Sixth Month Japanese Study Plan]] when you need the learner-facing daily path through practical vocabulary, onomatopoeia in context, and N4 kanji reading checks. For Block 4, use [[Phase 3 Block 4 Japanese Study Plan]] when you need the learner-facing daily path through pitch checks, discourse timing, media rhythm, and register recognition.
 
 The authentic model still matters more in Phase 3 because pitch accent, connected speech, media, and keigo recognition cannot be learned from local TTS alone.
 
@@ -100,6 +100,7 @@ These are real gaps:
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]

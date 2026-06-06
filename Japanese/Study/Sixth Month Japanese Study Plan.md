@@ -164,7 +164,7 @@ Month six counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 4 in [[Phase 3 Audio Assignment Ladder]]. Block 4 moves into pitch-accent checks, filler/discourse timing, intermediate listening, media rhythm, and register recognition.
+After these success criteria are true, continue with [[Phase 3 Block 4 Japanese Study Plan]]. It wraps Block 4 in [[Phase 3 Audio Assignment Ladder]] and moves into pitch-accent checks, filler/discourse timing, intermediate listening, media rhythm, and register recognition.
 
 Before starting Block 4, open [[Phase 3 Pitch Accent Practice Path]] and choose the exact intermediate or native segment plus the pitch/accent reference route that will anchor the month.
 
@@ -172,6 +172,7 @@ Before starting Block 4, open [[Phase 3 Pitch Accent Practice Path]] and choose 
 
 - [[Japanese Learning Dashboard]]
 - [[Fifth Month Japanese Study Plan]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]

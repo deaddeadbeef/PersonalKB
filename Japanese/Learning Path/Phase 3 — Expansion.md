@@ -32,7 +32,7 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 22-35, open [[Fourth Month Japanese Study Plan]], [[Fifth Month Japanese Study Plan]], [[Sixth Month Japanese Study Plan]], [[Phase 3 Authentic Audio Spine]], [[Phase 3 Local Audio Practice]], [[Phase 3 Audio Assignment Ladder]], and [[Phase 3 Audio Coverage Map]].
+Before starting Steps 22-35, open [[Fourth Month Japanese Study Plan]], [[Fifth Month Japanese Study Plan]], [[Sixth Month Japanese Study Plan]], [[Phase 3 Block 4 Japanese Study Plan]], [[Phase 3 Authentic Audio Spine]], [[Phase 3 Local Audio Practice]], [[Phase 3 Audio Assignment Ladder]], and [[Phase 3 Audio Coverage Map]].
 
 Use a repeatable human-recorded or official-course segment as the model. Use [[Phase 3 Audio Assignment Ladder]] to choose the current block, [[Phase 3 Local Audio Practice]] as the ordered local drill ladder, and the MP3 clips embedded in the Phase 3 grammar, vocabulary, kanji, pitch, listening, and culture pages when a topic needs more examples.
 
@@ -222,6 +222,7 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Assignment Ladder]]

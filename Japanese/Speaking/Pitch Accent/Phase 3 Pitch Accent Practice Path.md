@@ -24,7 +24,7 @@ Local pitch clips are drills, not the referee.
 
 ## Daily Five-Minute Loop
 
-Use this only after the normal Phase 3 audio pairing is clear in [[Phase 3 Audio Assignment Ladder]].
+Use this only after the normal Phase 3 audio pairing is clear in [[Phase 3 Audio Assignment Ladder]]. When Block 4 is active, use [[Phase 3 Block 4 Japanese Study Plan]] to keep pitch checks tied to one repeatable authentic segment and weekly proof.
 
 1. Pick one word or minimal pair from the current Phase 3 page.
 2. Check the accent pattern in OJAD, NHK, Forvo, course audio, tutor feedback, or a native recording.
@@ -69,6 +69,7 @@ Record clip-quality problems in [[Pronunciation Correction Log]]. Record normal 
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]

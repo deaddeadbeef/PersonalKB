@@ -25,6 +25,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Fourth month plan | [[Fourth Month Japanese Study Plan]] | Execute Phase 3 Block 1 with N4 grammar, source continuity, local clips, authentic audio, and weekly proof |
 | Fifth month plan | [[Fifth Month Japanese Study Plan]] | Execute Phase 3 Block 2 with longer N4 sentences, Core 1000 output, local clips, authentic audio, and weekly proof |
 | Sixth month plan | [[Sixth Month Japanese Study Plan]] | Execute Phase 3 Block 3 with practical vocabulary, N4 kanji readings, local clips, authentic audio, and weekly proof |
+| Phase 3 Block 4 plan | [[Phase 3 Block 4 Japanese Study Plan]] | Execute Phase 3 Block 4 with source-checked pitch, discourse timing, media rhythm, register recognition, and weekly proof |
 | Phase 1 starter | [[Phase 1 Audio Starter Assignment]] | Start the first week with one concrete source, clip set, and proof target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keep all eight Phase 2 weeks assigned and evidence-backed |
@@ -59,6 +60,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -172,6 +174,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

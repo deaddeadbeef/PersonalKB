@@ -15,10 +15,11 @@ tier-coverage: [practice]
 2. Use [[Fourth Month Japanese Study Plan]] as the Block 1 execution path.
 3. Use [[Fifth Month Japanese Study Plan]] as the Block 2 execution path.
 4. Use [[Sixth Month Japanese Study Plan]] as the Block 3 execution path.
-5. Choose one primary source from [[Phase 3 Authentic Audio Spine]] and one pronunciation or pitch-reference route.
-6. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
-7. Run [[Daily Audio Loop]] on each study day.
-8. At the end of the week, fill [[Phase 3 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+5. Use [[Phase 3 Block 4 Japanese Study Plan]] as the Block 4 execution path.
+6. Choose one primary source from [[Phase 3 Authentic Audio Spine]] and one pronunciation or pitch-reference route.
+7. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
+8. Run [[Daily Audio Loop]] on each study day.
+9. At the end of the week, fill [[Phase 3 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Phase 3 blocks can take more than one week. Do not advance because the block was read once. Advance when the authentic segment, local block, pitch or reading check, and output proof are all real.
 
@@ -118,6 +119,7 @@ Block 4 is where local clips are easiest to overtrust. Treat local pitch, media,
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]

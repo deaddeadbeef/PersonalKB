@@ -21,7 +21,7 @@ Use [[Phase 3 Audio Assignment Ladder]] to decide which block is active and what
 
 Use [[Phase 3 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
-For Block 1, use [[Fourth Month Japanese Study Plan]] as the learner-facing wrapper around the clips below. For Block 2, use [[Fifth Month Japanese Study Plan]] so the longer-sentence clips below stay tied to a transcripted authentic segment and spoken summary proof. For Block 3, use [[Sixth Month Japanese Study Plan]] so practical-domain clips stay tied to a role-play, summary, and N4 kanji reading check.
+For Block 1, use [[Fourth Month Japanese Study Plan]] as the learner-facing wrapper around the clips below. For Block 2, use [[Fifth Month Japanese Study Plan]] so the longer-sentence clips below stay tied to a transcripted authentic segment and spoken summary proof. For Block 3, use [[Sixth Month Japanese Study Plan]] so practical-domain clips stay tied to a role-play, summary, and N4 kanji reading check. For Block 4, use [[Phase 3 Block 4 Japanese Study Plan]] so pitch, filler, media, and register prompts stay tied to source checks and a repeatable authentic segment.
 
 ## Session Loop
 
@@ -212,6 +212,7 @@ After listening, write one line in [[Phase 3 Weekly Review]]:
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
+- [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
