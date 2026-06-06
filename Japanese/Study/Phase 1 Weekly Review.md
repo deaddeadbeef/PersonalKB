@@ -112,6 +112,7 @@ Do not move to [[Phase 2 — Building Blocks]] until the [[Phase 1 — Foundatio
 - [[Phase 1 — Foundation]]
 - [[Daily Study Routine Templates]]
 - [[Japanese Learning Dashboard]]
+- [[First Week Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 1 Audio Coverage Map]]

@@ -31,8 +31,9 @@ Read this section in order. It is the consumption path through the Japanese vaul
 | 0.6 | [[Authentic Audio Source Setup]] | Choose the official/native audio source, lesson segment, and pronunciation-reference route |
 | 0.7 | [[Authentic Audio Evidence Log]] | Keep a running weekly proof trail for authentic audio, local clips, and pronunciation checks |
 | 0.8 | [[Daily Audio Loop]] | Run the daily local-drill plus authentic-model audio sequence |
-| 0.9 | [[Phase 1 Audio Starter Assignment]] | Fill the first week's concrete audio assignment |
-| 0.10 | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
+| 0.9 | [[First Week Japanese Study Plan]] | Execute the first seven days without browsing the whole vault |
+| 0.10 | [[Phase 1 Audio Starter Assignment]] | Fill the first week's concrete audio assignment |
+| 0.11 | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 
 Rule: do this once, then start Phase 1. Do not spend days optimizing tools.
 
@@ -192,6 +193,7 @@ Use these when you need lookup or comparison, not as required first-pass reading
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Daily Audio Loop]]
+- [[First Week Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -276,6 +278,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[Study Roadmap — Beginner to Intermediate]] · [[Study Roadmap — Intermediate to Advanced]]
 - [[Resources Index — Textbooks, Apps, and Tools]] · [[Daily Study Routine Templates]]
 - [[Daily Audio Loop]]
+- [[First Week Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

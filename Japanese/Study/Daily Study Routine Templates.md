@@ -34,6 +34,8 @@ Audio counts only when both layers happen:
 
 Use this on ordinary days. Do the reviews first; they are the part that decays if skipped.
 
+For the first seven days, use [[First Week Japanese Study Plan]] instead of improvising the current phase audio target.
+
 ## 1-Hour Daily (Steady Progress)
 
 | Time | Activity | Tools |
@@ -96,6 +98,7 @@ This keeps the chain alive without pretending every day is ideal.
 - [[Phase 1 — Foundation]]
 - [[Japanese Learning Dashboard]]
 - [[Daily Audio Loop]]
+- [[First Week Japanese Study Plan]]
 - [[Authentic Audio Evidence Log]]
 - [[Pronunciation Correction Log]]
 - [[Phase 1 Local Audio Practice]]

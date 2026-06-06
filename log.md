@@ -1702,3 +1702,31 @@ Verification:
 - `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
 - `python _ops\personal_kb.py audit`: 4760 files, 2889 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-07] curate | Japanese first-week audio study plan
+
+Scope: make the active Phase 1 starting path immediately executable for a learner by turning setup, kana, local clips, authentic audio, and proof into a seven-day plan.
+
+Changed wiki/source files:
+- `Japanese/Study/First Week Japanese Study Plan.md`
+- `Japanese/Japanese.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Phase 1 Audio Starter Assignment.md`
+- `Japanese/Study/Phase 1 Weekly Review.md`
+
+Maintenance changes:
+- Added a day-by-day first-week plan that starts from [[Phase 1 Audio Starter Assignment]], uses [[Daily Audio Loop]], keeps one named authentic segment beside Week 1 local clips, and finishes with [[Phase 1 Weekly Review]] plus [[Authentic Audio Evidence Log]].
+- Linked the plan from Start Here, the dashboard reading order, study index, daily routine template, starter assignment, and weekly review.
+- Regenerated `index.md` and `_ops/reports/audit-summary.json`.
+- Did not modify local MP3 files or pronunciation manifests.
+
+Verification:
+- `git diff --check`: clean.
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4761 files, 2890 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+- Link coverage check for `First Week Japanese Study Plan`: linked from Start Here, dashboard, study index, daily routine template, Phase 1 starter assignment, Phase 1 weekly review, and `index.md`.
+- `index.md` MP3 leak check: 0 results.

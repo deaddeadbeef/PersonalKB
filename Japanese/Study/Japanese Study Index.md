@@ -18,6 +18,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Phase path | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] -> [[Phase 4 — Intermediate Mastery]] -> [[Phase 5 — Advanced]] | Work through the language in order |
 | Routine | [[Daily Study Routine Templates]] | Choose a 30-minute, 60-minute, or intensive day |
 | Daily audio | [[Daily Audio Loop]] | Run local drill, authentic model, one comparison, and the right log route |
+| First week plan | [[First Week Japanese Study Plan]] | Execute the first seven days with course, kana, local audio, authentic audio, and proof |
 | Phase 1 starter | [[Phase 1 Audio Starter Assignment]] | Start the first week with one concrete source, clip set, and proof target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keep all eight Phase 2 weeks assigned and evidence-backed |
@@ -45,6 +46,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 - [[Daily Study Routine Templates]]
 - [[Daily Audio Loop]]
+- [[First Week Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -151,6 +153,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Daily Audio Loop]]
+- [[First Week Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
