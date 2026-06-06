@@ -20,13 +20,14 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Course spine | [[Resources Index — Textbooks, Apps, and Tools#Recommended Beginner Stack|Genki I]] or [[Resources Index — Textbooks, Apps, and Tools#Free Official Alternative|Irodori A1]] | Gives sequence, exercises, and accountability |
 | Grammar reference | [[Resources Index — Textbooks, Apps, and Tools#Grammar References|Tae Kim]] plus vault grammar pages | Explains patterns when the course is too terse |
 | Memory system | [[Resources Index — Textbooks, Apps, and Tools#SRS and Review|Anki]] | Keeps kana, words, and kanji from decaying |
-| Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Local Audio Practice]], [[Phase 3 Local Audio Practice]], and [[Phase 4 Local Audio Practice]] with their authentic spines; Phase 5 uses [[Phase 5 Local Audio Practice]] plus [[Phase 5 Authentic Audio Spine]] around native-source work | Combines precise local drills with human-recorded, official-course, or native-source pronunciation |
+| Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Local Audio Practice]], [[Phase 3 Local Audio Practice]], and [[Phase 4 Local Audio Practice]] with their authentic spines; Phase 5 uses [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Local Audio Practice]], and [[Phase 5 Authentic Audio Spine]] around native-source work | Combines precise local drills with human-recorded, official-course, or native-source pronunciation |
 | Daily audio loop | [[Daily Audio Loop]] | Turns every audio block into local drill + authentic model + one comparison |
 | First audio assignment | [[Phase 1 Audio Starter Assignment]] | Gives Week 1 a concrete authentic source, local clip set, and evidence target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keeps Weeks 1-4 tied to concrete authentic/local/evidence targets |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keeps Weeks 5-12 tied to concrete authentic/local/evidence targets |
 | Phase 3 audio ladder | [[Phase 3 Audio Assignment Ladder]] | Keeps N4 blocks tied to concrete authentic/local/pitch/evidence targets |
 | Phase 4 audio ladder | [[Phase 4 Audio Assignment Ladder]] | Keeps N3, native-speed, keigo, and register blocks tied to source-checked evidence |
+| Phase 5 audio ladder | [[Phase 5 Audio Assignment Ladder]] | Keeps native-source, output, feedback, pitch, and register blocks tied to evidence |
 | Authentic audio setup | [[Authentic Audio Source Setup]] | Keeps the week tied to one exact official/native source and one replayable segment |
 | Audio evidence | [[Authentic Audio Evidence Log]] | Preserves the running proof trail across weekly reviews |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Japanese Audio QA Status]] + [[Pronunciation Correction Log]] | Separates local playback integrity from native/official pronunciation authority |
@@ -144,9 +145,10 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 40. [[Phase 5 — Advanced]]
 41. [[Phase 5 Authentic Audio Spine]]
 42. [[Phase 5 Local Audio Practice]]
-43. [[Phase 5 Audio Coverage Map]]
-44. [[Advanced Output and Register Feedback Log]]
-45. [[Phase 5 Weekly Review]]
+43. [[Phase 5 Audio Assignment Ladder]]
+44. [[Phase 5 Audio Coverage Map]]
+45. [[Advanced Output and Register Feedback Log]]
+46. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -166,6 +168,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 4 Audio Assignment Ladder]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Japanese Audio QA Status]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
@@ -186,6 +189,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 4 Weekly Review]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]

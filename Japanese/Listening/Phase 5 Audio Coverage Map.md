@@ -16,11 +16,12 @@ Phase 5 audio support has three layers:
 | Layer | Source | Job |
 | --- | --- | --- |
 | Local drill | [[Phase 5 Local Audio Practice]] plus embedded MP3 clips on the current Phase 5 page | Repeat keigo, business, idiom, pitch, discourse-marker, media, and comparison examples inside Obsidian |
+| Assignment ladder | [[Phase 5 Audio Assignment Ladder]] | Choose the current native-source segment, local precision block, output proof, and advancement rule |
 | Authentic model | [[Phase 5 Authentic Audio Spine]] | Make native-speed, human-recorded Japanese the main pronunciation, rhythm, register, and comprehension authority |
 | Output proof | [[Advanced Output and Register Feedback Log]] | Track recordings, tutor/native feedback, register fixes, and reuse targets |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Use [[Phase 5 Local Audio Practice]] for short precision drills. Local clips are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
+Use [[Phase 5 Audio Assignment Ladder]] before choosing the current native-source segment and output target. Use [[Phase 5 Local Audio Practice]] for short precision drills. Local clips are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
 
 ## Required Phase 5 Coverage
 
@@ -29,6 +30,7 @@ Use [[Phase 5 Local Audio Practice]] for short precision drills. Local clips are
 | [[Phase 5 — Advanced]] | 0 | Routes to spine | Routes to QA | Choose the next advanced focus |
 | [[Phase 5 Authentic Audio Spine]] | 0 | Primary native-source route | Quality bar included | Choose the exact native source for the week |
 | [[Phase 5 Local Audio Practice]] | 100 selected | Must be paired with spine | Covered by QA; pitch/register prompts require reference checks | Drill precision targets without hunting through pages |
+| [[Phase 5 Audio Assignment Ladder]] | 0 | Chooses the current native-source segment | Advancement and native-source safety rules included | Copy the current block assignment into [[Authentic Audio Evidence Log]] |
 | [[Advanced Listening Resources]] | 3 | Primary advanced source menu | Routes to QA | Choose replayable native-speed input |
 | [[NHK World — News Listening Practice]] | 1 | News/audio route | Routes to QA | Pair news listening with text and shadowing |
 | [[Anime and Drama — Immersion Listening]] | 12 | Scene-based native dialogue | Needs context and subtitles/text | Use entertainment as active study, not passive exposure |
@@ -46,7 +48,7 @@ Use [[Phase 5 Local Audio Practice]] for short precision drills. Local clips are
 | [[Advanced Output and Register Feedback Log]] | 0 | Uses the current output/register model | Tracks feedback | Record the correction you will reuse next |
 | [[Phase 5 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA and output proof | Decide the next native source and output target |
 
-The required Phase 5 content pages carry 152 embedded MP3 clips. [[Phase 5 Local Audio Practice]] adds 100 selected practice embeds from that library, for 252 total Phase 5 audio occurrences in the mapped route.
+The required Phase 5 content pages carry 152 embedded MP3 clips. [[Phase 5 Local Audio Practice]] adds 100 selected practice embeds from that library, for 252 total Phase 5 audio occurrences in the mapped route. [[Phase 5 Audio Assignment Ladder]] adds the weekly assignment structure without adding more local clips.
 
 ## Audio Pairing
 
@@ -75,6 +77,7 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Use [[Phase 5 Weekly Review]] before Phase 5 becomes the active dashboard phase.
+- Use [[Phase 5 Audio Assignment Ladder]] to copy the current block into [[Authentic Audio Evidence Log#Current Assignment]].
 - Use [[Phase 5 Local Audio Practice]] as the short precision-drill route before opening page-level clips.
 - Use [[Advanced Output and Register Feedback Log]] for recordings, tutor feedback, and register corrections.
 
@@ -83,6 +86,7 @@ These are real gaps:
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]
 - [[Phase 4 Audio Coverage Map]]

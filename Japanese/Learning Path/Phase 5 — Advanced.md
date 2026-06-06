@@ -32,16 +32,17 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 49-56, open [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], and [[Phase 5 Audio Coverage Map]].
+Before starting Steps 49-56, open [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], [[Phase 5 Audio Assignment Ladder]], and [[Phase 5 Audio Coverage Map]].
 
 Use native-speed Japanese as the main source: news, interviews, podcasts, lectures, drama, documentary, workplace audio, tutor recordings, or other human-recorded material with a stable segment you can replay.
 
-Use [[Phase 5 Local Audio Practice]] as the ordered precision-drill ladder for keigo, business phrases, idioms, pitch patterns, discourse markers, media labels, and grammar comparisons. Every Phase 5 block should have:
+Use [[Phase 5 Audio Assignment Ladder]] to choose the current block. Use [[Phase 5 Local Audio Practice]] as the ordered precision-drill ladder for keigo, business phrases, idioms, pitch patterns, discourse markers, media labels, and grammar comparisons. Every Phase 5 block should have:
 
 - One exact native source segment you repeat, mine, shadow, transcribe, summarize, or discuss.
 - One local clip set from [[Phase 5 Local Audio Practice]] or the page you are studying when the page has clips.
 - One pronunciation, pitch, reading, register, or naturalness issue checked through [[Pronunciation and Audio Accuracy]] or [[Pronunciation Correction Log]].
 - One output proof recorded in [[Advanced Output and Register Feedback Log]]: recording, tutor/native feedback, summary, argument, role-play, or conversation attempt.
+- One current assignment copied from [[Phase 5 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]].
 
 ## Grammar — Refinement
 
@@ -94,6 +95,7 @@ Seamless register shifting in real situations.
 - [ ] Can express complex ideas, argue, joke in Japanese
 - [ ] 1000+ kanji, 6000+ vocabulary
 - [ ] Have one stable Phase 5 native source in [[Phase 5 Authentic Audio Spine]]
+- [ ] Can choose the current block from [[Phase 5 Audio Assignment Ladder]]
 - [ ] Can use [[Phase 5 Local Audio Practice]] without hunting through page-level clips
 - [ ] Can pair each required Phase 5 page with audio using [[Phase 5 Audio Coverage Map]]
 - [ ] Have at least one recurring output/register feedback route recorded in [[Advanced Output and Register Feedback Log]]
@@ -156,6 +158,7 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Sources Index]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]

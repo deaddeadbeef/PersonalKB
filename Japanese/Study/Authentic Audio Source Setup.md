@@ -28,7 +28,7 @@ Local MP3 clips are the drill layer. The authentic source is the model.
 1. Choose the course or source in the table above.
 2. Install the required app or bookmark the exact course page.
 3. Choose the current lesson, unit, skit, or segment before opening the local ladder.
-4. Open the matching assignment ladder when one exists: [[Phase 1 Audio Assignment Ladder]], [[Phase 2 Audio Assignment Ladder]], [[Phase 3 Audio Assignment Ladder]], or [[Phase 4 Audio Assignment Ladder]].
+4. Open the matching assignment ladder when one exists: [[Phase 1 Audio Assignment Ladder]], [[Phase 2 Audio Assignment Ladder]], [[Phase 3 Audio Assignment Ladder]], [[Phase 4 Audio Assignment Ladder]], or [[Phase 5 Audio Assignment Ladder]].
 5. Open the matching local ladder: [[Phase 1 Local Audio Practice]], [[Phase 2 Local Audio Practice]], [[Phase 3 Local Audio Practice]], [[Phase 4 Local Audio Practice]], or [[Phase 5 Local Audio Practice]].
 6. Open the matching authentic spine: [[Phase 1 Authentic Audio Spine]], [[Phase 2 Authentic Audio Spine]], [[Phase 3 Authentic Audio Spine]], [[Phase 4 Authentic Audio Spine]], or [[Phase 5 Authentic Audio Spine]].
 7. Keep one pronunciation reference route ready: [[Pronunciation and Audio Accuracy]], OJAD, NHK accent dictionary, Forvo, course audio, tutor feedback, or native feedback.
@@ -81,6 +81,7 @@ If a local clip sounds wrong, use [[Pronunciation Correction Log]] and run the c
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 4 Audio Assignment Ladder]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 3 Authentic Audio Spine]]

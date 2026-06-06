@@ -23,6 +23,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keep all eight Phase 2 weeks assigned and evidence-backed |
 | Phase 3 audio ladder | [[Phase 3 Audio Assignment Ladder]] | Keep all Phase 3 blocks assigned, source-checked, and evidence-backed |
 | Phase 4 audio ladder | [[Phase 4 Audio Assignment Ladder]] | Keep all Phase 4 blocks assigned, register-checked, and evidence-backed |
+| Phase 5 audio ladder | [[Phase 5 Audio Assignment Ladder]] | Keep all Phase 5 blocks assigned, native-source-checked, output-backed, and evidence-backed |
 | Audio ladder | [[Phase 1 Local Audio Practice]] -> [[Phase 2 Local Audio Practice]] -> [[Phase 3 Local Audio Practice]] -> [[Phase 4 Local Audio Practice]] -> [[Phase 5 Local Audio Practice]] | Use local clips in the correct order instead of browsing the raw audio catalog |
 | Authentic audio | [[Phase 1 Authentic Audio Spine]] -> [[Phase 2 Authentic Audio Spine]] -> [[Phase 3 Authentic Audio Spine]] -> [[Phase 4 Authentic Audio Spine]] -> [[Phase 5 Authentic Audio Spine]] | Choose the native/official audio source for the current phase |
 | Authentic setup | [[Authentic Audio Source Setup]] | Choose the official/native source, exact segment, and pronunciation-reference route before the week starts |
@@ -49,6 +50,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 4 Audio Assignment Ladder]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Japanese Learning Dashboard]]
 - [[Phase 1 Local Audio Practice]]
 - [[Daily Audio Loop]]
@@ -79,6 +81,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 4 Weekly Review]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 1 Weekly Review]]
 - [[Phase 2 Weekly Review]]
@@ -127,6 +130,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Advanced Output and Register Feedback Log]]
 - [[Shadowing — Technique and Practice Guide]]
@@ -152,6 +156,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 4 Audio Assignment Ladder]]
+- [[Phase 5 Audio Assignment Ladder]]
 
 ## Quick Reference
 - [[Counters — The Japanese Counting System]]

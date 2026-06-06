@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, practice]
 
 # Phase 5 Authentic Audio Spine
 
-> Use this page during [[Phase 5 — Advanced]]. Pair it with [[Phase 5 Local Audio Practice]] only as a precision-drill route. Phase 5 is not about finding more learner audio; it is about using native-speed Japanese as the main source while keeping pronunciation, register, pitch, and output accountable.
+> Use this page during [[Phase 5 — Advanced]]. Use it with [[Phase 5 Audio Assignment Ladder]], and pair it with [[Phase 5 Local Audio Practice]] only as a precision-drill route. Phase 5 is not about finding more learner audio; it is about using native-speed Japanese as the main source while keeping pronunciation, register, pitch, and output accountable.
 
 ## The Rule
 
@@ -44,7 +44,7 @@ When time is short, keep one native sentence, one local clip, and one output che
 | 3 | Nuance, idioms, pitch, and conversation stance | Native conversation, drama, podcast, or tutor examples where implication matters | [[Phase 5 Local Audio Practice]] Block 3 |
 | 4 | N2/N1 preparation and long-term refinement | JLPT-style listening plus real native input on the same topic | [[Phase 5 Local Audio Practice]] Block 4 and the current native source |
 
-Use [[Phase 5 Local Audio Practice]] for short precision drills. Use [[Phase 5 Audio Coverage Map]] when you need to match a Phase 5 page to the correct local clip set and authentic audio job.
+Use [[Phase 5 Audio Assignment Ladder]] to choose the current block and copy it into [[Authentic Audio Evidence Log#Current Assignment]]. Use [[Phase 5 Local Audio Practice]] for short precision drills. Use [[Phase 5 Audio Coverage Map]] when you need to match a Phase 5 page to the correct local clip set and authentic audio job.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
 
@@ -75,6 +75,7 @@ At the end of each week, record:
 ## References
 
 - [[Phase 5 — Advanced]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]

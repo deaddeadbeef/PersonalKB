@@ -11,7 +11,7 @@ tier-coverage: [practice]
 
 ## How To Use This Log
 
-Add one short entry whenever an output attempt reveals a register, keigo, pitch, rhythm, nuance, idiom, filler, or professional-phrasing issue worth carrying forward. Use [[Phase 5 Local Audio Practice]] only after the source model or feedback route is clear.
+Add one short entry whenever an output attempt reveals a register, keigo, pitch, rhythm, nuance, idiom, filler, or professional-phrasing issue worth carrying forward. Use [[Phase 5 Audio Assignment Ladder]] to choose the current output target, and use [[Phase 5 Local Audio Practice]] only after the source model or feedback route is clear.
 
 1. Name the situation and the source model.
 2. Record what you tried to say.
@@ -41,6 +41,7 @@ Do not wait for perfect feedback. A self-recording compared against a replayable
 | Corrected version |  |
 | Next test |  |
 | Linked review | [[Phase 5 Weekly Review]] |
+| Assignment source | [[Phase 5 Audio Assignment Ladder]] |
 | Local drill used | [[Phase 5 Local Audio Practice]] block or current page clip set |
 
 ## Register Targets
@@ -76,6 +77,7 @@ An output pattern can return to normal practice when:
 
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]

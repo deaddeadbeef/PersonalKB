@@ -117,6 +117,7 @@ Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mas
 - [ ] You can check keigo, register, pitch, and reading uncertainty through reliable native/course/tutor sources
 - [ ] You can complete a short register-appropriate role-play or summary
 - [ ] Suspect local clips stay out of daily practice until checked or recorded in [[Pronunciation Correction Log]]
+- [ ] You have opened [[Phase 5 Authentic Audio Spine]], [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Audio Coverage Map]], and [[Phase 5 Weekly Review]] before starting Phase 5 content
 
 ## References
 
@@ -128,6 +129,7 @@ Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mas
 - [[Phase 4 Keigo and Register Production Checklist]]
 - [[Authentic Audio Evidence Log]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]

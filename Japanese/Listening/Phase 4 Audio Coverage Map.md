@@ -80,7 +80,7 @@ These are real gaps:
 - Use [[Phase 4 Weekly Review]] before Phase 4 becomes the active dashboard phase.
 - Use [[Phase 4 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Phase 4 Keigo and Register Production Checklist]] after Phase 4 audio evidence is in place.
-- Use [[Phase 5 Audio Coverage Map]] before starting Phase 5 content.
+- Use [[Phase 5 Audio Assignment Ladder]] and [[Phase 5 Audio Coverage Map]] before starting Phase 5 content.
 
 ## References
 
@@ -90,6 +90,7 @@ These are real gaps:
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Weekly Review]]
 - [[Phase 4 Keigo and Register Production Checklist]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Advanced Listening Resources]]

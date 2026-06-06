@@ -11,13 +11,13 @@ tier-coverage: [intuition, core, practice]
 
 ## Audio Standard
 
-Use [[Phase 5 Authentic Audio Spine]] as the pronunciation, rhythm, register, and comprehension authority. The local clips below are short precision drills inside Obsidian.
+Use [[Phase 5 Audio Assignment Ladder]] to choose the current block. Use [[Phase 5 Authentic Audio Spine]] as the pronunciation, rhythm, register, and comprehension authority. The local clips below are short precision drills inside Obsidian.
 
 Phase 5 is not a local-TTS phase. Do not count these clips as proof of advanced listening. Proof comes from replayable native-source work, shadowing, transcription, summary, output, tutor/native feedback, and entries in [[Advanced Output and Register Feedback Log]] or [[Phase 5 Weekly Review]].
 
 For pitch, idioms, professional phrasing, humor, keigo, and register nuance, local clips are prompts only. Check the item against native audio, OJAD/NHK/Forvo, tutor feedback, official-course audio, or a native-speaker recording before treating it as learned.
 
-Use [[Phase 5 Audio Coverage Map]] when you need the full page-to-audio inventory.
+Use [[Phase 5 Audio Assignment Ladder]] when you need the copy-ready current assignment, advancement rule, and native-source safety rule. Use [[Phase 5 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
 ## Session Loop
 
@@ -208,6 +208,7 @@ After listening, write one line in [[Phase 5 Weekly Review]]:
 
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]

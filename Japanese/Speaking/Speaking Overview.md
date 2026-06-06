@@ -50,6 +50,8 @@ See: [[Culture Overview]] and [[Keigo — Overview and Register System]]
 
 For Phase 4 production, use [[Phase 4 Audio Assignment Ladder]] to choose the current native-speed and register target, then use [[Phase 4 Keigo and Register Production Checklist]] before role-playing or recording keigo, business Japanese, or service language.
 
+For Phase 5 production, use [[Phase 5 Audio Assignment Ladder]] to choose the current native-source and output target, then record register, pitch, rhythm, or nuance feedback in [[Advanced Output and Register Feedback Log]].
+
 ## Speaking Practice Methods
 1. **Shadowing** — repeat immediately after native audio ([[Shadowing — Technique and Practice Guide]])
 2. **Accuracy check** — compare one feature against [[Pronunciation and Audio Accuracy]]
@@ -65,3 +67,5 @@ For Phase 4 production, use [[Phase 4 Audio Assignment Ladder]] to choose the cu
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Keigo and Register Production Checklist]]
+- [[Phase 5 Audio Assignment Ladder]]
+- [[Advanced Output and Register Feedback Log]]
