@@ -34,7 +34,7 @@ Audio counts only when both layers happen:
 
 Use this on ordinary days. Do the reviews first; they are the part that decays if skipped.
 
-For the first seven days, use [[First Week Japanese Study Plan]] instead of improvising the current phase audio target. For the rest of Phase 1 month one, use [[First Month Japanese Study Plan]] to keep Weeks 2-4 tied to the same source route, local audio ladder, and weekly proof. For Weeks 5-8, use [[Second Month Japanese Study Plan]] so N5 grammar study stays tied to heard and spoken Japanese. For Weeks 9-12, use [[Third Month Japanese Study Plan]] to keep kanji, pronunciation, interactions, and polite service tied to authentic audio. For Phase 3 Block 1, use [[Fourth Month Japanese Study Plan]] so N4 grammar starts with heard full sentences.
+For the first seven days, use [[First Week Japanese Study Plan]] instead of improvising the current phase audio target. For the rest of Phase 1 month one, use [[First Month Japanese Study Plan]] to keep Weeks 2-4 tied to the same source route, local audio ladder, and weekly proof. For Weeks 5-8, use [[Second Month Japanese Study Plan]] so N5 grammar study stays tied to heard and spoken Japanese. For Weeks 9-12, use [[Third Month Japanese Study Plan]] to keep kanji, pronunciation, interactions, and polite service tied to authentic audio. For Phase 3 Block 1, use [[Fourth Month Japanese Study Plan]] so N4 grammar starts with heard full sentences. For Phase 3 Block 2, use [[Fifth Month Japanese Study Plan]] so longer sentences, potential/volitional forms, and Core 1000 output stay tied to authentic audio.
 
 ## 1-Hour Daily (Steady Progress)
 
@@ -103,6 +103,7 @@ This keeps the chain alive without pretending every day is ideal.
 - [[Second Month Japanese Study Plan]]
 - [[Third Month Japanese Study Plan]]
 - [[Fourth Month Japanese Study Plan]]
+- [[Fifth Month Japanese Study Plan]]
 - [[Authentic Audio Evidence Log]]
 - [[Pronunciation Correction Log]]
 - [[Phase 1 Local Audio Practice]]

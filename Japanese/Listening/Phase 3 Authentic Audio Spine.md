@@ -21,7 +21,7 @@ Keep one primary authentic source and one secondary reference source:
 
 Do not replace the primary spine with random media. Phase 3 can include native content, but the weekly proof still needs a repeatable segment with text or lesson context.
 
-For Block 1, use [[Fourth Month Japanese Study Plan]] to keep N4 grammar tied to heard full sentences, local drills, and weekly proof.
+For Block 1, use [[Fourth Month Japanese Study Plan]] to keep N4 grammar tied to heard full sentences, local drills, and weekly proof. For Block 2, use [[Fifth Month Japanese Study Plan]] to keep longer sentence chains and Core 1000 output tied to transcripted authentic audio.
 
 ## Daily Pairing
 
@@ -77,6 +77,7 @@ At the end of each week, record evidence in [[Phase 3 Weekly Review]]:
 
 - [[Phase 3 — Expansion]]
 - [[Fourth Month Japanese Study Plan]]
+- [[Fifth Month Japanese Study Plan]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]

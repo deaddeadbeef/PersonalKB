@@ -163,7 +163,7 @@ Month four counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 2 in [[Phase 3 Audio Assignment Ladder]]. Block 2 moves into longer N4 sentences, potential/volitional forms, and Core 1000 output.
+After these success criteria are true, continue with [[Fifth Month Japanese Study Plan]]. It wraps Block 2 in [[Phase 3 Audio Assignment Ladder]] and moves into longer N4 sentences, potential/volitional forms, and Core 1000 output.
 
 Before starting Block 2, open [[Phase 3 Audio Coverage Map]] and choose the exact graded or transcripted authentic segment that will anchor longer sentence practice.
 
@@ -171,6 +171,7 @@ Before starting Block 2, open [[Phase 3 Audio Coverage Map]] and choose the exac
 
 - [[Japanese Learning Dashboard]]
 - [[Third Month Japanese Study Plan]]
+- [[Fifth Month Japanese Study Plan]]
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
