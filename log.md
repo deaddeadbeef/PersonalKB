@@ -1171,7 +1171,7 @@ Maintenance changes:
 - Kept `Phase 5 Authentic Audio Spine` as the pronunciation, rhythm, register, and comprehension authority; Phase 5 local clips are precision prompts only.
 - Routed Start Here, Phase 5, the audio spine, coverage map, listening overview, dashboard, study index, resources, daily routines, weekly review, and output feedback log to the new ladder.
 - Checked visible labels on the new ladder against `pronunciation_manifest.json` so local practice text matches the canonical audio text.
-- Corrected the anime/drama source row from `聴の形` to `聲の形`, renamed `listen-010-ki-no-katachi.mp3` to `listen-010-koe-no-katachi.mp3`, and regenerated that clip with TTS text `こえの形`.
+- Corrected the A Silent Voice anime/drama source row to learner-facing `聲の形`, renamed the obsolete `listen-010` title clip to `listen-010-koe-no-katachi.mp3`, and regenerated that clip with TTS text `こえの形`.
 
 Verification:
 - `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
@@ -1180,7 +1180,7 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4748 files, 2879 markdown, 1810 MP3, 0 heavy audio embed pages.
 - Phase 5 local audio link coverage check: 11 hub files plus local page backlinks present.
-- Phase 5 stale ladder and old-title check: 0 hits for old ladder wording, `listen-010-ki-no-katachi`, or `聴の形`.
+- Phase 5 stale ladder and old-title check: 0 hits for old ladder wording or obsolete `listen-010` title text.
 - Local MP3 embed check across changed and new Markdown pages: 103 embedded MP3 targets, 0 missing.
 - Phase 5 local label/audio text check: 100 labels, 0 mismatches against `pronunciation_manifest.json`.
 - Corrected title row check: `listen-010-koe-no-katachi.mp3` has display text `聲の形` and TTS text `こえの形`.
