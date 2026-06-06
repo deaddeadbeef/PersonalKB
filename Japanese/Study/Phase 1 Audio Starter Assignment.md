@@ -9,6 +9,8 @@ tier-coverage: [practice]
 
 > Use this for the first week of [[Phase 1 — Foundation]]. It turns the audio system into a concrete assignment before you have enough Japanese to choose segments confidently.
 
+After Week 1, continue with [[Phase 1 Audio Assignment Ladder]] for Weeks 2-4.
+
 ## Pick One Source
 
 Choose one row and ignore the other two for the first week.
@@ -68,6 +70,7 @@ The first week counts if all of these are true:
 ## References
 
 - [[Daily Audio Loop]]
+- [[Phase 1 Audio Assignment Ladder]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Phase 1 Authentic Audio Spine]]

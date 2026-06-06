@@ -21,7 +21,7 @@ Pick exactly one native-audio spine for the first month:
 
 Do not run all three at once. The point is consistency and repeat exposure, not collecting resources.
 
-If this is the first week, use [[Phase 1 Audio Starter Assignment]] to choose the first exact source segment and copy it into [[Authentic Audio Evidence Log]].
+If this is the first week, use [[Phase 1 Audio Starter Assignment]] to choose the first exact source segment and copy it into [[Authentic Audio Evidence Log]]. For Weeks 2-4, use [[Phase 1 Audio Assignment Ladder]].
 
 ## Daily Pairing
 
@@ -74,6 +74,7 @@ At the end of each week, record evidence in [[Phase 1 Weekly Review]]:
 
 - [[Phase 1 — Foundation]]
 - [[Phase 1 Audio Starter Assignment]]
+- [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Local Audio Practice]]
 - [[Pronunciation and Audio Accuracy]]
