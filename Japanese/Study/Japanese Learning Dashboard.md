@@ -21,7 +21,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Grammar reference | [[Resources Index — Textbooks, Apps, and Tools#Grammar References|Tae Kim]] plus vault grammar pages | Explains patterns when the course is too terse |
 | Memory system | [[Resources Index — Textbooks, Apps, and Tools#SRS and Review|Anki]] | Keeps kana, words, and kanji from decaying |
 | Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Authentic Audio Spine]] | Combines precise local drills with human-recorded or official-course pronunciation |
-| Audio QA | [[Pronunciation and Audio Accuracy]] | Prevents local clips from becoming the only pronunciation authority |
+| Audio QA | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Prevents local clips from becoming the only pronunciation authority |
 | Audio coverage | [[Phase 1 Audio Coverage Map]]; later [[Phase 2 Audio Coverage Map]] | Shows what to listen to for each required page in the current phase |
 | Roadmap | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] | Keeps advanced material out of the way until it is useful |
 
@@ -125,4 +125,5 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
+- [[Pronunciation Correction Log]]
 - [[JLPT Overview — N5 to N1]]

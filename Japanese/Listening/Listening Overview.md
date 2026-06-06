@@ -61,6 +61,8 @@ This wiki uses a hybrid audio approach:
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip conflicts with native audio, when a word has multiple readings, or when a pitch-accent claim matters.
 
+Use [[Pronunciation Correction Log]] when the problem is the clip itself: wrong source text, ambiguous reading, OCR artifact, missing reading hint, or disagreement with a native/official model.
+
 For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local Audio Practice]]. Do not treat the raw [[Audio Index]] as the curriculum.
 
 For Phase 2, use [[Phase 2 Authentic Audio Spine]] plus the embedded clips on the current grammar, vocabulary, kanji, or conversation page. Use [[Phase 2 Audio Coverage Map]] when you need to know which page-level clips and authentic segment belong together.
@@ -79,5 +81,6 @@ For Phase 2, use [[Phase 2 Authentic Audio Spine]] plus the embedded clips on th
 ## References
 - [[Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Pronunciation Correction Log]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]

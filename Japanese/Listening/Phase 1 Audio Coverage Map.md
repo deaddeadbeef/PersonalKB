@@ -37,6 +37,7 @@ Planning pages do not need embedded audio. They need to route clearly to the aud
 | [[Phase 1 Local Audio Practice]] | 41 | Must pair with spine | Explicit correction workflow | Daily 5-minute local drill |
 | [[Phase 1 Authentic Audio Spine]] | 0 | Primary native/official route | Quality bar included | Choose Genki, Irodori, or NHK as the model |
 | [[Pronunciation and Audio Accuracy]] | 0 | Uses native/accent references | Primary QA page | Check suspect clips and correction decisions |
+| [[Pronunciation Correction Log]] | 0 | Records corrections | Open/resolved QA log | Keep suspect clips out of daily practice |
 | [[Beginner Listening Resources]] | 0 | Broader external resources | Routes to QA through the audio stack | Use after the Phase 1 defaults are clear |
 | [[Phase 1 Weekly Review]] | 0 | Logs native target | Logs local target | Record evidence and next audio target |
 
@@ -65,7 +66,7 @@ These are real gaps:
 
 ## Next Coverage Targets
 
-- Add a small pronunciation-correction log when a real suspect clip is found.
+- Use [[Pronunciation Correction Log]] when a real suspect clip is found.
 - Use [[Phase 2 Audio Coverage Map]] and [[Phase 2 Weekly Review]] before making Phase 2 the active dashboard phase.
 - Keep the local audio ladder small; expand only when the weekly proof needs a missing clip.
 
@@ -75,6 +76,7 @@ These are real gaps:
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Pronunciation Correction Log]]
 - [[Beginner Listening Resources]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]

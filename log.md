@@ -654,3 +654,32 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - Changed-page MP3 embed check.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese pronunciation correction log
+
+Scope: add a dedicated QA log for suspect and resolved local pronunciation clips so corrected audio can be tracked before it returns to daily practice.
+
+Changed content files:
+- `Japanese/Speaking/Pronunciation Correction Log.md`
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+- `Japanese/Speaking/Speaking Overview.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Phase 2 Weekly Review.md`
+- `Japanese/Listening/Phase 1 Audio Coverage Map.md`
+- `Japanese/Listening/Phase 2 Audio Coverage Map.md`
+
+Maintenance changes:
+- Added an open/resolved correction log seeded with prior OCR and reading-hint repairs.
+- Routed pronunciation QA, speaking/listening hubs, dashboard, study index, coverage maps, and Phase 2 weekly review to the log.
+- Replaced "add a correction log" backlog language with instructions to use the log when a suspect clip is found.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Changed-page MP3 embed check.
+- `git diff --check`

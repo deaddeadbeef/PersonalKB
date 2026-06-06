@@ -13,6 +13,7 @@ Speaking Japanese requires mastering pronunciation, pitch accent, appropriate fo
 
 ### Pronunciation
 - [[Pronunciation and Audio Accuracy]] — when to trust TTS, native audio, and accent references
+- [[Pronunciation Correction Log]] — suspect and resolved local audio clip corrections
 - [[Pronunciation — Difficult Sounds for English Speakers]]
 - Japanese has only 5 vowels: a, i, u, e, o (pure vowels, no diphthongs)
 - The れ (r) sound is between English l and r ![[speakov-001-re.mp3]]
@@ -49,9 +50,12 @@ See: [[Culture Overview]] and [[Keigo — Overview and Register System]]
 ## Speaking Practice Methods
 1. **Shadowing** — repeat immediately after native audio ([[Shadowing — Technique and Practice Guide]])
 2. **Accuracy check** — compare one feature against [[Pronunciation and Audio Accuracy]]
-3. **Language exchange** — HelloTalk, Tandem, iTalki
-4. **Self-narration** — describe your day in Japanese (alone)
-5. **Role-play** — practice situational dialogues
+3. **Correction logging** — add suspect local clips to [[Pronunciation Correction Log]]
+4. **Language exchange** — HelloTalk, Tandem, iTalki
+5. **Self-narration** — describe your day in Japanese (alone)
+6. **Role-play** — practice situational dialogues
 
 ## References
 - [[Sources Index]]
+- [[Pronunciation and Audio Accuracy]]
+- [[Pronunciation Correction Log]]

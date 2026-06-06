@@ -43,7 +43,7 @@ Record exact targets. "Listened to Japanese" is not enough.
 | Authentic audio | Source, lesson, timestamp, or segment name |  |
 | Local clips | Page and clip set, such as particle examples or counter readings |  |
 | Shadowing | Sentence or dialogue segment repeated aloud |  |
-| QA check | Word, counter, pitch-accent, or rhythm issue checked |  |
+| QA check | Word, counter, pitch-accent, or rhythm issue checked; suspect clips go to [[Pronunciation Correction Log]] |  |
 
 ## What Improved
 
@@ -110,5 +110,6 @@ Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Pronunciation Correction Log]]
 - [[Japanese Learning Dashboard]]
 - [[Japanese Study Index]]

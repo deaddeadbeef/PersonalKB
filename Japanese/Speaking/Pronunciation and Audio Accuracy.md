@@ -42,13 +42,13 @@ Treat a clip as suspect when any of these are true:
 
 When an audio item sounds wrong:
 
-1. Write down the filename, displayed text, and what sounded wrong.
+1. Add the filename, displayed text, and what sounded wrong to [[Pronunciation Correction Log]].
 2. Check the item against [[Phase 1 Authentic Audio Spine]] if it is a phrase, or against OJAD/NHK/Forvo if it is a word or pitch issue.
 3. If the source text is wrong, fix the source manifest or reading hint rather than only renaming the file.
 4. Regenerate the affected clip.
 5. Run `python Japanese\_audio\build_pronunciation_manifest.py --check`.
 6. Run `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`.
-7. Update the relevant learner page only after the checks pass.
+7. Mark the correction in [[Pronunciation Correction Log]] and update the relevant learner page only after the checks pass.
 
 Do not bury a suspect clip inside a practice ladder. Either fix it, replace it with a native/official audio target, or remove it from the daily path.
 
@@ -60,7 +60,7 @@ Use this once per study session:
 2. Play the matching local drill from [[Phase 1 Local Audio Practice]].
 3. Record yourself once.
 4. Compare only one feature: vowel length, small っ, particle reading, ら行, ん, or pitch drop.
-5. Log one correction in [[Phase 1 Weekly Review]].
+5. Log one learner correction in [[Phase 1 Weekly Review]] or [[Phase 2 Weekly Review]]. If the local clip itself is suspect, add it to [[Pronunciation Correction Log]].
 
 One correction per day is enough. Pronunciation improves by repeated accurate comparison, not by trying to fix every sound at once.
 
@@ -77,6 +77,7 @@ One correction per day is enough. Pronunciation improves by repeated accurate co
 
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Pronunciation Correction Log]]
 - [[Pronunciation — Difficult Sounds for English Speakers]]
 - [[Pitch Accent — Introduction]]
 - [[Pitch Accent — Common Patterns]]
