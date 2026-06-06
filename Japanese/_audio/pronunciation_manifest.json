@@ -53,7 +53,7 @@
     "display_text": "暑い",
     "source_manifest": "gramn5_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "adj-008-samui.mp3",
@@ -4114,10 +4114,10 @@
   {
     "filename": "gap-194-phrase.mp3",
     "text": "寝る",
-    "display_text": "寇る",
+    "display_text": "寝る",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-195-phrase.mp3",
@@ -4226,10 +4226,10 @@
   {
     "filename": "gap-208-phrase.mp3",
     "text": "卵",
-    "display_text": "卸",
+    "display_text": "卵",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-209-phrase.mp3",
@@ -4258,26 +4258,26 @@
   {
     "filename": "gap-212-phrase.mp3",
     "text": "醤油",
-    "display_text": "醬油",
+    "display_text": "醤油",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized common kanji form"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-213-phrase.mp3",
     "text": "朝ごはん",
-    "display_text": "朋ごはん",
+    "display_text": "朝ごはん",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-214-phrase.mp3",
     "text": "昼ごはん",
-    "display_text": "昧ごはん",
+    "display_text": "昼ごはん",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-215-phrase.mp3",
@@ -4394,10 +4394,10 @@
   {
     "filename": "gap-229-phrase.mp3",
     "text": "救急車",
-    "display_text": "屋",
+    "display_text": "救急車",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-230-phrase.mp3",
@@ -4618,10 +4618,10 @@
   {
     "filename": "gap-257-phrase.mp3",
     "text": "涼しい",
-    "display_text": "液しい",
+    "display_text": "涼しい",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-258-phrase.mp3",
@@ -10733,7 +10733,7 @@
     "display_text": "お箸が使えますか。",
     "source_manifest": "gramn4n3_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "n4pot-007-wo-ga.mp3",
@@ -14035,7 +14035,7 @@
     "display_text": "泳ぐ",
     "source_manifest": "gramn5_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "verb-019-oyoide.mp3",
@@ -14043,7 +14043,7 @@
     "display_text": "泳いで",
     "source_manifest": "gramn5_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired OCR error"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "verb-020-shite.mp3",

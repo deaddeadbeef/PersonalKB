@@ -5,8 +5,8 @@ SUMMARY
   Source manifests          : 11
   Pronunciation entries     : 1810
   MP3 files                 : 1810
-  Entries changed for TTS   : 95
-  Explicit overrides        : 77
+  Entries changed for TTS   : 88
+  Explicit overrides        : 66
   Duplicate manifest rows   : 2
   Missing MP3 files         : 0
   MP3 files not in manifest : 0
@@ -92,13 +92,6 @@ CHANGED TTS INPUTS
   gap-190-(sageru)-lower.mp3: 下げる (sageru) lower -> 下げる (normalized)
   gap-191-(kowasu)-break.mp3: 壊す (kowasu) break -> 壊す (normalized)
   gap-192-(yogosu)-make-dirty.mp3: 汚す (yogosu) make dirty -> 汚す (normalized)
-  gap-194-phrase.mp3: 寇る -> 寝る (repaired OCR error)
-  gap-208-phrase.mp3: 卸 -> 卵 (repaired OCR error)
-  gap-212-phrase.mp3: 醬油 -> 醤油 (normalized common kanji form)
-  gap-213-phrase.mp3: 朋ごはん -> 朝ごはん (repaired OCR error)
-  gap-214-phrase.mp3: 昧ごはん -> 昼ごはん (repaired OCR error)
-  gap-229-phrase.mp3: 屋 -> 救急車 (repaired OCR error)
-  gap-257-phrase.mp3: 液しい -> 涼しい (repaired OCR error)
   gap-283-(ky).mp3: 今日 (kyō) -> 今日 (normalized)
   gap-284-(kin).mp3: 昨日 (kinō) -> 昨日 (normalized)
   gap-285-(ashita).mp3: 明日 (ashita) -> 明日 (normalized)

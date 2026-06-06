@@ -1052,3 +1052,27 @@ Verification:
 - Local MP3 embed check across changed pages: 133 embedded MP3 targets, 0 missing.
 - `index.md` MP3 leak check: 0 hits.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese audio source OCR normalization
+
+Scope: normalize previously repaired OCR source rows so future audio regeneration reads correct Japanese directly from source manifests instead of relying on special-case overrides.
+
+Changed audio/ops files:
+- `Japanese/_audio/gap_manifest.json`
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Maintenance changes:
+- Corrected `gap_manifest.json` source text for `gap-194-phrase.mp3`, `gap-208-phrase.mp3`, `gap-212-phrase.mp3`, `gap-213-phrase.mp3`, `gap-214-phrase.mp3`, `gap-229-phrase.mp3`, and `gap-257-phrase.mp3`.
+- Removed redundant OCR overrides for source rows that now already carry correct Japanese, including the earlier chopsticks, adjective, and swimming-form repairs.
+- Rebuilt `pronunciation_manifest.json`; the affected rows now show the intended Japanese as both source text and display text.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- Stale OCR source text search: 0 hits for the corrected malformed strings.
+- Affected pronunciation manifest row check: 11 rows match expected source/display text.
+- `python _ops\personal_kb.py audit`: 4746 files, 2877 markdown, 1810 MP3, 0 heavy audio embed pages.
+- `git diff --check`
