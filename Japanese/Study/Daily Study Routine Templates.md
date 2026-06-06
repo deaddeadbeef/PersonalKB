@@ -34,7 +34,7 @@ Audio counts only when both layers happen:
 
 Use this on ordinary days. Do the reviews first; they are the part that decays if skipped.
 
-For the first seven days, use [[First Week Japanese Study Plan]] instead of improvising the current phase audio target.
+For the first seven days, use [[First Week Japanese Study Plan]] instead of improvising the current phase audio target. For the rest of Phase 1 month one, use [[First Month Japanese Study Plan]] to keep Weeks 2-4 tied to the same source route, local audio ladder, and weekly proof.
 
 ## 1-Hour Daily (Steady Progress)
 
@@ -99,6 +99,7 @@ This keeps the chain alive without pretending every day is ideal.
 - [[Japanese Learning Dashboard]]
 - [[Daily Audio Loop]]
 - [[First Week Japanese Study Plan]]
+- [[First Month Japanese Study Plan]]
 - [[Authentic Audio Evidence Log]]
 - [[Pronunciation Correction Log]]
 - [[Phase 1 Local Audio Practice]]

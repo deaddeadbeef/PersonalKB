@@ -79,13 +79,14 @@ The first week counts when all of these are true:
 
 ## Next Page
 
-After Day 7, use [[Phase 1 Audio Assignment Ladder]] for Weeks 2-4 and keep filling [[Phase 1 Weekly Review]] once per week.
+After Day 7, use [[First Month Japanese Study Plan]] for Weeks 2-4. Copy each week's row from [[Phase 1 Audio Assignment Ladder]] and keep filling [[Phase 1 Weekly Review]] once per week.
 
 ## References
 
 - [[Japanese Learning Dashboard]]
 - [[Daily Study Routine Templates]]
 - [[Daily Audio Loop]]
+- [[First Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 1 Local Audio Practice]]

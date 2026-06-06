@@ -32,8 +32,9 @@ Read this section in order. It is the consumption path through the Japanese vaul
 | 0.7 | [[Authentic Audio Evidence Log]] | Keep a running weekly proof trail for authentic audio, local clips, and pronunciation checks |
 | 0.8 | [[Daily Audio Loop]] | Run the daily local-drill plus authentic-model audio sequence |
 | 0.9 | [[First Week Japanese Study Plan]] | Execute the first seven days without browsing the whole vault |
-| 0.10 | [[Phase 1 Audio Starter Assignment]] | Fill the first week's concrete audio assignment |
-| 0.11 | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
+| 0.10 | [[First Month Japanese Study Plan]] | Execute Weeks 1-4 with one source route, local clips, authentic audio, and weekly proof |
+| 0.11 | [[Phase 1 Audio Starter Assignment]] | Fill the first week's concrete audio assignment |
+| 0.12 | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 
 Rule: do this once, then start Phase 1. Do not spend days optimizing tools.
 
@@ -194,6 +195,7 @@ Use these when you need lookup or comparison, not as required first-pass reading
 - [[Authentic Audio Evidence Log]]
 - [[Daily Audio Loop]]
 - [[First Week Japanese Study Plan]]
+- [[First Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -246,7 +248,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Local Audio Practice]] · [[Phase 2 Audio Assignment Ladder]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Local Audio Practice]] · [[Phase 3 Audio Assignment Ladder]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Local Audio Practice]] · [[Phase 4 Audio Assignment Ladder]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Local Audio Practice]] · [[Phase 5 Audio Assignment Ladder]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[First Month Japanese Study Plan]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Japanese Audio QA Status]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]

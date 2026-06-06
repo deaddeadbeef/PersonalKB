@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > Use this for the first week of [[Phase 1 — Foundation]]. It turns the audio system into a concrete assignment before you have enough Japanese to choose segments confidently.
 
-Use [[First Week Japanese Study Plan]] for the day-by-day execution. After Week 1, continue with [[Phase 1 Audio Assignment Ladder]] for Weeks 2-4.
+Use [[First Week Japanese Study Plan]] for the day-by-day execution. After Week 1, continue with [[First Month Japanese Study Plan]] and [[Phase 1 Audio Assignment Ladder]] for Weeks 2-4.
 
 ## Pick One Source
 
@@ -71,6 +71,7 @@ The first week counts if all of these are true:
 
 - [[Daily Audio Loop]]
 - [[First Week Japanese Study Plan]]
+- [[First Month Japanese Study Plan]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]

@@ -11,11 +11,12 @@ tier-coverage: [practice]
 
 ## How To Use
 
-1. Start Week 1 with [[Phase 1 Audio Starter Assignment]].
-2. Keep the same primary authentic source for all of Phase 1 unless it clearly fails.
-3. At the start of each week, copy the matching assignment row into [[Authentic Audio Evidence Log#Current Assignment]].
-4. Run [[Daily Audio Loop]] on each study day.
-5. At the end of the week, fill [[Phase 1 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+1. Use [[First Month Japanese Study Plan]] as the week-to-week execution path.
+2. Start Week 1 with [[Phase 1 Audio Starter Assignment]].
+3. Keep the same primary authentic source for all of Phase 1 unless it clearly fails.
+4. At the start of each week, copy the matching assignment row into [[Authentic Audio Evidence Log#Current Assignment]].
+5. Run [[Daily Audio Loop]] on each study day.
+6. At the end of the week, fill [[Phase 1 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Do not add extra resources because a week feels easy. Repeat, shadow, and compare more precisely.
 
@@ -100,6 +101,7 @@ If any item is missing, repeat the same assignment next week with a shorter auth
 ## References
 
 - [[Phase 1 Audio Starter Assignment]]
+- [[First Month Japanese Study Plan]]
 - [[Daily Audio Loop]]
 - [[Authentic Audio Evidence Log]]
 - [[Phase 1 Audio Coverage Map]]

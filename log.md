@@ -1730,3 +1730,31 @@ Verification:
 - `python _ops\personal_kb.py audit`: 4761 files, 2890 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
 - Link coverage check for `First Week Japanese Study Plan`: linked from Start Here, dashboard, study index, daily routine template, Phase 1 starter assignment, Phase 1 weekly review, and `index.md`.
 - `index.md` MP3 leak check: 0 results.
+
+## [2026-06-07] curate | Japanese first-month audio study plan
+
+Scope: make Phase 1 month one executable after the first week by giving Weeks 2-4 a simple study path tied to authentic audio, local drills, weekly review, and evidence logging.
+
+Changed wiki/source files:
+- `Japanese/Study/First Month Japanese Study Plan.md`
+- `Japanese/Japanese.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/First Week Japanese Study Plan.md`
+- `Japanese/Study/Phase 1 Audio Starter Assignment.md`
+- `Japanese/Study/Phase 1 Audio Assignment Ladder.md`
+- `Japanese/Study/Phase 1 Weekly Review.md`
+
+Maintenance changes:
+- Added a month-one execution guide that keeps Week 1 on the first-week plan, then gives Weeks 2-4 daily shapes for katakana, survival phrases, sentence patterns, greetings, and the first self-introduction.
+- Made the pronunciation policy explicit: local clips are drills, authentic/official/native audio is the model, and suspect local clips go to [[Pronunciation Correction Log]].
+- Linked the new guide from Start Here, the dashboard, study index, daily routine template, first-week page, Phase 1 starter, Phase 1 ladder, and Phase 1 weekly review.
+- Did not modify local MP3 files.
+
+Verification:
+- `git diff --check`: clean.
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4762 files, 2891 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
