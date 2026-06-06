@@ -20,6 +20,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Audio ladder | [[Phase 1 Local Audio Practice]] -> [[Phase 2 Local Audio Practice]] -> [[Phase 3 Local Audio Practice]] -> [[Phase 4 Local Audio Practice]] -> [[Phase 5 Local Audio Practice]] | Use local clips in the correct order instead of browsing the raw audio catalog |
 | Authentic audio | [[Phase 1 Authentic Audio Spine]] -> [[Phase 2 Authentic Audio Spine]] -> [[Phase 3 Authentic Audio Spine]] -> [[Phase 4 Authentic Audio Spine]] -> [[Phase 5 Authentic Audio Spine]] | Choose the native/official audio source for the current phase |
 | Authentic setup | [[Authentic Audio Source Setup]] | Choose the official/native source, exact segment, and pronunciation-reference route before the week starts |
+| Audio evidence | [[Authentic Audio Evidence Log]] | Preserve the running proof trail for authentic audio, local clips, and pronunciation checks |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Japanese Audio QA Status]] + [[Pronunciation Correction Log]] | Decide when to trust, verify, correct, or quarantine a clip |
 | Audio coverage | [[Phase 1 Audio Coverage Map]] -> [[Phase 2 Audio Coverage Map]] -> [[Phase 3 Audio Coverage Map]] -> [[Phase 4 Audio Coverage Map]] -> [[Phase 5 Audio Coverage Map]] | Match current phase pages to local clips, authentic audio, and QA |
 | Weekly review | [[Phase 1 Weekly Review]] -> [[Phase 2 Weekly Review]] -> [[Phase 3 Weekly Review]] -> [[Phase 4 Weekly Review]] -> [[Phase 5 Weekly Review]] | Keep the current phase honest and choose the next task |
@@ -40,6 +41,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Authentic Audio Source Setup]]
+- [[Authentic Audio Evidence Log]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Japanese Audio QA Status]]
 - [[Pronunciation Correction Log]]
@@ -88,6 +90,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Authentic Audio Source Setup]]
+- [[Authentic Audio Evidence Log]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Japanese Audio QA Status]]
 - [[Pronunciation Correction Log]]
@@ -121,6 +124,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 ## Resources
 - [[Resources Index — Textbooks, Apps, and Tools]]
 - [[Authentic Audio Source Setup]]
+- [[Authentic Audio Evidence Log]]
 
 ## Quick Reference
 - [[Counters — The Japanese Counting System]]

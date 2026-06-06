@@ -31,7 +31,7 @@ Local MP3 clips are the drill layer. The authentic source is the model.
 4. Open the matching local ladder: [[Phase 1 Local Audio Practice]], [[Phase 2 Local Audio Practice]], [[Phase 3 Local Audio Practice]], [[Phase 4 Local Audio Practice]], or [[Phase 5 Local Audio Practice]].
 5. Open the matching authentic spine: [[Phase 1 Authentic Audio Spine]], [[Phase 2 Authentic Audio Spine]], [[Phase 3 Authentic Audio Spine]], [[Phase 4 Authentic Audio Spine]], or [[Phase 5 Authentic Audio Spine]].
 6. Keep one pronunciation reference route ready: [[Pronunciation and Audio Accuracy]], OJAD, NHK accent dictionary, Forvo, course audio, tutor feedback, or native feedback.
-7. Record the exact source and segment in the current weekly review.
+7. Record the exact source and segment in the current weekly review and [[Authentic Audio Evidence Log]].
 
 ## Daily Use
 
@@ -40,7 +40,7 @@ Local MP3 clips are the drill layer. The authentic source is the model.
 | 3-5 min | Play the local clips for the current page or phase ladder | You repeated one controlled sound, word, phrase, or sentence |
 | 5-20 min | Play the authentic segment once blind, once with text, then shadow one short part | You heard human-recorded or official-course Japanese before memorizing the phrase |
 | 1-2 min | Compare one feature: vowel length, small っ, particle reading, ら行, ん, pitch drop, rhythm, or register | You know what to fix next |
-| 1 min | Log the source and segment in the current weekly review | The next session can restart without browsing |
+| 1 min | Log the source and segment in the current weekly review or [[Authentic Audio Evidence Log]] | The next session can restart without browsing |
 
 When time is short, keep one authentic sentence and one local clip. Do not skip audio completely.
 
@@ -57,6 +57,8 @@ Each weekly review should answer these:
 
 The segment must be replayable. If you cannot name the segment, it does not count as the week's pronunciation model.
 
+After the weekly review, add one row to [[Authentic Audio Evidence Log]]. The log keeps the running proof trail; the weekly review explains the local details.
+
 ## When Sources Disagree
 
 Use this priority order:
@@ -71,6 +73,7 @@ If a local clip sounds wrong, use [[Pronunciation Correction Log]] and run the c
 
 - [[Resources Index — Textbooks, Apps, and Tools]]
 - [[Japanese Audio QA Status]]
+- [[Authentic Audio Evidence Log]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Phase 1 Authentic Audio Spine]]

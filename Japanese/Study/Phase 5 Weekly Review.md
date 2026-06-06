@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 20-30 minutes.
 
-Phase 5 review is not a passive immersion diary. Each week should identify one exact native source segment, one local drill target from [[Phase 5 Local Audio Practice]] or the current page, one output attempt, and one pronunciation, pitch, reading, register, or naturalness check.
+Phase 5 review is not a passive immersion diary. Each week should identify one exact native source segment, one local drill target from [[Phase 5 Local Audio Practice]] or the current page, one output attempt, and one pronunciation, pitch, reading, register, or naturalness check. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -32,6 +32,7 @@ Phase 5 review is not a passive immersion diary. Each week should identify one e
 - [ ] One pitch, reading, rhythm, pronunciation, or naturalness issue checked through [[Pronunciation and Audio Accuracy]]
 - [ ] One register, keigo, stance, idiom, humor, or professional phrasing issue checked with a tutor, native speaker, trusted course, or replayable native model
 - [ ] One suspect local clip, if found, recorded in [[Pronunciation Correction Log]] before returning to practice
+- [ ] One weekly summary row added to [[Authentic Audio Evidence Log]]
 
 ## Weekly Audio Evidence
 
@@ -121,6 +122,7 @@ Do not treat Phase 5 as stable until these are true:
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Advanced Output and Register Feedback Log]]
+- [[Authentic Audio Evidence Log]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Japanese Learning Dashboard]]

@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short. The review should take 15-25 minutes.
 
-The review has one job: choose the next small action. If particles are still blurry, stay with [[N5 Grammar — Particles]]. If verb forms are readable but not speakable, repeat the same transformation clips. If authentic audio feels too fast, shorten the segment instead of abandoning audio.
+The review has one job: choose the next small action. If particles are still blurry, stay with [[N5 Grammar — Particles]]. If verb forms are readable but not speakable, repeat the same transformation clips. If authentic audio feels too fast, shorten the segment instead of abandoning audio. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -32,6 +32,7 @@ The review has one job: choose the next small action. If particles are still blu
 - [ ] One pronunciation, rhythm, counter-reading, or kanji-reading issue checked through [[Pronunciation and Audio Accuracy]]
 - [ ] One grammar point used in your own spoken or written sentence
 - [ ] One short sentence or dialogue segment shadowed without reading
+- [ ] One weekly summary row added to [[Authentic Audio Evidence Log]]
 - [ ] One page in the Japanese vault reviewed
 
 ## Weekly Audio Evidence
@@ -112,6 +113,7 @@ Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]
+- [[Authentic Audio Evidence Log]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Weekly Review]]

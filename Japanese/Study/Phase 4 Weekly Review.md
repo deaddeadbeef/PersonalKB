@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 20-30 minutes.
 
-Phase 4 review should identify one exact native-speed segment, one local drill target from [[Phase 4 Local Audio Practice]] or the current page, one register or pronunciation check, and one active proof such as shadowing, transcription, summary, or role-play.
+Phase 4 review should identify one exact native-speed segment, one local drill target from [[Phase 4 Local Audio Practice]] or the current page, one register or pronunciation check, and one active proof such as shadowing, transcription, summary, or role-play. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -33,6 +33,7 @@ Phase 4 review should identify one exact native-speed segment, one local drill t
 - [ ] [[Phase 4 Keigo and Register Production Checklist]] completed when the week included keigo, business, or register-sensitive output
 - [ ] One shadowing, transcription, summary, or role-play proof completed
 - [ ] One suspect local clip, if found, recorded in [[Pronunciation Correction Log]] before returning to practice
+- [ ] One weekly summary row added to [[Authentic Audio Evidence Log]]
 
 ## Weekly Audio Evidence
 
@@ -122,6 +123,7 @@ Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mas
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Keigo and Register Production Checklist]]
+- [[Authentic Audio Evidence Log]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]]

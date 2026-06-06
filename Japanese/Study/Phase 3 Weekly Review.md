@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 15-25 minutes.
 
-Phase 3 review should name one exact authentic segment, one local clip set, one pitch or reading check, and one output or shadowing proof. If the week was mostly silent reading, the audio loop did not happen.
+Phase 3 review should name one exact authentic segment, one local clip set, one pitch or reading check, and one output or shadowing proof. If the week was mostly silent reading, the audio loop did not happen. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -32,6 +32,7 @@ Phase 3 review should name one exact authentic segment, one local clip set, one 
 - [ ] One short intermediate segment shadowed, transcribed, summarized, or mined for sentences
 - [ ] One N4 grammar point or 1000-word vocabulary item reused in your own sentence
 - [ ] One suspect local clip, if found, recorded in [[Pronunciation Correction Log]] before returning to practice
+- [ ] One weekly summary row added to [[Authentic Audio Evidence Log]]
 
 ## Weekly Audio Evidence
 
@@ -109,6 +110,7 @@ Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expa
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Authentic Audio Evidence Log]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 3 Pitch Accent Practice Path]]

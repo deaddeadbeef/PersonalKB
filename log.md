@@ -1373,3 +1373,38 @@ Verification:
 - `python _ops\personal_kb.py index`
 - `python _ops\personal_kb.py audit`: same counts after indexing.
 - `git diff --check`
+
+## [2026-06-07] curate | Japanese authentic audio evidence loop
+
+Scope: make authentic audio proof persist across weekly reviews without changing local MP3 files.
+
+Changed wiki/source files:
+- `Japanese/Study/Authentic Audio Evidence Log.md`
+- `Japanese/Study/Authentic Audio Source Setup.md`
+- `Japanese/Study/Japanese Audio QA Status.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Phase 1 Weekly Review.md`
+- `Japanese/Study/Phase 2 Weekly Review.md`
+- `Japanese/Study/Phase 3 Weekly Review.md`
+- `Japanese/Study/Phase 4 Weekly Review.md`
+- `Japanese/Study/Phase 5 Weekly Review.md`
+- `Japanese/Speaking/Pronunciation Correction Log.md`
+- `Japanese/Japanese.md`
+
+Maintenance changes:
+- Added a central audio evidence log for one weekly proof row per review cycle.
+- Linked the log from the authentic audio setup page, dashboard, study index, Start Here, audio QA status, pronunciation correction log, and all phase weekly review templates.
+- Clarified the split between learner evidence, output feedback, and suspect local-clip correction.
+- Did not modify local MP3 files or pronunciation manifests.
+
+Verification:
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4753 files, 2882 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`: same counts after indexing.
+- Link coverage check for `Authentic Audio Evidence Log`: linked from Start Here, dashboard, study index, source setup, audio QA, pronunciation correction log, all five phase weekly reviews, and `index.md`.
+- `index.md` MP3 leak check: 0 results.
+- `git diff --check`

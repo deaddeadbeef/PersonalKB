@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short. The review should take 10-20 minutes, not become another homework assignment.
 
-The review has one job: choose the next small action. If reviews piled up, reduce new cards. If kana is still slow, keep drilling kana. If grammar feels vague, reread the current grammar page and write your own examples before moving forward. If the audio evidence is vague, keep the same native segment and local clip set for another week.
+The review has one job: choose the next small action. If reviews piled up, reduce new cards. If kana is still slow, keep drilling kana. If grammar feels vague, reread the current grammar page and write your own examples before moving forward. If the audio evidence is vague, keep the same native segment and local clip set for another week. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -33,6 +33,7 @@ The review has one job: choose the next small action. If reviews piled up, reduc
 - [ ] One pronunciation, reading, rhythm, or clip-quality issue checked through [[Pronunciation and Audio Accuracy]]
 - [ ] One speaking item practiced out loud
 - [ ] One suspect local clip, if found, recorded in [[Pronunciation Correction Log]] before returning to practice
+- [ ] One weekly summary row added to [[Authentic Audio Evidence Log]]
 - [ ] One page in the Japanese vault reviewed
 
 ## Weekly Audio Evidence
@@ -113,5 +114,6 @@ Do not move to [[Phase 2 — Building Blocks]] until the [[Phase 1 — Foundatio
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Phase 1 Local Audio Practice]]
+- [[Authentic Audio Evidence Log]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
