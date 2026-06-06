@@ -167,7 +167,7 @@ Month eleven counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 2 in [[Phase 5 Audio Assignment Ladder]]. Block 2 moves into professional register, full keigo, workplace/service audio, and output logged in [[Advanced Output and Register Feedback Log]].
+After these success criteria are true, continue to [[Twelfth Month Japanese Study Plan]]. It wraps Block 2 of [[Phase 5 Audio Assignment Ladder]] and moves into professional register, full keigo, workplace/service audio, and output logged in [[Advanced Output and Register Feedback Log]].
 
 Before starting Block 2, choose one workplace, service, interview, formal speech, business course, tutor/native role-play, or recorded real interaction with a clear role and feedback route.
 
@@ -175,6 +175,7 @@ Before starting Block 2, choose one workplace, service, interview, formal speech
 
 - [[Japanese Learning Dashboard]]
 - [[Tenth Month Japanese Study Plan]]
+- [[Twelfth Month Japanese Study Plan]]
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Authentic Audio Spine]]

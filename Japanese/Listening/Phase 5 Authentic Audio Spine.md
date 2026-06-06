@@ -46,6 +46,8 @@ When time is short, keep one native sentence, one local clip, and one output che
 
 For Block 1, use [[Eleventh Month Japanese Study Plan]] to keep native media, news, drama, anime, music, source labels, and mined lines tied to one replayable segment, local precision drills, and summary, transcription, shadowing, or mining proof.
 
+For Block 2, use [[Twelfth Month Japanese Study Plan]] to keep professional register, full keigo, workplace/service audio, formal speech, business-course models, and tutor/native role-play tied to one role map, local precision drills, recorded output, and feedback route.
+
 Use [[Phase 5 Audio Assignment Ladder]] to choose the current block and copy it into [[Authentic Audio Evidence Log#Current Assignment]]. Use [[Phase 5 Local Audio Practice]] for short precision drills. Use [[Phase 5 Audio Coverage Map]] when you need to match a Phase 5 page to the correct local clip set and authentic audio job.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
@@ -78,6 +80,7 @@ At the end of each week, record:
 
 - [[Phase 5 — Advanced]]
 - [[Eleventh Month Japanese Study Plan]]
+- [[Twelfth Month Japanese Study Plan]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]

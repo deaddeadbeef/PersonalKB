@@ -21,6 +21,8 @@ Use [[Phase 5 Audio Assignment Ladder]] when you need the copy-ready current ass
 
 For Block 1, use [[Eleventh Month Japanese Study Plan]] as the learner-facing wrapper around the native-media and source-label clips below, so native-source work stays tied to one replayable segment and a summary, transcription, shadowing, or mining proof.
 
+For Block 2, use [[Twelfth Month Japanese Study Plan]] as the learner-facing wrapper around the full-keigo and professional-register clips below, so every local drill stays tied to a role map, human/native model, output recording, and feedback route.
+
 ## Session Loop
 
 Run this loop for 10 minutes on a minimum Phase 5 day or 30 minutes on a good day:
@@ -210,6 +212,7 @@ After listening, write one line in [[Phase 5 Weekly Review]]:
 
 - [[Phase 5 — Advanced]]
 - [[Eleventh Month Japanese Study Plan]]
+- [[Twelfth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]

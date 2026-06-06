@@ -13,11 +13,12 @@ tier-coverage: [practice]
 
 1. Start Phase 5 only after the [[Phase 4 — Intermediate Mastery|Phase 4 checkpoint]] is real.
 2. Use [[Eleventh Month Japanese Study Plan]] as the Block 1 execution path.
-3. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
-4. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
-5. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
-6. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
-7. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+3. Use [[Twelfth Month Japanese Study Plan]] as the Block 2 execution path.
+4. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
+5. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
+6. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
+7. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
+8. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Phase 5 blocks can take more than one week. Advance only when native-source work, local precision drills, feedback, and active proof are all real.
 
@@ -119,6 +120,7 @@ Phase 5 is where local clips are most likely to feel productive while avoiding t
 
 - [[Phase 5 — Advanced]]
 - [[Eleventh Month Japanese Study Plan]]
+- [[Twelfth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
