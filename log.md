@@ -761,3 +761,28 @@ Verification:
 - Phase 4 coverage count check across required pages: 312 embedded MP3 clips.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] fix | Japanese browser-compatible audio clips
+
+Scope: repair Japanese local audio playback in Obsidian after Chromium/Electron rejected the existing Azure 16 kHz / 32 kbps MP3 files as a media format error.
+
+Changed content files:
+- `Japanese/_audio/*.mp3`
+- `Japanese/_audio/generate_tts.py`
+- `_ops/personal_kb.py`
+- `index.md`
+
+Maintenance changes:
+- Re-encoded all 1810 tracked Japanese MP3 clips to 48 kHz mono / approximately 96 kbps MP3 while preserving filenames and existing Obsidian embeds.
+- Updated the TTS generator so future Azure clips use the same browser-compatible MP3 format.
+- Updated generated-index cleaning so embedded audio cannot leak into index link aliases or summaries.
+
+Verification:
+- Full Japanese MP3 re-encode: 1810 converted, 0 failed.
+- Full Japanese MP3 validation with `ffprobe`.
+- Chromium audio load spot-check over localhost for repaired clips.
+- MP3 embed/link resolution check across the vault.
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- `git diff --check`

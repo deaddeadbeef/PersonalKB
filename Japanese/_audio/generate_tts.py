@@ -20,6 +20,7 @@ AUDIO_DIR = Path(__file__).resolve().parent
 DEFAULT_MANIFEST = AUDIO_DIR / "pronunciation_manifest.json"
 DEFAULT_REGION = "japaneast"
 DEFAULT_VOICE = "ja-JP-NanamiNeural"
+BROWSER_COMPATIBLE_MP3_FORMAT = speechsdk.SpeechSynthesisOutputFormat.Audio48Khz96KBitRateMonoMp3
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -76,9 +77,9 @@ def load_manifest(path: Path) -> list[dict[str, Any]]:
 
 def make_speech_config(key: str, region: str, voice: str) -> speechsdk.SpeechConfig:
     speech_config = speechsdk.SpeechConfig(subscription=key, region=region)
-    speech_config.set_speech_synthesis_output_format(
-        speechsdk.SpeechSynthesisOutputFormat.Audio16Khz32KBitRateMonoMp3
-    )
+    # Obsidian/Electron rejects Azure's 16 kHz / 32 kbps MP3 output as a media
+    # format error. Keep generated clips in the browser-compatible MPEG-1 range.
+    speech_config.set_speech_synthesis_output_format(BROWSER_COMPATIBLE_MP3_FORMAT)
     speech_config.speech_synthesis_voice_name = voice
     return speech_config
 

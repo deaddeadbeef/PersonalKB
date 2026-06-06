@@ -40,6 +40,8 @@ WIKILINK_RE = re.compile(r"(!)?\[\[([^\]]+)\]\]")
 WORD_RE = re.compile(r"\b[\w'-]+\b", re.UNICODE)
 AUDIO_EMBED_RE = re.compile(r"!\[\[[^\]]+\.mp3(?:[#|][^\]]*)?\]\]", re.IGNORECASE)
 AUDIO_EMBED_PAGE_LIMIT = 250
+EMBED_RE = re.compile(r"!\[\[[^\]]+\]\]")
+WIKILINK_INLINE_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|([^\]]+))?\]\]")
 
 
 @dataclass(frozen=True)
@@ -103,7 +105,7 @@ def frontmatter(text: str) -> str:
 def first_heading(path: Path, text: str) -> str:
     for line in text.splitlines():
         if line.startswith("# "):
-            return line[2:].strip()
+            return clean_index_text(line[2:])
     return path.stem
 
 
@@ -115,7 +117,7 @@ def one_line_summary(text: str) -> str:
             cleaned = cleaned.lstrip("> ").strip()
             cleaned = re.sub(r"\*\*One-line summary\*\*:?", "", cleaned).strip()
             if cleaned:
-                return truncate(cleaned)
+                return truncate(clean_index_text(cleaned))
     for line in body.splitlines():
         cleaned = line.strip()
         if not cleaned or cleaned in {"---", "***"}:
@@ -124,8 +126,23 @@ def one_line_summary(text: str) -> str:
             continue
         if cleaned.startswith("- ") or cleaned.startswith("* "):
             continue
-        return truncate(cleaned)
+        return truncate(clean_index_text(cleaned))
     return ""
+
+
+def clean_index_text(value: str) -> str:
+    value = AUDIO_EMBED_RE.sub("", value)
+    value = EMBED_RE.sub("", value)
+
+    def replace_link(match: re.Match[str]) -> str:
+        target = match.group(1).replace("\\", "/").strip()
+        display = match.group(2)
+        if display:
+            return display.strip()
+        return target.rsplit("/", 1)[-1].strip()
+
+    value = WIKILINK_INLINE_RE.sub(replace_link, value)
+    return re.sub(r"\s+", " ", value).strip(" -")
 
 
 def truncate(value: str, limit: int = 180) -> str:
