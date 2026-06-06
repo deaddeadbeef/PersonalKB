@@ -46,7 +46,7 @@ The 26 expected reading overrides are deliberate: topic/object/direction particl
 - TTS is not the final authority for keigo, register, humor, or natural delivery.
 - Native-source Phase 5 work still needs source clips, output, and tutor/native feedback.
 
-Use [[Pronunciation and Audio Accuracy]] to decide when a local clip is safe for drills. Use the authentic audio spines when pronunciation, rhythm, pitch, or register matters.
+Use [[Pronunciation and Audio Accuracy]] to decide when a local clip is safe for drills. Use [[Authentic Audio Source Setup]] and the phase authentic audio spines when pronunciation, rhythm, pitch, or register matters.
 
 ## Commands
 
@@ -69,6 +69,7 @@ Use the first command when a clip is missing, Obsidian reports a playback error,
 ## References
 
 - [[Pronunciation and Audio Accuracy]]
+- [[Authentic Audio Source Setup]]
 - [[Pronunciation Correction Log]]
 - [[Listening Overview]]
 - [[Phase 1 Authentic Audio Spine]]

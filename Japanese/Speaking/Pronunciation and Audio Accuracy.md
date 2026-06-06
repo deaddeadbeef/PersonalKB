@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, practice]
 
 # Pronunciation and Audio Accuracy
 
-> Use this page when deciding whether an audio clip is good enough to learn from. The short rule: native/official audio is the model, local TTS is the drill layer, and accent dictionaries are the referee when pitch or reading is uncertain.
+> Use this page when deciding whether an audio clip is good enough to learn from. The short rule: native/official audio is the model, local TTS is the drill layer, and accent dictionaries are the referee when pitch or reading is uncertain. Use [[Authentic Audio Source Setup]] to choose the actual source before a study week begins.
 
 ## Source Priority
 
@@ -91,6 +91,7 @@ One correction per day is enough. Pronunciation improves by repeated accurate co
 
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Authentic Audio Source Setup]]
 - [[Japanese Audio QA Status]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 4 Weekly Review]]

@@ -41,6 +41,17 @@ Accessed: 2026-05-17
 | NHK Japanese Pronunciation Dictionary app entry | https://www.monokakido.jp/en/dictionaries/nhkaccent2/index.html | App-based access route for the NHK pronunciation/accent dictionary content |
 | Forvo Japanese pronunciation dictionary | https://forvo.com/languages/ja/ | Native-speaker word-level pronunciation recordings for comparison checks |
 
+## Audio Source Setup Checked 2026-06-07
+
+| Source | URL | Use in vault |
+| --- | --- | --- |
+| GENKI official site | https://genki3.japantimes.co.jp/en/intro/index.html | Confirms GENKI I/II lesson structure and official OTO Navi access for textbook/workbook audio |
+| Irodori official textbook site | https://www.irodori.jpf.go.jp/en/about.html | Confirms Irodori's life-in-Japan communication focus, listening input, and streamed/downloadable MP3 audio |
+| Irodori online course guide | https://www.irodori-online.jpf.go.jp/guide/ | Confirms the Japan Foundation online-course route with audio/video learning content |
+| NHK WORLD-JAPAN Easy Japanese | https://www.nhk.or.jp/lesson/en/ | Official beginner lesson access route; live check returned HTTP 200 on 2026-06-07 |
+| NHK Foundation Easy Japanese catalog | https://www.nhk-fdn.or.jp/int/en/catalog/educational/detail_language/la_easy-japanese.html | Confirms the 48-lesson beginner program and pronunciation explanations |
+| OJAD — Online Japanese Accent Dictionary | https://www.gavo.t.u-tokyo.ac.jp/ojad/ | Confirms learner/teacher accent lookup route for pitch and reading checks |
+
 ## Textbooks and Curricula
 - **Genki I & II** — structured beginner textbook series from The Japan Times Publishing.
 - **Irodori Japanese Online Course** — free Japan Foundation online course for basic daily-life and work communication.
