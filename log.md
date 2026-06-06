@@ -1187,3 +1187,20 @@ Verification:
 - `ffprobe` on `listen-010-koe-no-katachi.mp3`: MP3, 48 kHz, mono, 96 kbps.
 - `index.md` MP3 leak check: 0 hits.
 - `git diff --check`
+
+## [2026-06-07] ops | Japanese audio mismatch audit worktree safety
+
+Scope: make the audio-text mismatch audit safe to run from isolated worktrees without writing into the active Obsidian vault.
+
+Changed ops files:
+- `Japanese/_audio/audit_mismatches.py`
+
+Maintenance changes:
+- Replaced the hardcoded `D:\Vaults\PersonalKB\Japanese` audit root with a default derived from the script's own `_audio` directory.
+- Added `--root`, `--report`, and `--no-report` options so future audio checks can run against a chosen vault or in read-only summary mode.
+- Reconfigured stdout/stderr for UTF-8 so Japanese filenames and page paths do not crash the summary print on Windows PowerShell.
+
+Verification:
+- `python Japanese\_audio\audit_mismatches.py --no-report`: scanned the worktree Japanese root, found 105 markdown files and 2210 audio embeds, exited 0, printed Japanese paths safely, and wrote no report file.
+- Worktree report status check: `Japanese/_audio/audit-mismatch-report.txt` unchanged.
+- Active vault report status check: `Japanese/_audio/audit-mismatch-report.txt` unchanged.

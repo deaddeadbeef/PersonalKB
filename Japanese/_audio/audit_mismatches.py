@@ -8,17 +8,27 @@ and flags suspicious cases where audio clips may not match surrounding text.
 import os
 import re
 import sys
+import argparse
 from collections import defaultdict
 from pathlib import Path
 from datetime import datetime
 
 # ── Configuration ──────────────────────────────────────────────────────────
-WIKI_ROOT = Path(r"D:\Vaults\PersonalKB\Japanese")
-AUDIO_DIR = WIKI_ROOT / "_audio"
-REPORT_PATH = AUDIO_DIR / "audit-mismatch-report.txt"
+SCRIPT_PATH = Path(__file__).resolve()
+DEFAULT_AUDIO_DIR = SCRIPT_PATH.parent
+DEFAULT_WIKI_ROOT = DEFAULT_AUDIO_DIR.parent
+DEFAULT_REPORT_PATH = DEFAULT_AUDIO_DIR / "audit-mismatch-report.txt"
+WIKI_ROOT = DEFAULT_WIKI_ROOT
+AUDIO_DIR = DEFAULT_AUDIO_DIR
+REPORT_PATH = DEFAULT_REPORT_PATH
 CONTEXT_LINES = 3          # lines before/after for context extraction
 MATCH_WINDOW = 5           # lines before/after for romaji match search
 EXCLUDED_DIRS = {"_audio", "_raw", "_chunks", "_queries", "_templates"}
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 # ── Romaji-to-kana lookup (Phase 4) ──────────────────────────────────────
 ROMAJI_TO_HIRAGANA = {
@@ -216,7 +226,42 @@ def collect_md_files(root: Path) -> list[Path]:
 
 # ── Main ──────────────────────────────────────────────────────────────────
 
-def main():
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--root",
+        type=Path,
+        default=DEFAULT_WIKI_ROOT,
+        help="Japanese wiki root; defaults to the parent of this script's _audio directory.",
+    )
+    parser.add_argument(
+        "--report",
+        type=Path,
+        help="Report output path; defaults to <root>/_audio/audit-mismatch-report.txt.",
+    )
+    parser.add_argument(
+        "--no-report",
+        action="store_true",
+        help="Run the audit without writing the report file.",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    global WIKI_ROOT, AUDIO_DIR, REPORT_PATH
+
+    args = parse_args(argv)
+    WIKI_ROOT = args.root.resolve()
+    AUDIO_DIR = WIKI_ROOT / "_audio"
+    REPORT_PATH = args.report.resolve() if args.report else AUDIO_DIR / "audit-mismatch-report.txt"
+
+    if not WIKI_ROOT.exists():
+        print(f"ERROR: wiki root does not exist: {WIKI_ROOT}", file=sys.stderr)
+        return 1
+    if not AUDIO_DIR.exists():
+        print(f"ERROR: audio directory does not exist: {AUDIO_DIR}", file=sys.stderr)
+        return 1
+
     print("Audio-Text Mismatch Audit")
     print(f"Wiki root: {WIKI_ROOT}")
     print("Scanning...\n")
@@ -430,8 +475,10 @@ def main():
     rpt.append("END OF REPORT")
     rpt.append(sep)
 
-    with open(REPORT_PATH, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(rpt))
+    if not args.no_report:
+        REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(REPORT_PATH, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(rpt))
 
     # ── Stdout summary ────────────────────────────────────────────────────
     print("-" * 60)
@@ -445,7 +492,10 @@ def main():
     print(f"    POSSIBLE_WRONG_CLIP: {len(flags['POSSIBLE_WRONG_CLIP'])}")
     print(f"    DUPLICATE_ON_PAGE:   {len(flags['DUPLICATE_ON_PAGE'])}")
     print("-" * 60)
-    print(f"Report: {REPORT_PATH}")
+    if args.no_report:
+        print("Report: not written (--no-report)")
+    else:
+        print(f"Report: {REPORT_PATH}")
 
     if flags['POSSIBLE_WRONG_CLIP']:
         print(f"\nTop POSSIBLE_WRONG_CLIP (first 15):")
@@ -453,6 +503,8 @@ def main():
             print(f"  {item['clip']}  @ {item['file']}:{item['line']}")
             print(f"    expected: {item['expected_romaji']}")
 
+    return 0
+
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())
