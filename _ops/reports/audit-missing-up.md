@@ -1,9 +1,8 @@
 # Missing up Frontmatter
 
-Count: 30
+Count: 29
 
 - [[CS Operating Systems/CS Operating Systems — Learning Path|CS Operating Systems — Learning Path]] (`CS Operating Systems/CS Operating Systems — Learning Path.md`)
-- [[Keigo — Politeness Levels Overview]] (`Keigo — Politeness Levels Overview.md`)
 - [[LLM/Architecture Variants/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] (`LLM/Architecture Variants/Efficient Attention and Long-Context Variants.md`)
 - [[LLM/LLM — Learning Path|LLM — Learning Path]] (`LLM/LLM — Learning Path.md`)
 - [[NES Emulation/NES Emulation — Learning Path|NES Emulation — Learning Path]] (`NES Emulation/NES Emulation — Learning Path.md`)

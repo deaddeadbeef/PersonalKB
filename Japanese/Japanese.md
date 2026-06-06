@@ -145,13 +145,22 @@ Goal: N2 to N1 direction: native-speed input, professional register, native cont
 | Order | Page | Consume for |
 | --- | --- | --- |
 | 5.1 | [[Phase 5 — Advanced]] | Year 2+ sequence |
-| 5.2 | [[Advanced Listening Resources]] | Native-speed listening |
-| 5.3 | [[Business Japanese — Workplace Communication]] | Professional output |
-| 5.4 | [[Keigo — Overview and Register System]] | Full register coordination |
-| 5.5 | [[Keigo — Sonkeigo (Honorific)]] | Honorific production |
-| 5.6 | [[Keigo — Kenjōgo (Humble)]] | Humble production |
-| 5.7 | [[Idioms and Proverbs — ことわざ]] | Cultural fluency |
-| 5.8 | [[Study Roadmap — Intermediate to Advanced]] | Long-term maintenance and refinement |
+| 5.2 | [[Phase 5 Authentic Audio Spine]] | Native-source audio and output feedback route for Phase 5 |
+| 5.3 | [[Phase 5 Audio Coverage Map]] | Match each Phase 5 page to local clips, native audio, and QA |
+| 5.4 | [[Advanced Listening Resources]] | Native-speed listening |
+| 5.5 | [[NHK World — News Listening Practice]] | News and formal listening |
+| 5.6 | [[Anime and Drama — Immersion Listening]] | Scene-based native dialogue |
+| 5.7 | [[Music — Learning Through Japanese Songs]] | Lyrics-based listening |
+| 5.8 | [[Business Japanese — Workplace Communication]] | Professional output |
+| 5.9 | [[Keigo — Overview and Register System]] | Full register coordination |
+| 5.10 | [[Keigo — Sonkeigo (Honorific)]] | Honorific production |
+| 5.11 | [[Keigo — Kenjōgo (Humble)]] | Humble production |
+| 5.12 | [[Idioms and Proverbs — ことわざ]] | Cultural fluency |
+| 5.13 | [[Pitch Accent — Common Patterns]] | Reference-grounded accent refinement |
+| 5.14 | [[Common Filler Words and Discourse Markers]] | Native conversation stance and timing |
+| 5.15 | [[Grammar — Comparison Across Levels]] | Nuance refinement |
+| 5.16 | [[JLPT Overview — N5 to N1]] | N2/N1 benchmark |
+| 5.17 | [[Study Roadmap — Intermediate to Advanced]] | Long-term maintenance and refinement |
 
 ### Reference Shelf
 
@@ -205,7 +214,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 
 ### Listening
 - [[Listening Overview]]
-- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]]
+- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]

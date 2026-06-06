@@ -30,6 +30,19 @@ flowchart LR
 
 ## ⚙️ Core Mechanics
 
+## Audio Support
+
+Before starting Steps 49-56, open [[Phase 5 Authentic Audio Spine]] and [[Phase 5 Audio Coverage Map]].
+
+Use native-speed Japanese as the main source: news, interviews, podcasts, lectures, drama, documentary, workplace audio, tutor recordings, or other human-recorded material with a stable segment you can replay.
+
+Use local MP3 clips only as short drills for keigo, business phrases, idioms, pitch patterns, discourse markers, and grammar comparisons. Every Phase 5 block should have:
+
+- One exact native source segment you repeat, mine, shadow, transcribe, summarize, or discuss.
+- One local clip set from the page you are studying when the page has clips.
+- One pronunciation, pitch, reading, register, or naturalness issue checked through [[Pronunciation and Audio Accuracy]] or [[Pronunciation Correction Log]].
+- One output proof: recording, tutor/native feedback, summary, argument, role-play, or conversation attempt.
+
 ## Grammar — Refinement
 
 
@@ -80,6 +93,9 @@ Seamless register shifting in real situations.
 - [ ] Can use appropriate keigo in business settings
 - [ ] Can express complex ideas, argue, joke in Japanese
 - [ ] 1000+ kanji, 6000+ vocabulary
+- [ ] Have one stable Phase 5 native source in [[Phase 5 Authentic Audio Spine]]
+- [ ] Can pair each required Phase 5 page with audio using [[Phase 5 Audio Coverage Map]]
+- [ ] Have at least one recurring output/register feedback route
 - [ ] N2 passed → working toward N1
 
 **Previous:** [[Phase 4 — Intermediate Mastery]]
@@ -136,3 +152,6 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 
 ## References
 - [[Sources Index]]
+- [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Audio Coverage Map]]
+- [[Pronunciation and Audio Accuracy]]

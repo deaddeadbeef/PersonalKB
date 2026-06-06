@@ -786,3 +786,32 @@ Verification:
 - `python _ops\personal_kb.py index`
 - `python _ops\personal_kb.py audit`
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 5 audio support
+
+Scope: extend the Japanese audio-support system into Phase 5 so native media, professional output, full keigo, idioms, pitch refinement, JLPT N2/N1 direction, and advanced nuance stay tied to native-source evidence, local drills, and pronunciation/register QA.
+
+Changed content files:
+- `Japanese/Listening/Phase 5 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 5 Audio Coverage Map.md`
+- `Japanese/Japanese.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Learning Path/Phase 5 — Advanced.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Listening/Phase 4 Audio Coverage Map.md`
+
+Maintenance changes:
+- Added a Phase 5 authentic audio spine for native-source listening, output feedback, register, pitch, and advanced nuance.
+- Added a Phase 5 coverage map with local MP3 counts for required Phase 5 pages.
+- Routed Start Here, dashboard, study index, resource policy, listening overview, Phase 5 plan, and Phase 4 next targets to the new audio support pages.
+- Left Phase 1 as the active dashboard phase while making Phase 5 audio-ready.
+
+Verification:
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 5 coverage count check across required pages: 152 embedded MP3 clips.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

@@ -73,12 +73,14 @@ These are real gaps:
 
 - Add a Phase 4 weekly review page before Phase 4 becomes the active dashboard phase.
 - Add a focused keigo/register production checklist after Phase 4 audio evidence is in place.
+- Use [[Phase 5 Audio Coverage Map]] before starting Phase 5 content.
 - Keep Phase 4 local practice page-level for now; create a Phase 4 ladder only if daily study starts requiring too much clip hunting.
 
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 5 Audio Coverage Map]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Advanced Listening Resources]]
 - [[Pronunciation and Audio Accuracy]]

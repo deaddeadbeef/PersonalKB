@@ -1,6 +1,6 @@
 # Missing confidence Frontmatter
 
-Count: 249
+Count: 248
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -78,7 +78,6 @@ Count: 249
 - [[Japanese/Grammar/Grammar Overview|Grammar Overview]] (`Japanese/Grammar/Grammar Overview.md`)
 - [[Japanese/Study/JLPT Overview — N5 to N1|JLPT Overview — N5 to N1]] (`Japanese/Study/JLPT Overview — N5 to N1.md`)
 - [[Japanese/Vocabulary/Vocabulary Overview|Vocabulary Overview]] (`Japanese/Vocabulary/Vocabulary Overview.md`)
-- [[Keigo — Politeness Levels Overview]] (`Keigo — Politeness Levels Overview.md`)
 - [[LLM/2017 — The Transformer/2017 — The Transformer Overview|2017 — The Transformer]] (`LLM/2017 — The Transformer/2017 — The Transformer Overview.md`)
 - [[LLM/2018–2019 — Pretrained Language Models/2018–2019 — Pretrained Language Models Overview|2018–2019 — Pretrained Language Models]] (`LLM/2018–2019 — Pretrained Language Models/2018–2019 — Pretrained Language Models Overview.md`)
 - [[LLM/2020–2021 — The Scaling Era/2020–2021 — The Scaling Era Overview|2020–2021 — The Scaling Era]] (`LLM/2020–2021 — The Scaling Era/2020–2021 — The Scaling Era Overview.md`)

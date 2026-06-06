@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 253
+Count: 252
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -66,7 +66,6 @@ Count: 253
 - [[CS Operating Systems/Study/Virtualization Security and Case Studies - Review Drill|Virtualization, Security, and Case Studies — Review Drill]] (`CS Operating Systems/Study/Virtualization Security and Case Studies - Review Drill.md`)
 - [[CS Operating Systems/Synchronization/Synchronization Overview|Synchronization Overview]] (`CS Operating Systems/Synchronization/Synchronization Overview.md`)
 - [[CS Operating Systems/Virtualization/Virtualization Overview|Virtualization Overview]] (`CS Operating Systems/Virtualization/Virtualization Overview.md`)
-- [[Keigo — Politeness Levels Overview]] (`Keigo — Politeness Levels Overview.md`)
 - [[LLM/2017 — The Transformer/2017 — The Transformer Overview|2017 — The Transformer]] (`LLM/2017 — The Transformer/2017 — The Transformer Overview.md`)
 - [[LLM/2017 — The Transformer/Attention Mechanism|Attention Mechanism]] (`LLM/2017 — The Transformer/Attention Mechanism.md`)
 - [[LLM/2017 — The Transformer/Encoder-Decoder Models|Encoder-Decoder Models]] (`LLM/2017 — The Transformer/Encoder-Decoder Models.md`)
