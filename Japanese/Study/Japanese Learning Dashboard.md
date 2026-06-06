@@ -88,7 +88,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 | Kana complete | Read all hiragana and katakana rows from memory, including dakuten and small や/ゆ/よ combinations |
 | First grammar | Explain は, が, を, に, で with one example each |
 | First output | Say a 30-second self-introduction without reading |
-| First listening habit | 10 days with at least 5 minutes of beginner Japanese audio, including [[Phase 1 Local Audio Practice]] and [[Phase 1 Authentic Audio Spine]] |
+| First listening habit | 10 days with at least 5 minutes of beginner Japanese audio, including [[Phase 1 Local Audio Practice]], [[Phase 1 Authentic Audio Spine]], and weekly evidence in [[Phase 1 Weekly Review]] |
 | Ready for Phase 2 | All [[Phase 1 — Foundation|Phase 1 checkpoint]] items are true, then open [[Phase 2 Authentic Audio Spine]] and [[Phase 2 Audio Coverage Map]] before starting N5 mechanics |
 
 ## Reading Order
@@ -137,6 +137,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Japanese#Start Here]]
 - [[Daily Study Routine Templates]]
 - [[Phase 1 Audio Coverage Map]]
+- [[Phase 1 Weekly Review]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
 - [[Phase 3 Audio Coverage Map]]

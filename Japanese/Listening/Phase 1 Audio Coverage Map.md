@@ -39,7 +39,7 @@ Planning pages do not need embedded audio. They need to route clearly to the aud
 | [[Pronunciation and Audio Accuracy]] | 0 | Uses native/accent references | Primary QA page | Check suspect clips and correction decisions |
 | [[Pronunciation Correction Log]] | 0 | Records corrections | Open/resolved QA log | Keep suspect clips out of daily practice |
 | [[Beginner Listening Resources]] | 0 | Broader external resources | Routes to QA through the audio stack | Use after the Phase 1 defaults are clear |
-| [[Phase 1 Weekly Review]] | 0 | Logs native target | Logs local target | Record evidence and next audio target |
+| [[Phase 1 Weekly Review]] | 0 | Logs native target | Logs local target and QA check | Record evidence and next audio target |
 
 ## Weekly Audio Pairing
 
@@ -63,6 +63,7 @@ These are real gaps:
 - A required Phase 1 page with no embedded clips and no route to local/authentic audio.
 - A local clip in a daily path that sounds wrong or lacks a reading hint for ambiguous text.
 - A learner-facing instruction that says "listen to audio" without naming the page or source.
+- A Phase 1 week with no [[Phase 1 Weekly Review]] evidence for the native segment, local clip set, and pronunciation or clip QA check.
 
 ## Next Coverage Targets
 
@@ -75,6 +76,7 @@ These are real gaps:
 - [[Phase 1 — Foundation]]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Phase 1 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Beginner Listening Resources]]

@@ -110,7 +110,7 @@ Do not optimize the system before it exists. For the first month:
 - Do not add native TV, manga, business Japanese, or keigo as required work.
 - Make the daily habit boring and repeatable.
 
-Use [[Phase 1 Weekly Review]] at the end of each week.
+Use [[Phase 1 Weekly Review]] at the end of each week to record the exact native or official audio segment, local clip set, pronunciation check, and speaking proof.
 
 ## Phase 1 Checkpoint
 
@@ -123,9 +123,13 @@ Before moving to [[Phase 2 — Building Blocks]], verify:
 - [ ] Can say a basic self-introduction smoothly
 - [ ] Have SRS or review routine set up
 - [ ] Have listened to beginner audio on at least 10 days, including the [[Phase 1 Local Audio Practice]] ladder and one source from [[Phase 1 Authentic Audio Spine]]
+- [ ] Have weekly audio evidence recorded in [[Phase 1 Weekly Review]]
 
 **Next:** [[Phase 2 — Building Blocks]]
 
 ## References
 - [[Sources Index]]
 - [[Phase 1 Audio Coverage Map]]
+- [[Phase 1 Authentic Audio Spine]]
+- [[Phase 1 Local Audio Practice]]
+- [[Phase 1 Weekly Review]]

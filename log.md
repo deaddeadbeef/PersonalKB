@@ -883,3 +883,28 @@ Verification:
 - Phase 3-4 review link coverage check.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 1 weekly audio proof
+
+Scope: strengthen the active Phase 1 review loop so beginner study records exact native-source audio, local clip sets, pronunciation QA, and speaking proof before moving to Phase 2.
+
+Changed content files:
+- `Japanese/Study/Phase 1 Weekly Review.md`
+- `Japanese/Learning Path/Phase 1 — Foundation.md`
+- `Japanese/Listening/Phase 1 Audio Coverage Map.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+
+Maintenance changes:
+- Added a Phase 1 weekly audio evidence table for native or official audio, local clips, shadowing, pronunciation checks, and speaking proof.
+- Added Phase 1 exit checks that keep suspect local clips out of daily practice until checked or logged.
+- Routed the Phase 1 plan, coverage map, and dashboard checkpoint to the stronger weekly audio evidence requirement.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 1 audio proof link coverage check.
+- Local MP3 embed check across changed pages.
+- `git diff --check`
