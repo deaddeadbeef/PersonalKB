@@ -1042,6 +1042,25 @@ Changed audio/ops files:
 Verification:
 - `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
 - `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+
+## [2026-06-07] curate | Japanese pronunciation QA status note
+
+Scope: make the current local-audio QA evidence visible from the learner-facing pronunciation guidance.
+
+Changed content files:
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+
+Maintenance changes:
+- Added the current local audio QA status: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 local MP3 files, 1810 pronunciation-manifest entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 1810 ffprobe-checked MP3 files, and 0 format issues.
+- Added the current pronunciation audit status: 26 expected reading overrides, 0 source repair overrides, and 0 invalid TTS inputs.
+- Added `python Japanese\_audio\audit_audio_integrity.py --no-report` to the correction workflow for missing clips, Obsidian playback errors, and MP3 format issues.
+- Kept the learner-facing rule that native/official audio, tutor/native feedback, and accent references remain authoritative for pitch, rhythm, register, and natural delivery.
+
+Verification:
+- `python Japanese\_audio\audit_audio_integrity.py --no-report`: 0 missing embedded MP3 files, 0 manifest/file mismatches, 1810 ffprobe-checked MP3 files, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `git diff --check`
 - Malformed chopsticks-kanji typo search: 0 hits.
 - `ffprobe` check for regenerated `n4pot-006-otsukaemasuka.mp3`: MP3, 48000 Hz, mono, 96000 bps.
 - `python _ops\personal_kb.py audit`: 4746 files, 2877 markdown, 1810 MP3, 0 heavy audio embed pages.
