@@ -5,7 +5,7 @@ SUMMARY
   Source manifests          : 11
   Pronunciation entries     : 1810
   MP3 files                 : 1810
-  Entries changed for TTS   : 87
+  Entries changed for TTS   : 65
   Explicit overrides        : 65
   Duplicate manifest rows   : 2
   Missing MP3 files         : 0
@@ -49,7 +49,6 @@ CHANGED TTS INPUTS
   gap-024-phrase.mp3: は -> わ (topic particle reading)
   gap-026-phrase.mp3: を -> お (object particle reading)
   gap-029-phrase.mp3: へ -> え (direction particle reading)
-  gap-048-(tsu).mp3: つ (tsu) -> つ (normalized)
   gap-049-(nin).mp3: 人 (nin) -> にん (counter suffix reading)
   gap-050-(hon).mp3: 本 (hon) -> ほん (counter suffix reading)
   gap-051-(mai).mp3: 枚 (mai) -> まい (counter suffix reading)
@@ -57,10 +56,7 @@ CHANGED TTS INPUTS
   gap-053-(satsu).mp3: 冊 (satsu) -> さつ (counter suffix reading)
   gap-054-(dai).mp3: 台 (dai) -> だい (counter suffix reading)
   gap-055-(hiki).mp3: 匹 (hiki) -> ひき (counter suffix reading)
-  gap-056-(ichijikan).mp3: 一時間 (ichijikan) -> 一時間 (normalized)
-  gap-057-(isshkan).mp3: 一週間 (isshūkan) -> 一週間 (normalized)
   gap-058-(ikkagetsu).mp3: 一か月 (ikkagetsu) -> いっかげつ (force duration counter reading)
-  gap-059-(ichinenkan).mp3: 一年間 (ichinenkan) -> 一年間 (normalized)
   gap-060-(kakimasu).mp3: 書く → 書きます (kakimasu) -> 書きます (read conjugated form)
   gap-061-Drop-,-add.mp3: Drop る, add ます -> 食べます (read conjugated form)
   gap-062-,.mp3: する → します, くる → きます -> します、きます (read both irregular forms)
@@ -71,10 +67,6 @@ CHANGED TTS INPUTS
   gap-070-Drop-,-add.mp3: Drop る, add ない -> 食べない (read conjugated form)
   gap-071-,.mp3: する → しない, くる → こない -> しない、こない (read both irregular forms)
   gap-072-(NOT-).mp3: ある → ない (NOT あらない) -> ない (removed English warning)
-  gap-076-(obasan).mp3: おばさん (obasan) -> おばさん (normalized)
-  gap-077-(koko).mp3: ここ (koko) -> ここ (normalized)
-  gap-078-(sampo).mp3: さんぽ (sampo) -> さんぽ (normalized)
-  gap-079-(kingaku).mp3: きんがく (kingaku) -> きんがく (normalized)
   gap-084-phrase.mp3: 私は…と思います -> 私はそう思います (expanded ellipsis to a pronounceable sentence)
   gap-089-(wa).mp3: 羽 (wa) -> わ (counter suffix reading)
   gap-090-(kai).mp3: 階 (kai) -> かい (counter suffix reading)
@@ -84,20 +76,6 @@ CHANGED TTS INPUTS
   gap-094-(chaku).mp3: 着 (chaku) -> ちゃく (counter suffix reading)
   gap-125-.mp3: 彼 / 彼女 -> 彼、彼女 (read both pronouns without slash)
   gap-184-(akeru)-open.mp3: 開ける (akeru) open -> あける (force transitive open reading)
-  gap-185-(shimeru)-close.mp3: 閉める (shimeru) close -> 閉める (normalized)
-  gap-186-(ireru)-put-in.mp3: 入れる (ireru) put in -> 入れる (normalized)
-  gap-187-(dasu)-put-out.mp3: 出す (dasu) put out -> 出す (normalized)
-  gap-188-(kesu)-turn-off.mp3: 消す (kesu) turn off -> 消す (normalized)
-  gap-189-(ageru)-raise.mp3: 上げる (ageru) raise -> 上げる (normalized)
-  gap-190-(sageru)-lower.mp3: 下げる (sageru) lower -> 下げる (normalized)
-  gap-191-(kowasu)-break.mp3: 壊す (kowasu) break -> 壊す (normalized)
-  gap-192-(yogosu)-make-dirty.mp3: 汚す (yogosu) make dirty -> 汚す (normalized)
-  gap-283-(ky).mp3: 今日 (kyō) -> 今日 (normalized)
-  gap-284-(kin).mp3: 昨日 (kinō) -> 昨日 (normalized)
-  gap-285-(ashita).mp3: 明日 (ashita) -> 明日 (normalized)
-  gap-286-(ima).mp3: 今 (ima) -> 今 (normalized)
-  gap-287-(sensh).mp3: 先週 (senshū) -> 先週 (normalized)
-  gap-288-(raigetsu).mp3: 来月 (raigetsu) -> 来月 (normalized)
   hira-101-particle-wa.mp3: は -> わ (topic particle reading)
   hira-102-particle-e.mp3: へ -> え (direction particle reading)
   listen-010-koe-no-katachi.mp3: 聲の形 -> こえの形 (force title reading)

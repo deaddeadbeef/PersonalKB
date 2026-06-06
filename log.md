@@ -1204,3 +1204,26 @@ Verification:
 - `python Japanese\_audio\audit_mismatches.py --no-report`: scanned the worktree Japanese root, found 105 markdown files and 2210 audio embeds, exited 0, printed Japanese paths safely, and wrote no report file.
 - Worktree report status check: `Japanese/_audio/audit-mismatch-report.txt` unchanged.
 - Active vault report status check: `Japanese/_audio/audit-mismatch-report.txt` unchanged.
+
+## [2026-06-07] curate | Japanese gap manifest romaji/gloss normalization
+
+Scope: normalize high-confidence `gap_manifest.json` source rows whose audio text was already correct but whose source text still included romaji hints or English glosses.
+
+Changed audio/ops files:
+- `Japanese/_audio/gap_manifest.json`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Maintenance changes:
+- Removed romaji hints from 22 source rows covering counter/time words, basic location/activity words, transitive verbs, and time adverbs.
+- Removed English glosses from transitive verb source rows such as close, put in, put out, turn off, raise, lower, break, and make dirty.
+- Reduced pronunciation-audit changed TTS inputs from 87 to 65; the remaining 65 are now exactly the explicit override set.
+- Did not regenerate MP3 files because the normalized rows already matched the TTS text used for existing audio.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- Affected-row manifest check: 22 rows now have matching source, display, and TTS text with `unchanged` pronunciation notes.
+- Removed-row audit search: the 22 normalized filenames no longer appear in changed TTS inputs.
+- Changed MP3 file check: 0 MP3 files changed.
+- `git diff --check`

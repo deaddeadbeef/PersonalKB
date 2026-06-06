@@ -2946,10 +2946,10 @@
   {
     "filename": "gap-048-(tsu).mp3",
     "text": "つ",
-    "display_text": "つ (tsu)",
+    "display_text": "つ",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-049-(nin).mp3",
@@ -3010,18 +3010,18 @@
   {
     "filename": "gap-056-(ichijikan).mp3",
     "text": "一時間",
-    "display_text": "一時間 (ichijikan)",
+    "display_text": "一時間",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-057-(isshkan).mp3",
     "text": "一週間",
-    "display_text": "一週間 (isshūkan)",
+    "display_text": "一週間",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-058-(ikkagetsu).mp3",
@@ -3034,10 +3034,10 @@
   {
     "filename": "gap-059-(ichinenkan).mp3",
     "text": "一年間",
-    "display_text": "一年間 (ichinenkan)",
+    "display_text": "一年間",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-060-(kakimasu).mp3",
@@ -3170,34 +3170,34 @@
   {
     "filename": "gap-076-(obasan).mp3",
     "text": "おばさん",
-    "display_text": "おばさん (obasan)",
+    "display_text": "おばさん",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-077-(koko).mp3",
     "text": "ここ",
-    "display_text": "ここ (koko)",
+    "display_text": "ここ",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-078-(sampo).mp3",
     "text": "さんぽ",
-    "display_text": "さんぽ (sampo)",
+    "display_text": "さんぽ",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-079-(kingaku).mp3",
     "text": "きんがく",
-    "display_text": "きんがく (kingaku)",
+    "display_text": "きんがく",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-080-phrase.mp3",
@@ -4042,66 +4042,66 @@
   {
     "filename": "gap-185-(shimeru)-close.mp3",
     "text": "閉める",
-    "display_text": "閉める (shimeru) close",
+    "display_text": "閉める",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-186-(ireru)-put-in.mp3",
     "text": "入れる",
-    "display_text": "入れる (ireru) put in",
+    "display_text": "入れる",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-187-(dasu)-put-out.mp3",
     "text": "出す",
-    "display_text": "出す (dasu) put out",
+    "display_text": "出す",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-188-(kesu)-turn-off.mp3",
     "text": "消す",
-    "display_text": "消す (kesu) turn off",
+    "display_text": "消す",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-189-(ageru)-raise.mp3",
     "text": "上げる",
-    "display_text": "上げる (ageru) raise",
+    "display_text": "上げる",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-190-(sageru)-lower.mp3",
     "text": "下げる",
-    "display_text": "下げる (sageru) lower",
+    "display_text": "下げる",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-191-(kowasu)-break.mp3",
     "text": "壊す",
-    "display_text": "壊す (kowasu) break",
+    "display_text": "壊す",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-192-(yogosu)-make-dirty.mp3",
     "text": "汚す",
-    "display_text": "汚す (yogosu) make dirty",
+    "display_text": "汚す",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-193-phrase.mp3",
@@ -4826,50 +4826,50 @@
   {
     "filename": "gap-283-(ky).mp3",
     "text": "今日",
-    "display_text": "今日 (kyō)",
+    "display_text": "今日",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-284-(kin).mp3",
     "text": "昨日",
-    "display_text": "昨日 (kinō)",
+    "display_text": "昨日",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-285-(ashita).mp3",
     "text": "明日",
-    "display_text": "明日 (ashita)",
+    "display_text": "明日",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-286-(ima).mp3",
     "text": "今",
-    "display_text": "今 (ima)",
+    "display_text": "今",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-287-(sensh).mp3",
     "text": "先週",
-    "display_text": "先週 (senshū)",
+    "display_text": "先週",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-288-(raigetsu).mp3",
     "text": "来月",
-    "display_text": "来月 (raigetsu)",
+    "display_text": "来月",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-289-phrase.mp3",
