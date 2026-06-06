@@ -7,6 +7,8 @@ SUMMARY
   MP3 files                 : 1810
   Entries changed for TTS   : 26
   Explicit overrides        : 26
+  Expected reading overrides: 26
+  Source repair overrides   : 0
   Duplicate manifest rows   : 2
   Missing MP3 files         : 0
   MP3 files not in manifest : 0
@@ -24,6 +26,34 @@ SOURCE COVERAGE
   speaking_full_manifest.json  118
   test_manifest.json           8
   vocab_manifest.json          289
+
+EXPECTED READING OVERRIDES
+  gap-024-phrase.mp3: は -> わ (topic particle reading)
+  gap-026-phrase.mp3: を -> お (object particle reading)
+  gap-029-phrase.mp3: へ -> え (direction particle reading)
+  gap-049-(nin).mp3: 人 (nin) -> にん (counter suffix reading)
+  gap-050-(hon).mp3: 本 (hon) -> ほん (counter suffix reading)
+  gap-051-(mai).mp3: 枚 (mai) -> まい (counter suffix reading)
+  gap-052-(hai).mp3: 杯 (hai) -> はい (counter suffix reading)
+  gap-053-(satsu).mp3: 冊 (satsu) -> さつ (counter suffix reading)
+  gap-054-(dai).mp3: 台 (dai) -> だい (counter suffix reading)
+  gap-055-(hiki).mp3: 匹 (hiki) -> ひき (counter suffix reading)
+  gap-058-(ikkagetsu).mp3: 一か月 (ikkagetsu) -> いっかげつ (force duration counter reading)
+  gap-089-(wa).mp3: 羽 (wa) -> わ (counter suffix reading)
+  gap-090-(kai).mp3: 階 (kai) -> かい (counter suffix reading)
+  gap-091-(kai).mp3: 回 (kai) -> かい (counter suffix reading)
+  gap-092-(ban).mp3: 番 (ban) -> ばん (counter suffix reading)
+  gap-093-(soku).mp3: 足 (soku) -> そく (counter suffix reading)
+  gap-094-(chaku).mp3: 着 (chaku) -> ちゃく (counter suffix reading)
+  gap-184-(akeru)-open.mp3: 開ける (akeru) open -> あける (force transitive open reading)
+  hira-101-particle-wa.mp3: は -> わ (topic particle reading)
+  hira-102-particle-e.mp3: へ -> え (direction particle reading)
+  listen-010-koe-no-katachi.mp3: 聲の形 -> こえの形 (force title reading)
+  particle-001-wa.mp3: は -> わ (topic particle reading)
+  particle-007-o.mp3: を -> お (object particle reading)
+  particle-018-e.mp3: へ -> え (direction particle reading)
+  writing-006-particle-wa.mp3: は -> わ (topic particle reading)
+  writing-009-particle-o.mp3: を -> お (object particle reading)
 
 CHANGED TTS INPUTS
   gap-024-phrase.mp3: は -> わ (topic particle reading)

@@ -1255,3 +1255,24 @@ Verification:
 - Removed-row audit search: the 39 normalized filenames no longer appear in changed TTS inputs.
 - Changed MP3 file check: 0 MP3 files changed.
 - `git diff --check`
+
+## [2026-06-07] ops | Japanese expected reading override classification
+
+Scope: make the pronunciation audit report distinguish expected reading overrides from source-repair overrides.
+
+Changed audio/ops files:
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Maintenance changes:
+- Added expected-reading classification for particle readings, counter suffix readings, `開ける`, and the `聲の形` title reading.
+- Added summary counts for expected reading overrides and source repair overrides.
+- Regenerated the pronunciation audit report; current state is 26 expected reading overrides and 0 source repair overrides.
+- Did not change `pronunciation_manifest.json` or any MP3 files.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python -m py_compile Japanese\_audio\build_pronunciation_manifest.py`
+- Pronunciation audit summary check: 26 expected reading overrides and 0 source repair overrides.
+- `git diff --check`

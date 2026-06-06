@@ -57,6 +57,16 @@ PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
     "listen-010-koe-no-katachi.mp3": ("こえの形", "force title reading"),
 }
 
+EXPECTED_READING_OVERRIDE_REASONS = {
+    "topic particle reading",
+    "object particle reading",
+    "direction particle reading",
+    "counter suffix reading",
+    "force duration counter reading",
+    "force transitive open reading",
+    "force title reading",
+}
+
 
 def source_manifest_paths() -> list[Path]:
     return [
@@ -82,6 +92,10 @@ def normalize_text(text: str) -> str:
     text = text.replace("→", "、")
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def is_expected_reading_override(entry: dict[str, Any]) -> bool:
+    return entry["pronunciation_note"] in EXPECTED_READING_OVERRIDE_REASONS
 
 
 def build_entries() -> tuple[list[dict[str, Any]], Counter[str], list[str], list[str]]:
@@ -160,6 +174,12 @@ def write_report(
     changed_entries = [
         entry for entry in entries if entry["text"] != entry["display_text"]
     ]
+    expected_reading_entries = [
+        entry for entry in changed_entries if is_expected_reading_override(entry)
+    ]
+    source_repair_entries = [
+        entry for entry in changed_entries if not is_expected_reading_override(entry)
+    ]
 
     lines = [
         "JAPANESE AUDIO PRONUNCIATION AUDIT",
@@ -171,6 +191,8 @@ def write_report(
         f"  MP3 files                 : {len(mp3s)}",
         f"  Entries changed for TTS   : {len(changed_entries)}",
         f"  Explicit overrides        : {stats['overrides']}",
+        f"  Expected reading overrides: {len(expected_reading_entries)}",
+        f"  Source repair overrides   : {len(source_repair_entries)}",
         f"  Duplicate manifest rows   : {stats['duplicates']}",
         f"  Missing MP3 files         : {len(missing_mp3)}",
         f"  MP3 files not in manifest : {len(mp3_not_in_manifest)}",
@@ -182,6 +204,22 @@ def write_report(
     for key, value in sorted(stats.items()):
         if key.startswith("source:"):
             lines.append(f"  {key.removeprefix('source:'):28s} {value}")
+
+    if expected_reading_entries:
+        lines.extend(["", "EXPECTED READING OVERRIDES"])
+        for entry in expected_reading_entries:
+            lines.append(
+                f"  {entry['filename']}: {entry['display_text']} -> "
+                f"{entry['text']} ({entry['pronunciation_note']})"
+            )
+
+    if source_repair_entries:
+        lines.extend(["", "SOURCE REPAIR OVERRIDES"])
+        for entry in source_repair_entries:
+            lines.append(
+                f"  {entry['filename']}: {entry['display_text']} -> "
+                f"{entry['text']} ({entry['pronunciation_note']})"
+            )
 
     if changed_entries:
         lines.extend(["", "CHANGED TTS INPUTS"])
