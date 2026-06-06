@@ -9128,12 +9128,12 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "listen-010-ki-no-katachi.mp3",
-    "text": "聴の形",
-    "display_text": "聴の形",
+    "filename": "listen-010-koe-no-katachi.mp3",
+    "text": "こえの形",
+    "display_text": "聲の形",
     "source_manifest": "speaking_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "unchanged"
+    "pronunciation_note": "force title reading"
   },
   {
     "filename": "listen-011-nichijou.mp3",

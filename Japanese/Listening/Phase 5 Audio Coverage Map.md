@@ -15,12 +15,12 @@ Phase 5 audio support has three layers:
 
 | Layer | Source | Job |
 | --- | --- | --- |
-| Local drill | Embedded MP3 clips on the current Phase 5 page | Repeat keigo, business, idiom, pitch, discourse-marker, media, and comparison examples inside Obsidian |
+| Local drill | [[Phase 5 Local Audio Practice]] plus embedded MP3 clips on the current Phase 5 page | Repeat keigo, business, idiom, pitch, discourse-marker, media, and comparison examples inside Obsidian |
 | Authentic model | [[Phase 5 Authentic Audio Spine]] | Make native-speed, human-recorded Japanese the main pronunciation, rhythm, register, and comprehension authority |
 | Output proof | [[Advanced Output and Register Feedback Log]] | Track recordings, tutor/native feedback, register fixes, and reuse targets |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Phase 5 local clips are useful as precision drills, but they are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
+Use [[Phase 5 Local Audio Practice]] for short precision drills. Local clips are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
 
 ## Required Phase 5 Coverage
 
@@ -28,6 +28,7 @@ Phase 5 local clips are useful as precision drills, but they are secondary. The 
 | --- | ---: | --- | --- | --- |
 | [[Phase 5 — Advanced]] | 0 | Routes to spine | Routes to QA | Choose the next advanced focus |
 | [[Phase 5 Authentic Audio Spine]] | 0 | Primary native-source route | Quality bar included | Choose the exact native source for the week |
+| [[Phase 5 Local Audio Practice]] | 100 selected | Must be paired with spine | Covered by QA; pitch/register prompts require reference checks | Drill precision targets without hunting through pages |
 | [[Advanced Listening Resources]] | 3 | Primary advanced source menu | Routes to QA | Choose replayable native-speed input |
 | [[NHK World — News Listening Practice]] | 1 | News/audio route | Routes to QA | Pair news listening with text and shadowing |
 | [[Anime and Drama — Immersion Listening]] | 12 | Scene-based native dialogue | Needs context and subtitles/text | Use entertainment as active study, not passive exposure |
@@ -45,16 +46,16 @@ Phase 5 local clips are useful as precision drills, but they are secondary. The 
 | [[Advanced Output and Register Feedback Log]] | 0 | Uses the current output/register model | Tracks feedback | Record the correction you will reuse next |
 | [[Phase 5 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA and output proof | Decide the next native source and output target |
 
-Total local coverage across the required Phase 5 pages: 152 embedded MP3 clips.
+The required Phase 5 content pages carry 152 embedded MP3 clips. [[Phase 5 Local Audio Practice]] adds 100 selected practice embeds from that library, for 252 total Phase 5 audio occurrences in the mapped route.
 
 ## Audio Pairing
 
 | Block | Study pages | Local drill | Authentic model | Proof |
 | --- | --- | --- | --- | --- |
-| 1 | [[Advanced Listening Resources]], [[NHK World — News Listening Practice]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]] | Drill media and listening examples only after source context is clear | One replayable native source with text/subtitles/transcript | Summarize or transcribe a short segment without English |
-| 2 | [[Keigo — Overview and Register System]], [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]] | Drill keigo and business forms after checking register | Formal role-play, workplace audio, or tutor/native model | Record one register-appropriate output in [[Advanced Output and Register Feedback Log]] and compare it |
-| 3 | [[Idioms and Proverbs — ことわざ]], [[Common Filler Words and Discourse Markers]], [[Pitch Accent — Common Patterns]], [[Grammar — Comparison Across Levels]] | Drill nuance, stance, pitch, and comparison examples | Native conversation, drama, podcast, or tutor examples | Explain or reuse one nuanced expression in context |
-| 4 | [[JLPT Overview — N5 to N1]], [[Study Roadmap — Intermediate to Advanced]] | No local clips required | JLPT-style listening plus real native input | Identify whether the bottleneck is speed, vocabulary, grammar, register, or stamina |
+| 1 | [[Advanced Listening Resources]], [[NHK World — News Listening Practice]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]] | Use [[Phase 5 Local Audio Practice]] Block 1 only after source context is clear | One replayable native source with text/subtitles/transcript | Summarize or transcribe a short segment without English |
+| 2 | [[Keigo — Overview and Register System]], [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]] | Use [[Phase 5 Local Audio Practice]] Block 2 after checking register | Formal role-play, workplace audio, or tutor/native model | Record one register-appropriate output in [[Advanced Output and Register Feedback Log]] and compare it |
+| 3 | [[Idioms and Proverbs — ことわざ]], [[Common Filler Words and Discourse Markers]], [[Pitch Accent — Common Patterns]], [[Grammar — Comparison Across Levels]] | Use [[Phase 5 Local Audio Practice]] Block 3 for nuance, stance, pitch, and comparison prompts | Native conversation, drama, podcast, or tutor examples | Explain or reuse one nuanced expression in context |
+| 4 | [[JLPT Overview — N5 to N1]], [[Study Roadmap — Intermediate to Advanced]] | Use [[Phase 5 Local Audio Practice]] Block 4 only to diagnose the bottleneck | JLPT-style listening plus real native input | Identify whether the bottleneck is speed, vocabulary, grammar, register, or stamina |
 
 ## Gap Policy
 
@@ -74,13 +75,14 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Use [[Phase 5 Weekly Review]] before Phase 5 becomes the active dashboard phase.
+- Use [[Phase 5 Local Audio Practice]] as the short precision-drill route before opening page-level clips.
 - Use [[Advanced Output and Register Feedback Log]] for recordings, tutor feedback, and register corrections.
-- Keep local practice page-level for Phase 5; create a separate ladder only if native-source work starts requiring too much clip hunting.
 
 ## References
 
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]
 - [[Phase 4 Audio Coverage Map]]

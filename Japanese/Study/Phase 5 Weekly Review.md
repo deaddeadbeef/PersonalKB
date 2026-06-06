@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 20-30 minutes.
 
-Phase 5 review is not a passive immersion diary. Each week should identify one exact native source segment, one local drill target, one output attempt, and one pronunciation, pitch, reading, register, or naturalness check.
+Phase 5 review is not a passive immersion diary. Each week should identify one exact native source segment, one local drill target from [[Phase 5 Local Audio Practice]] or the current page, one output attempt, and one pronunciation, pitch, reading, register, or naturalness check.
 
 ## Week Of
 
@@ -26,7 +26,7 @@ Phase 5 review is not a passive immersion diary. Each week should identify one e
 ## Completed
 
 - [ ] One exact native-source segment from [[Phase 5 Authentic Audio Spine]] repeated, mined, shadowed, transcribed, summarized, or discussed on at least 3 days
-- [ ] One local clip set from the current Phase 5 page repeated on at least 3 days
+- [ ] One local clip set from [[Phase 5 Local Audio Practice]] or the current Phase 5 page repeated on at least 3 days
 - [ ] [[Phase 5 Audio Coverage Map]] checked for the current main page
 - [ ] One output attempt recorded in [[Advanced Output and Register Feedback Log]]
 - [ ] One pitch, reading, rhythm, pronunciation, or naturalness issue checked through [[Pronunciation and Audio Accuracy]]
@@ -40,7 +40,7 @@ Record exact targets. "Listened to Japanese" is not enough.
 | Layer | Exact target | Evidence |
 | --- | --- | --- |
 | Native source | Source, episode/article/scene, timestamp, transcript/subtitle route |  |
-| Local clips | Current page and clip set |  |
+| Local clips | [[Phase 5 Local Audio Practice]] block or current page clip set |  |
 | Shadowing or transcription | Sentence, paragraph, line, or timestamp range |  |
 | Pronunciation or pitch check | Word, phrase, pitch pattern, rhythm issue, or reading |  |
 | Register or nuance check | Keigo, business phrase, idiom, filler, humor, stance, or implication |  |
@@ -97,7 +97,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 
 - One main page:
 - One native source segment:
-- One local audio target:
+- One local audio target from [[Phase 5 Local Audio Practice]] or the current page:
 - One pronunciation, pitch, or reading check:
 - One output/register target:
 - One feedback route:
@@ -107,6 +107,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 Do not treat Phase 5 as stable until these are true:
 
 - [ ] You can sustain one native-source segment across multiple days
+- [ ] You can use [[Phase 5 Local Audio Practice]] without hunting through page-level clips
 - [ ] You can pair each required Phase 5 page with audio using [[Phase 5 Audio Coverage Map]]
 - [ ] You have at least one recurring output or register feedback route
 - [ ] You can summarize or shadow a short native segment without relying on English
@@ -117,6 +118,7 @@ Do not treat Phase 5 as stable until these are true:
 
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Advanced Output and Register Feedback Log]]
 - [[Pronunciation and Audio Accuracy]]

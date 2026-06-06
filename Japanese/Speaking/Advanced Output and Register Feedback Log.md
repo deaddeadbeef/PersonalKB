@@ -11,7 +11,7 @@ tier-coverage: [practice]
 
 ## How To Use This Log
 
-Add one short entry whenever an output attempt reveals a register, keigo, pitch, rhythm, nuance, idiom, filler, or professional-phrasing issue worth carrying forward.
+Add one short entry whenever an output attempt reveals a register, keigo, pitch, rhythm, nuance, idiom, filler, or professional-phrasing issue worth carrying forward. Use [[Phase 5 Local Audio Practice]] only after the source model or feedback route is clear.
 
 1. Name the situation and the source model.
 2. Record what you tried to say.
@@ -41,6 +41,7 @@ Do not wait for perfect feedback. A self-recording compared against a replayable
 | Corrected version |  |
 | Next test |  |
 | Linked review | [[Phase 5 Weekly Review]] |
+| Local drill used | [[Phase 5 Local Audio Practice]] block or current page clip set |
 
 ## Register Targets
 
@@ -67,7 +68,7 @@ An output pattern can return to normal practice when:
 
 - The corrected version has a clear source or feedback route.
 - The issue is not only "sounds bad" but named: pitch, rhythm, register, keigo direction, wording, filler timing, idiom use, or nuance.
-- You have repeated the corrected pattern aloud after the feedback.
+- You have repeated the corrected pattern aloud after the feedback, using [[Phase 5 Local Audio Practice]] only as a short drill.
 - If a local clip itself is suspect, it is recorded in [[Pronunciation Correction Log]] instead of only here.
 - The next [[Phase 5 Weekly Review]] names how the fix was reused.
 
@@ -75,6 +76,7 @@ An output pattern can return to normal practice when:
 
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]

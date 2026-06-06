@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, practice]
 
 # Phase 5 Authentic Audio Spine
 
-> Use this page during [[Phase 5 — Advanced]]. Phase 5 is not about finding more learner audio. It is about using native-speed Japanese as the main source while keeping pronunciation, register, pitch, and output accountable.
+> Use this page during [[Phase 5 — Advanced]]. Pair it with [[Phase 5 Local Audio Practice]] only as a precision-drill route. Phase 5 is not about finding more learner audio; it is about using native-speed Japanese as the main source while keeping pronunciation, register, pitch, and output accountable.
 
 ## The Rule
 
@@ -28,7 +28,7 @@ Use this pairing on any Phase 5 study day:
 
 | Time | Audio layer | Task |
 | --- | --- | --- |
-| 3-5 min | Current Phase 5 page embeds | Repeat advanced grammar, keigo, business, idiom, pitch, or discourse-marker clips inside Obsidian |
+| 3-5 min | [[Phase 5 Local Audio Practice]] or current Phase 5 page embeds | Repeat advanced grammar, keigo, business, idiom, pitch, or discourse-marker clips inside Obsidian |
 | 20-45 min | This native source | Listen for gist, check text/subtitles, then shadow, transcribe, summarize, or mine a short section |
 | 5-10 min | Output/register model | Record yourself, compare with the model, or ask for tutor/native feedback; log carry-forward fixes in [[Advanced Output and Register Feedback Log]] |
 | 2-5 min | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] when needed | Check one pitch, reading, register, rhythm, or suspect-clip issue |
@@ -39,12 +39,12 @@ When time is short, keep one native sentence, one local clip, and one output che
 
 | Phase 5 block | Study focus | Authentic audio target | Local companion |
 | --- | --- | --- | --- |
-| 1 | Native-speed comprehension and media | One advanced source with text, subtitles, transcript, or replayable context | [[Advanced Listening Resources]], [[NHK World — News Listening Practice]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]] clips |
-| 2 | Professional register and full keigo | Workplace, service, interview, formal speech, or tutor/native role-play segment | [[Keigo — Overview and Register System]], [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]] clips |
-| 3 | Nuance, idioms, pitch, and conversation stance | Native conversation, drama, podcast, or tutor examples where implication matters | [[Idioms and Proverbs — ことわざ]], [[Common Filler Words and Discourse Markers]], [[Pitch Accent — Common Patterns]], [[Grammar — Comparison Across Levels]] clips |
-| 4 | N2/N1 preparation and long-term refinement | JLPT-style listening plus real native input on the same topic | [[JLPT Overview — N5 to N1]], [[Study Roadmap — Intermediate to Advanced]], and the current native source |
+| 1 | Native-speed comprehension and media | One advanced source with text, subtitles, transcript, or replayable context | [[Phase 5 Local Audio Practice]] Block 1 |
+| 2 | Professional register and full keigo | Workplace, service, interview, formal speech, or tutor/native role-play segment | [[Phase 5 Local Audio Practice]] Block 2 |
+| 3 | Nuance, idioms, pitch, and conversation stance | Native conversation, drama, podcast, or tutor examples where implication matters | [[Phase 5 Local Audio Practice]] Block 3 |
+| 4 | N2/N1 preparation and long-term refinement | JLPT-style listening plus real native input on the same topic | [[Phase 5 Local Audio Practice]] Block 4 and the current native source |
 
-Use [[Phase 5 Audio Coverage Map]] when you need to match a Phase 5 page to the correct local clip set and authentic audio job.
+Use [[Phase 5 Local Audio Practice]] for short precision drills. Use [[Phase 5 Audio Coverage Map]] when you need to match a Phase 5 page to the correct local clip set and authentic audio job.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
 
@@ -75,6 +75,7 @@ At the end of each week, record:
 ## References
 
 - [[Phase 5 — Advanced]]
+- [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]

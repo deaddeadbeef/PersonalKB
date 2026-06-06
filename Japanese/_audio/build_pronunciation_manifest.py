@@ -104,6 +104,7 @@ PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
     ),
     # Reading disambiguation and remaining extraction repairs.
     "gap-184-(akeru)-open.mp3": ("あける", "force transitive open reading"),
+    "listen-010-koe-no-katachi.mp3": ("こえの形", "force title reading"),
 }
 
 

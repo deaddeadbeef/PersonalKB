@@ -40,7 +40,7 @@ flowchart LR
 
 | Title | Why good | Audio |
 |-------|----------|-------|
-| 聴の形 | Realistic dialogue, school setting | ![[listen-010-ki-no-katachi.mp3]] |
+| 聲の形 | Realistic dialogue, school setting | ![[listen-010-koe-no-katachi.mp3]] |
 | 日常 | Varied vocabulary, humor | ![[listen-011-nichijou.mp3]] |
 | 僕だけがいない街 | Emotional, natural conversation | ![[listen-012-boku-dake-ga-inai-machi.mp3]] |
 

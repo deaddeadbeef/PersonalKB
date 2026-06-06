@@ -1262,7 +1262,7 @@ This index catalogs all **1810** TTS audio clips in the Japanese audio library, 
 - [[listen-007-shirokuma.mp3]]
 - [[listen-008-doraemon.mp3]]
 - [[listen-009-chibi-maruko-chan.mp3]]
-- [[listen-010-ki-no-katachi.mp3]]
+- [[listen-010-koe-no-katachi.mp3]]
 - [[listen-011-nichijou.mp3]]
 - [[listen-012-boku-dake-ga-inai-machi.mp3]]
 - [[listen-013-hanzawa-naoki.mp3]]

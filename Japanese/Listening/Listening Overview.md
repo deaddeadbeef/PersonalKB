@@ -41,8 +41,9 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - Focus: connected speech, context clues, inference
 
 ### Advanced
-- [[Phase 5 Audio Coverage Map]] — match Phase 5 native-source work to local drills and QA
 - [[Phase 5 Authentic Audio Spine]] — native-source audio and output feedback route for N2/N1 direction
+- [[Phase 5 Local Audio Practice]] — ordered precision drills for source labels, keigo, professional register, pitch, discourse stance, and benchmark prompts
+- [[Phase 5 Audio Coverage Map]] — match Phase 5 native-source work to local drills and QA
 - [[Advanced Output and Register Feedback Log]] — record Phase 5 recordings, tutor/native feedback, and register fixes
 - [[Advanced Listening Resources]] — native content, no support
 - Focus: nuance, humor, dialects, fast speech
@@ -67,8 +68,9 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Weekly Review]]
-- [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Local Audio Practice]]
+- [[Phase 5 Audio Coverage Map]]
 - [[Advanced Output and Register Feedback Log]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 - [[YouTube Channels for Japanese Learners]]
@@ -95,7 +97,7 @@ For Phase 3, use [[Phase 3 Authentic Audio Spine]] plus [[Phase 3 Local Audio Pr
 
 For Phase 4, use [[Phase 4 Local Audio Practice]] plus [[Phase 4 Authentic Audio Spine]]. Expand into embedded clips on the current N3, kanji, keigo, business, culture, or advanced-listening page when a topic needs more examples. Use [[Phase 4 Audio Coverage Map]] when native-speed audio, register, or longer conversation practice needs a repeatable segment instead of passive immersion. Record weekly proof in [[Phase 4 Weekly Review]].
 
-For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local clips only as precision drills, then prove progress with native-source shadowing, transcription, summary, output, or tutor/native feedback. Use [[Phase 5 Audio Coverage Map]] when advanced media, keigo, business, pitch, or JLPT listening needs a concrete audio target. Record output and register fixes in [[Advanced Output and Register Feedback Log]].
+For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source and [[Phase 5 Local Audio Practice]] as the ordered precision-drill route. Local clips are prompts only; prove progress with native-source shadowing, transcription, summary, output, or tutor/native feedback. Use [[Phase 5 Audio Coverage Map]] when advanced media, keigo, business, pitch, or JLPT listening needs a concrete audio target. Record output and register fixes in [[Advanced Output and Register Feedback Log]].
 
 ## Daily Listening Routine
 
@@ -106,7 +108,7 @@ For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local
 | 5-15 min | [[Phase 2 Local Audio Practice]] plus a segment from [[Phase 2 Authentic Audio Spine]] | Beginner/N5 |
 | 10-20 min | [[Phase 3 Local Audio Practice]] plus a segment from [[Phase 3 Authentic Audio Spine]] | N4/early intermediate |
 | 15-30 min | [[Phase 4 Local Audio Practice]] plus a segment from [[Phase 4 Authentic Audio Spine]] | N3/intermediate |
-| 20-45 min | Phase 5 native source plus targeted local drills from [[Phase 5 Audio Coverage Map]] | N2/N1 direction |
+| 20-45 min | [[Phase 5 Local Audio Practice]] plus a native source from [[Phase 5 Authentic Audio Spine]] | N2/N1 direction |
 | 10 min | Shadowing practice | All |
 | 15 min | Focused podcast episode | Intermediate |
 | 30 min | Background immersion | All |
@@ -124,5 +126,7 @@ For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Weekly Review]]
+- [[Phase 5 Authentic Audio Spine]]
+- [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Advanced Output and Register Feedback Log]]

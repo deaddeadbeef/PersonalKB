@@ -5,8 +5,8 @@ SUMMARY
   Source manifests          : 11
   Pronunciation entries     : 1810
   MP3 files                 : 1810
-  Entries changed for TTS   : 86
-  Explicit overrides        : 64
+  Entries changed for TTS   : 87
+  Explicit overrides        : 65
   Duplicate manifest rows   : 2
   Missing MP3 files         : 0
   MP3 files not in manifest : 0
@@ -100,6 +100,7 @@ CHANGED TTS INPUTS
   gap-288-(raigetsu).mp3: 来月 (raigetsu) -> 来月 (normalized)
   hira-101-particle-wa.mp3: は -> わ (topic particle reading)
   hira-102-particle-e.mp3: へ -> え (direction particle reading)
+  listen-010-koe-no-katachi.mp3: 聲の形 -> こえの形 (force title reading)
   nontbl-002-desu.mp3: [Name]です -> 田中です (expanded placeholder)
   nontbl-003-kara-kimashita.mp3: [Country]から来ました -> アメリカから来ました (expanded placeholder)
   nontbl-004-shumi-wa-desu.mp3: 趣味は[hobby]です -> 趣味は音楽です (expanded placeholder)
