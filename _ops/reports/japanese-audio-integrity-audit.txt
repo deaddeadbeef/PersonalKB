@@ -1,0 +1,149 @@
+JAPANESE AUDIO INTEGRITY AUDIT
+================================================================================
+Generated: 2026-06-07 00:50:46
+Japanese root: Japanese
+Audio directory: Japanese/_audio
+Manifest: Japanese/_audio/pronunciation_manifest.json
+
+SUMMARY
+  Markdown MP3 embeds       : 2210
+  Unique embedded MP3 files : 1759
+  MP3 files in _audio       : 1810
+  Pronunciation entries     : 1810
+  Missing embedded MP3 files: 0
+  Manifest rows missing MP3 : 0
+  MP3 files not in manifest : 0
+  Embedded files not manifest: 0
+  Markdown read errors      : 0
+  ffprobe checked MP3 files : 1810
+  ffprobe failures          : 0
+  Format issues             : 0
+
+EXPECTED MP3 FORMAT
+  codec_name=mp3
+  sample_rate=48000
+  channels=1
+  bit_rate=96000
+
+MISSING EMBEDDED MP3 FILES
+  (none)
+
+MANIFEST ROWS MISSING MP3
+  (none)
+
+MP3 FILES NOT IN MANIFEST
+  (none)
+
+EMBEDDED FILES NOT IN MANIFEST
+  (none)
+
+MARKDOWN READ ERRORS
+  (none)
+
+FFPROBE FAILURES
+  (none)
+
+FORMAT ISSUES
+  (none)
+
+DUPLICATE EMBED COUNTS
+  adj-006-oishii.mp3 embedded 2 times
+  adj-009-oishikunai.mp3 embedded 2 times
+  adj-010-oishikatta.mp3 embedded 2 times
+  adj-013-oishii-desu.mp3 embedded 2 times
+  adj-017-genki-na.mp3 embedded 2 times
+  adj-026-genki-desu.mp3 embedded 2 times
+  adj-027-genki-ja-nai.mp3 embedded 2 times
+  adj-033-cheap-delicious.mp3 embedded 2 times
+  biz2-001-oisogashii-tokoro-kyoushuku-desu-ga.mp3 embedded 3 times
+  biz2-002-goiken-wo-onegaishimasu.mp3 embedded 2 times
+  biz2-004-dengon-wo-oazukari-itashimasu.mp3 embedded 2 times
+  body-011-atama-ga-itai-desu.mp3 embedded 2 times
+  body-012-netsu-ga-arimasu.mp3 embedded 2 times
+  body-013-kaze-wo-hikimashita.mp3 embedded 2 times
+  body-014-kusuri-wo-kudasai.mp3 embedded 2 times
+  business-001-otsukaresama-desu.mp3 embedded 3 times
+  business-002-shitsurei-shimasu.mp3 embedded 3 times
+  business-003-shoushou-omachi-kudasai.mp3 embedded 3 times
+  business-004-kashikomarimashita.mp3 embedded 3 times
+  business-005-shouchi-shimashita.mp3 embedded 3 times
+  business-006-moushiwake-gozaimasen.mp3 embedded 3 times
+  business-008-gokakunin-yoroshiku.mp3 embedded 3 times
+  business-009-kaigi-wo-hajimemashou.mp3 embedded 3 times
+  conversation-001-hajimemashite.mp3 embedded 2 times
+  core100-001-watashi.mp3 embedded 2 times
+  core100-010-doko.mp3 embedded 2 times
+  core100-015-onegaishimasu.mp3 embedded 2 times
+  core100-016-arigatou.mp3 embedded 2 times
+  core100-018-daijoubu.mp3 embedded 2 times
+  core500-001-mainichi.mp3 embedded 2 times
+  core500-012-benkyou.mp3 embedded 2 times
+  core500-047-aruku.mp3 embedded 2 times
+  core500-048-suwaru.mp3 embedded 2 times
+  core500-065-kaeru.mp3 embedded 2 times
+  counter-013-ippon.mp3 embedded 2 times
+  counter-016-roppon.mp3 embedded 2 times
+  counter-020-ippai.mp3 embedded 2 times
+  culture-006-akemashite-omedetou.mp3 embedded 3 times
+  culture-008-yoi-otoshi-wo.mp3 embedded 2 times
+  culture-009-tsumaranai-mono-desu-ga.mp3 embedded 2 times
+  daily-002-kore-wo-kudasai.mp3 embedded 2 times
+  daily-003-ikura-desu-ka.mp3 embedded 2 times
+  daily-004-kaado-de-onegaishimasu.mp3 embedded 2 times
+  daily-005-futari-desu.mp3 embedded 2 times
+  daily-006-osusume-wa-nan-desu-ka.mp3 embedded 2 times
+  daily-008-sumimasen2.mp3 embedded 2 times
+  daily-009-mou-ichido-onegaishimasu.mp3 embedded 2 times
+  daily-010-yukkuri-onegaishimasu.mp3 embedded 2 times
+  filler-001-eeto.mp3 embedded 4 times
+  filler-002-anoo.mp3 embedded 4 times
+  filler-003-maa.mp3 embedded 4 times
+  filler-004-chotto.mp3 embedded 4 times
+  filler-005-yappari.mp3 embedded 4 times
+  filler-006-ichiou.mp3 embedded 3 times
+  filler-007-toriaezu.mp3 embedded 4 times
+  filler-008-naruhodo.mp3 embedded 4 times
+  filler-009-sou-desu-ne.mp3 embedded 4 times
+  filler-011-hontou-ni.mp3 embedded 2 times
+  filler-012-sugoi-desu-ne.mp3 embedded 2 times
+  filler-013-tokoro-de.mp3 embedded 4 times
+  filler-014-tsumari.mp3 embedded 3 times
+  filler2-005-kedo.mp3 embedded 2 times
+  filler2-006-sorede.mp3 embedded 3 times
+  filler2-007-demo.mp3 embedded 4 times
+  filler2-008-dakara.mp3 embedded 3 times
+  food-001-asagohan.mp3 embedded 2 times
+  food-002-hirugohan.mp3 embedded 2 times
+  food-003-bangohan.mp3 embedded 2 times
+  food-019-oishii.mp3 embedded 2 times
+  gap-002-phrase.mp3 embedded 2 times
+  gap-003-phrase.mp3 embedded 2 times
+  gap-004-phrase.mp3 embedded 2 times
+  gap-005-Plain-().mp3 embedded 2 times
+  gap-135-phrase.mp3 embedded 2 times
+  gap-136-phrase.mp3 embedded 2 times
+  gap-137-phrase.mp3 embedded 2 times
+  gap-138-phrase.mp3 embedded 2 times
+  gap-139-phrase.mp3 embedded 2 times
+  gap-140-phrase.mp3 embedded 2 times
+  gap-141-phrase.mp3 embedded 2 times
+  gap-142-phrase.mp3 embedded 2 times
+  gap-143-phrase.mp3 embedded 2 times
+  gap-149-phrase.mp3 embedded 2 times
+  gap-150-phrase.mp3 embedded 2 times
+  gap-155-phrase.mp3 embedded 2 times
+  gramcomp-003-amenotame.mp3 embedded 3 times
+  gramcomp-006-amenimokakawarazu.mp3 embedded 2 times
+  gramcomp-013-tabetagaru.mp3 embedded 3 times
+  gramcomp-016-hanaseruyouninaru.mp3 embedded 3 times
+  gramcomp-020-tabesaserareru.mp3 embedded 2 times
+  gramn3-002-kakunin-itashimasu.mp3 embedded 2 times
+  gramn3-003-ame-nimo-kakawarazu.mp3 embedded 2 times
+  gramn3-005-intaanetto-wo-tsuujite.mp3 embedded 2 times
+  gramn3-009-nihon-wa-anzen-da-to-omoimasu.mp3 embedded 2 times
+  gramn4-001-ame-ga-futtara.mp3 embedded 2 times
+  gramn4-002-renshuu-sureba.mp3 embedded 2 times
+  gramn4-003-nihon-ni-iku-nara.mp3 embedded 2 times
+  gramn4-004-haru-ni-naru-to.mp3 embedded 2 times
+  gramn4-005-sensei-ni-homerareta.mp3 embedded 2 times
+  gramn4-006-ame-ni-furareta.mp3 embedded 2 times

@@ -1276,3 +1276,24 @@ Verification:
 - `python -m py_compile Japanese\_audio\build_pronunciation_manifest.py`
 - Pronunciation audit summary check: 26 expected reading overrides and 0 source repair overrides.
 - `git diff --check`
+
+## [2026-06-07] ops | Japanese audio integrity audit
+
+Scope: add a repeatable audit for Obsidian audio embed resolution, manifest/file inventory, and MP3 media-format compatibility.
+
+Changed audio/ops files:
+- `Japanese/_audio/audit_audio_integrity.py`
+- `_ops/reports/japanese-audio-integrity-audit.txt`
+
+Maintenance changes:
+- Added a worktree-safe audio integrity audit with `--root`, `--audio-dir`, `--manifest`, `--report`, `--no-report`, and `--skip-ffprobe` options.
+- Checks every Japanese Markdown MP3 embed against `Japanese/_audio`.
+- Checks `pronunciation_manifest.json` against actual MP3 files.
+- Uses `ffprobe` to verify every local MP3 is browser-compatible: MP3 codec, 48 kHz sample rate, mono, 96 kbps.
+- Writes a vault-relative report so the evidence is not tied to a specific worktree path.
+
+Verification:
+- `python Japanese\_audio\audit_audio_integrity.py`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest rows missing MP3, 0 MP3 files not in manifest, 0 embedded files not in manifest, 1810 ffprobe-checked MP3 files, 0 ffprobe failures, 0 format issues.
+- `python -m py_compile Japanese\_audio\audit_audio_integrity.py`
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
