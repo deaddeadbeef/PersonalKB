@@ -19,6 +19,8 @@ Do not use the raw [[Audio Index]] as the daily plan in Phase 1. It is a catalog
 
 If a clip sounds wrong, stop using it and follow [[Pronunciation and Audio Accuracy#Correction Workflow]].
 
+Use [[Phase 1 Audio Coverage Map]] to see which Phase 1 content page each weekly clip set supports.
+
 ## Session Loop
 
 Run this loop for 5 minutes on a minimum day or 15 minutes on a good day:
@@ -140,6 +142,7 @@ After listening, write one line in your daily note or [[Phase 1 Weekly Review]]:
 ## References
 
 - [[Phase 1 — Foundation]]
+- [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]

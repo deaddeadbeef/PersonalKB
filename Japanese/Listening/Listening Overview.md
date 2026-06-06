@@ -19,6 +19,7 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 ## Listening by Level
 
 ### Beginner
+- [[Phase 1 Audio Coverage Map]] — match each required Phase 1 page to audio support
 - [[Phase 1 Authentic Audio Spine]] — official/native audio to pair with Phase 1
 - [[Phase 1 Local Audio Practice]] — short local drills for pronunciation details
 - [[Beginner Listening Resources]] — slow, clear, with transcripts
@@ -39,6 +40,7 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - **Dictation:** Write what you hear — forces precise listening
 
 ## Curated Resources
+- [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 - [[YouTube Channels for Japanese Learners]]
@@ -70,3 +72,4 @@ For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local A
 ## References
 - [[Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Phase 1 Audio Coverage Map]]

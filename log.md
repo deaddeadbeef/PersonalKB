@@ -112,6 +112,33 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-06-06] curate | Japanese Phase 1 audio coverage map
+
+Scope: add a coverage map that shows how each required Phase 1 page is supported by local clips, authentic audio, and pronunciation QA.
+
+Changed content files:
+- `Japanese/Listening/Phase 1 Audio Coverage Map.md`
+- `Japanese/Japanese.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Learning Path/Phase 1 — Foundation.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Phase 1 Weekly Review.md`
+- `Japanese/Listening/Phase 1 Local Audio Practice.md`
+- `Japanese/Listening/Phase 1 Authentic Audio Spine.md`
+
+Maintenance changes:
+- Added a Phase 1 coverage table with embedded local clip counts for required pages.
+- Routed Start Here, the dashboard, study index, Phase 1 plan, weekly review, and audio pages to the coverage map.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- Phase 1 coverage count check across required pages.
+- Local MP3 embed check across changed audio pages: 44 embeds, 0 missing.
+- `git diff --check`
+
 ## [2026-06-06] curate | Japanese pronunciation and audio accuracy
 
 Scope: add a policy/practice page for deciding when local TTS clips are safe, when native/official audio is required, and how to log/fix suspect pronunciation.

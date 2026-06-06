@@ -46,6 +46,8 @@ The native source does not have to match the local clip exactly. It just has to 
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, course recording, dictionary entry, or your own recording disagree.
 
+Use [[Phase 1 Audio Coverage Map]] when you need to match a required Phase 1 page to the correct native and local audio layer.
+
 ## Quality Bar
 
 Treat audio as usable for Phase 1 only if it meets these conditions:
@@ -69,6 +71,7 @@ At the end of each week, record evidence in [[Phase 1 Weekly Review]]:
 ## References
 
 - [[Phase 1 — Foundation]]
+- [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Local Audio Practice]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]

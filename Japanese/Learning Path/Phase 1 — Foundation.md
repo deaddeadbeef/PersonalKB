@@ -35,6 +35,8 @@ If a page feels advanced, skip it for now. The work queue is the sequence below.
 
 ## Phase 1 Map
 
+Use [[Phase 1 Audio Coverage Map]] when deciding what to listen to alongside each page.
+
 | Week | Primary outcome | Pages | Proof |
 | --- | --- | --- | --- |
 | 1 | Hiragana recognition | [[Hiragana Complete Guide]] | Read the base kana chart without romaji |
@@ -93,6 +95,7 @@ Daily:
 - Do due reviews first.
 - Spend 15-25 minutes on the course spine.
 - Listen to 5-10 minutes from [[Phase 1 Local Audio Practice]] and [[Phase 1 Authentic Audio Spine]], even if comprehension is partial.
+- Check [[Phase 1 Audio Coverage Map]] if the current page does not make the audio target obvious.
 - Speak the self-introduction out loud once.
 
 Supporting evidence: [[chunk-jp-085|self-introduction fixed format]], [[chunk-jp-089|four levels of listening]], [[chunk-jp-126|spaced repetition]], [[chunk-jp-127|card format]], [[chunk-jp-133|beginner routine]], [[chunk-jp-150|learning milestones]].
@@ -125,3 +128,4 @@ Before moving to [[Phase 2 — Building Blocks]], verify:
 
 ## References
 - [[Sources Index]]
+- [[Phase 1 Audio Coverage Map]]

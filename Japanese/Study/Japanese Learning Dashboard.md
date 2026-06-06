@@ -22,6 +22,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Memory system | [[Resources Index — Textbooks, Apps, and Tools#SRS and Review|Anki]] | Keeps kana, words, and kanji from decaying |
 | Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]] | Combines precise local drills with human-recorded or official-course pronunciation |
 | Audio QA | [[Pronunciation and Audio Accuracy]] | Prevents local clips from becoming the only pronunciation authority |
+| Audio coverage | [[Phase 1 Audio Coverage Map]] | Shows what to listen to for each required Phase 1 page |
 | Roadmap | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] | Keeps advanced material out of the way until it is useful |
 
 ## Current Stage
@@ -99,9 +100,10 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 7. [[Phase 1 Local Audio Practice]]
 8. [[Phase 1 Authentic Audio Spine]]
 9. [[Pronunciation and Audio Accuracy]]
-10. [[Core 100 — Survival Japanese]]
-11. [[N5 Grammar — Sentence Patterns]]
-12. [[Phase 1 Weekly Review]]
+10. [[Phase 1 Audio Coverage Map]]
+11. [[Core 100 — Survival Japanese]]
+12. [[N5 Grammar — Sentence Patterns]]
+13. [[Phase 1 Weekly Review]]
 
 ## Curation Backlog
 
@@ -115,4 +117,5 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 - [[Sources Index#Checked External Sources]]
 - [[Japanese#Start Here]]
 - [[Daily Study Routine Templates]]
+- [[Phase 1 Audio Coverage Map]]
 - [[JLPT Overview — N5 to N1]]
