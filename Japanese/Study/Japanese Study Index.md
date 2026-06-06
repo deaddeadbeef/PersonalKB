@@ -19,7 +19,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Routine | [[Daily Study Routine Templates]] | Choose a 30-minute, 60-minute, or intensive day |
 | Audio ladder | [[Phase 1 Local Audio Practice]] -> [[Phase 2 Local Audio Practice]] -> [[Phase 3 Local Audio Practice]] -> [[Phase 4 Local Audio Practice]] -> [[Phase 5 Local Audio Practice]] | Use local clips in the correct order instead of browsing the raw audio catalog |
 | Authentic audio | [[Phase 1 Authentic Audio Spine]] -> [[Phase 2 Authentic Audio Spine]] -> [[Phase 3 Authentic Audio Spine]] -> [[Phase 4 Authentic Audio Spine]] -> [[Phase 5 Authentic Audio Spine]] | Choose the native/official audio source for the current phase |
-| Audio QA | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when to trust, correct, or quarantine a clip |
+| Audio QA | [[Pronunciation and Audio Accuracy]] + [[Japanese Audio QA Status]] + [[Pronunciation Correction Log]] | Decide when to trust, verify, correct, or quarantine a clip |
 | Audio coverage | [[Phase 1 Audio Coverage Map]] -> [[Phase 2 Audio Coverage Map]] -> [[Phase 3 Audio Coverage Map]] -> [[Phase 4 Audio Coverage Map]] -> [[Phase 5 Audio Coverage Map]] | Match current phase pages to local clips, authentic audio, and QA |
 | Weekly review | [[Phase 1 Weekly Review]] -> [[Phase 2 Weekly Review]] -> [[Phase 3 Weekly Review]] -> [[Phase 4 Weekly Review]] -> [[Phase 5 Weekly Review]] | Keep the current phase honest and choose the next task |
 | Output proof | [[Advanced Output and Register Feedback Log]] | Record Phase 5 recordings, tutor/native feedback, and register fixes |
@@ -39,6 +39,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Japanese Audio QA Status]]
 - [[Pronunciation Correction Log]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 2 Authentic Audio Spine]]
@@ -85,6 +86,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Japanese Audio QA Status]]
 - [[Pronunciation Correction Log]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 2 Authentic Audio Spine]]
@@ -105,6 +107,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 ### Speaking
 - [[Pronunciation and Audio Accuracy]]
+- [[Japanese Audio QA Status]]
 - [[Pronunciation Correction Log]]
 - [[Self-Introduction Template]]
 - [[Advanced Output and Register Feedback Log]]

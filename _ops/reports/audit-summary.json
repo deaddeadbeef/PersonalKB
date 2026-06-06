@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-07T00:16:46",
-  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\japanese-phase5-local-audio-practice",
-  "files_total": 4748,
+  "generated_at": "2026-06-07T01:03:59",
+  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\japanese-audio-qa-status-hub",
+  "files_total": 4751,
   "by_extension": {
     "(none)": 2,
     ".base": 1,
     ".jpg": 22,
     ".json": 17,
-    ".md": 2879,
+    ".md": 2880,
     ".mp3": 1810,
-    ".py": 13,
-    ".txt": 4
+    ".py": 14,
+    ".txt": 5
   },
-  "markdown_files": 2879,
-  "candidate_articles": 781,
+  "markdown_files": 2880,
+  "candidate_articles": 782,
   "empty_notes": 1,
   "stubs_under_1500_bytes": 21,
   "missing_up": 29,

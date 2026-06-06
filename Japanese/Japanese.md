@@ -27,6 +27,7 @@ Read this section in order. It is the consumption path through the Japanese vaul
 | 0.2 | [[Resources Index — Textbooks, Apps, and Tools]] | Pick one course spine and one review system |
 | 0.3 | [[Daily Study Routine Templates]] | Choose a repeatable daily routine |
 | 0.4 | [[JLPT Overview — N5 to N1]] | Understand level labels without letting JLPT dominate study |
+| 0.5 | [[Japanese Audio QA Status]] | Current local-audio integrity and pronunciation-audit evidence |
 
 Rule: do this once, then start Phase 1. Do not spend days optimizing tools.
 
@@ -226,6 +227,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Local Audio Practice]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Local Audio Practice]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Local Audio Practice]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Local Audio Practice]] · [[Phase 5 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Japanese Audio QA Status]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
 
@@ -233,6 +235,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Speaking
 - [[Speaking Overview]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Japanese Audio QA Status]]
 - [[Pitch Accent — Introduction]] · [[Pitch Accent — Common Patterns]]
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Pronunciation — Difficult Sounds for English Speakers]]
@@ -254,6 +257,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[JLPT Overview — N5 to N1]]
 - [[Study Roadmap — Beginner to Intermediate]] · [[Study Roadmap — Intermediate to Advanced]]
 - [[Resources Index — Textbooks, Apps, and Tools]] · [[Daily Study Routine Templates]]
+- [[Japanese Audio QA Status]]
 - [[Phase 1 Weekly Review]] · [[Phase 2 Weekly Review]] · [[Phase 3 Weekly Review]] · [[Phase 4 Weekly Review]] · [[Phase 5 Weekly Review]]
 - [[Japanese Study Index]]
 

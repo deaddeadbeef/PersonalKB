@@ -1061,6 +1061,33 @@ Verification:
 - `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
 - `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
 - `git diff --check`
+
+## [2026-06-07] curate | Japanese audio QA status hub
+
+Scope: make local audio integrity evidence easy to find from the Japanese Start Here and study navigation.
+
+Changed content files:
+- `Japanese/Study/Japanese Audio QA Status.md`
+- `Japanese/Japanese.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+
+Maintenance changes:
+- Added `Japanese Audio QA Status` with the current local-audio QA evidence, what the checks prove, what still needs native/official audio authority, and the three audit commands.
+- Added the QA status page to the Orientation and Setup section of [[Japanese]], the dashboard reading order, the study index audio QA path, and the pronunciation QA references.
+- Preserved the rule that local TTS is a drill layer and native/official/tutor/accent-reference audio remains authoritative for pitch, rhythm, register, and natural delivery.
+
+Verification:
+- `python Japanese\_audio\audit_audio_integrity.py --no-report`: 2210 Markdown MP3 embeds, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 1810 ffprobe-checked MP3 files, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4751 files, 2880 markdown, 1810 MP3, 0 heavy audio embed pages.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4751 files, 2880 markdown, 1810 MP3, 0 heavy audio embed pages.
+- Japanese Audio QA Status link coverage check: 4 hub files plus status-page references present.
+- `index.md` MP3 leak check: 0 hits.
+- `git diff --check`
 - Malformed chopsticks-kanji typo search: 0 hits.
 - `ffprobe` check for regenerated `n4pot-006-otsukaemasuka.mp3`: MP3, 48000 Hz, mono, 96000 bps.
 - `python _ops\personal_kb.py audit`: 4746 files, 2877 markdown, 1810 MP3, 0 heavy audio embed pages.

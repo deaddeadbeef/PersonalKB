@@ -23,6 +23,8 @@ Local audio is useful because it is always available inside Obsidian. It is not 
 
 ## Current Local Audio QA Status
 
+For the full evidence table and commands, see [[Japanese Audio QA Status]].
+
 As of 2026-06-07, the local audio layer is operationally verified:
 
 - `python Japanese\_audio\audit_audio_integrity.py`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 local MP3 files, 1810 pronunciation-manifest entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 1810 MP3 files checked with `ffprobe`, 0 format issues.
@@ -89,6 +91,7 @@ One correction per day is enough. Pronunciation improves by repeated accurate co
 
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Japanese Audio QA Status]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 4 Weekly Review]]
 - [[Pronunciation Correction Log]]
