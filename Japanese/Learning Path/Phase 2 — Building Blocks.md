@@ -36,6 +36,8 @@ Before starting Steps 10-21, open [[Phase 2 Authentic Audio Spine]] and [[Phase 
 
 Use the current course, NHK, tutor, or native-speaker segment as the pronunciation model. Use the MP3 clips embedded in the Phase 2 grammar, vocabulary, kanji, and conversation pages as short repeatable drills.
 
+Use [[Phase 2 Weekly Review]] at the end of each week to record the exact authentic segment, local clip set, shadowing target, and pronunciation check.
+
 Do not let Phase 2 become silent grammar study. Every week should have:
 
 - One authentic audio segment you repeat across multiple days.
@@ -157,6 +159,7 @@ Before moving to Phase 3, verify:
 - [ ] Comfortable with です/ます politeness level
 - [ ] Have one stable Phase 2 authentic audio source in [[Phase 2 Authentic Audio Spine]]
 - [ ] Can pair each required Phase 2 page with audio using [[Phase 2 Audio Coverage Map]]
+- [ ] Have weekly audio evidence recorded in [[Phase 2 Weekly Review]]
 
 **Previous:** [[Phase 1 — Foundation]]
 **Next:** [[Phase 3 — Expansion]]
@@ -197,4 +200,5 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Sources Index]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Audio Coverage Map]]
+- [[Phase 2 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]

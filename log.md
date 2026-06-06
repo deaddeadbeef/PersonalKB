@@ -628,3 +628,29 @@ Verification:
 - Phase 2 coverage count check across required pages: 663 embedded MP3 clips.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 2 weekly review
+
+Scope: add the weekly evidence layer needed before Phase 2 becomes active, with explicit authentic-audio, local-clip, shadowing, and pronunciation-QA fields.
+
+Changed content files:
+- `Japanese/Study/Phase 2 Weekly Review.md`
+- `Japanese/Japanese.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Learning Path/Phase 2 — Building Blocks.md`
+- `Japanese/Listening/Phase 2 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 2 Audio Coverage Map.md`
+- `Japanese/Listening/Phase 1 Audio Coverage Map.md`
+
+Maintenance changes:
+- Added a Phase 2 weekly review page that records exact authentic audio, local clips, shadowing, and pronunciation checks.
+- Routed Start Here, dashboard, study index, Phase 2 plan, and Phase 2 audio pages to the new review.
+- Updated the Phase 2 coverage backlog now that the weekly review page exists.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- Changed-page MP3 embed check.
+- `git diff --check`

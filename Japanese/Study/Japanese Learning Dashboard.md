@@ -71,12 +71,13 @@ Use JLPT levels as a map, not as the first goal. The official JLPT descriptions 
 
 ### Weekly Review: 20 Minutes
 
-Every Sunday, open [[Phase 1 Weekly Review]] and record:
+Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Review]] while Phase 1 is active, then [[Phase 2 Weekly Review]] after the Phase 1 checkpoint is complete.
 
 - What did I finish?
 - What is still fuzzy?
 - Which cards are failing repeatedly?
 - Did I hear or read Japanese every day?
+- Which authentic audio segment and local clip set did I repeat?
 - What is the one next lesson for the coming week?
 
 ## Progress Checkpoints
@@ -107,6 +108,7 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 14. [[Phase 2 — Building Blocks]]
 15. [[Phase 2 Authentic Audio Spine]]
 16. [[Phase 2 Audio Coverage Map]]
+17. [[Phase 2 Weekly Review]]
 
 ## Curation Backlog
 
@@ -122,4 +124,5 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 - [[Daily Study Routine Templates]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
+- [[Phase 2 Weekly Review]]
 - [[JLPT Overview — N5 to N1]]

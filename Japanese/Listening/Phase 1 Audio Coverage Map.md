@@ -66,7 +66,7 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Add a small pronunciation-correction log when a real suspect clip is found.
-- Use [[Phase 2 Audio Coverage Map]] and add a Phase 2 weekly review page before making Phase 2 the active dashboard phase.
+- Use [[Phase 2 Audio Coverage Map]] and [[Phase 2 Weekly Review]] before making Phase 2 the active dashboard phase.
 - Keep the local audio ladder small; expand only when the weekly proof needs a missing clip.
 
 ## References
@@ -77,4 +77,5 @@ These are real gaps:
 - [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]
 - [[Phase 2 Audio Coverage Map]]
+- [[Phase 2 Weekly Review]]
 - [[Sources Index]]

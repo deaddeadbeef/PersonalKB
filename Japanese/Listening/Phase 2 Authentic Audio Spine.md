@@ -30,7 +30,7 @@ Use this pairing on any Phase 2 study day:
 | --- | --- | --- |
 | 3-5 min | Current Phase 2 page embeds | Repeat the particles, verb forms, counters, kanji readings, or conversation lines in the page you are studying |
 | 5-15 min | This authentic spine | Play the matching course/NHK/tutor segment once for meaning, once with text, then shadow one short segment |
-| 1 min | Study log or weekly review | Record the exact segment and the one sound or pattern that needs another pass |
+| 1 min | [[Phase 2 Weekly Review]] | Record the exact segment and the one sound or pattern that needs another pass |
 
 If time is short, play one authentic sentence and repeat one local clip. Do not reduce Phase 2 audio to silent grammar reading.
 
@@ -65,7 +65,7 @@ Treat audio as usable for Phase 2 only if it meets these conditions:
 
 ## Weekly Proof
 
-At the end of each week, record:
+At the end of each week, record evidence in [[Phase 2 Weekly Review]]:
 
 - Which authentic source and lesson segment did I repeat?
 - Which Phase 2 wiki page did it support?
@@ -77,6 +77,7 @@ At the end of each week, record:
 
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Audio Coverage Map]]
+- [[Phase 2 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]
 - [[Sources Index#Audio Sources Checked 2026-06-06]]

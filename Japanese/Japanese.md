@@ -81,6 +81,7 @@ Goal: reach usable N5 foundations: particles, verb forms, adjectives, first kanj
 | 2.20 | [[Podcast Guide — Japanese Learning Podcasts]] | Controlled beginner listening |
 | 2.21 | [[Keigo — Teineigo (Polite)]] | です/ます as the baseline register |
 | 2.22 | [[Social Register — When to Use What]] | When formality matters |
+| 2.23 | [[Phase 2 Weekly Review]] | Weekly evidence check for N5 mechanics and audio practice |
 
 ### 3. Phase 3 — Expansion
 

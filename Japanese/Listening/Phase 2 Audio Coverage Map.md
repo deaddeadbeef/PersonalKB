@@ -27,6 +27,7 @@ Phase 2 does not need a separate local ladder yet because the required content p
 | --- | ---: | --- | --- | --- |
 | [[Phase 2 — Building Blocks]] | 0 | Routes to spine | Routes to QA | Choose the next building-block focus |
 | [[Phase 2 Authentic Audio Spine]] | 0 | Primary native/official route | Quality bar included | Choose the source segment for the week |
+| [[Phase 2 Weekly Review]] | 0 | Logs spine segment | Logs QA evidence | Record weekly proof before advancing |
 | [[N5 Grammar — Particles]] | 45 | Course/tutor sentences with visible particles | Covered by QA | Hear は, が, を, に, and で in short sentences |
 | [[N5 Grammar — Verb Forms]] | 69 | Course grammar audio or tutor model | Covered by QA | Hear dictionary, ます, ない, て, and た forms |
 | [[N5 Grammar — Adjectives]] | 54 | Description-heavy course audio | Covered by QA | Hear い-adjective and な-adjective endings |
@@ -78,7 +79,7 @@ These are real gaps:
 
 ## Next Coverage Targets
 
-- Add a Phase 2 weekly review page before Phase 2 becomes the active dashboard phase.
+- Use [[Phase 2 Weekly Review]] before Phase 2 becomes the active dashboard phase.
 - Add a pronunciation-correction log when a real suspect Phase 2 clip is found.
 - Keep Phase 2 local practice page-level for now; create a separate ladder only if daily study starts requiring too much clip hunting.
 
@@ -86,6 +87,7 @@ These are real gaps:
 
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Authentic Audio Spine]]
+- [[Phase 2 Weekly Review]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]
