@@ -38,6 +38,8 @@ PLACEHOLDER_RE = re.compile(
 )
 WIKILINK_RE = re.compile(r"(!)?\[\[([^\]]+)\]\]")
 WORD_RE = re.compile(r"\b[\w'-]+\b", re.UNICODE)
+AUDIO_EMBED_RE = re.compile(r"!\[\[[^\]]+\.mp3(?:[#|][^\]]*)?\]\]", re.IGNORECASE)
+AUDIO_EMBED_PAGE_LIMIT = 250
 
 
 @dataclass(frozen=True)
@@ -220,6 +222,14 @@ def audit() -> dict[str, object]:
             if PLACEHOLDER_RE.search(line):
                 placeholder_hits.append({"file": note.rel, "line": line_no, "text": line.strip()})
 
+    heavy_audio_embed_pages = []
+    for note in load_notes(content_md_files):
+        audio_embeds = len(AUDIO_EMBED_RE.findall(note.text))
+        if audio_embeds > AUDIO_EMBED_PAGE_LIMIT:
+            heavy_audio_embed_pages.append(
+                {"file": note.rel, "audio_embeds": audio_embeds, "limit": AUDIO_EMBED_PAGE_LIMIT}
+            )
+
     broken_links = []
     inbound = Counter()
     for note in load_notes(content_md_files):
@@ -252,6 +262,7 @@ def audit() -> dict[str, object]:
         "missing_confidence": len(missing_confidence),
         "missing_references": len(missing_references),
         "placeholder_hits": len(placeholder_hits),
+        "heavy_audio_embed_pages": len(heavy_audio_embed_pages),
         "broken_link_occurrences": len(broken_links),
         "orphan_articles": len(orphans),
     }
@@ -263,6 +274,12 @@ def audit() -> dict[str, object]:
     write_note_list(REPORT_DIR / "audit-missing-confidence.md", "Missing confidence Frontmatter", missing_confidence)
     write_note_list(REPORT_DIR / "audit-missing-references.md", "Missing References Section", missing_references)
     write_rows(REPORT_DIR / "audit-placeholder-hits.md", "Placeholder Hits", placeholder_hits, ["file", "line", "text"])
+    write_rows(
+        REPORT_DIR / "audit-heavy-audio-embed-pages.md",
+        "Heavy Audio Embed Pages",
+        heavy_audio_embed_pages,
+        ["file", "audio_embeds", "limit"],
+    )
     write_rows(REPORT_DIR / "audit-broken-links.md", "Broken Wiki Links", broken_links, ["file", "target", "embedded"])
     write_note_list(REPORT_DIR / "audit-orphans.md", "Orphan Articles", orphans)
 

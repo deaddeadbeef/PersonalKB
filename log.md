@@ -713,3 +713,22 @@ Verification:
 - Phase 3 coverage count check across required pages: 494 embedded MP3 clips.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] fix | Japanese audio index embed overload
+
+Scope: prevent the raw Japanese audio catalog from forcing Obsidian to render the entire MP3 library as inline audio controls.
+
+Changed content files:
+- `Japanese/_audio/Audio Index.md`
+
+Maintenance changes:
+- Converted the all-clips audio catalog from embedded MP3 players to ordinary clip links.
+- Added an audit report for pages that exceed the safe inline MP3 embed threshold.
+
+Verification:
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Full Japanese MP3 validation with `ffprobe`: 1810 checked, 0 bad.
+- Audio embed resolution check across Japanese notes.
+- `git diff --check`
