@@ -42,7 +42,7 @@ Record exact targets. "Listened to a podcast" is not enough.
 | Authentic audio | Source, lesson, timestamp, scene, or segment name |  |
 | Local clips | Current Phase 3 page and clip set |  |
 | Shadowing or transcription | Sentence, paragraph, line, or timestamp range |  |
-| Pitch or reading check | Word, phrase, accent pattern, kanji reading, or rhythm issue |  |
+| Pitch or reading check | Word, phrase, accent pattern, kanji reading, or rhythm issue; use [[Phase 3 Pitch Accent Practice Path]] for pitch |  |
 | QA check | Suspect local clip or source disagreement, if any |  |
 
 ## What Improved
@@ -109,6 +109,7 @@ Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expa
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 3 Pitch Accent Practice Path]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Japanese Learning Dashboard]]

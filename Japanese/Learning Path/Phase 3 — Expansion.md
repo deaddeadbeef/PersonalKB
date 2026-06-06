@@ -123,6 +123,7 @@ Abstract concepts emerge; phonetic component patterns become your primary strate
 Not critical for comprehension, but essential for sounding natural.
 - 📖 [[Pitch Accent — Introduction]]
 - 📖 [[Pitch Accent — Common Patterns]]
+- 📖 [[Phase 3 Pitch Accent Practice Path]]
 - 🧩 Chunks: [[chunk-jp-076|Pitch Not Stress]], [[chunk-jp-077|Four Patterns]], [[chunk-jp-078|Minimal Pairs]]
 
 
@@ -172,6 +173,7 @@ You don't need to produce full keigo yet, but you need to RECOGNIZE it.
 - [ ] ~300 kanji recognized
 - [ ] Following intermediate-level podcasts
 - [ ] Aware of pitch accent patterns
+- [ ] Can check a pitch-accent uncertainty through [[Phase 3 Pitch Accent Practice Path]]
 - [ ] Basic understanding of keigo system
 - [ ] Have one stable Phase 3 authentic audio source in [[Phase 3 Authentic Audio Spine]]
 - [ ] Can pair each required Phase 3 page with audio using [[Phase 3 Audio Coverage Map]]
@@ -217,5 +219,6 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Weekly Review]]
+- [[Phase 3 Pitch Accent Practice Path]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]

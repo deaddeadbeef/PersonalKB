@@ -908,3 +908,35 @@ Verification:
 - Phase 1 audio proof link coverage check.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 3 pitch accent practice path
+
+Scope: add a focused Phase 3 pitch-accent practice route so local pitch clips are used only as drills after OJAD, NHK, Forvo, course audio, tutor, or native-source checks.
+
+Changed content files:
+- `Japanese/Speaking/Pitch Accent/Phase 3 Pitch Accent Practice Path.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 3 — Expansion.md`
+- `Japanese/Listening/Phase 3 Audio Coverage Map.md`
+- `Japanese/Speaking/Pitch Accent/Pitch Accent — Introduction.md`
+- `Japanese/Speaking/Pitch Accent/Pitch Accent — Common Patterns.md`
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+- `Japanese/Speaking/Speaking Overview.md`
+- `Japanese/Study/Phase 3 Weekly Review.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+
+Maintenance changes:
+- Added a Phase 3 pitch-accent practice path with source priority, daily loop, four-week path, card rule, and stop conditions.
+- Routed Phase 3 Start Here, the Phase 3 coverage map, pitch pages, pronunciation QA, speaking hub, dashboard, study index, and Phase 3 weekly review to the new practice path.
+- Replaced the Phase 3 coverage-map pitch backlog item with a concrete practice-page link.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 3 pitch path link coverage check.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

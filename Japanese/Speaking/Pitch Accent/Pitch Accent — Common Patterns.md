@@ -65,10 +65,11 @@ No drop. First mora low, rest high.
 
 
 ## Practice Method
-1. Look up 5 new words per day in [OJAD](https://www.gavo.t.u-tokyo.ac.jp/ojad/)
-2. Mark pitch patterns in your Anki cards
-3. Shadow native audio focusing on pitch
-4. Use [[Pronunciation and Audio Accuracy]] when a local clip and a dictionary/native source disagree
+1. Use [[Phase 3 Pitch Accent Practice Path]] for the source-check order and weekly proof.
+2. Look up up to 5 new words per day in [OJAD](https://www.gavo.t.u-tokyo.ac.jp/ojad/)
+3. Mark pitch patterns in your Anki cards only after checking a reference source
+4. Shadow native audio focusing on pitch
+5. Use [[Pronunciation and Audio Accuracy]] when a local clip and a dictionary/native source disagree
 
 
 ## 🔬 Deep Dive
@@ -103,3 +104,4 @@ Role-play arriving at a Japanese office for the first time. Include: greeting th
 ## References
 - [[Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Phase 3 Pitch Accent Practice Path]]

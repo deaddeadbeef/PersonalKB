@@ -105,14 +105,15 @@ Goal: move toward N4: conditionals, passive/causative, giving/receiving, 1000 wo
 | 3.14 | [[Kanji N4 Essentials]] | Expand kanji recognition |
 | 3.15 | [[Pitch Accent — Introduction]] | Awareness before perfection |
 | 3.16 | [[Pitch Accent — Common Patterns]] | Pattern recognition |
-| 3.17 | [[Common Filler Words and Discourse Markers]] | Natural conversation glue |
-| 3.18 | [[Intermediate Listening Resources]] | Move beyond beginner audio |
-| 3.19 | [[YouTube Channels for Japanese Learners]] | Visual and graded input |
-| 3.20 | [[Anime and Drama — Immersion Listening]] | Entertainment as study, with guardrails |
-| 3.21 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
-| 3.22 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
-| 3.23 | [[Culture Overview]] | Cultural orientation |
-| 3.24 | [[Phase 3 Weekly Review]] | Prove N4 audio, pitch, and intermediate-listening progress |
+| 3.17 | [[Phase 3 Pitch Accent Practice Path]] | Source-checked pitch practice with local clips as drills |
+| 3.18 | [[Common Filler Words and Discourse Markers]] | Natural conversation glue |
+| 3.19 | [[Intermediate Listening Resources]] | Move beyond beginner audio |
+| 3.20 | [[YouTube Channels for Japanese Learners]] | Visual and graded input |
+| 3.21 | [[Anime and Drama — Immersion Listening]] | Entertainment as study, with guardrails |
+| 3.22 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
+| 3.23 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
+| 3.24 | [[Culture Overview]] | Cultural orientation |
+| 3.25 | [[Phase 3 Weekly Review]] | Prove N4 audio, pitch, and intermediate-listening progress |
 
 ### 4. Phase 4 — Intermediate Mastery
 
@@ -219,7 +220,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Phase 3 Weekly Review]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
 
@@ -228,6 +229,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[Speaking Overview]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pitch Accent — Introduction]] · [[Pitch Accent — Common Patterns]]
+- [[Phase 3 Pitch Accent Practice Path]]
 - [[Pronunciation — Difficult Sounds for English Speakers]]
 - [[Conversation Patterns — Greetings and Introductions]] · [[Conversation Patterns — Daily Interactions]] · [[Conversation Patterns — Shopping and Restaurants]]
 - [[Self-Introduction Template]] · [[Common Filler Words and Discourse Markers]]

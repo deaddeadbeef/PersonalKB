@@ -29,7 +29,7 @@ flowchart TD
 
 ## ⚙️ Core Mechanics
 
-Use [[Pronunciation and Audio Accuracy]] for source priority. Local pitch clips are awareness drills; for pitch decisions, check an accent dictionary, native course audio, or tutor feedback.
+Use [[Pronunciation and Audio Accuracy]] for source priority. Local pitch clips are awareness drills; for pitch decisions, check an accent dictionary, native course audio, or tutor feedback. During Phase 3, use [[Phase 3 Pitch Accent Practice Path]] to turn these examples into a weekly source-checked routine.
 
 ## Minimal Pairs
 
@@ -102,3 +102,4 @@ Role-play arriving at a Japanese office for the first time. Include: greeting th
 ## References
 - [[Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Phase 3 Pitch Accent Practice Path]]

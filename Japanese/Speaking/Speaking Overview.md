@@ -22,6 +22,7 @@ Speaking Japanese requires mastering pronunciation, pitch accent, appropriate fo
 ### Pitch Accent
 - [[Pitch Accent — Introduction]] — what it is and why it matters
 - [[Pitch Accent — Common Patterns]] — the four accent patterns
+- [[Phase 3 Pitch Accent Practice Path]] — source-checked Phase 3 routine for pitch practice
 - Japanese is NOT a stress language — it uses pitch (high/low) patterns
 - Wrong pitch = foreign accent or wrong word entirely
 
@@ -59,3 +60,4 @@ See: [[Culture Overview]] and [[Keigo — Overview and Register System]]
 - [[Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
+- [[Phase 3 Pitch Accent Practice Path]]

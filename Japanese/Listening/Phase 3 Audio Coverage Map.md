@@ -42,6 +42,7 @@ Phase 3 does not need a separate local ladder yet. The required content pages al
 | [[Kanji N4 Essentials]] | 42 | Course vocabulary audio for N4 kanji words | Covered by QA | Hear kanji vocabulary before testing recall |
 | [[Pitch Accent — Introduction]] | 8 | OJAD/NHK/Forvo/tutor reference | Primary QA target | Learn what to check; do not trust TTS pitch alone |
 | [[Pitch Accent — Common Patterns]] | 13 | OJAD/NHK/Forvo/tutor reference | Primary QA target | Compare minimal patterns with references |
+| [[Phase 3 Pitch Accent Practice Path]] | 0 | OJAD/NHK/Forvo/tutor/native route | Primary QA target | Turn pitch pages into a source-checked routine |
 | [[Common Filler Words and Discourse Markers]] | 22 | Native conversation or tutor examples | Covered by QA | Hear filler words as timing devices |
 | [[Intermediate Listening Resources]] | 3 | Primary intermediate source menu | Routes to QA | Choose repeatable input, not random listening |
 | [[YouTube Channels for Japanese Learners]] | 5 | Graded video with replayable segment | Routes to QA | Use short clips with transcripts/subtitles when possible |
@@ -59,7 +60,7 @@ Total local coverage across the required Phase 3 pages: 494 embedded MP3 clips.
 | 1 | [[N5 Grammar — Verb Forms]], [[N4 Grammar — Conditional Forms]], [[N4 Grammar — Passive and Causative]], [[N4 Grammar — Giving and Receiving]] | Repeat target grammar examples aloud | Course/tutor segment with the target pattern visible in text | Say three target-pattern sentences without reading |
 | 2 | [[N4 Grammar — Compound Sentences]], [[N4 Grammar — Potential and Volitional]], [[Core 1000 — Conversational Fluency]] | Drill longer sentence and vocabulary clips | Graded/intermediate audio with transcript | Shadow one longer sentence without losing particles |
 | 3 | [[Thematic Vocabulary — Travel and Transportation]], [[Thematic Vocabulary — Body and Health]], [[Thematic Vocabulary — Numbers, Time, and Dates]], [[Onomatopoeia — Sound and State Words]], [[Kanji N4 Essentials]] | Drill practical domains and N4 kanji vocabulary | Practical dialogue, short article/audio pair, or tutor recording | Summarize one short segment and reuse five words aloud |
-| 4 | [[Pitch Accent — Introduction]], [[Pitch Accent — Common Patterns]], [[Common Filler Words and Discourse Markers]], [[Intermediate Listening Resources]], [[YouTube Channels for Japanese Learners]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]], [[Keigo — Overview and Register System]] | Drill pitch/filler/media terms only after source checks | One repeatable intermediate or native segment plus accent reference | Shadow one short segment and check one pitch/accent issue |
+| 4 | [[Pitch Accent — Introduction]], [[Pitch Accent — Common Patterns]], [[Phase 3 Pitch Accent Practice Path]], [[Common Filler Words and Discourse Markers]], [[Intermediate Listening Resources]], [[YouTube Channels for Japanese Learners]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]], [[Keigo — Overview and Register System]] | Drill pitch/filler/media terms only after source checks | One repeatable intermediate or native segment plus accent reference | Shadow one short segment and check one pitch/accent issue |
 
 ## Gap Policy
 
@@ -79,7 +80,7 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Use [[Phase 3 Weekly Review]] before Phase 3 becomes the active dashboard phase.
-- Add a focused pitch-accent practice path after Phase 3 audio evidence is in place.
+- Use [[Phase 3 Pitch Accent Practice Path]] after Phase 3 audio evidence is in place.
 - Use [[Phase 4 Audio Coverage Map]] before starting Phase 4 content.
 - Keep the local drills page-level for now; create a Phase 3 ladder only if daily study starts requiring too much clip hunting.
 
@@ -88,6 +89,7 @@ These are real gaps:
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Weekly Review]]
+- [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Intermediate Listening Resources]]
