@@ -169,7 +169,7 @@ Month thirteen counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 4 in [[Phase 5 Audio Assignment Ladder]]. Block 4 moves into N2/N1 benchmark and refinement days: JLPT-style listening, real-input transfer, bottleneck diagnosis, and long-term maintenance.
+After these success criteria are true, continue to [[Fourteenth Month Japanese Study Plan]]. It wraps Block 4 of [[Phase 5 Audio Assignment Ladder]] and moves into N2/N1 benchmark and refinement days: JLPT-style listening, real-input transfer, bottleneck diagnosis, and long-term maintenance.
 
 Before starting Block 4, choose one JLPT-style listening item and one real native input segment on the same topic, role, or function.
 
@@ -177,6 +177,7 @@ Before starting Block 4, choose one JLPT-style listening item and one real nativ
 
 - [[Japanese Learning Dashboard]]
 - [[Twelfth Month Japanese Study Plan]]
+- [[Fourteenth Month Japanese Study Plan]]
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Authentic Audio Spine]]

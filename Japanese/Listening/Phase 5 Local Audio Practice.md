@@ -25,6 +25,8 @@ For Block 2, use [[Twelfth Month Japanese Study Plan]] as the learner-facing wra
 
 For Block 3, use [[Thirteenth Month Japanese Study Plan]] as the learner-facing wrapper around the nuance, pitch, idiom, discourse-marker, and grammar-comparison clips below, so every drill stays tied to native/tutor/course context, a reference route, and a checked output or explanation.
 
+For Block 4, use [[Fourteenth Month Japanese Study Plan]] as the learner-facing wrapper around benchmark and refinement days, so local diagnostic clips stay tied to a JLPT-style item, real native input on the same function, a named bottleneck, and a next-source decision.
+
 ## Session Loop
 
 Run this loop for 10 minutes on a minimum Phase 5 day or 30 minutes on a good day:
@@ -216,6 +218,7 @@ After listening, write one line in [[Phase 5 Weekly Review]]:
 - [[Eleventh Month Japanese Study Plan]]
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
+- [[Fourteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]

@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 20-30 minutes.
 
-At the start of the week, copy the current block from [[Phase 5 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. For Block 1, use [[Eleventh Month Japanese Study Plan]] as the daily execution path. For Block 2, use [[Twelfth Month Japanese Study Plan]] as the daily execution path. For Block 3, use [[Thirteenth Month Japanese Study Plan]] as the daily execution path.
+At the start of the week, copy the current block from [[Phase 5 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. For Block 1, use [[Eleventh Month Japanese Study Plan]] as the daily execution path. For Block 2, use [[Twelfth Month Japanese Study Plan]] as the daily execution path. For Block 3, use [[Thirteenth Month Japanese Study Plan]] as the daily execution path. For Block 4, use [[Fourteenth Month Japanese Study Plan]] as the daily execution path.
 
 Phase 5 review is not a passive immersion diary. Each week should identify one exact native source segment, one local drill target from [[Phase 5 Local Audio Practice]] or the current page, one output attempt, and one pronunciation, pitch, reading, register, or naturalness check. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
@@ -125,6 +125,7 @@ Do not treat Phase 5 as stable until these are true:
 - [[Eleventh Month Japanese Study Plan]]
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
+- [[Fourteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Local Audio Practice]]

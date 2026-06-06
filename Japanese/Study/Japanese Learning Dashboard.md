@@ -37,6 +37,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Eleventh month plan | [[Eleventh Month Japanese Study Plan]] | Starts Phase 5 with native-source media work, local precision drills, summary, transcription, shadowing, mining, and weekly audio proof |
 | Twelfth month plan | [[Twelfth Month Japanese Study Plan]] | Turns Phase 5 Block 2 into full keigo, professional register, workplace/service audio, recorded output, and feedback proof |
 | Thirteenth month plan | [[Thirteenth Month Japanese Study Plan]] | Turns Phase 5 Block 3 into idiom, filler, pitch, stance, and grammar-nuance work with source-backed reuse proof |
+| Fourteenth month plan | [[Fourteenth Month Japanese Study Plan]] | Turns Phase 5 Block 4 into JLPT-style listening, real-native transfer, bottleneck diagnosis, and next-source proof |
 | First audio assignment | [[Phase 1 Audio Starter Assignment]] | Gives Week 1 a concrete authentic source, local clip set, and evidence target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keeps Weeks 1-4 tied to concrete authentic/local/evidence targets |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keeps Weeks 5-12 tied to concrete authentic/local/evidence targets |
@@ -64,7 +65,7 @@ Stay here until the checkpoint is real:
 
 Do not spend serious time on N3 grammar, keigo, business Japanese, native news, or advanced kanji yet. They stay visible in the vault for later, but they are not part of the current work queue.
 
-## Fifty-Six-Week Starter Runway
+## Sixty-Week Starter Runway
 
 | Weeks | Main outcome | Study pages | Done when |
 | --- | --- | --- | --- |
@@ -83,6 +84,7 @@ Do not spend serious time on N3 grammar, keigo, business Japanese, native news, 
 | 45-48 | Native-source Phase 5 work becomes active | [[Eleventh Month Japanese Study Plan]], [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Audio Coverage Map]], [[Advanced Listening Resources]], [[NHK World — News Listening Practice]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]] | You can name one native-source segment, summarize it without English scaffolding, shadow or transcribe 20-60 seconds, and classify one mined line by register/context |
 | 49-52 | Professional register becomes source-checked output | [[Twelfth Month Japanese Study Plan]], [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Audio Coverage Map]], [[Keigo — Overview and Register System]], [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]], [[Advanced Output and Register Feedback Log]] | You can name a role map, produce checked sonkeigo and kenjogo lines, record one professional output, and log the model, mismatch, correction, and next test |
 | 53-56 | Nuance becomes source-backed reuse | [[Thirteenth Month Japanese Study Plan]], [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Audio Coverage Map]], [[Idioms and Proverbs — ことわざ]], [[Common Filler Words and Discourse Markers]], [[Pitch Accent — Common Patterns]], [[Grammar — Comparison Across Levels]], [[Advanced Output and Register Feedback Log]] | You can classify one idiom, explain one filler by timing/stance, check one pitch item by reference route, and reuse one nuanced item in a checked sentence |
+| 57-60 | Benchmark work becomes a refinement loop | [[Fourteenth Month Japanese Study Plan]], [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Audio Coverage Map]], [[JLPT Overview — N5 to N1]], [[Study Roadmap — Intermediate to Advanced]], [[Advanced Listening Resources]], [[Phase 5 Weekly Review]] | You can pair one JLPT-style task with real native input, name the bottleneck, separate speed/vocabulary/stamina, and choose the next exact source segment |
 
 Use JLPT levels as a map, not as the first goal. The official JLPT descriptions are skill-based reading and listening summaries, not a complete curriculum or official fixed kanji/vocabulary list.
 
@@ -184,12 +186,13 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 53. [[Eleventh Month Japanese Study Plan]]
 54. [[Twelfth Month Japanese Study Plan]]
 55. [[Thirteenth Month Japanese Study Plan]]
-56. [[Phase 5 Authentic Audio Spine]]
-57. [[Phase 5 Local Audio Practice]]
-58. [[Phase 5 Audio Assignment Ladder]]
-59. [[Phase 5 Audio Coverage Map]]
-60. [[Advanced Output and Register Feedback Log]]
-61. [[Phase 5 Weekly Review]]
+56. [[Fourteenth Month Japanese Study Plan]]
+57. [[Phase 5 Authentic Audio Spine]]
+58. [[Phase 5 Local Audio Practice]]
+59. [[Phase 5 Audio Assignment Ladder]]
+60. [[Phase 5 Audio Coverage Map]]
+61. [[Advanced Output and Register Feedback Log]]
+62. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -219,6 +222,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Eleventh Month Japanese Study Plan]]
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
+- [[Fourteenth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

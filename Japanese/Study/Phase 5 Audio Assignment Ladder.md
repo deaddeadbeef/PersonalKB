@@ -15,11 +15,12 @@ tier-coverage: [practice]
 2. Use [[Eleventh Month Japanese Study Plan]] as the Block 1 execution path.
 3. Use [[Twelfth Month Japanese Study Plan]] as the Block 2 execution path.
 4. Use [[Thirteenth Month Japanese Study Plan]] as the Block 3 execution path.
-5. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
-6. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
-7. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
-8. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
-9. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+5. Use [[Fourteenth Month Japanese Study Plan]] as the Block 4 execution path.
+6. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
+7. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
+8. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
+9. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
+10. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Phase 5 blocks can take more than one week. Advance only when native-source work, local precision drills, feedback, and active proof are all real.
 
@@ -123,6 +124,7 @@ Phase 5 is where local clips are most likely to feel productive while avoiding t
 - [[Eleventh Month Japanese Study Plan]]
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
+- [[Fourteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
