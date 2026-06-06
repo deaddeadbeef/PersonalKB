@@ -27,6 +27,7 @@ Phase 4 does not need a separate local ladder yet. The required content pages al
 | --- | ---: | --- | --- | --- |
 | [[Phase 4 — Intermediate Mastery]] | 0 | Routes to spine | Routes to QA | Choose the next N3/intermediate focus |
 | [[Phase 4 Authentic Audio Spine]] | 0 | Primary native-speed route | Quality bar included | Choose the repeatable segment for the week |
+| [[Phase 4 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA and register evidence | Decide next week's native-speed target |
 | [[N3 Grammar — Formal Expressions]] | 26 | Formal course/tutor/native examples | Covered by QA | Hear formal endings and service-style rhythm in sentences |
 | [[N3 Grammar — Complex Conjunctions]] | 36 | Transcripted speech with longer clause chains | Covered by QA | Hear how complex links affect pacing |
 | [[N3 Grammar — Nominalization and Quotation]] | 38 | Interview, narration, or course audio with reporting patterns | Covered by QA | Hear こと, の, という, and と思う in context |
@@ -68,10 +69,11 @@ These are real gaps:
 - A Phase 4 page that asks for listening, shadowing, keigo, business, or register practice without naming the local/authentic layer.
 - A keigo, business, idiom, pitch, or discourse-timing claim that relies on TTS alone.
 - A suspect local clip that is not recorded in [[Pronunciation Correction Log]] before it returns to daily practice.
+- A Phase 4 week with no [[Phase 4 Weekly Review]] evidence for the native-speed segment, local clip set, and register or pronunciation check.
 
 ## Next Coverage Targets
 
-- Add a Phase 4 weekly review page before Phase 4 becomes the active dashboard phase.
+- Use [[Phase 4 Weekly Review]] before Phase 4 becomes the active dashboard phase.
 - Add a focused keigo/register production checklist after Phase 4 audio evidence is in place.
 - Use [[Phase 5 Audio Coverage Map]] before starting Phase 5 content.
 - Keep Phase 4 local practice page-level for now; create a Phase 4 ladder only if daily study starts requiring too much clip hunting.
@@ -80,6 +82,7 @@ These are real gaps:
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Weekly Review]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Advanced Listening Resources]]

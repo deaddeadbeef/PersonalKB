@@ -36,6 +36,8 @@ Before starting Steps 36-48, open [[Phase 4 Authentic Audio Spine]] and [[Phase 
 
 Use a repeatable native-speed or official-course segment as the model. Use the MP3 clips embedded in the Phase 4 grammar, kanji, vocabulary, keigo, business, culture, and listening pages as short drills.
 
+Use [[Phase 4 Weekly Review]] at the end of each week to record the exact native-speed segment, local clip set, register or pronunciation check, and shadowing, transcription, summary, or role-play proof.
+
 Phase 4 asks you to produce register-sensitive Japanese, so do not use local TTS as the only authority. Every block should have:
 
 - One exact native-speed segment you repeat across multiple days.
@@ -149,6 +151,7 @@ Aizuchi, indirectness, discourse markers — sound like a real speaker.
 - [ ] Have one stable Phase 4 native-speed audio source in [[Phase 4 Authentic Audio Spine]]
 - [ ] Can pair each required Phase 4 page with audio using [[Phase 4 Audio Coverage Map]]
 - [ ] Have checked keigo, register, pitch, or reading issues through [[Pronunciation and Audio Accuracy]] when local clips are not enough
+- [ ] Have weekly audio and register evidence recorded in [[Phase 4 Weekly Review]]
 - [ ] Ready for N3 test
 
 **Previous:** [[Phase 3 — Expansion]]
@@ -198,4 +201,6 @@ Push into faster, more natural content.
 - [[Sources Index]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]
+- [[Pronunciation Correction Log]]

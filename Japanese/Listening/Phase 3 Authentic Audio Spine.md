@@ -30,6 +30,7 @@ Use this pairing on any Phase 3 study day:
 | 3-5 min | Current Phase 3 page embeds | Repeat the grammar, vocabulary, pitch, or discourse-marker clips on the page you are studying |
 | 10-20 min | This authentic spine | Listen once for meaning, once with text, then shadow one short segment |
 | 2 min | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] when needed | Check one pitch, reading, rhythm, or suspect-clip issue |
+| 1 min | [[Phase 3 Weekly Review]] or daily note | Record the exact segment, local clip set, and one sound or pattern to revisit |
 
 When time is short, keep one authentic sentence and one local clip. Do not turn Phase 3 into silent reading or passive background audio only.
 
@@ -61,7 +62,7 @@ Treat audio as usable for Phase 3 only if it meets these conditions:
 
 ## Weekly Proof
 
-At the end of each week, record:
+At the end of each week, record evidence in [[Phase 3 Weekly Review]]:
 
 - Which authentic source and exact segment did I repeat?
 - Which Phase 3 page did it support?
@@ -74,6 +75,7 @@ At the end of each week, record:
 
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Phase 3 Weekly Review]]
 - [[Intermediate Listening Resources]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]

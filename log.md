@@ -845,3 +845,41 @@ Verification:
 - Phase 5 proof-page coverage check.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 3-4 weekly audio QA loop
+
+Scope: fill the Phase 3 and Phase 4 review gap so intermediate Japanese study has weekly evidence for authentic audio, local drills, pitch/register checks, and active shadowing or output before Phase 5.
+
+Changed content files:
+- `Japanese/Study/Phase 3 Weekly Review.md`
+- `Japanese/Study/Phase 4 Weekly Review.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 3 — Expansion.md`
+- `Japanese/Learning Path/Phase 4 — Intermediate Mastery.md`
+- `Japanese/Listening/Phase 3 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 3 Audio Coverage Map.md`
+- `Japanese/Listening/Phase 4 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 4 Audio Coverage Map.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Study/Phase 2 Weekly Review.md`
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+- `Japanese/Speaking/Pronunciation Correction Log.md`
+
+Maintenance changes:
+- Added Phase 3 and Phase 4 weekly review pages with exact audio-target, local-clip, pitch/register, and active-proof tables.
+- Routed Start Here, dashboard, study index, resource policy, daily routine, phase pages, audio spines, and coverage maps to the new review pages.
+- Updated pronunciation QA guidance so normal learner corrections route to the current phase review while suspect clip-quality issues stay in the correction log.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 3-4 review link coverage check.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

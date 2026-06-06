@@ -27,6 +27,7 @@ Phase 3 does not need a separate local ladder yet. The required content pages al
 | --- | ---: | --- | --- | --- |
 | [[Phase 3 — Expansion]] | 0 | Routes to spine | Routes to QA | Choose the next N4 expansion focus |
 | [[Phase 3 Authentic Audio Spine]] | 0 | Primary human/official route | Quality bar included | Choose the repeatable segment for the week |
+| [[Phase 3 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA evidence | Decide next week's N4 audio target |
 | [[N5 Grammar — Verb Forms]] | 69 | Course/tutor grammar audio | Covered by QA | Review te-form before N4 extensions |
 | [[N4 Grammar — Conditional Forms]] | 17 | Conditional examples in course/tutor dialogue | Covered by QA | Hear たら, ば, なら, and と in sentences |
 | [[N4 Grammar — Passive and Causative]] | 18 | Course/tutor model for affectedness and make/let meaning | Covered by QA | Hear who acts and who is affected |
@@ -73,10 +74,11 @@ These are real gaps:
 - A Phase 3 page that asks for listening, shadowing, pitch, media, or keigo practice without naming the local/authentic layer.
 - A pitch-accent, onomatopoeia, keigo, or media-rhythm claim that relies on TTS alone.
 - A suspect local clip that is not recorded in [[Pronunciation Correction Log]] before it returns to daily practice.
+- A Phase 3 week with no [[Phase 3 Weekly Review]] evidence for the authentic segment, local clip set, and pitch or reading check.
 
 ## Next Coverage Targets
 
-- Add a Phase 3 weekly review page before Phase 3 becomes the active dashboard phase.
+- Use [[Phase 3 Weekly Review]] before Phase 3 becomes the active dashboard phase.
 - Add a focused pitch-accent practice path after Phase 3 audio evidence is in place.
 - Use [[Phase 4 Audio Coverage Map]] before starting Phase 4 content.
 - Keep the local drills page-level for now; create a Phase 3 ladder only if daily study starts requiring too much clip hunting.
@@ -85,6 +87,7 @@ These are real gaps:
 
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Authentic Audio Spine]]
+- [[Phase 3 Weekly Review]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Intermediate Listening Resources]]

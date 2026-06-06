@@ -31,6 +31,7 @@ Use this pairing on any Phase 4 study day:
 | 3-5 min | Current Phase 4 page embeds | Repeat N3 grammar, kanji vocabulary, keigo, business, culture, or discourse-marker clips inside Obsidian |
 | 15-30 min | This authentic spine | Listen once for gist, once with text or notes, then shadow or transcribe one short segment |
 | 2-5 min | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] when needed | Check one pitch, reading, register, rhythm, or suspect-clip issue |
+| 1 min | [[Phase 4 Weekly Review]] or daily note | Record the exact segment, local clip set, and one register or rhythm issue to revisit |
 
 When time is short, keep one native sentence and one local clip. Phase 4 should never become silent grammar reading.
 
@@ -60,7 +61,7 @@ Treat audio as usable for Phase 4 only if it meets these conditions:
 
 ## Weekly Proof
 
-At the end of each week, record:
+At the end of each week, record evidence in [[Phase 4 Weekly Review]]:
 
 - Which native-speed source and exact segment did I repeat?
 - Which Phase 4 page did it support?
@@ -73,6 +74,7 @@ At the end of each week, record:
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Weekly Review]]
 - [[Advanced Listening Resources]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]

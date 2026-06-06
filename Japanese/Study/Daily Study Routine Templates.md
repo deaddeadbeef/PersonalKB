@@ -49,7 +49,7 @@ Use this sparingly. If it creates a review backlog, reduce new cards.
 
 ## Weekly Review
 
-Once per week, open [[Phase 1 Weekly Review]] and record what actually happened.
+Once per week, open the current phase review page and record what actually happened: [[Phase 1 Weekly Review]], [[Phase 2 Weekly Review]], [[Phase 3 Weekly Review]], [[Phase 4 Weekly Review]], or [[Phase 5 Weekly Review]].
 
 Check:
 
@@ -85,3 +85,7 @@ This keeps the chain alive without pretending every day is ideal.
 - [[Japanese Learning Dashboard]]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Phase 2 Weekly Review]]
+- [[Phase 3 Weekly Review]]
+- [[Phase 4 Weekly Review]]
+- [[Phase 5 Weekly Review]]

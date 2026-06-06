@@ -72,7 +72,7 @@ Use JLPT levels as a map, not as the first goal. The official JLPT descriptions 
 
 ### Weekly Review: 20 Minutes
 
-Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Review]] while Phase 1 is active, [[Phase 2 Weekly Review]] after the Phase 1 checkpoint is complete, and [[Phase 5 Weekly Review]] when advanced native-source/output work becomes active.
+Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Review]] while Phase 1 is active, then [[Phase 2 Weekly Review]], [[Phase 3 Weekly Review]], [[Phase 4 Weekly Review]], and [[Phase 5 Weekly Review]] as the phase advances.
 
 - What did I finish?
 - What is still fuzzy?
@@ -113,14 +113,16 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 18. [[Phase 3 — Expansion]]
 19. [[Phase 3 Authentic Audio Spine]]
 20. [[Phase 3 Audio Coverage Map]]
-21. [[Phase 4 — Intermediate Mastery]]
-22. [[Phase 4 Authentic Audio Spine]]
-23. [[Phase 4 Audio Coverage Map]]
-24. [[Phase 5 — Advanced]]
-25. [[Phase 5 Authentic Audio Spine]]
-26. [[Phase 5 Audio Coverage Map]]
-27. [[Advanced Output and Register Feedback Log]]
-28. [[Phase 5 Weekly Review]]
+21. [[Phase 3 Weekly Review]]
+22. [[Phase 4 — Intermediate Mastery]]
+23. [[Phase 4 Authentic Audio Spine]]
+24. [[Phase 4 Audio Coverage Map]]
+25. [[Phase 4 Weekly Review]]
+26. [[Phase 5 — Advanced]]
+27. [[Phase 5 Authentic Audio Spine]]
+28. [[Phase 5 Audio Coverage Map]]
+29. [[Advanced Output and Register Feedback Log]]
+30. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -138,7 +140,9 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Phase 3 Weekly Review]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Weekly Review]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]

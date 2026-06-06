@@ -60,7 +60,7 @@ Use this once per study session:
 2. Play the matching local drill from [[Phase 1 Local Audio Practice]].
 3. Record yourself once.
 4. Compare only one feature: vowel length, small っ, particle reading, ら行, ん, or pitch drop.
-5. Log one learner correction in [[Phase 1 Weekly Review]] or [[Phase 2 Weekly Review]]. If the local clip itself is suspect, add it to [[Pronunciation Correction Log]].
+5. Log one learner correction in the current phase review: [[Phase 1 Weekly Review]], [[Phase 2 Weekly Review]], [[Phase 3 Weekly Review]], [[Phase 4 Weekly Review]], or [[Phase 5 Weekly Review]]. If the local clip itself is suspect, add it to [[Pronunciation Correction Log]].
 
 One correction per day is enough. Pronunciation improves by repeated accurate comparison, not by trying to fix every sound at once.
 
@@ -71,12 +71,15 @@ One correction per day is enough. Pronunciation improves by repeated accurate co
 | Phase 1 | Avoid false habits: kana timing, particles, long vowels, small っ, and one native audio spine |
 | Phase 2 | Add difficult sounds, ら行, ん variations, vowel devoicing, and daily shadowing |
 | Phase 3 | Add pitch-accent awareness and dictionary checks for common words |
-| Later | Use tutor/native feedback and native-speed audio for rhythm, register, and natural delivery |
+| Phase 4 | Check register, keigo, rhythm, and native-speed segments against human or official-course models |
+| Phase 5 | Use tutor/native feedback and native-source output checks for rhythm, register, pitch, and natural delivery |
 
 ## References
 
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Phase 3 Weekly Review]]
+- [[Phase 4 Weekly Review]]
 - [[Pronunciation Correction Log]]
 - [[Pronunciation — Difficult Sounds for English Speakers]]
 - [[Pitch Accent — Introduction]]

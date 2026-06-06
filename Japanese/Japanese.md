@@ -112,6 +112,7 @@ Goal: move toward N4: conditionals, passive/causative, giving/receiving, 1000 wo
 | 3.21 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
 | 3.22 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
 | 3.23 | [[Culture Overview]] | Cultural orientation |
+| 3.24 | [[Phase 3 Weekly Review]] | Prove N4 audio, pitch, and intermediate-listening progress |
 
 ### 4. Phase 4 — Intermediate Mastery
 
@@ -137,6 +138,7 @@ Goal: N3-level reading, longer conversations, intermediate grammar, 650 kanji, a
 | 4.16 | [[Numbers and Superstitions]] | Culture-linked number usage |
 | 4.17 | [[Advanced Listening Resources]] | Faster and more natural audio |
 | 4.18 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
+| 4.19 | [[Phase 4 Weekly Review]] | Prove native-speed, register, and N3 audio progress |
 
 ### 5. Phase 5 — Advanced
 
@@ -217,7 +219,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Phase 3 Weekly Review]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
 
@@ -243,6 +245,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[JLPT Overview — N5 to N1]]
 - [[Study Roadmap — Beginner to Intermediate]] · [[Study Roadmap — Intermediate to Advanced]]
 - [[Resources Index — Textbooks, Apps, and Tools]] · [[Daily Study Routine Templates]]
+- [[Phase 1 Weekly Review]] · [[Phase 2 Weekly Review]] · [[Phase 3 Weekly Review]] · [[Phase 4 Weekly Review]] · [[Phase 5 Weekly Review]]
 - [[Japanese Study Index]]
 
 ---

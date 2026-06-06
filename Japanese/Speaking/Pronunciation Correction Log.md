@@ -19,7 +19,7 @@ Add an entry before changing learner-facing practice pages. Keep the entry short
 4. If the source text or reading hint is wrong, fix the manifest/source text before regenerating audio.
 5. Run the manifest and reading-hint checks before returning the clip to a daily path.
 
-Do not use this page as a pronunciation diary. Normal learner corrections belong in [[Phase 1 Weekly Review]], [[Phase 2 Weekly Review]], [[Phase 5 Weekly Review]], or [[Advanced Output and Register Feedback Log]]. This page is for clip-quality issues.
+Do not use this page as a pronunciation diary. Normal learner corrections belong in [[Phase 1 Weekly Review]], [[Phase 2 Weekly Review]], [[Phase 3 Weekly Review]], [[Phase 4 Weekly Review]], [[Phase 5 Weekly Review]], or [[Advanced Output and Register Feedback Log]]. This page is for clip-quality issues.
 
 ## Open Suspect Clips
 
@@ -72,6 +72,8 @@ A corrected local clip can return to [[Phase 1 Local Audio Practice]], a Phase 2
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 1 Weekly Review]]
 - [[Phase 2 Weekly Review]]
+- [[Phase 3 Weekly Review]]
+- [[Phase 4 Weekly Review]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]
 - `log.md`

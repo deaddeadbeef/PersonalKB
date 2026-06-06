@@ -26,12 +26,14 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - [[Phase 2 Authentic Audio Spine]] — official/native audio to pair with N5 building-block study
 - [[Phase 3 Audio Coverage Map]] — match each required Phase 3 page to audio, pitch, media, and QA support
 - [[Phase 3 Authentic Audio Spine]] — human/official audio for N4, pitch, intermediate listening, and media practice
+- [[Phase 3 Weekly Review]] — record the exact N4/intermediate audio evidence for the week
 - [[Beginner Listening Resources]] — slow, clear, with transcripts
 - Focus: individual words, basic sentence patterns, numbers
 
 ### Intermediate
 - [[Phase 4 Audio Coverage Map]] — match each required Phase 4 page to local clips, native-speed audio, and QA
 - [[Phase 4 Authentic Audio Spine]] — native-speed or official-course audio for N3, keigo, business, and register practice
+- [[Phase 4 Weekly Review]] — record native-speed, register, and active-use audio evidence
 - [[Intermediate Listening Resources]] — natural speed with some support
 - Focus: connected speech, context clues, inference
 
@@ -55,8 +57,10 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Authentic Audio Spine]]
+- [[Phase 3 Weekly Review]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Weekly Review]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Advanced Output and Register Feedback Log]]
@@ -81,9 +85,9 @@ For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local A
 
 For Phase 2, use [[Phase 2 Authentic Audio Spine]] plus the embedded clips on the current grammar, vocabulary, kanji, or conversation page. Use [[Phase 2 Audio Coverage Map]] when you need to know which page-level clips and authentic segment belong together.
 
-For Phase 3, use [[Phase 3 Authentic Audio Spine]] plus the embedded clips on the current N4, pitch, vocabulary, media, or culture page. Use [[Phase 3 Audio Coverage Map]] when intermediate listening or media practice needs a repeatable authentic segment instead of random immersion.
+For Phase 3, use [[Phase 3 Authentic Audio Spine]] plus the embedded clips on the current N4, pitch, vocabulary, media, or culture page. Use [[Phase 3 Audio Coverage Map]] when intermediate listening or media practice needs a repeatable authentic segment instead of random immersion. Record weekly proof in [[Phase 3 Weekly Review]].
 
-For Phase 4, use [[Phase 4 Authentic Audio Spine]] plus the embedded clips on the current N3, kanji, keigo, business, culture, or advanced-listening page. Use [[Phase 4 Audio Coverage Map]] when native-speed audio, register, or longer conversation practice needs a repeatable segment instead of passive immersion.
+For Phase 4, use [[Phase 4 Authentic Audio Spine]] plus the embedded clips on the current N3, kanji, keigo, business, culture, or advanced-listening page. Use [[Phase 4 Audio Coverage Map]] when native-speed audio, register, or longer conversation practice needs a repeatable segment instead of passive immersion. Record weekly proof in [[Phase 4 Weekly Review]].
 
 For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local clips only as precision drills, then prove progress with native-source shadowing, transcription, summary, output, or tutor/native feedback. Use [[Phase 5 Audio Coverage Map]] when advanced media, keigo, business, pitch, or JLPT listening needs a concrete audio target. Record output and register fixes in [[Advanced Output and Register Feedback Log]].
 
@@ -108,6 +112,8 @@ For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Phase 3 Weekly Review]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Weekly Review]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Advanced Output and Register Feedback Log]]

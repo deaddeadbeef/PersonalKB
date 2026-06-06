@@ -21,7 +21,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Authentic audio | [[Phase 1 Authentic Audio Spine]] -> [[Phase 2 Authentic Audio Spine]] -> [[Phase 3 Authentic Audio Spine]] -> [[Phase 4 Authentic Audio Spine]] -> [[Phase 5 Authentic Audio Spine]] | Choose the native/official audio source for the current phase |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when to trust, correct, or quarantine a clip |
 | Audio coverage | [[Phase 1 Audio Coverage Map]] -> [[Phase 2 Audio Coverage Map]] -> [[Phase 3 Audio Coverage Map]] -> [[Phase 4 Audio Coverage Map]] -> [[Phase 5 Audio Coverage Map]] | Match current phase pages to local clips, authentic audio, and QA |
-| Weekly review | [[Phase 1 Weekly Review]] -> [[Phase 2 Weekly Review]] -> [[Phase 5 Weekly Review]] | Keep the current phase honest and choose the next task |
+| Weekly review | [[Phase 1 Weekly Review]] -> [[Phase 2 Weekly Review]] -> [[Phase 3 Weekly Review]] -> [[Phase 4 Weekly Review]] -> [[Phase 5 Weekly Review]] | Keep the current phase honest and choose the next task |
 | Output proof | [[Advanced Output and Register Feedback Log]] | Record Phase 5 recordings, tutor/native feedback, and register fixes |
 | Resources | [[Resources Index — Textbooks, Apps, and Tools]] | Pick the spine and supporting tools |
 | Benchmark | [[JLPT Overview — N5 to N1]] | Understand level labels without letting them dominate study |
@@ -45,12 +45,16 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Phase 3 Weekly Review]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Weekly Review]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 1 Weekly Review]]
 - [[Phase 2 Weekly Review]]
+- [[Phase 3 Weekly Review]]
+- [[Phase 4 Weekly Review]]
 - [[Phase 5 Weekly Review]]
 - [[Advanced Output and Register Feedback Log]]
 

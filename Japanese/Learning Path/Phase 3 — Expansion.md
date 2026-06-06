@@ -36,6 +36,8 @@ Before starting Steps 22-35, open [[Phase 3 Authentic Audio Spine]] and [[Phase 
 
 Use a repeatable human-recorded or official-course segment as the model. Use the MP3 clips embedded in the Phase 3 grammar, vocabulary, kanji, pitch, listening, and culture pages as short drills.
 
+Use [[Phase 3 Weekly Review]] at the end of each week to record the exact authentic segment, local clip set, pitch or reading check, and shadowing or transcription proof.
+
 Phase 3 introduces pitch accent, intermediate listening, media, and keigo recognition, so do not use local TTS as the only audio authority. Every block should have:
 
 - One authentic audio segment you repeat across multiple days.
@@ -173,6 +175,7 @@ You don't need to produce full keigo yet, but you need to RECOGNIZE it.
 - [ ] Basic understanding of keigo system
 - [ ] Have one stable Phase 3 authentic audio source in [[Phase 3 Authentic Audio Spine]]
 - [ ] Can pair each required Phase 3 page with audio using [[Phase 3 Audio Coverage Map]]
+- [ ] Have weekly audio evidence recorded in [[Phase 3 Weekly Review]]
 
 **Previous:** [[Phase 2 — Building Blocks]]
 **Next:** [[Phase 4 — Intermediate Mastery]]
@@ -213,5 +216,6 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Sources Index]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Phase 3 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
