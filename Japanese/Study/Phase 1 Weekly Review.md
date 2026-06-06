@@ -21,6 +21,7 @@ The review has one job: choose the next small action. If reviews piled up, reduc
 - Phase week: 1 / 2 / 3 / 4
 - Main focus:
 - Course or native-audio source:
+- Starter assignment used: [[Phase 1 Audio Starter Assignment]] / other
 
 ## Completed
 
@@ -111,6 +112,7 @@ Do not move to [[Phase 2 — Building Blocks]] until the [[Phase 1 — Foundatio
 - [[Phase 1 — Foundation]]
 - [[Daily Study Routine Templates]]
 - [[Japanese Learning Dashboard]]
+- [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Phase 1 Local Audio Practice]]

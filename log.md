@@ -1437,3 +1437,36 @@ Verification:
 - Link coverage check for `Daily Audio Loop`: linked from Start Here, dashboard, daily routine, study index, evidence log, and `index.md`.
 - `index.md` MP3 leak check: 0 results.
 - `git diff --check`
+
+## [2026-06-07] curate | Japanese Phase 1 audio starter assignment
+
+Scope: make the first week of Japanese audio practice concrete without changing local MP3 files.
+
+Changed wiki/source files:
+- `Japanese/Study/Phase 1 Audio Starter Assignment.md`
+- `Japanese/Study/Daily Audio Loop.md`
+- `Japanese/Study/Authentic Audio Evidence Log.md`
+- `Japanese/Listening/Phase 1 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 1 Audio Coverage Map.md`
+- `Japanese/Study/Phase 1 Weekly Review.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Japanese.md`
+
+Maintenance changes:
+- Added a first-week assignment page that chooses one Genki, Irodori, or NHK source path and pairs it with Phase 1 local Week 1 drills.
+- Added a copy-ready current-assignment table for [[Authentic Audio Evidence Log]].
+- Added a seven-day starter loop and success criteria for Week 1 proof.
+- Linked the starter assignment from the dashboard, Start Here, daily audio loop, evidence log, Phase 1 spine, coverage map, and weekly review.
+- Did not modify local MP3 files or pronunciation manifests.
+
+Verification:
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4755 files, 2884 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`: same counts after indexing.
+- Link coverage check for `Phase 1 Audio Starter Assignment`: linked from Start Here, dashboard, study index, daily audio loop, evidence log, Phase 1 authentic spine, Phase 1 coverage map, Phase 1 weekly review, and `index.md`.
+- `index.md` MP3 leak check: 0 results.
+- `git diff --check`

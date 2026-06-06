@@ -19,6 +19,8 @@ Every Phase 1 study item needs three things:
 | Authentic model | [[Phase 1 Authentic Audio Spine]] | Keep human-recorded or official-course Japanese as the pronunciation model |
 | QA rule | [[Pronunciation and Audio Accuracy]] | Decide when a clip is safe, suspect, or needs correction |
 
+For the first week, use [[Phase 1 Audio Starter Assignment]] before choosing any extra resource.
+
 Planning pages do not need embedded audio. They need to route clearly to the audio layers. Drill pages and content pages should either embed clips directly or point to the matching weekly clip set.
 
 ## Required Phase 1 Coverage
@@ -36,6 +38,7 @@ Planning pages do not need embedded audio. They need to route clearly to the aud
 | [[Self-Introduction Template]] | 28 | Week 4 native/tutor/course model | Covered by QA | Build the memorized first script |
 | [[Phase 1 Local Audio Practice]] | 41 | Must pair with spine | Explicit correction workflow | Daily 5-minute local drill |
 | [[Phase 1 Authentic Audio Spine]] | 0 | Primary native/official route | Quality bar included | Choose Genki, Irodori, or NHK as the model |
+| [[Phase 1 Audio Starter Assignment]] | 0 | First-week source assignment | Routes to QA and evidence log | Copy the first exact audio target into the evidence log |
 | [[Pronunciation and Audio Accuracy]] | 0 | Uses native/accent references | Primary QA page | Check suspect clips and correction decisions |
 | [[Pronunciation Correction Log]] | 0 | Records corrections | Open/resolved QA log | Keep suspect clips out of daily practice |
 | [[Beginner Listening Resources]] | 0 | Broader external resources | Routes to QA through the audio stack | Use after the Phase 1 defaults are clear |
@@ -74,6 +77,7 @@ These are real gaps:
 ## References
 
 - [[Phase 1 — Foundation]]
+- [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Phase 1 Weekly Review]]

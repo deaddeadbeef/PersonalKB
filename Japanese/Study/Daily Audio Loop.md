@@ -22,6 +22,8 @@ tier-coverage: [practice]
 
 If the authentic segment is not named, the audio loop is incomplete.
 
+If this is your first week, start with [[Phase 1 Audio Starter Assignment]] before choosing anything else.
+
 ## Minimum Day
 
 Use this when time is tight:
@@ -66,6 +68,7 @@ Stop drilling a local clip and use [[Pronunciation Correction Log]] when:
 ## References
 
 - [[Daily Study Routine Templates]]
+- [[Phase 1 Audio Starter Assignment]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Japanese Audio QA Status]]
