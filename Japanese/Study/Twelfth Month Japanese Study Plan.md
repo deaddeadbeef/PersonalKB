@@ -171,7 +171,7 @@ Month twelve counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 3 in [[Phase 5 Audio Assignment Ladder]]. Block 3 moves into idioms, filler timing, stance, implication, pitch, and advanced grammar nuance.
+After these success criteria are true, continue to [[Thirteenth Month Japanese Study Plan]]. It wraps Block 3 of [[Phase 5 Audio Assignment Ladder]] and moves into idioms, filler timing, stance, implication, pitch, and advanced grammar nuance.
 
 Before starting Block 3, choose one native conversation, drama scene, podcast excerpt, tutor example, pitch reference, or course segment where the nuance is audible in context.
 
@@ -179,6 +179,7 @@ Before starting Block 3, choose one native conversation, drama scene, podcast ex
 
 - [[Japanese Learning Dashboard]]
 - [[Eleventh Month Japanese Study Plan]]
+- [[Thirteenth Month Japanese Study Plan]]
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Authentic Audio Spine]]

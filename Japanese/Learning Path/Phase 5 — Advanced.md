@@ -32,7 +32,7 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 49-56, open [[Eleventh Month Japanese Study Plan]], [[Twelfth Month Japanese Study Plan]], [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], [[Phase 5 Audio Assignment Ladder]], and [[Phase 5 Audio Coverage Map]].
+Before starting Steps 49-56, open [[Eleventh Month Japanese Study Plan]], [[Twelfth Month Japanese Study Plan]], [[Thirteenth Month Japanese Study Plan]], [[Phase 5 Authentic Audio Spine]], [[Phase 5 Local Audio Practice]], [[Phase 5 Audio Assignment Ladder]], and [[Phase 5 Audio Coverage Map]].
 
 Use native-speed Japanese as the main source: news, interviews, podcasts, lectures, drama, documentary, workplace audio, tutor recordings, or other human-recorded material with a stable segment you can replay.
 
@@ -158,6 +158,7 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Sources Index]]
 - [[Eleventh Month Japanese Study Plan]]
 - [[Twelfth Month Japanese Study Plan]]
+- [[Thirteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Assignment Ladder]]

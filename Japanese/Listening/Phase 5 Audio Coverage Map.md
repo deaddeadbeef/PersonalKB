@@ -21,7 +21,7 @@ Phase 5 audio support has three layers:
 | Output proof | [[Advanced Output and Register Feedback Log]] | Track recordings, tutor/native feedback, register fixes, and reuse targets |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Use [[Phase 5 Audio Assignment Ladder]] before choosing the current native-source segment and output target. Use [[Phase 5 Local Audio Practice]] for short precision drills. For Block 1, use [[Eleventh Month Japanese Study Plan]] when you need the learner-facing daily path through native media, source labels, news, drama/anime, songs, and summary, transcription, shadowing, or mining proof. For Block 2, use [[Twelfth Month Japanese Study Plan]] when you need the learner-facing daily path through full keigo, professional register, workplace/service audio, role mapping, recorded output, and feedback. Local clips are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
+Use [[Phase 5 Audio Assignment Ladder]] before choosing the current native-source segment and output target. Use [[Phase 5 Local Audio Practice]] for short precision drills. For Block 1, use [[Eleventh Month Japanese Study Plan]] when you need the learner-facing daily path through native media, source labels, news, drama/anime, songs, and summary, transcription, shadowing, or mining proof. For Block 2, use [[Twelfth Month Japanese Study Plan]] when you need the learner-facing daily path through full keigo, professional register, workplace/service audio, role mapping, recorded output, and feedback. For Block 3, use [[Thirteenth Month Japanese Study Plan]] when you need the learner-facing daily path through idioms, fillers, stance, implication, pitch, grammar nuance, reference routes, and checked reuse. Local clips are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
 
 ## Required Phase 5 Coverage
 
@@ -86,6 +86,7 @@ These are real gaps:
 - [[Phase 5 — Advanced]]
 - [[Eleventh Month Japanese Study Plan]]
 - [[Twelfth Month Japanese Study Plan]]
+- [[Thirteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Assignment Ladder]]
