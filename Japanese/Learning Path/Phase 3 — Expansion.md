@@ -30,6 +30,18 @@ flowchart LR
 
 ## ⚙️ Core Mechanics
 
+## Audio Support
+
+Before starting Steps 22-35, open [[Phase 3 Authentic Audio Spine]] and [[Phase 3 Audio Coverage Map]].
+
+Use a repeatable human-recorded or official-course segment as the model. Use the MP3 clips embedded in the Phase 3 grammar, vocabulary, kanji, pitch, listening, and culture pages as short drills.
+
+Phase 3 introduces pitch accent, intermediate listening, media, and keigo recognition, so do not use local TTS as the only audio authority. Every block should have:
+
+- One authentic audio segment you repeat across multiple days.
+- One local clip set tied to the current grammar, vocabulary, pitch, media, or culture page.
+- One pitch, reading, rhythm, or suspect-clip issue checked through [[Pronunciation and Audio Accuracy]] or [[Pronunciation Correction Log]].
+
 ## Grammar — N4 Level
 
 
@@ -159,6 +171,8 @@ You don't need to produce full keigo yet, but you need to RECOGNIZE it.
 - [ ] Following intermediate-level podcasts
 - [ ] Aware of pitch accent patterns
 - [ ] Basic understanding of keigo system
+- [ ] Have one stable Phase 3 authentic audio source in [[Phase 3 Authentic Audio Spine]]
+- [ ] Can pair each required Phase 3 page with audio using [[Phase 3 Audio Coverage Map]]
 
 **Previous:** [[Phase 2 — Building Blocks]]
 **Next:** [[Phase 4 — Intermediate Mastery]]
@@ -197,3 +211,7 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 
 ## References
 - [[Sources Index]]
+- [[Phase 3 Authentic Audio Spine]]
+- [[Phase 3 Audio Coverage Map]]
+- [[Pronunciation and Audio Accuracy]]
+- [[Pronunciation Correction Log]]

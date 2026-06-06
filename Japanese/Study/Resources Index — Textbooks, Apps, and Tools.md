@@ -19,7 +19,7 @@ Use one course spine at a time. Add tools only when they serve a specific job.
 | Grammar explanation | Tae Kim and the vault grammar pages | Memorizing grammar-point lists without sentences |
 | Memory | Anki for personally useful cards | Huge premade decks with no context |
 | Kanji | Course kanji first; WaniKani only if you want a separate kanji pipeline | Learning isolated kanji far ahead of reading ability |
-| Listening | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]] from week 1; [[Phase 2 Authentic Audio Spine]] after the first checkpoint | Waiting until you "know enough" to listen |
+| Listening | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]] from week 1; [[Phase 2 Authentic Audio Spine]] and [[Phase 3 Authentic Audio Spine]] as the phase advances | Waiting until you "know enough" to listen |
 
 ## Recommended Beginner Stack
 
@@ -28,7 +28,7 @@ Use one course spine at a time. Add tools only when they serve a specific job.
 | Main course | [Genki I](https://genki3.japantimes.co.jp/en/) | Textbook + workbook spine for lessons, exercises, and graded progression |
 | Review | [Anki](https://docs.ankiweb.net/background.html) | Daily active recall and spaced repetition for kana, words, and example sentences |
 | Grammar support | [Tae Kim's Guide](https://guidetojapanese.org/basicgram.html) | Reference when particles, adjectives, verbs, or sentence structure need another explanation |
-| Listening | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; later [[Phase 2 Authentic Audio Spine]] | Short daily audio exposure with both local drills and human-recorded/official-course audio |
+| Listening | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; later [[Phase 2 Authentic Audio Spine]] and [[Phase 3 Authentic Audio Spine]] | Short daily audio exposure with both local drills and human-recorded/official-course audio |
 | Navigation | [[Japanese Learning Dashboard]] | Keeps the week focused |
 
 ## Free Official Alternative
@@ -76,7 +76,7 @@ Do not buy or configure these during Phase 1 unless there is a specific reason.
 
 ## Audio and Listening
 
-Start with [[Phase 1 Local Audio Practice]] and [[Phase 1 Authentic Audio Spine]] during the first month. When Phase 1 is complete, continue with [[Phase 2 Authentic Audio Spine]] and use [[Phase 2 Audio Coverage Map]] to match N5 grammar, vocabulary, kanji, and conversation pages to audio support. See [[Listening Overview]] and [[Beginner Listening Resources]] for broader audio resource curation.
+Start with [[Phase 1 Local Audio Practice]] and [[Phase 1 Authentic Audio Spine]] during the first month. When Phase 1 is complete, continue with [[Phase 2 Authentic Audio Spine]] and use [[Phase 2 Audio Coverage Map]] to match N5 grammar, vocabulary, kanji, and conversation pages to audio support. For N4, pitch, and intermediate listening, continue with [[Phase 3 Authentic Audio Spine]] and [[Phase 3 Audio Coverage Map]]. See [[Listening Overview]] and [[Beginner Listening Resources]] for broader audio resource curation.
 
 ## References
 - [[Sources Index]]

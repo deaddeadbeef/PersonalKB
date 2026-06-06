@@ -90,26 +90,28 @@ Goal: move toward N4: conditionals, passive/causative, giving/receiving, 1000 wo
 | Order | Page | Consume for |
 | --- | --- | --- |
 | 3.1 | [[Phase 3 — Expansion]] | Month 3-6 sequence |
-| 3.2 | [[N4 Grammar — Conditional Forms]] | たら, ば, なら, と |
-| 3.3 | [[N4 Grammar — Passive and Causative]] | Action direction and affectedness |
-| 3.4 | [[N4 Grammar — Giving and Receiving]] | あげる, もらう, くれる |
-| 3.5 | [[N4 Grammar — Compound Sentences]] | Longer sentence construction |
-| 3.6 | [[N4 Grammar — Potential and Volitional]] | Can-do and intention forms |
-| 3.7 | [[Core 1000 — Conversational Fluency]] | Conversational vocabulary threshold |
-| 3.8 | [[Thematic Vocabulary — Travel and Transportation]] | Travel situations |
-| 3.9 | [[Thematic Vocabulary — Body and Health]] | Health situations |
-| 3.10 | [[Thematic Vocabulary — Numbers, Time, and Dates]] | Practical date/time vocabulary |
-| 3.11 | [[Onomatopoeia — Sound and State Words]] | Sound/state words that appear constantly in natural Japanese |
-| 3.12 | [[Kanji N4 Essentials]] | Expand kanji recognition |
-| 3.13 | [[Pitch Accent — Introduction]] | Awareness before perfection |
-| 3.14 | [[Pitch Accent — Common Patterns]] | Pattern recognition |
-| 3.15 | [[Common Filler Words and Discourse Markers]] | Natural conversation glue |
-| 3.16 | [[Intermediate Listening Resources]] | Move beyond beginner audio |
-| 3.17 | [[YouTube Channels for Japanese Learners]] | Visual and graded input |
-| 3.18 | [[Anime and Drama — Immersion Listening]] | Entertainment as study, with guardrails |
-| 3.19 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
-| 3.20 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
-| 3.21 | [[Culture Overview]] | Cultural orientation |
+| 3.2 | [[Phase 3 Authentic Audio Spine]] | Human-recorded or official-course audio source for Phase 3 |
+| 3.3 | [[Phase 3 Audio Coverage Map]] | Match each Phase 3 page to local clips, authentic audio, and QA |
+| 3.4 | [[N4 Grammar — Conditional Forms]] | たら, ば, なら, と |
+| 3.5 | [[N4 Grammar — Passive and Causative]] | Action direction and affectedness |
+| 3.6 | [[N4 Grammar — Giving and Receiving]] | あげる, もらう, くれる |
+| 3.7 | [[N4 Grammar — Compound Sentences]] | Longer sentence construction |
+| 3.8 | [[N4 Grammar — Potential and Volitional]] | Can-do and intention forms |
+| 3.9 | [[Core 1000 — Conversational Fluency]] | Conversational vocabulary threshold |
+| 3.10 | [[Thematic Vocabulary — Travel and Transportation]] | Travel situations |
+| 3.11 | [[Thematic Vocabulary — Body and Health]] | Health situations |
+| 3.12 | [[Thematic Vocabulary — Numbers, Time, and Dates]] | Practical date/time vocabulary |
+| 3.13 | [[Onomatopoeia — Sound and State Words]] | Sound/state words that appear constantly in natural Japanese |
+| 3.14 | [[Kanji N4 Essentials]] | Expand kanji recognition |
+| 3.15 | [[Pitch Accent — Introduction]] | Awareness before perfection |
+| 3.16 | [[Pitch Accent — Common Patterns]] | Pattern recognition |
+| 3.17 | [[Common Filler Words and Discourse Markers]] | Natural conversation glue |
+| 3.18 | [[Intermediate Listening Resources]] | Move beyond beginner audio |
+| 3.19 | [[YouTube Channels for Japanese Learners]] | Visual and graded input |
+| 3.20 | [[Anime and Drama — Immersion Listening]] | Entertainment as study, with guardrails |
+| 3.21 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
+| 3.22 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
+| 3.23 | [[Culture Overview]] | Cultural orientation |
 
 ### 4. Phase 4 — Intermediate Mastery
 
@@ -201,7 +203,8 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 
 ### Listening
 - [[Listening Overview]]
-- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Pronunciation and Audio Accuracy]] · [[Phase 1 Audio Coverage Map]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]]
+- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
 

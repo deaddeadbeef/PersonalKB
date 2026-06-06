@@ -100,6 +100,7 @@ Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks
 
 - [ ] You have repeated a stable Phase 2 authentic audio source for multiple weeks
 - [ ] You can pair each required Phase 2 page with audio using [[Phase 2 Audio Coverage Map]]
+- [ ] You have opened [[Phase 3 Authentic Audio Spine]] and [[Phase 3 Audio Coverage Map]] before starting Phase 3 content
 - [ ] You can shadow one short beginner segment without reading
 - [ ] You can speak examples for particles, verb forms, adjectives, and polite service interactions
 - [ ] You can read and say a small N5 kanji vocabulary set as words, not isolated symbols
@@ -109,6 +110,8 @@ Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Audio Coverage Map]]
+- [[Phase 3 Authentic Audio Spine]]
+- [[Phase 3 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Japanese Learning Dashboard]]

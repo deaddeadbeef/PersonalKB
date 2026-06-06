@@ -683,3 +683,33 @@ Verification:
 - `python _ops\personal_kb.py audit`
 - Changed-page MP3 embed check.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 3 audio coverage
+
+Scope: extend the Japanese audio-support system into Phase 3 so N4 grammar, pitch accent, intermediate listening, media, and keigo-recognition study remain paired with authentic audio and pronunciation QA.
+
+Changed content files:
+- `Japanese/Listening/Phase 3 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 3 Audio Coverage Map.md`
+- `Japanese/Japanese.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Learning Path/Phase 3 — Expansion.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Study/Phase 2 Weekly Review.md`
+- `Japanese/Listening/Phase 2 Audio Coverage Map.md`
+
+Maintenance changes:
+- Added a Phase 3 authentic audio spine for N4, pitch, intermediate listening, media, and keigo-recognition practice.
+- Added a Phase 3 coverage map with local MP3 counts for required Phase 3 pages.
+- Routed Start Here, dashboard, study index, resource policy, listening overview, Phase 3 plan, and Phase 2 exit pages to the new audio support pages.
+- Left Phase 1 as the active dashboard phase while making Phase 3 audio-ready.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- Phase 3 coverage count check across required pages: 494 embedded MP3 clips.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

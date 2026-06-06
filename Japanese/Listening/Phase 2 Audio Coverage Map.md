@@ -82,6 +82,7 @@ These are real gaps:
 
 - Use [[Phase 2 Weekly Review]] before Phase 2 becomes the active dashboard phase.
 - Use [[Pronunciation Correction Log]] when a real suspect Phase 2 clip is found.
+- Use [[Phase 3 Audio Coverage Map]] before starting Phase 3 content.
 - Keep Phase 2 local practice page-level for now; create a separate ladder only if daily study starts requiring too much clip hunting.
 
 ## References
@@ -89,6 +90,7 @@ These are real gaps:
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Weekly Review]]
+- [[Phase 3 Audio Coverage Map]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
