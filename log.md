@@ -1671,3 +1671,34 @@ Verification:
 - `python _ops\personal_kb.py index`
 - Link coverage check for `Phase 5 Audio Assignment Ladder`: linked from Start Here, Phase 5 path, listening overview, speaking overview, dashboard, study index, daily audio loop, evidence log, authentic source setup, Phase 4 handoff, Phase 5 local practice, authentic spine, coverage map, output feedback log, weekly review, resources index, audio QA status, and `index.md`.
 - `index.md` MP3 leak check: 0 results.
+
+## [2026-06-07] ops | Japanese source-aware STT audio triage
+
+Scope: replace stale filename-derived STT expectations with a source-aware audit path that uses `pronunciation_manifest.json` while keeping native/course/tutor/reference audio as the pronunciation authority.
+
+Changed wiki/source files:
+- `Japanese/_audio/stt_spot_check.py`
+- `Japanese/_audio/stt_run.py`
+- `Japanese/_audio/stt_full_audit.py`
+- `Japanese/_audio/stt_wav_check.py`
+- `Japanese/_audio/stt-spot-check-report.txt`
+- `Japanese/Study/Japanese Audio QA Status.md`
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+- `Japanese/Speaking/Pronunciation Correction Log.md`
+
+Maintenance changes:
+- Replaced the legacy `stt_spot_check.py` expectation model so selected clips are compared against `pronunciation_manifest.json` `text` and `display_text`, not filename fragments.
+- Preserved old STT entrypoints as wrappers around the source-aware script.
+- Regenerated `Japanese/_audio/stt-spot-check-report.txt` as a dry-run source plan: 61 selected clips, 1810 manifest entries, 0 validation problems, live STT not run because `AZURE_SPEECH_KEY` is unavailable in this environment.
+- Updated QA notes to state that STT is optional triage only and does not replace native, official-course, tutor, OJAD/NHK/Forvo, or other source-backed pronunciation checks.
+- Did not modify local MP3 files.
+
+Verification:
+- `python -m py_compile Japanese\_audio\stt_spot_check.py Japanese\_audio\stt_run.py Japanese\_audio\stt_full_audit.py Japanese\_audio\stt_wav_check.py`
+- `python Japanese\_audio\stt_spot_check.py`: wrote source-aware dry-run report with 61 selected clips and 0 validation problems.
+- `python Japanese\_audio\stt_spot_check.py --live --report <temp>`: returned the expected missing-key path and wrote a source-aware report without live STT.
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4760 files, 2889 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+- `git diff --check`: clean.

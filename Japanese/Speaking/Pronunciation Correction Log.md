@@ -18,6 +18,7 @@ Add an entry before changing learner-facing practice pages. Keep the entry short
 3. Check the item against [[Pronunciation and Audio Accuracy]].
 4. If the source text or reading hint is wrong, fix the manifest/source text before regenerating audio.
 5. Run the manifest and reading-hint checks before returning the clip to a daily path.
+6. If Azure Speech-to-Text is used, keep it as triage only and compare it against `pronunciation_manifest.json`, not the filename.
 
 Do not use this page as a pronunciation diary. Normal learner corrections belong in [[Authentic Audio Evidence Log]], [[Phase 1 Weekly Review]], [[Phase 2 Weekly Review]], [[Phase 3 Weekly Review]], [[Phase 4 Weekly Review]], [[Phase 5 Weekly Review]], or [[Advanced Output and Register Feedback Log]]. This page is for clip-quality issues.
 
@@ -47,6 +48,7 @@ Use these commands after a correction:
 ```powershell
 python Japanese\_audio\build_pronunciation_manifest.py --check
 python Japanese\_audio\audit_reading_hints.py --fail-on-findings
+python Japanese\_audio\stt_spot_check.py
 python _ops\personal_kb.py audit
 python _ops\personal_kb.py index
 python _ops\personal_kb.py audit
@@ -62,6 +64,7 @@ A corrected local clip can return to [[Phase 1 Local Audio Practice]], a Phase 2
 - The clip file exists and is non-empty.
 - The learner-facing page points to an authentic model when rhythm, pitch, counters, names, keigo, or full-sentence memorization matter.
 - The correction is recorded here if it was a clip-quality issue.
+- STT findings, if used, were checked against a native/course/tutor or pronunciation-reference route before the clip returned to daily practice.
 
 ## References
 
@@ -80,3 +83,4 @@ A corrected local clip can return to [[Phase 1 Local Audio Practice]], a Phase 2
 - `log.md`
 - `_ops/reports/japanese-audio-pronunciation-audit.txt`
 - `_ops/reports/japanese-audio-reading-hints-audit.txt`
+- `Japanese/_audio/stt-spot-check-report.txt`

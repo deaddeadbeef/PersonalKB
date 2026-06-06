@@ -30,8 +30,15 @@ As of 2026-06-07, the local audio layer is operationally verified:
 - `python Japanese\_audio\audit_audio_integrity.py`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 local MP3 files, 1810 pronunciation-manifest entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 1810 MP3 files checked with `ffprobe`, 0 format issues.
 - `python Japanese\_audio\build_pronunciation_manifest.py --check`: 1810 pronunciation entries, 26 expected reading overrides, 0 source repair overrides, 0 invalid TTS inputs.
 - `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python Japanese\_audio\stt_spot_check.py`: 61 source-aware dry-run samples selected from `pronunciation_manifest.json`, 0 validation problems, live STT not run without `AZURE_SPEECH_KEY`.
 
 This proves the local files exist, match the manifest, and use the Obsidian-compatible MP3 format. It does not prove that TTS is the final model for pitch accent, long-sentence rhythm, keigo, register, humor, or natural delivery. For those, use the phase authentic audio spines, tutor/native feedback, OJAD/NHK/Forvo, or official course audio.
+
+## STT Triage Rule
+
+Speech-to-text is a detector, not a teacher. Use `python Japanese\_audio\stt_spot_check.py --live` only to find clips that may need human review. The check must compare against `pronunciation_manifest.json`, not filenames, because filenames often contain labels such as `phrase` or abbreviated English hints.
+
+If live STT flags a clip, treat it as `suspect` until checked against native/course/tutor audio or a pronunciation reference. Do not use STT output as the corrected pronunciation.
 
 ## Trust Rules
 
@@ -61,7 +68,8 @@ When an audio item sounds wrong:
 5. Run `python Japanese\_audio\build_pronunciation_manifest.py --check`.
 6. Run `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`.
 7. Run `python Japanese\_audio\audit_audio_integrity.py --no-report` when the problem is a missing clip, Obsidian playback error, or MP3 format issue.
-8. Mark the correction in [[Pronunciation Correction Log]] and update the relevant learner page only after the checks pass.
+8. Optionally run `python Japanese\_audio\stt_spot_check.py --live` when `AZURE_SPEECH_KEY` is available, using STT only as triage.
+9. Mark the correction in [[Pronunciation Correction Log]] and update the relevant learner page only after the checks pass.
 
 Do not bury a suspect clip inside a practice ladder. Either fix it, replace it with a native/official audio target, or remove it from the daily path.
 

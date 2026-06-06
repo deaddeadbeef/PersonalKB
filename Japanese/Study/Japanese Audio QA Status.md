@@ -28,8 +28,12 @@ As of 2026-06-07, local playback support is verified:
 | Reading-hint audit findings | 0 |
 | Source-repair pronunciation overrides | 0 |
 | Expected reading overrides | 26 |
+| Source-aware STT dry-run sample | 61 clips selected from `pronunciation_manifest.json`; 0 validation problems |
+| Live STT transcription check | Not run in current environment; `AZURE_SPEECH_KEY` is required |
 
 The 26 expected reading overrides are deliberate: topic/object/direction particles, counter suffixes, `開ける`, and `聲の形` need readings that differ from their written form.
+
+The source-aware STT report replaces the older filename-derived check. It compares speech recognition output against `pronunciation_manifest.json` `text` and `display_text`, not against filenames such as `gap-084-phrase.mp3`.
 
 ## What This Proves
 
@@ -38,12 +42,15 @@ The 26 expected reading overrides are deliberate: topic/object/direction particl
 - The MP3 files use the Obsidian-compatible format: MP3, 48 kHz, mono, 96 kbps.
 - Current source-repair debt is cleared from the pronunciation manifest.
 - Reading-hint checks currently find no unresolved romaji-hint conflicts.
+- The STT spot-check tooling now uses source text from `pronunciation_manifest.json` instead of filename-derived hints.
 
 ## What This Does Not Prove
 
 - TTS is not the final authority for pitch accent.
 - TTS is not the final authority for long-sentence rhythm.
 - TTS is not the final authority for keigo, register, humor, or natural delivery.
+- A dry-run STT sample plan does not prove clip pronunciation; it only proves the STT audit will use the correct expected source text.
+- Even live STT is only a triage signal. Native/course/tutor/reference audio remains the pronunciation authority.
 - Native-source Phase 5 work still needs a named source segment, assignment block, output, and tutor/native feedback.
 
 Use [[Pronunciation and Audio Accuracy]] to decide when a local clip is safe for drills. Use [[Authentic Audio Source Setup]], [[Phase 5 Audio Assignment Ladder]], and the phase authentic audio spines when pronunciation, rhythm, pitch, or register matters. Use [[Authentic Audio Evidence Log]] to keep the weekly proof trail.
@@ -56,15 +63,17 @@ Run these from the vault root when checking audio:
 python Japanese\_audio\audit_audio_integrity.py --no-report
 python Japanese\_audio\build_pronunciation_manifest.py --check
 python Japanese\_audio\audit_reading_hints.py --fail-on-findings
+python Japanese\_audio\stt_spot_check.py
 ```
 
-Use the first command when a clip is missing, Obsidian reports a playback error, or the MP3 format is suspect.
+Use the first command when a clip is missing, Obsidian reports a playback error, or the MP3 format is suspect. Use `python Japanese\_audio\stt_spot_check.py --live` only when `AZURE_SPEECH_KEY` is available and you want Azure Speech-to-Text triage against manifest source text.
 
 ## Reports
 
 - `_ops/reports/japanese-audio-integrity-audit.txt`
 - `_ops/reports/japanese-audio-pronunciation-audit.txt`
 - `_ops/reports/japanese-audio-reading-hints-audit.txt`
+- `Japanese/_audio/stt-spot-check-report.txt`
 
 ## References
 
