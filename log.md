@@ -815,3 +815,33 @@ Verification:
 - Phase 5 coverage count check across required pages: 152 embedded MP3 clips.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 5 review and output proof
+
+Scope: add Phase 5 review and output-feedback surfaces so advanced listening is backed by native-source evidence, recordings, tutor/native feedback, and register corrections.
+
+Changed content files:
+- `Japanese/Study/Phase 5 Weekly Review.md`
+- `Japanese/Speaking/Advanced Output and Register Feedback Log.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 5 — Advanced.md`
+- `Japanese/Listening/Phase 5 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 5 Audio Coverage Map.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Speaking/Pronunciation Correction Log.md`
+
+Maintenance changes:
+- Added a Phase 5 weekly review page that requires exact native-source segments, local clip targets, output proof, and pronunciation/register QA.
+- Added an advanced output/register feedback log for recordings, tutor/native feedback, keigo direction, business phrasing, pitch, rhythm, and nuance fixes.
+- Routed Phase 5 audio spine, coverage map, dashboard, study index, resources, and pronunciation correction guidance to the new proof pages.
+
+Verification:
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 5 proof-page coverage check.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

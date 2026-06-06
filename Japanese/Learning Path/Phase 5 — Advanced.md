@@ -41,7 +41,7 @@ Use local MP3 clips only as short drills for keigo, business phrases, idioms, pi
 - One exact native source segment you repeat, mine, shadow, transcribe, summarize, or discuss.
 - One local clip set from the page you are studying when the page has clips.
 - One pronunciation, pitch, reading, register, or naturalness issue checked through [[Pronunciation and Audio Accuracy]] or [[Pronunciation Correction Log]].
-- One output proof: recording, tutor/native feedback, summary, argument, role-play, or conversation attempt.
+- One output proof recorded in [[Advanced Output and Register Feedback Log]]: recording, tutor/native feedback, summary, argument, role-play, or conversation attempt.
 
 ## Grammar — Refinement
 
@@ -95,7 +95,8 @@ Seamless register shifting in real situations.
 - [ ] 1000+ kanji, 6000+ vocabulary
 - [ ] Have one stable Phase 5 native source in [[Phase 5 Authentic Audio Spine]]
 - [ ] Can pair each required Phase 5 page with audio using [[Phase 5 Audio Coverage Map]]
-- [ ] Have at least one recurring output/register feedback route
+- [ ] Have at least one recurring output/register feedback route recorded in [[Advanced Output and Register Feedback Log]]
+- [ ] Can complete [[Phase 5 Weekly Review]] without relying on passive listening as evidence
 - [ ] N2 passed → working toward N1
 
 **Previous:** [[Phase 4 — Intermediate Mastery]]
@@ -154,4 +155,6 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Sources Index]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Coverage Map]]
+- [[Phase 5 Weekly Review]]
+- [[Advanced Output and Register Feedback Log]]
 - [[Pronunciation and Audio Accuracy]]

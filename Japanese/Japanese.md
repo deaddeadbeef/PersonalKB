@@ -161,6 +161,8 @@ Goal: N2 to N1 direction: native-speed input, professional register, native cont
 | 5.15 | [[Grammar — Comparison Across Levels]] | Nuance refinement |
 | 5.16 | [[JLPT Overview — N5 to N1]] | N2/N1 benchmark |
 | 5.17 | [[Study Roadmap — Intermediate to Advanced]] | Long-term maintenance and refinement |
+| 5.18 | [[Advanced Output and Register Feedback Log]] | Record tutor/native/self-recording feedback |
+| 5.19 | [[Phase 5 Weekly Review]] | Prove native-source audio and output progress |
 
 ### Reference Shelf
 
@@ -215,7 +217,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
 

@@ -23,6 +23,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Authentic Audio Spine]], [[Phase 3 Authentic Audio Spine]], [[Phase 4 Authentic Audio Spine]], and [[Phase 5 Authentic Audio Spine]] | Combines precise local drills with human-recorded or official-course pronunciation |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Prevents local clips from becoming the only pronunciation authority |
 | Audio coverage | [[Phase 1 Audio Coverage Map]]; later [[Phase 2 Audio Coverage Map]], [[Phase 3 Audio Coverage Map]], [[Phase 4 Audio Coverage Map]], and [[Phase 5 Audio Coverage Map]] | Shows what to listen to for each required page in the current phase |
+| Output proof | [[Advanced Output and Register Feedback Log]] for Phase 5 | Keeps advanced listening tied to recordings, tutor/native feedback, and register fixes |
 | Roadmap | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] -> [[Phase 4 — Intermediate Mastery]] -> [[Phase 5 — Advanced]] | Keeps advanced material out of the way until it is useful |
 
 ## Current Stage
@@ -71,7 +72,7 @@ Use JLPT levels as a map, not as the first goal. The official JLPT descriptions 
 
 ### Weekly Review: 20 Minutes
 
-Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Review]] while Phase 1 is active, then [[Phase 2 Weekly Review]] after the Phase 1 checkpoint is complete.
+Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Review]] while Phase 1 is active, [[Phase 2 Weekly Review]] after the Phase 1 checkpoint is complete, and [[Phase 5 Weekly Review]] when advanced native-source/output work becomes active.
 
 - What did I finish?
 - What is still fuzzy?
@@ -118,6 +119,8 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 24. [[Phase 5 — Advanced]]
 25. [[Phase 5 Authentic Audio Spine]]
 26. [[Phase 5 Audio Coverage Map]]
+27. [[Advanced Output and Register Feedback Log]]
+28. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -137,5 +140,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 5 Audio Coverage Map]]
+- [[Phase 5 Weekly Review]]
+- [[Advanced Output and Register Feedback Log]]
 - [[Pronunciation Correction Log]]
 - [[JLPT Overview — N5 to N1]]

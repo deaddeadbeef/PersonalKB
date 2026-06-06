@@ -16,7 +16,7 @@ Keep one primary native source for deep work, one output/register source, and on
 | Source role | Use | Good options |
 | --- | --- | --- |
 | Primary native source | The exact segment you repeat, transcribe, summarize, and mine | News, podcast, lecture, interview, documentary, drama scene, or article/audio pair with text |
-| Output/register model | Professional, keigo, argument, humor, or social nuance | Tutor/native-speaker role-play, workplace audio, interview, formal speech, or recorded self-correction session |
+| Output/register model | Professional, keigo, argument, humor, or social nuance | Tutor/native-speaker role-play, workplace audio, interview, formal speech, recorded self-correction session, or [[Advanced Output and Register Feedback Log]] entry |
 | Pronunciation reference | Pitch, accent, word reading, rhythm, and naturalness checks | OJAD, NHK accent dictionary, Forvo, tutor/native feedback, or a native recording |
 | Extensive immersion | Volume after the deep segment is done | [[Advanced Listening Resources]], [[NHK World — News Listening Practice]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]], or native podcasts |
 
@@ -30,7 +30,7 @@ Use this pairing on any Phase 5 study day:
 | --- | --- | --- |
 | 3-5 min | Current Phase 5 page embeds | Repeat advanced grammar, keigo, business, idiom, pitch, or discourse-marker clips inside Obsidian |
 | 20-45 min | This native source | Listen for gist, check text/subtitles, then shadow, transcribe, summarize, or mine a short section |
-| 5-10 min | Output/register model | Record yourself, compare with the model, or ask for tutor/native feedback |
+| 5-10 min | Output/register model | Record yourself, compare with the model, or ask for tutor/native feedback; log carry-forward fixes in [[Advanced Output and Register Feedback Log]] |
 | 2-5 min | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] when needed | Check one pitch, reading, register, rhythm, or suspect-clip issue |
 
 When time is short, keep one native sentence, one local clip, and one output check. Do not let Phase 5 become only passive listening or JLPT worksheet review.
@@ -67,6 +67,7 @@ At the end of each week, record:
 - Which Phase 5 page did it support?
 - Which local clip set made a form, word, idiom, pitch pattern, or register choice clearer?
 - Which output did I record or test with a tutor/native speaker?
+- Which feedback item did I add or close in [[Advanced Output and Register Feedback Log]]?
 - Which pronunciation, pitch, reading, register, or rhythm issue did I check?
 - Can I summarize, shadow, transcribe, or reuse a short segment without relying on English?
 - What is next week's exact native source?
@@ -75,6 +76,8 @@ At the end of each week, record:
 
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Audio Coverage Map]]
+- [[Phase 5 Weekly Review]]
+- [[Advanced Output and Register Feedback Log]]
 - [[Advanced Listening Resources]]
 - [[NHK World — News Listening Practice]]
 - [[Pronunciation and Audio Accuracy]]

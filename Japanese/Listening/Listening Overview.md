@@ -38,6 +38,7 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 ### Advanced
 - [[Phase 5 Audio Coverage Map]] — match Phase 5 native-source work to local drills and QA
 - [[Phase 5 Authentic Audio Spine]] — native-source audio and output feedback route for N2/N1 direction
+- [[Advanced Output and Register Feedback Log]] — record Phase 5 recordings, tutor/native feedback, and register fixes
 - [[Advanced Listening Resources]] — native content, no support
 - Focus: nuance, humor, dialects, fast speech
 
@@ -58,6 +59,7 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Authentic Audio Spine]]
+- [[Advanced Output and Register Feedback Log]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 - [[YouTube Channels for Japanese Learners]]
 - [[NHK World — News Listening Practice]]
@@ -83,7 +85,7 @@ For Phase 3, use [[Phase 3 Authentic Audio Spine]] plus the embedded clips on th
 
 For Phase 4, use [[Phase 4 Authentic Audio Spine]] plus the embedded clips on the current N3, kanji, keigo, business, culture, or advanced-listening page. Use [[Phase 4 Audio Coverage Map]] when native-speed audio, register, or longer conversation practice needs a repeatable segment instead of passive immersion.
 
-For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local clips only as precision drills, then prove progress with native-source shadowing, transcription, summary, output, or tutor/native feedback. Use [[Phase 5 Audio Coverage Map]] when advanced media, keigo, business, pitch, or JLPT listening needs a concrete audio target.
+For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local clips only as precision drills, then prove progress with native-source shadowing, transcription, summary, output, or tutor/native feedback. Use [[Phase 5 Audio Coverage Map]] when advanced media, keigo, business, pitch, or JLPT listening needs a concrete audio target. Record output and register fixes in [[Advanced Output and Register Feedback Log]].
 
 ## Daily Listening Routine
 
@@ -108,3 +110,4 @@ For Phase 5, use [[Phase 5 Authentic Audio Spine]] as the main source. Use local
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 5 Audio Coverage Map]]
+- [[Advanced Output and Register Feedback Log]]
