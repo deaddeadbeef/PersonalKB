@@ -61,27 +61,28 @@ Goal: reach usable N5 foundations: particles, verb forms, adjectives, first kanj
 | --- | --- | --- |
 | 2.1 | [[Phase 2 — Building Blocks]] | Month 2-3 sequence |
 | 2.2 | [[Phase 2 Authentic Audio Spine]] | Human-recorded or official-course audio source for Phase 2 |
-| 2.3 | [[Phase 2 Audio Coverage Map]] | Match each Phase 2 page to local clips, authentic audio, and QA |
-| 2.4 | [[N5 Grammar — Particles]] | は, が, を, に, で and core sentence structure |
-| 2.5 | [[N5 Grammar — Verb Forms]] | Verb groups and masu/nai/te/ta forms |
-| 2.6 | [[N5 Grammar — Adjectives]] | い-adjectives and な-adjectives |
-| 2.7 | [[N5 Grammar — Time and Counting]] | Time expressions and first counters |
-| 2.8 | [[Counters — The Japanese Counting System]] | Counting objects without treating counters as optional |
-| 2.9 | [[Core 500 — Daily Life Vocabulary]] | Daily-life vocabulary expansion |
-| 2.10 | [[Thematic Vocabulary — Food and Drink]] | Restaurant and food situations |
-| 2.11 | [[Thematic Vocabulary — Home and Daily Life]] | Daily routines and home vocabulary |
-| 2.12 | [[Kanji — How Kanji Work]] | Kanji system model |
-| 2.13 | [[Radicals — The Building Blocks]] | Components used to learn kanji |
-| 2.14 | [[Kanji Learning Strategies]] | How to study kanji without brute force |
-| 2.15 | [[Kanji N5 Essentials]] | First kanji set |
-| 2.16 | [[Pronunciation — Difficult Sounds for English Speakers]] | Fix high-impact pronunciation issues early |
-| 2.17 | [[Conversation Patterns — Daily Interactions]] | Everyday scripts |
-| 2.18 | [[Conversation Patterns — Shopping and Restaurants]] | Shop and restaurant scripts |
-| 2.19 | [[Shadowing — Technique and Practice Guide]] | Daily listening and speaking loop |
-| 2.20 | [[Podcast Guide — Japanese Learning Podcasts]] | Controlled beginner listening |
-| 2.21 | [[Keigo — Teineigo (Polite)]] | です/ます as the baseline register |
-| 2.22 | [[Social Register — When to Use What]] | When formality matters |
-| 2.23 | [[Phase 2 Weekly Review]] | Weekly evidence check for N5 mechanics and audio practice |
+| 2.3 | [[Phase 2 Local Audio Practice]] | Ordered local drill ladder for N5 mechanics and beginner interactions |
+| 2.4 | [[Phase 2 Audio Coverage Map]] | Match each Phase 2 page to local clips, authentic audio, and QA |
+| 2.5 | [[N5 Grammar — Particles]] | は, が, を, に, で and core sentence structure |
+| 2.6 | [[N5 Grammar — Verb Forms]] | Verb groups and masu/nai/te/ta forms |
+| 2.7 | [[N5 Grammar — Adjectives]] | い-adjectives and な-adjectives |
+| 2.8 | [[N5 Grammar — Time and Counting]] | Time expressions and first counters |
+| 2.9 | [[Counters — The Japanese Counting System]] | Counting objects without treating counters as optional |
+| 2.10 | [[Core 500 — Daily Life Vocabulary]] | Daily-life vocabulary expansion |
+| 2.11 | [[Thematic Vocabulary — Food and Drink]] | Restaurant and food situations |
+| 2.12 | [[Thematic Vocabulary — Home and Daily Life]] | Daily routines and home vocabulary |
+| 2.13 | [[Kanji — How Kanji Work]] | Kanji system model |
+| 2.14 | [[Radicals — The Building Blocks]] | Components used to learn kanji |
+| 2.15 | [[Kanji Learning Strategies]] | How to study kanji without brute force |
+| 2.16 | [[Kanji N5 Essentials]] | First kanji set |
+| 2.17 | [[Pronunciation — Difficult Sounds for English Speakers]] | Fix high-impact pronunciation issues early |
+| 2.18 | [[Conversation Patterns — Daily Interactions]] | Everyday scripts |
+| 2.19 | [[Conversation Patterns — Shopping and Restaurants]] | Shop and restaurant scripts |
+| 2.20 | [[Shadowing — Technique and Practice Guide]] | Daily listening and speaking loop |
+| 2.21 | [[Podcast Guide — Japanese Learning Podcasts]] | Controlled beginner listening |
+| 2.22 | [[Keigo — Teineigo (Polite)]] | です/ます as the baseline register |
+| 2.23 | [[Social Register — When to Use What]] | When formality matters |
+| 2.24 | [[Phase 2 Weekly Review]] | Weekly evidence check for N5 mechanics and audio practice |
 
 ### 3. Phase 3 — Expansion
 
@@ -220,7 +221,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 
 ### Listening
 - [[Listening Overview]]
-- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Audio Coverage Map]]
+- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Local Audio Practice]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]

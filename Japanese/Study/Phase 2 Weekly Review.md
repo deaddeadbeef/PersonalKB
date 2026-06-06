@@ -27,7 +27,7 @@ The review has one job: choose the next small action. If particles are still blu
 - [ ] Due reviews completed on at least 5 days
 - [ ] Course spine studied on at least 4 days
 - [ ] One authentic audio segment from [[Phase 2 Authentic Audio Spine]] repeated on at least 3 days
-- [ ] One local clip set from the current Phase 2 page repeated on at least 3 days
+- [ ] One local clip set from [[Phase 2 Local Audio Practice]] or the current Phase 2 page repeated on at least 3 days
 - [ ] [[Phase 2 Audio Coverage Map]] checked for the current main page
 - [ ] One pronunciation, rhythm, counter-reading, or kanji-reading issue checked through [[Pronunciation and Audio Accuracy]]
 - [ ] One grammar point used in your own spoken or written sentence
@@ -41,7 +41,7 @@ Record exact targets. "Listened to Japanese" is not enough.
 | Layer | Exact target | Evidence |
 | --- | --- | --- |
 | Authentic audio | Source, lesson, timestamp, or segment name |  |
-| Local clips | Page and clip set, such as particle examples or counter readings |  |
+| Local clips | [[Phase 2 Local Audio Practice]] block or page-level clip set, such as particle examples or counter readings |  |
 | Shadowing | Sentence or dialogue segment repeated aloud |  |
 | QA check | Word, counter, pitch-accent, or rhythm issue checked; suspect clips go to [[Pronunciation Correction Log]] |  |
 
@@ -90,7 +90,7 @@ List cards or concepts that failed repeatedly and need rewriting.
 - One main page:
 - One course lesson:
 - One authentic audio target:
-- One local audio target:
+- One local audio target from [[Phase 2 Local Audio Practice]]:
 - One pronunciation or reading check:
 - One speaking target:
 
@@ -99,6 +99,7 @@ List cards or concepts that failed repeatedly and need rewriting.
 Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks|Phase 2 checkpoint]] is true and the audio evidence is real:
 
 - [ ] You have repeated a stable Phase 2 authentic audio source for multiple weeks
+- [ ] You can use [[Phase 2 Local Audio Practice]] to find the right weekly local clips without searching the whole vault
 - [ ] You can pair each required Phase 2 page with audio using [[Phase 2 Audio Coverage Map]]
 - [ ] You have opened [[Phase 3 Authentic Audio Spine]], [[Phase 3 Audio Coverage Map]], and [[Phase 3 Weekly Review]] before starting Phase 3 content
 - [ ] You can shadow one short beginner segment without reading
@@ -109,6 +110,7 @@ Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks
 
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Authentic Audio Spine]]
+- [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]

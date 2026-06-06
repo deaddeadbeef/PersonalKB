@@ -971,3 +971,37 @@ Verification:
 - Phase 4 register checklist link coverage check.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 2 local audio practice
+
+Scope: add a focused Phase 2 local audio ladder so N5 mechanics have a daily clip route instead of requiring page-level clip hunting.
+
+Changed content files:
+- `Japanese/Listening/Phase 2 Local Audio Practice.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 2 — Building Blocks.md`
+- `Japanese/Listening/Phase 2 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 2 Audio Coverage Map.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Study/Phase 2 Weekly Review.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+
+Maintenance changes:
+- Added `Phase 2 Local Audio Practice` with an eight-week local drill ladder for particles, verb/adjective forms, time and counters, daily-life vocabulary, kanji-as-spoken-words, and beginner interactions.
+- Kept the authentic source as the pronunciation model through `Phase 2 Authentic Audio Spine`; local clips are controlled drills, not the authority.
+- Routed Start Here, Phase 2, the audio map, listening overview, dashboard, study index, resources, daily routines, and weekly review to the new ladder.
+- Replaced the Phase 2 coverage-map backlog item about a future ladder with the concrete practice page.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 2 local audio link coverage check: 0 missing required links; old Phase 2 ladder backlog phrase removed.
+- Local MP3 embed check across changed pages: 90 embedded MP3 targets, 0 missing.
+- `index.md` MP3 leak check: 0 hits.
+- `git diff --check`

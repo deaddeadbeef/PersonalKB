@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, practice]
 
 # Phase 2 Authentic Audio Spine
 
-> Use this page during [[Phase 2 — Building Blocks]]. Phase 2 has many local MP3 drills embedded in grammar, vocabulary, kanji, and conversation pages; this page keeps those drills anchored to human-recorded or official-course Japanese.
+> Use this page during [[Phase 2 — Building Blocks]]. Pair it with [[Phase 2 Local Audio Practice]] so local MP3 drills stay anchored to human-recorded or official-course Japanese.
 
 ## The Rule
 
@@ -20,7 +20,7 @@ Continue the same native-audio spine you chose in Phase 1 unless it is clearly n
 | NHK WORLD-JAPAN Easy Japanese | Repeat one short skit, drill, or pronunciation segment until it is usable | Play many lessons once without shadowing |
 | Tutor or language partner | Ask for a short recording of the exact sentence pattern or role-play you are studying | Use the tutor only for correction after silent self-study |
 
-The authentic source is the pronunciation model. Local clips are the repeatable microscope for a small sound, word, pattern, or sentence.
+The authentic source is the pronunciation model. [[Phase 2 Local Audio Practice]] is the ordered repeatable microscope for a small sound, word, pattern, or sentence.
 
 ## Daily Pairing
 
@@ -28,7 +28,7 @@ Use this pairing on any Phase 2 study day:
 
 | Time | Audio layer | Task |
 | --- | --- | --- |
-| 3-5 min | Current Phase 2 page embeds | Repeat the particles, verb forms, counters, kanji readings, or conversation lines in the page you are studying |
+| 3-5 min | [[Phase 2 Local Audio Practice]] or current Phase 2 page embeds | Repeat the particles, verb forms, counters, kanji readings, or conversation lines in the page you are studying |
 | 5-15 min | This authentic spine | Play the matching course/NHK/tutor segment once for meaning, once with text, then shadow one short segment |
 | 1 min | [[Phase 2 Weekly Review]] | Record the exact segment and the one sound or pattern that needs another pass |
 
@@ -38,18 +38,18 @@ If time is short, play one authentic sentence and repeat one local clip. Do not 
 
 | Phase 2 week | Study focus | Authentic audio target | Local companion |
 | --- | --- | --- | --- |
-| 5 | Particles | A short dialogue where は, が, を, に, and で are visible in the transcript | [[N5 Grammar — Particles]] clips |
-| 6 | Verbs and adjectives | A lesson segment with ます, dictionary, て, た, い-adjective, and な-adjective examples | [[N5 Grammar — Verb Forms]] and [[N5 Grammar — Adjectives]] clips |
-| 7 | Time, counting, counters | Scheduling, shopping, or classroom audio with numbers and counters | [[N5 Grammar — Time and Counting]] and [[Counters — The Japanese Counting System]] clips |
-| 8 | Daily-life vocabulary | Food, home, and routine audio from the current course or NHK lesson | [[Core 500 — Daily Life Vocabulary]], [[Thematic Vocabulary — Food and Drink]], and [[Thematic Vocabulary — Home and Daily Life]] clips |
-| 9 | Kanji as spoken vocabulary | Course vocabulary audio for kanji words you already know how to say | [[Kanji — How Kanji Work]] and [[Radicals — The Building Blocks]] clips |
-| 10 | N5 kanji readings | Native audio for words containing the first kanji set, not isolated reading recitation only | [[Kanji N5 Essentials]] clips |
-| 11 | Pronunciation and daily scripts | A short daily-interaction dialogue you can shadow repeatedly | [[Pronunciation — Difficult Sounds for English Speakers]] and [[Conversation Patterns — Daily Interactions]] clips |
-| 12 | Shopping, restaurants, and register | A service interaction or polite dialogue with です/ます forms | [[Conversation Patterns — Shopping and Restaurants]], [[Keigo — Teineigo (Polite)]], and [[Social Register — When to Use What]] clips |
+| 5 | Particles | A short dialogue where は, が, を, に, and で are visible in the transcript | [[Phase 2 Local Audio Practice]] particle block |
+| 6 | Verbs and adjectives | A lesson segment with ます, dictionary, て, た, い-adjective, and な-adjective examples | [[Phase 2 Local Audio Practice]] verb/adjective block |
+| 7 | Time, counting, counters | Scheduling, shopping, or classroom audio with numbers and counters | [[Phase 2 Local Audio Practice]] time/counter block |
+| 8 | Daily-life vocabulary | Food, home, and routine audio from the current course or NHK lesson | [[Phase 2 Local Audio Practice]] daily-life block |
+| 9 | Kanji as spoken vocabulary | Course vocabulary audio for kanji words you already know how to say | [[Phase 2 Local Audio Practice]] kanji-as-spoken-words block |
+| 10 | N5 kanji readings | Native audio for words containing the first kanji set, not isolated reading recitation only | [[Phase 2 Local Audio Practice]] N5 kanji block |
+| 11 | Pronunciation and daily scripts | A short daily-interaction dialogue you can shadow repeatedly | [[Phase 2 Local Audio Practice]] interaction block plus sound-focused page clips |
+| 12 | Shopping, restaurants, and register | A service interaction or polite dialogue with です/ます forms | [[Phase 2 Local Audio Practice]] shopping and polite-service block |
 
 The course lesson does not have to match the vault page perfectly. The target is enough overlap that your ear hears real Japanese while the local clips isolate the detail.
 
-Use [[Phase 2 Audio Coverage Map]] when you need to match a required Phase 2 page to the correct local and authentic audio layer.
+Use [[Phase 2 Local Audio Practice]] for the daily ladder. Use [[Phase 2 Audio Coverage Map]] when you need to match a required Phase 2 page to the correct local and authentic audio layer.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
 
@@ -76,6 +76,7 @@ At the end of each week, record evidence in [[Phase 2 Weekly Review]]:
 ## References
 
 - [[Phase 2 — Building Blocks]]
+- [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]

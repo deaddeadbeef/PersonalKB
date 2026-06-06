@@ -19,7 +19,9 @@ Phase 2 audio support has three layers:
 | Authentic model | [[Phase 2 Authentic Audio Spine]] | Keep official-course, broadcaster, tutor, or native-speaker Japanese as the pronunciation model |
 | QA rule | [[Pronunciation and Audio Accuracy]] | Decide when a clip is safe, suspect, or needs correction |
 
-Phase 2 does not need a separate local ladder yet because the required content pages already contain many page-level clips. Planning and technique pages can have zero embedded clips if they route clearly to the authentic spine and to the pages with embedded drills.
+Use [[Phase 2 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 2 clips, ordered by week so practice does not require hunting through grammar and vocabulary pages.
+
+Planning and technique pages can have zero embedded clips if they route clearly to the authentic spine, the local ladder, and the pages with embedded drills.
 
 ## Required Phase 2 Coverage
 
@@ -27,6 +29,7 @@ Phase 2 does not need a separate local ladder yet because the required content p
 | --- | ---: | --- | --- | --- |
 | [[Phase 2 — Building Blocks]] | 0 | Routes to spine | Routes to QA | Choose the next building-block focus |
 | [[Phase 2 Authentic Audio Spine]] | 0 | Primary native/official route | Quality bar included | Choose the source segment for the week |
+| [[Phase 2 Local Audio Practice]] | 87 selected | Must be paired with spine | Covered by QA | Drill the week's Phase 2 clips in order without hunting through pages |
 | [[Phase 2 Weekly Review]] | 0 | Logs spine segment | Logs QA evidence | Record weekly proof before advancing |
 | [[Pronunciation Correction Log]] | 0 | Records corrections | Open/resolved QA log | Keep suspect clips out of daily practice |
 | [[N5 Grammar — Particles]] | 45 | Course/tutor sentences with visible particles | Covered by QA | Hear は, が, を, に, and で in short sentences |
@@ -49,20 +52,20 @@ Phase 2 does not need a separate local ladder yet because the required content p
 | [[Keigo — Teineigo (Polite)]] | 16 | Polite course/tutor dialogue | Covered by QA | Keep です/ます rhythm natural |
 | [[Social Register — When to Use What]] | 7 | Native/tutor examples of register shifts | Needs human/native context | Recognize formality without overproducing keigo |
 
-Total local coverage across the required Phase 2 pages: 663 embedded MP3 clips.
+The required Phase 2 content pages carry 663 embedded MP3 clips. [[Phase 2 Local Audio Practice]] adds 87 selected practice embeds from that library, for 750 total Phase 2 audio occurrences in the mapped route.
 
 ## Eight-Week Audio Pairing
 
 | Week | Study pages | Local drill | Authentic model | Proof |
 | --- | --- | --- | --- | --- |
-| 5 | [[N5 Grammar — Particles]] | Repeat the particle examples that match the course sentences | Current course/NHK/tutor dialogue with visible particles | Identify the particle job in five heard sentences |
-| 6 | [[N5 Grammar — Verb Forms]], [[N5 Grammar — Adjectives]] | Repeat verb/adjective transformation clips aloud | Grammar-heavy lesson audio with transcript | Produce five polite sentences and one adjective description |
-| 7 | [[N5 Grammar — Time and Counting]], [[Counters — The Japanese Counting System]] | Drill time, number, and counter clips | Scheduling, classroom, or shopping audio | Say times and common counters without English timing |
-| 8 | [[Core 500 — Daily Life Vocabulary]], [[Thematic Vocabulary — Food and Drink]], [[Thematic Vocabulary — Home and Daily Life]] | Drill daily-life vocabulary clusters | Food/home/routine lesson audio | Shadow one short restaurant or daily-routine segment |
-| 9 | [[Kanji — How Kanji Work]], [[Radicals — The Building Blocks]], [[Kanji Learning Strategies]] | Drill spoken examples tied to kanji terms | Course vocabulary audio for already-known words | Explain kanji visually without losing the spoken word |
-| 10 | [[Kanji N5 Essentials]] | Drill first kanji vocabulary clips | Native/course examples containing the target words | Read and say a small N5 kanji set in words |
-| 11 | [[Pronunciation — Difficult Sounds for English Speakers]], [[Conversation Patterns — Daily Interactions]] | Repeat sound-focused and daily-script clips | One repeatable daily-interaction dialogue | Shadow one daily script without reading |
-| 12 | [[Conversation Patterns — Shopping and Restaurants]], [[Keigo — Teineigo (Polite)]], [[Social Register — When to Use What]], [[Shadowing — Technique and Practice Guide]] | Repeat service and polite-form clips | Service or polite dialogue from the spine | Complete a short polite role-play with natural rhythm |
+| 5 | [[N5 Grammar — Particles]] | Use the particle block in [[Phase 2 Local Audio Practice]], then expand into page-level particle clips | Current course/NHK/tutor dialogue with visible particles | Identify the particle job in five heard sentences |
+| 6 | [[N5 Grammar — Verb Forms]], [[N5 Grammar — Adjectives]] | Use the verb/adjective block in [[Phase 2 Local Audio Practice]], then expand into page-level clips | Grammar-heavy lesson audio with transcript | Produce five polite sentences and one adjective description |
+| 7 | [[N5 Grammar — Time and Counting]], [[Counters — The Japanese Counting System]] | Use the time/counter block in [[Phase 2 Local Audio Practice]], then verify irregular counters | Scheduling, classroom, or shopping audio | Say times and common counters without English timing |
+| 8 | [[Core 500 — Daily Life Vocabulary]], [[Thematic Vocabulary — Food and Drink]], [[Thematic Vocabulary — Home and Daily Life]] | Use the daily-life block in [[Phase 2 Local Audio Practice]] | Food/home/routine lesson audio | Shadow one short restaurant or daily-routine segment |
+| 9 | [[Kanji — How Kanji Work]], [[Radicals — The Building Blocks]], [[Kanji Learning Strategies]] | Use the kanji-as-spoken-words block in [[Phase 2 Local Audio Practice]] | Course vocabulary audio for already-known words | Explain kanji visually without losing the spoken word |
+| 10 | [[Kanji N5 Essentials]] | Use the first N5 kanji-word block in [[Phase 2 Local Audio Practice]], then expand into page-level clips | Native/course examples containing the target words | Read and say a small N5 kanji set in words |
+| 11 | [[Pronunciation — Difficult Sounds for English Speakers]], [[Conversation Patterns — Daily Interactions]] | Use the interaction block in [[Phase 2 Local Audio Practice]] plus sound-focused page clips | One repeatable daily-interaction dialogue | Shadow one daily script without reading |
+| 12 | [[Conversation Patterns — Shopping and Restaurants]], [[Keigo — Teineigo (Polite)]], [[Social Register — When to Use What]], [[Shadowing — Technique and Practice Guide]] | Use the shopping and polite-service block in [[Phase 2 Local Audio Practice]] | Service or polite dialogue from the spine | Complete a short polite role-play with natural rhythm |
 
 ## Gap Policy
 
@@ -81,14 +84,16 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Use [[Phase 2 Weekly Review]] before Phase 2 becomes the active dashboard phase.
+- Use [[Phase 2 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Pronunciation Correction Log]] when a real suspect Phase 2 clip is found.
 - Use [[Phase 3 Audio Coverage Map]] before starting Phase 3 content.
-- Keep Phase 2 local practice page-level for now; create a separate ladder only if daily study starts requiring too much clip hunting.
+- If the ladder exposes a suspect counter, kanji-reading, or sentence clip, quarantine that clip and keep the authentic spine as the model.
 
 ## References
 
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Authentic Audio Spine]]
+- [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Weekly Review]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 1 Audio Coverage Map]]
