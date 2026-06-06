@@ -19,6 +19,8 @@ For pitch, idioms, professional phrasing, humor, keigo, and register nuance, loc
 
 Use [[Phase 5 Audio Assignment Ladder]] when you need the copy-ready current assignment, advancement rule, and native-source safety rule. Use [[Phase 5 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
+For Block 1, use [[Eleventh Month Japanese Study Plan]] as the learner-facing wrapper around the native-media and source-label clips below, so native-source work stays tied to one replayable segment and a summary, transcription, shadowing, or mining proof.
+
 ## Session Loop
 
 Run this loop for 10 minutes on a minimum Phase 5 day or 30 minutes on a good day:
@@ -207,6 +209,7 @@ After listening, write one line in [[Phase 5 Weekly Review]]:
 ## References
 
 - [[Phase 5 — Advanced]]
+- [[Eleventh Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]

@@ -166,12 +166,13 @@ Month ten counts when all of these are true:
 
 After these success criteria are true, open [[Phase 4 Weekly Review]] and the [[Phase 4 — Intermediate Mastery#Phase 4 Checkpoint|Phase 4 checkpoint]]. If the checkpoint is not real, repeat the weakest Phase 4 block with a shorter segment.
 
-If the checkpoint is real, prepare Phase 5 by opening [[Phase 5 Authentic Audio Spine]], [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Audio Coverage Map]], and [[Phase 5 Weekly Review]] before starting native-source output work.
+If the checkpoint is real, continue to [[Eleventh Month Japanese Study Plan]]. It wraps Block 1 of [[Phase 5 Audio Assignment Ladder]] and starts native-source output work with one replayable segment, local precision drills, and summary, transcription, shadowing, or mining proof.
 
 ## References
 
 - [[Japanese Learning Dashboard]]
 - [[Ninth Month Japanese Study Plan]]
+- [[Eleventh Month Japanese Study Plan]]
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]

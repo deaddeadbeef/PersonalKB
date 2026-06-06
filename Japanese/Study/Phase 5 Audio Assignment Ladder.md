@@ -12,11 +12,12 @@ tier-coverage: [practice]
 ## How To Use
 
 1. Start Phase 5 only after the [[Phase 4 — Intermediate Mastery|Phase 4 checkpoint]] is real.
-2. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
-3. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
-4. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
-5. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
-6. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+2. Use [[Eleventh Month Japanese Study Plan]] as the Block 1 execution path.
+3. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
+4. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
+5. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
+6. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
+7. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Phase 5 blocks can take more than one week. Advance only when native-source work, local precision drills, feedback, and active proof are all real.
 
@@ -117,6 +118,7 @@ Phase 5 is where local clips are most likely to feel productive while avoiding t
 ## References
 
 - [[Phase 5 — Advanced]]
+- [[Eleventh Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
