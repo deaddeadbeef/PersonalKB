@@ -1227,3 +1227,31 @@ Verification:
 - Removed-row audit search: the 22 normalized filenames no longer appear in changed TTS inputs.
 - Changed MP3 file check: 0 MP3 files changed.
 - `git diff --check`
+
+## [2026-06-07] curate | Japanese practice source-row normalization
+
+Scope: normalize source rows whose pronunciation overrides had already replaced English rules, placeholders, slash-separated items, and generic practice prompts with the actual Japanese text used by the audio.
+
+Changed audio/ops files:
+- `Japanese/_audio/gap_manifest.json`
+- `Japanese/_audio/nontbl_manifest.json`
+- `Japanese/_audio/gramn5_full_manifest.json`
+- `Japanese/_audio/speaking_full_manifest.json`
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Maintenance changes:
+- Normalized 39 source rows to the real Japanese phrase or sentence already used for TTS.
+- Removed the now-redundant overrides for table-rule examples, self-introduction placeholders, placeholder sentence patterns, and the English adjective practice prompt.
+- Reduced pronunciation-audit changed TTS inputs from 65 to 26; the remaining 26 are true reading-disambiguation cases for particles, counter suffixes, `開ける`, and `聲の形`.
+- Did not regenerate MP3 files because the normalized rows already matched the TTS text used for existing audio.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python -m py_compile Japanese\_audio\build_pronunciation_manifest.py`
+- Affected-row manifest check: 39 rows now have matching source, display, and TTS text with `unchanged` pronunciation notes.
+- Removed-row audit search: the 39 normalized filenames no longer appear in changed TTS inputs.
+- Changed MP3 file check: 0 MP3 files changed.
+- `git diff --check`

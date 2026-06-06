@@ -298,10 +298,10 @@
   {
     "filename": "adj-038-describe-things-around-you-using-both-i-na-adjectives.mp3",
     "text": "身の回りのものを、い形容詞とな形容詞の両方を使って説明しましょう。",
-    "display_text": "Describe things around you using both い and な adjectives",
+    "display_text": "身の回りのものを、い形容詞とな形容詞の両方を使って説明しましょう。",
     "source_manifest": "gramn5_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "translated English practice instruction"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "aizuchi-001-un.mp3",
@@ -2602,154 +2602,154 @@
   {
     "filename": "gap-005-Plain-().mp3",
     "text": "タメ口",
-    "display_text": "Plain (タメ口)",
+    "display_text": "タメ口",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "removed English register label"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-006-.mp3",
     "text": "行く、来る",
-    "display_text": "行く/来る",
+    "display_text": "行く、来る",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read both verbs without slash"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-007-(oishii).mp3",
     "text": "おいしい",
-    "display_text": "おいしい (oishii)",
+    "display_text": "おいしい",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "removed romanization"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-008-Drop-,-add.mp3",
     "text": "おいしくない",
-    "display_text": "Drop い, add くない",
+    "display_text": "おいしくない",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read adjective form example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-009-Drop-,-add.mp3",
     "text": "おいしかった",
-    "display_text": "Drop い, add かった",
+    "display_text": "おいしかった",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read adjective form example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-010-Drop-,-add.mp3",
     "text": "おいしくなかった",
-    "display_text": "Drop い, add くなかった",
+    "display_text": "おいしくなかった",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read adjective form example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-011-Drop-,-add.mp3",
     "text": "おいしく",
-    "display_text": "Drop い, add く",
+    "display_text": "おいしく",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read adjective form example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-012-Add.mp3",
     "text": "おいしいです",
-    "display_text": "Add です",
+    "display_text": "おいしいです",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read polite adjective example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-013-+.mp3",
     "text": "元気な人",
-    "display_text": "+ な",
+    "display_text": "元気な人",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read na-adjective example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-014-+.mp3",
     "text": "元気です",
-    "display_text": "+ です",
+    "display_text": "元気です",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read na-adjective example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-015-+.mp3",
     "text": "元気じゃない",
-    "display_text": "+ じゃない",
+    "display_text": "元気じゃない",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read na-adjective example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-016-+.mp3",
     "text": "元気でした",
-    "display_text": "+ でした",
+    "display_text": "元気でした",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read na-adjective example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-017-+.mp3",
     "text": "元気じゃなかった",
-    "display_text": "+ じゃなかった",
+    "display_text": "元気じゃなかった",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read na-adjective example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-018-+.mp3",
     "text": "元気に",
-    "display_text": "+ に",
+    "display_text": "元気に",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read na-adjective example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-019-adj.mp3",
     "text": "安くておいしい",
-    "display_text": "い-adj",
+    "display_text": "安くておいしい",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read conjunction example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-020-adj.mp3",
     "text": "静かできれい",
-    "display_text": "な-adj",
+    "display_text": "静かできれい",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read conjunction example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-021-A-B-~.mp3",
     "text": "犬は猫より大きいです",
-    "display_text": "Aは Bより ~ です",
+    "display_text": "犬は猫より大きいです",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read comparison example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-022-A-~.mp3",
     "text": "富士山が一番高いです",
-    "display_text": "Aが一番 ~ です",
+    "display_text": "富士山が一番高いです",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read superlative example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-023-~.mp3",
     "text": "どちらが安いですか",
-    "display_text": "どちらが ~ ですか",
+    "display_text": "どちらが安いですか",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read question example"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-024-phrase.mp3",
@@ -3042,26 +3042,26 @@
   {
     "filename": "gap-060-(kakimasu).mp3",
     "text": "書きます",
-    "display_text": "書く → 書きます (kakimasu)",
+    "display_text": "書きます",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read conjugated form"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-061-Drop-,-add.mp3",
     "text": "食べます",
-    "display_text": "Drop る, add ます",
+    "display_text": "食べます",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read conjugated form"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-062-,.mp3",
     "text": "します、きます",
-    "display_text": "する → します, くる → きます",
+    "display_text": "します、きます",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read both irregular forms"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-063-phrase.mp3",
@@ -3090,58 +3090,58 @@
   {
     "filename": "gap-066-.mp3",
     "text": "ぶ、む、ぬ",
-    "display_text": "ぶ/む/ぬ",
+    "display_text": "ぶ、む、ぬ",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read endings without slash"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-067-.mp3",
     "text": "つ、る、う",
-    "display_text": "つ/る/う",
+    "display_text": "つ、る、う",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read endings without slash"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-068-Exception.mp3",
     "text": "行く",
-    "display_text": "Exception: 行く",
+    "display_text": "行く",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "removed English exception label"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-069-(kakanai).mp3",
     "text": "書かない",
-    "display_text": "書く → 書かない (kakanai)",
+    "display_text": "書かない",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read conjugated form"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-070-Drop-,-add.mp3",
     "text": "食べない",
-    "display_text": "Drop る, add ない",
+    "display_text": "食べない",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read conjugated form"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-071-,.mp3",
     "text": "しない、こない",
-    "display_text": "する → しない, くる → こない",
+    "display_text": "しない、こない",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read both irregular forms"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-072-(NOT-).mp3",
     "text": "ない",
-    "display_text": "ある → ない (NOT あらない)",
+    "display_text": "ない",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "removed English warning"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-073-phrase.mp3",
@@ -3234,10 +3234,10 @@
   {
     "filename": "gap-084-phrase.mp3",
     "text": "私はそう思います",
-    "display_text": "私は…と思います",
+    "display_text": "私はそう思います",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "expanded ellipsis to a pronounceable sentence"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-085-phrase.mp3",
@@ -3562,10 +3562,10 @@
   {
     "filename": "gap-125-.mp3",
     "text": "彼、彼女",
-    "display_text": "彼 / 彼女",
+    "display_text": "彼、彼女",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "read both pronouns without slash"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "gap-126-phrase.mp3",
@@ -11042,26 +11042,26 @@
   {
     "filename": "nontbl-002-desu.mp3",
     "text": "田中です",
-    "display_text": "[Name]です",
+    "display_text": "田中です",
     "source_manifest": "nontbl_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "expanded placeholder"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "nontbl-003-kara-kimashita.mp3",
     "text": "アメリカから来ました",
-    "display_text": "[Country]から来ました",
+    "display_text": "アメリカから来ました",
     "source_manifest": "nontbl_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "expanded placeholder"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "nontbl-004-shumi-wa-desu.mp3",
     "text": "趣味は音楽です",
-    "display_text": "趣味は[hobby]です",
+    "display_text": "趣味は音楽です",
     "source_manifest": "nontbl_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "expanded placeholder"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "nontbl-005-yoroshiku-onegaishimasu.mp3",
@@ -11074,18 +11074,18 @@
   {
     "filename": "nontbl-006-to-moushimasu.mp3",
     "text": "田中と申します",
-    "display_text": "[Name]と申します",
+    "display_text": "田中と申します",
     "source_manifest": "nontbl_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "expanded placeholder"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "nontbl-007-hataraiteorimasu.mp3",
     "text": "山田商事の営業部で働いております",
-    "display_text": "[Company]の[Department]で働いております",
+    "display_text": "山田商事の営業部で働いております",
     "source_manifest": "nontbl_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "expanded placeholder"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "nontbl-008-nihongo-benkyouchuu.mp3",
@@ -11346,10 +11346,10 @@
   {
     "filename": "nontbl-040-wa-ha-particle.mp3",
     "text": "これは本です",
-    "display_text": "Xは Yです",
+    "display_text": "これは本です",
     "source_manifest": "nontbl_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "expanded placeholder pattern"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "nontbl-041-imasu-arimasu.mp3",
@@ -12912,10 +12912,10 @@
   {
     "filename": "selfintro2-010-kaisha-de-hataraitemasu.mp3",
     "text": "山田商事の営業部で働いております。",
-    "display_text": "ABC株式会社の営業部で働いております。",
+    "display_text": "山田商事の営業部で働いております。",
     "source_manifest": "speaking_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "removed Latin company placeholder"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "selfintro2-011-nihongo-benkyouchuu.mp3",

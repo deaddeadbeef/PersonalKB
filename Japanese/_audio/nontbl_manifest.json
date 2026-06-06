@@ -5,15 +5,15 @@
   },
   {
     "filename": "nontbl-002-desu.mp3",
-    "text": "[Name]です"
+    "text": "田中です"
   },
   {
     "filename": "nontbl-003-kara-kimashita.mp3",
-    "text": "[Country]から来ました"
+    "text": "アメリカから来ました"
   },
   {
     "filename": "nontbl-004-shumi-wa-desu.mp3",
-    "text": "趣味は[hobby]です"
+    "text": "趣味は音楽です"
   },
   {
     "filename": "nontbl-005-yoroshiku-onegaishimasu.mp3",
@@ -21,11 +21,11 @@
   },
   {
     "filename": "nontbl-006-to-moushimasu.mp3",
-    "text": "[Name]と申します"
+    "text": "田中と申します"
   },
   {
     "filename": "nontbl-007-hataraiteorimasu.mp3",
-    "text": "[Company]の[Department]で働いております"
+    "text": "山田商事の営業部で働いております"
   },
   {
     "filename": "nontbl-008-nihongo-benkyouchuu.mp3",
@@ -157,7 +157,7 @@
   },
   {
     "filename": "nontbl-040-wa-ha-particle.mp3",
-    "text": "Xは Yです"
+    "text": "これは本です"
   },
   {
     "filename": "nontbl-041-imasu-arimasu.mp3",

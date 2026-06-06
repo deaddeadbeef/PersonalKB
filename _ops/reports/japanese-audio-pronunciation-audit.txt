@@ -5,8 +5,8 @@ SUMMARY
   Source manifests          : 11
   Pronunciation entries     : 1810
   MP3 files                 : 1810
-  Entries changed for TTS   : 65
-  Explicit overrides        : 65
+  Entries changed for TTS   : 26
+  Explicit overrides        : 26
   Duplicate manifest rows   : 2
   Missing MP3 files         : 0
   MP3 files not in manifest : 0
@@ -26,26 +26,6 @@ SOURCE COVERAGE
   vocab_manifest.json          289
 
 CHANGED TTS INPUTS
-  adj-038-describe-things-around-you-using-both-i-na-adjectives.mp3: Describe things around you using both い and な adjectives -> 身の回りのものを、い形容詞とな形容詞の両方を使って説明しましょう。 (translated English practice instruction)
-  gap-005-Plain-().mp3: Plain (タメ口) -> タメ口 (removed English register label)
-  gap-006-.mp3: 行く/来る -> 行く、来る (read both verbs without slash)
-  gap-007-(oishii).mp3: おいしい (oishii) -> おいしい (removed romanization)
-  gap-008-Drop-,-add.mp3: Drop い, add くない -> おいしくない (read adjective form example)
-  gap-009-Drop-,-add.mp3: Drop い, add かった -> おいしかった (read adjective form example)
-  gap-010-Drop-,-add.mp3: Drop い, add くなかった -> おいしくなかった (read adjective form example)
-  gap-011-Drop-,-add.mp3: Drop い, add く -> おいしく (read adjective form example)
-  gap-012-Add.mp3: Add です -> おいしいです (read polite adjective example)
-  gap-013-+.mp3: + な -> 元気な人 (read na-adjective example)
-  gap-014-+.mp3: + です -> 元気です (read na-adjective example)
-  gap-015-+.mp3: + じゃない -> 元気じゃない (read na-adjective example)
-  gap-016-+.mp3: + でした -> 元気でした (read na-adjective example)
-  gap-017-+.mp3: + じゃなかった -> 元気じゃなかった (read na-adjective example)
-  gap-018-+.mp3: + に -> 元気に (read na-adjective example)
-  gap-019-adj.mp3: い-adj -> 安くておいしい (read conjunction example)
-  gap-020-adj.mp3: な-adj -> 静かできれい (read conjunction example)
-  gap-021-A-B-~.mp3: Aは Bより ~ です -> 犬は猫より大きいです (read comparison example)
-  gap-022-A-~.mp3: Aが一番 ~ です -> 富士山が一番高いです (read superlative example)
-  gap-023-~.mp3: どちらが ~ ですか -> どちらが安いですか (read question example)
   gap-024-phrase.mp3: は -> わ (topic particle reading)
   gap-026-phrase.mp3: を -> お (object particle reading)
   gap-029-phrase.mp3: へ -> え (direction particle reading)
@@ -57,37 +37,18 @@ CHANGED TTS INPUTS
   gap-054-(dai).mp3: 台 (dai) -> だい (counter suffix reading)
   gap-055-(hiki).mp3: 匹 (hiki) -> ひき (counter suffix reading)
   gap-058-(ikkagetsu).mp3: 一か月 (ikkagetsu) -> いっかげつ (force duration counter reading)
-  gap-060-(kakimasu).mp3: 書く → 書きます (kakimasu) -> 書きます (read conjugated form)
-  gap-061-Drop-,-add.mp3: Drop る, add ます -> 食べます (read conjugated form)
-  gap-062-,.mp3: する → します, くる → きます -> します、きます (read both irregular forms)
-  gap-066-.mp3: ぶ/む/ぬ -> ぶ、む、ぬ (read endings without slash)
-  gap-067-.mp3: つ/る/う -> つ、る、う (read endings without slash)
-  gap-068-Exception.mp3: Exception: 行く -> 行く (removed English exception label)
-  gap-069-(kakanai).mp3: 書く → 書かない (kakanai) -> 書かない (read conjugated form)
-  gap-070-Drop-,-add.mp3: Drop る, add ない -> 食べない (read conjugated form)
-  gap-071-,.mp3: する → しない, くる → こない -> しない、こない (read both irregular forms)
-  gap-072-(NOT-).mp3: ある → ない (NOT あらない) -> ない (removed English warning)
-  gap-084-phrase.mp3: 私は…と思います -> 私はそう思います (expanded ellipsis to a pronounceable sentence)
   gap-089-(wa).mp3: 羽 (wa) -> わ (counter suffix reading)
   gap-090-(kai).mp3: 階 (kai) -> かい (counter suffix reading)
   gap-091-(kai).mp3: 回 (kai) -> かい (counter suffix reading)
   gap-092-(ban).mp3: 番 (ban) -> ばん (counter suffix reading)
   gap-093-(soku).mp3: 足 (soku) -> そく (counter suffix reading)
   gap-094-(chaku).mp3: 着 (chaku) -> ちゃく (counter suffix reading)
-  gap-125-.mp3: 彼 / 彼女 -> 彼、彼女 (read both pronouns without slash)
   gap-184-(akeru)-open.mp3: 開ける (akeru) open -> あける (force transitive open reading)
   hira-101-particle-wa.mp3: は -> わ (topic particle reading)
   hira-102-particle-e.mp3: へ -> え (direction particle reading)
   listen-010-koe-no-katachi.mp3: 聲の形 -> こえの形 (force title reading)
-  nontbl-002-desu.mp3: [Name]です -> 田中です (expanded placeholder)
-  nontbl-003-kara-kimashita.mp3: [Country]から来ました -> アメリカから来ました (expanded placeholder)
-  nontbl-004-shumi-wa-desu.mp3: 趣味は[hobby]です -> 趣味は音楽です (expanded placeholder)
-  nontbl-006-to-moushimasu.mp3: [Name]と申します -> 田中と申します (expanded placeholder)
-  nontbl-007-hataraiteorimasu.mp3: [Company]の[Department]で働いております -> 山田商事の営業部で働いております (expanded placeholder)
-  nontbl-040-wa-ha-particle.mp3: Xは Yです -> これは本です (expanded placeholder pattern)
   particle-001-wa.mp3: は -> わ (topic particle reading)
   particle-007-o.mp3: を -> お (object particle reading)
   particle-018-e.mp3: へ -> え (direction particle reading)
-  selfintro2-010-kaisha-de-hataraitemasu.mp3: ABC株式会社の営業部で働いております。 -> 山田商事の営業部で働いております。 (removed Latin company placeholder)
   writing-006-particle-wa.mp3: は -> わ (topic particle reading)
   writing-009-particle-o.mp3: を -> お (object particle reading)

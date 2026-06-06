@@ -26,39 +26,6 @@ ROMANIZATION_PARENS = re.compile(r"\s*\([A-Za-z0-9ūōāīēŪŌĀĪĒ' -]+\)")
 ASCII_PROBLEM = re.compile(r"[A-Za-z\[\]{}~+/]")
 
 PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
-    # Table rules and examples where the audio should read the example, not the rule.
-    "gap-005-Plain-().mp3": ("タメ口", "removed English register label"),
-    "gap-006-.mp3": ("行く、来る", "read both verbs without slash"),
-    "gap-007-(oishii).mp3": ("おいしい", "removed romanization"),
-    "gap-008-Drop-,-add.mp3": ("おいしくない", "read adjective form example"),
-    "gap-009-Drop-,-add.mp3": ("おいしかった", "read adjective form example"),
-    "gap-010-Drop-,-add.mp3": ("おいしくなかった", "read adjective form example"),
-    "gap-011-Drop-,-add.mp3": ("おいしく", "read adjective form example"),
-    "gap-012-Add.mp3": ("おいしいです", "read polite adjective example"),
-    "gap-013-+.mp3": ("元気な人", "read na-adjective example"),
-    "gap-014-+.mp3": ("元気です", "read na-adjective example"),
-    "gap-015-+.mp3": ("元気じゃない", "read na-adjective example"),
-    "gap-016-+.mp3": ("元気でした", "read na-adjective example"),
-    "gap-017-+.mp3": ("元気じゃなかった", "read na-adjective example"),
-    "gap-018-+.mp3": ("元気に", "read na-adjective example"),
-    "gap-019-adj.mp3": ("安くておいしい", "read conjunction example"),
-    "gap-020-adj.mp3": ("静かできれい", "read conjunction example"),
-    "gap-021-A-B-~.mp3": ("犬は猫より大きいです", "read comparison example"),
-    "gap-022-A-~.mp3": ("富士山が一番高いです", "read superlative example"),
-    "gap-023-~.mp3": ("どちらが安いですか", "read question example"),
-    "gap-060-(kakimasu).mp3": ("書きます", "read conjugated form"),
-    "gap-061-Drop-,-add.mp3": ("食べます", "read conjugated form"),
-    "gap-062-,.mp3": ("します、きます", "read both irregular forms"),
-    "gap-066-.mp3": ("ぶ、む、ぬ", "read endings without slash"),
-    "gap-067-.mp3": ("つ、る、う", "read endings without slash"),
-    "gap-068-Exception.mp3": ("行く", "removed English exception label"),
-    "gap-069-(kakanai).mp3": ("書かない", "read conjugated form"),
-    "gap-070-Drop-,-add.mp3": ("食べない", "read conjugated form"),
-    "gap-071-,.mp3": ("しない、こない", "read both irregular forms"),
-    "gap-072-(NOT-).mp3": ("ない", "removed English warning"),
-    "gap-084-phrase.mp3": ("私はそう思います", "expanded ellipsis to a pronounceable sentence"),
-    "gap-125-.mp3": ("彼、彼女", "read both pronouns without slash"),
-
     # Counter suffixes and particles where the intended reading is not the default kanji name.
     "gap-024-phrase.mp3": ("わ", "topic particle reading"),
     "gap-026-phrase.mp3": ("お", "object particle reading"),
@@ -84,24 +51,7 @@ PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
     "hira-102-particle-e.mp3": ("え", "direction particle reading"),
     "writing-006-particle-wa.mp3": ("わ", "topic particle reading"),
     "writing-009-particle-o.mp3": ("お", "object particle reading"),
-    "nontbl-040-wa-ha-particle.mp3": ("これは本です", "expanded placeholder pattern"),
 
-    # Placeholder examples.
-    "nontbl-002-desu.mp3": ("田中です", "expanded placeholder"),
-    "nontbl-003-kara-kimashita.mp3": ("アメリカから来ました", "expanded placeholder"),
-    "nontbl-004-shumi-wa-desu.mp3": ("趣味は音楽です", "expanded placeholder"),
-    "nontbl-006-to-moushimasu.mp3": ("田中と申します", "expanded placeholder"),
-    "nontbl-007-hataraiteorimasu.mp3": ("山田商事の営業部で働いております", "expanded placeholder"),
-    "selfintro2-010-kaisha-de-hataraitemasu.mp3": (
-        "山田商事の営業部で働いております。",
-        "removed Latin company placeholder",
-    ),
-
-    # Clips that were generated from English notes or malformed harvested text.
-    "adj-038-describe-things-around-you-using-both-i-na-adjectives.mp3": (
-        "身の回りのものを、い形容詞とな形容詞の両方を使って説明しましょう。",
-        "translated English practice instruction",
-    ),
     # Reading disambiguation and remaining extraction repairs.
     "gap-184-(akeru)-open.mp3": ("あける", "force transitive open reading"),
     "listen-010-koe-no-katachi.mp3": ("こえの形", "force title reading"),
