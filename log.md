@@ -1099,3 +1099,40 @@ Verification:
 - Stale harvested-contrast source text search: 0 hits.
 - Affected pronunciation manifest row check: 2 rows match expected source/display text.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 4 local audio practice
+
+Scope: add a focused Phase 4 local audio ladder so N3 grammar, N3 kanji, adult vocabulary, keigo, business register, cultural expressions, and discourse timing have a daily clip route paired with native-speed authentic audio.
+
+Changed content files:
+- `Japanese/Listening/Phase 4 Local Audio Practice.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 4 — Intermediate Mastery.md`
+- `Japanese/Listening/Phase 4 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 4 Audio Coverage Map.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Speaking/Phase 4 Keigo and Register Production Checklist.md`
+- `Japanese/Study/Phase 4 Weekly Review.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+
+Maintenance changes:
+- Added `Phase 4 Local Audio Practice` with 115 selected local MP3 drills across N3 grammar, N3 kanji, work/weather vocabulary, keigo, business phrases, seasonal/cultural expressions, idioms, number culture, source labels, and discourse markers.
+- Kept `Phase 4 Authentic Audio Spine` as the pronunciation, rhythm, and register authority; local clips are controlled drills, and register-sensitive prompts route to `Phase 4 Keigo and Register Production Checklist`.
+- Routed Start Here, Phase 4, the audio spine, coverage map, listening overview, dashboard, study index, resources, daily routines, weekly review, and keigo/register checklist to the new ladder.
+- Checked visible labels on the new ladder against `pronunciation_manifest.json` so local practice text matches the canonical audio text.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4747 files, 2878 markdown, 1810 MP3, 0 heavy audio embed pages.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4747 files, 2878 markdown, 1810 MP3, 0 heavy audio embed pages.
+- Phase 4 local audio link coverage check: 13 required references present.
+- Phase 4 stale ladder backlog phrase check: removed old future-ladder wording.
+- Local MP3 embed check across changed pages: 118 embedded MP3 targets, 0 missing.
+- Phase 4 local label/audio text check: 0 mismatches against `pronunciation_manifest.json`.
+- `index.md` MP3 leak check: 0 hits.
+- `git diff --check`

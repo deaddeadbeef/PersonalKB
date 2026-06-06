@@ -19,7 +19,7 @@ Use the 30-minute routine as the default. Use the 60-minute routine when you hav
 |------|----------|-------|
 | 10 min | Due reviews | Anki / WaniKani / handwritten review |
 | 15 min | Course spine | Genki, Irodori, or your chosen textbook |
-| 5 min | Current phase audio | Phase 1: [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]. Phase 2: [[Phase 2 Local Audio Practice]] plus [[Phase 2 Authentic Audio Spine]]. Phase 3: [[Phase 3 Local Audio Practice]] plus [[Phase 3 Authentic Audio Spine]] |
+| 5 min | Current phase audio | Phase 1: [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]. Phase 2: [[Phase 2 Local Audio Practice]] plus [[Phase 2 Authentic Audio Spine]]. Phase 3: [[Phase 3 Local Audio Practice]] plus [[Phase 3 Authentic Audio Spine]]. Phase 4: [[Phase 4 Local Audio Practice]] plus [[Phase 4 Authentic Audio Spine]] |
 
 Use this on ordinary days. Do the reviews first; they are the part that decays if skipped.
 
@@ -30,7 +30,7 @@ Use this on ordinary days. Do the reviews first; they are the part that decays i
 | 15 min | Due reviews plus 3-10 new cards | Anki / WaniKani |
 | 20 min | Course spine | Exercises, not passive reading |
 | 10 min | Vault review | One page from the current phase |
-| 15 min | Listening or shadowing | [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local Audio Practice]]; Phase 2 uses [[Phase 2 Authentic Audio Spine]] plus [[Phase 2 Local Audio Practice]]; Phase 3 uses [[Phase 3 Authentic Audio Spine]] plus [[Phase 3 Local Audio Practice]] |
+| 15 min | Listening or shadowing | [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local Audio Practice]]; Phase 2 uses [[Phase 2 Authentic Audio Spine]] plus [[Phase 2 Local Audio Practice]]; Phase 3 uses [[Phase 3 Authentic Audio Spine]] plus [[Phase 3 Local Audio Practice]]; Phase 4 uses [[Phase 4 Authentic Audio Spine]] plus [[Phase 4 Local Audio Practice]] |
 
 Use this when you want steady progress and still want the next day to be sustainable.
 
@@ -75,7 +75,7 @@ When the day is busy, do only this:
 
 - 5 minutes due reviews
 - 5 minutes kana or sentence reading
-- 1 minute listening from the current phase: [[Phase 1 Authentic Audio Spine]], [[Phase 1 Local Audio Practice]], [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 3 Authentic Audio Spine]], or [[Phase 3 Local Audio Practice]]
+- 1 minute listening from the current phase: [[Phase 1 Authentic Audio Spine]], [[Phase 1 Local Audio Practice]], [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 3 Authentic Audio Spine]], [[Phase 3 Local Audio Practice]], [[Phase 4 Authentic Audio Spine]], or [[Phase 4 Local Audio Practice]]
 
 This keeps the chain alive without pretending every day is ideal.
 
@@ -87,6 +87,7 @@ This keeps the chain alive without pretending every day is ideal.
 - [[Phase 1 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 3 Local Audio Practice]]
+- [[Phase 4 Local Audio Practice]]
 - [[Phase 2 Weekly Review]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 4 Weekly Review]]

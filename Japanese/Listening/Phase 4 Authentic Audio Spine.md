@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, practice]
 
 # Phase 4 Authentic Audio Spine
 
-> Use this page during [[Phase 4 — Intermediate Mastery]]. Phase 4 is where audio becomes native-speed training: N3 grammar in longer sentences, keigo production, business register, cultural expressions, and sustained conversation.
+> Use this page during [[Phase 4 — Intermediate Mastery]]. Pair it with [[Phase 4 Local Audio Practice]] so native-speed training stays anchored while N3 grammar, keigo production, business register, cultural expressions, and sustained conversation become repeatable.
 
 ## The Rule
 
@@ -28,7 +28,7 @@ Use this pairing on any Phase 4 study day:
 
 | Time | Audio layer | Task |
 | --- | --- | --- |
-| 3-5 min | Current Phase 4 page embeds | Repeat N3 grammar, kanji vocabulary, keigo, business, culture, or discourse-marker clips inside Obsidian |
+| 3-5 min | [[Phase 4 Local Audio Practice]] or current Phase 4 page embeds | Repeat N3 grammar, kanji vocabulary, keigo, business, culture, or discourse-marker clips inside Obsidian |
 | 15-30 min | This authentic spine | Listen once for gist, once with text or notes, then shadow or transcribe one short segment |
 | 2-5 min | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] when needed | Check one pitch, reading, register, rhythm, or suspect-clip issue |
 | 1 min | [[Phase 4 Weekly Review]] or daily note | Record the exact segment, local clip set, and one register or rhythm issue to revisit |
@@ -39,12 +39,12 @@ When time is short, keep one native sentence and one local clip. Phase 4 should 
 
 | Phase 4 block | Study focus | Authentic audio target | Local companion |
 | --- | --- | --- | --- |
-| 1 | N3 formal expressions, conjunctions, nominalization, quotation | Transcripted speech or course/tutor audio with longer clauses and reporting patterns | [[N3 Grammar — Formal Expressions]], [[N3 Grammar — Complex Conjunctions]], [[N3 Grammar — Nominalization and Quotation]], [[Grammar — Comparison Across Levels]] clips |
-| 2 | N3 kanji, adult-life vocabulary, work, nature, weather | News, workplace, weather, or daily-life segment where vocabulary appears in context | [[Kanji N3 Essentials]], [[Thematic Vocabulary — Work and Office]], [[Thematic Vocabulary — Nature and Weather]] clips |
-| 3 | Keigo, business, seasonal greetings, idioms, numbers in culture | Formal role-play, service/workplace audio, or tutor/native-speaker examples with clear register | [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]], [[Seasonal Greetings and Cultural Expressions]], [[Idioms and Proverbs — ことわざ]], [[Numbers and Superstitions]] clips |
-| 4 | Advanced listening, conversation fluency, plateau strategy | One native-speed segment with text/subtitles plus one shadowing or transcription target | [[Advanced Listening Resources]], [[Common Filler Words and Discourse Markers]], [[Study Roadmap — Intermediate to Advanced]] |
+| 1 | N3 formal expressions, conjunctions, nominalization, quotation | Transcripted speech or course/tutor audio with longer clauses and reporting patterns | [[Phase 4 Local Audio Practice]] Block 1 |
+| 2 | N3 kanji, adult-life vocabulary, work, nature, weather | News, workplace, weather, or daily-life segment where vocabulary appears in context | [[Phase 4 Local Audio Practice]] Block 2 |
+| 3 | Keigo, business, seasonal greetings, idioms, numbers in culture | Formal role-play, service/workplace audio, or tutor/native-speaker examples with clear register | [[Phase 4 Local Audio Practice]] Block 3 |
+| 4 | Advanced listening, conversation fluency, plateau strategy | One native-speed segment with text/subtitles plus one shadowing or transcription target | [[Phase 4 Local Audio Practice]] Block 4 |
 
-Use [[Phase 4 Audio Coverage Map]] when you need to match the current Phase 4 page to the correct local clip set and native-speed segment.
+Use [[Phase 4 Local Audio Practice]] for the daily ladder. Use [[Phase 4 Audio Coverage Map]] when you need to match a required Phase 4 page to the right local and native-speed audio layer.
 
 Use [[Phase 4 Keigo and Register Production Checklist]] when the weekly target is keigo, business Japanese, service language, or any role-play where social direction matters.
 
@@ -75,6 +75,7 @@ At the end of each week, record evidence in [[Phase 4 Weekly Review]]:
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 4 Weekly Review]]

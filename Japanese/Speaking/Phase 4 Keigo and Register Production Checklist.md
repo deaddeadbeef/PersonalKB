@@ -15,10 +15,10 @@ Use sources in this order:
 
 | Need | Use first | Use local clips for |
 | --- | --- | --- |
-| Social direction | Tutor/native feedback, course role-play, or a clear service/workplace model | Repeating a form after the role is known |
-| Sonkeigo form | [[Keigo — Sonkeigo (Honorific)]] plus a human/register model | Form recall and mouth practice |
-| Kenjōgo form | [[Keigo — Kenjōgo (Humble)]] plus a human/register model | Form recall and mouth practice |
-| Business phrase rhythm | Workplace/service audio, course dialogue, or tutor role-play | Repeating the phrase inside Obsidian |
+| Social direction | Tutor/native feedback, course role-play, or a clear service/workplace model | [[Phase 4 Local Audio Practice]] Block 3 after the role is known |
+| Sonkeigo form | [[Keigo — Sonkeigo (Honorific)]] plus a human/register model | [[Phase 4 Local Audio Practice]] Block 3 for form recall and mouth practice |
+| Kenjōgo form | [[Keigo — Kenjōgo (Humble)]] plus a human/register model | [[Phase 4 Local Audio Practice]] Block 3 for form recall and mouth practice |
+| Business phrase rhythm | Workplace/service audio, course dialogue, or tutor role-play | [[Phase 4 Local Audio Practice]] Block 3 for phrase repetition inside Obsidian |
 | Uncertain register | [[Pronunciation and Audio Accuracy]] and [[Phase 4 Authentic Audio Spine]] | Nothing until the model is checked |
 
 Do not produce keigo freely from a local TTS clip alone.
@@ -39,12 +39,12 @@ Use this before recording, role-playing, or sending a register-sensitive sentenc
 
 ## Ten-Minute Role-Play Loop
 
-Use this with [[Phase 4 Authentic Audio Spine]] and [[Phase 4 Audio Coverage Map]].
+Use this with [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], and [[Phase 4 Audio Coverage Map]].
 
 1. Choose one situation: visitor reception, client phone call, meeting opening, request, apology, follow-up email, or reporting your boss's words to a client.
 2. Choose the social direction before choosing the verb.
 3. Listen to one human or official-course model for the situation.
-4. Drill one local clip from [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], or [[Business Japanese — Workplace Communication]].
+4. Drill one local clip from [[Phase 4 Local Audio Practice]] Block 3, then expand into [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], or [[Business Japanese — Workplace Communication]] if needed.
 5. Record one 20-60 second role-play or write one short email sentence.
 6. Compare it against the model or ask for tutor/native feedback.
 7. Log the result in [[Phase 4 Weekly Review]].
@@ -75,6 +75,7 @@ Clip-quality problems go to [[Pronunciation Correction Log]]. Normal learner cor
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Weekly Review]]
 - [[Keigo — Sonkeigo (Honorific)]]

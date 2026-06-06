@@ -15,11 +15,11 @@ Phase 4 audio support has three layers:
 
 | Layer | Source | Job |
 | --- | --- | --- |
-| Local drill | Embedded MP3 clips on the current Phase 4 page | Repeat N3 grammar, kanji vocabulary, keigo, business, culture, and discourse-marker examples inside Obsidian |
+| Local drill | [[Phase 4 Local Audio Practice]] plus embedded MP3 clips on the current Phase 4 page | Repeat N3 grammar, kanji vocabulary, keigo, business, culture, and discourse-marker examples inside Obsidian |
 | Authentic model | [[Phase 4 Authentic Audio Spine]] | Keep native-speed, human-recorded, or official-course Japanese as the pronunciation, rhythm, and register model |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Phase 4 does not need a separate local ladder yet. The required content pages already contain page-level clips. What Phase 4 needs is a stronger native-speed model because register, idioms, discourse timing, and longer clauses cannot be learned from local TTS alone.
+Use [[Phase 4 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 4 clips, ordered by block so N3 grammar, kanji, keigo, business, culture, and discourse timing do not require page-level clip hunting. The authentic model stays primary because register, idioms, discourse timing, and longer clauses cannot be learned from local TTS alone.
 
 ## Required Phase 4 Coverage
 
@@ -27,6 +27,7 @@ Phase 4 does not need a separate local ladder yet. The required content pages al
 | --- | ---: | --- | --- | --- |
 | [[Phase 4 — Intermediate Mastery]] | 0 | Routes to spine | Routes to QA | Choose the next N3/intermediate focus |
 | [[Phase 4 Authentic Audio Spine]] | 0 | Primary native-speed route | Quality bar included | Choose the repeatable segment for the week |
+| [[Phase 4 Local Audio Practice]] | 115 selected | Must be paired with spine | Covered by QA; register prompts route to [[Phase 4 Keigo and Register Production Checklist]] | Drill the current Phase 4 block without hunting through pages |
 | [[Phase 4 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA and register evidence | Decide next week's native-speed target |
 | [[N3 Grammar — Formal Expressions]] | 26 | Formal course/tutor/native examples | Covered by QA | Hear formal endings and service-style rhythm in sentences |
 | [[N3 Grammar — Complex Conjunctions]] | 36 | Transcripted speech with longer clause chains | Covered by QA | Hear how complex links affect pacing |
@@ -46,16 +47,16 @@ Phase 4 does not need a separate local ladder yet. The required content pages al
 | [[Common Filler Words and Discourse Markers]] | 22 | Native conversation or tutor examples | Covered by QA | Hear filler words as timing and stance devices |
 | [[Study Roadmap — Intermediate to Advanced]] | 0 | Uses the current spine segment | Routes to QA | Use strategy; keep proof on the audio pages |
 
-Total local coverage across the required Phase 4 pages: 312 embedded MP3 clips.
+The required Phase 4 content pages carry 312 embedded MP3 clips. [[Phase 4 Local Audio Practice]] adds 115 selected practice embeds from that library, for 427 total Phase 4 audio occurrences in the mapped route.
 
 ## Audio Pairing
 
 | Block | Study pages | Local drill | Authentic model | Proof |
 | --- | --- | --- | --- | --- |
-| 1 | [[N3 Grammar — Formal Expressions]], [[N3 Grammar — Complex Conjunctions]], [[N3 Grammar — Nominalization and Quotation]], [[Grammar — Comparison Across Levels]] | Repeat longer grammar examples aloud | Transcripted course/tutor/native segment with the target pattern visible in text | Shadow one multi-clause sentence without losing particles |
-| 2 | [[Kanji N3 Essentials]], [[Thematic Vocabulary — Work and Office]], [[Thematic Vocabulary — Nature and Weather]] | Drill N3 kanji and adult-life vocabulary clips | News, workplace, weather, or daily-life audio with text | Summarize one segment and reuse five target words aloud |
-| 3 | [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]], [[Phase 4 Keigo and Register Production Checklist]], [[Seasonal Greetings and Cultural Expressions]], [[Idioms and Proverbs — ことわざ]], [[Numbers and Superstitions]] | Drill forms after checking register | Formal role-play, service/workplace audio, or tutor/native examples | Complete one short register-appropriate role-play |
-| 4 | [[Advanced Listening Resources]], [[Common Filler Words and Discourse Markers]], [[Study Roadmap — Intermediate to Advanced]] | Drill discourse markers and review strategy targets | One native-speed segment with text/subtitles | Shadow, transcribe, or summarize one short segment |
+| 1 | [[N3 Grammar — Formal Expressions]], [[N3 Grammar — Complex Conjunctions]], [[N3 Grammar — Nominalization and Quotation]], [[Grammar — Comparison Across Levels]] | Use [[Phase 4 Local Audio Practice]] Block 1, then expand into page-level clips | Transcripted course/tutor/native segment with the target pattern visible in text | Shadow one multi-clause sentence without losing particles |
+| 2 | [[Kanji N3 Essentials]], [[Thematic Vocabulary — Work and Office]], [[Thematic Vocabulary — Nature and Weather]] | Use [[Phase 4 Local Audio Practice]] Block 2, then expand into page-level clips | News, workplace, weather, or daily-life audio with text | Summarize one segment and reuse five target words aloud |
+| 3 | [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]], [[Phase 4 Keigo and Register Production Checklist]], [[Seasonal Greetings and Cultural Expressions]], [[Idioms and Proverbs — ことわざ]], [[Numbers and Superstitions]] | Use [[Phase 4 Local Audio Practice]] Block 3 only after checking register | Formal role-play, service/workplace audio, or tutor/native examples | Complete one short register-appropriate role-play |
+| 4 | [[Advanced Listening Resources]], [[Common Filler Words and Discourse Markers]], [[Study Roadmap — Intermediate to Advanced]] | Use [[Phase 4 Local Audio Practice]] Block 4 for source labels and discourse markers | One native-speed segment with text/subtitles | Shadow, transcribe, or summarize one short segment |
 
 ## Gap Policy
 
@@ -75,14 +76,15 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Use [[Phase 4 Weekly Review]] before Phase 4 becomes the active dashboard phase.
+- Use [[Phase 4 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Phase 4 Keigo and Register Production Checklist]] after Phase 4 audio evidence is in place.
 - Use [[Phase 5 Audio Coverage Map]] before starting Phase 5 content.
-- Keep Phase 4 local practice page-level for now; create a Phase 4 ladder only if daily study starts requiring too much clip hunting.
 
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Weekly Review]]
 - [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 5 Audio Coverage Map]]

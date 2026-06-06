@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 20-30 minutes.
 
-Phase 4 review should identify one exact native-speed segment, one local drill target, one register or pronunciation check, and one active proof such as shadowing, transcription, summary, or role-play.
+Phase 4 review should identify one exact native-speed segment, one local drill target from [[Phase 4 Local Audio Practice]] or the current page, one register or pronunciation check, and one active proof such as shadowing, transcription, summary, or role-play.
 
 ## Week Of
 
@@ -26,7 +26,7 @@ Phase 4 review should identify one exact native-speed segment, one local drill t
 ## Completed
 
 - [ ] One exact native-speed or official-course segment from [[Phase 4 Authentic Audio Spine]] repeated on at least 3 days
-- [ ] One local clip set from the current Phase 4 page repeated on at least 3 days
+- [ ] One local clip set from [[Phase 4 Local Audio Practice]] or the current Phase 4 page repeated on at least 3 days
 - [ ] [[Phase 4 Audio Coverage Map]] checked for the current main page
 - [ ] One pronunciation, pitch, reading, register, keigo, or rhythm issue checked through [[Pronunciation and Audio Accuracy]]
 - [ ] One keigo, business, seasonal, idiom, or cultural expression checked against a human/native model when context matters
@@ -41,7 +41,7 @@ Record exact targets. "Watched Japanese videos" is not enough.
 | Layer | Exact target | Evidence |
 | --- | --- | --- |
 | Native-speed audio | Source, episode/article/scene, timestamp, transcript/subtitle route |  |
-| Local clips | Current Phase 4 page and clip set |  |
+| Local clips | [[Phase 4 Local Audio Practice]] block or current Phase 4 page clip set |  |
 | Shadowing or transcription | Sentence, paragraph, line, or timestamp range |  |
 | Register or keigo check | Phrase, role, social situation, or business expression; use [[Phase 4 Keigo and Register Production Checklist]] when producing it |  |
 | Pronunciation or reading check | Word, phrase, pitch pattern, rhythm issue, or kanji reading |  |
@@ -98,7 +98,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 
 - One main page:
 - One native-speed audio target:
-- One local audio target:
+- One local audio target from [[Phase 4 Local Audio Practice]] or the current page:
 - One pronunciation, pitch, reading, or register check:
 - One shadowing, transcription, or summary target:
 - One role-play or feedback route:
@@ -108,6 +108,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mastery|Phase 4 checkpoint]] is true and the audio evidence is real:
 
 - [ ] You have repeated a stable Phase 4 native-speed source for multiple weeks
+- [ ] You can use [[Phase 4 Local Audio Practice]] without hunting through page-level clips
 - [ ] You can pair each required Phase 4 page with audio using [[Phase 4 Audio Coverage Map]]
 - [ ] You can shadow, transcribe, or summarize a short native-speed segment with text support
 - [ ] You can check keigo, register, pitch, and reading uncertainty through reliable native/course/tutor sources
@@ -118,6 +119,7 @@ Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mas
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 5 Authentic Audio Spine]]

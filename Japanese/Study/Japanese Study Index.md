@@ -17,7 +17,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Dashboard | [[Japanese Learning Dashboard]] | Decide what to do today and this week |
 | Phase path | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] -> [[Phase 4 — Intermediate Mastery]] -> [[Phase 5 — Advanced]] | Work through the language in order |
 | Routine | [[Daily Study Routine Templates]] | Choose a 30-minute, 60-minute, or intensive day |
-| Audio ladder | [[Phase 1 Local Audio Practice]] -> [[Phase 2 Local Audio Practice]] -> [[Phase 3 Local Audio Practice]] | Use local clips in the correct order instead of browsing the raw audio catalog |
+| Audio ladder | [[Phase 1 Local Audio Practice]] -> [[Phase 2 Local Audio Practice]] -> [[Phase 3 Local Audio Practice]] -> [[Phase 4 Local Audio Practice]] | Use local clips in the correct order instead of browsing the raw audio catalog |
 | Authentic audio | [[Phase 1 Authentic Audio Spine]] -> [[Phase 2 Authentic Audio Spine]] -> [[Phase 3 Authentic Audio Spine]] -> [[Phase 4 Authentic Audio Spine]] -> [[Phase 5 Authentic Audio Spine]] | Choose the native/official audio source for the current phase |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when to trust, correct, or quarantine a clip |
 | Audio coverage | [[Phase 1 Audio Coverage Map]] -> [[Phase 2 Audio Coverage Map]] -> [[Phase 3 Audio Coverage Map]] -> [[Phase 4 Audio Coverage Map]] -> [[Phase 5 Audio Coverage Map]] | Match current phase pages to local clips, authentic audio, and QA |
@@ -50,6 +50,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 4 Weekly Review]]
@@ -92,6 +93,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Coverage Map]]
