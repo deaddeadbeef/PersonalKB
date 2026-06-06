@@ -27,6 +27,8 @@ For Block 3, use [[Thirteenth Month Japanese Study Plan]] as the learner-facing 
 
 For Block 4, use [[Fourteenth Month Japanese Study Plan]] as the learner-facing wrapper around benchmark and refinement days, so local diagnostic clips stay tied to a JLPT-style item, real native input on the same function, a named bottleneck, and a next-source decision.
 
+After Block 4, use [[Fifteenth Month Japanese Study Plan]] as the learner-facing wrapper for the first refinement cycle, so the same bottleneck, native source, local diagnostic set, and proof type stay stable for four weeks.
+
 ## Session Loop
 
 Run this loop for 10 minutes on a minimum Phase 5 day or 30 minutes on a good day:
@@ -219,6 +221,7 @@ After listening, write one line in [[Phase 5 Weekly Review]]:
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Audio Coverage Map]]

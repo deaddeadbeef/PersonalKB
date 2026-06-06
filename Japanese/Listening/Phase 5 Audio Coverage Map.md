@@ -21,7 +21,7 @@ Phase 5 audio support has three layers:
 | Output proof | [[Advanced Output and Register Feedback Log]] | Track recordings, tutor/native feedback, register fixes, and reuse targets |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Use [[Phase 5 Audio Assignment Ladder]] before choosing the current native-source segment and output target. Use [[Phase 5 Local Audio Practice]] for short precision drills. For Block 1, use [[Eleventh Month Japanese Study Plan]] when you need the learner-facing daily path through native media, source labels, news, drama/anime, songs, and summary, transcription, shadowing, or mining proof. For Block 2, use [[Twelfth Month Japanese Study Plan]] when you need the learner-facing daily path through full keigo, professional register, workplace/service audio, role mapping, recorded output, and feedback. For Block 3, use [[Thirteenth Month Japanese Study Plan]] when you need the learner-facing daily path through idioms, fillers, stance, implication, pitch, grammar nuance, reference routes, and checked reuse. For Block 4, use [[Fourteenth Month Japanese Study Plan]] when you need the learner-facing daily path through JLPT-style listening, real-native transfer, bottleneck diagnosis, local diagnostic clips, and next-source decisions. Local clips are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
+Use [[Phase 5 Audio Assignment Ladder]] before choosing the current native-source segment and output target. Use [[Phase 5 Local Audio Practice]] for short precision drills. For Block 1, use [[Eleventh Month Japanese Study Plan]] when you need the learner-facing daily path through native media, source labels, news, drama/anime, songs, and summary, transcription, shadowing, or mining proof. For Block 2, use [[Twelfth Month Japanese Study Plan]] when you need the learner-facing daily path through full keigo, professional register, workplace/service audio, role mapping, recorded output, and feedback. For Block 3, use [[Thirteenth Month Japanese Study Plan]] when you need the learner-facing daily path through idioms, fillers, stance, implication, pitch, grammar nuance, reference routes, and checked reuse. For Block 4, use [[Fourteenth Month Japanese Study Plan]] when you need the learner-facing daily path through JLPT-style listening, real-native transfer, bottleneck diagnosis, local diagnostic clips, and next-source decisions. After Block 4, use [[Fifteenth Month Japanese Study Plan]] when you need the first four-week refinement cycle with one bottleneck, one native source, one local diagnostic set, and one proof type. Local clips are secondary. The main evidence is native-source comprehension, shadowing, transcription, summary, output, and register feedback.
 
 ## Required Phase 5 Coverage
 
@@ -80,6 +80,7 @@ These are real gaps:
 - Use [[Phase 5 Audio Assignment Ladder]] to copy the current block into [[Authentic Audio Evidence Log#Current Assignment]].
 - Use [[Phase 5 Local Audio Practice]] as the short precision-drill route before opening page-level clips.
 - Use [[Advanced Output and Register Feedback Log]] for recordings, tutor feedback, and register corrections.
+- Use [[Fifteenth Month Japanese Study Plan]] after Month 14 chooses a bottleneck and exact source segment.
 
 ## References
 
@@ -88,6 +89,7 @@ These are real gaps:
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Assignment Ladder]]

@@ -170,7 +170,7 @@ Month fourteen counts when all of these are true:
 
 ## Next Cycle
 
-After these success criteria are true, continue with a four-week refinement cycle. Choose one bottleneck, one native source, one local diagnostic set, and one proof type. Do not reset to broad study.
+After these success criteria are true, continue to [[Fifteenth Month Japanese Study Plan]]. It turns the next-cycle decision into a four-week refinement cycle: one bottleneck, one native source, one local diagnostic set, one proof type, and one weekly decision. Do not reset to broad study.
 
 Good next cycles:
 
@@ -184,6 +184,7 @@ Good next cycles:
 
 - [[Japanese Learning Dashboard]]
 - [[Thirteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 5 — Advanced]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Authentic Audio Spine]]

@@ -34,6 +34,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Twelfth month plan | [[Twelfth Month Japanese Study Plan]] | Execute Phase 5 Block 2 with full keigo, professional register, workplace/service audio, recorded output, and feedback proof |
 | Thirteenth month plan | [[Thirteenth Month Japanese Study Plan]] | Execute Phase 5 Block 3 with idioms, fillers, pitch, stance, grammar nuance, local clips, reference routes, and checked reuse proof |
 | Fourteenth month plan | [[Fourteenth Month Japanese Study Plan]] | Execute Phase 5 Block 4 with JLPT-style listening, real-native transfer, bottleneck diagnosis, local diagnostics, and next-source proof |
+| Fifteenth month plan | [[Fifteenth Month Japanese Study Plan]] | Execute the first post-Block-4 refinement cycle with one bottleneck, one native source, one diagnostic route, one proof type, and a retest |
 | Phase 1 starter | [[Phase 1 Audio Starter Assignment]] | Start the first week with one concrete source, clip set, and proof target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keep all eight Phase 2 weeks assigned and evidence-backed |
@@ -77,6 +78,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -199,6 +201,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

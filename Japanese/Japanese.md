@@ -177,26 +177,27 @@ Goal: N2 to N1 direction: native-speed input, professional register, native cont
 | 5.3 | [[Twelfth Month Japanese Study Plan]] | Execute Phase 5 Block 2 with full keigo, professional register, workplace/service audio, recorded output, and feedback proof |
 | 5.4 | [[Thirteenth Month Japanese Study Plan]] | Execute Phase 5 Block 3 with idioms, fillers, pitch, stance, grammar nuance, reference routes, and checked reuse proof |
 | 5.5 | [[Fourteenth Month Japanese Study Plan]] | Execute Phase 5 Block 4 with JLPT-style listening, real-native transfer, bottleneck diagnosis, local diagnostics, and next-source proof |
-| 5.6 | [[Phase 5 Authentic Audio Spine]] | Native-source audio and output feedback route for Phase 5 |
-| 5.7 | [[Phase 5 Local Audio Practice]] | Ordered precision-drill ladder for native media, register, pitch, idioms, discourse, and nuance |
-| 5.8 | [[Phase 5 Audio Assignment Ladder]] | Block-level native-source/local/output/evidence targets for Phase 5 |
-| 5.9 | [[Phase 5 Audio Coverage Map]] | Match each Phase 5 page to local clips, native audio, and QA |
-| 5.10 | [[Advanced Listening Resources]] | Native-speed listening |
-| 5.11 | [[NHK World — News Listening Practice]] | News and formal listening |
-| 5.12 | [[Anime and Drama — Immersion Listening]] | Scene-based native dialogue |
-| 5.13 | [[Music — Learning Through Japanese Songs]] | Lyrics-based listening |
-| 5.14 | [[Business Japanese — Workplace Communication]] | Professional output |
-| 5.15 | [[Keigo — Overview and Register System]] | Full register coordination |
-| 5.16 | [[Keigo — Sonkeigo (Honorific)]] | Honorific production |
-| 5.17 | [[Keigo — Kenjōgo (Humble)]] | Humble production |
-| 5.18 | [[Idioms and Proverbs — ことわざ]] | Cultural fluency |
-| 5.19 | [[Pitch Accent — Common Patterns]] | Reference-grounded accent refinement |
-| 5.20 | [[Common Filler Words and Discourse Markers]] | Native conversation stance and timing |
-| 5.21 | [[Grammar — Comparison Across Levels]] | Nuance refinement |
-| 5.22 | [[JLPT Overview — N5 to N1]] | N2/N1 benchmark |
-| 5.23 | [[Study Roadmap — Intermediate to Advanced]] | Long-term maintenance and refinement |
-| 5.24 | [[Advanced Output and Register Feedback Log]] | Record tutor/native/self-recording feedback |
-| 5.25 | [[Phase 5 Weekly Review]] | Prove native-source audio and output progress |
+| 5.6 | [[Fifteenth Month Japanese Study Plan]] | Execute the first Phase 5 refinement cycle with one bottleneck, one native source, one diagnostic route, one proof type, and a retest |
+| 5.7 | [[Phase 5 Authentic Audio Spine]] | Native-source audio and output feedback route for Phase 5 |
+| 5.8 | [[Phase 5 Local Audio Practice]] | Ordered precision-drill ladder for native media, register, pitch, idioms, discourse, and nuance |
+| 5.9 | [[Phase 5 Audio Assignment Ladder]] | Block-level native-source/local/output/evidence targets for Phase 5 |
+| 5.10 | [[Phase 5 Audio Coverage Map]] | Match each Phase 5 page to local clips, native audio, and QA |
+| 5.11 | [[Advanced Listening Resources]] | Native-speed listening |
+| 5.12 | [[NHK World — News Listening Practice]] | News and formal listening |
+| 5.13 | [[Anime and Drama — Immersion Listening]] | Scene-based native dialogue |
+| 5.14 | [[Music — Learning Through Japanese Songs]] | Lyrics-based listening |
+| 5.15 | [[Business Japanese — Workplace Communication]] | Professional output |
+| 5.16 | [[Keigo — Overview and Register System]] | Full register coordination |
+| 5.17 | [[Keigo — Sonkeigo (Honorific)]] | Honorific production |
+| 5.18 | [[Keigo — Kenjōgo (Humble)]] | Humble production |
+| 5.19 | [[Idioms and Proverbs — ことわざ]] | Cultural fluency |
+| 5.20 | [[Pitch Accent — Common Patterns]] | Reference-grounded accent refinement |
+| 5.21 | [[Common Filler Words and Discourse Markers]] | Native conversation stance and timing |
+| 5.22 | [[Grammar — Comparison Across Levels]] | Nuance refinement |
+| 5.23 | [[JLPT Overview — N5 to N1]] | N2/N1 benchmark |
+| 5.24 | [[Study Roadmap — Intermediate to Advanced]] | Long-term maintenance and refinement |
+| 5.25 | [[Advanced Output and Register Feedback Log]] | Record tutor/native/self-recording feedback |
+| 5.26 | [[Phase 5 Weekly Review]] | Prove native-source audio and output progress |
 
 ### Reference Shelf
 
@@ -224,6 +225,7 @@ Use these when you need lookup or comparison, not as required first-pass reading
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -276,7 +278,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Local Audio Practice]] · [[Phase 2 Audio Assignment Ladder]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Local Audio Practice]] · [[Phase 3 Audio Assignment Ladder]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Local Audio Practice]] · [[Phase 4 Audio Assignment Ladder]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Local Audio Practice]] · [[Phase 5 Audio Assignment Ladder]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[First Month Japanese Study Plan]] · [[Second Month Japanese Study Plan]] · [[Third Month Japanese Study Plan]] · [[Fourth Month Japanese Study Plan]] · [[Fifth Month Japanese Study Plan]] · [[Sixth Month Japanese Study Plan]] · [[Phase 3 Block 4 Japanese Study Plan]] · [[Seventh Month Japanese Study Plan]] · [[Eighth Month Japanese Study Plan]] · [[Ninth Month Japanese Study Plan]] · [[Tenth Month Japanese Study Plan]] · [[Eleventh Month Japanese Study Plan]] · [[Twelfth Month Japanese Study Plan]] · [[Thirteenth Month Japanese Study Plan]] · [[Fourteenth Month Japanese Study Plan]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[First Month Japanese Study Plan]] · [[Second Month Japanese Study Plan]] · [[Third Month Japanese Study Plan]] · [[Fourth Month Japanese Study Plan]] · [[Fifth Month Japanese Study Plan]] · [[Sixth Month Japanese Study Plan]] · [[Phase 3 Block 4 Japanese Study Plan]] · [[Seventh Month Japanese Study Plan]] · [[Eighth Month Japanese Study Plan]] · [[Ninth Month Japanese Study Plan]] · [[Tenth Month Japanese Study Plan]] · [[Eleventh Month Japanese Study Plan]] · [[Twelfth Month Japanese Study Plan]] · [[Thirteenth Month Japanese Study Plan]] · [[Fourteenth Month Japanese Study Plan]] · [[Fifteenth Month Japanese Study Plan]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Japanese Audio QA Status]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
@@ -324,6 +326,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

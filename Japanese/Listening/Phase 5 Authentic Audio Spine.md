@@ -52,6 +52,8 @@ For Block 3, use [[Thirteenth Month Japanese Study Plan]] to keep idioms, filler
 
 For Block 4, use [[Fourteenth Month Japanese Study Plan]] to keep N2/N1 benchmark work tied to one JLPT-style item, one real native input segment on the same topic or function, local diagnostic drills, a named bottleneck, and a next-source decision.
 
+After Block 4, use [[Fifteenth Month Japanese Study Plan]] to keep the first refinement cycle tied to one bottleneck, one stable native segment, one local diagnostic route, one proof type, and a Week 64 retest.
+
 Use [[Phase 5 Audio Assignment Ladder]] to choose the current block and copy it into [[Authentic Audio Evidence Log#Current Assignment]]. Use [[Phase 5 Local Audio Practice]] for short precision drills. Use [[Phase 5 Audio Coverage Map]] when you need to match a Phase 5 page to the correct local clip set and authentic audio job.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
@@ -87,6 +89,7 @@ At the end of each week, record:
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 5 Audio Assignment Ladder]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]

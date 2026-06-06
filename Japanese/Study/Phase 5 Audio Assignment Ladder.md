@@ -16,11 +16,12 @@ tier-coverage: [practice]
 3. Use [[Twelfth Month Japanese Study Plan]] as the Block 2 execution path.
 4. Use [[Thirteenth Month Japanese Study Plan]] as the Block 3 execution path.
 5. Use [[Fourteenth Month Japanese Study Plan]] as the Block 4 execution path.
-6. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
-7. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
-8. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
-9. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
-10. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+6. Use [[Fifteenth Month Japanese Study Plan]] as the first post-Block-4 refinement cycle after Month 14 names the bottleneck, source, proof type, and review cadence.
+7. Choose one repeatable source from [[Phase 5 Authentic Audio Spine]] and one output or register feedback route.
+8. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
+9. Run [[Daily Audio Loop]] on each study day, keeping local clips to a short precision drill.
+10. If the block involves output, keigo, professional phrasing, humor, implication, or social stance, open [[Advanced Output and Register Feedback Log]] before treating the attempt as learned.
+11. At the end of the week, fill [[Phase 5 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Phase 5 blocks can take more than one week. Advance only when native-source work, local precision drills, feedback, and active proof are all real.
 
@@ -32,6 +33,8 @@ Phase 5 blocks can take more than one week. Advance only when native-source work
 | 2 | [[Keigo — Overview and Register System]], [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]] | Block 2 of [[Phase 5 Local Audio Practice]] only after role and social direction are checked | Workplace, service, interview, formal speech, business course, tutor/native role-play, or recorded real interaction | Uchi-soto relation, social direction, business phrase rhythm, over/under-formality, and professional naturalness | Record one role-play, meeting line, phone line, email-to-spoken rewrite, or business summary in [[Advanced Output and Register Feedback Log]] |
 | 3 | [[Idioms and Proverbs — ことわざ]], [[Common Filler Words and Discourse Markers]], [[Pitch Accent — Common Patterns]], [[Grammar — Comparison Across Levels]] | Block 3 of [[Phase 5 Local Audio Practice]] after the native/tutor/course context is clear | Native conversation, drama, podcast, tutor examples, OJAD/NHK/Forvo pitch reference, or trusted course audio | Idiom fit, filler timing, stance, implication, pitch contrast, and grammar nuance | Reuse one nuanced expression or pitch-sensitive item in context and record the reference route |
 | 4 | [[JLPT Overview — N5 to N1]], [[Study Roadmap — Intermediate to Advanced]] | Block 4 of [[Phase 5 Local Audio Practice]] to diagnose the active bottleneck | JLPT-style listening plus real native input on the same topic or function | Speed, vocabulary, grammar, register, pitch, stamina, and transfer from test audio to real audio | Name the bottleneck, choose next week's exact segment, and record the decision in [[Phase 5 Weekly Review]] |
+
+After Block 4, use [[Fifteenth Month Japanese Study Plan]] when the learner needs the first four-week refinement cycle. Keep the same Block 4 safety rule, but narrow the work to one bottleneck, one native source, one local diagnostic set, and one proof type.
 
 ## Current Assignment Templates
 
@@ -125,6 +128,7 @@ Phase 5 is where local clips are most likely to feel productive while avoiding t
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]
 - [[Fourteenth Month Japanese Study Plan]]
+- [[Fifteenth Month Japanese Study Plan]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]
 - [[Phase 5 Audio Coverage Map]]
