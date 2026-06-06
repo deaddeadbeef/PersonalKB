@@ -28,6 +28,7 @@ EXPECTED_CODEC = "mp3"
 EXPECTED_SAMPLE_RATE = "48000"
 EXPECTED_CHANNELS = 1
 EXPECTED_BIT_RATE = "96000"
+URL_SENSITIVE_FILENAME_RE = re.compile(r"[\s+#%?&]")
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -210,6 +211,15 @@ def main(argv: list[str] | None = None) -> int:
     manifest_missing_mp3 = sorted(name for name in manifest_names if name not in mp3_names)
     mp3_not_in_manifest = sorted(name for name in mp3_names if name not in manifest_names)
     embedded_not_in_manifest = sorted(name for name in embedded_name_set if name not in manifest_names)
+    url_sensitive_mp3_names = sorted(name for name in mp3_names if URL_SENSITIVE_FILENAME_RE.search(name))
+    url_sensitive_manifest_names = sorted(
+        name for name in manifest_names if URL_SENSITIVE_FILENAME_RE.search(name)
+    )
+    url_sensitive_embeds = [
+        f"{item['file']}:{item['line']} -> {item['target']}"
+        for item in embeds
+        if item["filename"] and URL_SENSITIVE_FILENAME_RE.search(item["filename"])
+    ]
 
     duplicate_embeds = [
         f"{filename} embedded {count} times"
@@ -254,6 +264,9 @@ def main(argv: list[str] | None = None) -> int:
         f"  MP3 files not in manifest : {len(mp3_not_in_manifest)}",
         f"  Embedded files not manifest: {len(embedded_not_in_manifest)}",
         f"  Markdown read errors      : {len(embed_read_errors)}",
+        f"  URL-sensitive MP3 names   : {len(url_sensitive_mp3_names)}",
+        f"  URL-sensitive manifest rows: {len(url_sensitive_manifest_names)}",
+        f"  URL-sensitive embeds      : {len(url_sensitive_embeds)}",
         f"  ffprobe checked MP3 files : {ffprobe_checked}",
         f"  ffprobe failures          : {len(ffprobe_failures)}",
         f"  Format issues             : {len(format_issues)}",
@@ -270,6 +283,9 @@ def main(argv: list[str] | None = None) -> int:
     build_report(report_lines, "MP3 FILES NOT IN MANIFEST", mp3_not_in_manifest)
     build_report(report_lines, "EMBEDDED FILES NOT IN MANIFEST", embedded_not_in_manifest)
     build_report(report_lines, "MARKDOWN READ ERRORS", embed_read_errors)
+    build_report(report_lines, "URL-SENSITIVE MP3 NAMES", url_sensitive_mp3_names)
+    build_report(report_lines, "URL-SENSITIVE MANIFEST ROWS", url_sensitive_manifest_names)
+    build_report(report_lines, "URL-SENSITIVE EMBEDS", url_sensitive_embeds)
     build_report(report_lines, "FFPROBE FAILURES", ffprobe_failures)
     build_report(report_lines, "FORMAT ISSUES", format_issues)
     build_report(report_lines, "DUPLICATE EMBED COUNTS", duplicate_embeds[:100])
@@ -287,6 +303,9 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  Manifest rows missing MP3 : {len(manifest_missing_mp3)}")
     print(f"  MP3 files not in manifest : {len(mp3_not_in_manifest)}")
     print(f"  Embedded files not manifest: {len(embedded_not_in_manifest)}")
+    print(f"  URL-sensitive MP3 names   : {len(url_sensitive_mp3_names)}")
+    print(f"  URL-sensitive manifest rows: {len(url_sensitive_manifest_names)}")
+    print(f"  URL-sensitive embeds      : {len(url_sensitive_embeds)}")
     print(f"  ffprobe checked MP3 files : {ffprobe_checked}")
     print(f"  ffprobe failures          : {len(ffprobe_failures)}")
     print(f"  Format issues             : {len(format_issues)}")
@@ -298,6 +317,9 @@ def main(argv: list[str] | None = None) -> int:
         or mp3_not_in_manifest
         or embedded_not_in_manifest
         or embed_read_errors
+        or url_sensitive_mp3_names
+        or url_sensitive_manifest_names
+        or url_sensitive_embeds
         or ffprobe_failures
         or format_issues
     )

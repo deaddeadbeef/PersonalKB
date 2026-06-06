@@ -23,6 +23,9 @@ As of 2026-06-07, local playback support is verified:
 | Manifest rows missing MP3 files | 0 |
 | MP3 files not in manifest | 0 |
 | Embedded files not in manifest | 0 |
+| URL-sensitive MP3 filenames | 0 |
+| URL-sensitive manifest rows | 0 |
+| URL-sensitive embeds | 0 |
 | MP3 files checked by `ffprobe` | 1810 |
 | MP3 format issues | 0 |
 | Reading-hint audit findings | 0 |
@@ -39,6 +42,7 @@ The source-aware STT report replaces the older filename-derived check. It compar
 
 - Local audio embeds resolve to existing MP3 files.
 - The local MP3 inventory matches `pronunciation_manifest.json`.
+- Local MP3 filenames avoid URL-sensitive characters that can confuse Obsidian or Chromium media loading.
 - The MP3 files use the Obsidian-compatible format: MP3, 48 kHz, mono, 96 kbps.
 - Current source-repair debt is cleared from the pronunciation manifest.
 - Reading-hint checks currently find no unresolved romaji-hint conflicts.

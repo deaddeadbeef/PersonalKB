@@ -1,6 +1,6 @@
 JAPANESE AUDIO INTEGRITY AUDIT
 ================================================================================
-Generated: 2026-06-07 00:50:46
+Generated: 2026-06-07 04:02:59
 Japanese root: Japanese
 Audio directory: Japanese/_audio
 Manifest: Japanese/_audio/pronunciation_manifest.json
@@ -15,6 +15,9 @@ SUMMARY
   MP3 files not in manifest : 0
   Embedded files not manifest: 0
   Markdown read errors      : 0
+  URL-sensitive MP3 names   : 0
+  URL-sensitive manifest rows: 0
+  URL-sensitive embeds      : 0
   ffprobe checked MP3 files : 1810
   ffprobe failures          : 0
   Format issues             : 0
@@ -38,6 +41,15 @@ EMBEDDED FILES NOT IN MANIFEST
   (none)
 
 MARKDOWN READ ERRORS
+  (none)
+
+URL-SENSITIVE MP3 NAMES
+  (none)
+
+URL-SENSITIVE MANIFEST ROWS
+  (none)
+
+URL-SENSITIVE EMBEDS
   (none)
 
 FFPROBE FAILURES

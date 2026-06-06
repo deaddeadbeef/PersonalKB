@@ -736,7 +736,7 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "core100-017-gomen nasai.mp3",
+    "filename": "core100-017-gomen-nasai.mp3",
     "text": "ごめんなさい",
     "display_text": "ごめんなさい",
     "source_manifest": "vocab_manifest.json",
@@ -2664,7 +2664,7 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "gap-013-+.mp3",
+    "filename": "gap-013-genki-na-hito.mp3",
     "text": "元気な人",
     "display_text": "元気な人",
     "source_manifest": "gap_manifest.json",
@@ -2672,7 +2672,7 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "gap-014-+.mp3",
+    "filename": "gap-014-genki-desu.mp3",
     "text": "元気です",
     "display_text": "元気です",
     "source_manifest": "gap_manifest.json",
@@ -2680,7 +2680,7 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "gap-015-+.mp3",
+    "filename": "gap-015-genki-janai.mp3",
     "text": "元気じゃない",
     "display_text": "元気じゃない",
     "source_manifest": "gap_manifest.json",
@@ -2688,7 +2688,7 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "gap-016-+.mp3",
+    "filename": "gap-016-genki-deshita.mp3",
     "text": "元気でした",
     "display_text": "元気でした",
     "source_manifest": "gap_manifest.json",
@@ -2696,7 +2696,7 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "gap-017-+.mp3",
+    "filename": "gap-017-genki-janakatta.mp3",
     "text": "元気じゃなかった",
     "display_text": "元気じゃなかった",
     "source_manifest": "gap_manifest.json",
@@ -2704,7 +2704,7 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "gap-018-+.mp3",
+    "filename": "gap-018-genki-ni.mp3",
     "text": "元気に",
     "display_text": "元気に",
     "source_manifest": "gap_manifest.json",

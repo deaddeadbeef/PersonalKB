@@ -99,12 +99,12 @@ Originally nouns that function as adjectives. Add な before nouns:
 
 | Form | Rule | Example (元気) | Audio |
 | ------ | ------ | --------- | --- |
-| Before noun | + な | 元気な人 (genki na hito) | ![[gap-013-+.mp3]] |
-| Predicate | + です | 元気です (genki desu) | ![[gap-014-+.mp3]] |
-| Negative | + じゃない | 元気じゃない (genki ja nai) | ![[gap-015-+.mp3]] |
-| Past | + でした | 元気でした (genki deshita) | ![[gap-016-+.mp3]] |
-| Past neg | + じゃなかった | 元気じゃなかった | ![[gap-017-+.mp3]] |
-| Adverb | + に | 元気に (genki ni) | ![[gap-018-+.mp3]] |
+| Before noun | + な | 元気な人 (genki na hito) | ![[gap-013-genki-na-hito.mp3]] |
+| Predicate | + です | 元気です (genki desu) | ![[gap-014-genki-desu.mp3]] |
+| Negative | + じゃない | 元気じゃない (genki ja nai) | ![[gap-015-genki-janai.mp3]] |
+| Past | + でした | 元気でした (genki deshita) | ![[gap-016-genki-deshita.mp3]] |
+| Past neg | + じゃなかった | 元気じゃなかった | ![[gap-017-genki-janakatta.mp3]] |
+| Adverb | + に | 元気に (genki ni) | ![[gap-018-genki-ni.mp3]] |
 
 Audio:
 - 元気な人 ![[adj-025-genki-na-hito.mp3]]

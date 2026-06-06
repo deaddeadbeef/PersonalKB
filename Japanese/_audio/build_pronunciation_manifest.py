@@ -24,6 +24,7 @@ REPORT_PATH = VAULT_ROOT / "_ops" / "reports" / "japanese-audio-pronunciation-au
 
 ROMANIZATION_PARENS = re.compile(r"\s*\([A-Za-z0-9ūōāīēŪŌĀĪĒ' -]+\)")
 ASCII_PROBLEM = re.compile(r"[A-Za-z\[\]{}~+/]")
+URL_SENSITIVE_FILENAME = re.compile(r"[\s+#%?&]")
 
 PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
     # Counter suffixes and particles where the intended reading is not the default kanji name.
@@ -117,6 +118,8 @@ def build_entries() -> tuple[list[dict[str, Any]], Counter[str], list[str], list
             if not filename or not isinstance(source_text, str):
                 invalid_notes.append(f"{manifest_path.name}: malformed item {item!r}")
                 continue
+            if URL_SENSITIVE_FILENAME.search(filename):
+                invalid_notes.append(f"{filename}: URL-sensitive audio filename")
 
             override = PRONUNCIATION_OVERRIDES.get(filename)
             if override:
