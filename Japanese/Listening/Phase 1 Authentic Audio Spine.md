@@ -44,6 +44,8 @@ When time is short, keep the local drill and play one native sentence. Do not sk
 
 The native source does not have to match the local clip exactly. It just has to keep human Japanese in your ear while the local clips make specific sounds easy to repeat.
 
+Use [[Pronunciation and Audio Accuracy]] when a local clip, course recording, dictionary entry, or your own recording disagree.
+
 ## Quality Bar
 
 Treat audio as usable for Phase 1 only if it meets these conditions:
@@ -68,5 +70,6 @@ At the end of each week, record evidence in [[Phase 1 Weekly Review]]:
 
 - [[Phase 1 — Foundation]]
 - [[Phase 1 Local Audio Practice]]
+- [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]
 - [[Sources Index#Audio Sources Checked 2026-06-06]]

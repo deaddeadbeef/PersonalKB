@@ -32,6 +32,15 @@ Accessed: 2026-05-17
 | NHK WORLD-JAPAN Easy Japanese via NIHONGO eな | https://nihongo-e-na.com/jpn/site/id954.html | Confirms beginner NHK lesson structure, 48 lessons, skits, audio/PDF download access, and pronunciation/listening use |
 | NHK WORLD-JAPAN Easy Japanese via JV-Campus | https://www.jv-campus.org/en/jvc-content/350508/ | Confirms NHK Easy Japanese as free on-demand beginner lessons with skits, drills, and pronunciation practice |
 
+## Pronunciation Sources Checked 2026-06-06
+
+| Source | URL | Use in vault |
+| --- | --- | --- |
+| OJAD — Online Japanese Accent Dictionary | https://www.gavo.t.u-tokyo.ac.jp/ojad/ | Pitch-accent lookup and learner/teacher accent reference |
+| NHK 日本語発音アクセント新辞典, NHK出版 | https://www.nhk-book.co.jp/detail/000000113452016.html | Standard Japanese pronunciation/accent reference used to ground pitch-accent claims |
+| NHK Japanese Pronunciation Dictionary app entry | https://www.monokakido.jp/en/dictionaries/nhkaccent2/index.html | App-based access route for the NHK pronunciation/accent dictionary content |
+| Forvo Japanese pronunciation dictionary | https://forvo.com/languages/ja/ | Native-speaker word-level pronunciation recordings for comparison checks |
+
 ## Textbooks and Curricula
 - **Genki I & II** — structured beginner textbook series from The Japan Times Publishing.
 - **Irodori Japanese Online Course** — free Japan Foundation online course for basic daily-life and work communication.
@@ -44,6 +53,8 @@ Accessed: 2026-05-17
 - **GENKI official audio / OTO Navi** — publisher audio for Genki textbook and workbook material
 - **Irodori audio** — Japan Foundation course audio for real-life communication tasks
 - **NHK WORLD-JAPAN Easy Japanese** — beginner lesson audio, skits, drills, and pronunciation practice
+- **OJAD** — online Japanese accent dictionary
+- **NHK Japanese Pronunciation Accent Dictionary** — standard accent/pronunciation reference
 - **Forvo.com** — Native speaker pronunciation database
 - **NHK World Japan** — News in slow/easy Japanese
 - **JapanesePod101** — Structured podcast lessons

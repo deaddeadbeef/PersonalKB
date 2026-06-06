@@ -1,6 +1,8 @@
 ---
 tags: [japanese, speaking, hub]
 up: "[[Japanese]]"
+confidence: verified
+tier-coverage: [intuition, core, practice]
 ---
 
 # Speaking Overview
@@ -10,6 +12,7 @@ Speaking Japanese requires mastering pronunciation, pitch accent, appropriate fo
 ## Core Skills
 
 ### Pronunciation
+- [[Pronunciation and Audio Accuracy]] — when to trust TTS, native audio, and accent references
 - [[Pronunciation — Difficult Sounds for English Speakers]]
 - Japanese has only 5 vowels: a, i, u, e, o (pure vowels, no diphthongs)
 - The れ (r) sound is between English l and r ![[speakov-001-re.mp3]]
@@ -45,9 +48,10 @@ See: [[Culture Overview]] and [[Keigo — Overview and Register System]]
 
 ## Speaking Practice Methods
 1. **Shadowing** — repeat immediately after native audio ([[Shadowing — Technique and Practice Guide]])
-2. **Language exchange** — HelloTalk, Tandem, iTalki
-3. **Self-narration** — describe your day in Japanese (alone)
-4. **Role-play** — practice situational dialogues
+2. **Accuracy check** — compare one feature against [[Pronunciation and Audio Accuracy]]
+3. **Language exchange** — HelloTalk, Tandem, iTalki
+4. **Self-narration** — describe your day in Japanese (alone)
+5. **Role-play** — practice situational dialogues
 
 ## References
 - [[Sources Index]]

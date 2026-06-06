@@ -21,6 +21,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Grammar reference | [[Resources Index — Textbooks, Apps, and Tools#Grammar References|Tae Kim]] plus vault grammar pages | Explains patterns when the course is too terse |
 | Memory system | [[Resources Index — Textbooks, Apps, and Tools#SRS and Review|Anki]] | Keeps kana, words, and kanji from decaying |
 | Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]] | Combines precise local drills with human-recorded or official-course pronunciation |
+| Audio QA | [[Pronunciation and Audio Accuracy]] | Prevents local clips from becoming the only pronunciation authority |
 | Roadmap | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] | Keeps advanced material out of the way until it is useful |
 
 ## Current Stage
@@ -97,9 +98,10 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 6. [[Katakana Complete Guide]]
 7. [[Phase 1 Local Audio Practice]]
 8. [[Phase 1 Authentic Audio Spine]]
-9. [[Core 100 — Survival Japanese]]
-10. [[N5 Grammar — Sentence Patterns]]
-11. [[Phase 1 Weekly Review]]
+9. [[Pronunciation and Audio Accuracy]]
+10. [[Core 100 — Survival Japanese]]
+11. [[N5 Grammar — Sentence Patterns]]
+12. [[Phase 1 Weekly Review]]
 
 ## Curation Backlog
 

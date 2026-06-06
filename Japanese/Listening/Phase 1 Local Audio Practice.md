@@ -17,6 +17,8 @@ Use this page for controlled local repetition. The clips below are synthetic Jap
 
 Do not use the raw [[Audio Index]] as the daily plan in Phase 1. It is a catalog. This page is the ordered practice path.
 
+If a clip sounds wrong, stop using it and follow [[Pronunciation and Audio Accuracy#Correction Workflow]].
+
 ## Session Loop
 
 Run this loop for 5 minutes on a minimum day or 15 minutes on a good day:
@@ -139,6 +141,7 @@ After listening, write one line in your daily note or [[Phase 1 Weekly Review]]:
 
 - [[Phase 1 — Foundation]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]
 - [[Audio Index]]
 - [[Sources Index]]

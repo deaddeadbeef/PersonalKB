@@ -112,6 +112,36 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-06-06] curate | Japanese pronunciation and audio accuracy
+
+Scope: add a policy/practice page for deciding when local TTS clips are safe, when native/official audio is required, and how to log/fix suspect pronunciation.
+
+Changed content files:
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+- `Japanese/Speaking/Speaking Overview.md`
+- `Japanese/Speaking/Pronunciation — Difficult Sounds for English Speakers.md`
+- `Japanese/Speaking/Pitch Accent/Pitch Accent — Introduction.md`
+- `Japanese/Speaking/Pitch Accent/Pitch Accent — Common Patterns.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Listening/Phase 1 Local Audio Practice.md`
+- `Japanese/Listening/Phase 1 Authentic Audio Spine.md`
+- `Japanese/Sources/Sources Index.md`
+- `Japanese/Japanese.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+
+Maintenance changes:
+- Added checked pronunciation-source provenance for OJAD, NHK accent dictionary, and Forvo.
+- Routed Start Here, speaking/listening hubs, pitch pages, and Phase 1 audio pages to the new accuracy guide.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- Local MP3 embed check across changed audio/pronunciation pages: 110 embeds, 0 missing.
+- New pronunciation-source links verified by web open; local HTTP probes returned 200 for NHK links, while OJAD/Forvo required browser/web verification.
+- `git diff --check`
+
 ## [2026-06-06] curate | Japanese Phase 1 authentic audio spine
 
 Scope: add a human-recorded/official-course audio route for Phase 1 so local pronunciation drills are paired with authentic audio from the start.

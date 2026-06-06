@@ -29,6 +29,8 @@ flowchart TD
 
 ## ⚙️ Core Mechanics
 
+Use [[Pronunciation and Audio Accuracy]] for source priority. Local pitch clips are awareness drills; for pitch decisions, check an accent dictionary, native course audio, or tutor feedback.
+
 ## Minimal Pairs
 
 | Word | Pitch | Meaning | Audio |
@@ -92,9 +94,11 @@ Low first mora, rises, stays high. NO drop: ○●●●...
 Role-play arriving at a Japanese office for the first time. Include: greeting the receptionist, introducing yourself to your new team, and responding to their questions with appropriate aizuchi.
 
 ## Resources
-- OJAD (ojad.org) — pitch accent dictionary with audio
+- [OJAD](https://www.gavo.t.u-tokyo.ac.jp/ojad/) — online Japanese accent dictionary for learners and teachers
+- NHK Japanese Pronunciation Accent Dictionary — standard reference for broadcast-style pronunciation and accent
 - Dogen's Japanese Phonetics (YouTube/Patreon)
 
 
 ## References
 - [[Sources Index]]
+- [[Pronunciation and Audio Accuracy]]

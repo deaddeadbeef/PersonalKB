@@ -24,6 +24,8 @@ flowchart TD
 
 ## ⚙️ Core Mechanics
 
+Use [[Pronunciation and Audio Accuracy]] before treating any local clip as the final model. These drills are for targeted repetition; native or official course audio should still anchor rhythm and naturalness.
+
 ## The R-Sound (らりるれろ)
 - NOT English R and NOT English L
 - Tongue tip taps the ridge behind upper teeth (like a quick "d")
@@ -176,3 +178,4 @@ Role-play arriving at a Japanese office for the first time. Include: greeting th
 
 ## References
 - [[Sources Index]]
+- [[Pronunciation and Audio Accuracy]]

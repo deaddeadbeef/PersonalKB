@@ -53,6 +53,8 @@ This wiki uses a hybrid audio approach:
 - **Native speaker pronunciation references** for individual words when pitch, accent, or naturalness needs checking.
 - **Curated external content** for immersion listening after the learner has enough foundation.
 
+Use [[Pronunciation and Audio Accuracy]] when a local clip conflicts with native audio, when a word has multiple readings, or when a pitch-accent claim matters.
+
 For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local Audio Practice]]. Do not treat the raw [[Audio Index]] as the curriculum.
 
 ## Daily Listening Routine
@@ -67,3 +69,4 @@ For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local A
 
 ## References
 - [[Sources Index]]
+- [[Pronunciation and Audio Accuracy]]

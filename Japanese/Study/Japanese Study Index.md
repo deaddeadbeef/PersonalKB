@@ -19,6 +19,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Routine | [[Daily Study Routine Templates]] | Choose a 30-minute, 60-minute, or intensive day |
 | Audio ladder | [[Phase 1 Local Audio Practice]] | Use the local clips in the correct Phase 1 order |
 | Authentic audio | [[Phase 1 Authentic Audio Spine]] | Choose the native/official audio source for Phase 1 |
+| Audio QA | [[Pronunciation and Audio Accuracy]] | Decide when to trust or correct a clip |
 | Weekly review | [[Phase 1 Weekly Review]] | Keep Phase 1 honest and choose the next task |
 | Resources | [[Resources Index — Textbooks, Apps, and Tools]] | Pick the spine and supporting tools |
 | Benchmark | [[JLPT Overview — N5 to N1]] | Understand level labels without letting them dominate study |
@@ -35,6 +36,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Japanese Learning Dashboard]]
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Pronunciation and Audio Accuracy]]
 - [[Phase 1 Weekly Review]]
 
 ## By Skill
@@ -57,10 +59,12 @@ tier-coverage: [intuition, core, deep-dive, practice]
 ### Listening
 - [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Pronunciation and Audio Accuracy]]
 - [[Shadowing — Technique and Practice Guide]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 
 ### Speaking
+- [[Pronunciation and Audio Accuracy]]
 - [[Self-Introduction Template]]
 - [[Pitch Accent — Introduction]]
 
