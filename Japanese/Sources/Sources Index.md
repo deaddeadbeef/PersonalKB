@@ -22,6 +22,16 @@ Accessed: 2026-05-17
 | Anki Manual | https://docs.ankiweb.net/background.html | Rationale for active recall and spaced repetition in the review system |
 | WaniKani SRS explanation | https://knowledge.wanikani.com/wanikani/srs/ | Optional kanji/vocabulary SRS tool context |
 
+## Audio Sources Checked 2026-06-06
+
+| Source | URL | Use in vault |
+| --- | --- | --- |
+| GENKI official site | https://genki3.japantimes.co.jp/en/intro/index.html | Confirms GENKI I/II structure and official OTO Navi audio for textbook/workbook dialogue, vocabulary, practice, reading, and listening-comprehension material |
+| Irodori official textbook site | https://www.irodori.jpf.go.jp/en/about.html | Confirms Irodori A1-A2/B1 levels, communication-task design, emphasis on listening input, and downloadable/streamed MP3 audio |
+| Irodori online course guide | https://www.irodori-online.jpf.go.jp/guide/ | Confirms the online-course step flow includes listening/speaking practice and lesson support materials |
+| NHK WORLD-JAPAN Easy Japanese via NIHONGO eな | https://nihongo-e-na.com/jpn/site/id954.html | Confirms beginner NHK lesson structure, 48 lessons, skits, audio/PDF download access, and pronunciation/listening use |
+| NHK WORLD-JAPAN Easy Japanese via JV-Campus | https://www.jv-campus.org/en/jvc-content/350508/ | Confirms NHK Easy Japanese as free on-demand beginner lessons with skits, drills, and pronunciation practice |
+
 ## Textbooks and Curricula
 - **Genki I & II** — structured beginner textbook series from The Japan Times Publishing.
 - **Irodori Japanese Online Course** — free Japan Foundation online course for basic daily-life and work communication.
@@ -31,6 +41,9 @@ Accessed: 2026-05-17
 - **Remembering the Kanji** — James Heisig mnemonic kanji learning method.
 
 ## Audio and Listening
+- **GENKI official audio / OTO Navi** — publisher audio for Genki textbook and workbook material
+- **Irodori audio** — Japan Foundation course audio for real-life communication tasks
+- **NHK WORLD-JAPAN Easy Japanese** — beginner lesson audio, skits, drills, and pronunciation practice
 - **Forvo.com** — Native speaker pronunciation database
 - **NHK World Japan** — News in slow/easy Japanese
 - **JapanesePod101** — Structured podcast lessons

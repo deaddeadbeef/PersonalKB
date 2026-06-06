@@ -19,7 +19,7 @@ Use the 30-minute routine as the default. Use the 60-minute routine when you hav
 |------|----------|-------|
 | 10 min | Due reviews | Anki / WaniKani / handwritten review |
 | 15 min | Course spine | Genki, Irodori, or your chosen textbook |
-| 5 min | Beginner audio | [[Phase 1 Local Audio Practice]] |
+| 5 min | Beginner audio | [[Phase 1 Local Audio Practice]] plus one sentence from [[Phase 1 Authentic Audio Spine]] |
 
 Use this on ordinary days. Do the reviews first; they are the part that decays if skipped.
 
@@ -30,7 +30,7 @@ Use this on ordinary days. Do the reviews first; they are the part that decays i
 | 15 min | Due reviews plus 3-10 new cards | Anki / WaniKani |
 | 20 min | Course spine | Exercises, not passive reading |
 | 10 min | Vault review | One page from the current phase |
-| 15 min | Listening or shadowing | [[Phase 1 Local Audio Practice]]; later, [[Shadowing — Technique and Practice Guide]] |
+| 15 min | Listening or shadowing | [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local Audio Practice]]; later, [[Shadowing — Technique and Practice Guide]] |
 
 Use this when you want steady progress and still want the next day to be sustainable.
 
@@ -56,7 +56,7 @@ Check:
 - Did I study at least 5 days?
 - Did reviews stay manageable?
 - Which grammar point is still unclear?
-- Which audio from [[Phase 1 Local Audio Practice]] did I repeat enough to improve?
+- Which local clip and native-course segment did I repeat enough to improve?
 - What is the next small page or lesson?
 
 ## SRS Rules
@@ -75,7 +75,7 @@ When the day is busy, do only this:
 
 - 5 minutes due reviews
 - 5 minutes kana or sentence reading
-- 1 minute listening from [[Phase 1 Local Audio Practice]]
+- 1 minute listening from [[Phase 1 Authentic Audio Spine]] or [[Phase 1 Local Audio Practice]]
 
 This keeps the chain alive without pretending every day is ideal.
 
@@ -84,3 +84,4 @@ This keeps the chain alive without pretending every day is ideal.
 - [[Phase 1 — Foundation]]
 - [[Japanese Learning Dashboard]]
 - [[Phase 1 Local Audio Practice]]
+- [[Phase 1 Authentic Audio Spine]]

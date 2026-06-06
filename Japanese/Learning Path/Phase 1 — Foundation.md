@@ -39,8 +39,8 @@ If a page feels advanced, skip it for now. The work queue is the sequence below.
 | --- | --- | --- | --- |
 | 1 | Hiragana recognition | [[Hiragana Complete Guide]] | Read the base kana chart without romaji |
 | 2 | Katakana recognition | [[Katakana Complete Guide]], [[Writing Systems Overview]] | Read common loanwords like コーヒー and タクシー |
-| 3 | First sentences | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]], [[Phase 1 Local Audio Practice]] | Parse and produce XはYです questions |
-| 4 | Routine and first output | [[Daily Study Routine Templates]], [[Conversation Patterns — Greetings and Introductions]], [[Self-Introduction Template]], [[Phase 1 Local Audio Practice]] | Deliver a short self-introduction from memory |
+| 3 | First sentences | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]], [[Phase 1 Local Audio Practice]], [[Phase 1 Authentic Audio Spine]] | Parse and produce XはYです questions |
+| 4 | Routine and first output | [[Daily Study Routine Templates]], [[Conversation Patterns — Greetings and Introductions]], [[Self-Introduction Template]], [[Phase 1 Local Audio Practice]], [[Phase 1 Authentic Audio Spine]] | Deliver a short self-introduction from memory |
 
 ## Week 1: Hiragana
 
@@ -92,7 +92,7 @@ Daily:
 
 - Do due reviews first.
 - Spend 15-25 minutes on the course spine.
-- Listen to 5-10 minutes from [[Phase 1 Local Audio Practice]] or course-native beginner audio, even if comprehension is partial.
+- Listen to 5-10 minutes from [[Phase 1 Local Audio Practice]] and [[Phase 1 Authentic Audio Spine]], even if comprehension is partial.
 - Speak the self-introduction out loud once.
 
 Supporting evidence: [[chunk-jp-085|self-introduction fixed format]], [[chunk-jp-089|four levels of listening]], [[chunk-jp-126|spaced repetition]], [[chunk-jp-127|card format]], [[chunk-jp-133|beginner routine]], [[chunk-jp-150|learning milestones]].
@@ -119,7 +119,7 @@ Before moving to [[Phase 2 — Building Blocks]], verify:
 - [ ] Can explain XはYです, questions with か, and います vs あります
 - [ ] Can say a basic self-introduction smoothly
 - [ ] Have SRS or review routine set up
-- [ ] Have listened to beginner audio on at least 10 days, including the [[Phase 1 Local Audio Practice]] ladder
+- [ ] Have listened to beginner audio on at least 10 days, including the [[Phase 1 Local Audio Practice]] ladder and one source from [[Phase 1 Authentic Audio Spine]]
 
 **Next:** [[Phase 2 — Building Blocks]]
 

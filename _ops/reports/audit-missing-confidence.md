@@ -1,6 +1,6 @@
 # Missing confidence Frontmatter
 
-Count: 250
+Count: 249
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -76,7 +76,6 @@ Count: 250
 - [[Japanese/Culture/Culture Overview|Culture Overview]] (`Japanese/Culture/Culture Overview.md`)
 - [[Japanese/Culture/Keigo/Keigo — Overview and Register System|Keigo — Overview and Register System]] (`Japanese/Culture/Keigo/Keigo — Overview and Register System.md`)
 - [[Japanese/Grammar/Grammar Overview|Grammar Overview]] (`Japanese/Grammar/Grammar Overview.md`)
-- [[Japanese/Listening/Listening Overview|Listening Overview]] (`Japanese/Listening/Listening Overview.md`)
 - [[Japanese/Speaking/Speaking Overview|Speaking Overview]] (`Japanese/Speaking/Speaking Overview.md`)
 - [[Japanese/Study/JLPT Overview — N5 to N1|JLPT Overview — N5 to N1]] (`Japanese/Study/JLPT Overview — N5 to N1.md`)
 - [[Japanese/Vocabulary/Vocabulary Overview|Vocabulary Overview]] (`Japanese/Vocabulary/Vocabulary Overview.md`)

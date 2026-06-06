@@ -1,6 +1,8 @@
 ---
 tags: [japanese, listening, hub]
 up: "[[Japanese]]"
+confidence: verified
+tier-coverage: [intuition, core, practice]
 ---
 
 # Listening Overview
@@ -17,6 +19,8 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 ## Listening by Level
 
 ### Beginner
+- [[Phase 1 Authentic Audio Spine]] — official/native audio to pair with Phase 1
+- [[Phase 1 Local Audio Practice]] — short local drills for pronunciation details
 - [[Beginner Listening Resources]] — slow, clear, with transcripts
 - Focus: individual words, basic sentence patterns, numbers
 
@@ -35,6 +39,7 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - **Dictation:** Write what you hear — forces precise listening
 
 ## Curated Resources
+- [[Phase 1 Authentic Audio Spine]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 - [[YouTube Channels for Japanese Learners]]
 - [[NHK World — News Listening Practice]]
@@ -43,16 +48,19 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 
 ## Audio Integration
 This wiki uses a hybrid audio approach:
-- **TTS audio files** in _audio/ for key vocabulary and example sentences
-- **Forvo links** for native speaker pronunciation of individual words
-- **Curated external content** for immersion listening
+- **Authentic course audio** from Genki, Irodori, NHK, a tutor, or another native-speaker source as the pronunciation model.
+- **Local TTS audio files** in `Japanese/_audio/` for repeatable vocabulary and example-sentence drills.
+- **Native speaker pronunciation references** for individual words when pitch, accent, or naturalness needs checking.
+- **Curated external content** for immersion listening after the learner has enough foundation.
 
-Embed audio in Obsidian: 
+For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local Audio Practice]]. Do not treat the raw [[Audio Index]] as the curriculum.
 
 ## Daily Listening Routine
 
 | Time | Activity | Level |
 |------|----------|-------|
+| 5 min | Local drill from [[Phase 1 Local Audio Practice]] | Beginner |
+| 5-15 min | Native course/audio segment from [[Phase 1 Authentic Audio Spine]] | Beginner |
 | 10 min | Shadowing practice | All |
 | 15 min | Focused podcast episode | Intermediate |
 | 30 min | Background immersion | All |

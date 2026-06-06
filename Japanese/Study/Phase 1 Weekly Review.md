@@ -26,6 +26,8 @@ The review has one job: choose the next small action. If reviews piled up, reduc
 - [ ] Due reviews completed on at least 5 days
 - [ ] Course spine studied on at least 4 days
 - [ ] Beginner audio heard on at least 5 days
+- [ ] One native/official audio segment from [[Phase 1 Authentic Audio Spine]] repeated on at least 3 days
+- [ ] One local clip set from [[Phase 1 Local Audio Practice]] repeated on at least 3 days
 - [ ] One speaking item practiced out loud
 - [ ] One page in the Japanese vault reviewed
 
@@ -69,7 +71,8 @@ List cards or concepts that failed repeatedly and need rewriting.
 
 - One main page:
 - One course lesson:
-- One audio target:
+- One authentic audio target:
+- One local audio target:
 - One speaking target:
 
 ## References
@@ -77,3 +80,5 @@ List cards or concepts that failed repeatedly and need rewriting.
 - [[Phase 1 — Foundation]]
 - [[Daily Study Routine Templates]]
 - [[Japanese Learning Dashboard]]
+- [[Phase 1 Authentic Audio Spine]]
+- [[Phase 1 Local Audio Practice]]

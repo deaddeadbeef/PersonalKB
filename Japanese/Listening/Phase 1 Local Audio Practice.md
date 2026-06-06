@@ -11,7 +11,7 @@ tier-coverage: [intuition, core, practice]
 
 ## Audio Standard
 
-Use native course audio from Genki, Irodori, or another chosen course spine whenever the lesson provides it. That is the authenticity anchor.
+Use [[Phase 1 Authentic Audio Spine|native course or NHK audio]] whenever the lesson provides it. That is the authenticity anchor.
 
 Use this page for controlled local repetition. The clips below are synthetic Japanese audio, but they are selected from the pronunciation-manifested local library and avoid known OCR/table-artifact inputs. For spelling traps such as particle は and へ, the written form is shown while the audio uses the intended spoken reading.
 
@@ -138,6 +138,7 @@ After listening, write one line in your daily note or [[Phase 1 Weekly Review]]:
 ## References
 
 - [[Phase 1 — Foundation]]
+- [[Phase 1 Authentic Audio Spine]]
 - [[Beginner Listening Resources]]
 - [[Audio Index]]
 - [[Sources Index]]

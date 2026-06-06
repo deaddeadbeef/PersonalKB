@@ -28,9 +28,15 @@ flowchart LR
 
 | Textbook | Audio Access | Style |
 |----------|-------------|-------|
-| Genki I | Online companion | Dialogues + drills |
-| Minna no Nihongo | Separate CD | Pattern drills |
+| Genki I | Official OTO Navi audio | Dialogues + vocabulary + drills + workbook listening |
+| Irodori A1 | Free streamed/downloadable audio | Can-do based daily-life communication |
+| NHK WORLD-JAPAN Easy Japanese | Free online lessons and MP3/podcast access | Short skits + drills + pronunciation practice |
+| Minna no Nihongo | Publisher audio/CDs | Pattern drills |
 | Japanese from Zero | YouTube | Conversational |
+
+## Authentic Audio Spine
+
+Use [[Phase 1 Authentic Audio Spine]] to choose the native or official-course audio for the first month. It keeps the pronunciation model grounded in human-recorded material while [[Phase 1 Local Audio Practice]] supplies short repeatable drills.
 
 ## Local Phase 1 Ladder
 
@@ -64,7 +70,7 @@ Use native course audio whenever your course spine provides it. Use the local la
 | Time | Activity | Duration |
 |------|----------|----------|
 | Daily minimum | [[Phase 1 Local Audio Practice]] | 5 min |
-| Course session | Course-native audio from Genki, Irodori, or your chosen spine | 5-15 min |
+| Course session | [[Phase 1 Authentic Audio Spine|Course-native or NHK beginner audio]] | 5-15 min |
 | Later review | NHK Easy, JapanesePod101, Teppei, or Comprehensible Japanese | 10-15 min |
 
 
@@ -101,7 +107,7 @@ Watch a 5-minute segment of a Japanese drama WITHOUT subtitles. Write a summary 
 
 | Resource | Type | Speed | Notes |
 |----------|------|-------|-------|
-| NHK World Easy Japanese | Lessons | Very slow | 48 lessons with audio |
+| NHK WORLD-JAPAN Easy Japanese | Lessons | Very slow | 48 beginner lessons with skits, drills, and pronunciation practice |
 | NHK News Web Easy | News | Slow | Simplified news with furigana |
 | JapanesePod101 | Podcast | Adjustable | Free basic lessons |
 | Nihongo con Teppei Beginner | Podcast | Slow | Simple monologues |
@@ -110,3 +116,4 @@ Watch a 5-minute segment of a Japanese drama WITHOUT subtitles. Write a summary 
 
 ## References
 - [[Sources Index]]
+- [[Phase 1 Authentic Audio Spine]]

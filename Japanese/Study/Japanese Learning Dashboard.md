@@ -20,7 +20,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Course spine | [[Resources Index — Textbooks, Apps, and Tools#Recommended Beginner Stack|Genki I]] or [[Resources Index — Textbooks, Apps, and Tools#Free Official Alternative|Irodori A1]] | Gives sequence, exercises, and accountability |
 | Grammar reference | [[Resources Index — Textbooks, Apps, and Tools#Grammar References|Tae Kim]] plus vault grammar pages | Explains patterns when the course is too terse |
 | Memory system | [[Resources Index — Textbooks, Apps, and Tools#SRS and Review|Anki]] | Keeps kana, words, and kanji from decaying |
-| Listening habit | [[Phase 1 Local Audio Practice]], then [[Beginner Listening Resources]] | Builds sound recognition from week 1 without browsing the raw audio catalog |
+| Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]] | Combines precise local drills with human-recorded or official-course pronunciation |
 | Roadmap | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] | Keeps advanced material out of the way until it is useful |
 
 ## Current Stage
@@ -41,8 +41,8 @@ Do not spend serious time on N3 grammar, keigo, business Japanese, native news, 
 
 | Weeks | Main outcome | Study pages | Done when |
 | --- | --- | --- | --- |
-| 1-2 | Kana becomes usable | [[Hiragana Complete Guide]], [[Katakana Complete Guide]], [[Writing Systems Overview]], [[Phase 1 Local Audio Practice]] | You can read kana-only example words without checking a chart |
-| 3-4 | First sentences and first 100 words | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]], [[Conversation Patterns — Greetings and Introductions]], [[Phase 1 Local Audio Practice]] | You can introduce yourself and parse simple XはYです sentences |
+| 1-2 | Kana becomes usable | [[Hiragana Complete Guide]], [[Katakana Complete Guide]], [[Writing Systems Overview]], [[Phase 1 Local Audio Practice]], [[Phase 1 Authentic Audio Spine]] | You can read kana-only example words without checking a chart |
+| 3-4 | First sentences and first 100 words | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]], [[Conversation Patterns — Greetings and Introductions]], [[Phase 1 Local Audio Practice]], [[Phase 1 Authentic Audio Spine]] | You can introduce yourself and parse simple XはYです sentences |
 | 5-8 | N5 mechanics start to connect | [[N5 Grammar — Particles]], [[N5 Grammar — Verb Forms]], [[N5 Grammar — Adjectives]] | You can identify topic, subject, object, location, and movement particles in textbook sentences |
 | 9-12 | Listening and reading become daily | [[Beginner Listening Resources]], [[Shadowing — Technique and Practice Guide]], [[Kanji N5 Essentials]] | You complete daily review plus 5-15 minutes of beginner audio most days |
 
@@ -56,7 +56,7 @@ Use JLPT levels as a map, not as the first goal. The official JLPT descriptions 
 | --- | --- | --- |
 | 10 min | Reviews | Finish due Anki/WaniKani/Bunpro items before adding new ones |
 | 15 min | Course spine | One textbook or Irodori lesson section; write answers, do not just read |
-| 5 min | Audio | Use [[Phase 1 Local Audio Practice]] or course-native beginner audio |
+| 5 min | Audio | Use [[Phase 1 Local Audio Practice]] and one segment from [[Phase 1 Authentic Audio Spine]] |
 
 ### Good Day: 60 Minutes
 
@@ -84,7 +84,7 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 | Kana complete | Read all hiragana and katakana rows from memory, including dakuten and small や/ゆ/よ combinations |
 | First grammar | Explain は, が, を, に, で with one example each |
 | First output | Say a 30-second self-introduction without reading |
-| First listening habit | 10 days with at least 5 minutes of beginner Japanese audio, including [[Phase 1 Local Audio Practice]] |
+| First listening habit | 10 days with at least 5 minutes of beginner Japanese audio, including [[Phase 1 Local Audio Practice]] and [[Phase 1 Authentic Audio Spine]] |
 | Ready for Phase 2 | All [[Phase 1 — Foundation|Phase 1 checkpoint]] items are true |
 
 ## Reading Order
@@ -96,9 +96,10 @@ Every Sunday, open [[Phase 1 Weekly Review]] and record:
 5. [[Hiragana Complete Guide]]
 6. [[Katakana Complete Guide]]
 7. [[Phase 1 Local Audio Practice]]
-8. [[Core 100 — Survival Japanese]]
-9. [[N5 Grammar — Sentence Patterns]]
-10. [[Phase 1 Weekly Review]]
+8. [[Phase 1 Authentic Audio Spine]]
+9. [[Core 100 — Survival Japanese]]
+10. [[N5 Grammar — Sentence Patterns]]
+11. [[Phase 1 Weekly Review]]
 
 ## Curation Backlog
 

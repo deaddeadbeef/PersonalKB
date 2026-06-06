@@ -112,6 +112,36 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-06-06] curate | Japanese Phase 1 authentic audio spine
+
+Scope: add a human-recorded/official-course audio route for Phase 1 so local pronunciation drills are paired with authentic audio from the start.
+
+Changed content files:
+- `Japanese/Listening/Phase 1 Authentic Audio Spine.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Listening/Beginner Listening Resources.md`
+- `Japanese/Listening/Phase 1 Local Audio Practice.md`
+- `Japanese/Learning Path/Phase 1 — Foundation.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Phase 1 Weekly Review.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Japanese.md`
+- `Japanese/Sources/Sources Index.md`
+
+Maintenance changes:
+- Added verified audio-source provenance for GENKI, Irodori, and NHK Easy Japanese.
+- Routed Phase 1 listening decisions through an authentic audio spine plus the existing local clip ladder.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- Local MP3 embed check: 41 embeds, 0 missing.
+- External source URL status check for the new audio-source links.
+- `git diff --check`
+
 ## [2026-06-06] curate | Japanese Phase 1 local audio ladder
 
 Scope: add a learner-facing daily audio path for Phase 1 so Japanese listening starts from ordered, local clips instead of the raw audio catalog.
