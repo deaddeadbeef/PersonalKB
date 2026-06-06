@@ -102,9 +102,6 @@ PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
         "身の回りのものを、い形容詞とな形容詞の両方を使って説明しましょう。",
         "translated English practice instruction",
     ),
-    "n4give-018-ageru-kureru.mp3": ("あげる、くれる", "repaired harvested contrast"),
-    "n4give-019-ageru-sashiageru.mp3": ("あげる、さしあげる", "repaired harvested contrast"),
-
     # Reading disambiguation and remaining extraction repairs.
     "gap-184-(akeru)-open.mp3": ("あける", "force transitive open reading"),
 }

@@ -1076,3 +1076,26 @@ Verification:
 - Affected pronunciation manifest row check: 11 rows match expected source/display text.
 - `python _ops\personal_kb.py audit`: 4746 files, 2877 markdown, 1810 MP3, 0 heavy audio embed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese giving contrast audio source normalization
+
+Scope: normalize two N4 giving/receiving contrast rows so the source manifest reads the intended contrast directly instead of relying on harvested-text overrides.
+
+Changed audio/ops files:
+- `Japanese/_audio/gramn4n3_manifest.json`
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Maintenance changes:
+- Corrected `n4give-018-ageru-kureru.mp3` source text to `あげる、くれる`.
+- Corrected `n4give-019-ageru-sashiageru.mp3` source text to `あげる、さしあげる`.
+- Removed the two now-redundant harvested-contrast overrides.
+- Rebuilt `pronunciation_manifest.json`; both affected rows now show the intended Japanese as unchanged source/display text.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- Stale harvested-contrast source text search: 0 hits.
+- Affected pronunciation manifest row check: 2 rows match expected source/display text.
+- `git diff --check`

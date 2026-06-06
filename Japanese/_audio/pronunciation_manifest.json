@@ -10562,18 +10562,18 @@
   {
     "filename": "n4give-018-ageru-kureru.mp3",
     "text": "あげる、くれる",
-    "display_text": "あげる ( くれる",
+    "display_text": "あげる、くれる",
     "source_manifest": "gramn4n3_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired harvested contrast"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "n4give-019-ageru-sashiageru.mp3",
     "text": "あげる、さしあげる",
-    "display_text": "あげる ( さしあげる",
+    "display_text": "あげる、さしあげる",
     "source_manifest": "gramn4n3_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "repaired harvested contrast"
+    "pronunciation_note": "unchanged"
   },
   {
     "filename": "n4pass-001-ukemi-ukemi.mp3",
