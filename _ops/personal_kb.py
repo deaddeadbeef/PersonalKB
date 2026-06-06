@@ -17,9 +17,10 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT_DIR = ROOT / "_ops" / "reports"
 
 EXCLUDED_SCAN_PARTS = {".git"}
-EXCLUDED_CONTENT_PARTS = {".git", "_ops"}
+EXCLUDED_CONTENT_PARTS = {".git", ".tasks", "_ops"}
 NON_WIKI_PARTS = {
     ".git",
+    ".tasks",
     ".obsidian",
     "_ops",
     "_raw",

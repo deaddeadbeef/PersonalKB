@@ -401,13 +401,13 @@
   },
   {
     "filename": "adj-007-atsui.mp3",
-    "text": "暮い",
+    "text": "暑い",
     "page_key": "adjectives",
     "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Adjectives.md",
     "line_index": 16,
     "anchor_line": 16,
     "insert_mode": "direct",
-    "source_line": "- 暮い (atsui) — hot"
+    "source_line": "- 暑い (atsui) — hot"
   },
   {
     "filename": "adj-008-samui.mp3",
@@ -888,27 +888,27 @@
     "line_index": 31,
     "anchor_line": 35,
     "insert_mode": "table",
-    "source_line": "| ぐ | いで | 泣ぐ → 泣いで (oyoide) |"
+    "source_line": "| ぐ | いで | 泳ぐ → 泳いで (oyoide) |"
   },
   {
-    "filename": "verb-018-kyuu-gu.mp3",
-    "text": "泣ぐ",
+    "filename": "verb-018-oyogu.mp3",
+    "text": "泳ぐ",
     "page_key": "verb_forms",
     "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
     "line_index": 31,
     "anchor_line": 35,
     "insert_mode": "table",
-    "source_line": "| ぐ | いで | 泣ぐ → 泣いで (oyoide) |"
+    "source_line": "| ぐ | いで | 泳ぐ → 泳いで (oyoide) |"
   },
   {
     "filename": "verb-019-oyoide.mp3",
-    "text": "泣いで",
+    "text": "泳いで",
     "page_key": "verb_forms",
     "page_path": "D:\\Vaults\\PersonalKB\\Japanese\\Grammar\\N5 Grammar\\N5 Grammar — Verb Forms.md",
     "line_index": 31,
     "anchor_line": 35,
     "insert_mode": "table",
-    "source_line": "| ぐ | いで | 泣ぐ → 泣いで (oyoide) |"
+    "source_line": "| ぐ | いで | 泳ぐ → 泳いで (oyoide) |"
   },
   {
     "filename": "verb-020-shite.mp3",

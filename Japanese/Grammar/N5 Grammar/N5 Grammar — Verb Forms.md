@@ -83,7 +83,7 @@ Used for: requests, progressive, permission, prohibition, connecting actions.
 | く | いて | 書く → 書いて (kaite) | ![[gap-063-phrase.mp3]] |
 ![[nontbl-043-kaite-form.mp3]]
 
-| ぐ | いで | 泣ぐ → 泣いで (oyoide) | ![[gap-064-phrase.mp3]] |
+| ぐ | いで | 泳ぐ → 泳いで (oyoide) | ![[gap-064-phrase.mp3]] |
 | す | して | 話す → 話して (hanashite) | ![[gap-065-phrase.mp3]] |
 | ぶ/む/ぬ | んで | 飛ぶ → 飛んで (tonde) | ![[gap-066-.mp3]] |
 | つ/る/う | って | 待つ → 待って (matte) | ![[gap-067-.mp3]] |
@@ -93,8 +93,8 @@ Audio:
 - いて ![[verb-015-ite.mp3]]
 - 書いて ![[verb-016-kaite.mp3]]
 - いで ![[verb-017-ide.mp3]]
-- 泣ぐ ![[verb-018-kyuu-gu.mp3]]
-- 泣いで ![[verb-019-oyoide.mp3]]
+- 泳ぐ ![[verb-018-oyogu.mp3]]
+- 泳いで ![[verb-019-oyoide.mp3]]
 - して ![[verb-020-shite.mp3]]
 - 話して ![[verb-021-hanashite.mp3]]
 - んで ![[verb-022-nde.mp3]]

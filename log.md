@@ -112,6 +112,39 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-06-06] refine | Japanese audio OCR cleanup
+
+Scope: targeted repair pass for remaining OCR-corrupted Japanese text that fed local pronunciation clips.
+
+Changed content files:
+- `Japanese/Grammar/N5 Grammar/N5 Grammar — Adjectives.md`
+- `Japanese/Grammar/N5 Grammar/N5 Grammar — Verb Forms.md`
+- `Japanese/_audio/Audio Index.md`
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `Japanese/_audio/gramn5_full_manifest.json`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `Japanese/_audio/adj-007-atsui.mp3`
+- `Japanese/_audio/verb-018-oyogu.mp3`
+- `Japanese/_audio/verb-019-oyoide.mp3`
+- `_ops/personal_kb.py`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Maintenance changes:
+- Repaired `暮い` to `暑い` for the N5 adjective hot example and regenerated `adj-007-atsui.mp3`.
+- Repaired the ぐ -> いで verb example from `泣ぐ -> 泣いで` to `泳ぐ -> 泳いで`.
+- Renamed the misleading `verb-018-kyuu-gu.mp3` clip to `verb-018-oyogu.mp3` and regenerated the affected verb audio.
+- Added pronunciation-manifest overrides so these OCR repairs remain stable if the audio manifest is rebuilt.
+- Excluded AgentOS `.tasks/` notes from wiki-content audit metrics so task state does not count as Japanese article debt.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py`
+- targeted audio inventory check for `adj-007-atsui.mp3`, `verb-018-oyogu.mp3`, and `verb-019-oyoide.mp3`
+- `ffprobe` duration check for the three regenerated MP3 files
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-05-17] refine | Japanese audio pronunciation regeneration
 
 Scope: rebuilt the Japanese audio generation path and regenerated the full audio inventory from pronunciation-safe TTS inputs.

@@ -50,7 +50,7 @@ Native Japanese adjectives ending in い:
   ![[adj-005-utsukushii.mp3]]
 - おいしい (oishii) — delicious
   ![[adj-006-oishii.mp3]]
-- 暮い (atsui) — hot
+- 暑い (atsui) — hot
   ![[adj-007-atsui.mp3]]
 - 寒い (samui) — cold
   ![[adj-008-samui.mp3]]

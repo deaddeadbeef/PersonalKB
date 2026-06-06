@@ -1967,7 +1967,7 @@ This index catalogs all **1810** TTS audio clips in the Japanese audio library, 
 - ![[verb-015-ite.mp3]]
 - ![[verb-016-kaite.mp3]]
 - ![[verb-017-ide.mp3]]
-- ![[verb-018-kyuu-gu.mp3]]
+- ![[verb-018-oyogu.mp3]]
 - ![[verb-019-oyoide.mp3]]
 - ![[verb-020-shite.mp3]]
 - ![[verb-021-hanashite.mp3]]

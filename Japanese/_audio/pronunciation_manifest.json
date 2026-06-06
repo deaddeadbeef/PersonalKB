@@ -49,11 +49,11 @@
   },
   {
     "filename": "adj-007-atsui.mp3",
-    "text": "暮い",
-    "display_text": "暮い",
+    "text": "暑い",
+    "display_text": "暑い",
     "source_manifest": "gramn5_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "unchanged"
+    "pronunciation_note": "repaired OCR error"
   },
   {
     "filename": "adj-008-samui.mp3",
@@ -14030,20 +14030,20 @@
     "pronunciation_note": "unchanged"
   },
   {
-    "filename": "verb-018-kyuu-gu.mp3",
-    "text": "泣ぐ",
-    "display_text": "泣ぐ",
+    "filename": "verb-018-oyogu.mp3",
+    "text": "泳ぐ",
+    "display_text": "泳ぐ",
     "source_manifest": "gramn5_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "unchanged"
+    "pronunciation_note": "repaired OCR error"
   },
   {
     "filename": "verb-019-oyoide.mp3",
-    "text": "泣いで",
-    "display_text": "泣いで",
+    "text": "泳いで",
+    "display_text": "泳いで",
     "source_manifest": "gramn5_full_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "unchanged"
+    "pronunciation_note": "repaired OCR error"
   },
   {
     "filename": "verb-020-shite.mp3",
