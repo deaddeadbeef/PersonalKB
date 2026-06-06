@@ -32,16 +32,16 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 22-35, open [[Phase 3 Authentic Audio Spine]] and [[Phase 3 Audio Coverage Map]].
+Before starting Steps 22-35, open [[Phase 3 Authentic Audio Spine]], [[Phase 3 Local Audio Practice]], and [[Phase 3 Audio Coverage Map]].
 
-Use a repeatable human-recorded or official-course segment as the model. Use the MP3 clips embedded in the Phase 3 grammar, vocabulary, kanji, pitch, listening, and culture pages as short drills.
+Use a repeatable human-recorded or official-course segment as the model. Use [[Phase 3 Local Audio Practice]] as the ordered local drill ladder, then use the MP3 clips embedded in the Phase 3 grammar, vocabulary, kanji, pitch, listening, and culture pages when a topic needs more examples.
 
 Use [[Phase 3 Weekly Review]] at the end of each week to record the exact authentic segment, local clip set, pitch or reading check, and shadowing or transcription proof.
 
 Phase 3 introduces pitch accent, intermediate listening, media, and keigo recognition, so do not use local TTS as the only audio authority. Every block should have:
 
 - One authentic audio segment you repeat across multiple days.
-- One local clip set tied to the current grammar, vocabulary, pitch, media, or culture page.
+- One local clip set from [[Phase 3 Local Audio Practice]] or the current grammar, vocabulary, pitch, media, or culture page.
 - One pitch, reading, rhythm, or suspect-clip issue checked through [[Pronunciation and Audio Accuracy]] or [[Pronunciation Correction Log]].
 
 ## Grammar — N4 Level
@@ -176,6 +176,7 @@ You don't need to produce full keigo yet, but you need to RECOGNIZE it.
 - [ ] Can check a pitch-accent uncertainty through [[Phase 3 Pitch Accent Practice Path]]
 - [ ] Basic understanding of keigo system
 - [ ] Have one stable Phase 3 authentic audio source in [[Phase 3 Authentic Audio Spine]]
+- [ ] Can use [[Phase 3 Local Audio Practice]] without hunting through page-level clips
 - [ ] Can pair each required Phase 3 page with audio using [[Phase 3 Audio Coverage Map]]
 - [ ] Have weekly audio evidence recorded in [[Phase 3 Weekly Review]]
 
@@ -217,6 +218,7 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 ## References
 - [[Sources Index]]
 - [[Phase 3 Authentic Audio Spine]]
+- [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 3 Pitch Accent Practice Path]]

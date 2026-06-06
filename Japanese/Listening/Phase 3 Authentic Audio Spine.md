@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, practice]
 
 # Phase 3 Authentic Audio Spine
 
-> Use this page during [[Phase 3 — Expansion]]. Phase 3 is where audio shifts from beginner lesson support toward controlled real-world input: N4 grammar in context, 1000-word listening, pitch-accent checks, and intermediate shadowing.
+> Use this page during [[Phase 3 — Expansion]]. Pair it with [[Phase 3 Local Audio Practice]] as audio shifts from beginner lesson support toward controlled real-world input: N4 grammar in context, 1000-word listening, pitch-accent checks, and intermediate shadowing.
 
 ## The Rule
 
@@ -27,7 +27,7 @@ Use this pairing on any Phase 3 study day:
 
 | Time | Audio layer | Task |
 | --- | --- | --- |
-| 3-5 min | Current Phase 3 page embeds | Repeat the grammar, vocabulary, pitch, or discourse-marker clips on the page you are studying |
+| 3-5 min | [[Phase 3 Local Audio Practice]] or current Phase 3 page embeds | Repeat the grammar, vocabulary, pitch, or discourse-marker clips on the page you are studying |
 | 10-20 min | This authentic spine | Listen once for meaning, once with text, then shadow one short segment |
 | 2 min | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] when needed | Check one pitch, reading, rhythm, or suspect-clip issue |
 | 1 min | [[Phase 3 Weekly Review]] or daily note | Record the exact segment, local clip set, and one sound or pattern to revisit |
@@ -38,14 +38,14 @@ When time is short, keep one authentic sentence and one local clip. Do not turn 
 
 | Phase 3 block | Study focus | Authentic audio target | Local companion |
 | --- | --- | --- | --- |
-| 1 | Te-form review, conditionals, passive/causative, giving/receiving | Course/tutor dialogue where the target grammar appears in full sentences | [[N5 Grammar — Verb Forms]], [[N4 Grammar — Conditional Forms]], [[N4 Grammar — Passive and Causative]], [[N4 Grammar — Giving and Receiving]] clips |
-| 2 | Compound sentences, potential/volitional, 1000-word vocabulary | Graded lesson or transcripted story with longer sentence chains | [[N4 Grammar — Compound Sentences]], [[N4 Grammar — Potential and Volitional]], [[Core 1000 — Conversational Fluency]] clips |
-| 3 | Travel, health, numbers, onomatopoeia, N4 kanji | Practical dialogue or short article/audio pair with everyday situations | [[Thematic Vocabulary — Travel and Transportation]], [[Thematic Vocabulary — Body and Health]], [[Thematic Vocabulary — Numbers, Time, and Dates]], [[Onomatopoeia — Sound and State Words]], [[Kanji N4 Essentials]] clips |
-| 4 | Pitch accent, filler words, intermediate listening, media, keigo recognition | One repeatable intermediate audio segment plus one pitch/accent reference check | [[Pitch Accent — Introduction]], [[Pitch Accent — Common Patterns]], [[Common Filler Words and Discourse Markers]], [[Intermediate Listening Resources]], and [[Keigo — Overview and Register System]] clips |
+| 1 | Te-form review, conditionals, passive/causative, giving/receiving | Course/tutor dialogue where the target grammar appears in full sentences | [[Phase 3 Local Audio Practice]] Block 1 |
+| 2 | Compound sentences, potential/volitional, 1000-word vocabulary | Graded lesson or transcripted story with longer sentence chains | [[Phase 3 Local Audio Practice]] Block 2 |
+| 3 | Travel, health, numbers, onomatopoeia, N4 kanji | Practical dialogue or short article/audio pair with everyday situations | [[Phase 3 Local Audio Practice]] Block 3 |
+| 4 | Pitch accent, filler words, intermediate listening, media, keigo recognition | One repeatable intermediate audio segment plus one pitch/accent reference check | [[Phase 3 Local Audio Practice]] Block 4 |
 
 The source does not need to match every vault page exactly. It does need enough overlap that your ear hears the grammar, vocabulary, pitch, or register topic in human Japanese while the local clips isolate details.
 
-Use [[Phase 3 Audio Coverage Map]] when you need to match a required Phase 3 page to the right local and authentic audio layer.
+Use [[Phase 3 Local Audio Practice]] for the daily ladder. Use [[Phase 3 Audio Coverage Map]] when you need to match a required Phase 3 page to the right local and authentic audio layer.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
 
@@ -74,6 +74,7 @@ At the end of each week, record evidence in [[Phase 3 Weekly Review]]:
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Weekly Review]]
 - [[Intermediate Listening Resources]]

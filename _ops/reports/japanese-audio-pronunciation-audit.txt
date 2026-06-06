@@ -6,7 +6,7 @@ SUMMARY
   Pronunciation entries     : 1810
   MP3 files                 : 1810
   Entries changed for TTS   : 95
-  Explicit overrides        : 76
+  Explicit overrides        : 77
   Duplicate manifest rows   : 2
   Missing MP3 files         : 0
   MP3 files not in manifest : 0

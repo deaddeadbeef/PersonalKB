@@ -50,7 +50,7 @@ flowchart TD
   ![[gramn4-019-taberareru.mp3]]
 - 日本語が話せます。 (I can speak Japanese.)
   ![[n4pot-005-nihongogahanasemasu.mp3]]
-- お箯が使えますか。 (Can you use chopsticks?)
+- お箸が使えますか。 (Can you use chopsticks?)
   ![[n4pot-006-otsukaemasuka.mp3]]
 - **Note:** Object particle changes from を to が with potential form
   ![[n4pot-007-wo-ga.mp3]]

@@ -20,7 +20,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Course spine | [[Resources Index — Textbooks, Apps, and Tools#Recommended Beginner Stack|Genki I]] or [[Resources Index — Textbooks, Apps, and Tools#Free Official Alternative|Irodori A1]] | Gives sequence, exercises, and accountability |
 | Grammar reference | [[Resources Index — Textbooks, Apps, and Tools#Grammar References|Tae Kim]] plus vault grammar pages | Explains patterns when the course is too terse |
 | Memory system | [[Resources Index — Textbooks, Apps, and Tools#SRS and Review|Anki]] | Keeps kana, words, and kanji from decaying |
-| Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Local Audio Practice]] plus [[Phase 2 Authentic Audio Spine]], followed by the later authentic spines | Combines precise local drills with human-recorded or official-course pronunciation |
+| Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Local Audio Practice]] and [[Phase 3 Local Audio Practice]] with their authentic spines, followed by later phase spines | Combines precise local drills with human-recorded or official-course pronunciation |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Prevents local clips from becoming the only pronunciation authority |
 | Audio coverage | [[Phase 1 Audio Coverage Map]]; later [[Phase 2 Audio Coverage Map]], [[Phase 3 Audio Coverage Map]], [[Phase 4 Audio Coverage Map]], and [[Phase 5 Audio Coverage Map]] | Shows what to listen to for each required page in the current phase |
 | Output proof | [[Advanced Output and Register Feedback Log]] for Phase 5 | Keeps advanced listening tied to recordings, tutor/native feedback, and register fixes |
@@ -113,19 +113,20 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 18. [[Phase 2 Weekly Review]]
 19. [[Phase 3 — Expansion]]
 20. [[Phase 3 Authentic Audio Spine]]
-21. [[Phase 3 Audio Coverage Map]]
-22. [[Phase 3 Pitch Accent Practice Path]]
-23. [[Phase 3 Weekly Review]]
-24. [[Phase 4 — Intermediate Mastery]]
-25. [[Phase 4 Authentic Audio Spine]]
-26. [[Phase 4 Audio Coverage Map]]
-27. [[Phase 4 Keigo and Register Production Checklist]]
-28. [[Phase 4 Weekly Review]]
-29. [[Phase 5 — Advanced]]
-30. [[Phase 5 Authentic Audio Spine]]
-31. [[Phase 5 Audio Coverage Map]]
-32. [[Advanced Output and Register Feedback Log]]
-33. [[Phase 5 Weekly Review]]
+21. [[Phase 3 Local Audio Practice]]
+22. [[Phase 3 Audio Coverage Map]]
+23. [[Phase 3 Pitch Accent Practice Path]]
+24. [[Phase 3 Weekly Review]]
+25. [[Phase 4 — Intermediate Mastery]]
+26. [[Phase 4 Authentic Audio Spine]]
+27. [[Phase 4 Audio Coverage Map]]
+28. [[Phase 4 Keigo and Register Production Checklist]]
+29. [[Phase 4 Weekly Review]]
+30. [[Phase 5 — Advanced]]
+31. [[Phase 5 Authentic Audio Spine]]
+32. [[Phase 5 Audio Coverage Map]]
+33. [[Advanced Output and Register Feedback Log]]
+34. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -144,6 +145,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
+- [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 3 Weekly Review]]

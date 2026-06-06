@@ -1005,3 +1005,50 @@ Verification:
 - Local MP3 embed check across changed pages: 90 embedded MP3 targets, 0 missing.
 - `index.md` MP3 leak check: 0 hits.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 3 local audio practice
+
+Scope: add a focused Phase 3 local audio ladder so N4 expansion, longer sentence output, practical domains, and pitch/register recognition have a daily clip route paired with authentic audio.
+
+Changed content files:
+- `Japanese/Listening/Phase 3 Local Audio Practice.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 3 — Expansion.md`
+- `Japanese/Listening/Phase 3 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 3 Audio Coverage Map.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Study/Phase 3 Weekly Review.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Grammar/N4 Grammar/N4 Grammar — Potential and Volitional.md`
+
+Maintenance changes:
+- Added `Phase 3 Local Audio Practice` with 104 selected local MP3 drills across N4 grammar direction, longer sentences and 1000-word output, practical domains and N4 kanji, plus pitch, fillers, media, and register recognition.
+- Kept `Phase 3 Authentic Audio Spine` as the pronunciation/rhythm authority; local clips are controlled drills, and pitch prompts route to the Phase 3 pitch-accent practice path and native/course/tutor checks.
+- Routed Start Here, Phase 3, the audio spine, coverage map, listening overview, dashboard, study index, resources, daily routines, and weekly review to the new ladder.
+- Corrected a malformed chopsticks-kanji source typo to `お箸が使えますか。`, regenerated `n4pot-006-otsukaemasuka.mp3`, and updated pronunciation manifests and audit reports.
+
+Changed audio/ops files:
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `Japanese/_audio/gramn4n3_manifest.json`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `Japanese/_audio/n4pot-006-otsukaemasuka.mp3`
+- `Japanese/_audio/audit-mismatch-report.txt`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- Malformed chopsticks-kanji typo search: 0 hits.
+- `ffprobe` check for regenerated `n4pot-006-otsukaemasuka.mp3`: MP3, 48000 Hz, mono, 96000 bps.
+- `python _ops\personal_kb.py audit`: 4746 files, 2877 markdown, 1810 MP3, 0 heavy audio embed pages.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4746 files, 2877 markdown, 1810 MP3, 0 heavy audio embed pages.
+- Phase 3 local audio link coverage check: 12 required references present.
+- Phase 3 stale ladder backlog phrase check: removed old future-ladder wording.
+- Local MP3 embed check across changed pages: 133 embedded MP3 targets, 0 missing.
+- `index.md` MP3 leak check: 0 hits.
+- `git diff --check`

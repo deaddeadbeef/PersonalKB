@@ -10729,11 +10729,11 @@
   },
   {
     "filename": "n4pot-006-otsukaemasuka.mp3",
-    "text": "お箯が使えますか。",
-    "display_text": "お箯が使えますか。",
+    "text": "お箸が使えますか。",
+    "display_text": "お箸が使えますか。",
     "source_manifest": "gramn4n3_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "unchanged"
+    "pronunciation_note": "repaired OCR error"
   },
   {
     "filename": "n4pot-007-wo-ga.mp3",

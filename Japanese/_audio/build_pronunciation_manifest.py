@@ -104,6 +104,7 @@ PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
     ),
     "n4give-018-ageru-kureru.mp3": ("あげる、くれる", "repaired harvested contrast"),
     "n4give-019-ageru-sashiageru.mp3": ("あげる、さしあげる", "repaired harvested contrast"),
+    "n4pot-006-otsukaemasuka.mp3": ("お箸が使えますか。", "repaired OCR error"),
 
     # OCR and table extraction errors.
     "adj-007-atsui.mp3": ("暑い", "repaired OCR error"),

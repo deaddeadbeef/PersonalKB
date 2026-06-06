@@ -26,7 +26,7 @@ Phase 3 review should name one exact authentic segment, one local clip set, one 
 
 - [ ] Due reviews completed on at least 5 days
 - [ ] One authentic audio segment from [[Phase 3 Authentic Audio Spine]] repeated on at least 3 days
-- [ ] One local clip set from the current Phase 3 page repeated on at least 3 days
+- [ ] One local clip set from [[Phase 3 Local Audio Practice]] or the current Phase 3 page repeated on at least 3 days
 - [ ] [[Phase 3 Audio Coverage Map]] checked for the current main page
 - [ ] One pitch, accent, kanji-reading, rhythm, or suspect-clip issue checked through [[Pronunciation and Audio Accuracy]]
 - [ ] One short intermediate segment shadowed, transcribed, summarized, or mined for sentences
@@ -40,7 +40,7 @@ Record exact targets. "Listened to a podcast" is not enough.
 | Layer | Exact target | Evidence |
 | --- | --- | --- |
 | Authentic audio | Source, lesson, timestamp, scene, or segment name |  |
-| Local clips | Current Phase 3 page and clip set |  |
+| Local clips | [[Phase 3 Local Audio Practice]] block or current Phase 3 page clip set |  |
 | Shadowing or transcription | Sentence, paragraph, line, or timestamp range |  |
 | Pitch or reading check | Word, phrase, accent pattern, kanji reading, or rhythm issue; use [[Phase 3 Pitch Accent Practice Path]] for pitch |  |
 | QA check | Suspect local clip or source disagreement, if any |  |
@@ -86,7 +86,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 
 - One main page:
 - One authentic audio target:
-- One local audio target:
+- One local audio target from [[Phase 3 Local Audio Practice]]:
 - One pitch, accent, or reading check:
 - One shadowing or transcription target:
 - One output sentence or short summary:
@@ -96,6 +96,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expansion|Phase 3 checkpoint]] is true and the audio evidence is real:
 
 - [ ] You have repeated a stable Phase 3 authentic audio source for multiple weeks
+- [ ] You can use [[Phase 3 Local Audio Practice]] to find the right local block without searching the whole vault
 - [ ] You can pair each required Phase 3 page with audio using [[Phase 3 Audio Coverage Map]]
 - [ ] You can shadow one short intermediate segment without reading every word
 - [ ] You can check a pitch, accent, or reading uncertainty through [[Pronunciation and Audio Accuracy]]
@@ -106,6 +107,7 @@ Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expa
 
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Authentic Audio Spine]]
+- [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]

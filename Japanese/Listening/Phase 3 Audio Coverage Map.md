@@ -15,11 +15,13 @@ Phase 3 audio support has three layers:
 
 | Layer | Source | Job |
 | --- | --- | --- |
-| Local drill | Embedded MP3 clips on the current Phase 3 page | Repeat grammar forms, vocabulary, pitch patterns, discourse markers, and media-study terms inside Obsidian |
+| Local drill | [[Phase 3 Local Audio Practice]] plus embedded MP3 clips on the current Phase 3 page | Repeat grammar forms, vocabulary, pitch patterns, discourse markers, and media-study terms inside Obsidian |
 | Authentic model | [[Phase 3 Authentic Audio Spine]] | Keep human-recorded or official-course Japanese as the pronunciation and rhythm model |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Phase 3 does not need a separate local ladder yet. The required content pages already contain page-level clips. What Phase 3 needs is a stronger authentic model because pitch accent, connected speech, media, and keigo recognition cannot be learned from local TTS alone.
+Use [[Phase 3 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 3 clips, ordered by block so N4 grammar, pitch, media, and register practice do not require page-level clip hunting.
+
+The authentic model still matters more in Phase 3 because pitch accent, connected speech, media, and keigo recognition cannot be learned from local TTS alone.
 
 ## Required Phase 3 Coverage
 
@@ -27,6 +29,7 @@ Phase 3 does not need a separate local ladder yet. The required content pages al
 | --- | ---: | --- | --- | --- |
 | [[Phase 3 — Expansion]] | 0 | Routes to spine | Routes to QA | Choose the next N4 expansion focus |
 | [[Phase 3 Authentic Audio Spine]] | 0 | Primary human/official route | Quality bar included | Choose the repeatable segment for the week |
+| [[Phase 3 Local Audio Practice]] | 104 selected | Must be paired with spine | Covered by QA; pitch prompts route to [[Phase 3 Pitch Accent Practice Path]] | Drill the current Phase 3 block without hunting through pages |
 | [[Phase 3 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA evidence | Decide next week's N4 audio target |
 | [[N5 Grammar — Verb Forms]] | 69 | Course/tutor grammar audio | Covered by QA | Review te-form before N4 extensions |
 | [[N4 Grammar — Conditional Forms]] | 17 | Conditional examples in course/tutor dialogue | Covered by QA | Hear たら, ば, なら, and と in sentences |
@@ -51,16 +54,16 @@ Phase 3 does not need a separate local ladder yet. The required content pages al
 | [[Keigo — Overview and Register System]] | 7 | Polite/formal dialogue or tutor examples | Needs human/native context | Recognize keigo without overproducing it |
 | [[Culture Overview]] | 17 | Culture/tutor/native examples where needed | Routes to QA | Keep culture examples tied to real use |
 
-Total local coverage across the required Phase 3 pages: 494 embedded MP3 clips.
+The required Phase 3 content pages carry 494 embedded MP3 clips. [[Phase 3 Local Audio Practice]] adds 104 selected practice embeds from that library, for 598 total Phase 3 audio occurrences in the mapped route.
 
 ## Audio Pairing
 
 | Block | Study pages | Local drill | Authentic model | Proof |
 | --- | --- | --- | --- | --- |
-| 1 | [[N5 Grammar — Verb Forms]], [[N4 Grammar — Conditional Forms]], [[N4 Grammar — Passive and Causative]], [[N4 Grammar — Giving and Receiving]] | Repeat target grammar examples aloud | Course/tutor segment with the target pattern visible in text | Say three target-pattern sentences without reading |
-| 2 | [[N4 Grammar — Compound Sentences]], [[N4 Grammar — Potential and Volitional]], [[Core 1000 — Conversational Fluency]] | Drill longer sentence and vocabulary clips | Graded/intermediate audio with transcript | Shadow one longer sentence without losing particles |
-| 3 | [[Thematic Vocabulary — Travel and Transportation]], [[Thematic Vocabulary — Body and Health]], [[Thematic Vocabulary — Numbers, Time, and Dates]], [[Onomatopoeia — Sound and State Words]], [[Kanji N4 Essentials]] | Drill practical domains and N4 kanji vocabulary | Practical dialogue, short article/audio pair, or tutor recording | Summarize one short segment and reuse five words aloud |
-| 4 | [[Pitch Accent — Introduction]], [[Pitch Accent — Common Patterns]], [[Phase 3 Pitch Accent Practice Path]], [[Common Filler Words and Discourse Markers]], [[Intermediate Listening Resources]], [[YouTube Channels for Japanese Learners]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]], [[Keigo — Overview and Register System]] | Drill pitch/filler/media terms only after source checks | One repeatable intermediate or native segment plus accent reference | Shadow one short segment and check one pitch/accent issue |
+| 1 | [[N5 Grammar — Verb Forms]], [[N4 Grammar — Conditional Forms]], [[N4 Grammar — Passive and Causative]], [[N4 Grammar — Giving and Receiving]] | Use [[Phase 3 Local Audio Practice]] Block 1, then expand into page-level clips | Course/tutor segment with the target pattern visible in text | Say three target-pattern sentences without reading |
+| 2 | [[N4 Grammar — Compound Sentences]], [[N4 Grammar — Potential and Volitional]], [[Core 1000 — Conversational Fluency]] | Use [[Phase 3 Local Audio Practice]] Block 2, then expand into page-level clips | Graded/intermediate audio with transcript | Shadow one longer sentence without losing particles |
+| 3 | [[Thematic Vocabulary — Travel and Transportation]], [[Thematic Vocabulary — Body and Health]], [[Thematic Vocabulary — Numbers, Time, and Dates]], [[Onomatopoeia — Sound and State Words]], [[Kanji N4 Essentials]] | Use [[Phase 3 Local Audio Practice]] Block 3, then expand into page-level clips | Practical dialogue, short article/audio pair, or tutor recording | Summarize one short segment and reuse five words aloud |
+| 4 | [[Pitch Accent — Introduction]], [[Pitch Accent — Common Patterns]], [[Phase 3 Pitch Accent Practice Path]], [[Common Filler Words and Discourse Markers]], [[Intermediate Listening Resources]], [[YouTube Channels for Japanese Learners]], [[Anime and Drama — Immersion Listening]], [[Music — Learning Through Japanese Songs]], [[Keigo — Overview and Register System]] | Use [[Phase 3 Local Audio Practice]] Block 4 only with source checks for pitch/media/register | One repeatable intermediate or native segment plus accent reference | Shadow one short segment and check one pitch/accent issue |
 
 ## Gap Policy
 
@@ -80,14 +83,16 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Use [[Phase 3 Weekly Review]] before Phase 3 becomes the active dashboard phase.
+- Use [[Phase 3 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Phase 3 Pitch Accent Practice Path]] after Phase 3 audio evidence is in place.
 - Use [[Phase 4 Audio Coverage Map]] before starting Phase 4 content.
-- Keep the local drills page-level for now; create a Phase 3 ladder only if daily study starts requiring too much clip hunting.
+- The `n4pot-006-otsukaemasuka.mp3` source typo was corrected to `お箸が使えますか。` and the clip was regenerated at 48 kHz mono 96 kbps.
 
 ## References
 
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Authentic Audio Spine]]
+- [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 4 Audio Coverage Map]]
