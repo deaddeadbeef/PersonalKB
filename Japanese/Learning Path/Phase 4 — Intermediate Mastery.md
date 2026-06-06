@@ -30,6 +30,19 @@ flowchart LR
 
 ## ⚙️ Core Mechanics
 
+## Audio Support
+
+Before starting Steps 36-48, open [[Phase 4 Authentic Audio Spine]] and [[Phase 4 Audio Coverage Map]].
+
+Use a repeatable native-speed or official-course segment as the model. Use the MP3 clips embedded in the Phase 4 grammar, kanji, vocabulary, keigo, business, culture, and listening pages as short drills.
+
+Phase 4 asks you to produce register-sensitive Japanese, so do not use local TTS as the only authority. Every block should have:
+
+- One exact native-speed segment you repeat across multiple days.
+- One local clip set from the page you are studying.
+- One pronunciation, rhythm, reading, keigo, or register issue checked through [[Pronunciation and Audio Accuracy]] or [[Pronunciation Correction Log]].
+- One shadowing, transcription, summary, or role-play proof.
+
 ## Grammar — N3 Level
 
 
@@ -133,6 +146,9 @@ Aizuchi, indirectness, discourse markers — sound like a real speaker.
 - [ ] ~650 kanji, ~3,000+ vocabulary
 - [ ] Understand and can use basic keigo
 - [ ] Following native podcasts at ~70% comprehension
+- [ ] Have one stable Phase 4 native-speed audio source in [[Phase 4 Authentic Audio Spine]]
+- [ ] Can pair each required Phase 4 page with audio using [[Phase 4 Audio Coverage Map]]
+- [ ] Have checked keigo, register, pitch, or reading issues through [[Pronunciation and Audio Accuracy]] when local clips are not enough
 - [ ] Ready for N3 test
 
 **Previous:** [[Phase 3 — Expansion]]
@@ -180,3 +196,6 @@ Push into faster, more natural content.
 
 ## References
 - [[Sources Index]]
+- [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Audio Coverage Map]]
+- [[Pronunciation and Audio Accuracy]]

@@ -120,21 +120,23 @@ Goal: N3-level reading, longer conversations, intermediate grammar, 650 kanji, a
 | Order | Page | Consume for |
 | --- | --- | --- |
 | 4.1 | [[Phase 4 — Intermediate Mastery]] | Month 6-12 sequence |
-| 4.2 | [[N3 Grammar — Formal Expressions]] | Formal expressions |
-| 4.3 | [[N3 Grammar — Complex Conjunctions]] | Complex sentence links |
-| 4.4 | [[N3 Grammar — Nominalization and Quotation]] | こと, の, という, と思う |
-| 4.5 | [[Grammar — Comparison Across Levels]] | How patterns deepen across N5-N3 |
-| 4.6 | [[Kanji N3 Essentials]] | Functional literacy target |
-| 4.7 | [[Thematic Vocabulary — Work and Office]] | Workplace vocabulary |
-| 4.8 | [[Thematic Vocabulary — Nature and Weather]] | Nature and weather vocabulary |
-| 4.9 | [[Keigo — Sonkeigo (Honorific)]] | Honorific forms |
-| 4.10 | [[Keigo — Kenjōgo (Humble)]] | Humble forms |
-| 4.11 | [[Business Japanese — Workplace Communication]] | Workplace register and phrases |
-| 4.12 | [[Seasonal Greetings and Cultural Expressions]] | Seasonal language |
-| 4.13 | [[Idioms and Proverbs — ことわざ]] | Idioms and proverbs |
-| 4.14 | [[Numbers and Superstitions]] | Culture-linked number usage |
-| 4.15 | [[Advanced Listening Resources]] | Faster and more natural audio |
-| 4.16 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
+| 4.2 | [[Phase 4 Authentic Audio Spine]] | Native-speed or official-course audio source for Phase 4 |
+| 4.3 | [[Phase 4 Audio Coverage Map]] | Match each Phase 4 page to local clips, native audio, and QA |
+| 4.4 | [[N3 Grammar — Formal Expressions]] | Formal expressions |
+| 4.5 | [[N3 Grammar — Complex Conjunctions]] | Complex sentence links |
+| 4.6 | [[N3 Grammar — Nominalization and Quotation]] | こと, の, という, と思う |
+| 4.7 | [[Grammar — Comparison Across Levels]] | How patterns deepen across N5-N3 |
+| 4.8 | [[Kanji N3 Essentials]] | Functional literacy target |
+| 4.9 | [[Thematic Vocabulary — Work and Office]] | Workplace vocabulary |
+| 4.10 | [[Thematic Vocabulary — Nature and Weather]] | Nature and weather vocabulary |
+| 4.11 | [[Keigo — Sonkeigo (Honorific)]] | Honorific forms |
+| 4.12 | [[Keigo — Kenjōgo (Humble)]] | Humble forms |
+| 4.13 | [[Business Japanese — Workplace Communication]] | Workplace register and phrases |
+| 4.14 | [[Seasonal Greetings and Cultural Expressions]] | Seasonal language |
+| 4.15 | [[Idioms and Proverbs — ことわざ]] | Idioms and proverbs |
+| 4.16 | [[Numbers and Superstitions]] | Culture-linked number usage |
+| 4.17 | [[Advanced Listening Resources]] | Faster and more natural audio |
+| 4.18 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
 
 ### 5. Phase 5 — Advanced
 
@@ -203,7 +205,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 
 ### Listening
 - [[Listening Overview]]
-- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]]
+- [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]

@@ -30,6 +30,8 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - Focus: individual words, basic sentence patterns, numbers
 
 ### Intermediate
+- [[Phase 4 Audio Coverage Map]] — match each required Phase 4 page to local clips, native-speed audio, and QA
+- [[Phase 4 Authentic Audio Spine]] — native-speed or official-course audio for N3, keigo, business, and register practice
 - [[Intermediate Listening Resources]] — natural speed with some support
 - Focus: connected speech, context clues, inference
 
@@ -50,6 +52,8 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Authentic Audio Spine]]
+- [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Authentic Audio Spine]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 - [[YouTube Channels for Japanese Learners]]
 - [[NHK World — News Listening Practice]]
@@ -73,6 +77,8 @@ For Phase 2, use [[Phase 2 Authentic Audio Spine]] plus the embedded clips on th
 
 For Phase 3, use [[Phase 3 Authentic Audio Spine]] plus the embedded clips on the current N4, pitch, vocabulary, media, or culture page. Use [[Phase 3 Audio Coverage Map]] when intermediate listening or media practice needs a repeatable authentic segment instead of random immersion.
 
+For Phase 4, use [[Phase 4 Authentic Audio Spine]] plus the embedded clips on the current N3, kanji, keigo, business, culture, or advanced-listening page. Use [[Phase 4 Audio Coverage Map]] when native-speed audio, register, or longer conversation practice needs a repeatable segment instead of passive immersion.
+
 ## Daily Listening Routine
 
 | Time | Activity | Level |
@@ -81,6 +87,7 @@ For Phase 3, use [[Phase 3 Authentic Audio Spine]] plus the embedded clips on th
 | 5-15 min | Native course/audio segment from [[Phase 1 Authentic Audio Spine]] | Beginner |
 | 5-15 min | Phase 2 page clips plus a segment from [[Phase 2 Authentic Audio Spine]] | Beginner/N5 |
 | 10-20 min | Phase 3 page clips plus a segment from [[Phase 3 Authentic Audio Spine]] | N4/early intermediate |
+| 15-30 min | Phase 4 page clips plus a segment from [[Phase 4 Authentic Audio Spine]] | N3/intermediate |
 | 10 min | Shadowing practice | All |
 | 15 min | Focused podcast episode | Intermediate |
 | 30 min | Background immersion | All |
@@ -92,3 +99,4 @@ For Phase 3, use [[Phase 3 Authentic Audio Spine]] plus the embedded clips on th
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Phase 4 Audio Coverage Map]]

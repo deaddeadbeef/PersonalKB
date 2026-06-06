@@ -78,12 +78,14 @@ These are real gaps:
 
 - Add a Phase 3 weekly review page before Phase 3 becomes the active dashboard phase.
 - Add a focused pitch-accent practice path after Phase 3 audio evidence is in place.
+- Use [[Phase 4 Audio Coverage Map]] before starting Phase 4 content.
 - Keep the local drills page-level for now; create a Phase 3 ladder only if daily study starts requiring too much clip hunting.
 
 ## References
 
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Authentic Audio Spine]]
+- [[Phase 4 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Intermediate Listening Resources]]
 - [[Pronunciation and Audio Accuracy]]

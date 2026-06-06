@@ -732,3 +732,32 @@ Verification:
 - Full Japanese MP3 validation with `ffprobe`: 1810 checked, 0 bad.
 - Audio embed resolution check across Japanese notes.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 4 audio support
+
+Scope: extend the Japanese audio-support system into Phase 4 so N3 grammar, N3 kanji, keigo, business register, culture, and native-speed listening stay paired with local drills, authentic audio, and pronunciation/register QA.
+
+Changed content files:
+- `Japanese/Listening/Phase 4 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 4 Audio Coverage Map.md`
+- `Japanese/Japanese.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Learning Path/Phase 4 — Intermediate Mastery.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Listening/Phase 3 Audio Coverage Map.md`
+
+Maintenance changes:
+- Added a Phase 4 authentic audio spine for native-speed, N3, keigo, business, register, culture, and conversation-fluency practice.
+- Added a Phase 4 coverage map with local MP3 counts for required Phase 4 pages.
+- Routed Start Here, dashboard, study index, resource policy, listening overview, Phase 4 plan, and Phase 3 next targets to the new audio support pages.
+- Left Phase 1 as the active dashboard phase while making Phase 4 audio-ready.
+
+Verification:
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 4 coverage count check across required pages: 312 embedded MP3 clips.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

@@ -20,10 +20,10 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Course spine | [[Resources Index — Textbooks, Apps, and Tools#Recommended Beginner Stack|Genki I]] or [[Resources Index — Textbooks, Apps, and Tools#Free Official Alternative|Irodori A1]] | Gives sequence, exercises, and accountability |
 | Grammar reference | [[Resources Index — Textbooks, Apps, and Tools#Grammar References|Tae Kim]] plus vault grammar pages | Explains patterns when the course is too terse |
 | Memory system | [[Resources Index — Textbooks, Apps, and Tools#SRS and Review|Anki]] | Keeps kana, words, and kanji from decaying |
-| Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Authentic Audio Spine]] and [[Phase 3 Authentic Audio Spine]] | Combines precise local drills with human-recorded or official-course pronunciation |
+| Listening habit | [[Phase 1 Local Audio Practice]] plus [[Phase 1 Authentic Audio Spine]]; then [[Phase 2 Authentic Audio Spine]], [[Phase 3 Authentic Audio Spine]], and [[Phase 4 Authentic Audio Spine]] | Combines precise local drills with human-recorded or official-course pronunciation |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Prevents local clips from becoming the only pronunciation authority |
-| Audio coverage | [[Phase 1 Audio Coverage Map]]; later [[Phase 2 Audio Coverage Map]] and [[Phase 3 Audio Coverage Map]] | Shows what to listen to for each required page in the current phase |
-| Roadmap | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] | Keeps advanced material out of the way until it is useful |
+| Audio coverage | [[Phase 1 Audio Coverage Map]]; later [[Phase 2 Audio Coverage Map]], [[Phase 3 Audio Coverage Map]], and [[Phase 4 Audio Coverage Map]] | Shows what to listen to for each required page in the current phase |
+| Roadmap | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] -> [[Phase 4 — Intermediate Mastery]] | Keeps advanced material out of the way until it is useful |
 
 ## Current Stage
 
@@ -112,6 +112,9 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 18. [[Phase 3 — Expansion]]
 19. [[Phase 3 Authentic Audio Spine]]
 20. [[Phase 3 Audio Coverage Map]]
+21. [[Phase 4 — Intermediate Mastery]]
+22. [[Phase 4 Authentic Audio Spine]]
+23. [[Phase 4 Audio Coverage Map]]
 
 ## Curation Backlog
 
@@ -129,5 +132,6 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
 - [[Phase 3 Audio Coverage Map]]
+- [[Phase 4 Audio Coverage Map]]
 - [[Pronunciation Correction Log]]
 - [[JLPT Overview — N5 to N1]]
