@@ -163,7 +163,7 @@ Month five counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 3 in [[Phase 3 Audio Assignment Ladder]]. Block 3 moves into practical travel, health, date/time, onomatopoeia, and N4 kanji vocabulary.
+After these success criteria are true, continue with [[Sixth Month Japanese Study Plan]]. It wraps Block 3 in [[Phase 3 Audio Assignment Ladder]] and moves into practical travel, health, date/time, onomatopoeia, and N4 kanji vocabulary.
 
 Before starting Block 3, open [[Phase 3 Audio Coverage Map]] and choose the exact practical dialogue, short article/audio pair, or tutor recording that will anchor practical-domain vocabulary.
 
@@ -171,6 +171,7 @@ Before starting Block 3, open [[Phase 3 Audio Coverage Map]] and choose the exac
 
 - [[Japanese Learning Dashboard]]
 - [[Fourth Month Japanese Study Plan]]
+- [[Sixth Month Japanese Study Plan]]
 - [[Phase 3 — Expansion]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]

@@ -104,32 +104,33 @@ Goal: move toward N4: conditionals, passive/causative, giving/receiving, 1000 wo
 | 3.1 | [[Phase 3 — Expansion]] | Month 3-6 sequence |
 | 3.2 | [[Fourth Month Japanese Study Plan]] | Execute Phase 3 Block 1 with N4 grammar, local clips, authentic audio, and weekly proof |
 | 3.3 | [[Fifth Month Japanese Study Plan]] | Execute Phase 3 Block 2 with longer N4 sentences, Core 1000 output, authentic audio, and weekly proof |
-| 3.4 | [[Phase 3 Authentic Audio Spine]] | Human-recorded or official-course audio source for Phase 3 |
-| 3.5 | [[Phase 3 Local Audio Practice]] | Ordered local drill ladder for N4 grammar, pitch, media, and register recognition |
-| 3.6 | [[Phase 3 Audio Assignment Ladder]] | Block-level authentic/local/pitch/evidence targets for Phase 3 |
-| 3.7 | [[Phase 3 Audio Coverage Map]] | Match each Phase 3 page to local clips, authentic audio, and QA |
-| 3.8 | [[N4 Grammar — Conditional Forms]] | たら, ば, なら, と |
-| 3.9 | [[N4 Grammar — Passive and Causative]] | Action direction and affectedness |
-| 3.10 | [[N4 Grammar — Giving and Receiving]] | あげる, もらう, くれる |
-| 3.11 | [[N4 Grammar — Compound Sentences]] | Longer sentence construction |
-| 3.12 | [[N4 Grammar — Potential and Volitional]] | Can-do and intention forms |
-| 3.13 | [[Core 1000 — Conversational Fluency]] | Conversational vocabulary threshold |
-| 3.14 | [[Thematic Vocabulary — Travel and Transportation]] | Travel situations |
-| 3.15 | [[Thematic Vocabulary — Body and Health]] | Health situations |
-| 3.16 | [[Thematic Vocabulary — Numbers, Time, and Dates]] | Practical date/time vocabulary |
-| 3.17 | [[Onomatopoeia — Sound and State Words]] | Sound/state words that appear constantly in natural Japanese |
-| 3.18 | [[Kanji N4 Essentials]] | Expand kanji recognition |
-| 3.19 | [[Pitch Accent — Introduction]] | Awareness before perfection |
-| 3.20 | [[Pitch Accent — Common Patterns]] | Pattern recognition |
-| 3.21 | [[Phase 3 Pitch Accent Practice Path]] | Source-checked pitch practice with local clips as drills |
-| 3.22 | [[Common Filler Words and Discourse Markers]] | Natural conversation glue |
-| 3.23 | [[Intermediate Listening Resources]] | Move beyond beginner audio |
-| 3.24 | [[YouTube Channels for Japanese Learners]] | Visual and graded input |
-| 3.25 | [[Anime and Drama — Immersion Listening]] | Entertainment as study, with guardrails |
-| 3.26 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
-| 3.27 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
-| 3.28 | [[Culture Overview]] | Cultural orientation |
-| 3.29 | [[Phase 3 Weekly Review]] | Prove N4 audio, pitch, and intermediate-listening progress |
+| 3.4 | [[Sixth Month Japanese Study Plan]] | Execute Phase 3 Block 3 with practical vocabulary, N4 kanji readings, authentic audio, and weekly proof |
+| 3.5 | [[Phase 3 Authentic Audio Spine]] | Human-recorded or official-course audio source for Phase 3 |
+| 3.6 | [[Phase 3 Local Audio Practice]] | Ordered local drill ladder for N4 grammar, pitch, media, and register recognition |
+| 3.7 | [[Phase 3 Audio Assignment Ladder]] | Block-level authentic/local/pitch/evidence targets for Phase 3 |
+| 3.8 | [[Phase 3 Audio Coverage Map]] | Match each Phase 3 page to local clips, authentic audio, and QA |
+| 3.9 | [[N4 Grammar — Conditional Forms]] | たら, ば, なら, と |
+| 3.10 | [[N4 Grammar — Passive and Causative]] | Action direction and affectedness |
+| 3.11 | [[N4 Grammar — Giving and Receiving]] | あげる, もらう, くれる |
+| 3.12 | [[N4 Grammar — Compound Sentences]] | Longer sentence construction |
+| 3.13 | [[N4 Grammar — Potential and Volitional]] | Can-do and intention forms |
+| 3.14 | [[Core 1000 — Conversational Fluency]] | Conversational vocabulary threshold |
+| 3.15 | [[Thematic Vocabulary — Travel and Transportation]] | Travel situations |
+| 3.16 | [[Thematic Vocabulary — Body and Health]] | Health situations |
+| 3.17 | [[Thematic Vocabulary — Numbers, Time, and Dates]] | Practical date/time vocabulary |
+| 3.18 | [[Onomatopoeia — Sound and State Words]] | Sound/state words that appear constantly in natural Japanese |
+| 3.19 | [[Kanji N4 Essentials]] | Expand kanji recognition |
+| 3.20 | [[Pitch Accent — Introduction]] | Awareness before perfection |
+| 3.21 | [[Pitch Accent — Common Patterns]] | Pattern recognition |
+| 3.22 | [[Phase 3 Pitch Accent Practice Path]] | Source-checked pitch practice with local clips as drills |
+| 3.23 | [[Common Filler Words and Discourse Markers]] | Natural conversation glue |
+| 3.24 | [[Intermediate Listening Resources]] | Move beyond beginner audio |
+| 3.25 | [[YouTube Channels for Japanese Learners]] | Visual and graded input |
+| 3.26 | [[Anime and Drama — Immersion Listening]] | Entertainment as study, with guardrails |
+| 3.27 | [[Music — Learning Through Japanese Songs]] | Optional listening variety |
+| 3.28 | [[Keigo — Overview and Register System]] | Recognition-level keigo model |
+| 3.29 | [[Culture Overview]] | Cultural orientation |
+| 3.30 | [[Phase 3 Weekly Review]] | Prove N4 audio, pitch, and intermediate-listening progress |
 
 ### 4. Phase 4 — Intermediate Mastery
 
@@ -204,6 +205,7 @@ Use these when you need lookup or comparison, not as required first-pass reading
 - [[Third Month Japanese Study Plan]]
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
+- [[Sixth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -256,7 +258,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Local Audio Practice]] · [[Phase 2 Audio Assignment Ladder]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Local Audio Practice]] · [[Phase 3 Audio Assignment Ladder]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Local Audio Practice]] · [[Phase 4 Audio Assignment Ladder]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Local Audio Practice]] · [[Phase 5 Audio Assignment Ladder]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[First Month Japanese Study Plan]] · [[Second Month Japanese Study Plan]] · [[Third Month Japanese Study Plan]] · [[Fourth Month Japanese Study Plan]] · [[Fifth Month Japanese Study Plan]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[First Month Japanese Study Plan]] · [[Second Month Japanese Study Plan]] · [[Third Month Japanese Study Plan]] · [[Fourth Month Japanese Study Plan]] · [[Fifth Month Japanese Study Plan]] · [[Sixth Month Japanese Study Plan]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Japanese Audio QA Status]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
@@ -294,6 +296,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[Third Month Japanese Study Plan]]
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
+- [[Sixth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 15-25 minutes.
 
-At the start of the week, copy the current block from [[Phase 3 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. For Block 1, use [[Fourth Month Japanese Study Plan]] as the daily execution path. For Block 2, use [[Fifth Month Japanese Study Plan]]. Phase 3 review should name one exact authentic segment, one local clip set, one pitch or reading check, and one output or shadowing proof. If the week was mostly silent reading, the audio loop did not happen. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
+At the start of the week, copy the current block from [[Phase 3 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. For Block 1, use [[Fourth Month Japanese Study Plan]] as the daily execution path. For Block 2, use [[Fifth Month Japanese Study Plan]]. For Block 3, use [[Sixth Month Japanese Study Plan]]. Phase 3 review should name one exact authentic segment, one local clip set, one pitch or reading check, and one output or shadowing proof. If the week was mostly silent reading, the audio loop did not happen. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -112,6 +112,7 @@ Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expa
 - [[Phase 3 — Expansion]]
 - [[Fourth Month Japanese Study Plan]]
 - [[Fifth Month Japanese Study Plan]]
+- [[Sixth Month Japanese Study Plan]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
