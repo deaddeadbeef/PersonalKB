@@ -46,6 +46,8 @@ When time is short, keep one native sentence and one local clip. Phase 4 should 
 
 Use [[Phase 4 Audio Coverage Map]] when you need to match the current Phase 4 page to the correct local clip set and native-speed segment.
 
+Use [[Phase 4 Keigo and Register Production Checklist]] when the weekly target is keigo, business Japanese, service language, or any role-play where social direction matters.
+
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
 
 ## Quality Bar
@@ -74,6 +76,7 @@ At the end of each week, record evidence in [[Phase 4 Weekly Review]]:
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 4 Weekly Review]]
 - [[Advanced Listening Resources]]
 - [[Pronunciation and Audio Accuracy]]

@@ -38,6 +38,7 @@ Phase 4 does not need a separate local ladder yet. The required content pages al
 | [[Keigo — Sonkeigo (Honorific)]] | 16 | Formal role-play or native/tutor model | Needs human register context | Produce honorific forms only after hearing a human model |
 | [[Keigo — Kenjōgo (Humble)]] | 19 | Formal role-play or native/tutor model | Needs human register context | Hear who is elevated and who is lowered |
 | [[Business Japanese — Workplace Communication]] | 17 | Workplace/service audio or tutor role-play | Needs human register context | Practice business phrases with correct formality |
+| [[Phase 4 Keigo and Register Production Checklist]] | 0 | Tutor/native/course role-play route | Primary register QA target | Produce keigo only after the role and model are checked |
 | [[Seasonal Greetings and Cultural Expressions]] | 16 | Seasonal/tutor/native examples | Needs context | Use greetings in the right season and situation |
 | [[Idioms and Proverbs — ことわざ]] | 13 | Native examples or tutor explanations in context | Needs context | Avoid drilling idioms as isolated slogans |
 | [[Numbers and Superstitions]] | 7 | Native/tutor examples where number culture matters | Needs context | Keep readings and cultural use separate |
@@ -53,7 +54,7 @@ Total local coverage across the required Phase 4 pages: 312 embedded MP3 clips.
 | --- | --- | --- | --- | --- |
 | 1 | [[N3 Grammar — Formal Expressions]], [[N3 Grammar — Complex Conjunctions]], [[N3 Grammar — Nominalization and Quotation]], [[Grammar — Comparison Across Levels]] | Repeat longer grammar examples aloud | Transcripted course/tutor/native segment with the target pattern visible in text | Shadow one multi-clause sentence without losing particles |
 | 2 | [[Kanji N3 Essentials]], [[Thematic Vocabulary — Work and Office]], [[Thematic Vocabulary — Nature and Weather]] | Drill N3 kanji and adult-life vocabulary clips | News, workplace, weather, or daily-life audio with text | Summarize one segment and reuse five target words aloud |
-| 3 | [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]], [[Seasonal Greetings and Cultural Expressions]], [[Idioms and Proverbs — ことわざ]], [[Numbers and Superstitions]] | Drill forms after checking register | Formal role-play, service/workplace audio, or tutor/native examples | Complete one short register-appropriate role-play |
+| 3 | [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]], [[Phase 4 Keigo and Register Production Checklist]], [[Seasonal Greetings and Cultural Expressions]], [[Idioms and Proverbs — ことわざ]], [[Numbers and Superstitions]] | Drill forms after checking register | Formal role-play, service/workplace audio, or tutor/native examples | Complete one short register-appropriate role-play |
 | 4 | [[Advanced Listening Resources]], [[Common Filler Words and Discourse Markers]], [[Study Roadmap — Intermediate to Advanced]] | Drill discourse markers and review strategy targets | One native-speed segment with text/subtitles | Shadow, transcribe, or summarize one short segment |
 
 ## Gap Policy
@@ -74,7 +75,7 @@ These are real gaps:
 ## Next Coverage Targets
 
 - Use [[Phase 4 Weekly Review]] before Phase 4 becomes the active dashboard phase.
-- Add a focused keigo/register production checklist after Phase 4 audio evidence is in place.
+- Use [[Phase 4 Keigo and Register Production Checklist]] after Phase 4 audio evidence is in place.
 - Use [[Phase 5 Audio Coverage Map]] before starting Phase 5 content.
 - Keep Phase 4 local practice page-level for now; create a Phase 4 ladder only if daily study starts requiring too much clip hunting.
 
@@ -83,6 +84,7 @@ These are real gaps:
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Weekly Review]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Advanced Listening Resources]]

@@ -118,12 +118,13 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 23. [[Phase 4 — Intermediate Mastery]]
 24. [[Phase 4 Authentic Audio Spine]]
 25. [[Phase 4 Audio Coverage Map]]
-26. [[Phase 4 Weekly Review]]
-27. [[Phase 5 — Advanced]]
-28. [[Phase 5 Authentic Audio Spine]]
-29. [[Phase 5 Audio Coverage Map]]
-30. [[Advanced Output and Register Feedback Log]]
-31. [[Phase 5 Weekly Review]]
+26. [[Phase 4 Keigo and Register Production Checklist]]
+27. [[Phase 4 Weekly Review]]
+28. [[Phase 5 — Advanced]]
+29. [[Phase 5 Authentic Audio Spine]]
+30. [[Phase 5 Audio Coverage Map]]
+31. [[Advanced Output and Register Feedback Log]]
+32. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -145,6 +146,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 4 Weekly Review]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Phase 5 Weekly Review]]

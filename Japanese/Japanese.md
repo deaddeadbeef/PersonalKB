@@ -134,12 +134,13 @@ Goal: N3-level reading, longer conversations, intermediate grammar, 650 kanji, a
 | 4.11 | [[Keigo — Sonkeigo (Honorific)]] | Honorific forms |
 | 4.12 | [[Keigo — Kenjōgo (Humble)]] | Humble forms |
 | 4.13 | [[Business Japanese — Workplace Communication]] | Workplace register and phrases |
-| 4.14 | [[Seasonal Greetings and Cultural Expressions]] | Seasonal language |
-| 4.15 | [[Idioms and Proverbs — ことわざ]] | Idioms and proverbs |
-| 4.16 | [[Numbers and Superstitions]] | Culture-linked number usage |
-| 4.17 | [[Advanced Listening Resources]] | Faster and more natural audio |
-| 4.18 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
-| 4.19 | [[Phase 4 Weekly Review]] | Prove native-speed, register, and N3 audio progress |
+| 4.14 | [[Phase 4 Keigo and Register Production Checklist]] | Source-checked role-play and register proof |
+| 4.15 | [[Seasonal Greetings and Cultural Expressions]] | Seasonal language |
+| 4.16 | [[Idioms and Proverbs — ことわざ]] | Idioms and proverbs |
+| 4.17 | [[Numbers and Superstitions]] | Culture-linked number usage |
+| 4.18 | [[Advanced Listening Resources]] | Faster and more natural audio |
+| 4.19 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
+| 4.20 | [[Phase 4 Weekly Review]] | Prove native-speed, register, and N3 audio progress |
 
 ### 5. Phase 5 — Advanced
 
@@ -220,7 +221,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
 
@@ -233,12 +234,14 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[Pronunciation — Difficult Sounds for English Speakers]]
 - [[Conversation Patterns — Greetings and Introductions]] · [[Conversation Patterns — Daily Interactions]] · [[Conversation Patterns — Shopping and Restaurants]]
 - [[Self-Introduction Template]] · [[Common Filler Words and Discourse Markers]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 
 
 ### Culture
 - [[Culture Overview]]
 - [[Keigo — Overview and Register System]] · [[Keigo — Sonkeigo (Honorific)]] · [[Keigo — Kenjōgo (Humble)]] · [[Keigo — Teineigo (Polite)]]
 - [[Social Register — When to Use What]] · [[Business Japanese — Workplace Communication]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 - [[Seasonal Greetings and Cultural Expressions]] · [[Idioms and Proverbs — ことわざ]] · [[Numbers and Superstitions]]
 
 

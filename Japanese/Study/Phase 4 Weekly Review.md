@@ -30,6 +30,7 @@ Phase 4 review should identify one exact native-speed segment, one local drill t
 - [ ] [[Phase 4 Audio Coverage Map]] checked for the current main page
 - [ ] One pronunciation, pitch, reading, register, keigo, or rhythm issue checked through [[Pronunciation and Audio Accuracy]]
 - [ ] One keigo, business, seasonal, idiom, or cultural expression checked against a human/native model when context matters
+- [ ] [[Phase 4 Keigo and Register Production Checklist]] completed when the week included keigo, business, or register-sensitive output
 - [ ] One shadowing, transcription, summary, or role-play proof completed
 - [ ] One suspect local clip, if found, recorded in [[Pronunciation Correction Log]] before returning to practice
 
@@ -42,7 +43,7 @@ Record exact targets. "Watched Japanese videos" is not enough.
 | Native-speed audio | Source, episode/article/scene, timestamp, transcript/subtitle route |  |
 | Local clips | Current Phase 4 page and clip set |  |
 | Shadowing or transcription | Sentence, paragraph, line, or timestamp range |  |
-| Register or keigo check | Phrase, role, social situation, or business expression |  |
+| Register or keigo check | Phrase, role, social situation, or business expression; use [[Phase 4 Keigo and Register Production Checklist]] when producing it |  |
 | Pronunciation or reading check | Word, phrase, pitch pattern, rhythm issue, or kanji reading |  |
 
 ## Active Proof
@@ -118,6 +119,7 @@ Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mas
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Audio Coverage Map]]
 - [[Pronunciation and Audio Accuracy]]

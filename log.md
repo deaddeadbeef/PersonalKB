@@ -940,3 +940,34 @@ Verification:
 - Phase 3 pitch path link coverage check.
 - Local MP3 embed check across changed pages.
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 4 keigo register checklist
+
+Scope: add a focused Phase 4 keigo/register production checklist so business and formal output is checked against human/native/course models before local clips are used as drills.
+
+Changed content files:
+- `Japanese/Speaking/Phase 4 Keigo and Register Production Checklist.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 4 — Intermediate Mastery.md`
+- `Japanese/Listening/Phase 4 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 4 Audio Coverage Map.md`
+- `Japanese/Speaking/Pronunciation and Audio Accuracy.md`
+- `Japanese/Speaking/Speaking Overview.md`
+- `Japanese/Study/Phase 4 Weekly Review.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+
+Maintenance changes:
+- Added a Phase 4 production checklist for role, social direction, form choice, human model, local drill, output, and feedback.
+- Routed Phase 4 Start Here, the phase page, audio spine, coverage map, weekly review, dashboard, study index, speaking hub, and pronunciation QA to the checklist.
+- Replaced the Phase 4 coverage-map register checklist backlog item with a concrete practice-page link.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- Phase 4 register checklist link coverage check.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

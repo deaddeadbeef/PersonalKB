@@ -109,6 +109,7 @@ Optimize your approach as you scale.
 Now it's time to PRODUCE keigo, not just recognize it.
 - 📖 [[Keigo — Sonkeigo (Honorific)]]
 - 📖 [[Keigo — Kenjōgo (Humble)]]
+- 📖 [[Phase 4 Keigo and Register Production Checklist]]
 - 🧩 Chunks: [[chunk-jp-103|Sonkeigo Formation]], [[chunk-jp-104|Kenjōgo Formation]], [[chunk-jp-106|Bikago]], [[chunk-jp-121|Common Keigo Mistakes]]
 
 
@@ -147,6 +148,7 @@ Aizuchi, indirectness, discourse markers — sound like a real speaker.
 - [ ] Can hold 15+ minute conversations on daily topics
 - [ ] ~650 kanji, ~3,000+ vocabulary
 - [ ] Understand and can use basic keigo
+- [ ] Can complete [[Phase 4 Keigo and Register Production Checklist]] for one register-sensitive role-play
 - [ ] Following native podcasts at ~70% comprehension
 - [ ] Have one stable Phase 4 native-speed audio source in [[Phase 4 Authentic Audio Spine]]
 - [ ] Can pair each required Phase 4 page with audio using [[Phase 4 Audio Coverage Map]]
@@ -201,6 +203,7 @@ Push into faster, more natural content.
 - [[Sources Index]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 4 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]

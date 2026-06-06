@@ -71,7 +71,7 @@ One correction per day is enough. Pronunciation improves by repeated accurate co
 | Phase 1 | Avoid false habits: kana timing, particles, long vowels, small っ, and one native audio spine |
 | Phase 2 | Add difficult sounds, ら行, ん variations, vowel devoicing, and daily shadowing |
 | Phase 3 | Add pitch-accent awareness and dictionary checks through [[Phase 3 Pitch Accent Practice Path]] |
-| Phase 4 | Check register, keigo, rhythm, and native-speed segments against human or official-course models |
+| Phase 4 | Check register, keigo, rhythm, and native-speed segments against human or official-course models through [[Phase 4 Keigo and Register Production Checklist]] when producing keigo |
 | Phase 5 | Use tutor/native feedback and native-source output checks for rhythm, register, pitch, and natural delivery |
 
 ## References
@@ -85,4 +85,5 @@ One correction per day is enough. Pronunciation improves by repeated accurate co
 - [[Pitch Accent — Introduction]]
 - [[Pitch Accent — Common Patterns]]
 - [[Phase 3 Pitch Accent Practice Path]]
+- [[Phase 4 Keigo and Register Production Checklist]]
 - [[Sources Index#Pronunciation Sources Checked 2026-06-06]]
