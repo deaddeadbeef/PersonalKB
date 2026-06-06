@@ -163,13 +163,14 @@ Month seven counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 2 in [[Phase 4 Audio Assignment Ladder]]. Block 2 moves into N3 kanji, adult-life vocabulary, work, nature, weather, and source-backed summary practice.
+After these success criteria are true, continue to [[Eighth Month Japanese Study Plan]]. It wraps Block 2 of [[Phase 4 Audio Assignment Ladder]] and moves into N3 kanji, adult-life vocabulary, work, nature, weather, and source-backed summary practice.
 
 Before starting Block 2, open [[Phase 4 Audio Coverage Map]] and choose the exact news, workplace, weather, daily-life, tutor, or course segment that will anchor N3 kanji and adult-vocabulary listening.
 
 ## References
 
 - [[Japanese Learning Dashboard]]
+- [[Eighth Month Japanese Study Plan]]
 - [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Audio Assignment Ladder]]

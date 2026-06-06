@@ -23,6 +23,8 @@ Use [[Phase 4 Audio Coverage Map]] when you need the full page-to-audio inventor
 
 For Block 1, use [[Seventh Month Japanese Study Plan]] as the learner-facing wrapper around the N3 grammar clips below, so native-speed or official-course audio stays the model and local clips remain controlled drills.
 
+For Block 2, use [[Eighth Month Japanese Study Plan]] as the learner-facing wrapper around the N3 kanji and adult-life vocabulary clips below, so summaries stay tied to a text-supported news, workplace, weather, daily-life, tutor, or course segment.
+
 ## Session Loop
 
 Run this loop for 10 minutes on a minimum Phase 4 day or 25 minutes on a good day:
@@ -222,6 +224,7 @@ After listening, write one line in [[Phase 4 Weekly Review]]:
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Seventh Month Japanese Study Plan]]
+- [[Eighth Month Japanese Study Plan]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]

@@ -46,6 +46,8 @@ When time is short, keep one native sentence and one local clip. Phase 4 should 
 
 For Block 1, use [[Seventh Month Japanese Study Plan]] to keep N3 grammar tied to transcripted native-speed or official-course audio, local drills, and weekly proof.
 
+For Block 2, use [[Eighth Month Japanese Study Plan]] to keep N3 kanji, work vocabulary, and nature/weather vocabulary tied to text-supported native-speed or official-course audio, local drills, reading checks, and summary proof.
+
 Use [[Phase 4 Audio Assignment Ladder]] to choose the exact block target. Use [[Phase 4 Local Audio Practice]] for the daily local drills. Use [[Phase 4 Audio Coverage Map]] when you need to match a required Phase 4 page to the right local and native-speed audio layer.
 
 Use [[Phase 4 Keigo and Register Production Checklist]] when the weekly target is keigo, business Japanese, service language, or any role-play where social direction matters.
@@ -78,6 +80,7 @@ At the end of each week, record evidence in [[Phase 4 Weekly Review]]:
 
 - [[Phase 4 — Intermediate Mastery]]
 - [[Seventh Month Japanese Study Plan]]
+- [[Eighth Month Japanese Study Plan]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]
