@@ -140,27 +140,28 @@ Goal: N3-level reading, longer conversations, intermediate grammar, 650 kanji, a
 | Order | Page | Consume for |
 | --- | --- | --- |
 | 4.1 | [[Phase 4 — Intermediate Mastery]] | Month 6-12 sequence |
-| 4.2 | [[Phase 4 Authentic Audio Spine]] | Native-speed or official-course audio source for Phase 4 |
-| 4.3 | [[Phase 4 Local Audio Practice]] | Ordered local drill ladder for N3 grammar, kanji, keigo, business, culture, and discourse timing |
-| 4.4 | [[Phase 4 Audio Assignment Ladder]] | Block-level native-speed/local/register/evidence targets for Phase 4 |
-| 4.5 | [[Phase 4 Audio Coverage Map]] | Match each Phase 4 page to local clips, native audio, and QA |
-| 4.6 | [[N3 Grammar — Formal Expressions]] | Formal expressions |
-| 4.7 | [[N3 Grammar — Complex Conjunctions]] | Complex sentence links |
-| 4.8 | [[N3 Grammar — Nominalization and Quotation]] | こと, の, という, と思う |
-| 4.9 | [[Grammar — Comparison Across Levels]] | How patterns deepen across N5-N3 |
-| 4.10 | [[Kanji N3 Essentials]] | Functional literacy target |
-| 4.11 | [[Thematic Vocabulary — Work and Office]] | Workplace vocabulary |
-| 4.12 | [[Thematic Vocabulary — Nature and Weather]] | Nature and weather vocabulary |
-| 4.13 | [[Keigo — Sonkeigo (Honorific)]] | Honorific forms |
-| 4.14 | [[Keigo — Kenjōgo (Humble)]] | Humble forms |
-| 4.15 | [[Business Japanese — Workplace Communication]] | Workplace register and phrases |
-| 4.16 | [[Phase 4 Keigo and Register Production Checklist]] | Source-checked role-play and register proof |
-| 4.17 | [[Seasonal Greetings and Cultural Expressions]] | Seasonal language |
-| 4.18 | [[Idioms and Proverbs — ことわざ]] | Idioms and proverbs |
-| 4.19 | [[Numbers and Superstitions]] | Culture-linked number usage |
-| 4.20 | [[Advanced Listening Resources]] | Faster and more natural audio |
-| 4.21 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
-| 4.22 | [[Phase 4 Weekly Review]] | Prove native-speed, register, and N3 audio progress |
+| 4.2 | [[Seventh Month Japanese Study Plan]] | Execute Phase 4 Block 1 with N3 grammar, native-speed or official-course audio, and weekly proof |
+| 4.3 | [[Phase 4 Authentic Audio Spine]] | Native-speed or official-course audio source for Phase 4 |
+| 4.4 | [[Phase 4 Local Audio Practice]] | Ordered local drill ladder for N3 grammar, kanji, keigo, business, culture, and discourse timing |
+| 4.5 | [[Phase 4 Audio Assignment Ladder]] | Block-level native-speed/local/register/evidence targets for Phase 4 |
+| 4.6 | [[Phase 4 Audio Coverage Map]] | Match each Phase 4 page to local clips, native audio, and QA |
+| 4.7 | [[N3 Grammar — Formal Expressions]] | Formal expressions |
+| 4.8 | [[N3 Grammar — Complex Conjunctions]] | Complex sentence links |
+| 4.9 | [[N3 Grammar — Nominalization and Quotation]] | こと, の, という, と思う |
+| 4.10 | [[Grammar — Comparison Across Levels]] | How patterns deepen across N5-N3 |
+| 4.11 | [[Kanji N3 Essentials]] | Functional literacy target |
+| 4.12 | [[Thematic Vocabulary — Work and Office]] | Workplace vocabulary |
+| 4.13 | [[Thematic Vocabulary — Nature and Weather]] | Nature and weather vocabulary |
+| 4.14 | [[Keigo — Sonkeigo (Honorific)]] | Honorific forms |
+| 4.15 | [[Keigo — Kenjōgo (Humble)]] | Humble forms |
+| 4.16 | [[Business Japanese — Workplace Communication]] | Workplace register and phrases |
+| 4.17 | [[Phase 4 Keigo and Register Production Checklist]] | Source-checked role-play and register proof |
+| 4.18 | [[Seasonal Greetings and Cultural Expressions]] | Seasonal language |
+| 4.19 | [[Idioms and Proverbs — ことわざ]] | Idioms and proverbs |
+| 4.20 | [[Numbers and Superstitions]] | Culture-linked number usage |
+| 4.21 | [[Advanced Listening Resources]] | Faster and more natural audio |
+| 4.22 | [[Study Roadmap — Intermediate to Advanced]] | Plateau-breaking strategy |
+| 4.23 | [[Phase 4 Weekly Review]] | Prove native-speed, register, and N3 audio progress |
 
 ### 5. Phase 5 — Advanced
 
@@ -208,6 +209,7 @@ Use these when you need lookup or comparison, not as required first-pass reading
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
 - [[Phase 3 Block 4 Japanese Study Plan]]
+- [[Seventh Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -260,7 +262,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Local Audio Practice]] · [[Phase 2 Audio Assignment Ladder]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Local Audio Practice]] · [[Phase 3 Audio Assignment Ladder]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Local Audio Practice]] · [[Phase 4 Audio Assignment Ladder]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Local Audio Practice]] · [[Phase 5 Audio Assignment Ladder]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[First Month Japanese Study Plan]] · [[Second Month Japanese Study Plan]] · [[Third Month Japanese Study Plan]] · [[Fourth Month Japanese Study Plan]] · [[Fifth Month Japanese Study Plan]] · [[Sixth Month Japanese Study Plan]] · [[Phase 3 Block 4 Japanese Study Plan]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[First Month Japanese Study Plan]] · [[Second Month Japanese Study Plan]] · [[Third Month Japanese Study Plan]] · [[Fourth Month Japanese Study Plan]] · [[Fifth Month Japanese Study Plan]] · [[Sixth Month Japanese Study Plan]] · [[Phase 3 Block 4 Japanese Study Plan]] · [[Seventh Month Japanese Study Plan]] · [[Phase 1 Audio Starter Assignment]] · [[Phase 1 Audio Assignment Ladder]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Japanese Audio QA Status]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
@@ -300,6 +302,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[Fifth Month Japanese Study Plan]]
 - [[Sixth Month Japanese Study Plan]]
 - [[Phase 3 Block 4 Japanese Study Plan]]
+- [[Seventh Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

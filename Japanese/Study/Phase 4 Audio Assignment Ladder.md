@@ -12,11 +12,12 @@ tier-coverage: [practice]
 ## How To Use
 
 1. Start Phase 4 only after the [[Phase 3 — Expansion|Phase 3 checkpoint]] is real.
-2. Choose one repeatable source from [[Phase 4 Authentic Audio Spine]] and one register or pronunciation reference route.
-3. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
-4. Run [[Daily Audio Loop]] on each study day.
-5. If the block involves keigo, business, service language, or formal role-play, open [[Phase 4 Keigo and Register Production Checklist]] before producing it.
-6. At the end of the week, fill [[Phase 4 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+2. Use [[Seventh Month Japanese Study Plan]] as the Block 1 execution path.
+3. Choose one repeatable source from [[Phase 4 Authentic Audio Spine]] and one register or pronunciation reference route.
+4. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
+5. Run [[Daily Audio Loop]] on each study day.
+6. If the block involves keigo, business, service language, or formal role-play, open [[Phase 4 Keigo and Register Production Checklist]] before producing it.
+7. At the end of the week, fill [[Phase 4 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Phase 4 blocks can take more than one week. Advance only when the native-speed segment, local block, register or pronunciation check, and active output proof are all real.
 
@@ -114,6 +115,7 @@ Phase 4 is where local clips are most likely to create false confidence. Use loc
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Seventh Month Japanese Study Plan]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]

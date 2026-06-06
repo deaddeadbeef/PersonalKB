@@ -32,7 +32,7 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 36-48, open [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], and [[Phase 4 Audio Coverage Map]].
+Before starting Steps 36-48, open [[Seventh Month Japanese Study Plan]], [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], and [[Phase 4 Audio Coverage Map]].
 
 Use a repeatable native-speed or official-course segment as the model. Use [[Phase 4 Audio Assignment Ladder]] to choose the current block, [[Phase 4 Local Audio Practice]] as the ordered local drill ladder, and the MP3 clips embedded in the Phase 4 grammar, kanji, vocabulary, keigo, business, culture, and listening pages when a topic needs more examples.
 
@@ -204,6 +204,7 @@ Push into faster, more natural content.
 
 ## References
 - [[Sources Index]]
+- [[Seventh Month Japanese Study Plan]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Assignment Ladder]]

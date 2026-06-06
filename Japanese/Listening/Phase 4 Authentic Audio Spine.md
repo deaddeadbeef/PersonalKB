@@ -44,6 +44,8 @@ When time is short, keep one native sentence and one local clip. Phase 4 should 
 | 3 | Keigo, business, seasonal greetings, idioms, numbers in culture | Formal role-play, service/workplace audio, or tutor/native-speaker examples with clear register | [[Phase 4 Local Audio Practice]] Block 3 |
 | 4 | Advanced listening, conversation fluency, plateau strategy | One native-speed segment with text/subtitles plus one shadowing or transcription target | [[Phase 4 Local Audio Practice]] Block 4 |
 
+For Block 1, use [[Seventh Month Japanese Study Plan]] to keep N3 grammar tied to transcripted native-speed or official-course audio, local drills, and weekly proof.
+
 Use [[Phase 4 Audio Assignment Ladder]] to choose the exact block target. Use [[Phase 4 Local Audio Practice]] for the daily local drills. Use [[Phase 4 Audio Coverage Map]] when you need to match a required Phase 4 page to the right local and native-speed audio layer.
 
 Use [[Phase 4 Keigo and Register Production Checklist]] when the weekly target is keigo, business Japanese, service language, or any role-play where social direction matters.
@@ -75,6 +77,7 @@ At the end of each week, record evidence in [[Phase 4 Weekly Review]]:
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Seventh Month Japanese Study Plan]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]

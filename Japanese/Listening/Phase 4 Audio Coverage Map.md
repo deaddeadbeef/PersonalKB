@@ -19,7 +19,7 @@ Phase 4 audio support has three layers:
 | Authentic model | [[Phase 4 Authentic Audio Spine]] | Keep native-speed, human-recorded, or official-course Japanese as the pronunciation, rhythm, and register model |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Use [[Phase 4 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 4 clips, ordered by block so N3 grammar, kanji, keigo, business, culture, and discourse timing do not require page-level clip hunting. Use [[Phase 4 Audio Assignment Ladder]] when you need the copy-ready block assignment, evidence target, and advancement rule. The authentic model stays primary because register, idioms, discourse timing, and longer clauses cannot be learned from local TTS alone.
+Use [[Phase 4 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 4 clips, ordered by block so N3 grammar, kanji, keigo, business, culture, and discourse timing do not require page-level clip hunting. Use [[Phase 4 Audio Assignment Ladder]] when you need the copy-ready block assignment, evidence target, and advancement rule. For Block 1, use [[Seventh Month Japanese Study Plan]] when you need the learner-facing daily path through N3 formal expressions, clause chains, nominalization, quotation, and grammar comparison. The authentic model stays primary because register, idioms, discourse timing, and longer clauses cannot be learned from local TTS alone.
 
 ## Required Phase 4 Coverage
 
@@ -85,6 +85,7 @@ These are real gaps:
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Seventh Month Japanese Study Plan]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]

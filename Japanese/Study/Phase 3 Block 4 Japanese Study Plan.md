@@ -164,7 +164,9 @@ Block 4 counts when all of these are true:
 
 ## Next Phase
 
-After these success criteria are true, continue with [[Phase 4 — Intermediate Mastery]]. Before starting Phase 4 content, open [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], [[Phase 4 Audio Coverage Map]], and [[Phase 4 Weekly Review]].
+After these success criteria are true, continue with [[Seventh Month Japanese Study Plan]]. It starts [[Phase 4 — Intermediate Mastery]] with Block 1 N3 grammar, native-speed or official-course audio, and weekly proof.
+
+Before starting Phase 4 content, open [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], [[Phase 4 Audio Coverage Map]], and [[Phase 4 Weekly Review]].
 
 ## References
 
@@ -191,6 +193,7 @@ After these success criteria are true, continue with [[Phase 4 — Intermediate 
 - [[Music — Learning Through Japanese Songs]]
 - [[Keigo — Overview and Register System]]
 - [[Phase 4 — Intermediate Mastery]]
+- [[Seventh Month Japanese Study Plan]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Assignment Ladder]]
