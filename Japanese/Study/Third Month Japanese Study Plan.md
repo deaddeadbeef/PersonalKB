@@ -163,12 +163,13 @@ Month three counts when all of these are true:
 
 After these success criteria are true, run the full [[Phase 2 Weekly Review#Phase 2 Exit Check]].
 
-Do not move to [[Phase 3 — Expansion]] until the Phase 2 exit check is real. Before starting Phase 3 content, open [[Phase 3 Authentic Audio Spine]], [[Phase 3 Audio Assignment Ladder]], [[Phase 3 Audio Coverage Map]], and [[Phase 3 Weekly Review]].
+Do not move to [[Phase 3 — Expansion]] until the Phase 2 exit check is real. Before starting Phase 3 content, open [[Fourth Month Japanese Study Plan]], [[Phase 3 Authentic Audio Spine]], [[Phase 3 Audio Assignment Ladder]], [[Phase 3 Audio Coverage Map]], and [[Phase 3 Weekly Review]].
 
 ## References
 
 - [[Japanese Learning Dashboard]]
 - [[Second Month Japanese Study Plan]]
+- [[Fourth Month Japanese Study Plan]]
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]

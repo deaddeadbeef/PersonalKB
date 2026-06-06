@@ -21,6 +21,8 @@ Use [[Phase 3 Audio Assignment Ladder]] to decide which block is active and what
 
 Use [[Phase 3 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
+For Block 1, use [[Fourth Month Japanese Study Plan]] as the learner-facing wrapper around the clips below.
+
 ## Session Loop
 
 Run this loop for 10 minutes on a minimum Phase 3 day or 20 minutes on a good day:
@@ -207,6 +209,7 @@ After listening, write one line in [[Phase 3 Weekly Review]]:
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Fourth Month Japanese Study Plan]]
 - [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]

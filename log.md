@@ -1820,3 +1820,34 @@ Verification:
 - `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
 - `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
 - `python _ops\personal_kb.py audit`: 4764 files, 2893 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+
+## [2026-06-07] curate | Japanese fourth-month audio study plan
+
+Scope: make the first month of Phase 3 executable by giving Block 1 a month-four plan that keeps N4 conditionals, passive/causative, and giving/receiving tied to authentic audio, local drills, weekly review, and evidence logging.
+
+Changed wiki/source files:
+- `Japanese/Study/Fourth Month Japanese Study Plan.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 3 — Expansion.md`
+- `Japanese/Listening/Phase 3 Audio Coverage Map.md`
+- `Japanese/Listening/Phase 3 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 3 Local Audio Practice.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Third Month Japanese Study Plan.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Phase 3 Audio Assignment Ladder.md`
+- `Japanese/Study/Phase 3 Weekly Review.md`
+
+Maintenance changes:
+- Added a Week 13-16 execution guide for Phase 3 Block 1: te-form review, conditionals, passive/causative, giving/receiving, and consolidation.
+- Made the Phase 3 entry policy explicit: hear full sentences before memorizing pattern labels, local clips are drills, authentic/course/tutor/native audio is the model, and suspect local clips go to [[Pronunciation Correction Log]].
+- Linked the guide from Start Here, the dashboard, study index, daily routine template, third-month handoff, Phase 3 path, Phase 3 spine, local practice, coverage map, ladder, and weekly review.
+- Did not modify local MP3 files.
+
+Verification:
+- `git diff --check`: clean.
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4765 files, 2894 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
