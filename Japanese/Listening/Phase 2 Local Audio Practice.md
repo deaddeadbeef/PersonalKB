@@ -17,6 +17,8 @@ Do not treat local clips as the only authority. If a clip sounds different from 
 
 This page does not replace the content pages. It gives you one ordered path through selected clips so Phase 2 practice does not turn into clip hunting.
 
+Use [[Phase 2 Audio Assignment Ladder]] to decide which weekly block is active and what proof is required.
+
 Use [[Phase 2 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
 ## Session Loop
@@ -202,6 +204,7 @@ After listening, write one line in [[Phase 2 Weekly Review]]:
 ## References
 
 - [[Phase 2 — Building Blocks]]
+- [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]

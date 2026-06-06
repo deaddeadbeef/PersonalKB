@@ -32,15 +32,16 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 10-21, open [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], and [[Phase 2 Audio Coverage Map]].
+Before starting Steps 10-21, open [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Assignment Ladder]], and [[Phase 2 Audio Coverage Map]].
 
-Use the current course, NHK, tutor, or native-speaker segment as the pronunciation model. Use [[Phase 2 Local Audio Practice]] as the ordered local drill ladder, then use the MP3 clips embedded in the Phase 2 grammar, vocabulary, kanji, and conversation pages when you need more examples.
+Use the current course, NHK, tutor, or native-speaker segment as the pronunciation model. Use [[Phase 2 Audio Assignment Ladder]] to choose the week target, [[Phase 2 Local Audio Practice]] as the ordered local drill ladder, and the MP3 clips embedded in the Phase 2 grammar, vocabulary, kanji, and conversation pages when you need more examples.
 
 Use [[Phase 2 Weekly Review]] at the end of each week to record the exact authentic segment, local clip set, shadowing target, and pronunciation check.
 
 Do not let Phase 2 become silent grammar study. Every week should have:
 
 - One authentic audio segment you repeat across multiple days.
+- One current assignment copied from [[Phase 2 Audio Assignment Ladder]].
 - One set from [[Phase 2 Local Audio Practice]] or the current page clips tied to the grammar, vocabulary, kanji, or conversation topic.
 - One pronunciation or rhythm issue checked through [[Pronunciation and Audio Accuracy]].
 
@@ -158,6 +159,7 @@ Before moving to Phase 3, verify:
 - [ ] Can handle basic restaurant/shop interactions
 - [ ] Comfortable with です/ます politeness level
 - [ ] Have one stable Phase 2 authentic audio source in [[Phase 2 Authentic Audio Spine]]
+- [ ] Can choose the current week from [[Phase 2 Audio Assignment Ladder]]
 - [ ] Can use [[Phase 2 Local Audio Practice]] without hunting through page-level clips
 - [ ] Can pair each required Phase 2 page with audio using [[Phase 2 Audio Coverage Map]]
 - [ ] Have weekly audio evidence recorded in [[Phase 2 Weekly Review]]
@@ -201,6 +203,7 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 - [[Sources Index]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]
+- [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
 - [[Pronunciation and Audio Accuracy]]

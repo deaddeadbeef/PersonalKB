@@ -49,7 +49,7 @@ If time is short, play one authentic sentence and repeat one local clip. Do not 
 
 The course lesson does not have to match the vault page perfectly. The target is enough overlap that your ear hears real Japanese while the local clips isolate the detail.
 
-Use [[Phase 2 Local Audio Practice]] for the daily ladder. Use [[Phase 2 Audio Coverage Map]] when you need to match a required Phase 2 page to the correct local and authentic audio layer.
+Use [[Phase 2 Audio Assignment Ladder]] to choose the exact weekly target. Use [[Phase 2 Local Audio Practice]] for the daily local drills. Use [[Phase 2 Audio Coverage Map]] when you need to match a required Phase 2 page to the correct local and authentic audio layer.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
 
@@ -76,6 +76,7 @@ At the end of each week, record evidence in [[Phase 2 Weekly Review]]:
 ## References
 
 - [[Phase 2 — Building Blocks]]
+- [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]

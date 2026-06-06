@@ -24,6 +24,8 @@ If the authentic segment is not named, the audio loop is incomplete.
 
 If this is your first week, start with [[Phase 1 Audio Starter Assignment]] before choosing anything else. For the rest of Phase 1, use [[Phase 1 Audio Assignment Ladder]].
 
+For Phase 2, use [[Phase 2 Audio Assignment Ladder]] before choosing page-level clips. It keeps particles, forms, counters, kanji readings, and beginner interactions tied to exact authentic audio.
+
 ## Minimum Day
 
 Use this when time is tight:
@@ -70,6 +72,7 @@ Stop drilling a local clip and use [[Pronunciation Correction Log]] when:
 - [[Daily Study Routine Templates]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
+- [[Phase 2 Audio Assignment Ladder]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Japanese Audio QA Status]]

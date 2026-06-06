@@ -21,6 +21,8 @@ Phase 2 audio support has three layers:
 
 Use [[Phase 2 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 2 clips, ordered by week so practice does not require hunting through grammar and vocabulary pages.
 
+Use [[Phase 2 Audio Assignment Ladder]] when you need the copy-ready weekly assignment, evidence target, and advancement rule.
+
 Planning and technique pages can have zero embedded clips if they route clearly to the authentic spine, the local ladder, and the pages with embedded drills.
 
 ## Required Phase 2 Coverage
@@ -83,6 +85,7 @@ These are real gaps:
 
 ## Next Coverage Targets
 
+- Use [[Phase 2 Audio Assignment Ladder]] to copy the exact weekly target into [[Authentic Audio Evidence Log#Current Assignment]].
 - Use [[Phase 2 Weekly Review]] before Phase 2 becomes the active dashboard phase.
 - Use [[Phase 2 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Pronunciation Correction Log]] when a real suspect Phase 2 clip is found.
@@ -92,6 +95,7 @@ These are real gaps:
 ## References
 
 - [[Phase 2 — Building Blocks]]
+- [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Weekly Review]]

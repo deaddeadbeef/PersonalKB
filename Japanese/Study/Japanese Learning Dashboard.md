@@ -24,6 +24,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Daily audio loop | [[Daily Audio Loop]] | Turns every audio block into local drill + authentic model + one comparison |
 | First audio assignment | [[Phase 1 Audio Starter Assignment]] | Gives Week 1 a concrete authentic source, local clip set, and evidence target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keeps Weeks 1-4 tied to concrete authentic/local/evidence targets |
+| Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keeps Weeks 5-12 tied to concrete authentic/local/evidence targets |
 | Authentic audio setup | [[Authentic Audio Source Setup]] | Keeps the week tied to one exact official/native source and one replayable segment |
 | Audio evidence | [[Authentic Audio Evidence Log]] | Preserves the running proof trail across weekly reviews |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Japanese Audio QA Status]] + [[Pronunciation Correction Log]] | Separates local playback integrity from native/official pronunciation authority |
@@ -51,8 +52,8 @@ Do not spend serious time on N3 grammar, keigo, business Japanese, native news, 
 | --- | --- | --- | --- |
 | 1-2 | Kana becomes usable | [[Hiragana Complete Guide]], [[Katakana Complete Guide]], [[Writing Systems Overview]], [[Phase 1 Local Audio Practice]], [[Phase 1 Authentic Audio Spine]] | You can read kana-only example words without checking a chart |
 | 3-4 | First sentences and first 100 words | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]], [[Conversation Patterns — Greetings and Introductions]], [[Phase 1 Local Audio Practice]], [[Phase 1 Authentic Audio Spine]] | You can introduce yourself and parse simple XはYです sentences |
-| 5-8 | N5 mechanics start to connect | [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Coverage Map]], [[N5 Grammar — Particles]], [[N5 Grammar — Verb Forms]], [[N5 Grammar — Adjectives]] | You can identify topic, subject, object, location, and movement particles in heard textbook sentences |
-| 9-12 | Listening and reading become daily | [[Beginner Listening Resources]], [[Shadowing — Technique and Practice Guide]], [[Kanji N5 Essentials]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Coverage Map]] | You complete daily review plus 5-15 minutes of beginner audio most days |
+| 5-8 | N5 mechanics start to connect | [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Assignment Ladder]], [[Phase 2 Audio Coverage Map]], [[N5 Grammar — Particles]], [[N5 Grammar — Verb Forms]], [[N5 Grammar — Adjectives]] | You can identify topic, subject, object, location, and movement particles in heard textbook sentences |
+| 9-12 | Listening and reading become daily | [[Beginner Listening Resources]], [[Shadowing — Technique and Practice Guide]], [[Kanji N5 Essentials]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Assignment Ladder]], [[Phase 2 Audio Coverage Map]] | You complete daily review plus 5-15 minutes of beginner audio most days |
 
 Use JLPT levels as a map, not as the first goal. The official JLPT descriptions are skill-based reading and listening summaries, not a complete curriculum or official fixed kanji/vocabulary list.
 
@@ -121,26 +122,27 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 20. [[Phase 2 — Building Blocks]]
 21. [[Phase 2 Authentic Audio Spine]]
 22. [[Phase 2 Local Audio Practice]]
-23. [[Phase 2 Audio Coverage Map]]
-24. [[Phase 2 Weekly Review]]
-25. [[Phase 3 — Expansion]]
-26. [[Phase 3 Authentic Audio Spine]]
-27. [[Phase 3 Local Audio Practice]]
-28. [[Phase 3 Audio Coverage Map]]
-29. [[Phase 3 Pitch Accent Practice Path]]
-30. [[Phase 3 Weekly Review]]
-31. [[Phase 4 — Intermediate Mastery]]
-32. [[Phase 4 Authentic Audio Spine]]
-33. [[Phase 4 Local Audio Practice]]
-34. [[Phase 4 Audio Coverage Map]]
-35. [[Phase 4 Keigo and Register Production Checklist]]
-36. [[Phase 4 Weekly Review]]
-37. [[Phase 5 — Advanced]]
-38. [[Phase 5 Authentic Audio Spine]]
-39. [[Phase 5 Local Audio Practice]]
-40. [[Phase 5 Audio Coverage Map]]
-41. [[Advanced Output and Register Feedback Log]]
-42. [[Phase 5 Weekly Review]]
+23. [[Phase 2 Audio Assignment Ladder]]
+24. [[Phase 2 Audio Coverage Map]]
+25. [[Phase 2 Weekly Review]]
+26. [[Phase 3 — Expansion]]
+27. [[Phase 3 Authentic Audio Spine]]
+28. [[Phase 3 Local Audio Practice]]
+29. [[Phase 3 Audio Coverage Map]]
+30. [[Phase 3 Pitch Accent Practice Path]]
+31. [[Phase 3 Weekly Review]]
+32. [[Phase 4 — Intermediate Mastery]]
+33. [[Phase 4 Authentic Audio Spine]]
+34. [[Phase 4 Local Audio Practice]]
+35. [[Phase 4 Audio Coverage Map]]
+36. [[Phase 4 Keigo and Register Production Checklist]]
+37. [[Phase 4 Weekly Review]]
+38. [[Phase 5 — Advanced]]
+39. [[Phase 5 Authentic Audio Spine]]
+40. [[Phase 5 Local Audio Practice]]
+41. [[Phase 5 Audio Coverage Map]]
+42. [[Advanced Output and Register Feedback Log]]
+43. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -157,6 +159,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Daily Audio Loop]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
+- [[Phase 2 Audio Assignment Ladder]]
 - [[Japanese Audio QA Status]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]

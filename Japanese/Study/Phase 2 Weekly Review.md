@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short. The review should take 15-25 minutes.
 
-The review has one job: choose the next small action. If particles are still blurry, stay with [[N5 Grammar — Particles]]. If verb forms are readable but not speakable, repeat the same transformation clips. If authentic audio feels too fast, shorten the segment instead of abandoning audio. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
+At the start of the week, copy the matching row from [[Phase 2 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. The review has one job: choose the next small action. If particles are still blurry, stay with [[N5 Grammar — Particles]]. If verb forms are readable but not speakable, repeat the same transformation clips. If authentic audio feels too fast, shorten the segment instead of abandoning audio. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -27,6 +27,7 @@ The review has one job: choose the next small action. If particles are still blu
 - [ ] Due reviews completed on at least 5 days
 - [ ] Course spine studied on at least 4 days
 - [ ] One authentic audio segment from [[Phase 2 Authentic Audio Spine]] repeated on at least 3 days
+- [ ] The current week in [[Phase 2 Audio Assignment Ladder]] used as the assignment source
 - [ ] One local clip set from [[Phase 2 Local Audio Practice]] or the current Phase 2 page repeated on at least 3 days
 - [ ] [[Phase 2 Audio Coverage Map]] checked for the current main page
 - [ ] One pronunciation, rhythm, counter-reading, or kanji-reading issue checked through [[Pronunciation and Audio Accuracy]]
@@ -91,7 +92,7 @@ List cards or concepts that failed repeatedly and need rewriting.
 - One main page:
 - One course lesson:
 - One authentic audio target:
-- One local audio target from [[Phase 2 Local Audio Practice]]:
+- One local audio target from [[Phase 2 Audio Assignment Ladder]] and [[Phase 2 Local Audio Practice]]:
 - One pronunciation or reading check:
 - One speaking target:
 
@@ -100,6 +101,7 @@ List cards or concepts that failed repeatedly and need rewriting.
 Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks|Phase 2 checkpoint]] is true and the audio evidence is real:
 
 - [ ] You have repeated a stable Phase 2 authentic audio source for multiple weeks
+- [ ] You can use [[Phase 2 Audio Assignment Ladder]] to choose the exact weekly assignment without improvising
 - [ ] You can use [[Phase 2 Local Audio Practice]] to find the right weekly local clips without searching the whole vault
 - [ ] You can pair each required Phase 2 page with audio using [[Phase 2 Audio Coverage Map]]
 - [ ] You have opened [[Phase 3 Authentic Audio Spine]], [[Phase 3 Audio Coverage Map]], and [[Phase 3 Weekly Review]] before starting Phase 3 content
@@ -110,6 +112,7 @@ Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks
 ## References
 
 - [[Phase 2 — Building Blocks]]
+- [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]
