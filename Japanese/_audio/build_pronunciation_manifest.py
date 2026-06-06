@@ -70,6 +70,7 @@ PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
     "gap-053-(satsu).mp3": ("さつ", "counter suffix reading"),
     "gap-054-(dai).mp3": ("だい", "counter suffix reading"),
     "gap-055-(hiki).mp3": ("ひき", "counter suffix reading"),
+    "gap-058-(ikkagetsu).mp3": ("いっかげつ", "force duration counter reading"),
     "gap-089-(wa).mp3": ("わ", "counter suffix reading"),
     "gap-090-(kai).mp3": ("かい", "counter suffix reading"),
     "gap-091-(kai).mp3": ("かい", "counter suffix reading"),
@@ -113,6 +114,7 @@ PRONUNCIATION_OVERRIDES: dict[str, tuple[str, str]] = {
     "gap-214-phrase.mp3": ("昼ごはん", "repaired OCR error"),
     "gap-229-phrase.mp3": ("救急車", "repaired OCR error"),
     "gap-257-phrase.mp3": ("涼しい", "repaired OCR error"),
+    "gap-184-(akeru)-open.mp3": ("あける", "force transitive open reading"),
     "verb-018-oyogu.mp3": ("泳ぐ", "repaired OCR error"),
     "verb-019-oyoide.mp3": ("泳いで", "repaired OCR error"),
 }

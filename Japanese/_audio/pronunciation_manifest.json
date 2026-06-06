@@ -3025,11 +3025,11 @@
   },
   {
     "filename": "gap-058-(ikkagetsu).mp3",
-    "text": "一か月",
+    "text": "いっかげつ",
     "display_text": "一か月 (ikkagetsu)",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "force duration counter reading"
   },
   {
     "filename": "gap-059-(ichinenkan).mp3",
@@ -4033,11 +4033,11 @@
   },
   {
     "filename": "gap-184-(akeru)-open.mp3",
-    "text": "開ける",
+    "text": "あける",
     "display_text": "開ける (akeru) open",
     "source_manifest": "gap_manifest.json",
     "voice": "ja-JP-NanamiNeural",
-    "pronunciation_note": "normalized"
+    "pronunciation_note": "force transitive open reading"
   },
   {
     "filename": "gap-185-(shimeru)-close.mp3",

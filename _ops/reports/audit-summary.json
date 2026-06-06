@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-06T18:11:39",
-  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\continue-japanese-audio-learning",
-  "files_total": 4712,
+  "generated_at": "2026-06-06T18:20:30",
+  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\japanese-audio-reading-audit",
+  "files_total": 4715,
   "by_extension": {
     "(none)": 2,
     ".base": 1,
     ".jpg": 22,
     ".json": 17,
-    ".md": 2845,
+    ".md": 2846,
     ".mp3": 1810,
-    ".py": 12,
-    ".txt": 3
+    ".py": 13,
+    ".txt": 4
   },
-  "markdown_files": 2845,
+  "markdown_files": 2846,
   "candidate_articles": 757,
   "empty_notes": 1,
   "stubs_under_1500_bytes": 21,

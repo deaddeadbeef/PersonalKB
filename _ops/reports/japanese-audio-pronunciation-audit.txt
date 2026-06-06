@@ -6,7 +6,7 @@ SUMMARY
   Pronunciation entries     : 1810
   MP3 files                 : 1810
   Entries changed for TTS   : 95
-  Explicit overrides        : 74
+  Explicit overrides        : 76
   Duplicate manifest rows   : 2
   Missing MP3 files         : 0
   MP3 files not in manifest : 0
@@ -59,7 +59,7 @@ CHANGED TTS INPUTS
   gap-055-(hiki).mp3: 匹 (hiki) -> ひき (counter suffix reading)
   gap-056-(ichijikan).mp3: 一時間 (ichijikan) -> 一時間 (normalized)
   gap-057-(isshkan).mp3: 一週間 (isshūkan) -> 一週間 (normalized)
-  gap-058-(ikkagetsu).mp3: 一か月 (ikkagetsu) -> 一か月 (normalized)
+  gap-058-(ikkagetsu).mp3: 一か月 (ikkagetsu) -> いっかげつ (force duration counter reading)
   gap-059-(ichinenkan).mp3: 一年間 (ichinenkan) -> 一年間 (normalized)
   gap-060-(kakimasu).mp3: 書く → 書きます (kakimasu) -> 書きます (read conjugated form)
   gap-061-Drop-,-add.mp3: Drop る, add ます -> 食べます (read conjugated form)
@@ -83,7 +83,7 @@ CHANGED TTS INPUTS
   gap-093-(soku).mp3: 足 (soku) -> そく (counter suffix reading)
   gap-094-(chaku).mp3: 着 (chaku) -> ちゃく (counter suffix reading)
   gap-125-.mp3: 彼 / 彼女 -> 彼、彼女 (read both pronouns without slash)
-  gap-184-(akeru)-open.mp3: 開ける (akeru) open -> 開ける (normalized)
+  gap-184-(akeru)-open.mp3: 開ける (akeru) open -> あける (force transitive open reading)
   gap-185-(shimeru)-close.mp3: 閉める (shimeru) close -> 閉める (normalized)
   gap-186-(ireru)-put-in.mp3: 入れる (ireru) put in -> 入れる (normalized)
   gap-187-(dasu)-put-out.mp3: 出す (dasu) put out -> 出す (normalized)

@@ -112,6 +112,33 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-06-06] refine | Japanese audio reading-hint audit
+
+Scope: added a repeatable pronunciation-manifest audit for entries with explicit romaji hints, then repaired the remaining high-confidence reading risks it found.
+
+Changed content files:
+- `Japanese/_audio/audit_reading_hints.py`
+- `Japanese/_audio/build_pronunciation_manifest.py`
+- `Japanese/_audio/pronunciation_manifest.json`
+- `Japanese/_audio/gap-058-(ikkagetsu).mp3`
+- `_ops/reports/japanese-audio-pronunciation-audit.txt`
+- `_ops/reports/japanese-audio-reading-hints-audit.txt`
+
+Maintenance changes:
+- Added a reading-hint audit that compares parenthesized romaji hints against pronunciation-manifest TTS text readings.
+- Forced `一か月 (ikkagetsu)` to synthesize from `いっかげつ`.
+- Forced `開ける (akeru)` to synthesize from `あける`; regenerated output matched the existing clip bytes, but the manifest now locks the intended reading.
+
+Verification:
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`
+- manifest/audio inventory check: `1810` entries, `1810` MP3 files, `0` missing, `0` extra, `0` zero-size
+- `ffprobe` duration check for `gap-058-(ikkagetsu).mp3` and `gap-184-(akeru)-open.mp3`
+- `python _ops\personal_kb.py audit`
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-06-06] refine | Japanese audio OCR cleanup
 
 Scope: targeted repair pass for remaining OCR-corrupted Japanese text that fed local pronunciation clips.
