@@ -1541,3 +1541,45 @@ Verification:
 - `python _ops\personal_kb.py audit`: same counts after indexing.
 - Link coverage check for `Phase 2 Audio Assignment Ladder`: linked from Start Here, Phase 2 path, listening overview, dashboard, study index, daily audio loop, evidence log, Phase 2 local practice, authentic spine, coverage map, weekly review, resources index, and `index.md`.
 - `index.md` MP3 leak check: 0 results.
+
+## [2026-06-07] curate | Japanese Phase 3 audio assignment ladder
+
+Scope: extend the authenticated audio workflow into Phase 3 N4, pitch-accent, media, and register-recognition practice without changing local MP3 files.
+
+Changed wiki/source files:
+- `Japanese/Study/Phase 3 Audio Assignment Ladder.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 3 — Expansion.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Listening/Phase 3 Audio Coverage Map.md`
+- `Japanese/Listening/Phase 3 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 3 Local Audio Practice.md`
+- `Japanese/Speaking/Pitch Accent/Phase 3 Pitch Accent Practice Path.md`
+- `Japanese/Study/Authentic Audio Evidence Log.md`
+- `Japanese/Study/Authentic Audio Source Setup.md`
+- `Japanese/Study/Daily Audio Loop.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Phase 2 Weekly Review.md`
+- `Japanese/Study/Phase 3 Weekly Review.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+
+Maintenance changes:
+- Added a four-block Phase 3 assignment ladder for N4 grammar direction, longer sentences and Core 1000 output, practical domains and N4 kanji, and pitch/media/register recognition.
+- Added copy-ready current-assignment templates for Blocks 1-4.
+- Added a Block 4 safety rule so pitch, media rhythm, and register checks use source-backed references instead of trusting local TTS.
+- Linked the ladder from Start Here, Phase 3 path, listening overview, dashboard, study index, daily audio loop, evidence log, authentic source setup, Phase 2 handoff, Phase 3 local practice, authentic spine, coverage map, pitch path, weekly review, and resources index.
+- Regenerated `index.md` and `_ops/reports/audit-summary.json`.
+- Did not modify local MP3 files or pronunciation manifests.
+
+Verification:
+- `git diff --check`: clean.
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4758 files, 2887 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`
+- `python _ops\personal_kb.py audit`: same counts after indexing.
+- Link coverage check for `Phase 3 Audio Assignment Ladder`: linked from Start Here, Phase 3 path, listening overview, dashboard, study index, daily audio loop, evidence log, authentic source setup, Phase 2 handoff, Phase 3 local practice, authentic spine, coverage map, pitch path, weekly review, resources index, and `index.md`.
+- `index.md` MP3 leak check: 0 results.

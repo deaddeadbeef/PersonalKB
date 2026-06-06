@@ -45,7 +45,7 @@ When time is short, keep one authentic sentence and one local clip. Do not turn 
 
 The source does not need to match every vault page exactly. It does need enough overlap that your ear hears the grammar, vocabulary, pitch, or register topic in human Japanese while the local clips isolate details.
 
-Use [[Phase 3 Local Audio Practice]] for the daily ladder. Use [[Phase 3 Audio Coverage Map]] when you need to match a required Phase 3 page to the right local and authentic audio layer.
+Use [[Phase 3 Audio Assignment Ladder]] to choose the exact block target. Use [[Phase 3 Local Audio Practice]] for the daily local drills. Use [[Phase 3 Audio Coverage Map]] when you need to match a required Phase 3 page to the right local and authentic audio layer.
 
 Use [[Pronunciation and Audio Accuracy]] when a local clip, native recording, dictionary entry, or your own recording disagree.
 
@@ -74,6 +74,7 @@ At the end of each week, record evidence in [[Phase 3 Weekly Review]]:
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Weekly Review]]

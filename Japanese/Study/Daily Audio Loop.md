@@ -26,6 +26,8 @@ If this is your first week, start with [[Phase 1 Audio Starter Assignment]] befo
 
 For Phase 2, use [[Phase 2 Audio Assignment Ladder]] before choosing page-level clips. It keeps particles, forms, counters, kanji readings, and beginner interactions tied to exact authentic audio.
 
+For Phase 3, use [[Phase 3 Audio Assignment Ladder]] before choosing page-level clips or media. It keeps N4 grammar, longer sentences, pitch checks, and intermediate listening tied to a replayable source.
+
 ## Minimum Day
 
 Use this when time is tight:
@@ -73,6 +75,7 @@ Stop drilling a local clip and use [[Pronunciation Correction Log]] when:
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Japanese Audio QA Status]]

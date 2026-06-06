@@ -21,6 +21,8 @@ Phase 3 audio support has three layers:
 
 Use [[Phase 3 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 3 clips, ordered by block so N4 grammar, pitch, media, and register practice do not require page-level clip hunting.
 
+Use [[Phase 3 Audio Assignment Ladder]] when you need the copy-ready block assignment, evidence target, and advancement rule.
+
 The authentic model still matters more in Phase 3 because pitch accent, connected speech, media, and keigo recognition cannot be learned from local TTS alone.
 
 ## Required Phase 3 Coverage
@@ -30,6 +32,7 @@ The authentic model still matters more in Phase 3 because pitch accent, connecte
 | [[Phase 3 — Expansion]] | 0 | Routes to spine | Routes to QA | Choose the next N4 expansion focus |
 | [[Phase 3 Authentic Audio Spine]] | 0 | Primary human/official route | Quality bar included | Choose the repeatable segment for the week |
 | [[Phase 3 Local Audio Practice]] | 104 selected | Must be paired with spine | Covered by QA; pitch prompts route to [[Phase 3 Pitch Accent Practice Path]] | Drill the current Phase 3 block without hunting through pages |
+| [[Phase 3 Audio Assignment Ladder]] | 0 | Chooses the current spine segment | Advancement rule included | Copy the current block assignment into [[Authentic Audio Evidence Log]] |
 | [[Phase 3 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA evidence | Decide next week's N4 audio target |
 | [[N5 Grammar — Verb Forms]] | 69 | Course/tutor grammar audio | Covered by QA | Review te-form before N4 extensions |
 | [[N4 Grammar — Conditional Forms]] | 17 | Conditional examples in course/tutor dialogue | Covered by QA | Hear たら, ば, なら, and と in sentences |
@@ -82,6 +85,7 @@ These are real gaps:
 
 ## Next Coverage Targets
 
+- Use [[Phase 3 Audio Assignment Ladder]] to copy the current block into [[Authentic Audio Evidence Log#Current Assignment]].
 - Use [[Phase 3 Weekly Review]] before Phase 3 becomes the active dashboard phase.
 - Use [[Phase 3 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Phase 3 Pitch Accent Practice Path]] after Phase 3 audio evidence is in place.
@@ -91,6 +95,7 @@ These are real gaps:
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Weekly Review]]

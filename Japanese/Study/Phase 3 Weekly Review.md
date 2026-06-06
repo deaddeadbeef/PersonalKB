@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 15-25 minutes.
 
-Phase 3 review should name one exact authentic segment, one local clip set, one pitch or reading check, and one output or shadowing proof. If the week was mostly silent reading, the audio loop did not happen. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
+At the start of the week, copy the current block from [[Phase 3 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. Phase 3 review should name one exact authentic segment, one local clip set, one pitch or reading check, and one output or shadowing proof. If the week was mostly silent reading, the audio loop did not happen. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -26,6 +26,7 @@ Phase 3 review should name one exact authentic segment, one local clip set, one 
 
 - [ ] Due reviews completed on at least 5 days
 - [ ] One authentic audio segment from [[Phase 3 Authentic Audio Spine]] repeated on at least 3 days
+- [ ] The current block in [[Phase 3 Audio Assignment Ladder]] used as the assignment source
 - [ ] One local clip set from [[Phase 3 Local Audio Practice]] or the current Phase 3 page repeated on at least 3 days
 - [ ] [[Phase 3 Audio Coverage Map]] checked for the current main page
 - [ ] One pitch, accent, kanji-reading, rhythm, or suspect-clip issue checked through [[Pronunciation and Audio Accuracy]]
@@ -87,7 +88,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 
 - One main page:
 - One authentic audio target:
-- One local audio target from [[Phase 3 Local Audio Practice]]:
+- One local audio target from [[Phase 3 Audio Assignment Ladder]] and [[Phase 3 Local Audio Practice]]:
 - One pitch, accent, or reading check:
 - One shadowing or transcription target:
 - One output sentence or short summary:
@@ -97,6 +98,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expansion|Phase 3 checkpoint]] is true and the audio evidence is real:
 
 - [ ] You have repeated a stable Phase 3 authentic audio source for multiple weeks
+- [ ] You can use [[Phase 3 Audio Assignment Ladder]] to choose the current block without improvising
 - [ ] You can use [[Phase 3 Local Audio Practice]] to find the right local block without searching the whole vault
 - [ ] You can pair each required Phase 3 page with audio using [[Phase 3 Audio Coverage Map]]
 - [ ] You can shadow one short intermediate segment without reading every word
@@ -107,6 +109,7 @@ Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expa
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Audio Coverage Map]]

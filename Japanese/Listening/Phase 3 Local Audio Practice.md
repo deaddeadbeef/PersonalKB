@@ -17,6 +17,8 @@ For pitch accent, the local clips are prompts only. Check pitch and accent throu
 
 Do not treat local clips as the only authority. If a clip conflicts with your authentic source or sounds wrong, stop using it and follow [[Pronunciation and Audio Accuracy#Correction Workflow]].
 
+Use [[Phase 3 Audio Assignment Ladder]] to decide which block is active and what proof is required.
+
 Use [[Phase 3 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
 ## Session Loop
@@ -205,6 +207,7 @@ After listening, write one line in [[Phase 3 Weekly Review]]:
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Weekly Review]]

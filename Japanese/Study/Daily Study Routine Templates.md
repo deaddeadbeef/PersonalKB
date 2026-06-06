@@ -103,6 +103,7 @@ This keeps the chain alive without pretending every day is ideal.
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Local Audio Practice]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 5 Authentic Audio Spine]]
 - [[Phase 5 Local Audio Practice]]

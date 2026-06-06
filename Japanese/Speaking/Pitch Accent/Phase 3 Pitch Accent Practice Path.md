@@ -24,7 +24,7 @@ Local pitch clips are drills, not the referee.
 
 ## Daily Five-Minute Loop
 
-Use this only after the normal Phase 3 audio pairing is clear.
+Use this only after the normal Phase 3 audio pairing is clear in [[Phase 3 Audio Assignment Ladder]].
 
 1. Pick one word or minimal pair from the current Phase 3 page.
 2. Check the accent pattern in OJAD, NHK, Forvo, course audio, tutor feedback, or a native recording.
@@ -69,6 +69,7 @@ Record clip-quality problems in [[Pronunciation Correction Log]]. Record normal 
 ## References
 
 - [[Phase 3 — Expansion]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Weekly Review]]

@@ -21,6 +21,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Phase 1 starter | [[Phase 1 Audio Starter Assignment]] | Start the first week with one concrete source, clip set, and proof target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keep all eight Phase 2 weeks assigned and evidence-backed |
+| Phase 3 audio ladder | [[Phase 3 Audio Assignment Ladder]] | Keep all Phase 3 blocks assigned, source-checked, and evidence-backed |
 | Audio ladder | [[Phase 1 Local Audio Practice]] -> [[Phase 2 Local Audio Practice]] -> [[Phase 3 Local Audio Practice]] -> [[Phase 4 Local Audio Practice]] -> [[Phase 5 Local Audio Practice]] | Use local clips in the correct order instead of browsing the raw audio catalog |
 | Authentic audio | [[Phase 1 Authentic Audio Spine]] -> [[Phase 2 Authentic Audio Spine]] -> [[Phase 3 Authentic Audio Spine]] -> [[Phase 4 Authentic Audio Spine]] -> [[Phase 5 Authentic Audio Spine]] | Choose the native/official audio source for the current phase |
 | Authentic setup | [[Authentic Audio Source Setup]] | Choose the official/native source, exact segment, and pronunciation-reference route before the week starts |
@@ -45,6 +46,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Japanese Learning Dashboard]]
 - [[Phase 1 Local Audio Practice]]
 - [[Daily Audio Loop]]
@@ -63,6 +65,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 3 Weekly Review]]
@@ -113,6 +116,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 3 Local Audio Practice]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 3 Audio Coverage Map]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
@@ -142,6 +146,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
+- [[Phase 3 Audio Assignment Ladder]]
 
 ## Quick Reference
 - [[Counters — The Japanese Counting System]]

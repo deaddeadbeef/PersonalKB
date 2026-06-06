@@ -28,10 +28,11 @@ Local MP3 clips are the drill layer. The authentic source is the model.
 1. Choose the course or source in the table above.
 2. Install the required app or bookmark the exact course page.
 3. Choose the current lesson, unit, skit, or segment before opening the local ladder.
-4. Open the matching local ladder: [[Phase 1 Local Audio Practice]], [[Phase 2 Local Audio Practice]], [[Phase 3 Local Audio Practice]], [[Phase 4 Local Audio Practice]], or [[Phase 5 Local Audio Practice]].
-5. Open the matching authentic spine: [[Phase 1 Authentic Audio Spine]], [[Phase 2 Authentic Audio Spine]], [[Phase 3 Authentic Audio Spine]], [[Phase 4 Authentic Audio Spine]], or [[Phase 5 Authentic Audio Spine]].
-6. Keep one pronunciation reference route ready: [[Pronunciation and Audio Accuracy]], OJAD, NHK accent dictionary, Forvo, course audio, tutor feedback, or native feedback.
-7. Record the exact source and segment in the current weekly review and [[Authentic Audio Evidence Log]].
+4. Open the matching assignment ladder when one exists: [[Phase 1 Audio Assignment Ladder]], [[Phase 2 Audio Assignment Ladder]], or [[Phase 3 Audio Assignment Ladder]].
+5. Open the matching local ladder: [[Phase 1 Local Audio Practice]], [[Phase 2 Local Audio Practice]], [[Phase 3 Local Audio Practice]], [[Phase 4 Local Audio Practice]], or [[Phase 5 Local Audio Practice]].
+6. Open the matching authentic spine: [[Phase 1 Authentic Audio Spine]], [[Phase 2 Authentic Audio Spine]], [[Phase 3 Authentic Audio Spine]], [[Phase 4 Authentic Audio Spine]], or [[Phase 5 Authentic Audio Spine]].
+7. Keep one pronunciation reference route ready: [[Pronunciation and Audio Accuracy]], OJAD, NHK accent dictionary, Forvo, course audio, tutor feedback, or native feedback.
+8. Record the exact source and segment in the current weekly review and [[Authentic Audio Evidence Log]].
 
 ## Daily Use
 
@@ -76,6 +77,9 @@ If a local clip sounds wrong, use [[Pronunciation Correction Log]] and run the c
 - [[Authentic Audio Evidence Log]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
+- [[Phase 1 Audio Assignment Ladder]]
+- [[Phase 2 Audio Assignment Ladder]]
+- [[Phase 3 Audio Assignment Ladder]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 3 Authentic Audio Spine]]
