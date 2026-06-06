@@ -14,11 +14,12 @@ tier-coverage: [practice]
 1. Start Phase 4 only after the [[Phase 3 — Expansion|Phase 3 checkpoint]] is real.
 2. Use [[Seventh Month Japanese Study Plan]] as the Block 1 execution path.
 3. Use [[Eighth Month Japanese Study Plan]] as the Block 2 execution path.
-4. Choose one repeatable source from [[Phase 4 Authentic Audio Spine]] and one register or pronunciation reference route.
-5. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
-6. Run [[Daily Audio Loop]] on each study day.
-7. If the block involves keigo, business, service language, or formal role-play, open [[Phase 4 Keigo and Register Production Checklist]] before producing it.
-8. At the end of the week, fill [[Phase 4 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+4. Use [[Ninth Month Japanese Study Plan]] as the Block 3 execution path.
+5. Choose one repeatable source from [[Phase 4 Authentic Audio Spine]] and one register or pronunciation reference route.
+6. At the start of each week, copy the current block assignment into [[Authentic Audio Evidence Log#Current Assignment]].
+7. Run [[Daily Audio Loop]] on each study day.
+8. If the block involves keigo, business, service language, or formal role-play, open [[Phase 4 Keigo and Register Production Checklist]] before producing it.
+9. At the end of the week, fill [[Phase 4 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Phase 4 blocks can take more than one week. Advance only when the native-speed segment, local block, register or pronunciation check, and active output proof are all real.
 
@@ -118,6 +119,7 @@ Phase 4 is where local clips are most likely to create false confidence. Use loc
 - [[Phase 4 — Intermediate Mastery]]
 - [[Seventh Month Japanese Study Plan]]
 - [[Eighth Month Japanese Study Plan]]
+- [[Ninth Month Japanese Study Plan]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]

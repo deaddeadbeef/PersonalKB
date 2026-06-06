@@ -32,6 +32,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Phase 3 Block 4 plan | [[Phase 3 Block 4 Japanese Study Plan]] | Finishes Phase 3 with source-checked pitch, discourse timing, media rhythm, register recognition, and weekly audio proof |
 | Seventh month plan | [[Seventh Month Japanese Study Plan]] | Starts Phase 4 with N3 grammar, native-speed or official-course shadowing, and weekly audio proof |
 | Eighth month plan | [[Eighth Month Japanese Study Plan]] | Turns Phase 4 Block 2 into N3 kanji, adult-life vocabulary, source-backed summary practice, and weekly audio proof |
+| Ninth month plan | [[Ninth Month Japanese Study Plan]] | Turns Phase 4 Block 3 into keigo, business register, cultural expressions, checklist-gated role-play, and weekly audio proof |
 | First audio assignment | [[Phase 1 Audio Starter Assignment]] | Gives Week 1 a concrete authentic source, local clip set, and evidence target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keeps Weeks 1-4 tied to concrete authentic/local/evidence targets |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keeps Weeks 5-12 tied to concrete authentic/local/evidence targets |
@@ -59,7 +60,7 @@ Stay here until the checkpoint is real:
 
 Do not spend serious time on N3 grammar, keigo, business Japanese, native news, or advanced kanji yet. They stay visible in the vault for later, but they are not part of the current work queue.
 
-## Thirty-Six-Week Starter Runway
+## Forty-Week Starter Runway
 
 | Weeks | Main outcome | Study pages | Done when |
 | --- | --- | --- | --- |
@@ -73,6 +74,7 @@ Do not spend serious time on N3 grammar, keigo, business Japanese, native news, 
 | 25-28 | Pitch, media, and register become source-checked | [[Phase 3 Block 4 Japanese Study Plan]], [[Phase 3 Authentic Audio Spine]], [[Phase 3 Local Audio Practice]], [[Phase 3 Audio Assignment Ladder]], [[Phase 3 Pitch Accent Practice Path]], [[Common Filler Words and Discourse Markers]], [[Intermediate Listening Resources]], [[Keigo — Overview and Register System]] | You can check one pitch item, identify one discourse cue, summarize one short segment, and explain one media/register cue |
 | 29-32 | N3 grammar becomes hearable in native-speed Japanese | [[Seventh Month Japanese Study Plan]], [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], [[N3 Grammar — Formal Expressions]], [[N3 Grammar — Complex Conjunctions]], [[N3 Grammar — Nominalization and Quotation]], [[Grammar — Comparison Across Levels]] | You can shadow one multi-clause sentence and produce one N3 sentence chain from memory |
 | 33-36 | N3 kanji and adult-life vocabulary become hearable | [[Eighth Month Japanese Study Plan]], [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], [[Kanji N3 Essentials]], [[Thematic Vocabulary — Work and Office]], [[Thematic Vocabulary — Nature and Weather]] | You can check one N3 kanji reading, summarize one news/workplace/weather/daily-life segment, and reuse five target words aloud |
+| 37-40 | Keigo and cultural register become source-checked | [[Ninth Month Japanese Study Plan]], [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], [[Phase 4 Keigo and Register Production Checklist]], [[Keigo — Sonkeigo (Honorific)]], [[Keigo — Kenjōgo (Humble)]], [[Business Japanese — Workplace Communication]], [[Seasonal Greetings and Cultural Expressions]], [[Idioms and Proverbs — ことわざ]], [[Numbers and Superstitions]] | You can produce one register-appropriate role-play or checked sentence after naming the role, direction, and human/course/tutor model |
 
 Use JLPT levels as a map, not as the first goal. The official JLPT descriptions are skill-based reading and listening summaries, not a complete curriculum or official fixed kanji/vocabulary list.
 
@@ -162,19 +164,20 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 41. [[Phase 4 — Intermediate Mastery]]
 42. [[Seventh Month Japanese Study Plan]]
 43. [[Eighth Month Japanese Study Plan]]
-44. [[Phase 4 Authentic Audio Spine]]
-45. [[Phase 4 Local Audio Practice]]
-46. [[Phase 4 Audio Assignment Ladder]]
-47. [[Phase 4 Audio Coverage Map]]
-48. [[Phase 4 Keigo and Register Production Checklist]]
-49. [[Phase 4 Weekly Review]]
-50. [[Phase 5 — Advanced]]
-51. [[Phase 5 Authentic Audio Spine]]
-52. [[Phase 5 Local Audio Practice]]
-53. [[Phase 5 Audio Assignment Ladder]]
-54. [[Phase 5 Audio Coverage Map]]
-55. [[Advanced Output and Register Feedback Log]]
-56. [[Phase 5 Weekly Review]]
+44. [[Ninth Month Japanese Study Plan]]
+45. [[Phase 4 Authentic Audio Spine]]
+46. [[Phase 4 Local Audio Practice]]
+47. [[Phase 4 Audio Assignment Ladder]]
+48. [[Phase 4 Audio Coverage Map]]
+49. [[Phase 4 Keigo and Register Production Checklist]]
+50. [[Phase 4 Weekly Review]]
+51. [[Phase 5 — Advanced]]
+52. [[Phase 5 Authentic Audio Spine]]
+53. [[Phase 5 Local Audio Practice]]
+54. [[Phase 5 Audio Assignment Ladder]]
+55. [[Phase 5 Audio Coverage Map]]
+56. [[Advanced Output and Register Feedback Log]]
+57. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -199,6 +202,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 3 Block 4 Japanese Study Plan]]
 - [[Seventh Month Japanese Study Plan]]
 - [[Eighth Month Japanese Study Plan]]
+- [[Ninth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

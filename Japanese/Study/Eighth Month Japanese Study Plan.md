@@ -164,7 +164,7 @@ Month eight counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 3 in [[Phase 4 Audio Assignment Ladder]]. Block 3 moves into keigo, business register, seasonal greetings, idioms, number culture, and register-checked role-play.
+After these success criteria are true, continue to [[Ninth Month Japanese Study Plan]]. It wraps Block 3 of [[Phase 4 Audio Assignment Ladder]] and moves into keigo, business register, seasonal greetings, idioms, number culture, and register-checked role-play.
 
 Before starting Block 3, open [[Phase 4 Keigo and Register Production Checklist]] and choose the exact formal role-play, service/workplace audio, business course dialogue, tutor model, or native-speaker recording that will anchor register-sensitive production.
 
@@ -172,6 +172,7 @@ Before starting Block 3, open [[Phase 4 Keigo and Register Production Checklist]
 
 - [[Japanese Learning Dashboard]]
 - [[Seventh Month Japanese Study Plan]]
+- [[Ninth Month Japanese Study Plan]]
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
