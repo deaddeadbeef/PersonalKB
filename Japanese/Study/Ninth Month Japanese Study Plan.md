@@ -168,7 +168,7 @@ Month nine counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue to Block 4 in [[Phase 4 Audio Assignment Ladder]]. Block 4 moves into native-speed support, discourse timing, filler words, source labels, and short shadowing, transcription, or summary proof.
+After these success criteria are true, continue to [[Tenth Month Japanese Study Plan]]. It wraps Block 4 of [[Phase 4 Audio Assignment Ladder]] and moves into native-speed support, discourse timing, filler words, source labels, and short shadowing, transcription, or summary proof.
 
 Before starting Block 4, choose one short native-speed segment with transcript, subtitles, article text, or notes, and decide whether the output proof will be shadowing, transcription, or summary.
 
@@ -176,6 +176,7 @@ Before starting Block 4, choose one short native-speed segment with transcript, 
 
 - [[Japanese Learning Dashboard]]
 - [[Eighth Month Japanese Study Plan]]
+- [[Tenth Month Japanese Study Plan]]
 - [[Phase 4 — Intermediate Mastery]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]

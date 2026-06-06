@@ -29,6 +29,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Seventh month plan | [[Seventh Month Japanese Study Plan]] | Execute Phase 4 Block 1 with N3 grammar, native-speed or official-course audio, local clips, and weekly proof |
 | Eighth month plan | [[Eighth Month Japanese Study Plan]] | Execute Phase 4 Block 2 with N3 kanji, adult-life vocabulary, local clips, source-backed summaries, and weekly proof |
 | Ninth month plan | [[Ninth Month Japanese Study Plan]] | Execute Phase 4 Block 3 with keigo, business register, cultural expressions, local clips, checklist-gated role-play, and weekly proof |
+| Tenth month plan | [[Tenth Month Japanese Study Plan]] | Execute Phase 4 Block 4 with native-speed listening, discourse timing, local clips, shadowing, transcription, summary, and weekly proof |
 | Phase 1 starter | [[Phase 1 Audio Starter Assignment]] | Start the first week with one concrete source, clip set, and proof target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keep all eight Phase 2 weeks assigned and evidence-backed |
@@ -67,6 +68,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Seventh Month Japanese Study Plan]]
 - [[Eighth Month Japanese Study Plan]]
 - [[Ninth Month Japanese Study Plan]]
+- [[Tenth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -184,6 +186,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Seventh Month Japanese Study Plan]]
 - [[Eighth Month Japanese Study Plan]]
 - [[Ninth Month Japanese Study Plan]]
+- [[Tenth Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

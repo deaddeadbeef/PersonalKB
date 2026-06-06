@@ -27,6 +27,8 @@ For Block 2, use [[Eighth Month Japanese Study Plan]] as the learner-facing wrap
 
 For Block 3, use [[Ninth Month Japanese Study Plan]] as the learner-facing wrapper around the keigo, business, and cultural-register clips below, so role-play production stays gated by a human/course/tutor model and [[Phase 4 Keigo and Register Production Checklist]].
 
+For Block 4, use [[Tenth Month Japanese Study Plan]] as the learner-facing wrapper around the source-label and discourse-marker clips below, so native-speed listening stays tied to one replayable segment and a shadowing, transcription, or summary proof.
+
 ## Session Loop
 
 Run this loop for 10 minutes on a minimum Phase 4 day or 25 minutes on a good day:
@@ -228,6 +230,7 @@ After listening, write one line in [[Phase 4 Weekly Review]]:
 - [[Seventh Month Japanese Study Plan]]
 - [[Eighth Month Japanese Study Plan]]
 - [[Ninth Month Japanese Study Plan]]
+- [[Tenth Month Japanese Study Plan]]
 - [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
