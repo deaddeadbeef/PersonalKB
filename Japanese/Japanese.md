@@ -44,8 +44,9 @@ Goal: read kana, understand first sentence frames, know survival words, and buil
 | 1.6 | [[N5 Grammar — Sentence Patterns]] | XはYです, questions, existence, and first requests |
 | 1.7 | [[Conversation Patterns — Greetings and Introductions]] | Social set phrases |
 | 1.8 | [[Self-Introduction Template]] | First memorized speaking script |
-| 1.9 | [[Beginner Listening Resources]] | Beginner audio workflow |
-| 1.10 | [[Phase 1 Weekly Review]] | Weekly checkpoint and next-task selection |
+| 1.9 | [[Phase 1 Local Audio Practice]] | Ordered local audio ladder for kana, phrases, and first output |
+| 1.10 | [[Beginner Listening Resources]] | Beginner audio workflow and external resources |
+| 1.11 | [[Phase 1 Weekly Review]] | Weekly checkpoint and next-task selection |
 
 Do not read kanji, keigo, business Japanese, native media, or advanced grammar as required work in Phase 1.
 
@@ -194,7 +195,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 
 ### Listening
 - [[Listening Overview]]
-- [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Phase 1 Local Audio Practice]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
 

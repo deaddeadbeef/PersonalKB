@@ -32,6 +32,11 @@ flowchart LR
 | Minna no Nihongo | Separate CD | Pattern drills |
 | Japanese from Zero | YouTube | Conversational |
 
+## Local Phase 1 Ladder
+
+During [[Phase 1 — Foundation]], use [[Phase 1 Local Audio Practice]] as the default 5-minute daily audio path. It points to a small set of local clips for kana sounds, particle-reading traps, survival phrases, and the first self-introduction.
+
+Use native course audio whenever your course spine provides it. Use the local ladder for short repeatable pronunciation practice; use the full [[Audio Index]] only when you need to find a specific clip.
 
 ## How to Use Beginner Audio
 
@@ -58,9 +63,9 @@ flowchart LR
 
 | Time | Activity | Duration |
 |------|----------|----------|
-| Morning | NHK Easy News (1 article) | 5 min |
-| Commute | JapanesePod101 or Teppei | 15 min |
-| Evening | Shadowing practice | 10 min |
+| Daily minimum | [[Phase 1 Local Audio Practice]] | 5 min |
+| Course session | Course-native audio from Genki, Irodori, or your chosen spine | 5-15 min |
+| Later review | NHK Easy, JapanesePod101, Teppei, or Comprehensible Japanese | 10-15 min |
 
 
 ## 🔬 Deep Dive

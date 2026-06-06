@@ -39,8 +39,8 @@ If a page feels advanced, skip it for now. The work queue is the sequence below.
 | --- | --- | --- | --- |
 | 1 | Hiragana recognition | [[Hiragana Complete Guide]] | Read the base kana chart without romaji |
 | 2 | Katakana recognition | [[Katakana Complete Guide]], [[Writing Systems Overview]] | Read common loanwords like コーヒー and タクシー |
-| 3 | First sentences | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]] | Parse and produce XはYです questions |
-| 4 | Routine and first output | [[Daily Study Routine Templates]], [[Conversation Patterns — Greetings and Introductions]], [[Self-Introduction Template]] | Deliver a short self-introduction from memory |
+| 3 | First sentences | [[Core 100 — Survival Japanese]], [[N5 Grammar — Sentence Patterns]], [[Phase 1 Local Audio Practice]] | Parse and produce XはYです questions |
+| 4 | Routine and first output | [[Daily Study Routine Templates]], [[Conversation Patterns — Greetings and Introductions]], [[Self-Introduction Template]], [[Phase 1 Local Audio Practice]] | Deliver a short self-introduction from memory |
 
 ## Week 1: Hiragana
 
@@ -52,6 +52,7 @@ Daily:
 - Say each sound aloud.
 - Cover the romaji and read only kana.
 - Mix old rows with new rows before moving on.
+- Use Week 1 of [[Phase 1 Local Audio Practice]] to check particle は/へ and small っ pronunciation.
 
 Supporting evidence: [[chunk-jp-001|Hiragana origin]], [[chunk-jp-002|gojūon chart]], [[chunk-jp-003|dakuten and handakuten]], [[chunk-jp-004|modern usage]].
 
@@ -64,6 +65,7 @@ Daily:
 - Drill シ/ツ and ソ/ン deliberately.
 - Read real katakana words, not isolated characters only.
 - Keep hiragana warm with 5 minutes of mixed review.
+- Use Week 2 of [[Phase 1 Local Audio Practice]] for common loanwords and timing.
 
 Supporting evidence: [[chunk-jp-005|katakana origin]], [[chunk-jp-006|primary uses]], [[chunk-jp-007|confusing pairs]].
 
@@ -78,6 +80,7 @@ Priority patterns:
 - PlaceにThingがあります / います.
 - これをください.
 - どこですか.
+- Shadow the Week 3 clips in [[Phase 1 Local Audio Practice]] until the survival phrases are automatic.
 
 Supporting evidence: [[chunk-jp-028|copula sentences]], [[chunk-jp-029|います vs あります]], [[chunk-jp-031|requests and permissions]], [[chunk-jp-051|top 100 words]], [[chunk-jp-052|ko-so-a-do system]].
 
@@ -89,7 +92,7 @@ Daily:
 
 - Do due reviews first.
 - Spend 15-25 minutes on the course spine.
-- Listen to 5-10 minutes of beginner audio, even if comprehension is partial.
+- Listen to 5-10 minutes from [[Phase 1 Local Audio Practice]] or course-native beginner audio, even if comprehension is partial.
 - Speak the self-introduction out loud once.
 
 Supporting evidence: [[chunk-jp-085|self-introduction fixed format]], [[chunk-jp-089|four levels of listening]], [[chunk-jp-126|spaced repetition]], [[chunk-jp-127|card format]], [[chunk-jp-133|beginner routine]], [[chunk-jp-150|learning milestones]].
@@ -116,7 +119,7 @@ Before moving to [[Phase 2 — Building Blocks]], verify:
 - [ ] Can explain XはYです, questions with か, and います vs あります
 - [ ] Can say a basic self-introduction smoothly
 - [ ] Have SRS or review routine set up
-- [ ] Have listened to beginner audio on at least 10 days
+- [ ] Have listened to beginner audio on at least 10 days, including the [[Phase 1 Local Audio Practice]] ladder
 
 **Next:** [[Phase 2 — Building Blocks]]
 

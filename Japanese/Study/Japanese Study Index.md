@@ -17,6 +17,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Dashboard | [[Japanese Learning Dashboard]] | Decide what to do today and this week |
 | Phase path | [[Phase 1 — Foundation]] -> [[Phase 2 — Building Blocks]] -> [[Phase 3 — Expansion]] | Work through the language in order |
 | Routine | [[Daily Study Routine Templates]] | Choose a 30-minute, 60-minute, or intensive day |
+| Audio ladder | [[Phase 1 Local Audio Practice]] | Use the local clips in the correct Phase 1 order |
 | Weekly review | [[Phase 1 Weekly Review]] | Keep Phase 1 honest and choose the next task |
 | Resources | [[Resources Index — Textbooks, Apps, and Tools]] | Pick the spine and supporting tools |
 | Benchmark | [[JLPT Overview — N5 to N1]] | Understand level labels without letting them dominate study |
@@ -31,6 +32,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 - [[Daily Study Routine Templates]]
 - [[Japanese Learning Dashboard]]
+- [[Phase 1 Local Audio Practice]]
 - [[Phase 1 Weekly Review]]
 
 ## By Skill
@@ -51,6 +53,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Core 100 — Survival Japanese]] → [[Core 500 — Daily Life Vocabulary]] → [[Core 1000 — Conversational Fluency]]
 
 ### Listening
+- [[Phase 1 Local Audio Practice]]
 - [[Shadowing — Technique and Practice Guide]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 

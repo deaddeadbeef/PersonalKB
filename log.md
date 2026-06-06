@@ -112,6 +112,31 @@ Verification:
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
 
+## [2026-06-06] curate | Japanese Phase 1 local audio ladder
+
+Scope: add a learner-facing daily audio path for Phase 1 so Japanese listening starts from ordered, local clips instead of the raw audio catalog.
+
+Changed content files:
+- `Japanese/Listening/Phase 1 Local Audio Practice.md`
+- `Japanese/Listening/Beginner Listening Resources.md`
+- `Japanese/Learning Path/Phase 1 — Foundation.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Japanese.md`
+
+Maintenance changes:
+- Routed Start Here, the dashboard, study index, daily routine, and resource policy to the new Phase 1 audio ladder.
+- Kept native course audio as the authenticity anchor and local manifest-guarded clips as the repeatable pronunciation practice layer.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- Local MP3 embed check: 41 embeds, 0 missing.
+- `git diff --check`
+
 ## [2026-06-06] refine | Japanese audio reading-hint audit
 
 Scope: added a repeatable pronunciation-manifest audit for entries with explicit romaji hints, then repaired the remaining high-confidence reading risks it found.
