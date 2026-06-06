@@ -48,7 +48,7 @@ Speaking Japanese requires mastering pronunciation, pitch accent, appropriate fo
 
 See: [[Culture Overview]] and [[Keigo — Overview and Register System]]
 
-For Phase 4 production, use [[Phase 4 Keigo and Register Production Checklist]] before role-playing or recording keigo, business Japanese, or service language.
+For Phase 4 production, use [[Phase 4 Audio Assignment Ladder]] to choose the current native-speed and register target, then use [[Phase 4 Keigo and Register Production Checklist]] before role-playing or recording keigo, business Japanese, or service language.
 
 ## Speaking Practice Methods
 1. **Shadowing** — repeat immediately after native audio ([[Shadowing — Technique and Practice Guide]])
@@ -63,4 +63,5 @@ For Phase 4 production, use [[Phase 4 Keigo and Register Production Checklist]] 
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Phase 3 Pitch Accent Practice Path]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Keigo and Register Production Checklist]]

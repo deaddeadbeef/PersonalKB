@@ -89,7 +89,7 @@ These are real gaps:
 - Use [[Phase 3 Weekly Review]] before Phase 3 becomes the active dashboard phase.
 - Use [[Phase 3 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Phase 3 Pitch Accent Practice Path]] after Phase 3 audio evidence is in place.
-- Use [[Phase 4 Audio Coverage Map]] before starting Phase 4 content.
+- Use [[Phase 4 Audio Assignment Ladder]] and [[Phase 4 Audio Coverage Map]] before starting Phase 4 content.
 - The `n4pot-006-otsukaemasuka.mp3` source typo was corrected to `お箸が使えますか。` and the clip was regenerated at 48 kHz mono 96 kbps.
 
 ## References
@@ -100,6 +100,7 @@ These are real gaps:
 - [[Phase 3 Local Audio Practice]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 3 Pitch Accent Practice Path]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Intermediate Listening Resources]]

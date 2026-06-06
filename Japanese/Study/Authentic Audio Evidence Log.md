@@ -17,7 +17,7 @@ If the exact segment is blank, the week does not count as authentic-audio proof.
 
 ## Current Assignment
 
-Use this table to keep the active week visible. For Phase 1, copy the weekly values from [[Phase 1 Audio Starter Assignment]] or [[Phase 1 Audio Assignment Ladder]]. For Phase 2, copy the weekly values from [[Phase 2 Audio Assignment Ladder]]. For Phase 3, copy the current block from [[Phase 3 Audio Assignment Ladder]].
+Use this table to keep the active week visible. For Phase 1, copy the weekly values from [[Phase 1 Audio Starter Assignment]] or [[Phase 1 Audio Assignment Ladder]]. For Phase 2, copy the weekly values from [[Phase 2 Audio Assignment Ladder]]. For Phase 3, copy the current block from [[Phase 3 Audio Assignment Ladder]]. For Phase 4, copy the current block from [[Phase 4 Audio Assignment Ladder]].
 
 | Field | Current value |
 | --- | --- |
@@ -81,6 +81,7 @@ Use this when deciding whether a row is strong enough.
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Audio Assignment Ladder]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Authentic Audio Source Setup]]
 - [[Japanese Audio QA Status]]
 - [[Pronunciation and Audio Accuracy]]

@@ -17,6 +17,8 @@ Phase 4 includes register-sensitive Japanese. Do not produce keigo, business phr
 
 Do not treat local clips as the only authority. If a clip conflicts with your native-speed source, course audio, tutor, or native-speaker recording, stop using it and follow [[Pronunciation and Audio Accuracy#Correction Workflow]].
 
+Use [[Phase 4 Audio Assignment Ladder]] to decide which block is active and what proof is required.
+
 Use [[Phase 4 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
 ## Session Loop
@@ -217,6 +219,7 @@ After listening, write one line in [[Phase 4 Weekly Review]]:
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Keigo and Register Production Checklist]]

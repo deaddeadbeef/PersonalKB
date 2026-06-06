@@ -28,6 +28,8 @@ For Phase 2, use [[Phase 2 Audio Assignment Ladder]] before choosing page-level 
 
 For Phase 3, use [[Phase 3 Audio Assignment Ladder]] before choosing page-level clips or media. It keeps N4 grammar, longer sentences, pitch checks, and intermediate listening tied to a replayable source.
 
+For Phase 4, use [[Phase 4 Audio Assignment Ladder]] before choosing native-speed segments, keigo role-plays, or page-level clips. It keeps register-sensitive output tied to human, official-course, tutor, or native models.
+
 ## Minimum Day
 
 Use this when time is tight:
@@ -76,6 +78,7 @@ Stop drilling a local clip and use [[Pronunciation Correction Log]] when:
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Audio Assignment Ladder]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Japanese Audio QA Status]]

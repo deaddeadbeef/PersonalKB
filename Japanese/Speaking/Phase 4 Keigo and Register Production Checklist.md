@@ -39,7 +39,7 @@ Use this before recording, role-playing, or sending a register-sensitive sentenc
 
 ## Ten-Minute Role-Play Loop
 
-Use this with [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], and [[Phase 4 Audio Coverage Map]].
+Use this with [[Phase 4 Audio Assignment Ladder]], [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], and [[Phase 4 Audio Coverage Map]].
 
 1. Choose one situation: visitor reception, client phone call, meeting opening, request, apology, follow-up email, or reporting your boss's words to a client.
 2. Choose the social direction before choosing the verb.
@@ -74,6 +74,7 @@ Clip-quality problems go to [[Pronunciation Correction Log]]. Normal learner cor
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]

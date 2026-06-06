@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short enough to finish in 20-30 minutes.
 
-Phase 4 review should identify one exact native-speed segment, one local drill target from [[Phase 4 Local Audio Practice]] or the current page, one register or pronunciation check, and one active proof such as shadowing, transcription, summary, or role-play. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
+At the start of the week, copy the current block from [[Phase 4 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. Phase 4 review should identify one exact native-speed segment, one local drill target from [[Phase 4 Local Audio Practice]] or the current page, one register or pronunciation check, and one active proof such as shadowing, transcription, summary, or role-play. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -26,6 +26,7 @@ Phase 4 review should identify one exact native-speed segment, one local drill t
 ## Completed
 
 - [ ] One exact native-speed or official-course segment from [[Phase 4 Authentic Audio Spine]] repeated on at least 3 days
+- [ ] The current block in [[Phase 4 Audio Assignment Ladder]] used as the assignment source
 - [ ] One local clip set from [[Phase 4 Local Audio Practice]] or the current Phase 4 page repeated on at least 3 days
 - [ ] [[Phase 4 Audio Coverage Map]] checked for the current main page
 - [ ] One pronunciation, pitch, reading, register, keigo, or rhythm issue checked through [[Pronunciation and Audio Accuracy]]
@@ -99,7 +100,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 
 - One main page:
 - One native-speed audio target:
-- One local audio target from [[Phase 4 Local Audio Practice]] or the current page:
+- One local audio target from [[Phase 4 Audio Assignment Ladder]] and [[Phase 4 Local Audio Practice]]:
 - One pronunciation, pitch, reading, or register check:
 - One shadowing, transcription, or summary target:
 - One role-play or feedback route:
@@ -109,6 +110,7 @@ List cards, clips, or examples that failed repeatedly and need rewriting, checki
 Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mastery|Phase 4 checkpoint]] is true and the audio evidence is real:
 
 - [ ] You have repeated a stable Phase 4 native-speed source for multiple weeks
+- [ ] You can use [[Phase 4 Audio Assignment Ladder]] to choose the current block without improvising
 - [ ] You can use [[Phase 4 Local Audio Practice]] without hunting through page-level clips
 - [ ] You can pair each required Phase 4 page with audio using [[Phase 4 Audio Coverage Map]]
 - [ ] You can shadow, transcribe, or summarize a short native-speed segment with text support
@@ -119,6 +121,7 @@ Do not move to [[Phase 5 — Advanced]] until the [[Phase 4 — Intermediate Mas
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Audio Coverage Map]]

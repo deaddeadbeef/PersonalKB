@@ -104,6 +104,7 @@ Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expa
 - [ ] You can shadow one short intermediate segment without reading every word
 - [ ] You can check a pitch, accent, or reading uncertainty through [[Pronunciation and Audio Accuracy]]
 - [ ] You can reuse N4 grammar and Core 1000 vocabulary aloud in short sentences
+- [ ] You have opened [[Phase 4 Authentic Audio Spine]], [[Phase 4 Audio Assignment Ladder]], [[Phase 4 Audio Coverage Map]], and [[Phase 4 Weekly Review]] before starting Phase 4 content
 - [ ] Suspect local clips stay out of daily practice until checked or recorded in [[Pronunciation Correction Log]]
 
 ## References
@@ -115,6 +116,7 @@ Do not move to [[Phase 4 — Intermediate Mastery]] until the [[Phase 3 — Expa
 - [[Phase 3 Audio Coverage Map]]
 - [[Authentic Audio Evidence Log]]
 - [[Phase 4 Authentic Audio Spine]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Pronunciation and Audio Accuracy]]

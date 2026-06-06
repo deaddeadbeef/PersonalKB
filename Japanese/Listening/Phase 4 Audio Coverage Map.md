@@ -19,7 +19,7 @@ Phase 4 audio support has three layers:
 | Authentic model | [[Phase 4 Authentic Audio Spine]] | Keep native-speed, human-recorded, or official-course Japanese as the pronunciation, rhythm, and register model |
 | QA rule | [[Pronunciation and Audio Accuracy]] + [[Pronunciation Correction Log]] | Decide when a clip is safe, suspect, fixed, or replaced |
 
-Use [[Phase 4 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 4 clips, ordered by block so N3 grammar, kanji, keigo, business, culture, and discourse timing do not require page-level clip hunting. The authentic model stays primary because register, idioms, discourse timing, and longer clauses cannot be learned from local TTS alone.
+Use [[Phase 4 Local Audio Practice]] for daily execution. It is a curated subset of existing Phase 4 clips, ordered by block so N3 grammar, kanji, keigo, business, culture, and discourse timing do not require page-level clip hunting. Use [[Phase 4 Audio Assignment Ladder]] when you need the copy-ready block assignment, evidence target, and advancement rule. The authentic model stays primary because register, idioms, discourse timing, and longer clauses cannot be learned from local TTS alone.
 
 ## Required Phase 4 Coverage
 
@@ -28,6 +28,7 @@ Use [[Phase 4 Local Audio Practice]] for daily execution. It is a curated subset
 | [[Phase 4 — Intermediate Mastery]] | 0 | Routes to spine | Routes to QA | Choose the next N3/intermediate focus |
 | [[Phase 4 Authentic Audio Spine]] | 0 | Primary native-speed route | Quality bar included | Choose the repeatable segment for the week |
 | [[Phase 4 Local Audio Practice]] | 115 selected | Must be paired with spine | Covered by QA; register prompts route to [[Phase 4 Keigo and Register Production Checklist]] | Drill the current Phase 4 block without hunting through pages |
+| [[Phase 4 Audio Assignment Ladder]] | 0 | Chooses the current native-speed segment | Advancement and register safety rules included | Copy the current block assignment into [[Authentic Audio Evidence Log]] |
 | [[Phase 4 Weekly Review]] | 0 | Uses the current spine segment | Reviews QA and register evidence | Decide next week's native-speed target |
 | [[N3 Grammar — Formal Expressions]] | 26 | Formal course/tutor/native examples | Covered by QA | Hear formal endings and service-style rhythm in sentences |
 | [[N3 Grammar — Complex Conjunctions]] | 36 | Transcripted speech with longer clause chains | Covered by QA | Hear how complex links affect pacing |
@@ -75,6 +76,7 @@ These are real gaps:
 
 ## Next Coverage Targets
 
+- Use [[Phase 4 Audio Assignment Ladder]] to copy the current block into [[Authentic Audio Evidence Log#Current Assignment]].
 - Use [[Phase 4 Weekly Review]] before Phase 4 becomes the active dashboard phase.
 - Use [[Phase 4 Local Audio Practice]] as the daily local drill route before opening page-level clips.
 - Use [[Phase 4 Keigo and Register Production Checklist]] after Phase 4 audio evidence is in place.
@@ -83,6 +85,7 @@ These are real gaps:
 ## References
 
 - [[Phase 4 — Intermediate Mastery]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
 - [[Phase 4 Weekly Review]]

@@ -32,15 +32,16 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 36-48, open [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], and [[Phase 4 Audio Coverage Map]].
+Before starting Steps 36-48, open [[Phase 4 Authentic Audio Spine]], [[Phase 4 Local Audio Practice]], [[Phase 4 Audio Assignment Ladder]], and [[Phase 4 Audio Coverage Map]].
 
-Use a repeatable native-speed or official-course segment as the model. Use [[Phase 4 Local Audio Practice]] as the ordered local drill ladder, then use the MP3 clips embedded in the Phase 4 grammar, kanji, vocabulary, keigo, business, culture, and listening pages when a topic needs more examples.
+Use a repeatable native-speed or official-course segment as the model. Use [[Phase 4 Audio Assignment Ladder]] to choose the current block, [[Phase 4 Local Audio Practice]] as the ordered local drill ladder, and the MP3 clips embedded in the Phase 4 grammar, kanji, vocabulary, keigo, business, culture, and listening pages when a topic needs more examples.
 
 Use [[Phase 4 Weekly Review]] at the end of each week to record the exact native-speed segment, local clip set, register or pronunciation check, and shadowing, transcription, summary, or role-play proof.
 
 Phase 4 asks you to produce register-sensitive Japanese, so do not use local TTS as the only authority. Every block should have:
 
 - One exact native-speed segment you repeat across multiple days.
+- One current block copied from [[Phase 4 Audio Assignment Ladder]].
 - One local clip set from [[Phase 4 Local Audio Practice]] or the page you are studying.
 - One pronunciation, rhythm, reading, keigo, or register issue checked through [[Pronunciation and Audio Accuracy]] or [[Pronunciation Correction Log]].
 - One shadowing, transcription, summary, or role-play proof.
@@ -151,6 +152,7 @@ Aizuchi, indirectness, discourse markers — sound like a real speaker.
 - [ ] Can complete [[Phase 4 Keigo and Register Production Checklist]] for one register-sensitive role-play
 - [ ] Following native podcasts at ~70% comprehension
 - [ ] Have one stable Phase 4 native-speed audio source in [[Phase 4 Authentic Audio Spine]]
+- [ ] Can choose the current block from [[Phase 4 Audio Assignment Ladder]]
 - [ ] Can use [[Phase 4 Local Audio Practice]] without hunting through page-level clips
 - [ ] Can pair each required Phase 4 page with audio using [[Phase 4 Audio Coverage Map]]
 - [ ] Have checked keigo, register, pitch, or reading issues through [[Pronunciation and Audio Accuracy]] when local clips are not enough
@@ -204,6 +206,7 @@ Push into faster, more natural content.
 - [[Sources Index]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 4 Local Audio Practice]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 4 Weekly Review]]

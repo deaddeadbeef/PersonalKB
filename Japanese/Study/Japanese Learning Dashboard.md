@@ -26,6 +26,7 @@ For the full content order, use [[Japanese#Start Here]]. The dashboard is for da
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keeps Weeks 1-4 tied to concrete authentic/local/evidence targets |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keeps Weeks 5-12 tied to concrete authentic/local/evidence targets |
 | Phase 3 audio ladder | [[Phase 3 Audio Assignment Ladder]] | Keeps N4 blocks tied to concrete authentic/local/pitch/evidence targets |
+| Phase 4 audio ladder | [[Phase 4 Audio Assignment Ladder]] | Keeps N3, native-speed, keigo, and register blocks tied to source-checked evidence |
 | Authentic audio setup | [[Authentic Audio Source Setup]] | Keeps the week tied to one exact official/native source and one replayable segment |
 | Audio evidence | [[Authentic Audio Evidence Log]] | Preserves the running proof trail across weekly reviews |
 | Audio QA | [[Pronunciation and Audio Accuracy]] + [[Japanese Audio QA Status]] + [[Pronunciation Correction Log]] | Separates local playback integrity from native/official pronunciation authority |
@@ -136,15 +137,16 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 33. [[Phase 4 — Intermediate Mastery]]
 34. [[Phase 4 Authentic Audio Spine]]
 35. [[Phase 4 Local Audio Practice]]
-36. [[Phase 4 Audio Coverage Map]]
-37. [[Phase 4 Keigo and Register Production Checklist]]
-38. [[Phase 4 Weekly Review]]
-39. [[Phase 5 — Advanced]]
-40. [[Phase 5 Authentic Audio Spine]]
-41. [[Phase 5 Local Audio Practice]]
-42. [[Phase 5 Audio Coverage Map]]
-43. [[Advanced Output and Register Feedback Log]]
-44. [[Phase 5 Weekly Review]]
+36. [[Phase 4 Audio Assignment Ladder]]
+37. [[Phase 4 Audio Coverage Map]]
+38. [[Phase 4 Keigo and Register Production Checklist]]
+39. [[Phase 4 Weekly Review]]
+40. [[Phase 5 — Advanced]]
+41. [[Phase 5 Authentic Audio Spine]]
+42. [[Phase 5 Local Audio Practice]]
+43. [[Phase 5 Audio Coverage Map]]
+44. [[Advanced Output and Register Feedback Log]]
+45. [[Phase 5 Weekly Review]]
 
 ## Curation Backlog
 
@@ -163,6 +165,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 3 Audio Assignment Ladder]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Japanese Audio QA Status]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
@@ -177,6 +180,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 3 Weekly Review]]
 - [[Phase 4 Local Audio Practice]]
+- [[Phase 4 Audio Assignment Ladder]]
 - [[Phase 4 Audio Coverage Map]]
 - [[Phase 4 Keigo and Register Production Checklist]]
 - [[Phase 4 Weekly Review]]
