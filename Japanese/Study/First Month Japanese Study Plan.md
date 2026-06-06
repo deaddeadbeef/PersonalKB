@@ -149,12 +149,13 @@ Phase 1 month one counts when all of these are true:
 
 ## Next Month
 
-After the month-one success criteria are true, move to [[Phase 2 — Building Blocks]]. Before starting new N5 mechanics, open [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Assignment Ladder]], and [[Phase 2 Audio Coverage Map]].
+After the month-one success criteria are true, move to [[Second Month Japanese Study Plan]]. Before starting new N5 mechanics, open [[Phase 2 — Building Blocks]], [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Assignment Ladder]], and [[Phase 2 Audio Coverage Map]].
 
 ## References
 
 - [[Japanese Learning Dashboard]]
 - [[First Week Japanese Study Plan]]
+- [[Second Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Daily Study Routine Templates]]

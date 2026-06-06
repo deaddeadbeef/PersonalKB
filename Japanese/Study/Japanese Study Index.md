@@ -20,6 +20,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Daily audio | [[Daily Audio Loop]] | Run local drill, authentic model, one comparison, and the right log route |
 | First week plan | [[First Week Japanese Study Plan]] | Execute the first seven days with course, kana, local audio, authentic audio, and proof |
 | First month plan | [[First Month Japanese Study Plan]] | Execute all four Phase 1 weeks with source continuity, local clips, authentic audio, and weekly proof |
+| Second month plan | [[Second Month Japanese Study Plan]] | Execute Weeks 5-8 with N5 mechanics, source continuity, local clips, authentic audio, and weekly proof |
 | Phase 1 starter | [[Phase 1 Audio Starter Assignment]] | Start the first week with one concrete source, clip set, and proof target |
 | Phase 1 audio ladder | [[Phase 1 Audio Assignment Ladder]] | Keep all four Phase 1 weeks assigned and evidence-backed |
 | Phase 2 audio ladder | [[Phase 2 Audio Assignment Ladder]] | Keep all eight Phase 2 weeks assigned and evidence-backed |
@@ -49,6 +50,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Daily Audio Loop]]
 - [[First Week Japanese Study Plan]]
 - [[First Month Japanese Study Plan]]
+- [[Second Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]
@@ -157,6 +159,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [[Daily Audio Loop]]
 - [[First Week Japanese Study Plan]]
 - [[First Month Japanese Study Plan]]
+- [[Second Month Japanese Study Plan]]
 - [[Phase 1 Audio Starter Assignment]]
 - [[Phase 1 Audio Assignment Ladder]]
 - [[Phase 2 Audio Assignment Ladder]]

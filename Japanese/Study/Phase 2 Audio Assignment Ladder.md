@@ -12,10 +12,11 @@ tier-coverage: [practice]
 ## How To Use
 
 1. Start Phase 2 only after the [[Phase 1 — Foundation|Phase 1 checkpoint]] is real.
-2. Keep the same primary authentic source from [[Phase 2 Authentic Audio Spine]] unless the weekly review shows it is not working.
-3. At the start of each week, copy the matching assignment row into [[Authentic Audio Evidence Log#Current Assignment]].
-4. Run [[Daily Audio Loop]] on each study day.
-5. At the end of the week, fill [[Phase 2 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
+2. Use [[Second Month Japanese Study Plan]] as the Week 5-8 execution path.
+3. Keep the same primary authentic source from [[Phase 2 Authentic Audio Spine]] unless the weekly review shows it is not working.
+4. At the start of each week, copy the matching assignment row into [[Authentic Audio Evidence Log#Current Assignment]].
+5. Run [[Daily Audio Loop]] on each study day.
+6. At the end of the week, fill [[Phase 2 Weekly Review]] and add one summary row to [[Authentic Audio Evidence Log]].
 
 Do not turn Phase 2 into silent grammar reading. Every week needs heard Japanese, spoken repetition, and one checked detail.
 
@@ -167,6 +168,7 @@ If any item is missing, repeat the same assignment next week with a shorter auth
 ## References
 
 - [[Phase 2 — Building Blocks]]
+- [[Second Month Japanese Study Plan]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]

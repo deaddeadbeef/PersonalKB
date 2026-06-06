@@ -32,7 +32,7 @@ flowchart LR
 
 ## Audio Support
 
-Before starting Steps 10-21, open [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Assignment Ladder]], and [[Phase 2 Audio Coverage Map]].
+Before starting Steps 10-21, open [[Second Month Japanese Study Plan]], [[Phase 2 Authentic Audio Spine]], [[Phase 2 Local Audio Practice]], [[Phase 2 Audio Assignment Ladder]], and [[Phase 2 Audio Coverage Map]].
 
 Use the current course, NHK, tutor, or native-speaker segment as the pronunciation model. Use [[Phase 2 Audio Assignment Ladder]] to choose the week target, [[Phase 2 Local Audio Practice]] as the ordered local drill ladder, and the MP3 clips embedded in the Phase 2 grammar, vocabulary, kanji, and conversation pages when you need more examples.
 
@@ -201,6 +201,7 @@ Find one Japanese person to have a 5-minute conversation with (in person, online
 
 ## References
 - [[Sources Index]]
+- [[Second Month Japanese Study Plan]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Assignment Ladder]]
