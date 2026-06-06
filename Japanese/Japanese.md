@@ -30,6 +30,7 @@ Read this section in order. It is the consumption path through the Japanese vaul
 | 0.5 | [[Japanese Audio QA Status]] | Current local-audio integrity and pronunciation-audit evidence |
 | 0.6 | [[Authentic Audio Source Setup]] | Choose the official/native audio source, lesson segment, and pronunciation-reference route |
 | 0.7 | [[Authentic Audio Evidence Log]] | Keep a running weekly proof trail for authentic audio, local clips, and pronunciation checks |
+| 0.8 | [[Daily Audio Loop]] | Run the daily local-drill plus authentic-model audio sequence |
 
 Rule: do this once, then start Phase 1. Do not spend days optimizing tools.
 
@@ -184,6 +185,7 @@ Use these when you need lookup or comparison, not as required first-pass reading
 - [[Listening Overview]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
+- [[Daily Audio Loop]]
 - [[Speaking Overview]]
 - [[Culture Overview]]
 - [[Japanese Study Index]]
@@ -230,7 +232,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ### Listening
 - [[Listening Overview]]
 - [[Phase 1 Local Audio Practice]] · [[Phase 1 Authentic Audio Spine]] · [[Phase 1 Audio Coverage Map]] · [[Phase 2 Authentic Audio Spine]] · [[Phase 2 Local Audio Practice]] · [[Phase 2 Audio Coverage Map]] · [[Phase 3 Authentic Audio Spine]] · [[Phase 3 Local Audio Practice]] · [[Phase 3 Audio Coverage Map]] · [[Phase 4 Authentic Audio Spine]] · [[Phase 4 Local Audio Practice]] · [[Phase 4 Audio Coverage Map]] · [[Phase 5 Authentic Audio Spine]] · [[Phase 5 Local Audio Practice]] · [[Phase 5 Audio Coverage Map]]
-- [[Pronunciation and Audio Accuracy]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
+- [[Pronunciation and Audio Accuracy]] · [[Daily Audio Loop]] · [[Authentic Audio Source Setup]] · [[Authentic Audio Evidence Log]] · [[Pronunciation Correction Log]] · [[Phase 3 Pitch Accent Practice Path]] · [[Phase 3 Weekly Review]] · [[Phase 4 Keigo and Register Production Checklist]] · [[Phase 4 Weekly Review]] · [[Advanced Output and Register Feedback Log]] · [[Beginner Listening Resources]] · [[Intermediate Listening Resources]] · [[Advanced Listening Resources]]
 - [[Japanese Audio QA Status]]
 - [[Shadowing — Technique and Practice Guide]] · [[Podcast Guide — Japanese Learning Podcasts]]
 - [[NHK World — News Listening Practice]] · [[YouTube Channels for Japanese Learners]] · [[Music — Learning Through Japanese Songs]] · [[Anime and Drama — Immersion Listening]]
@@ -261,6 +263,7 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 - [[JLPT Overview — N5 to N1]]
 - [[Study Roadmap — Beginner to Intermediate]] · [[Study Roadmap — Intermediate to Advanced]]
 - [[Resources Index — Textbooks, Apps, and Tools]] · [[Daily Study Routine Templates]]
+- [[Daily Audio Loop]]
 - [[Authentic Audio Source Setup]]
 - [[Authentic Audio Evidence Log]]
 - [[Japanese Audio QA Status]]

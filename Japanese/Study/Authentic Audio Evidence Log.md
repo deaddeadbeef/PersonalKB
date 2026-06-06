@@ -30,6 +30,8 @@ Use this table to keep the active week visible.
 | Output or shadowing target |  |
 | Next review date |  |
 
+Open [[Daily Audio Loop]] during each study session and use this assignment as the target.
+
 ## Weekly Evidence Ledger
 
 Keep entries short. Link the weekly review if you make a dated copy.
@@ -74,6 +76,7 @@ Use this when deciding whether a row is strong enough.
 ## References
 
 - [[Japanese Learning Dashboard]]
+- [[Daily Audio Loop]]
 - [[Authentic Audio Source Setup]]
 - [[Japanese Audio QA Status]]
 - [[Pronunciation and Audio Accuracy]]
