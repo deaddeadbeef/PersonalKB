@@ -22,7 +22,7 @@ Continue the same native-audio spine you chose in Phase 1 unless it is clearly n
 
 The authentic source is the pronunciation model. [[Phase 2 Local Audio Practice]] is the ordered repeatable microscope for a small sound, word, pattern, or sentence.
 
-For Weeks 5-8, use [[Second Month Japanese Study Plan]] to keep particles, forms, counters, and daily-life vocabulary tied to weekly proof.
+For Weeks 5-8, use [[Second Month Japanese Study Plan]] to keep particles, forms, counters, and daily-life vocabulary tied to weekly proof. For Weeks 9-12, use [[Third Month Japanese Study Plan]] to keep kanji, pronunciation, interactions, and polite service tied to authentic audio.
 
 ## Daily Pairing
 
@@ -79,6 +79,7 @@ At the end of each week, record evidence in [[Phase 2 Weekly Review]]:
 
 - [[Phase 2 — Building Blocks]]
 - [[Second Month Japanese Study Plan]]
+- [[Third Month Japanese Study Plan]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Local Audio Practice]]
 - [[Phase 2 Audio Coverage Map]]

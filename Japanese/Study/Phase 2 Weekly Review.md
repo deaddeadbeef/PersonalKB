@@ -13,7 +13,7 @@ tier-coverage: [practice]
 
 Create a dated copy or paste the sections into your own study log each Sunday. Keep it short. The review should take 15-25 minutes.
 
-At the start of the week, copy the matching row from [[Phase 2 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. For Weeks 5-8, use [[Second Month Japanese Study Plan]] for the daily execution path. The review has one job: choose the next small action. If particles are still blurry, stay with [[N5 Grammar — Particles]]. If verb forms are readable but not speakable, repeat the same transformation clips. If authentic audio feels too fast, shorten the segment instead of abandoning audio. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
+At the start of the week, copy the matching row from [[Phase 2 Audio Assignment Ladder]] into [[Authentic Audio Evidence Log#Current Assignment]]. For Weeks 5-8, use [[Second Month Japanese Study Plan]] for the daily execution path. For Weeks 9-12, use [[Third Month Japanese Study Plan]]. The review has one job: choose the next small action. If particles are still blurry, stay with [[N5 Grammar — Particles]]. If verb forms are readable but not speakable, repeat the same transformation clips. If authentic audio feels too fast, shorten the segment instead of abandoning audio. When the review is complete, add one summary row to [[Authentic Audio Evidence Log]].
 
 ## Week Of
 
@@ -113,6 +113,7 @@ Do not move to [[Phase 3 — Expansion]] until the [[Phase 2 — Building Blocks
 
 - [[Phase 2 — Building Blocks]]
 - [[Second Month Japanese Study Plan]]
+- [[Third Month Japanese Study Plan]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]

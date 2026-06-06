@@ -1789,3 +1789,34 @@ Verification:
 - `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
 - `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
 - `python _ops\personal_kb.py audit`: 4763 files, 2892 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+
+## [2026-06-07] curate | Japanese third-month audio study plan
+
+Scope: make Weeks 9-12 executable by giving the second half of Phase 2 a month-three plan that keeps kanji, pronunciation, interactions, shopping, restaurants, and polite service tied to authentic audio, local drills, weekly review, and evidence logging.
+
+Changed wiki/source files:
+- `Japanese/Study/Third Month Japanese Study Plan.md`
+- `Japanese/Japanese.md`
+- `Japanese/Learning Path/Phase 2 — Building Blocks.md`
+- `Japanese/Listening/Phase 2 Audio Coverage Map.md`
+- `Japanese/Listening/Phase 2 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 2 Local Audio Practice.md`
+- `Japanese/Study/Daily Study Routine Templates.md`
+- `Japanese/Study/Second Month Japanese Study Plan.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Phase 2 Audio Assignment Ladder.md`
+- `Japanese/Study/Phase 2 Weekly Review.md`
+
+Maintenance changes:
+- Added a Week 9-12 execution guide covering kanji as spoken words, first N5 kanji vocabulary, difficult sounds, daily interactions, shopping/restaurants, and です/ます service rhythm.
+- Made the Phase 2 completion policy explicit: kanji starts from spoken words, local clips are drills, authentic/official/native audio is the model, and suspect local clips go to [[Pronunciation Correction Log]].
+- Linked the guide from Start Here, the dashboard, study index, daily routine template, second-month handoff, Phase 2 path, Phase 2 spine, local practice, coverage map, ladder, and weekly review.
+- Did not modify local MP3 files.
+
+Verification:
+- `git diff --check`: clean.
+- `python Japanese\_audio\audit_audio_integrity.py --no-report --skip-ffprobe`: 2210 Markdown MP3 embeds, 1759 unique embedded MP3 files, 1810 MP3 files, 1810 pronunciation entries, 0 missing embedded MP3 files, 0 manifest/file mismatches, 0 format issues.
+- `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
+- `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
+- `python _ops\personal_kb.py audit`: 4764 files, 2893 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.

@@ -161,7 +161,7 @@ Month two counts when all of these are true:
 
 ## Next Month
 
-After these success criteria are true, continue Weeks 9-12 in [[Phase 2 Audio Assignment Ladder]]. The next block keeps kanji tied to spoken words first, then moves into pronunciation, daily interactions, shopping, restaurants, and polite register.
+After these success criteria are true, continue with [[Third Month Japanese Study Plan]] for Weeks 9-12. The next block keeps kanji tied to spoken words first, then moves into pronunciation, daily interactions, shopping, restaurants, and polite register.
 
 Before starting Week 9, open [[Phase 2 Audio Coverage Map]] and confirm which kanji, pronunciation, and conversation pages will supply local clips and which authentic segment will be the model.
 
@@ -169,6 +169,7 @@ Before starting Week 9, open [[Phase 2 Audio Coverage Map]] and confirm which ka
 
 - [[Japanese Learning Dashboard]]
 - [[First Month Japanese Study Plan]]
+- [[Third Month Japanese Study Plan]]
 - [[Phase 2 — Building Blocks]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]

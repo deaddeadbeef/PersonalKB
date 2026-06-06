@@ -23,7 +23,7 @@ Use [[Phase 2 Local Audio Practice]] for daily execution. It is a curated subset
 
 Use [[Phase 2 Audio Assignment Ladder]] when you need the copy-ready weekly assignment, evidence target, and advancement rule.
 
-For Weeks 5-8, use [[Second Month Japanese Study Plan]] when you need the learner-facing daily path through the first half of Phase 2.
+For Weeks 5-8, use [[Second Month Japanese Study Plan]] when you need the learner-facing daily path through the first half of Phase 2. For Weeks 9-12, use [[Third Month Japanese Study Plan]] when you need the learner-facing daily path through the second half.
 
 Planning and technique pages can have zero embedded clips if they route clearly to the authentic spine, the local ladder, and the pages with embedded drills.
 
@@ -98,6 +98,7 @@ These are real gaps:
 
 - [[Phase 2 — Building Blocks]]
 - [[Second Month Japanese Study Plan]]
+- [[Third Month Japanese Study Plan]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Local Audio Practice]]

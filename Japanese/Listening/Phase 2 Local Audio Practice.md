@@ -21,7 +21,7 @@ Use [[Phase 2 Audio Assignment Ladder]] to decide which weekly block is active a
 
 Use [[Phase 2 Audio Coverage Map]] when you need the full page-to-audio inventory.
 
-For Weeks 5-8, use [[Second Month Japanese Study Plan]] as the day-by-day wrapper around the blocks below.
+For Weeks 5-8, use [[Second Month Japanese Study Plan]] as the day-by-day wrapper around the blocks below. For Weeks 9-12, use [[Third Month Japanese Study Plan]].
 
 ## Session Loop
 
@@ -207,6 +207,7 @@ After listening, write one line in [[Phase 2 Weekly Review]]:
 
 - [[Phase 2 — Building Blocks]]
 - [[Second Month Japanese Study Plan]]
+- [[Third Month Japanese Study Plan]]
 - [[Phase 2 Audio Assignment Ladder]]
 - [[Phase 2 Authentic Audio Spine]]
 - [[Phase 2 Audio Coverage Map]]
