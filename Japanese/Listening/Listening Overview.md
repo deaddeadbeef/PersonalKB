@@ -22,6 +22,8 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 - [[Phase 1 Audio Coverage Map]] — match each required Phase 1 page to audio support
 - [[Phase 1 Authentic Audio Spine]] — official/native audio to pair with Phase 1
 - [[Phase 1 Local Audio Practice]] — short local drills for pronunciation details
+- [[Phase 2 Audio Coverage Map]] — match each required Phase 2 page to local clips, authentic audio, and QA
+- [[Phase 2 Authentic Audio Spine]] — official/native audio to pair with N5 building-block study
 - [[Beginner Listening Resources]] — slow, clear, with transcripts
 - Focus: individual words, basic sentence patterns, numbers
 
@@ -42,6 +44,8 @@ Listening is often the hardest skill for Japanese learners. The language is spok
 ## Curated Resources
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Authentic Audio Spine]]
+- [[Phase 2 Audio Coverage Map]]
+- [[Phase 2 Authentic Audio Spine]]
 - [[Podcast Guide — Japanese Learning Podcasts]]
 - [[YouTube Channels for Japanese Learners]]
 - [[NHK World — News Listening Practice]]
@@ -59,12 +63,15 @@ Use [[Pronunciation and Audio Accuracy]] when a local clip conflicts with native
 
 For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local Audio Practice]]. Do not treat the raw [[Audio Index]] as the curriculum.
 
+For Phase 2, use [[Phase 2 Authentic Audio Spine]] plus the embedded clips on the current grammar, vocabulary, kanji, or conversation page. Use [[Phase 2 Audio Coverage Map]] when you need to know which page-level clips and authentic segment belong together.
+
 ## Daily Listening Routine
 
 | Time | Activity | Level |
 |------|----------|-------|
 | 5 min | Local drill from [[Phase 1 Local Audio Practice]] | Beginner |
 | 5-15 min | Native course/audio segment from [[Phase 1 Authentic Audio Spine]] | Beginner |
+| 5-15 min | Phase 2 page clips plus a segment from [[Phase 2 Authentic Audio Spine]] | Beginner/N5 |
 | 10 min | Shadowing practice | All |
 | 15 min | Focused podcast episode | Intermediate |
 | 30 min | Background immersion | All |
@@ -73,3 +80,4 @@ For Phase 1, start with [[Phase 1 Authentic Audio Spine]] plus [[Phase 1 Local A
 - [[Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Phase 1 Audio Coverage Map]]
+- [[Phase 2 Audio Coverage Map]]

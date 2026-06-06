@@ -599,3 +599,32 @@ Verification:
 - `python _ops/personal_kb.py index`
 - `python _ops/personal_kb.py audit`
 - `git diff --check`
+
+## [2026-06-06] curate | Japanese Phase 2 audio coverage
+
+Scope: extend the Japanese audio-support system into Phase 2 so N5 grammar, vocabulary, kanji, conversation, and register study remain paired with authentic pronunciation models and local clips.
+
+Changed content files:
+- `Japanese/Listening/Phase 2 Authentic Audio Spine.md`
+- `Japanese/Listening/Phase 2 Audio Coverage Map.md`
+- `Japanese/Japanese.md`
+- `Japanese/Listening/Listening Overview.md`
+- `Japanese/Learning Path/Phase 2 — Building Blocks.md`
+- `Japanese/Study/Japanese Learning Dashboard.md`
+- `Japanese/Study/Japanese Study Index.md`
+- `Japanese/Study/Resources Index — Textbooks, Apps, and Tools.md`
+- `Japanese/Listening/Phase 1 Audio Coverage Map.md`
+
+Maintenance changes:
+- Added a Phase 2 authentic audio spine for Genki, Irodori, NHK, tutor, or native-speaker audio.
+- Added a Phase 2 coverage map with local MP3 counts for required Phase 2 pages.
+- Routed Start Here, the dashboard, study index, resource policy, listening overview, and Phase 2 plan to the new audio support pages.
+- Left Phase 1 as the active dashboard phase while making Phase 2 audio-ready.
+
+Verification:
+- `python _ops/personal_kb.py audit`
+- `python _ops/personal_kb.py index`
+- `python _ops/personal_kb.py audit`
+- Phase 2 coverage count check across required pages: 663 embedded MP3 clips.
+- Local MP3 embed check across changed pages.
+- `git diff --check`

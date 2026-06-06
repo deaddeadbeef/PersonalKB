@@ -60,25 +60,27 @@ Goal: reach usable N5 foundations: particles, verb forms, adjectives, first kanj
 | Order | Page | Consume for |
 | --- | --- | --- |
 | 2.1 | [[Phase 2 — Building Blocks]] | Month 2-3 sequence |
-| 2.2 | [[N5 Grammar — Particles]] | は, が, を, に, で and core sentence structure |
-| 2.3 | [[N5 Grammar — Verb Forms]] | Verb groups and masu/nai/te/ta forms |
-| 2.4 | [[N5 Grammar — Adjectives]] | い-adjectives and な-adjectives |
-| 2.5 | [[N5 Grammar — Time and Counting]] | Time expressions and first counters |
-| 2.6 | [[Counters — The Japanese Counting System]] | Counting objects without treating counters as optional |
-| 2.7 | [[Core 500 — Daily Life Vocabulary]] | Daily-life vocabulary expansion |
-| 2.8 | [[Thematic Vocabulary — Food and Drink]] | Restaurant and food situations |
-| 2.9 | [[Thematic Vocabulary — Home and Daily Life]] | Daily routines and home vocabulary |
-| 2.10 | [[Kanji — How Kanji Work]] | Kanji system model |
-| 2.11 | [[Radicals — The Building Blocks]] | Components used to learn kanji |
-| 2.12 | [[Kanji Learning Strategies]] | How to study kanji without brute force |
-| 2.13 | [[Kanji N5 Essentials]] | First kanji set |
-| 2.14 | [[Pronunciation — Difficult Sounds for English Speakers]] | Fix high-impact pronunciation issues early |
-| 2.15 | [[Conversation Patterns — Daily Interactions]] | Everyday scripts |
-| 2.16 | [[Conversation Patterns — Shopping and Restaurants]] | Shop and restaurant scripts |
-| 2.17 | [[Shadowing — Technique and Practice Guide]] | Daily listening and speaking loop |
-| 2.18 | [[Podcast Guide — Japanese Learning Podcasts]] | Controlled beginner listening |
-| 2.19 | [[Keigo — Teineigo (Polite)]] | です/ます as the baseline register |
-| 2.20 | [[Social Register — When to Use What]] | When formality matters |
+| 2.2 | [[Phase 2 Authentic Audio Spine]] | Human-recorded or official-course audio source for Phase 2 |
+| 2.3 | [[Phase 2 Audio Coverage Map]] | Match each Phase 2 page to local clips, authentic audio, and QA |
+| 2.4 | [[N5 Grammar — Particles]] | は, が, を, に, で and core sentence structure |
+| 2.5 | [[N5 Grammar — Verb Forms]] | Verb groups and masu/nai/te/ta forms |
+| 2.6 | [[N5 Grammar — Adjectives]] | い-adjectives and な-adjectives |
+| 2.7 | [[N5 Grammar — Time and Counting]] | Time expressions and first counters |
+| 2.8 | [[Counters — The Japanese Counting System]] | Counting objects without treating counters as optional |
+| 2.9 | [[Core 500 — Daily Life Vocabulary]] | Daily-life vocabulary expansion |
+| 2.10 | [[Thematic Vocabulary — Food and Drink]] | Restaurant and food situations |
+| 2.11 | [[Thematic Vocabulary — Home and Daily Life]] | Daily routines and home vocabulary |
+| 2.12 | [[Kanji — How Kanji Work]] | Kanji system model |
+| 2.13 | [[Radicals — The Building Blocks]] | Components used to learn kanji |
+| 2.14 | [[Kanji Learning Strategies]] | How to study kanji without brute force |
+| 2.15 | [[Kanji N5 Essentials]] | First kanji set |
+| 2.16 | [[Pronunciation — Difficult Sounds for English Speakers]] | Fix high-impact pronunciation issues early |
+| 2.17 | [[Conversation Patterns — Daily Interactions]] | Everyday scripts |
+| 2.18 | [[Conversation Patterns — Shopping and Restaurants]] | Shop and restaurant scripts |
+| 2.19 | [[Shadowing — Technique and Practice Guide]] | Daily listening and speaking loop |
+| 2.20 | [[Podcast Guide — Japanese Learning Podcasts]] | Controlled beginner listening |
+| 2.21 | [[Keigo — Teineigo (Polite)]] | です/ます as the baseline register |
+| 2.22 | [[Social Register — When to Use What]] | When formality matters |
 
 ### 3. Phase 3 — Expansion
 
