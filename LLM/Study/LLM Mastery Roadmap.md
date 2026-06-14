@@ -30,13 +30,14 @@ Move in order:
 13. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to freeze and tune sampler settings before comparing quality or speed.
 14. Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when a local model exposes thinking mode, reasoning effort, reasoning parsers, or trace visibility controls.
 15. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to prove prompt, history, RAG, tool, output, and margin tokens fit.
-16. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-17. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
-18. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
-19. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
-20. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
-21. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] to test whether the academic and applied knowledge is available without hand-holding.
-22. Build the capstone only after the local inference and evaluation gates are complete.
+16. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the setup must handle more than one active request, a local queue, or batch/offline throughput.
+17. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+18. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
+19. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
+20. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
+21. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
+22. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] to test whether the academic and applied knowledge is available without hand-holding.
+23. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
 
@@ -159,6 +160,7 @@ Read:
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
@@ -181,13 +183,14 @@ Proof:
 - Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to freeze temperature, candidate filters, penalties, seed behavior, stop rules, and output caps before benchmark or quality comparisons.
 - Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when a local model exposes thinking mode, reasoning effort, reasoning parsers, or trace visibility controls.
 - Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to prove the rendered prompt, retrieved context, tool schemas, history, output reserve, and safety margin fit the runtime context limit.
+- Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] before claiming a setup can handle shared local use, batch/offline work, or multi-client traffic.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 - Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to score known-answer, schema, RAG/citation, long-context, multi-turn, and workload-specific prompts.
 - Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when local inference depends on function calling, structured output, tools, or agent loops.
 - Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before fine-tuning a model to fix a local quality gap.
 - Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to convert benchmark, quality, security, cost, and ops evidence into a deployment choice.
 - Explain why KV cache, quantization, batch size, and context length change latency and throughput.
-- Compare at least two runtimes, such as Ollama versus LM Studio, Ollama versus llama.cpp, llama.cpp versus vLLM, or vLLM versus SGLang, with fixed prompts, sampler settings, context target, output cap, benchmark rows, and quality rows.
+- Compare at least two runtimes, such as Ollama versus LM Studio, Ollama versus llama.cpp, llama.cpp versus vLLM, or vLLM versus SGLang, with fixed prompts, sampler settings, context target, output cap, benchmark rows, concurrency evidence when relevant, and quality rows.
 
 ## Level 6: Frontier and Research Literacy
 
@@ -241,6 +244,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can build a local tool-calling loop with schema validation, policy checks, bounded retries, and tool-result evaluation.
 - [ ] I can host a local model, call its API, tune decoding controls, and record latency/throughput/memory metrics.
 - [ ] I can decide when local reasoning effort is worth the latency, token budget, parser, and trace-retention cost.
+- [ ] I can run a small concurrency ladder and identify the saturation point, queue policy, and backpressure decision for local serving.
 - [ ] I can budget a local request across template, prompt, history, RAG, tools, output reserve, and safety margin.
 - [ ] I can prove whether a local endpoint is OpenAI-compatible enough for a given client and workload.
 - [ ] I can explain the security and privacy boundary of a local model server before exposing it beyond loopback.
@@ -281,6 +285,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]

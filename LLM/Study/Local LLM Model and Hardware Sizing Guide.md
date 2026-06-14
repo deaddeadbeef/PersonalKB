@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Model choice is a memory, latency, quality, and workload decision: estimate weights, add KV-cache headroom, choose a runtime, then prove the result with benchmarks.
 
-Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before downloading to record model card, license, revision, artifact safety, and local path. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the context target must be turned into prompt, history, RAG, tool, output, and safety-margin tokens. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible.
+Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before downloading to record model card, license, revision, artifact safety, and local path. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the context target must be turned into prompt, history, RAG, tool, output, and safety-margin tokens. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when active sequences, queueing, or batch/offline throughput may determine the hardware fit. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible.
 
 ## The Core Question
 
@@ -210,6 +210,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]

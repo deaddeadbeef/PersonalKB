@@ -49,7 +49,7 @@ Local inference has four layers:
 | Runtime | Which engine loads and schedules the model? | [[Serving Architectures and Throughput-Latency Trade-offs]] |
 | Application surface | CLI, web UI, REST API, or OpenAI-compatible client? | [[Function Calling]], [[Structured Output and Constrained Generation]] |
 
-The academic core is not separate from deployment. A local model is slow or fast because of Transformer decoding, KV-cache growth, memory bandwidth, quantization, batching, and scheduling. Read this lab alongside [[KV Cache and Context Reuse]], [[Batching and Continuous Batching]], [[Speculative Decoding]], and [[Serving Architectures and Throughput-Latency Trade-offs]].
+The academic core is not separate from deployment. A local model is slow or fast because of Transformer decoding, KV-cache growth, memory bandwidth, quantization, batching, and scheduling. Read this lab alongside [[KV Cache and Context Reuse]], [[Batching and Continuous Batching]], [[Speculative Decoding]], and [[Serving Architectures and Throughput-Latency Trade-offs]]. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when a working endpoint must be tested as a queue, shared service, or offline batch worker.
 
 ## Runtime Choice
 
@@ -253,6 +253,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
 - [[chunk-llm-118 vLLM Continuous Batching Throughput]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[chunk-llm-120 vLLM De Facto Serving Framework]]
 - [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]]
 - [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]]

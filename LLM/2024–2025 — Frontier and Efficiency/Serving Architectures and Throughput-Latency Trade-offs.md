@@ -91,6 +91,8 @@ Understanding these trade-offs is central to production deployment. A chatbot ma
 - A service has low GPU utilization but good latency. What does that suggest about batch sizing?
 - A service has great throughput but poor chat responsiveness. Which trade-off is likely being pushed too far?
 
+For a practical local experiment, use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] to compare single-request latency against a controlled concurrency ladder.
+
 ## Supporting Chunks
 
 - [[chunk-llm-120 vLLM De Facto Serving Framework]] — why vLLM became the baseline open serving stack
@@ -111,3 +113,4 @@ Understanding these trade-offs is central to production deployment. A chatbot ma
 - [[KV Cache and Context Reuse]]
 - [[Batching and Continuous Batching]]
 - [[Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]

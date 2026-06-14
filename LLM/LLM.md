@@ -73,6 +73,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — Prove local OpenAI-compatible base URLs, routes, streaming, errors, and feature gaps before client integration
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — Reusable client wrapper for local endpoint calls, streaming timing, error capture, and run logging
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] — Reproducible run log for local model/runtime comparisons
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — Measure concurrent requests, queueing, TTFT, TPOT, throughput, saturation, and batch/offline serving decisions
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — Workload-specific prompt suites, rubrics, pairwise comparison, and RAG/citation gates
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — Control thinking mode, reasoning parsers, effort levels, latency, trace visibility, and quality trade-offs
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — Local tool schemas, structured outputs, policy checks, execution loops, and tool failure evaluation

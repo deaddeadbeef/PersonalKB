@@ -34,6 +34,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
 | Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, and trace policy are captured. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
+| Concurrency and batch throughput | Concurrency ladder from [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] |  | Single-request baseline, max concurrency, p95 TTFT, throughput, memory, errors, saturation point, and backpressure policy are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
@@ -152,6 +153,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Decoding/sampling preset |  |
 | Sampler sweep result |  |
 | Reasoning budget row |  |
+| Concurrency ladder row |  |
 | Truncation/overflow behavior |  |
 | Successful response |  |
 | Benchmark row |  |
@@ -173,6 +175,23 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Latency delta |  |
 | Quality delta |  |
 | Decision |  |
+
+## Concurrency And Batch Throughput Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Single-request baseline |  |
+| Runtime concurrency setting |  |
+| Client concurrency setting |  |
+| Request rate or batch size |  |
+| Prompt mix |  |
+| p50/p95 TTFT |  |
+| Throughput |  |
+| Success/error count |  |
+| Peak RAM/VRAM |  |
+| Saturation point |  |
+| Queue/backpressure policy |  |
+| Deployment decision |  |
 
 ## RAG Proof Template
 
@@ -295,6 +314,7 @@ Next run:
 - A runtime choice made from preference, UI feel, or one smoke test without controlled benchmark and quality rows.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
 - A reasoning trace accepted as proof without final-answer evaluation, evidence support, and trace-retention policy.
+- A shared or batch-serving claim without a concurrency ladder, saturation point, and backpressure decision.
 - A long-context, RAG, tool, or multi-turn run without a counted context budget and output reserve.
 - A tool-using run where the model-selected action executes without schema validation, policy check, bounded loop control, and failure rows.
 - A benchmark that changes temperature, filters, penalties, seeds, stops, or output caps without saying so.
@@ -320,6 +340,7 @@ Next run:
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
 - [ ] Any reasoning-capable local run has effort, parser, latency, quality, and trace-policy evidence.
+- [ ] Any shared, multi-client, or batch local serving claim has concurrency, queue, saturation, and backpressure evidence.
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
 - [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
@@ -356,6 +377,7 @@ Next run:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

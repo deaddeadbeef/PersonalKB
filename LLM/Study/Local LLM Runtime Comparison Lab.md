@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environ
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to run the same request shape against each endpoint. Save speed rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and the final choice in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
 
+Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when runtime choice depends on batching, queueing, saturation, or multi-client throughput rather than only a single request.
+
 ## What This Lab Decides
 
 This lab answers a narrow question:
@@ -59,6 +61,7 @@ Before the first comparison run, fill these rows:
 | Prompt suite | At least one smoke prompt, one workload prompt, one structured prompt, and one long-context or RAG prompt if relevant. |
 | Sampler preset | Temperature, top-p, top-k/min-p when supported, penalties, seed behavior, stops, max output tokens. |
 | Reasoning settings | Thinking mode, reasoning effort, parser setting, output split, trace length policy, and trace visibility policy when a reasoning-capable model is used. |
+| Concurrency settings | Max concurrency, request rate, queue limit, batch/offline mode, and backpressure policy if more than one request is active. |
 | Measurement schema | TTFT, total latency, output tokens/sec, prompt tokens, output tokens, peak RAM/VRAM, error class, quality score. |
 
 If any row is missing, the comparison can still be exploratory, but it should not drive a deployment decision.
@@ -193,6 +196,7 @@ Internal routes:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

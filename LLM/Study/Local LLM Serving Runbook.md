@@ -16,7 +16,7 @@ For the first complete run, fill [[LLM/Study/Local LLM First Inference Evidence 
 
 If the first run is on Windows, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for a minimal PowerShell path through preflight capture, Ollama or LM Studio API proof, listener check, and first quality mini-suite.
 
-After the smoke test passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, model id, route, streaming behavior, error behavior, and feature gaps before pointing generic clients at the server. Then use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before relying on local function calling, structured output, or agent loops.
+After the smoke test passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, model id, route, streaming behavior, error behavior, and feature gaps before pointing generic clients at the server. Then use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the endpoint must handle more than one active request, a local queue, or an offline batch job. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before relying on local function calling, structured output, or agent loops.
 
 When the goal is to choose between Ollama, LM Studio, llama.cpp, vLLM, SGLang, or a UI over one provider, use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] after each candidate endpoint has a smoke test. The comparison lab keeps prompts, sampler settings, context target, and output caps fixed so runtime differences do not get confused with prompt or model drift.
 
@@ -41,6 +41,7 @@ A local serving run is complete when:
 - the OpenAI-compatible API contract records base URL, route, model id, streaming behavior, harmless failure behavior, and unsupported fields needed by the workload
 - tool and structured-output support are validated with schema, policy, execution, result-injection, and failure rows if the workload uses tools
 - a client harness logs request settings, timing, output summary, and failure rows without manual copy/paste
+- concurrency, queueing, and backpressure are measured before shared, batch, or multi-client use
 - endpoint exposure, logs, RAG corpus, and tool permissions are explicit before any non-loopback use
 - tokenizer, chat template, role boundaries, and stop policy are checked when output ignores instructions or leaks role markers
 - context window, prompt tokens, retrieved/tool/history tokens, output reserve, and truncation behavior are checked for long-context workloads
@@ -279,6 +280,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]

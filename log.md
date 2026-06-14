@@ -2539,3 +2539,39 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4848 files, 2977 Markdown files, 843 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM concurrency and batch throughput lab
+
+Scope: add a dedicated lab for local LLM concurrency, queueing, batch throughput, saturation, and backpressure decisions.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-concurrency-batch-throughput-lab.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Concurrency and Batch Throughput Lab.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Runtime Comparison Lab.md`
+- `LLM/Study/Local LLM Model and Hardware Sizing Guide.md`
+- `LLM/Study/Local LLM Troubleshooting Decision Tree.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching.md`
+- `LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a concurrency and batch throughput lab covering single-request baselines, concurrency ladders, short/long prompt mixes, queue policy, backpressure, p50/p95 TTFT, throughput, saturation point, and deployment decisions.
+- Routed the lab from the LLM MOC, study index, hosting lab, serving runbook, benchmark log, runtime comparison lab, sizing guide, troubleshooting tree, deployment matrix, mastery roadmap, capstone workbook, self-assessment exam, and the academic batching/serving notes.
+- Checked current Ollama concurrency/queue settings, LM Studio parallel requests, vLLM benchmark load controls, SGLang benchmark/profiling tools, and llama.cpp server slots/continuous batching/metrics.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4848 files, 2977 Markdown files, 843 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4850 files, 2979 Markdown files, 844 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

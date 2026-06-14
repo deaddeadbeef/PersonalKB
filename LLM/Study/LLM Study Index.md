@@ -38,6 +38,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
@@ -72,6 +73,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured-output controls with reproducible local experiments
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — run a controlled concurrency ladder and decide whether the setup is single-user, queued, batch, self-hosted, or hosted
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — verify tokenizer, special-token, chat-template, role-boundary, and stop-condition compatibility
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — count rendered prompt tokens, reserve output, pack RAG/tool context, test truncation, and explain TTFT/KV-cache pressure
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — test thinking mode, reasoning effort, parser separation, trace policy, latency, and quality gain for local reasoning models

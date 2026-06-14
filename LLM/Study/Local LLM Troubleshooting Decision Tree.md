@@ -44,7 +44,7 @@ Pass signal: the diagnosis names the failed layer and the next controlled change
 | Model download fails | Model acquisition | Model id, license/auth requirement, revision, disk space, cache path. |
 | Model file exists but will not load | Model fit | Format, quantization, RAM/VRAM, runtime error text. |
 | Immediate OOM | Sizing | Weight memory, runtime overhead, GPU offload, free RAM/VRAM. |
-| OOM only on long prompts | KV cache/context budget | Prompt tokens, context setting, concurrency, retrieved chunk count, output reserve. |
+| OOM only on long prompts | KV cache/context budget | Prompt tokens, context setting, concurrency, retrieved chunk count, output reserve. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] if active requests are involved. |
 | Port already in use | Server/process | Listener list and owning process. |
 | Connection refused | Server/process | Host, port, server log, listener after launch. |
 | 404 or route not found | Route/model | Base URL, route, native vs OpenAI-compatible API, and API contract card. |
@@ -196,6 +196,7 @@ This decision tree is complete for a local run when you have:
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]

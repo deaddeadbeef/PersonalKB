@@ -91,6 +91,8 @@ Continuous batching is one of the main reasons production inference can handle m
 ### Challenge
 Design a serving policy for a chatbot workload with many short prompts and occasional very long prompts. Explain how you would balance throughput, latency, and fairness using continuous batching plus chunked prefill.
 
+For a local hands-on version, use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] to run a concurrency ladder and identify the saturation point, queue policy, and throughput/latency trade-off.
+
 ---
 
 ## Supporting Chunks
@@ -109,3 +111,4 @@ Design a serving policy for a chatbot workload with many short prompts and occas
 - [[KV Cache and Context Reuse]]
 - [[Serving Architectures and Throughput-Latency Trade-offs]]
 - [[Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]

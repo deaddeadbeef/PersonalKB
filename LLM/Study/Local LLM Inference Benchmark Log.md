@@ -23,6 +23,8 @@ Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when
 
 Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when benchmark rows are meant to choose between two runtimes. The comparison lab defines what must stay fixed, which endpoint fields to record, and how to assign differences to runtime, artifact, tokenizer, template, sampler, context, hardware, UI, or quality layers.
 
+Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the benchmark must prove multi-request behavior, queueing, backpressure, p50/p95 TTFT, TPOT, throughput, saturation, or batch/offline suitability.
+
 Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before comparing quality across runs where temperature, top-p, top-k, min-p, penalties, seed, stop strings, or structured-output settings might change the answer.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] before comparing reasoning models or thinking modes. The benchmark row should separate the reasoning control, effort value, trace shape, reasoning cost, final-answer cost, latency delta, and trace-retention policy.
@@ -91,6 +93,7 @@ Create one row per run.
 | Peak RAM | Highest observed system memory use during the run |
 | Peak VRAM | Highest observed GPU memory use during the run |
 | CPU/GPU utilization | Whether the bottleneck looks compute-bound, memory-bound, or idle |
+| Queue and concurrency | In-flight requests, queue time, p50/p95 TTFT, p50/p95 total latency, success/error count, and saturation point |
 | Error/retry count | Runtime crashes, OOMs, malformed outputs, timeouts, or refusal surprises |
 | Tool-call evidence | Tool-call count, argument validation, policy decision, execution latency, and result status |
 | Reasoning evidence | Trace length or token count, reasoning field shape, final-answer token count, and quality delta versus low/off effort |
@@ -192,6 +195,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
