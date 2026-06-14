@@ -11,6 +11,8 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The local model endpoint should already work before you add retrieval. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether the assistant is good enough for the workload.
 
+Before indexing private documents, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, log policy, access boundary, and prompt-injection tests.
+
 ## Outcome
 
 After this lab you should be able to:
@@ -50,6 +52,7 @@ Define the assistant narrowly before writing code.
 | Allowed answer source | Retrieved passages only, or retrieved passages plus model background knowledge |
 | Citation style | `[doc:section]`, `[1]`, file path, URL, or note link |
 | Refusal rule | Say "not enough evidence" when retrieved context does not support the answer |
+| Privacy boundary | Who may query the corpus and what metadata may appear in answers/logs |
 | Latency target | Interactive, batch, or offline |
 | Evaluation set | 10-30 private questions with known supporting passages |
 
@@ -189,6 +192,7 @@ The lab is complete when you have:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

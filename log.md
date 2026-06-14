@@ -2189,3 +2189,29 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4802 files, 2931 Markdown files, 820 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-14] curate | LLM local security and privacy runbook
+
+Scope: add a local-hosting security and privacy runbook for endpoint exposure, logs, RAG corpus boundaries, prompt injection, tool permissions, and go/no-go checks before sharing a local model server.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-local-security-privacy-runbook.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Security and Privacy Runbook.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local RAG Assistant Lab.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local LLM security and privacy runbook with a security model, exposure levels, pre-run checklist, endpoint boundary checks, prompt/log/storage map, RAG privacy checks, tool/agent boundary, incident triage, and go/no-go gate.
+- Linked the runbook from the LLM MOC, study index, mastery roadmap, local serving runbook, and local RAG assistant lab.
+- Kept the pass as durable local-hosting security guidance backed by existing system prompt, function-calling, RAG, local serving, and serving architecture notes rather than adding new current runtime claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4802 files, 2931 Markdown files, 820 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4804 files, 2933 Markdown files, 821 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

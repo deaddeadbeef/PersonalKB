@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting
 
 Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware.
 
+Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
+
 ## Success Criteria
 
 A local serving run is complete when:
@@ -22,6 +24,7 @@ A local serving run is complete when:
 - a CLI or GUI chat proves the model can generate
 - an HTTP endpoint returns a non-streaming response
 - the same endpoint can be called by a generic OpenAI-compatible client or direct REST call
+- endpoint exposure, logs, RAG corpus, and tool permissions are explicit before any non-loopback use
 - tokenizer, chat template, role boundaries, and stop policy are checked when output ignores instructions or leaks role markers
 - latency, tokens/sec, memory, model id, runtime, quantization, and quality notes are logged
 - the quality decision is backed by [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when choosing a model for real work
@@ -45,6 +48,8 @@ Choose the smallest model that can pass the task, then scale up only when qualit
 Start on loopback only: `127.0.0.1` or `localhost`. Do not bind a model server to `0.0.0.0`, expose it to the LAN, or tunnel it publicly until you have authentication, firewall rules, and a reason to accept the data-leak risk.
 
 Local LLMs are still application servers. Prompts, retrieved documents, generated outputs, and logs may contain private data.
+
+For the full checklist, see [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]].
 
 ## Endpoint Map
 
@@ -238,6 +243,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
