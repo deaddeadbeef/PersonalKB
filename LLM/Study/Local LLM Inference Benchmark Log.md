@@ -21,6 +21,8 @@ Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshootin
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
 
+Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before comparing quality across runs where temperature, top-p, top-k, min-p, penalties, seed, stop strings, or structured-output settings might change the answer.
+
 For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to run workload prompts, rubric scores, pairwise comparisons, RAG/citation checks, and a pass/hold/fail gate.
 
 Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] after the benchmark and quality rows exist. The matrix turns measurements into a choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference.
@@ -57,7 +59,7 @@ Create one row per run.
 | Hardware | CPU, GPU, RAM, VRAM, storage notes |
 | OS/environment | Windows, WSL, Linux, macOS, Docker, driver/CUDA notes |
 | Context setting | Max context and prompt token count if known |
-| Sampling settings | Temperature, top-p, top-k, max output tokens |
+| Sampling settings | Temperature, top-p, top-k, min-p, seed, penalties, stop strings, and max output tokens |
 | Prompt class | Chat, coding, summarization, extraction, RAG, long-context, agent/tool |
 | Concurrency | Single request, batch size, concurrent users, or request rate |
 | Source commit/config | Script, command, config file, or runtime settings used |
@@ -169,6 +171,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]

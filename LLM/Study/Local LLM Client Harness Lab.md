@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** A local model run is reproducible only when the client captures request settings, timing, response text, errors, and benchmark fields in the same shape every time.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] records the base URL, route, model id, streaming behavior, errors, and feature gaps, and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] explains one request. This lab turns one successful call into a repeatable client-side harness.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] records the base URL, route, model id, streaming behavior, errors, and feature gaps, and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] explains one request. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the harness must freeze sampler settings rather than rely on runtime defaults. This lab turns one successful call into a repeatable client-side harness.
 
 For private or document-grounded runs, check [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before saving prompts, retrieved passages, outputs, or logs.
 
@@ -57,7 +57,9 @@ Record these fields before the request leaves the client:
 | `system_prompt_id` | Short name or hash, not a pasted secret |
 | `prompt_id` | Prompt-suite id such as `K-01`, `S-01`, or `D-01` |
 | `temperature` | `0` for deterministic baseline |
-| `top_p`, `top_k` | Empty if unsupported or intentionally default |
+| `top_p`, `top_k`, `min_p` | Empty if unsupported or intentionally default |
+| `seed` | Empty if unsupported; fixed only when reproducibility depends on sampled output |
+| `penalties` | Repetition, frequency, presence, or repeat-window settings if supported |
 | `max_tokens` | Explicit output cap |
 | `stop` | Stop strings or empty |
 | `context_tokens` | Known prompt/context token count, if available |
@@ -342,6 +344,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

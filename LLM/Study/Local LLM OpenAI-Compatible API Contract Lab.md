@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** A local server is "OpenAI-compatible" only after you prove the base URL, model id, route, request fields, response shape, streaming behavior, errors, and unsupported features that your client actually depends on.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload.
 
 Pair this with [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the failure may come from artifact format, tokenizer, chat template, quantization, or runtime support. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the HTTP call succeeds but chat behavior is wrong.
 
@@ -164,6 +164,7 @@ Pick only the features your workload needs.
 | Responses API | Send a minimal `/v1/responses` request if the client uses that API. | Use chat completions or runtime-native route instead. |
 | Embeddings | Send one short input to `/v1/embeddings` only if the served model is an embedding/pooling model. | Chat model and embedding model may need separate endpoints. |
 | Logprobs | Request logprobs only when the runtime docs claim support. | Evaluation harness may need a different runtime or route. |
+| Sampler fields | Send the temperature, top-p, top-k, min-p, seed, stop, and penalty fields the workload depends on. | A compatibility route may silently ignore local sampler controls. |
 | Multimodal input | Send one tiny image/text request only when the model and runtime support vision. | Model family, template, and runtime feature must all align. |
 
 Do not use a passing chat request as proof that tools, embeddings, JSON schema, images, or the Responses API work.
@@ -224,6 +225,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
 

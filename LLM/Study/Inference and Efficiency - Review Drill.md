@@ -43,10 +43,14 @@ up: "[[LLM/Study/LLM Study Index]]"
 12. **What should you measure before trusting a local model setup?**
     Time to first token, decode tokens/sec, peak RAM/VRAM, context length, answer quality on known prompts, and whether the API shape matches your application.
 
+13. **Why must sampling settings be fixed during local model comparisons?**
+    Temperature, candidate filters, penalties, seeds, stop strings, and output caps change the next-token distribution and the returned shape. A benchmark compares model/runtime behavior only after these controls are recorded or intentionally varied.
+
 ## Hands-On
 
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, expose an API, and benchmark inference.
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace a single request through prompt assembly, tokenization, prefill, decode, sampling, stopping, and streaming.
+- [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stop rules, and structured-output controls.
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — diagnose tokenizer, chat-template, role-boundary, and stop-condition mismatches.
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimate model weight memory, KV-cache risk, and runtime fit before downloading a model.
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — prove native and OpenAI-compatible endpoints, then diagnose serving failures.

@@ -11,7 +11,7 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The sizing guide chooses plausible model/runtime candidates, the runbook proves the endpoint, the benchmark log records performance, and this harness decides whether the output quality is acceptable.
 
-Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records.
+Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ.
 
 ## What This Harness Decides
 
@@ -82,6 +82,8 @@ Write the threshold before running. A strict gate might require all required dim
 
 The pass decision must include both quality and operations evidence. A fast wrong model fails. A high-quality model that does not fit memory or latency constraints also fails for interactive local use.
 
+Sampler settings are part of the quality condition. A model that passes only under a high-temperature creative preset has not passed a deterministic extraction gate, and a model that fails under one runtime may need an API-contract check before the failure is assigned to model capability.
+
 ## Pairwise Comparison Protocol
 
 Use pairwise comparison when choosing between two local setups.
@@ -141,6 +143,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]
