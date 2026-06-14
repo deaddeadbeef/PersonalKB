@@ -38,7 +38,7 @@ Examples:
 | Positional encoding | The model needs position information; RoPE/ALiBi/context-extension choices affect long-context behavior. | Context limit, rendered length, long-prompt quality test. | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
 | KV cache | Past keys and values are stored so decode can reuse prior context. Cache grows with layers, length, precision, and active sequences. | TTFT, context length, active sequences, memory notes. | [[LLM/Study/Local LLM Model and Hardware Sizing Guide]] |
 | MHA, MQA, and GQA | Sharing key/value heads can reduce cache memory and improve decode economics with a quality trade-off. | Model architecture note, cache risk, runtime compatibility card. | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] |
-| Weight precision and quantization | Lower-bit weights reduce memory and bandwidth pressure but can damage hard reasoning, formatting, or rare-token behavior. | Quantization type, quality row, benchmark row. | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| Weight precision and quantization | Lower-bit weights reduce memory and bandwidth pressure but can damage hard reasoning, formatting, or rare-token behavior. | Quantization type, offload setting, KV-cache precision, quality row, benchmark row. | [[LLM/Study/Local LLM Quantization and GPU Offload Lab]] |
 | Sampling and constraints | Logits become text through temperature, filters, penalties, stops, or grammar/schema constraints. | Frozen sampler settings and A/B sweep. | [[LLM/Study/Decoding and Sampling Controls Lab]] |
 | Prefill versus decode | Long input mainly hurts time to first token; model size and memory bandwidth often dominate later tokens/sec. | Short-vs-long prompt timing. | [[LLM/Study/LLM Inference Request Lifecycle Lab]] |
 | Batching and PagedAttention | Serving many requests is a cache-management and scheduling problem, not only a model-quality problem. | Concurrency, throughput, latency, queue, and cache notes. | [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]] |
@@ -139,6 +139,7 @@ Internal routes:
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

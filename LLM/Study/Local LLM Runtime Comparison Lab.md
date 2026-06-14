@@ -14,7 +14,7 @@ Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environ
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to run the same request shape against each endpoint. Save speed rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and the final choice in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
 
-Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when runtime choice depends on batching, queueing, saturation, or multi-client throughput rather than only a single request. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when runtime choice depends on repeated system prompts, documents, examples, RAG context, tool protocols, or chat history. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when runtime choice depends on draft-model, EAGLE, MTP, n-gram, or another speculative decoding path.
+Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when runtime choice depends on batching, queueing, saturation, or multi-client throughput rather than only a single request. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when runtime choice depends on GGUF versus AWQ/GPTQ/FP8/INT8, GPU offload, CPU fallback, or KV-cache precision. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when runtime choice depends on repeated system prompts, documents, examples, RAG context, tool protocols, or chat history. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when runtime choice depends on draft-model, EAGLE, MTP, n-gram, or another speculative decoding path.
 
 ## What This Lab Decides
 
@@ -57,6 +57,7 @@ Before the first comparison run, fill these rows:
 | Machine preflight | OS, shell, CPU/RAM, GPU/VRAM, disk, runtime boundary, host/port plan. |
 | Acquisition card | Model card, license, gated access, exact artifact, revision/tag/digest, local path. |
 | Compatibility card | Artifact container, quantization, tokenizer, chat template, runtime support, model id, route. |
+| Quantization/offload card | Baseline quant, accepted quant, GPU offload, CPU/GPU split, KV-cache type, memory headroom, quality result. |
 | Security boundary | Loopback binding by default, log/data boundary known, no accidental LAN exposure. |
 | Prompt suite | At least one smoke prompt, one workload prompt, one structured prompt, and one long-context or RAG prompt if relevant. |
 | Sampler preset | Temperature, top-p, top-k/min-p when supported, penalties, seed behavior, stops, max output tokens. |
@@ -199,6 +200,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

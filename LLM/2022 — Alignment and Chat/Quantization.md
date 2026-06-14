@@ -77,6 +77,10 @@ Quantization is one of the key techniques that made local and cost-efficient LLM
 
 It also created an ecosystem of specialized formats and runtimes, making deployment strategy inseparable from model architecture and hardware planning. In practice, quantization is now a standard knob in inference engineering, not a niche optimization.
 
+### Local Inference Bridge
+
+For local hosting, quantization must be tested as a deployment variable, not accepted from the filename alone. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] to compare a higher-precision or less aggressive baseline against the practical candidate, sweep CPU/GPU offload, record KV-cache precision, and run the same quality prompts. The keep/reject decision should name the exact artifact, runtime, offload setting, context target, memory headroom, and quality result.
+
 ---
 
 ## 🏋️ Practice
@@ -104,6 +108,7 @@ Choose a deployment target (consumer laptop CPU, single consumer GPU, or multi-G
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Trade-offs]] — quantization's impact on serving economics
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — choosing a model format and runtime for local inference
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimating memory and quantization trade-offs before serving
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — validating GGUF/AWQ/GPTQ/FP8/INT8 choices, GPU offload, KV-cache precision, speed, and quality
 
 ## Supporting Chunks / References
 

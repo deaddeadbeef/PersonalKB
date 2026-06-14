@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. Those notes prove a single request and its evidence schema. This lab proves what happens when more than one request is active.
 
-Read it with [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]], [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]], and [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]]. The academic point is direct: active sequences multiply KV-cache pressure, batching changes hardware utilization, repeated prefixes may reuse prefill work, draft verification can reduce decode latency, and queueing can make a fast model feel slow.
+Read it with [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]], [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]], [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]], and [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]]. The academic point is direct: active sequences multiply KV-cache pressure, batching changes hardware utilization, quantization/offload changes memory headroom, repeated prefixes may reuse prefill work, draft verification can reduce decode latency, and queueing can make a fast model feel slow.
 
 ## What This Lab Decides
 
@@ -173,6 +173,7 @@ Copy this into [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference
 |---|---|---|
 | C1 passes but C2 fails | KV-cache headroom, runtime parallelism, or client bug. | Memory, server settings, two-request raw logs. |
 | TTFT rises faster than total throughput | Queueing, prefill contention, or long prompt mix. | Prompt tokens, queue time, p95 TTFT. |
+| C2/C4 fails only after a lower-bit or offload change | Weight memory improved but KV cache, shared memory, or quality/latency regressed under load. | Run [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] with the target concurrency setting. |
 | Same long prefix is still slow under load | Prefix cache miss, eviction, or prompt layout mismatch. | Run [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] with changed-prefix control. |
 | Single request is faster with speculation but C2/C4 regresses | Draft model/cache/buffers compete with batching or KV-cache headroom. | Run [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] with the selected concurrency setting. |
 | Tokens/sec improves but users wait too long | Throughput/latency trade-off pushed too far. | Lower max concurrency or split batch vs chat workload. |
@@ -207,6 +208,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]

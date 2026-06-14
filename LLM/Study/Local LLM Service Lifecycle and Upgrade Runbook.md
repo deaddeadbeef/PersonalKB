@@ -282,6 +282,7 @@ Run this after upgrade or rollback.
 | API contract | Base URL, model id, route, streaming, errors, unsupported fields. | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|API Contract Lab]] |
 | Client harness | Same harness request as baseline. | [[LLM/Study/Local LLM Client Harness Lab|Client Harness Lab]] |
 | Benchmark | Same prompt, sampler, context, output cap, concurrency as baseline. | [[LLM/Study/Local LLM Inference Benchmark Log|Benchmark Log]] |
+| Quantization/offload | Accepted quantization, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, and quality result still match the intended service state. | [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Quantization and GPU Offload Lab]] |
 | Prompt cache | Cold/warm/changed-prefix rows and cache evidence still match the intended service state. | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt Cache and KV Reuse Lab]] |
 | Speculative decoding | No-spec/spec rows, accepted-token evidence, memory overhead, and quality result still match the intended service state. | [[LLM/Study/Local LLM Speculative Decoding Lab|Speculative Decoding Lab]] |
 | Quality | Known-answer, schema, and workload prompts still pass. | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality Evaluation Harness]] |
@@ -299,6 +300,7 @@ Pass signal: the change card has a before row, after row, rollback target, decis
 | Model id changed | Runtime registry or client contract. | Copy exact served id, update API contract card, rerun client harness. |
 | Same prompt slower | Cold load, cache/TTL, runtime version, context setting, scheduler, driver. | Compare baseline TTFT/TPOT/load metrics; run one warm and one cold request. |
 | Quality regressed | Model revision, quantization, chat template, sampler, route behavior. | Freeze sampler and template; run quality harness before blaming runtime. |
+| Memory or speed regressed after model/runtime change | Quantization, GPU offload, KV-cache precision, backend, or driver changed. | Run [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Quantization and GPU Offload Lab]] with the old and new service state. |
 | Open WebUI loses settings | Volume path or secret changed. | Stop, restore volume backup, restore `WEBUI_SECRET_KEY`, restart previous image. |
 | Endpoint exposed unexpectedly | Host binding, proxy, firewall, Docker port mapping. | Rebind to loopback; run security runbook before continuing. |
 | Repeated-prefix speedup disappears | Prompt-cache path, slot state, prefix-cache flag, eviction, restart boundary, or prompt layout changed. | Run [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt Cache and KV Reuse Lab]] before changing models. |
@@ -326,6 +328,7 @@ Internal:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

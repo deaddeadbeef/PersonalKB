@@ -33,6 +33,8 @@ Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache a
 
 Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when a row depends on draft-model, EAGLE, MTP, n-gram, or another speculative decoding path. The row should separate no-spec baseline, spec-enabled run, accepted draft tokens, decode-latency delta, memory overhead, and quality impact.
 
+Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when a row depends on GGUF/AWQ/GPTQ/FP8/INT8 choice, GPU-layer/offload settings, CPU fallback, or KV-cache precision. The row should record baseline quantization, accepted quantization, offload level, cache precision, memory headroom, and quality result.
+
 Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before comparing quality across runs where temperature, top-p, top-k, min-p, penalties, seed, stop strings, or structured-output settings might change the answer.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] before comparing reasoning models or thinking modes. The benchmark row should separate the reasoning control, effort value, trace shape, reasoning cost, final-answer cost, latency delta, and trace-retention policy.
@@ -54,6 +56,7 @@ Use the log whenever you:
 - load a new model or quantization
 - compare runtimes such as Ollama, LM Studio, llama.cpp, vLLM, or SGLang
 - change context length, GPU offload, batching, sampling settings, or prompt format
+- decide whether a lower-bit quantization or stronger GPU offload is worth the quality and memory trade-off
 - decide whether a local model is good enough for a real workload
 - choose a deployment path from measured quality, latency, memory, privacy, cost, and operations evidence
 - validate an upgrade, rollback, startup-mode change, model-cache move, or UI/container update
@@ -106,6 +109,7 @@ Create one row per run.
 | Queue and concurrency | In-flight requests, queue time, p50/p95 TTFT, p50/p95 total latency, success/error count, and saturation point |
 | Prompt/cache reuse | Cold load, warm-model baseline, repeated-prefix run, changed-prefix control, cache evidence, and TTFT/prefill delta |
 | Speculative decoding | Off/on state, draft method/model, accepted draft tokens, acceptance rate, TPOT or output tok/s delta, memory overhead, and quality result |
+| Quantization/offload | Baseline quant, tested quant, CPU/GPU split, GPU layers or percent, KV-cache type, memory headroom, and quality result |
 | Error/retry count | Runtime crashes, OOMs, malformed outputs, timeouts, or refusal surprises |
 | Tool-call evidence | Tool-call count, argument validation, policy decision, execution latency, and result status |
 | Reasoning evidence | Trace length or token count, reasoning field shape, final-answer token count, and quality delta versus low/off effort |
@@ -200,6 +204,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 ## Troubleshooting Links
 
 - If memory is the blocker, review [[LLM/2022 — Alignment and Chat/Quantization|Quantization]] and [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]].
+- If a model fits only with lower-bit weights, partial GPU offload, or KV-cache quantization, run [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] before accepting the benchmark row.
 - If single-user decode latency is the blocker, run [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before enabling a draft path, then review [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding|Speculative Decoding]] and the TTFT/TPOT split above.
 - If prompt length, RAG packing, history, or tool schemas are the blocker, run [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before changing models.
 - If tool selection, argument validity, policy, or result injection is the blocker, run [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before calling the model bad.
@@ -229,6 +234,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

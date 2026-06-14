@@ -22,6 +22,8 @@ Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache a
 
 Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when compatibility depends on a draft model, EAGLE/MTP head, n-gram speculative path, same tokenizer/vocabulary, or runtime-specific speculative decoding flag.
 
+Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when compatibility depends on a GGUF/AWQ/GPTQ/FP8/INT8 path, CPU/GPU split, GPU-layer/offload setting, or KV-cache precision. A quantized artifact can be compatible enough to load but still wrong for the workload if offload, cache precision, or quality regressions are unmeasured.
+
 ## Outcome
 
 After using this matrix you should be able to:
@@ -39,6 +41,7 @@ After using this matrix you should be able to:
 | Model family | Is the architecture supported by the runtime? | Model card, `config.json`, runtime supported-model list. |
 | Artifact container | Is this Hugging Face/Safetensors, GGUF, MLX, Ollama package, or adapter? | File names, model repo tree, local path, Modelfile. |
 | Numeric format | Is it FP16/BF16, INT8, INT4, GGUF quant, GPTQ, AWQ, FP8, or another scheme? | Quantization metadata, filename, runtime load log. |
+| Offload and KV precision | Does the selected runtime place weights/cache on CPU, GPU, or split memory as intended? | GPU layer/percentage setting, `ollama ps`, LM Studio load settings, llama.cpp load log, vLLM/SGLang launch command. |
 | Tokenizer | Which vocabulary and normalization map text to token IDs? | Tokenizer files, GGUF metadata, token-count sanity set. |
 | Chat template | How are system, user, assistant, and tool messages serialized? | Template source, rendered prompt excerpt, runtime setting. |
 | Runtime engine | Which loader and scheduler will run it? | Ollama, LM Studio, llama.cpp, vLLM, SGLang, Transformers, or other engine. |
@@ -103,6 +106,7 @@ Do not convert formats as the first fix. First prove what artifact you have, wha
 | OOM only on long prompt or concurrent run | KV-cache pressure | Reduce context/concurrency and rerun with the same model. |
 | Slow first token | Prefill, long context, retrieval bloat, queueing, or no prefix reuse | Record prompt tokens and TTFT separately. |
 | Slow later tokens | Decode memory bandwidth, model size, poor offload, or weak quantization kernels | Compare tokens/sec, quantization, and GPU/CPU utilization. |
+| Quality drops after quantization/offload | Over-aggressive quantization, KV-cache precision loss, sampler drift, or template mismatch | Run the quantization/offload lab with a higher-precision baseline and fixed prompt suite. |
 
 ## Compatibility Evidence Card
 
@@ -168,6 +172,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]

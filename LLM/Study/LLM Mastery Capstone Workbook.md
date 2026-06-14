@@ -29,6 +29,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Local model endpoint | Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, timing, quality decision, and next action are captured. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
+| Quantization and GPU offload | Decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] |  | Baseline quant, accepted quant, rejected quant, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, benchmark row, and quality row are captured. | Not started |
 | Runtime comparison | Decision card from [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] |  | At least two plausible runtimes are compared with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
@@ -144,11 +145,14 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Acquisition/provenance card |  |
 | Runtime |  |
 | Compatibility evidence card |  |
+| Quantization/offload decision card |  |
 | Runtime comparison decision |  |
 | Artifact format |  |
 | Tokenizer and chat template |  |
 | Model id |  |
 | Quantization |  |
+| GPU offload / CPU-GPU split |  |
+| KV-cache precision |  |
 | Context length |  |
 | Context budget row |  |
 | CLI command |  |
@@ -158,6 +162,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Sampler sweep result |  |
 | Reasoning budget row |  |
 | Concurrency ladder row |  |
+| Quantization/offload benchmark row |  |
 | Prompt-cache decision row |  |
 | Speculative-decoding decision row |  |
 | Lifecycle/change card |  |
@@ -389,6 +394,7 @@ Next run:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]

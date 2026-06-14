@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** The right deployment path is the one whose quality, latency, privacy, cost, reliability, and operational burden fit the workload after measurement.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] first if the deployment depends on multiple users, local queues, batch/offline processing, or throughput targets. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] first if the deployment depends on a compressed artifact, GPU offload setting, CPU fallback, or KV-cache precision. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] first if the deployment depends on multiple users, local queues, batch/offline processing, or throughput targets. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
 
 The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
 
@@ -36,6 +36,7 @@ After filling this out, you should be able to:
 | Offline need | Must it work without internet or external provider access? | Security/privacy requirement |
 | Customization | Prompt-only, RAG, LoRA, fine-tune, tool use, or policy wrapper? | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|Adaptation and Fine-Tuning Decision Guide]] |
 | Runtime compatibility | Does the selected artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together? | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]] |
+| Quantization/offload | Which quantization, GPU offload, CPU fallback, and KV-cache precision passed both memory and quality gates? | [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Quantization and GPU Offload Lab]] |
 | Runtime comparison | Has the selected runtime beaten at least one plausible alternative under fixed prompts, sampler settings, context, output cap, benchmark rows, and quality rows? | [[LLM/Study/Local LLM Runtime Comparison Lab|Runtime Comparison Lab]] |
 | Operations evidence | Do logs, runtime metrics, queue/KV/cache state, CPU/RAM, GPU/VRAM, and error rows explain the operating point? | [[LLM/Study/Local LLM Observability and Operations Runbook|Observability and Operations Runbook]] |
 | Lifecycle evidence | Are startup mode, pinned versions, model/cache paths, backups, upgrade plan, rollback target, and post-change validation known? | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Service Lifecycle and Upgrade Runbook]] |
@@ -59,7 +60,7 @@ After filling this out, you should be able to:
 
 | Mechanism | Deployment consequence |
 |---|---|
-| Quantization | Can make a model fit local memory, but quality must be scored after compression. |
+| Quantization | Can make a model fit local memory, but quality must be scored after compression and offload/KV-cache settings are fixed. |
 | KV cache and context length | Long prompts and concurrent sessions raise memory cost even when weights fit. |
 | Prefill vs decode | Long context mostly hurts time to first token; large models and memory bandwidth hurt per-token decode. |
 | Batching and continuous batching | Shared servers can improve throughput, but single-user local workflows may not benefit. |
@@ -94,6 +95,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 |---|---|
 | Preflight | Machine, runtime boundary, disk, model cache, host, and port are recorded. |
 | Benchmark | Model, runtime, quantization, context, TTFT, tokens/sec, memory, and prompt class are recorded. |
+| Quantization/offload | Baseline quant, accepted quant, rejected quant, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, and quality result are recorded when compression determines feasibility. |
 | Runtime compatibility | Artifact format, tokenizer, template, quantization, API route, and model id are recorded. |
 | Runtime comparison | At least two plausible runtimes have controlled benchmark and quality rows, or one alternative is explicitly not applicable. |
 | Concurrency/backpressure | Multi-request, queue, p95 latency, saturation, and overload behavior are measured when the workload is not strictly single-user. |
@@ -164,6 +166,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]

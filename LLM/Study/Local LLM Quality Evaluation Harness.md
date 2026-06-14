@@ -15,6 +15,8 @@ Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when
 
 Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when the quality harness is deciding between runtimes rather than only judging one model. Runtime comparison keeps prompt suite, sampler, context, and output caps fixed so quality differences are not caused by request drift.
 
+Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when quality is being compared across FP16/BF16, Q8, Q6/Q5/Q4, AWQ, GPTQ, FP8/INT8, GPU offload levels, or KV-cache precision. A faster lower-bit run fails if it breaks the workload's factuality, formatting, code, citation, or long-context gate.
+
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when judging reasoning models. A higher-effort answer only wins when quality improves enough to justify latency, token budget, parser, and trace-handling costs.
 
 ## What This Harness Decides
@@ -77,6 +79,7 @@ Score each dimension from 0 to 2.
 | Safety/constraint adherence | Violates the boundary | Avoids worst issue but needs review | Cleanly respects the boundary |
 | Tool correctness | Wrong or unsafe tool behavior | Right general tool but argument, policy, or result-use issue | Correct tool, valid arguments, allowed execution, and supported final answer |
 | Latency/memory acceptability | Too slow or unstable | Usable only with tuning | Meets the benchmark threshold |
+| Quantization/offload tolerance | Lower-bit or offloaded run changes the answer enough to reject | Usable with caveats or a less aggressive quant | Matches the baseline on required workload behavior |
 
 Write the threshold before running. A strict gate might require all required dimensions at 2. A looser exploratory gate might pass with an average of 1.5 if no required dimension is 0.
 
@@ -154,6 +157,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
