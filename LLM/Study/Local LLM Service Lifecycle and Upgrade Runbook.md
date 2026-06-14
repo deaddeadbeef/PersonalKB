@@ -283,6 +283,7 @@ Run this after upgrade or rollback.
 | Client harness | Same harness request as baseline. | [[LLM/Study/Local LLM Client Harness Lab|Client Harness Lab]] |
 | Benchmark | Same prompt, sampler, context, output cap, concurrency as baseline. | [[LLM/Study/Local LLM Inference Benchmark Log|Benchmark Log]] |
 | Prompt cache | Cold/warm/changed-prefix rows and cache evidence still match the intended service state. | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt Cache and KV Reuse Lab]] |
+| Speculative decoding | No-spec/spec rows, accepted-token evidence, memory overhead, and quality result still match the intended service state. | [[LLM/Study/Local LLM Speculative Decoding Lab|Speculative Decoding Lab]] |
 | Quality | Known-answer, schema, and workload prompts still pass. | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality Evaluation Harness]] |
 | Security | Bind address, auth, logs, RAG corpus, tools, and UI exposure unchanged or intentionally changed. | [[LLM/Study/Local LLM Security and Privacy Runbook|Security and Privacy Runbook]] |
 | Deployment decision | Cost/ops owner/review trigger still correct. | [[LLM/Study/LLM Deployment Decision Matrix|Deployment Decision Matrix]] |
@@ -301,6 +302,7 @@ Pass signal: the change card has a before row, after row, rollback target, decis
 | Open WebUI loses settings | Volume path or secret changed. | Stop, restore volume backup, restore `WEBUI_SECRET_KEY`, restart previous image. |
 | Endpoint exposed unexpectedly | Host binding, proxy, firewall, Docker port mapping. | Rebind to loopback; run security runbook before continuing. |
 | Repeated-prefix speedup disappears | Prompt-cache path, slot state, prefix-cache flag, eviction, restart boundary, or prompt layout changed. | Run [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt Cache and KV Reuse Lab]] before changing models. |
+| Speculative speedup disappears or reverses | Draft model path, speculative flag, accepted-token rate, memory headroom, runtime version, or concurrency changed. | Run [[LLM/Study/Local LLM Speculative Decoding Lab|Speculative Decoding Lab]] before accepting the upgrade. |
 | Rollback also fails | Backup incomplete or hidden dependency changed. | Name the missing dependency, restore the lower layer, and create a new troubleshooting row. |
 
 ## Completion Gate
@@ -325,6 +327,7 @@ Internal:
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

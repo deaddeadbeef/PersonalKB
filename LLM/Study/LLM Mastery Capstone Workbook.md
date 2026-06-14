@@ -36,6 +36,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
 | Concurrency and batch throughput | Concurrency ladder from [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] |  | Single-request baseline, max concurrency, p95 TTFT, throughput, memory, errors, saturation point, and backpressure policy are captured. | Not started |
 | Prompt cache and KV reuse | Cache decision card from [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] |  | Cold load, warm model, repeated-prefix run, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are captured. | Not started |
+| Speculative decoding | Decision card from [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] |  | No-spec baseline, spec-enabled run, draft method/model, accepted-token evidence, decode-latency delta, memory overhead, quality result, and keep/disable decision are captured. | Not started |
 | Observability and operations | Operations row from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] |  | Loaded-model state, route, request timings, logs or metrics, resource pressure, error evidence, privacy handling, and next controlled action are captured. | Not started |
 | Service lifecycle and rollback | Change Freeze Card from [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] |  | Runtime/model versions, cache path, startup mode, backup path, upgrade plan, rollback target, and post-change validation are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
@@ -158,6 +159,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Reasoning budget row |  |
 | Concurrency ladder row |  |
 | Prompt-cache decision row |  |
+| Speculative-decoding decision row |  |
 | Lifecycle/change card |  |
 | Startup mode |  |
 | Backup and rollback proof |  |
@@ -393,6 +395,7 @@ Next run:
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

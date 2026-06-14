@@ -14,7 +14,7 @@ Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environ
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to run the same request shape against each endpoint. Save speed rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and the final choice in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
 
-Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when runtime choice depends on batching, queueing, saturation, or multi-client throughput rather than only a single request. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when runtime choice depends on repeated system prompts, documents, examples, RAG context, tool protocols, or chat history.
+Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when runtime choice depends on batching, queueing, saturation, or multi-client throughput rather than only a single request. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when runtime choice depends on repeated system prompts, documents, examples, RAG context, tool protocols, or chat history. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when runtime choice depends on draft-model, EAGLE, MTP, n-gram, or another speculative decoding path.
 
 ## What This Lab Decides
 
@@ -63,6 +63,7 @@ Before the first comparison run, fill these rows:
 | Reasoning settings | Thinking mode, reasoning effort, parser setting, output split, trace length policy, and trace visibility policy when a reasoning-capable model is used. |
 | Concurrency settings | Max concurrency, request rate, queue limit, batch/offline mode, and backpressure policy if more than one request is active. |
 | Prompt-cache settings | Cold/warm separation, repeated-prefix run, changed-prefix control, cache evidence, and prompt layout if repeated prefixes matter. |
+| Speculative decoding settings | No-spec baseline, spec method/model, accepted-token evidence, decode-latency delta, memory overhead, and quality result if a draft path matters. |
 | Measurement schema | TTFT, total latency, output tokens/sec, prompt tokens, output tokens, peak RAM/VRAM, error class, quality score. |
 
 If any row is missing, the comparison can still be exploratory, but it should not drive a deployment decision.
@@ -140,7 +141,7 @@ For Ollama native calls, save `total_duration`, `load_duration`, `prompt_eval_co
 | Runtime A loads and B cannot load | Artifact, quantization, architecture, or hardware support mismatch. | Fill the compatibility card before changing model. |
 | Same model, different role-marker behavior | Chat template or tokenizer handling differs. | Run [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]. |
 | A has better TTFT, similar decode speed | Prefill, prompt caching, scheduling, or cold-start path differs. | Compare short vs long prompt, warm vs cold run, and repeated-prefix vs changed-prefix controls. |
-| A has similar TTFT, better tokens/sec | Decode loop, offload, kernel, quantization, or memory bandwidth differs. | Check hardware utilization, quantization, GPU layers, and backend logs. |
+| A has similar TTFT, better tokens/sec | Decode loop, speculative decoding, offload, kernel, quantization, or memory bandwidth differs. | Check hardware utilization, draft-token acceptance, quantization, GPU layers, and backend logs. |
 | A is faster but quality drops | Runtime path, quantization, template, sampler default, or output cap changed. | Freeze sampler and rerun quality harness before accepting speed. |
 | B is slower but more stable under load | Scheduler, batching, KV cache, or memory management is better for concurrency. | Add a small concurrency sweep before deployment. |
 | UI behavior differs but provider output matches | Frontend prompt assembly, model id, history, system message, or stop policy differs. | Debug UI settings after provider endpoint is proven. |
@@ -199,6 +200,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

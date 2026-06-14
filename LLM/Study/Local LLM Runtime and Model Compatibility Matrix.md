@@ -20,6 +20,8 @@ Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM R
 
 Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when compatibility depends on prompt-cache files, server slots, automatic prefix caching, RadixAttention, or another repeated-prefix cache mechanism.
 
+Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when compatibility depends on a draft model, EAGLE/MTP head, n-gram speculative path, same tokenizer/vocabulary, or runtime-specific speculative decoding flag.
+
 ## Outcome
 
 After using this matrix you should be able to:
@@ -43,6 +45,7 @@ After using this matrix you should be able to:
 | API route | Native route or OpenAI-compatible route? | Base URL, route, request body, model id, and API contract card. |
 | Reasoning contract | Does the task need thinking mode, reasoning effort, trace parsing, or trace retention? | Reasoning budget lab row and API contract card. |
 | Cache contract | Does the workload depend on prompt-cache files, slots, prefix caching, or repeated-prefix reuse? | Prompt cache lab row, launch flags, cache path, metrics, and privacy boundary. |
+| Speculative decoding contract | Does the workload depend on draft-model, EAGLE, MTP, n-gram, or Medusa-style acceleration? | Speculative decoding lab row, draft model/config, accepted-token metric, memory overhead, and same-tokenizer evidence. |
 | Workload contract | Does the task need JSON, tools, long context, RAG, citations, or streaming? | Quality harness row and benchmark log. |
 
 If any layer is unknown, treat the run as an experiment rather than a deployment decision.
@@ -121,6 +124,7 @@ Copy this into a benchmark row or capstone run note.
 | Stop/EOS policy |  |
 | Runtime and version |  |
 | Prompt/KV cache mechanism | none / keep-alive only / prompt-cache file / slot cache / APC / RadixAttention / unknown |
+| Speculative decoding mechanism | none / draft model / EAGLE / MTP / n-gram / Medusa / unknown |
 | Hardware path | CPU / CUDA / ROCm / Metal / WSL / remote GPU |
 | API base URL and route |  |
 | OpenAI-compatible? | Yes / No / Partial |
@@ -147,6 +151,7 @@ This matrix is complete for one local deployment decision when you have:
 - [ ] a model/runtime choice justified by artifact format and quantization support
 - [ ] tokenizer and chat-template evidence or an explicit "runtime does not expose this" note
 - [ ] cache mechanism evidence when the workload depends on repeated prefixes
+- [ ] speculative decoding evidence when the workload depends on draft-model or multi-token verification speedup
 - [ ] a successful native or OpenAI-compatible endpoint smoke test
 - [ ] an API contract card when a generic OpenAI-compatible client will call the endpoint
 - [ ] a benchmark row with prompt tokens, TTFT, tokens/sec, memory, and quality notes
@@ -163,6 +168,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

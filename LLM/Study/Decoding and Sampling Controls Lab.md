@@ -16,6 +16,8 @@ Use this before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inferenc
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the changed control is thinking mode, reasoning effort, or parser separation rather than temperature, token filtering, penalties, stopping, or structured-output constraints.
 
+Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when the changed control is draft-model, EAGLE, MTP, n-gram, or another speculative decoding path. Speculative decoding changes the decode loop and memory profile, so it needs a no-spec A/B rather than a sampler-only sweep.
+
 ## Outcome
 
 After this lab you should be able to:
@@ -55,7 +57,7 @@ The exact order can differ by runtime. llama.cpp exposes sampler order explicitl
 | Beam search | Keeps multiple high-scoring partial sequences. | Translation-style tasks and some constrained generation. | Often worse for open-ended chat and expensive for local serving. |
 | Self-consistency | Samples multiple answers and selects by voting or a verifier. | Reasoning checks when latency budget allows. | Must log each sample and the selection rule. |
 | Constrained decoding | Masks invalid tokens according to grammar, schema, tool, or JSON constraints. | Structured output and tool calls. | A bad schema can force lossy or invalid answers. |
-| Speculative decoding | Draft tokens are proposed by a faster model and verified by the target model. | Throughput/latency optimization. | It should preserve the target distribution, but only if implemented correctly. |
+| Speculative decoding | Draft tokens are proposed by a faster model, MTP/EAGLE head, or n-gram proposer and verified by the target model. | Decode-latency optimization. | Run [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] because acceptance, memory, and quality evidence decide whether it helps. |
 
 Connect this to [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]] and [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]: the same logits-to-token loop appears in toy models and production runtimes.
 
@@ -199,6 +201,7 @@ Every comparison row in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM 
 | Structured output mode | Explains parse validity. |
 | Runtime version | Controls may change across releases. |
 | Unsupported or ignored fields | Avoids false conclusions from no-op parameters. |
+| Speculative decoding state | Captures off/on, draft method, accepted tokens, speed delta, memory cost, and quality result when a draft path is used. |
 
 ## Failure Triage
 
@@ -241,6 +244,7 @@ Internal:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]

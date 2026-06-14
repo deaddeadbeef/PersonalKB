@@ -90,7 +90,11 @@ For chat and other interactive workloads, reducing response latency from somethi
 - Give one reason why a fast draft model might still produce poor end-to-end speedup.
 
 ## Supporting Chunks
-_Placeholder for links to specific techniques, implementation details, and case studies._
+- [[LLM/_chunks/chunk-llm-221 Speculative Decoding Draft-Verify Algorithm]]
+- [[LLM/_chunks/chunk-llm-222 Speculative Sampling Distribution Guarantee]]
+- [[LLM/_chunks/chunk-llm-223 Speculative Decoding Speedup Analysis]]
+- [[LLM/_chunks/chunk-llm-224 Speculative Decoding Production Adoption]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
 
 ## See Also
 - [[Decoder-Only Models]] — both draft and target models are autoregressive decoders
@@ -98,6 +102,13 @@ _Placeholder for links to specific techniques, implementation details, and case 
 - [[Quantization]] — quantized models often serve as efficient draft models
 - [[Distillation and Model Compression]] — distilled models as lightweight draft models
 - [[Scaling Laws]] — speed-quality trade-offs connect to scaling relationships
+- [[LLM/Study/Local LLM Speculative Decoding Lab]] — local A/B workflow for draft method, accepted-token evidence, decode latency, memory overhead, and quality impact
 
 ## References
-_Placeholder for references to papers, documentation, and source materials._
+- [[LLM/Sources/Sources Index]]
+- [[LLM/_raw/raw-llm-056 Speculative Sampling for LLM Decoding]]
+- [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
+- [Accelerating Large Language Model Decoding with Speculative Sampling](https://arxiv.org/abs/2302.01318)
+- [vLLM speculative decoding](https://docs.vllm.ai/en/stable/features/speculative_decoding/)
+- [llama.cpp speculative decoding](https://github.com/ggml-org/llama.cpp/blob/master/docs/speculative.md)
+- [SGLang speculative decoding](https://sgl-project.github.io/advanced_features/speculative_decoding.html)
