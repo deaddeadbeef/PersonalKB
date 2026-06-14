@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** Local serving is the operational proof that you can turn model weights into a callable API, verify the endpoint, and explain the latency, memory, and quality trade-offs.
 
-Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
+Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] after the smoke test to capture model state, request timings, logs, metrics, and resource pressure. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
 For the first complete run, fill [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] as you go. The evidence pack is the one-page binder; this runbook is the detailed serving procedure.
 
@@ -212,6 +212,8 @@ Run the prompt suite from [[LLM/Study/Local LLM Inference Benchmark Log|Local LL
 
 For real workload selection, turn the quality notes into scored prompt rows with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
 
+Before interpreting those rows, capture the operations evidence from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]]: loaded-model state, route, raw request/response timing, server logs or metrics, CPU/RAM and GPU/VRAM pressure, and one next controlled action.
+
 Interpretation anchors:
 
 - High load time but good decode speed usually means cold-start cost, not a bad model.
@@ -280,6 +282,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]

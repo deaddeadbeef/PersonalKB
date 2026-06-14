@@ -117,6 +117,7 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What sampling controls must be fixed for a fair benchmark? | Temperature, top-p, top-k, min-p when supported, penalties, seed behavior, stop strings, structured-output mode, and output cap. |
 | How do you decide whether to enable reasoning effort locally? | Compare off/low/medium/high or supported alternatives under fixed prompt, sampler, context, output cap, latency, quality rubric, parser separation, and trace policy. |
 | How do you prove a local server can handle more than one active request? | Run a controlled concurrency ladder with fixed prompts, sampler, context, and output cap; record success/errors, p50/p95 TTFT, throughput, peak memory, saturation, and backpressure policy. |
+| How do you prove an operations claim about a local server? | Save loaded-model state, route, request body/response timing, logs or metrics, queue/KV/cache evidence when available, CPU/RAM and GPU/VRAM pressure, error evidence, privacy handling, and one next controlled action. |
 | How do you prove a long, RAG, tool, or multi-turn request fits? | Count the rendered prompt with the serving tokenizer, reserve output tokens, include history/RAG/tool/template overhead, leave a safety margin, and test truncation behavior. |
 | How do you prove a local tool call is safe enough to execute? | Validate model arguments against schema, check an external policy boundary, enforce least privilege, log the decision, and bound retries/timeouts before execution. |
 | What makes a benchmark reproducible? | Same prompt, model, runtime, quantization, hardware, sampling, context, and output cap. |
@@ -129,6 +130,7 @@ Use [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference
 Add [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the exam answer depends on artifact format, tokenizer, chat template, quantization, runtime support, or API route.
 Add [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the exam answer depends on thinking mode, reasoning effort, parser separation, latency trade-offs, or trace visibility.
 Add [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the exam answer depends on shared local serving, batch throughput, queueing, p95 latency, saturation, or backpressure.
+Add [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when the exam answer depends on request timings, logs, metrics, resource pressure, loaded-model state, or operational next action.
 
 ## Section 5: Debugging Scenarios
 
@@ -187,6 +189,7 @@ These gates are stricter than the oral questions.
 | Decoding controls | Evidence proving sampler settings are frozen or intentionally varied with temperature/filter/penalty/stop behavior recorded. |
 | Reasoning budget | Evidence proving thinking mode, effort levels, parser separation, latency/quality delta, and trace logging policy for a reasoning-capable local model. |
 | Concurrency and batch throughput | Evidence proving max concurrency, request rate, p95 TTFT, throughput, memory, errors, saturation point, and queue/backpressure policy. |
+| Observability and operations | Evidence proving loaded-model state, request timing, runtime logs or metrics, resource pressure, error handling, and next controlled action. |
 | Context budget | Evidence proving rendered prompt tokens, output reserve, RAG/tool/history overhead, safety margin, and truncation behavior are known. |
 | Tool loop | Evidence proving tool schema, argument validation, policy check, execution, result injection, bounded retry/stop rules, and failure rows. |
 | Benchmark | Reproducible row with model, runtime, quantization, context, TTFT, tokens/sec, memory, and prompt class. |
@@ -251,6 +254,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

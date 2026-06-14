@@ -17,6 +17,8 @@ Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Prefli
 
 For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before filling in the measurements here.
 
+Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when a row needs loaded-model state, logs, runtime metrics, queue/KV/cache evidence, process pressure, or a next controlled operations change.
+
 Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when a benchmark row fails or looks contradictory. The decision tree should identify whether the issue belongs to environment, sizing, server, route, client, prompt, performance, quality, RAG, or security before another comparison run.
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
@@ -168,9 +170,18 @@ Copy this block into a dated run note or append it below a project-specific expe
 | Total latency |  |
 | Decode tokens/sec |  |
 | Peak RAM/VRAM |  |
+| Operations evidence |  |
 | Quality score |  |
 | Decision | Pass / Hold / Fail |
 | Notes |  |
+
+## Operations Evidence Add-On
+
+Use this add-on when latency, queueing, resource pressure, cold start, or errors affect the decision.
+
+| Run id | State proof | Metrics/log path | Queue/running | KV/cache | CPU/RAM | GPU/VRAM | Error evidence | Next controlled action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  |  |
 
 ## Troubleshooting Links
 
@@ -179,6 +190,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - If prompt length, RAG packing, history, or tool schemas are the blocker, run [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before changing models.
 - If tool selection, argument validity, policy, or result injection is the blocker, run [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before calling the model bad.
 - If multi-user throughput is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]].
+- If logs, metrics, resource pressure, or loaded-model state are missing, use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] before changing model, runtime, or prompt.
 - If runtime choice is unclear, review [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]].
 - If quality is unclear, run [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], then review [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]] and [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]].
 - If the prompt depends on private documents, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] to separate retrieval failures from generation failures.
@@ -191,6 +203,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

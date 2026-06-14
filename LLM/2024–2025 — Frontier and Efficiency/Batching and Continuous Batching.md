@@ -91,13 +91,14 @@ Continuous batching is one of the main reasons production inference can handle m
 ### Challenge
 Design a serving policy for a chatbot workload with many short prompts and occasional very long prompts. Explain how you would balance throughput, latency, and fairness using continuous batching plus chunked prefill.
 
-For a local hands-on version, use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] to run a concurrency ladder and identify the saturation point, queue policy, and throughput/latency trade-off.
+For a local hands-on version, use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] to run a concurrency ladder and identify the saturation point, queue policy, and throughput/latency trade-off. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to save the logs, queue/running request state, KV/cache evidence, and resource counters that explain the ladder.
 
 ---
 
 ## Supporting Chunks
 
 - [[chunk-llm-118 vLLM Continuous Batching Throughput]] — continuous batching plus PagedAttention throughput evidence
+- [[LLM/Study/Local LLM Observability and Operations Runbook]] — operations evidence for queueing, cache pressure, logs, and resource counters
 - [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — why continuous batching depends on efficient KV-cache allocation
 - [[chunk-llm-120 vLLM De Facto Serving Framework]] — serving-stack adoption context
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] — why decode batching improves hardware utilization
@@ -112,3 +113,4 @@ For a local hands-on version, use [[LLM/Study/Local LLM Concurrency and Batch Th
 - [[Serving Architectures and Throughput-Latency Trade-offs]]
 - [[Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Observability and Operations Runbook]]

@@ -2575,3 +2575,37 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4850 files, 2979 Markdown files, 844 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM observability and operations runbook
+
+Scope: add a dedicated local LLM operations runbook for proving loaded-model state, endpoint route, request timings, logs, server metrics, resource pressure, error evidence, and the next controlled change.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-observability-ops-runbook.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Observability and Operations Runbook.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Troubleshooting Decision Tree.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs.md`
+- `LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching.md`
+- `LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added an observability and operations runbook with metric vocabulary, runtime-specific state/metrics map, PowerShell evidence commands, operations rows, symptom-to-evidence map, privacy note, and completion gate.
+- Routed the runbook from the LLM MOC, study index, hosting lab, serving runbook, benchmark log, troubleshooting tree, deployment matrix, mastery roadmap, capstone workbook, self-assessment exam, and serving/KV/batching academic notes.
+- Checked current Ollama API/generate/ps, LM Studio server/loaded-model/log CLI, llama.cpp server metrics, vLLM metrics, SGLang production metrics/benchmarking, and NVIDIA SMI docs.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4852 files, 2981 Markdown files, 845 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
