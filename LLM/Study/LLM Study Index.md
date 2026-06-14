@@ -20,6 +20,7 @@ Study and review materials for the LLM knowledge base.
 
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
@@ -32,7 +33,7 @@ Study and review materials for the LLM knowledge base.
 
 ## Suggested 20-Paper Fast Path
 
-For a rapid orientation to the LLM field, read these papers in order:
+For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to turn each paper into a claim, mechanism, evidence, limitation, and deployment implication.
 
 1. Attention Is All You Need (Vaswani et al. 2017)
 2. BERT (Devlin et al. 2018)

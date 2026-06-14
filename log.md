@@ -2062,3 +2062,27 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4792 files, 2921 Markdown files, 815 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM paper reading protocol
+
+Scope: strengthen the academic side of LLM mastery by adding a reusable paper-reading protocol for extracting claims, mechanisms, evidence, limitations, and deployment implications from research papers.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-paper-reading-protocol.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Paper Reading Protocol.md`
+- `LLM/Study/LLM Study Index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a paper reading protocol with reading passes, a paper-card template, claim taxonomy, evidence checklist, 20-paper fast-path lens, deployment implication matrix, red flags, vault-capture workflow, and completion gate.
+- Linked the protocol from the LLM MOC, study index, and mastery roadmap.
+- Kept the note as policy/practice guidance backed by the existing source catalog and timeline notes rather than adding new current claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4792 files, 2921 Markdown files, 815 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4794 files, 2923 Markdown files, 816 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

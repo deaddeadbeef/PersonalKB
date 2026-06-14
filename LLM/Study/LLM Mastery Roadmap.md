@@ -16,7 +16,7 @@ Use this note as the operational definition of "I know LLMs" for this vault. Rea
 Move in order:
 
 1. Map the field chronologically with [[LLM/LLM — Learning Path|LLM Learning Path]].
-2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] while reading architecture notes.
+2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] and [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] while reading architecture notes and papers.
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
 5. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
@@ -141,10 +141,11 @@ Read:
 - [[LLM/2026 — Reasoning and Agents/Reasoning Distillation|Reasoning Distillation]]
 - [[LLM/2026 — Reasoning and Agents/Agentic Coding Systems|Agentic Coding Systems]]
 - [[LLM/2026 — Reasoning and Agents/Model Context Protocol|Model Context Protocol]]
+- [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 
 Proof:
 
-- For a new paper, identify the problem, baseline, method, evaluation, claimed improvement, and deployment implication.
+- For a new paper, use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to identify the problem, baseline, method, evaluation, claimed improvement, and deployment implication.
 - Separate model-scale gains from data, inference-time compute, tool use, retrieval, and evaluation effects.
 - Explain what would make the result fail to transfer to a local deployment.
 
@@ -152,7 +153,7 @@ Proof:
 
 Complete these in order:
 
-1. **Paper map:** write a one-page map of the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]].
+1. **Paper map:** write a one-page map of the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]] using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]].
 2. **Attention implementation:** implement scaled dot-product attention and explain the tensor shapes.
 3. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 4. **RAG assistant:** build document ingestion, chunking, embedding, retrieval, reranking, generation, and citation output with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]].
@@ -177,6 +178,7 @@ Complete these in order:
 - [[LLM/LLM — Learning Path]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
+- [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
