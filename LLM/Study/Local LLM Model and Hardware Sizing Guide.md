@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Model choice is a memory, latency, quality, and workload decision: estimate weights, add KV-cache headroom, choose a runtime, then prove the result with benchmarks.
 
-Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible.
+Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before downloading to record model card, license, revision, artifact safety, and local path. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible.
 
 ## The Core Question
 
@@ -104,12 +104,13 @@ If the model barely fits, it has not really fit. You still need headroom for pro
 1. Pick the workload: chat, coding, summarization, extraction, RAG, agent loop, or batch document processing.
 2. Set quality gates before testing: correctness, citation discipline, valid JSON, code passes tests, or human preference.
 3. Choose a small baseline model first.
-4. Choose the least aggressive quantization that fits the memory budget.
-5. Run the endpoint proof in [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
-6. Log the run in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-7. If quality fails, scale model size or improve prompt/RAG before blaming hardware.
-8. If latency fails, reduce model size, context, output length, or change runtime.
-9. If memory fails, reduce model size, quantize more, reduce context/concurrency, or move to a different machine.
+4. Record acquisition provenance and license with [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]].
+5. Choose the least aggressive quantization that fits the memory budget.
+6. Run the endpoint proof in [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
+7. Log the run in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+8. If quality fails, scale model size or improve prompt/RAG before blaming hardware.
+9. If latency fails, reduce model size, context, output length, or change runtime.
+10. If memory fails, reduce model size, quantize more, reduce context/concurrency, or move to a different machine.
 
 ## Choosing Quantization
 
@@ -201,6 +202,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

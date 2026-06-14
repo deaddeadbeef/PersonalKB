@@ -14,7 +14,7 @@ Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting
 
 After the smoke test passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, model id, route, streaming behavior, error behavior, and feature gaps before pointing generic clients at the server. Then use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows.
 
-Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware. Then use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to verify the model artifact, tokenizer, chat template, quantization, runtime, and API route before treating load failures or bad outputs as model-quality failures.
+Before starting the server, use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] to prove the model card, license, revision, artifact safety, local path, and digest are acceptable. Then use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware. Then use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to verify the model artifact, tokenizer, chat template, quantization, runtime, and API route before treating load failures or bad outputs as model-quality failures.
 
 Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the actual hardware visibility, runtime boundary, disk, model cache, port, and endpoint boundary before diagnosing serving errors. If a failure crosses more than one layer, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer and next controlled test.
 
@@ -26,6 +26,7 @@ A local serving run is complete when:
 
 - the model loads without out-of-memory errors
 - the machine/runtime preflight records hardware visibility, disk headroom, model cache, and intended host/port
+- model acquisition records source, license, gated access, exact artifact, revision/tag/digest, and local cache path
 - a CLI or GUI chat proves the model can generate
 - an HTTP endpoint returns a non-streaming response
 - the same endpoint can be called by a generic OpenAI-compatible client or direct REST call
@@ -81,6 +82,7 @@ Before starting the server, write these fields into [[LLM/Study/Local LLM Infere
 | Runtime | Ollama, LM Studio, llama-cpp-python, vLLM, SGLang |
 | Quantization/format | Q4_K_M, GPTQ, AWQ, FP16, BF16, unknown |
 | Compatibility evidence | Artifact, tokenizer, template, runtime, route, and workload contract |
+| Acquisition evidence | Model card, license, gated access, revision/tag/digest, local path |
 | Hardware | CPU, GPU, RAM, VRAM |
 | Environment preflight | OS, runtime boundary, disk/model cache, hardware visibility, host/port plan |
 | API base URL | The local base URL you expect to call |
@@ -250,6 +252,7 @@ Internal evidence:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]

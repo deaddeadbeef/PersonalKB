@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local LLM failures are diagnosable when each symptom is mapped to one layer: environment, model fit, server, route, client, prompt, tokenizer, RAG, quality, or security.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. This note decides where to look when the run still fails.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] when the symptom may come from model source, license gate, revision, cache path, unsafe file type, or unclear artifact identity. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. This note decides where to look when the run still fails.
 
 The rule is simple: change one layer at a time, keep a short evidence record, and do not call a model "bad" until the environment, route, prompt format, and evaluation harness have been checked.
 
@@ -20,16 +20,17 @@ Run the checks in this order unless the error message clearly names a lower laye
 | Step | Question | If no, go to |
 | --- | --- | --- |
 | 1 | Does the machine/runtime preflight prove the intended CPU/GPU/RAM/disk path? | [[LLM/Study/Local LLM Environment Preflight Lab|Environment preflight]] |
-| 2 | Does the chosen model fit the memory, context, artifact format, quantization, tokenizer, and runtime? | [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Sizing guide]] and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|compatibility matrix]] |
-| 3 | Is the server process running and listening on the intended host/port? | Server/process branch |
-| 4 | Does the endpoint route and model id match the runtime's exposed API? | Route/model branch |
-| 5 | Is the OpenAI-compatible API contract known for this route and model id? | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|API contract lab]] |
-| 6 | Can a minimal non-streaming request return text? | [[LLM/Study/Local LLM Client Harness Lab|Client harness]] |
-| 7 | Does the same request behave after streaming, parsing, stops, and schema constraints? | [[LLM/Study/LLM Inference Request Lifecycle Lab|Request lifecycle]] |
-| 8 | Does instruction following fail because of tokenizer, chat template, roles, or stops? | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat template lab]] |
-| 9 | Is the answer slow but otherwise valid? | Performance branch |
-| 10 | Is the answer fast but wrong, unsupported, or unusable? | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality harness]] |
-| 11 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]] and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
+| 2 | Is the chosen artifact allowed, pinned, downloaded into a known path, and safe enough to load? | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|acquisition checklist]] |
+| 3 | Does the chosen model fit the memory, context, artifact format, quantization, tokenizer, and runtime? | [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Sizing guide]] and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|compatibility matrix]] |
+| 4 | Is the server process running and listening on the intended host/port? | Server/process branch |
+| 5 | Does the endpoint route and model id match the runtime's exposed API? | Route/model branch |
+| 6 | Is the OpenAI-compatible API contract known for this route and model id? | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|API contract lab]] |
+| 7 | Can a minimal non-streaming request return text? | [[LLM/Study/Local LLM Client Harness Lab|Client harness]] |
+| 8 | Does the same request behave after streaming, parsing, stops, and schema constraints? | [[LLM/Study/LLM Inference Request Lifecycle Lab|Request lifecycle]] |
+| 9 | Does instruction following fail because of tokenizer, chat template, roles, or stops? | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat template lab]] |
+| 10 | Is the answer slow but otherwise valid? | Performance branch |
+| 11 | Is the answer fast but wrong, unsupported, or unusable? | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality harness]] |
+| 12 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]] and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
 
 Pass signal: the diagnosis names the failed layer and the next controlled change.
 
@@ -39,7 +40,7 @@ Pass signal: the diagnosis names the failed layer and the next controlled change
 | --- | --- | --- |
 | Runtime command is missing | Environment | Command availability and install path. |
 | GPU is not visible | Environment | `nvidia-smi` or runtime-specific hardware output from the server shell. |
-| Model download fails | Model store | Model id, license/auth requirement, disk space, cache path. |
+| Model download fails | Model acquisition | Model id, license/auth requirement, revision, disk space, cache path. |
 | Model file exists but will not load | Model fit | Format, quantization, RAM/VRAM, runtime error text. |
 | Immediate OOM | Sizing | Weight memory, runtime overhead, GPU offload, free RAM/VRAM. |
 | OOM only on long prompts | KV cache | Prompt tokens, context setting, concurrency, retrieved chunk count. |
@@ -180,6 +181,7 @@ This decision tree is complete for a local run when you have:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]

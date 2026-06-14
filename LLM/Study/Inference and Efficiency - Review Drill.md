@@ -46,12 +46,16 @@ up: "[[LLM/Study/LLM Study Index]]"
 13. **Why must sampling settings be fixed during local model comparisons?**
     Temperature, candidate filters, penalties, seeds, stop strings, and output caps change the next-token distribution and the returned shape. A benchmark compares model/runtime behavior only after these controls are recorded or intentionally varied.
 
+14. **What should be recorded before downloading a local model?**
+    Model card, intended use, license, gated-access decision, exact revision/tag/file, artifact format, unsafe file risk, local cache path, and a digest or revision proof when reproducibility matters.
+
 ## Hands-On
 
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, expose an API, and benchmark inference.
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace a single request through prompt assembly, tokenization, prefill, decode, sampling, stopping, and streaming.
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stop rules, and structured-output controls.
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — diagnose tokenizer, chat-template, role-boundary, and stop-condition mismatches.
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] — prove model source, license, revision, artifact safety, and local path before serving.
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimate model weight memory, KV-cache risk, and runtime fit before downloading a model.
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — prove native and OpenAI-compatible endpoints, then diagnose serving failures.
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — prove base URL, route, model id, streaming, error behavior, and feature gaps before client integration.

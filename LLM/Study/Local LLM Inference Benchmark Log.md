@@ -53,6 +53,7 @@ Create one row per run.
 | Model id | Repository/model name or local filename |
 | Model family | Llama, Qwen, Mistral, Gemma, DeepSeek, Phi, etc. |
 | Parameter size | 1.5B, 3B, 7B, 8B, 14B, etc. |
+| Acquisition/provenance | Source URL, model card, license, revision/tag/digest, and local cache path from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Model Acquisition and Provenance Checklist]] |
 | Runtime | Ollama, LM Studio, llama.cpp, vLLM, SGLang, Open WebUI frontend, or other |
 | API base URL | Local endpoint, if served over HTTP |
 | Quantization/format | FP16, BF16, INT8, AWQ, GPTQ, GGUF quant, or unknown |
@@ -166,6 +167,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

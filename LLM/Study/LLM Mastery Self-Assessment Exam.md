@@ -102,6 +102,7 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | Prompt | A passing answer must include |
 | --- | --- |
 | What is the first thing to record before downloading a model? | [[LLM/Study/Local LLM Environment Preflight Lab|Environment preflight]]: OS, shell, CPU/RAM, GPU/VRAM, disk, runtime boundary, port plan. |
+| What proves a local model artifact is safe enough to acquire? | Model card, intended use, license, gated access, exact revision/tag/file, safe-format decision, local path, and hash/digest or revision proof. |
 | How do you choose the first model? | Workload, quality gate, context target, memory estimate, runtime support, smallest plausible candidate. |
 | How do you prove the exact model artifact is compatible with the runtime? | Artifact container, quantization, tokenizer, chat template, runtime support, model id, route, hardware path, and workload contract are recorded. |
 | How do you estimate weight memory? | Parameters multiplied by bytes per parameter plus runtime overhead and headroom. |
@@ -116,7 +117,7 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What makes an adaptation decision defensible? | Baseline failure, method matched to failure mode, clean data boundary, held-out eval, regression checks, deployment impact, and rollback, as in [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]. |
 | What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, operational owner, and rejected alternatives, as in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. |
 
-Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
+Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
 Add [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the exam answer depends on artifact format, tokenizer, chat template, quantization, runtime support, or API route.
 
 ## Section 5: Debugging Scenarios
@@ -167,6 +168,7 @@ These gates are stricter than the oral questions.
 | Training pipeline | Capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]. |
 | Local endpoint | CLI and HTTP endpoint response from one local model. |
 | Environment | Preflight snapshot tied to the machine/runtime that served the model. |
+| Model acquisition | Provenance card proving model card, license, gated access, exact artifact, revision/tag/digest, local path, and unsafe-file risk. |
 | Runtime compatibility | Evidence card proving artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract. |
 | API contract | Evidence card proving OpenAI-compatible base URL, route, model id, non-streaming response, streaming behavior, harmless failure behavior, and required feature gaps. |
 | Decoding controls | Evidence proving sampler settings are frozen or intentionally varied with temperature/filter/penalty/stop behavior recorded. |
@@ -192,7 +194,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Alignment and preference methods | [[LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback]] and [[LLM/2022 — Alignment and Chat/Direct Preference Optimization]] |
 | Inference memory and latency | [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]] and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]] |
 | Local setup | [[LLM/Study/Local LLM Environment Preflight Lab]] and [[LLM/Study/Local LLM Model and Hardware Sizing Guide]] |
-| Endpoint and client | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], and [[LLM/Study/Local LLM Client Harness Lab]] |
+| Endpoint and client | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], and [[LLM/Study/Local LLM Client Harness Lab]] |
 | Request behavior | [[LLM/Study/LLM Inference Request Lifecycle Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], and [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
 | Debugging | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | RAG and citations | [[LLM/Study/Local RAG Assistant Lab]] |
@@ -214,6 +216,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]

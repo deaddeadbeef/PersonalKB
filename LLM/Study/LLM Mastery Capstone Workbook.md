@@ -25,6 +25,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | Local model endpoint | CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, and loopback URL are captured. | Not started |
+| Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
@@ -112,6 +113,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Evidence item | Link or value |
 |---|---|
 | Hardware |  |
+| Acquisition/provenance card |  |
 | Runtime |  |
 | Compatibility evidence card |  |
 | Artifact format |  |
@@ -210,6 +212,7 @@ Next run:
 - A training-stage explanation without data, objective, evaluation, and failure-owner evidence.
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
+- A local model download without model card, license, revision/tag/digest, and local path evidence.
 - A benchmark that changes temperature, filters, penalties, seeds, stops, or output caps without saying so.
 - An endpoint without a benchmark.
 - A benchmark without quality evidence.
@@ -225,6 +228,7 @@ Next run:
 - [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
+- [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model endpoint has a runtime compatibility evidence card.
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
@@ -250,6 +254,7 @@ Next run:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

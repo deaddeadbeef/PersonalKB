@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** A local LLM works only when the model architecture, file format, quantization, tokenizer, chat template, runtime, API route, and workload contract all match.
 
-Use this before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. Those notes answer "what can I run?" and "how do I serve it?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?"
+Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] and before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist answers "am I allowed and prepared to acquire this exact artifact?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?"
 
 Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] after the endpoint responds but before a generic client depends on the compatibility surface. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model.
 
@@ -103,6 +103,8 @@ Copy this into a benchmark row or capstone run note.
 | Model id or local file |  |
 | Source URL or local path |  |
 | License and data boundary |  |
+| Revision, tag, or digest |  |
+| Acquisition/provenance card |  |
 | Architecture/model family |  |
 | Artifact container | HF directory / Safetensors / GGUF / Ollama tag / MLX / adapter |
 | Quantization | FP16 / BF16 / INT8 / INT4 / GGUF quant / GPTQ / AWQ / FP8 / unknown |
@@ -147,6 +149,7 @@ Internal evidence:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
