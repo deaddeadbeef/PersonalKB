@@ -16,6 +16,8 @@ Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retri
 
 Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. The endpoint, route, model id, context budget, and sampler settings should be known before retrieval is blamed for model failures.
 
+Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before freezing `rag_config.json` when the embedding provider, vector dimension, normalization, query/document encoding rule, reranker endpoint, or reranker score semantics are not already proven.
+
 Before indexing private notes or project files, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, citation redaction policy, log retention, and prompt-injection tests.
 
 ## Outcome
@@ -56,6 +58,7 @@ rag_experiments/
 | `corpus_manifest.jsonl` | `source_id`, `title`, `path_or_url`, `allowed_for_rag`, `updated_at`, `sha256` |
 | `chunks.jsonl` | `chunk_id`, `source_id`, `section`, `ordinal`, `text`, `token_estimate`, `chunk_policy` |
 | `rag_config.json` | embedding model, index type/path, generator model, runtime base URL, top-k, rerank policy, context budget, citation style |
+| embedding/reranker service card | provider, model id, route, vector dimension, normalization, query/document rule, reranker score semantics, latency, privacy boundary |
 | retrieval run | query id, query text, retrieved chunk ids, scores/distances, selected context ids, missing expected source flag |
 | retrieval evaluation | expected source ids, Hit@k, first relevant rank, reranking impact, hybrid decision, final context ids, citation audit |
 | answer file | assembled prompt summary, final answer, citation ids, refusal if unsupported |
@@ -336,6 +339,7 @@ This harness is complete when you have:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
+- [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

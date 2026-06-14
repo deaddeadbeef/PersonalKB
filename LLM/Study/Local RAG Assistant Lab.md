@@ -13,6 +13,8 @@ Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting
 
 When retrieval quality needs to be measured before generation, use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to score expected sources, top-k hits, first relevant rank, reranking impact, hybrid-search benefit, context selection, and citation validity.
 
+When the embedding or reranker provider is not yet proven, use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] first. It records the local inference service, route, vector dimension, normalization, batching, index compatibility, reranker score semantics, latency, and privacy boundary.
+
 When you are ready to implement rather than only design the pipeline, use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]. It defines the concrete artifacts for a small reproducible build: corpus manifest, chunks, embedding/index config, retrieval evidence, cited answer, refusal test, failure row, and benchmark/quality rows.
 
 Before indexing private documents, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, log policy, access boundary, and prompt-injection tests.
@@ -38,6 +40,7 @@ This is the applied Level 4 proof in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery
 | Corpus | The documents the assistant is allowed to use | [[LLM/2020–2021 — The Scaling Era/Retrieval Pipelines and Context Assembly|Retrieval Pipelines and Context Assembly]] |
 | Chunker | Splits documents into retrieval units | [[LLM/2023 — Open Models and Agents/Chunking Strategies|Chunking Strategies]] |
 | Embedding model | Maps chunks and queries into vector space | [[LLM/2023 — Open Models and Agents/Embeddings and Vector Databases|Embeddings and Vector Databases]] |
+| Embedding/reranker service | Hosts the embedding and optional reranking inference endpoints | [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] |
 | Index | Stores searchable vectors plus metadata | [[LLM/_chunks/chunk-llm-225 DPR Dual-Encoder Dense Retrieval|DPR dual-encoder retrieval]] |
 | Retriever | Returns candidate chunks for a query | [[LLM/_chunks/chunk-llm-228 DPR as RAG Retrieval Backbone|DPR as RAG backbone]] |
 | Reranker | Reorders candidates by query-specific relevance | [[LLM/2023 — Open Models and Agents/Reranking|Reranking]] |
@@ -205,6 +208,7 @@ The lab is complete when you have:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
+- [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

@@ -113,7 +113,7 @@ Bias controls matter because [[LLM/2023 — Open Models and Agents/LLM-as-Judge|
 
 When the workload uses retrieval, evaluate retrieval and answer quality separately.
 
-Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need the full build-and-diagnose workflow behind these checks. Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] when the evaluation row must prove retrieval quality before generation: top-k hit, first relevant rank, reranking impact, hybrid-search decision, final context ids, and citation support. Use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when the evaluation row needs concrete corpus, chunk, retrieval, context, answer, refusal, and failure artifacts.
+Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need the full build-and-diagnose workflow behind these checks. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] when the quality row depends on a local embedding or reranker service: vector dimension, normalization, batching, reranker score semantics, candidate count, and latency must be fixed before answer quality is judged. Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] when the evaluation row must prove retrieval quality before generation: top-k hit, first relevant rank, reranking impact, hybrid-search decision, final context ids, and citation support. Use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when the evaluation row needs concrete corpus, chunk, retrieval, context, answer, refusal, and failure artifacts.
 
 | Check | Ask | Failure mode |
 | --- | --- | --- |
@@ -163,6 +163,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

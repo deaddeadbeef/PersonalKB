@@ -12,6 +12,8 @@ last-verified: 2026-06-15
 
 Use this between [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]. The assistant lab explains the end-to-end pipeline; the minimal harness stores artifacts. This lab decides whether the retrieval layer is good enough before a local generator sees the context.
 
+Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before this note when the embedding model, vector dimension, normalization behavior, index metric, reranker endpoint, or reranker score semantics are still unknown.
+
 Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after this lab to judge final answers. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when retrieved passages must be packed into a limited context window. Use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before indexing private corpora.
 
 ## What This Lab Decides
@@ -70,9 +72,11 @@ Fill this before changing retriever settings.
 | Chunk count |  |
 | Embedding model |  |
 | Vector dimension |  |
+| Embedding service card |  |
 | Index/vector store | Chroma / Qdrant / FAISS / flat cosine / other |
 | Sparse or lexical path | none / BM25 / full-text filter / Qdrant sparse / other |
 | Reranker | none / cross-encoder / late interaction / hosted / other |
+| Reranker service card |  |
 | Candidate top-k |  |
 | Rerank candidate count |  |
 | Final context count |  |
@@ -264,6 +268,7 @@ This lab is complete when all are true:
 Internal:
 
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

@@ -24,6 +24,8 @@ Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decodin
 
 Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when compatibility depends on a GGUF/AWQ/GPTQ/FP8/INT8 path, CPU/GPU split, GPU-layer/offload setting, or KV-cache precision. A quantized artifact can be compatible enough to load but still wrong for the workload if offload, cache precision, or quality regressions are unmeasured.
 
+Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] when the workload depends on local embedding or reranker inference. Embedding models and rerankers have their own artifact, route, dimension, batching, score semantics, and privacy compatibility requirements.
+
 ## Outcome
 
 After using this matrix you should be able to:
@@ -46,6 +48,7 @@ After using this matrix you should be able to:
 | Chat template | How are system, user, assistant, and tool messages serialized? | Template source, rendered prompt excerpt, runtime setting. |
 | Runtime engine | Which loader and scheduler will run it? | Ollama, LM Studio, llama.cpp, vLLM, SGLang, Transformers, or other engine. |
 | API route | Native route or OpenAI-compatible route? | Base URL, route, request body, model id, and API contract card. |
+| Embedding/reranker contract | Does the workload need `/api/embed`, `/v1/embeddings`, `/rerank`, cross-encoder scoring, or decoder-only reranking? | Service card from [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]]. |
 | Reasoning contract | Does the task need thinking mode, reasoning effort, trace parsing, or trace retention? | Reasoning budget lab row and API contract card. |
 | Cache contract | Does the workload depend on prompt-cache files, slots, prefix caching, or repeated-prefix reuse? | Prompt cache lab row, launch flags, cache path, metrics, and privacy boundary. |
 | Speculative decoding contract | Does the workload depend on draft-model, EAGLE, MTP, n-gram, or Medusa-style acceleration? | Speculative decoding lab row, draft model/config, accepted-token metric, memory overhead, and same-tokenizer evidence. |
@@ -172,6 +175,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

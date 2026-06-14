@@ -100,7 +100,7 @@ Its lasting impact is architectural: many modern RAG systems assume a first-stag
 
 Design a retrieval pipeline for a medium-size enterprise knowledge base. Choose whether to use only a bi-encoder, a bi-encoder plus cross-encoder reranker, or ColBERT-style late interaction. Justify the choice in terms of accuracy, latency, candidate budget, and operational complexity.
 
-For a local applied workflow, use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to compare first relevant rank, context precision, and latency before and after reranking.
+For a local applied workflow, use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] to prove the reranker endpoint, launch mode, score semantics, `top_n` behavior, and latency before using [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to compare first relevant rank, context precision, and latency before and after reranking.
 
 ## Supporting Chunks / References
 
@@ -111,4 +111,5 @@ For a local applied workflow, use [[LLM/Study/Local RAG Retrieval Evaluation and
 ### References
 
 - [[LLM/Sources/Sources Index]]
+- [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]

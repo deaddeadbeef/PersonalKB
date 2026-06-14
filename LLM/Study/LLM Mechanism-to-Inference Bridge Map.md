@@ -44,6 +44,7 @@ Examples:
 | Batching and PagedAttention | Serving many requests is a cache-management and scheduling problem, not only a model-quality problem. | Concurrency, throughput, latency, queue, and cache notes. | [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]] |
 | Prompt caching | Repeated prefixes can reuse cache work when the runtime supports compatible prefix reuse. | Repeated-prefix benchmark and cache setting. | [[LLM/2026 — Reasoning and Agents/Prompt Caching and Inference Infrastructure]] |
 | RAG context assembly | Retrieval controls what evidence the model can see; generation quality cannot rescue missing or wrong context. | Corpus manifest, top-k evidence, cited answer, refusal row. | [[LLM/Study/Local RAG Minimal Python Harness]] |
+| Embedding and reranking inference | The retriever and reranker are separate model calls with their own dimensions, routes, batching, score semantics, and latency. | Embedding/reranker service card, vector-shape check, rerank gain row. | [[LLM/Study/Local Embedding and Reranker Hosting Lab]] |
 | Tool calling | The model proposes structured actions; the application must validate, authorize, execute, and feed back results. | Tool schema, validated args, policy decision, execution log. | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 | Post-training and alignment | Instruction following, refusal style, verbosity, and helpfulness are learned behaviors layered over the base model. | Prompt-suite score and failure-owner note. | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]] |
 | Evaluation | Quality is only meaningful relative to workload, rubric, and held-out examples. | Human rubric, LLM-as-judge note, pass/hold/fail decision. | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -144,6 +145,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
