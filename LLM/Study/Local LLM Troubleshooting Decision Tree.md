@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local LLM failures are diagnosable when each symptom is mapped to one layer: environment, model fit, server, route, client, prompt, tokenizer, RAG, quality, or security.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. This note decides where to look when the run still fails.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. This note decides where to look when the run still fails.
 
 The rule is simple: change one layer at a time, keep a short evidence record, and do not call a model "bad" until the environment, route, prompt format, and evaluation harness have been checked.
 
@@ -20,7 +20,7 @@ Run the checks in this order unless the error message clearly names a lower laye
 | Step | Question | If no, go to |
 | --- | --- | --- |
 | 1 | Does the machine/runtime preflight prove the intended CPU/GPU/RAM/disk path? | [[LLM/Study/Local LLM Environment Preflight Lab|Environment preflight]] |
-| 2 | Does the chosen model fit the memory, context, and runtime format? | [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Sizing guide]] |
+| 2 | Does the chosen model fit the memory, context, artifact format, quantization, tokenizer, and runtime? | [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Sizing guide]] and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|compatibility matrix]] |
 | 3 | Is the server process running and listening on the intended host/port? | Server/process branch |
 | 4 | Does the endpoint route and model id match the runtime's exposed API? | Route/model branch |
 | 5 | Can a minimal non-streaming request return text? | [[LLM/Study/Local LLM Client Harness Lab|Client harness]] |
@@ -80,7 +80,7 @@ Use this when the model fails to load, crashes, or barely fits.
 | --- | --- | --- |
 | Weight memory estimate | Parameters multiplied by bytes per parameter sets the floor. | Smaller model, stronger quantization, or more VRAM/RAM. |
 | KV-cache estimate | Cache grows with layers, context, hidden size, precision, and active sequences. | Lower context, fewer retrieved chunks, lower concurrency. |
-| Format/runtime match | GGUF, safetensors, GPTQ, AWQ, and FP16 paths are not interchangeable. | Use a runtime that supports the file or download the right format. |
+| Format/runtime match | GGUF, safetensors, GPTQ, AWQ, and FP16 paths are not interchangeable. | Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]] to select a runtime that supports the file or download the right format. |
 | Quantization risk | Lower precision can preserve speed/memory while harming hard tasks. | Benchmark less aggressive quantization or smaller higher-precision model. |
 | Runtime overhead | Driver and runtime allocations consume memory beyond weight files. | Leave headroom; do not treat "barely loads" as a pass. |
 
@@ -180,6 +180,7 @@ This decision tree is complete for a local run when you have:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]

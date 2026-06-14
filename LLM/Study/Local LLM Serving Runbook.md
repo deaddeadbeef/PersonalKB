@@ -14,7 +14,7 @@ Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting
 
 After the smoke test passes, use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows.
 
-Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware.
+Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware. Then use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to verify the model artifact, tokenizer, chat template, quantization, runtime, and API route before treating load failures or bad outputs as model-quality failures.
 
 Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the actual hardware visibility, runtime boundary, disk, model cache, port, and endpoint boundary before diagnosing serving errors. If a failure crosses more than one layer, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer and next controlled test.
 
@@ -79,6 +79,7 @@ Before starting the server, write these fields into [[LLM/Study/Local LLM Infere
 | Model id/file | Hugging Face id, Ollama tag, LM Studio id, or GGUF filename |
 | Runtime | Ollama, LM Studio, llama-cpp-python, vLLM, SGLang |
 | Quantization/format | Q4_K_M, GPTQ, AWQ, FP16, BF16, unknown |
+| Compatibility evidence | Artifact, tokenizer, template, runtime, route, and workload contract |
 | Hardware | CPU, GPU, RAM, VRAM |
 | Environment preflight | OS, runtime boundary, disk/model cache, hardware visibility, host/port plan |
 | API base URL | The local base URL you expect to call |
@@ -249,6 +250,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

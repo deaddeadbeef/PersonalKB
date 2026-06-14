@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** A local chat model only behaves like the model you chose when the model weights, tokenizer, special tokens, chat template, client messages, and stop conditions all match.
 
-Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when a local endpoint works but the output feels wrong: it continues the prompt, speaks as the user, ignores the system prompt, leaks role markers, or fails structured output.
+Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when a local endpoint works but the output feels wrong: it continues the prompt, speaks as the user, ignores the system prompt, leaks role markers, or fails structured output. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] first when the problem may be a broader model artifact, quantization, runtime, route, or tokenizer-package mismatch.
 
 ## Outcome
 
@@ -168,6 +168,7 @@ This lab is complete when you have:
 - [[LLM/2023 — Open Models and Agents/Function Calling]]
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

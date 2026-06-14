@@ -28,7 +28,7 @@ When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local 
 
 After the endpoint responds, use [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] to trace one request through prompt assembly, tokenization, prefill, decode, sampling, stopping, streaming, and benchmark evidence.
 
-Before downloading a model, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to estimate weight memory, KV-cache pressure, quantization risk, and runtime fit.
+Before downloading a model, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to estimate weight memory, KV-cache pressure, quantization risk, and runtime fit. Then use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to confirm the exact artifact format, quantization, tokenizer, chat template, runtime, and API route fit together.
 
 Before starting a server, use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record the actual OS, hardware, runtime boundary, disk, model cache, port, and endpoint-safety evidence.
 
@@ -259,6 +259,7 @@ Internal evidence:
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 
 Current external docs checked 2026-06-14:

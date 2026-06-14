@@ -35,6 +35,7 @@ After filling this out, you should be able to:
 | Uptime | Toy experiment, daily personal tool, team dependency, or production service? | Operational plan |
 | Offline need | Must it work without internet or external provider access? | Security/privacy requirement |
 | Customization | Prompt-only, RAG, LoRA, fine-tune, tool use, or policy wrapper? | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|Adaptation and Fine-Tuning Decision Guide]] |
+| Runtime compatibility | Does the selected artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together? | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]] |
 | Cost model | Hardware sunk cost, electricity, rented GPU, API tokens, engineer time, or support burden? | Cost estimate |
 | Operational owner | Who patches, monitors, restarts, backs up, and handles incidents? | Runbook owner |
 | Audit/compliance | Are logs, prompts, documents, outputs, and model access auditable? | Security runbook and log map |
@@ -90,6 +91,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 |---|---|
 | Preflight | Machine, runtime boundary, disk, model cache, host, and port are recorded. |
 | Benchmark | Model, runtime, quantization, context, TTFT, tokens/sec, memory, and prompt class are recorded. |
+| Runtime compatibility | Artifact format, tokenizer, template, quantization, API route, and model id are recorded. |
 | Quality | Workload prompts have pass, hold, or fail decisions from a rubric. |
 | Security boundary | Endpoint exposure, logs, RAG corpus, tools, and storage locations are known. |
 | Troubleshooting | At least one failure row or explicit no-failure row names the layer and evidence. |
@@ -150,6 +152,7 @@ A deployment decision is complete when:
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
