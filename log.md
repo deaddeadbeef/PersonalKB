@@ -1978,3 +1978,32 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4786 files, 2915 Markdown files, 812 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM model and hardware sizing guide
+
+Scope: make local LLM hosting decisions more rigorous by adding a model/hardware sizing guide that connects parameter count, quantization, KV-cache memory, context length, concurrency, runtime fit, and benchmark proof.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-model-hardware-sizing.md`
+- `LLM/LLM.md`
+- `LLM/2022 — Alignment and Chat/Quantization.md`
+- `LLM/Study/Inference and Efficiency - Review Drill.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Model and Hardware Sizing Guide.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local model and hardware sizing guide with weight-memory estimates, KV-cache planning, hardware bands, quantization choices, context/concurrency checks, runtime fit, and a decision-record template.
+- Linked the guide from the LLM MOC, study index, local inference lab, serving runbook, benchmark log, mastery roadmap, inference drill, and quantization note.
+- Kept the guide as policy/practice guidance backed by existing source-linked inference notes and chunks.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4786 files, 2915 Markdown files, 812 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4788 files, 2917 Markdown files, 813 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

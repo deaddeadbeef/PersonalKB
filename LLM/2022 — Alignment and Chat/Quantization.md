@@ -103,6 +103,7 @@ Choose a deployment target (consumer laptop CPU, single consumer GPU, or multi-G
 - [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA|QLoRA]] — combining quantization with fine-tuning
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Trade-offs]] — quantization's impact on serving economics
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — choosing a model format and runtime for local inference
+- [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimating memory and quantization trade-offs before serving
 
 ## Supporting Chunks / References
 

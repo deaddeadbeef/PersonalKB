@@ -12,6 +12,8 @@ last-verified: 2026-06-14
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
+Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware.
+
 ## Success Criteria
 
 A local serving run is complete when:
@@ -227,6 +229,7 @@ Internal evidence:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]

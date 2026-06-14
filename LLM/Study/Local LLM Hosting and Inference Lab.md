@@ -26,6 +26,8 @@ Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM 
 
 When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the endpoint map, smoke tests, and failure triage.
 
+Before downloading a model, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to estimate weight memory, KV-cache pressure, quantization risk, and runtime fit.
+
 ## Mental Model
 
 Local inference has four layers:
@@ -61,6 +63,8 @@ Use this rough sizing loop before downloading a model:
 3. Add KV-cache headroom. Context length and concurrency can dominate memory even when weights are quantized.
 4. Match runtime to hardware. llama.cpp is the most forgiving for CPU and mixed CPU/GPU setups; Ollama and LM Studio simplify local use; vLLM/SGLang expect a more server-like GPU environment.
 5. Benchmark the actual task. Do not assume leaderboard quality transfers to your prompts, documents, latency target, or hardware.
+
+For the full worksheet, see [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]].
 
 Key theory links:
 
@@ -245,6 +249,7 @@ Internal evidence:
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 
 Current external docs checked 2026-06-14:
 

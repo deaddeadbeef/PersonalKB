@@ -11,6 +11,8 @@ tier-coverage: [practice]
 
 Use this note with [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]]. The lab explains how to run local models; this note captures the evidence that the run worked and what trade-offs it exposed.
 
+Use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose the candidate model, quantization, and context target before running the benchmark.
+
 For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before filling in the measurements here.
 
 ## When To Use This
@@ -125,6 +127,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
