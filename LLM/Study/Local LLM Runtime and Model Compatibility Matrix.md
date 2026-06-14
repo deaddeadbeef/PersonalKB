@@ -16,6 +16,8 @@ Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM 
 
 When two compatibility cards are plausible, use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] to compare them with fixed prompts, sampler settings, context target, output cap, benchmark rows, and quality rows before choosing a deployment runtime.
 
+Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the compatibility question includes thinking mode, reasoning-effort fields, parser support, inline reasoning tags, or trace retention.
+
 ## Outcome
 
 After using this matrix you should be able to:
@@ -37,6 +39,7 @@ After using this matrix you should be able to:
 | Chat template | How are system, user, assistant, and tool messages serialized? | Template source, rendered prompt excerpt, runtime setting. |
 | Runtime engine | Which loader and scheduler will run it? | Ollama, LM Studio, llama.cpp, vLLM, SGLang, Transformers, or other engine. |
 | API route | Native route or OpenAI-compatible route? | Base URL, route, request body, model id, and API contract card. |
+| Reasoning contract | Does the task need thinking mode, reasoning effort, trace parsing, or trace retention? | Reasoning budget lab row and API contract card. |
 | Workload contract | Does the task need JSON, tools, long context, RAG, citations, or streaming? | Quality harness row and benchmark log. |
 
 If any layer is unknown, treat the run as an experiment rather than a deployment decision.
@@ -160,6 +163,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]

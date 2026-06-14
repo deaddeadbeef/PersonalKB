@@ -12,6 +12,8 @@ last-verified: 2026-06-14
 
 Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] after the contract says whether `tools`, `tool_choice`, JSON/schema output, and tool-call response fields are dependable.
 
+Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the client depends on thinking mode, `reasoning.effort`, `reasoning_effort`, separated reasoning fields, inline `<think>` tags, or trace visibility controls.
+
 Pair this with [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the failure may come from artifact format, tokenizer, chat template, quantization, or runtime support. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the HTTP call succeeds but chat behavior is wrong.
 
 ## Outcome
@@ -229,6 +231,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]

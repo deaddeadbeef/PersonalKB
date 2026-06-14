@@ -15,6 +15,8 @@ Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when
 
 Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when the quality harness is deciding between runtimes rather than only judging one model. Runtime comparison keeps prompt suite, sampler, context, and output caps fixed so quality differences are not caused by request drift.
 
+Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when judging reasoning models. A higher-effort answer only wins when quality improves enough to justify latency, token budget, parser, and trace-handling costs.
+
 ## What This Harness Decides
 
 The harness answers a narrow practical question:
@@ -35,9 +37,10 @@ Run the ladder in order. Stop early only when a model clearly fails a required g
 | 4. Pairwise comparison | Is it better than a baseline model/runtime on the same prompts? | Candidate wins, ties, or loses for explicit reasons |
 | 5. RAG/citation tests | Does it use supplied evidence and cite only supported claims? | Relevant retrieval, faithful answer, correct citations, refusal when evidence is missing |
 | 6. Long-context and multi-turn tests | Does it retain instructions and use the right context across turns? | Follow-up answers respect earlier constraints and cite the relevant context |
-| 7. Tool-use tests | Does it choose the right tool, validate arguments, obey policy, and use the result? | Tool trace shows correct selection, valid arguments, allowed execution, and supported final answer |
-| 8. Safety/constraint tests | Does it respect the workload's boundaries? | It follows allowed constraints and avoids unsafe or out-of-scope help |
-| 9. Human review plus optional LLM judge | Would a human accept the result for the target use? | Human rubric agrees with the pass decision; LLM judge is only supporting evidence |
+| 7. Reasoning-budget tests | Does extra test-time compute improve the task enough to justify latency and trace-handling cost? | Higher effort wins only when quality gain is measured and trace policy is safe |
+| 8. Tool-use tests | Does it choose the right tool, validate arguments, obey policy, and use the result? | Tool trace shows correct selection, valid arguments, allowed execution, and supported final answer |
+| 9. Safety/constraint tests | Does it respect the workload's boundaries? | It follows allowed constraints and avoids unsafe or out-of-scope help |
+| 10. Human review plus optional LLM judge | Would a human accept the result for the target use? | Human rubric agrees with the pass decision; LLM judge is only supporting evidence |
 
 This ladder connects local hosting practice to [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]], [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]], and [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes|RAG Evaluation and Failure Modes]].
 
@@ -152,6 +155,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]

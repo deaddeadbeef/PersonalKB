@@ -14,6 +14,8 @@ Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Req
 
 Use this before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] whenever two local model runs need a fair comparison. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when schema-constrained output must become an executed tool call or bounded agent loop.
 
+Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the changed control is thinking mode, reasoning effort, or parser separation rather than temperature, token filtering, penalties, stopping, or structured-output constraints.
+
 ## Outcome
 
 After this lab you should be able to:
@@ -238,6 +240,7 @@ Internal:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]

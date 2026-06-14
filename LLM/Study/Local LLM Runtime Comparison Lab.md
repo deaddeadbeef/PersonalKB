@@ -32,6 +32,8 @@ same workload -> same prompts -> same sampler -> same context target -> same out
 
 If the model artifact cannot be the same, keep the model family, size class, instruction tuning, and quantization as close as possible, then mark the comparison as approximate. If the tokenizer or chat template differs, the comparison is partly a compatibility comparison, not only a runtime comparison.
 
+If a reasoning model is involved, also freeze thinking mode, effort value, reasoning parser, output cap, and trace visibility policy. Otherwise the comparison is partly a reasoning-budget comparison.
+
 ## Candidate Pairs
 
 | Pair | Best question | Keep fixed | Main evidence |
@@ -56,6 +58,7 @@ Before the first comparison run, fill these rows:
 | Security boundary | Loopback binding by default, log/data boundary known, no accidental LAN exposure. |
 | Prompt suite | At least one smoke prompt, one workload prompt, one structured prompt, and one long-context or RAG prompt if relevant. |
 | Sampler preset | Temperature, top-p, top-k/min-p when supported, penalties, seed behavior, stops, max output tokens. |
+| Reasoning settings | Thinking mode, reasoning effort, parser setting, output split, trace length policy, and trace visibility policy when a reasoning-capable model is used. |
 | Measurement schema | TTFT, total latency, output tokens/sec, prompt tokens, output tokens, peak RAM/VRAM, error class, quality score. |
 
 If any row is missing, the comparison can still be exploratory, but it should not drive a deployment decision.
@@ -191,6 +194,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]

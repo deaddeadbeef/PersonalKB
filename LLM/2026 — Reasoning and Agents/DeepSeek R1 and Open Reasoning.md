@@ -87,6 +87,7 @@ R1 weakened the assumption that advanced reasoning requires closed, frontier-sca
 - [[Reasoning Distillation]] — the technique enabling small model reasoning
 - [[Open-Weight Model Ecosystem]] — R1's place in the open model landscape
 - [[Reinforcement Learning from Human Feedback]] — RL techniques in LLM training
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]] — local harness for R1-style thinking traces, reasoning parsers, effort sweeps, latency, quality, and trace policy.
 
 ---
 

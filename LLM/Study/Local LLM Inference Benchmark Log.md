@@ -25,6 +25,8 @@ Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison La
 
 Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before comparing quality across runs where temperature, top-p, top-k, min-p, penalties, seed, stop strings, or structured-output settings might change the answer.
 
+Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] before comparing reasoning models or thinking modes. The benchmark row should separate the reasoning control, effort value, trace shape, reasoning cost, final-answer cost, latency delta, and trace-retention policy.
+
 Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before long-context, RAG, tool, or multi-turn runs. The benchmark row should show the runtime context limit, prompt tokens, output reserve, template overhead, and any truncation policy tested.
 
 Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when the workload depends on function calling, structured output, or agent loops. Tool-call latency, validation, policy, and execution results should be recorded separately from model generation.
@@ -68,6 +70,7 @@ Create one row per run.
 | Context setting | Max context and prompt token count if known |
 | Context budget | Runtime limit, reserved output, template overhead, RAG/tool/history tokens, safety margin |
 | Tool contract | Tool schema version, tool-choice mode, parser/backend, policy boundary, if tools are used |
+| Reasoning contract | Reasoning-capable model, control field, effort value, parser setting, and trace visibility policy |
 | Sampling settings | Temperature, top-p, top-k, min-p, seed, penalties, stop strings, and max output tokens |
 | Prompt class | Chat, coding, summarization, extraction, RAG, long-context, agent/tool |
 | Concurrency | Single request, batch size, concurrent users, or request rate |
@@ -90,6 +93,7 @@ Create one row per run.
 | CPU/GPU utilization | Whether the bottleneck looks compute-bound, memory-bound, or idle |
 | Error/retry count | Runtime crashes, OOMs, malformed outputs, timeouts, or refusal surprises |
 | Tool-call evidence | Tool-call count, argument validation, policy decision, execution latency, and result status |
+| Reasoning evidence | Trace length or token count, reasoning field shape, final-answer token count, and quality delta versus low/off effort |
 | Quality score | Harness result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], not just "felt good" |
 
 Keep the same prompt, sampling settings, and output-token cap when comparing two runtimes or quantizations. Change one variable at a time unless the experiment is explicitly a full-stack comparison.
@@ -191,6 +195,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]

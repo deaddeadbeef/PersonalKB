@@ -2502,3 +2502,40 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4846 files, 2975 Markdown files, 842 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM reasoning budget lab
+
+Scope: add a dedicated lab for local reasoning models, thinking mode, reasoning parsers, test-time compute, trace policy, and measured quality/latency trade-offs.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-reasoning-budget-lab.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Inference Request Lifecycle Lab.md`
+- `LLM/Study/Decoding and Sampling Controls Lab.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Quality Evaluation Harness.md`
+- `LLM/Study/Local LLM OpenAI-Compatible API Contract Lab.md`
+- `LLM/Study/Local LLM Runtime and Model Compatibility Matrix.md`
+- `LLM/Study/Local LLM Runtime Comparison Lab.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `LLM/2026 — Reasoning and Agents/Reasoning Models and Test-Time Compute.md`
+- `LLM/2026 — Reasoning and Agents/DeepSeek R1 and Open Reasoning.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a reasoning-budget lab covering capability/parser smoke tests, effort sweeps, trace visibility policy, reasoning-versus-sampling controls, RAG/tool reasoning checks, benchmark add-on fields, failure triage, and a decision card.
+- Routed the lab from the LLM MOC, study index, inference lifecycle, decoding controls, benchmark log, quality harness, API contract, runtime compatibility matrix, runtime comparison lab, serving runbook, mastery roadmap, capstone workbook, self-assessment exam, and 2026 reasoning notes.
+- Checked current Ollama thinking/API, LM Studio Responses/API changelog, vLLM reasoning outputs, SGLang reasoning parser, and Open WebUI reasoning/thinking settings.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4846 files, 2975 Markdown files, 842 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4848 files, 2977 Markdown files, 843 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

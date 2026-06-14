@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** A local LLM request is not just "send prompt, get text"; it is a pipeline from messages to tokens, prefill, logits, sampling, stopping, detokenization, streaming, and measurement.
 
-Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] proves the endpoint exists. The hosting lab answers "can I run it?" This lab answers "do I understand what happens during one request?" Use [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] when logits, softmax, token counts, attention shapes, KV cache, or TTFT versus tokens/sec need a grounding pass. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the sampling step needs deeper tuning, reproducibility, or runtime-parameter comparison. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when prompt length, reserved output, history, RAG context, or tool schemas may change the result. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the frozen request should become a reusable script.
+Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] proves the endpoint exists. The hosting lab answers "can I run it?" This lab answers "do I understand what happens during one request?" Use [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] when logits, softmax, token counts, attention shapes, KV cache, or TTFT versus tokens/sec need a grounding pass. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the sampling step needs deeper tuning, reproducibility, or runtime-parameter comparison. Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when reasoning effort, thinking traces, parser separation, or test-time compute changes the request cost and quality. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when prompt length, reserved output, history, RAG context, or tool schemas may change the result. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the frozen request should become a reusable script.
 
 ## Outcome
 
@@ -183,6 +183,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]

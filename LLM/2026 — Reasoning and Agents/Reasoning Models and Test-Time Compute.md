@@ -80,6 +80,7 @@ Test-time compute opened a second frontier for capability improvement and enable
 - [[Chain-of-Thought Prompting]] — the prompting technique that inspired reasoning models
 - [[Scaling Laws and Chinchilla]] — training-time scaling laws that reasoning models complement
 - [[DeepSeek R1 and Open Reasoning]] — open-source replication of the reasoning paradigm
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]] — practical local harness for thinking mode, reasoning effort, parser separation, latency, quality, and trace policy.
 - [[Frontier Models 2025-2026]] — the broader model generation context
 
 ---
