@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] and before long-context, RAG, tool, or benchmark runs. The chat-template lab proves the request is serialized correctly. This lab proves the serialized request has a measured budget and will not silently crowd out the answer.
 
-Pair this with [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when you need to explain prefill latency, [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when retrieved chunks consume context, and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when prompt tokens must explain TTFT and memory.
+Pair this with [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when you need to explain prefill latency, [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when retrieved chunks consume context, and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when prompt tokens must explain TTFT and memory.
 
 ## Outcome
 
@@ -212,6 +212,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]

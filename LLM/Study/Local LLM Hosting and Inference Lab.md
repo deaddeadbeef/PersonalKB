@@ -32,7 +32,7 @@ Before downloading a model, use [[LLM/Study/Local LLM Model Acquisition and Prov
 
 Before starting a server, use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record the actual OS, hardware, runtime boundary, disk, model cache, port, and endpoint-safety evidence.
 
-After the endpoint works, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to turn local inference into a document-grounded assistant with retrieval, citations, and failure diagnosis.
+After the endpoint works, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] to turn local inference into a document-grounded assistant with retrieval, citations, refusal behavior, benchmark rows, and failure diagnosis.
 
 ## Mental Model
 
@@ -263,6 +263,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Minimal Python Harness]]
 
 Current external docs checked 2026-06-14:
 

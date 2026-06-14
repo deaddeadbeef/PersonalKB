@@ -105,7 +105,7 @@ Bias controls matter because [[LLM/2023 — Open Models and Agents/LLM-as-Judge|
 
 When the workload uses retrieval, evaluate retrieval and answer quality separately.
 
-Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need the full build-and-diagnose workflow behind these checks.
+Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need the full build-and-diagnose workflow behind these checks. Use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when the evaluation row needs concrete corpus, chunk, retrieval, context, answer, refusal, and failure artifacts.
 
 | Check | Ask | Failure mode |
 | --- | --- | --- |
@@ -117,6 +117,8 @@ Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need 
 | Missing-evidence behavior | Does the model refuse or say "not enough evidence" when needed? | Parametric-memory override |
 
 This follows [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes|RAG Evaluation and Failure Modes]]. For self-checking patterns, review [[LLM/_chunks/chunk-llm-229 Self-RAG Reflection Tokens|Self-RAG reflection tokens]], [[LLM/_chunks/chunk-llm-230 Self-RAG Adaptive Retrieval|adaptive retrieval]], [[LLM/_chunks/chunk-llm-231 Self-RAG Hallucination Reduction|hallucination reduction]], and [[LLM/_chunks/chunk-llm-232 Self-RAG Toward Self-Correcting LLMs|self-correcting RAG limits]].
+
+Minimum RAG evidence for a pass: saved query id, expected source id, retrieved top-k chunk ids, selected context ids, final answer, citation validation, and unsupported-question refusal result.
 
 ## Contamination Control
 
@@ -150,6 +152,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2023 — Open Models and Agents/LLM-as-Judge]]
 - [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies]]

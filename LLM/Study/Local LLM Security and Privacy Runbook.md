@@ -94,7 +94,9 @@ If a prompt is too sensitive to appear in a plain-text log, it is too sensitive 
 
 ## RAG Privacy Checks
 
-Pair this section with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]].
+Pair this section with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]].
+
+Before building the index, write down which fields from the harness artifacts may be logged or shown in citations: raw paths, source titles, chunk text, source ids, digests, retrieval scores, and generated answers. Private file paths and sensitive note titles may need redacted citation labels.
 
 | Risk | Guardrail |
 |---|---|
@@ -158,6 +160,7 @@ Move from loopback experiment to shared service only when all are true:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]

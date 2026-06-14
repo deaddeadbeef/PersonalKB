@@ -2285,3 +2285,40 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4832 files, 2961 Markdown files, 835 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM local RAG minimal Python harness
+
+Scope: add a practical local RAG implementation harness that turns the conceptual RAG lab into reproducible corpus, chunking, embedding, retrieval, cited-answer, refusal, failure, benchmark, and quality artifacts.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-local-rag-harness.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local RAG Minimal Python Harness.md`
+- `LLM/Study/Local RAG Assistant Lab.md`
+- `LLM/Study/RAG and Prompting - Review Drill.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Context Window and Token Budgeting Lab.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Quality Evaluation Harness.md`
+- `LLM/Study/Local LLM Security and Privacy Runbook.md`
+- `LLM/Study/Local LLM Troubleshooting Decision Tree.md`
+- `LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a minimal local RAG harness with artifact contract, stack choices, runtime smoke checks, corpus manifest, chunk records, Chroma/Ollama embedding/index pattern, retrieval evidence, context assembly, local OpenAI-compatible generation, unsupported-question refusal, failure rows, benchmark rows, quality rows, and completion gate.
+- Linked the harness from the LLM MOC, study index, RAG lab, RAG drill, roadmap, capstone workbook, self-assessment, hosting lab, context budget lab, benchmark log, quality harness, security runbook, troubleshooting tree, adaptation guide, and deployment matrix.
+- Checked current Ollama, Chroma, and Sentence Transformers docs for local embeddings, OpenAI-compatible local generation, vector-store collections/querying/persistence, and semantic-search assumptions.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4832 files, 2961 Markdown files, 835 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4834 files, 2963 Markdown files, 836 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

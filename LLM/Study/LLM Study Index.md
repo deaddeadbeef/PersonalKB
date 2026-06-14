@@ -43,6 +43,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]]
+- [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]
 
 ## Hands-On Labs
 
@@ -63,6 +64,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — count rendered prompt tokens, reserve output, pack RAG/tool context, test truncation, and explain TTFT/KV-cache pressure
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — validate tool schemas, execute a harmless local tool, feed back results, bound the loop, and evaluate tool failures
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant with retrieval, citations, and failure diagnosis
+- [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] — implement a small reproducible RAG harness with corpus manifest, chunk records, persistent index, retrieval evidence, cited answer, refusal test, and failure row
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] — decide when to prompt, use RAG, fine-tune, train adapters, optimize preferences, or distill
 
 ## Suggested 20-Paper Fast Path

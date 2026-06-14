@@ -105,7 +105,7 @@ Do not train until these are true:
 | Validation examples | Same distribution as task, not copied from training |
 | Held-out examples | Untouched until final comparison |
 | Negative examples | Useful for preference optimization, refusal, or format boundaries |
-| RAG corpus | Versioned source folder, chunking policy, metadata, deletion policy |
+| RAG corpus | Versioned source folder, chunking policy, metadata, deletion policy, and harness artifacts from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] |
 | Synthetic data | Teacher identity, generation prompt, filter rules, failure examples |
 | Private data | Storage location, access boundary, redaction, retention policy |
 
@@ -166,6 +166,7 @@ An adaptation decision is complete when:
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning]]
 - [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation]]
 - [[LLM/2018–2019 — Pretrained Language Models/Data Curation and Deduplication]]

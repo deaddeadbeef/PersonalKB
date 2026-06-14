@@ -96,7 +96,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Security boundary | Endpoint exposure, logs, RAG corpus, tools, and storage locations are known. |
 | Tool loop, if relevant | Tool schema, parser/backend, validation, policy decision, execution result, loop bounds, and failure rows are recorded. |
 | Troubleshooting | At least one failure row or explicit no-failure row names the layer and evidence. |
-| RAG, if relevant | Corpus version, chunk policy, retrieval examples, citations, and failure modes are recorded. |
+| RAG, if relevant | Corpus version, chunk policy, retrieval examples, citations, refusal behavior, benchmark/quality rows, and failure modes are recorded through [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]. |
 | Adaptation, if relevant | Prompt, RAG, SFT, LoRA/QLoRA, DPO, distillation, continued pretraining, or no-train choice is justified from failure-mode evidence. |
 | Cost/ops estimate | Hardware, API, maintenance, and owner assumptions are written down. |
 | Rejected alternative | At least one plausible path is rejected with measured or policy evidence. |
@@ -161,6 +161,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]

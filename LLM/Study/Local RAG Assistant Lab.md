@@ -11,6 +11,8 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The local model endpoint should already work before you add retrieval. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether the assistant is good enough for the workload.
 
+When you are ready to implement rather than only design the pipeline, use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]. It defines the concrete artifacts for a small reproducible build: corpus manifest, chunks, embedding/index config, retrieval evidence, cited answer, refusal test, failure row, and benchmark/quality rows.
+
 Before indexing private documents, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, log policy, access boundary, and prompt-injection tests.
 
 Before packing retrieved passages into a prompt, use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to reserve output tokens, count template/history/tool overhead, and set a maximum retrieved-context budget.
@@ -60,6 +62,8 @@ Define the assistant narrowly before writing code.
 
 Do not start with "answer anything." A small assistant with clear source boundaries is easier to evaluate than a broad assistant with vague authority.
 
+Implementation handoff: after this workload row is filled, create the artifact set in [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] so the build has stable evidence files instead of ad hoc notebook output.
+
 ### Phase 1: Prepare The Corpus
 
 Create a clean input folder for the first build. Use a small corpus you can inspect manually before scaling.
@@ -104,6 +108,8 @@ Core pattern:
 5. Retrieve top-k candidates by vector similarity.
 
 This follows the dual-encoder pattern in [[LLM/_chunks/chunk-llm-225 DPR Dual-Encoder Dense Retrieval|DPR]]: chunks are pre-encoded offline, while queries are encoded at runtime. Dense retrieval is strong for semantic matching, but exact lexical search can still win on rare names, identifiers, filenames, and code symbols. For those cases, consider a hybrid dense-plus-sparse path.
+
+For a minimal local implementation, [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] gives a Chroma/Ollama-style pattern where chunk ids, metadata, embeddings, persistent index path, and query embeddings are recorded explicitly.
 
 ### Phase 4: Retrieve, Rerank, And Assemble
 
@@ -189,10 +195,12 @@ The lab is complete when you have:
 - answers with citations that can be traced back to chunks
 - at least one documented retrieval miss, extraction failure, or hallucination case
 - a pass/hold/fail decision using [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
+- a minimal harness artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] if this is being used for the capstone or a real local assistant
 
 ## References
 
 - [[LLM/Sources/Sources Index]]
+- [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
