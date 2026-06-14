@@ -16,7 +16,7 @@ Use this note as the operational definition of "I know LLMs" for this vault. Rea
 Move in order:
 
 1. Map the field chronologically with [[LLM/LLM — Learning Path|LLM Learning Path]].
-2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] while reading architecture notes and papers.
+2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] while reading architecture notes and papers.
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to connect raw data, objectives, pretraining, post-training, adaptation, evaluation, and deployment.
 5. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to connect attention, next-token loss, gradients, validation, and generation in a toy model.
@@ -44,6 +44,7 @@ Read:
 
 - [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]]
 - [[LLM/Pre-2017 — Before Transformers/Tokenization|Tokenization]]
+- [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
 - [[LLM/2017 — The Transformer/Attention Mechanism|Attention Mechanism]]
 - [[LLM/2017 — The Transformer/Transformer Architecture|Transformer Architecture]]
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]]
@@ -51,7 +52,7 @@ Read:
 
 Proof:
 
-- Draw the pipeline from text to tokens to logits to next-token sampling.
+- Draw the pipeline from text to tokens to embeddings to hidden states to logits to probabilities to next-token sampling.
 - Prove that pipeline with [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] by freezing one local request and tracing tokenization, prefill, decode, sampling, stopping, and returned text.
 - Verify tokenizer and chat-template compatibility with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] before blaming the model for instruction-following failures.
 - Implement scaled dot-product attention with [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
@@ -65,6 +66,7 @@ Proof:
 Read:
 
 - [[LLM/2020–2021 — The Scaling Era/Scaling Laws|Scaling Laws]]
+- [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism|Training Infrastructure and Parallelism]]
@@ -223,6 +225,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 ## Completion Checklist
 
 - [ ] I can explain the historical timeline without notes.
+- [ ] I can explain token IDs, embeddings, hidden states, logits, probabilities, cross-entropy, attention shapes, and KV-cache arithmetic.
 - [ ] I can derive the attention computation and name each tensor.
 - [ ] I can train a tiny decoder-only language model and explain shifted targets, cross-entropy loss, validation loss, and generation.
 - [ ] I can explain pretraining, SFT, RLHF, DPO, LoRA, QLoRA, RAG, function calling, and LLM-as-judge.
@@ -247,6 +250,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
+- [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]

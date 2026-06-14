@@ -41,6 +41,8 @@ The first two terms are the academic core:
 - **Weight memory** is mostly controlled by parameter count and numeric format. See [[LLM/2022 — Alignment and Chat/Quantization|Quantization]].
 - **KV-cache memory** grows with layers, context length, hidden size, precision, and active sequences. See [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]].
 
+Use [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] if the parameter, tensor-shape, or KV-cache arithmetic needs a grounding pass before filling the sizing worksheet.
+
 ## Weight Memory Estimate
 
 Approximate weight memory:
@@ -206,6 +208,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

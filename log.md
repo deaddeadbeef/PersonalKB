@@ -2438,3 +2438,35 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4842 files, 2971 Markdown files, 840 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM math and tensor shape primer
+
+Scope: add a compact academic primer that connects LLM math and tensor shapes to implementation, training, and local inference diagnostics.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-math-tensor-shape-primer.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM Math and Tensor Shape Primer.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Architecture Cheatsheet.md`
+- `LLM/Study/Attention Implementation Lab.md`
+- `LLM/Study/Tiny Decoder-Only Transformer Training Lab.md`
+- `LLM/Study/LLM Inference Request Lifecycle Lab.md`
+- `LLM/Study/Local LLM Model and Hardware Sizing Guide.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a math and tensor-shape primer covering token IDs, embeddings, hidden states, logits, softmax, cross-entropy, perplexity, shifted targets, attention shapes, transformer block shape contracts, parameter memory, KV-cache arithmetic, prefill versus decode, and common math-to-implementation bugs.
+- Routed the primer from the LLM MOC, study index, architecture cheatsheet, attention lab, tiny decoder lab, request lifecycle lab, model/hardware sizing guide, mastery roadmap, capstone workbook, and self-assessment exam.
+- Kept the pass grounded in existing internal source/chunk notes; no new current model or runtime claims were added.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4842 files, 2971 Markdown files, 840 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4844 files, 2973 Markdown files, 841 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

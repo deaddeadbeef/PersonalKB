@@ -7,6 +7,8 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 Quick-reference for key architectural decisions, formulas, and model specifications.
 
+Use [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] when a formula here needs the tensor-shape or local-inference explanation behind it.
+
 ## Core Formulas
 
 | Formula | Meaning |

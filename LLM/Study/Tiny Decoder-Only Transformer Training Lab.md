@@ -9,7 +9,7 @@ tier-coverage: [core, deep-dive, practice]
 
 > **One-line summary** Training a tiny decoder-only transformer makes the academic core tangible: tokens become logits, logits become cross-entropy loss, loss becomes gradients, and the trained model can autoregressively generate text.
 
-Use this after [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]], [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]], and [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives|Language Modeling Objectives]]. The attention lab proves the main tensor operation. This lab proves the whole causal language-model training loop.
+Use this after [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]], [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]], and [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives|Language Modeling Objectives]]. The math primer proves the core objects and shapes; the attention lab proves the main tensor operation. This lab proves the whole causal language-model training loop.
 
 Use it before treating [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] as only a conceptual map. The point is not to train a useful assistant. The point is to see, in a small controlled setting, what pretraining optimizes and why local inference later uses the same logits, sampling, and autoregressive loop.
 
@@ -268,6 +268,7 @@ This lab is complete when you have:
 - [[LLM/2017 — The Transformer/Transformer Architecture]]
 - [[LLM/2018–2019 — Pretrained Language Models/Decoder-Only Models]]
 - [[LLM/Study/Attention Implementation Lab]]
+- [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/LLM Mastery Roadmap]]

@@ -50,7 +50,7 @@ Answer without opening the timeline.
 | Why are RAG and tools not just prompting tricks? | They add external state/action channels and shift failure modes outside model weights. |
 | Why is inference now a systems problem? | KV cache, batching, memory bandwidth, quantization, routing, serving latency, and cost. |
 
-Core remediation: [[LLM/LLM — Learning Path]], [[LLM/Study/LLM Architecture Cheatsheet]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]], and the review drills in [[LLM/Study/LLM Study Index]].
+Core remediation: [[LLM/LLM — Learning Path]], [[LLM/Study/LLM Architecture Cheatsheet]], [[LLM/Study/LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]], and the review drills in [[LLM/Study/LLM Study Index]].
 
 ## Section 2: Mechanisms And Math
 
@@ -58,6 +58,8 @@ You should be able to explain these with a small sketch or equation.
 
 | Prompt | A passing answer must include |
 | --- | --- |
+| Trace token IDs to sampled text. | Token IDs, embeddings, hidden states, logits, softmax probabilities, sampling, appended next token. |
+| What is cross-entropy measuring in a causal LM? | Negative log probability of the true next token, averaged over positions/examples. |
 | Derive scaled dot-product attention in words. | Q/K similarity, scale by key dimension, softmax weights, weighted V sum. |
 | Why does causal masking matter for decoder-only training and inference? | Prevents attending to future tokens; preserves autoregressive objective. |
 | What are Q, K, and V projections doing? | Different learned views for matching positions and carrying content. |
@@ -165,6 +167,7 @@ These gates are stricter than the oral questions.
 
 | Gate | Required proof |
 | --- | --- |
+| Math and tensor shapes | Proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] for token IDs, embeddings, logits, loss, attention scores, weight memory, and KV cache. |
 | Architecture | Attention implementation or worked tensor-shape proof. |
 | Tiny decoder training | Toy causal LM proof using [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]. |
 | Paper literacy | One paper protocol row for each major cluster. |
@@ -192,7 +195,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Failed area | Study next |
 | --- | --- |
 | Timeline or field map | [[LLM/LLM — Learning Path]] |
-| Architecture and tensor shapes | [[LLM/Study/LLM Architecture Cheatsheet]] and [[LLM/Study/Attention Implementation Lab]] |
+| Architecture and tensor shapes | [[LLM/Study/LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Architecture Cheatsheet]], and [[LLM/Study/Attention Implementation Lab]] |
 | Training loop mechanics | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]], [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals]], and [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives]] |
 | Paper skepticism | [[LLM/Study/LLM Paper Reading Protocol]] and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]] |
 | Mechanism-to-local translation | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |
@@ -219,6 +222,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
+- [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]

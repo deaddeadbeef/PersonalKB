@@ -21,6 +21,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 |---|---|---|---|---|
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
 | Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
+| Math and tensor shapes | Oral or written proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | Can trace token IDs, embeddings, hidden states, logits, probabilities, shifted targets, cross-entropy, attention shapes, weight memory, and KV-cache growth. | Study map drafted; oral proof not yet passed |
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
@@ -94,6 +95,22 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Multi-head reshape proof |  |
 | Tests run |  |
 | Failure fixed |  |
+
+## Math And Tensor Shape Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Token ID shape |  |
+| Embedding/hidden-state shape |  |
+| Logit/probability shape |  |
+| Shifted target example |  |
+| Cross-entropy explanation |  |
+| Attention score shape |  |
+| Causal mask explanation |  |
+| Weight memory estimate |  |
+| KV-cache estimate |  |
+| TTFT versus decode explanation |  |
+| Local inference symptom diagnosed from math |  |
 
 ## Tiny Decoder Training Proof Template
 
@@ -253,6 +270,7 @@ Next run:
 - [ ] Every gate in the evidence ledger has a proof link.
 - [ ] The training pipeline map explains one capability from data through deployment.
 - [ ] The mechanism-to-inference bridge explains at least one speed, memory, compatibility, quality, and RAG/tool failure with evidence.
+- [ ] The math and tensor-shape proof explains logits, loss, attention, weight memory, KV cache, and one local inference symptom.
 - [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
@@ -282,6 +300,7 @@ Next run:
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
