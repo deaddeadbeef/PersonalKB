@@ -20,7 +20,7 @@ Move in order:
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to connect raw data, objectives, pretraining, post-training, adaptation, evaluation, and deployment.
 5. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to connect attention, next-token loss, gradients, validation, and generation in a toy model.
-6. Use [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
+6. Use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], and [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
 7. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the machine, runtime boundary, disk, and port before blaming the model.
 8. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] to prove model card, license, gated access, exact artifact, revision, local path, and unsafe-file risk before serving.
 9. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to prove the exact artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together.
@@ -140,6 +140,7 @@ Read:
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding|Speculative Decoding]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
@@ -159,6 +160,7 @@ Read:
 Proof:
 
 - Run one local model through a CLI and one local HTTP API.
+- If the first run is on Windows, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] to capture preflight, model id, smoke response, listener boundary, and quality mini-suite before moving to broader serving work.
 - Capture a machine/runtime preflight with [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] before diagnosing quality or speed.
 - Record acquisition provenance with [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before serving downloaded, gated, converted, or internal model artifacts.
 - Use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to keep the endpoint loopback-only until exposure, authentication, logs, RAG data, and tools are understood.
@@ -252,6 +254,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
+- [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]

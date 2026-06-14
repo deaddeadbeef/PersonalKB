@@ -2408,3 +2408,33 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4840 files, 2969 Markdown files, 839 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM Windows local first-run quickstart
+
+Scope: add a Windows-first local LLM quickstart that turns the broader hosting and evidence runbooks into exact PowerShell steps for preflight capture, Ollama or LM Studio loopback API proof, listener checks, quality mini-suite, and first decision row.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-windows-local-quickstart.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Windows First-Run Quickstart.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local LLM First Inference Evidence Pack.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a Windows-first quickstart with run-folder setup, PowerShell preflight capture, Ollama native and OpenAI-compatible smoke tests, LM Studio server/API path, listener boundary check, quality mini-suite, decision row, and troubleshooting order.
+- Linked the quickstart from the LLM MOC, study index, hosting lab, serving runbook, first inference evidence pack, mastery roadmap, capstone workbook, and self-assessment exam.
+- Checked current Ollama, LM Studio, llama.cpp, llama-cpp-python, and vLLM docs for Windows installation, local server startup, OpenAI-compatible routes, usage metrics, and Windows/WSL serving boundaries.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4840 files, 2969 Markdown files, 839 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4842 files, 2971 Markdown files, 840 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

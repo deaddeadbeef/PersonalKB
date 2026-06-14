@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this as the first-run binder for [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. Those notes explain the runtime choices and serving sequence. This note tells you exactly what to save so the run becomes capstone evidence.
 
-For the first Windows-native proof, prefer Ollama or LM Studio. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven.
+For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven.
 
 ## Evidence Packet
 
@@ -230,6 +230,7 @@ This evidence pack is complete when you have:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]

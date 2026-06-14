@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting
 
 For the first complete run, fill [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] as you go. The evidence pack is the one-page binder; this runbook is the detailed serving procedure.
 
+If the first run is on Windows, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for a minimal PowerShell path through preflight capture, Ollama or LM Studio API proof, listener check, and first quality mini-suite.
+
 After the smoke test passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, model id, route, streaming behavior, error behavior, and feature gaps before pointing generic clients at the server. Then use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before relying on local function calling, structured output, or agent loops.
 
 Before starting the server, use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] to prove the model card, license, revision, artifact safety, local path, and digest are acceptable. Then use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to turn the context target into a measured prompt, history, RAG, tool, output, and margin budget. Then use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to verify the model artifact, tokenizer, chat template, quantization, runtime, and API route before treating load failures or bad outputs as model-quality failures.
@@ -263,6 +265,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

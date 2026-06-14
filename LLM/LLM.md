@@ -59,6 +59,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — Translate academic mechanisms into local inference controls, failure diagnoses, and proof artifacts
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
+- [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — PowerShell path from Windows preflight to first loopback API response
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — One first-run packet for machine, model, runtime, endpoint, response, timing, quality, safety, and next decision
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — Practical path to run, serve, and benchmark local models
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — Hardware, OS, runtime, disk, port, and endpoint-boundary checks before serving

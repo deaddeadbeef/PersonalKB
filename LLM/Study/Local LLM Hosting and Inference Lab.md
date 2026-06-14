@@ -22,7 +22,9 @@ After this lab you should be able to:
 
 This lab is the Level 5 proof gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]].
 
-If this is your first actual local run, start a dated [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] before running commands. It keeps the preflight, model choice, endpoint proof, API contract, benchmark, quality decision, and next action together.
+If this is your first actual local run on Windows, start with [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the exact PowerShell preflight, Ollama/LM Studio smoke tests, listener check, and first evidence row.
+
+For any first actual local run, start a dated [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] before running commands. It keeps the preflight, model choice, endpoint proof, API contract, benchmark, quality decision, and next action together.
 
 Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] so the run is reproducible and the model/runtime choice is based on evidence rather than memory.
 
@@ -258,6 +260,7 @@ Internal evidence:
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
