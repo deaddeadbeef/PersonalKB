@@ -84,6 +84,7 @@ The core language-modeling setup became the basis of the modern LLM stack. Autor
 - [[Decoder-Only Models]] — the autoregressive LM paradigm scaled up with GPT
 - [[Scaling Laws]] — formal power-law relationships governing language model performance
 - [[Instruction Tuning]] — adapting pretrained language models to follow instructions
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — implement next-token loss, teacher forcing, and autoregressive generation in a toy decoder-only model
 
 ## Supporting Chunks / References
 ### Supporting Chunks

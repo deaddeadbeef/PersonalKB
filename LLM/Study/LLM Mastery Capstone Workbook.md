@@ -23,6 +23,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
+| Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | Local model endpoint | CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, and loopback URL are captured. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
@@ -86,6 +87,23 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Multi-head reshape proof |  |
 | Tests run |  |
 | Failure fixed |  |
+
+## Tiny Decoder Training Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Corpus/source |  |
+| Tokenization/vocabulary |  |
+| Train/validation split |  |
+| Input/target shift example |  |
+| Causal mask test |  |
+| Model parameter count |  |
+| Training loss samples |  |
+| Validation loss samples |  |
+| Generated low-temperature sample |  |
+| Generated higher-temperature or top-k sample |  |
+| Overfitting or undertraining note |  |
+| Code/notebook path |  |
 
 ## Local Inference Proof Template
 
@@ -185,6 +203,7 @@ Next run:
 
 - Reading without recall.
 - A training-stage explanation without data, objective, evaluation, and failure-owner evidence.
+- A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, and route compatibility.
 - An endpoint without a benchmark.
 - A benchmark without quality evidence.
@@ -197,6 +216,7 @@ Next run:
 
 - [ ] Every gate in the evidence ledger has a proof link.
 - [ ] The training pipeline map explains one capability from data through deployment.
+- [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] The local model endpoint has a runtime compatibility evidence card.
@@ -213,6 +233,7 @@ Next run:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Training Pipeline Map]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Study Index]]

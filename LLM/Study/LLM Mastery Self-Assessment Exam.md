@@ -68,6 +68,7 @@ You should be able to explain these with a small sketch or equation.
 | What does quantization change? | Numeric representation and memory transfer, with possible quality loss. |
 | What is LoRA's core parameterization? | Low-rank update added to frozen base weights. |
 | How do you assign a failure to the right training stage? | Identify whether the symptom points to data, objective, SFT, preference optimization, RAG, adaptation, runtime, or policy before changing the model. |
+| What must a tiny decoder-only training loop prove? | Shifted next-token targets, causal masking, logits-to-cross-entropy loss, gradients, train/validation loss, and autoregressive generation. |
 | When should you avoid fine-tuning? | When the failure is missing external knowledge, current facts, retrieval, tool policy, prompt formatting, or model capacity rather than learnable task behavior. |
 | Why can a smaller overtrained model be better for inference economics? | More training data/compute can improve quality while reducing serving cost. |
 
@@ -80,6 +81,7 @@ Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] for one 
 | Cluster | Exam task |
 | --- | --- |
 | Training pipeline | Trace one capability from corpus choice and objective through pretraining, post-training, evaluation, adaptation, and deployment. |
+| Tiny decoder training | Explain the code path from token IDs to logits, loss, optimizer step, validation loss, and generated text. |
 | Transformer | State the pre-paper baseline, the new mechanism, and the evidence that it worked. |
 | BERT/GPT | Explain how objective and architecture changed downstream behavior. |
 | GPT-3/scaling | Separate scale, data, compute, and in-context learning claims. |
@@ -158,6 +160,7 @@ These gates are stricter than the oral questions.
 | Gate | Required proof |
 | --- | --- |
 | Architecture | Attention implementation or worked tensor-shape proof. |
+| Tiny decoder training | Toy causal LM proof using [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]. |
 | Paper literacy | One paper protocol row for each major cluster. |
 | Training pipeline | Capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]. |
 | Local endpoint | CLI and HTTP endpoint response from one local model. |
@@ -178,6 +181,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | --- | --- |
 | Timeline or field map | [[LLM/LLM — Learning Path]] |
 | Architecture and tensor shapes | [[LLM/Study/LLM Architecture Cheatsheet]] and [[LLM/Study/Attention Implementation Lab]] |
+| Training loop mechanics | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]], [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals]], and [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives]] |
 | Paper skepticism | [[LLM/Study/LLM Paper Reading Protocol]] |
 | Training and scaling | [[LLM/Study/LLM Training Pipeline Map]], [[LLM/2020–2021 — The Scaling Era/Scaling Laws]], and [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism]] |
 | Adaptation and fine-tuning | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning]], and [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA]] |
@@ -204,6 +208,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/Attention Implementation Lab]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]

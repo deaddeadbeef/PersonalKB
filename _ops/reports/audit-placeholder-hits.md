@@ -62,9 +62,9 @@ Count: 79
 | LLM/2024–2025 — Frontier and Efficiency/State Space Models and Mamba.md | 93 | *(To be populated as chunks are created)* |
 | LLM/2024–2025 — Frontier and Efficiency/Video Understanding Models.md | 93 | *(To be populated as chunks are created)* |
 | LLM/Pre-2017 — Before Transformers/Embeddings and Representation Geometry.md | 85 | *(To be populated as chunks are created)* |
-| LLM/Pre-2017 — Before Transformers/Language Model Fundamentals.md | 90 | *(To be populated as chunks are created)* |
-| LLM/Pre-2017 — Before Transformers/Language Modeling Objectives.md | 91 | *(To be populated as chunks are created)* |
-| LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability.md | 97 | *(To be populated as chunks are created)* |
+| LLM/Pre-2017 — Before Transformers/Language Model Fundamentals.md | 91 | *(To be populated as chunks are created)* |
+| LLM/Pre-2017 — Before Transformers/Language Modeling Objectives.md | 92 | *(To be populated as chunks are created)* |
+| LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability.md | 98 | *(To be populated as chunks are created)* |
 | LLM/Pre-2017 — Before Transformers/Perplexity and Intrinsic Metrics.md | 85 | *(To be populated as chunks are created)* |
 | LLM/Pre-2017 — Before Transformers/Pre-Transformer Foundations.md | 95 | *(To be populated as chunks are created)* |
 | LLM/Pre-2017 — Before Transformers/Tokenization.md | 94 | *(To be populated as chunks are created)* |

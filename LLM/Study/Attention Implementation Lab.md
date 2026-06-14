@@ -9,7 +9,7 @@ tier-coverage: [practice, deep-dive]
 
 > **One-line summary** Implementing attention turns the transformer formula from a memorized expression into a concrete tensor program: project Q/K/V, compute scaled scores, apply masks, softmax, aggregate values, and verify every shape.
 
-Use this after reading [[LLM/2017 — The Transformer/Attention Mechanism|Attention Mechanism]] and [[LLM/2017 — The Transformer/Transformer Architecture|Transformer Architecture]]. This lab is the capstone proof for "implement scaled dot-product attention and explain the tensor shapes" in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]].
+Use this after reading [[LLM/2017 — The Transformer/Attention Mechanism|Attention Mechanism]] and [[LLM/2017 — The Transformer/Transformer Architecture|Transformer Architecture]]. This lab is the capstone proof for "implement scaled dot-product attention and explain the tensor shapes" in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]. After the attention operation is clear, use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to place it inside a full causal LM training loop.
 
 ## Target Competence
 
@@ -221,6 +221,7 @@ This lab is complete when you can:
 - [[LLM/2017 — The Transformer/Transformer Architecture]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/_chunks/chunk-llm-001 Scaled Dot-Product Attention Formula]]

@@ -110,9 +110,10 @@ Use this as the applied proof that the training pipeline is not just vocabulary.
 
 1. Pick one model behavior you care about, such as instruction following, citation grounding, coding format, refusal behavior, or domain terminology.
 2. Identify which pipeline stage most likely created that behavior.
-3. Name the evidence that would prove the stage worked: corpus metadata, loss curve, held-out prompt suite, preference eval, quality harness, benchmark row, or deployment check.
-4. Name one tempting but wrong fix from another stage.
-5. Write a one-paragraph diagnosis explaining whether the next change should be data, objective, evaluation, adaptation, retrieval, serving, or deployment policy.
+3. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to run one toy next-token training loop and record shifted targets, loss, validation loss, and generated samples.
+4. Name the evidence that would prove the stage worked: corpus metadata, loss curve, held-out prompt suite, preference eval, quality harness, benchmark row, or deployment check.
+5. Name one tempting but wrong fix from another stage.
+6. Write a one-paragraph diagnosis explaining whether the next change should be data, objective, evaluation, adaptation, retrieval, serving, or deployment policy.
 
 ## Completion Gate
 
@@ -130,6 +131,7 @@ You understand the training pipeline when you can:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

@@ -35,7 +35,7 @@ After this lab you should be able to:
 | 7. Detokenization | Token IDs are converted back into text or structured output. | Returned text plus any parse/validation result. |
 | 8. Application handling | The caller displays, streams, parses, stores, evaluates, or retries the response. | Parsed object, citation check, client harness row, benchmark row, or quality decision. |
 
-The key academic bridge is [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]]: autoregressive generation samples a next-token distribution, appends the token, and repeats. The key deployment bridge is [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]]: prefill and decode have different performance bottlenecks.
+The key academic bridge is [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]]: autoregressive generation samples a next-token distribution, appends the token, and repeats. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] when you want to see the same logits and sampling loop inside a toy model you trained yourself. The key deployment bridge is [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]]: prefill and decode have different performance bottlenecks.
 
 ## Sampling Knobs
 
@@ -184,6 +184,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]

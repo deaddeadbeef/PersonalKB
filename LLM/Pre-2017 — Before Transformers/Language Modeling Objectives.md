@@ -85,6 +85,7 @@ The debate between causal and masked objectives influenced architecture choices 
 - [[Decoder-Only Models]]
 - [[Code Models]]
 - [[PaLM]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — make the causal LM objective concrete with shifted targets and cross-entropy loss
 
 ## Supporting Chunks / References
 ### Supporting Chunks

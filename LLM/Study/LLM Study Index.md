@@ -23,6 +23,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
@@ -41,6 +42,7 @@ Study and review materials for the LLM knowledge base.
 ## Hands-On Labs
 
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and tensor-shape checks
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a toy causal LM to connect tokens, logits, cross-entropy loss, gradients, validation loss, and generation
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] — trace raw data through pretraining, SFT, preference optimization, adaptation, evaluation, and deployment gates
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] — match model artifact, quantization, tokenizer, chat template, runtime, route, and workload before serving

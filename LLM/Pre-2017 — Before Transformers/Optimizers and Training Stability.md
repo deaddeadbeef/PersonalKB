@@ -91,6 +91,7 @@ AdamW's adaptive learning rates handle the diverse scales of transformer paramet
 - [[Gradient Clipping]]
 - [[Checkpointing]]
 - [[μP]]
+- [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — observe AdamW, gradient clipping, train/validation loss, and overfitting in a small model
 
 ## Supporting Chunks / References
 ### Supporting Chunks

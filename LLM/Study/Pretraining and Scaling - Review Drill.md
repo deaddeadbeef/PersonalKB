@@ -39,3 +39,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 11. **What are the main gates in the LLM training pipeline?**
     Data curation, tokenization, pretraining objective, distributed optimization, base evaluation, SFT, preference optimization, adaptation, deployment, and monitoring. See [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]].
+
+12. **What does a tiny decoder-only training lab prove?**
+    It proves the causal LM objective end to end: shifted next-token targets, masked self-attention, logits, cross-entropy loss, gradients, train/validation loss, and autoregressive generation. See [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]].
