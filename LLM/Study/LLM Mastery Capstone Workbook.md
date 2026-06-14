@@ -34,6 +34,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
 | RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] |  | Corpus version, chunking policy, index metadata, retrieval evidence, cited answer, and at least one diagnosed failure are captured. | Not started |
+| Tool loop | Tool-calling proof from [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] |  | Tool schema, validated arguments, policy check, execution result, injected tool result, bounded loop, and failure rows are captured. | Not started |
 | Adaptation decision | Memo using [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] |  | Prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no-train decision is justified from the measured failure mode, data, eval, compute, and rollback evidence. | Not started |
 | Deployment decision | Memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] |  | Choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
 
@@ -151,6 +152,24 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Bad chunk diagnosed |  |
 | Hallucination or citation failure diagnosed |  |
 
+## Tool-Calling Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Tool contract card |  |
+| Structured-output baseline |  |
+| Runtime route and tool-choice mode |  |
+| Tool schema version |  |
+| Tool call observed |  |
+| Argument validation result |  |
+| Policy allow/deny result |  |
+| Tool execution result |  |
+| Tool-result injection proof |  |
+| Bounded loop settings |  |
+| Wrong-tool or bad-argument failure |  |
+| Unsafe-action denial |  |
+| Quality harness tool row |  |
+
 ## Evaluation Proof Template
 
 | Evidence item | Link or value |
@@ -217,6 +236,7 @@ Next run:
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
 - A long-context, RAG, tool, or multi-turn run without a counted context budget and output reserve.
+- A tool-using run where the model-selected action executes without schema validation, policy check, bounded loop control, and failure rows.
 - A benchmark that changes temperature, filters, penalties, seeds, stops, or output caps without saying so.
 - An endpoint without a benchmark.
 - A benchmark without quality evidence.
@@ -237,6 +257,7 @@ Next run:
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
+- [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
 - [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
 - [ ] The RAG assistant includes at least one diagnosed failure mode.
@@ -268,4 +289,5 @@ Next run:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]

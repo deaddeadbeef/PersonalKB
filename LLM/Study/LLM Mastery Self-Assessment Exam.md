@@ -113,12 +113,13 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What must a client harness log? | Config, request settings, latency, TTFT if streaming, usage tokens, status, error class, excerpt or output path. |
 | What sampling controls must be fixed for a fair benchmark? | Temperature, top-p, top-k, min-p when supported, penalties, seed behavior, stop strings, structured-output mode, and output cap. |
 | How do you prove a long, RAG, tool, or multi-turn request fits? | Count the rendered prompt with the serving tokenizer, reserve output tokens, include history/RAG/tool/template overhead, leave a safety margin, and test truncation behavior. |
+| How do you prove a local tool call is safe enough to execute? | Validate model arguments against schema, check an external policy boundary, enforce least privilege, log the decision, and bound retries/timeouts before execution. |
 | What makes a benchmark reproducible? | Same prompt, model, runtime, quantization, hardware, sampling, context, and output cap. |
 | What distinguishes fast-but-wrong from good? | Quality harness scoring tied to workload, not subjective feel. |
 | What makes an adaptation decision defensible? | Baseline failure, method matched to failure mode, clean data boundary, held-out eval, regression checks, deployment impact, and rollback, as in [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]. |
 | What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, operational owner, and rejected alternatives, as in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. |
 
-Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
+Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
 Add [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the exam answer depends on artifact format, tokenizer, chat template, quantization, runtime support, or API route.
 
 ## Section 5: Debugging Scenarios
@@ -174,6 +175,7 @@ These gates are stricter than the oral questions.
 | API contract | Evidence card proving OpenAI-compatible base URL, route, model id, non-streaming response, streaming behavior, harmless failure behavior, and required feature gaps. |
 | Decoding controls | Evidence proving sampler settings are frozen or intentionally varied with temperature/filter/penalty/stop behavior recorded. |
 | Context budget | Evidence proving rendered prompt tokens, output reserve, RAG/tool/history overhead, safety margin, and truncation behavior are known. |
+| Tool loop | Evidence proving tool schema, argument validation, policy check, execution, result injection, bounded retry/stop rules, and failure rows. |
 | Benchmark | Reproducible row with model, runtime, quantization, context, TTFT, tokens/sec, memory, and prompt class. |
 | Quality | Prompt-suite result with pass/hold/fail decision. |
 | Adaptation | Decision memo choosing prompt, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no training from measured evidence. |
@@ -197,7 +199,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Inference memory and latency | [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]] and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]] |
 | Local setup | [[LLM/Study/Local LLM Environment Preflight Lab]] and [[LLM/Study/Local LLM Model and Hardware Sizing Guide]] |
 | Endpoint and client | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], and [[LLM/Study/Local LLM Client Harness Lab]] |
-| Request behavior | [[LLM/Study/LLM Inference Request Lifecycle Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
+| Request behavior | [[LLM/Study/LLM Inference Request Lifecycle Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], and [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 | Debugging | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | RAG and citations | [[LLM/Study/Local RAG Assistant Lab]] |
 | Evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -229,6 +231,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]

@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** The right deployment path is the one whose quality, latency, privacy, cost, reliability, and operational burden fit the workload after measurement.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Those notes collect evidence. This note turns the evidence into a deployment choice.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
 
 The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
 
@@ -94,6 +94,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Runtime compatibility | Artifact format, tokenizer, template, quantization, API route, and model id are recorded. |
 | Quality | Workload prompts have pass, hold, or fail decisions from a rubric. |
 | Security boundary | Endpoint exposure, logs, RAG corpus, tools, and storage locations are known. |
+| Tool loop, if relevant | Tool schema, parser/backend, validation, policy decision, execution result, loop bounds, and failure rows are recorded. |
 | Troubleshooting | At least one failure row or explicit no-failure row names the layer and evidence. |
 | RAG, if relevant | Corpus version, chunk policy, retrieval examples, citations, and failure modes are recorded. |
 | Adaptation, if relevant | Prompt, RAG, SFT, LoRA/QLoRA, DPO, distillation, continued pretraining, or no-train choice is justified from failure-mode evidence. |
@@ -160,6 +161,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]

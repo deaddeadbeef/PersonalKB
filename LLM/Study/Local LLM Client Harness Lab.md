@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** A local model run is reproducible only when the client captures request settings, timing, response text, errors, and benchmark fields in the same shape every time.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] records the base URL, route, model id, streaming behavior, errors, and feature gaps, and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] explains one request. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the harness must freeze sampler settings rather than rely on runtime defaults. This lab turns one successful call into a repeatable client-side harness.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] records the base URL, route, model id, streaming behavior, errors, and feature gaps, and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] explains one request. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the harness must freeze sampler settings rather than rely on runtime defaults. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when the harness must log tool calls, validation, policy decisions, execution latency, and tool-result injection. This lab turns one successful call into a repeatable client-side harness.
 
 For private or document-grounded runs, check [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before saving prompts, retrieved passages, outputs, or logs.
 
@@ -35,6 +35,7 @@ After this lab you should be able to:
 | Timer | Wall-clock timing starts before network send and stops after final response or error. | `latency_s`, `ttft_s`, and decode speed fields. |
 | Parser | The client extracts text, token counts, stop reason, and usage fields when the runtime provides them. | Parsed record plus raw response excerpt when needed. |
 | Error recorder | Failures create a structured row instead of disappearing into console text. | `status`, `error_class`, `http_status`, `retryable`, and first fix. |
+| Tool recorder | Tool calls, validated arguments, policy decisions, execution results, and tool-result messages are logged when tools are enabled. | `tool_name`, `tool_args_valid`, `tool_policy`, `tool_latency_s`, and `tool_result_status`. |
 | Logger | Every run appends one JSONL or CSV row with stable field names. | A run log that can be compared across model/runtime candidates. |
 | Evaluator handoff | The same prompt id and output path can be scored by the quality harness. | Prompt-suite row with model/runtime, rubric scores, and decision. |
 
@@ -259,6 +260,7 @@ Force at least one harmless failure, such as a wrong model id or wrong route, so
 | Context length | Prompt assembly/KV cache | Prompt tokens if known, context setting | Reduce context or choose larger context setting. |
 | OOM or HTTP 500 | Runtime/hardware | Error body, model id, quantization, context | Smaller model, stronger quantization, lower context, lower concurrency. |
 | Invalid schema | Application boundary | Parse/validation result and output excerpt | Tighten prompt, add validation, or use constrained decoding. |
+| Tool denied | Policy boundary | Tool name, denied argument, policy reason | Return a safe denial or ask for approval; do not execute. |
 | Stream interrupted | Client/server stream layer | Last successful chunk and partial text length | Retry once only if the workload allows it and record the retry. |
 
 ## Run Log JSONL Schema
@@ -287,6 +289,7 @@ Use stable field names so the benchmark and quality notes can read the same row.
 | `error_class` | Structured error name for failed runs. |
 | `response_excerpt` | Short redacted excerpt or link to private output. |
 | `quality_decision` | Pass/hold/fail after rubric scoring, if available. |
+| `tool_trace` | Tool call metadata, validation result, policy decision, execution status, and result token count when tools are enabled. |
 | `notes` | One-line interpretation or next fix. |
 
 For private work, store redacted excerpts or local-only output paths instead of full prompt/output text. The point is reproducibility, not leaking the corpus into logs.
@@ -349,6 +352,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]

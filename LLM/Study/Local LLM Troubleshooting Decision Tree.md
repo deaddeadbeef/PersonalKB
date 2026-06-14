@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local LLM failures are diagnosable when each symptom is mapped to one layer: environment, model fit, server, route, client, prompt, tokenizer, RAG, quality, or security.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] when the symptom may come from model source, license gate, revision, cache path, unsafe file type, or unclear artifact identity. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when failures appear only on long prompts, RAG, tools, or multi-turn history. This note decides where to look when the run still fails.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] when the symptom may come from model source, license gate, revision, cache path, unsafe file type, or unclear artifact identity. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when failures appear only on long prompts, RAG, tools, or multi-turn history. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when failures involve tool selection, tool arguments, schema validation, policy denial, execution, or tool-result injection. This note decides where to look when the run still fails.
 
 The rule is simple: change one layer at a time, keep a short evidence record, and do not call a model "bad" until the environment, route, prompt format, and evaluation harness have been checked.
 
@@ -28,9 +28,10 @@ Run the checks in this order unless the error message clearly names a lower laye
 | 7 | Can a minimal non-streaming request return text? | [[LLM/Study/Local LLM Client Harness Lab|Client harness]] |
 | 8 | Does the same request behave after streaming, parsing, stops, and schema constraints? | [[LLM/Study/LLM Inference Request Lifecycle Lab|Request lifecycle]] |
 | 9 | Does instruction following fail because of tokenizer, chat template, roles, or stops? | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat template lab]] |
-| 10 | Is the answer slow but otherwise valid? | Performance branch and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|context budget lab]] |
-| 11 | Is the answer fast but wrong, unsupported, or unusable? | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality harness]] |
-| 12 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]] and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
+| 10 | Does a tool call, schema, policy, or tool result change the failure? | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|tool-calling lab]] |
+| 11 | Is the answer slow but otherwise valid? | Performance branch and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|context budget lab]] |
+| 12 | Is the answer fast but wrong, unsupported, or unusable? | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality harness]] |
+| 13 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]] and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
 
 Pass signal: the diagnosis names the failed layer and the next controlled change.
 
@@ -51,6 +52,7 @@ Pass signal: the diagnosis names the failed layer and the next controlled change
 | Client times out | Client/server | Timeout, prompt length, server log, partial response. |
 | Non-streaming works but streaming fails | Client stream | Raw stream event sample, parser error, final chunk. |
 | JSON/schema output is invalid | Request boundary | Prompt, schema, stop reason, parser error, output excerpt. |
+| Tool call is missing, malformed, wrong, denied, or ignored | Tool boundary | Tool schema, tool choice mode, raw tool call, validation result, policy decision, tool result message. |
 | Output starts in wrong role or leaks markers | Chat template | Tokenizer/template/role boundary evidence. |
 | Output ignores instructions | Prompt/template/model quality | Template check, stronger prompt test, quality harness row. |
 | First token is slow | Performance/context budget | TTFT, prompt tokens, queue time, load time, prefill context. |
@@ -115,6 +117,7 @@ Use this when the endpoint responds but behavior looks wrong.
 | Output includes `<|assistant|>` or role tokens | Chat template/tokenizer mismatch | Run [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]. |
 | Output cuts off too early | Stop sequence or max token cap | Remove custom stops, raise cap, inspect stop reason. |
 | JSON has extra prose | Request boundary | Add schema validation or constrained decoding if supported. |
+| Tool call appears as prose or wrong schema | Tool boundary | Run [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] and verify the route supports tool parsing. |
 | Repeated runs vary too much | Sampling | Lower temperature, fix seed if supported, keep prompt unchanged. |
 
 Do not fix prompt-format bugs by switching models first. A stronger model can hide a broken template without making the system understood.
@@ -141,6 +144,7 @@ Use this when the local model is callable and fast enough but the answer is not 
 | --- | --- | --- |
 | Wrong known fact | Model capability vs prompt ambiguity | Known-answer prompt, expected answer, generated answer. |
 | Invalid format | Instruction following vs schema enforcement | Parser/validator output and request settings. |
+| Wrong tool or unsafe tool arguments | Tool selection vs policy boundary | Tool trace, argument validator, policy decision, and denied/allowed result. |
 | Weak code answer | Model capability vs missing execution feedback | Test result or compile error, not just subjective quality. |
 | RAG misses answer | Retrieval failure vs model hallucination | Expected source, retrieved top-k, answer support. |
 | Correct passage retrieved but answer wrong | Generation/grounding failure | Retrieved context plus generated claim mapping. |
@@ -190,6 +194,7 @@ This decision tree is complete for a local run when you have:
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]

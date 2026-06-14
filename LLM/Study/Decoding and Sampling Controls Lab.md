@@ -12,7 +12,7 @@ last-verified: 2026-06-14
 
 Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] traces one request from prompt to response. That lab answers "where does sampling happen?" This lab answers "which controls changed the next-token distribution, format, reproducibility, and benchmark result?"
 
-Use this before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] whenever two local model runs need a fair comparison.
+Use this before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] whenever two local model runs need a fair comparison. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when schema-constrained output must become an executed tool call or bounded agent loop.
 
 ## Outcome
 
@@ -166,7 +166,7 @@ Run one short delimited task and one structured-output task.
 | Delimited answer |  |  |  |  |  |  |
 | JSON object |  |  |  |  |  |  |
 
-Use [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|Structured Output and Constrained Generation]] when prompt-only JSON fails. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when stop strings or role markers behave differently from the request body.
+Use [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|Structured Output and Constrained Generation]] when prompt-only JSON fails. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when the structured output names a tool or triggers application code. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when stop strings or role markers behave differently from the request body.
 
 ## Lab 6: Runtime Support Check
 
@@ -239,6 +239,7 @@ Internal:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding]]
 

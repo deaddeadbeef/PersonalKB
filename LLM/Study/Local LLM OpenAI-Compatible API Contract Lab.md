@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** A local server is "OpenAI-compatible" only after you prove the base URL, model id, route, request fields, response shape, streaming behavior, errors, and unsupported features that your client actually depends on.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] after the contract says whether `tools`, `tool_choice`, JSON/schema output, and tool-call response fields are dependable.
 
 Pair this with [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the failure may come from artifact format, tokenizer, chat template, quantization, or runtime support. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the HTTP call succeeds but chat behavior is wrong.
 
@@ -41,6 +41,8 @@ The compatibility boundary is a contract between five things:
 | Feature gap | Which OpenAI-style fields are ignored, translated, or absent? | Compatibility card and runtime docs. |
 
 If any field above is unknown, treat the endpoint as an experiment. Do not reuse it for tools, RAG, private documents, or benchmark comparisons yet.
+
+When the workload needs tools, the contract card is only the first gate. The tool loop still needs schema validation, policy checks, execution logging, and bounded retries in [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]].
 
 ## Runtime Contract Map
 
@@ -213,6 +215,7 @@ This lab is complete when you have:
 - [ ] a list of supported, ignored, and unsupported OpenAI-style fields needed by the workload
 - [ ] a decision: compatible, partial compatibility with adapter, or not compatible
 - [ ] a client harness config updated from this contract
+- [ ] a handoff to [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] if tools or structured final answers are required
 
 ## References
 
@@ -226,6 +229,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
 

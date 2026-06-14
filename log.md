@@ -2248,3 +2248,40 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4830 files, 2959 Markdown files, 834 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM local tool calling and structured output lab
+
+Scope: add a practical local tool-calling and structured-output lab for schema validation, policy checks, tool execution, result injection, bounded agent loops, and tool failure evaluation.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-local-tool-calling-lab.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Tool Calling and Structured Output Lab.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Agents and Evaluation - Review Drill.md`
+- `LLM/Study/Local LLM OpenAI-Compatible API Contract Lab.md`
+- `LLM/Study/Decoding and Sampling Controls Lab.md`
+- `LLM/Study/Local LLM Client Harness Lab.md`
+- `LLM/Study/Local LLM Security and Privacy Runbook.md`
+- `LLM/Study/Local LLM Quality Evaluation Harness.md`
+- `LLM/Study/Local LLM Troubleshooting Decision Tree.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local tool-calling lab with structured-output distinction, runtime support map, tool contract card, structured-output baseline, single-tool proof, failure tests, bounded multi-turn loop, quality row, failure triage, benchmark add-on, and completion gate.
+- Linked the lab from the LLM MOC, study index, agents drill, API contract, decoding controls, client harness, security runbook, quality harness, troubleshooting tree, benchmark log, serving runbook, deployment matrix, roadmap, capstone, and exam.
+- Checked current OpenAI, Ollama, vLLM, llama.cpp, and llama-cpp-python docs for function calling, structured outputs, local tool calling, and schema-constrained output behavior.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4830 files, 2959 Markdown files, 834 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4832 files, 2961 Markdown files, 835 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

@@ -11,7 +11,7 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The sizing guide chooses plausible model/runtime candidates, the runbook proves the endpoint, the benchmark log records performance, and this harness decides whether the output quality is acceptable.
 
-Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ.
+Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when quality depends on choosing, validating, denying, executing, or using tool calls.
 
 ## What This Harness Decides
 
@@ -33,8 +33,9 @@ Run the ladder in order. Stop early only when a model clearly fails a required g
 | 4. Pairwise comparison | Is it better than a baseline model/runtime on the same prompts? | Candidate wins, ties, or loses for explicit reasons |
 | 5. RAG/citation tests | Does it use supplied evidence and cite only supported claims? | Relevant retrieval, faithful answer, correct citations, refusal when evidence is missing |
 | 6. Long-context and multi-turn tests | Does it retain instructions and use the right context across turns? | Follow-up answers respect earlier constraints and cite the relevant context |
-| 7. Safety/constraint tests | Does it respect the workload's boundaries? | It follows allowed constraints and avoids unsafe or out-of-scope help |
-| 8. Human review plus optional LLM judge | Would a human accept the result for the target use? | Human rubric agrees with the pass decision; LLM judge is only supporting evidence |
+| 7. Tool-use tests | Does it choose the right tool, validate arguments, obey policy, and use the result? | Tool trace shows correct selection, valid arguments, allowed execution, and supported final answer |
+| 8. Safety/constraint tests | Does it respect the workload's boundaries? | It follows allowed constraints and avoids unsafe or out-of-scope help |
+| 9. Human review plus optional LLM judge | Would a human accept the result for the target use? | Human rubric agrees with the pass decision; LLM judge is only supporting evidence |
 
 This ladder connects local hosting practice to [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]], [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]], and [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes|RAG Evaluation and Failure Modes]].
 
@@ -50,6 +51,7 @@ Use private or locally written prompts for decisions that matter. Public benchma
 | L-01 | Long context | Context use under KV-cache pressure | Finds the relevant span and does not overuse unrelated context |
 | R-01 | RAG grounded answer | Retrieval use, faithfulness, citations | Every substantive claim is supported by retrieved evidence |
 | M-01 | Multi-turn instruction retention | Conversation memory and follow-up behavior | Keeps prior constraints through a second or third turn |
+| T-01 | Tool use | Tool selection, argument validity, policy, and result use | Calls only the expected tool, validates arguments, obeys policy, and grounds final answer in the tool result |
 | C-01 | Constraint/refusal | Boundary handling | Refuses or narrows the answer when required by the task policy |
 | D-01 | Domain-specific work | Real workload fit | Solves the exact task class you plan to run locally |
 
@@ -68,6 +70,7 @@ Score each dimension from 0 to 2.
 | Completeness | Misses the core task | Covers the main task but omits useful detail | Complete enough for the workload |
 | Concision | Too verbose or too terse to use | Usable but inefficient | Right level of detail for the task |
 | Safety/constraint adherence | Violates the boundary | Avoids worst issue but needs review | Cleanly respects the boundary |
+| Tool correctness | Wrong or unsafe tool behavior | Right general tool but argument, policy, or result-use issue | Correct tool, valid arguments, allowed execution, and supported final answer |
 | Latency/memory acceptability | Too slow or unstable | Usable only with tuning | Meets the benchmark threshold |
 
 Write the threshold before running. A strict gate might require all required dimensions at 2. A looser exploratory gate might pass with an average of 1.5 if no required dimension is 0.
@@ -147,6 +150,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/2023 — Open Models and Agents/LLM-as-Judge]]
 - [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies]]
 - [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]]

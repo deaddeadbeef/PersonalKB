@@ -13,6 +13,8 @@ up: "[[LLM/Study/LLM Study Index]]"
 2. **Function calling: how does it work at the API level?**
    Define tools with JSON Schema in the request. Model outputs a structured JSON object with function name + arguments instead of text. Runtime executes, feeds result back.
 
+   For local practice, use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] to prove schema validation, policy checks, tool execution, tool-result injection, and loop stopping.
+
 3. **What is pass@k in code evaluation?**
    Generate k code solutions, pass@k = probability that at least one passes all test cases. Measures breadth of generation quality.
 
@@ -36,3 +38,8 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 10. **MMLU vs Chatbot Arena — what does each measure?**
     MMLU: broad knowledge across 57 subjects (multiple choice, static). Arena: overall chat quality as judged by humans (dynamic, preference-based). They can rank models differently.
+
+## Hands-On
+
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — build a small local tool loop with validated arguments, policy checks, error rows, and bounded stopping.
+- [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — score tool and agent behavior with workload-specific prompts instead of trusting fluent prose.

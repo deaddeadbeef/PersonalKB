@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local inference reduces provider exposure, but it still creates an application server that can leak prompts, documents, logs, tool outputs, and model access if endpoint, storage, and trust boundaries are weak.
 
-Use this with [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before moving beyond a one-person loopback experiment. The serving runbook proves the model can answer; this runbook proves the local setup has a defensible privacy and exposure boundary. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before loading weights from a registry, gated model, converted artifact, or unknown local file. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to record auth behavior, base URL, route, feature gaps, and harmless failure behavior before connecting generic clients. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] for the host, port, listener, runtime-boundary, and logging evidence behind this checklist. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when the security boundary should decide whether the workload belongs on local CPU/GPU, self-hosted infrastructure, a hosted API, hybrid RAG, or batch inference.
+Use this with [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before moving beyond a one-person loopback experiment. The serving runbook proves the model can answer; this runbook proves the local setup has a defensible privacy and exposure boundary. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before loading weights from a registry, gated model, converted artifact, or unknown local file. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to record auth behavior, base URL, route, feature gaps, and harmless failure behavior before connecting generic clients. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before executing any model-requested tool call. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] for the host, port, listener, runtime-boundary, and logging evidence behind this checklist. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when the security boundary should decide whether the workload belongs on local CPU/GPU, self-hosted infrastructure, a hosted API, hybrid RAG, or batch inference.
 
 ## Security Model
 
@@ -109,7 +109,7 @@ The key idea from [[LLM/2022 — Alignment and Chat/System Prompts and Role Cond
 
 ## Tool And Agent Boundary
 
-If the local model can call tools, use the boundary from [[LLM/2023 — Open Models and Agents/Function Calling|Function Calling]]: the model requests actions; the runtime decides whether to execute them.
+If the local model can call tools, use the boundary from [[LLM/2023 — Open Models and Agents/Function Calling|Function Calling]] and prove it with [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]]: the model requests actions; the runtime decides whether to execute them.
 
 | Tool class | Default policy |
 |---|---|
@@ -121,6 +121,8 @@ If the local model can call tools, use the boundary from [[LLM/2023 — Open Mod
 | Browser or UI control | Treat as high risk; separate observation from action. |
 
 Never treat a model-generated tool call as permission. Validate schema, check policy, execute with least privilege, and record the decision.
+
+Tool-call logs should record tool name, argument validity, policy decision, execution status, and a short redacted result summary. Avoid logging full file contents, credentials, private documents, or raw network responses unless the data boundary explicitly allows it.
 
 ## Incident Triage
 
@@ -156,6 +158,7 @@ Move from loopback experiment to shared service only when all are true:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
