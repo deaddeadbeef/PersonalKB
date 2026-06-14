@@ -20,6 +20,7 @@ Study and review materials for the LLM knowledge base.
 
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
+- [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 
 ## Hands-On Labs
 

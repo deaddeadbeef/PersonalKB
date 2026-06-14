@@ -19,7 +19,8 @@ Move in order:
 2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] while reading architecture notes.
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
-5. Build the capstone only after the local inference and evaluation gates are complete.
+5. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+6. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
 
@@ -115,7 +116,7 @@ Read:
 Proof:
 
 - Run one local model through a CLI and one local HTTP API.
-- Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory.
+- Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 - Explain why KV cache, quantization, batch size, and context length change latency and throughput.
 - Compare at least two runtimes, such as Ollama versus llama.cpp, or llama.cpp versus vLLM.
 
@@ -145,7 +146,7 @@ Complete these in order:
 
 1. **Paper map:** write a one-page map of the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]].
 2. **Attention implementation:** implement scaled dot-product attention and explain the tensor shapes.
-3. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and save the benchmark table.
+3. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 4. **RAG assistant:** build document ingestion, chunking, embedding, retrieval, reranking, generation, and citation output.
 5. **Evaluation harness:** evaluate the RAG assistant with at least one human rubric and one LLM-as-judge rubric.
 6. **Deployment decision:** write a trade-off memo choosing hosted API, local CPU/GPU, or production serving for one real workload.
@@ -168,3 +169,4 @@ Complete these in order:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Inference Benchmark Log]]

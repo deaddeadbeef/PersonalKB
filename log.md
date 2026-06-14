@@ -1925,3 +1925,28 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4782 files, 2911 Markdown files, 810 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM local inference benchmark log
+
+Scope: make local LLM hosting practice more reproducible by adding a benchmark/run-log note that records the evidence behind model, runtime, quantization, hardware, latency, memory, and quality decisions.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-local-inference-benchmark-log.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local inference benchmark log with run metadata, measurement definitions, a prompt suite, pass/hold/fail rubric, and troubleshooting links.
+- Linked the log from the LLM MOC, study index, local inference lab, and mastery roadmap proof gates.
+- Kept the note as practice guidance backed by existing LLM wiki notes and the local inference lab rather than introducing new current claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4782 files, 2911 Markdown files, 810 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4784 files, 2913 Markdown files, 811 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

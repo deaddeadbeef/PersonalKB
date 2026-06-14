@@ -50,6 +50,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] — Competency gates from field map to local inference and capstone
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — Practical path to run, serve, and benchmark local models
+- [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] — Reproducible run log for local model/runtime comparisons
 
 ## Infrastructure
 - [[LLM/Sources/Sources Index|Sources Index]] — Paper bibliography

@@ -22,6 +22,8 @@ After this lab you should be able to:
 
 This lab is the Level 5 proof gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]].
 
+Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] so the run is reproducible and the model/runtime choice is based on evidence rather than memory.
+
 ## Mental Model
 
 Local inference has four layers:
@@ -182,7 +184,7 @@ What to observe:
 
 ## Benchmark Notebook Checklist
 
-Record each run in a small table:
+Record each run in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. At minimum, capture:
 
 | Field | Example |
 | --- | --- |
