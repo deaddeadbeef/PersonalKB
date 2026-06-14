@@ -20,6 +20,10 @@ Study and review materials for the LLM knowledge base.
 
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]]
 
+## Hands-On Labs
+
+- [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
+
 ## Suggested 20-Paper Fast Path
 
 For a rapid orientation to the LLM field, read these papers in order:

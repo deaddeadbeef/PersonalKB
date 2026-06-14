@@ -36,3 +36,13 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 10. **What is prefix caching?**
     Reusing KV cache across requests that share the same prefix (e.g., system prompt). Avoids redundant computation for the common prompt portion.
+
+11. **Which runtime should you try first for local experimentation?**
+    Ollama or LM Studio for fast setup; llama.cpp when you need GGUF/CPU/edge control; vLLM or SGLang when you need production-style GPU serving.
+
+12. **What should you measure before trusting a local model setup?**
+    Time to first token, decode tokens/sec, peak RAM/VRAM, context length, answer quality on known prompts, and whether the API shape matches your application.
+
+## Hands-On
+
+- [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, expose an API, and benchmark inference.

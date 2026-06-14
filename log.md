@@ -1851,3 +1851,28 @@ Verification:
 - `python Japanese\_audio\build_pronunciation_manifest.py --check`: wrote 1810 entries and refreshed the pronunciation audit.
 - `python Japanese\_audio\audit_reading_hints.py --fail-on-findings`: 0 findings.
 - `python _ops\personal_kb.py audit`: 4765 files, 2894 Markdown files, 1810 MP3 files, 0 heavy audio embed pages, 938 broken-link occurrences.
+
+## [2026-06-14] curate | LLM local hosting and inference lab
+
+Scope: make the LLM topic more actionable by adding a source-backed hands-on local inference path that connects open-weight theory, quantization, KV cache, serving runtimes, and practical API testing.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-local-inference-curation.md`
+- `LLM/LLM.md`
+- `LLM/LLM — Learning Path.md`
+- `LLM/Study/Inference and Efficiency - Review Drill.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local inference lab covering runtime selection, Ollama, LM Studio, llama.cpp, vLLM, benchmarking, troubleshooting, and the academic reading spine behind deployment choices.
+- Linked the lab from the LLM MOC, study index, learning path, and inference review drill.
+- Used existing chunks for stable inference/quantization claims and official current docs for live tool behavior.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4777 files, 2906 Markdown files, 808 candidate articles, 21 stubs, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4779 files, 2908 Markdown files, 809 candidate articles, 20 stubs, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.
