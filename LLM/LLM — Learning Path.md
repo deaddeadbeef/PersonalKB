@@ -198,7 +198,7 @@ Build active-recall skill through drills and hands-on experimentation.
 2. **Build a RAG pipeline** — embed, chunk, retrieve, rerank, generate
 3. **Implement attention** — code scaled dot-product attention from scratch
 4. **Prompt engineering** — compare zero-shot, few-shot, and chain-of-thought on the same task
-5. **Deploy and serve** — complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], quantize a model, serve with vLLM or llama.cpp, measure latency/throughput
+5. **Deploy and serve** — complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to expose an endpoint, quantize a model, serve with vLLM or llama.cpp, measure latency/throughput
 6. **Build an agent** — function-calling agent with tool use and planning
 
 ### Capstone

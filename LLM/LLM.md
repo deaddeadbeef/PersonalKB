@@ -51,6 +51,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — Practical path to run, serve, and benchmark local models
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] — Reproducible run log for local model/runtime comparisons
+- [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — Endpoint smoke tests and failure triage for local model servers
 
 ## Infrastructure
 - [[LLM/Sources/Sources Index|Sources Index]] — Paper bibliography

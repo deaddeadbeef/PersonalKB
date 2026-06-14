@@ -112,10 +112,12 @@ Read:
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding|Speculative Decoding]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 
 Proof:
 
 - Run one local model through a CLI and one local HTTP API.
+- Use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to prove the endpoint with a smoke test and diagnose any serving failures.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 - Explain why KV cache, quantization, batch size, and context length change latency and throughput.
 - Compare at least two runtimes, such as Ollama versus llama.cpp, or llama.cpp versus vLLM.
@@ -170,3 +172,4 @@ Complete these in order:
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Serving Runbook]]

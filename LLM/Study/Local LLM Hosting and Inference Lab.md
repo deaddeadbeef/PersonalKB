@@ -24,6 +24,8 @@ This lab is the Level 5 proof gate in [[LLM/Study/LLM Mastery Roadmap|LLM Master
 
 Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] so the run is reproducible and the model/runtime choice is based on evidence rather than memory.
 
+When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the endpoint map, smoke tests, and failure triage.
+
 ## Mental Model
 
 Local inference has four layers:
@@ -184,7 +186,7 @@ What to observe:
 
 ## Benchmark Notebook Checklist
 
-Record each run in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. At minimum, capture:
+Use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to prove the endpoint, then record each run in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. At minimum, capture:
 
 | Field | Example |
 | --- | --- |
@@ -242,6 +244,7 @@ Internal evidence:
 - [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]]
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
+- [[LLM/Study/Local LLM Serving Runbook]]
 
 Current external docs checked 2026-06-14:
 

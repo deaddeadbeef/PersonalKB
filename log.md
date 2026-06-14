@@ -1950,3 +1950,31 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4784 files, 2913 Markdown files, 811 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM local serving runbook
+
+Scope: make local LLM hosting more operational by adding a source-checked runbook for starting local model servers, proving native/OpenAI-compatible endpoints, recording evidence, and diagnosing inference failures.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-local-serving-runbook.md`
+- `LLM/LLM.md`
+- `LLM/LLM — Learning Path.md`
+- `LLM/Study/Inference and Efficiency - Review Drill.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local serving runbook with runtime decision path, endpoint map, Ollama native smoke test, OpenAI-compatible smoke test, runtime-specific start points, measurement guidance, comparison gates, and failure triage.
+- Linked the runbook from the LLM MOC, learning path, study index, inference drill, local hosting lab, benchmark log, and mastery roadmap.
+- Checked current runtime docs for Ollama, LM Studio, llama-cpp-python, vLLM, SGLang, and Open WebUI before writing endpoint guidance.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4784 files, 2913 Markdown files, 811 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4786 files, 2915 Markdown files, 812 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

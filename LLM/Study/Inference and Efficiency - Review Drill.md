@@ -46,3 +46,4 @@ up: "[[LLM/Study/LLM Study Index]]"
 ## Hands-On
 
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, expose an API, and benchmark inference.
+- [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — prove native and OpenAI-compatible endpoints, then diagnose serving failures.
