@@ -21,7 +21,8 @@ Move in order:
 4. Use [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
 5. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 6. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
-7. Build the capstone only after the local inference and evaluation gates are complete.
+7. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, and deployment gates.
+8. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
 
@@ -162,6 +163,8 @@ Complete these in order:
 5. **Evaluation harness:** evaluate the RAG assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
 6. **Deployment decision:** write a trade-off memo choosing hosted API, local CPU/GPU, or production serving for one real workload.
 
+Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] as each capstone step is completed.
+
 ## Completion Checklist
 
 - [ ] I can explain the historical timeline without notes.
@@ -179,6 +182,7 @@ Complete these in order:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/LLM — Learning Path]]
 - [[LLM/Study/LLM Study Index]]
+- [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/Attention Implementation Lab]]

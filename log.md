@@ -2112,3 +2112,27 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4796 files, 2925 Markdown files, 817 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM mastery capstone workbook
+
+Scope: add a single workbook for collecting proof of LLM mastery across paper reading, attention implementation, local inference, benchmarking, local quality evaluation, RAG, and deployment decision-making.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-mastery-capstone-workbook.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `log.md`
+
+Maintenance changes:
+- Added an LLM mastery capstone workbook with an evidence ledger, paper-map template, attention implementation proof template, local inference proof template, RAG proof template, evaluation proof template, deployment decision memo, and completion audit.
+- Linked the workbook from the LLM MOC, study index, and mastery roadmap so it is reachable from the main study path.
+- Kept the workbook as practice/evidence guidance backed by existing study notes rather than introducing new current model or runtime claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4796 files, 2925 Markdown files, 817 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4798 files, 2927 Markdown files, 818 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
