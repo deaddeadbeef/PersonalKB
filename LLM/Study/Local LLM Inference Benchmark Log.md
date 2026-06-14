@@ -17,6 +17,8 @@ Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Prefli
 
 For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before filling in the measurements here.
 
+Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when a benchmark row fails or looks contradictory. The decision tree should identify whether the issue belongs to environment, sizing, server, route, client, prompt, performance, quality, RAG, or security before another comparison run.
+
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
 
 For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to run workload prompts, rubric scores, pairwise comparisons, RAG/citation checks, and a pass/hold/fail gate.
@@ -161,6 +163,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]

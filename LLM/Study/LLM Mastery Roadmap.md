@@ -124,6 +124,7 @@ Read:
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
@@ -136,6 +137,7 @@ Proof:
 - Confirm the local endpoint is using the intended tokenizer, chat template, special tokens, and stop policy.
 - Estimate weight memory and KV-cache risk with [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] before choosing the model/runtime pair.
 - Use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to prove the endpoint with a smoke test and diagnose any serving failures.
+- Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer before changing model, runtime, prompt, or hardware.
 - Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to log repeatable non-streaming, streaming, error, and benchmark rows from the same client.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 - Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to score known-answer, schema, RAG/citation, long-context, multi-turn, and workload-specific prompts.
@@ -206,6 +208,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]

@@ -16,7 +16,7 @@ After the smoke test passes, use [[LLM/Study/Local LLM Client Harness Lab|Local 
 
 Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware.
 
-Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the actual hardware visibility, runtime boundary, disk, model cache, port, and endpoint boundary before diagnosing serving errors.
+Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the actual hardware visibility, runtime boundary, disk, model cache, port, and endpoint boundary before diagnosing serving errors. If a failure crosses more than one layer, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer and next controlled test.
 
 Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
 
@@ -249,6 +249,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

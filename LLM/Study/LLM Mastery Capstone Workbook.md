@@ -23,6 +23,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Local model endpoint | CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, and loopback URL are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
+| Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
 | RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] |  | Corpus version, chunking policy, index metadata, retrieval evidence, cited answer, and at least one diagnosed failure are captured. | Not started |
 | Deployment decision | Deployment decision memo in this workbook |  | Choice between local CPU, local GPU, self-hosted server, or hosted API is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
@@ -70,6 +71,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Benchmark row |  |
 | Quality-harness result |  |
 | Serving issue diagnosed |  |
+| Failed layer named |  |
 
 ## RAG Proof Template
 
@@ -136,6 +138,7 @@ Next run:
 
 - [ ] Every gate in the evidence ledger has a proof link.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
+- [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
 - [ ] The RAG assistant includes at least one diagnosed failure mode.
 - [ ] The deployment memo chooses one path and rejects at least one alternative.
 - [ ] The vault audit was regenerated after the capstone artifact was added.
@@ -150,6 +153,7 @@ Next run:
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
