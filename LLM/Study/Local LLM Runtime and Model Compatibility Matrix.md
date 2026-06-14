@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM works only when the model architecture, file format, quantization, tokenizer, chat template, runtime, API route, and workload contract all match.
 
-Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] and before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist answers "am I allowed and prepared to acquire this exact artifact?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?"
+Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] and [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]], and before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist answers "am I allowed and prepared to acquire this exact artifact?" The artifact lab answers "which local bytes, cache path, import, or conversion output do I actually have?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?"
 
 Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] after the endpoint responds but before a generic client depends on the compatibility surface. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model.
 
@@ -42,6 +42,7 @@ After using this matrix you should be able to:
 | --- | --- | --- |
 | Model family | Is the architecture supported by the runtime? | Model card, `config.json`, runtime supported-model list. |
 | Artifact container | Is this Hugging Face/Safetensors, GGUF, MLX, Ollama package, or adapter? | File names, model repo tree, local path, Modelfile. |
+| Artifact provenance | Is the local file, cache snapshot, imported package, or converted derivative pinned and verifiable? | Artifact download/cache/conversion card, hash, `hf cache verify`, Modelfile, converter command. |
 | Numeric format | Is it FP16/BF16, INT8, INT4, GGUF quant, GPTQ, AWQ, FP8, or another scheme? | Quantization metadata, filename, runtime load log. |
 | Offload and KV precision | Does the selected runtime place weights/cache on CPU, GPU, or split memory as intended? | GPU layer/percentage setting, `ollama ps`, LM Studio load settings, llama.cpp load log, vLLM/SGLang launch command. |
 | Tokenizer | Which vocabulary and normalization map text to token IDs? | Tokenizer files, GGUF metadata, token-count sanity set. |
@@ -172,6 +173,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]

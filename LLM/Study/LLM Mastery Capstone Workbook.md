@@ -28,6 +28,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | Local model endpoint | Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, timing, quality decision, and next action are captured. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
+| Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
 | Quantization and GPU offload | Decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] |  | Baseline quant, accepted quant, rejected quant, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, benchmark row, and quality row are captured. | Not started |
 | Runtime comparison | Decision card from [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] |  | At least two plausible runtimes are compared with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative. | Not started |
@@ -144,6 +145,8 @@ Use one paragraph per cluster, not one paragraph per paper.
 |---|---|
 | Hardware |  |
 | Acquisition/provenance card |  |
+| Artifact download/cache/conversion card |  |
+| Cache/local path and hash |  |
 | Runtime |  |
 | Compatibility evidence card |  |
 | Quantization/offload decision card |  |
@@ -331,6 +334,7 @@ Next run:
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
 - A runtime choice made from preference, UI feel, or one smoke test without controlled benchmark and quality rows.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
+- A local artifact claim without cache path, file list, hash or verification, GGUF/import/conversion provenance, and cleanup plan.
 - A reasoning trace accepted as proof without final-answer evaluation, evidence support, and trace-retention policy.
 - A shared or batch-serving claim without a scheduler mechanism row, concurrency ladder, saturation point, and backpressure decision.
 - A latency, throughput, memory, or error claim without logs, metrics, resource counters, and loaded-model state.
@@ -355,6 +359,7 @@ Next run:
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] The local model artifact has an acquisition/provenance card.
+- [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
 - [ ] The local model endpoint has a runtime compatibility evidence card.
 - [ ] The runtime choice has a comparison decision card, or the skipped comparison is explicitly justified.
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
@@ -393,6 +398,7 @@ Next run:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]

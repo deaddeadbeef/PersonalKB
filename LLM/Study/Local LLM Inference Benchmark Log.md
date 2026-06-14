@@ -78,6 +78,7 @@ Create one row per run.
 | Model family | Llama, Qwen, Mistral, Gemma, DeepSeek, Phi, etc. |
 | Parameter size | 1.5B, 3B, 7B, 8B, 14B, etc. |
 | Acquisition/provenance | Source URL, model card, license, revision/tag/digest, and local cache path from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Model Acquisition and Provenance Checklist]] |
+| Artifact custody | Download/cache path, file list, hash or verification, GGUF/Ollama import, conversion command, and cleanup plan from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Artifact Download Cache and Conversion Lab]] |
 | Runtime | Ollama, LM Studio, llama.cpp, vLLM, SGLang, Open WebUI frontend, or other |
 | API base URL | Local endpoint, if served over HTTP |
 | Quantization/format | FP16, BF16, INT8, AWQ, GPTQ, GGUF quant, or unknown |
@@ -226,6 +227,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]

@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** A local model is not ready to download just because it fits memory; it needs a documented source, license, exact revision, artifact format, safety posture, cache path, and workload boundary.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] proves disk, runtime boundary, and hardware, and before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] turns the candidate into a memory plan. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] after this checklist to confirm the exact artifact can load in the chosen runtime.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] proves disk, runtime boundary, and hardware, and before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] turns the candidate into a memory plan. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] after this checklist when the next step is a pinned Hugging Face download, cache inspection, GGUF/Ollama import, or conversion. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] after the artifact lab to confirm the exact local bytes can load in the chosen runtime.
 
 This note answers "am I allowed and prepared to acquire this exact model artifact?" The sizing and serving notes answer "will it fit?" and "can I call it?"
 
@@ -37,8 +37,9 @@ Do not start with `pull` or `download`. Start with this sequence:
 6. Pin the exact revision, tag, file, or digest when the workflow needs reproducibility.
 7. Check unsafe artifact risk: pickle, `trust_remote_code`, unknown scripts, or unreviewed conversion steps.
 8. Download into a known cache or model directory with enough disk headroom.
-9. Record file size, cache path, checksum/digest if available, and runtime-visible id.
-10. Only then move to the compatibility matrix and serving runbook.
+9. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] to record the download command, cache/local path, file list, hash or verification result, import/conversion command, and cleanup plan.
+10. Record file size, cache path, checksum/digest if available, and runtime-visible id.
+11. Only then move to the compatibility matrix and serving runbook.
 
 Pass signal: a future run can identify which bytes were served and why the artifact was acceptable for the workload.
 
@@ -138,6 +139,7 @@ Choose one small instruct model for a local first run. Then fill the card above.
 | Download | Command used and final local path. |
 | Inspect | File list, size, template/license fields if runtime exposes them. |
 | Safety check | Unsafe formats, scanner status if visible, `trust_remote_code` decision. |
+| Artifact handoff | Link to [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Artifact Download Cache and Conversion Lab]] for cache, hash, GGUF/import, or conversion evidence. |
 | Handoff | Link to compatibility card and serving runbook row. |
 
 Pass signal: the model can be rejected before serving if provenance, license, or artifact safety is weak.
@@ -166,6 +168,7 @@ This checklist is complete when you have:
 - [ ] safe-format or unsafe-format decision recorded
 - [ ] hash, digest, or exact revision proof recorded, or reproducibility marked partial
 - [ ] runtime-visible model id recorded
+- [ ] artifact download/cache/conversion evidence linked when the model was downloaded, imported, mirrored, or converted locally
 - [ ] handoff to [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]]
 - [ ] handoff to [[LLM/Study/Local LLM Serving Runbook|Serving Runbook]] only if the acquisition card says proceed
 
@@ -176,6 +179,7 @@ Internal:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
