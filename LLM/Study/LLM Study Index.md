@@ -26,11 +26,13 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
+- [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]]
 
 ## Hands-On Labs
 
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and tensor-shape checks
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
+- [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant with retrieval, citations, and failure diagnosis
 
 ## Suggested 20-Paper Fast Path

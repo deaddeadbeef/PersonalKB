@@ -40,6 +40,7 @@ Read:
 Proof:
 
 - Draw the pipeline from text to tokens to logits to next-token sampling.
+- Prove that pipeline with [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] by freezing one local request and tracing tokenization, prefill, decode, sampling, stopping, and returned text.
 - Implement scaled dot-product attention with [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 - Explain why decoder-only transformers became the dominant general assistant architecture.
 - Define perplexity, tokenization, context window, embedding, attention head, and pretraining.
@@ -187,6 +188,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]

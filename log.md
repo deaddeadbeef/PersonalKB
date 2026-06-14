@@ -2136,3 +2136,29 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4798 files, 2927 Markdown files, 818 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-14] curate | LLM inference request lifecycle lab
+
+Scope: add a request-level inference lab that connects local endpoint calls to the academic mechanics of tokenization, prefill, logits, sampling, stopping, detokenization, streaming, and benchmark measurement.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-inference-request-lifecycle.md`
+- `LLM/LLM.md`
+- `LLM/Study/Inference and Efficiency - Review Drill.md`
+- `LLM/Study/LLM Inference Request Lifecycle Lab.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `log.md`
+
+Maintenance changes:
+- Added an inference request lifecycle lab with the request pipeline, sampling knobs, frozen-request worksheet, prefill-vs-decode comparison, sampling A/B test, stop/structured-output test, streaming comparison, failure triage, and benchmark row add-on.
+- Linked the lab from the LLM MOC, study index, mastery roadmap, local hosting lab, and inference review drill.
+- Kept runtime-specific current endpoint claims in the already verified local serving runbook; this pass uses existing source-linked foundation, tokenization, KV-cache, serving, speculative decoding, and structured-output notes.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4798 files, 2927 Markdown files, 818 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4800 files, 2929 Markdown files, 819 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

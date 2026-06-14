@@ -46,6 +46,7 @@ up: "[[LLM/Study/LLM Study Index]]"
 ## Hands-On
 
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, expose an API, and benchmark inference.
+- [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace a single request through prompt assembly, tokenization, prefill, decode, sampling, stopping, and streaming.
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimate model weight memory, KV-cache risk, and runtime fit before downloading a model.
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — prove native and OpenAI-compatible endpoints, then diagnose serving failures.
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — score local model quality with workload prompts, rubrics, pairwise comparison, and RAG/citation checks.

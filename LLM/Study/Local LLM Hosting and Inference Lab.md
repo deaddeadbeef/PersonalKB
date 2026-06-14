@@ -26,6 +26,8 @@ Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM 
 
 When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the endpoint map, smoke tests, and failure triage.
 
+After the endpoint responds, use [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] to trace one request through prompt assembly, tokenization, prefill, decode, sampling, stopping, streaming, and benchmark evidence.
+
 Before downloading a model, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to estimate weight memory, KV-cache pressure, quantization risk, and runtime fit.
 
 After the endpoint works, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to turn local inference into a document-grounded assistant with retrieval, citations, and failure diagnosis.
@@ -251,6 +253,7 @@ Internal evidence:
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 
