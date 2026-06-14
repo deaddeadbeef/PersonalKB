@@ -11,6 +11,8 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The local model endpoint should already work before you add retrieval. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether the assistant is good enough for the workload.
 
+When retrieval quality needs to be measured before generation, use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to score expected sources, top-k hits, first relevant rank, reranking impact, hybrid-search benefit, context selection, and citation validity.
+
 When you are ready to implement rather than only design the pipeline, use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]. It defines the concrete artifacts for a small reproducible build: corpus manifest, chunks, embedding/index config, retrieval evidence, cited answer, refusal test, failure row, and benchmark/quality rows.
 
 Before indexing private documents, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, log policy, access boundary, and prompt-injection tests.
@@ -188,6 +190,7 @@ The lab is complete when you have:
 
 - a fixed corpus version and chunking policy
 - a searchable index with stored metadata
+- retrieval evaluation that separates top-k misses, low-rank evidence, context poisoning, reranking gains, and citation failures
 - a local model endpoint that answers from retrieved context
 - a context budget proving retrieved chunks, history, and output reserve fit
 - at least 10 private evaluation questions
@@ -201,6 +204,7 @@ The lab is complete when you have:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

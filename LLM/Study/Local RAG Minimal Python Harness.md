@@ -12,6 +12,8 @@ last-verified: 2026-06-15
 
 Use this with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]]. That lab explains the pipeline and failure modes. This note turns it into a minimal implementation contract you can run against a small local corpus.
 
+Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] when the harness needs a retrieval-only evaluation pass before generation: supported query set, top-k sweep, first relevant rank, reranking row, hybrid decision, context selection, and citation audit.
+
 Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. The endpoint, route, model id, context budget, and sampler settings should be known before retrieval is blamed for model failures.
 
 Before indexing private notes or project files, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, citation redaction policy, log retention, and prompt-injection tests.
@@ -55,6 +57,7 @@ rag_experiments/
 | `chunks.jsonl` | `chunk_id`, `source_id`, `section`, `ordinal`, `text`, `token_estimate`, `chunk_policy` |
 | `rag_config.json` | embedding model, index type/path, generator model, runtime base URL, top-k, rerank policy, context budget, citation style |
 | retrieval run | query id, query text, retrieved chunk ids, scores/distances, selected context ids, missing expected source flag |
+| retrieval evaluation | expected source ids, Hit@k, first relevant rank, reranking impact, hybrid decision, final context ids, citation audit |
 | answer file | assembled prompt summary, final answer, citation ids, refusal if unsupported |
 | eval row | retrieval recall, context precision, citation validity, faithfulness, latency, decision, failure mode |
 
@@ -320,6 +323,7 @@ This harness is complete when you have:
 - [ ] a persistent or explicitly disposable index
 - [ ] retrieval evidence for at least one supported query
 - [ ] retrieval evidence for at least one unsupported query
+- [ ] retrieval evaluation row for top-k, rank, reranking/hybrid decision, and citation audit when applicable
 - [ ] one generated cited answer with saved context
 - [ ] one refusal for missing evidence
 - [ ] one diagnosed failure row
@@ -331,6 +335,7 @@ This harness is complete when you have:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

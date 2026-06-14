@@ -31,7 +31,7 @@ Run the checks in this order unless the error message clearly names a lower laye
 | 10 | Does a tool call, schema, policy, or tool result change the failure? | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|tool-calling lab]] |
 | 11 | Is the answer slow but otherwise valid? | Performance branch and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|context budget lab]] |
 | 12 | Is the answer fast but wrong, unsupported, or unusable? | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality harness]] |
-| 13 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]], [[LLM/Study/Local RAG Minimal Python Harness|RAG harness]], and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
+| 13 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|retrieval evaluation lab]], [[LLM/Study/Local RAG Minimal Python Harness|RAG harness]], and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
 | 14 | Do logs, metrics, resource counters, or loaded-model state explain the failure? | [[LLM/Study/Local LLM Observability and Operations Runbook|observability runbook]] |
 
 Pass signal: the diagnosis names the failed layer and the next controlled change.
@@ -59,7 +59,7 @@ Pass signal: the diagnosis names the failed layer and the next controlled change
 | First token is slow | Performance/context budget | TTFT, prompt tokens, queue time, load time, prefill context. |
 | Later tokens are slow | Performance | Output tokens/sec, model size, quantization, offload, utilization. |
 | Answer is plausible but wrong | Quality | Known-answer prompt, expected answer, rubric score. |
-| RAG answer invents citations | RAG/evaluation | Retrieved top-k, supporting passage, cited answer, citation check. |
+| RAG answer invents citations | RAG/evaluation | Retrieved top-k, first relevant rank, final context ids, supporting passage, cited answer, citation check. |
 | Endpoint is reachable from another device | Security | Bind address, firewall/proxy/tunnel, auth decision. |
 | Worked before upgrade, restart, rollback, cache move, or UI update | Lifecycle/change control | Change card, before/after versions, startup config, backup, rollback target, and post-change validation row. |
 
@@ -153,7 +153,7 @@ Use this when the local model is callable and fast enough but the answer is not 
 | Citations are fake or loose | Citation boundary failure | Each citation mapped to supporting passage. |
 | Refusal is too broad | Safety/task boundary | Prompt, policy boundary, and expected allowed answer. |
 
-Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] for scoring, [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] for retrieval-specific diagnosis, and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when you need saved corpus, chunk, retrieval, answer, and refusal artifacts.
+Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] for scoring, [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] for retrieval-specific diagnosis, [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] for top-k, reranking, hybrid search, and citation-audit decisions, and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when you need saved corpus, chunk, retrieval, answer, and refusal artifacts.
 
 ## Diagnostic Record Template
 
@@ -204,6 +204,7 @@ This decision tree is complete for a local run when you have:
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]

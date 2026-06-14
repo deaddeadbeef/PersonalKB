@@ -40,7 +40,7 @@ Count: 79
 | LLM/2022 — Alignment and Chat/Red-Teaming and Safety Evaluations.md | 123 | *(To be populated as chunks are created)* |
 | LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback.md | 129 | *(To be populated as chunks are created)* |
 | LLM/2023 — Open Models and Agents/Chunking Strategies.md | 98 | *(To be populated as chunks are created)* |
-| LLM/2023 — Open Models and Agents/Embeddings and Vector Databases.md | 107 | *(To be populated as chunks are created)* |
+| LLM/2023 — Open Models and Agents/Embeddings and Vector Databases.md | 109 | *(To be populated as chunks are created)* |
 | LLM/2023 — Open Models and Agents/Frontier Labs and Open vs Closed Models.md | 101 | *(To be populated as chunks are created)* |
 | LLM/2023 — Open Models and Agents/Function Calling.md | 99 | *(To be populated as chunks are created)* |
 | LLM/2023 — Open Models and Agents/Hybrid Search.md | 95 | *(To be populated as chunks are created)* |
@@ -48,8 +48,8 @@ Count: 79
 | LLM/2023 — Open Models and Agents/Multimodal Tokenization and Fusion.md | 109 | *(To be populated as chunks are created)* |
 | LLM/2023 — Open Models and Agents/Open-Weight Model Ecosystem.md | 118 | *(To be populated as chunks are created)* |
 | LLM/2023 — Open Models and Agents/Planning and Task Decomposition.md | 109 | *(To be populated as chunks are created)* |
-| LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes.md | 113 | *(To be populated as chunks are created)* |
-| LLM/2023 — Open Models and Agents/Reranking.md | 107 | *(To be populated as chunks are created)* |
+| LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes.md | 115 | *(To be populated as chunks are created)* |
+| LLM/2023 — Open Models and Agents/Reranking.md | 109 | *(To be populated as chunks are created)* |
 | LLM/2023 — Open Models and Agents/Tool Selection and Execution Loops.md | 128 | *(To be populated as chunks are created)* |
 | LLM/2024–2025 — Frontier and Efficiency/Code and Agentic Benchmarks.md | 105 | *(To be populated as chunks are created)* |
 | LLM/2024–2025 — Frontier and Efficiency/Code Generation Agents.md | 93 | *(To be populated as chunks are created)* |

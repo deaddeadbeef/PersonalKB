@@ -99,6 +99,8 @@ Embeddings and vector databases decide which evidence gets surfaced for generati
 ### Challenge
 Pick an embedding model and vector database strategy for a multilingual documentation assistant. Justify your dimensionality, ANN index, and whether you would rely on metadata filtering.
 
+For a local applied workflow, use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to measure whether the embedding/index choice retrieves expected sources before the generator runs.
+
 ---
 
 ## Supporting Chunks / References
@@ -109,6 +111,7 @@ Pick an embedding model and vector database strategy for a multilingual document
 ### See Also
 - [[LLM/Foundations/Embeddings and Representation Geometry|Embeddings Foundations]] — the theoretical basis for text embeddings
 - [[LLM/Architecture Variants/Encoder-Only Models|Encoder-Only Models]] — modern embedding models descend from BERT
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]] — local top-k, rank, hybrid-search, and citation evaluation
 
 ### References
 - [[LLM/Sources/Sources Index]]

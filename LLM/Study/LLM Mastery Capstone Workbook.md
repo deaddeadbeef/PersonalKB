@@ -40,7 +40,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
-| RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] |  | Corpus manifest, chunking policy, index metadata, retrieval evidence, cited answer, unsupported-question refusal, benchmark row, quality row, and at least one diagnosed failure are captured. | Not started |
+| RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], retrieval evaluation from [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], and artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] |  | Corpus manifest, chunking policy, index metadata, top-k/rank/reranking evidence, cited answer, unsupported-question refusal, benchmark row, quality row, and at least one diagnosed failure are captured. | Not started |
 | Tool loop | Tool-calling proof from [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] |  | Tool schema, validated arguments, policy check, execution result, injected tool result, bounded loop, and failure rows are captured. | Not started |
 | Adaptation decision | Memo using [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] |  | Prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no-train decision is justified from the measured failure mode, data, eval, compute, and rollback evidence. | Not started |
 | Deployment decision | Memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] |  | Choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
@@ -209,6 +209,9 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Retriever settings |  |
 | Reranker settings |  |
 | Top-k evidence example |  |
+| First relevant rank / Hit@k |  |
+| Reranking or hybrid-search decision |  |
+| Citation audit |  |
 | Cited answer example |  |
 | Retrieval miss diagnosed |  |
 | Bad chunk diagnosed |  |
@@ -354,7 +357,7 @@ Next run:
 - [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
 - [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
-- [ ] The RAG assistant includes a manifest, chunk records, retrieval evidence, cited answer, unsupported-question refusal, and at least one diagnosed failure mode.
+- [ ] The RAG assistant includes a manifest, chunk records, retrieval evaluation, cited answer, unsupported-question refusal, citation audit, and at least one diagnosed failure mode.
 - [ ] The deployment memo chooses one path and rejects at least one alternative.
 - [ ] The vault audit was regenerated after the capstone artifact was added.
 - [ ] Any unresolved gaps are explicit in the status column.
@@ -393,6 +396,7 @@ Next run:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]

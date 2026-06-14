@@ -126,7 +126,7 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What makes an adaptation decision defensible? | Baseline failure, method matched to failure mode, clean data boundary, held-out eval, regression checks, deployment impact, and rollback, as in [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]. |
 | What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, operational owner, and rejected alternatives, as in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. |
 
-Required evidence: [[LLM/Study/Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Runtime Comparison Lab]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
+Required evidence: [[LLM/Study/Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Runtime Comparison Lab]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]], [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
 Use [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] to explain why each local artifact proves a mechanism-level claim instead of only proving that a command happened to run.
 Add [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the exam answer depends on artifact format, tokenizer, chat template, quantization, runtime support, or API route.
 Add [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the exam answer depends on thinking mode, reasoning effort, parser separation, latency trade-offs, or trace visibility.
@@ -157,7 +157,7 @@ Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshootin
 
 | Prompt | A passing answer must include |
 | --- | --- |
-| What are the layers of a local RAG assistant? | Corpus boundary, chunking, embedding, indexing, retrieval, reranking, context assembly, generation, citation, evaluation. |
+| What are the layers of a local RAG assistant? | Corpus boundary, chunking, embedding, indexing, retrieval evaluation, reranking, context assembly, generation, citation, evaluation. |
 | How do you distinguish retrieval failure from generation failure? | Expected source and retrieved top-k before judging answer text. |
 | Why can chunking be the problem even with a strong model? | Evidence can be split, buried, duplicated, or missing from retrieved context. |
 | What does a citation prove? | Only that a claim is supported by a retrieved passage when checked claim by claim. |
@@ -168,7 +168,7 @@ Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshootin
 | What should a safety/refusal test measure? | Boundary compliance without blocking allowed benign work. |
 | When is local hosting preferable to hosted APIs? | Privacy, offline control, cost, latency, customization, or policy requirements outweigh operations burden. |
 
-Remediation: [[LLM/Study/Local RAG Assistant Lab]], [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Security and Privacy Runbook]], [[LLM/Study/LLM Deployment Decision Matrix]], and [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]].
+Remediation: [[LLM/Study/Local RAG Assistant Lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]], [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Security and Privacy Runbook]], [[LLM/Study/LLM Deployment Decision Matrix]], and [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]].
 
 ## Practical Gates
 
@@ -199,7 +199,7 @@ These gates are stricter than the oral questions.
 | Quality | Prompt-suite result with pass/hold/fail decision. |
 | Adaptation | Decision memo choosing prompt, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no training from measured evidence. |
 | Failure diagnosis | One failure or explicit no-failure row with failed layer and controlled next action. |
-| RAG | Retrieval/citation proof with at least one diagnosed failure mode. |
+| RAG | Retrieval/citation proof with top-k/rank evidence, citation audit, and at least one diagnosed failure mode. |
 | Deployment | Decision memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference. |
 
 Do not mark the capstone complete until every proof link exists in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
@@ -222,7 +222,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Request behavior | [[LLM/Study/LLM Inference Request Lifecycle Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]], [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]], [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], and [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 | Debugging | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | Service lifecycle | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] |
-| RAG and citations | [[LLM/Study/Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness]] |
+| RAG and citations | [[LLM/Study/Local RAG Assistant Lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]], and [[LLM/Study/Local RAG Minimal Python Harness]] |
 | Evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | Security and deployment | [[LLM/Study/Local LLM Security and Privacy Runbook]], [[LLM/Study/LLM Deployment Decision Matrix]], and [[LLM/Study/LLM Mastery Capstone Workbook]] |
 
@@ -266,5 +266,6 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

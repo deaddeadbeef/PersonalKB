@@ -41,7 +41,7 @@ For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness
 
 Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] after the benchmark and quality rows exist. The matrix turns measurements into a choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference.
 
-For document-grounded workloads, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] to record corpus version, chunk policy, embedding/index configuration, retrieval results, citation support, unsupported-question refusal, and RAG-specific failure modes.
+For document-grounded workloads, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] to record corpus version, chunk policy, embedding/index configuration, top-k hits, first relevant rank, reranking or hybrid decisions, retrieval results, citation support, unsupported-question refusal, and RAG-specific failure modes.
 
 ## When To Use This
 
@@ -176,6 +176,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 | Peak RAM/VRAM |  |
 | Operations evidence |  |
 | Lifecycle/change card |  |
+| Retrieval evaluation |  |
 | Quality score |  |
 | Decision | Pass / Hold / Fail |
 | Notes |  |
@@ -200,6 +201,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - If runtime choice is unclear, review [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]].
 - If quality is unclear, run [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], then review [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]] and [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]].
 - If the prompt depends on private documents, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] to separate retrieval failures from generation failures.
+- If the RAG row has a weak or missing retrieval explanation, run [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] before changing the generator model.
 
 ## References
 
@@ -223,6 +225,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]

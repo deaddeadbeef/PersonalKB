@@ -106,6 +106,8 @@ The "Lost in the Middle" result also had durable impact because it highlighted t
 
 A RAG system answers a question incorrectly even though the correct passage is somewhere in the corpus. Design a debugging workflow that would let you decide whether the problem is retrieval miss, context poisoning, extraction failure, or hallucination despite context, and recommend one concrete fix for each possible diagnosis.
 
+For a local applied workflow, use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to separate top-k misses, low-rank evidence, context poisoning, reranking gains, and citation failures before tuning the generator.
+
 ## Supporting Chunks / References
 
 ### Supporting Chunks
@@ -115,3 +117,4 @@ A RAG system answers a question incorrectly even though the correct passage is s
 ### References
 
 - [[LLM/Sources/Sources Index]]
+- [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
