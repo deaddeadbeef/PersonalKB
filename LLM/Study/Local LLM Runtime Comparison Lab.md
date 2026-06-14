@@ -48,6 +48,8 @@ If a reasoning model is involved, also freeze thinking mode, effort value, reaso
 
 Open WebUI and similar tools are frontends over providers. Do not compare them as model loaders until the underlying Ollama, LM Studio, llama.cpp, vLLM, SGLang, or other provider endpoint is already proven.
 
+Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] when a runtime comparison result depends on scheduler behavior rather than raw model quality: slots, continuous batching, PagedAttention/KV-cache pressure, chunked prefill, preemption, queue limits, or admission control.
+
 ## Evidence Prerequisites
 
 Before the first comparison run, fill these rows:
@@ -196,6 +198,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

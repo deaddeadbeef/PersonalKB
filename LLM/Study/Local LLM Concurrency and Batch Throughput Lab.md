@@ -12,6 +12,8 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. Those notes prove a single request and its evidence schema. This lab proves what happens when more than one request is active.
 
+Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] before tuning concurrency when the symptom may come from prefill, decode, slots, PagedAttention/KV-cache pressure, chunked prefill, preemption, queueing, or admission control. This lab measures the ladder; the scheduler lab explains which mechanism owns the result.
+
 Read it with [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]], [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]], [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]], and [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]]. The academic point is direct: active sequences multiply KV-cache pressure, batching changes hardware utilization, quantization/offload changes memory headroom, repeated prefixes may reuse prefill work, draft verification can reduce decode latency, and queueing can make a fast model feel slow.
 
 ## What This Lab Decides
@@ -164,6 +166,7 @@ Copy this into [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference
 | Peak RAM/VRAM |  |
 | Quality result under load | pass / hold / fail |
 | Failure layer | client / queue / prefill / decode / KV cache / runtime / quality |
+| Scheduler mechanism row |  |
 | Deployment decision | single-user local / local queue / self-hosted server / hosted API / batch offline / change runtime |
 | Retest trigger | new model, new context, new hardware, new traffic, new runtime |
 
@@ -204,6 +207,7 @@ Internal routes:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]

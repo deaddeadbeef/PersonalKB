@@ -40,6 +40,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]]
@@ -82,6 +83,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured-output controls with reproducible local experiments
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] — connect PagedAttention, KV-cache pressure, chunked prefill, continuous batching, slots, and queue policy to local measurements
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — run a controlled concurrency ladder and decide whether the setup is single-user, queued, batch, self-hosted, or hosted
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] — separate warm-model behavior from true repeated-prefix KV reuse, then measure prompt-cache impact on TTFT, prefill, quality, and cache risk
 - [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] — decide whether draft-model, EAGLE, MTP, or n-gram speculative decoding actually improves local decode latency without quality or memory regressions

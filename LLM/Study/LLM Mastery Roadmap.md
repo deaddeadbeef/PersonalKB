@@ -31,18 +31,19 @@ Move in order:
 14. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to freeze and tune sampler settings before comparing quality or speed.
 15. Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when a local model exposes thinking mode, reasoning effort, reasoning parsers, or trace visibility controls.
 16. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to prove prompt, history, RAG, tool, output, and margin tokens fit.
-17. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the setup must handle more than one active request, a local queue, or batch/offline throughput.
-18. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before enabling draft-model, EAGLE, MTP, n-gram, or another speculative decoding path for local generation speed.
-19. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to capture model state, request timings, logs, runtime metrics, resource pressure, and next controlled action.
-20. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when a working endpoint must survive restarts, upgrades, cache movement, UI updates, and rollback.
-21. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-22. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
-23. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before judging a RAG assistant whose retrieval quality depends on local embedding or reranker inference.
-24. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
-25. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
-26. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
-27. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] to test whether the academic and applied knowledge is available without hand-holding.
-28. Build the capstone only after the local inference and evaluation gates are complete.
+17. Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] to explain serving symptoms through prefill, decode, KV cache, PagedAttention, continuous batching, chunked prefill, slots, preemption, queueing, and admission control.
+18. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the setup must handle more than one active request, a local queue, or batch/offline throughput.
+19. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before enabling draft-model, EAGLE, MTP, n-gram, or another speculative decoding path for local generation speed.
+20. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to capture model state, request timings, logs, runtime metrics, resource pressure, and next controlled action.
+21. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when a working endpoint must survive restarts, upgrades, cache movement, UI updates, and rollback.
+22. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+23. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
+24. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before judging a RAG assistant whose retrieval quality depends on local embedding or reranker inference.
+25. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
+26. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
+27. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
+28. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] to test whether the academic and applied knowledge is available without hand-holding.
+29. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
 
@@ -169,6 +170,7 @@ Read:
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]]
@@ -196,6 +198,7 @@ Proof:
 - Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to freeze temperature, candidate filters, penalties, seed behavior, stop rules, and output caps before benchmark or quality comparisons.
 - Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when a local model exposes thinking mode, reasoning effort, reasoning parsers, or trace visibility controls.
 - Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to prove the rendered prompt, retrieved context, tool schemas, history, output reserve, and safety margin fit the runtime context limit.
+- Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] before tuning concurrency or throughput settings so scheduler, prefill, decode, KV-cache, preemption, and queue symptoms have a named owner.
 - Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] before claiming a setup can handle shared local use, batch/offline work, or multi-client traffic.
 - Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] before claiming repeated system prompts, documents, examples, RAG context, tool protocols, or chat history reduce prefill or TTFT.
 - Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before claiming draft decoding, EAGLE, MTP, or n-gram speculation improves local generation speed.
@@ -238,7 +241,7 @@ Complete these in order:
 2. **Training pipeline map:** use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to trace one capability from data and objective through post-training, evaluation, adaptation, and deployment.
 3. **Attention implementation:** complete [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 4. **Tiny decoder training:** complete [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] and explain next-token loss, causal masking, validation loss, and generation.
-5. **Local inference report:** complete [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], fill compatibility cards from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], choose the accepted quantization/offload/KV-cache setting with [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]], compare plausible runtimes with [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], prove the context budget with [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]], test repeated-prefix reuse with [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]], capture operations evidence with [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], record lifecycle and rollback proof with [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+5. **Local inference report:** complete [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], fill compatibility cards from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], choose the accepted quantization/offload/KV-cache setting with [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]], compare plausible runtimes with [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], prove the context budget with [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]], identify scheduler and KV-cache bottlenecks with [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]], test repeated-prefix reuse with [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]], capture operations evidence with [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], record lifecycle and rollback proof with [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 6. **RAG assistant:** build document ingestion, chunking, embedding, embedding/reranker service proof, retrieval evaluation, reranking, generation, citation output, unsupported-question refusal, and failure logging with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]].
 7. **Tool loop:** build a harmless local tool-calling loop with [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]], including schema validation, policy checks, result injection, and one denied unsafe action.
 8. **Evaluation harness:** evaluate the RAG/tool assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
@@ -261,6 +264,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can build a local tool-calling loop with schema validation, policy checks, bounded retries, and tool-result evaluation.
 - [ ] I can host a local model, call its API, tune decoding controls, and record latency/throughput/memory metrics.
 - [ ] I can decide when local reasoning effort is worth the latency, token budget, parser, and trace-retention cost.
+- [ ] I can explain whether a local serving bottleneck belongs to queueing, prefill, decode, KV cache, slots, continuous batching, chunked prefill, preemption, or admission control.
 - [ ] I can run a small concurrency ladder and identify the saturation point, queue policy, and backpressure decision for local serving.
 - [ ] I can capture model state, request timing, runtime metrics/logs, resource pressure, and next controlled action for a local LLM server.
 - [ ] I can pin, restart, upgrade, back up, roll back, and post-validate a maintained local LLM service without guessing.
@@ -305,6 +309,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]

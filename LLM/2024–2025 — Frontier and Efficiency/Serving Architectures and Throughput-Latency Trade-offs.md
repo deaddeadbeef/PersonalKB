@@ -91,12 +91,13 @@ Understanding these trade-offs is central to production deployment. A chatbot ma
 - A service has low GPU utilization but good latency. What does that suggest about batch sizing?
 - A service has great throughput but poor chat responsiveness. Which trade-off is likely being pushed too far?
 
-For a practical local experiment, use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] to compare single-request latency against a controlled concurrency ladder. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when a latency or throughput claim needs request logs, server metrics, queue/KV/cache state, and resource-pressure evidence. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the serving question becomes "can this setup survive a restart, upgrade, rollback, cache move, or UI update?"
+For a practical local experiment, use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] to identify whether a serving symptom belongs to prefill, decode, KV-cache allocation, continuous batching, chunked prefill, slots, preemption, or admission control. Then use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] to compare single-request latency against a controlled concurrency ladder. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when a latency or throughput claim needs request logs, server metrics, queue/KV/cache state, and resource-pressure evidence. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the serving question becomes "can this setup survive a restart, upgrade, rollback, cache move, or UI update?"
 
 ## Supporting Chunks
 
 - [[chunk-llm-120 vLLM De Facto Serving Framework]] — why vLLM became the baseline open serving stack
 - [[chunk-llm-118 vLLM Continuous Batching Throughput]] — throughput evidence for continuous batching
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] — local scheduler, prefill/decode, KV-cache, slot, preemption, and admission-control evidence
 - [[LLM/Study/Local LLM Observability and Operations Runbook]] — practical local metrics, logs, resource counters, and operations rows
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] — practical startup, upgrade, backup, rollback, and post-change validation rows
 - [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — memory-management mechanism behind high concurrency
@@ -115,6 +116,7 @@ For a practical local experiment, use [[LLM/Study/Local LLM Concurrency and Batc
 - [[KV Cache and Context Reuse]]
 - [[Batching and Continuous Batching]]
 - [[Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]

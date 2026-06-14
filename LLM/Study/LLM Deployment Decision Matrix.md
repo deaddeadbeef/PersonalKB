@@ -11,6 +11,8 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] first if the deployment depends on a compressed artifact, GPU offload setting, CPU fallback, or KV-cache precision. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] first if the deployment depends on local embeddings, vector search, reranking, or RAG evidence quality. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] first if the deployment depends on multiple users, local queues, batch/offline processing, or throughput targets. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
 
+Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] first when the deployment choice depends on whether the bottleneck is queueing, prefill, decode, KV-cache pressure, continuous batching, chunked prefill, slots, preemption, or admission control.
+
 The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
 
 ## Outcome
@@ -170,6 +172,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]

@@ -41,7 +41,7 @@ Examples:
 | Weight precision and quantization | Lower-bit weights reduce memory and bandwidth pressure but can damage hard reasoning, formatting, or rare-token behavior. | Quantization type, offload setting, KV-cache precision, quality row, benchmark row. | [[LLM/Study/Local LLM Quantization and GPU Offload Lab]] |
 | Sampling and constraints | Logits become text through temperature, filters, penalties, stops, or grammar/schema constraints. | Frozen sampler settings and A/B sweep. | [[LLM/Study/Decoding and Sampling Controls Lab]] |
 | Prefill versus decode | Long input mainly hurts time to first token; model size and memory bandwidth often dominate later tokens/sec. | Short-vs-long prompt timing. | [[LLM/Study/LLM Inference Request Lifecycle Lab]] |
-| Batching and PagedAttention | Serving many requests is a cache-management and scheduling problem, not only a model-quality problem. | Concurrency, throughput, latency, queue, and cache notes. | [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]] |
+| Batching and PagedAttention | Serving many requests is a cache-management and scheduling problem, not only a model-quality problem. | Concurrency, throughput, latency, queue, slot, preemption, and cache notes. | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
 | Prompt caching | Repeated prefixes can reuse cache work when the runtime supports compatible prefix reuse. | Repeated-prefix benchmark and cache setting. | [[LLM/2026 — Reasoning and Agents/Prompt Caching and Inference Infrastructure]] |
 | RAG context assembly | Retrieval controls what evidence the model can see; generation quality cannot rescue missing or wrong context. | Corpus manifest, top-k evidence, cited answer, refusal row. | [[LLM/Study/Local RAG Minimal Python Harness]] |
 | Embedding and reranking inference | The retriever and reranker are separate model calls with their own dimensions, routes, batching, score semantics, and latency. | Embedding/reranker service card, vector-shape check, rerank gain row. | [[LLM/Study/Local Embedding and Reranker Hosting Lab]] |
@@ -145,6 +145,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

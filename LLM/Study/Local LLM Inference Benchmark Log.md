@@ -21,6 +21,8 @@ Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observa
 
 Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] before comparing a row across runtime upgrades, model revisions, cache moves, startup/service changes, Open WebUI updates, driver changes, or rollback. A benchmark regression is not interpretable unless the lifecycle change is pinned.
 
+Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] when a benchmark row changes because of scheduler, batching, slot, queue, prefill, decode, KV-cache, chunked-prefill, or preemption behavior. Record the mechanism owner next to the timing numbers.
+
 Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when a benchmark row fails or looks contradictory. The decision tree should identify whether the issue belongs to environment, sizing, server, route, client, prompt, performance, quality, RAG, or security before another comparison run.
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
@@ -226,6 +228,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

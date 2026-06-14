@@ -26,6 +26,8 @@ Before starting the server, use [[LLM/Study/Local LLM Model Acquisition and Prov
 
 Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the actual hardware visibility, runtime boundary, disk, model cache, port, and endpoint boundary before diagnosing serving errors. If a failure crosses more than one layer, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer and next controlled test.
 
+Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] after the first endpoint works but before tuning throughput, slots, batching, chunked prefill, preemption, or queue policy. That lab separates prefill, decode, KV-cache pressure, continuous batching, and admission-control behavior.
+
 Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
 
 ## Success Criteria
@@ -283,6 +285,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]

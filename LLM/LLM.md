@@ -75,6 +75,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — Prove local OpenAI-compatible base URLs, routes, streaming, errors, and feature gaps before client integration
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — Reusable client wrapper for local endpoint calls, streaming timing, error capture, and run logging
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] — Reproducible run log for local model/runtime comparisons
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] — Explain local serving latency and OOMs through prefill, decode, KV cache, batching, scheduler, slots, and admission control
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — Measure concurrent requests, queueing, TTFT, TPOT, throughput, saturation, and batch/offline serving decisions
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] — Prove whether repeated system prompts, documents, examples, RAG context, or chat history actually reuse KV/prefix cache instead of just warming the model
 - [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] — Test draft-model, EAGLE, MTP, and n-gram speculative decoding against a no-spec baseline before enabling it for local inference

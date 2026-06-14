@@ -35,6 +35,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
 | Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, and trace policy are captured. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
+| Serving internals and scheduler | Scheduler mechanism row from [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] |  | Cold/warm, short/long, repeated-prefix, scheduler state, KV/cache pressure, queue/preemption/OOM behavior, and one-variable tuning decision are captured. | Not started |
 | Concurrency and batch throughput | Concurrency ladder from [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] |  | Single-request baseline, max concurrency, p95 TTFT, throughput, memory, errors, saturation point, and backpressure policy are captured. | Not started |
 | Prompt cache and KV reuse | Cache decision card from [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] |  | Cold load, warm model, repeated-prefix run, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are captured. | Not started |
 | Speculative decoding | Decision card from [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] |  | No-spec baseline, spec-enabled run, draft method/model, accepted-token evidence, decode-latency delta, memory overhead, quality result, and keep/disable decision are captured. | Not started |
@@ -331,7 +332,7 @@ Next run:
 - A runtime choice made from preference, UI feel, or one smoke test without controlled benchmark and quality rows.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
 - A reasoning trace accepted as proof without final-answer evaluation, evidence support, and trace-retention policy.
-- A shared or batch-serving claim without a concurrency ladder, saturation point, and backpressure decision.
+- A shared or batch-serving claim without a scheduler mechanism row, concurrency ladder, saturation point, and backpressure decision.
 - A latency, throughput, memory, or error claim without logs, metrics, resource counters, and loaded-model state.
 - A maintained local service without pinned runtime/model state, startup mode, backup path, rollback target, and post-change validation.
 - A long-context, RAG, tool, or multi-turn run without a counted context budget and output reserve.
@@ -359,7 +360,7 @@ Next run:
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
 - [ ] Any reasoning-capable local run has effort, parser, latency, quality, and trace-policy evidence.
-- [ ] Any shared, multi-client, or batch local serving claim has concurrency, queue, saturation, and backpressure evidence.
+- [ ] Any shared, multi-client, or batch local serving claim has scheduler, KV-cache, concurrency, queue, saturation, and backpressure evidence.
 - [ ] Any local serving operations claim has observability evidence: model state, timing, logs/metrics, resource pressure, and next action.
 - [ ] Any maintained local LLM service has lifecycle evidence: pinned versions, cache/data paths, startup mode, backup, rollback, and post-change validation.
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
@@ -399,6 +400,7 @@ Next run:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
