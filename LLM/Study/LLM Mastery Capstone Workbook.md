@@ -19,7 +19,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 
 | Gate | Required artifact | Proof link/path | Pass signal | Status |
 |---|---|---|---|---|
-| Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] |  | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Not started |
+| Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
@@ -276,6 +276,7 @@ Next run:
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
+- [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]

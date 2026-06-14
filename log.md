@@ -2322,3 +2322,32 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4834 files, 2963 Markdown files, 836 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM 20-paper fast path synthesis map
+
+Scope: add an academic synthesis map that turns the 20-paper fast path into one causal story from Transformer architecture through pretraining, scaling, systems, open models, alignment, adaptation, reasoning, RAG, agents, evaluation, and local deployment implications.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-20-paper-synthesis-map.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM 20-Paper Fast Path Synthesis Map.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Paper Reading Protocol.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a synthesis map with a one-page causal story, cluster matrix, per-paper mastery questions, local-hosting bridge, oral recall gate, and completion gate.
+- Linked the map from the LLM MOC, study index, paper reading protocol, mastery roadmap, capstone workbook, and self-assessment exam.
+- Updated the capstone paper-map row with the new proof link while keeping the status honest: study map drafted; oral proof not yet passed.
+- Used existing vault raw source notes and `LLM/Sources/Sources Index.md`; no new external-source claims were added.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4834 files, 2963 Markdown files, 836 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4836 files, 2965 Markdown files, 837 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

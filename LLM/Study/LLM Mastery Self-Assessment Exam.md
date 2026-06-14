@@ -50,7 +50,7 @@ Answer without opening the timeline.
 | Why are RAG and tools not just prompting tricks? | They add external state/action channels and shift failure modes outside model weights. |
 | Why is inference now a systems problem? | KV cache, batching, memory bandwidth, quantization, routing, serving latency, and cost. |
 
-Core remediation: [[LLM/LLM — Learning Path]], [[LLM/Study/LLM Architecture Cheatsheet]], and the review drills in [[LLM/Study/LLM Study Index]].
+Core remediation: [[LLM/LLM — Learning Path]], [[LLM/Study/LLM Architecture Cheatsheet]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]], and the review drills in [[LLM/Study/LLM Study Index]].
 
 ## Section 2: Mechanisms And Math
 
@@ -76,7 +76,7 @@ Practical proof: complete [[LLM/Study/Attention Implementation Lab|Attention Imp
 
 ## Section 3: Paper Literacy
 
-Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] for one paper from each cluster.
+Use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] to place the clusters, then use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] for one paper from each cluster.
 
 | Cluster | Exam task |
 | --- | --- |
@@ -192,7 +192,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Timeline or field map | [[LLM/LLM — Learning Path]] |
 | Architecture and tensor shapes | [[LLM/Study/LLM Architecture Cheatsheet]] and [[LLM/Study/Attention Implementation Lab]] |
 | Training loop mechanics | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]], [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals]], and [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives]] |
-| Paper skepticism | [[LLM/Study/LLM Paper Reading Protocol]] |
+| Paper skepticism | [[LLM/Study/LLM Paper Reading Protocol]] and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]] |
 | Training and scaling | [[LLM/Study/LLM Training Pipeline Map]], [[LLM/2020–2021 — The Scaling Era/Scaling Laws]], and [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism]] |
 | Adaptation and fine-tuning | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning]], and [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA]] |
 | Alignment and preference methods | [[LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback]] and [[LLM/2022 — Alignment and Chat/Direct Preference Optimization]] |
@@ -217,6 +217,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
+- [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

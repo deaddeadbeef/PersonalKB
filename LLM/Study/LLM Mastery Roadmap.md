@@ -16,7 +16,7 @@ Use this note as the operational definition of "I know LLMs" for this vault. Rea
 Move in order:
 
 1. Map the field chronologically with [[LLM/LLM — Learning Path|LLM Learning Path]].
-2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] and [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] while reading architecture notes and papers.
+2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] while reading architecture notes and papers.
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to connect raw data, objectives, pretraining, post-training, adaptation, evaluation, and deployment.
 5. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to connect attention, next-token loss, gradients, validation, and generation in a toy model.
@@ -202,7 +202,7 @@ Proof:
 
 Complete these in order:
 
-1. **Paper map:** write a one-page map of the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]] using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]].
+1. **Paper map:** use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] to explain the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]], then use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to remediate any paper you cannot explain.
 2. **Training pipeline map:** use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to trace one capability from data and objective through post-training, evaluation, adaptation, and deployment.
 3. **Attention implementation:** complete [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 4. **Tiny decoder training:** complete [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] and explain next-token loss, causal masking, validation loss, and generation.
@@ -243,6 +243,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
+- [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]

@@ -27,6 +27,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
+- [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
@@ -69,7 +70,7 @@ Study and review materials for the LLM knowledge base.
 
 ## Suggested 20-Paper Fast Path
 
-For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to turn each paper into a claim, mechanism, evidence, limitation, and deployment implication.
+For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to turn each paper into a claim, mechanism, evidence, limitation, and deployment implication. Use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] to connect the papers into one academic-to-applied story.
 
 1. Attention Is All You Need (Vaswani et al. 2017)
 2. BERT (Devlin et al. 2018)

@@ -55,6 +55,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] — Choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from quality, latency, privacy, cost, and ops evidence
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] — Decide when to prompt, use RAG, fine-tune, train LoRA/QLoRA adapters, optimize preferences, or distill
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] — Method for extracting claims, evidence, limitations, and deployment implications from papers
+- [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] — Causal map from Transformer architecture through scaling, systems, alignment, adaptation, RAG, agents, evaluation, and local deployment
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — Practical path to run, serve, and benchmark local models
