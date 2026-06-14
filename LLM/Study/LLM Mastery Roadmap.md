@@ -33,11 +33,13 @@ Read:
 - [[LLM/Pre-2017 — Before Transformers/Tokenization|Tokenization]]
 - [[LLM/2017 — The Transformer/Attention Mechanism|Attention Mechanism]]
 - [[LLM/2017 — The Transformer/Transformer Architecture|Transformer Architecture]]
+- [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]]
 - [[LLM/2018–2019 — Pretrained Language Models/GPT and Decoder-Only Lineage|GPT and Decoder-Only Lineage]]
 
 Proof:
 
 - Draw the pipeline from text to tokens to logits to next-token sampling.
+- Implement scaled dot-product attention with [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 - Explain why decoder-only transformers became the dominant general assistant architecture.
 - Define perplexity, tokenization, context window, embedding, attention head, and pretraining.
 
@@ -154,7 +156,7 @@ Proof:
 Complete these in order:
 
 1. **Paper map:** write a one-page map of the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]] using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]].
-2. **Attention implementation:** implement scaled dot-product attention and explain the tensor shapes.
+2. **Attention implementation:** complete [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 3. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 4. **RAG assistant:** build document ingestion, chunking, embedding, retrieval, reranking, generation, and citation output with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]].
 5. **Evaluation harness:** evaluate the RAG assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
@@ -179,6 +181,7 @@ Complete these in order:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
+- [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

@@ -28,6 +28,7 @@ Study and review materials for the LLM knowledge base.
 
 ## Hands-On Labs
 
+- [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and tensor-shape checks
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant with retrieval, citations, and failure diagnosis
 

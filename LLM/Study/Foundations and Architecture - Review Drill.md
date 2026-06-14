@@ -53,3 +53,7 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 15. **GQA (Grouped-Query Attention) — what problem does it solve?**
     Reduces KV cache memory by sharing K,V across groups of heads. Compromise between full MHA (each head has own KV) and MQA (all heads share one KV).
+
+## Hands-On
+
+- [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and shape tests.

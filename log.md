@@ -2086,3 +2086,29 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4794 files, 2923 Markdown files, 816 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM attention implementation lab
+
+Scope: strengthen the architecture capstone by adding a hands-on attention implementation lab for scaled dot-product attention, causal masking, multi-head tensor reshaping, tests, and inference-memory implications.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-attention-implementation-lab.md`
+- `LLM/2017 — The Transformer/Attention Mechanism.md`
+- `LLM/LLM.md`
+- `LLM/Study/Attention Implementation Lab.md`
+- `LLM/Study/Foundations and Architecture - Review Drill.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `log.md`
+
+Maintenance changes:
+- Added an attention implementation lab with tensor-shape tables, minimal scaled dot-product attention code, causal mask code, multi-head self-attention skeleton, tests, debugging checklist, MQA/GQA extension, and completion gate.
+- Linked the lab from the LLM MOC, study index, mastery roadmap, foundations drill, and attention mechanism note.
+- Kept the lab as policy/practice guidance backed by existing source-linked attention and MQA chunks rather than introducing new current claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4794 files, 2923 Markdown files, 816 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4796 files, 2925 Markdown files, 817 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

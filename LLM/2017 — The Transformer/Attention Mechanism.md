@@ -82,6 +82,9 @@ Attention replaced recurrence as the primary sequence modeling mechanism. It ena
 ### Challenge
 1. Investigate one efficient-attention variant that reduces the $O(n²)$ bottleneck and explain what approximation or architectural trade-off it introduces relative to standard attention.
 
+### Implementation Lab
+Use [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] to implement the formula, apply causal masking, and verify tensor shapes.
+
 ---
 
 *See also:* [[LLM/Architecture Variants/Efficient Attention and Long-Context Variants|Efficient Attention]] — reducing attention's $O(n²)$ cost; [[LLM/Inference and Serving/KV Cache and Context Reuse|KV Cache]] — caching attention computations for fast generation
@@ -90,3 +93,4 @@ Attention replaced recurrence as the primary sequence modeling mechanism. It ena
 *(To be populated as chunks are created)*
 
 - [[LLM/Sources/Sources Index]]
+- [[LLM/Study/Attention Implementation Lab]]
