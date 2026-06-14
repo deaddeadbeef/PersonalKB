@@ -77,8 +77,8 @@ Write the threshold before running. A strict gate might require all required dim
 | Decision | Use when | Next action |
 | --- | --- | --- |
 | Pass | Quality threshold is met, latency/memory constraints are met, and the run is reproducible | Keep the model/runtime for this workload and record the decision in the benchmark log |
-| Hold | Quality is close, but one bottleneck needs another controlled run | Tune prompt, sampling, quantization, context assembly, or runtime and rerun only the failing cases |
-| Fail | The model hallucinates, breaks schema, invents citations, misses required constraints, crashes, or is too slow | Replace model/runtime or narrow the workload |
+| Hold | Quality is close, but one bottleneck needs another controlled run | Tune prompt, sampling, quantization, context assembly, runtime, or use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before training |
+| Fail | The model hallucinates, breaks schema, invents citations, misses required constraints, crashes, or is too slow | Replace model/runtime, narrow the workload, or use the adaptation guide to decide whether RAG, SFT, LoRA, QLoRA, DPO, distillation, or no training is appropriate |
 
 The pass decision must include both quality and operations evidence. A fast wrong model fails. A high-quality model that does not fit memory or latency constraints also fails for interactive local use.
 
@@ -142,6 +142,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/2023 — Open Models and Agents/LLM-as-Judge]]
 - [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies]]

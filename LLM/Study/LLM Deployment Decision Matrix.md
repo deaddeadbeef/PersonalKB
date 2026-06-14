@@ -34,7 +34,7 @@ After filling this out, you should be able to:
 | Concurrency | One user, a few local clients, team traffic, batch queue, or public API? | Benchmark row and serving plan |
 | Uptime | Toy experiment, daily personal tool, team dependency, or production service? | Operational plan |
 | Offline need | Must it work without internet or external provider access? | Security/privacy requirement |
-| Customization | Prompt-only, RAG, LoRA, fine-tune, tool use, or policy wrapper? | Architecture note or implementation plan |
+| Customization | Prompt-only, RAG, LoRA, fine-tune, tool use, or policy wrapper? | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|Adaptation and Fine-Tuning Decision Guide]] |
 | Cost model | Hardware sunk cost, electricity, rented GPU, API tokens, engineer time, or support burden? | Cost estimate |
 | Operational owner | Who patches, monitors, restarts, backs up, and handles incidents? | Runbook owner |
 | Audit/compliance | Are logs, prompts, documents, outputs, and model access auditable? | Security runbook and log map |
@@ -94,6 +94,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Security boundary | Endpoint exposure, logs, RAG corpus, tools, and storage locations are known. |
 | Troubleshooting | At least one failure row or explicit no-failure row names the layer and evidence. |
 | RAG, if relevant | Corpus version, chunk policy, retrieval examples, citations, and failure modes are recorded. |
+| Adaptation, if relevant | Prompt, RAG, SFT, LoRA/QLoRA, DPO, distillation, continued pretraining, or no-train choice is justified from failure-mode evidence. |
 | Cost/ops estimate | Hardware, API, maintenance, and owner assumptions are written down. |
 | Rejected alternative | At least one plausible path is rejected with measured or policy evidence. |
 
@@ -146,6 +147,7 @@ A deployment decision is complete when:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]

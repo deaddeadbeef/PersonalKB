@@ -7,7 +7,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 # LLM Mastery Self-Assessment Exam
 
-> **One-line summary** You know LLMs when you can explain the field, derive the core mechanisms, read papers skeptically, operate a local model, diagnose failures, and defend a deployment decision without guessing.
+> **One-line summary** You know LLMs when you can explain the field, derive the core mechanisms, read papers skeptically, operate a local model, diagnose failures, and defend adaptation and deployment decisions without guessing.
 
 Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] and before filling the final proof rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The roadmap says what to learn. The capstone workbook stores evidence. This exam tests whether the knowledge is available without hand-holding.
 
@@ -66,6 +66,7 @@ You should be able to explain these with a small sketch or equation.
 | Why is decode often memory-bandwidth-bound? | Each generated token repeatedly reads model weights and cache. |
 | What does quantization change? | Numeric representation and memory transfer, with possible quality loss. |
 | What is LoRA's core parameterization? | Low-rank update added to frozen base weights. |
+| When should you avoid fine-tuning? | When the failure is missing external knowledge, current facts, retrieval, tool policy, prompt formatting, or model capacity rather than learnable task behavior. |
 | Why can a smaller overtrained model be better for inference economics? | More training data/compute can improve quality while reducing serving cost. |
 
 Practical proof: complete [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain every tensor shape.
@@ -104,9 +105,10 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What must a client harness log? | Config, request settings, latency, TTFT if streaming, usage tokens, status, error class, excerpt or output path. |
 | What makes a benchmark reproducible? | Same prompt, model, runtime, quantization, hardware, sampling, context, and output cap. |
 | What distinguishes fast-but-wrong from good? | Quality harness scoring tied to workload, not subjective feel. |
+| What makes an adaptation decision defensible? | Baseline failure, method matched to failure mode, clean data boundary, held-out eval, regression checks, deployment impact, and rollback, as in [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]. |
 | What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, operational owner, and rejected alternatives, as in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. |
 
-Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], and [[LLM/Study/LLM Deployment Decision Matrix]].
+Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
 
 ## Section 5: Debugging Scenarios
 
@@ -156,6 +158,7 @@ These gates are stricter than the oral questions.
 | Environment | Preflight snapshot tied to the machine/runtime that served the model. |
 | Benchmark | Reproducible row with model, runtime, quantization, context, TTFT, tokens/sec, memory, and prompt class. |
 | Quality | Prompt-suite result with pass/hold/fail decision. |
+| Adaptation | Decision memo choosing prompt, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no training from measured evidence. |
 | Failure diagnosis | One failure or explicit no-failure row with failed layer and controlled next action. |
 | RAG | Retrieval/citation proof with at least one diagnosed failure mode. |
 | Deployment | Decision memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference. |
@@ -170,6 +173,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Architecture and tensor shapes | [[LLM/Study/LLM Architecture Cheatsheet]] and [[LLM/Study/Attention Implementation Lab]] |
 | Paper skepticism | [[LLM/Study/LLM Paper Reading Protocol]] |
 | Training and scaling | [[LLM/2020–2021 — The Scaling Era/Scaling Laws]] and [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism]] |
+| Adaptation and fine-tuning | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning]], and [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA]] |
 | Alignment and preference methods | [[LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback]] and [[LLM/2022 — Alignment and Chat/Direct Preference Optimization]] |
 | Inference memory and latency | [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]] and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]] |
 | Local setup | [[LLM/Study/Local LLM Environment Preflight Lab]] and [[LLM/Study/Local LLM Model and Hardware Sizing Guide]] |
@@ -187,6 +191,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]

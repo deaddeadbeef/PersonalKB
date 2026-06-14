@@ -23,6 +23,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
@@ -46,6 +47,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — verify tokenizer, special-token, chat-template, role-boundary, and stop-condition compatibility
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant with retrieval, citations, and failure diagnosis
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] — decide when to prompt, use RAG, fine-tune, train adapters, optimize preferences, or distill
 
 ## Suggested 20-Paper Fast Path
 

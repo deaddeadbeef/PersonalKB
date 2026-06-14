@@ -7,7 +7,7 @@ tier-coverage: [practice]
 
 # LLM Mastery Capstone Workbook
 
-> **One-line summary** Mastery becomes credible only when the conceptual, implementation, local inference, RAG, evaluation, and deployment artifacts are linked in one evidence ledger.
+> **One-line summary** Mastery becomes credible only when the conceptual, implementation, local inference, RAG, evaluation, adaptation, and deployment artifacts are linked in one evidence ledger.
 
 Use this with [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]. The roadmap defines the gates; this workbook collects the proof.
 
@@ -27,6 +27,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
 | RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] |  | Corpus version, chunking policy, index metadata, retrieval evidence, cited answer, and at least one diagnosed failure are captured. | Not started |
+| Adaptation decision | Memo using [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] |  | Prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no-train decision is justified from the measured failure mode, data, eval, compute, and rollback evidence. | Not started |
 | Deployment decision | Memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] |  | Choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
 
 ## Paper Map Output Template
@@ -117,6 +118,26 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Fail decisions |  |
 | Changes made after evaluation |  |
 
+## Adaptation Decision Memo
+
+Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before training or deciding not to train.
+
+Workload:
+
+Baseline failure:
+
+Decision: prompt / examples / RAG / model swap / SFT / LoRA / QLoRA / DPO / continued pretraining / distillation / no training
+
+Data boundary:
+
+Held-out evaluation:
+
+Rejected alternatives:
+
+Deployment impact:
+
+Rollback:
+
 ## Deployment Decision Memo
 
 Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] before filling this out.
@@ -148,6 +169,7 @@ Next run:
 - A benchmark without quality evidence.
 - A RAG answer without citations.
 - An LLM judge score without human calibration.
+- A fine-tune decision without a baseline failure, held-out eval, and rollback plan.
 - A deployment choice without a real workload.
 
 ## Completion Audit
@@ -155,6 +177,7 @@ Next run:
 - [ ] Every gate in the evidence ledger has a proof link.
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
+- [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
 - [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
 - [ ] The RAG assistant includes at least one diagnosed failure mode.
 - [ ] The deployment memo chooses one path and rejects at least one alternative.
@@ -166,6 +189,7 @@ Next run:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
