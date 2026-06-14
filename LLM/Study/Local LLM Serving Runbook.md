@@ -12,7 +12,7 @@ last-verified: 2026-06-14
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
-After the smoke test passes, use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows.
+After the smoke test passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, model id, route, streaming behavior, error behavior, and feature gaps before pointing generic clients at the server. Then use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows.
 
 Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware. Then use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to verify the model artifact, tokenizer, chat template, quantization, runtime, and API route before treating load failures or bad outputs as model-quality failures.
 
@@ -29,6 +29,7 @@ A local serving run is complete when:
 - a CLI or GUI chat proves the model can generate
 - an HTTP endpoint returns a non-streaming response
 - the same endpoint can be called by a generic OpenAI-compatible client or direct REST call
+- the OpenAI-compatible API contract records base URL, route, model id, streaming behavior, harmless failure behavior, and unsupported fields needed by the workload
 - a client harness logs request settings, timing, output summary, and failure rows without manual copy/paste
 - endpoint exposure, logs, RAG corpus, and tool permissions are explicit before any non-loopback use
 - tokenizer, chat template, role boundaries, and stop policy are checked when output ignores instructions or leaks role markers
@@ -126,7 +127,7 @@ Those fields give a first approximation of load time, prompt processing, and dec
 
 ## Phase 2: OpenAI-Compatible Smoke Test
 
-Use this for LM Studio, Ollama compatibility mode, vLLM, SGLang, and compatible local servers.
+Use this for LM Studio, Ollama compatibility mode, vLLM, SGLang, and compatible local servers. After the first response works, complete [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] before relying on tools, streaming, Responses API, embeddings, or client-library compatibility.
 
 ```powershell
 $BaseUrl = "http://localhost:1234/v1"
@@ -237,10 +238,11 @@ To pass the local-serving proof gate, save:
 3. A successful native or OpenAI-compatible API response.
 4. At least three prompt-suite outputs.
 5. One client harness row for the run, including either streaming timing or an explicit unsupported note.
-6. Benchmark log measurements.
-7. A quality harness pass/hold/fail decision for the target workload.
-8. A short explanation of the bottleneck using the academic links above.
-9. A decision: keep, tune, replace model, or replace runtime.
+6. One OpenAI-compatible API contract card, or an explicit native-API-only decision.
+7. Benchmark log measurements.
+8. A quality harness pass/hold/fail decision for the target workload.
+9. A short explanation of the bottleneck using the academic links above.
+10. A decision: keep, tune, replace model, or replace runtime.
 
 ## References
 
@@ -251,6 +253,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

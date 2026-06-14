@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** A local model run is reproducible only when the client captures request settings, timing, response text, errors, and benchmark fields in the same shape every time.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] explains one request. This lab turns one successful call into a repeatable client-side harness.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] records the base URL, route, model id, streaming behavior, errors, and feature gaps, and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] explains one request. This lab turns one successful call into a repeatable client-side harness.
 
 For private or document-grounded runs, check [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before saving prompts, retrieved passages, outputs, or logs.
 
@@ -18,6 +18,7 @@ For private or document-grounded runs, check [[LLM/Study/Local LLM Security and 
 After this lab you should be able to:
 
 - call one local OpenAI-compatible or runtime-specific endpoint from a repeatable script
+- reuse a validated local API contract instead of hardcoding guessed routes or model ids
 - keep model, base URL, route, and request settings in one configuration block
 - record total latency, time to first token, prompt tokens, output tokens, and decode speed when available
 - capture HTTP, model, timeout, schema, and streaming errors without losing the run row
@@ -339,6 +340,7 @@ This lab is complete when you have:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

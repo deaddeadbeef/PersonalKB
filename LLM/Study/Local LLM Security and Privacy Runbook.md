@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local inference reduces provider exposure, but it still creates an application server that can leak prompts, documents, logs, tool outputs, and model access if endpoint, storage, and trust boundaries are weak.
 
-Use this with [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before moving beyond a one-person loopback experiment. The serving runbook proves the model can answer; this runbook proves the local setup has a defensible privacy and exposure boundary. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] for the host, port, listener, runtime-boundary, and logging evidence behind this checklist. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when the security boundary should decide whether the workload belongs on local CPU/GPU, self-hosted infrastructure, a hosted API, hybrid RAG, or batch inference.
+Use this with [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before moving beyond a one-person loopback experiment. The serving runbook proves the model can answer; this runbook proves the local setup has a defensible privacy and exposure boundary. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to record auth behavior, base URL, route, feature gaps, and harmless failure behavior before connecting generic clients. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] for the host, port, listener, runtime-boundary, and logging evidence behind this checklist. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when the security boundary should decide whether the workload belongs on local CPU/GPU, self-hosted infrastructure, a hosted API, hybrid RAG, or batch inference.
 
 ## Security Model
 
@@ -150,6 +150,7 @@ Move from loopback experiment to shared service only when all are true:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]

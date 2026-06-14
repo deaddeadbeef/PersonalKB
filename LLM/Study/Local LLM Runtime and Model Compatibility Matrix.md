@@ -12,7 +12,7 @@ last-verified: 2026-06-14
 
 Use this before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. Those notes answer "what can I run?" and "how do I serve it?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?"
 
-Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model.
+Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] after the endpoint responds but before a generic client depends on the compatibility surface. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model.
 
 ## Outcome
 
@@ -34,7 +34,7 @@ After using this matrix you should be able to:
 | Tokenizer | Which vocabulary and normalization map text to token IDs? | Tokenizer files, GGUF metadata, token-count sanity set. |
 | Chat template | How are system, user, assistant, and tool messages serialized? | Template source, rendered prompt excerpt, runtime setting. |
 | Runtime engine | Which loader and scheduler will run it? | Ollama, LM Studio, llama.cpp, vLLM, SGLang, Transformers, or other engine. |
-| API route | Native route or OpenAI-compatible route? | Base URL, route, request body, model id. |
+| API route | Native route or OpenAI-compatible route? | Base URL, route, request body, model id, and API contract card. |
 | Workload contract | Does the task need JSON, tools, long context, RAG, citations, or streaming? | Quality harness row and benchmark log. |
 
 If any layer is unknown, treat the run as an experiment rather than a deployment decision.
@@ -82,7 +82,7 @@ Do not convert formats as the first fix. First prove what artifact you have, wha
 | --- | --- | --- |
 | Runtime refuses to load model | Unsupported architecture, wrong artifact format, missing config, or missing tokenizer | Inspect repo tree, model card, config, and runtime support list. |
 | `model not found` from API | Served id differs from requested id | List models through runtime-native route or `/v1/models`. |
-| Endpoint 404s | Native route vs OpenAI-compatible route confusion | Verify base URL, `/v1`, and route path from [[LLM/Study/Local LLM Serving Runbook|Serving Runbook]]. |
+| Endpoint 404s | Native route vs OpenAI-compatible route confusion | Verify base URL, `/v1`, and route path from [[LLM/Study/Local LLM Serving Runbook|Serving Runbook]] and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|API Contract Lab]]. |
 | Output continues the prompt | Base model, raw completion route, or missing chat template | Run [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]. |
 | Output prints role labels | Wrong template, duplicated role markers, or missing assistant prefix | Save rendered prompt evidence or runtime template setting. |
 | JSON/tool output is close but invalid | Prompt-only structure without constrained decoding or schema validation | Use structured-output validation and record stop policy. |
@@ -136,6 +136,7 @@ This matrix is complete for one local deployment decision when you have:
 - [ ] a model/runtime choice justified by artifact format and quantization support
 - [ ] tokenizer and chat-template evidence or an explicit "runtime does not expose this" note
 - [ ] a successful native or OpenAI-compatible endpoint smoke test
+- [ ] an API contract card when a generic OpenAI-compatible client will call the endpoint
 - [ ] a benchmark row with prompt tokens, TTFT, tokens/sec, memory, and quality notes
 - [ ] one diagnosed failure or an explicit no-failure row
 - [ ] a decision to keep, convert, re-quantize, change runtime, change model, or change workload requirement
@@ -148,6 +149,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
