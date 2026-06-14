@@ -36,6 +36,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
 | Concurrency and batch throughput | Concurrency ladder from [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] |  | Single-request baseline, max concurrency, p95 TTFT, throughput, memory, errors, saturation point, and backpressure policy are captured. | Not started |
 | Observability and operations | Operations row from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] |  | Loaded-model state, route, request timings, logs or metrics, resource pressure, error evidence, privacy handling, and next controlled action are captured. | Not started |
+| Service lifecycle and rollback | Change Freeze Card from [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] |  | Runtime/model versions, cache path, startup mode, backup path, upgrade plan, rollback target, and post-change validation are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
@@ -155,6 +156,9 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Sampler sweep result |  |
 | Reasoning budget row |  |
 | Concurrency ladder row |  |
+| Lifecycle/change card |  |
+| Startup mode |  |
+| Backup and rollback proof |  |
 | Truncation/overflow behavior |  |
 | Successful response |  |
 | Benchmark row |  |
@@ -317,6 +321,7 @@ Next run:
 - A reasoning trace accepted as proof without final-answer evaluation, evidence support, and trace-retention policy.
 - A shared or batch-serving claim without a concurrency ladder, saturation point, and backpressure decision.
 - A latency, throughput, memory, or error claim without logs, metrics, resource counters, and loaded-model state.
+- A maintained local service without pinned runtime/model state, startup mode, backup path, rollback target, and post-change validation.
 - A long-context, RAG, tool, or multi-turn run without a counted context budget and output reserve.
 - A tool-using run where the model-selected action executes without schema validation, policy check, bounded loop control, and failure rows.
 - A benchmark that changes temperature, filters, penalties, seeds, stops, or output caps without saying so.
@@ -344,6 +349,7 @@ Next run:
 - [ ] Any reasoning-capable local run has effort, parser, latency, quality, and trace-policy evidence.
 - [ ] Any shared, multi-client, or batch local serving claim has concurrency, queue, saturation, and backpressure evidence.
 - [ ] Any local serving operations claim has observability evidence: model state, timing, logs/metrics, resource pressure, and next action.
+- [ ] Any maintained local LLM service has lifecycle evidence: pinned versions, cache/data paths, startup mode, backup, rollback, and post-change validation.
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
 - [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
@@ -382,6 +388,7 @@ Next run:
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

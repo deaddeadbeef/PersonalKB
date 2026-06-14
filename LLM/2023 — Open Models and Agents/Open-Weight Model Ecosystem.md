@@ -82,6 +82,8 @@ The open-weight ecosystem fundamentally altered the power dynamics of AI. Before
 
 Its legacy is not just a list of model families, but an innovation culture: Hugging Face as a distribution hub, community fine-tuning efforts such as Alpaca and Vicuna, local inference tools like llama.cpp and Ollama, and a norm that strong models should be portable, adaptable, and inspectable by their users.
 
+For the operational side of that ownership, use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] to record model provenance, cache paths, runtime versions, startup mode, backups, and rollback before changing a local open-weight service.
+
 ---
 
 ## 🏋️ Practice
@@ -107,6 +109,7 @@ You are advising an organization that wants to avoid external API dependence whi
 
 - [[LLM/History and Landscape/Frontier Labs and Open vs Closed Models|Open vs Closed]] — the strategic debate around openness
 - [[LLM/Fine-Tuning and Adaptation/LoRA and QLoRA|LoRA]] — the PEFT method that made open model adaptation practical
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] — the operational checklist for maintaining local open-weight services
 
 ## Supporting Chunks / References
 

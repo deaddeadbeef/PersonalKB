@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** Local serving is the operational proof that you can turn model weights into a callable API, verify the endpoint, and explain the latency, memory, and quality trade-offs.
 
-Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] after the smoke test to capture model state, request timings, logs, metrics, and resource pressure. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
+Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] after the smoke test to capture model state, request timings, logs, metrics, and resource pressure. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when a working endpoint must survive restarts, upgrades, cache moves, UI changes, and rollback. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
 For the first complete run, fill [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] as you go. The evidence pack is the one-page binder; this runbook is the detailed serving procedure.
 
@@ -43,6 +43,7 @@ A local serving run is complete when:
 - a client harness logs request settings, timing, output summary, and failure rows without manual copy/paste
 - concurrency, queueing, and backpressure are measured before shared, batch, or multi-client use
 - endpoint exposure, logs, RAG corpus, and tool permissions are explicit before any non-loopback use
+- startup mode, pinned runtime/model state, backup path, upgrade plan, and rollback target are explicit before treating the endpoint as a maintained service
 - tokenizer, chat template, role boundaries, and stop policy are checked when output ignores instructions or leaks role markers
 - context window, prompt tokens, retrieved/tool/history tokens, output reserve, and truncation behavior are checked for long-context workloads
 - latency, tokens/sec, memory, model id, runtime, quantization, and quality notes are logged
@@ -214,6 +215,8 @@ For real workload selection, turn the quality notes into scored prompt rows with
 
 Before interpreting those rows, capture the operations evidence from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]]: loaded-model state, route, raw request/response timing, server logs or metrics, CPU/RAM and GPU/VRAM pressure, and one next controlled action.
 
+When this endpoint will be used again after today, fill the [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] Change Freeze Card before changing runtime version, model artifact, startup mode, cache path, UI container, driver, or client contract.
+
 Interpretation anchors:
 
 - High load time but good decode speed usually means cold-start cost, not a bad model.
@@ -283,6 +286,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]

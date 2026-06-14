@@ -19,6 +19,8 @@ For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Lo
 
 Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when a row needs loaded-model state, logs, runtime metrics, queue/KV/cache evidence, process pressure, or a next controlled operations change.
 
+Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] before comparing a row across runtime upgrades, model revisions, cache moves, startup/service changes, Open WebUI updates, driver changes, or rollback. A benchmark regression is not interpretable unless the lifecycle change is pinned.
+
 Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when a benchmark row fails or looks contradictory. The decision tree should identify whether the issue belongs to environment, sizing, server, route, client, prompt, performance, quality, RAG, or security before another comparison run.
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
@@ -50,6 +52,7 @@ Use the log whenever you:
 - change context length, GPU offload, batching, sampling settings, or prompt format
 - decide whether a local model is good enough for a real workload
 - choose a deployment path from measured quality, latency, memory, privacy, cost, and operations evidence
+- validate an upgrade, rollback, startup-mode change, model-cache move, or UI/container update
 - need proof for the Level 5 gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
 
 The goal is not to find a universal best model. The goal is to make a workload-specific decision from reproducible evidence.
@@ -79,6 +82,7 @@ Create one row per run.
 | Prompt class | Chat, coding, summarization, extraction, RAG, long-context, agent/tool |
 | Concurrency | Single request, batch size, concurrent users, or request rate |
 | Source commit/config | Script, command, config file, or runtime settings used |
+| Lifecycle/change card | Change id, pinned versions, cache/data paths, startup mode, backup path, rollback target, and post-change validation result when a service changed |
 
 ## Measurements
 
@@ -171,6 +175,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 | Decode tokens/sec |  |
 | Peak RAM/VRAM |  |
 | Operations evidence |  |
+| Lifecycle/change card |  |
 | Quality score |  |
 | Decision | Pass / Hold / Fail |
 | Notes |  |
@@ -191,6 +196,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - If tool selection, argument validity, policy, or result injection is the blocker, run [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before calling the model bad.
 - If multi-user throughput is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]].
 - If logs, metrics, resource pressure, or loaded-model state are missing, use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] before changing model, runtime, or prompt.
+- If the row follows a version, model, cache, startup, UI, driver, or client-contract change, use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] before interpreting the delta.
 - If runtime choice is unclear, review [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]].
 - If quality is unclear, run [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], then review [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]] and [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]].
 - If the prompt depends on private documents, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] to separate retrieval failures from generation failures.
@@ -204,6 +210,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

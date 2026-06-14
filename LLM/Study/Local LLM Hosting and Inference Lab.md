@@ -30,7 +30,7 @@ Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM 
 
 When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the endpoint map and smoke tests. If the run fails, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to locate the failed layer before changing the model or runtime.
 
-After the endpoint works, use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to capture loaded-model state, request timings, logs, server metrics, resource pressure, and the next controlled change before interpreting benchmark or quality results.
+After the endpoint works, use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to capture loaded-model state, request timings, logs, server metrics, resource pressure, and the next controlled change before interpreting benchmark or quality results. When the endpoint becomes a repeatable service instead of a one-off experiment, use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] to pin versions, record startup mode, back up state, upgrade one layer at a time, and prove rollback.
 
 After the endpoint responds, use [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] to trace one request through prompt assembly, tokenization, prefill, decode, sampling, stopping, streaming, and benchmark evidence.
 
@@ -272,6 +272,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM server is operable only when every quality or performance claim is backed by request logs, timing metrics, resource pressure, error evidence, and an explicit next action.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and before trusting rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the question is saturation under load. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when an observed metric points to a failed layer.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and before trusting rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the operations evidence is being captured before or after a restart, upgrade, cache move, UI update, or rollback. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the question is saturation under load. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when an observed metric points to a failed layer.
 
 This runbook turns academic serving concepts from [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]], [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], and [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]] into local evidence you can inspect.
 
@@ -234,6 +234,7 @@ The runbook is complete for one local setup when all are true:
 - [ ] Runtime-specific logs or metrics are saved.
 - [ ] Any private prompt/log exposure is accounted for.
 - [ ] Benchmark log receives the final pass/hold/fail row.
+- [ ] Service lifecycle runbook receives a change/rollback row when the observation was caused by restart, upgrade, cache movement, UI change, or client contract change.
 - [ ] Troubleshooting tree receives a failure row or explicit no-failure row.
 - [ ] Next action changes one variable only.
 
@@ -246,6 +247,7 @@ Internal:
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]

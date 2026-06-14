@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local LLM failures are diagnosable when each symptom is mapped to one layer: environment, model fit, server, route, client, prompt, tokenizer, RAG, quality, or security.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when the symptom needs request timings, logs, metrics, queue/KV/cache state, resource pressure, or an operations row. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] when the symptom may come from model source, license gate, revision, cache path, unsafe file type, or unclear artifact identity. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when failures appear only on long prompts, RAG, tools, or multi-turn history. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when failures involve tool selection, tool arguments, schema validation, policy denial, execution, or tool-result injection. This note decides where to look when the run still fails.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when the symptom needs request timings, logs, metrics, queue/KV/cache state, resource pressure, or an operations row. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the symptom appeared after restart, upgrade, rollback, cache movement, UI update, driver change, or client-contract change. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] when the symptom may come from model source, license gate, revision, cache path, unsafe file type, or unclear artifact identity. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when failures appear only on long prompts, RAG, tools, or multi-turn history. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when failures involve tool selection, tool arguments, schema validation, policy denial, execution, or tool-result injection. This note decides where to look when the run still fails.
 
 The rule is simple: change one layer at a time, keep a short evidence record, and do not call a model "bad" until the environment, route, prompt format, and evaluation harness have been checked.
 
@@ -61,6 +61,7 @@ Pass signal: the diagnosis names the failed layer and the next controlled change
 | Answer is plausible but wrong | Quality | Known-answer prompt, expected answer, rubric score. |
 | RAG answer invents citations | RAG/evaluation | Retrieved top-k, supporting passage, cited answer, citation check. |
 | Endpoint is reachable from another device | Security | Bind address, firewall/proxy/tunnel, auth decision. |
+| Worked before upgrade, restart, rollback, cache move, or UI update | Lifecycle/change control | Change card, before/after versions, startup config, backup, rollback target, and post-change validation row. |
 
 ## Server And Route Branch
 
@@ -161,6 +162,7 @@ Copy one row for each failure.
 | Field | Value |
 | --- | --- |
 | Run id |  |
+| Change id, if any |  |
 | Symptom |  |
 | Failed layer | Environment / sizing / server / route / client / prompt / tokenizer / performance / quality / RAG / security |
 | Evidence |  |
@@ -199,6 +201,7 @@ This decision tree is complete for a local run when you have:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]

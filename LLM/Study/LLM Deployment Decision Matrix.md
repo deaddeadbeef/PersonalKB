@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** The right deployment path is the one whose quality, latency, privacy, cost, reliability, and operational burden fit the workload after measurement.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] first if the deployment depends on multiple users, local queues, batch/offline processing, or throughput targets. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] first if the deployment depends on multiple users, local queues, batch/offline processing, or throughput targets. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
 
 The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
 
@@ -38,6 +38,7 @@ After filling this out, you should be able to:
 | Runtime compatibility | Does the selected artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together? | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]] |
 | Runtime comparison | Has the selected runtime beaten at least one plausible alternative under fixed prompts, sampler settings, context, output cap, benchmark rows, and quality rows? | [[LLM/Study/Local LLM Runtime Comparison Lab|Runtime Comparison Lab]] |
 | Operations evidence | Do logs, runtime metrics, queue/KV/cache state, CPU/RAM, GPU/VRAM, and error rows explain the operating point? | [[LLM/Study/Local LLM Observability and Operations Runbook|Observability and Operations Runbook]] |
+| Lifecycle evidence | Are startup mode, pinned versions, model/cache paths, backups, upgrade plan, rollback target, and post-change validation known? | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Service Lifecycle and Upgrade Runbook]] |
 | Cost model | Hardware sunk cost, electricity, rented GPU, API tokens, engineer time, or support burden? | Cost estimate |
 | Operational owner | Who patches, monitors, restarts, backs up, and handles incidents? | Runbook owner |
 | Audit/compliance | Are logs, prompts, documents, outputs, and model access auditable? | Security runbook and log map |
@@ -97,6 +98,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Runtime comparison | At least two plausible runtimes have controlled benchmark and quality rows, or one alternative is explicitly not applicable. |
 | Concurrency/backpressure | Multi-request, queue, p95 latency, saturation, and overload behavior are measured when the workload is not strictly single-user. |
 | Observability | Loaded-model state, route, request timings, logs or metrics, resource pressure, errors, and next controlled action are recorded. |
+| Lifecycle/rollback | Startup mode, pinned runtime/model state, cache/data paths, backup location, upgrade procedure, rollback target, and post-change validation are recorded when the path is maintained beyond a one-off run. |
 | Quality | Workload prompts have pass, hold, or fail decisions from a rubric. |
 | Security boundary | Endpoint exposure, logs, RAG corpus, tools, and storage locations are known. |
 | Tool loop, if relevant | Tool schema, parser/backend, validation, policy decision, execution result, loop bounds, and failure rows are recorded. |
@@ -146,6 +148,7 @@ A deployment decision is complete when:
 - the selected path has benchmark and quality evidence
 - privacy, logging, RAG, and tool boundaries are explicit
 - cost and operational owner are named
+- startup, upgrade, backup, and rollback responsibilities are explicit for maintained services
 - at least one plausible alternative is rejected with evidence
 - the next review trigger is written down
 
@@ -164,6 +167,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
