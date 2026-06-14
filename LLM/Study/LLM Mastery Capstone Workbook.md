@@ -27,7 +27,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
 | RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] |  | Corpus version, chunking policy, index metadata, retrieval evidence, cited answer, and at least one diagnosed failure are captured. | Not started |
-| Deployment decision | Deployment decision memo in this workbook |  | Choice between local CPU, local GPU, self-hosted server, or hosted API is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
+| Deployment decision | Memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] |  | Choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
 
 ## Paper Map Output Template
 
@@ -119,9 +119,11 @@ Use one paragraph per cluster, not one paragraph per paper.
 
 ## Deployment Decision Memo
 
+Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] before filling this out.
+
 Workload:
 
-Decision: local CPU / local GPU / self-hosted server / hosted API
+Decision: local CPU / local GPU / self-hosted server / hosted API / hybrid / batch
 
 Evidence:
 
@@ -164,6 +166,7 @@ Next run:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/Attention Implementation Lab]]

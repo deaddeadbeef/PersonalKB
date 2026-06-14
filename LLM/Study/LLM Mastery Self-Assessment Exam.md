@@ -104,9 +104,9 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What must a client harness log? | Config, request settings, latency, TTFT if streaming, usage tokens, status, error class, excerpt or output path. |
 | What makes a benchmark reproducible? | Same prompt, model, runtime, quantization, hardware, sampling, context, and output cap. |
 | What distinguishes fast-but-wrong from good? | Quality harness scoring tied to workload, not subjective feel. |
-| What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, and rejected alternatives. |
+| What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, operational owner, and rejected alternatives, as in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. |
 
-Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab]], and [[LLM/Study/Local LLM Inference Benchmark Log]].
+Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], and [[LLM/Study/LLM Deployment Decision Matrix]].
 
 ## Section 5: Debugging Scenarios
 
@@ -142,7 +142,7 @@ Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshootin
 | What should a safety/refusal test measure? | Boundary compliance without blocking allowed benign work. |
 | When is local hosting preferable to hosted APIs? | Privacy, offline control, cost, latency, customization, or policy requirements outweigh operations burden. |
 
-Remediation: [[LLM/Study/Local RAG Assistant Lab]], [[LLM/Study/Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Security and Privacy Runbook]], and [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]].
+Remediation: [[LLM/Study/Local RAG Assistant Lab]], [[LLM/Study/Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Security and Privacy Runbook]], [[LLM/Study/LLM Deployment Decision Matrix]], and [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]].
 
 ## Practical Gates
 
@@ -158,7 +158,7 @@ These gates are stricter than the oral questions.
 | Quality | Prompt-suite result with pass/hold/fail decision. |
 | Failure diagnosis | One failure or explicit no-failure row with failed layer and controlled next action. |
 | RAG | Retrieval/citation proof with at least one diagnosed failure mode. |
-| Deployment | Decision memo choosing local CPU, local GPU, self-hosted server, or hosted API. |
+| Deployment | Decision memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference. |
 
 Do not mark the capstone complete until every proof link exists in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
 
@@ -178,7 +178,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Debugging | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | RAG and citations | [[LLM/Study/Local RAG Assistant Lab]] |
 | Evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
-| Security and deployment | [[LLM/Study/Local LLM Security and Privacy Runbook]] and [[LLM/Study/LLM Mastery Capstone Workbook]] |
+| Security and deployment | [[LLM/Study/Local LLM Security and Privacy Runbook]], [[LLM/Study/LLM Deployment Decision Matrix]], and [[LLM/Study/LLM Mastery Capstone Workbook]] |
 
 ## References
 
@@ -187,6 +187,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
+- [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/Attention Implementation Lab]]

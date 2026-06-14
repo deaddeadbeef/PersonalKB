@@ -23,6 +23,8 @@ Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when
 
 For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to run workload prompts, rubric scores, pairwise comparisons, RAG/citation checks, and a pass/hold/fail gate.
 
+Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] after the benchmark and quality rows exist. The matrix turns measurements into a choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference.
+
 For document-grounded workloads, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to record corpus version, chunk policy, retrieval results, citation support, and RAG-specific failure modes.
 
 ## When To Use This
@@ -33,6 +35,7 @@ Use the log whenever you:
 - compare runtimes such as Ollama, LM Studio, llama.cpp, vLLM, or SGLang
 - change context length, GPU offload, batching, sampling settings, or prompt format
 - decide whether a local model is good enough for a real workload
+- choose a deployment path from measured quality, latency, memory, privacy, cost, and operations evidence
 - need proof for the Level 5 gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
 
 The goal is not to find a universal best model. The goal is to make a workload-specific decision from reproducible evidence.
@@ -121,7 +124,7 @@ Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluatio
 
 Write the acceptance threshold before benchmarking. A chat assistant, RAG analyst, coding helper, batch summarizer, and production API all have different latency and quality requirements.
 
-For model selection, make this decision from both the measurements above and the scored prompt rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
+For model selection, make this decision from both the measurements above and the scored prompt rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]. For deployment selection, feed the accepted benchmark rows into [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
 
 ## Blank Log Entry
 
@@ -166,6 +169,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
