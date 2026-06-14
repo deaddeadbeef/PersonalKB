@@ -2007,3 +2007,30 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4788 files, 2917 Markdown files, 813 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM quality evaluation harness
+
+Scope: make local LLM hosting decisions quality-aware by adding a workload-specific harness for prompt suites, rubric scoring, pairwise comparisons, RAG/citation checks, judge-bias controls, and pass/hold/fail gates.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-quality-evaluation-harness.md`
+- `LLM/LLM.md`
+- `LLM/Study/Inference and Efficiency - Review Drill.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Quality Evaluation Harness.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local quality evaluation harness that defines the evaluation ladder, prompt set, 0/1/2 rubric dimensions, pass/hold/fail gate, pairwise comparison protocol, RAG/citation checks, contamination controls, and a run log template.
+- Linked the harness from the LLM MOC, study index, inference drill, local benchmark log, serving runbook, and mastery roadmap.
+- Kept the note as policy/practice guidance backed by existing source-linked evaluation notes and chunks rather than introducing new current claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4788 files, 2917 Markdown files, 813 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4790 files, 2919 Markdown files, 814 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** Local serving is the operational proof that you can turn model weights into a callable API, verify the endpoint, and explain the latency, memory, and quality trade-offs.
 
-Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The lab explains the concepts; this runbook gives the repeatable serving sequence.
+Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
 Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware.
 
@@ -23,6 +23,7 @@ A local serving run is complete when:
 - an HTTP endpoint returns a non-streaming response
 - the same endpoint can be called by a generic OpenAI-compatible client or direct REST call
 - latency, tokens/sec, memory, model id, runtime, quantization, and quality notes are logged
+- the quality decision is backed by [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when choosing a model for real work
 - you can explain the result using [[LLM/2022 — Alignment and Chat/Quantization|Quantization]], [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]
 
 ## Runtime Decision Path
@@ -178,6 +179,8 @@ Run the prompt suite from [[LLM/Study/Local LLM Inference Benchmark Log|Local LL
 | Peak RAM/VRAM | Confirms whether the setup has real headroom |
 | Quality notes | Prevents "fast but wrong" from passing |
 
+For real workload selection, turn the quality notes into scored prompt rows with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
+
 Interpretation anchors:
 
 - High load time but good decode speed usually means cold-start cost, not a bad model.
@@ -220,8 +223,9 @@ To pass the local-serving proof gate, save:
 3. A successful native or OpenAI-compatible API response.
 4. At least three prompt-suite outputs.
 5. Benchmark log measurements.
-6. A short explanation of the bottleneck using the academic links above.
-7. A decision: keep, tune, replace model, or replace runtime.
+6. A quality harness pass/hold/fail decision for the target workload.
+7. A short explanation of the bottleneck using the academic links above.
+8. A decision: keep, tune, replace model, or replace runtime.
 
 ## References
 
@@ -231,6 +235,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]

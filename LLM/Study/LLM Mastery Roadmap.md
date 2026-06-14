@@ -20,7 +20,8 @@ Move in order:
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
 5. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-6. Build the capstone only after the local inference and evaluation gates are complete.
+6. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
+7. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
 
@@ -114,6 +115,7 @@ Read:
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 
 Proof:
 
@@ -121,6 +123,7 @@ Proof:
 - Estimate weight memory and KV-cache risk with [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] before choosing the model/runtime pair.
 - Use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to prove the endpoint with a smoke test and diagnose any serving failures.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+- Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to score known-answer, schema, RAG/citation, long-context, multi-turn, and workload-specific prompts.
 - Explain why KV cache, quantization, batch size, and context length change latency and throughput.
 - Compare at least two runtimes, such as Ollama versus llama.cpp, or llama.cpp versus vLLM.
 
@@ -152,7 +155,7 @@ Complete these in order:
 2. **Attention implementation:** implement scaled dot-product attention and explain the tensor shapes.
 3. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 4. **RAG assistant:** build document ingestion, chunking, embedding, retrieval, reranking, generation, and citation output.
-5. **Evaluation harness:** evaluate the RAG assistant with at least one human rubric and one LLM-as-judge rubric.
+5. **Evaluation harness:** evaluate the RAG assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
 6. **Deployment decision:** write a trade-off memo choosing hosted API, local CPU/GPU, or production serving for one real workload.
 
 ## Completion Checklist
@@ -162,6 +165,7 @@ Complete these in order:
 - [ ] I can explain pretraining, SFT, RLHF, DPO, LoRA, QLoRA, RAG, function calling, and LLM-as-judge.
 - [ ] I can identify when a problem is a retrieval issue, prompt issue, model capability issue, or evaluation issue.
 - [ ] I can host a local model, call its API, and record latency/throughput/memory metrics.
+- [ ] I can run a local quality harness and explain pass/hold/fail decisions from rubric evidence.
 - [ ] I can justify a model/runtime/quantization choice for my hardware and workload.
 - [ ] I can read a new LLM paper and place it in the field map.
 - [ ] I can build and evaluate a small LLM application end to end.
@@ -176,3 +180,4 @@ Complete these in order:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Quality Evaluation Harness]]

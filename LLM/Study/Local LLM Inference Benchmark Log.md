@@ -15,6 +15,8 @@ Use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Ha
 
 For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before filling in the measurements here.
 
+For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to run workload prompts, rubric scores, pairwise comparisons, RAG/citation checks, and a pass/hold/fail gate.
+
 ## When To Use This
 
 Use the log whenever you:
@@ -64,13 +66,15 @@ Create one row per run.
 | Peak VRAM | Highest observed GPU memory use during the run |
 | CPU/GPU utilization | Whether the bottleneck looks compute-bound, memory-bound, or idle |
 | Error/retry count | Runtime crashes, OOMs, malformed outputs, timeouts, or refusal surprises |
-| Quality score | Short rubric result, not just "felt good" |
+| Quality score | Harness result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], not just "felt good" |
 
 Keep the same prompt, sampling settings, and output-token cap when comparing two runtimes or quantizations. Change one variable at a time unless the experiment is explicitly a full-stack comparison.
 
 ## Prompt Suite
 
 Run at least three prompts. Use more when choosing a model for real work.
+
+Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the prompt suite needs a scored acceptance decision rather than a quick benchmark note.
 
 | Prompt type | What it tests | Pass signal |
 | --- | --- | --- |
@@ -90,6 +94,8 @@ Run at least three prompts. Use more when choosing a model for real work.
 | Fail | The model cannot load, misses the core task, violates the output contract, or is too slow for the workload |
 
 Write the acceptance threshold before benchmarking. A chat assistant, RAG analyst, coding helper, batch summarizer, and production API all have different latency and quality requirements.
+
+For model selection, make this decision from both the measurements above and the scored prompt rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
 
 ## Blank Log Entry
 
@@ -121,7 +127,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - If single-user latency is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding|Speculative Decoding]] and the TTFT/TPOT split above.
 - If multi-user throughput is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]].
 - If runtime choice is unclear, review [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]].
-- If quality is unclear, review [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]] and [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]].
+- If quality is unclear, run [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], then review [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]] and [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]].
 
 ## References
 
@@ -129,6 +135,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
