@@ -95,10 +95,17 @@ Design a serving policy for a chatbot workload with many short prompts and occas
 
 ## Supporting Chunks
 
-_Placeholder for links to specific techniques, implementation details, and case studies._
+- [[chunk-llm-118 vLLM Continuous Batching Throughput]] — continuous batching plus PagedAttention throughput evidence
+- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — why continuous batching depends on efficient KV-cache allocation
+- [[chunk-llm-120 vLLM De Facto Serving Framework]] — serving-stack adoption context
+- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] — why decode batching improves hardware utilization
 
 ---
 
-## References to Sources Index
+## References
 
-_Placeholder for references to papers, documentation, and source materials._
+- [[LLM/Sources/Sources Index]]
+- [[LLM/_raw/raw-llm-030 vLLM PagedAttention Serving|vLLM PagedAttention Serving]]
+- [[KV Cache and Context Reuse]]
+- [[Serving Architectures and Throughput-Latency Trade-offs]]
+- [[Local LLM Hosting and Inference Lab]]

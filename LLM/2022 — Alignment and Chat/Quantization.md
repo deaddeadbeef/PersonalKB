@@ -100,15 +100,26 @@ Choose a deployment target (consumer laptop CPU, single consumer GPU, or multi-G
 
 ## See Also
 
-- [[LLM/Fine-Tuning and Adaptation/LoRA and QLoRA|QLoRA]] — combining quantization with fine-tuning
-- [[LLM/Inference and Serving/Serving Architectures and Throughput-Latency Trade-offs|Serving Trade-offs]] — quantization's impact on serving economics
+- [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA|QLoRA]] — combining quantization with fine-tuning
+- [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Trade-offs]] — quantization's impact on serving economics
+- [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — choosing a model format and runtime for local inference
 
 ## Supporting Chunks / References
 
 ### Supporting Chunks
 
-_Placeholder for links to specific techniques, implementation details, and case studies._
+- [[chunk-llm-205 GPTQ Hessian-Based Weight Quantization]] — GPTQ's second-order rounding method
+- [[chunk-llm-207 GPTQ 3-4 Bit Accuracy vs FP16]] — 4-bit and 3-bit quality trade-offs
+- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]] — why GPTQ became common in open-weight deployment
+- [[chunk-llm-209 AWQ Activation-Aware Salient Channels]] — AWQ's activation-aware saliency criterion
+- [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]] — AWQ's edge and on-device deployment relevance
+- [[chunk-llm-085 QLoRA 4-bit Quantization with LoRA]] — quantization for parameter-efficient fine-tuning
 
 ### References
 
-_Placeholder for references to papers, documentation, and source materials._
+- [[LLM/Sources/Sources Index]]
+- [[LLM/_raw/raw-llm-052 GPTQ Accurate Post-Training Quantization|GPTQ Accurate Post-Training Quantization]]
+- [[LLM/_raw/raw-llm-053 AWQ Activation-aware Weight Quantization|AWQ Activation-aware Weight Quantization]]
+- [[LLM/_raw/raw-llm-022 QLoRA Efficient Finetuning Quantized LLMs|QLoRA Efficient Finetuning Quantized LLMs]]
+- [[Serving Architectures and Throughput-Latency Trade-offs]]
+- [[Open-Weight Model Ecosystem]]

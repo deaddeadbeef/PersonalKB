@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 252
+Count: 250
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -113,8 +113,6 @@ Count: 252
 - [[LLM/2023 — Open Models and Agents/Tool Selection and Execution Loops|Tool Selection and Execution Loops]] (`LLM/2023 — Open Models and Agents/Tool Selection and Execution Loops.md`)
 - [[LLM/2023 — Open Models and Agents/Tool-Augmented Prompting|Tool-Augmented Prompting]] (`LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md`)
 - [[LLM/2024–2025 — Frontier and Efficiency/2024–2025 — Frontier and Efficiency Overview|2024–2025 — Frontier and Efficiency]] (`LLM/2024–2025 — Frontier and Efficiency/2024–2025 — Frontier and Efficiency Overview.md`)
-- [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]] (`LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching.md`)
-- [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]] (`LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse.md`)
 - [[LLM/2026 — Reasoning and Agents/2026 — Reasoning and Agents Overview|2026 — Reasoning and Agents]] (`LLM/2026 — Reasoning and Agents/2026 — Reasoning and Agents Overview.md`)
 - [[LLM/Architecture Variants/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] (`LLM/Architecture Variants/Efficient Attention and Long-Context Variants.md`)
 - [[LLM/LLM — Learning Path|LLM — Learning Path]] (`LLM/LLM — Learning Path.md`)

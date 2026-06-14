@@ -96,7 +96,12 @@ You are serving a chatbot with long shared system prompts and occasional 100K-to
 
 ## Supporting Chunks
 
-_Placeholder for links to specific techniques, implementation details, and case studies._
+- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] — decode bottleneck caused by reading cached keys and values
+- [[chunk-llm-213 Multi-Query Attention Shared KV Heads]] — MQA as an architectural cache-size reduction
+- [[chunk-llm-217 GQA Mechanism Interpolating MHA and MQA]] — GQA as the practical middle ground between MHA and MQA
+- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — cache allocation as virtual-memory-style paging
+- [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]] — shared-prefix and beam-search cache reuse
+- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]] — prefix caching for repeated context
 
 ---
 
@@ -110,6 +115,12 @@ _Placeholder for links to specific techniques, implementation details, and case 
 
 ---
 
-## References to Sources Index
+## References
 
-_Placeholder for references to papers, documentation, and source materials._
+- [[LLM/Sources/Sources Index]]
+- [[LLM/_raw/raw-llm-030 vLLM PagedAttention Serving|vLLM PagedAttention Serving]]
+- [[LLM/_raw/raw-llm-054 Fast Transformer Decoding One Write-Head MQA|Fast Transformer Decoding: One Write-Head Is All You Need]]
+- [[LLM/_raw/raw-llm-055 GQA Training Generalized Multi-Query Transformer Models|GQA: Training Generalized Multi-Query Transformer Models]]
+- [[Batching and Continuous Batching]]
+- [[Serving Architectures and Throughput-Latency Trade-offs]]
+- [[Local LLM Hosting and Inference Lab]]

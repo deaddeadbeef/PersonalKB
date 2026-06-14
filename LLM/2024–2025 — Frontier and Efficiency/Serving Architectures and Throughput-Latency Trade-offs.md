@@ -92,7 +92,22 @@ Understanding these trade-offs is central to production deployment. A chatbot ma
 - A service has great throughput but poor chat responsiveness. Which trade-off is likely being pushed too far?
 
 ## Supporting Chunks
-_Placeholder for links to specific techniques, implementation details, and case studies._
+
+- [[chunk-llm-120 vLLM De Facto Serving Framework]] — why vLLM became the baseline open serving stack
+- [[chunk-llm-118 vLLM Continuous Batching Throughput]] — throughput evidence for continuous batching
+- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — memory-management mechanism behind high concurrency
+- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] — decode-stage hardware bottleneck
+- [[chunk-llm-223 Speculative Decoding Speedup Analysis]] — latency gains from draft-target verification
+- [[chunk-llm-224 Speculative Decoding Production Adoption]] — production adoption context for speculative decoding
+- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]] — quantization as a serving-cost lever
 
 ## References
-_Placeholder for references to papers, documentation, and source materials._
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/_raw/raw-llm-030 vLLM PagedAttention Serving|vLLM PagedAttention Serving]]
+- [[LLM/_raw/raw-llm-054 Fast Transformer Decoding One Write-Head MQA|Fast Transformer Decoding: One Write-Head Is All You Need]]
+- [[LLM/_raw/raw-llm-056 Speculative Sampling for LLM Decoding|Speculative Sampling for LLM Decoding]]
+- [[Quantization]]
+- [[KV Cache and Context Reuse]]
+- [[Batching and Continuous Batching]]
+- [[Local LLM Hosting and Inference Lab]]

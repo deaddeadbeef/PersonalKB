@@ -1876,3 +1876,27 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4779 files, 2908 Markdown files, 809 candidate articles, 20 stubs, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM inference provenance pass
+
+Scope: strengthen the applied local-inference route by replacing placeholder evidence sections in core inference notes with existing chunks, raw-source links, and cross-links to the local hosting lab.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-inference-provenance-pass.md`
+- `LLM/2022 — Alignment and Chat/Quantization.md`
+- `LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching.md`
+- `LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse.md`
+- `LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs.md`
+- `log.md`
+
+Maintenance changes:
+- Replaced placeholder supporting-chunk and reference sections in the inference cluster.
+- Linked KV cache, batching, serving, and quantization notes to existing source-backed chunks.
+- Fixed stale Quantization See Also links to the current vault paths.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4779 files, 2908 Markdown files, 809 candidate articles, 20 stubs, 252 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4780 files, 2909 Markdown files, 809 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.
