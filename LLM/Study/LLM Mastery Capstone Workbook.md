@@ -7,7 +7,7 @@ tier-coverage: [practice]
 
 # LLM Mastery Capstone Workbook
 
-> **One-line summary** Mastery becomes credible only when the conceptual, implementation, local inference, RAG, evaluation, adaptation, and deployment artifacts are linked in one evidence ledger.
+> **One-line summary** Mastery becomes credible only when the conceptual, mechanism-to-inference, implementation, local inference, RAG, evaluation, adaptation, and deployment artifacts are linked in one evidence ledger.
 
 Use this with [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]. The roadmap defines the gates; this workbook collects the proof.
 
@@ -20,6 +20,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Gate | Required artifact | Proof link/path | Pass signal | Status |
 |---|---|---|---|---|
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
+| Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
@@ -50,6 +51,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Adaptation |  |  | Prompting, LoRA, QLoRA, distillation, fine-tuning |
 | Retrieval and tools |  |  | RAG, embeddings, chunking, function calling, agents |
 | Evaluation and serving |  |  | Benchmarks, LLM-as-judge, throughput, latency, KV cache |
+| Mechanism bridge |  |  | Tokenization, attention, KV cache, quantization, sampling, RAG, tools, evaluation |
 
 ## Training Pipeline Proof Template
 
@@ -232,6 +234,7 @@ Next run:
 
 - Reading without recall.
 - A training-stage explanation without data, objective, evaluation, and failure-owner evidence.
+- A local-inference explanation that does not name the underlying mechanism and the evidence artifact that proves or falsifies it.
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
@@ -249,6 +252,7 @@ Next run:
 
 - [ ] Every gate in the evidence ledger has a proof link.
 - [ ] The training pipeline map explains one capability from data through deployment.
+- [ ] The mechanism-to-inference bridge explains at least one speed, memory, compatibility, quality, and RAG/tool failure with evidence.
 - [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
@@ -277,6 +281,7 @@ Next run:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
+- [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]

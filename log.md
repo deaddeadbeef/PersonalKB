@@ -2380,3 +2380,31 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4838 files, 2967 Markdown files, 838 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM mechanism-to-inference bridge map
+
+Scope: add an academic-to-applied bridge map that forces local LLM symptoms, runtime settings, and hosting decisions to name the underlying mechanism, the local control surface, the evidence artifact, and the next controlled decision.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-mechanism-inference-bridge.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mechanism-to-Inference Bridge Map.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a mechanism-to-inference bridge table connecting tokenization, chat templates, autoregression, attention, positional encoding, KV cache, MQA/GQA, quantization, sampling, batching, prompt caching, RAG, tool calling, post-training, evaluation, and deployment to local evidence artifacts.
+- Added failure triage and oral-drill tables that translate local symptoms into mechanisms, controls, and next decisions.
+- Linked the bridge from the LLM MOC, study index, mastery roadmap, capstone workbook, and self-assessment exam.
+- Checked primary papers and current official docs for attention, Chinchilla, RoPE, FlashAttention, GQA, PagedAttention/vLLM, GPTQ, AWQ, chat templates, Ollama metrics, llama.cpp server, and LM Studio OpenAI compatibility.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4838 files, 2967 Markdown files, 838 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4840 files, 2969 Markdown files, 839 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

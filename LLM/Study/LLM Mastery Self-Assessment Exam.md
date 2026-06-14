@@ -50,7 +50,7 @@ Answer without opening the timeline.
 | Why are RAG and tools not just prompting tricks? | They add external state/action channels and shift failure modes outside model weights. |
 | Why is inference now a systems problem? | KV cache, batching, memory bandwidth, quantization, routing, serving latency, and cost. |
 
-Core remediation: [[LLM/LLM — Learning Path]], [[LLM/Study/LLM Architecture Cheatsheet]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]], and the review drills in [[LLM/Study/LLM Study Index]].
+Core remediation: [[LLM/LLM — Learning Path]], [[LLM/Study/LLM Architecture Cheatsheet]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]], and the review drills in [[LLM/Study/LLM Study Index]].
 
 ## Section 2: Mechanisms And Math
 
@@ -120,6 +120,7 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, operational owner, and rejected alternatives, as in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. |
 
 Required evidence: [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
+Use [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] to explain why each local artifact proves a mechanism-level claim instead of only proving that a command happened to run.
 Add [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the exam answer depends on artifact format, tokenizer, chat template, quantization, runtime support, or API route.
 
 ## Section 5: Debugging Scenarios
@@ -167,6 +168,7 @@ These gates are stricter than the oral questions.
 | Architecture | Attention implementation or worked tensor-shape proof. |
 | Tiny decoder training | Toy causal LM proof using [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]. |
 | Paper literacy | One paper protocol row for each major cluster. |
+| Mechanism bridge | One explanation row tying a local inference symptom to mechanism, control, evidence, and next decision. |
 | Training pipeline | Capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]. |
 | Local endpoint | CLI and HTTP endpoint response from one local model. |
 | Environment | Preflight snapshot tied to the machine/runtime that served the model. |
@@ -193,6 +195,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Architecture and tensor shapes | [[LLM/Study/LLM Architecture Cheatsheet]] and [[LLM/Study/Attention Implementation Lab]] |
 | Training loop mechanics | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]], [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals]], and [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives]] |
 | Paper skepticism | [[LLM/Study/LLM Paper Reading Protocol]] and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]] |
+| Mechanism-to-local translation | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |
 | Training and scaling | [[LLM/Study/LLM Training Pipeline Map]], [[LLM/2020–2021 — The Scaling Era/Scaling Laws]], and [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism]] |
 | Adaptation and fine-tuning | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning]], and [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA]] |
 | Alignment and preference methods | [[LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback]] and [[LLM/2022 — Alignment and Chat/Direct Preference Optimization]] |
@@ -218,6 +221,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
+- [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
