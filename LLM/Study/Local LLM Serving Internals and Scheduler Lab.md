@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 
 Read it with [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]. Those notes explain the mechanisms. This lab turns them into local evidence rows for vLLM, SGLang, llama.cpp, LM Studio, and similar servers.
 
+If vLLM or SGLang is running inside WSL from Windows, complete [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] first. Scheduler evidence is not meaningful until WSL GPU visibility, Python environment, loopback route, `/v1/models`, and basic metrics/logs are proven.
+
 ## What This Lab Decides
 
 It answers six serving-internals questions:
@@ -213,6 +215,7 @@ Internal:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]

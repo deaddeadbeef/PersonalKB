@@ -19,7 +19,7 @@ Use this note when you want the shortest path from "I have Windows" to "I have a
 | You want the fastest Windows-native terminal proof | Ollama | Native Windows installer, simple model pull/run loop, native API on `localhost:11434`. |
 | You want GUI model browsing plus OpenAI-style client tests | LM Studio | Windows desktop app, Developer server, OpenAI-compatible base URL commonly on `localhost:1234/v1`. |
 | You already have a GGUF file or need CPU/mixed-offload control | llama.cpp or llama-cpp-python | More control, but more setup and compatibility work. |
-| You want production-style GPU serving | vLLM or SGLang under Linux/WSL/server | Treat this as a second pass; vLLM documentation says native Windows is not supported. |
+| You want production-style GPU serving | [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|vLLM or SGLang under WSL/Linux/server]] | Treat this as a second pass; prove WSL 2, CUDA visibility, Python env, loopback endpoint, `/v1/models`, and Windows client routing before benchmarking. |
 
 Default first path: **Ollama on loopback**. Use LM Studio instead if you prefer a GUI or need to test a desktop app against an OpenAI-compatible endpoint.
 
@@ -261,7 +261,7 @@ Use [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference
 | Need | Move to | Why |
 |---|---|---|
 | Exact GGUF file control or CPU edge testing | llama.cpp / llama-cpp-python | More knobs for quantized local files and CPU/GPU offload. |
-| GPU serving with batching and production-style scheduling | WSL/Linux/server with vLLM or SGLang | Native Windows is not the default support path for vLLM. |
+| GPU serving with batching and production-style scheduling | [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|WSL/Linux/server with vLLM or SGLang]] | Native Windows is not the default support path for vLLM; use the WSL CUDA lab before runtime comparison. |
 | Private chat UI over a local provider | Open WebUI after provider proof | The provider endpoint should work before debugging a UI. |
 | RAG over private documents | Local RAG harness after endpoint proof | Retrieval adds corpus, chunking, embedding, citation, and prompt-injection risks. |
 
@@ -302,6 +302,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

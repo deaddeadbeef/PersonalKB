@@ -13,6 +13,8 @@ Use this before [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist
 
 Pair this with [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] when any endpoint listens on a port, and with [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when the preflight evidence becomes part of a model/runtime comparison.
 
+If the runtime path is vLLM or SGLang from a Windows machine, continue into [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] after this generic preflight. That lab proves the Windows driver, WSL 2 distro, WSL `nvidia-smi`, Python environment, loopback forwarding, `/v1/models`, and first OpenAI-compatible response before scheduler or throughput work begins.
+
 ## Outcome
 
 After this lab you should be able to:
@@ -253,6 +255,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

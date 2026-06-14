@@ -12,6 +12,8 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and before trusting rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the operations evidence is being captured before or after a restart, upgrade, cache move, UI update, or rollback. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the question is saturation under load. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when the metric depends on quantization, GPU/CPU split, offload level, or KV-cache precision. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when a performance claim depends on repeated-prefix reuse rather than just a warm loaded model. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when a performance claim depends on draft-model, EAGLE, MTP, n-gram, or accepted-token evidence. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when an observed metric points to a failed layer.
 
+Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] first when the operations target is vLLM or SGLang inside WSL; that lab captures the WSL GPU path, launch command, `/v1/models`, Windows client route, initial metrics, and failure layer.
+
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] when the operations row needs a mechanism owner: queue, prefill, decode, KV cache, slots, continuous batching, chunked prefill, prefix cache, preemption, or admission control.
 
 This runbook turns academic serving concepts from [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]], [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], and [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]] into local evidence you can inspect.
@@ -247,6 +249,7 @@ The runbook is complete for one local setup when all are true:
 Internal:
 
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]

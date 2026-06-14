@@ -26,6 +26,8 @@ Before starting the server, use [[LLM/Study/Local LLM Model Acquisition and Prov
 
 Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the actual hardware visibility, runtime boundary, disk, model cache, port, and endpoint boundary before diagnosing serving errors. If a failure crosses more than one layer, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer and next controlled test.
 
+For vLLM or SGLang launched from a Windows workstation, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before this runbook's smoke test. It records WSL 2, CUDA/GPU visibility, Python environment state, loopback host/port, `/v1/models`, and a Windows PowerShell client call so serving failures are not confused with WSL or driver failures.
+
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] after the first endpoint works but before tuning throughput, slots, batching, chunked prefill, preemption, or queue policy. That lab separates prefill, decode, KV-cache pressure, continuous batching, and admission-control behavior.
 
 Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
@@ -198,6 +200,8 @@ If the endpoint fails, verify in this order:
 
 For Windows-native first experiments, prefer Ollama or LM Studio. For vLLM/SGLang, expect a Linux, WSL, or server-style GPU environment and validate CUDA/driver support before diagnosing model quality.
 
+For the WSL version of that validation, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] and copy the successful `/v1/models` response into the API contract card.
+
 ## Phase 4: Measure The First Useful Run
 
 Run the prompt suite from [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] and capture:
@@ -283,6 +287,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
@@ -312,6 +317,9 @@ Current external docs checked 2026-06-14:
 - [LM Studio OpenAI compatibility endpoints](https://lmstudio.ai/docs/developer/openai-compat)
 - [llama-cpp-python OpenAI-compatible server](https://llama-cpp-python.readthedocs.io/en/latest/server/)
 - [vLLM quickstart](https://docs.vllm.ai/en/latest/getting_started/quickstart/)
+- [vLLM GPU installation](https://docs.vllm.ai/en/latest/getting_started/installation/gpu/)
+- [vLLM OpenAI-compatible server](https://docs.vllm.ai/en/stable/serving/online_serving/openai_compatible_server/)
 - [SGLang OpenAI-compatible API](https://docs.sglang.io/docs/basic_usage/openai_api_completions)
+- [SGLang quickstart](https://docs.sglang.io/docs/get-started/quickstart)
 - [Open WebUI documentation](https://docs.openwebui.com/)
 - [Open WebUI connect a provider](https://docs.openwebui.com/getting-started/quick-start/connect-a-provider/)

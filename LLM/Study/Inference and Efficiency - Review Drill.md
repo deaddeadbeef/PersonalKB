@@ -38,7 +38,7 @@ up: "[[LLM/Study/LLM Study Index]]"
     Reusing KV cache across requests that share the same prefix (e.g., system prompt). Avoids redundant computation for the common prompt portion.
 
 11. **Which runtime should you try first for local experimentation?**
-    Ollama or LM Studio for fast setup; llama.cpp when you need GGUF/CPU/edge control; vLLM or SGLang when you need production-style GPU serving.
+    Ollama or LM Studio for fast setup; llama.cpp when you need GGUF/CPU/edge control; vLLM or SGLang after [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|WSL CUDA setup proof]] when you need production-style GPU serving.
 
 12. **What should you measure before trusting a local model setup?**
     Time to first token, decode tokens/sec, peak RAM/VRAM, context length, answer quality on known prompts, and whether the API shape matches your application.
@@ -65,6 +65,7 @@ up: "[[LLM/Study/LLM Study Index]]"
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] — prove model source, license, revision, artifact safety, and local path before serving.
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] — prove pinned downloads, cache paths, hashes, GGUF/Ollama import, conversion provenance, and cleanup before serving.
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimate model weight memory, KV-cache risk, and runtime fit before downloading a model.
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] — prove WSL GPU visibility, vLLM/SGLang Python environments, loopback endpoints, `/v1/models`, Windows client calls, and metrics before runtime comparison.
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — prove native and OpenAI-compatible endpoints, then diagnose serving failures.
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — prove base URL, route, model id, streaming, error behavior, and feature gaps before client integration.
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — score local model quality with workload prompts, rubrics, pairwise comparison, and RAG/citation checks.

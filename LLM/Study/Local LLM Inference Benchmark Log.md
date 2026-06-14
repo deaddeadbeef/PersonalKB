@@ -84,6 +84,7 @@ Create one row per run.
 | Quantization/format | FP16, BF16, INT8, AWQ, GPTQ, GGUF quant, or unknown |
 | Hardware | CPU, GPU, RAM, VRAM, storage notes |
 | OS/environment | Windows, WSL, Linux, macOS, Docker, driver/CUDA notes |
+| WSL CUDA setup | Link to [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|WSL CUDA vLLM/SGLang Setup Lab]] evidence when vLLM or SGLang runs from Windows |
 | Context setting | Max context and prompt token count if known |
 | Context budget | Runtime limit, reserved output, template overhead, RAG/tool/history tokens, safety margin |
 | Tool contract | Tool schema version, tool-choice mode, parser/backend, policy boundary, if tools are used |
@@ -229,6 +230,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]

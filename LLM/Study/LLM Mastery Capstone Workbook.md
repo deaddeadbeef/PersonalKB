@@ -30,6 +30,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
+| WSL CUDA serving path | Setup card from [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] when using vLLM/SGLang from Windows |  | Windows driver, WSL 2 distro, WSL GPU visibility, Python environment, launch command, `/v1/models`, Windows client response, logs, metrics, and failure layer are captured. | Not started |
 | Quantization and GPU offload | Decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] |  | Baseline quant, accepted quant, rejected quant, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, benchmark row, and quality row are captured. | Not started |
 | Runtime comparison | Decision card from [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] |  | At least two plausible runtimes are compared with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
@@ -149,6 +150,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Cache/local path and hash |  |
 | Runtime |  |
 | Compatibility evidence card |  |
+| WSL CUDA setup card |  |
 | Quantization/offload decision card |  |
 | Runtime comparison decision |  |
 | Artifact format |  |
@@ -332,6 +334,7 @@ Next run:
 - A local-inference explanation that does not name the underlying mechanism and the evidence artifact that proves or falsifies it.
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
+- A vLLM or SGLang-on-Windows claim without WSL CUDA setup proof, including WSL GPU visibility, `/v1/models`, Windows client route, logs, and metrics.
 - A runtime choice made from preference, UI feel, or one smoke test without controlled benchmark and quality rows.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
 - A local artifact claim without cache path, file list, hash or verification, GGUF/import/conversion provenance, and cleanup plan.
@@ -361,6 +364,7 @@ Next run:
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
 - [ ] The local model endpoint has a runtime compatibility evidence card.
+- [ ] Any vLLM/SGLang path from Windows has WSL CUDA setup proof before scheduler, throughput, or deployment claims.
 - [ ] The runtime choice has a comparison decision card, or the skipped comparison is explicitly justified.
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
@@ -401,6 +405,7 @@ Next run:
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

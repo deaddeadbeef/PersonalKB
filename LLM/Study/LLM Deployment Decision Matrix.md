@@ -13,6 +13,8 @@ Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environ
 
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] first when the deployment choice depends on whether the bottleneck is queueing, prefill, decode, KV-cache pressure, continuous batching, chunked prefill, slots, preemption, or admission control.
 
+Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] first if a Windows workstation is being considered for vLLM/SGLang GPU serving.
+
 The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
 
 ## Outcome
@@ -38,6 +40,7 @@ After filling this out, you should be able to:
 | Offline need | Must it work without internet or external provider access? | Security/privacy requirement |
 | Customization | Prompt-only, RAG, LoRA, fine-tune, tool use, or policy wrapper? | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|Adaptation and Fine-Tuning Decision Guide]] |
 | Runtime compatibility | Does the selected artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together? | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]] |
+| WSL CUDA serving path | If the choice uses vLLM or SGLang from Windows, does WSL prove GPU visibility, Python environment, loopback route, `/v1/models`, Windows client call, logs, and metrics? | [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|WSL CUDA vLLM/SGLang Setup Lab]] |
 | Artifact custody | Are the exact downloaded bytes, cache/local path, hash, GGUF/Ollama import, conversion command, and cleanup plan known? | [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Artifact Download Cache and Conversion Lab]] |
 | Quantization/offload | Which quantization, GPU offload, CPU fallback, and KV-cache precision passed both memory and quality gates? | [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Quantization and GPU Offload Lab]] |
 | Runtime comparison | Has the selected runtime beaten at least one plausible alternative under fixed prompts, sampler settings, context, output cap, benchmark rows, and quality rows? | [[LLM/Study/Local LLM Runtime Comparison Lab|Runtime Comparison Lab]] |
@@ -170,6 +173,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

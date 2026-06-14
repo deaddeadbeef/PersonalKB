@@ -26,6 +26,8 @@ Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantizatio
 
 Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] when the workload depends on local embedding or reranker inference. Embedding models and rerankers have their own artifact, route, dimension, batching, score semantics, and privacy compatibility requirements.
 
+Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] when the compatibility card chooses vLLM or SGLang from a Windows workstation. This separates artifact/runtime compatibility from WSL 2, CUDA driver, Python environment, port, and localhost-forwarding failures.
+
 ## Outcome
 
 After using this matrix you should be able to:
@@ -77,8 +79,8 @@ If any layer is unknown, treat the run as an experiment rather than a deployment
 | Ollama | Ollama library tag, GGUF, or supported Safetensors import | Native API and OpenAI-compatible routes | First Windows/local proof and repeatable personal endpoint | `ollama list`, model tag, `Modelfile`, context setting, loopback-only binding. |
 | LM Studio | GGUF on Windows/Linux/macOS, MLX on Apple Silicon | OpenAI-compatible local server plus GUI | Desktop exploration and local app compatibility | Loaded model id, backend, server port, context and GPU-offload settings. |
 | llama.cpp | GGUF | CLI and `llama-server` | Low-level control, CPU, edge, exact local-file serving | GGUF metadata, chat template, GPU offload, context, thread settings. |
-| vLLM | Hugging Face model id/path, server quantized checkpoints, supported GGUF cases | OpenAI-compatible server | GPU serving, batching, throughput, PagedAttention practice | Supported architecture, quantization/hardware chart, CUDA/WSL/Linux readiness. |
-| SGLang | Hugging Face model id/path, server quantized checkpoints | OpenAI-compatible server and programmatic serving | Structured generation, prefix-heavy workloads, high-throughput serving | Offline vs online quantization path, chat template selection, hardware backend. |
+| vLLM | Hugging Face model id/path, server quantized checkpoints, supported GGUF cases | OpenAI-compatible server | GPU serving, batching, throughput, PagedAttention practice | Supported architecture, quantization/hardware chart, CUDA/WSL/Linux readiness from the WSL CUDA setup lab. |
+| SGLang | Hugging Face model id/path, server quantized checkpoints | OpenAI-compatible server and programmatic serving | Structured generation, prefix-heavy workloads, high-throughput serving | Offline vs online quantization path, chat template selection, hardware backend, and WSL CUDA setup lab proof when launched from Windows. |
 | Open WebUI | Provider endpoint, not model weights directly | Browser UI over Ollama or compatible APIs | Private chat interface after provider endpoint works | Provider health first; do not debug UI before proving the model API. |
 
 ## Decision Rules
@@ -134,6 +136,7 @@ Copy this into a benchmark row or capstone run note.
 | Prompt/KV cache mechanism | none / keep-alive only / prompt-cache file / slot cache / APC / RadixAttention / unknown |
 | Speculative decoding mechanism | none / draft model / EAGLE / MTP / n-gram / Medusa / unknown |
 | Hardware path | CPU / CUDA / ROCm / Metal / WSL / remote GPU |
+| WSL CUDA setup proof |  |
 | API base URL and route |  |
 | OpenAI-compatible? | Yes / No / Partial |
 | First smoke-test output |  |
@@ -175,6 +178,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
@@ -211,4 +215,6 @@ Current external docs checked 2026-06-14:
 - [vLLM Hugging Face integration](https://docs.vllm.ai/en/latest/design/huggingface_integration/)
 - [vLLM quantization](https://docs.vllm.ai/en/latest/features/quantization/)
 - [SGLang documentation](https://docs.sglang.io/)
+- [SGLang installation](https://docs.sglang.io/docs/get-started/install)
+- [SGLang quickstart](https://docs.sglang.io/docs/get-started/quickstart)
 - [SGLang quantization](https://docs.sglang.ai/advanced_features/quantization.html)

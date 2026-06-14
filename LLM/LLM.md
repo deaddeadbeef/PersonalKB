@@ -70,6 +70,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — Memory, context, quantization, and runtime sizing decisions
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] — Prove pinned downloads, cache paths, file lists, hashes, GGUF/Ollama imports, conversion provenance, and cleanup before serving
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] — Match model artifact, quantization, tokenizer, chat template, runtime, route, and workload before serving
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] — Prove WSL GPU visibility, vLLM/SGLang environments, OpenAI-compatible loopback endpoints, Windows client calls, metrics, and failure layers
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] — Prove local embedding and reranker endpoints, vector shape, batching, ranking gain, latency, and privacy before RAG
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — Choose GGUF/AWQ/GPTQ/FP8/INT8 paths, sweep GPU offload, test KV-cache precision, and keep only measured quality/speed wins
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] — Controlled Ollama, LM Studio, llama.cpp, vLLM, and SGLang comparison workflow

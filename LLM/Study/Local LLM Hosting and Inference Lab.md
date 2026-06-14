@@ -24,6 +24,8 @@ This lab is the Level 5 proof gate in [[LLM/Study/LLM Mastery Roadmap|LLM Master
 
 If this is your first actual local run on Windows, start with [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the exact PowerShell preflight, Ollama/LM Studio smoke tests, listener check, and first evidence row.
 
+If the first serious GPU-serving candidate is vLLM or SGLang from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before the vLLM/SGLang lab steps. It proves WSL 2, CUDA visibility, Python environment, loopback port, `/v1/models`, Windows client calls, metrics, and the failed layer if setup breaks.
+
 For any first actual local run, start a dated [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] before running commands. It keeps the preflight, model choice, endpoint proof, API contract, benchmark, quality decision, and next action together.
 
 Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] so the run is reproducible and the model/runtime choice is based on evidence rather than memory.
@@ -60,8 +62,8 @@ The academic core is not separate from deployment. A local model is slow or fast
 | Ollama | Fast laptop/server experiments with simple model management | Native local API at `http://localhost:11434/api` | Best first stop for "can I run this model and talk to it?" |
 | LM Studio | Desktop model browsing, GUI chat, and local app testing | OpenAI-compatible endpoints, commonly under `http://localhost:1234/v1` | Good for interactive exploration and quick client compatibility tests |
 | llama.cpp | GGUF models, CPU/edge, Apple Silicon, and careful low-level tuning | `llama-server` can expose an OpenAI-compatible local server | Best when hardware is limited or you need exact control over local binaries and quantized files |
-| vLLM | GPU-backed serving where throughput matters | OpenAI-compatible server, default local quickstart port `8000` | Learn this for production-style serving, batching, and PagedAttention |
-| SGLang | High-throughput structured generation, multi-turn/programmatic workloads, and advanced serving | OpenAI/Hugging Face compatible serving | Learn this after vLLM when prefix reuse, structured generation, or large-scale serving matters |
+| vLLM | GPU-backed serving where throughput matters | OpenAI-compatible server, default local quickstart port `8000` | Learn this for production-style serving, batching, and PagedAttention; prove WSL CUDA first if starting from Windows. |
+| SGLang | High-throughput structured generation, multi-turn/programmatic workloads, and advanced serving | OpenAI/Hugging Face compatible serving | Learn this after vLLM when prefix reuse, structured generation, or large-scale serving matters; prove WSL CUDA first if starting from Windows. |
 | Open WebUI | Self-hosted chat interface over Ollama or OpenAI-compatible providers | Web app front end, provider adapters underneath | Good when you want a private ChatGPT-like surface over local or self-hosted models |
 
 Treat Hugging Face TGI as important historically and operationally, but not the default new choice: Hugging Face documents TGI as maintenance-mode for Inference Endpoints and recommends vLLM or SGLang for new endpoint work.
@@ -176,6 +178,8 @@ What to observe:
 
 Use this when the goal is GPU-backed serving rather than a desktop chat session. For serious vLLM work, assume a Linux/WSL or server environment with a supported accelerator.
 
+From Windows, complete [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] first and copy its `/v1/models` and Windows PowerShell smoke evidence into this lab's run log.
+
 ```powershell
 vllm serve Qwen/Qwen2.5-1.5B-Instruct
 ```
@@ -264,6 +268,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
