@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Model choice is a memory, latency, quality, and workload decision: estimate weights, add KV-cache headroom, choose a runtime, then prove the result with benchmarks.
 
-Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have.
+Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support.
 
 ## The Core Question
 
@@ -188,9 +188,10 @@ To prove you understand local model sizing, produce:
 1. A memory estimate for weights.
 2. A KV-cache risk assessment for the target context and concurrency.
 3. A runtime/format choice with a reason.
-4. A completed endpoint smoke test from [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
-5. A completed benchmark row in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-6. A decision: keep, scale up, quantize more, reduce context, or change runtime.
+4. A machine/runtime preflight from [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]].
+5. A completed endpoint smoke test from [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
+6. A completed benchmark row in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+7. A decision: keep, scale up, quantize more, reduce context, or change runtime.
 
 ## References
 
@@ -198,6 +199,7 @@ Internal evidence:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]

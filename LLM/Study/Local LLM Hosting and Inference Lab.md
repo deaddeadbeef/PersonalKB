@@ -30,6 +30,8 @@ After the endpoint responds, use [[LLM/Study/LLM Inference Request Lifecycle Lab
 
 Before downloading a model, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to estimate weight memory, KV-cache pressure, quantization risk, and runtime fit.
 
+Before starting a server, use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record the actual OS, hardware, runtime boundary, disk, model cache, port, and endpoint-safety evidence.
+
 After the endpoint works, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to turn local inference into a document-grounded assistant with retrieval, citations, and failure diagnosis.
 
 ## Mental Model
@@ -254,6 +256,7 @@ Internal evidence:
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 

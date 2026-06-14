@@ -16,6 +16,8 @@ After the smoke test passes, use [[LLM/Study/Local LLM Client Harness Lab|Local 
 
 Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware.
 
+Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to prove the actual hardware visibility, runtime boundary, disk, model cache, port, and endpoint boundary before diagnosing serving errors.
+
 Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
 
 ## Success Criteria
@@ -23,6 +25,7 @@ Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/
 A local serving run is complete when:
 
 - the model loads without out-of-memory errors
+- the machine/runtime preflight records hardware visibility, disk headroom, model cache, and intended host/port
 - a CLI or GUI chat proves the model can generate
 - an HTTP endpoint returns a non-streaming response
 - the same endpoint can be called by a generic OpenAI-compatible client or direct REST call
@@ -77,6 +80,7 @@ Before starting the server, write these fields into [[LLM/Study/Local LLM Infere
 | Runtime | Ollama, LM Studio, llama-cpp-python, vLLM, SGLang |
 | Quantization/format | Q4_K_M, GPTQ, AWQ, FP16, BF16, unknown |
 | Hardware | CPU, GPU, RAM, VRAM |
+| Environment preflight | OS, runtime boundary, disk/model cache, hardware visibility, host/port plan |
 | API base URL | The local base URL you expect to call |
 | Prompt suite | Known fact, coding/structured output, long-context, RAG, summarization |
 
@@ -244,6 +248,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

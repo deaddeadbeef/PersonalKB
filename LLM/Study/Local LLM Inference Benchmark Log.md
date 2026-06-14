@@ -13,6 +13,8 @@ Use this note with [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hos
 
 Use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose the candidate model, quantization, and context target before running the benchmark.
 
+Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to capture the OS, runtime boundary, hardware visibility, disk/model cache, and host/port plan before recording performance numbers.
+
 For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before filling in the measurements here.
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
@@ -156,6 +158,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
