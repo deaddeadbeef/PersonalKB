@@ -29,6 +29,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Local model endpoint | Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, timing, quality decision, and next action are captured. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
+| Runtime comparison | Decision card from [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] |  | At least two plausible runtimes are compared with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
@@ -137,6 +138,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Acquisition/provenance card |  |
 | Runtime |  |
 | Compatibility evidence card |  |
+| Runtime comparison decision |  |
 | Artifact format |  |
 | Tokenizer and chat template |  |
 | Model id |  |
@@ -203,6 +205,25 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Fail decisions |  |
 | Changes made after evaluation |  |
 
+## Runtime Comparison Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Candidate runtime A |  |
+| Candidate runtime B |  |
+| Comparison type | exact artifact / closest equivalent / UI-over-same-provider |
+| Frozen prompt suite |  |
+| Frozen sampler/output cap |  |
+| Context target |  |
+| Compatibility cards |  |
+| API contract cards |  |
+| Benchmark rows |  |
+| Quality rows |  |
+| Failed or winning layer | artifact / tokenizer / template / runtime / route / sampler / hardware / context / quality / UI / security |
+| Winner |  |
+| Rejected alternative |  |
+| Remaining uncertainty |  |
+
 ## Adaptation Decision Memo
 
 Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before training or deciding not to train.
@@ -254,6 +275,7 @@ Next run:
 - A local-inference explanation that does not name the underlying mechanism and the evidence artifact that proves or falsifies it.
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
+- A runtime choice made from preference, UI feel, or one smoke test without controlled benchmark and quality rows.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
 - A long-context, RAG, tool, or multi-turn run without a counted context budget and output reserve.
 - A tool-using run where the model-selected action executes without schema validation, policy check, bounded loop control, and failure rows.
@@ -276,6 +298,7 @@ Next run:
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model endpoint has a runtime compatibility evidence card.
+- [ ] The runtime choice has a comparison decision card, or the skipped comparison is explicitly justified.
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
@@ -310,6 +333,7 @@ Next run:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

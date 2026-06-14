@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|
 
 Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] after the endpoint responds but before a generic client depends on the compatibility surface. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model.
 
+When two compatibility cards are plausible, use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] to compare them with fixed prompts, sampler settings, context target, output cap, benchmark rows, and quality rows before choosing a deployment runtime.
+
 ## Outcome
 
 After using this matrix you should be able to:
@@ -152,6 +154,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

@@ -13,6 +13,8 @@ Use this after [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM M
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when quality depends on choosing, validating, denying, executing, or using tool calls.
 
+Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when the quality harness is deciding between runtimes rather than only judging one model. Runtime comparison keeps prompt suite, sampler, context, and output caps fixed so quality differences are not caused by request drift.
+
 ## What This Harness Decides
 
 The harness answers a narrow practical question:
@@ -148,6 +150,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]

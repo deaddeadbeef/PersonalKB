@@ -36,6 +36,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
@@ -62,6 +63,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] — record model card, license, gated access, exact revision, artifact safety, local path, and digest before serving
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] — match model artifact, quantization, tokenizer, chat template, runtime, route, and workload before serving
+- [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] — compare two local runtimes with frozen prompts, sampler settings, context target, benchmark rows, quality rows, and a decision card
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — prove hardware, runtime boundary, storage, ports, and endpoint safety before serving a model
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] — map local inference failures to environment, sizing, server, route, client, prompt, quality, RAG, or security layers
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — prove base URL, model id, routes, streaming, errors, and feature gaps before pointing generic clients at a local server

@@ -2470,3 +2470,35 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4844 files, 2973 Markdown files, 841 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM local runtime comparison lab
+
+Scope: add a dedicated lab for comparing local LLM runtimes with controlled endpoint, benchmark, quality, compatibility, and deployment evidence.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-runtime-comparison-lab.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Runtime Comparison Lab.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local LLM Runtime and Model Compatibility Matrix.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Quality Evaluation Harness.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a runtime comparison lab covering Ollama, LM Studio, llama.cpp, vLLM, SGLang, and UI-over-provider comparisons with frozen prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a decision card.
+- Routed the lab from the LLM MOC, study index, serving runbook, runtime compatibility matrix, benchmark log, quality harness, deployment matrix, mastery roadmap, capstone workbook, and self-assessment exam.
+- Checked current official runtime/API docs for Ollama native and OpenAI-compatible routes, LM Studio OpenAI-compatible endpoints, llama.cpp server routes/timings, vLLM serving/CLI, and SGLang OpenAI-compatible chat completions.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4844 files, 2973 Markdown files, 841 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4846 files, 2975 Markdown files, 842 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

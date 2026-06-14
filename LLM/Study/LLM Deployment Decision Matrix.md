@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** The right deployment path is the one whose quality, latency, privacy, cost, reliability, and operational burden fit the workload after measurement.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
 
 The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
 
@@ -36,6 +36,7 @@ After filling this out, you should be able to:
 | Offline need | Must it work without internet or external provider access? | Security/privacy requirement |
 | Customization | Prompt-only, RAG, LoRA, fine-tune, tool use, or policy wrapper? | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|Adaptation and Fine-Tuning Decision Guide]] |
 | Runtime compatibility | Does the selected artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together? | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]] |
+| Runtime comparison | Has the selected runtime beaten at least one plausible alternative under fixed prompts, sampler settings, context, output cap, benchmark rows, and quality rows? | [[LLM/Study/Local LLM Runtime Comparison Lab|Runtime Comparison Lab]] |
 | Cost model | Hardware sunk cost, electricity, rented GPU, API tokens, engineer time, or support burden? | Cost estimate |
 | Operational owner | Who patches, monitors, restarts, backs up, and handles incidents? | Runbook owner |
 | Audit/compliance | Are logs, prompts, documents, outputs, and model access auditable? | Security runbook and log map |
@@ -92,6 +93,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Preflight | Machine, runtime boundary, disk, model cache, host, and port are recorded. |
 | Benchmark | Model, runtime, quantization, context, TTFT, tokens/sec, memory, and prompt class are recorded. |
 | Runtime compatibility | Artifact format, tokenizer, template, quantization, API route, and model id are recorded. |
+| Runtime comparison | At least two plausible runtimes have controlled benchmark and quality rows, or one alternative is explicitly not applicable. |
 | Quality | Workload prompts have pass, hold, or fail decisions from a rubric. |
 | Security boundary | Endpoint exposure, logs, RAG corpus, tools, and storage locations are known. |
 | Tool loop, if relevant | Tool schema, parser/backend, validation, policy decision, execution result, loop bounds, and failure rows are recorded. |
@@ -156,6 +158,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]

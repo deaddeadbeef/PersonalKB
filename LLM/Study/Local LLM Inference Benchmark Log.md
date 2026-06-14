@@ -21,6 +21,8 @@ Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshootin
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
 
+Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when benchmark rows are meant to choose between two runtimes. The comparison lab defines what must stay fixed, which endpoint fields to record, and how to assign differences to runtime, artifact, tokenizer, template, sampler, context, hardware, UI, or quality layers.
+
 Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before comparing quality across runs where temperature, top-p, top-k, min-p, penalties, seed, stop strings, or structured-output settings might change the answer.
 
 Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before long-context, RAG, tool, or multi-turn runs. The benchmark row should show the runtime context limit, prompt tokens, output reserve, template overhead, and any truncation policy tested.
@@ -185,6 +187,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
