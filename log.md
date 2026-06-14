@@ -2162,3 +2162,30 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4800 files, 2929 Markdown files, 819 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-14] curate | LLM chat template and tokenizer compatibility lab
+
+Scope: add a local-inference compatibility lab for diagnosing tokenizer, special-token, chat-template, role-boundary, and stop-condition mismatches before blaming model quality.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-chat-template-tokenizer-lab.md`
+- `LLM/LLM.md`
+- `LLM/Study/Chat Template and Tokenizer Compatibility Lab.md`
+- `LLM/Study/Inference and Efficiency - Review Drill.md`
+- `LLM/Study/LLM Inference Request Lifecycle Lab.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `log.md`
+
+Maintenance changes:
+- Added a chat template and tokenizer compatibility lab with a compatibility chain, model package card, rendered prompt check, base-vs-chat behavior test, tokenizer sanity set, stop/role boundary test, failure triage, benchmark add-on, and completion gate.
+- Linked the lab from the LLM MOC, study index, mastery roadmap, request lifecycle lab, local serving runbook, and inference review drill.
+- Kept the pass as durable compatibility guidance backed by existing tokenization, instruction tuning, system prompt, structured-output, function-calling, and serving notes rather than adding new current runtime claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4800 files, 2929 Markdown files, 819 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4802 files, 2931 Markdown files, 820 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

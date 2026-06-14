@@ -22,6 +22,7 @@ A local serving run is complete when:
 - a CLI or GUI chat proves the model can generate
 - an HTTP endpoint returns a non-streaming response
 - the same endpoint can be called by a generic OpenAI-compatible client or direct REST call
+- tokenizer, chat template, role boundaries, and stop policy are checked when output ignores instructions or leaks role markers
 - latency, tokens/sec, memory, model id, runtime, quantization, and quality notes are logged
 - the quality decision is backed by [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when choosing a model for real work
 - you can explain the result using [[LLM/2022 — Alignment and Chat/Quantization|Quantization]], [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]
@@ -211,7 +212,7 @@ Record whether the difference is quality, TTFT, decode speed, memory, endpoint c
 | OOM only on long prompts | KV cache | Reduce context, batch/concurrency, or retrieved chunks |
 | First token takes too long | Prefill/queueing | Shorten prompt, reduce retrieved context, check queue/concurrency |
 | Tokens/sec is too low | Decode memory bandwidth | Smaller model, quantization, better GPU offload, or different runtime |
-| Output ignores instructions | Model/prompt quality | Try stronger instruct model, better chat template, or lower quantization |
+| Output ignores instructions | Model/prompt quality, wrong chat template, or tokenizer mismatch | Run [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]], then try stronger instruct model, better template, or lower quantization |
 | Open WebUI cannot see models | Provider config | Verify provider endpoint directly before debugging the UI |
 
 ## Completion Proof
@@ -236,6 +237,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]

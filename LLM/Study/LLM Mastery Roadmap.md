@@ -41,6 +41,7 @@ Proof:
 
 - Draw the pipeline from text to tokens to logits to next-token sampling.
 - Prove that pipeline with [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] by freezing one local request and tracing tokenization, prefill, decode, sampling, stopping, and returned text.
+- Verify tokenizer and chat-template compatibility with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] before blaming the model for instruction-following failures.
 - Implement scaled dot-product attention with [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 - Explain why decoder-only transformers became the dominant general assistant architecture.
 - Define perplexity, tokenization, context window, embedding, attention head, and pretraining.
@@ -125,6 +126,7 @@ Read:
 Proof:
 
 - Run one local model through a CLI and one local HTTP API.
+- Confirm the local endpoint is using the intended tokenizer, chat template, special tokens, and stop policy.
 - Estimate weight memory and KV-cache risk with [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] before choosing the model/runtime pair.
 - Use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to prove the endpoint with a smoke test and diagnose any serving failures.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
@@ -189,6 +191,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]

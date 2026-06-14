@@ -26,7 +26,7 @@ After this lab you should be able to:
 | Stage | What happens | Evidence to capture |
 |---|---|---|
 | 1. Client request | The caller sends model id, messages or prompt, sampling parameters, output cap, and stream flag. | Full request body or client code. |
-| 2. Prompt assembly | Chat messages become the runtime's prompt format or chat template. RAG systems may add retrieved context here. | System prompt, user prompt, retrieved context, and template if visible. |
+| 2. Prompt assembly | Chat messages become the runtime's prompt format or chat template. RAG systems may add retrieved context here. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] if the formatting is uncertain. | System prompt, user prompt, retrieved context, and template if visible. |
 | 3. Tokenization | Raw text becomes token IDs. Token count determines context use and prefill cost. | Prompt token count or tokenizer output when available. |
 | 4. Prefill | The model processes the whole input prefix and builds the initial [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV cache]]. | Time to first token, prompt token count, cache/context length. |
 | 5. Decode loop | Each step produces logits for the next token, applies constraints and sampling settings, appends one token, and extends the cache. | Decode tokens/sec, output token count, sampling settings. |
@@ -140,6 +140,7 @@ Pass signal: you can explain why streaming can improve perceived responsiveness 
 | Same benchmark changes every run | Sampling randomness | Lower temperature, fix seed if supported, and keep parameters stable. |
 | First token slow, later tokens okay | Prefill, context, or queueing | Compare prompt tokens and server queue/concurrency. |
 | Later tokens slow | Decode bottleneck | Inspect model size, quantization, GPU offload, and KV cache. |
+| Instruct model behaves like raw text completion | Chat-template or tokenizer mismatch | Run [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]. |
 
 ## Benchmark Row Add-On
 
@@ -180,6 +181,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
 - [[chunk-llm-222 Speculative Sampling Distribution Guarantee]]
