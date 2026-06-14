@@ -12,6 +12,8 @@ last-verified: 2026-06-14
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
+For the first complete run, fill [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] as you go. The evidence pack is the one-page binder; this runbook is the detailed serving procedure.
+
 After the smoke test passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, model id, route, streaming behavior, error behavior, and feature gaps before pointing generic clients at the server. Then use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before relying on local function calling, structured output, or agent loops.
 
 Before starting the server, use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] to prove the model card, license, revision, artifact safety, local path, and digest are acceptable. Then use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to turn the context target into a measured prompt, history, RAG, tool, output, and margin budget. Then use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to verify the model artifact, tokenizer, chat template, quantization, runtime, and API route before treating load failures or bad outputs as model-quality failures.
@@ -260,6 +262,7 @@ Internal evidence:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

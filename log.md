@@ -2351,3 +2351,32 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4836 files, 2965 Markdown files, 837 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-15] curate | LLM first local inference evidence pack
+
+Scope: add a first-run evidence pack that tells the learner exactly what to save from a local LLM run: machine preflight, model provenance, runtime compatibility, endpoint proof, OpenAI-compatible smoke test, client harness row, benchmark row, quality decision, security boundary, and next action.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-first-inference-evidence-pack.md`
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM First Inference Evidence Pack.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a first local inference evidence pack with run-card fields, preflight evidence, model/runtime fit checks, runtime start points, native and OpenAI-compatible smoke tests, client-harness requirements, benchmark row, quality decision, completion gate, and current official docs.
+- Linked the evidence pack from the LLM MOC, study index, hosting lab, serving runbook, mastery roadmap, capstone workbook, and self-assessment exam.
+- Checked current Ollama, LM Studio, llama.cpp, llama-cpp-python, and vLLM docs for local endpoints, OpenAI-compatible serving, model-list proof, and usage metrics.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or older LLM learning-path edits.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4836 files, 2965 Markdown files, 837 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4838 files, 2967 Markdown files, 838 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

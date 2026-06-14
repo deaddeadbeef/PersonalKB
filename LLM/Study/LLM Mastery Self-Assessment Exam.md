@@ -119,7 +119,7 @@ Use your actual machine or a hypothetical machine with clear assumptions.
 | What makes an adaptation decision defensible? | Baseline failure, method matched to failure mode, clean data boundary, held-out eval, regression checks, deployment impact, and rollback, as in [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]. |
 | What makes the deployment decision defensible? | Workload, quality, latency, memory/cost, privacy, security, operational owner, and rejected alternatives, as in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. |
 
-Required evidence: [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
+Required evidence: [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Serving Runbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Local LLM Client Harness Lab]], [[LLM/Study/Decoding and Sampling Controls Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]], [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], and [[LLM/Study/LLM Deployment Decision Matrix]].
 Add [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the exam answer depends on artifact format, tokenizer, chat template, quantization, runtime support, or API route.
 
 ## Section 5: Debugging Scenarios
@@ -224,6 +224,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

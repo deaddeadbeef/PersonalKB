@@ -22,6 +22,8 @@ After this lab you should be able to:
 
 This lab is the Level 5 proof gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]].
 
+If this is your first actual local run, start a dated [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] before running commands. It keeps the preflight, model choice, endpoint proof, API contract, benchmark, quality decision, and next action together.
+
 Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] so the run is reproducible and the model/runtime choice is based on evidence rather than memory.
 
 When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the endpoint map and smoke tests. If the run fails, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to locate the failed layer before changing the model or runtime.
@@ -255,6 +257,7 @@ Internal evidence:
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
