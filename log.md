@@ -2034,3 +2034,31 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4790 files, 2919 Markdown files, 814 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM local RAG assistant lab
+
+Scope: make the RAG portion of LLM mastery more applied by adding a local assistant lab that connects corpus ingestion, chunking, embeddings, retrieval, reranking, context assembly, local generation, citations, and failure diagnosis.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-local-rag-assistant-lab.md`
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local LLM Quality Evaluation Harness.md`
+- `LLM/Study/Local RAG Assistant Lab.md`
+- `LLM/Study/RAG and Prompting - Review Drill.md`
+- `log.md`
+
+Maintenance changes:
+- Added a local RAG assistant lab with workload scoping, corpus metadata, chunking policy, embedding/index flow, retrieval/reranking/context assembly, local endpoint generation, answer verification, failure triage, benchmark logging, and completion gates.
+- Linked the lab from the LLM MOC, study index, mastery roadmap, local inference lab, benchmark log, quality harness, and RAG drill.
+- Kept the lab as practice guidance backed by existing source-linked retrieval, chunking, embedding, RAG evaluation, and DPR notes rather than introducing new current tooling claims.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4790 files, 2919 Markdown files, 814 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4792 files, 2921 Markdown files, 815 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

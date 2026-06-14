@@ -98,6 +98,8 @@ Bias controls matter because [[LLM/2023 — Open Models and Agents/LLM-as-Judge|
 
 When the workload uses retrieval, evaluate retrieval and answer quality separately.
 
+Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need the full build-and-diagnose workflow behind these checks.
+
 | Check | Ask | Failure mode |
 | --- | --- | --- |
 | Retrieval relevance | Did the system retrieve passages that actually answer the question? | Retrieval miss |
@@ -137,6 +139,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/2023 — Open Models and Agents/LLM-as-Judge]]
 - [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies]]
 - [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]]

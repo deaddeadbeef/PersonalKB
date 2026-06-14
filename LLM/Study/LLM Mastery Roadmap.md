@@ -92,10 +92,11 @@ Read:
 - [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes|RAG Evaluation and Failure Modes]]
 - [[LLM/2023 — Open Models and Agents/Function Calling|Function Calling]]
 - [[LLM/2023 — Open Models and Agents/Tool Selection and Execution Loops|Tool Selection and Execution Loops]]
+- [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]]
 
 Proof:
 
-- Build a small RAG pipeline: chunk, embed, retrieve, rerank, generate, cite.
+- Build a small RAG pipeline with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]]: chunk, embed, retrieve, rerank, generate, cite.
 - Show one failure caused by retrieval miss, one by bad chunking, and one by generation hallucination.
 - Build a simple tool-calling loop with schema validation and error handling.
 - Explain why context assembly and evaluation matter as much as the base model.
@@ -154,7 +155,7 @@ Complete these in order:
 1. **Paper map:** write a one-page map of the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]].
 2. **Attention implementation:** implement scaled dot-product attention and explain the tensor shapes.
 3. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-4. **RAG assistant:** build document ingestion, chunking, embedding, retrieval, reranking, generation, and citation output.
+4. **RAG assistant:** build document ingestion, chunking, embedding, retrieval, reranking, generation, and citation output with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]].
 5. **Evaluation harness:** evaluate the RAG assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
 6. **Deployment decision:** write a trade-off memo choosing hosted API, local CPU/GPU, or production serving for one real workload.
 
@@ -181,3 +182,4 @@ Complete these in order:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local RAG Assistant Lab]]

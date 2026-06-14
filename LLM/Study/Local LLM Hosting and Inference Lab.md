@@ -28,6 +28,8 @@ When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local 
 
 Before downloading a model, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to estimate weight memory, KV-cache pressure, quantization risk, and runtime fit.
 
+After the endpoint works, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to turn local inference into a document-grounded assistant with retrieval, citations, and failure diagnosis.
+
 ## Mental Model
 
 Local inference has four layers:
@@ -220,7 +222,7 @@ Run at least three prompt types:
 | Loads but is painfully slow | CPU-only decode, too large a model, too long context | Use a smaller model, stronger quantization, GPU offload, or lower context |
 | First token is slow but later tokens are fine | Expensive prefill or long prompt | Shorten prompt, use prefix caching, reduce retrieved context |
 | Later tokens are slow | Decode memory bandwidth bottleneck | Try quantization, smaller model, MQA/GQA model, batching, or a serving runtime |
-| Answers are weak | Wrong model/task fit or too much compression | Test a stronger model, less aggressive quantization, better prompt, or RAG |
+| Answers are weak | Wrong model/task fit or too much compression | Test a stronger model, less aggressive quantization, better prompt, or [[LLM/Study/Local RAG Assistant Lab|RAG]] |
 | API client fails | Wrong base URL, wrong route, unloaded model | Check `/v1/models` or runtime-specific model list endpoint |
 
 ## Academic Spine For This Lab
@@ -250,6 +252,7 @@ Internal evidence:
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local RAG Assistant Lab]]
 
 Current external docs checked 2026-06-14:
 

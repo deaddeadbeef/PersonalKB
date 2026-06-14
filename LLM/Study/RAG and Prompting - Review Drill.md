@@ -36,3 +36,7 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 10. **When to use RAG vs fine-tuning vs long context?**
     RAG: dynamic/changing knowledge, attribution needed. Fine-tuning: consistent behavioral changes, domain adaptation. Long context: when all info fits and you want simplicity.
+
+## Hands-On
+
+- [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant, then diagnose retrieval misses, context poisoning, extraction failure, and hallucination.

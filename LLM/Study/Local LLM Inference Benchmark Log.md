@@ -17,6 +17,8 @@ For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Lo
 
 For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to run workload prompts, rubric scores, pairwise comparisons, RAG/citation checks, and a pass/hold/fail gate.
 
+For document-grounded workloads, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to record corpus version, chunk policy, retrieval results, citation support, and RAG-specific failure modes.
+
 ## When To Use This
 
 Use the log whenever you:
@@ -128,6 +130,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - If multi-user throughput is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]].
 - If runtime choice is unclear, review [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]].
 - If quality is unclear, run [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], then review [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]] and [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]].
+- If the prompt depends on private documents, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to separate retrieval failures from generation failures.
 
 ## References
 
@@ -136,6 +139,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
