@@ -20,6 +20,8 @@ After this lab you should be able to:
 - explain why quantization, KV cache, batching, and context length dominate local inference planning
 - collect a basic benchmark: time to first token, tokens/sec, memory use, and answer quality
 
+This lab is the Level 5 proof gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]].
+
 ## Mental Model
 
 Local inference has four layers:

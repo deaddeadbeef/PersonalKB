@@ -1900,3 +1900,28 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4780 files, 2909 Markdown files, 809 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
 - `git diff --check`: clean.
+
+## [2026-06-14] curate | LLM mastery roadmap
+
+Scope: make the LLM study area easier to consume as a complete mastery path by adding competency gates that connect academic reading, active recall, implementation practice, evaluation, and local inference.
+
+Changed wiki/source files:
+- `.tasks/2026-06-14-llm-mastery-roadmap.md`
+- `LLM/LLM.md`
+- `LLM/LLM — Learning Path.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `log.md`
+
+Maintenance changes:
+- Added a mastery roadmap with six levels, proof gates, capstone sequence, and completion checklist.
+- Linked the roadmap from the LLM MOC, learning path, study index, and local inference lab.
+- Kept the note policy-oriented and source-backed by existing LLM wiki notes and the sources index.
+- Did not modify protected raw, chunk, template, media, or Obsidian config paths.
+
+Verification:
+- Baseline `python _ops\personal_kb.py audit`: 4780 files, 2909 Markdown files, 809 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4782 files, 2911 Markdown files, 810 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

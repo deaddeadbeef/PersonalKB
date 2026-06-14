@@ -14,6 +14,8 @@ tags: [llm, learning-path]
 | 3 — Deep Dive | Master details | 🔬 sections (selective) | ~15 hrs |
 | 4 — Practice | Build skill | 🏋️ sections + drills | Ongoing |
 
+For proof-based progress, use [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] alongside this chronological path. The learning path tells you what to read; the roadmap tells you what you must be able to explain, build, benchmark, and evaluate.
+
 ---
 
 ## Pass 1 — Intuition (~2 hours)
@@ -188,6 +190,7 @@ Build active-recall skill through drills and hands-on experimentation.
 
 ### Drills
 - [[LLM Study Index]] — full study plan, review drills, 20-paper fast path
+- [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] — competency gates and capstone sequence
 - [[LLM Architecture Cheatsheet]] — quick-reference tables
 
 ### Hands-On Exercises
