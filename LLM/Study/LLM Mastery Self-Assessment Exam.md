@@ -44,6 +44,7 @@ Answer without opening the timeline.
 | Why did decoder-only models become dominant for general assistants? | Autoregressive pretraining, next-token interface, prompting, scalable generation. |
 | What is the BERT vs GPT split? | Bidirectional masked encoder for understanding tasks vs autoregressive decoder for generation. |
 | Why did scaling laws change model planning? | Predictable loss trends, compute/data/model trade-offs, Chinchilla correction. |
+| What are the major stages in the LLM training pipeline? | Data curation, tokenization, pretraining, base evaluation, SFT, preference optimization, adaptation/RAG, deployment, and monitoring. |
 | Why did alignment become a separate stage after pretraining? | Raw next-token models do not reliably follow user intent; SFT/RLHF/preference methods shape behavior. |
 | Why did open-weight models matter? | Local control, inspection, adaptation, deployment, and runtime ecosystem. |
 | Why are RAG and tools not just prompting tricks? | They add external state/action channels and shift failure modes outside model weights. |
@@ -66,6 +67,7 @@ You should be able to explain these with a small sketch or equation.
 | Why is decode often memory-bandwidth-bound? | Each generated token repeatedly reads model weights and cache. |
 | What does quantization change? | Numeric representation and memory transfer, with possible quality loss. |
 | What is LoRA's core parameterization? | Low-rank update added to frozen base weights. |
+| How do you assign a failure to the right training stage? | Identify whether the symptom points to data, objective, SFT, preference optimization, RAG, adaptation, runtime, or policy before changing the model. |
 | When should you avoid fine-tuning? | When the failure is missing external knowledge, current facts, retrieval, tool policy, prompt formatting, or model capacity rather than learnable task behavior. |
 | Why can a smaller overtrained model be better for inference economics? | More training data/compute can improve quality while reducing serving cost. |
 
@@ -77,6 +79,7 @@ Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] for one 
 
 | Cluster | Exam task |
 | --- | --- |
+| Training pipeline | Trace one capability from corpus choice and objective through pretraining, post-training, evaluation, adaptation, and deployment. |
 | Transformer | State the pre-paper baseline, the new mechanism, and the evidence that it worked. |
 | BERT/GPT | Explain how objective and architecture changed downstream behavior. |
 | GPT-3/scaling | Separate scale, data, compute, and in-context learning claims. |
@@ -154,6 +157,7 @@ These gates are stricter than the oral questions.
 | --- | --- |
 | Architecture | Attention implementation or worked tensor-shape proof. |
 | Paper literacy | One paper protocol row for each major cluster. |
+| Training pipeline | Capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]. |
 | Local endpoint | CLI and HTTP endpoint response from one local model. |
 | Environment | Preflight snapshot tied to the machine/runtime that served the model. |
 | Benchmark | Reproducible row with model, runtime, quantization, context, TTFT, tokens/sec, memory, and prompt class. |
@@ -172,7 +176,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Timeline or field map | [[LLM/LLM — Learning Path]] |
 | Architecture and tensor shapes | [[LLM/Study/LLM Architecture Cheatsheet]] and [[LLM/Study/Attention Implementation Lab]] |
 | Paper skepticism | [[LLM/Study/LLM Paper Reading Protocol]] |
-| Training and scaling | [[LLM/2020–2021 — The Scaling Era/Scaling Laws]] and [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism]] |
+| Training and scaling | [[LLM/Study/LLM Training Pipeline Map]], [[LLM/2020–2021 — The Scaling Era/Scaling Laws]], and [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism]] |
 | Adaptation and fine-tuning | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]], [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning]], and [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA]] |
 | Alignment and preference methods | [[LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback]] and [[LLM/2022 — Alignment and Chat/Direct Preference Optimization]] |
 | Inference memory and latency | [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]] and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]] |
@@ -191,6 +195,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
+- [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]

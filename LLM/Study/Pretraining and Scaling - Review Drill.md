@@ -36,3 +36,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 10. **Why does data quality matter more than quantity?**
     Carefully filtered/curated data produces better models at the same token count. FineWeb and DCLM showed quality filtering >> raw scale.
+
+11. **What are the main gates in the LLM training pipeline?**
+    Data curation, tokenization, pretraining objective, distributed optimization, base evaluation, SFT, preference optimization, adaptation, deployment, and monitoring. See [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]].

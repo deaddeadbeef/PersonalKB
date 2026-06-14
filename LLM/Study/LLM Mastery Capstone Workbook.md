@@ -20,6 +20,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Gate | Required artifact | Proof link/path | Pass signal | Status |
 |---|---|---|---|---|
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] |  | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Not started |
+| Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Local model endpoint | CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, and loopback URL are captured. | Not started |
@@ -42,6 +43,20 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Adaptation |  |  | Prompting, LoRA, QLoRA, distillation, fine-tuning |
 | Retrieval and tools |  |  | RAG, embeddings, chunking, function calling, agents |
 | Evaluation and serving |  |  | Benchmarks, LLM-as-judge, throughput, latency, KV cache |
+
+## Training Pipeline Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Capability or behavior traced |  |
+| Data source likely responsible |  |
+| Training objective |  |
+| Post-training stage |  |
+| Evaluation gate |  |
+| Adaptation or RAG layer |  |
+| Deployment constraint |  |
+| Likely failure owner | data / objective / SFT / preference / RAG / runtime / policy |
+| Wrong fix rejected |  |
 
 ## Self-Assessment Proof Template
 
@@ -165,6 +180,7 @@ Next run:
 ## What Does Not Count
 
 - Reading without recall.
+- A training-stage explanation without data, objective, evaluation, and failure-owner evidence.
 - An endpoint without a benchmark.
 - A benchmark without quality evidence.
 - A RAG answer without citations.
@@ -175,6 +191,7 @@ Next run:
 ## Completion Audit
 
 - [ ] Every gate in the evidence ledger has a proof link.
+- [ ] The training pipeline map explains one capability from data through deployment.
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
@@ -189,6 +206,7 @@ Next run:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Study Index]]

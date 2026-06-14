@@ -9,7 +9,7 @@ tier-coverage: [core, deep-dive, practice]
 
 > **One-line summary** Fine-tuning is only one adaptation tool; choose prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or continued pretraining from the failure mode, data, evaluation evidence, compute budget, and deployment boundary.
 
-Use this after [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] identifies a quality gap, or before collecting a capstone adaptation decision in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. Pair it with [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning|Supervised Fine-Tuning]], [[LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning|Parameter-Efficient Fine-Tuning]], [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA|LoRA and QLoRA]], and [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation|Domain Adaptation]].
+Use this after [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] identifies a quality gap, or before collecting a capstone adaptation decision in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] first when you need to decide whether the failure belongs to data, objective, SFT, preference optimization, retrieval, runtime, or policy. Pair this note with [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning|Supervised Fine-Tuning]], [[LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning|Parameter-Efficient Fine-Tuning]], [[LLM/2020–2021 — The Scaling Era/LoRA and QLoRA|LoRA and QLoRA]], and [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation|Domain Adaptation]].
 
 The core mistake is treating "fine-tune it" as the default response to every bad answer. Adaptation should start by naming the failure. If the model lacks current documents, use retrieval. If it ignores a response format, try prompts, examples, constrained decoding, or SFT. If it needs stable task behavior on private examples, consider LoRA or QLoRA. If it needs preference ranking, use preference optimization. If it lacks a broad domain language, continued pretraining may be justified.
 
@@ -160,6 +160,7 @@ An adaptation decision is complete when:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
