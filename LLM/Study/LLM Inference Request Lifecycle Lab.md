@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** A local LLM request is not just "send prompt, get text"; it is a pipeline from messages to tokens, prefill, logits, sampling, stopping, detokenization, streaming, and measurement.
 
-Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] proves the endpoint exists. The hosting lab answers "can I run it?" This lab answers "do I understand what happens during one request?"
+Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] proves the endpoint exists. The hosting lab answers "can I run it?" This lab answers "do I understand what happens during one request?" Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the frozen request should become a reusable script.
 
 ## Outcome
 
@@ -20,19 +20,20 @@ After this lab you should be able to:
 - change one sampling knob at a time without confusing quality, randomness, and latency
 - diagnose common request-level failures such as bad stop sequences, missing max-token caps, malformed JSON, and unstable high-temperature output
 - record request settings so a benchmark or quality evaluation is reproducible
+- turn one frozen request into a client harness row with timing, parsing, error, and benchmark fields
 
 ## Request Lifecycle
 
 | Stage | What happens | Evidence to capture |
 |---|---|---|
-| 1. Client request | The caller sends model id, messages or prompt, sampling parameters, output cap, and stream flag. | Full request body or client code. |
+| 1. Client request | The caller sends model id, messages or prompt, sampling parameters, output cap, and stream flag. | Full request body, client code, or [[LLM/Study/Local LLM Client Harness Lab|client harness]] config. |
 | 2. Prompt assembly | Chat messages become the runtime's prompt format or chat template. RAG systems may add retrieved context here. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] if the formatting is uncertain. | System prompt, user prompt, retrieved context, and template if visible. |
 | 3. Tokenization | Raw text becomes token IDs. Token count determines context use and prefill cost. | Prompt token count or tokenizer output when available. |
 | 4. Prefill | The model processes the whole input prefix and builds the initial [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV cache]]. | Time to first token, prompt token count, cache/context length. |
 | 5. Decode loop | Each step produces logits for the next token, applies constraints and sampling settings, appends one token, and extends the cache. | Decode tokens/sec, output token count, sampling settings. |
 | 6. Stop condition | Generation stops at an EOS token, stop sequence, tool/schema boundary, or max-token cap. | Stop reason, stop sequence, max output tokens. |
 | 7. Detokenization | Token IDs are converted back into text or structured output. | Returned text plus any parse/validation result. |
-| 8. Application handling | The caller displays, streams, parses, stores, evaluates, or retries the response. | Parsed object, citation check, benchmark row, or quality decision. |
+| 8. Application handling | The caller displays, streams, parses, stores, evaluates, or retries the response. | Parsed object, citation check, client harness row, benchmark row, or quality decision. |
 
 The key academic bridge is [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]]: autoregressive generation samples a next-token distribution, appends the token, and repeats. The key deployment bridge is [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]]: prefill and decode have different performance bottlenecks.
 
@@ -165,6 +166,7 @@ This lab is complete when you have:
 - [ ] one sampling A/B test with a written decision
 - [ ] one stop-sequence or structured-output boundary test
 - [ ] one streaming comparison if the runtime supports streaming
+- [ ] one client harness log row with status, timing, and error fields
 - [ ] one benchmark row updated with request-level fields
 - [ ] one explanation linking the observed bottleneck to tokenization, KV cache, sampling, or serving
 
@@ -180,6 +182,7 @@ This lab is complete when you have:
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]

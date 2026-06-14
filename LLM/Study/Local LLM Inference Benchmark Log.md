@@ -15,6 +15,8 @@ Use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Ha
 
 For endpoint setup and smoke tests, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] before filling in the measurements here.
 
+Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when a smoke test needs to become repeatable evidence. The client harness should produce the request settings, latency, streaming, error, and response-excerpt fields that feed this log.
+
 For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to run workload prompts, rubric scores, pairwise comparisons, RAG/citation checks, and a pass/hold/fail gate.
 
 For document-grounded workloads, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] to record corpus version, chunk policy, retrieval results, citation support, and RAG-specific failure modes.
@@ -71,6 +73,24 @@ Create one row per run.
 | Quality score | Harness result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], not just "felt good" |
 
 Keep the same prompt, sampling settings, and output-token cap when comparing two runtimes or quantizations. Change one variable at a time unless the experiment is explicitly a full-stack comparison.
+
+## Client Harness Rows
+
+The benchmark row is easier to trust when it comes from a stable client harness instead of manual console notes.
+
+| Harness field | Benchmark use |
+| --- | --- |
+| Run id | Tie raw request evidence to benchmark and quality rows. |
+| Base URL and route | Confirm the client hit the intended endpoint. |
+| Model id and runtime | Prevent comparisons against the wrong served model. |
+| Prompt id and prompt class | Keep workload evidence comparable. |
+| Sampling settings | Explain determinism, randomness, and format drift. |
+| Status and error class | Count failures without hiding them. |
+| TTFT and total latency | Separate perceived responsiveness from total wall-clock time. |
+| Prompt and output tokens | Normalize prefill and decode measurements. |
+| Response excerpt or output path | Give enough evidence for review without leaking private data. |
+
+Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to define the row schema before running a model comparison.
 
 ## Prompt Suite
 
@@ -138,6 +158,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/LLM Mastery Roadmap]]

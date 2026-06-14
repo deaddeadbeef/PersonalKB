@@ -12,6 +12,8 @@ last-verified: 2026-06-14
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
+After the smoke test passes, use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows.
+
 Before starting the server, use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] to choose a model size, quantization, context target, and runtime that fit the hardware.
 
 Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
@@ -24,6 +26,7 @@ A local serving run is complete when:
 - a CLI or GUI chat proves the model can generate
 - an HTTP endpoint returns a non-streaming response
 - the same endpoint can be called by a generic OpenAI-compatible client or direct REST call
+- a client harness logs request settings, timing, output summary, and failure rows without manual copy/paste
 - endpoint exposure, logs, RAG corpus, and tool permissions are explicit before any non-loopback use
 - tokenizer, chat template, role boundaries, and stop policy are checked when output ignores instructions or leaks role markers
 - latency, tokens/sec, memory, model id, runtime, quantization, and quality notes are logged
@@ -228,10 +231,11 @@ To pass the local-serving proof gate, save:
 2. The startup command or GUI server settings.
 3. A successful native or OpenAI-compatible API response.
 4. At least three prompt-suite outputs.
-5. Benchmark log measurements.
-6. A quality harness pass/hold/fail decision for the target workload.
-7. A short explanation of the bottleneck using the academic links above.
-8. A decision: keep, tune, replace model, or replace runtime.
+5. One client harness row for the run, including either streaming timing or an explicit unsupported note.
+6. Benchmark log measurements.
+7. A quality harness pass/hold/fail decision for the target workload.
+8. A short explanation of the bottleneck using the academic links above.
+9. A decision: keep, tune, replace model, or replace runtime.
 
 ## References
 
@@ -240,6 +244,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
