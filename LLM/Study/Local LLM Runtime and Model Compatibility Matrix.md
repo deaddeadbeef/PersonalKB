@@ -3,7 +3,7 @@ tags: [study, llm, inference, local-llm, runtime, compatibility, quantization]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [core, practice]
-last-verified: 2026-06-14
+last-verified: 2026-06-15
 ---
 
 # Local LLM Runtime and Model Compatibility Matrix
@@ -17,6 +17,8 @@ Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM 
 When two compatibility cards are plausible, use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] to compare them with fixed prompts, sampler settings, context target, output cap, benchmark rows, and quality rows before choosing a deployment runtime.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the compatibility question includes thinking mode, reasoning-effort fields, parser support, inline reasoning tags, or trace retention.
+
+Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when compatibility depends on prompt-cache files, server slots, automatic prefix caching, RadixAttention, or another repeated-prefix cache mechanism.
 
 ## Outcome
 
@@ -40,6 +42,7 @@ After using this matrix you should be able to:
 | Runtime engine | Which loader and scheduler will run it? | Ollama, LM Studio, llama.cpp, vLLM, SGLang, Transformers, or other engine. |
 | API route | Native route or OpenAI-compatible route? | Base URL, route, request body, model id, and API contract card. |
 | Reasoning contract | Does the task need thinking mode, reasoning effort, trace parsing, or trace retention? | Reasoning budget lab row and API contract card. |
+| Cache contract | Does the workload depend on prompt-cache files, slots, prefix caching, or repeated-prefix reuse? | Prompt cache lab row, launch flags, cache path, metrics, and privacy boundary. |
 | Workload contract | Does the task need JSON, tools, long context, RAG, citations, or streaming? | Quality harness row and benchmark log. |
 
 If any layer is unknown, treat the run as an experiment rather than a deployment decision.
@@ -117,6 +120,7 @@ Copy this into a benchmark row or capstone run note.
 | Chat template source |  |
 | Stop/EOS policy |  |
 | Runtime and version |  |
+| Prompt/KV cache mechanism | none / keep-alive only / prompt-cache file / slot cache / APC / RadixAttention / unknown |
 | Hardware path | CPU / CUDA / ROCm / Metal / WSL / remote GPU |
 | API base URL and route |  |
 | OpenAI-compatible? | Yes / No / Partial |
@@ -142,6 +146,7 @@ This matrix is complete for one local deployment decision when you have:
 - [ ] a compatibility evidence card
 - [ ] a model/runtime choice justified by artifact format and quantization support
 - [ ] tokenizer and chat-template evidence or an explicit "runtime does not expose this" note
+- [ ] cache mechanism evidence when the workload depends on repeated prefixes
 - [ ] a successful native or OpenAI-compatible endpoint smoke test
 - [ ] an API contract card when a generic OpenAI-compatible client will call the endpoint
 - [ ] a benchmark row with prompt tokens, TTFT, tokens/sec, memory, and quality notes

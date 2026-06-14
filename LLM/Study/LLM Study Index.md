@@ -39,6 +39,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
@@ -77,6 +78,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured-output controls with reproducible local experiments
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — run a controlled concurrency ladder and decide whether the setup is single-user, queued, batch, self-hosted, or hosted
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] — separate warm-model behavior from true repeated-prefix KV reuse, then measure prompt-cache impact on TTFT, prefill, quality, and cache risk
 - [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] — prove model state, request timing, runtime metrics, logs, resource pressure, and the next controlled operations change
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] — pin runtime/model state, startup mode, backups, upgrades, rollback, and post-change validation for a maintainable local LLM service
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — verify tokenizer, special-token, chat-template, role-boundary, and stop-condition compatibility

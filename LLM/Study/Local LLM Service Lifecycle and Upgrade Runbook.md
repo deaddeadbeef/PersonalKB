@@ -14,7 +14,7 @@ Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 
 Use [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] before and after each lifecycle change so "the update helped" means a measured row changed. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when a restart, update, model move, or rollback changes behavior.
 
-This runbook turns a working endpoint into an owned service. The academic mechanism is still the same: serving systems manage memory, queues, KV cache, latency, and quality trade-offs. The lifecycle layer decides how those choices survive restarts, upgrades, model-cache moves, UI updates, and rollback.
+This runbook turns a working endpoint into an owned service. The academic mechanism is still the same: serving systems manage memory, queues, KV cache, prefix caches, latency, and quality trade-offs. The lifecycle layer decides how those choices survive restarts, upgrades, model-cache moves, prompt-cache moves, UI updates, and rollback.
 
 ## What This Runbook Decides
 
@@ -36,6 +36,7 @@ Do not upgrade a local LLM stack from memory. Upgrade from a card.
 | --- | --- | --- |
 | Runtime | App version, Python package, container tag, binary build, CUDA/ROCm/driver dependency. | Version command, image tag, pip freeze, installer file, commit, or release tag. |
 | Model artifact | Model id, revision, digest, quantization, local filename, cache path. | Model list, model card, license, revision/tag/digest, hash when available, local path. |
+| Prompt/KV cache | File prompt-cache path, slot-save directory, prefix-cache setting, cache salt/isolation, hierarchical cache storage. | Launch flags, env vars, cache path, metrics, and privacy boundary. |
 | Startup mode | Manual command, desktop toggle, background service, systemd unit, Docker service. | Startup command, service name, environment file, working directory, restart policy. |
 | Endpoint | Host, port, route, API mode, auth, TLS/proxy boundary. | Listener proof, base URL, route test, bind address, security decision. |
 | UI/data layer | Open WebUI database, uploaded files, user settings, secrets, provider config. | Volume path, backup path, `WEBUI_SECRET_KEY` handling, restore test note. |
@@ -58,6 +59,7 @@ Fill this before changing anything.
 | Current model id/revision/digest |  |
 | Target model id/revision/digest |  |
 | Model artifact/cache path |  |
+| Prompt/KV cache path or policy |  |
 | Startup mode and service name |  |
 | Startup command or container command |  |
 | Environment variables |  |
@@ -280,6 +282,7 @@ Run this after upgrade or rollback.
 | API contract | Base URL, model id, route, streaming, errors, unsupported fields. | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|API Contract Lab]] |
 | Client harness | Same harness request as baseline. | [[LLM/Study/Local LLM Client Harness Lab|Client Harness Lab]] |
 | Benchmark | Same prompt, sampler, context, output cap, concurrency as baseline. | [[LLM/Study/Local LLM Inference Benchmark Log|Benchmark Log]] |
+| Prompt cache | Cold/warm/changed-prefix rows and cache evidence still match the intended service state. | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt Cache and KV Reuse Lab]] |
 | Quality | Known-answer, schema, and workload prompts still pass. | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality Evaluation Harness]] |
 | Security | Bind address, auth, logs, RAG corpus, tools, and UI exposure unchanged or intentionally changed. | [[LLM/Study/Local LLM Security and Privacy Runbook|Security and Privacy Runbook]] |
 | Deployment decision | Cost/ops owner/review trigger still correct. | [[LLM/Study/LLM Deployment Decision Matrix|Deployment Decision Matrix]] |
@@ -297,6 +300,7 @@ Pass signal: the change card has a before row, after row, rollback target, decis
 | Quality regressed | Model revision, quantization, chat template, sampler, route behavior. | Freeze sampler and template; run quality harness before blaming runtime. |
 | Open WebUI loses settings | Volume path or secret changed. | Stop, restore volume backup, restore `WEBUI_SECRET_KEY`, restart previous image. |
 | Endpoint exposed unexpectedly | Host binding, proxy, firewall, Docker port mapping. | Rebind to loopback; run security runbook before continuing. |
+| Repeated-prefix speedup disappears | Prompt-cache path, slot state, prefix-cache flag, eviction, restart boundary, or prompt layout changed. | Run [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt Cache and KV Reuse Lab]] before changing models. |
 | Rollback also fails | Backup incomplete or hidden dependency changed. | Name the missing dependency, restore the lower layer, and create a new troubleshooting row. |
 
 ## Completion Gate
@@ -320,6 +324,7 @@ Internal:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

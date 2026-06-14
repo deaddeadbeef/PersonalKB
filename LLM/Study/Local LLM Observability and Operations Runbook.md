@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM server is operable only when every quality or performance claim is backed by request logs, timing metrics, resource pressure, error evidence, and an explicit next action.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and before trusting rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the operations evidence is being captured before or after a restart, upgrade, cache move, UI update, or rollback. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the question is saturation under load. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when an observed metric points to a failed layer.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and before trusting rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the operations evidence is being captured before or after a restart, upgrade, cache move, UI update, or rollback. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the question is saturation under load. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when a performance claim depends on repeated-prefix reuse rather than just a warm loaded model. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when an observed metric points to a failed layer.
 
 This runbook turns academic serving concepts from [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]], [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], and [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]] into local evidence you can inspect.
 
@@ -214,7 +214,8 @@ Decision rules:
 | Symptom | First evidence | Likely next controlled change |
 | --- | --- | --- |
 | First request is slow, later requests are faster | Load duration, model keep-alive, cold/warm timing pair. | Warm model, adjust keep-alive, separate cold-start from steady-state benchmark. |
-| TTFT high with long prompts | Prompt token count, prefill duration, context length, KV-cache usage. | Shorten prompt, reduce RAG chunks, use prompt caching/prefix reuse if supported. |
+| TTFT high with long prompts | Prompt token count, prefill duration, context length, KV-cache usage. | Shorten prompt, reduce RAG chunks, use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt Cache and KV Reuse Lab]] if repeated prefixes should hit. |
+| Repeated long prefix is not faster | Cache disabled, prefix mismatch, cache eviction, or model residency confused with cache reuse. | Compare cold/warm/changed-prefix rows and inspect cache metrics or slots. |
 | TPOT poor but TTFT acceptable | Output token duration, GPU/CPU utilization, memory bandwidth, model size. | Smaller model, stronger quantization, GPU offload, different runtime. |
 | Errors appear only under concurrency | Running/waiting requests, queue depth, p95 TTFT, HTTP status/error class. | Lower max concurrency, add client queue, use backpressure, compare serving runtime. |
 | VRAM climbs until failure | KV/cache usage, context length, active sequences, output cap. | Reduce context, reduce concurrency, lower output cap, smaller model, smaller KV precision if supported. |
@@ -245,6 +246,7 @@ Internal:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]

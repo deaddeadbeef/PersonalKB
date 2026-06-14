@@ -92,7 +92,7 @@ KV-cache engineering strongly influences capacity planning, latency, and through
 ### Challenge
 You are serving a chatbot with long shared system prompts and occasional 100K-token contexts. Propose a KV-cache strategy that balances reuse, fragmentation control, and memory pressure.
 
-For local operations, use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to connect KV-cache claims to actual evidence: loaded-model state, prompt tokens, active requests, cache usage or prefix-cache counters when the runtime exposes them, memory pressure, and the next controlled change.
+For local operations, use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to connect KV-cache claims to actual evidence: loaded-model state, prompt tokens, active requests, cache usage or prefix-cache counters when the runtime exposes them, memory pressure, and the next controlled change. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when the question is whether repeated prefixes actually reduce prefill or TTFT.
 
 ---
 
@@ -104,6 +104,7 @@ For local operations, use [[LLM/Study/Local LLM Observability and Operations Run
 - [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — cache allocation as virtual-memory-style paging
 - [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]] — shared-prefix and beam-search cache reuse
 - [[LLM/Study/Local LLM Observability and Operations Runbook]] — local evidence for cache pressure and resource counters
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]] — local repeated-prefix, prompt-cache, and cache-hit evidence
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]] — prefix caching for repeated context
 
 ---
@@ -128,3 +129,4 @@ For local operations, use [[LLM/Study/Local LLM Observability and Operations Run
 - [[Serving Architectures and Throughput-Latency Trade-offs]]
 - [[Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]

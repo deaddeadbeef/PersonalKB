@@ -84,6 +84,7 @@ Prompt caching makes long-context and agentic workloads economically viable. A c
 - [[Serving Architectures and Throughput-Latency Trade-offs]] — broader serving infrastructure
 - [[Agentic Coding Systems]] — primary beneficiaries of prompt caching
 - [[Batching and Continuous Batching]] — complementary inference optimization
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]] — local proof for repeated-prefix KV reuse
 
 ---
 
@@ -103,6 +104,8 @@ Prompt caching makes long-context and agentic workloads economically viable. A c
 ### Challenge
 
 Estimate the difference between an uncached and cached agent loop for a workflow with repeated large context, and explain where the savings come from.
+
+For a local applied workflow, use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] to separate warm-model residency from true repeated-prefix KV reuse, then measure TTFT, prefill, cache evidence, quality, and cache privacy.
 
 ---
 

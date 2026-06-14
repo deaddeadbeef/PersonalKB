@@ -97,6 +97,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Runtime compatibility | Artifact format, tokenizer, template, quantization, API route, and model id are recorded. |
 | Runtime comparison | At least two plausible runtimes have controlled benchmark and quality rows, or one alternative is explicitly not applicable. |
 | Concurrency/backpressure | Multi-request, queue, p95 latency, saturation, and overload behavior are measured when the workload is not strictly single-user. |
+| Prompt/cache reuse | Cold load, warm model, repeated-prefix request, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are recorded when the workload reuses long prefixes. |
 | Observability | Loaded-model state, route, request timings, logs or metrics, resource pressure, errors, and next controlled action are recorded. |
 | Lifecycle/rollback | Startup mode, pinned runtime/model state, cache/data paths, backup location, upgrade procedure, rollback target, and post-change validation are recorded when the path is maintained beyond a one-off run. |
 | Quality | Workload prompts have pass, hold, or fail decisions from a rubric. |
@@ -166,6 +167,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

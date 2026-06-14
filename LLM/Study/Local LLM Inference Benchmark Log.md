@@ -29,6 +29,8 @@ Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison La
 
 Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the benchmark must prove multi-request behavior, queueing, backpressure, p50/p95 TTFT, TPOT, throughput, saturation, or batch/offline suitability.
 
+Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when a row depends on repeated system prompts, few-shot examples, long documents, RAG context, tool protocols, or conversation history. The row should separate cold load, warm model, repeated-prefix reuse, changed-prefix control, cache evidence, and quality impact.
+
 Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before comparing quality across runs where temperature, top-p, top-k, min-p, penalties, seed, stop strings, or structured-output settings might change the answer.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] before comparing reasoning models or thinking modes. The benchmark row should separate the reasoning control, effort value, trace shape, reasoning cost, final-answer cost, latency delta, and trace-retention policy.
@@ -100,6 +102,7 @@ Create one row per run.
 | Peak VRAM | Highest observed GPU memory use during the run |
 | CPU/GPU utilization | Whether the bottleneck looks compute-bound, memory-bound, or idle |
 | Queue and concurrency | In-flight requests, queue time, p50/p95 TTFT, p50/p95 total latency, success/error count, and saturation point |
+| Prompt/cache reuse | Cold load, warm-model baseline, repeated-prefix run, changed-prefix control, cache evidence, and TTFT/prefill delta |
 | Error/retry count | Runtime crashes, OOMs, malformed outputs, timeouts, or refusal surprises |
 | Tool-call evidence | Tool-call count, argument validation, policy decision, execution latency, and result status |
 | Reasoning evidence | Trace length or token count, reasoning field shape, final-answer token count, and quality delta versus low/off effort |
@@ -176,6 +179,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 | Peak RAM/VRAM |  |
 | Operations evidence |  |
 | Lifecycle/change card |  |
+| Prompt/cache reuse |  |
 | Retrieval evaluation |  |
 | Quality score |  |
 | Decision | Pass / Hold / Fail |
@@ -196,6 +200,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - If prompt length, RAG packing, history, or tool schemas are the blocker, run [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before changing models.
 - If tool selection, argument validity, policy, or result injection is the blocker, run [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before calling the model bad.
 - If multi-user throughput is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]].
+- If a repeated system prompt, long document, RAG context, tool protocol, or chat history should be faster on later calls, run [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] before claiming prompt-cache benefit.
 - If logs, metrics, resource pressure, or loaded-model state are missing, use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] before changing model, runtime, or prompt.
 - If the row follows a version, model, cache, startup, UI, driver, or client-contract change, use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] before interpreting the delta.
 - If runtime choice is unclear, review [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]].
@@ -218,6 +223,7 @@ Use this add-on when latency, queueing, resource pressure, cold start, or errors
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

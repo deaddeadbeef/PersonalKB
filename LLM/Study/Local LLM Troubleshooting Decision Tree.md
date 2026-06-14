@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local LLM failures are diagnosable when each symptom is mapped to one layer: environment, model fit, server, route, client, prompt, tokenizer, RAG, quality, or security.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when the symptom needs request timings, logs, metrics, queue/KV/cache state, resource pressure, or an operations row. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the symptom appeared after restart, upgrade, rollback, cache movement, UI update, driver change, or client-contract change. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] when the symptom may come from model source, license gate, revision, cache path, unsafe file type, or unclear artifact identity. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when failures appear only on long prompts, RAG, tools, or multi-turn history. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when failures involve tool selection, tool arguments, schema validation, policy denial, execution, or tool-result injection. This note decides where to look when the run still fails.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and alongside [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The preflight proves the machine and runtime boundary. The serving runbook proves the endpoint. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when the symptom needs request timings, logs, metrics, queue/KV/cache state, resource pressure, or an operations row. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when a repeated-prefix request should be faster but is not, or when a speedup may be only warm-model residency. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the symptom appeared after restart, upgrade, rollback, cache movement, UI update, driver change, or client-contract change. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] when the symptom may come from model source, license gate, revision, cache path, unsafe file type, or unclear artifact identity. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] when a generic client, `/v1` route, streaming path, or feature flag fails. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the symptom may come from artifact format, quantization, tokenizer, chat template, runtime, route, or workload mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when failures appear only on long prompts, RAG, tools, or multi-turn history. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when failures involve tool selection, tool arguments, schema validation, policy denial, execution, or tool-result injection. This note decides where to look when the run still fails.
 
 The rule is simple: change one layer at a time, keep a short evidence record, and do not call a model "bad" until the environment, route, prompt format, and evaluation harness have been checked.
 
@@ -30,9 +30,10 @@ Run the checks in this order unless the error message clearly names a lower laye
 | 9 | Does instruction following fail because of tokenizer, chat template, roles, or stops? | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat template lab]] |
 | 10 | Does a tool call, schema, policy, or tool result change the failure? | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|tool-calling lab]] |
 | 11 | Is the answer slow but otherwise valid? | Performance branch and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|context budget lab]] |
-| 12 | Is the answer fast but wrong, unsupported, or unusable? | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality harness]] |
-| 13 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|retrieval evaluation lab]], [[LLM/Study/Local RAG Minimal Python Harness|RAG harness]], and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
-| 14 | Do logs, metrics, resource counters, or loaded-model state explain the failure? | [[LLM/Study/Local LLM Observability and Operations Runbook|observability runbook]] |
+| 12 | Should repeated prefixes have reduced prefill or TTFT? | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|prompt cache lab]] |
+| 13 | Is the answer fast but wrong, unsupported, or unusable? | [[LLM/Study/Local LLM Quality Evaluation Harness|Quality harness]] |
+| 14 | Does retrieval, citation, or private data change the failure? | [[LLM/Study/Local RAG Assistant Lab|RAG lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|retrieval evaluation lab]], [[LLM/Study/Local RAG Minimal Python Harness|RAG harness]], and [[LLM/Study/Local LLM Security and Privacy Runbook|security runbook]] |
+| 15 | Do logs, metrics, resource counters, or loaded-model state explain the failure? | [[LLM/Study/Local LLM Observability and Operations Runbook|observability runbook]] |
 
 Pass signal: the diagnosis names the failed layer and the next controlled change.
 
@@ -57,6 +58,7 @@ Pass signal: the diagnosis names the failed layer and the next controlled change
 | Output starts in wrong role or leaks markers | Chat template | Tokenizer/template/role boundary evidence. |
 | Output ignores instructions | Prompt/template/model quality | Template check, stronger prompt test, quality harness row. |
 | First token is slow | Performance/context budget | TTFT, prompt tokens, queue time, load time, prefill context. |
+| Same long prefix remains slow on later requests | Prompt-cache/KV reuse | Cold/warm/changed-prefix rows, cache flag, slot/metric/log evidence, prompt layout. |
 | Later tokens are slow | Performance | Output tokens/sec, model size, quantization, offload, utilization. |
 | Answer is plausible but wrong | Quality | Known-answer prompt, expected answer, rubric score. |
 | RAG answer invents citations | RAG/evaluation | Retrieved top-k, first relevant rank, final context ids, supporting passage, cited answer, citation check. |
@@ -131,7 +133,7 @@ Separate cold start, prefill, and decode.
 | Measurement | If high or weak | Likely cause | First change |
 | --- | --- | --- | --- |
 | Load time | Slow first request only | Cold load, disk, model initialization | Warm model or separate load time from request latency. |
-| TTFT | Slow before first token | Prompt length, prefill, queueing, prefix miss | Count the rendered context budget, shorten prompt, reduce retrieved context, check queue. |
+| TTFT | Slow before first token | Prompt length, prefill, queueing, prefix miss | Count the rendered context budget, shorten prompt, reduce retrieved context, check queue, or run prompt-cache lab. |
 | Decode tokens/sec | Slow after first token | Model size, memory bandwidth, backend/offload, quantization | Smaller model, better offload, quantization, runtime change. |
 | Peak RAM/VRAM | Near limit | Weights, KV cache, runtime overhead | More headroom, lower context, lower concurrency. |
 | Quality score | Low despite speed | Model/task fit, prompt, RAG, quantization | Run quality harness before declaring performance pass. |
@@ -197,6 +199,7 @@ This decision tree is complete for a local run when you have:
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
