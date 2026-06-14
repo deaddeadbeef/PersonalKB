@@ -20,6 +20,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Gate | Required artifact | Proof link/path | Pass signal | Status |
 |---|---|---|---|---|
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] |  | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Not started |
+| Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Local model endpoint | CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, and loopback URL are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
@@ -40,6 +41,19 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Adaptation |  |  | Prompting, LoRA, QLoRA, distillation, fine-tuning |
 | Retrieval and tools |  |  | RAG, embeddings, chunking, function calling, agents |
 | Evaluation and serving |  |  | Benchmarks, LLM-as-judge, throughput, latency, KV cache |
+
+## Self-Assessment Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Exam date |  |
+| Overall score |  |
+| Sections below pass threshold |  |
+| Local inference practical score |  |
+| RAG/evaluation score |  |
+| Security/deployment score |  |
+| Missed-question remediation links |  |
+| Retake date, if needed |  |
 
 ## Attention Implementation Proof Template
 
@@ -137,6 +151,7 @@ Next run:
 ## Completion Audit
 
 - [ ] Every gate in the evidence ledger has a proof link.
+- [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
 - [ ] The RAG assistant includes at least one diagnosed failure mode.
@@ -148,6 +163,7 @@ Next run:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/Attention Implementation Lab]]

@@ -16,6 +16,8 @@ tags: [llm, learning-path]
 
 For proof-based progress, use [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] alongside this chronological path. The learning path tells you what to read; the roadmap tells you what you must be able to explain, build, benchmark, and evaluate.
 
+Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] after each pass when you want a stricter oral/practical check across academic concepts and local inference operations.
+
 ---
 
 ## Pass 1 — Intuition (~2 hours)
@@ -191,6 +193,7 @@ Build active-recall skill through drills and hands-on experimentation.
 ### Drills
 - [[LLM Study Index]] — full study plan, review drills, 20-paper fast path
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] — competency gates and capstone sequence
+- [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] — oral and practical gate before claiming mastery
 - [[LLM Architecture Cheatsheet]] — quick-reference tables
 
 ### Hands-On Exercises

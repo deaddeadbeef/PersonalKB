@@ -21,6 +21,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
+- [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
