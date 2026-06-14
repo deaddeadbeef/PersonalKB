@@ -29,6 +29,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
+| Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
@@ -121,11 +122,13 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Model id |  |
 | Quantization |  |
 | Context length |  |
+| Context budget row |  |
 | CLI command |  |
 | HTTP endpoint |  |
 | OpenAI-compatible API contract |  |
 | Decoding/sampling preset |  |
 | Sampler sweep result |  |
+| Truncation/overflow behavior |  |
 | Successful response |  |
 | Benchmark row |  |
 | Quality-harness result |  |
@@ -213,6 +216,7 @@ Next run:
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
 - A local model download without model card, license, revision/tag/digest, and local path evidence.
+- A long-context, RAG, tool, or multi-turn run without a counted context budget and output reserve.
 - A benchmark that changes temperature, filters, penalties, seeds, stops, or output caps without saying so.
 - An endpoint without a benchmark.
 - A benchmark without quality evidence.
@@ -232,6 +236,7 @@ Next run:
 - [ ] The local model endpoint has a runtime compatibility evidence card.
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
+- [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
 - [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
 - [ ] The RAG assistant includes at least one diagnosed failure mode.
@@ -259,6 +264,7 @@ Next run:
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]

@@ -27,13 +27,14 @@ Move in order:
 10. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, route, model id, streaming behavior, errors, and feature gaps before client integration.
 11. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to make local endpoint calls reproducible.
 12. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to freeze and tune sampler settings before comparing quality or speed.
-13. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-14. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
-15. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
-16. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
-17. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
-18. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] to test whether the academic and applied knowledge is available without hand-holding.
-19. Build the capstone only after the local inference and evaluation gates are complete.
+13. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to prove prompt, history, RAG, tool, output, and margin tokens fit.
+14. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+15. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
+16. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
+17. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
+18. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
+19. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] to test whether the academic and applied knowledge is available without hand-holding.
+20. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
 
@@ -146,6 +147,7 @@ Read:
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
@@ -164,6 +166,7 @@ Proof:
 - Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer before changing model, runtime, prompt, or hardware.
 - Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to log repeatable non-streaming, streaming, error, and benchmark rows from the same client.
 - Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to freeze temperature, candidate filters, penalties, seed behavior, stop rules, and output caps before benchmark or quality comparisons.
+- Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to prove the rendered prompt, retrieved context, tool schemas, history, output reserve, and safety margin fit the runtime context limit.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 - Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to score known-answer, schema, RAG/citation, long-context, multi-turn, and workload-specific prompts.
 - Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before fine-tuning a model to fix a local quality gap.
@@ -200,7 +203,7 @@ Complete these in order:
 2. **Training pipeline map:** use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to trace one capability from data and objective through post-training, evaluation, adaptation, and deployment.
 3. **Attention implementation:** complete [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 4. **Tiny decoder training:** complete [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] and explain next-token loss, causal masking, validation loss, and generation.
-5. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], fill compatibility cards from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+5. **Local inference report:** complete [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], fill compatibility cards from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], prove the context budget with [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]], and save the benchmark table in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
 6. **RAG assistant:** build document ingestion, chunking, embedding, retrieval, reranking, generation, and citation output with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]].
 7. **Evaluation harness:** evaluate the RAG assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
 8. **Self-assessment:** pass [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] and link missed-question remediation.
@@ -218,6 +221,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can trace one capability from corpus choice and training objective through post-training, evaluation, adaptation, and deployment.
 - [ ] I can identify when a problem is a retrieval issue, prompt issue, model capability issue, or evaluation issue.
 - [ ] I can host a local model, call its API, tune decoding controls, and record latency/throughput/memory metrics.
+- [ ] I can budget a local request across template, prompt, history, RAG, tools, output reserve, and safety margin.
 - [ ] I can prove whether a local endpoint is OpenAI-compatible enough for a given client and workload.
 - [ ] I can explain the security and privacy boundary of a local model server before exposing it beyond loopback.
 - [ ] I can run a local quality harness and explain pass/hold/fail decisions from rubric evidence.
@@ -248,6 +252,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]

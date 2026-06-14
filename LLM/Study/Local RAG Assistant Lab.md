@@ -13,6 +13,8 @@ Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting
 
 Before indexing private documents, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, log policy, access boundary, and prompt-injection tests.
 
+Before packing retrieved passages into a prompt, use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to reserve output tokens, count template/history/tool overhead, and set a maximum retrieved-context budget.
+
 ## Outcome
 
 After this lab you should be able to:
@@ -123,7 +125,7 @@ Use citations like [1] for every factual claim.
 If the context does not support the answer, say: not enough evidence.
 ```
 
-Keep the prompt short enough to fit the context target from [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]. Retrieved context consumes prompt tokens, increases prefill time, and grows KV-cache pressure.
+Keep the prompt short enough to fit the context target from [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] and the measured budget from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. Retrieved context consumes prompt tokens, increases prefill time, and grows KV-cache pressure.
 
 ### Phase 5: Generate With The Local Endpoint
 
@@ -170,9 +172,9 @@ Write down the failure mode, not just the bad answer. A retrieval miss calls for
 
 Copy one row per question into [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] or a dated experiment note.
 
-| Run id | Corpus version | Chunk policy | Embed/index | Model/runtime | Query id | Expected source | Retrieved top-k contains source? | Answer supported? | Citations valid? | TTFT | Total latency | Peak RAM/VRAM | Decision | Failure mode |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |  | Yes/No | Yes/No | Yes/No |  |  |  | Pass/Hold/Fail |  |
+| Run id | Corpus version | Chunk policy | Context budget fit? | Embed/index | Model/runtime | Query id | Expected source | Retrieved top-k contains source? | Answer supported? | Citations valid? | TTFT | Total latency | Peak RAM/VRAM | Decision | Failure mode |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  | Yes/No |  |  |  |  | Yes/No | Yes/No | Yes/No |  |  |  | Pass/Hold/Fail |  |
 
 ## Completion Gate
 
@@ -181,6 +183,7 @@ The lab is complete when you have:
 - a fixed corpus version and chunking policy
 - a searchable index with stored metadata
 - a local model endpoint that answers from retrieved context
+- a context budget proving retrieved chunks, history, and output reserve fit
 - at least 10 private evaluation questions
 - evidence that known supporting passages appear in top-k
 - answers with citations that can be traced back to chunks
@@ -194,6 +197,7 @@ The lab is complete when you have:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/2020–2021 — The Scaling Era/Retrieval Pipelines and Context Assembly]]

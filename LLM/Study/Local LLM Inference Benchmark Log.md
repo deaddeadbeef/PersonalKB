@@ -23,6 +23,8 @@ Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when
 
 Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before comparing quality across runs where temperature, top-p, top-k, min-p, penalties, seed, stop strings, or structured-output settings might change the answer.
 
+Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before long-context, RAG, tool, or multi-turn runs. The benchmark row should show the runtime context limit, prompt tokens, output reserve, template overhead, and any truncation policy tested.
+
 For a formal quality score, use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to run workload prompts, rubric scores, pairwise comparisons, RAG/citation checks, and a pass/hold/fail gate.
 
 Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] after the benchmark and quality rows exist. The matrix turns measurements into a choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference.
@@ -60,6 +62,7 @@ Create one row per run.
 | Hardware | CPU, GPU, RAM, VRAM, storage notes |
 | OS/environment | Windows, WSL, Linux, macOS, Docker, driver/CUDA notes |
 | Context setting | Max context and prompt token count if known |
+| Context budget | Runtime limit, reserved output, template overhead, RAG/tool/history tokens, safety margin |
 | Sampling settings | Temperature, top-p, top-k, min-p, seed, penalties, stop strings, and max output tokens |
 | Prompt class | Chat, coding, summarization, extraction, RAG, long-context, agent/tool |
 | Concurrency | Single request, batch size, concurrent users, or request rate |
@@ -76,6 +79,7 @@ Create one row per run.
 | Time per output token (TPOT) | Inverse of decode speed; useful when comparing systems papers |
 | Prompt tokens | Tokens consumed by prompt, retrieved context, or system prefix |
 | Output tokens | Tokens generated in the response |
+| Context-budget margin | Remaining tokens after prompt, reserved output, and safety margin |
 | Peak RAM | Highest observed system memory use during the run |
 | Peak VRAM | Highest observed GPU memory use during the run |
 | CPU/GPU utilization | Whether the bottleneck looks compute-bound, memory-bound, or idle |
@@ -142,6 +146,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 | Quantization/format |  |
 | Hardware |  |
 | Context/prompt tokens |  |
+| Context budget margin |  |
 | Output-token cap |  |
 | Prompt class |  |
 | Load time |  |
@@ -157,6 +162,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 
 - If memory is the blocker, review [[LLM/2022 — Alignment and Chat/Quantization|Quantization]] and [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]].
 - If single-user latency is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding|Speculative Decoding]] and the TTFT/TPOT split above.
+- If prompt length, RAG packing, history, or tool schemas are the blocker, run [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before changing models.
 - If multi-user throughput is the blocker, review [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]].
 - If runtime choice is unclear, review [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]].
 - If quality is unclear, run [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], then review [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM-as-Judge]] and [[LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies|Human Evaluation and Preference Studies]].
@@ -174,6 +180,7 @@ Copy this block into a dated run note or append it below a project-specific expe
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local RAG Assistant Lab]]

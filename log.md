@@ -2215,3 +2215,36 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Final `python _ops\personal_kb.py audit`: 4804 files, 2933 Markdown files, 821 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | LLM context window and token budgeting lab
+
+Scope: add a practical context-window and token-budgeting lab for local inference requests that need measured prompt, history, RAG, tool, output, and margin accounting.
+
+Changed wiki/source files:
+- `.tasks/2026-06-15-llm-context-token-budgeting.md`
+- `LLM/Study/Local LLM Context Window and Token Budgeting Lab.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Chat Template and Tokenizer Compatibility Lab.md`
+- `LLM/Study/LLM Inference Request Lifecycle Lab.md`
+- `LLM/Study/Local LLM Inference Benchmark Log.md`
+- `LLM/Study/Local RAG Assistant Lab.md`
+- `LLM/Study/Local LLM Model and Hardware Sizing Guide.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local LLM Troubleshooting Decision Tree.md`
+- `LLM/Study/Inference and Efficiency - Review Drill.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Self-Assessment Exam.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a context-budget formula, runtime context map, tokenizer sanity count, rendered prompt budget table, RAG packing budget, overflow/truncation test, prompt-length performance test, failure triage, benchmark add-on, and completion gate.
+- Linked the lab from tokenizer/template, lifecycle, benchmark, RAG, sizing, serving, troubleshooting, review, roadmap, capstone, and exam notes.
+- Checked current Hugging Face, Ollama, vLLM, and llama.cpp docs for tokenization, chat templates, context length, and runtime context controls.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or learning-path edits.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Final `python _ops\personal_kb.py audit`: 4830 files, 2959 Markdown files, 834 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+- `git diff --check`: clean.

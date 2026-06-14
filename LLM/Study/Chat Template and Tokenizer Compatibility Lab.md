@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** A local chat model only behaves like the model you chose when the model weights, tokenizer, special tokens, chat template, client messages, and stop conditions all match.
 
-Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when a local endpoint works but the output feels wrong: it continues the prompt, speaks as the user, ignores the system prompt, leaks role markers, or fails structured output. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] first when the problem may be a broader model artifact, quantization, runtime, route, or tokenizer-package mismatch.
+Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when a local endpoint works but the output feels wrong: it continues the prompt, speaks as the user, ignores the system prompt, leaks role markers, or fails structured output. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] first when the problem may be a broader model artifact, quantization, runtime, route, or tokenizer-package mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] after the template is correct to count the rendered prompt, reserve output tokens, and prove the request fits.
 
 ## Outcome
 
@@ -105,7 +105,7 @@ Count tokens for short examples that stress different tokenizer behavior.
 | Whitespace-sensitive text | `line 1\n  line 2` |  | Lossless spacing and detokenization. |
 | Special-token-looking text |  |  | Whether the tokenizer treats it as normal text or a control token. |
 
-Use [[LLM/Pre-2017 — Before Transformers/Tokenization|Tokenization]] for the academic explanation. Use the counts in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when comparing models with different tokenizers.
+Use [[LLM/Pre-2017 — Before Transformers/Tokenization|Tokenization]] for the academic explanation. Use the counts in [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] to separate template overhead from user text, and use them in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when comparing models with different tokenizers.
 
 ## Lab 5: Stop And Role Boundary Test
 
@@ -143,6 +143,7 @@ Add these fields to any local inference benchmark or quality harness run where p
 | Tokenizer source | Explains token count, context pressure, and detokenization behavior. |
 | Chat template source | Makes role serialization reproducible. |
 | Rendered prompt checked? | Prevents hidden adapter bugs. |
+| Rendered prompt token count | Feeds the context budget before long, RAG, or tool requests. |
 | Stop/EOS policy | Explains truncation, role-marker leakage, or runaway output. |
 | Prompt token count by text class | Makes cross-model latency comparisons fairer. |
 
@@ -156,6 +157,7 @@ This lab is complete when you have:
 - [ ] a tokenizer sanity set with token counts
 - [ ] a stop/role boundary test
 - [ ] one benchmark or quality-harness row updated with template/tokenizer fields
+- [ ] one context-budget row updated if the prompt includes history, RAG, or tool schemas
 - [ ] one failure diagnosis that distinguishes model quality from request formatting
 
 ## References
@@ -172,6 +174,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[chunk-llm-092 Instruction Tuning Bridges to Following]]
 - [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
 - [[chunk-llm-169 SentencePiece Processes Raw Unicode Without Pre-Tokenization]]

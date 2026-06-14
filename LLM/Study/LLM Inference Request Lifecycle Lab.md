@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** A local LLM request is not just "send prompt, get text"; it is a pipeline from messages to tokens, prefill, logits, sampling, stopping, detokenization, streaming, and measurement.
 
-Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] proves the endpoint exists. The hosting lab answers "can I run it?" This lab answers "do I understand what happens during one request?" Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the sampling step needs deeper tuning, reproducibility, or runtime-parameter comparison. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the frozen request should become a reusable script.
+Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] proves the endpoint exists. The hosting lab answers "can I run it?" This lab answers "do I understand what happens during one request?" Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the sampling step needs deeper tuning, reproducibility, or runtime-parameter comparison. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when prompt length, reserved output, history, RAG context, or tool schemas may change the result. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the frozen request should become a reusable script.
 
 ## Outcome
 
@@ -28,7 +28,7 @@ After this lab you should be able to:
 |---|---|---|
 | 1. Client request | The caller sends model id, messages or prompt, sampling parameters, output cap, and stream flag. | Full request body, client code, or [[LLM/Study/Local LLM Client Harness Lab|client harness]] config. |
 | 2. Prompt assembly | Chat messages become the runtime's prompt format or chat template. RAG systems may add retrieved context here. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] if the formatting is uncertain. | System prompt, user prompt, retrieved context, and template if visible. |
-| 3. Tokenization | Raw text becomes token IDs. Token count determines context use and prefill cost. | Prompt token count or tokenizer output when available. |
+| 3. Tokenization | Raw text becomes token IDs. Token count determines context use, output headroom, and prefill cost. | Prompt token count, rendered-template token count, or [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|context budget]] when available. |
 | 4. Prefill | The model processes the whole input prefix and builds the initial [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV cache]]. | Time to first token, prompt token count, cache/context length. |
 | 5. Decode loop | Each step produces logits for the next token, applies constraints and sampling settings, appends one token, and extends the cache. | Decode tokens/sec, output token count, sampling settings. |
 | 6. Stop condition | Generation stops at an EOS token, stop sequence, tool/schema boundary, or max-token cap. | Stop reason, stop sequence, max output tokens. |
@@ -74,7 +74,7 @@ Pass signal: another run can reproduce the same request settings without guessin
 
 ## Lab 2: Separate Prefill From Decode
 
-Run the same prompt twice: once with a short input, once with a longer input. Keep model, runtime, sampling, and max output tokens fixed.
+Run the same prompt twice: once with a short input, once with a longer input. Keep model, runtime, sampling, and max output tokens fixed. For RAG, tool, or multi-turn prompts, fill a budget row in [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] first.
 
 Record:
 
@@ -134,7 +134,7 @@ Pass signal: you can explain why streaming can improve perceived responsiveness 
 | Symptom | Likely layer | First check |
 |---|---|---|
 | Output starts in the wrong role or style | Prompt assembly/chat template | Verify system/user messages and runtime template. |
-| Good short answers, bad long-context answers | Context assembly or prefill pressure | Count prompt tokens and inspect retrieved context order. |
+| Good short answers, bad long-context answers | Context assembly or prefill pressure | Count prompt tokens with [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] and inspect retrieved context order. |
 | Correct idea but invalid JSON | Structured output boundary | Add schema validation or constrained decoding. |
 | Output cuts off mid-answer | `max_tokens` or stop sequence | Raise cap or inspect stop strings. |
 | Output rambles | Missing cap or weak stop | Add `max_tokens`, stop sequence, or stricter prompt. |
@@ -187,6 +187,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
 - [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
 - [[chunk-llm-222 Speculative Sampling Distribution Guarantee]]

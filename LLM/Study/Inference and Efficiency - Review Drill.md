@@ -49,12 +49,16 @@ up: "[[LLM/Study/LLM Study Index]]"
 14. **What should be recorded before downloading a local model?**
     Model card, intended use, license, gated-access decision, exact revision/tag/file, artifact format, unsafe file risk, local cache path, and a digest or revision proof when reproducibility matters.
 
+15. **What is the practical context-budget formula for a local LLM request?**
+    Runtime context limit must cover system/template tokens, user/task tokens, history, retrieved context, tool schemas, reserved output tokens, and a safety margin. If it does not fit, reduce prompt/context before trusting latency, quality, or truncation behavior.
+
 ## Hands-On
 
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, expose an API, and benchmark inference.
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace a single request through prompt assembly, tokenization, prefill, decode, sampling, stopping, and streaming.
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stop rules, and structured-output controls.
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — diagnose tokenizer, chat-template, role-boundary, and stop-condition mismatches.
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — count rendered prompt tokens, reserve output, pack RAG/tool context, and test truncation behavior.
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] — prove model source, license, revision, artifact safety, and local path before serving.
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimate model weight memory, KV-cache risk, and runtime fit before downloading a model.
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — prove native and OpenAI-compatible endpoints, then diagnose serving failures.

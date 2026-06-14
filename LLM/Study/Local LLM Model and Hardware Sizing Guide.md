@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Model choice is a memory, latency, quality, and workload decision: estimate weights, add KV-cache headroom, choose a runtime, then prove the result with benchmarks.
 
-Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before downloading to record model card, license, revision, artifact safety, and local path. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible.
+Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before downloading to record model card, license, revision, artifact safety, and local path. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the context target must be turned into prompt, history, RAG, tool, output, and safety-margin tokens. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible.
 
 ## The Core Question
 
@@ -126,7 +126,7 @@ The key lesson from [[LLM/2022 — Alignment and Chat/Quantization|Quantization]
 
 ## Context And Concurrency Gate
 
-Ask these before choosing a context setting:
+Ask these before choosing a context setting. Then turn the answer into a concrete budget with [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]].
 
 | Question | Why it matters |
 | --- | --- |
@@ -162,6 +162,7 @@ Copy this into a run note before downloading or serving a model.
 | Quality gate |  |
 | Latency target |  |
 | Context target |  |
+| Context budget source |  |
 | Concurrent requests |  |
 | Hardware budget |  |
 | Candidate model |  |
@@ -190,10 +191,11 @@ To prove you understand local model sizing, produce:
 1. A memory estimate for weights.
 2. A KV-cache risk assessment for the target context and concurrency.
 3. A runtime/format choice with a reason.
-4. A machine/runtime preflight from [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]].
-5. A completed endpoint smoke test from [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
-6. A completed benchmark row in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-7. A decision: keep, scale up, quantize more, reduce context, or change runtime.
+4. A prompt/history/RAG/output budget from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the workload is not a tiny prompt.
+5. A machine/runtime preflight from [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]].
+6. A completed endpoint smoke test from [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
+7. A completed benchmark row in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+8. A decision: keep, scale up, quantize more, reduce context, or change runtime.
 
 ## References
 
@@ -204,6 +206,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
