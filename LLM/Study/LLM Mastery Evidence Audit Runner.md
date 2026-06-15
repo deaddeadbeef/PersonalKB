@@ -272,7 +272,7 @@ DEFAULT_GATES = [
         "critical": True,
         "status": "hold",
         "route": "LLM/Study/Local LLM First Response Debrief Runner",
-        "pass_signal": "The saved first response is interpreted into route proof, timing conversion, token-rate fields, mechanism owner, quality boundary, missing layer, and next action without sending another request.",
+        "pass_signal": "The saved first response is interpreted into health-bound smoke provenance, route proof, timing conversion, token-rate fields, mechanism owner, quality boundary, missing layer, and next action without sending another request.",
     },
     {
         "gate_id": "local-template-tokenizer-compatibility",

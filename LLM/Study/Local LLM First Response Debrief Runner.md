@@ -22,6 +22,7 @@ Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lif
 |---|---|---|
 | Smoke summary path | The debrief is tied to a named first-run artifact. | That the endpoint is still running now. |
 | Native response path | The raw local response was preserved. | Quality, safety, or workload fit. |
+| Runtime-health decision | The smoke request was bound to a runtime-health-ready proof before the first prompt. | That the runtime is still healthy after the response was saved. |
 | Parsed model and text | The saved response has a model id and extractable output. | The exact model bytes without pull/show evidence. |
 | Converted timing fields | Load, prefill, and decode timing can be discussed in seconds. | TTFT or stream behavior. |
 | Token-rate fields | Prompt and decode denominators can be audited. | A stable benchmark without repeated runs. |
@@ -39,6 +40,7 @@ Set only the inputs you need:
 | `LOCAL_LLM_SMOKE_SUMMARY` | newest `first-smoke-request/*-summary.json` | Smoke runner summary to inspect. |
 | `LOCAL_LLM_NATIVE_RESPONSE` | path from smoke summary, then native response fallback | Saved native Ollama response or smoke-runner wrapper. |
 | `LOCAL_LLM_OPENAI_RESPONSE` | path from smoke summary, then OpenAI response fallback | Optional saved OpenAI-compatible response or wrapper. |
+| `LOCAL_LLM_REQUIRE_HEALTH_BOUND_SMOKE` | `true` | Hold the debrief unless the smoke summary carries `runtime_health.decision == runtime_health_ready` and `runtime_health.status == pass`. |
 | `LOCAL_LLM_EXPECT_MODEL` | `model` from smoke summary | Expected served model id. |
 | `LOCAL_LLM_EXPECT_TEXT` | `expected_text` from smoke summary | Optional exact smoke text. |
 | `LOCAL_LLM_ROUTE` | `Ollama native /api/generate` | Human-facing route label. |
@@ -108,6 +110,39 @@ def summary_response_path(summary, route_name):
     return block.get("response_path")
 
 
+def runtime_health_from_summary(summary):
+    if not isinstance(summary, dict):
+        return {
+            "status": "hold",
+            "decision": "runtime_health_missing",
+            "path": "",
+            "expected_model": "",
+            "expected_model_visible": False,
+            "missing_layer": "runtime health proof",
+            "block_reason": "smoke summary is missing",
+        }
+    block = summary.get("runtime_health")
+    if not isinstance(block, dict):
+        return {
+            "status": "hold",
+            "decision": "runtime_health_missing",
+            "path": "",
+            "expected_model": "",
+            "expected_model_visible": False,
+            "missing_layer": "runtime health proof",
+            "block_reason": "smoke summary does not carry runtime_health evidence",
+        }
+    return {
+        "status": str(block.get("status") or "").lower(),
+        "decision": str(block.get("decision") or ""),
+        "path": str(block.get("path") or ""),
+        "expected_model": str(block.get("expected_model") or ""),
+        "expected_model_visible": block.get("expected_model_visible"),
+        "missing_layer": str(block.get("missing_layer") or ""),
+        "block_reason": str(block.get("block_reason") or ""),
+    }
+
+
 def unwrap_response(raw):
     if isinstance(raw, dict) and isinstance(raw.get("json"), dict):
         return raw["json"], raw
@@ -132,6 +167,13 @@ def nested_text(value):
 
 def normalize_text(value):
     return " ".join(str(value or "").strip().lower().split())
+
+
+def bool_env(name, default):
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    return normalize_text(value) not in {"0", "false", "no", "off", "skip", "skipped"}
 
 
 def md_cell(value):
@@ -247,6 +289,8 @@ def choose_mechanism(native, model_match, text_match, openai_expected, openai):
 def default_next_action(status, mechanism):
     if status == "error":
         return "diagnose listener, model id, or route before retry"
+    if mechanism == "runtime health proof":
+        return "rerun Local LLM First Runtime Health Runner and Local LLM First Smoke Request Runner with matching model and base URLs before debrief"
     if mechanism == "api compatibility":
         return "run Local LLM OpenAI-Compatible API Contract Lab"
     if mechanism == "model id":
@@ -278,6 +322,11 @@ def write_markdown(path, record):
         f"| Native response | {md_cell(record['source']['native_response_path'])} |",
         f"| OpenAI-compatible response | {md_cell(record['source']['openai_response_path'])} |",
         f"| Smoke status | {md_cell(record['source']['smoke_status'])} |",
+        f"| Runtime health JSON | {md_cell(record['source']['runtime_health_path'])} |",
+        f"| Runtime health status | {md_cell(record['source']['runtime_health_status'])} |",
+        f"| Runtime health decision | {md_cell(record['source']['runtime_health_decision'])} |",
+        f"| Runtime health expected model | {md_cell(record['source']['runtime_health_expected_model'])} |",
+        f"| Runtime health model visible | {md_cell(record['source']['runtime_health_expected_model_visible'])} |",
         "",
         "## Native Response",
         "",
@@ -360,6 +409,12 @@ expected_model = os.environ.get("LOCAL_LLM_EXPECT_MODEL") or summary.get("model"
 expected_text = os.environ.get("LOCAL_LLM_EXPECT_TEXT") or summary.get("expected_text") or ""
 route = os.environ.get("LOCAL_LLM_ROUTE", "Ollama native /api/generate")
 boundary = os.environ.get("LOCAL_LLM_BOUNDARY", "loopback or recorded boundary")
+require_health_bound_smoke = bool_env("LOCAL_LLM_REQUIRE_HEALTH_BOUND_SMOKE", True)
+runtime_health = runtime_health_from_summary(summary)
+health_bound_smoke_ready = (
+    runtime_health["status"] == "pass"
+    and runtime_health["decision"] == "runtime_health_ready"
+)
 
 model_match = None
 if expected_model:
@@ -374,6 +429,8 @@ openai_expected = bool(openai_path) or openai_summary.get("decision") not in {No
 missing_layers = []
 if summary_error:
     missing_layers.append("smoke summary")
+if require_health_bound_smoke and not health_bound_smoke_ready:
+    missing_layers.append(runtime_health["missing_layer"] or "runtime health proof")
 if native_error:
     missing_layers.append("native response file")
 if native["route_status"] == "error":
@@ -402,7 +459,10 @@ elif missing_layers:
 else:
     status = "pass"
 
-mechanism = choose_mechanism(native, model_match, text_match, openai_expected, openai)
+if require_health_bound_smoke and not health_bound_smoke_ready:
+    mechanism = "runtime health proof"
+else:
+    mechanism = choose_mechanism(native, model_match, text_match, openai_expected, openai)
 next_action = os.environ.get("LOCAL_LLM_NEXT_ACTION") or default_next_action(status, mechanism)
 run_id = summary.get("run_id") or f"{time.strftime('%Y%m%d-%H%M%S')}-first-response"
 timestamp = time.strftime("%Y-%m-%dT%H:%M:%S%z")
@@ -413,6 +473,8 @@ record = {
     "status": status,
     "route": route,
     "boundary": boundary,
+    "require_health_bound_smoke": require_health_bound_smoke,
+    "runtime_health": runtime_health,
     "expected_model": expected_model,
     "expected_text": expected_text,
     "model_match": model_match,
@@ -425,6 +487,12 @@ record = {
         "native_response_error": native_error,
         "openai_response_path": str(openai_path) if openai_path else "",
         "openai_response_error": openai_error,
+        "runtime_health_path": runtime_health["path"],
+        "runtime_health_status": runtime_health["status"],
+        "runtime_health_decision": runtime_health["decision"],
+        "runtime_health_expected_model": runtime_health["expected_model"],
+        "runtime_health_expected_model_visible": runtime_health["expected_model_visible"],
+        "runtime_health_block_reason": runtime_health["block_reason"],
     },
     "native": native,
     "openai": openai,
@@ -436,6 +504,8 @@ record = {
         "Run id": run_id,
         "Response file": str(native_path) if native_path else "",
         "Runtime and route": route,
+        "Runtime health JSON": runtime_health["path"],
+        "Runtime health decision": runtime_health["decision"],
         "Model": native["model"],
         "Prompt class": "smoke",
         "Done reason": native["done_reason"],
@@ -470,6 +540,7 @@ print(json.dumps({
     "debrief_markdown": str(markdown_path),
     "missing_layers": missing_layers,
     "mechanism_owner": mechanism,
+    "runtime_health_decision": runtime_health["decision"],
     "next_action": next_action,
 }, indent=2))
 ```
@@ -479,14 +550,15 @@ PowerShell run from the evidence folder:
 ```powershell
 $env:LOCAL_LLM_RUN_ROOT = "<paste-run-folder-path>"
 $env:LOCAL_LLM_SMOKE_SUMMARY = "<optional-first-smoke-summary-json>"
+$env:LOCAL_LLM_REQUIRE_HEALTH_BOUND_SMOKE = "true"
 $env:LOCAL_LLM_EXPECT_MODEL = "<model-tag-from-pull-gate>"
 $env:LOCAL_LLM_BOUNDARY = "loopback"
 python .\first-response-debrief.py
 ```
 
-Pass signal: `first-response-debrief\<run-id>-debrief.json`, `.md`, and `response-debriefs.jsonl` exist; status is `pass`; model, response text, timing conversions, token rates, mechanism owner, quality boundary, and next action are populated.
+Pass signal: `first-response-debrief\<run-id>-debrief.json`, `.md`, and `response-debriefs.jsonl` exist; status is `pass`; the smoke summary carries `runtime_health.status == pass` and `runtime_health.decision == runtime_health_ready`; model, response text, timing conversions, token rates, mechanism owner, quality boundary, and next action are populated.
 
-Hold signal: the JSON files exist, but the response text, expected model, exact smoke text, timing fields, token counts, or OpenAI-compatible response is missing. Keep the output. A hold row is useful because it names the missing layer.
+Hold signal: the JSON files exist, but runtime-health proof, response text, expected model, exact smoke text, timing fields, token counts, or OpenAI-compatible response is missing. Keep the output. A hold row is useful because it names the missing layer.
 
 Error signal: the native response file is missing, unparsable, or saved as an error-shaped route result. Route to [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] or [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] before retrying.
 
@@ -498,6 +570,9 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 |---|---|
 | Run id |  |
 | Smoke summary |  |
+| Runtime health JSON |  |
+| Runtime health status | pass / hold / error / skipped |
+| Runtime health decision | runtime_health_ready / runtime_health_missing / runtime_health_mismatch |
 | Native response file |  |
 | OpenAI-compatible response file |  |
 | Debrief JSON |  |
@@ -508,7 +583,7 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 | Timing fields | present / missing |
 | Prompt tokens/sec |  |
 | Decode tokens/sec |  |
-| Mechanism owner | cold load / prefill / decode / route / template or sampler / api compatibility / missing metrics |
+| Mechanism owner | runtime health proof / cold load / prefill / decode / route / template or sampler / api compatibility / missing metrics |
 | Quality boundary | route-only until quality probe suite |
 | Next controlled action |  |
 
@@ -516,6 +591,7 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 
 | Observation | Owner | Next route |
 |---|---|---|
+| Smoke summary is missing runtime-health-ready proof | Runtime health proof | [[LLM/Study/Local LLM First Runtime Health Runner]] and [[LLM/Study/Local LLM First Smoke Request Runner]] |
 | `load_duration` dominates | Cold load or model residency | [[LLM/Study/Local LLM Observability and Operations Runbook]] |
 | `prompt_eval_duration` dominates | Prefill, prompt length, rendered context, tokenizer/template | [[LLM/Study/LLM Inference Request Lifecycle Lab]] and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
 | `eval_duration` dominates | Decode loop, model size, memory bandwidth, quantization, offload | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
@@ -529,6 +605,7 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 This runner is complete only when:
 
 - [ ] the source smoke summary or native response path is recorded
+- [ ] the smoke summary records runtime-health JSON path, status, decision, expected model, and model visibility
 - [ ] the debrief JSON exists
 - [ ] the debrief Markdown exists
 - [ ] `response-debriefs.jsonl` has the run row

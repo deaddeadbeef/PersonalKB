@@ -2951,3 +2951,32 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> 42 gates, 42 holds, including `local-first-smoke-request` and `local-first-response-debrief`.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Bind response debrief to health-bound smoke proof
+
+Scope: tighten the first local response debrief so it only passes when the saved smoke summary carries runtime-health-ready provenance from before the first prompt.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM First Response Debrief Runner.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added `LOCAL_LLM_REQUIRE_HEALTH_BOUND_SMOKE` to the first-response debrief runner.
+- Carried runtime-health path, status, decision, expected model, model visibility, and block reason into debrief JSON and Markdown output.
+- Routed missing or mismatched runtime-health provenance to the runtime health runner and smoke request runner instead of allowing a debrief pass.
+- Updated the mastery audit gate, dashboard, capstone workbook, LLM MOC, and study index to name health-bound smoke provenance as part of the response-debrief evidence.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `first_response_debrief.py` and `llm_mastery_evidence_audit.py` from their notes.
+- First-response debrief fixtures: health-bound smoke summary -> `pass`; missing runtime-health proof -> `hold` with `runtime health proof`; mismatched runtime-health proof -> `hold`; explicit `LOCAL_LLM_REQUIRE_HEALTH_BOUND_SMOKE=false` control -> `pass`.
+- Mastery evidence audit default manifest -> `hold`, 42 gates, 42 holds, with `local-first-response-debrief` requiring health-bound smoke provenance.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
