@@ -51,7 +51,7 @@ Treat the weeks as modules. A strong week can finish quickly; a weak week should
 | 2 | Attention and tensor shapes | Derive Q/K/V, attention scores, causal mask, KV cache | Attention implementation or worked tensor-shape proof |
 | 3 | Training pipeline | Trace data, objective, pretraining, SFT, preference optimization, eval, deployment | Tiny decoder training run or training-pipeline capability trace |
 | 4 | Papers and evaluation | Fill paper protocol rows for core clusters; explain HELM-style multi-metric evaluation | Metric card and quality rubric draft |
-| 5 | First local endpoint | Explain weights, quantization, tokenizer, chat template, runtime, route | Windows/Ollama/LM Studio/llama.cpp loopback smoke response |
+| 5 | First local endpoint | Explain weights, quantization, tokenizer, chat template, runtime, route | Readiness snapshot, then Windows/Ollama/LM Studio/llama.cpp loopback smoke response |
 | 6 | Model selection and custody | Defend why the candidate is smallest plausible for the workload | Candidate card, provenance card, artifact/cache card |
 | 7 | Compatibility and request controls | Explain template mismatch, sampler drift, context budget, TTFT vs decode | Compatibility card, API contract, sampler/context rows |
 | 8 | Benchmark and serving internals | Explain prefill, decode, KV cache, batching, prompt cache, speculation | Benchmark row plus one scheduler/cache/latency diagnosis |
@@ -171,6 +171,7 @@ Goal: prove that a model can answer locally through a route you understand.
 Read:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]

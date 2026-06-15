@@ -44,7 +44,7 @@ You do not need full paper mastery before the first local run. You do need enoug
 
 | Stage | Exercise | Main proof |
 |---|---|---|
-| 0 | Machine and boundary preflight | Preflight snapshot |
+| 0 | Machine and boundary preflight | Readiness and preflight snapshot |
 | 1 | First loopback endpoint | Raw local response |
 | 2 | Model custody and compatibility | Provenance and compatibility cards |
 | 3 | Repeatable client call | Client harness row |
@@ -62,6 +62,7 @@ Stop after any stage if the evidence fails. Use the failed row to choose the nex
 
 Route:
 
+- [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 
@@ -69,6 +70,7 @@ Save:
 
 | Artifact | Minimum fields |
 |---|---|
+| Readiness snapshot | Runtime install state, GPU, listener ports, first runtime choice, first model class, next proof action |
 | Preflight snapshot | OS, shell, CPU/RAM, GPU/VRAM or CPU-only note, disk, model cache path, intended host/port |
 | Stack Anatomy Card | Boundary, hardware proof, lowest unproven layer, next action |
 

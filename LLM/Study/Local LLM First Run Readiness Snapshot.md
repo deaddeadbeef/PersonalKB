@@ -1,0 +1,119 @@
+---
+tags: [study, llm, inference, local-llm, readiness, windows, evidence]
+up: "[[LLM/Study/LLM Study Index]]"
+confidence: verified
+tier-coverage: [practice]
+last-verified: 2026-06-15
+---
+
+# Local LLM First Run Readiness Snapshot
+
+> **One-line summary** This is the machine-specific readiness card for the first local LLM run: the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, but no local LLM runtime is installed yet and no endpoint is listening.
+
+Use this before [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next.
+
+## Current State
+
+Checked on 2026-06-15 from Windows PowerShell.
+
+| Check | Result | Meaning |
+|---|---|---|
+| `ollama --version; ollama list` | `ollama: not found` | Ollama is not installed or is not on PATH. |
+| `lms --version; lms server status` | `lms: not found` | LM Studio CLI is not installed or is not on PATH. |
+| `nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader` | `NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 610.47` | There is a usable NVIDIA GPU candidate for local inference. |
+| Listener scan on ports `11434, 1234, 8000, 8001, 8080, 30000` | no rows returned | No common local LLM API port is currently listening. |
+| Endpoint proof | not started | No local model response has been captured yet. |
+
+## Readiness Decision
+
+| Decision | Value |
+|---|---|
+| Lowest unproven layer | runtime installation |
+| Recommended first runtime | Ollama on Windows, loopback only |
+| GUI alternative | LM Studio local server on `localhost` |
+| First model class | small instruct or reasoning model that fits comfortably before tuning |
+| First candidate tags to evaluate | `qwen3.5:4b`, then `qwen3.5:9b` or `qwen3:8b` if the first path is stable |
+| Avoid as first proof | 27B+ or 30B+ models, LAN binding, RAG, tools, concurrency, prompt caching |
+| First pass target | one loopback smoke response plus model id, route, listener proof, timing, and security boundary |
+
+The RTX 3080 Ti makes a 4B-9B quantized first run realistic. It does not make long context, 27B+ models, high concurrency, or RAG quality proven. Context length still creates KV-cache pressure, and model file size is not the full memory budget.
+
+## First Execution Card
+
+Use one dated run folder:
+
+```powershell
+$RunRoot = Join-Path $HOME ("Documents\local-llm-runs\" + (Get-Date -Format "yyyy-MM-dd-HHmm") + "-first-readiness-run")
+New-Item -ItemType Directory -Force -Path $RunRoot | Out-Null
+$RunRoot
+```
+
+Then execute only one path.
+
+| Step | Action | Evidence to save |
+|---|---|---|
+| 1 | Install Ollama from the official Windows installer or PowerShell installer. | installer source, version, install path if changed |
+| 2 | If the home drive should not store models, set `OLLAMA_MODELS` before pulling. | environment variable value and cache path |
+| 3 | Open a new PowerShell and run `ollama --version` and `ollama list`. | `runtime-version.txt` |
+| 4 | Pull a small first model, preferably `qwen3.5:4b` for route proof. | `ollama-pull.txt`, model tag |
+| 5 | Run the native Ollama smoke test from [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]. | `ollama-native-generate.json` |
+| 6 | Run the OpenAI-compatible smoke test from the cookbook. | `ollama-openai-chat.json` |
+| 7 | Run the listener check. | `listeners.txt` showing loopback/private boundary |
+| 8 | Copy one row into [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]]. | first inference evidence row |
+| 9 | Copy one row into [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. | benchmark row with timing fields |
+| 10 | Write the decision in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. | keep / tune / replace runtime / replace model |
+
+## Stop Rules
+
+- Do not install or pull a model without saving the run folder first.
+- Do not bind to `0.0.0.0` or the LAN for the first proof.
+- Do not judge model quality from the smoke prompt.
+- Do not change runtime, model, sampler, context, and prompt in the same comparison.
+- Do not start RAG until a plain local endpoint has passed.
+- Do not treat a large advertised context window as a safe target without a context and KV-cache budget row.
+
+## Mechanism Notes
+
+| Observation | Mechanism interpretation |
+|---|---|
+| Runtime not installed | The failure owner is environment/runtime setup, not model quality. |
+| GPU present | Weight memory, activation overhead, and KV-cache growth become the next constraints. |
+| No listener | There is no local API server yet, so client failures would be premature. |
+| 4B-9B first model | This minimizes load and memory risk while proving route, model id, prompt, response, and timing. |
+| Long context available in model tags | Context capacity is not free; prefill time and KV-cache memory must be measured before use. |
+
+## Completion Gate
+
+This readiness snapshot is complete when:
+
+- [x] local runtime commands have been checked
+- [x] GPU availability has been checked
+- [x] common local LLM listener ports have been checked
+- [x] first runtime choice is explicit
+- [x] first model class is explicit
+- [ ] Ollama or LM Studio is installed
+- [ ] one model is pulled or loaded
+- [ ] one loopback smoke response is saved
+- [ ] one benchmark row is saved
+- [ ] one capstone decision row is saved
+
+## References
+
+Internal routes:
+
+- [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM Command Cookbook]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Environment Preflight Lab]]
+- [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/LLM Mastery Capstone Workbook]]
+
+External/current sources checked 2026-06-15:
+
+- [Ollama Windows documentation](https://docs.ollama.com/windows)
+- [Ollama Windows download page](https://ollama.com/download/windows)
+- [Ollama qwen3.5 model page](https://ollama.com/library/qwen3.5)
+- [Ollama qwen3 tags](https://ollama.com/library/qwen3/tags)
+- [LM Studio local server documentation](https://lmstudio.ai/docs/developer/core/server)
+- [LM Studio OpenAI compatibility documentation](https://lmstudio.ai/docs/developer/openai-compat)
