@@ -17,7 +17,7 @@ Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA 
 
 Use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] first if the deployment decision depends on Dockerized vLLM/SGLang, Compose, or Open WebUI provider routing.
 
-The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
+The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner. After the memo is filled, use [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] to check whether the linked proof bundle is defensible before treating the decision as final.
 
 ## Outcome
 
@@ -120,6 +120,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Adaptation, if relevant | Prompt, RAG, SFT, LoRA/QLoRA, DPO, distillation, continued pretraining, or no-train choice is justified from failure-mode evidence. |
 | Cost/ops estimate | Hardware, API, maintenance, and owner assumptions are written down. |
 | Rejected alternative | At least one plausible path is rejected with measured or policy evidence. |
+| Deployment readiness audit | A [[LLM/Study/LLM Deployment Readiness Audit Runner|Deployment Readiness Audit Runner]] output exists, or each missing kind has an explicit remediation row. |
 
 ## Recommendation Rules
 
@@ -163,6 +164,7 @@ A deployment decision is complete when:
 - cost and operational owner are named
 - startup, upgrade, backup, and rollback responsibilities are explicit for maintained services
 - at least one plausible alternative is rejected with evidence
+- the deployment readiness audit output has no critical gaps or links remediation rows
 - the next review trigger is written down
 
 ## References
@@ -171,6 +173,7 @@ A deployment decision is complete when:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]

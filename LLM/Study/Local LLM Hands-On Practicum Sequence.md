@@ -244,6 +244,7 @@ Route:
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 
 Save:
 
@@ -253,6 +254,7 @@ Save:
 | Security row | Bind address, auth, logs, RAG data class, tool boundary, exposure decision |
 | Lifecycle card | Startup mode, pinned runtime/model state, cache/data paths, backup, upgrade plan, rollback target |
 | Deployment memo | Workload, accepted path, rejected alternative, owner, next review trigger |
+| Deployment readiness audit | Workload, selected path, model/runtime, endpoint, benchmark, quality, security, operations, cost, rejected alternative, and retest proof |
 
 Pass signal: the endpoint can be reused without guessing how it starts, what it exposes, where data goes, or how to roll back.
 
@@ -316,7 +318,7 @@ Save one capstone note or folder that links:
 | API | Contract card, first client runner row, and client harness row |
 | Request controls | Template, sampler, context, request lifecycle rows |
 | Measurement | Benchmark, metric, and quality rows |
-| Service | Observability, security, lifecycle, deployment rows |
+| Service | Observability, security, lifecycle, deployment, and deployment-readiness rows |
 | Extension | RAG or tool artifact set |
 | Exam | Self-assessment score and missed-question remediation |
 
@@ -349,6 +351,7 @@ This practicum sequence is complete when you have:
 - [ ] one first quality probe row or quality row
 - [ ] one diagnosed failure or explicit no-failure row
 - [ ] one service security or lifecycle row if the endpoint will be reused
+- [ ] one deployment readiness audit output before the final deployment memo is accepted
 - [ ] one RAG or tool extension artifact if the goal is more than chat
 - [ ] one capstone handoff note shaped by [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] with links to the evidence
 
@@ -393,5 +396,6 @@ Internal routes:
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

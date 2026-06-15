@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** The LLM capstone is a small local assistant that you can explain academically, run through a local endpoint, evaluate against a workload, secure on loopback, and operate with evidence.
 
-Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] has given you the gates and before filling the final rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The workbook is the ledger. This blueprint is the project spec. Use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] after the evidence bundle exists to check academic, mechanism, local-inference, system, and exam gates before final defense.
+Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] has given you the gates and before filling the final rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The workbook is the ledger. This blueprint is the project spec. Use [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] before accepting the final deployment memo, then use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] after the full evidence bundle exists to check academic, mechanism, local-inference, system, and exam gates before final defense.
 
 The goal is not to build the largest possible system. The goal is to prove that you can connect paper claims, transformer mechanisms, model artifacts, local runtime behavior, client inference, RAG or tools, quality evaluation, and operations decisions in one defensible local project.
 
@@ -67,6 +67,7 @@ The minimal capstone can omit RAG and tools only if the deployment decision expl
 | 12. Security and privacy | Loopback binding, logs, data boundary, RAG corpus boundary, tool permissions. | [[LLM/Study/Local LLM Security and Privacy Runbook]] |
 | 13. Operations | Loaded-model state, logs/metrics, resource pressure, restart, upgrade, rollback plan. | [[LLM/Study/Local LLM Observability and Operations Runbook]] |
 | 14. Deployment decision | Local CPU/GPU, self-hosted, hosted API, hybrid, or batch decision with rejected alternative. | [[LLM/Study/LLM Deployment Decision Matrix]] |
+| 15. Deployment readiness audit | Machine-checkable audit of workload, selected path, model/runtime, endpoint, benchmark, quality, privacy, operations, cost, rejected alternative, and retest proof. | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 
 Do not reorder phases 1 through 7. You need a workload before a model, model-store and runtime evidence before first pull, model custody before serving, and endpoint proof before client/RAG/tool claims.
 
@@ -90,6 +91,7 @@ Create one dated capstone note or folder with these links:
 | Tool proof | Schema, validated args, policy check, execution output, injected result, denied unsafe action. |
 | Security proof | Loopback binding, log boundary, RAG data boundary, tool permission boundary. |
 | Operations proof | Logs/metrics, resource state, restart check, backup/rollback, retest trigger. |
+| Deployment readiness audit | JSON/Markdown/CSV audit output proving the final deployment memo has complete or explicitly waived evidence rows. |
 | Mastery audit proof | JSON/Markdown audit output with no critical academic, mechanism, local-inference, system, or exam gaps. |
 | Final memo | Decision, rejected alternative, known limits, next version. |
 
@@ -104,6 +106,7 @@ The smallest acceptable project is:
 5. One academic explanation tying the observed behavior to tokenization, prefill/decode, KV cache, quantization, sampling, or evaluation.
 6. One security row proving the endpoint did not leave loopback.
 7. One deployment memo rejecting at least one alternative.
+8. One deployment readiness audit output or linked remediation row.
 
 This minimum proves local inference. It does not prove RAG, tools, multi-user serving, or maintainable operations.
 
@@ -139,6 +142,7 @@ You should be able to answer these without searching:
 | If a tool is present, who authorized execution? | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 | What prevents accidental exposure or data leakage? | [[LLM/Study/Local LLM Security and Privacy Runbook]] |
 | What changes would force a retest? | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] |
+| How do you know the deployment memo is ready to defend? | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 
 ## Pass, Hold, Fail
 
@@ -163,6 +167,7 @@ This blueprint is complete for one project when:
 - [ ] scheduler evidence is audited when the project changes concurrency, queue, cache, long-prompt, or deployment policy
 - [ ] RAG and tool paths are either proven or explicitly out of scope with a reason
 - [ ] security, operations, lifecycle, and deployment rows have pass/hold/fail decisions
+- [ ] [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] output is linked before accepting the final deployment memo
 - [ ] [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] has no critical gaps or links remediation rows
 - [ ] [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] links the final capstone note
 
@@ -191,3 +196,4 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner]]

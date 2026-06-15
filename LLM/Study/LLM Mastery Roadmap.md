@@ -54,11 +54,12 @@ Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practic
 34. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before judging a RAG assistant whose retrieval quality depends on local embedding or reranker inference.
 35. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
 36. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
-37. Use [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] to turn the academic and applied proof path into one buildable local assistant project.
-38. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
-39. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] and [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] to test whether the academic and applied knowledge is available without hand-holding, score the attempt, link proof, and route misses.
-40. Use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] to check whether the academic, mechanism, local-inference, system, and exam proof bundle has critical gaps before final defense.
-41. Build the capstone only after the local inference and evaluation gates are complete.
+37. Use [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] to check whether the workload, selected path, model/runtime, endpoint, benchmark, quality, privacy, operations, cost, rejected alternative, and retest proof are ready before accepting the deployment memo.
+38. Use [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] to turn the academic and applied proof path into one buildable local assistant project.
+39. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
+40. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] and [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] to test whether the academic and applied knowledge is available without hand-holding, score the attempt, link proof, and route misses.
+41. Use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] to check whether the academic, mechanism, local-inference, system, and exam proof bundle has critical gaps before final defense.
+42. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
 
@@ -218,6 +219,7 @@ Read:
 - [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]]
 
 Proof:
 
@@ -255,7 +257,7 @@ Proof:
 - Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] before the full harness when the first endpoint has no quality rows, then use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to score known-answer, schema, RAG/citation, long-context, multi-turn, and workload-specific prompts.
 - Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when local inference depends on function calling, structured output, tools, or agent loops, then use [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] when the result needs JSON, CSV, Markdown, and JSONL proof.
 - Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before fine-tuning a model to fix a local quality gap.
-- Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to convert benchmark, quality, security, cost, and ops evidence into a deployment choice.
+- Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to convert benchmark, quality, security, cost, and ops evidence into a deployment choice, then use [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] to check whether the proof bundle is ready.
 - Explain why KV cache, quantization, batch size, and context length change latency and throughput.
 - Compare at least two runtimes, such as Ollama versus LM Studio, Ollama versus llama.cpp, llama.cpp versus vLLM, or vLLM versus SGLang, with fixed prompts, sampler settings, context target, output cap, benchmark rows, concurrency evidence when relevant, and quality rows.
 
@@ -294,9 +296,9 @@ Complete these in order:
 8. **Evaluation harness:** evaluate the RAG/tool assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
 9. **Self-assessment:** use [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] for mixed retrieval practice, then pass [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] with [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]], run [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]], and link missed-question remediation.
 10. **Adaptation decision:** use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] to decide whether the workload needs prompting, RAG, SFT, LoRA/QLoRA, DPO, distillation, continued pretraining, or no training.
-11. **Deployment decision:** use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to write a trade-off memo choosing hosted API, local CPU/GPU, self-hosted serving, hybrid, or batch inference for one real workload.
+11. **Deployment decision:** use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to write a trade-off memo choosing hosted API, local CPU/GPU, self-hosted serving, hybrid, or batch inference for one real workload, then use [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] to audit the proof bundle before accepting the memo.
 
-Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] as each capstone step is completed. Use [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] as the final project spec before writing the deployment memo, then use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] to find any critical gaps before final defense.
+Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] as each capstone step is completed. Use [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] as the final project spec before writing the deployment memo, use [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] before accepting that memo, then use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] to find any critical gaps before final defense.
 
 ## Completion Checklist
 
@@ -331,6 +333,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can reduce a paper to claim, evidence, limitation, mechanism, local implication, and follow-up proof.
 - [ ] I can build and evaluate a small LLM application end to end.
 - [ ] I can defend one local LLM capstone project from paper claims through endpoint, client, RAG/tool extension, evaluation, security, operations, and deployment decision.
+- [ ] I can audit whether a deployment decision is ready by checking workload, selected path, model/runtime, endpoint, benchmark, quality, privacy, operations, cost, rejected alternative, and retest proof.
 
 ## References
 
@@ -342,6 +345,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
@@ -411,6 +415,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]

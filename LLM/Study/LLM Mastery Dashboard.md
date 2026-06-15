@@ -88,6 +88,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a local failure | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] | Failed layer, evidence, controlled next change |
 | You have quality doubts | [[LLM/Study/Local LLM Quality Evaluation Harness]] | Pass/hold/fail row |
 | You need to decide local vs hosted vs hybrid | [[LLM/Study/LLM Deployment Decision Matrix]] | Deployment memo |
+| You have a deployment memo and need to audit whether it is defensible | [[LLM/Study/LLM Deployment Readiness Audit Runner]] | Workload, path, model/runtime, endpoint, benchmark, quality, security, operations, cost, rejected alternative, and retest audit |
 
 ## Mastery Gates
 
@@ -127,6 +128,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Tool/schema runner | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |  |
 | Operations and safety | [[LLM/Study/Local LLM Security and Privacy Runbook]] |  |
 | Deployment decision | [[LLM/Study/LLM Deployment Decision Matrix]] |  |
+| Deployment readiness audit | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |  |
 | Capstone project | [[LLM/Study/Local LLM Capstone Project Blueprint]] |  |
 
 Status values should be links, not feelings: `not started`, `in progress: <artifact>`, `passed: <artifact>`, or `blocked: <diagnostic row>`.
@@ -190,6 +192,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One security/privacy runner output | [[LLM/Study/Local LLM Security and Privacy Runner]] |
 | One RAG evidence runner output | [[LLM/Study/Local RAG Evidence Runner]] |
 | One tool/structured-output runner output | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
+| One deployment readiness audit output | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -228,6 +231,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
+- [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
