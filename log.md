@@ -3303,3 +3303,35 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4964 files, 3093 Markdown files, 928 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add llama.cpp GGUF server evidence runner
+
+Scope: give the local-hosting path a dedicated proof gate for GGUF models served through `llama-server` or `llama-cpp-python` before OpenAI-compatible client, benchmark, runtime-comparison, or deployment evidence depends on that endpoint.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Command Cookbook.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM Hosting and Inference Lab.md`
+- `LLM/Study/Local LLM Runtime Comparison Lab.md`
+- `LLM/Study/Local llama.cpp GGUF Server Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local llama.cpp GGUF Server Runner]] with a standard-library Python runner that audits saved llama.cpp endpoint evidence without building, starting a server, downloading, or sending live inference.
+- The runner validates launch command, GGUF path, alias, loopback boundary, listener proof, `/health`, `/v1/models`, `/v1/chat/completions`, optional `/props`, optional `/metrics`, GPU/offload proof, and upstream metadata/compatibility/KV-cache cards.
+- Updated the LLM MOC, study index, command cookbook, hosting lab, practicum sequence, mastery dashboard, capstone workbook, and runtime comparison lab so llama.cpp GGUF server proof sits before generic API contract, client, benchmark, or runtime-comparison claims.
+- Checked current llama.cpp server README, llama.cpp README server section, llama.cpp build docs, and llama-cpp-python OpenAI-compatible server docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llama_cpp_gguf_server_runner.py` from the note.
+- llama.cpp runner fixture checks: complete loopback GGUF proof -> `pass` / `llama_cpp_server_ready`; non-loopback without approval -> `fail` / `llama_cpp_server_blocked`; `/health` loading -> `hold` / `llama_cpp_server_incomplete`; model id mismatch -> `fail` / `llama_cpp_server_blocked`; missing chat response -> `hold` / `llama_cpp_server_incomplete`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4965 files, 3094 Markdown files, 929 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

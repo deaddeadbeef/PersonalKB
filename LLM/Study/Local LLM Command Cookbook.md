@@ -226,9 +226,31 @@ $BaseUrl = "http://localhost:1234/v1"
 
 Pass signal: `/v1/models` returns the loaded model id, and that exact id works in `/v1/chat/completions`.
 
-## llama-cpp-python Server Smoke
+## llama.cpp GGUF Server Smoke
 
-Use this when you have a GGUF file and want an OpenAI-compatible local server.
+Use this when you have a GGUF file and want an OpenAI-compatible local server with explicit runtime control. For a native llama.cpp binary, start with `llama-server`; for a Python package boundary, use `llama-cpp-python`. After either path, use [[LLM/Study/Local llama.cpp GGUF Server Runner|Local llama.cpp GGUF Server Runner]] to validate the saved launch command, GGUF identity, loopback route, `/health`, `/v1/models`, chat response, metrics, and upstream metadata/compatibility handoffs before benchmark or client evidence depends on it.
+
+Native `llama-server` shape:
+
+```powershell
+llama-server `
+  -m "<path-to-model.gguf>" `
+  --alias "<served-model-id>" `
+  --host 127.0.0.1 `
+  --port 8080 `
+  -c 4096 `
+  -np 1 `
+  --metrics
+```
+
+Then use the shared OpenAI-compatible smoke with:
+
+```powershell
+$BaseUrl = "http://localhost:8080/v1"
+$Model = "<served-model-id>"
+```
+
+`llama-cpp-python` server shape:
 
 ```powershell
 python -m venv "$RunRoot\venv-llama-cpp"
@@ -581,6 +603,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
+- [[LLM/Study/Local llama.cpp GGUF Server Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]

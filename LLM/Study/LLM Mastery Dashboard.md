@@ -70,6 +70,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have model size, context, and hardware facts but no fit decision | [[LLM/Study/Local LLM Hardware Sizing Runner]] | Weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit status, and next route |
 | You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
 | You have artifact, runtime, tokenizer, or route facts but no compatibility decision | [[LLM/Study/Local LLM Runtime Compatibility Runner]] | Architecture, artifact, quantization, tokenizer, template, runtime, route, custody, sizing, and next proof audit |
+| You are serving a GGUF model with llama.cpp but have not proven the endpoint | [[LLM/Study/Local llama.cpp GGUF Server Runner]] | Launch command, GGUF path, alias, loopback listener, `/health`, `/v1/models`, chat response, metrics/offload, and upstream handoffs |
 | You need to install Ollama without losing the evidence trail | [[LLM/Study/Local LLM Windows Runtime Install Gate]] | Installer source, new-shell PATH, model-store inheritance, listener, and log proof |
 | You installed or opened Ollama and need a repeatable readiness verdict | [[LLM/Study/Local LLM Windows Runtime Install Runner]] | JSON, Markdown, CSV, and JSONL install-readiness verdict for command, version, model-store env, loopback listener, `/api/version`, and `/api/tags` |
 | You are ready to pull the first Ollama model | [[LLM/Study/Local LLM First Model Pull Gate]] | Model tag decision, store proof, pull output, list/tags/show metadata, and pass/hold/fail route |
@@ -150,6 +151,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |
 | Runtime compatibility runner | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |  |
+| llama.cpp GGUF server runner | [[LLM/Study/Local llama.cpp GGUF Server Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
 | Reasoning budget runner | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] |  |

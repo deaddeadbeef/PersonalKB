@@ -97,6 +97,7 @@ Route:
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local llama.cpp GGUF Server Runner]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 
 Default path:
@@ -127,6 +128,7 @@ Save:
 | First endpoint evidence audit output | Run card, preflight, runtime install state, model custody, runtime health, smoke response, debrief, boundary, and decision gates |
 | First quality probe runner output | Five request/response/output files, results JSON/CSV/Markdown, JSONL, auto-checks, human-review status, next action |
 | First inference evidence pack audit output | Endpoint audit, API contract, client, benchmark, quality, security, streaming scope, and final decision gates |
+| llama.cpp GGUF server runner output | Required when Stage 1 uses `llama-server` or `llama-cpp-python`: command, GGUF path, alias, loopback listener, `/health`, `/v1/models`, chat response, and offload/metrics handoffs |
 | First inference evidence pack | Runtime, model id, base URL, route, request body, response text, timing, safe binding |
 | Endpoint smoke row | Native route or OpenAI-compatible route, status, raw response, error if any |
 | First decision | keep / tune / stronger model / different runtime / stop |

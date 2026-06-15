@@ -90,6 +90,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]]
+- [[LLM/Study/Local llama.cpp GGUF Server Runner|Local llama.cpp GGUF Server Runner]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]]
@@ -206,6 +207,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] — validate artifact source identity, local bytes, inventory, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup plan before serving
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] — match model artifact, quantization, tokenizer, chat template, runtime, route, and workload before serving
 - [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] — turn artifact, runtime, tokenizer, chat-template, route, custody, and sizing facts into pass/hold/fail compatibility evidence
+- [[LLM/Study/Local llama.cpp GGUF Server Runner|Local llama.cpp GGUF Server Runner]] — validate saved `llama-server` or `llama-cpp-python` GGUF endpoint evidence before OpenAI-compatible contract, client, benchmark, or runtime-comparison proof
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] — prove Windows-to-WSL GPU visibility, Python environments, loopback ports, `/v1/models`, OpenAI-compatible smoke tests, metrics, and failure layers for vLLM or SGLang
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] — prove Docker GPU runtime, pinned vLLM/SGLang images, model/cache mounts, loopback port publishing, Compose, provider metrics, and Open WebUI routing
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] — host and prove local embedding/reranker endpoints before judging RAG retrieval or citation quality

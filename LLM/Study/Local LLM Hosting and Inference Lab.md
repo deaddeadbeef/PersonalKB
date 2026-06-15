@@ -161,7 +161,7 @@ What to observe:
 
 ## Lab 3: GGUF and Low-Level Control With llama.cpp
 
-Use this when you want to understand the runtime rather than hide it.
+Use this when you want to understand the runtime rather than hide it. Before this proof counts, the GGUF file should already have acquisition, metadata, compatibility, and KV-cache sizing evidence. Use [[LLM/Study/Local llama.cpp GGUF Server Runner|Local llama.cpp GGUF Server Runner]] after the smoke run to validate the saved launch command, GGUF path, alias, loopback listener, `/health`, `/v1/models`, chat response, metrics, and offload proof.
 
 ```powershell
 llama-cli -m C:\models\<model>.gguf -p "Explain grouped-query attention."
@@ -170,10 +170,10 @@ llama-cli -m C:\models\<model>.gguf -p "Explain grouped-query attention."
 Expose a local server:
 
 ```powershell
-llama-server -m C:\models\<model>.gguf --host 127.0.0.1 --port 8080
+llama-server -m C:\models\<model>.gguf --alias local-gguf --host 127.0.0.1 --port 8080 -c 4096 -np 1 --metrics
 ```
 
-Then query it with an OpenAI-compatible client or direct HTTP call, depending on the server build and route support.
+Then query `/health`, `/v1/models`, and `/v1/chat/completions`. Treat this as route proof only until the llama.cpp GGUF server runner says the evidence is ready.
 
 What to observe:
 
@@ -286,6 +286,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local llama.cpp GGUF Server Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
