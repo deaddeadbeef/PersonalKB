@@ -18,7 +18,7 @@ Move in order:
 1. Open [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] and choose today's recall prompt, study route, proof artifact, and evidence destination.
 2. Use [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] when you need one saved session artifact tying recall, mechanism, applied proof, and capstone route together.
 3. Map the field chronologically with [[LLM/LLM — Learning Path|LLM Learning Path]].
-4. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]], and [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] while reading architecture notes and papers.
+4. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]], [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]], and [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] while reading architecture notes and papers.
 5. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] and the mixed [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] for active recall.
 6. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to connect raw data, objectives, pretraining, post-training, adaptation, evaluation, and deployment.
 7. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to connect attention, next-token loss, gradients, validation, and generation in a toy model.
@@ -165,6 +165,7 @@ Read:
 - [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding|Speculative Decoding]]
 - [[LLM/2026 — Reasoning and Agents/Prompt Caching and Inference Infrastructure|Prompt Caching and Inference Infrastructure]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]]
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]]
@@ -264,7 +265,7 @@ Proof:
 
 Complete these in order:
 
-1. **Paper and dependency map:** use [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]], [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]], and [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] to explain the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]], translate at least five mechanisms into local inference controls, narrate one local request from artifact to operations decision, and interpret one benchmark row; then use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to remediate any paper you cannot explain.
+1. **Paper and dependency map:** use [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]], [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]], [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]], and [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] to explain the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]], defend claim/evidence/limitation rows, translate at least five mechanisms into local inference controls, narrate one local request from artifact to operations decision, and interpret one benchmark row; then use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to remediate any paper you cannot explain.
 2. **Training pipeline map:** use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to trace one capability from data and objective through post-training, evaluation, adaptation, and deployment.
 3. **Attention implementation:** complete [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 4. **Tiny decoder training:** complete [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] and explain next-token loss, causal masking, validation loss, and generation.
@@ -308,6 +309,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can compare two local runtimes with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative.
 - [ ] I can explain why loss, perplexity, benchmark, preference, calibration, quality, latency, and memory metrics prove different claims.
 - [ ] I can read a new LLM paper and place it in the field map.
+- [ ] I can reduce a paper to claim, evidence, limitation, mechanism, local implication, and follow-up proof.
 - [ ] I can build and evaluate a small LLM application end to end.
 
 ## References

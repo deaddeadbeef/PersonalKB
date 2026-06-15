@@ -35,6 +35,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]
+- [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
@@ -87,6 +88,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and tensor-shape checks
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a toy causal LM to connect tokens, logits, cross-entropy loss, gradients, validation loss, and generation
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] — trace raw data through pretraining, SFT, preference optimization, adaptation, evaluation, and deployment gates
+- [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] — record the claim, evidence, limitation, mechanism, and local implication for every fast-path paper
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — translate tokens, attention, KV cache, quantization, sampling, RAG, tools, and evaluation into local controls and failure diagnoses
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] — choose the lowest unproven prerequisite when a paper, lab, local endpoint, RAG, tool, or deployment proof fails
@@ -137,7 +139,7 @@ Study and review materials for the LLM knowledge base.
 
 ## Suggested 20-Paper Fast Path
 
-For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to turn each paper into a claim, mechanism, evidence, limitation, and deployment implication. Use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] to connect the papers into one academic-to-applied story.
+For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to turn each paper into a claim, mechanism, evidence, limitation, and deployment implication. Use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] to connect the papers into one academic-to-applied story, then use [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] to make the claim/evidence/limitation rows auditable.
 
 1. Attention Is All You Need (Vaswani et al. 2017)
 2. BERT (Devlin et al. 2018)

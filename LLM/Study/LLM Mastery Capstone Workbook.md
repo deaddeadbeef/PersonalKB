@@ -23,6 +23,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Concept dependency map | Dependency explanation using [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] | [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] | Can move from any failed paper, mechanism, endpoint, RAG, tool, evaluation, or deployment proof to the lowest unproven prerequisite. | Study map drafted; oral proof not yet passed |
 | Active recall bank | Mixed session using [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] |  | At least 20 mixed questions are answered from memory with 80 percent score, no zero in local inference, RAG/evaluation, or safety clusters, and missed prompts have remediation routes. | Not started |
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
+| Paper claim ledger | Claim/evidence/limitation rows from [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] |  | Every fast-path paper has a claim, evidence type, limitation, mechanism, local implication, and follow-up proof route. | Not started |
 | Study cadence | Weekly log from [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] |  | Each active week has recall answers, a mechanism bridge, one applied artifact, and a capstone link or repeat row. | Not started |
 | Daily mastery session | Filled [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] or dated session note |  | One session links a recall answer, corrected answer, mechanism-to-local consequence, applied proof or blocker, and next controlled action. | Not started |
 | Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
@@ -478,6 +479,7 @@ Next run:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
+- [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]

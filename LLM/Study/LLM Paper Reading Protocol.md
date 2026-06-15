@@ -9,7 +9,7 @@ tier-coverage: [practice, deep-dive]
 
 > **One-line summary** Reading LLM papers well means extracting the problem, method, evidence, limitations, and deployment implication, then placing the paper inside the field map instead of memorizing isolated claims.
 
-Use this with the 20-paper fast path in [[LLM/Study/LLM Study Index|LLM Study Index]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and the research-literacy gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]. The goal is not to read every paper linearly. The goal is to learn how to interrogate papers until you can tell what changed, what evidence supports it, and whether it matters for local models, RAG systems, inference, or evaluation.
+Use this with the 20-paper fast path in [[LLM/Study/LLM Study Index|LLM Study Index]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]], and the research-literacy gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]. The goal is not to read every paper linearly. The goal is to learn how to interrogate papers until you can tell what changed, what evidence supports it, and whether it matters for local models, RAG systems, inference, or evaluation.
 
 ## Reading Passes
 
@@ -166,6 +166,7 @@ The 20-paper fast path is complete when you can write a one-page map connecting 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
+- [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]

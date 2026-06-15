@@ -201,7 +201,7 @@ These gates are stricter than the oral questions.
 | Math and tensor shapes | Proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] for token IDs, embeddings, logits, loss, attention scores, weight memory, and KV cache. |
 | Architecture | Attention implementation or worked tensor-shape proof. |
 | Tiny decoder training | Toy causal LM proof using [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]. |
-| Paper literacy | One paper protocol row for each major cluster. |
+| Paper literacy | One paper protocol row for each major cluster, plus claim/evidence/limitation rows from [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]]. |
 | Mechanism bridge | One explanation row tying a local inference symptom to mechanism, control, evidence, and next decision. |
 | Metric interpretation | Metric card using [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] for one paper result or local model decision. |
 | Training pipeline | Capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]. |
