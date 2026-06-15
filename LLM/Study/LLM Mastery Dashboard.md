@@ -74,6 +74,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need repeated-prefix or prompt-cache proof | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] | Shared-prefix hits, changed-prefix controls, TTFT or prompt-eval timing, optional metrics, cache decision, CSV, Markdown, and JSONL row |
 | You need speculative decoding proof | [[LLM/Study/Local LLM Speculative Decoding Runner]] | No-spec/spec profiles, TTFT, decode-rate speedup, accepted-token signal, quality checks, CSV, Markdown, and JSONL row |
 | You need service-state, metrics, slots, logs, or resource-pressure proof | [[LLM/Study/Local LLM Observability and Operations Runner]] | `/v1/models`, loaded models, metrics, slots, local resource snapshot, redacted log tail, privacy posture, and next controlled action |
+| You need restart, upgrade, backup, or rollback proof | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] | Lifecycle manifest, baseline artifacts, backup, rollback target, route state, before/after/rollback decision, CSV, Markdown, and JSONL evidence |
 | You need parseable JSON, tool-call, result-injection, or denial proof | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] | Structured JSON, tool call, validation, policy, execution, result injection, denial, CSV, Markdown, and JSONL row |
 | You need first local inference proof | [[LLM/Study/Local LLM Windows First-Run Quickstart]] | Preflight, model id, response, listener proof |
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
@@ -104,6 +105,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Prompt cache runner | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] |  |
 | Speculative decoding runner | [[LLM/Study/Local LLM Speculative Decoding Runner]] |  |
 | Observability runner | [[LLM/Study/Local LLM Observability and Operations Runner]] |  |
+| Lifecycle runner | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |  |
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
@@ -167,6 +169,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One prompt-cache runner output | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] |
 | One speculative decoding runner output | [[LLM/Study/Local LLM Speculative Decoding Runner]] |
 | One observability runner output | [[LLM/Study/Local LLM Observability and Operations Runner]] |
+| One lifecycle runner output | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |
 | One tool/structured-output runner output | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
@@ -226,3 +229,4 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]

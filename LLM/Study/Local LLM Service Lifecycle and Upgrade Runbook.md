@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM server is maintainable only when startup mode, pinned runtime and model versions, cache paths, health checks, backups, upgrade steps, rollback steps, and post-change validation are written before the next change.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] proves model state, timings, logs, metrics, and resource pressure.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint and [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] proves model state, timings, logs, metrics, and resource pressure. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] when the change-freeze card, baseline artifacts, backup route, rollback route, and before/after/rollback decision need repeatable JSON, CSV, Markdown, and JSONL evidence.
 
 Use [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] before and after each lifecycle change so "the update helped" means a measured row changed. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when a restart, update, model move, or rollback changes behavior.
 
@@ -317,6 +317,7 @@ This runbook is complete for one local setup when all are true:
 - [ ] Runtime version, model id/revision/digest, cache path, startup mode, endpoint, and data volume are recorded.
 - [ ] Baseline benchmark, quality, and observability rows exist.
 - [ ] Backup location and restore method are written before upgrade.
+- [ ] [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] output is saved when the change affects a daily-use service, UI, model cache, runtime version, startup wrapper, or rollback target.
 - [ ] Upgrade changes one layer only, or a dependency split is recorded.
 - [ ] Rollback target is known and tested at least once for daily-use services.
 - [ ] Post-change validation includes health/model state, smoke response, client harness, benchmark, quality, and security checks.
@@ -329,6 +330,7 @@ Internal:
 
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]

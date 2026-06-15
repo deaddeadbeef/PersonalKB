@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Capture a no-generation operations snapshot for a local LLM service: route reachability, loaded model state, runtime metrics, slots, local resource evidence, redacted log tails, privacy posture, and the next controlled action.
 
-Use this after [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] defines the manual evidence standard. Use it before accepting a latency, memory, queue, cache, error, or service-state claim as real operations evidence.
+Use this after [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] defines the manual evidence standard. Use it before accepting a latency, memory, queue, cache, error, or service-state claim as real operations evidence. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] next when the observation will drive a restart, upgrade, model-cache move, UI update, startup change, or rollback.
 
 This runner does not send a generation request. It calls read-only endpoints such as `/v1/models`, Ollama `/api/ps`, Prometheus-style `/metrics`, and llama.cpp `/slots`, then optionally tails local logs and runs a local GPU snapshot. Use the benchmark, concurrency, prompt-cache, speculative-decoding, quality, or tool runners when the claim needs inference output.
 
@@ -890,6 +890,7 @@ The runner output is usable when:
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]]
 - [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
+- [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
