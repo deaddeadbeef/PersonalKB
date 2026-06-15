@@ -50,7 +50,7 @@ You do not need full paper mastery before the first local run. You do need enoug
 | 2 | Model custody and compatibility | Provenance and compatibility cards |
 | 3 | Repeatable client call | First client runner row, then client harness row |
 | 4 | Request controls | Sampler, context, and template rows |
-| 5 | Benchmark and first quality | Benchmark plus first quality or quality-harness decision |
+| 5 | Benchmark and first quality | Benchmark plus first quality or quality-evaluation runner decision |
 | 6 | Runtime comparison | Decision card with rejected alternative |
 | 7 | Service hardening | Observability, security, lifecycle rows |
 | 8 | RAG extension | Retrieval, citation, refusal, and failure artifacts |
@@ -201,6 +201,7 @@ Route:
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Quality Evaluation Runner]]
 
 Save:
 
@@ -210,8 +211,9 @@ Save:
 | Benchmark row | Model, runtime, quantization, hardware, context, TTFT, tokens/sec, memory, prompt class |
 | Metric card | Claim, metric family, workload, what the metric proves, what it misses |
 | Quality row | Prompt id, rubric scores, pass/hold/fail, failure owner, next action |
+| Quality evaluation runner output | Prompt/response proof, rubric scores, boundary-specific evidence, pass/hold/fail JSON, CSV, Markdown, and JSONL |
 
-Pass signal: you can say whether the endpoint is acceptable for one workload, not just whether it responds.
+Pass signal: you can say whether the endpoint is acceptable for one workload, not just whether it responds, and the saved quality rows pass the quality evaluation runner before result synthesis or deployment readiness depends on them.
 
 ## Stage 6: Compare Or Tune One Runtime Layer
 
@@ -406,6 +408,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Quality Evaluation Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]

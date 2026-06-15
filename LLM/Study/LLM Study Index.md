@@ -98,6 +98,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]]
 - [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]

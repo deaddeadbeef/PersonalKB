@@ -96,6 +96,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a saved local failure and need proof-quality diagnosis | [[LLM/Study/Local LLM Failure Triage Runner]] | Symptom, failed layer, proof, mechanism owner, ruled-out layers, and one controlled next action |
 | You need to know whether the prompt suite is good enough before scoring quality | [[LLM/Study/Local LLM Evaluation Set Design Runner]] | Workload, held-out/private coverage, contamination controls, rubric, and next-route audit |
 | You have quality doubts | [[LLM/Study/Local LLM Quality Evaluation Harness]] | Pass/hold/fail row |
+| You have scored prompt-suite rows and need machine-checkable quality proof | [[LLM/Study/Local LLM Quality Evaluation Runner]] | Prompt/response proof, rubric scores, boundary evidence, pass/hold/fail JSON, CSV, Markdown, and JSONL |
 | You used an LLM judge and need to know whether the score is trustworthy | [[LLM/Study/Local LLM Judge Calibration Runner]] | Human agreement, AB/BA order stability, position bias, verbosity bias, and next-route audit |
 | You have many local-run artifacts but no keep/tune/reject decision | [[LLM/Study/Local LLM Result Synthesis Runner]] | Selected candidate, evidence contradictions, missing proof, rejected alternative, and next action |
 | You need to decide local vs hosted vs hybrid | [[LLM/Study/LLM Deployment Decision Matrix]] | Deployment memo |
@@ -142,6 +143,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Evaluation set design | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
+| Quality evaluation runner | [[LLM/Study/Local LLM Quality Evaluation Runner]] |  |
 | Judge calibration | [[LLM/Study/Local LLM Judge Calibration Runner]] |  |
 | Result synthesis | [[LLM/Study/Local LLM Result Synthesis Runner]] |  |
 | RAG assistant | [[LLM/Study/Local RAG Minimal Python Harness]] |  |
@@ -228,6 +230,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One quality prompt-suite design audit | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| One quality evaluation runner output before result synthesis or deployment readiness depends on quality | [[LLM/Study/Local LLM Quality Evaluation Runner]] |
 | One judge calibration output when LLM-as-judge is used | [[LLM/Study/Local LLM Judge Calibration Runner]] |
 | One local result synthesis output before writing the deployment memo | [[LLM/Study/Local LLM Result Synthesis Runner]] |
 | One failure diagnosis | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
@@ -269,6 +272,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
+- [[LLM/Study/Local LLM Quality Evaluation Runner]]
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]

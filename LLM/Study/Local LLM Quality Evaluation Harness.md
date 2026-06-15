@@ -13,6 +13,8 @@ Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local 
 
 Use [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] before this harness when the prompt suite will support repeated keep, tune, reject, deploy, model-selection, runtime-selection, RAG, or tool decisions. That runner checks workload fit, held-out/private rows, contamination controls, expected behavior, rubric, pass criteria, and downstream routes before any quality score is trusted.
 
+Use [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] after scoring rows here when the prompt-suite output should become repeatable JSON, CSV, Markdown, and JSONL evidence. The harness explains what to test; the runner checks whether saved prompt artifacts, response artifacts, rubric scores, boundary-specific proof, and pass/hold/fail decisions are complete enough for result synthesis or deployment readiness.
+
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when quality depends on choosing, validating, denying, executing, or using tool calls, and use [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] when the tool boundary needs saved JSON/CSV/Markdown proof first.
 
 Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when the quality harness is deciding between runtimes rather than only judging one model. Runtime comparison keeps prompt suite, sampler, context, and output caps fixed so quality differences are not caused by request drift.
@@ -161,6 +163,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
+- [[LLM/Study/Local LLM Quality Evaluation Runner]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]

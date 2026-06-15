@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model decision is ready only when endpoint, compatibility, benchmark, evaluation-set, quality, safety, and operations evidence point to the same keep, tune, reject, or deploy action.
 
-Use this after [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]], and [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] have evidence rows. Use it before [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] so the final deployment memo starts from a reconciled local model/runtime decision, not a pile of unrelated artifacts.
+Use this after [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] have evidence rows. Use it before [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] so the final deployment memo starts from a reconciled local model/runtime decision, not a pile of unrelated artifacts.
 
 This runner does not call a model, benchmark an endpoint, scrape model pages, or choose a current model by name. It audits the evidence already collected for one workload and selected candidate.
 
@@ -57,7 +57,9 @@ Minimum manifest:
       "kind": "quality",
       "candidate_id": "ollama-qwen-small",
       "status": "pass",
-      "proof": "LLM/Study/Local LLM Quality Evaluation Harness.md",
+      "proof": "D:/llm-runs/quality-eval/quality-eval-quality-evaluation.md",
+      "quality_evaluation_runner": "D:/llm-runs/quality-eval/quality-eval-quality-evaluation.json",
+      "eval_set_design": "D:/llm-runs/eval-set-design/eval-set-design.json",
       "rubric": "factuality, grounding, format, safety",
       "result": "pass",
       "failure_owner": "quality",
@@ -83,7 +85,7 @@ By default, the runner expects these evidence kinds unless `required_kinds` over
 | `api_contract` | `/v1/models`, chat, stream or explicit non-streaming scope, and harmless failure |
 | `benchmark` | TTFT/TPOT/tokens/sec/latency/memory/context plus interpretation |
 | `evaluation_set_design` | held-out/private prompt-suite design and contamination/rubric proof |
-| `quality` | rubric, result/score, failure owner or next action; reasoning-budget audit when thinking mode supports the quality decision |
+| `quality` | quality evaluation runner output, rubric, result/score, failure owner or next action; reasoning-budget audit when thinking mode supports the quality decision |
 | `security_privacy` | endpoint exposure, data boundary, log/export boundary |
 | `operations` | owner, startup/restart, observability, backup/rollback or one-off waiver |
 | `rejected_alternative` | rejected candidate/path plus measured or policy reason |
@@ -417,6 +419,8 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
     elif kind == "quality":
         if not has_text(row, "rubric", "quality_bar", "prompt_suite", "score", "result"):
             findings.append(finding("hold", owner, "Quality row has no rubric, prompt suite, score, or result.", kind, "Add pass/hold/fail quality evidence for the workload."))
+        if not has_text(row, "quality_evaluation_runner", "quality_runner", "quality_audit", "quality_evaluation_audit"):
+            findings.append(finding("hold", owner, "Quality row has no quality evaluation runner output.", kind, "Run Local LLM Quality Evaluation Runner or link its JSON/Markdown output before result synthesis depends on quality."))
         if not has_text(row, "failure_owner", "next_action", "decision") and not has_any_metric(row, ("score", "pass_rate", "win_rate")):
             findings.append(finding("hold", owner, "Quality row has no failure owner, score, or next action.", kind, "Add human score, pass rate, failure owner, or next controlled action."))
         if not has_text(row, "eval_set_design", "evaluation_set_design", "prompt_suite_design", "heldout_proof"):
@@ -753,7 +757,7 @@ python .\local_llm_result_synthesis_runner.py
 
 | Gate | Required artifact | Pass signal |
 |---|---|---|
-| Result synthesis | `<run-id>-result-synthesis.json`, `<run-id>-result-synthesis.md`, `<run-id>-result-synthesis.csv`, and one `local-llm-result-synthesis-runs.jsonl` row | selected candidate has consistent proof for workload, model/runtime, endpoint/client, benchmark, eval-set design, quality, security, operations, rejected alternative, and review trigger before deployment memo |
+| Result synthesis | `<run-id>-result-synthesis.json`, `<run-id>-result-synthesis.md`, `<run-id>-result-synthesis.csv`, and one `local-llm-result-synthesis-runs.jsonl` row | selected candidate has consistent proof for workload, model/runtime, endpoint/client, benchmark, eval-set design, quality evaluation runner output, security, operations, rejected alternative, and review trigger before deployment memo |
 
 ## Completion Gate
 
@@ -761,7 +765,7 @@ python .\local_llm_result_synthesis_runner.py
 - [ ] workload and decision scope are explicit
 - [ ] endpoint/API proof exists outside a UI
 - [ ] benchmark metrics and interpretation exist
-- [ ] evaluation-set design and quality rows agree
+- [ ] evaluation-set design and quality evaluation runner rows agree
 - [ ] security/privacy and operations rows are pass or explicitly waived
 - [ ] at least one plausible alternative is rejected with evidence
 - [ ] the next review trigger is written down
@@ -775,6 +779,7 @@ python .\local_llm_result_synthesis_runner.py
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Quality Evaluation Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]

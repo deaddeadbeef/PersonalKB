@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, paper claim audit, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, model custody, artifact custody audit, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality |
+| local-inference | workload/model selection, model custody, artifact custody audit, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, recall/remediation audit, exam run sheet, capstone workbook/final note |
 
@@ -316,8 +316,8 @@ DEFAULT_GATES = [
         "required": True,
         "critical": True,
         "status": "hold",
-        "route": "LLM/Study/Local LLM Quality Evaluation Harness",
-        "pass_signal": "Workload prompt suite has pass/hold/fail decisions and failure owners.",
+        "route": "LLM/Study/Local LLM Quality Evaluation Runner",
+        "pass_signal": "Saved prompt-suite cases have prompt and response proof, rubric scores, boundary-specific evidence, and pass/hold/fail runner output.",
     },
     {
         "gate_id": "system-rag-or-tool",
@@ -1011,7 +1011,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
-- [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Quality Evaluation Runner]]
 - [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
