@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Local LLM hosting is easier to reason about when every runtime decision is tied to a model mechanism: tokens, attention, positional encoding, KV cache, quantization, sampling, batching, RAG, tools, and evaluation.
 
-Use this after [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] and before the local inference labs. The paper map explains how the field got here. This bridge explains why the academic mechanisms show up as concrete local knobs, failures, and evidence rows.
+Use this after [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] and before the local inference labs. The paper map explains how the field got here. This bridge explains why the academic mechanisms show up as concrete local knobs, failures, and evidence rows. Use [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] when you need the whole local serving story from model bytes to operations decision.
 
 ## The Bridge Rule
 
@@ -138,6 +138,7 @@ Internal routes:
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
+- [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]

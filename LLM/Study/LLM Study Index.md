@@ -36,6 +36,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]]
@@ -86,6 +87,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a toy causal LM to connect tokens, logits, cross-entropy loss, gradients, validation loss, and generation
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] — trace raw data through pretraining, SFT, preference optimization, adaptation, evaluation, and deployment gates
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — translate tokens, attention, KV cache, quantization, sampling, RAG, tools, and evaluation into local controls and failure diagnoses
+- [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] — choose the lowest unproven prerequisite when a paper, lab, local endpoint, RAG, tool, or deployment proof fails
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] — run mixed recall prompts that combine academic mechanisms with local inference, RAG, tools, safety, and deployment decisions
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — choose today's recall prompt, study route, proof artifact, evidence destination, and next action without searching the whole vault

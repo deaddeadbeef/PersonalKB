@@ -78,6 +78,7 @@ Choose one applied path. If the endpoint is not installed yet, the applied proof
 | Applied state | Route | Minimum artifact |
 |---|---|---|
 | No runtime installed | [[LLM/Study/Local LLM First Run Readiness Snapshot]] | readiness row or first execution decision |
+| Can run a command but cannot explain the whole path | [[LLM/Study/Local LLM End-to-End Mental Model]] | one request explained from artifact, tokenizer, runtime, prefill, decode, route, client, quality, and operations |
 | Ready for first Ollama run | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | run folder plan or saved endpoint evidence |
 | Endpoint works but evidence is thin | [[LLM/Study/Local LLM First Inference Evidence Pack]] | first-run evidence row |
 | Need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | saved command output |
@@ -149,6 +150,7 @@ This session is complete only when:
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
