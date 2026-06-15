@@ -299,7 +299,7 @@ DEFAULT_GATES = [
         "critical": True,
         "status": "hold",
         "route": "LLM/Study/Local LLM First Endpoint Evidence Audit Runner",
-        "pass_signal": "The first endpoint run folder has checked run card, preflight, runtime install state, model custody, runtime health, smoke response, debrief, boundary, and decision gates.",
+        "pass_signal": "The first endpoint run folder has checked run card, preflight, runtime install state, model custody, runtime health, smoke response, pass-state debrief, template/tokenizer compatibility, boundary, and decision gates.",
     },
     {
         "gate_id": "local-api-client",

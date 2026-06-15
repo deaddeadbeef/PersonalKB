@@ -8,9 +8,9 @@ last-verified: 2026-06-15
 
 # Local LLM First Endpoint Evidence Audit Runner
 
-> **One-line summary** A first local LLM endpoint counts only when the run folder proves machine state, model tag, runtime health, native or OpenAI-compatible response, debrief, security boundary, and next decision.
+> **One-line summary** A first local LLM endpoint counts only when the run folder proves machine state, model tag, runtime health, native or OpenAI-compatible response, health-bound debrief, template/tokenizer compatibility, security boundary, and next decision.
 
-Use this after [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] or [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] have produced files in a first-run folder.
+Use this after [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] or [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]], and [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] have produced files in a first-run folder.
 
 The first endpoint is not proven by a screenshot, a memory of a chat response, or one command printed in the terminal. It is proven when another person can inspect the run folder and see what machine, runtime, model, route, prompt, response, timing, boundary, and decision were used.
 
@@ -25,6 +25,7 @@ The first endpoint is not proven by a screenshot, a memory of a chat response, o
 | Runtime health | listener, model-list, loaded-model, OpenAI-compatible model ids | proves readiness before generation |
 | Smoke response | native route and, when required, OpenAI-compatible route | proves the model can answer through the intended endpoint |
 | Debrief | parsed text, timing conversion, mechanism owner, quality boundary | turns raw response into interpretable evidence |
+| Template/tokenizer compatibility | first-response-bound compatibility runner output | proves chat formatting, role boundaries, stop behavior, and downstream quality claims are not detached from route proof |
 | Decision | keep, tune, rerun, replace model, replace runtime, stop, or diagnose | prevents route proof from being mistaken for quality or deployment readiness |
 
 ## Manifest Shape
@@ -73,7 +74,8 @@ Use overrides when the first run is LM Studio, llama.cpp, vLLM, SGLang, or a nat
 | `smoke-summary` | `first-smoke-request/*summary.json` or smoke summary JSON | yes |
 | `native-response` | native Ollama response JSON or native response from smoke runner | yes |
 | `openai-response` | OpenAI-compatible response JSON | yes unless `require_openai_route` is false |
-| `first-response-debrief` | `first-response-debrief/*.json` or debrief JSON | yes |
+| `first-response-debrief` | `first-response-debrief/*.json` or debrief JSON with status `pass` | yes |
+| `template-tokenizer-compatibility` | `chat-template-tokenizer-compatibility-runs/*/*chat-template-compatibility.json` or compatibility JSON with status `pass` | yes |
 | `decision` | decision note, decision text, or first endpoint decision row | yes |
 | `quality-boundary` | first quality probe output or an explicit note that quality is not proven by smoke | optional but recommended |
 
@@ -171,8 +173,22 @@ DEFAULT_GATES = [
         "critical": True,
         "globs": ["first-response-debrief/*.json", "*debrief*.json"],
         "route": "LLM/Study/Local LLM First Response Debrief Runner",
-        "accepted_statuses": ["pass", "hold"],
-        "pass_signal": "The saved first response has timing and mechanism interpretation.",
+        "accepted_statuses": ["pass"],
+        "pass_signal": "The saved first response has health-bound timing and mechanism interpretation.",
+    },
+    {
+        "gate_id": "template-tokenizer-compatibility",
+        "required": True,
+        "critical": True,
+        "globs": [
+            "chat-template-tokenizer-compatibility-runs/*/*chat-template-compatibility.json",
+            "chat-template-tokenizer-compatibility-runs/*.json",
+            "*/*chat-template-compatibility.json",
+            "*chat-template*compatibility*.json",
+        ],
+        "route": "LLM/Study/Chat Template and Tokenizer Compatibility Runner",
+        "accepted_statuses": ["pass"],
+        "pass_signal": "The endpoint has health-bound template, tokenizer, route, stop, and downstream-evidence compatibility proof.",
     },
     {
         "gate_id": "decision",
@@ -289,7 +305,7 @@ def status_from_data(data: Any) -> str:
         text = norm(value)
         if not text:
             continue
-        if text in {"pass", "ready", "ok", "compatible", "first-endpoint-evidence-ready", "smoke-ready"}:
+        if text in {"pass", "ready", "ok", "compatible", "first-endpoint-evidence-ready", "smoke-ready", "chat-template-compatibility-ready"}:
             return "pass"
         if text in {"hold", "partial", "incomplete", "not-ready", "blocked"}:
             return "hold"
@@ -598,7 +614,7 @@ python .\first-endpoint-evidence-audit.py
 
 | Status and decision | Meaning | Next route |
 |---|---|---|
-| `pass/first_endpoint_evidence_ready` | all critical first endpoint evidence is present and producer statuses are acceptable | link the audit output in [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] and [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] |
+| `pass/first_endpoint_evidence_ready` | all critical first endpoint evidence is present, the debrief is pass, and template/tokenizer compatibility is pass | link the audit output in [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] and [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] |
 | `hold/first_endpoint_evidence_incomplete` | a required file is missing or a producer output is held | complete the routed gate before treating the endpoint as proven |
 | `fail/first_endpoint_evidence_failed` | a producer output reports failed or error | diagnose with [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] before rerunning |
 
@@ -616,6 +632,7 @@ Copy this row into the evidence pack or capstone workbook after the runner passe
 | Native route proof |  |
 | OpenAI-compatible route proof |  |
 | Debrief output |  |
+| Template/tokenizer compatibility output |  |
 | Missing gate |  |
 | Next action |  |
 
@@ -627,7 +644,8 @@ This runner is useful when:
 - [ ] model tag or artifact custody is saved
 - [ ] runtime health exists before generation
 - [ ] native and required compatibility response files exist
-- [ ] first response debrief exists
+- [ ] first response debrief exists and is `pass`
+- [ ] template/tokenizer compatibility output exists and is `pass`
 - [ ] a decision row states route proof, quality boundary, and next action
 - [ ] the audit output is linked into the evidence pack or capstone workbook
 
@@ -639,8 +657,16 @@ This runner is useful when:
 - [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
+
+External/current sources checked 2026-06-15:
+
+- [Ollama API introduction](https://docs.ollama.com/api/introduction)
+- [Ollama generate endpoint](https://docs.ollama.com/api/generate)
+- [Ollama chat endpoint](https://docs.ollama.com/api/chat)
+- [Ollama OpenAI compatibility](https://docs.ollama.com/api/openai-compatibility)

@@ -3010,3 +3010,33 @@ Verification:
 - Mastery evidence audit default manifest -> `hold`, 42 gates, 42 holds, with `local-template-tokenizer-compatibility` requiring health-bound first-response debrief evidence.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Require template compatibility in endpoint audit
+
+Scope: tighten the first endpoint evidence audit so a local endpoint cannot count unless the health-bound response debrief and template/tokenizer compatibility packet both pass.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM First Endpoint Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Changed the first endpoint evidence audit runner so `first-response-debrief` must report `pass`; a held debrief no longer satisfies endpoint proof.
+- Added required `template-tokenizer-compatibility` evidence to the endpoint audit default gate set.
+- Routed the new gate to [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] and required compatibility JSON to report `pass`.
+- Updated the mastery audit gate, dashboard, capstone workbook, LLM MOC, and study index to name pass-state debrief plus template/tokenizer compatibility as endpoint evidence.
+- Checked current Ollama API, generate, chat, and OpenAI-compatible references on 2026-06-15.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `first_endpoint_evidence_audit.py` from the note.
+- Endpoint audit fixtures: complete run -> `pass` with 12 gates, 11 pass, 1 optional skip; missing template compatibility -> `hold`; held debrief -> `hold`; failed template compatibility -> `fail`.
+- Mastery evidence audit default manifest -> `hold`, 42 gates, 42 holds, with `local-first-endpoint-evidence-audit` requiring template/tokenizer compatibility evidence.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
