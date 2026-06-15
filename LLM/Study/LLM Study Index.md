@@ -93,6 +93,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local llama.cpp GGUF Server Runner|Local llama.cpp GGUF Server Runner]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
@@ -210,6 +211,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local llama.cpp GGUF Server Runner|Local llama.cpp GGUF Server Runner]] — validate saved `llama-server` or `llama-cpp-python` GGUF endpoint evidence before OpenAI-compatible contract, client, benchmark, or runtime-comparison proof
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] — prove Windows-to-WSL GPU visibility, Python environments, loopback ports, `/v1/models`, OpenAI-compatible smoke tests, metrics, and failure layers for vLLM or SGLang
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] — prove Docker GPU runtime, pinned vLLM/SGLang images, model/cache mounts, loopback port publishing, Compose, provider metrics, and Open WebUI routing
+- [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] — prove Open WebUI is connected to the intended local provider, model, loopback boundary, persisted data, redacted config/logs, and harmless transcript before UI output supports app or capstone claims
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] — host and prove local embedding/reranker endpoints before judging RAG retrieval or citation quality
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — choose a quantization format, sweep CPU/GPU offload, test KV-cache precision, and accept only candidates that pass benchmark and quality gates
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] — compare two local runtimes with frozen prompts, sampler settings, context target, benchmark rows, quality rows, and a decision card

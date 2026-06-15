@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM is not application-ready because a client script worked once; it is application-ready when the app boundary, request path, response handling, failure behavior, privacy/logging policy, evaluation handoff, operations handoff, and promotion decision are all saved as evidence.
 
-Use this after [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] or [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] proves a reusable client call. Use it before [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] or [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] when a local endpoint is being wired into a real app, UI, CLI job, notebook workflow, RAG assistant, or tool loop.
+Use this after [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] or [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] proves a reusable client call. If the user-facing UI is Open WebUI, run [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] before treating the UI transcript as app evidence. Use this before [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] or [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] when a local endpoint is being wired into a real app, UI, CLI job, notebook workflow, RAG assistant, or tool loop.
 
 This runner does not call a model, open a UI, run a web server, or judge answer quality. It audits a manifest of artifacts already produced by the app integration pass. That keeps the proof separate from one-off chat success, and it prevents a deployment memo from hiding missing app behavior behind endpoint-only evidence.
 
@@ -656,6 +656,7 @@ This runner is complete for one app integration when:
 
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]

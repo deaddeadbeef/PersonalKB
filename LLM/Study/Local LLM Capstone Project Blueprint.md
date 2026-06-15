@@ -86,6 +86,7 @@ Create one dated capstone note or folder with these links:
 | Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing, and first endpoint evidence audit output. |
 | Failure triage proof | Any failed local run has symptom, failed layer, proof link, mechanism owner, ruled-out layers, and one controlled next action from [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]]. |
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
+| Open WebUI proof | When Open WebUI is used, UI identity, loopback boundary, provider route, expected model visibility, transcript, persistent data path, secret-key proof, redacted config/logs, and handoffs from [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]]. |
 | Application integration proof | App contract, endpoint contract, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation handoff, operations handoff, and promotion decision from [[LLM/Study/Local LLM Application Integration Evidence Runner|Local LLM Application Integration Evidence Runner]]. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
 | Scheduler proof | Scheduler evidence audit output when concurrency, queue, cache, long-prompt, or serving-policy decisions affect the project. |
@@ -175,6 +176,7 @@ This blueprint is complete for one project when:
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
 - [ ] any failed local run has a failure triage runner output before benchmark, quality, or deployment evidence depends on the rerun
 - [ ] the client proof is reproducible without UI-only steps
+- [ ] any Open WebUI transcript has Open WebUI provider integration runner output before it supports app, lifecycle, security, or final capstone evidence
 - [ ] any app, CLI, UI, job, RAG, or tool-loop integration has an application integration evidence runner output before result synthesis or deployment readiness
 - [ ] the evaluation set design audit is linked before the full quality row
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
@@ -208,6 +210,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]

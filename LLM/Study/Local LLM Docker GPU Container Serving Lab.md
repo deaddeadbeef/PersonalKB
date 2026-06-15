@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]], [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]], and, on Windows GPU workstations, [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]].
 
-Then use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for endpoint smoke tests, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] before generic client wiring, [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] for logs/metrics/resource pressure, [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] for startup/backup/rollback, and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before exposing anything beyond loopback.
+Then use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for endpoint smoke tests, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] before generic client wiring, [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] when Open WebUI becomes the user-facing route, [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] for logs/metrics/resource pressure, [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] for startup/backup/rollback, and [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before exposing anything beyond loopback.
 
 ## Outcome
 
@@ -347,6 +347,8 @@ Open WebUI evidence to save:
 | Test prompt through UI | Proves the UI reaches the already-proven provider. |
 | Backup/restore note | Required before treating the UI as persistent. |
 
+After saving these artifacts, run [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] so the Open WebUI transcript is tied to the intended provider, expected model, loopback boundary, persistent data path, and secret-key handling before it supports app, lifecycle, or capstone evidence.
+
 ## Phase 8: Observability And Teardown
 
 Before calling the container setup usable, capture:
@@ -409,6 +411,7 @@ This lab is complete when you have:
 - [ ] `/metrics` response or explicit unsupported/flag-required note
 - [ ] Compose file validated with `docker compose config`
 - [ ] Open WebUI connected only after provider proof, or explicitly skipped
+- [ ] Open WebUI provider integration runner output saved when UI transcript or provider routing evidence is used
 - [ ] teardown/rollback command and preserved-state decision
 - [ ] next action: keep container path, compare runtimes, add lifecycle service, add UI, fix Docker/GPU layer, or return to non-container serving
 
@@ -422,6 +425,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]

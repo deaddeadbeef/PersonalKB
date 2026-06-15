@@ -86,6 +86,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have route proof and need a first quality signal | [[LLM/Study/Local LLM First Quality Probe Suite]] | Private prompt-suite outputs, script-assisted checks, human scores, and pass/hold/fail owner |
 | You want the first quality signal captured as runnable artifacts | [[LLM/Study/Local LLM First Quality Probe Runner]] | Passing endpoint audit, five request/response/output files, results JSON/CSV/Markdown, JSONL, auto-checks, and next action |
 | You have a local `/v1` endpoint and need a client-safe API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] | `/v1/models`, non-streaming chat, streaming, wrong-model failure, contract decision, and JSONL handoff |
+| You connected Open WebUI to a local provider and need to know whether the UI evidence counts | [[LLM/Study/Local Open WebUI Provider Integration Runner]] | Open WebUI identity, loopback boundary, provider route, expected model visibility, transcript, persistence, secret handling, and handoffs |
 | You have an API contract and need sampler controls fixed | [[LLM/Study/Decoding and Sampling Controls Runner]] | Baseline, temperature, seed, stop-string, output-cap, CSV, Markdown, and JSONL evidence |
 | You have thinking-mode or reasoning-effort evidence and need to know whether it is worth the cost | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] | Effort sweep, parser separation, trace policy, latency cost, quality delta, selected effort, and retest trigger |
 | You have an API contract and need a reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] | Python client script, request/response/output files, JSONL row, and next route |
@@ -153,6 +154,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Runtime compatibility runner | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |  |
 | llama.cpp GGUF server runner | [[LLM/Study/Local llama.cpp GGUF Server Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
+| Open WebUI provider integration | [[LLM/Study/Local Open WebUI Provider Integration Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
 | Reasoning budget runner | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] |  |
 | Context/token budget runner | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |  |
@@ -243,6 +245,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One artifact custody audit output before compatibility, serving, benchmark, or deployment evidence depends on local bytes | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |
 | One runtime compatibility runner output before model pull, runtime health, smoke testing, or benchmarking | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
+| One Open WebUI provider integration runner output before UI transcripts support app, security, lifecycle, or capstone claims | [[LLM/Study/Local Open WebUI Provider Integration Runner]] |
 | One decoding control runner output | [[LLM/Study/Decoding and Sampling Controls Runner]] |
 | One reasoning-budget runner output before quality, runtime, result-synthesis, or deployment decisions depend on thinking mode | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] |
 | One first client harness run | [[LLM/Study/Local LLM First Client Harness Runner]] |
@@ -350,6 +353,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM Application Integration Evidence Runner]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]

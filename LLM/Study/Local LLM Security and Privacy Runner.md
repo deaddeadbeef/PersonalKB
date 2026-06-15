@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Capture a no-generation security and privacy evidence packet for a local LLM service before trusting logs, RAG data, tools, UI storage, or any non-loopback exposure.
 
-Use this after [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] defines the manual checklist. Use it before exposing Ollama, LM Studio, vLLM, SGLang, llama.cpp, Open WebUI, or a compatible proxy beyond one-person loopback use. Use it again after a restart, upgrade, cache move, UI change, RAG corpus change, tool integration, reverse proxy change, or tunnel setup.
+Use this after [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] defines the manual checklist. Use it before exposing Ollama, LM Studio, vLLM, SGLang, llama.cpp, Open WebUI, or a compatible proxy beyond one-person loopback use. If Open WebUI is the UI path, pair it with [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] so provider routing, persistence, and secret-key proof are checked alongside exposure and export boundaries. Use it again after a restart, upgrade, cache move, UI change, RAG corpus change, tool integration, reverse proxy change, or tunnel setup.
 
 This runner does not send a generation request. It only checks endpoint shape, host exposure, read-only model-list routes, optional Ollama state routes, config/log evidence, RAG/tool path boundaries, UI/export boundaries, and obvious secret leaks in local files you explicitly name.
 
@@ -816,6 +816,7 @@ Expected fixture pass: status `pass`, decision `loopback_private_ready`, `/v1/mo
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]

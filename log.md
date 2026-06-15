@@ -3335,3 +3335,37 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4965 files, 3094 Markdown files, 929 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add Open WebUI provider integration runner
+
+Scope: close the UI/provider evidence gap so Open WebUI transcripts only support local-LLM app, lifecycle, security, or capstone claims after the UI identity, provider route, expected model, storage, secrets, and boundary are proven.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Application Integration Evidence Runner.md`
+- `LLM/Study/Local LLM Capstone Project Blueprint.md`
+- `LLM/Study/Local LLM Docker GPU Container Serving Lab.md`
+- `LLM/Study/Local LLM Security and Privacy Runner.md`
+- `LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook.md`
+- `LLM/Study/Local Open WebUI Provider Integration Runner.md`
+- `_ops/reports/audit-broken-links.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local Open WebUI Provider Integration Runner]] with a standard-library Python runner that audits saved Open WebUI evidence without starting a UI, clicking a browser, or sending live inference.
+- The runner checks UI install identity, loopback exposure, provider base URL classification, endpoint/security proof handoffs, model visibility, harmless transcript text, persistent data path, `WEBUI_SECRET_KEY` proof, redacted config/log artifacts, export boundary, and optional app/lifecycle proof.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, Docker GPU serving lab, app integration runner, security/privacy runner, lifecycle runbook, and capstone blueprint through the Open WebUI provider gate.
+- Checked current Open WebUI docs, quick start, OpenAI-compatible provider setup, environment configuration, hardening, FAQ, and upstream README on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_open_webui_provider_integration_runner.py` from the note.
+- Open WebUI runner fixture checks: complete loopback UI/provider proof -> `pass` / `open_webui_provider_ready`; non-loopback UI bind without approval -> `fail` / `open_webui_provider_blocked`; missing `WEBUI_SECRET_KEY` proof -> `hold` / `open_webui_provider_incomplete`; expected model absent from model visibility -> `fail`; transcript missing expected harmless text -> `hold`; raw secret-like value in config/log artifact -> `fail`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4966 files, 3095 Markdown files, 930 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

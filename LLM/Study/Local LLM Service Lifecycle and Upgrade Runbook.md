@@ -14,7 +14,7 @@ Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 
 Use [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] before and after each lifecycle change so "the update helped" means a measured row changed. Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] when a restart, update, model move, or rollback changes behavior.
 
-Use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before this runbook if the service is a Dockerized vLLM/SGLang provider or Open WebUI. The Docker lab proves the image tag, GPU runtime, cache mount, loopback mapping, Compose file, Open WebUI volume/secret boundary, and first rollback/teardown command that this lifecycle runbook later maintains.
+Use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before this runbook if the service is a Dockerized vLLM/SGLang provider or Open WebUI. Use [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] before lifecycle maintenance claims depend on an Open WebUI transcript or provider setting. The Docker lab proves the image tag, GPU runtime, cache mount, loopback mapping, Compose file, Open WebUI volume/secret boundary, and first rollback/teardown command that this lifecycle runbook later maintains.
 
 This runbook turns a working endpoint into an owned service. The academic mechanism is still the same: serving systems manage memory, queues, KV cache, prefix caches, latency, and quality trade-offs. The lifecycle layer decides how those choices survive restarts, upgrades, model-cache moves, prompt-cache moves, UI updates, and rollback.
 
@@ -332,6 +332,7 @@ Internal:
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]

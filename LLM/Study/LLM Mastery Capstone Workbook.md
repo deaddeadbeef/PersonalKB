@@ -79,6 +79,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Template/tokenizer compatibility runner | Results JSON/CSV/Markdown from [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] |  | Health-bound first-response debrief, model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and benchmark or quality link are audited before model-quality blame. | Not started |
 | WSL CUDA serving path | Setup card from [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] when using vLLM/SGLang from Windows |  | Windows driver, WSL 2 distro, WSL GPU visibility, Python environment, launch command, `/v1/models`, Windows client response, logs, metrics, and failure layer are captured. | Not started |
 | Docker GPU container path | Setup card from [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] when using containerized vLLM/SGLang or Open WebUI |  | Docker authority, container GPU proof, image tag/digest, model/cache mount, loopback port, `/v1/models`, host chat smoke, logs, metrics, Compose config, Open WebUI provider route, and teardown/rollback decision are captured. | Not started |
+| Open WebUI provider integration | Results JSON/CSV/Markdown from [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] when Open WebUI is used |  | UI identity, host boundary, provider base URL, endpoint proof, expected model visibility, transcript, persistent data path, secret-key proof, redacted config/logs, and handoffs are captured before UI evidence supports app or capstone claims. | Not started |
 | Quantization and GPU offload | Decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] |  | Baseline quant, accepted quant, rejected quant, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, benchmark row, and quality row are captured. | Not started |
 | Runtime comparison | Decision card from [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] |  | At least two plausible runtimes are compared with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
@@ -549,6 +550,7 @@ Next run:
 - [ ] Any chat-behavior, instruction-following, role-boundary, structured-output, benchmark, quality, or deployment decision has template/tokenizer compatibility runner output or a linked waiver.
 - [ ] Any vLLM/SGLang path from Windows has WSL CUDA setup proof before scheduler, throughput, or deployment claims.
 - [ ] Any containerized vLLM/SGLang/Open WebUI path has Docker GPU container proof before scheduler, UI, lifecycle, or deployment claims.
+- [ ] Any Open WebUI transcript used as evidence has provider integration runner output proving UI identity, provider route, expected model visibility, persistence, secret handling, and local boundary.
 - [ ] The runtime choice has a comparison decision card, or the skipped comparison is explicitly justified.
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] The first reusable client runner logs request, response, output, and JSONL evidence before broader client automation.
@@ -644,6 +646,7 @@ Next run:
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
+- [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
