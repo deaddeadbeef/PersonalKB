@@ -28,6 +28,7 @@ If there is no saved answer or evidence row, the session was reading, not master
 
 | Area | Status | Next proof |
 |---|---|---|
+| Current status snapshot | Held on academic defense and first local endpoint proof | Start from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] |
 | Field map and papers | Not yet proven today | Explain one paper cluster without notes |
 | Math and mechanisms | Not yet proven today | Work one token/logit/attention/KV-cache explanation |
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
@@ -44,6 +45,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | If the problem is | Go to | Produce |
 |---|---|---|
 | You do not know what to study next | [[LLM/Study/LLM Concept Dependency Map]] | Lowest unproven dependency |
+| You need the current proof state before choosing work | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] | Current pass/hold/not-started map, live machine evidence, and exact next academic/applied actions |
 | You need to turn this study block into evidence | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] | Recall answer, mechanism bridge, applied artifact or blocker, capstone link |
 | You are ready to turn the study path into one buildable project | [[LLM/Study/Local LLM Capstone Project Blueprint]] | Local assistant blueprint, evidence bundle, defense questions, and pass/hold/fail decision |
 | You have proof links and need to know whether mastery evidence is defensible | [[LLM/Study/LLM Mastery Evidence Audit Runner]] | Academic, mechanism, local-inference, system, exam, pass/hold/fail, and next-route audit |
@@ -152,6 +154,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Mastery evidence audit | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |  |
 | Mastery gap triage | [[LLM/Study/LLM Mastery Gap Triage Runner]] |  |
+| Mastery status snapshot | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] |  |
@@ -231,6 +234,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | Evidence to add | Destination |
 |---|---|
 | One unanswered recall prompt and corrected answer | [[LLM/Study/LLM Active Recall Question Bank]] or dated study note |
+| One dated current-state snapshot | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] |
 | One recall/remediation audit output | [[LLM/Study/LLM Recall and Remediation Audit Runner]] |
 | One paper claim/evidence/limitation row | [[LLM/Study/LLM Paper Claim Ledger]] |
 | One paper claim audit output | [[LLM/Study/LLM Paper Claim Audit Runner]] |
@@ -336,6 +340,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Study Cadence]]
+- [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]]
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]

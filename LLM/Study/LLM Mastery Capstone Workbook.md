@@ -20,6 +20,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Gate | Required artifact | Proof link/path | Pass signal | Status |
 |---|---|---|---|---|
 | Dashboard status | Current snapshot from [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] | [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] | Today's recall prompt, proof artifact, evidence destination, and next action are filled with links or dated evidence. | Not started |
+| Dated status snapshot | Current-state card from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] | Current academic, mechanism, local-inference, setup, and endpoint proof states are explicitly marked pass/hold/not-started with next routes. | Hold: status known; proofs incomplete |
 | Concept dependency map | Dependency explanation using [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] | [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] | Can move from any failed paper, mechanism, endpoint, RAG, tool, evaluation, or deployment proof to the lowest unproven prerequisite. | Study map drafted; oral proof not yet passed |
 | Active recall bank | Mixed session using [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] |  | At least 20 mixed questions are answered from memory with 80 percent score, no zero in local inference, RAG/evaluation, or safety clusters, and missed prompts have remediation routes. | Not started |
 | Recall remediation audit | Results JSON/CSV/Markdown from [[LLM/Study/LLM Recall and Remediation Audit Runner|LLM Recall and Remediation Audit Runner]] |  | Recall/exam rows cover academic, mechanism, local-inference, and system prompts; low-score rows have route, remediation artifact, and next review; hard-fail domains have no zero. | Not started |
@@ -587,6 +588,7 @@ Next run:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Study Cadence]]
+- [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Mastery Gap Triage Runner]]

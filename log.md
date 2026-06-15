@@ -3743,3 +3743,31 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4977 files, 3106 Markdown files, 941 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
 - `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new note or embedded bootstrap runner decision strings.
+
+## [2026-06-16] curate | Add LLM mastery status snapshot
+
+Scope: add a current, human-facing proof-state card that says exactly what is known, what is still unproven, and what to run next before claiming LLM mastery or local-inference readiness.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] with a verified hold/not-started/pass map for academic proof, mechanism understanding, model-store setup, runtime install, model pull, smoke request, benchmark, quality, and operations evidence.
+- Captured fresh local machine evidence from PowerShell: `ollama`, `lms`, and `hf` are not on PATH; no listeners are active on common local LLM ports; `D:\Models` and `C:\Users\fpan1\Documents\local-llm-runs` are absent; NVIDIA tooling sees `NVIDIA GeForce RTX 3080 Ti`, 12288 MiB VRAM, driver 610.47; `C:` has 347.1 GB free and `D:` has 582.2 GB free.
+- Routed the snapshot through the LLM MOC, study index, mastery dashboard, capstone workbook, and mastery roadmap so Obsidian has a single current status card.
+- No new current external-source claims were added in this pass; all machine claims come from the fresh local shell evidence.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4978 files, 3107 Markdown files, 942 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new snapshot title or local-inference status terms.
