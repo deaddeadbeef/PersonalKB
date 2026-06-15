@@ -27,6 +27,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]]
 - [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
+- [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]
@@ -97,6 +98,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — choose today's recall prompt, study route, proof artifact, evidence destination, and next action without searching the whole vault
 - [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] — follow a weekly rhythm that pairs academic recall with applied proof artifacts and capstone links
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] — capture one study session as a recall answer, mechanism bridge, applied proof or blocker, and capstone link
+- [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] — build and defend one local assistant with academic, endpoint, client, RAG/tool, evaluation, security, operations, and deployment proof
 - [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] — run one scored oral/practical exam attempt with answer fields, evidence links, hard-fail checks, and remediation rows
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] — use this machine's actual runtime, GPU, listener, and first-model state before installing or serving anything
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] — execute the first Ollama endpoint run as a fill-in evidence folder with pass, hold, and fail gates

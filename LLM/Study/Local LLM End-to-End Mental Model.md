@@ -12,6 +12,8 @@ last-verified: 2026-06-15
 
 Use this before [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when the system still feels like a black box. The lifecycle lab traces one request in detail. [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] translates mechanisms into controls. This note is the end-to-end story: what must be true for bytes on disk to become a useful answer in an application.
 
+Use [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] when this mental model needs to become one defended local assistant project.
+
 ## The Whole Loop
 
 ```text
@@ -146,6 +148,7 @@ You understand the end-to-end path when you can answer these without notes:
 ## References
 
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]

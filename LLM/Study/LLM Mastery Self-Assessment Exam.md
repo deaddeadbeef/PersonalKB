@@ -207,6 +207,7 @@ These gates are stricter than the oral questions.
 | Training pipeline | Capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]. |
 | Local endpoint | CLI and HTTP endpoint response from one local model. |
 | Local practicum sequence | Handoff note from [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] linking stage evidence from endpoint proof through capstone handoff. |
+| Capstone project | Project blueprint from [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] proving the final local assistant build and defense plan. |
 | Workload-to-model selection | Candidate card from [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] proving workload, candidate slot, source, license, artifact options, runtime candidates, sizing risk, rejection trigger, and pass/hold/fail rule. |
 | Environment | Preflight snapshot tied to the machine/runtime that served the model. |
 | Runtime stack anatomy | Stack Anatomy Card proving the layers and lowest unproven layer before debugging. |
@@ -264,6 +265,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
+- [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]

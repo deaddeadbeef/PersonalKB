@@ -45,6 +45,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 |---|---|---|
 | You do not know what to study next | [[LLM/Study/LLM Concept Dependency Map]] | Lowest unproven dependency |
 | You need to turn this study block into evidence | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] | Recall answer, mechanism bridge, applied artifact or blocker, capstone link |
+| You are ready to turn the study path into one buildable project | [[LLM/Study/Local LLM Capstone Project Blueprint]] | Local assistant blueprint, evidence bundle, defense questions, and pass/hold/fail decision |
 | You need mixed recall | [[LLM/Study/LLM Active Recall Question Bank]] | 20-question score and miss route |
 | You cannot explain a paper | [[LLM/Study/LLM Paper Reading Protocol]] | Claim, method, evidence, limitation, deployment implication |
 | You can summarize a paper but cannot defend its evidence or local implication | [[LLM/Study/LLM Paper Claim Ledger]] | Claim, evidence type, limitation, mechanism, local implication, and follow-up proof |
@@ -83,6 +84,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Tool loop | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |  |
 | Operations and safety | [[LLM/Study/Local LLM Security and Privacy Runbook]] |  |
 | Deployment decision | [[LLM/Study/LLM Deployment Decision Matrix]] |  |
+| Capstone project | [[LLM/Study/Local LLM Capstone Project Blueprint]] |  |
 
 Status values should be links, not feelings: `not started`, `in progress: <artifact>`, `passed: <artifact>`, or `blocked: <diagnostic row>`.
 
@@ -123,6 +125,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | One failure diagnosis | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | One scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] |
+| One end-to-end capstone project spec | [[LLM/Study/Local LLM Capstone Project Blueprint]] |
 | One final pass signal | [[LLM/Study/LLM Mastery Capstone Workbook]] |
 
 ## Anti-Drift Rules
@@ -151,6 +154,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
+- [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]

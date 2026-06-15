@@ -54,7 +54,7 @@ You do not need full paper mastery before the first local run. You do need enoug
 | 7 | Service hardening | Observability, security, lifecycle rows |
 | 8 | RAG extension | Retrieval, citation, refusal, and failure artifacts |
 | 9 | Tool or structured-output extension | Schema, validation, policy, execution, and quality rows |
-| 10 | Capstone handoff | One evidence ledger with gaps named |
+| 10 | Capstone handoff | Capstone project blueprint and one evidence ledger with gaps named |
 
 Stop after any stage if the evidence fails. Use the failed row to choose the next controlled change.
 
@@ -281,6 +281,7 @@ Pass signal: the model proposes actions, but the application controls authorizat
 
 Route:
 
+- [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 
@@ -328,7 +329,7 @@ This practicum sequence is complete when you have:
 - [ ] one diagnosed failure or explicit no-failure row
 - [ ] one service security or lifecycle row if the endpoint will be reused
 - [ ] one RAG or tool extension artifact if the goal is more than chat
-- [ ] one capstone handoff note with links to the evidence
+- [ ] one capstone handoff note shaped by [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] with links to the evidence
 
 ## References
 
@@ -336,6 +337,7 @@ Internal routes:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
