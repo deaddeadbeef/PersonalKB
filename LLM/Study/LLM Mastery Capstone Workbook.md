@@ -28,7 +28,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Math and tensor shapes | Oral or written proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | Can trace token IDs, embeddings, hidden states, logits, probabilities, shifted targets, cross-entropy, attention shapes, weight memory, and KV-cache growth. | Study map drafted; oral proof not yet passed |
 | Metric interpretation | Metric card from [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] |  | Can classify loss, perplexity, benchmark, preference, calibration, quality, latency, and memory as different evidence types and name what each misses. | Not started |
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
-| Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
+| Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] with a filled [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] |  | Overall score is at least 80 percent, no zero in practical sections, proof links are present, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | First-run readiness | Machine-specific card from [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | Runtime install state, GPU availability, common listener ports, first runtime choice, first model class, and next proof action are captured before installing or serving. | Runtime not installed; ready for first execution |
@@ -114,6 +114,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 
 | Evidence item | Link or value |
 |---|---|
+| Exam run sheet | [[LLM/Study/LLM Mastery Exam Run Sheet]] |
 | Exam date |  |
 | Overall score |  |
 | Sections below pass threshold |  |
@@ -421,7 +422,7 @@ Next run:
 - [ ] The math and tensor-shape proof explains logits, loss, attention, weight memory, KV cache, and one local inference symptom.
 - [ ] The metric interpretation proof separates training, benchmark, preference, calibration, quality, latency, and memory evidence.
 - [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
-- [ ] The self-assessment exam is passed or every failed section has a remediation plan.
+- [ ] The self-assessment exam has a filled run sheet and is passed, or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.

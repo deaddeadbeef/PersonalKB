@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This is the daily retrieval-practice bank for LLM mastery: answer mechanism, paper, evaluation, and local-inference questions from memory, then route misses to the exact note or lab that fixes the gap.
 
-Use this with [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]], [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], and [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The category review drills are useful for warm-up. This bank is for mixed recall, where academic concepts and applied local-hosting decisions are interleaved.
+Use this with [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]], [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]], and [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The category review drills are useful for warm-up. This bank is for mixed recall, where academic concepts and applied local-hosting decisions are interleaved.
 
 ## How To Use
 
@@ -170,6 +170,7 @@ This bank is doing its job when:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Study Cadence]]
+- [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Concept Dependency Map]]

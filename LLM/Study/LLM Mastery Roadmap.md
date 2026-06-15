@@ -49,7 +49,7 @@ Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practic
 29. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
 30. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
 31. Use [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] to collect proof across the paper, implementation, local inference, RAG, evaluation, adaptation, and deployment gates.
-32. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] to test whether the academic and applied knowledge is available without hand-holding.
+32. Use [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] and [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] to test whether the academic and applied knowledge is available without hand-holding, score the attempt, link proof, and route misses.
 33. Build the capstone only after the local inference and evaluation gates are complete.
 
 ## Level 1: Field Map
@@ -265,7 +265,7 @@ Complete these in order:
 6. **RAG assistant:** build document ingestion, chunking, embedding, embedding/reranker service proof, retrieval evaluation, reranking, generation, citation output, unsupported-question refusal, and failure logging with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]].
 7. **Tool loop:** build a harmless local tool-calling loop with [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]], including schema validation, policy checks, result injection, and one denied unsafe action.
 8. **Evaluation harness:** evaluate the RAG/tool assistant with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], including at least one human rubric and one LLM-as-judge rubric.
-9. **Self-assessment:** use [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] for mixed retrieval practice, then pass [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] and link missed-question remediation.
+9. **Self-assessment:** use [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] for mixed retrieval practice, then pass [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] with [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] and link missed-question remediation.
 10. **Adaptation decision:** use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] to decide whether the workload needs prompting, RAG, SFT, LoRA/QLoRA, DPO, distillation, continued pretraining, or no training.
 11. **Deployment decision:** use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to write a trade-off memo choosing hosted API, local CPU/GPU, self-hosted serving, hybrid, or batch inference for one real workload.
 
@@ -312,6 +312,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
+- [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
