@@ -50,6 +50,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need mixed recall | [[LLM/Study/LLM Active Recall Question Bank]] | 20-question score and miss route |
 | You cannot explain a paper | [[LLM/Study/LLM Paper Reading Protocol]] | Claim, method, evidence, limitation, deployment implication |
 | You can summarize a paper but cannot defend its evidence or local implication | [[LLM/Study/LLM Paper Claim Ledger]] | Claim, evidence type, limitation, mechanism, local implication, and follow-up proof |
+| You have paper claim rows but need to know whether academic proof is complete | [[LLM/Study/LLM Paper Claim Audit Runner]] | Fast-path coverage, source proof, claim anatomy, local implication, and follow-up route audit |
 | You have a paper claim but no local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] | Paper claim, mechanism, local implication, route, proof question, and next artifact |
 | You cannot explain tokens, logits, loss, attention, or KV cache | [[LLM/Study/LLM Math and Tensor Shape Primer]] | Worked explanation or shape row |
 | You can run local commands but cannot explain the whole serving path | [[LLM/Study/Local LLM End-to-End Mental Model]] | One request explained from artifact, tokenizer, runtime, prefill, decode, route, client, quality, and operations |
@@ -103,6 +104,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Active recall | [[LLM/Study/LLM Active Recall Question Bank]] |  |
 | Paper synthesis | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]] |  |
 | Paper claim ledger | [[LLM/Study/LLM Paper Claim Ledger]] |  |
+| Paper claim audit | [[LLM/Study/LLM Paper Claim Audit Runner]] |  |
 | Paper-to-local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] |  |
 | Mechanism bridge | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |  |
 | End-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] |  |
@@ -169,6 +171,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 |---|---|
 | One unanswered recall prompt and corrected answer | [[LLM/Study/LLM Active Recall Question Bank]] or dated study note |
 | One paper claim/evidence/limitation row | [[LLM/Study/LLM Paper Claim Ledger]] |
+| One paper claim audit output | [[LLM/Study/LLM Paper Claim Audit Runner]] |
 | One paper-to-local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] |
 | One complete daily study session | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] |
 | One mechanism-to-local-control row | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] or capstone note |
@@ -255,6 +258,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]

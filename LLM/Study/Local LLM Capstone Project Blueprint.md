@@ -77,7 +77,7 @@ Create one dated capstone note or folder with these links:
 
 | Evidence item | Required content |
 |---|---|
-| Academic proof | Paper claim ledger rows, mechanism bridge rows, metric interpretation row. |
+| Academic proof | Paper claim ledger rows, paper claim audit output, mechanism bridge rows, metric interpretation row. |
 | Workload card | Task, users, data boundary, success rubric, latency target, quality floor, rejection trigger. |
 | Runtime install card | Model-store decision, installer source, new-shell PATH, version, listener boundary, log paths, rollback route. |
 | Model card | Model source, license, artifact, revision/tag/file, local path, quantization, tokenizer/template. |
@@ -136,6 +136,7 @@ You should be able to answer these without searching:
 | Question | Expected answer route |
 |---|---|
 | Which paper claim explains the project architecture? | [[LLM/Study/LLM Paper Claim Ledger]] |
+| How do you know the paper claim set is complete enough to defend? | [[LLM/Study/LLM Paper Claim Audit Runner]] |
 | Which transformer mechanism explains the main local bottleneck? | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |
 | Why was this model chosen instead of a larger or smaller one? | [[LLM/Study/Local LLM Workload to Model Selection Playbook]] |
 | What exact artifact was served? | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] |
@@ -166,6 +167,7 @@ This blueprint is complete for one project when:
 
 - [ ] one dated capstone note or folder links every required evidence item
 - [ ] the academic proof explains at least one paper claim and one mechanism behind a local behavior
+- [ ] the paper claim audit runner output is linked before paper claims support the capstone defense
 - [ ] Windows first-run gates link model-store, runtime-install, and first-model-pull evidence when Ollama is the first runtime
 - [ ] template/tokenizer compatibility runner output is linked before chat behavior, structured output, benchmark, quality, or deployment decisions rely on the endpoint
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
@@ -189,6 +191,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]

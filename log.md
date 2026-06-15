@@ -2643,3 +2643,36 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 29 gates, 29 holds.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4944 files, 3073 Markdown files, 908 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | LLM paper claim audit runner
+
+Scope: add a repeatable academic evidence audit for the LLM fast-path paper set so paper claims can be checked for coverage, claim anatomy, source proof, local implication, and follow-up proof routes before they support capstone or mastery claims.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Paper Claim Audit Runner.md`
+- `LLM/Study/LLM Paper Claim Ledger.md`
+- `LLM/Study/LLM Paper-to-Local Proof Router.md`
+- `LLM/Study/LLM 20-Paper Fast Path Synthesis Map.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/Local LLM Capstone Project Blueprint.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library paper claim audit runner that validates expected fast-path coverage, claim type, main claim, evidence type, limitation, mechanism, source proof, local implication, and follow-up route.
+- Routed the runner from the LLM MOC, study index, paper claim ledger, paper-to-local proof router, 20-paper synthesis map, dashboard, roadmap, capstone workbook, capstone blueprint, and mastery evidence audit.
+- Added an `academic-paper-claim-audit` default gate to the mastery evidence audit runner.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `llm_paper_claim_audit_runner.py` from the note.
+- Paper claim audit fixtures: pass -> exit 0 `paper_claim_audit_ready`; hold -> exit 1 `paper_claim_audit_incomplete`; fail -> exit 2 `paper_claim_audit_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 30 gates, 30 holds.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4945 files, 3074 Markdown files, 909 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

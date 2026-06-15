@@ -24,6 +24,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Active recall bank | Mixed session using [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] |  | At least 20 mixed questions are answered from memory with 80 percent score, no zero in local inference, RAG/evaluation, or safety clusters, and missed prompts have remediation routes. | Not started |
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
 | Paper claim ledger | Claim/evidence/limitation rows from [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] |  | Every fast-path paper has a claim, evidence type, limitation, mechanism, local implication, and follow-up proof route. | Not started |
+| Paper claim audit runner | Results JSON/CSV/Markdown from [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] |  | Fast-path coverage, claim anatomy, source proof, local implication, and follow-up proof routes are complete or have remediation rows. | Not started |
 | Paper-to-local proof route | Results JSON/CSV/Markdown from [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] |  | At least one paper claim set is routed to local proof artifacts with primary route, proof question, confounder, and next action. | Not started |
 | Study cadence | Weekly log from [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] |  | Each active week has recall answers, a mechanism bridge, one applied artifact, and a capstone link or repeat row. | Not started |
 | Daily mastery session | Filled [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] or dated session note |  | One session links a recall answer, corrected answer, mechanism-to-local consequence, applied proof or blocker, and next controlled action. | Not started |
@@ -458,6 +459,7 @@ Next run:
 ## What Does Not Count
 
 - Reading without recall.
+- A paper claim ledger used as academic proof without a paper claim audit output or linked remediation row.
 - A training-stage explanation without data, objective, evaluation, and failure-owner evidence.
 - A local-inference explanation that does not name the underlying mechanism and the evidence artifact that proves or falsifies it.
 - A benchmark, loss, judge score, calibration score, latency row, or memory number accepted without naming the claim, dataset/workload, metric family, and missed failure mode.
@@ -492,6 +494,7 @@ Next run:
 ## Completion Audit
 
 - [ ] Every gate in the evidence ledger has a proof link.
+- [ ] The paper claim ledger has a paper claim audit runner output or linked remediation row.
 - [ ] At least one daily mastery session links recall, mechanism, applied proof, and capstone route.
 - [ ] The training pipeline map explains one capability from data through deployment.
 - [ ] The mechanism-to-inference bridge explains at least one speed, memory, compatibility, quality, and RAG/tool failure with evidence.
@@ -557,6 +560,7 @@ Next run:
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]

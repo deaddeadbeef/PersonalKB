@@ -8,7 +8,7 @@ last-verified: 2026-06-15
 
 # LLM Paper-to-Local Proof Router
 
-Use this after [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] when a paper row has a claim, evidence type, limitation, mechanism, and local implication, but the next local proof is still vague. The paper ledger answers "what did the paper claim?" This router answers "what would prove whether that claim matters for my local LLM work?"
+Use this after [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] and [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] when a paper row has a claim, evidence type, limitation, mechanism, source proof, and local implication, but the next local proof is still vague. The paper ledger answers "what did the paper claim?" The audit runner checks whether the row is complete enough to count. This router answers "what would prove whether that claim matters for my local LLM work?"
 
 This is the bridge between academic reading and applied mastery. It keeps a paper from becoming a trivia item by forcing a route to one of the local evidence surfaces: inference lifecycle, context budgeting, quality evaluation, RAG, tools, adaptation, deployment, security, or operations.
 
@@ -39,6 +39,7 @@ Minimum fields for one row:
 | `limitation` | What the paper does not prove. |
 | `mechanism` | The mechanism that should map to a local control or failure owner. |
 | `local_implication` | Hosting, inference cost, RAG, tools, fine-tuning, quality evaluation, deployment, safety, operations, or similar. |
+| `source` or `paper_note` | Vault proof for the paper note or raw capture, audited by [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]]. |
 
 Optional fields:
 
@@ -524,6 +525,7 @@ Hold signal: missing fields, missing expected routes, or no local proof route. A
 
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]

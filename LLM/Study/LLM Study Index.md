@@ -38,6 +38,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
@@ -130,6 +131,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a toy causal LM to connect tokens, logits, cross-entropy loss, gradients, validation loss, and generation
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] — trace raw data through pretraining, SFT, preference optimization, adaptation, evaluation, and deployment gates
 - [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] — record the claim, evidence, limitation, mechanism, and local implication for every fast-path paper
+- [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] — audit fast-path paper coverage, claim anatomy, source proof, local implication, and follow-up route completeness
 - [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] — turn paper claim rows into local proof routes for inference, RAG, tools, evaluation, adaptation, deployment, and operations evidence
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — translate tokens, attention, KV cache, quantization, sampling, RAG, tools, and evaluation into local controls and failure diagnoses
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence

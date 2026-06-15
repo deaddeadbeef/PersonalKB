@@ -104,6 +104,15 @@ DEFAULT_GATES = [
         "pass_signal": "Every fast-path paper has claim, evidence, limitation, mechanism, local implication, and follow-up route.",
     },
     {
+        "gate_id": "academic-paper-claim-audit",
+        "domain": "academic",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/LLM Paper Claim Audit Runner",
+        "pass_signal": "Fast-path paper coverage, claim anatomy, source proof, local implication, and follow-up proof routes are audited.",
+    },
+    {
         "gate_id": "academic-metric-interpretation",
         "domain": "academic",
         "required": True,
@@ -934,6 +943,7 @@ This runner is useful when:
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
