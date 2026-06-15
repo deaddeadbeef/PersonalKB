@@ -36,7 +36,7 @@ Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practic
 16. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] to prove the exact downloaded bytes, cache/local path, file list, hash or verification, GGUF/Ollama import, conversion provenance, and cleanup plan.
 17. Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] before compatibility, serving, benchmark, or deployment evidence depends on those local bytes.
 18. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] to prove the exact artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together, then use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] when that compatibility decision must become repeatable pass/hold/fail evidence before model pull, runtime health, smoke testing, benchmark, or deployment. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] when template/tokenizer evidence must be repeatable before quality, benchmark, or deployment decisions. If the path is vLLM or SGLang from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before comparing serving performance. If the path is containerized vLLM/SGLang or Open WebUI, use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before treating Docker or Compose as the service contract.
-19. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] to choose GGUF/AWQ/GPTQ/FP8/INT8, GPU offload, CPU fallback, and KV-cache precision from measured memory, speed, and quality evidence.
+19. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] to choose GGUF/AWQ/GPTQ/FP8/INT8, GPU offload, CPU fallback, and KV-cache precision from measured memory, speed, and quality evidence, then use [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] before result synthesis depends on that setting.
 20. Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when more than one runtime is plausible and the choice needs controlled benchmark, quality, and compatibility evidence.
 21. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, route, model id, streaming behavior, errors, and feature gaps before client integration, then use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] to save repeatable `/v1/models`, chat, stream, wrong-model failure, and JSONL handoff evidence.
 22. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to make local endpoint calls reproducible, then use [[LLM/Study/Local LLM Application Integration Evidence Runner|Local LLM Application Integration Evidence Runner]] before treating an app, CLI, UI, job, RAG assistant, or tool loop as real integration evidence.
@@ -196,6 +196,7 @@ Read:
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]]
@@ -240,7 +241,7 @@ Proof:
 - Fill a compatibility evidence card with [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] before treating load errors or strange behavior as model-quality failures.
 - If vLLM or SGLang runs under WSL from Windows, complete [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before runtime comparison, scheduler tuning, or throughput claims.
 - If vLLM, SGLang, or Open WebUI runs in Docker, complete [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before accepting Docker, Compose, or UI routing as production-style evidence.
-- Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] before accepting a lower-bit artifact, GPU-offload setting, CPU/GPU split, or KV-cache precision as the local baseline.
+- Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] before accepting a lower-bit artifact, GPU-offload setting, CPU/GPU split, or KV-cache precision as the local baseline, then audit the rows with [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]].
 - Compare at least two plausible runtimes with [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] before claiming the runtime choice is understood.
 - Use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to prove the endpoint with a smoke test and diagnose any serving failures.
 - Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove whether generic OpenAI-compatible clients can rely on the local route, streaming path, error shape, and required feature set, then use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] to capture the repeatable contract evidence.
@@ -423,6 +424,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

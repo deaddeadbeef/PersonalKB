@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model decision is ready only when endpoint, compatibility, benchmark, evaluation-set, quality, safety, and operations evidence point to the same keep, tune, reject, or deploy action.
 
-Use this after [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] have evidence rows. If the decision is tune, train, serve an adapter, or explicitly avoid training, include [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner|LLM Adaptation and Fine-Tuning Readiness Runner]] output. Use this before [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] so the final deployment memo starts from a reconciled local model/runtime decision, not a pile of unrelated artifacts.
+Use this after [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] have evidence rows. If the selected setup depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision, include [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] output. If the decision is tune, train, serve an adapter, or explicitly avoid training, include [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner|LLM Adaptation and Fine-Tuning Readiness Runner]] output. Use this before [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] so the final deployment memo starts from a reconciled local model/runtime decision, not a pile of unrelated artifacts.
 
 This runner does not call a model, benchmark an endpoint, scrape model pages, or choose a current model by name. It audits the evidence already collected for one workload and selected candidate.
 
@@ -22,6 +22,7 @@ This runner does not call a model, benchmark an endpoint, scrape model pages, or
 | Custody and compatibility | model id, artifact, license/source, runtime, tokenizer/template/API route | prevents mistaking a vague model name for a reproducible local setup |
 | Endpoint and client | base URL, model-list, request/response, harmless failure or API contract | proves inference is callable outside a UI |
 | Benchmark and metrics | latency, throughput, memory/context, interpretation | prevents quality-only decisions that cannot serve the workload |
+| Quantization/offload evidence | accepted quantization, GPU/CPU split, KV-cache precision, rejected alternative, memory headroom, quality regression | prevents treating a fast lower-bit setup as a validated local baseline without a controlled comparison |
 | Evaluation and quality | evaluation-set design, held-out/private prompts, rubric, pass/hold/fail | prevents benchmark or vibe scores from replacing local acceptance |
 | Security and operations | exposure, data/log boundary, owner, startup/restart/observability | separates a one-off experiment from a maintained local service |
 | Decision synthesis | contradictions, missing critical proof, next owner, retest trigger | turns evidence into keep, tune, reject, or deployment-memo readiness |
@@ -84,6 +85,7 @@ By default, the runner expects these evidence kinds unless `required_kinds` over
 | `endpoint_client` | base URL/route, model-list or chat evidence, request/response/client proof |
 | `api_contract` | `/v1/models`, chat, stream or explicit non-streaming scope, and harmless failure |
 | `benchmark` | TTFT/TPOT/tokens/sec/latency/memory/context plus interpretation |
+| `quantization_offload` | quantization/offload evidence runner output when the selected candidate depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision |
 | `evaluation_set_design` | held-out/private prompt-suite design and contamination/rubric proof |
 | `quality` | quality evaluation runner output, rubric, result/score, failure owner or next action; reasoning-budget audit when thinking mode supports the quality decision |
 | `security_privacy` | endpoint exposure, data boundary, log/export boundary |
@@ -765,6 +767,7 @@ python .\local_llm_result_synthesis_runner.py
 - [ ] workload and decision scope are explicit
 - [ ] endpoint/API proof exists outside a UI
 - [ ] benchmark metrics and interpretation exist
+- [ ] quantization/offload evidence output is linked when the selected setup depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision
 - [ ] evaluation-set design and quality evaluation runner rows agree
 - [ ] security/privacy and operations rows are pass or explicitly waived
 - [ ] at least one plausible alternative is rejected with evidence
@@ -778,6 +781,7 @@ python .\local_llm_result_synthesis_runner.py
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Quality Evaluation Runner]]

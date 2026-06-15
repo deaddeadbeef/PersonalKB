@@ -96,6 +96,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
 | You have a long, RAG, tool, or multi-turn prompt and need fit proof | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] | Context manifest, component tokens, reserve, margin, fit decision, drop plan, and JSONL row |
 | You have scheduler, KV-cache, queue, or tuning evidence and need a decision audit | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] | Hypothesis, latency phase, scheduler state, long-prompt interference, tuning delta, capacity event, decision card, and next-route audit |
+| You have quantization, GPU-offload, KV-cache precision, benchmark, and quality rows and need a keep/reject audit | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] | Baseline, artifact/runtime support, memory estimate, load state, offload sweep, KV-cache/context, benchmark, quality, rejected alternative, decision card, and next-route audit |
 | You need concurrency, queue, saturation, or batch-throughput proof | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] | C1/C2/C4 ladder, per-request latency rows, p50/p95, throughput, errors, saturation, and JSONL row |
 | You need repeated-prefix or prompt-cache proof | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] | Shared-prefix hits, changed-prefix controls, TTFT or prompt-eval timing, optional metrics, cache decision, CSV, Markdown, and JSONL row |
 | You need speculative decoding proof | [[LLM/Study/Local LLM Speculative Decoding Runner]] | No-spec/spec profiles, TTFT, decode-rate speedup, accepted-token signal, quality checks, CSV, Markdown, and JSONL row |
@@ -157,6 +158,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |
 | Runtime compatibility runner | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |  |
 | llama.cpp GGUF server runner | [[LLM/Study/Local llama.cpp GGUF Server Runner]] |  |
+| Quantization/offload evidence | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Open WebUI provider integration | [[LLM/Study/Local Open WebUI Provider Integration Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
@@ -261,6 +263,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | One context/token budget runner output | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | One scheduler evidence audit output | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |
+| One quantization/offload evidence runner output before result synthesis depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] |
 | One concurrency/batch runner output | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] |
 | One prompt-cache runner output | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] |
 | One speculative decoding runner output | [[LLM/Study/Local LLM Speculative Decoding Runner]] |
@@ -368,6 +371,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]

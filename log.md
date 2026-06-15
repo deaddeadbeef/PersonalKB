@@ -3468,3 +3468,35 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4969 files, 3098 Markdown files, 933 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add quantization offload evidence runner
+
+Scope: make GGUF/AWQ/GPTQ/FP8/INT8, GPU-offload, CPU fallback, KV-cache precision, benchmark, quality, and rejected-alternative decisions auditable before result synthesis or deployment evidence depends on a local quantized baseline.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner.md`
+- `LLM/Study/Local LLM Quantization and GPU Offload Lab.md`
+- `LLM/Study/Local LLM Result Synthesis Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] with a standard-library Python runner that audits a saved manifest without downloading models, benchmarking endpoints, scraping model pages, or deciding current runtime support from memory.
+- The runner checks baseline scope, artifact/runtime support, memory estimate, load state, offload sweep, KV-cache/context row, benchmark, quality regression, decision card, rejected candidate, selected-candidate fields, peak-memory budget, and proof links.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, quantization/offload lab, result-synthesis runner, and deployment-readiness runner through the new keep/reject gate.
+- Checked current vLLM quantization, SGLang quantization, llama.cpp server, Ollama context-length/FAQ, LM Studio load/per-model, Hugging Face Hub GGUF, and Transformers GGUF docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted and compiled `local_llm_quantization_offload_evidence_runner.py` from the note.
+- Quantization/offload fixture checks: complete Q4 with Q8 baseline -> `pass` / `quantization_offload_ready`; one candidate without baseline blocker -> `hold` / `quantization_offload_incomplete`; selected candidate quality fail while kept -> `fail` / `quantization_offload_blocked`; peak VRAM over budget -> `fail`; missing offload sweep -> `hold`; critical unsupported quantization -> `fail`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4970 files, 3099 Markdown files, 934 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

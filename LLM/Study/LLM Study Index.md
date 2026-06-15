@@ -98,6 +98,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]
@@ -218,6 +219,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] — prove Open WebUI is connected to the intended local provider, model, loopback boundary, persisted data, redacted config/logs, and harmless transcript before UI output supports app or capstone claims
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] — host and prove local embedding/reranker endpoints before judging RAG retrieval or citation quality
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — choose a quantization format, sweep CPU/GPU offload, test KV-cache precision, and accept only candidates that pass benchmark and quality gates
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] — audit baseline, artifact/runtime support, memory estimate, load state, offload sweep, KV-cache/context, benchmark, quality, rejected alternative, and final keep/reject evidence
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] — compare two local runtimes with frozen prompts, sampler settings, context target, benchmark rows, quality rows, and a decision card
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — prove hardware, runtime boundary, storage, ports, and endpoint safety before serving a model
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] — map local inference failures to environment, sizing, server, route, client, prompt, quality, RAG, or security layers

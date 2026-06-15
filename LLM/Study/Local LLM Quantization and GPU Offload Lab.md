@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]. Those notes answer what artifact you have, whether it can fit, and which runtime can load it. This lab answers which quantization/offload setting should actually be kept.
 
-Pair it with [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] for latency and memory rows, [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] for quality rows, [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] for loaded-model state and resource evidence, and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] for the final keep/change decision.
+Pair it with [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] for latency and memory rows, [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] for quality rows, [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] for loaded-model state and resource evidence, and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] for the final keep/change decision. Use [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] after the lab rows exist so the baseline, support proof, memory, offload, KV-cache, benchmark, quality, rejected alternative, and decision card become repeatable pass/hold/fail evidence.
 
 Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] before judging long-context results. Weight quantization can make the model fit while the KV cache still fails at the target context or concurrency. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] and [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] only after the quantization/offload baseline is stable.
 
@@ -299,6 +299,7 @@ This lab is complete when:
 - [ ] benchmark rows include TTFT, tokens/sec or TPOT, prompt/output tokens, RAM/VRAM, and error class
 - [ ] quality rows compare the same prompt suite across candidates
 - [ ] one candidate is accepted or rejected with a named reason
+- [ ] [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] passes or routes every missing quantization/offload proof to the correct remediation note
 - [ ] the decision is routed into [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
 
 ## References
@@ -317,6 +318,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 
 Academic references:

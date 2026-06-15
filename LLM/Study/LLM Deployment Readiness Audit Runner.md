@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A deployment choice is ready only when workload, model, route, app integration, quality, performance, privacy, operations, result synthesis, cost, rejected alternative, and retest evidence are all linked and machine-checkable.
 
-Use this after [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]], before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The result synthesis runner reconciles keep, tune, reject, rerun, and deployment-memo readiness. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend.
+Use this after [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]], before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The result synthesis runner reconciles keep, tune, reject, rerun, and deployment-memo readiness. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend. If the selected path depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision, include [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] output in the proof bundle.
 
 This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, application integration, benchmark, quality, adaptation readiness, result synthesis, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
 
@@ -24,6 +24,7 @@ This runner does not call a model, pull weights, contact a provider, or benchmar
 | Endpoint and client | route proof, base URL, model-list, chat call, reusable client | separates UI success from reproducible inference |
 | Application integration | app boundary, user flow, response handling, failure behavior, privacy/logging, promotion evidence | proves the local model is usable through the intended app path, not only through a standalone client |
 | Benchmark and quality | latency, throughput, memory, rubric, pass/hold/fail | prevents speed-only or quality-only decisions |
+| Quantization/offload | accepted quantization, CPU/GPU split, KV-cache precision, memory headroom, rejected alternative, quality regression | prevents a lower-bit local baseline from reaching deployment without a controlled keep/reject audit |
 | Security and privacy | endpoint exposure, data boundary, logs, RAG/tool/UI/export boundary | keeps local hosting from silently leaking data |
 | Operations and lifecycle | owner, startup, monitoring, backup, rollback, validation | decides whether this is a one-off run or maintained service |
 | Scheduler and concurrency | queue, backpressure, KV/cache, saturation, batch policy | catches multi-user and long-prompt failure before deployment |
@@ -903,6 +904,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [ ] the selected path is one of `local_cpu`, `local_gpu`, `self_hosted_server`, `hosted_api`, `hybrid`, or `batch`
 - [ ] the deployment choice links a result-synthesis output or a remediation row
 - [ ] the quality evidence links [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] output when deployment readiness depends on quality
+- [ ] quantization/offload evidence links [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] output when deployment depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision
 - [ ] adaptation readiness proof exists when deployment depends on an adapter, merged model, distillation, continued pretraining, or explicit no-train decision
 - [ ] the deployment choice rejects at least one plausible alternative with evidence
 - [ ] the final review trigger names what change invalidates the decision
@@ -912,6 +914,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
+- [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
