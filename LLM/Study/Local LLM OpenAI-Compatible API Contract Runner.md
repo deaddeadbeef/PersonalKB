@@ -24,6 +24,8 @@ This runner sends real local HTTP requests when pointed at an actual endpoint. D
 | Harmless wrong-model failure | The client can capture a diagnosable error before real work. | Full error taxonomy. |
 | Contract summary JSON/Markdown/JSONL | The result can feed the first client harness, streaming runner, benchmark row builder, and capstone workbook. | Operational monitoring. |
 
+Use [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] after this runner when the workload depends on structured JSON, `tools`, `tool_choice`, tool-call response fields, argument validation, policy denial, or tool-result injection.
+
 Academic bridge: "OpenAI-compatible" is an interface claim, not a model-quality claim. This runner isolates the serving contract: discovery, request schema, response schema, streaming event shape, and error envelope. That separation keeps API compatibility from being confused with loss, benchmark quality, sampler tuning, RAG grounding, or deployment safety.
 
 ## Fixed Conditions
@@ -648,6 +650,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

@@ -34,7 +34,7 @@ If there is no saved answer or evidence row, the session was reading, not master
 | First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] after the loopback response |
 | Model and runtime choice | First model ladder exists; storage decision snapshot points to `D:\Models` | Write provenance, compatibility, or sizing row after runtime install evidence |
 | Benchmark and quality | Not yet proven today | Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] after route proof, then save benchmark and quality row for one prompt class |
-| RAG/tools | Not yet proven today | Save retrieval, citation, tool-schema, or denied-action row |
+| RAG/tools | Not yet proven today | Save retrieval, citation, structured-output, tool-schema, tool-result, or denied-action row |
 | Operations and deployment | Not yet proven today | Save security, lifecycle, observability, or deployment decision row |
 
 Replace "Not yet proven today" only with a link to an artifact or a dated note.
@@ -70,6 +70,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
 | You have a long, RAG, tool, or multi-turn prompt and need fit proof | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] | Context manifest, component tokens, reserve, margin, fit decision, drop plan, and JSONL row |
+| You need parseable JSON, tool-call, result-injection, or denial proof | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] | Structured JSON, tool call, validation, policy, execution, result injection, denial, CSV, Markdown, and JSONL row |
 | You need first local inference proof | [[LLM/Study/Local LLM Windows First-Run Quickstart]] | Preflight, model id, response, listener proof |
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
@@ -100,6 +101,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
 | RAG assistant | [[LLM/Study/Local RAG Minimal Python Harness]] |  |
 | Tool loop | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |  |
+| Tool/schema runner | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |  |
 | Operations and safety | [[LLM/Study/Local LLM Security and Privacy Runbook]] |  |
 | Deployment decision | [[LLM/Study/LLM Deployment Decision Matrix]] |  |
 | Capstone project | [[LLM/Study/Local LLM Capstone Project Blueprint]] |  |
@@ -153,6 +155,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | One context/token budget runner output | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
+| One tool/structured-output runner output | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |

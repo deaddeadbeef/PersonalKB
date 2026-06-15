@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local tool-using LLM is reliable only when tool schemas, model output, runtime parsing, policy checks, execution, tool-result injection, retries, and evaluation are all explicit.
 
-Use this after [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. The API contract proves the route can carry tool or schema fields. The decoding lab explains constrained generation. The context lab makes tool schemas and tool results part of the token budget.
+Use this after [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. The API contract proves the route can carry tool or schema fields. The decoding lab explains constrained generation. The context lab makes tool schemas and tool results part of the token budget. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] when the same boundary should be saved as JSON, CSV, Markdown, and JSONL evidence.
 
 Use this before building an agent loop, file assistant, API wrapper, database helper, or local RAG assistant that can call tools. Pair it with [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before any tool reads files, writes files, calls a network API, runs code, or touches private data.
 
@@ -203,6 +203,7 @@ This lab is complete when you have:
 - [ ] one single-tool call with validated arguments and injected result
 - [ ] one wrong-tool or bad-argument failure row
 - [ ] one unsafe-action denial row if any tool can read files, write files, call network, or run commands
+- [ ] optional runner output from [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] when the proof needs repeatable artifacts
 - [ ] one bounded multi-turn loop with max iterations, timeout, retry, and stop rules
 - [ ] one quality-harness tool row with pass/hold/fail decision
 - [ ] one benchmark row updated with tool-call fields
@@ -216,6 +217,7 @@ This lab is complete when you have:
 - [[LLM/2023 — Open Models and Agents/Tool Selection and Execution Loops]]
 - [[LLM/Study/Agents and Evaluation - Review Drill]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

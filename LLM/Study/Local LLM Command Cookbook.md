@@ -504,7 +504,7 @@ Get-NetTCPConnection -State Listen |
 | Slow later tokens | Compare model size, quantization, offload, backend, and memory bandwidth | [[LLM/Study/Local LLM Quantization and GPU Offload Lab]] |
 | Streaming broken | Run non-streaming smoke and record unsupported or malformed streaming | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | Output ignores roles | Verify tokenizer, chat template, EOS, and stop policy | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
-| Tool call wrong or unsafe | Validate schema, policy, tool-choice, and result injection | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
+| Tool call wrong or unsafe | Validate schema, policy, tool-choice, and result injection | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] or [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 
 ## Evidence Destinations
 
@@ -526,6 +526,7 @@ Get-NetTCPConnection -State Listen |
 | First benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | Sampler, seed, stop, and cap controls | [[LLM/Study/Decoding and Sampling Controls Runner]] |
 | Context, history, RAG, tool, reserve, and margin budget | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
+| Structured JSON, tool-call, result-injection, and denial proof | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | Python wrapper output | [[LLM/Study/Local LLM Client Harness Lab]] |
 | Timing and throughput row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | Quality pass/hold/fail | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -568,6 +569,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
+- [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
