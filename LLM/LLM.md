@@ -68,6 +68,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] — Causal map from Transformer architecture through scaling, systems, alignment, adaptation, RAG, agents, evaluation, and local deployment
 - [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] — Academic claim ledger tying each fast-path paper to evidence, limitation, mechanism, local implication, and follow-up proof
 - [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] — Machine-check fast-path paper coverage, claim anatomy, source proof, local implications, and follow-up proof routes
+- [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] — Audit no-notes paper answers for claim, evidence, limitation, mechanism, local implication, route, score, and remediation proof
 - [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] — Route paper claims to local proof artifacts so academic reading ends in inference, RAG, evaluation, adaptation, or deployment evidence
 - [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]] — Audit whether paper claims, local predictions, artifacts, metrics, failure owners, and decisions form a defensible mastery matrix
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — Translate academic mechanisms into local inference controls, failure diagnoses, and proof artifacts

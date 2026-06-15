@@ -59,7 +59,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 
 | Domain | Required gates |
 |---|---|
-| academic | paper map, paper claim ledger, paper claim audit, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
+| academic | paper map, paper claim ledger, paper claim audit, paper oral defense, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
 | local-inference | workload/model selection, model custody, artifact custody audit, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
@@ -111,6 +111,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/LLM Paper Claim Audit Runner",
         "pass_signal": "Fast-path paper coverage, claim anatomy, source proof, local implication, and follow-up proof routes are audited.",
+    },
+    {
+        "gate_id": "academic-paper-oral-defense",
+        "domain": "academic",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/LLM Paper Oral Defense Runner",
+        "pass_signal": "Core paper clusters have no-notes answers with claim, evidence, limitation, mechanism, local implication, follow-up route, score, and remediation.",
     },
     {
         "gate_id": "academic-to-local-defense-matrix",
@@ -999,6 +1008,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Paper Claim Audit Runner]]
+- [[LLM/Study/LLM Paper Oral Defense Runner]]
 - [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]

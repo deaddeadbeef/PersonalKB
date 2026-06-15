@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Academic LLM mastery is defensible only when each core paper has a claim, evidence type, limitation, mechanism, source proof, local implication, and follow-up proof route.
 
-Use this after [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] and before [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] supports a capstone claim. The ledger teaches what to record. The paper-to-local router chooses proof routes. This runner checks whether the paper claim set is complete enough to count as academic evidence.
+Use this after [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] and before [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] or [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] supports a capstone claim. The ledger teaches what to record. The oral-defense runner proves closed-book answer readiness. The paper-to-local router chooses proof routes. This runner checks whether the paper claim set is complete enough to count as academic evidence.
 
 This runner does not fetch papers, summarize PDFs, or decide whether a claim is true. It audits the rows you already wrote from paper notes, raw captures, or a capstone CSV/JSON manifest.
 
@@ -646,6 +646,7 @@ python .\llm_paper_claim_audit_runner.py
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper Oral Defense Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

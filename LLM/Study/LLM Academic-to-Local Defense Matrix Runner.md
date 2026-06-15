@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** LLM mastery is defensible when each academic claim can predict or explain a local inference artifact, metric, failure owner, and next decision.
 
-Use this after [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] and [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when the paper rows, mechanism bridge, local labs, and capstone workbook need to become one oral/practical defense matrix.
+Use this after [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]], [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]], and [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when the paper rows, no-notes answer artifacts, mechanism bridge, local labs, and capstone workbook need to become one oral/practical defense matrix.
 
 This runner does not replace the paper audit or the local lab runners. It checks the cross-link that those tools cannot prove alone:
 
@@ -692,6 +692,7 @@ This defense matrix is complete when:
 ## References
 
 - [[LLM/Study/LLM Paper Claim Audit Runner]]
+- [[LLM/Study/LLM Paper Oral Defense Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
