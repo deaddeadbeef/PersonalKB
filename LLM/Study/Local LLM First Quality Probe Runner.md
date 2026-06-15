@@ -8,16 +8,17 @@ last-verified: 2026-06-15
 
 # Local LLM First Quality Probe Runner
 
-> **One-line summary** Run the first five private quality probes through a local Ollama chat endpoint and save request, response, output, score, CSV, Markdown, and JSONL evidence.
+> **One-line summary** After endpoint evidence passes, run the first five private quality probes through a local Ollama chat endpoint and save request, response, output, score, CSV, Markdown, and JSONL evidence.
 
-Use this after [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] or [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] says the first route works. The manual [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] defines the probe set and scoring intent. This runner turns that suite into repeatable Python evidence.
+Use this after [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] says the first endpoint run folder is ready. That audit now requires pass-state debrief and template/tokenizer compatibility, so this runner starts from a defensible endpoint instead of probing quality on top of a partial route proof. The manual [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] defines the probe set and scoring intent. This runner turns that suite into repeatable Python evidence.
 
-This runner sends real local inference requests when you run it against an actual endpoint. Do not run it until the model id, endpoint boundary, sampler, and evidence folder are fixed. For verification or dry runs, point `LOCAL_LLM_BASE_URL` at a fake local fixture server instead of Ollama.
+This runner sends real local inference requests when you run it against an actual endpoint. Do not run it until the model id, endpoint boundary, sampler, evidence folder, and first endpoint evidence audit are fixed. For verification or dry runs, point `LOCAL_LLM_BASE_URL` at a fake local fixture server instead of Ollama.
 
 ## What This Proves
 
 | Evidence | Proves | Does not prove |
 |---|---|---|
+| Endpoint audit JSON | The first endpoint passed run-card, preflight, runtime, smoke, debrief, template/tokenizer, and decision gates before quality probing. | That the endpoint remains healthy forever. |
 | Five saved request bodies | The prompt suite, sampler, model id, and route are reproducible. | Workload coverage. |
 | Five saved response bodies | The local endpoint handled the suite. | That the model is good enough for real use. |
 | Output text files | Assistant content can be inspected outside the terminal. | Correctness by itself. |
@@ -34,6 +35,7 @@ Write these before running:
 | Field | Value |
 |---|---|
 | Run folder |  |
+| First endpoint evidence audit |  |
 | First response debrief |  |
 | Runtime | Ollama native `/api/chat` |
 | Base URL | `http://127.0.0.1:11434` |
@@ -70,6 +72,7 @@ TEMPERATURE = float(os.environ.get("LOCAL_LLM_TEMPERATURE", "0"))
 MAX_TOKENS = int(os.environ.get("LOCAL_LLM_MAX_TOKENS", "256"))
 TIMEOUT_S = float(os.environ.get("LOCAL_LLM_TIMEOUT_S", "90"))
 EXTRACTION_MODEL_TEXT = os.environ.get("LOCAL_LLM_EXTRACT_MODEL_TEXT", "qwen3.5:4b")
+ENDPOINT_AUDIT_JSON = os.environ.get("LOCAL_LLM_ENDPOINT_AUDIT_JSON")
 
 SUITE_DIR = RUN_ROOT / "first-quality-probe-runner"
 REQUEST_DIR = SUITE_DIR / "requests"
@@ -92,6 +95,99 @@ def md_cell(value):
 
 def normalize(value):
     return " ".join(str(value or "").strip().lower().split())
+
+
+def bool_env(name, default):
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    return normalize(value) not in {"0", "false", "no", "off", "skip", "skipped"}
+
+
+def resolve_path(value, base):
+    if not value:
+        return None
+    path = Path(str(value)).expanduser()
+    if not path.is_absolute():
+        path = base / path
+    return path.resolve()
+
+
+def latest_file(root, pattern):
+    if not root.exists():
+        return None
+    files = [path for path in root.glob(pattern) if path.is_file()]
+    if not files:
+        return None
+    return sorted(files, key=lambda item: item.stat().st_mtime, reverse=True)[0]
+
+
+def read_json(path):
+    if not path:
+        return None, "path not set"
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig")), None
+    except FileNotFoundError:
+        return None, f"missing file: {path}"
+    except json.JSONDecodeError as exc:
+        return None, f"invalid json: {path}: {exc}"
+
+
+def endpoint_audit_path():
+    path = resolve_path(ENDPOINT_AUDIT_JSON, RUN_ROOT)
+    if path:
+        return path
+    for pattern in [
+        "first-endpoint-evidence-audit/*/*first-endpoint-evidence-audit.json",
+        "first-endpoint-evidence-audit/*first-endpoint-evidence-audit.json",
+        "*/*first-endpoint-evidence-audit.json",
+        "*first-endpoint-evidence-audit.json",
+    ]:
+        path = latest_file(RUN_ROOT, pattern)
+        if path:
+            return path
+    return None
+
+
+def endpoint_audit_status(path):
+    data, error = read_json(path)
+    if error:
+        return {
+            "path": str(path) if path else "",
+            "status": "hold",
+            "decision": "endpoint_audit_missing",
+            "gate_count": 0,
+            "pass_count": 0,
+            "hold_count": 0,
+            "fail_count": 0,
+            "missing_layer": "first endpoint evidence audit",
+            "block_reason": error,
+        }
+    if not isinstance(data, dict):
+        return {
+            "path": str(path),
+            "status": "hold",
+            "decision": "endpoint_audit_unreadable",
+            "gate_count": 0,
+            "pass_count": 0,
+            "hold_count": 0,
+            "fail_count": 0,
+            "missing_layer": "first endpoint evidence audit",
+            "block_reason": "endpoint audit JSON is not an object",
+        }
+    status = normalize(data.get("status"))
+    decision = str(data.get("decision") or "")
+    return {
+        "path": str(path),
+        "status": status,
+        "decision": decision,
+        "gate_count": data.get("gate_count"),
+        "pass_count": data.get("pass_count"),
+        "hold_count": data.get("hold_count"),
+        "fail_count": data.get("fail_count"),
+        "missing_layer": "" if status == "pass" else "first endpoint evidence audit",
+        "block_reason": "" if status == "pass" else f"endpoint audit status is {status or 'missing'}",
+    }
 
 
 def response_text(data):
@@ -216,6 +312,38 @@ def check_constraint(text):
     return all(word_count(line.lstrip("-* ").strip()) == 5 for line in lines)
 
 
+RESULT_FIELDNAMES = [
+    "run_id",
+    "timestamp",
+    "prompt_id",
+    "task_class",
+    "model",
+    "base_url",
+    "route",
+    "boundary",
+    "temperature",
+    "max_tokens",
+    "request_path",
+    "response_path",
+    "output_path",
+    "route_status",
+    "http_status",
+    "elapsed_s",
+    "total_seconds",
+    "prompt_eval_count",
+    "eval_count",
+    "done",
+    "done_reason",
+    "expected_signal",
+    "auto_decision",
+    "auto_note",
+    "human_score",
+    "human_decision",
+    "failure_owner",
+    "response_excerpt",
+]
+
+
 CASES = [
     {
         "id": "K-01",
@@ -267,12 +395,32 @@ CASES = [
 run_id = f"{time.strftime('%Y%m%d-%H%M%S')}-first-quality-probe"
 timestamp = time.strftime("%Y-%m-%dT%H:%M:%S%z")
 url = f"{BASE_URL}{ROUTE if ROUTE.startswith('/') else '/' + ROUTE}"
+require_endpoint_audit = bool_env("LOCAL_LLM_REQUIRE_ENDPOINT_AUDIT", True)
+endpoint_audit = endpoint_audit_status(endpoint_audit_path())
+if not require_endpoint_audit:
+    endpoint_audit = {
+        "path": "",
+        "status": "skipped",
+        "decision": "endpoint_audit_not_required",
+        "gate_count": 0,
+        "pass_count": 0,
+        "hold_count": 0,
+        "fail_count": 0,
+        "missing_layer": "",
+        "block_reason": "",
+    }
+endpoint_audit_ready = endpoint_audit["status"] == "pass"
 
 serializable_cases = [{key: value for key, value in case.items() if key != "check"} for case in CASES]
 write_json(SUITE_DIR / "quality-probe-cases.json", serializable_cases)
 
 rows = []
-for case in CASES:
+if require_endpoint_audit and not endpoint_audit_ready:
+    status = "hold"
+else:
+    status = ""
+
+for case in ([] if status == "hold" else CASES):
     request_body = {
         "model": MODEL,
         "stream": False,
@@ -343,7 +491,9 @@ for case in CASES:
         "response_excerpt": response_excerpt,
     })
 
-if any(row["route_status"] == "error" for row in rows):
+if status == "hold":
+    pass
+elif any(row["route_status"] == "error" for row in rows):
     status = "error"
 elif all(row["auto_decision"] == "pass" for row in rows):
     status = "pass"
@@ -360,6 +510,8 @@ summary = {
     "boundary": BOUNDARY,
     "temperature": TEMPERATURE,
     "max_tokens": MAX_TOKENS,
+    "require_endpoint_audit": require_endpoint_audit,
+    "endpoint_audit": endpoint_audit,
     "case_count": len(rows),
     "pass_count": sum(1 for row in rows if row["auto_decision"] == "pass"),
     "hold_count": sum(1 for row in rows if row["auto_decision"] == "hold"),
@@ -369,7 +521,7 @@ summary = {
         "pass": "copy rows into Local LLM Quality Evaluation Harness and rerun a workload prompt through the client harness",
         "hold": "inspect held probes, then tune prompt, sampler, JSON mode, or chat template before rerun",
         "error": "route to Local LLM Troubleshooting Decision Tree before judging model quality",
-    }[status],
+    }[status] if rows else "complete Local LLM First Endpoint Evidence Audit Runner before quality probing",
     "rows": rows,
 }
 
@@ -380,7 +532,7 @@ jsonl_path = SUITE_DIR / "quality-probe-runs.jsonl"
 
 write_json(results_json, summary)
 with results_csv.open("w", newline="", encoding="utf-8") as handle:
-    writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
+    writer = csv.DictWriter(handle, fieldnames=RESULT_FIELDNAMES)
     writer.writeheader()
     writer.writerows(rows)
 
@@ -401,6 +553,16 @@ md_lines.extend([
     "## Next Action",
     "",
     summary["next_action"],
+    "",
+    "## Endpoint Audit",
+    "",
+    "| Field | Value |",
+    "|---|---|",
+    f"| Require endpoint audit | {md_cell(require_endpoint_audit)} |",
+    f"| Endpoint audit JSON | {md_cell(endpoint_audit['path'])} |",
+    f"| Endpoint audit status | {md_cell(endpoint_audit['status'])} |",
+    f"| Endpoint audit decision | {md_cell(endpoint_audit['decision'])} |",
+    f"| Endpoint audit block reason | {md_cell(endpoint_audit['block_reason'])} |",
 ])
 results_md.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
@@ -415,6 +577,7 @@ print(json.dumps({
     "pass_count": summary["pass_count"],
     "hold_count": summary["hold_count"],
     "error_count": summary["error_count"],
+    "endpoint_audit_status": endpoint_audit["status"],
     "next_action": summary["next_action"],
 }, indent=2))
 ```
@@ -423,6 +586,8 @@ PowerShell run for the first Ollama quality pass:
 
 ```powershell
 $env:LOCAL_LLM_RUN_ROOT = "<paste-run-folder-path>"
+$env:LOCAL_LLM_ENDPOINT_AUDIT_JSON = "<first-endpoint-evidence-audit-json>"
+$env:LOCAL_LLM_REQUIRE_ENDPOINT_AUDIT = "true"
 $env:LOCAL_LLM_MODEL = "<model-tag-from-pull-gate>"
 $env:LOCAL_LLM_BASE_URL = "http://127.0.0.1:11434"
 $env:LOCAL_LLM_ROUTE = "/api/chat"
@@ -432,9 +597,9 @@ $env:LOCAL_LLM_MAX_TOKENS = "256"
 python .\first-quality-probe-runner.py
 ```
 
-Pass signal: `first-quality-probe-runner\<run-id>-quality-probe-results.json`, `.csv`, `.md`, `quality-probe-cases.json`, `quality-probe-runs.jsonl`, five request files, five response files, and five output files exist. `status` is `pass` only when all five script-assisted checks pass.
+Pass signal: `first-quality-probe-runner\<run-id>-quality-probe-results.json`, `.csv`, `.md`, `quality-probe-cases.json`, `quality-probe-runs.jsonl`, five request files, five response files, and five output files exist. `status` is `pass` only when the endpoint audit is `pass` and all five script-assisted checks pass.
 
-Hold signal: the endpoint answers, but one or more probe checks fail. Keep the artifacts. A hold is a useful diagnosis, not wasted work.
+Hold signal: the endpoint evidence audit is missing or not `pass`, or the endpoint answers but one or more probe checks fail. Keep the artifacts. A hold is a useful diagnosis, not wasted work.
 
 Error signal: at least one request cannot reach the route, returns an HTTP error, or saves an error-shaped result. Route to [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] before changing the prompt suite.
 
@@ -457,6 +622,8 @@ Copy this row into [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM Fir
 | Field | Value |
 |---|---|
 | Run id |  |
+| Endpoint audit JSON |  |
+| Endpoint audit status | pass / hold / fail / missing |
 | Model id |  |
 | Base URL and route |  |
 | Boundary | loopback / exposed / unclear |
@@ -475,6 +642,7 @@ Copy this row into [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM Fir
 This runner is complete only when:
 
 - [ ] fixed conditions are written before the run
+- [ ] first endpoint evidence audit is linked and has `status == pass`
 - [ ] model id matches model-pull evidence
 - [ ] first response debrief is linked
 - [ ] all five request files exist
@@ -489,6 +657,7 @@ This runner is complete only when:
 
 Internal routes:
 
+- [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
@@ -506,4 +675,5 @@ External/current sources checked 2026-06-15:
 
 - [Ollama chat endpoint](https://docs.ollama.com/api/chat)
 - [Ollama structured outputs](https://docs.ollama.com/capabilities/structured-outputs)
+- [OpenAI evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
 - [OpenAI evals guide](https://developers.openai.com/api/docs/guides/evals)

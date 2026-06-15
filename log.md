@@ -3040,3 +3040,31 @@ Verification:
 - Mastery evidence audit default manifest -> `hold`, 42 gates, 42 holds, with `local-first-endpoint-evidence-audit` requiring template/tokenizer compatibility evidence.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Gate first quality probes on endpoint evidence
+
+Scope: tighten the first quality probe runner so it cannot send quality-probe requests unless the first endpoint evidence audit has already passed.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM First Quality Probe Runner.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added `LOCAL_LLM_ENDPOINT_AUDIT_JSON` and `LOCAL_LLM_REQUIRE_ENDPOINT_AUDIT` to the first quality probe runner.
+- Made the runner find or read the first endpoint evidence audit JSON and require `status == pass` before sending probe requests.
+- Added hold-output behavior for missing or held endpoint evidence so the runner writes results JSON/CSV/Markdown and JSONL without sending endpoint requests.
+- Updated the dashboard, capstone workbook, LLM MOC, and study index so first quality probes are explicitly endpoint-audit-bound.
+- Checked current Ollama chat/structured-output docs and OpenAI evaluation docs on 2026-06-15.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `first_quality_probe_runner.py` from the note.
+- Fixture server checks: missing endpoint audit -> `hold` with zero requests; held endpoint audit -> `hold` with zero requests; passing endpoint audit -> five probe requests, five responses, five outputs, and `pass`; explicit endpoint-audit opt-out -> `pass` with `endpoint_audit.status == skipped`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
