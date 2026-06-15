@@ -76,7 +76,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | First benchmark row builder | Builder output from [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] |  | Client and streaming JSONL evidence are converted into benchmark JSON, Markdown copy row, missing-layer list, and next controlled action. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
 | Decoding controls runner | Results JSON/CSV/Markdown from [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] |  | Baseline, temperature, seed repeatability, stop-string, output-cap, missing-layer, and next-route evidence are captured before benchmark or quality comparison. | Not started |
-| Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, and trace policy are captured. | Not started |
+| Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] plus results JSON/CSV/Markdown from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, trace policy, selected effort, and retest trigger are audited. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
 | Context/token budget runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] |  | Prompt components, exact-or-estimated token counts, reserve, margin, fit/hold/error status, drop plan, and next route are captured before long-context or RAG inference. | Not started |
 | Serving internals and scheduler | Scheduler mechanism row from [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] |  | Cold/warm, short/long, repeated-prefix, scheduler state, KV/cache pressure, queue/preemption/OOM behavior, and one-variable tuning decision are captured. | Not started |
@@ -316,6 +316,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Trace logging policy |  |
 | Latency delta |  |
 | Quality delta |  |
+| Runner output |  |
 | Decision |  |
 
 ## Concurrency And Batch Throughput Proof Template
@@ -529,7 +530,7 @@ Next run:
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
 - [ ] The first reusable client runner logs request, response, output, and JSONL evidence before broader client automation.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
-- [ ] Any reasoning-capable local run has effort, parser, latency, quality, and trace-policy evidence.
+- [ ] Any reasoning-capable local run has effort, parser, latency, quality, and trace-policy evidence plus a reasoning-budget runner output before quality, runtime, result-synthesis, or deployment decisions depend on it.
 - [ ] Any shared, multi-client, or batch local serving claim has scheduler, KV-cache, concurrency, queue, saturation, and backpressure evidence.
 - [ ] Any scheduler, queue, cache, long-prompt, or serving-policy claim has a scheduler evidence audit output or linked remediation row.
 - [ ] Any local serving operations claim has observability evidence: model state, timing, logs/metrics, resource pressure, and next action.
@@ -558,6 +559,7 @@ Next run:
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]

@@ -89,7 +89,7 @@ By default, the audit expects one row for each kind:
 | `endpoint_client` | route, base URL or client proof, model-list or chat evidence |
 | `application_integration` | app boundary, user flow, response handling, failure behavior, privacy/logging, promotion decision |
 | `benchmark_performance` | timing, throughput, memory, or context metric plus interpretation |
-| `quality_evaluation` | evaluation-set design proof, rubric, score/result, failure owner or next action |
+| `quality_evaluation` | evaluation-set design proof, rubric, score/result, failure owner or next action; reasoning-budget audit when thinking mode supports the quality decision |
 | `security_privacy` | endpoint exposure, data boundary, log/export boundary |
 | `operations_lifecycle` | owner, startup/restart, observability, backup or rollback |
 | `scheduler_concurrency` | scheduler/concurrency/backpressure proof, or explicit single-user waiver |
@@ -491,6 +491,9 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
         judge_text = " ".join(str(row.get(key, "")) for key in ("method", "evaluator", "rubric", "notes", "result", "decision")).lower()
         if ("llm-as-judge" in judge_text or "llm judge" in judge_text) and not has_text(row, "judge_calibration", "calibration_proof", "human_calibration", "agreement_rate"):
             findings.append(finding("hold", owner, "LLM-as-judge quality row has no calibration proof.", kind, "Run Local LLM Judge Calibration Runner or link human agreement, AB/BA order, and bias-audit evidence."))
+        reasoning_text = " ".join(str(row.get(key, "")) for key in ("method", "notes", "result", "decision", "quality_bar", "rubric")).lower()
+        if any(token in reasoning_text for token in ("reasoning", "thinking", "test-time compute", "reasoning_effort", "reasoning.effort")) and not has_text(row, "reasoning_budget_audit", "reasoning_budget", "test_time_compute_audit"):
+            findings.append(finding("hold", owner, "Reasoning-backed quality row has no reasoning-budget audit.", kind, "Run Local LLM Reasoning Budget and Test-Time Compute Runner or link its output before using thinking mode in the deployment decision."))
     elif kind == "security_privacy":
         if not has_text(row, "endpoint_exposure", "binding", "host_classification", "network_boundary"):
             findings.append(finding("hold", owner, "Security row has no endpoint exposure or network boundary.", kind, "Record loopback/LAN/public/provider boundary and model-list exposure."))
@@ -918,6 +921,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]

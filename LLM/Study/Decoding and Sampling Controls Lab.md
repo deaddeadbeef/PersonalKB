@@ -14,7 +14,7 @@ Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Req
 
 Use this before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] whenever two local model runs need a fair comparison. Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] when the sampler decisions should be saved as repeatable Python evidence. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when schema-constrained output must become an executed tool call or bounded agent loop.
 
-Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the changed control is thinking mode, reasoning effort, or parser separation rather than temperature, token filtering, penalties, stopping, or structured-output constraints.
+Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the changed control is thinking mode, reasoning effort, or parser separation rather than temperature, token filtering, penalties, stopping, or structured-output constraints. Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] when that effort sweep must support quality, runtime, result-synthesis, or deployment evidence.
 
 Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when the changed control is draft-model, EAGLE, MTP, n-gram, or another speculative decoding path. Speculative decoding changes the decode loop and memory profile, so it needs a no-spec A/B rather than a sampler-only sweep.
 
@@ -246,6 +246,7 @@ Internal:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

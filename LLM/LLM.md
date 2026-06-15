@@ -149,6 +149,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — Machine-check whether local evidence supports keep, tune, reject, rerun, or deployment-memo readiness
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Validate LLM-as-judge agreement and order-bias controls before judge scores support local quality decisions
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — Control thinking mode, reasoning parsers, effort levels, latency, trace visibility, and quality trade-offs
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] — Audit effort sweeps for fixed controls, parser separation, trace policy, latency cost, quality delta, and selected reasoning policy
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — Local tool schemas, structured outputs, policy checks, execution loops, and tool failure evaluation
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] — Save structured JSON, required tool-call, tool-result injection, denial, CSV, Markdown, and JSONL evidence for local endpoints
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — End-to-end local retrieval, citation, and grounded-answer workflow

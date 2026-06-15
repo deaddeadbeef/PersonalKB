@@ -83,7 +83,7 @@ By default, the runner expects these evidence kinds unless `required_kinds` over
 | `api_contract` | `/v1/models`, chat, stream or explicit non-streaming scope, and harmless failure |
 | `benchmark` | TTFT/TPOT/tokens/sec/latency/memory/context plus interpretation |
 | `evaluation_set_design` | held-out/private prompt-suite design and contamination/rubric proof |
-| `quality` | rubric, result/score, failure owner or next action |
+| `quality` | rubric, result/score, failure owner or next action; reasoning-budget audit when thinking mode supports the quality decision |
 | `security_privacy` | endpoint exposure, data boundary, log/export boundary |
 | `operations` | owner, startup/restart, observability, backup/rollback or one-off waiver |
 | `rejected_alternative` | rejected candidate/path plus measured or policy reason |
@@ -421,6 +421,9 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
             findings.append(finding("hold", owner, "Quality row has no failure owner, score, or next action.", kind, "Add human score, pass rate, failure owner, or next controlled action."))
         if not has_text(row, "eval_set_design", "evaluation_set_design", "prompt_suite_design", "heldout_proof"):
             findings.append(finding("hold", owner, "Quality row is not tied to evaluation-set design proof.", kind, "Link Local LLM Evaluation Set Design Runner output or a waiver."))
+        reasoning_text = " ".join(str(row.get(key, "")) for key in ("method", "notes", "result", "decision", "quality_bar", "rubric")).lower()
+        if any(token in reasoning_text for token in ("reasoning", "thinking", "test-time compute", "reasoning_effort", "reasoning.effort")) and not has_text(row, "reasoning_budget_audit", "reasoning_budget", "test_time_compute_audit"):
+            findings.append(finding("hold", owner, "Reasoning-backed quality row has no reasoning-budget audit.", kind, "Run Local LLM Reasoning Budget and Test-Time Compute Runner or link its output before result synthesis uses thinking mode as evidence."))
     elif kind == "security_privacy":
         if not has_text(row, "endpoint_exposure", "binding", "host_classification", "network_boundary"):
             findings.append(finding("hold", owner, "Security row has no endpoint exposure or network boundary.", kind, "Record loopback/LAN/public/provider boundary."))
@@ -773,6 +776,7 @@ python .\local_llm_result_synthesis_runner.py
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]

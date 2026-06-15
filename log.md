@@ -2841,3 +2841,42 @@ Verification:
 - Extracted and compiled `llm_deployment_readiness_audit_runner.py`; default empty rows -> exit 1 `deployment_readiness_incomplete`, 15 rows, 15 holds; pass manifest with `artifact_custody` row -> exit 0 `deployment_readiness_ready`, 15 rows, 15 passes.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4950 files, 3079 Markdown files, 914 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Local LLM reasoning budget audit runner
+
+Scope: add a repeatable audit for reasoning-mode and test-time-compute evidence so local quality, runtime, result-synthesis, or deployment decisions can prove the trigger, parser, effort sweep, latency cost, quality delta, trace policy, selected effort, and retest trigger before treating thinking mode as a win.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner.md`
+- `LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab.md`
+- `LLM/Study/Decoding and Sampling Controls Lab.md`
+- `LLM/Study/LLM Inference Request Lifecycle Lab.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM Quality Evaluation Harness.md`
+- `LLM/Study/Local LLM Result Synthesis Runner.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library reasoning budget runner that checks fixed model/runtime/route/prompt controls, distinct effort settings, parser or reasoning-output shape, raw response and final-answer evidence, trace policy, timing, quality, selected effort, token impact, and retest trigger.
+- Routed the runner from the LLM MOC, study index, dashboard, roadmap, capstone workbook, practicum sequence, request lifecycle lab, decoding lab, reasoning lab, quality harness, result synthesis, deployment readiness audit, and mastery evidence audit.
+- Added `local-reasoning-budget` to the mastery evidence audit default gate set.
+- Added conditional checks in result synthesis and deployment readiness so reasoning-backed quality rows hold when they lack reasoning-budget audit output.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_reasoning_budget_runner.py` from the note.
+- Reasoning budget fixtures: pass -> exit 0 `reasoning_budget_ready`; hold -> exit 1 `reasoning_budget_incomplete`; fail -> exit 2 `reasoning_budget_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 36 gates, 36 holds, including `local-reasoning-budget`.
+- Extracted and compiled `llm_deployment_readiness_audit_runner.py`; default empty rows -> exit 1 `deployment_readiness_incomplete`, 15 rows, 15 holds; reasoning-backed quality row without reasoning-budget audit -> exit 1 `deployment_readiness_incomplete`.
+- Extracted and compiled `local_llm_result_synthesis_runner.py`; reasoning-backed quality row without reasoning-budget audit -> exit 1 `hold_for_missing_or_incomplete_evidence`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4951 files, 3080 Markdown files, 915 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

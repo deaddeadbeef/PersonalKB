@@ -126,6 +126,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]]
 
 ## Hands-On Labs
 
@@ -220,6 +221,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — count rendered prompt tokens, reserve output, pack RAG/tool context, test truncation, and explain TTFT/KV-cache pressure
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] — build context-budget JSON, CSV, Markdown, and JSONL evidence from prompt, history, RAG, tool, reserve, and margin components
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — test thinking mode, reasoning effort, parser separation, trace policy, latency, and quality gain for local reasoning models
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] — audit saved effort sweeps for fixed controls, parser separation, trace policy, quality delta, latency cost, and retest trigger
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — validate LLM-as-judge output against human review and reversed-order prompts before it supports model/runtime selection
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — validate tool schemas, execute a harmless local tool, feed back results, bound the loop, and evaluate tool failures
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] — save structured JSON, required tool-call, tool-result injection, denied-argument, CSV, Markdown, and JSONL evidence

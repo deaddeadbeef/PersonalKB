@@ -176,6 +176,7 @@ Route:
 
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 
@@ -185,10 +186,11 @@ Save:
 |---|---|
 | Template/tokenizer row | Tokenizer source, chat template source, stop/EOS policy, prompt token count |
 | Sampler row | Temperature, top-p/top-k/min-p if used, penalties, seed behavior, stop strings, output cap |
+| Reasoning budget audit | Effort setting, control field, parser separation, trace policy, latency delta, quality delta, selected effort, retest trigger |
 | Context budget row | Runtime context limit, rendered prompt tokens, history/RAG/tool overhead, output reserve, safety margin |
 | Request lifecycle row | TTFT, decode tokens/sec or equivalent, prompt tokens, output tokens, stop reason |
 
-Pass signal: benchmark or quality changes can be attributed to the model/runtime, not hidden prompt, sampler, template, or context drift.
+Pass signal: benchmark or quality changes can be attributed to the model/runtime, not hidden prompt, sampler, reasoning-effort, parser, template, or context drift.
 
 ## Stage 5: Benchmark And Judge Quality
 
@@ -398,6 +400,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

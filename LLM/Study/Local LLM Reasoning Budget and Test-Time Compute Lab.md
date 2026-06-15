@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/2026 — Reasoning and Agents/Reasoning Models and Test-Time Compute|Reasoning Models and Test-Time Compute]], [[LLM/2026 — Reasoning and Agents/DeepSeek R1 and Open Reasoning|DeepSeek R1 and Open Reasoning]], [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]], [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]].
 
-Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to capture raw responses. Save timing in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality decisions in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and deployment consequences in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
+Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to capture raw responses. Save timing in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality decisions in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and deployment consequences in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] when the saved effort sweep needs machine-checkable pass, hold, fail, CSV, Markdown, JSON, and JSONL evidence.
 
 ## What This Lab Decides
 
@@ -188,6 +188,7 @@ This lab is complete when:
 - [ ] benchmark rows separate reasoning cost from final-answer cost where possible
 - [ ] quality rows prove whether added effort improves the workload
 - [ ] the trace visibility and logging policy is written
+- [ ] the reasoning budget runner output is linked before quality, runtime, result-synthesis, or deployment decisions depend on reasoning mode
 - [ ] tool/RAG reasoning is evaluated against external evidence and policy, not the trace alone
 - [ ] the deployment or model choice says when to use, reduce, disable, or reject reasoning mode
 
@@ -200,6 +201,7 @@ Internal routes:
 - [[LLM/2026 — Reasoning and Agents/DeepSeek R1 and Open Reasoning]]
 - [[LLM/2026 — Reasoning and Agents/Reasoning Distillation]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]

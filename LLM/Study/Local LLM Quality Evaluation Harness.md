@@ -21,7 +21,7 @@ Use [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration R
 
 Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when quality is being compared across FP16/BF16, Q8, Q6/Q5/Q4, AWQ, GPTQ, FP8/INT8, GPU offload levels, or KV-cache precision. A faster lower-bit run fails if it breaks the workload's factuality, formatting, code, citation, or long-context gate.
 
-Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when judging reasoning models. A higher-effort answer only wins when quality improves enough to justify latency, token budget, parser, and trace-handling costs.
+Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when judging reasoning models, then use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] when the effort sweep should support quality, runtime, result-synthesis, or deployment decisions. A higher-effort answer only wins when quality improves enough to justify latency, token budget, parser, and trace-handling costs.
 
 ## What This Harness Decides
 
@@ -171,6 +171,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/Local RAG Assistant Lab]]

@@ -75,6 +75,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You want the first quality signal captured as runnable artifacts | [[LLM/Study/Local LLM First Quality Probe Runner]] | Five request/response/output files, results JSON/CSV/Markdown, JSONL, auto-checks, and next action |
 | You have a local `/v1` endpoint and need a client-safe API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] | `/v1/models`, non-streaming chat, streaming, wrong-model failure, contract decision, and JSONL handoff |
 | You have an API contract and need sampler controls fixed | [[LLM/Study/Decoding and Sampling Controls Runner]] | Baseline, temperature, seed, stop-string, output-cap, CSV, Markdown, and JSONL evidence |
+| You have thinking-mode or reasoning-effort evidence and need to know whether it is worth the cost | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] | Effort sweep, parser separation, trace policy, latency cost, quality delta, selected effort, and retest trigger |
 | You have an API contract and need a reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] | Python client script, request/response/output files, JSONL row, and next route |
 | You wired the client into an app, CLI, UI, job, RAG, or tool loop and need to know whether it counts | [[LLM/Study/Local LLM Application Integration Evidence Runner]] | App contract, endpoint, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation, operations, and promotion audit |
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
@@ -127,6 +128,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
+| Reasoning budget runner | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] |  |
 | Context/token budget runner | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |  |
 | Scheduler evidence audit | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |  |
 | Concurrency/batch runner | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] |  |
@@ -206,6 +208,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One artifact custody audit output before compatibility, serving, benchmark, or deployment evidence depends on local bytes | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | One decoding control runner output | [[LLM/Study/Decoding and Sampling Controls Runner]] |
+| One reasoning-budget runner output before quality, runtime, result-synthesis, or deployment decisions depend on thinking mode | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] |
 | One first client harness run | [[LLM/Study/Local LLM First Client Harness Runner]] |
 | One application integration evidence audit output | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
@@ -281,6 +284,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
+- [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
