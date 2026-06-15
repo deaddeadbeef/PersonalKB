@@ -91,6 +91,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]]
@@ -153,6 +154,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — check endpoint exposure, logs, RAG corpus boundaries, prompt injection, and tool permissions
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured-output controls with reproducible local experiments
+- [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] — run repeatable baseline, temperature, seed, stop-string, and output-cap probes before benchmark or quality comparisons
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] — connect PagedAttention, KV-cache pressure, chunked prefill, continuous batching, slots, and queue policy to local measurements
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — run a controlled concurrency ladder and decide whether the setup is single-user, queued, batch, self-hosted, or hosted

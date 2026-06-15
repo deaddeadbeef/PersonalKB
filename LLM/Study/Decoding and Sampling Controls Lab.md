@@ -3,7 +3,7 @@ tags: [study, llm, inference, local-llm, decoding, sampling, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [core, practice]
-last-verified: 2026-06-14
+last-verified: 2026-06-15
 ---
 
 # Decoding and Sampling Controls Lab
@@ -12,7 +12,7 @@ last-verified: 2026-06-14
 
 Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] traces one request from prompt to response. That lab answers "where does sampling happen?" This lab answers "which controls changed the next-token distribution, format, reproducibility, and benchmark result?"
 
-Use this before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] whenever two local model runs need a fair comparison. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when schema-constrained output must become an executed tool call or bounded agent loop.
+Use this before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] whenever two local model runs need a fair comparison. Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] when the sampler decisions should be saved as repeatable Python evidence. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when schema-constrained output must become an executed tool call or bounded agent loop.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the changed control is thinking mode, reasoning effort, or parser separation rather than temperature, token filtering, penalties, stopping, or structured-output constraints.
 
@@ -240,6 +240,8 @@ Internal:
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
+- [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
@@ -250,8 +252,10 @@ Internal:
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding]]
 
-Current external docs checked 2026-06-14:
+Current external docs checked 2026-06-15:
 
+- [Ollama OpenAI compatibility](https://docs.ollama.com/api/openai-compatibility)
+- [OpenAI chat completions API reference](https://platform.openai.com/docs/api-reference/chat/create)
 - [Hugging Face generation parameters](https://huggingface.co/docs/transformers/en/main_classes/text_generation)
 - [Hugging Face generation strategies](https://huggingface.co/docs/transformers/en/generation_strategies)
 - [vLLM sampling parameters](https://docs.vllm.ai/en/v0.6.4/dev/sampling_params.html)

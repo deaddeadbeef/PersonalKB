@@ -63,6 +63,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | First streaming timing runner | JSONL row from [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] |  | Streaming client evidence records first event, TTFT, chunk counts, final output, total latency, usage gap, and any stream error. | Not started |
 | First benchmark row builder | Builder output from [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] |  | Client and streaming JSONL evidence are converted into benchmark JSON, Markdown copy row, missing-layer list, and next controlled action. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
+| Decoding controls runner | Results JSON/CSV/Markdown from [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] |  | Baseline, temperature, seed repeatability, stop-string, output-cap, missing-layer, and next-route evidence are captured before benchmark or quality comparison. | Not started |
 | Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, and trace policy are captured. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
 | Serving internals and scheduler | Scheduler mechanism row from [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] |  | Cold/warm, short/long, repeated-prefix, scheduler state, KV/cache pressure, queue/preemption/OOM behavior, and one-variable tuning decision are captured. | Not started |
@@ -552,6 +553,7 @@ Next run:
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
+- [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]

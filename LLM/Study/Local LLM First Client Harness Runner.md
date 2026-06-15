@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] proves the local `/v1` route and [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] has at least one prompt worth rerunning through a client. The contract lab or runner says which base URL, route, model id, and feature flags are safe. This runner turns that contract into repeatable client-side inference evidence.
 
-Use [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] after this when the next narrow question is perceived latency, first content delta, chunk count, and streaming errors. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the harness needs retries, multiple prompt suites, tool traces, richer metrics, or integration into a real application. This note is the first small non-streaming pass.
+Use [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] after this when the next narrow question is perceived latency, first content delta, chunk count, and streaming errors. Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] when the next narrow question is sampler, seed, stop-string, or output-cap reproducibility. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the harness needs retries, multiple prompt suites, tool traces, richer metrics, or integration into a real application. This note is the first small non-streaming pass.
 
 ## What This Proves
 
@@ -319,6 +319,7 @@ Internal routes:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
