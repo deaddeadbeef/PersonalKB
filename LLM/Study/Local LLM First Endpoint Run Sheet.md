@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and while executing [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The readiness snapshot says the current machine state. The quickstart explains the full path. This run sheet is the one-session checklist that turns the path into files you can link from [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
 
-This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] to decide and record where model bytes will live.
+This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] to decide and record where model bytes will live.
 
 ## Run Contract
 
@@ -22,6 +22,7 @@ This sheet is not endpoint proof until the evidence files exist. A checked box w
 | Run folder |  |
 | Runtime | Ollama on Windows |
 | First model | `qwen3.5:4b` from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] unless the model page or local constraints force a smaller tag |
+| Storage snapshot | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | Model store decision | default / custom `OLLAMA_MODELS` / hold |
 | Native base URL | `http://localhost:11434` |
 | OpenAI-compatible base URL | `http://localhost:11434/v1` |
@@ -46,6 +47,7 @@ Save a short run card:
 date=$(Get-Date -Format o)
 runtime=Ollama on Windows
 model=qwen3.5:4b
+storage_snapshot=Local LLM Model Store Readiness Snapshot
 native_base_url=http://localhost:11434
 openai_base_url=http://localhost:11434/v1
 security_boundary=loopback only
@@ -125,7 +127,7 @@ Pass signal: `ollama --version` works from a new PowerShell. If it does not, the
 
 ## Step 3: Pull One First Model
 
-Use the smallest useful model first. The current recommended first tag for this machine is `qwen3.5:4b`; verify it against [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] before pulling. If `model_store_decision` is still `hold`, complete [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] before running `ollama pull`.
+Use the smallest useful model first. The current recommended first tag for this machine is `qwen3.5:4b`; verify it against [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] before pulling. If `model_store_decision` is still `hold`, complete [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and copy the decision card from [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] before running `ollama pull`.
 
 ```powershell
 $RunRoot = "<paste-run-folder-path>"
@@ -276,6 +278,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
+- [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]

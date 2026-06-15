@@ -4,18 +4,18 @@ up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
 last-verified: 2026-06-15
-last-machine-check: 2026-06-15T10:49:10+08:00
+last-machine-check: 2026-06-15T11:10:33+08:00
 ---
 
 # Local LLM First Run Readiness Snapshot
 
-> **One-line summary** This is the machine-specific readiness card for the first local LLM run: as of 2026-06-15T10:49:10+08:00, the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, but no local LLM runtime is installed yet and no endpoint is listening.
+> **One-line summary** This is the machine-specific readiness card for the first local LLM run: as of 2026-06-15T11:10:33+08:00, the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, no local LLM runtime installed, no endpoint listening, and a separate model-store readiness snapshot for the first pull.
 
-Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next. Before any model pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] to decide whether the default model store is acceptable or a custom cache path must be set first.
+Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next. Before any model pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] to decide whether the default model store is acceptable or a custom cache path must be set first.
 
 ## Current State
 
-Checked on 2026-06-15T10:49:10+08:00 from Windows PowerShell.
+Checked on 2026-06-15T11:10:33+08:00 from Windows PowerShell.
 
 | Check | Result | Meaning |
 |---|---|---|
@@ -23,9 +23,11 @@ Checked on 2026-06-15T10:49:10+08:00 from Windows PowerShell.
 | `lms --version; lms server status` | `lms: not found` | LM Studio CLI is not installed or is not on PATH. |
 | `nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader` | `NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 610.47` | There is a usable NVIDIA GPU candidate for local inference. |
 | Listener scan on ports `11434, 1234, 8000, 8001, 8080, 30000` | no rows returned | No common local LLM API port is currently listening. |
+| Model/cache variables | `OLLAMA_MODELS`, `HF_HOME`, and `HF_HUB_CACHE` unset | Model store and Hub cache location must be decided before pulling. |
+| Disk/model-store snapshot | [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | `C:` has 351.2 GB free, `D:` has 582.2 GB free, and no `D:\Models` root exists yet. |
 | Endpoint proof | not started | No local model response has been captured yet. |
 
-The refreshed state is unchanged from the earlier readiness scan. The next blocker is still runtime installation, not model quality, endpoint routing, RAG, tools, or benchmarking.
+The refreshed state is unchanged at the runtime layer and now has storage evidence. The next blocker is still runtime installation after creating a run folder and choosing the model store, not model quality, endpoint routing, RAG, tools, or benchmarking.
 
 ## Readiness Decision
 
@@ -34,6 +36,7 @@ The refreshed state is unchanged from the earlier readiness scan. The next block
 | Lowest unproven layer | runtime installation |
 | Recommended first runtime | Ollama on Windows, loopback only |
 | GUI alternative | LM Studio local server on `localhost` |
+| Storage decision | Use [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]; recommended first root is `D:\Models` with `OLLAMA_MODELS=D:\Models\ollama` before the first pull |
 | First model class | small instruct or reasoning model that fits comfortably before tuning |
 | First candidate tags to evaluate | Use [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]]: `qwen3.5:4b` for route proof, `qwen3:4b-instruct` as text-only control, then `qwen3.5:9b` only after the first path is stable |
 | Avoid as first proof | 27B+ or 30B+ models, LAN binding, RAG, tools, concurrency, prompt caching |
@@ -48,7 +51,7 @@ Do these in order. Stop at the first failed command and write the failure owner 
 | Priority | Action | Evidence destination | Pass signal |
 |---|---|---|---|
 | 1 | Create a dated run folder from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. | `run-root.txt` and `run-card.txt` | Evidence exists before installation or model pull. |
-| 2 | Decide whether the default model cache path is acceptable or whether `OLLAMA_MODELS` should be set first using [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]]. | `installer-choice.txt`, `model-cache-env-before.json`, or run card note | The model cache location is known before large downloads. |
+| 2 | Decide whether the default model cache path is acceptable or whether `OLLAMA_MODELS` should be set first using [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]. | `installer-choice.txt`, `model-cache-env-before.json`, or run card note | The model cache location is known before large downloads. |
 | 3 | Install the first runtime, preferably Ollama for the Windows-native terminal proof. | installer source and version output | `ollama --version` works in a new PowerShell. |
 | 4 | Rerun `ollama list` and the listener scan. | `ollama-list-after-install.txt`, `listeners-before-smoke.txt` | Runtime is installed; endpoint exposure is understood. |
 | 5 | Pull one small first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] and run native plus OpenAI-compatible smoke tests. | native response JSON, model tags JSON, OpenAI-compatible response JSON | Both route proof and model id proof exist, or a native-only decision is written. |
@@ -124,6 +127,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
+- [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
