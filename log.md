@@ -3603,3 +3603,37 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4973 files, 3102 Markdown files, 937 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
 - `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new runner or embedded code strings.
+
+## [2026-06-16] curate | Add queueing and tail latency field guide
+
+Scope: add the theory bridge between raw local LLM benchmark numbers and service behavior under load, so arrival rate, service time, p95/p99 latency, queue wait, prefill/decode, KV-cache pressure, batching, and admission control are explainable before SLO or deployment claims.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Capacity and SLO Planning Runner.md`
+- `LLM/Study/Local LLM Concurrency and Batch Throughput Runner.md`
+- `LLM/Study/Local LLM Queueing and Tail Latency Field Guide.md`
+- `LLM/Study/Local LLM Serving Internals and Scheduler Lab.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Queueing and Tail Latency Field Guide]] with a standard-library worksheet that audits saved demand, tail-latency, admission-policy, and proof-link rows without calling a model.
+- The guide teaches the queueing mental model for local LLM hosting: arrival rate, service time, effective parallelism, utilization warning, queue wait, p95/p99 latency, prefill, decode, KV-cache pressure, batching, and overload behavior.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, serving-internals lab, concurrency runner, capacity/SLO runner, and deployment decision matrix through the new theory-to-operations bridge.
+- Checked current Orca, PagedAttention, Sarathi-Serve, vLLM optimization/metrics, SGLang metrics, and llama.cpp server docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted and compiled `local_llm_queueing_tail_latency_worksheet.py` from the note.
+- Queueing/tail-latency fixture checks: complete worksheet -> `pass` / `tail_latency_ready`; missing arrival rate -> `hold` / `tail_latency_incomplete`; utilization over 0.8 -> `hold`; utilization at or above 1.0 -> `fail` / `tail_latency_blocked`; p95 over target -> `fail`; error rate over budget -> `fail`; missing queue limit -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4974 files, 3103 Markdown files, 938 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+- `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new guide or embedded worksheet strings.
