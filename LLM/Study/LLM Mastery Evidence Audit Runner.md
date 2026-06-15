@@ -62,7 +62,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 | academic | paper map, paper claim ledger, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
 | local-inference | workload/model selection, model custody, runtime compatibility, template/tokenizer compatibility, endpoint, API/client, benchmark, scheduler evidence, evaluation set design, quality |
-| system | RAG or tool proof, security/privacy, observability/lifecycle, deployment readiness audit, deployment decision |
+| system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, exam run sheet, capstone workbook/final note |
 
 The default gates start in `hold` status. The point is to create a manifest, fill proof links, and rerun until the remaining gaps are explicit.
@@ -284,6 +284,15 @@ DEFAULT_GATES = [
         "route": "LLM/Study/Local LLM Observability and Operations Runner",
         "alternative_routes": ["LLM/Study/Local LLM Service Lifecycle and Upgrade Runner"],
         "pass_signal": "Model state, metrics/logs/resource pressure, restart or lifecycle proof, and next action are saved.",
+    },
+    {
+        "gate_id": "system-result-synthesis",
+        "domain": "system",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM Result Synthesis Runner",
+        "pass_signal": "Endpoint, compatibility, benchmark, eval-set, quality, security, operations, rejected-alternative, and review-trigger evidence are reconciled into a keep/tune/reject/deploy decision.",
     },
     {
         "gate_id": "system-deployment-readiness-audit",
@@ -925,5 +934,6 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
+- [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]

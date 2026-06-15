@@ -10,6 +10,8 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] when candidate facts should become a repeatable shortlist. The playbook teaches the decision. This runner turns a workload contract, hardware budget, and candidate manifest into JSON, Markdown, CSV, and JSONL evidence.
 
+Use [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] after endpoint, API-contract, benchmark, evaluation-set, quality, security, and operations evidence exists. Model selection answers what to test. Result synthesis answers whether the tested candidate should be kept, tuned, rejected, rerun, or promoted into a deployment memo.
+
 This runner does not scrape model pages or recommend current models by name. Model cards, licenses, quantized derivatives, and runtime support change. Put the source-checked facts into the manifest, then let the runner apply the gates consistently.
 
 ## What This Proves
@@ -634,5 +636,6 @@ A `hold` result is not bad. It prevents a smoke response or leaderboard rank fro
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** The right deployment path is the one whose quality, latency, privacy, cost, reliability, and operational burden fit the workload after measurement.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]], and [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]]. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] first if the deployment depends on a compressed artifact, GPU offload setting, CPU fallback, or KV-cache precision. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] first if the deployment depends on local embeddings, vector search, reranking, or RAG evidence quality. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] first if the deployment depends on multiple users, local queues, batch/offline processing, or throughput targets. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. This note turns the evidence into a deployment choice.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]], [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]], [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]], and [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]]. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] first if the deployment depends on a compressed artifact, GPU offload setting, CPU fallback, or KV-cache precision. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] first if the deployment depends on local embeddings, vector search, reranking, or RAG evidence quality. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] first if the deployment depends on multiple users, local queues, batch/offline processing, or throughput targets. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] first if the deployment depends on function calling, structured output, or agent tools. Those notes collect evidence. The result synthesis runner reconciles local evidence into keep, tune, reject, or deployment-memo readiness; this note turns that decision into a deployment choice.
 
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] first when the deployment choice depends on whether the bottleneck is queueing, prefill, decode, KV-cache pressure, continuous batching, chunked prefill, slots, preemption, or admission control.
 
@@ -47,6 +47,7 @@ After filling this out, you should be able to:
 | Artifact custody | Are the exact downloaded bytes, cache/local path, hash, GGUF/Ollama import, conversion command, and cleanup plan known? | [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Artifact Download Cache and Conversion Lab]] |
 | Quantization/offload | Which quantization, GPU offload, CPU fallback, and KV-cache precision passed both memory and quality gates? | [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Quantization and GPU Offload Lab]] |
 | Runtime comparison | Has the selected runtime beaten at least one plausible alternative under fixed prompts, sampler settings, context, output cap, benchmark rows, and quality rows? | [[LLM/Study/Local LLM Runtime Comparison Lab|Runtime Comparison Lab]] |
+| Result synthesis | Do endpoint, compatibility, benchmark, evaluation-set, quality, security, operations, and rejected-alternative rows support the same keep/tune/reject action? | [[LLM/Study/Local LLM Result Synthesis Runner|Result Synthesis Runner]] |
 | Operations evidence | Do logs, runtime metrics, queue/KV/cache state, CPU/RAM, GPU/VRAM, and error rows explain the operating point? | [[LLM/Study/Local LLM Observability and Operations Runbook|Observability and Operations Runbook]] |
 | Lifecycle evidence | Are startup mode, pinned versions, model/cache paths, backups, upgrade plan, rollback target, and post-change validation known? | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Service Lifecycle and Upgrade Runbook]] |
 | Cost model | Hardware sunk cost, electricity, rented GPU, API tokens, engineer time, or support burden? | Cost estimate |
@@ -120,6 +121,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Adaptation, if relevant | Prompt, RAG, SFT, LoRA/QLoRA, DPO, distillation, continued pretraining, or no-train choice is justified from failure-mode evidence. |
 | Cost/ops estimate | Hardware, API, maintenance, and owner assumptions are written down. |
 | Rejected alternative | At least one plausible path is rejected with measured or policy evidence. |
+| Result synthesis | The selected model/runtime has a keep, tune, reject, rerun, or deployment-memo readiness result from the result synthesis runner. |
 | Deployment readiness audit | A [[LLM/Study/LLM Deployment Readiness Audit Runner|Deployment Readiness Audit Runner]] output exists, or each missing kind has an explicit remediation row. |
 
 ## Recommendation Rules
@@ -164,6 +166,7 @@ A deployment decision is complete when:
 - cost and operational owner are named
 - startup, upgrade, backup, and rollback responsibilities are explicit for maintained services
 - at least one plausible alternative is rejected with evidence
+- the local result synthesis runner output supports the memo or names the unresolved evidence gap
 - the deployment readiness audit output has no critical gaps or links remediation rows
 - the next review trigger is written down
 
@@ -185,6 +188,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]

@@ -8,18 +8,18 @@ last-verified: 2026-06-15
 
 # LLM Deployment Readiness Audit Runner
 
-> **One-line summary** A deployment choice is ready only when workload, model, route, quality, performance, privacy, operations, cost, rejected alternative, and retest evidence are all linked and machine-checkable.
+> **One-line summary** A deployment choice is ready only when workload, model, route, quality, performance, privacy, operations, result synthesis, cost, rejected alternative, and retest evidence are all linked and machine-checkable.
 
-Use this after [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] and before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend.
+Use this after [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]], before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The result synthesis runner reconciles keep, tune, reject, rerun, and deployment-memo readiness. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend.
 
-This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, benchmark, quality, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
+This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, benchmark, quality, result synthesis, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
 
 ## What This Proves
 
 | Evidence family | Checks | Why it matters |
 |---|---|---|
 | Workload contract | workload, user, data class, latency target, quality bar, failure cost | prevents "local vs cloud" from being abstract |
-| Deployment choice | selected path, candidates, decision reason, path-specific risk | ties the chosen local CPU/GPU, self-hosted, hosted, hybrid, or batch route to evidence |
+| Deployment choice | selected path, candidates, decision reason, result-synthesis proof, path-specific risk | ties the chosen local CPU/GPU, self-hosted, hosted, hybrid, or batch route to reconciled evidence |
 | Model and runtime | model id, artifact, runtime, tokenizer/template, route compatibility | proves the bytes and serving layer match the workload |
 | Endpoint and client | route proof, base URL, model-list, chat call, reusable client | separates UI success from reproducible inference |
 | Benchmark and quality | latency, throughput, memory, rubric, pass/hold/fail | prevents speed-only or quality-only decisions |
@@ -65,6 +65,7 @@ Minimum manifest:
       "selected_path": "local_gpu",
       "candidate_paths": ["local_gpu", "hosted_api", "hybrid"],
       "decision": "Use local GPU while private-note quality is acceptable.",
+      "result_synthesis": "LLM/Study/Local LLM Result Synthesis Runner.md",
       "evidence": "Benchmark, quality, security, and lifecycle rows are linked.",
       "next_route": "LLM/Study/LLM Deployment Decision Matrix"
     }
@@ -81,7 +82,7 @@ By default, the audit expects one row for each kind:
 | Kind | Required fields or acceptable substitute |
 |---|---|
 | `workload_contract` | workload, data sensitivity, quality bar, latency or throughput target, failure cost |
-| `deployment_choice` | selected path, candidate paths, decision reason |
+| `deployment_choice` | selected path, candidate paths, decision reason, result-synthesis proof |
 | `model_runtime` | model id, runtime, artifact or revision, compatibility proof |
 | `endpoint_client` | route, base URL or client proof, model-list or chat evidence |
 | `benchmark_performance` | timing, throughput, memory, or context metric plus interpretation |
@@ -146,7 +147,7 @@ KIND_HINTS = {
     },
     "deployment_choice": {
         "owner": "deployment",
-        "pass_signal": "One deployment path is selected from candidate paths with evidence and path-specific risk.",
+        "pass_signal": "One deployment path is selected from candidate paths with result-synthesis evidence and path-specific risk.",
         "next_route": "LLM/Study/LLM Deployment Decision Matrix",
     },
     "model_runtime": {
@@ -418,6 +419,8 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
             findings.append(finding("hold", owner, "Selected path is not listed among candidate paths.", selected, "Add the selected path to candidate_paths."))
         if not claim_or_evidence:
             findings.append(finding("hold", owner, "Deployment choice has no decision reason.", kind, "Tie the selected path to workload, quality, latency, privacy, cost, and operations evidence."))
+        if not has_text(row, "result_synthesis", "decision_synthesis", "synthesis_proof", "result_synthesis_proof"):
+            findings.append(finding("hold", owner, "Deployment choice has no result-synthesis proof.", kind, "Run Local LLM Result Synthesis Runner or link the reconciled keep/tune/reject evidence."))
     elif kind == "model_runtime":
         if not has_text(row, "model", "model_id", "artifact", "revision"):
             findings.append(finding("hold", owner, "Model/runtime row has no model id, artifact, or revision.", kind, "Add the served model id and artifact provenance."))
@@ -847,13 +850,14 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 
 | Gate | Required artifact | Pass signal |
 |---|---|---|
-| Deployment readiness audit | `<run-id>-deployment-readiness-audit.json`, `<run-id>-deployment-readiness-audit.md`, `<run-id>-deployment-readiness-audit.csv`, and one `llm-deployment-readiness-audit-runs.jsonl` row | workload, selected path, model/runtime, endpoint/client, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are pass or explicitly waived |
+| Deployment readiness audit | `<run-id>-deployment-readiness-audit.json`, `<run-id>-deployment-readiness-audit.md`, `<run-id>-deployment-readiness-audit.csv`, and one `llm-deployment-readiness-audit-runs.jsonl` row | workload, selected path, result synthesis, model/runtime, endpoint/client, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are pass or explicitly waived |
 
 ## Completion Gate
 
 - [ ] the manifest includes all required evidence kinds or explicit waivers
 - [ ] critical rows cannot pass without proof
 - [ ] the selected path is one of `local_cpu`, `local_gpu`, `self_hosted_server`, `hosted_api`, `hybrid`, or `batch`
+- [ ] the deployment choice links a result-synthesis output or a remediation row
 - [ ] the deployment choice rejects at least one plausible alternative with evidence
 - [ ] the final review trigger names what change invalidates the decision
 - [ ] outputs are linked from [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
@@ -861,6 +865,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 ## References
 
 - [[LLM/Study/LLM Deployment Decision Matrix]]
+- [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]

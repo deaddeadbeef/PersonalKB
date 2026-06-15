@@ -66,7 +66,7 @@ The minimal capstone can omit RAG and tools only if the deployment decision expl
 | 11. Tool extension | Tool schema, validation, policy decision, execution log, and bounded retry. | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 | 12. Security and privacy | Loopback binding, logs, data boundary, RAG corpus boundary, tool permissions. | [[LLM/Study/Local LLM Security and Privacy Runbook]] |
 | 13. Operations | Loaded-model state, logs/metrics, resource pressure, restart, upgrade, rollback plan. | [[LLM/Study/Local LLM Observability and Operations Runbook]] |
-| 14. Deployment decision | Local CPU/GPU, self-hosted, hosted API, hybrid, or batch decision with rejected alternative. | [[LLM/Study/LLM Deployment Decision Matrix]] |
+| 14. Result synthesis and deployment decision | Local evidence is reconciled into keep/tune/reject/deploy readiness, then local CPU/GPU, self-hosted, hosted API, hybrid, or batch path is chosen with rejected alternative. | [[LLM/Study/Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix]] |
 | 15. Deployment readiness audit | Machine-checkable audit of workload, selected path, model/runtime, endpoint, benchmark, quality, privacy, operations, cost, rejected alternative, and retest proof. | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 
 Do not reorder phases 1 through 7. You need a workload before a model, model-store and runtime evidence before first pull, model custody before serving, and endpoint proof before client/RAG/tool claims.
@@ -94,6 +94,7 @@ Create one dated capstone note or folder with these links:
 | Tool proof | Schema, validated args, policy check, execution output, injected result, denied unsafe action. |
 | Security proof | Loopback binding, log boundary, RAG data boundary, tool permission boundary. |
 | Operations proof | Logs/metrics, resource state, restart check, backup/rollback, retest trigger. |
+| Result synthesis proof | Selected candidate, evidence contradictions, missing proof, rejected alternative, review trigger, and keep/tune/reject/deploy decision. |
 | Deployment readiness audit | JSON/Markdown/CSV audit output proving the final deployment memo has complete or explicitly waived evidence rows. |
 | Mastery audit proof | JSON/Markdown audit output with no critical academic, mechanism, local-inference, system, or exam gaps. |
 | Final memo | Decision, rejected alternative, known limits, next version. |
@@ -108,7 +109,7 @@ The smallest acceptable project is:
 4. One benchmark row, one evaluation set design audit, and one quality row; when LLM-as-judge is used, one judge calibration audit.
 5. One academic explanation tying the observed behavior to tokenization, prefill/decode, KV cache, quantization, sampling, or evaluation.
 6. One security row proving the endpoint did not leave loopback.
-7. One deployment memo rejecting at least one alternative.
+7. One result synthesis output and one deployment memo rejecting at least one alternative.
 8. One deployment readiness audit output or linked remediation row.
 
 This minimum proves local inference. It does not prove RAG, tools, multi-user serving, or maintainable operations.
@@ -173,6 +174,7 @@ This blueprint is complete for one project when:
 - [ ] scheduler evidence is audited when the project changes concurrency, queue, cache, long-prompt, or deployment policy
 - [ ] RAG and tool paths are either proven or explicitly out of scope with a reason
 - [ ] security, operations, lifecycle, and deployment rows have pass/hold/fail decisions
+- [ ] [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] output is linked before the deployment memo
 - [ ] [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] output is linked before accepting the final deployment memo
 - [ ] [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] has no critical gaps or links remediation rows
 - [ ] [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] links the final capstone note
@@ -200,6 +202,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

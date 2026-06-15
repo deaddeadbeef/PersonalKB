@@ -95,6 +95,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Tool loop | Tool-calling proof from [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] |  | Tool schema, validated arguments, policy check, execution result, injected tool result, bounded loop, and failure rows are captured. | Not started |
 | Tool/schema runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] |  | Structured JSON, required tool call, argument validation, policy decision, local execution, result injection, denial behavior, and JSONL row are captured before real tool integration. | Not started |
 | Adaptation decision | Memo using [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] |  | Prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no-train decision is justified from the measured failure mode, data, eval, compute, and rollback evidence. | Not started |
+| Result synthesis runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] |  | Selected candidate, endpoint/client, compatibility, benchmark, eval-set, quality, security, operations, rejected alternative, and review-trigger evidence are reconciled into keep, tune, reject, rerun, or deployment-memo readiness. | Not started |
 | Deployment decision | Memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] |  | Choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
 | Deployment readiness audit | Results JSON/CSV/Markdown from [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] |  | Workload, selected path, model/runtime, endpoint/client, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are audited before accepting the deployment memo. | Not started |
 
@@ -483,6 +484,7 @@ Next run:
 - An LLM judge score used for keep/reject decisions without a judge calibration runner output or linked remediation row.
 - A fine-tune decision without a baseline failure, held-out eval, and rollback plan.
 - A deployment choice without a real workload.
+- A deployment memo written before result synthesis reconciles endpoint, benchmark, quality, security, operations, and rejected-alternative evidence.
 - A final deployment memo without a deployment readiness audit output or linked remediation row.
 
 ## Completion Audit
@@ -528,6 +530,7 @@ Next run:
 - [ ] The RAG assistant includes a manifest, chunk records, embedding/reranker service card, retrieval evaluation, cited answer, unsupported-question refusal, citation audit, at least one diagnosed failure mode, and one RAG evidence runner output.
 - [ ] The mastery evidence audit runner has a pass or a linked remediation row for every academic, mechanism, local-inference, system, and exam gate.
 - [ ] The deployment memo chooses one path and rejects at least one alternative.
+- [ ] The deployment memo is preceded by a result synthesis runner output or a linked remediation row.
 - [ ] The deployment readiness audit runner has a pass or linked remediation row for every required deployment evidence kind.
 - [ ] The vault audit was regenerated after the capstone artifact was added.
 - [ ] Any unresolved gaps are explicit in the status column.
@@ -547,6 +550,7 @@ Next run:
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
+- [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
@@ -615,6 +619,7 @@ Next run:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]

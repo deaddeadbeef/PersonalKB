@@ -92,6 +92,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
@@ -161,6 +162,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] — execute the local inference path in order, leaving evidence at each stage from endpoint proof to capstone handoff
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] — choose candidate local models from workload contract, hardware, license, compatibility, benchmark, and quality evidence
 - [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] — turn workload, hardware, candidate, memory, compatibility, benchmark, and quality facts into repeatable model shortlist evidence
+- [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — reconcile shortlist, endpoint, benchmark, eval-set, quality, security, operations, and rejected-alternative proof into a keep/tune/reject/deploy decision
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] — map hardware, boundary, model bytes, runtime, scheduler, route, client/UI, workload, and operations layers before debugging
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] — record model card, license, gated access, exact revision, artifact safety, local path, and digest before serving
@@ -188,6 +190,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] — connect PagedAttention, KV-cache pressure, chunked prefill, continuous batching, slots, and queue policy to local measurements
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]] — audit saved scheduler evidence rows before changing concurrency, queue, cache, or deployment policy
 - [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] — check the final deployment evidence bundle before local CPU/GPU, self-hosted, hosted, hybrid, or batch inference is accepted
+- [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — audit whether the collected local-run evidence supports keep, tune, reject, rerun, or deployment-memo readiness
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — run a controlled concurrency ladder and decide whether the setup is single-user, queued, batch, self-hosted, or hosted
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] — run fixed concurrent OpenAI-compatible requests and save p50/p95 latency, throughput, errors, saturation, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] — separate warm-model behavior from true repeated-prefix KV reuse, then measure prompt-cache impact on TTFT, prefill, quality, and cache risk

@@ -60,6 +60,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] — Trace raw data through pretraining, SFT, preference optimization, adaptation, evaluation, and deployment gates
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — Train a toy causal LM to connect tokens, logits, loss, gradients, validation, and generation
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] — Choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from quality, latency, privacy, cost, and ops evidence
+- [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — Reconcile endpoint, compatibility, benchmark, eval-set, quality, safety, operations, and rejected-alternative evidence into a keep/tune/reject/deploy decision
 - [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] — Audit workload, selected path, model/runtime, endpoint, benchmark, quality, privacy, operations, cost, rejected alternative, and retest proof before accepting a deployment memo
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] — Decide when to prompt, use RAG, fine-tune, train LoRA/QLoRA adapters, optimize preferences, or distill
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] — Method for extracting claims, evidence, limitations, and deployment implications from papers
@@ -96,6 +97,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] — Audit academic, mechanism, local-inference, system, and exam evidence gates before any final mastery claim
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] — Choose candidate local models from workload, hardware, license, compatibility, benchmark, and quality evidence
 - [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] — Score workload, hardware, candidate, memory, compatibility, benchmark, and quality facts into a repeatable local model shortlist
+- [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — Combine shortlist, endpoint, benchmark, prompt-suite, quality, security, operations, and alternative evidence before the deployment memo
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — Practical path to run, serve, and benchmark local models
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — Hardware, OS, runtime, disk, port, and endpoint-boundary checks before serving
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] — Layer map from hardware and model bytes through runtime, API route, client/UI, workload, and operations evidence
@@ -137,6 +139,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] — Validate lifecycle manifests, baseline artifacts, backups, rollback targets, route state, and before/after/rollback decisions before service changes
 - [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — Machine-check prompt-suite workload fit, held-out/private coverage, leakage controls, rubrics, and downstream routes before the quality harness
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — Workload-specific prompt suites, rubrics, pairwise comparison, and RAG/citation gates
+- [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — Machine-check whether local evidence supports keep, tune, reject, rerun, or deployment-memo readiness
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Validate LLM-as-judge agreement and order-bias controls before judge scores support local quality decisions
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — Control thinking mode, reasoning parsers, effort levels, latency, trace visibility, and quality trade-offs
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — Local tool schemas, structured outputs, policy checks, execution loops, and tool failure evaluation
