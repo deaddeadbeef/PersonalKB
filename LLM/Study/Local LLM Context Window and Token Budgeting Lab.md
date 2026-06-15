@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local request fits only when system prompt, chat template, user text, history, retrieved context, tool schemas, reserved output, and safety margin all fit inside the runtime context limit.
 
-Use this after [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] and before long-context, RAG, tool, or benchmark runs. The chat-template lab proves the request is serialized correctly. This lab proves the serialized request has a measured budget and will not silently crowd out the answer.
+Use this after [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] and before long-context, RAG, tool, or benchmark runs. The chat-template lab proves the request is serialized correctly. This lab proves the serialized request has a measured budget and will not silently crowd out the answer. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] when the same budget should be saved as JSON, CSV, Markdown, and JSONL evidence.
 
 Pair this with [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when you need to explain prefill latency, [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when repeated prefixes might reduce prefill or TTFT, [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] and [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when retrieved chunks consume context, and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when prompt tokens must explain TTFT and memory.
 
@@ -196,6 +196,7 @@ This lab is complete when you have:
 - [ ] tokenizer sanity counts for the served model
 - [ ] one rendered chat prompt counted with template overhead
 - [ ] one context budget table with output reserve and safety margin
+- [ ] optional runner output from [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] when the budget needs repeatable evidence
 - [ ] one RAG or long-context packing policy if the workload uses external context
 - [ ] one overflow/truncation observation for the runtime
 - [ ] one short/medium/long prompt performance comparison
@@ -208,6 +209,7 @@ This lab is complete when you have:
 - [[LLM/Pre-2017 — Before Transformers/Tokenization]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Serving Runbook]]

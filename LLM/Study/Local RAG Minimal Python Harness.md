@@ -14,7 +14,7 @@ Use this with [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]]. Tha
 
 Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] when the harness needs a retrieval-only evaluation pass before generation: supported query set, top-k sweep, first relevant rank, reranking row, hybrid decision, context selection, and citation audit.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. The endpoint, route, model id, context budget, and sampler settings should be known before retrieval is blamed for model failures.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] or [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]]. The endpoint, route, model id, context budget, and sampler settings should be known before retrieval is blamed for model failures.
 
 Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before freezing `rag_config.json` when the embedding provider, vector dimension, normalization, query/document encoding rule, reranker endpoint, or reranker score semantics are not already proven.
 
@@ -343,6 +343,7 @@ This harness is complete when you have:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

@@ -69,6 +69,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have an API contract and need a reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] | Python client script, request/response/output files, JSONL row, and next route |
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
+| You have a long, RAG, tool, or multi-turn prompt and need fit proof | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] | Context manifest, component tokens, reserve, margin, fit decision, drop plan, and JSONL row |
 | You need first local inference proof | [[LLM/Study/Local LLM Windows First-Run Quickstart]] | Preflight, model id, response, listener proof |
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
@@ -93,6 +94,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
+| Context/token budget runner | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |  |
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
@@ -150,6 +152,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first client harness run | [[LLM/Study/Local LLM First Client Harness Runner]] |
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
+| One context/token budget runner output | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |

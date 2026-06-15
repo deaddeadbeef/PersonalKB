@@ -499,7 +499,7 @@ Get-NetTCPConnection -State Listen |
 | Wrong model id | `Invoke-RestMethod "$BaseUrl/models"` or `ollama list` | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | Route 404 | Check `$BaseUrl` includes `/v1` and route is `/chat/completions` | [[LLM/Study/Local LLM Serving Runbook]] |
 | Startup OOM | `nvidia-smi`, Task Manager, runtime logs | [[LLM/Study/Local LLM Model and Hardware Sizing Guide]] |
-| Long-prompt OOM | Count prompt/history/RAG/tool tokens | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
+| Long-prompt OOM | Count prompt/history/RAG/tool tokens | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] or [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | Slow first token | Compare prompt tokens, retrieved context, queue, and prefix reuse | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
 | Slow later tokens | Compare model size, quantization, offload, backend, and memory bandwidth | [[LLM/Study/Local LLM Quantization and GPU Offload Lab]] |
 | Streaming broken | Run non-streaming smoke and record unsupported or malformed streaming | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
@@ -525,6 +525,7 @@ Get-NetTCPConnection -State Listen |
 | First streaming timing run | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | First benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | Sampler, seed, stop, and cap controls | [[LLM/Study/Decoding and Sampling Controls Runner]] |
+| Context, history, RAG, tool, reserve, and margin budget | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | Python wrapper output | [[LLM/Study/Local LLM Client Harness Lab]] |
 | Timing and throughput row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | Quality pass/hold/fail | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -566,6 +567,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]

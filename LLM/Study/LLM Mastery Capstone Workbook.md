@@ -66,6 +66,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Decoding controls runner | Results JSON/CSV/Markdown from [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] |  | Baseline, temperature, seed repeatability, stop-string, output-cap, missing-layer, and next-route evidence are captured before benchmark or quality comparison. | Not started |
 | Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, and trace policy are captured. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
+| Context/token budget runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] |  | Prompt components, exact-or-estimated token counts, reserve, margin, fit/hold/error status, drop plan, and next route are captured before long-context or RAG inference. | Not started |
 | Serving internals and scheduler | Scheduler mechanism row from [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] |  | Cold/warm, short/long, repeated-prefix, scheduler state, KV/cache pressure, queue/preemption/OOM behavior, and one-variable tuning decision are captured. | Not started |
 | Concurrency and batch throughput | Concurrency ladder from [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] |  | Single-request baseline, max concurrency, p95 TTFT, throughput, memory, errors, saturation point, and backpressure policy are captured. | Not started |
 | Prompt cache and KV reuse | Cache decision card from [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] |  | Cold load, warm model, repeated-prefix run, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are captured. | Not started |
@@ -562,6 +563,7 @@ Next run:
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
