@@ -43,13 +43,13 @@ The first pull changes one variable: model tag. Do not also change runtime, endp
 
 ## Current First-Pull Decision
 
-Source check on 2026-06-16:
+Applied source check and pull on 2026-06-16:
 
 | Slot | Tag | Source facts to recheck before pull | Use |
 |---|---|---|---|
-| Baseline | `qwen3.5:4b` | Model page shows digest `2a654d98e6fb`, 3.4GB, 256K context, Text/Image input, 4.66B parameters, Q4_K_M, Apache 2.0. | First route-proof model. |
-| Smaller fallback | `qwen3.5:2b-q4_K_M` | Tags page shows digest `124a03c34777`, 1.9GB, 256K context, Text/Image input. | Use if disk, time, or network says 4B is too large. |
-| Text-only control | `qwen3:4b-instruct` | Model page shows digest `0edcdef34593`, 2.5GB, 256K context, Text input, 4.02B parameters, Q4_K_M. | Control run after or instead of Qwen 3.5 baseline. |
+| Applied first proof | `qwen3.5:2b-q4_K_M` | Tags page showed digest `124a03c34777`, 1.9GB, 256K context, Text/Image input; local `/api/tags` showed digest `124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9`. | First route-proof model, now proven in [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]]. |
+| Older baseline candidate | `qwen3.5:4b` | Initial source recheck reached the page but did not find the older expected `parameters 4.66B` and `quantization Q4_K_M` snippets. | Recheck before any future 4B pull; do not assume the old snippet set is still page-visible. |
+| Text-only control | `qwen3:4b-instruct` | Initial source recheck reached the page but did not find the older expected `parameters 4.02B` and `quantization Q4_K_M` snippets. | Recheck before a control pull; use it only if the current source facts pass. |
 | Stretch | `qwen3.5:9b` | Tags page shows digest `6488c96fa5fa`, 6.6GB, 256K context, Text/Image input. | Only after baseline endpoint proof exists. |
 | Avoid first | 27B and larger tags | Some tags exceed this machine's 12GB VRAM before KV cache and overhead. | Not first-run material. |
 

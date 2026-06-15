@@ -3771,3 +3771,48 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4978 files, 3107 Markdown files, 942 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new snapshot title or local-inference status terms.
+
+## [2026-06-16] curate | Prove first local Ollama inference
+
+Scope: turn the local LLM track from setup-only notes into a proved first inference on this Windows machine, while keeping the mastery status honest about remaining academic, quality, security, and capstone work.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Inference Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM First Model Candidate Ladder.md`
+- `LLM/Study/Local LLM First Model Pull Gate.md`
+- `LLM/Study/Local LLM First Model Source Recheck Runner.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Applied the model-store bootstrap path for `D:\Models`, `D:\Models\ollama`, `D:\Models\hf`, `D:\Models\hf\hub`, and `D:\Models\gguf`, with user environment variables for `OLLAMA_MODELS`, `HF_HOME`, and `HF_HUB_CACHE`.
+- Installed and proved Ollama on Windows, including installer hash/signature evidence, CLI path evidence, listener evidence, `/api/version`, and `/api/tags`.
+- Source-checked, pulled, and audited `qwen3.5:2b-q4_K_M` after the older 4B candidate snippets drifted.
+- Proved both native `/api/generate` and OpenAI-compatible `/v1/chat/completions` loopback inference with the response text `local llm ok`.
+- Added [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]] and routed it through the LLM MOC, study index, mastery dashboard, roadmap, hands-on practicum, model ladder, pull gate, source recheck runner, status snapshot, and capstone workbook.
+- Updated the status/dashboard/capstone notes to mark the first local endpoint, runtime install, model pull, runtime health, smoke request, and response debrief as passed, while keeping quality, security/privacy, endpoint audit, evidence-pack audit, academic no-notes defense, and capstone gates held.
+- Adjusted the first-model candidate/source notes so the selected fallback model is the current proved path and stale optional 4B snippets do not block the selected source check.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or non-LLM dirty files.
+
+Verification:
+- Bootstrap dry-run returned `hold` / `bootstrap_pending`; bootstrap apply returned `pass` / `bootstrap_ready_for_new_shell_check`.
+- Post-bootstrap readiness returned `pass` / `ready_for_first_runtime_step`.
+- Ollama installer script hash was recorded, Authenticode signer was `Ollama Inc.`, and runtime install returned `pass` / `windows_runtime_install_ready` with Ollama `0.30.8`.
+- Selected model source recheck returned `pass` / `first_model_source_rechecked` for `qwen3.5:2b-q4_K_M`.
+- First model pull runner returned `pass` / `first_model_pull_ready`; runtime metadata showed digest `124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9`, size 1.9 GB, parameter size 2.3B, quantization `Q4_K_M`, context length 262144, and capabilities `vision`, `completion`, `tools`, `thinking`.
+- Runtime health returned `pass` / `runtime_health_ready`, with the model visible through native and OpenAI-compatible model-list APIs.
+- Native smoke with `think=false` returned `local llm ok`; OpenAI-compatible smoke with a larger completion cap returned `local llm ok`.
+- First response debrief returned `pass`, with model match `true`, text match `true`, cold-load owner, total time 0.691 seconds, load time 0.405 seconds, prompt throughput 161.09 tokens/s, and decode throughput 31.51 tokens/s.
+- Current official Ollama Windows, download, CLI, generate, thinking, and OpenAI-compatibility docs were checked before making current runtime claims.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new first-inference proof note, selected model id, or evidence folder names.

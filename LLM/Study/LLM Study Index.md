@@ -175,6 +175,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] — map TTFT, TPOT, throughput, memory, queue, concurrency, and quality numbers to request phases, confounders, and next actions
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — choose today's recall prompt, study route, proof artifact, evidence destination, and next action without searching the whole vault
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] — current evidence-based hold/not-started/pass map for academic proof, local endpoint proof, and exact next routes
+- [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] — working local Ollama proof for `qwen3.5:2b-q4_K_M`: store, install, pull, health, native response, OpenAI-compatible response, and debrief
 - [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] — follow a weekly rhythm that pairs academic recall with applied proof artifacts and capstone links
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] — capture one study session as a recall answer, mechanism bridge, applied proof or blocker, and capstone link
 - [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] — build and defend one local assistant with academic, endpoint, client, RAG/tool, evaluation, security, operations, and deployment proof

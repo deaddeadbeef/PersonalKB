@@ -25,8 +25,8 @@ This ladder is scoped to the current first-run machine state:
 | Host boundary | Windows native first |
 | GPU | NVIDIA GeForce RTX 3080 Ti |
 | VRAM | 12288 MiB |
-| Current runtime state | Ollama and LM Studio CLI not installed or not on PATH |
-| Current endpoint state | no common local LLM listener on `11434`, `1234`, `8000`, `8001`, `8080`, or `30000` |
+| Current runtime state | Ollama `0.30.8` installed and proven by [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] |
+| Current endpoint state | loopback Ollama endpoint on `127.0.0.1:11434` proved for native and OpenAI-compatible smoke |
 | First runtime target | Ollama on loopback |
 | First proof target | native plus OpenAI-compatible route proof, not final model quality |
 
@@ -73,19 +73,20 @@ Source-page evidence is still only remote custody evidence. After pull, [[LLM/St
 
 ## First Pull Decision
 
-Use this decision unless a current model page or local constraint changes it:
+Use this decision for the historical first proof and rerun the source recheck before changing it:
 
 | Field | Decision |
 |---|---|
-| First pull | `qwen3.5:4b` |
-| First smaller fallback | `qwen3.5:2b` if the 4B pull is blocked by time, disk, or network |
+| Applied first pull | `qwen3.5:2b-q4_K_M` |
+| Why not the older 4B default | The first source recheck found the older `qwen3.5:4b` and `qwen3:4b-instruct` parameter/quantization snippets were no longer visible in the fetched pages, while the smaller fallback passed all required snippets. |
+| First smaller fallback | `qwen3.5:2b-q4_K_M` if the goal is route proof and the 4B source facts drift or the pull is blocked by time, disk, or network |
 | First text-only fallback | `qwen3:4b-instruct` if multimodal/reasoning defaults complicate the text-only smoke proof |
 | First stretch | `qwen3.5:9b` |
 | Avoid before baseline passes | `qwen3.5:27b-*`, `qwen3:30b`, `qwen3:235b`, any huge-context RAG run |
 | First prompt class | smoke only, then known-answer and structured-output mini-suite |
 | First failure owner to record | install/PATH, disk/cache, model tag, listener, route, memory, or quality |
 
-If `qwen3.5:4b` is unavailable at pull time, do not improvise with a much larger tag. Choose the smallest source-checked instruct/chat tag and record the replacement in the run card.
+If `qwen3.5:4b` is unavailable or the source recheck contradicts its expected facts, do not improvise with a much larger tag. Choose the smallest source-checked instruct/chat tag and record the replacement in the run card. The 2026-06-16 proof note records exactly that replacement.
 
 ## Upgrade Gates
 

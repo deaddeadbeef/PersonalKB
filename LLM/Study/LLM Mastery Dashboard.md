@@ -28,13 +28,13 @@ If there is no saved answer or evidence row, the session was reading, not master
 
 | Area | Status | Next proof |
 |---|---|---|
-| Current status snapshot | Held on academic defense and first local endpoint proof | Start from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] |
+| Current status snapshot | Local endpoint proof now passed; academic defense and quality/security/capstone audits still held | Start from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] and [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] |
 | Field map and papers | Not yet proven today | Explain one paper cluster without notes |
 | Math and mechanisms | Not yet proven today | Work one token/logit/attention/KV-cache explanation |
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
-| First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]], then [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], verify with [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before capstone promotion |
-| Model and runtime choice | First model ladder exists; storage decision snapshot points to `D:\Models` | Write provenance, compatibility, or sizing row after runtime install evidence |
-| Benchmark and quality | Not yet proven today | Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] after route proof, then save benchmark and quality row for one prompt class |
+| First local endpoint | Passed for Ollama loopback, `qwen3.5:2b-q4_K_M`, native and OpenAI-compatible routes | Run [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before capstone promotion |
+| Model and runtime choice | Ollama `0.30.8` and `qwen3.5:2b-q4_K_M` are proven for first route proof | Keep this model fixed until quality, security, and benchmark rows exist |
+| Benchmark and quality | Route proof and debrief exist; quality not yet scored | Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]], then save benchmark and quality row for one prompt class |
 | RAG/tools | Not yet proven today | Save retrieval, citation, structured-output, tool-schema, tool-result, or denied-action row |
 | Operations and deployment | Not yet proven today | Save security, lifecycle, observability, or deployment decision row |
 
@@ -46,6 +46,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 |---|---|---|
 | You do not know what to study next | [[LLM/Study/LLM Concept Dependency Map]] | Lowest unproven dependency |
 | You need the current proof state before choosing work | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] | Current pass/hold/not-started map, live machine evidence, and exact next academic/applied actions |
+| You need the current working local endpoint proof | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]] | Evidence paths for model store, install, pull, health, native/OpenAI-compatible smoke, debrief, and remaining caveats |
 | You need to turn this study block into evidence | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] | Recall answer, mechanism bridge, applied artifact or blocker, capstone link |
 | You are ready to turn the study path into one buildable project | [[LLM/Study/Local LLM Capstone Project Blueprint]] | Local assistant blueprint, evidence bundle, defense questions, and pass/hold/fail decision |
 | You have proof links and need to know whether mastery evidence is defensible | [[LLM/Study/LLM Mastery Evidence Audit Runner]] | Academic, mechanism, local-inference, system, exam, pass/hold/fail, and next-route audit |
@@ -157,7 +158,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Mastery status snapshot | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
-| First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] |  |
+| First local endpoint | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]], [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] | passed: [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]]; audit still pending |
 | First-run readiness runner | [[LLM/Study/Local LLM First Run Readiness Runner]] |  |
 | Model-store bootstrap runner | [[LLM/Study/Local LLM Model Store Bootstrap Runner]] |  |
 | First model pull runner | [[LLM/Study/Local LLM First Model Pull Runner]] |  |
@@ -235,6 +236,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 |---|---|
 | One unanswered recall prompt and corrected answer | [[LLM/Study/LLM Active Recall Question Bank]] or dated study note |
 | One dated current-state snapshot | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] |
+| One working local inference proof | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]] |
 | One recall/remediation audit output | [[LLM/Study/LLM Recall and Remediation Audit Runner]] |
 | One paper claim/evidence/limitation row | [[LLM/Study/LLM Paper Claim Ledger]] |
 | One paper claim audit output | [[LLM/Study/LLM Paper Claim Audit Runner]] |

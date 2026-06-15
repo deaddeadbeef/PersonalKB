@@ -57,6 +57,8 @@ You do not need full paper mastery before the first local run. You do need enoug
 | 9 | Tool or structured-output extension | Schema, validation, policy, execution, and quality rows |
 | 10 | Capstone handoff | Capstone project blueprint and one evidence ledger with gaps named |
 
+Current applied proof: [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] completes the first loopback route proof for Ollama and `qwen3.5:2b-q4_K_M`. Continue from Stage 5 quality, endpoint/evidence-pack audits, security, client harness, and capstone hardening before treating the setup as a maintained local service.
+
 Stop after any stage if the evidence fails. Use the failed row to choose the next controlled change, then save proof-quality diagnosis with [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] before the rerun supports benchmark, quality, operations, or deployment evidence.
 
 ## Stage 0: Preflight The Machine
@@ -129,6 +131,7 @@ Save:
 | First runtime health snapshot | Listener status, installed model ids, loaded model ids or idle state, OpenAI-compatible model ids, missing layer, next action |
 | First smoke request summary | Native request/response/output, OpenAI-compatible request/response/output, route decisions, missing layer, next action |
 | First response debrief runner output | Debrief JSON/Markdown/JSONL, converted timing, token rates, mechanism owner, quality boundary, next action |
+| Dated first inference proof note | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] with the proof path, thinking-mode caveat, route pass signals, debrief metrics, and next audits |
 | First endpoint evidence audit output | Run card, preflight, runtime install state, model custody, runtime health, smoke response, debrief, boundary, and decision gates |
 | First quality probe runner output | Five request/response/output files, results JSON/CSV/Markdown, JSONL, auto-checks, human-review status, next action |
 | First inference evidence pack audit output | Endpoint audit, API contract, client, benchmark, quality, security, streaming scope, and final decision gates |

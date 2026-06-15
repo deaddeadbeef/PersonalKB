@@ -55,16 +55,16 @@ Minimum manifest:
 }
 ```
 
-Recommended first-run candidates for this machine:
+Recommended first-run candidates for this machine. The 2026-06-16 applied run used `qwen3.5:2b-q4_K_M` because that required smaller fallback passed the live source check, while optional 4B/control snippets needed refresh before use:
 
 ```json
 [
   {
     "candidate_id": "baseline-qwen35-4b",
-    "slot": "route-proof baseline",
+    "slot": "optional larger baseline to refresh",
     "model_id": "qwen3.5:4b",
     "source_url": "https://ollama.com/library/qwen3.5:4b",
-    "required": true,
+    "required": false,
     "expected_snippets": ["2a654d98e6fb", "3.4GB", "parameters 4.66B", "quantization Q4_K_M"]
   },
   {
@@ -80,7 +80,7 @@ Recommended first-run candidates for this machine:
     "slot": "text-only instruct control",
     "model_id": "qwen3:4b-instruct",
     "source_url": "https://ollama.com/library/qwen3:4b-instruct",
-    "required": true,
+    "required": false,
     "expected_snippets": ["0edcdef34593", "2.5GB", "parameters 4.02B", "quantization Q4_K_M"]
   },
   {
@@ -492,10 +492,10 @@ New-Item -ItemType Directory -Force -Path $RunRoot | Out-Null
   candidates = @(
     @{
       candidate_id = "baseline-qwen35-4b"
-      slot = "route-proof baseline"
+      slot = "optional larger baseline to refresh"
       model_id = "qwen3.5:4b"
       source_url = "https://ollama.com/library/qwen3.5:4b"
-      required = $true
+      required = $false
       expected_snippets = @("ollama run qwen3.5:4b", "2a654d98e6fb", "3.4GB", "parameters 4.66B", "quantization Q4_K_M")
       next_route = "LLM/Study/Local LLM First Run Command Plan Runner"
     },
@@ -513,7 +513,7 @@ New-Item -ItemType Directory -Force -Path $RunRoot | Out-Null
       slot = "text-only instruct control"
       model_id = "qwen3:4b-instruct"
       source_url = "https://ollama.com/library/qwen3:4b-instruct"
-      required = $true
+      required = $false
       expected_snippets = @("ollama run qwen3:4b-instruct", "0edcdef34593", "2.5GB", "parameters 4.02B", "quantization Q4_K_M")
       next_route = "LLM/Study/Local LLM First Run Command Plan Runner"
     }
