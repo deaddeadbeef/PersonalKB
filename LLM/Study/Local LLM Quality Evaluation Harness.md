@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** A local model is not "good" just because it loads and answers quickly; it is good only when it passes a workload-specific quality gate with reproducible prompts, rubric scores, and latency/memory evidence.
 
-Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The selection playbook defines the workload and candidate slots, the sizing guide chooses plausible model/runtime candidates, the runbook proves the endpoint, the benchmark log records performance, and this harness decides whether the output quality is acceptable. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when a loss, benchmark, pairwise, judge, calibration, latency, or memory number is being used as evidence for the quality decision.
+Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The selection playbook defines the workload and candidate slots, the sizing guide chooses plausible model/runtime candidates, the runbook proves the endpoint, the benchmark log records performance, and this harness decides whether the output quality is acceptable. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] first when the endpoint has only smoke output and needs a tiny private probe before this full harness. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when a loss, benchmark, pairwise, judge, calibration, latency, or memory number is being used as evidence for the quality decision.
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when quality depends on choosing, validating, denying, executing, or using tool calls.
 
@@ -153,6 +153,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 ## References
 
 - [[LLM/Sources/Sources Index]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

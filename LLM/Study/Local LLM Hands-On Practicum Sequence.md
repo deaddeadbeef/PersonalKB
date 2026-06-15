@@ -49,7 +49,7 @@ You do not need full paper mastery before the first local run. You do need enoug
 | 2 | Model custody and compatibility | Provenance and compatibility cards |
 | 3 | Repeatable client call | Client harness row |
 | 4 | Request controls | Sampler, context, and template rows |
-| 5 | Benchmark and quality | Benchmark plus quality decision |
+| 5 | Benchmark and first quality | Benchmark plus first quality or quality-harness decision |
 | 6 | Runtime comparison | Decision card with rejected alternative |
 | 7 | Service hardening | Observability, security, lifecycle rows |
 | 8 | RAG extension | Retrieval, citation, refusal, and failure artifacts |
@@ -97,6 +97,7 @@ Default path:
 3. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one small instruct model and save list/tags/show metadata.
 4. Send one deterministic smoke prompt.
 5. Save the raw response before judging quality.
+6. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before treating smoke output as quality evidence.
 
 Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when this stage needs copyable commands for the run folder, listener check, Ollama native route, OpenAI-compatible route, Python client, or teardown proof.
 
@@ -176,6 +177,7 @@ Route:
 
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 
 Save:
@@ -313,6 +315,7 @@ Pass signal: the capstone workbook has proof links, not just status text.
 | Route or model id fails | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
 | Output ignores instructions | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
 | Benchmark is unstable | [[LLM/Study/Decoding and Sampling Controls Lab]] |
+| First smoke output has no quality signal | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | Quality is bad but speed is fine | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | RAG answer is unsupported | [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]] |
 | Tool call is unsafe or malformed | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
@@ -326,7 +329,7 @@ This practicum sequence is complete when you have:
 - [ ] one reusable client harness row
 - [ ] one controlled sampler/template/context row
 - [ ] one benchmark row
-- [ ] one quality row
+- [ ] one first quality probe row or quality row
 - [ ] one diagnosed failure or explicit no-failure row
 - [ ] one service security or lifecycle row if the endpoint will be reused
 - [ ] one RAG or tool extension artifact if the goal is more than chat
@@ -347,6 +350,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]

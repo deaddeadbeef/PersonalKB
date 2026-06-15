@@ -22,7 +22,7 @@ Move in order:
 5. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] and the mixed [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] for active recall.
 6. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to connect raw data, objectives, pretraining, post-training, adaptation, evaluation, and deployment.
 7. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to connect attention, next-token loss, gradients, validation, and generation in a toy model.
-8. Use [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]], [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], and [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
+8. Use [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]], [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]], [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]], [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], and [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] to prove local inference competence.
 
 Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] as the execution order for the applied local-inference proof. It tells you which artifact to leave behind at each stage instead of treating the labs as disconnected reference pages.
 
@@ -47,7 +47,7 @@ Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practic
 27. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to capture model state, request timings, logs, runtime metrics, resource pressure, and next controlled action.
 28. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when a working endpoint must survive restarts, upgrades, cache movement, UI updates, and rollback.
 29. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-30. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
+30. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] for the first private quality signal after smoke output, then use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to decide whether local output quality is good enough for the workload.
 31. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before judging a RAG assistant whose retrieval quality depends on local embedding or reranker inference.
 32. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] when quality gaps require prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, or a no-train decision.
 33. Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU/GPU, self-hosted, hosted API, hybrid, or batch inference from evidence.
@@ -205,7 +205,7 @@ Read:
 Proof:
 
 - Run one local model through a CLI and one local HTTP API.
-- If the first run is on Windows, use [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] before installing anything, then use [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] to capture preflight, model id, smoke response, listener boundary, and quality mini-suite before moving to broader serving work.
+- If the first run is on Windows, use [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] before installing anything, then use [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]], [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]], and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] to capture preflight, model id, smoke response, listener boundary, and quality mini-suite before moving to broader serving work.
 - Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when you need copyable startup, `/v1/models`, `/v1/chat/completions`, Python client, streaming, benchmark, and teardown commands for the chosen runtime.
 - Use [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] when you can execute a command but cannot yet explain the artifact, tokenizer, runtime, prefill, decode, route, client, evaluation, and operations chain.
 - Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] before acting on TTFT, TPOT, output tokens/sec, memory, queue, or quality numbers.
@@ -234,7 +234,7 @@ Proof:
 - Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] before interpreting latency, throughput, memory, or error symptoms; capture model state, route, request timings, logs, metrics, resource pressure, and one next controlled action.
 - Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] before changing runtime version, model revision, cache path, startup mode, UI container, driver stack, or client contract for a maintained local setup.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-- Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to score known-answer, schema, RAG/citation, long-context, multi-turn, and workload-specific prompts.
+- Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before the full harness when the first endpoint has no quality rows, then use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to score known-answer, schema, RAG/citation, long-context, multi-turn, and workload-specific prompts.
 - Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when local inference depends on function calling, structured output, tools, or agent loops.
 - Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before fine-tuning a model to fix a local quality gap.
 - Use [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to convert benchmark, quality, security, cost, and ops evidence into a deployment choice.
@@ -341,6 +341,8 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
+- [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]

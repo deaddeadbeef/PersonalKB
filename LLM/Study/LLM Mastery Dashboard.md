@@ -33,7 +33,7 @@ If there is no saved answer or evidence row, the session was reading, not master
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
 | First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] after the loopback response |
 | Model and runtime choice | First model ladder exists; storage decision snapshot points to `D:\Models` | Write provenance, compatibility, or sizing row after runtime install evidence |
-| Benchmark and quality | Not yet proven today | Save benchmark and quality row for one prompt class |
+| Benchmark and quality | Not yet proven today | Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] after route proof, then save benchmark and quality row for one prompt class |
 | RAG/tools | Not yet proven today | Save retrieval, citation, tool-schema, or denied-action row |
 | Operations and deployment | Not yet proven today | Save security, lifecycle, observability, or deployment decision row |
 
@@ -59,6 +59,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You are ready to pull the first Ollama model | [[LLM/Study/Local LLM First Model Pull Gate]] | Model tag decision, store proof, pull output, list/tags/show metadata, and pass/hold/fail route |
 | You are ready to execute the first local endpoint proof | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | Filled run folder, native response, OpenAI-compatible response, benchmark row, decision row |
 | You have the first response JSON and need to interpret it | [[LLM/Study/Local LLM First Response Debrief Card]] | Route claim, timing conversion, mechanism owner, benchmark add-on row, and next controlled action |
+| You have route proof and need a first quality signal | [[LLM/Study/Local LLM First Quality Probe Suite]] | Private prompt-suite outputs, script-assisted checks, human scores, and pass/hold/fail owner |
 | You need first local inference proof | [[LLM/Study/Local LLM Windows First-Run Quickstart]] | Preflight, model id, response, listener proof |
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
@@ -128,6 +129,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first model pull gate row | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | One first endpoint run folder | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
 | One first response debrief row | [[LLM/Study/Local LLM First Response Debrief Card]] |
+| One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -175,5 +177,6 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Command Cookbook]]

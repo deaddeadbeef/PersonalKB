@@ -22,7 +22,7 @@ This note is a cookbook, not a model recommendation list. Replace placeholders s
 | Keep the first endpoint on `127.0.0.1` or `localhost` | Local inference is still an application server with private prompts and logs. |
 | Change only one variable between runs | Runtime, model, quantization, prompt, sampler, and context can each explain a result. |
 | Prove `/v1/models` before `/v1/chat/completions` | The served model id must match the id sent by the client. |
-| Treat a smoke response as route proof only | Quality still needs [[LLM/Study/Local LLM Quality Evaluation Harness]]. |
+| Treat a smoke response as route proof only | Quality still needs [[LLM/Study/Local LLM First Quality Probe Suite]] and then [[LLM/Study/Local LLM Quality Evaluation Harness]]. |
 | Put failures in the evidence log | A failed command is useful if it names the layer that failed. |
 
 ## Run Folder
@@ -513,6 +513,7 @@ Get-NetTCPConnection -State Listen |
 | Preflight snapshot | [[LLM/Study/Local LLM Environment Preflight Lab]] |
 | First Ollama model pull | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | First response debrief | [[LLM/Study/Local LLM First Response Debrief Card]] |
+| First quality probe | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | First raw response | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | Startup command and route | [[LLM/Study/Local LLM Serving Runbook]] |
 | `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
@@ -544,6 +545,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** After the first local response is saved, use this card to translate the raw JSON into route proof, timing interpretation, academic mechanism, benchmark row, quality boundary, and next controlled action.
 
-Use this after [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] creates `ollama-native-response.json` or an equivalent first-response file. The endpoint run sheet proves that a local route answered. This debrief explains what that response proves, what it does not prove, and which next lab owns the next action.
+Use this after [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] creates `ollama-native-response.json` or an equivalent first-response file. The endpoint run sheet proves that a local route answered. This debrief explains what that response proves, what it does not prove, and which next lab owns the next action. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] next when the route works and you need a small private quality signal before the full harness.
 
 This card is intentionally small. It is the bridge between one saved response and the larger [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]].
 
@@ -120,7 +120,7 @@ Choose the primary mechanism before choosing a next action:
 | `prompt_eval_duration` is high relative to output | Prefill, prompt length, context assembly, tokenizer/template | [[LLM/Study/LLM Inference Request Lifecycle Lab]] and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
 | `eval_duration` is high per output token | Decode loop, model size, memory bandwidth, quantization, offload | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
 | `eval_count` is much larger than expected | Output cap, stop condition, prompt looseness | [[LLM/Study/Decoding and Sampling Controls Lab]] |
-| Output is fast but wrong | Quality/evaluation, not serving | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| Output is fast but wrong | Quality/evaluation, not serving | [[LLM/Study/Local LLM First Quality Probe Suite]] first, then [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | Output ignores role or format | Chat template, tokenizer, stop policy, route shape | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
 | Native works but OpenAI-compatible route fails | API compatibility layer | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
 | Route works but client script fails | Client harness, timeout, auth placeholder, JSON parsing | [[LLM/Study/Local LLM Client Harness Lab]] |
@@ -204,6 +204,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]

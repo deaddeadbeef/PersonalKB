@@ -225,7 +225,7 @@ Important distinction: OpenAI-compatible route proof does not mean every OpenAI 
 
 ## Step 7: Save Benchmark Row
 
-Before copying the benchmark row, use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] to convert the native response's nanosecond timing fields and decide whether the response is route-only, benchmark-ready, or blocked by missing metrics.
+Before copying the benchmark row, use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] to convert the native response's nanosecond timing fields and decide whether the response is route-only, benchmark-ready, or blocked by missing metrics. If the route is healthy, use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before claiming any quality signal.
 
 | Run id | Runtime | Model | Quantization | Hardware | Prompt class | Prompt tokens | Output tokens | TTFT | Tokens/sec | Peak RAM/VRAM | Quality decision | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -259,7 +259,7 @@ Copy this row into [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capston
 | `ollama pull` fails | network, disk, model tag, or registry | [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]] |
 | native API fails but CLI works | server process, listener, route, or localhost | [[LLM/Study/Local LLM Serving Runbook]] |
 | OpenAI-compatible route fails but native works | compatibility route or model id mismatch | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
-| response is fast but wrong | model quality, sampler, or prompt | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| response is fast but wrong | model quality, sampler, or prompt | [[LLM/Study/Local LLM First Quality Probe Suite]] first, then [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | response is slow | cold load, prefill, decode, offload, or memory pressure | [[LLM/Study/LLM Inference Request Lifecycle Lab]] |
 
 ## Completion Gate
@@ -275,6 +275,7 @@ This run sheet is complete only when:
 - [ ] `ollama-native-request.json` and `ollama-native-response.json` exist
 - [ ] `ollama-tags.json`, `openai-chat-request.json`, and `openai-chat-response.json` exist
 - [ ] [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or equivalent debrief row interprets the first response
+- [ ] [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or equivalent note records whether smoke output has any first quality signal
 - [ ] benchmark row is copied or linked
 - [ ] decision row is copied or linked
 - [ ] any failure is routed to exactly one next diagnostic note
@@ -292,6 +293,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

@@ -42,6 +42,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | First model pull gate | Pull/list/show row from [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] |  | Selected tag, source-page check, model-store decision, pull output, `ollama ls`, `/api/tags`, `/api/show`, and pass/hold/fail handoff are captured before endpoint smoke. | Not started |
 | Local model endpoint | Filled [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, request, response, timing, quality decision, and next action are captured after the install and model-pull gates pass. | Not started |
 | First response debrief | Debrief row from [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] |  | The first saved response is interpreted as route proof, timing evidence, mechanism owner, benchmark add-on row, and next controlled action without treating smoke output as quality proof. | Not started |
+| First quality probe | Prompt-suite outputs from [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] |  | The first working endpoint has private known-answer, JSON, extraction, grounded-refusal, and constraint-following rows before any workload-quality claim. | Not started |
 | Local practicum sequence | Handoff note from [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] |  | Stages 0-10 have evidence links or explicit skipped/blocked notes, including endpoint, client, controls, benchmark, quality, service, and extension proof. | Not started |
 | Workload-to-model selection | Candidate card from [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] |  | Workload contract, candidate slot, source, license, artifact options, runtime candidates, sizing risk, rejection trigger, and pass/hold/fail rule are written before download or serving. | Not started |
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
@@ -462,6 +463,7 @@ Next run:
 - [ ] The runtime install gate is linked before any model pull or endpoint proof.
 - [ ] The first model pull gate is linked before any Ollama endpoint proof.
 - [ ] The first response debrief names what the response proves, what it does not prove, the interpreted metric, and the next controlled action.
+- [ ] The first quality probe either records pass/hold/fail rows or explicitly routes to the full quality harness or troubleshooting.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
 - [ ] The local practicum handoff links every stage artifact, or explicitly marks skipped or blocked stages.
@@ -514,6 +516,7 @@ Next run:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
