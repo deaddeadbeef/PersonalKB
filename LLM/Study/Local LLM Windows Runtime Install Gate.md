@@ -3,14 +3,14 @@ tags: [study, llm, inference, local-llm, windows, ollama, install, readiness, ev
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM Windows Runtime Install Gate
 
 > **One-line summary** Prove the Windows runtime install, PATH refresh, model-store inheritance, log locations, and loopback listener before the first model pull.
 
-Use this after [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store snapshot says this machine is ready to create `D:\Models` and set `OLLAMA_MODELS`; this install gate says how to prove the Ollama runtime itself is installed correctly before downloading model weights. After the first model pull, use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to capture a no-inference listener and model-list artifact before sending a smoke prompt.
+Use this after [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store snapshot says this machine is ready to create `D:\Models` and set `OLLAMA_MODELS`; this install gate says how to prove the Ollama runtime itself is installed correctly before downloading model weights. Use [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] after install or existing-runtime discovery when you want the PATH, version, model-store env, loopback listener, `/api/version`, and `/api/tags` checks saved as repeatable JSON, Markdown, CSV, and JSONL evidence. After the first model pull, use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to capture a no-inference listener and model-list artifact before sending a smoke prompt.
 
 This note is an execution gate, not proof that the runtime is installed now. Do not mark it complete until the evidence files exist in a dated run folder.
 
@@ -237,6 +237,8 @@ Useful Windows evidence paths:
 
 Do not run `ollama pull` while this gate is hold or fail.
 
+When the manual evidence exists, run [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] to turn the same state into a machine-checkable pass/hold/fail artifact before [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] and [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]].
+
 ## Copyable Handoff Card
 
 Paste this into the first endpoint run folder when the gate passes.
@@ -282,6 +284,7 @@ This install gate is complete when:
 - [ ] listener proof is captured after install
 - [ ] Windows log/binary/model paths are recorded
 - [ ] pass/hold/fail decision is copied into the first endpoint run sheet
+- [ ] optional runner output from [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] is linked when you need machine-checkable install readiness
 - [ ] no model pull occurred before this gate passed
 
 ## References
@@ -292,15 +295,20 @@ Internal:
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
+- [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 
-External/current docs checked 2026-06-15:
+External/current docs checked 2026-06-16:
 
 - [Ollama Windows documentation](https://docs.ollama.com/windows)
 - [Ollama Windows download page](https://ollama.com/download/windows)
 - [Ollama CLI reference](https://docs.ollama.com/cli)
 - [Ollama troubleshooting documentation](https://docs.ollama.com/troubleshooting)
+- [Ollama API introduction](https://docs.ollama.com/api/introduction)
+- [Ollama list local models API](https://docs.ollama.com/api/tags)
+- [Ollama get version API](https://docs.ollama.com/api-reference/get-version)

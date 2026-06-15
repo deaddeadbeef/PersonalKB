@@ -58,6 +58,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]]
@@ -172,6 +173,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] — use this workstation's current disk, cache-variable, PATH, directory, GPU, and listener evidence before the first installer or model pull
 - [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]] — generate the first-run PowerShell plan, run folder, evidence filenames, loopback URLs, and downstream gate manifests before any install, pull, or prompt
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] — prove installer source, new-shell PATH, model-store inheritance, listener boundary, and log locations before the first model pull
+- [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] — save repeatable install-readiness JSON, Markdown, CSV, and JSONL evidence for Ollama command, version, model-store env, listener, `/api/version`, and `/api/tags`
 - [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] — freeze the selected Ollama tag, pull only one baseline model, capture list/tags/show metadata, and decide whether endpoint smoke is allowed
 - [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] — audit saved pull output, CLI/API inventory, show metadata, source check, store decision, compatibility proof, and next route before runtime health
 - [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] — capture one no-inference runtime health artifact: listener reachability, `/api/tags`, `/api/ps`, `/v1/models`, expected model visibility, missing layer, and next action

@@ -3,7 +3,7 @@ tags: [study, llm, inference, local-llm, ollama, windows, run-sheet, evidence]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Endpoint Run Sheet
@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and while executing [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The readiness snapshot says the current machine state. The quickstart explains the full path. Use [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]] first when you want the exact PowerShell sequence, run folder, and evidence filenames generated before execution. This run sheet is the one-session checklist that turns the path into files you can link from [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
 
-This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to decide where model bytes live and prove the runtime install. Then use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture the selected model tag, pull output, list/tags/show metadata, and pass/hold/fail handoff. Use [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] or [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] before endpoint smoke testing when you want no-generation proof that the listener and model-list routes are ready. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] when you want the native and OpenAI-compatible smoke requests saved by one standard runner. Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] after response debrief to check whether the run folder is complete enough to promote.
+This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to decide where model bytes live and prove the runtime install. Then use [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] to turn installed-runtime state into a no-generation JSON/Markdown/CSV/JSONL verdict before [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] and [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]]. Use the pull gate to capture the selected model tag, pull output, list/tags/show metadata, and pass/hold/fail handoff. Use [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] or [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] before endpoint smoke testing when you want no-generation proof that the listener and model-list routes are ready. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] when you want the native and OpenAI-compatible smoke requests saved by one standard runner. Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] after response debrief to check whether the run folder is complete enough to promote.
 
 ## Run Contract
 
@@ -24,6 +24,7 @@ This sheet is not endpoint proof until the evidence files exist. A checked box w
 | First model | `qwen3.5:4b` from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] unless the model page or local constraints force a smaller tag |
 | Storage snapshot | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | Runtime install gate | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
+| Runtime install runner | [[LLM/Study/Local LLM Windows Runtime Install Runner]] |
 | Command plan | [[LLM/Study/Local LLM First Run Command Plan Runner]] |
 | Model pull gate | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | Runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
@@ -56,6 +57,7 @@ runtime=Ollama on Windows
 model=qwen3.5:4b
 storage_snapshot=Local LLM Model Store Readiness Snapshot
 runtime_install_gate=Local LLM Windows Runtime Install Gate
+runtime_install_runner=Local LLM Windows Runtime Install Runner
 runtime_health_snapshot=Local LLM First Runtime Health Snapshot
 runtime_health_runner=Local LLM First Runtime Health Runner
 smoke_request_runner=Local LLM First Smoke Request Runner
@@ -112,7 +114,7 @@ Pass signal: this proves whether the run starts from a clean install state or an
 
 Choose one path and save which path you used.
 
-Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] for the full install/PATH/env/listener proof. Do not pull a model until that gate is pass.
+Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] for the full install/PATH/env/listener proof, then use [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] for the machine-checkable no-generation verdict. Do not pull a model until that gate and runner are pass or have an explicit hold row explaining the missing install layer.
 
 | Path | When | Evidence |
 |---|---|---|
@@ -304,6 +306,7 @@ This run sheet is complete only when:
 - [ ] `run-card.txt` exists
 - [ ] pre-install machine evidence exists
 - [ ] `ollama-version-after.txt` exists
+- [ ] [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] output is linked when this run needs audited install readiness
 - [ ] model pull gate evidence exists, or this run sheet includes equivalent pull/list/tags/show output
 - [ ] `ollama-list-after-pull.txt` contains the selected model
 - [ ] `listeners-before-smoke.txt` shows the endpoint boundary
@@ -325,6 +328,8 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
+- [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]

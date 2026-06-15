@@ -3166,3 +3166,37 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4961 files, 3090 Markdown files, 925 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-16] curate | Add Windows runtime install runner
+
+Scope: turn the manual Windows Ollama install gate into a repeatable no-generation runner before source recheck, model pull, runtime health, and endpoint smoke evidence.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Endpoint Run Sheet.md`
+- `LLM/Study/Local LLM First Run Command Plan Runner.md`
+- `LLM/Study/Local LLM Windows First-Run Quickstart.md`
+- `LLM/Study/Local LLM Windows Runtime Install Gate.md`
+- `LLM/Study/Local LLM Windows Runtime Install Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Windows Runtime Install Runner]] with a standard-library Python runner that writes install-readiness JSON, Markdown, CSV, and JSONL outputs without installing, pulling, or sending inference.
+- The runner audits official installer source, install method, `ollama` command path, `ollama --version`, `ollama ls`, `OLLAMA_MODELS` process/user inheritance, loopback listener state, `/api/version`, and `/api/tags`.
+- Updated [[LLM/Study/Local LLM First Run Command Plan Runner]] so generated first-run plans now include `windows-runtime-install-manifest.json` and a `07-plan-runtime-install-runner` step.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, Windows quickstart, endpoint run sheet, and manual install gate through the install runner before first model pull.
+- Checked current Ollama Windows, download, CLI, API introduction, authentication, `/api/version`, and `/api/tags` docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `windows_runtime_install_runner.py` from the note.
+- Runtime-install fixture checks: complete installed runtime -> `pass` / `windows_runtime_install_ready`; missing command/listener -> `hold`; non-official source and wildcard listener -> `fail`.
+- Extracted and compiled `first_run_command_plan.py`; complete manifest -> `pass` with 17 planned steps including `07-plan-runtime-install-runner`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4962 files, 3091 Markdown files, 926 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

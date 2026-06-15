@@ -31,7 +31,7 @@ If there is no saved answer or evidence row, the session was reading, not master
 | Field map and papers | Not yet proven today | Explain one paper cluster without notes |
 | Math and mechanisms | Not yet proven today | Work one token/logit/attention/KV-cache explanation |
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
-| First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before capstone promotion |
+| First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], verify with [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before capstone promotion |
 | Model and runtime choice | First model ladder exists; storage decision snapshot points to `D:\Models` | Write provenance, compatibility, or sizing row after runtime install evidence |
 | Benchmark and quality | Not yet proven today | Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] after route proof, then save benchmark and quality row for one prompt class |
 | RAG/tools | Not yet proven today | Save retrieval, citation, structured-output, tool-schema, tool-result, or denied-action row |
@@ -69,6 +69,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
 | You have artifact, runtime, tokenizer, or route facts but no compatibility decision | [[LLM/Study/Local LLM Runtime Compatibility Runner]] | Architecture, artifact, quantization, tokenizer, template, runtime, route, custody, sizing, and next proof audit |
 | You need to install Ollama without losing the evidence trail | [[LLM/Study/Local LLM Windows Runtime Install Gate]] | Installer source, new-shell PATH, model-store inheritance, listener, and log proof |
+| You installed or opened Ollama and need a repeatable readiness verdict | [[LLM/Study/Local LLM Windows Runtime Install Runner]] | JSON, Markdown, CSV, and JSONL install-readiness verdict for command, version, model-store env, loopback listener, `/api/version`, and `/api/tags` |
 | You are ready to pull the first Ollama model | [[LLM/Study/Local LLM First Model Pull Gate]] | Model tag decision, store proof, pull output, list/tags/show metadata, and pass/hold/fail route |
 | You pulled the first model and need to know whether it counts | [[LLM/Study/Local LLM First Model Pull Runner]] | Selected tag, source check, store decision, pull output, CLI/API inventory, show metadata, and next route audit |
 | You need to know whether the local runtime is reachable before endpoint smoke | [[LLM/Study/Local LLM First Runtime Health Snapshot]] | Health JSON/Markdown, installed and loaded model ids, OpenAI-compatible ids, missing layer, and next action |
@@ -215,6 +216,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One machine-specific model-store decision row | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | One reviewed first-run command plan | [[LLM/Study/Local LLM First Run Command Plan Runner]] |
 | One runtime install gate row | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
+| One runtime install runner output before first model pull | [[LLM/Study/Local LLM Windows Runtime Install Runner]] |
 | One first model pull gate row | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | One first model pull runner output before runtime health or endpoint smoke | [[LLM/Study/Local LLM First Model Pull Runner]] |
 | One first runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
@@ -323,6 +325,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]

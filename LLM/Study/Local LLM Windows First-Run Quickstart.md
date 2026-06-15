@@ -3,14 +3,14 @@ tags: [study, llm, inference, local-llm, windows, quickstart]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM Windows First-Run Quickstart
 
 > **One-line summary** On Windows, the fastest credible first local LLM proof is: capture preflight evidence, run a small model with Ollama or LM Studio, call the loopback HTTP API from PowerShell, save the response and timing fields, then decide whether to keep, tune, or switch runtime.
 
-Use this note when you want the shortest path from "I have Windows" to "I have a local model answering through an API." For this workstation, open [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] first so runtime, GPU, listener, and first-model assumptions are explicit before installing or pulling anything. Before a model pull, complete [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] so the cache path, install evidence, and disk budget are not guessed. If you want one reviewed command sequence before touching the runtime, generate it with [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]]. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one baseline model and capture `ollama ls`, `/api/tags`, and `/api/show` before endpoint smoke testing. When you are ready to execute the first Ollama pass, use [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to save each evidence file, then use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] to check whether the run folder counts as endpoint proof. If you only need the copyable command layer, use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]. After the first response works, expand the evidence with [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
+Use this note when you want the shortest path from "I have Windows" to "I have a local model answering through an API." For this workstation, open [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] first so runtime, GPU, listener, and first-model assumptions are explicit before installing or pulling anything. Before a model pull, complete [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], and [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] so the cache path, install evidence, listener, read-only API, and disk budget are not guessed. If you want one reviewed command sequence before touching the runtime, generate it with [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]]. Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] and [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one baseline model and capture `ollama ls`, `/api/tags`, and `/api/show` before endpoint smoke testing. When you are ready to execute the first Ollama pass, use [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to save each evidence file, then use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] to check whether the run folder counts as endpoint proof. If you only need the copyable command layer, use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]. After the first response works, expand the evidence with [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
 
 ## Runtime Choice For The First Hour
 
@@ -67,7 +67,7 @@ Pass signal: the run record says whether this is Windows-native, WSL, Docker, or
 
 ## Step 2A: Ollama Fast Path
 
-Install or update Ollama from the official Windows installer or script. Before pulling a model, decide whether the default model store is acceptable or whether `OLLAMA_MODELS` should be set using [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and this machine's [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]. Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to capture installer source, new-shell PATH, version, model list, and listener proof, then use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] for the first `ollama pull`. If you use the script path, read the source/risk posture first just as you would for any installer:
+Install or update Ollama from the official Windows installer or script. Before pulling a model, decide whether the default model store is acceptable or whether `OLLAMA_MODELS` should be set using [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and this machine's [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]. Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to capture installer source, new-shell PATH, version, model list, and listener proof, then run [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] to save the no-generation readiness verdict before [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] and [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]]. If you use the script path, read the source/risk posture first just as you would for any installer:
 
 ```powershell
 irm https://ollama.com/install.ps1 | iex
@@ -287,6 +287,7 @@ Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshootin
 This quickstart is complete when you have:
 
 - [ ] `preflight.txt`, `disk.txt`, and optional `nvidia-smi.txt`
+- [ ] runtime install gate and runner output exist before any model pull
 - [ ] model id copied from `ollama list`, `/api/tags`, LM Studio UI, or `/v1/models`
 - [ ] one native or OpenAI-compatible smoke response saved as JSON
 - [ ] listener/boundary proof saved
@@ -304,6 +305,8 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
+- [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]

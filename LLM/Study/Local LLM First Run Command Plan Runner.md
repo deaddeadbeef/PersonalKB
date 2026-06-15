@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** Generate and audit one ordered PowerShell command plan for the first local LLM run before installing, pulling, or sending any inference request.
 
-Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] have made the first runtime, model, model-store, and loopback assumptions explicit. This runner sits before [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] when you want one generated command sequence with evidence filenames already named.
+Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] have made the first runtime, model, model-store, and loopback assumptions explicit. This runner sits before [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] when you want one generated command sequence with evidence filenames already named. It also generates the manifest for [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] so the installed-runtime check can be audited before the first pull.
 
 The runner itself does not install Ollama, pull a model, call `/api/chat`, call `/api/generate`, or call `/v1/chat/completions`. It writes a reviewed command plan: JSON, Markdown, CSV, JSONL, and a PowerShell script that you can inspect before running.
 
@@ -342,9 +342,39 @@ if (Get-Command nvidia-smi -ErrorAction SilentlyContinue) {
     steps.extend(
         [
             make_step(
+                "07-plan-runtime-install-runner",
+                "runtime-install",
+                "LLM/Study/Local LLM Windows Runtime Install Runner",
+                "windows-runtime-install-manifest.json",
+                """
+@{
+  run_id = "$RunId-runtime-install"
+  run_root = $RunRoot
+  runtime = $Runtime
+  installer_source = "https://ollama.com/download/windows"
+  installer_method = $RuntimeInstallScope
+  model_store_decision = $ModelStoreDecision
+  expected_ollama_models = $env:OLLAMA_MODELS
+  native_base_url = $NativeBase
+  require_loopback = $true
+  require_command = $true
+  require_listener = $true
+  require_api_version = $true
+  require_api_tags = $true
+  pass_next_route = "LLM/Study/Local LLM First Model Source Recheck Runner"
+  hold_next_route = "LLM/Study/Local LLM Windows Runtime Install Gate"
+  fail_next_route = "LLM/Study/Local LLM Security and Privacy Runbook"
+} | ConvertTo-Json -Depth 8 | Set-Content -Path (Join-Path $RunRoot "windows-runtime-install-manifest.json") -Encoding utf8
+# Extract windows-runtime-install-runner.py, then run:
+# $env:LOCAL_LLM_WINDOWS_RUNTIME_INSTALL_MANIFEST = Join-Path $RunRoot "windows-runtime-install-manifest.json"
+# python .\\windows-runtime-install-runner.py
+""",
+                "Prepare the no-generation install-readiness runner manifest before first model pull.",
+            ),
+            make_step(
                 "07-prove-runtime-install",
                 "runtime-install",
-                "LLM/Study/Local LLM Windows Runtime Install Gate",
+                "LLM/Study/Local LLM Windows Runtime Install Runner",
                 "runtime-install.txt",
                 """
 Get-Command ollama -ErrorAction SilentlyContinue |
@@ -357,7 +387,7 @@ ollama --version 2>&1 | Tee-Object -FilePath (Join-Path $RunRoot "runtime-instal
             make_step(
                 "08-prove-runtime-listener",
                 "runtime-install",
-                "LLM/Study/Local LLM Windows Runtime Install Gate",
+                "LLM/Study/Local LLM Windows Runtime Install Runner",
                 "runtime-version.json",
                 """
 try {
@@ -719,6 +749,8 @@ def render_powershell(record: dict[str, Any]) -> str:
         f"$OpenAIBase = {ps_quote(record['openai_base_url'].rstrip('/'))}",
         f"$SecurityBoundary = {ps_quote(record['security_boundary'])}",
         f"$ModelStoreDecision = {ps_quote(record['model_store_decision'])}",
+        f"$RuntimeInstallScope = {ps_quote(record['runtime_install_scope'])}",
+        f"$ModelPullScope = {ps_quote(record['model_pull_scope'])}",
         "$IncludeOpenAI = $" + str(bool(record["include_openai_route"])).lower(),
         "$IncludeStreaming = $" + str(bool(record["include_streaming"])).lower(),
     ]
@@ -786,6 +818,8 @@ def main() -> int:
         "openai_base_url": display(manifest.get("openai_base_url") or "http://127.0.0.1:11434/v1"),
         "security_boundary": display(manifest.get("security_boundary")),
         "model_store_decision": display(manifest.get("model_store_decision")),
+        "runtime_install_scope": display(manifest.get("runtime_install_scope")),
+        "model_pull_scope": display(manifest.get("model_pull_scope")),
         "include_openai_route": bool_value(manifest.get("include_openai_route"), True),
         "include_streaming": bool_value(manifest.get("include_streaming"), False),
         "result": result,
@@ -917,7 +951,7 @@ This command-plan output counts only when:
 - [ ] `require_loopback` remains true for the first run unless a security review is linked
 - [ ] generated JSON, Markdown, PowerShell, CSV, and JSONL outputs exist
 - [ ] generated PowerShell has been reviewed before execution
-- [ ] the generated plan routes to source recheck, runtime health, smoke request, first response debrief, endpoint audit, and first inference packet audit
+- [ ] the generated plan routes to source recheck, runtime install runner, runtime health, smoke request, first response debrief, endpoint audit, and first inference packet audit
 - [ ] the copy row is linked from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] or [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
 
 ## References
@@ -931,6 +965,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]

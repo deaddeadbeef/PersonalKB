@@ -50,6 +50,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Windows model-store decision | Disk/cache/storage card from [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | The default store or custom `OLLAMA_MODELS` path is chosen before large downloads, with disk, directory, environment, and rollback evidence. | Store decision drafted; execution proof pending |
 | First-run command plan | Command-plan JSON/Markdown/PowerShell/CSV from [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]] |  | Run root, runtime, model id, loopback URLs, storage decision, install scope, pull scope, downstream gate manifests, and evidence filenames are reviewed before first execution. | Not started |
 | Windows runtime install gate | Install/PATH/listener row from [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] |  | Installer source, new-shell `PATH`, `ollama --version`, empty or known model list, log paths, listener boundary, and rollback route are captured before model pull. | Not started |
+| Windows runtime install runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] |  | `ollama` command path, version output, model-store env decision, loopback listener, `/api/version`, `/api/tags`, pass/hold/fail decision, and next route are audited before model pull. | Not started |
 | First model pull gate | Pull/list/show row from [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] |  | Selected tag, source-page check, model-store decision, pull output, `ollama ls`, `/api/tags`, `/api/show`, and pass/hold/fail handoff are captured before endpoint smoke. | Not started |
 | First model pull runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] |  | Selected model, source check, store decision, runtime install proof, runtime compatibility proof, pull output, `ollama ls`, `/api/tags`, `/api/show`, model visibility, digest check, pass/hold/fail decision, and next route are audited before runtime health or endpoint smoke. | Not started |
 | First runtime health snapshot | Health JSON/Markdown from [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] |  | Listener reachability, installed model ids, loaded model ids or idle state, OpenAI-compatible model ids, expected model visibility, missing layer, and next action are captured without inference. | Not started |
@@ -264,6 +265,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Hardware sizing runner |  |
 | Model selection runner |  |
 | Runtime install gate |  |
+| Runtime install runner |  |
 | Acquisition/provenance card |  |
 | First model pull gate |  |
 | First model pull runner |  |
@@ -486,7 +488,7 @@ Next run:
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
 - A first local run promoted into capstone evidence without a first inference evidence pack audit or an explicit hold row naming the missing packet gate.
-- A Windows first-run claim that skips the model-store decision, runtime install gate, first model pull gate, or endpoint run sheet.
+- A Windows first-run claim that skips the model-store decision, runtime install gate, runtime install runner when machine-checkable proof is required, first model pull gate, or endpoint run sheet.
 - An Ollama endpoint response accepted without `ollama ls`, `/api/tags`, and `/api/show` evidence for the served model.
 - A vLLM or SGLang-on-Windows claim without WSL CUDA setup proof, including WSL GPU visibility, `/v1/models`, Windows client route, logs, and metrics.
 - A containerized local-service claim without Docker GPU proof, pinned image tag, cache mount, loopback publish, Compose config, logs, metrics, and provider routing evidence.
@@ -526,7 +528,7 @@ Next run:
 - [ ] The self-assessment exam has a filled run sheet and is passed, or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] The Windows model-store decision is linked before any large model pull.
-- [ ] The runtime install gate is linked before any model pull or endpoint proof.
+- [ ] The runtime install gate and runtime install runner output are linked before any model pull or endpoint proof when this is the audited first Windows run.
 - [ ] The first model pull gate is linked before any Ollama endpoint proof.
 - [ ] The first response debrief names what the response proves, what it does not prove, the interpreted metric, and the next controlled action.
 - [ ] The first quality probe either records pass/hold/fail rows or explicitly routes to the full quality harness or troubleshooting.
@@ -602,6 +604,7 @@ Next run:
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
