@@ -37,7 +37,10 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | First-run readiness | Machine-specific card from [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | Runtime install state, GPU availability, common listener ports, first runtime choice, first model class, and next proof action are captured before installing or serving. | Runtime not installed; ready for first execution |
-| Local model endpoint | Filled [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, timing, quality decision, and next action are captured. | Not started |
+| Windows model-store decision | Disk/cache/storage card from [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | The default store or custom `OLLAMA_MODELS` path is chosen before large downloads, with disk, directory, environment, and rollback evidence. | Store decision drafted; execution proof pending |
+| Windows runtime install gate | Install/PATH/listener row from [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] |  | Installer source, new-shell `PATH`, `ollama --version`, empty or known model list, log paths, listener boundary, and rollback route are captured before model pull. | Not started |
+| First model pull gate | Pull/list/show row from [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] |  | Selected tag, source-page check, model-store decision, pull output, `ollama ls`, `/api/tags`, `/api/show`, and pass/hold/fail handoff are captured before endpoint smoke. | Not started |
+| Local model endpoint | Filled [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, request, response, timing, quality decision, and next action are captured after the install and model-pull gates pass. | Not started |
 | Local practicum sequence | Handoff note from [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] |  | Stages 0-10 have evidence links or explicit skipped/blocked notes, including endpoint, client, controls, benchmark, quality, service, and extension proof. | Not started |
 | Workload-to-model selection | Candidate card from [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] |  | Workload contract, candidate slot, source, license, artifact options, runtime candidates, sizing risk, rejection trigger, and pass/hold/fail rule are written before download or serving. | Not started |
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
@@ -208,10 +211,15 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Evidence item | Link or value |
 |---|---|
 | Hardware |  |
+| First-run readiness card |  |
+| Model-store decision |  |
+| Runtime install gate |  |
 | Acquisition/provenance card |  |
+| First model pull gate |  |
 | Artifact download/cache/conversion card |  |
 | Cache/local path and hash |  |
 | Runtime |  |
+| Runtime version |  |
 | Runtime stack anatomy card |  |
 | Lowest unproven layer |  |
 | Compatibility evidence card |  |
@@ -222,6 +230,8 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Artifact format |  |
 | Tokenizer and chat template |  |
 | Model id |  |
+| Model list or tags proof |  |
+| Model metadata proof |  |
 | Quantization |  |
 | GPU offload / CPU-GPU split |  |
 | KV-cache precision |  |
@@ -229,6 +239,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Context budget row |  |
 | CLI command |  |
 | HTTP endpoint |  |
+| Listener boundary |  |
 | OpenAI-compatible API contract |  |
 | Decoding/sampling preset |  |
 | Sampler sweep result |  |
@@ -413,6 +424,8 @@ Next run:
 - A benchmark, loss, judge score, calibration score, latency row, or memory number accepted without naming the claim, dataset/workload, metric family, and missed failure mode.
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
+- A Windows first-run claim that skips the model-store decision, runtime install gate, first model pull gate, or endpoint run sheet.
+- An Ollama endpoint response accepted without `ollama ls`, `/api/tags`, and `/api/show` evidence for the served model.
 - A vLLM or SGLang-on-Windows claim without WSL CUDA setup proof, including WSL GPU visibility, `/v1/models`, Windows client route, logs, and metrics.
 - A containerized local-service claim without Docker GPU proof, pinned image tag, cache mount, loopback publish, Compose config, logs, metrics, and provider routing evidence.
 - A runtime choice made from preference, UI feel, or one smoke test without controlled benchmark and quality rows.
@@ -443,6 +456,9 @@ Next run:
 - [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
 - [ ] The self-assessment exam has a filled run sheet and is passed, or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
+- [ ] The Windows model-store decision is linked before any large model pull.
+- [ ] The runtime install gate is linked before any model pull or endpoint proof.
+- [ ] The first model pull gate is linked before any Ollama endpoint proof.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
 - [ ] The local practicum handoff links every stage artifact, or explicitly marks skipped or blocked stages.
@@ -488,6 +504,12 @@ Next run:
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Attention Implementation Lab]]
+- [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
+- [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]

@@ -55,19 +55,20 @@ The minimal capstone can omit RAG and tools only if the deployment decision expl
 | 0. Academic defense | Paper claims, mechanisms, and metric interpretation are linked. | [[LLM/Study/LLM Paper Claim Ledger]] |
 | 1. Workload contract | One user task, success rubric, privacy boundary, latency target, and failure tolerance. | [[LLM/Study/Local LLM Workload to Model Selection Playbook]] |
 | 2. Machine preflight | OS, shell, CPU/RAM, GPU/VRAM, disk, runtime boundary, and port plan. | [[LLM/Study/Local LLM Environment Preflight Lab]] |
-| 3. Model custody | Model card, license, artifact, revision, format, local path, and safety decision. | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] |
-| 4. Runtime compatibility | Tokenizer, chat template, quantization, runtime, route, and workload fit. | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] |
-| 5. First endpoint | CLI or server response plus loopback HTTP proof. | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
-| 6. Client inference | Reproducible script or client wrapper with request, response, timing, and errors. | [[LLM/Study/Local LLM Client Harness Lab]] |
-| 7. Metric interpretation | TTFT, TPOT, total latency, tokens, memory, queue, quality, and next action. | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
-| 8. Quality gate | Workload prompts scored pass/hold/fail with failure owners. | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
-| 9. RAG extension | Corpus, chunks, embedding/reranker proof, retrieval, citations, and refusal. | [[LLM/Study/Local RAG Minimal Python Harness]] |
-| 10. Tool extension | Tool schema, validation, policy decision, execution log, and bounded retry. | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
-| 11. Security and privacy | Loopback binding, logs, data boundary, RAG corpus boundary, tool permissions. | [[LLM/Study/Local LLM Security and Privacy Runbook]] |
-| 12. Operations | Loaded-model state, logs/metrics, resource pressure, restart, upgrade, rollback plan. | [[LLM/Study/Local LLM Observability and Operations Runbook]] |
-| 13. Deployment decision | Local CPU/GPU, self-hosted, hosted API, hybrid, or batch decision with rejected alternative. | [[LLM/Study/LLM Deployment Decision Matrix]] |
+| 3. Windows storage and runtime gate | Model-store decision, Ollama install source, new-shell PATH, version, logs, and listener boundary are captured before model pull. | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
+| 4. Model custody | Model card, license, artifact, revision, format, local path, safety decision, and first Ollama pull metadata when using Ollama. | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] and [[LLM/Study/Local LLM First Model Pull Gate]] |
+| 5. Runtime compatibility | Tokenizer, chat template, quantization, runtime, route, and workload fit. | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] |
+| 6. First endpoint | CLI or server response plus loopback HTTP proof after install and model-pull gates pass. | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
+| 7. Client inference | Reproducible script or client wrapper with request, response, timing, and errors. | [[LLM/Study/Local LLM Client Harness Lab]] |
+| 8. Metric interpretation | TTFT, TPOT, total latency, tokens, memory, queue, quality, and next action. | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
+| 9. Quality gate | Workload prompts scored pass/hold/fail with failure owners. | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| 10. RAG extension | Corpus, chunks, embedding/reranker proof, retrieval, citations, and refusal. | [[LLM/Study/Local RAG Minimal Python Harness]] |
+| 11. Tool extension | Tool schema, validation, policy decision, execution log, and bounded retry. | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
+| 12. Security and privacy | Loopback binding, logs, data boundary, RAG corpus boundary, tool permissions. | [[LLM/Study/Local LLM Security and Privacy Runbook]] |
+| 13. Operations | Loaded-model state, logs/metrics, resource pressure, restart, upgrade, rollback plan. | [[LLM/Study/Local LLM Observability and Operations Runbook]] |
+| 14. Deployment decision | Local CPU/GPU, self-hosted, hosted API, hybrid, or batch decision with rejected alternative. | [[LLM/Study/LLM Deployment Decision Matrix]] |
 
-Do not reorder phases 1 through 6. You need a workload before a model, model custody before serving, and endpoint proof before client/RAG/tool claims.
+Do not reorder phases 1 through 7. You need a workload before a model, model-store and runtime evidence before first pull, model custody before serving, and endpoint proof before client/RAG/tool claims.
 
 ## Evidence Bundle
 
@@ -77,7 +78,9 @@ Create one dated capstone note or folder with these links:
 |---|---|
 | Academic proof | Paper claim ledger rows, mechanism bridge rows, metric interpretation row. |
 | Workload card | Task, users, data boundary, success rubric, latency target, quality floor, rejection trigger. |
+| Runtime install card | Model-store decision, installer source, new-shell PATH, version, listener boundary, log paths, rollback route. |
 | Model card | Model source, license, artifact, revision/tag/file, local path, quantization, tokenizer/template. |
+| Model pull card | Selected tag, source check, pull output, `ollama ls`, `/api/tags`, `/api/show`, pass/hold/fail handoff. |
 | Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing. |
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
@@ -93,11 +96,12 @@ Create one dated capstone note or folder with these links:
 The smallest acceptable project is:
 
 1. One local model served on loopback.
-2. One client harness call with frozen request settings.
-3. One benchmark row and one quality row.
-4. One academic explanation tying the observed behavior to tokenization, prefill/decode, KV cache, quantization, sampling, or evaluation.
-5. One security row proving the endpoint did not leave loopback.
-6. One deployment memo rejecting at least one alternative.
+2. One model-store, runtime-install, and first-model-pull evidence chain before the endpoint proof.
+3. One client harness call with frozen request settings.
+4. One benchmark row and one quality row.
+5. One academic explanation tying the observed behavior to tokenization, prefill/decode, KV cache, quantization, sampling, or evaluation.
+6. One security row proving the endpoint did not leave loopback.
+7. One deployment memo rejecting at least one alternative.
 
 This minimum proves local inference. It does not prove RAG, tools, multi-user serving, or maintainable operations.
 
@@ -148,6 +152,7 @@ This blueprint is complete for one project when:
 
 - [ ] one dated capstone note or folder links every required evidence item
 - [ ] the academic proof explains at least one paper claim and one mechanism behind a local behavior
+- [ ] Windows first-run gates link model-store, runtime-install, and first-model-pull evidence when Ollama is the first runtime
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
 - [ ] the client proof is reproducible without UI-only steps
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
@@ -165,6 +170,10 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
+- [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
