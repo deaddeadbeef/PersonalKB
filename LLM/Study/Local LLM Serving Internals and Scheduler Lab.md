@@ -225,6 +225,7 @@ Internal:
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]

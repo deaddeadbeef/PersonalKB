@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Speculative decoding is worth enabling only when the draft path increases accepted tokens per target-model step enough to beat its extra memory, load, and runtime complexity.
 
-Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]], [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] already separate prefill, decode, sampling, TTFT, TPOT, and quality. Those notes prove the request. This lab proves whether draft-verify decoding helps the local runtime.
+Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]], [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] already separate prefill, decode, sampling, TTFT, TPOT, and quality. Those notes prove the request. This lab proves whether draft-verify decoding helps the local runtime. Use [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]] when the no-spec/spec comparison should be saved as JSON, CSV, Markdown, and JSONL artifacts.
 
 Use [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] before this lab if the main model barely fits. Speculative decoding often needs a draft model, draft KV cache, verification buffers, or runtime-specific draft trees. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when the speed claim depends on repeated prefixes rather than faster decode. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the question is multi-user throughput rather than one interactive stream.
 
@@ -269,6 +269,7 @@ This lab is complete when you have:
 - [ ] one spec-enabled run with the same prompts, sampler, output cap, model, and route
 - [ ] draft method/model/version recorded
 - [ ] accepted-token evidence or an explicit "runtime does not expose acceptance" note
+- [ ] runner output is saved when the proof needs repeatable JSON, CSV, Markdown, or JSONL evidence
 - [ ] TPOT, output tokens/sec, total latency, and peak memory compared
 - [ ] quality checked with the same harness or exact-output smoke test
 - [ ] prompt classes separated into helps / neutral / hurts
@@ -291,6 +292,7 @@ Internal:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 

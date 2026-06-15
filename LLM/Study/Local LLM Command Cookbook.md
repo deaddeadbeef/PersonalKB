@@ -503,6 +503,7 @@ Get-NetTCPConnection -State Listen |
 | Slow first token | Compare prompt tokens, retrieved context, queue, and prefix reuse | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
 | Shared use is slow or unstable | Run a fixed concurrency ladder and compare p95 latency, throughput, errors, and saturation | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] |
 | Repeated-prefix prompt is still slow | Run shared-prefix and changed-prefix controls with TTFT or metrics | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] |
+| Speculative decoding is slower or unproven | Compare no-spec and spec-enabled profiles with fixed prompts and metrics | [[LLM/Study/Local LLM Speculative Decoding Runner]] |
 | Slow later tokens | Compare model size, quantization, offload, backend, and memory bandwidth | [[LLM/Study/Local LLM Quantization and GPU Offload Lab]] |
 | Streaming broken | Run non-streaming smoke and record unsupported or malformed streaming | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | Output ignores roles | Verify tokenizer, chat template, EOS, and stop policy | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
@@ -530,6 +531,7 @@ Get-NetTCPConnection -State Listen |
 | Context, history, RAG, tool, reserve, and margin budget | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | Concurrency ladder, saturation, and batch-throughput proof | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] |
 | Repeated-prefix, changed-prefix, TTFT, and prompt-cache proof | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] |
+| No-spec/spec, decode-rate, accepted-token signal, and quality proof | [[LLM/Study/Local LLM Speculative Decoding Runner]] |
 | Structured JSON, tool-call, result-injection, and denial proof | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | Python wrapper output | [[LLM/Study/Local LLM Client Harness Lab]] |
 | Timing and throughput row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
@@ -575,6 +577,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]]
+- [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

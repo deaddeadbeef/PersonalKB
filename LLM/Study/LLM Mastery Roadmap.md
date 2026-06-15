@@ -44,7 +44,7 @@ Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practic
 24. Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] to explain serving symptoms through prefill, decode, KV cache, PagedAttention, continuous batching, chunked prefill, slots, preemption, queueing, and admission control.
 25. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the setup must handle more than one active request, a local queue, or batch/offline throughput, then use [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] when that claim needs JSON, CSV, Markdown, and JSONL evidence.
 26. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] before claiming repeated-prefix speedups, then use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner|Local LLM Prompt Cache and KV Reuse Runner]] when the result needs shared-prefix, changed-prefix, TTFT, metrics, CSV, Markdown, and JSONL evidence.
-27. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before enabling draft-model, EAGLE, MTP, n-gram, or another speculative decoding path for local generation speed.
+27. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before enabling draft-model, EAGLE, MTP, n-gram, or another speculative decoding path for local generation speed, then use [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]] when the result needs no-spec/spec profile, TTFT, decode-rate, accepted-token signal, quality, CSV, Markdown, and JSONL evidence.
 28. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] to capture model state, request timings, logs, runtime metrics, resource pressure, and next controlled action.
 29. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when a working endpoint must survive restarts, upgrades, cache movement, UI updates, and rollback.
 30. Save benchmark evidence in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
@@ -203,6 +203,7 @@ Read:
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner|Local LLM Prompt Cache and KV Reuse Runner]]
+- [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
@@ -237,7 +238,7 @@ Proof:
 - Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] before tuning concurrency or throughput settings so scheduler, prefill, decode, KV-cache, preemption, and queue symptoms have a named owner.
 - Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] before claiming a setup can handle shared local use, batch/offline work, or multi-client traffic; use [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] when the result needs repeatable run artifacts.
 - Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] before claiming repeated system prompts, documents, examples, RAG context, tool protocols, or chat history reduce prefill or TTFT; use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner|Local LLM Prompt Cache and KV Reuse Runner]] when the result needs repeatable run artifacts.
-- Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before claiming draft decoding, EAGLE, MTP, or n-gram speculation improves local generation speed.
+- Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before claiming draft decoding, EAGLE, MTP, or n-gram speculation improves local generation speed; use [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]] when the result needs repeatable run artifacts.
 - Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] before interpreting latency, throughput, memory, or error symptoms; capture model state, route, request timings, logs, metrics, resource pressure, and one next controlled action.
 - Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] before changing runtime version, model revision, cache path, startup mode, UI container, driver stack, or client contract for a maintained local setup.
 - Record model, runtime, quantization, hardware, context length, time to first token, tokens/sec, and peak memory in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
@@ -382,6 +383,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

@@ -73,6 +73,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Prompt cache and KV reuse | Cache decision card from [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] |  | Cold load, warm model, repeated-prefix run, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are captured. | Not started |
 | Prompt cache runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner|Local LLM Prompt Cache and KV Reuse Runner]] |  | Shared-prefix rows, changed-prefix controls, TTFT or prompt-eval timing, optional cache metrics, prompt hashes, privacy setting, and cache decision are captured before repeated-prefix speedup claims. | Not started |
 | Speculative decoding | Decision card from [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] |  | No-spec baseline, spec-enabled run, draft method/model, accepted-token evidence, decode-latency delta, memory overhead, quality result, and keep/disable decision are captured. | Not started |
+| Speculative decoding runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]] |  | No-spec/spec profile rows, TTFT, decode-rate speedup, accepted-token signal, quality checks, prompt hashes, and keep/disable decision are captured before enabling a draft path. | Not started |
 | Observability and operations | Operations row from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] |  | Loaded-model state, route, request timings, logs or metrics, resource pressure, error evidence, privacy handling, and next controlled action are captured. | Not started |
 | Service lifecycle and rollback | Change Freeze Card from [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] |  | Runtime/model versions, cache path, startup mode, backup path, upgrade plan, rollback target, and post-change validation are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
@@ -565,6 +566,7 @@ Next run:
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
+- [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
