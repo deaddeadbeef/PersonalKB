@@ -281,7 +281,7 @@ DEFAULT_GATES = [
         "critical": True,
         "status": "hold",
         "route": "LLM/Study/Chat Template and Tokenizer Compatibility Runner",
-        "pass_signal": "Model package, tokenizer, chat template, rendered prompt or non-exposure control, route behavior, stop boundary, and downstream decision links are audited.",
+        "pass_signal": "Health-bound first-response debrief, model package, tokenizer, chat template, rendered prompt or non-exposure control, route behavior, stop boundary, and downstream decision links are audited.",
     },
     {
         "gate_id": "local-endpoint",

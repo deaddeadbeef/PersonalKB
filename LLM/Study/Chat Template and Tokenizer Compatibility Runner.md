@@ -8,16 +8,17 @@ last-verified: 2026-06-15
 
 # Chat Template and Tokenizer Compatibility Runner
 
-> **One-line summary** A local chat endpoint is trustworthy only after model package, tokenizer, special-token, chat-template, route, stop, and benchmark/quality evidence agree.
+> **One-line summary** A local chat endpoint is trustworthy only after the first-response debrief, model package, tokenizer, special-token, chat-template, route, stop, and benchmark/quality evidence agree.
 
-Use this after [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when a local model responds but you need machine-checkable evidence that the request format is not the hidden failure layer.
+Use this after [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]], [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when a local model responds but you need machine-checkable evidence that the request format is not the hidden failure layer.
 
-This runner does not call the model. It audits evidence you already captured: model metadata, tokenizer/source facts, rendered prompt or non-exposure note, route behavior, tokenizer sanity counts, stop/role-boundary checks, and the benchmark or quality row that used the template.
+This runner does not call the model. It audits evidence you already captured: the health-bound first-response debrief, model metadata, tokenizer/source facts, rendered prompt or non-exposure note, route behavior, tokenizer sanity counts, stop/role-boundary checks, and the benchmark or quality row that used the template.
 
 ## What This Proves
 
 | Evidence family | Checks | Why it matters |
 |---|---|---|
+| Upstream first-response debrief | debrief JSON status, runtime-health-ready decision, route, model, and native response path | keeps template/tokenizer claims tied to a proven local response instead of a free-floating checklist |
 | Model package | model id, runtime, artifact/tag, model type | separates base/completion behavior from instruct/chat behavior |
 | Tokenizer and special tokens | tokenizer source, BOS/EOS, role/tool tokens, context limit | explains token counts, truncation, detokenization, and role markers |
 | Chat template | template source, assistant prefix, runtime setting, rendered shape | prevents silent role serialization bugs |
@@ -42,6 +43,11 @@ Minimum manifest:
   "route": "http://localhost:11434/v1/chat/completions",
   "runtime_exposes_rendered_prompt": false,
   "rows": [
+    {
+      "kind": "upstream_first_response_debrief",
+      "status": "pass",
+      "proof": "D:/llm-runs/first-response-debrief/first-response-001-debrief.json"
+    },
     {
       "kind": "model_package",
       "status": "pass",
@@ -106,6 +112,7 @@ LINK_OPEN = "[" + "["
 LINK_CLOSE = "]" + "]"
 
 DEFAULT_REQUIRED_KINDS = [
+    "upstream_first_response_debrief",
     "model_package",
     "tokenizer_special_tokens",
     "chat_template",
@@ -117,6 +124,11 @@ DEFAULT_REQUIRED_KINDS = [
 ]
 
 KIND_HINTS = {
+    "upstream_first_response_debrief": {
+        "owner": "first response debrief",
+        "pass_signal": "Debrief JSON is pass, carries runtime_health_ready, records route/model, and points to the native response file.",
+        "next_route": "LLM/Study/Local LLM First Response Debrief Runner",
+    },
     "model_package": {
         "owner": "model package",
         "pass_signal": "Model id, runtime, model type, and artifact/tag are recorded.",
@@ -247,6 +259,21 @@ def proof_exists(vault_root: Path, proof: str) -> tuple[bool, str]:
     return False, str(candidates[0]) if candidates else proof
 
 
+def read_json_file(path_text: str) -> tuple[dict[str, Any], str]:
+    if not path_text:
+        return {}, "path not resolved"
+    path = Path(path_text)
+    try:
+        data = json.loads(path.read_text(encoding="utf-8-sig"))
+    except FileNotFoundError:
+        return {}, f"missing file: {path}"
+    except json.JSONDecodeError as exc:
+        return {}, f"invalid json: {path}: {exc}"
+    if not isinstance(data, dict):
+        return {}, f"json is not an object: {path}"
+    return data, ""
+
+
 def wiki_link(route: str) -> str:
     return LINK_OPEN + route + LINK_CLOSE
 
@@ -287,9 +314,12 @@ def finding(level: str, owner: str, text: str, evidence: str, action: str) -> di
 
 
 def route_for_row(row: dict[str, Any], kind: str) -> str:
-    route = str(row.get("next_route") or row.get("route") or row.get("proof") or "")
+    route = str(row.get("next_route") or row.get("route") or "")
     if route:
         return strip_obsidian_link(route).removesuffix(".md")
+    proof = str(row.get("proof") or "")
+    if proof.endswith(".md") or proof.startswith(LINK_OPEN):
+        return strip_obsidian_link(proof).removesuffix(".md")
     return KIND_HINTS.get(kind, {}).get("next_route", "LLM/Study/Chat Template and Tokenizer Compatibility Lab")
 
 
@@ -307,11 +337,45 @@ def count_token_rows(row: dict[str, Any]) -> int:
     return count
 
 
-def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[str, Any]) -> list[dict[str, str]]:
+def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[str, Any], proof_resolved: str = "") -> list[dict[str, str]]:
     owner = KIND_HINTS.get(kind, {}).get("owner", kind)
     findings: list[dict[str, str]] = []
 
-    if kind == "model_package":
+    if kind == "upstream_first_response_debrief":
+        debrief = {}
+        error = ""
+        if proof_resolved and Path(proof_resolved).suffix.lower() == ".json":
+            debrief, error = read_json_file(proof_resolved)
+        if error:
+            findings.append(finding("hold", owner, "First-response debrief JSON could not be read.", error, "Run Local LLM First Response Debrief Runner and link the debrief JSON artifact."))
+        source = debrief.get("source") if isinstance(debrief.get("source"), dict) else {}
+        native = debrief.get("native") if isinstance(debrief.get("native"), dict) else {}
+        runtime_health = debrief.get("runtime_health") if isinstance(debrief.get("runtime_health"), dict) else {}
+        debrief_status = str(row.get("debrief_status") or debrief.get("status") or "").lower()
+        runtime_health_decision = str(
+            row.get("runtime_health_decision")
+            or runtime_health.get("decision")
+            or source.get("runtime_health_decision")
+            or ""
+        )
+        model_id = str(row.get("model_id") or native.get("model") or debrief.get("expected_model") or "")
+        expected_model = str(manifest.get("model_id") or "")
+        route = str(row.get("route") or debrief.get("route") or "")
+        native_response_path = str(row.get("native_response_path") or source.get("native_response_path") or "")
+        if debrief_status != "pass":
+            findings.append(finding("hold", owner, "First-response debrief is not pass.", debrief_status or "missing", "Finish the health-bound first-response debrief before accepting template compatibility."))
+        if runtime_health_decision != "runtime_health_ready":
+            findings.append(finding("hold", owner, "Runtime-health decision is not ready in the debrief.", runtime_health_decision or "missing", "Rerun runtime health, smoke request, and first-response debrief with matching model and base URLs."))
+        if not model_id:
+            findings.append(finding("hold", owner, "Debrief model id is missing.", kind, "Record the served model id in the first-response debrief."))
+        elif expected_model and model_id != expected_model:
+            findings.append(finding("hold", owner, "Debrief model id differs from compatibility manifest model id.", f"{model_id} != {expected_model}", "Use one model id across debrief and template/tokenizer compatibility evidence."))
+        if not route:
+            findings.append(finding("hold", owner, "Debrief route is missing.", kind, "Record the route used by the saved first response."))
+        if not native_response_path:
+            findings.append(finding("hold", owner, "Debrief native response path is missing.", kind, "Keep the native response path attached to the debrief JSON."))
+
+    elif kind == "model_package":
         if not has_text(row, "model_id") and not has_text(manifest, "model_id"):
             findings.append(finding("hold", owner, "Model id is missing.", kind, "Record the exact served model id or tag."))
         if not has_text(row, "runtime") and not has_text(manifest, "runtime"):
@@ -398,7 +462,7 @@ def evaluate_row(row: dict[str, Any], vault_root: Path, manifest: dict[str, Any]
     kind = norm(row.get("kind") or row.get("evidence_kind"))
     row_id = str(row.get("row_id") or row.get("id") or kind or "row")
     required = bool_value(row.get("required"), kind in DEFAULT_REQUIRED_KINDS)
-    critical = bool_value(row.get("critical"), kind in {"model_package", "tokenizer_special_tokens", "chat_template", "rendered_prompt", "stop_role_boundary"})
+    critical = bool_value(row.get("critical"), kind in {"upstream_first_response_debrief", "model_package", "tokenizer_special_tokens", "chat_template", "rendered_prompt", "stop_role_boundary"})
     declared_status = status_value(row.get("status"))
     proof = str(row.get("proof") or row.get("proof_path") or row.get("evidence_path") or "")
     findings: list[dict[str, str]] = []
@@ -424,7 +488,7 @@ def evaluate_row(row: dict[str, Any], vault_root: Path, manifest: dict[str, Any]
         findings.append(finding("hold", KIND_HINTS.get(kind, {}).get("owner", kind), "Evidence row is not marked pass.", declared_status, "Mark pass only after the evidence is complete."))
 
     if required:
-        findings.extend(evaluate_kind_requirements(row, kind, manifest))
+        findings.extend(evaluate_kind_requirements(row, kind, manifest, proof_resolved))
 
     fail_count = sum(1 for item in findings if item["level"] == "fail")
     hold_count = sum(1 for item in findings if item["level"] == "hold")
@@ -462,7 +526,7 @@ def missing_kind_row(kind: str) -> dict[str, Any]:
         "row_id": f"missing-{kind}",
         "kind": kind,
         "required": True,
-        "critical": kind in {"model_package", "tokenizer_special_tokens", "chat_template", "rendered_prompt", "stop_role_boundary"},
+        "critical": kind in {"upstream_first_response_debrief", "model_package", "tokenizer_special_tokens", "chat_template", "rendered_prompt", "stop_role_boundary"},
         "declared_status": "missing",
         "status": "hold",
         "decision": "compatibility_incomplete",
@@ -671,18 +735,19 @@ python .\chat_template_tokenizer_compatibility_runner.py
 
 | Runner status | Meaning | Next route |
 |---|---|---|
-| `pass/chat_template_compatibility_ready` | model package, tokenizer, special-token, template, route, stop, and downstream decision evidence are complete | use this compatibility packet before benchmark, quality, or deployment decisions |
-| `hold/chat_template_compatibility_incomplete` | required evidence is missing, proof links do not resolve, token counts are too thin, or rendered-prompt fallback is weak | fill the compatibility lab row, API contract row, benchmark row, or context-budget row |
+| `pass/chat_template_compatibility_ready` | upstream debrief, model package, tokenizer, special-token, template, route, stop, and downstream decision evidence are complete | use this compatibility packet before benchmark, quality, or deployment decisions |
+| `hold/chat_template_compatibility_incomplete` | required evidence is missing, the upstream debrief is not health-bound, proof links do not resolve, token counts are too thin, or rendered-prompt fallback is weak | fill the response debrief row, compatibility lab row, API contract row, benchmark row, or context-budget row |
 | `fail/chat_template_compatibility_failed` | explicit failure, duplicated BOS/EOS, role-marker leakage, or stop/template boundary failure is present | fix request formatting, template selection, route, or stop policy before judging model quality |
 
 ## Capstone Row
 
 | Gate | Required artifact | Pass signal |
 |---|---|---|
-| Chat template and tokenizer compatibility | `<run-id>-chat-template-compatibility.json`, `<run-id>-chat-template-compatibility.md`, `<run-id>-chat-template-compatibility.csv`, and one `chat-template-tokenizer-compatibility-runs.jsonl` row | model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and downstream benchmark or quality evidence are linked |
+| Chat template and tokenizer compatibility | `<run-id>-chat-template-compatibility.json`, `<run-id>-chat-template-compatibility.md`, `<run-id>-chat-template-compatibility.csv`, and one `chat-template-tokenizer-compatibility-runs.jsonl` row | health-bound first-response debrief, model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and downstream benchmark or quality evidence are linked |
 
 ## Completion Gate
 
+- [ ] health-bound first-response debrief JSON is linked and has `status == pass` with `runtime_health.decision == runtime_health_ready`
 - [ ] model id, runtime, model type, artifact/tag, tokenizer source, special tokens, context limit, and stop policy are recorded
 - [ ] chat template source and assistant-generation marker are recorded
 - [ ] rendered prompt shape is checked, or runtime non-exposure is documented with behavior controls
@@ -695,6 +760,7 @@ python .\chat_template_tokenizer_compatibility_runner.py
 ## References
 
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
@@ -705,3 +771,10 @@ python .\chat_template_tokenizer_compatibility_runner.py
 - [[LLM/2022 — Alignment and Chat/Instruction Tuning]]
 - [[LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning]]
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]
+
+External/current sources checked 2026-06-15:
+
+- [Ollama API introduction](https://docs.ollama.com/api/introduction)
+- [Ollama chat endpoint](https://docs.ollama.com/api/chat)
+- [Ollama OpenAI compatibility](https://docs.ollama.com/api/openai-compatibility)
+- [Ollama Modelfile reference](https://docs.ollama.com/modelfile)

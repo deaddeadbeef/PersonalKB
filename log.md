@@ -2980,3 +2980,33 @@ Verification:
 - Mastery evidence audit default manifest -> `hold`, 42 gates, 42 holds, with `local-first-response-debrief` requiring health-bound smoke provenance.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Bind template compatibility to first-response debrief
+
+Scope: tighten the chat-template/tokenizer compatibility runner so template, route, stop, benchmark, and quality claims are attached to a health-bound first-response debrief.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Chat Template and Tokenizer Compatibility Runner.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added required `upstream_first_response_debrief` evidence to the chat-template/tokenizer compatibility runner.
+- Made the runner parse linked first-response debrief JSON and hold if the debrief is not `pass`, runtime health is not `runtime_health_ready`, the model id disagrees with the compatibility manifest, or the native response path is missing.
+- Updated the runner output routing so failed/held evidence rows point to the owning note instead of JSON artifacts.
+- Updated the mastery audit gate, dashboard, capstone workbook, LLM MOC, and study index to name health-bound first-response debrief evidence before template/tokenizer compatibility can support quality or deployment decisions.
+- Checked current Ollama API, chat, OpenAI-compatible, and Modelfile references on 2026-06-15.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `chat_template_tokenizer_compatibility_runner.py` from the note.
+- Compatibility fixtures: full manifest with health-bound debrief -> `pass` with 9 rows; missing upstream debrief -> `hold`; held debrief -> `hold`; non-ready runtime health -> `hold`; debrief/manifest model mismatch -> `hold`.
+- Mastery evidence audit default manifest -> `hold`, 42 gates, 42 holds, with `local-template-tokenizer-compatibility` requiring health-bound first-response debrief evidence.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
