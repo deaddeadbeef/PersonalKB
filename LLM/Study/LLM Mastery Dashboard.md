@@ -118,6 +118,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
 | RAG assistant | [[LLM/Study/Local RAG Minimal Python Harness]] |  |
+| RAG evidence runner | [[LLM/Study/Local RAG Evidence Runner]] |  |
 | Tool loop | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |  |
 | Tool/schema runner | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |  |
 | Operations and safety | [[LLM/Study/Local LLM Security and Privacy Runbook]] |  |
@@ -182,6 +183,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One observability runner output | [[LLM/Study/Local LLM Observability and Operations Runner]] |
 | One lifecycle runner output | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |
 | One security/privacy runner output | [[LLM/Study/Local LLM Security and Privacy Runner]] |
+| One RAG evidence runner output | [[LLM/Study/Local RAG Evidence Runner]] |
 | One tool/structured-output runner output | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
@@ -241,6 +243,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
+- [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]

@@ -85,7 +85,8 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
-| RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], embedding/reranker service card from [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]], retrieval evaluation from [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], and artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] |  | Corpus manifest, chunking policy, embedding/reranker service proof, index metadata, top-k/rank/reranking evidence, cited answer, unsupported-question refusal, benchmark row, quality row, and at least one diagnosed failure are captured. | Not started |
+| RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], embedding/reranker service card from [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]], retrieval evaluation from [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]], and evidence packet from [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] |  | Corpus manifest, chunking policy, embedding/reranker service proof, index metadata, top-k/rank/reranking evidence, cited answer, unsupported-question refusal, benchmark row, quality row, at least one diagnosed failure, and runner output are captured. | Not started |
+| RAG evidence runner | Results JSON/CSV/Markdown from [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] |  | Saved RAG artifacts validate corpus, chunks, config, retrieval, selected context, citations, support, faithfulness, refusal, latency, failure mode, and next route before capstone acceptance. | Not started |
 | Tool loop | Tool-calling proof from [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] |  | Tool schema, validated arguments, policy check, execution result, injected tool result, bounded loop, and failure rows are captured. | Not started |
 | Tool/schema runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] |  | Structured JSON, required tool call, argument validation, policy decision, local execution, result injection, denial behavior, and JSONL row are captured before real tool integration. | Not started |
 | Adaptation decision | Memo using [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] |  | Prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no-train decision is justified from the measured failure mode, data, eval, compute, and rollback evidence. | Not started |
@@ -511,7 +512,7 @@ Next run:
 - [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
 - [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
-- [ ] The RAG assistant includes a manifest, chunk records, embedding/reranker service card, retrieval evaluation, cited answer, unsupported-question refusal, citation audit, and at least one diagnosed failure mode.
+- [ ] The RAG assistant includes a manifest, chunk records, embedding/reranker service card, retrieval evaluation, cited answer, unsupported-question refusal, citation audit, at least one diagnosed failure mode, and one RAG evidence runner output.
 - [ ] The deployment memo chooses one path and rejects at least one alternative.
 - [ ] The vault audit was regenerated after the capstone artifact was added.
 - [ ] Any unresolved gaps are explicit in the status column.
@@ -596,6 +597,7 @@ Next run:
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
+- [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]

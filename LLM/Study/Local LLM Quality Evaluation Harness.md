@@ -113,7 +113,7 @@ Bias controls matter because [[LLM/2023 — Open Models and Agents/LLM-as-Judge|
 
 When the workload uses retrieval, evaluate retrieval and answer quality separately.
 
-Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need the full build-and-diagnose workflow behind these checks. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] when the quality row depends on a local embedding or reranker service: vector dimension, normalization, batching, reranker score semantics, candidate count, and latency must be fixed before answer quality is judged. Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] when the evaluation row must prove retrieval quality before generation: top-k hit, first relevant rank, reranking impact, hybrid-search decision, final context ids, and citation support. Use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when the evaluation row needs concrete corpus, chunk, retrieval, context, answer, refusal, and failure artifacts.
+Use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] when you need the full build-and-diagnose workflow behind these checks. Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] when the quality row depends on a local embedding or reranker service: vector dimension, normalization, batching, reranker score semantics, candidate count, and latency must be fixed before answer quality is judged. Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] when the evaluation row must prove retrieval quality before generation: top-k hit, first relevant rank, reranking impact, hybrid-search decision, final context ids, and citation support. Use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when the evaluation row needs concrete corpus, chunk, retrieval, context, answer, refusal, and failure artifacts. Use [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] when those artifacts should be validated into pass, hold, fail, next-route, CSV, Markdown, and JSONL evidence.
 
 | Check | Ask | Failure mode |
 | --- | --- | --- |
@@ -170,6 +170,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
+- [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/2023 — Open Models and Agents/LLM-as-Judge]]

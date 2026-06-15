@@ -20,6 +20,8 @@ Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Rer
 
 Before indexing private notes or project files, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, citation redaction policy, log retention, and prompt-injection tests.
 
+Use [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] after the artifact files exist. It validates the corpus, chunks, config, retrieval rows, selected context, cited answers, refusal behavior, latency, and failure rows into JSON, Markdown, CSV, and JSONL evidence.
+
 ## Outcome
 
 After this lab you should have:
@@ -32,6 +34,7 @@ After this lab you should have:
 - one unsupported-question refusal
 - one diagnosed RAG failure row
 - one benchmark and quality-harness row
+- one RAG evidence runner output
 
 The point is not to build a fancy application first. The point is to prove the retrieval loop in a form that survives reruns.
 
@@ -51,6 +54,9 @@ rag_experiments/
     2026-06-15-q001-retrieval.json
     2026-06-15-q001-answer.md
     2026-06-15-q001-eval.json
+    2026-06-15-rag-evidence.json
+    2026-06-15-rag-evidence.md
+    2026-06-15-rag-evidence.csv
 ```
 
 | Artifact | Required fields |
@@ -333,12 +339,14 @@ This harness is complete when you have:
 - [ ] one RAG quality row
 - [ ] one benchmark row with retrieval and generation latency separated
 - [ ] one security/privacy note covering corpus boundary, logs, and citation metadata
+- [ ] one [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] output with pass, hold, fail, next-route, CSV, Markdown, and JSONL evidence
 
 ## References
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
+- [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

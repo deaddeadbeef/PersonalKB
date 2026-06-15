@@ -108,6 +108,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]
+- [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]]
 
 ## Hands-On Labs
 
@@ -191,6 +192,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant with retrieval, citations, and failure diagnosis
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] — measure top-k recall, rank, reranking impact, hybrid retrieval, context selection, and citation validity before judging generation
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] — implement a small reproducible RAG harness with corpus manifest, chunk records, persistent index, retrieval evidence, cited answer, refusal test, and failure row
+- [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] — validate saved RAG artifacts into pass, hold, fail, next-route, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] — decide when to prompt, use RAG, fine-tune, train adapters, optimize preferences, or distill
 
 ## Suggested 20-Paper Fast Path

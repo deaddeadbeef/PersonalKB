@@ -16,6 +16,8 @@ Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Rer
 
 Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after this lab to judge final answers. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when retrieved passages must be packed into a limited context window. Use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before indexing private corpora.
 
+Use [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] after retrieval and generation artifacts exist. It checks whether top-k, selected context, citations, refusal, support, faithfulness, latency, and failure-mode rows are complete enough to count as RAG proof.
+
 ## What This Lab Decides
 
 It answers six retrieval questions:
@@ -262,6 +264,7 @@ This lab is complete when all are true:
 - [ ] Citation audit checks claims against supporting chunks.
 - [ ] Failure rows name the failed layer before changing the generator model.
 - [ ] [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] receives the final artifact paths if this is part of the capstone.
+- [ ] [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] validates the saved artifacts before they are promoted to the capstone.
 
 ## References
 
@@ -270,6 +273,7 @@ Internal:
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
+- [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

@@ -134,6 +134,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — End-to-end local retrieval, citation, and grounded-answer workflow
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] — Retrieval-quality lab for top-k hits, reranking, hybrid search, context selection, and citation audit
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] — Reproducible corpus, chunking, embedding, retrieval, cited-answer, refusal, failure, and benchmark artifacts
+- [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] — Validate RAG corpus, chunk, retrieval, context, answer, refusal, citation, latency, failure, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — Endpoint smoke tests and failure triage for local model servers
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] — Layer-by-layer diagnosis for local model, route, client, performance, quality, RAG, and security failures
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — Endpoint exposure, logging, RAG corpus, prompt injection, and tool-permission checks for local hosting
