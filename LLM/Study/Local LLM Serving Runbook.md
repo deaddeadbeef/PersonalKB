@@ -18,7 +18,7 @@ Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practic
 
 Use [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] before blaming a model or runtime. It names the layer that owns each proof: hardware, boundary, package environment, model bytes, artifact, tokenizer/template, runtime, scheduler/cache, API route, client/UI, workload, or operations.
 
-If the first run is on Windows, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for a minimal PowerShell path through preflight capture, Ollama or LM Studio API proof, listener check, and first quality mini-suite.
+If the first run is on Windows, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for a minimal PowerShell path through preflight capture, Ollama or LM Studio API proof, listener check, and first quality mini-suite. If Ollama is not installed yet, use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] before the first `ollama pull`.
 
 After the smoke test passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove the base URL, model id, route, streaming behavior, error behavior, and feature gaps before pointing generic clients at the server. Then use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to turn the endpoint call into a repeatable client that logs settings, latency, streaming, errors, and benchmark rows. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the endpoint must handle more than one active request, a local queue, or an offline batch job. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] before relying on local function calling, structured output, or agent loops.
 
@@ -292,6 +292,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]

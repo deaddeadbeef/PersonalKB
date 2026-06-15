@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** This is the copyable command layer for local LLM inference: start a local server, prove the route, call it from a client, log timing, and decide which deeper lab owns the next failure.
 
-Use this when you already know the intended runtime and need exact commands. Use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the first guided Windows pass, [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the full procedure, and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] for the order of evidence artifacts.
+Use this when you already know the intended runtime and need exact commands. Use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the first guided Windows pass, [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] before the first Ollama model pull, [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the full procedure, and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] for the order of evidence artifacts.
 
 This note is a cookbook, not a model recommendation list. Replace placeholders such as `<model>`, `<served-model-id>`, `<model.gguf>`, and `<hf-model-id>` with values proven in [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]].
 
@@ -539,6 +539,7 @@ This cookbook pass is complete when you have:
 Internal routes:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

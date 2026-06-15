@@ -11,7 +11,7 @@ last-machine-check: 2026-06-15T11:10:33+08:00
 
 > **One-line summary** As of 2026-06-15T11:10:33+08:00, this Windows workstation has enough disk for a first small local model, no local LLM runtime on PATH, no model/cache variables set, no model directories created, and no common local LLM endpoint listening.
 
-Use this after [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store plan says what to decide. This snapshot records what is true on this machine before the first installer or model pull.
+Use this after [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and before [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store plan says what to decide. This snapshot records what is true on this machine before the first installer or model pull.
 
 This note is read-only evidence. It did not install Ollama, LM Studio, Hugging Face CLI, create `D:\Models`, set environment variables, start a server, or pull a model.
 
@@ -60,7 +60,7 @@ Do these in order. Stop at the first failure and route it to [[LLM/Study/Local L
 3. Create `D:\Models\ollama`, `D:\Models\hf`, and `D:\Models\gguf`.
 4. Set `OLLAMA_MODELS` to `D:\Models\ollama` before the first `ollama pull`.
 5. If Hugging Face tooling is used later, set `HF_HOME` to `D:\Models\hf` before downloads.
-6. Install the first runtime and capture `ollama --version` from a new PowerShell.
+6. Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to install the first runtime and capture `ollama --version` from a new PowerShell.
 7. Only after the runtime works, pull one first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]].
 8. Save native and OpenAI-compatible loopback response evidence.
 
@@ -154,6 +154,7 @@ This snapshot is complete when:
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]

@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and while executing [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The readiness snapshot says the current machine state. The quickstart explains the full path. This run sheet is the one-session checklist that turns the path into files you can link from [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
 
-This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] to decide and record where model bytes will live.
+This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to decide where model bytes live and prove the runtime install.
 
 ## Run Contract
 
@@ -23,6 +23,7 @@ This sheet is not endpoint proof until the evidence files exist. A checked box w
 | Runtime | Ollama on Windows |
 | First model | `qwen3.5:4b` from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] unless the model page or local constraints force a smaller tag |
 | Storage snapshot | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
+| Runtime install gate | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | Model store decision | default / custom `OLLAMA_MODELS` / hold |
 | Native base URL | `http://localhost:11434` |
 | OpenAI-compatible base URL | `http://localhost:11434/v1` |
@@ -48,6 +49,7 @@ date=$(Get-Date -Format o)
 runtime=Ollama on Windows
 model=qwen3.5:4b
 storage_snapshot=Local LLM Model Store Readiness Snapshot
+runtime_install_gate=Local LLM Windows Runtime Install Gate
 native_base_url=http://localhost:11434
 openai_base_url=http://localhost:11434/v1
 security_boundary=loopback only
@@ -99,6 +101,8 @@ Pass signal: this proves whether the run starts from a clean install state or an
 ## Step 2: Install Or Open Ollama
 
 Choose one path and save which path you used.
+
+Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] for the full install/PATH/env/listener proof. Do not pull a model until that gate is pass.
 
 | Path | When | Evidence |
 |---|---|---|
@@ -279,6 +283,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]

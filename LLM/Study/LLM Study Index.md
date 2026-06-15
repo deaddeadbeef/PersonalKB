@@ -46,6 +46,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]
@@ -107,6 +108,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] — choose the source-checked first Ollama model tag, control tag, stretch tag, and avoid-first class for this RTX 3080 Ti run
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] — decide where model weights, runtime stores, Hugging Face caches, conversion outputs, and evidence logs live before the first large download
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] — use this workstation's current disk, cache-variable, PATH, directory, GPU, and listener evidence before the first installer or model pull
+- [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] — prove installer source, new-shell PATH, model-store inheritance, listener boundary, and log locations before the first model pull
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] — execute the first Ollama endpoint run as a fill-in evidence folder with pass, hold, and fail gates
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — use PowerShell to capture preflight evidence, run Ollama or LM Studio, call the loopback API, and save the first response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — use copyable commands for server startup, route smoke tests, OpenAI-compatible clients, streaming, benchmark rows, and teardown

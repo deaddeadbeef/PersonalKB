@@ -52,7 +52,7 @@ Do these in order. Stop at the first failed command and write the failure owner 
 |---|---|---|---|
 | 1 | Create a dated run folder from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. | `run-root.txt` and `run-card.txt` | Evidence exists before installation or model pull. |
 | 2 | Decide whether the default model cache path is acceptable or whether `OLLAMA_MODELS` should be set first using [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]. | `installer-choice.txt`, `model-cache-env-before.json`, or run card note | The model cache location is known before large downloads. |
-| 3 | Install the first runtime, preferably Ollama for the Windows-native terminal proof. | installer source and version output | `ollama --version` works in a new PowerShell. |
+| 3 | Install the first runtime through [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], preferably Ollama for the Windows-native terminal proof. | installer source, command path, version output, model list, listener proof | `ollama --version` and `ollama ls` work in a new PowerShell. |
 | 4 | Rerun `ollama list` and the listener scan. | `ollama-list-after-install.txt`, `listeners-before-smoke.txt` | Runtime is installed; endpoint exposure is understood. |
 | 5 | Pull one small first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] and run native plus OpenAI-compatible smoke tests. | native response JSON, model tags JSON, OpenAI-compatible response JSON | Both route proof and model id proof exist, or a native-only decision is written. |
 | 6 | Copy one benchmark/evidence row into the vault. | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Inference Benchmark Log]] | The first run becomes capstone evidence instead of console history. |
@@ -128,6 +128,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
