@@ -16,7 +16,7 @@ Use this note as the operational definition of "I know LLMs" for this vault. Rea
 Move in order:
 
 1. Map the field chronologically with [[LLM/LLM — Learning Path|LLM Learning Path]].
-2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] while reading architecture notes and papers.
+2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] while reading architecture notes and papers.
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to connect raw data, objectives, pretraining, post-training, adaptation, evaluation, and deployment.
 5. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to connect attention, next-token loss, gradients, validation, and generation in a toy model.
@@ -55,6 +55,7 @@ Read:
 - [[LLM/Pre-2017 — Before Transformers/Language Model Fundamentals|Language Model Fundamentals]]
 - [[LLM/Pre-2017 — Before Transformers/Tokenization|Tokenization]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/2017 — The Transformer/Attention Mechanism|Attention Mechanism]]
 - [[LLM/2017 — The Transformer/Transformer Architecture|Transformer Architecture]]
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]]
@@ -284,6 +285,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can prove the Docker GPU container path for vLLM, SGLang, Compose, and Open WebUI before treating a container as a local service.
 - [ ] I can prove which local bytes were downloaded, cached, imported, converted, verified, served, and cleaned up or retained.
 - [ ] I can compare two local runtimes with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative.
+- [ ] I can explain why loss, perplexity, benchmark, preference, calibration, quality, latency, and memory metrics prove different claims.
 - [ ] I can read a new LLM paper and place it in the field map.
 - [ ] I can build and evaluate a small LLM application end to end.
 
@@ -296,6 +298,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]

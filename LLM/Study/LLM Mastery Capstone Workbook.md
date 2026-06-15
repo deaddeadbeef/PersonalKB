@@ -22,6 +22,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
 | Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
 | Math and tensor shapes | Oral or written proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | Can trace token IDs, embeddings, hidden states, logits, probabilities, shifted targets, cross-entropy, attention shapes, weight memory, and KV-cache growth. | Study map drafted; oral proof not yet passed |
+| Metric interpretation | Metric card from [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] |  | Can classify loss, perplexity, benchmark, preference, calibration, quality, latency, and memory as different evidence types and name what each misses. | Not started |
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] |  | Overall score is at least 80 percent, no zero in practical sections, and missed-question remediation is linked. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
@@ -252,6 +253,18 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Unsafe-action denial |  |
 | Quality harness tool row |  |
 
+## Metric Interpretation Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Claim being judged |  |
+| Metric family | loss / perplexity / accuracy / F1 / pass@k / win rate / calibration / latency / memory / other |
+| Dataset or workload |  |
+| What the metric proves |  |
+| What the metric misses |  |
+| Next proof route |  |
+| Decision implication |  |
+
 ## Evaluation Proof Template
 
 | Evidence item | Link or value |
@@ -334,6 +347,7 @@ Next run:
 - Reading without recall.
 - A training-stage explanation without data, objective, evaluation, and failure-owner evidence.
 - A local-inference explanation that does not name the underlying mechanism and the evidence artifact that proves or falsifies it.
+- A benchmark, loss, judge score, calibration score, latency row, or memory number accepted without naming the claim, dataset/workload, metric family, and missed failure mode.
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
 - A vLLM or SGLang-on-Windows claim without WSL CUDA setup proof, including WSL GPU visibility, `/v1/models`, Windows client route, logs, and metrics.
@@ -361,6 +375,7 @@ Next run:
 - [ ] The training pipeline map explains one capability from data through deployment.
 - [ ] The mechanism-to-inference bridge explains at least one speed, memory, compatibility, quality, and RAG/tool failure with evidence.
 - [ ] The math and tensor-shape proof explains logits, loss, attention, weight memory, KV cache, and one local inference symptom.
+- [ ] The metric interpretation proof separates training, benchmark, preference, calibration, quality, latency, and memory evidence.
 - [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
 - [ ] The self-assessment exam is passed or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
@@ -399,6 +414,7 @@ Next run:
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]

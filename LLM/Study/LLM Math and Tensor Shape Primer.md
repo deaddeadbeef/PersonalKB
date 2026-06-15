@@ -9,7 +9,7 @@ tier-coverage: [core, deep-dive, practice]
 
 > **One-line summary** The minimum math for LLM mastery is being able to trace token IDs into embeddings, hidden states, logits, probabilities, loss, attention matrices, KV cache, and local inference memory estimates.
 
-Use this before [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]], [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]], and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]]. The goal is not advanced math fluency. The goal is to stop treating formulas as decoration and start using them to debug model behavior, training loops, and local serving runs.
+Use this before [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]], [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]], and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]]. The goal is not advanced math fluency. The goal is to stop treating formulas as decoration and start using them to debug model behavior, training loops, and local serving runs. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] after this primer when loss, perplexity, benchmark scores, calibration, or local quality rows become decision evidence.
 
 ## Symbols
 
@@ -97,7 +97,7 @@ Interpretation:
 | training loss falls but validation rises | The model is overfitting. |
 | perplexity falls | The model is less surprised by the evaluation text. |
 
-Perplexity is useful for language-model pretraining, but it is not enough for assistant quality. A local model can have decent perplexity and still fail instruction following, citations, JSON, tools, or safety boundaries.
+Perplexity is useful for language-model pretraining, but it is not enough for assistant quality. A local model can have decent perplexity and still fail instruction following, citations, JSON, tools, or safety boundaries. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] to decide whether a number is training evidence, benchmark evidence, local quality evidence, or operations evidence.
 
 ## Shifted Targets
 
@@ -258,6 +258,7 @@ This primer is complete when you can:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Training Pipeline Map]]

@@ -11,6 +11,8 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 Use this as the bridge between academic training mechanisms and applied model operation. It connects [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives|Language Modeling Objectives]], [[LLM/2018–2019 — Pretrained Language Models/Data Curation and Deduplication|Data Curation and Deduplication]], [[LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism|Training Infrastructure and Parallelism]], [[LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning|Supervised Fine-Tuning]], [[LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback|Reinforcement Learning from Human Feedback]], [[LLM/2022 — Alignment and Chat/Direct Preference Optimization|Direct Preference Optimization]], and [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]].
 
+Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when stage evidence depends on interpreting loss, benchmark, preference, calibration, or deployment metrics.
+
 The goal is not to memorize every training recipe. The goal is to identify which stage is responsible for a capability, which artifact proves it worked, and which failure mode belongs to that stage.
 
 ## Pipeline Overview
@@ -90,6 +92,7 @@ flowchart LR
 | Preference gate | Preference source, agreement/noise estimate, reward or DPO eval, and bias checks |
 | Adaptation gate | Failure mode, chosen method, held-out suite, rollback, and regression checks |
 | Deployment gate | Runtime, benchmark, quality harness, security boundary, cost, and owner |
+| Metric interpretation gate | Claim, dataset, metric family, missed failure mode, and next proof route from [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|Metrics and Evaluation Interpretation Guide]] |
 
 ## Failure Diagnosis
 
@@ -132,6 +135,7 @@ You understand the training pipeline when you can:
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

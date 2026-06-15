@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** A local model is not "good" just because it loads and answers quickly; it is good only when it passes a workload-specific quality gate with reproducible prompts, rubric scores, and latency/memory evidence.
 
-Use this after [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The sizing guide chooses plausible model/runtime candidates, the runbook proves the endpoint, the benchmark log records performance, and this harness decides whether the output quality is acceptable.
+Use this after [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The sizing guide chooses plausible model/runtime candidates, the runbook proves the endpoint, the benchmark log records performance, and this harness decides whether the output quality is acceptable. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when a loss, benchmark, pairwise, judge, calibration, latency, or memory number is being used as evidence for the quality decision.
 
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when quality depends on choosing, validating, denying, executing, or using tool calls.
 
@@ -138,7 +138,7 @@ Public benchmarks are useful for shared vocabulary, but local acceptance should 
 - Refresh prompts when the model, corpus, or task changes.
 - Keep a small held-out set that you do not tune prompts against.
 
-This protects the decision from the failure mode described in [[LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage|Contamination and Data Leakage]] and keeps broad benchmark results in the right role described by [[LLM/2018–2019 — Pretrained Language Models/Knowledge and Reasoning Benchmarks|Knowledge and Reasoning Benchmarks]].
+This protects the decision from the failure mode described in [[LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage|Contamination and Data Leakage]] and keeps broad benchmark results in the right role described by [[LLM/2018–2019 — Pretrained Language Models/Knowledge and Reasoning Benchmarks|Knowledge and Reasoning Benchmarks]]. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when you need to explain why perplexity, pass@k, win rate, calibration, latency, or memory evidence can support the quality gate but cannot replace the local rubric.
 
 ## Log Template
 
@@ -153,6 +153,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 ## References
 
 - [[LLM/Sources/Sources Index]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

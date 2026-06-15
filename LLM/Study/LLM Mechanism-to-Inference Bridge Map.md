@@ -47,6 +47,7 @@ Examples:
 | Embedding and reranking inference | The retriever and reranker are separate model calls with their own dimensions, routes, batching, score semantics, and latency. | Embedding/reranker service card, vector-shape check, rerank gain row. | [[LLM/Study/Local Embedding and Reranker Hosting Lab]] |
 | Tool calling | The model proposes structured actions; the application must validate, authorize, execute, and feed back results. | Tool schema, validated args, policy decision, execution log. | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 | Post-training and alignment | Instruction following, refusal style, verbosity, and helpfulness are learned behaviors layered over the base model. | Prompt-suite score and failure-owner note. | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]] |
+| Metric interpretation | Loss, perplexity, benchmark, preference, calibration, latency, and memory numbers each prove different claims. | Metric card with claim, dataset, missed failure mode, and next proof route. | [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]] |
 | Evaluation | Quality is only meaningful relative to workload, rubric, and held-out examples. | Human rubric, LLM-as-judge note, pass/hold/fail decision. | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | Deployment economics | A model can be academically strong but operationally wrong for latency, privacy, cost, or ownership. | Deployment memo with rejected alternatives. | [[LLM/Study/LLM Deployment Decision Matrix]] |
 
@@ -112,6 +113,7 @@ Minimum bridge proof:
 - [ ] one systems mechanism explained with a benchmark or memory row
 - [ ] one compatibility mechanism explained with a tokenizer/template/runtime card
 - [ ] one quality mechanism explained with an evaluation row
+- [ ] one metric interpreted as claim, distribution, limitation, and next proof route
 - [ ] one deployment decision that rejects at least one plausible alternative
 
 ## Completion Gate
@@ -144,6 +146,7 @@ Internal routes:
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]

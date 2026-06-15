@@ -68,6 +68,7 @@ You should be able to explain these with a small sketch or equation.
 | Why does prompt length affect TTFT more than later decode speed? | Prefill processes the prefix before first generated token. |
 | Why is decode often memory-bandwidth-bound? | Each generated token repeatedly reads model weights and cache. |
 | What does quantization change? | Numeric representation and memory transfer, with possible quality loss. |
+| Why is lower perplexity not enough to choose a local assistant? | It measures next-token fit on a distribution; local assistant choice also needs instruction following, quality, safety, latency, memory, and workload evidence. |
 | What is LoRA's core parameterization? | Low-rank update added to frozen base weights. |
 | How do you assign a failure to the right training stage? | Identify whether the symptom points to data, objective, SFT, preference optimization, RAG, adaptation, runtime, or policy before changing the model. |
 | What must a tiny decoder-only training loop prove? | Shifted next-token targets, causal masking, logits-to-cross-entropy loss, gradients, train/validation loss, and autoregressive generation. |
@@ -176,6 +177,7 @@ Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshootin
 | Why can chunking be the problem even with a strong model? | Evidence can be split, buried, duplicated, or missing from retrieved context. |
 | What does a citation prove? | Only that a claim is supported by a retrieved passage when checked claim by claim. |
 | What is LLM-as-judge useful for and where can it fail? | Fast comparative signal; vulnerable to bias, verbosity, position, and calibration issues. |
+| What must you know before trusting a metric? | Claim, dataset or workload, metric family, missed failure mode, and local decision implication. |
 | Why must a local quality suite use private/workload prompts? | Public prompts can be contaminated or irrelevant to the real workload. |
 | How should tools be controlled? | Schema validation, external policy gate, least privilege, audit log, no model-generated permission. |
 | What is prompt injection in RAG? | Untrusted retrieved text tries to override system, developer, tool, or output rules. |
@@ -195,6 +197,7 @@ These gates are stricter than the oral questions.
 | Tiny decoder training | Toy causal LM proof using [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]]. |
 | Paper literacy | One paper protocol row for each major cluster. |
 | Mechanism bridge | One explanation row tying a local inference symptom to mechanism, control, evidence, and next decision. |
+| Metric interpretation | Metric card using [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] for one paper result or local model decision. |
 | Training pipeline | Capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]]. |
 | Local endpoint | CLI and HTTP endpoint response from one local model. |
 | Environment | Preflight snapshot tied to the machine/runtime that served the model. |
@@ -241,7 +244,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 | Debugging | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | Service lifecycle | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] |
 | RAG and citations | [[LLM/Study/Local RAG Assistant Lab]], [[LLM/Study/Local Embedding and Reranker Hosting Lab]], [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]], and [[LLM/Study/Local RAG Minimal Python Harness]] |
-| Evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| Evaluation | [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]], [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | Security and deployment | [[LLM/Study/Local LLM Security and Privacy Runbook]], [[LLM/Study/LLM Deployment Decision Matrix]], and [[LLM/Study/LLM Mastery Capstone Workbook]] |
 
 ## References
@@ -256,6 +259,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]

@@ -42,7 +42,7 @@ Use this before [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-As
 | Cheap adaptation | [[LLM/_raw/raw-llm-007 LoRA Low-Rank Adaptation|LoRA]], [[LLM/_raw/raw-llm-022 QLoRA Efficient Finetuning Quantized LLMs|QLoRA]] | Fine-tuning moved from full-weight training to adapter and quantized workflows. | Low-rank update matrices, frozen base weights, NF4, double quantization, paged optimizers. | Explains when to use prompting, RAG, LoRA/QLoRA, or no training in [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|Adaptation and Fine-Tuning Decision Guide]]. |
 | Reasoning behavior | [[LLM/_raw/raw-llm-008 Chain-of-Thought Prompting|Chain-of-Thought]] | Prompt format became a way to expose latent reasoning behavior. | Few-shot worked examples, step-by-step traces, scale dependence, self-consistency. | Explains why reasoning quality changes with model size, sampling, output budget, and evaluation method. |
 | Grounded applications | [[LLM/_raw/raw-llm-024 RAG Retrieval-Augmented Generation|RAG]], [[LLM/_raw/raw-llm-025 ReAct Reasoning and Acting|ReAct]] | Applications started coupling models to retrievers, tools, and observations. | Retriever-generator pipeline, top-k evidence, citation support, thought-action-observation loop. | Explains the local RAG harness, tool-calling lab, context budget, and security boundary. |
-| Evaluation discipline | [[LLM/_raw/raw-llm-026 HELM Holistic Evaluation|HELM]] | Model comparison moved beyond a single benchmark score. | Scenario taxonomy, multiple metrics, robustness, calibration, fairness, toxicity, efficiency. | Explains why local model choice needs quality, latency, memory, safety, and workload-specific gates. |
+| Evaluation discipline | [[LLM/_raw/raw-llm-026 HELM Holistic Evaluation|HELM]] | Model comparison moved beyond a single benchmark score. | Scenario taxonomy, multiple metrics, robustness, calibration, fairness, toxicity, efficiency. | Explains why local model choice needs [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|metric interpretation]], quality, latency, memory, safety, and workload-specific gates. |
 
 ## What Each Paper Teaches You To Ask
 
@@ -80,7 +80,7 @@ Academic papers become practical when they explain an operational symptom.
 | Larger model does not fit memory | Chinchilla, LLaMA, QLoRA, systems papers | [[LLM/Study/Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] |
 | RAG answer cites the wrong source | RAG, HELM, ReAct | [[LLM/Study/Local RAG Assistant Lab]], [[LLM/Study/Local RAG Minimal Python Harness]] |
 | Tool loop takes unsafe action | ReAct, function-calling lineage, alignment papers | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]], [[LLM/Study/Local LLM Security and Privacy Runbook]] |
-| Benchmark is fast but answer is wrong | HELM, InstructGPT, RAG evaluation | [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| Benchmark is fast but answer is wrong | HELM, InstructGPT, RAG evaluation | [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]], [[LLM/Study/Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | Fine-tuning feels tempting but unclear | LoRA, QLoRA, DPO, RAG | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]] |
 
 ## Oral Recall Gate
@@ -113,6 +113,7 @@ The fast-path paper map is complete when:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]

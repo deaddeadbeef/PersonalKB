@@ -22,6 +22,8 @@ Use this with the 20-paper fast path in [[LLM/Study/LLM Study Index|LLM Study In
 
 Do not start by reading every equation. Start by locating the claim, then read equations, experiments, and appendices only where they prove or weaken that claim.
 
+Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] whenever the evidence section depends on a loss curve, benchmark row, pairwise preference result, judge score, calibration claim, latency number, or memory measurement.
+
 ## Paper Card Template
 
 Copy this into a dated reading note or a paper-specific wiki note.
@@ -33,7 +35,7 @@ Copy this into a dated reading note or a paper-specific wiki note.
 | Problem | What limitation in previous work is being addressed? |
 | Prior baseline | What was the strongest prior method or assumption? |
 | Method | What mechanism, objective, data recipe, architecture, or system design is new? |
-| Evidence | Which benchmark, ablation, scaling curve, human study, or systems measurement supports the claim? |
+| Evidence | Which metric family, benchmark, ablation, scaling curve, human study, or systems measurement supports the claim? |
 | Baselines | Were the baselines strong, current, and fairly tuned? |
 | Ablations | What component mattered most? What was not isolated? |
 | Assumptions | What data, compute, hardware, context length, or evaluator assumptions matter? |
@@ -166,6 +168,7 @@ The 20-paper fast path is complete when you can write a one-page map connecting 
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
+- [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
