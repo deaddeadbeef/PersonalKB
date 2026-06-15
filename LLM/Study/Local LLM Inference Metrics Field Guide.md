@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Local inference metrics are useful only when each number is tied to a phase, claim, confounder, and next controlled action.
 
-Use this after [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] and before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], or [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]. [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] explains metrics across training, papers, evaluation, and deployment. This note is the local inference field guide: what each measurement means during a real served request.
+Use this after [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] and before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], or [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]. Use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] when the immediate job is to interpret one first Ollama response JSON. [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] explains metrics across training, papers, evaluation, and deployment. This note is the local inference field guide: what each measurement means during a real served request.
 
 ## Measurement Rule
 
@@ -158,6 +158,7 @@ You understand local inference metrics when you can answer these without notes:
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]

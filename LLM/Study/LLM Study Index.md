@@ -49,6 +49,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]
+- [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]]
@@ -112,6 +113,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] — prove installer source, new-shell PATH, model-store inheritance, listener boundary, and log locations before the first model pull
 - [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] — freeze the selected Ollama tag, pull only one baseline model, capture list/tags/show metadata, and decide whether endpoint smoke is allowed
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] — execute the first Ollama endpoint run as a fill-in evidence folder with pass, hold, and fail gates
+- [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] — translate the first saved response JSON into route proof, timing interpretation, mechanism owner, benchmark row, and next action
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — use PowerShell to capture preflight evidence, run Ollama or LM Studio, call the loopback API, and save the first response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — use copyable commands for server startup, route smoke tests, OpenAI-compatible clients, streaming, benchmark rows, and teardown
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — capture the exact first local run: machine, model, runtime, endpoint, response, timing, quality, safety, and next decision

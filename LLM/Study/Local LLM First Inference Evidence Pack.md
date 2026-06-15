@@ -14,7 +14,7 @@ Use this as the first-run binder for [[LLM/Study/Local LLM Hosting and Inference
 
 Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you want the broader ordered path around this packet. This evidence pack is the Stage 1 endpoint proof in that practicum.
 
-For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. If the first run is Ollama, use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture model-pull custody and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to create the raw response files that populate this packet. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
+For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. If the first run is Ollama, use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture model-pull custody, [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to create the raw response files, and [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] to interpret the first response before copying benchmark or capstone rows. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
 
 ## Evidence Packet
 
@@ -54,6 +54,7 @@ Fill this before changing anything:
 | Endpoint base URL |  |
 | Native route |  |
 | OpenAI-compatible route |  |
+| First response debrief |  |
 | Security boundary | loopback only / LAN / tunnel / remote |
 | Prompt suite | smoke / known-answer / structured / long-context / RAG / tool |
 | Decision target | keep / tune / replace model / replace runtime |
@@ -225,6 +226,7 @@ This evidence pack is complete when you have:
 - [ ] WSL CUDA setup proof when using vLLM or SGLang from Windows
 - [ ] Docker GPU container proof when using containerized vLLM, SGLang, or Open WebUI
 - [ ] a successful native or OpenAI-compatible smoke response
+- [ ] first response debrief row with route claim, timing interpretation, mechanism, and next action
 - [ ] a route/model-id proof such as `/api/tags`, `/v1/models`, runtime UI, or server log
 - [ ] one client-harness row or an explicit note that the run is smoke-test only
 - [ ] one benchmark row
@@ -241,6 +243,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
+- [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

@@ -30,7 +30,7 @@ This sheet is not endpoint proof until the evidence files exist. A checked box w
 | OpenAI-compatible base URL | `http://localhost:11434/v1` |
 | Security boundary | loopback only |
 | Smoke prompt | `Reply with exactly: local llm ok` |
-| Decision target | keep / tune / replace runtime / replace model / stop |
+| Decision target | debrief / keep / tune / replace runtime / replace model / stop |
 
 ## Step 0: Create Evidence Folder
 
@@ -225,7 +225,7 @@ Important distinction: OpenAI-compatible route proof does not mean every OpenAI 
 
 ## Step 7: Save Benchmark Row
 
-Copy this row into [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] or a dated capstone note.
+Before copying the benchmark row, use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] to convert the native response's nanosecond timing fields and decide whether the response is route-only, benchmark-ready, or blocked by missing metrics.
 
 | Run id | Runtime | Model | Quantization | Hardware | Prompt class | Prompt tokens | Output tokens | TTFT | Tokens/sec | Peak RAM/VRAM | Quality decision | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -245,6 +245,7 @@ Copy this row into [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capston
 | Model tag |  |
 | Native response file |  |
 | OpenAI-compatible response file |  |
+| First response debrief file |  |
 | Listener boundary | loopback / exposed / unclear |
 | Mechanism named | install/PATH / model artifact / route / prefill / decode / KV cache / quality |
 | Decision | keep / tune / replace runtime / replace model / stop |
@@ -273,6 +274,7 @@ This run sheet is complete only when:
 - [ ] `listeners-before-smoke.txt` shows the endpoint boundary
 - [ ] `ollama-native-request.json` and `ollama-native-response.json` exist
 - [ ] `ollama-tags.json`, `openai-chat-request.json`, and `openai-chat-response.json` exist
+- [ ] [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or equivalent debrief row interprets the first response
 - [ ] benchmark row is copied or linked
 - [ ] decision row is copied or linked
 - [ ] any failure is routed to exactly one next diagnostic note
@@ -289,6 +291,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
+- [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

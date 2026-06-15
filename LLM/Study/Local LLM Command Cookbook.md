@@ -512,6 +512,7 @@ Get-NetTCPConnection -State Listen |
 |---|---|
 | Preflight snapshot | [[LLM/Study/Local LLM Environment Preflight Lab]] |
 | First Ollama model pull | [[LLM/Study/Local LLM First Model Pull Gate]] |
+| First response debrief | [[LLM/Study/Local LLM First Response Debrief Card]] |
 | First raw response | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | Startup command and route | [[LLM/Study/Local LLM Serving Runbook]] |
 | `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
@@ -542,6 +543,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
