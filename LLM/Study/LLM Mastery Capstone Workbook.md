@@ -46,6 +46,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | First response debrief | Debrief row from [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] |  | The first saved response is interpreted as route proof, timing evidence, mechanism owner, benchmark add-on row, and next controlled action without treating smoke output as quality proof. | Not started |
 | First response debrief runner | Debrief JSON/Markdown from [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] |  | The first saved response has converted seconds, token rates, mechanism owner, quality boundary, missing-layer list, and next action captured without sending another inference request. | Not started |
 | First quality probe | Prompt-suite outputs from [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] |  | The first working endpoint has private known-answer, JSON, extraction, grounded-refusal, and constraint-following rows before any workload-quality claim. | Not started |
+| First quality probe runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] |  | The five first quality probes have saved requests, responses, outputs, auto-check rows, human-review status, failure owner, and next action before full harness promotion. | Not started |
 | Local practicum sequence | Handoff note from [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] |  | Stages 0-10 have evidence links or explicit skipped/blocked notes, including endpoint, client, controls, benchmark, quality, service, and extension proof. | Not started |
 | Workload-to-model selection | Candidate card from [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] |  | Workload contract, candidate slot, source, license, artifact options, runtime candidates, sizing risk, rejection trigger, and pass/hold/fail rule are written before download or serving. | Not started |
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
@@ -527,6 +528,7 @@ Next run:
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]

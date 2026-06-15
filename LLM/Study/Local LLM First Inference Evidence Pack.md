@@ -14,7 +14,7 @@ Use this as the first-run binder for [[LLM/Study/Local LLM Hosting and Inference
 
 Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you want the broader ordered path around this packet. This evidence pack is the Stage 1 endpoint proof in that practicum.
 
-For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. If the first run is Ollama, use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture model-pull custody, [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to save the no-inference listener and model-list state, [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to create the raw response files, [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] to interpret the first response, [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] for a tiny private quality signal, [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first reusable client-side inference row, and [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] when the first client proof needs perceived-latency evidence before copying benchmark or capstone quality rows. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
+For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. If the first run is Ollama, use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture model-pull custody, [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to save the no-inference listener and model-list state, [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to create the raw response files, [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to interpret the first response, [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] for a tiny private quality signal, [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first reusable client-side inference row, and [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] when the first client proof needs perceived-latency evidence before copying benchmark or capstone quality rows. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
 
 ## Evidence Packet
 
@@ -248,6 +248,7 @@ This evidence pack is complete when you have:
 - [ ] first benchmark-row builder output or an explicit note that the run is benchmark-pending
 - [ ] one benchmark row
 - [ ] one first quality probe or quality decision
+- [ ] one first quality probe runner output if using scripted probe capture
 - [ ] one security/logging boundary decision
 - [ ] one next decision: keep, tune, replace model, replace runtime, add RAG, add tools, or write deployment memo
 
@@ -265,6 +266,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]

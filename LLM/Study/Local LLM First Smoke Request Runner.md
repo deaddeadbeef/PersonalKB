@@ -437,7 +437,7 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 | OpenAI-compatible works and native fails | wrong native base URL or non-Ollama runtime | [[LLM/Study/Local LLM Runtime Stack Anatomy]] |
 | Both routes answer but text is not exact | prompt formatting, sampler, chat template, or model instruction following | [[LLM/Study/Local LLM First Response Debrief Card]] before quality claims |
 | Response has timing fields but no output text | response extraction mismatch or error-shaped JSON | [[LLM/Study/Local LLM First Response Debrief Card]] |
-| Route works but answer quality is doubtful | smoke is route proof only | [[LLM/Study/Local LLM First Quality Probe Suite]] |
+| Route works but answer quality is doubtful | smoke is route proof only | [[LLM/Study/Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner]] |
 
 ## Completion Gate
 
@@ -462,6 +462,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

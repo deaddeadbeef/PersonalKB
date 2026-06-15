@@ -243,7 +243,7 @@ Important distinction: OpenAI-compatible route proof does not mean every OpenAI 
 
 ## Step 7: Save Benchmark Row
 
-Before copying the benchmark row, use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to convert the native response's nanosecond timing fields and decide whether the response is route-only, benchmark-ready, or blocked by missing metrics. If the route is healthy, use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before claiming any quality signal.
+Before copying the benchmark row, use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to convert the native response's nanosecond timing fields and decide whether the response is route-only, benchmark-ready, or blocked by missing metrics. If the route is healthy, use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] before claiming any quality signal.
 
 | Run id | Runtime | Model | Quantization | Hardware | Prompt class | Prompt tokens | Output tokens | TTFT | Tokens/sec | Peak RAM/VRAM | Quality decision | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -267,6 +267,7 @@ Copy this row into [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capston
 | OpenAI-compatible response file |  |
 | First response debrief file |  |
 | First response debrief runner output |  |
+| First quality probe runner output |  |
 | Listener boundary | loopback / exposed / unclear |
 | Mechanism named | install/PATH / model artifact / route / prefill / decode / KV cache / quality |
 | Decision | keep / tune / replace runtime / replace model / stop |
@@ -296,7 +297,7 @@ This run sheet is complete only when:
 - [ ] `ollama-native-request.json` and `ollama-native-response.json` exist
 - [ ] `ollama-tags.json`, `openai-chat-request.json`, and `openai-chat-response.json` exist
 - [ ] [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]], [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]], or equivalent debrief row interprets the first response
-- [ ] [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or equivalent note records whether smoke output has any first quality signal
+- [ ] [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]], [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]], or equivalent note records whether smoke output has any first quality signal
 - [ ] benchmark row is copied or linked
 - [ ] decision row is copied or linked
 - [ ] any failure is routed to exactly one next diagnostic note
@@ -318,6 +319,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]

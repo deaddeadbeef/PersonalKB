@@ -83,6 +83,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] — Translate the first saved response JSON into route proof, metrics, mechanism interpretation, benchmark row, and next action
 - [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] — Convert the saved first response into debrief JSON, Markdown, JSONL, timing conversions, mechanism owner, quality boundary, and next action
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] — Run the first private quality probes after route proof before promoting smoke output into the full harness
+- [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] — Run the first five private quality probes through a local chat endpoint, saving request, response, output, score, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — PowerShell path from Windows preflight to first loopback API response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — Copyable commands for local server startup, route smoke tests, client calls, streaming, benchmark rows, and teardown
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — One first-run packet for machine, model, runtime, endpoint, response, timing, quality, safety, and next decision

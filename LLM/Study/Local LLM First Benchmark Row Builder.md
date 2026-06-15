@@ -381,7 +381,7 @@ Pass signal: the script writes `first-benchmark-row\benchmark-rows.jsonl`, one b
 | `status=pass` | Enough timing, token, hardware, quality, and next-action fields exist for a first benchmark row. | Copy to [[LLM/Study/Local LLM Inference Benchmark Log]] or capstone evidence. |
 | `status=hold` with missing token counts | The endpoint ran, but token-normalized speed is incomplete. | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] or native runtime response. |
 | `status=hold` with missing streaming row | Total latency exists, but perceived latency is not proven. | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
-| `status=hold` with missing quality decision | The model may be fast, but usefulness is unproven. | [[LLM/Study/Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| `status=hold` with missing quality decision | The model may be fast, but usefulness is unproven. | [[LLM/Study/Local LLM First Quality Probe Suite]], [[LLM/Study/Local LLM First Quality Probe Runner]], or [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | `status=error` | No client or streaming source row was found. | [[LLM/Study/Local LLM First Client Harness Runner]] |
 
 Do not compare two runs unless both rows name prompt id, route, model artifact, sampler/output cap, hardware boundary, cold/warm state, and quality decision.
@@ -410,6 +410,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

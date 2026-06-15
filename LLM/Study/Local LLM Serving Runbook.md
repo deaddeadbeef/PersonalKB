@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** Local serving is the operational proof that you can turn model weights into a callable API, verify the endpoint, and explain the latency, memory, and quality trade-offs.
 
-Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when you need the compact copyable commands for startup, route smoke tests, client calls, streaming, benchmark rows, and teardown proof. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] after the smoke test to capture model state, request timings, logs, metrics, and resource pressure. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when a working endpoint must survive restarts, upgrades, cache moves, UI changes, and rollback. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored quality decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
+Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and record results in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when you need the compact copyable commands for startup, route smoke tests, client calls, streaming, benchmark rows, and teardown proof. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] after the smoke test to capture model state, request timings, logs, metrics, and resource pressure. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when a working endpoint must survive restarts, upgrades, cache moves, UI changes, and rollback. Use [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] for the first five private quality artifacts, then use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when the first working endpoint needs a scored workload decision. The lab explains the concepts; this runbook gives the repeatable serving sequence.
 
 For the first complete run, fill [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] as you go. The evidence pack is the one-page binder; this runbook is the detailed serving procedure. Before the first smoke prompt, use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] when you need a no-generation proof that the runtime listener and model-list routes are ready. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] when the first native and OpenAI-compatible smoke requests should be captured by one repeatable script. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] after the response exists to convert saved timing fields, token counts, mechanism owner, quality boundary, and next action without sending another request.
 
@@ -57,7 +57,7 @@ A local serving run is complete when:
 - tokenizer, chat template, role boundaries, and stop policy are checked when output ignores instructions or leaks role markers
 - context window, prompt tokens, retrieved/tool/history tokens, output reserve, and truncation behavior are checked for long-context workloads
 - latency, tokens/sec, memory, model id, runtime, quantization, and quality notes are logged
-- the quality decision is backed by [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when choosing a model for real work
+- the first quality signal is backed by [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]], and the workload quality decision is backed by [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] when choosing a model for real work
 - you can explain the result using [[LLM/2022 — Alignment and Chat/Quantization|Quantization]], [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]
 
 ## Runtime Decision Path
@@ -225,7 +225,7 @@ Run the prompt suite from [[LLM/Study/Local LLM Inference Benchmark Log|Local LL
 | Peak RAM/VRAM | Confirms whether the setup has real headroom |
 | Quality notes | Prevents "fast but wrong" from passing |
 
-For real workload selection, turn the quality notes into scored prompt rows with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
+For real workload selection, turn the first quality probe runner output into scored prompt rows with [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
 
 Before interpreting those rows, capture the operations evidence from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]]: loaded-model state, route, raw request/response timing, server logs or metrics, CPU/RAM and GPU/VRAM pressure, and one next controlled action.
 
@@ -314,6 +314,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

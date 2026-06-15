@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** After a local endpoint answers once, run this tiny private prompt suite to decide whether the response is only route proof or whether it has enough first quality evidence to enter the full harness.
 
-Use this after [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] has interpreted the first saved response. The debrief proves the local route answered and names the timing mechanism. This suite asks the next question: can the same local endpoint handle a few controlled quality probes without changing model, runtime, sampler, route, or evidence folder?
+Use this after [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] has interpreted the first saved response. The debrief proves the local route answered and names the timing mechanism. This suite asks the next question: can the same local endpoint handle a few controlled quality probes without changing model, runtime, sampler, route, or evidence folder? Use [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] when you want the same suite captured as Python request, response, output, score, CSV, Markdown, and JSONL artifacts.
 
 Use [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] when one of these prompts should be rerun through a reusable OpenAI-compatible client instead of a native Ollama route. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after this when a real workload, model selection, quantization decision, RAG assistant, or deployment choice needs a scored acceptance gate. This note is smaller: it is the first quality bridge between smoke output and a formal harness.
 
@@ -192,7 +192,7 @@ $Rows | ConvertTo-Csv -NoTypeInformation | Set-Content -Encoding utf8 -Path (Joi
 $Cases | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 -Path (Join-Path $SuiteRoot "quality-probe-cases.json")
 ```
 
-Pass signal: the suite folder contains request files, response files, `quality-probe-results.json`, `quality-probe-results.csv`, and `quality-probe-cases.json`.
+Pass signal: the suite folder contains request files, response files, `quality-probe-results.json`, `quality-probe-results.csv`, and `quality-probe-cases.json`. If using [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]], also preserve its results Markdown and `quality-probe-runs.jsonl` file.
 
 ## Scoring Row
 
@@ -252,6 +252,8 @@ This probe suite is complete only when:
 Internal routes:
 
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

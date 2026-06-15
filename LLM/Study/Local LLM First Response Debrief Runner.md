@@ -254,8 +254,8 @@ def default_next_action(status, mechanism):
     if mechanism == "missing metrics":
         return "use Local LLM Client Harness Lab or Inference Metrics Field Guide before benchmark claims"
     if mechanism in {"cold load", "prefill", "decode"}:
-        return "run Local LLM First Quality Probe Suite before any quality claim"
-    return "run Local LLM First Quality Probe Suite"
+        return "run Local LLM First Quality Probe Suite or Local LLM First Quality Probe Runner before any quality claim"
+    return "run Local LLM First Quality Probe Suite or Local LLM First Quality Probe Runner"
 
 
 def write_markdown(path, record):
@@ -428,7 +428,7 @@ record = {
     "openai": openai,
     "missing_layers": missing_layers,
     "mechanism_owner": mechanism,
-    "quality_boundary": "route-only until Local LLM First Quality Probe Suite is scored",
+    "quality_boundary": "route-only until Local LLM First Quality Probe Suite or Local LLM First Quality Probe Runner is scored",
     "next_action": next_action,
     "benchmark_add_on": {
         "Run id": run_id,
@@ -520,7 +520,7 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 | Native route works but OpenAI-compatible response is missing | API compatibility layer | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
 | Text is missing or does not match the smoke target | Response extraction, prompt, sampler, stop, or chat template | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
 | Timing fields are missing | Runtime route limitation or wrapper choice | [[LLM/Study/Local LLM Client Harness Lab]] and [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
-| Route works but quality is unknown | Evaluation, not serving | [[LLM/Study/Local LLM First Quality Probe Suite]] |
+| Route works but quality is unknown | Evaluation, not serving | [[LLM/Study/Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner]] |
 
 ## Completion Gate
 
@@ -545,6 +545,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]

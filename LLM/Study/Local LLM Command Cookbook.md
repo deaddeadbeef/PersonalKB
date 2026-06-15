@@ -517,6 +517,7 @@ Get-NetTCPConnection -State Listen |
 | First response debrief | [[LLM/Study/Local LLM First Response Debrief Card]] |
 | First response debrief runner | [[LLM/Study/Local LLM First Response Debrief Runner]] |
 | First quality probe | [[LLM/Study/Local LLM First Quality Probe Suite]] |
+| First quality probe runner | [[LLM/Study/Local LLM First Quality Probe Runner]] |
 | First raw response | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | Startup command and route | [[LLM/Study/Local LLM Serving Runbook]] |
 | `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
@@ -555,6 +556,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
+- [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
