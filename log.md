@@ -3500,3 +3500,36 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4970 files, 3099 Markdown files, 934 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add benchmark evidence audit runner
+
+Scope: make local LLM benchmark rows auditable before timing, throughput, memory, runtime, quantization, context, prompt-cache, speculative-decoding, result-synthesis, or deployment decisions depend on them.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Benchmark Evidence Audit Runner.md`
+- `LLM/Study/Local LLM First Benchmark Row Builder.md`
+- `LLM/Study/Local LLM Inference Metrics Field Guide.md`
+- `LLM/Study/Local LLM Result Synthesis Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] with a standard-library Python runner that audits saved benchmark rows and proof links without benchmarking a live endpoint.
+- The runner checks workload contract, run identity, source artifacts, prompt/token accounting, timing metrics, memory/context metrics, fixed settings, quality boundary, and interpretation/next-action evidence.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, first benchmark-row builder, metrics guide, result-synthesis runner, and deployment-readiness runner through the new audit gate.
+- Checked current Ollama usage metrics, vLLM benchmark CLI, SGLang benchmark/profiling, NVIDIA NIM LLM benchmarking metrics, and NVIDIA GenAI-Perf docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted and compiled `local_llm_benchmark_evidence_audit_runner.py` from the note.
+- Benchmark evidence fixture checks: complete warm single-run -> `pass` / `benchmark_evidence_ready`; missing token accounting -> `hold` / `benchmark_evidence_incomplete`; quality fail while decision keeps -> `fail` / `benchmark_evidence_blocked`; TTFT greater than total latency -> `fail`; comparison with two changed variables -> `hold`; missing proof path -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4971 files, 3100 Markdown files, 935 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

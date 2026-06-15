@@ -94,6 +94,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You wired the client into an app, CLI, UI, job, RAG, or tool loop and need to know whether it counts | [[LLM/Study/Local LLM Application Integration Evidence Runner]] | App contract, endpoint, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation, operations, and promotion audit |
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
+| You have benchmark rows and need to know whether the numbers are interpretable | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] | Workload, route/model identity, proof, token counts, timing, memory/context, fixed settings, quality boundary, and next-action audit |
 | You have a long, RAG, tool, or multi-turn prompt and need fit proof | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] | Context manifest, component tokens, reserve, margin, fit decision, drop plan, and JSONL row |
 | You have scheduler, KV-cache, queue, or tuning evidence and need a decision audit | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] | Hypothesis, latency phase, scheduler state, long-prompt interference, tuning delta, capacity event, decision card, and next-route audit |
 | You have quantization, GPU-offload, KV-cache precision, benchmark, and quality rows and need a keep/reject audit | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] | Baseline, artifact/runtime support, memory estimate, load state, offload sweep, KV-cache/context, benchmark, quality, rejected alternative, decision card, and next-route audit |
@@ -140,6 +141,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Template/tokenizer compatibility | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |  |
 | Failure triage | [[LLM/Study/Local LLM Failure Triage Runner]] |  |
 | Local inference metric interpretation | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |  |
+| Benchmark evidence audit | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] |  |
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Mastery evidence audit | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |  |
 | Mastery gap triage | [[LLM/Study/LLM Mastery Gap Triage Runner]] |  |
@@ -261,6 +263,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One application integration evidence audit output | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
+| One benchmark evidence audit output before result synthesis or deployment depends on timing, throughput, or memory numbers | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] |
 | One context/token budget runner output | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | One scheduler evidence audit output | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |
 | One quantization/offload evidence runner output before result synthesis depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] |

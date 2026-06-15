@@ -81,6 +81,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] — Audit saved prompt-suite cases, prompt/response proof, rubric scores, boundary evidence, and pass/hold/fail quality decisions
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Audit human review, AB/BA judge order, agreement, position bias, verbosity bias, and next-route evidence before using LLM-as-judge scores
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] — Interpret TTFT, TPOT, throughput, memory, concurrency, and quality numbers as phase-specific local inference evidence
+- [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] — Audit benchmark rows for workload, route, token accounting, timing, memory, fixed settings, quality boundary, and next action before result synthesis
 - [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] — Turn local inference failures into symptom, failed-layer, proof, mechanism-owner, ruled-out-layer, and controlled-next-action evidence
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
@@ -149,6 +150,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] — Turn the first local endpoint into a reusable Python client run with request, response, output, and JSONL evidence
 - [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] — Measure first event, first visible content delta, chunk count, final text, total latency, usage gaps, and stream errors
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] — Convert first client and streaming JSONL evidence into one benchmark row with missing-layer and next-action fields
+- [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] — Check whether saved benchmark rows are interpretable enough to support comparison, tuning, synthesis, or deployment claims
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — Reusable client wrapper for local endpoint calls, streaming timing, error capture, and run logging
 - [[LLM/Study/Local LLM Application Integration Evidence Runner|Local LLM Application Integration Evidence Runner]] — Audit app boundary, endpoint, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation, operations, and promotion evidence before result synthesis
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] — Reproducible run log for local model/runtime comparisons

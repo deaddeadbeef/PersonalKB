@@ -229,6 +229,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] — run the first reusable Python client call and save request, response, output, and JSONL evidence
 - [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] — measure first event, first visible content delta, chunks, final text, total latency, usage gaps, and streaming errors
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] — convert first client and streaming run logs into one benchmark row with timing, token, quality, missing-layer, and next-action fields
+- [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] — audit benchmark rows for workload, route/model identity, proof, token counts, timing phases, memory/context, fixed settings, quality boundary, and next action before result synthesis
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — check endpoint exposure, logs, RAG corpus boundaries, prompt injection, and tool permissions
 - [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] — capture no-generation exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error evidence
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement
