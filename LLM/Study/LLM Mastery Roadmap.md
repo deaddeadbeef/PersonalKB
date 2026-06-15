@@ -242,7 +242,7 @@ Proof:
 - Compare at least two plausible runtimes with [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] before claiming the runtime choice is understood.
 - Use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] to prove the endpoint with a smoke test and diagnose any serving failures.
 - Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] to prove whether generic OpenAI-compatible clients can rely on the local route, streaming path, error shape, and required feature set, then use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] to capture the repeatable contract evidence.
-- Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer before changing model, runtime, prompt, or hardware.
+- Use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to name the failed layer before changing model, runtime, prompt, or hardware. When the failure affects benchmark, quality, operations, or deployment evidence, use [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] to save the symptom, proof, mechanism owner, ruled-out layers, and one controlled next action.
 - Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to log repeatable non-streaming, streaming, error, and benchmark rows from the same client.
 - Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] when a saved local request/response pair needs client request, prompt assembly, tokenization, prefill, decode, stop, parse, and application-handling evidence before benchmark or capstone claims.
 - Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to freeze temperature, candidate filters, penalties, seed behavior, stop rules, and output caps before benchmark or quality comparisons, then use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] when those controls need repeatable run evidence.
@@ -323,6 +323,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can budget a local request across template, prompt, history, RAG, tools, output reserve, and safety margin.
 - [ ] I can prove whether a local endpoint is OpenAI-compatible enough for a given client and workload.
 - [ ] I can audit model package, tokenizer, chat template, rendered prompt or non-exposure control, route behavior, stop boundary, and downstream benchmark/quality links before blaming model quality.
+- [ ] I can turn a local inference failure into a machine-checkable triage row with symptom, failed layer, proof, mechanism owner, ruled-out layers, and one controlled next action.
 - [ ] I can explain the security and privacy boundary of a local model server before exposing it beyond loopback.
 - [ ] I can design a held-out/private, contamination-aware prompt suite before scoring model quality.
 - [ ] I can run a local quality harness and explain pass/hold/fail decisions from rubric evidence.
@@ -385,6 +386,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Runner]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

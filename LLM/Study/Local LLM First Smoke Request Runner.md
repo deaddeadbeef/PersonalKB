@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] says the listener and model-list routes are ready, and before [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]]. The health snapshot does not generate text. This runner does: it is the first proof that a local model can answer a prompt through the endpoint you plan to use.
 
-For the first Windows/Ollama pass, this runner can replace the manual native and OpenAI-compatible smoke snippets in [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. Keep the prompt deliberately boring. The goal is route proof, timing capture, and failure ownership, not model quality.
+For the first Windows/Ollama pass, this runner can replace the manual native and OpenAI-compatible smoke snippets in [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. Keep the prompt deliberately boring. The goal is route proof, timing capture, and failure ownership, not model quality. If the smoke run fails and the rerun will support benchmark, quality, operations, or deployment evidence, save the diagnosis with [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] before changing another variable.
 
 ## What This Proves
 
@@ -450,7 +450,7 @@ This smoke runner is complete only when:
 - [ ] OpenAI-compatible request/response/output files exist or OpenAI route is explicitly skipped
 - [ ] summary JSON, summary Markdown, and `first-smoke-requests.jsonl` exist
 - [ ] status is `pass`, `hold`, or `error` with a named missing layer
-- [ ] next action names exactly one route: response debrief, route diagnosis, model-id diagnosis, security review, or quality probe
+- [ ] next action names exactly one route: response debrief, route diagnosis, model-id diagnosis, failure triage runner, security review, or quality probe
 
 ## References
 
@@ -468,6 +468,7 @@ Internal routes:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 
 External/current sources checked 2026-06-15:
 

@@ -148,7 +148,7 @@ ollama list | Tee-Object -FilePath "$RunRoot\ollama-list-after-pull.txt"
 
 Pass signal: `ollama list` shows the model tag or an equivalent resolved local tag.
 
-Hold signal: pull fails, disk fills, model tag is unavailable, or the model is much larger than expected. Go to [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] before changing multiple variables.
+Hold signal: pull fails, disk fills, model tag is unavailable, or the model is much larger than expected. Go to [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] before changing multiple variables. If the failure will affect later benchmark, quality, operations, or deployment evidence, save it with [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]].
 
 ## Step 4: Prove Listener Boundary
 
@@ -300,7 +300,7 @@ This run sheet is complete only when:
 - [ ] [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]], [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]], or equivalent note records whether smoke output has any first quality signal
 - [ ] benchmark row is copied or linked
 - [ ] decision row is copied or linked
-- [ ] any failure is routed to exactly one next diagnostic note
+- [ ] any failure is routed to exactly one next diagnostic note and saved with [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] when downstream evidence depends on the rerun
 
 ## References
 
@@ -314,6 +314,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]

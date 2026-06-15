@@ -74,6 +74,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — Audit prompt-suite coverage, held-out/private rows, contamination controls, rubric, and pass/fail readiness before quality scoring
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Audit human review, AB/BA judge order, agreement, position bias, verbosity bias, and next-route evidence before using LLM-as-judge scores
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] — Interpret TTFT, TPOT, throughput, memory, concurrency, and quality numbers as phase-specific local inference evidence
+- [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] — Turn local inference failures into symptom, failed-layer, proof, mechanism-owner, ruled-out-layer, and controlled-next-action evidence
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] — Machine-specific readiness card for this Windows workstation before installing a runtime or pulling a model
@@ -150,6 +151,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] — Validate RAG corpus, chunk, retrieval, context, answer, refusal, citation, latency, failure, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — Endpoint smoke tests and failure triage for local model servers
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] — Layer-by-layer diagnosis for local model, route, client, performance, quality, RAG, and security failures
+- [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] — Machine-check local failure diagnoses before using them as benchmark, quality, operations, or deployment evidence
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — Endpoint exposure, logging, RAG corpus, prompt injection, and tool-permission checks for local hosting
 - [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] — Save no-generation exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error evidence before non-loopback use
 

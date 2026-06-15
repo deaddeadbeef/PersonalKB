@@ -99,6 +99,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]]
+- [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]]
@@ -175,6 +176,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] — compare two local runtimes with frozen prompts, sampler settings, context target, benchmark rows, quality rows, and a decision card
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — prove hardware, runtime boundary, storage, ports, and endpoint safety before serving a model
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] — map local inference failures to environment, sizing, server, route, client, prompt, quality, RAG, or security layers
+- [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] — validate saved local failure rows into JSON, CSV, Markdown, and JSONL evidence before changing another variable
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — prove base URL, model id, routes, streaming, errors, and feature gaps before pointing generic clients at a local server
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] — save repeatable `/v1/models`, chat, stream, wrong-model failure, contract decision, and JSONL handoff evidence
 - [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] — run the first reusable Python client call and save request, response, output, and JSONL evidence

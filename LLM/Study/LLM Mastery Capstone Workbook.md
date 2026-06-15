@@ -88,6 +88,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Security/privacy runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] |  | Endpoint exposure, expected model visibility, config/log secret scan, RAG/tool/UI/export boundaries, and pass/hold/error decision are captured before non-loopback use or service handoff. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
+| Failure triage runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] |  | Any failed local run has symptom, canonical failed layer, proof, mechanism owner, ruled-out layers, and one controlled next action before downstream evidence depends on the rerun. | Not started |
 | Evaluation set design runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] |  | Workload, decision scope, required task classes, held-out/private prompts, contamination controls, expected behavior, rubric, pass criteria, refresh plan, and downstream routes are complete before quality scoring. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
 | RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], embedding/reranker service card from [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]], retrieval evaluation from [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]], and evidence packet from [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] |  | Corpus manifest, chunking policy, embedding/reranker service proof, index metadata, top-k/rank/reranking evidence, cited answer, unsupported-question refusal, benchmark row, quality row, at least one diagnosed failure, and runner output are captured. | Not started |
@@ -477,6 +478,7 @@ Next run:
 - A tool-using run where the model-selected action executes without schema validation, policy check, bounded loop control, and failure rows.
 - A benchmark that changes temperature, filters, penalties, seeds, stops, or output caps without saying so.
 - An endpoint without a benchmark.
+- A local failure diagnosis without proof, a canonical failed layer, ruled-out layers, and one controlled next action.
 - A benchmark without quality evidence.
 - A quality score from a prompt suite with no held-out/private design audit.
 - A RAG answer without citations.
@@ -526,7 +528,7 @@ Next run:
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
 - [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
-- [ ] Any local inference failure has a diagnostic row that names the failed layer and controlled next change.
+- [ ] Any local inference failure has a diagnostic row and failure triage runner output that name the failed layer, proof, ruled-out layers, and controlled next change.
 - [ ] The RAG assistant includes a manifest, chunk records, embedding/reranker service card, retrieval evaluation, cited answer, unsupported-question refusal, citation audit, at least one diagnosed failure mode, and one RAG evidence runner output.
 - [ ] The mastery evidence audit runner has a pass or a linked remediation row for every academic, mechanism, local-inference, system, and exam gate.
 - [ ] The deployment memo chooses one path and rejects at least one alternative.
@@ -585,6 +587,7 @@ Next run:
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]

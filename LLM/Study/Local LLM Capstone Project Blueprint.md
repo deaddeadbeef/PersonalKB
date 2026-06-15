@@ -84,6 +84,7 @@ Create one dated capstone note or folder with these links:
 | Model pull card | Selected tag, source check, pull output, `ollama ls`, `/api/tags`, `/api/show`, pass/hold/fail handoff. |
 | Template/tokenizer compatibility proof | Model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and benchmark or quality link. |
 | Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing. |
+| Failure triage proof | Any failed local run has symptom, failed layer, proof link, mechanism owner, ruled-out layers, and one controlled next action from [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]]. |
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
 | Scheduler proof | Scheduler evidence audit output when concurrency, queue, cache, long-prompt, or serving-policy decisions affect the project. |
@@ -139,6 +140,7 @@ You should be able to answer these without searching:
 | Why was this model chosen instead of a larger or smaller one? | [[LLM/Study/Local LLM Workload to Model Selection Playbook]] |
 | What exact artifact was served? | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] |
 | How do you know the client called the intended local route? | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
+| If the local run failed, how did you know which layer failed first? | [[LLM/Study/Local LLM Failure Triage Runner]] |
 | What metric made you keep, tune, or reject the setup? | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
 | What scheduler evidence supports the queue, cache, or long-prompt policy? | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |
 | What failed first when quality was weak? | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -167,6 +169,7 @@ This blueprint is complete for one project when:
 - [ ] Windows first-run gates link model-store, runtime-install, and first-model-pull evidence when Ollama is the first runtime
 - [ ] template/tokenizer compatibility runner output is linked before chat behavior, structured output, benchmark, quality, or deployment decisions rely on the endpoint
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
+- [ ] any failed local run has a failure triage runner output before benchmark, quality, or deployment evidence depends on the rerun
 - [ ] the client proof is reproducible without UI-only steps
 - [ ] the evaluation set design audit is linked before the full quality row
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
@@ -195,6 +198,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]

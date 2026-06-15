@@ -87,6 +87,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
 | You have a local failure | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] | Failed layer, evidence, controlled next change |
+| You have a saved local failure and need proof-quality diagnosis | [[LLM/Study/Local LLM Failure Triage Runner]] | Symptom, failed layer, proof, mechanism owner, ruled-out layers, and one controlled next action |
 | You need to know whether the prompt suite is good enough before scoring quality | [[LLM/Study/Local LLM Evaluation Set Design Runner]] | Workload, held-out/private coverage, contamination controls, rubric, and next-route audit |
 | You have quality doubts | [[LLM/Study/Local LLM Quality Evaluation Harness]] | Pass/hold/fail row |
 | You used an LLM judge and need to know whether the score is trustworthy | [[LLM/Study/Local LLM Judge Calibration Runner]] | Human agreement, AB/BA order stability, position bias, verbosity bias, and next-route audit |
@@ -107,6 +108,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | End-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] |  |
 | Request lifecycle runner | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |  |
 | Template/tokenizer compatibility | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |  |
+| Failure triage | [[LLM/Study/Local LLM Failure Triage Runner]] |  |
 | Local inference metric interpretation | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |  |
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Mastery evidence audit | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |  |
@@ -210,6 +212,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One judge calibration output when LLM-as-judge is used | [[LLM/Study/Local LLM Judge Calibration Runner]] |
 | One local result synthesis output before writing the deployment memo | [[LLM/Study/Local LLM Result Synthesis Runner]] |
 | One failure diagnosis | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
+| One machine-checkable failure triage output | [[LLM/Study/Local LLM Failure Triage Runner]] |
 | One scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] |
 | One mastery evidence audit output | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |
 | One end-to-end capstone project spec | [[LLM/Study/Local LLM Capstone Project Blueprint]] |
@@ -266,6 +269,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Runner]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]

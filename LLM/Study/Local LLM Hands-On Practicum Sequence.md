@@ -37,6 +37,7 @@ Before starting the applied sequence, make sure you can explain:
 | How one request flows through prompt assembly, prefill, decode, sampling, and stopping | [[LLM/Study/LLM Inference Request Lifecycle Lab]] |
 | Why metrics prove different claims | [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]] |
 | Which local layer owns a failure | [[LLM/Study/Local LLM Runtime Stack Anatomy]] |
+| How to turn a failed run into evidence | [[LLM/Study/Local LLM Failure Triage Runner]] |
 
 You do not need full paper mastery before the first local run. You do need enough theory to explain what the evidence means.
 
@@ -56,7 +57,7 @@ You do not need full paper mastery before the first local run. You do need enoug
 | 9 | Tool or structured-output extension | Schema, validation, policy, execution, and quality rows |
 | 10 | Capstone handoff | Capstone project blueprint and one evidence ledger with gaps named |
 
-Stop after any stage if the evidence fails. Use the failed row to choose the next controlled change.
+Stop after any stage if the evidence fails. Use the failed row to choose the next controlled change, then save proof-quality diagnosis with [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] before the rerun supports benchmark, quality, operations, or deployment evidence.
 
 ## Stage 0: Preflight The Machine
 
@@ -329,6 +330,7 @@ Pass signal: the capstone workbook has proof links, not just status text.
 | Situation | Next route |
 |---|---|
 | Endpoint will not start | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
+| You have a saved failure and need an evidence packet | [[LLM/Study/Local LLM Failure Triage Runner]] |
 | GPU is invisible | [[LLM/Study/Local LLM Environment Preflight Lab]] or [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]] |
 | Docker path is confusing | [[LLM/Study/Local LLM Docker GPU Container Serving Lab]] |
 | Route or model id fails | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
@@ -349,7 +351,7 @@ This practicum sequence is complete when you have:
 - [ ] one controlled sampler/template/context row
 - [ ] one benchmark row
 - [ ] one first quality probe row or quality row
-- [ ] one diagnosed failure or explicit no-failure row
+- [ ] one diagnosed failure or explicit no-failure row, with failure triage runner output when the failure affected downstream evidence
 - [ ] one service security or lifecycle row if the endpoint will be reused
 - [ ] one deployment readiness audit output before the final deployment memo is accepted
 - [ ] one RAG or tool extension artifact if the goal is more than chat
@@ -384,6 +386,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]

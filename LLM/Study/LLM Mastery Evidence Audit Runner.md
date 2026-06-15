@@ -221,6 +221,15 @@ DEFAULT_GATES = [
         "pass_signal": "Client route, model id, non-streaming or streaming behavior, and harmless failure are saved.",
     },
     {
+        "gate_id": "local-failure-triage",
+        "domain": "local-inference",
+        "required": True,
+        "critical": False,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM Failure Triage Runner",
+        "pass_signal": "Any failed local run has symptom, canonical failed layer, proof, mechanism owner, ruled-out layers, and one controlled next action.",
+    },
+    {
         "gate_id": "local-benchmark",
         "domain": "local-inference",
         "required": True,
@@ -929,6 +938,7 @@ This runner is useful when:
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
+- [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

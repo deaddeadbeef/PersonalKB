@@ -2609,3 +2609,37 @@ Maintenance changes:
 Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4852 files, 2981 Markdown files, 845 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | LLM failure triage runner
+
+Scope: add a repeatable local LLM failure triage artifact so failed endpoint, route, client, quality, RAG, tool, security, or operations runs can be turned into proof-quality diagnostic evidence before reruns support downstream decisions.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Failure Triage Runner.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/Local LLM Capstone Project Blueprint.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local LLM First Smoke Request Runner.md`
+- `LLM/Study/Local LLM First Endpoint Run Sheet.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library failure triage runner that validates symptom, canonical failed layer, proof link, mechanism or request-phase owner, ruled-out layers, and one controlled next action.
+- Routed failed local runs from the LLM MOC, study index, dashboard, roadmap, capstone workbook, capstone blueprint, hands-on practicum, serving runbook, first smoke runner, and first endpoint run sheet.
+- Added a `local-failure-triage` default gate to the mastery evidence audit runner.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_failure_triage_runner.py` from the note.
+- Failure triage fixtures: pass -> exit 0 `failure_triage_ready`; hold -> exit 1 `failure_triage_incomplete`; fail -> exit 2 `failure_triage_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 29 gates, 29 holds.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4944 files, 3073 Markdown files, 908 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
