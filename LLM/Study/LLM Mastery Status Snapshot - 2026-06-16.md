@@ -4,12 +4,12 @@ up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
 tier-coverage: [intuition, core, deep-dive, practice]
 last-verified: 2026-06-16
-last-machine-check: 2026-06-16T06:38:01+08:00
+last-machine-check: 2026-06-16T06:51:34+08:00
 ---
 
 # LLM Mastery Status Snapshot - 2026-06-16
 
-> **One-line summary** The vault now has a working, audited, loopback-security-checked local Ollama endpoint and a native calculator tool-loop remediation for the held arithmetic probe, but mastery is not proven yet: strict-format quality, academic no-notes defense, request lifecycle, and capstone evidence-pack audits still need to pass.
+> **One-line summary** The vault now has a working, audited, loopback-security-checked local Ollama endpoint plus documented remediation paths for the held arithmetic and strict-format probes, but mastery is not proven yet: request lifecycle, full quality/evidence-pack audit, operations, and academic no-notes defense still need to pass.
 
 Use this as the current state card before deciding what to do next in [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]]. It is a status snapshot, not a completion certificate.
 
@@ -24,12 +24,12 @@ Use this as the current state card before deciding what to do next in [[LLM/Stud
 | Runtime install | `pass` | Ollama for Windows `0.30.8` resolves from `C:\Users\fpan1\AppData\Local\Programs\Ollama\ollama.EXE`; install runner passed. | Capture lifecycle/rollback evidence before upgrades or service changes. |
 | Model pull | `pass` | Source-checked `qwen3.5:2b-q4_K_M` was pulled into `D:\Models\ollama`; pull runner passed. | Use quality and compatibility probes before changing model tags. |
 | Endpoint smoke | `pass` | Native `/api/generate` and OpenAI-compatible `/v1/chat/completions` both returned `local llm ok` in saved loopback evidence; endpoint audit now passed. | Keep smoke as route proof, not quality proof. |
-| Quality, benchmark, operations | `hold` | Chat/template/tokenizer compatibility passed; first quality probe reached final content with `think=false` and held at 3/5; [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] stayed held with 1/8 pass, 7/8 hold, 0 errors; [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] passed for `K-01` via native calculator tool loop; loopback security/privacy runner passed; inference pack audit and lifecycle evidence are not complete. | Route strict formatting through structured-output controls or model/runtime comparison, then decide whether the first evidence-pack audit is a pass attempt or a documented hold. |
+| Quality, benchmark, operations | `hold` | Chat/template/tokenizer compatibility passed; first quality probe reached final content with `think=false` and held at 3/5; [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] diagnosed the held rows; [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] passed for `K-01` via native calculator tool loop; [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16|Local LLM Structured Format Remediation Proof - 2026-06-16]] passed for `C-01` via explicit structured IDs plus app rendering; loopback security/privacy runner passed; inference pack audit and lifecycle evidence are not complete. | Rerun quality or evidence-pack audit only with row ownership explicit: model-owned, tool-owned, or renderer-owned. |
 | Goal completion | `not complete` | The vault is navigable, but the requested end state requires both academic proof and a working local inference proof. | Complete the proof ladder below. |
 
 ## Initial Machine Evidence
 
-Initial check from Windows PowerShell at `2026-06-16T05:12:09+08:00` in vault HEAD `eac5e82`; applied proof updated through `2026-06-16T06:38:01+08:00`.
+Initial check from Windows PowerShell at `2026-06-16T05:12:09+08:00` in vault HEAD `eac5e82`; applied proof updated through `2026-06-16T06:51:34+08:00`.
 
 | Check | Initial evidence | Meaning |
 |---|---|---|
@@ -59,7 +59,8 @@ Initial check from Windows PowerShell at `2026-06-16T05:12:09+08:00` in vault HE
 | Endpoint audit | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] records `pass/first_endpoint_evidence_ready`, 12 gates, 11 pass, 0 hold, 0 fail, 0 critical gaps | First endpoint evidence is now defensible route proof. |
 | First quality probe | `hold`, 3/5 pass after `think=false`; JSON, extraction, and grounded refusal passed; arithmetic and strict constraint following held | First quality evidence exists, but the selected model is not workload-quality ready. |
 | Quality remediation | [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]] records `hold`, 1/8 pass, 7/8 hold, 0 errors; output cap and stricter prompts did not clear `K-01`, and `C-01` passed only with an exact target template | The quality hold was real; arithmetic and strict formatting need different remediation paths. |
-| Calculator tool remediation | [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16]] records `pass/native_tool_loop_remediation_ready`, 4 pass rows and 1 diagnostic hold; native tool call and native tool-result follow-up returned `answer=410` for `K-01` | Arithmetic-like prompts now have a defensible deterministic tool route; direct ad hoc result finalization stayed held, and `C-01` is still unresolved. |
+| Calculator tool remediation | [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16]] records `pass/native_tool_loop_remediation_ready`, 4 pass rows and 1 diagnostic hold; native tool call and native tool-result follow-up returned `answer=410` for `K-01` | Arithmetic-like prompts now have a defensible deterministic tool route; direct ad hoc result finalization stayed held; strict formatting is handled by the separate structured-format proof. |
+| Structured-format remediation | [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16]] records `pass/app_rendered_structured_format_ready`, 2 pass rows and 3 diagnostic holds; original free text, free-form JSON fields, and loose enum selection held, while explicit structured IDs plus deterministic rendering produced two valid five-word bullets | Strict-format prompts now have a renderer-owned route; broad quality and evidence-pack readiness still require rerun or audit. |
 | Security/privacy | [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] records `pass/loopback_private_ready`; `/v1/models`, `/api/tags`, and `/api/ps` were checked without generation; scoped config/log secret scan had no findings | Current endpoint is defensible for one-person loopback use only; LAN, UI, RAG, tool, lifecycle, and deployment safety remain separate gates. |
 
 ## Exact Next Actions
@@ -69,8 +70,8 @@ Do not repeat install, pull, or smoke unless a later audit says the evidence is 
 ### Applied Track
 
 1. Route arithmetic-like prompts through the native calculator tool-loop pattern in [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] before trusting this model on calculations.
-2. Use structured-output controls, [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]], [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], or [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] for the remaining `C-01` strict-format hold.
-3. Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] to connect the saved first response and calculator tool loop to prompt assembly, tool schema, tokenization, prefill, decode, stop, tool-role handling, and application handling.
+2. Route strict-format outputs through the explicit structured-ID plus deterministic-rendering pattern in [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16|Local LLM Structured Format Remediation Proof - 2026-06-16]].
+3. Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] to connect the saved first response, calculator tool loop, structured schema, validation, rendering, and final answer phases.
 4. Keep the endpoint loopback-only until a separate LAN/auth/firewall/UI/RAG/tool proof exists.
 
 ### Academic Track
@@ -97,7 +98,8 @@ The active goal should stay open until all of these are true:
 - [x] first security/privacy runner passes for the loopback-only current endpoint
 - [x] first quality remediation probe exists and is linked
 - [x] first calculator tool remediation proof exists and is linked for `K-01`
-- [ ] strict-format quality remediation reaches a pass/ready state, or a model/tool/structured-output replacement decision is explicitly accepted
+- [x] first structured-format remediation proof exists and is linked for `C-01`
+- [ ] first quality rerun or evidence-pack audit explicitly reconciles model-owned, tool-owned, and renderer-owned rows
 - [ ] capstone workbook links the evidence instead of status text
 - [ ] [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] has enough linked evidence to return a defensible pass
 
@@ -111,6 +113,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]
 - [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]]
 - [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Mastery Gap Triage Runner]]

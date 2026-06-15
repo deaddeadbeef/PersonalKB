@@ -3956,3 +3956,41 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the calculator proof note, run id, runner path, or evidence paths.
+
+## [2026-06-16] curate | Prove structured-format remediation for held constraint probe
+
+Scope: remediate the held `C-01` strict-format probe with explicit structured IDs and deterministic application rendering before making any broader local-model quality claim.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16.md`
+- `LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16]] with structured-output and deterministic-renderer evidence for the previously held `C-01` strict-format prompt.
+- Created and compiled `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\structured-format-remediation-runner.py`.
+- Ran the structured-format remediation runner against `http://127.0.0.1:11434/api/chat` with `qwen3.5:2b-q4_K_M`, loopback boundary, `think=false`, and temperature `0`.
+- Routed the proof through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, prior quality remediation note, and calculator remediation note.
+- Kept the remaining quality boundary explicit: `K-01` is tool-owned, `C-01` is renderer-owned, and a full quality/evidence-pack audit still needs to reconcile model-owned, tool-owned, and renderer-owned rows.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty LLM files outside this routed slice.
+
+Verification:
+- `python -m py_compile structured-format-remediation-runner.py`: clean.
+- Structured-format remediation runner returned `pass` / `pass/app_rendered_structured_format_ready`, 2 pass rows, 3 diagnostic holds, accepted path `schema_explicit_enum_claim_selection`.
+- Original free-text control held with three long bullets.
+- Free-form structured fields held with off-topic six-word strings.
+- Loose enum selection held because the model invented `RouteClaim_01` and `QualityClaim_02`.
+- Explicit enum selection plus deterministic rendering passed with `- Route proof verifies endpoint reachability` and `- Quality proof verifies useful behavior`.
+- Bad-shape denial blocked an unexpected `extra` field before rendering.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` and `_ops/reports/audit-placeholder-hits.md` found no hits for the structured-format proof note, run id, runner path, or evidence paths.

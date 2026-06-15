@@ -9,7 +9,7 @@ last-machine-check: 2026-06-16T06:22:09+08:00
 
 # Local LLM Quality Remediation Probe - 2026-06-16
 
-> **One-line summary** The first focused remediation pass did not clear the quality hold: output-cap changes and stricter prompts did not fix `K-01`, and `C-01` only passed when the exact target bullet template was supplied. A later calculator tool proof remediated the `K-01` arithmetic path, but not the `C-01` strict-format path.
+> **One-line summary** The first focused remediation pass did not clear the quality hold: output-cap changes and stricter prompts did not fix `K-01`, and `C-01` only passed when the exact target bullet template was supplied. Later proofs remediated `K-01` with a calculator tool loop and `C-01` with explicit structured IDs plus deterministic rendering.
 
 This extends [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]. It is quality diagnosis, not quality readiness.
 
@@ -76,7 +76,15 @@ This extends [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026
 - native tool-result follow-up: returned `answer=410; reason=The calculation of 17 multiplied by 23 plus 19 results in 410.`
 - direct ad hoc tool-result finalization: held because it copied placeholder-shaped text
 
-The remaining quality owner is not arithmetic. It is strict formatting, structured output, broader prompt-suite quality, or model/runtime selection.
+[[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16|Local LLM Structured Format Remediation Proof - 2026-06-16]] resolved the strict-format branch of this hold for `C-01` by making the model emit validated IDs and letting the application render the final bullets:
+
+- original free text: held with three long bullets
+- free-form structured fields: held with off-topic six-word fields
+- loose enum selection: held with invented labels
+- explicit enum selection plus renderer: passed with `- Route proof verifies endpoint reachability` and `- Quality proof verifies useful behavior`
+- bad-shape denial: passed before rendering
+
+The remaining quality owner is now evidence reconciliation: future quality or evidence-pack audits must state which rows are model-owned, tool-owned, or renderer-owned.
 
 ## What This Does Not Prove
 
@@ -88,9 +96,9 @@ The remaining quality owner is not arithmetic. It is strict formatting, structur
 ## Next Actions
 
 1. Use [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] as the accepted `K-01` arithmetic remediation route.
-2. Route general quality remediation through [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] or [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] if a stronger local model is tested.
-3. Route strict-format remediation through [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] plus structured-output controls before repeating the full quality probe.
-4. Do not run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] as a pass attempt until the remaining quality route is either remediated or explicitly accepted as a documented hold.
+2. Use [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16|Local LLM Structured Format Remediation Proof - 2026-06-16]] as the accepted `C-01` strict-format remediation route.
+3. Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] before claiming the full first-run packet, so the endpoint, tool, schema, validation, rendering, and final output phases are explicit.
+4. Do not run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] as a pass attempt until the audit input distinguishes model-owned, tool-owned, and renderer-owned rows.
 
 ## References
 
@@ -102,6 +110,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Runtime Comparison Runner]]
