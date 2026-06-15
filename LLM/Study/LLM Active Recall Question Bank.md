@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This is the daily retrieval-practice bank for LLM mastery: answer mechanism, paper, evaluation, and local-inference questions from memory, then route misses to the exact note or lab that fixes the gap.
 
-Use this with [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]], [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]], and [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The category review drills are useful for warm-up. This bank is for mixed recall, where academic concepts and applied local-hosting decisions are interleaved.
+Use this with [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]], [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]], [[LLM/Study/LLM Recall and Remediation Audit Runner|LLM Recall and Remediation Audit Runner]], and [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The category review drills are useful for warm-up. This bank is for mixed recall, where academic concepts and applied local-hosting decisions are interleaved.
 
 ## How To Use
 
@@ -22,6 +22,7 @@ Pick one row from each cluster:
 | 3 | Name one operational consequence | Local inference, RAG, tool, eval, or deployment consequence |
 | 4 | Check the linked route | Corrected answer |
 | 5 | If missed, add a capstone or cadence miss row | Next proof artifact |
+| 6 | Run the recall/remediation audit when this session supports mastery or exam evidence | Audit JSON/Markdown/CSV link |
 
 Score:
 
@@ -163,6 +164,7 @@ This bank is doing its job when:
 - [ ] a mixed 20-question session scores at least 80 percent
 - [ ] no local-inference, RAG/evaluation, or safety cluster has a zero
 - [ ] every missed question has a route and a next proof artifact
+- [ ] recall/remediation audit output is linked when the session supports mastery or exam evidence
 - [ ] capstone rows use evidence, not confidence, as the pass signal
 
 ## References
@@ -171,6 +173,7 @@ This bank is doing its job when:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
+- [[LLM/Study/LLM Recall and Remediation Audit Runner]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Concept Dependency Map]]

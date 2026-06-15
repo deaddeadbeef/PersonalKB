@@ -48,6 +48,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You are ready to turn the study path into one buildable project | [[LLM/Study/Local LLM Capstone Project Blueprint]] | Local assistant blueprint, evidence bundle, defense questions, and pass/hold/fail decision |
 | You have proof links and need to know whether mastery evidence is defensible | [[LLM/Study/LLM Mastery Evidence Audit Runner]] | Academic, mechanism, local-inference, system, exam, pass/hold/fail, and next-route audit |
 | You need mixed recall | [[LLM/Study/LLM Active Recall Question Bank]] | 20-question score and miss route |
+| You have scored recall/exam rows and need to know whether they count | [[LLM/Study/LLM Recall and Remediation Audit Runner]] | Coverage, scores, misses, remediation artifacts, next reviews, and applied proof |
 | You cannot explain a paper | [[LLM/Study/LLM Paper Reading Protocol]] | Claim, method, evidence, limitation, deployment implication |
 | You can summarize a paper but cannot defend its evidence or local implication | [[LLM/Study/LLM Paper Claim Ledger]] | Claim, evidence type, limitation, mechanism, local implication, and follow-up proof |
 | You have paper claim rows but need to know whether academic proof is complete | [[LLM/Study/LLM Paper Claim Audit Runner]] | Fast-path coverage, source proof, claim anatomy, local implication, and follow-up route audit |
@@ -105,6 +106,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 |---|---|---|
 | Concept dependency | [[LLM/Study/LLM Concept Dependency Map]] |  |
 | Active recall | [[LLM/Study/LLM Active Recall Question Bank]] |  |
+| Recall remediation audit | [[LLM/Study/LLM Recall and Remediation Audit Runner]] |  |
 | Paper synthesis | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]] |  |
 | Paper claim ledger | [[LLM/Study/LLM Paper Claim Ledger]] |  |
 | Paper claim audit | [[LLM/Study/LLM Paper Claim Audit Runner]] |  |
@@ -175,6 +177,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | Evidence to add | Destination |
 |---|---|
 | One unanswered recall prompt and corrected answer | [[LLM/Study/LLM Active Recall Question Bank]] or dated study note |
+| One recall/remediation audit output | [[LLM/Study/LLM Recall and Remediation Audit Runner]] |
 | One paper claim/evidence/limitation row | [[LLM/Study/LLM Paper Claim Ledger]] |
 | One paper claim audit output | [[LLM/Study/LLM Paper Claim Audit Runner]] |
 | One paper-to-local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] |
@@ -265,6 +268,7 @@ This dashboard is useful when:
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
+- [[LLM/Study/LLM Recall and Remediation Audit Runner]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]

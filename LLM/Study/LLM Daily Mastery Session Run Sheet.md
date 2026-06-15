@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This is the fill-in artifact for one LLM study session: answer one recall prompt, explain one mechanism, produce or route one applied proof, and link the result into the capstone.
 
-Use this with [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] and [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]]. The dashboard chooses the route. The cadence sets the rhythm. This run sheet is the saved evidence that the session combined academic knowledge with local inference practice.
+Use this with [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] and [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]]. The dashboard chooses the route. The cadence sets the rhythm. This run sheet is the saved evidence that the session combined academic knowledge with local inference practice. Use [[LLM/Study/LLM Recall and Remediation Audit Runner|LLM Recall and Remediation Audit Runner]] after scored rows when the session supports mastery or exam evidence.
 
 This sheet is intentionally small. A session passes when it leaves one durable answer, one mechanism-to-local consequence, and one evidence link or blocker. Reading without an answer or artifact does not count.
 
@@ -109,6 +109,7 @@ Link the session output so it is findable later.
 | Dashboard status | [[LLM/Study/LLM Mastery Dashboard]] |
 | Capstone workbook row | [[LLM/Study/LLM Mastery Capstone Workbook]] |
 | Active recall miss row | [[LLM/Study/LLM Active Recall Question Bank]] or dated note |
+| Recall remediation audit | [[LLM/Study/LLM Recall and Remediation Audit Runner]] |
 | Mechanism bridge row | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] or this note |
 | Applied lab or run sheet |  |
 
@@ -140,6 +141,7 @@ This session is complete only when:
 - [ ] the mechanism bridge names a local control or symptom
 - [ ] one applied route has an artifact, command output, row, or explicit blocker
 - [ ] the capstone destination is linked or the missing link is named as the next action
+- [ ] recall/remediation audit output is linked when the session has misses or supports exam evidence
 - [ ] the next session is written in one sentence
 
 ## References
@@ -148,6 +150,7 @@ This session is complete only when:
 - [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
+- [[LLM/Study/LLM Recall and Remediation Audit Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]

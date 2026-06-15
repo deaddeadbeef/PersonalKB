@@ -2774,3 +2774,35 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 33 gates, 33 holds.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4948 files, 3077 Markdown files, 912 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | LLM recall and remediation audit runner
+
+Scope: add a repeatable audit for scored recall and exam rows so academic and applied LLM knowledge has coverage, routes for misses, remediation artifacts, applied proof, and next review before it supports mastery claims.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Recall and Remediation Audit Runner.md`
+- `LLM/Study/LLM Active Recall Question Bank.md`
+- `LLM/Study/LLM Daily Mastery Session Run Sheet.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Exam Run Sheet.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library recall/remediation audit runner that checks recall domain coverage, numeric scores, answer artifacts, miss reasons, remediation artifacts, next-review dates, applied proof links, overall threshold, and hard-fail applied-domain zeroes.
+- Routed the runner from the LLM MOC, study index, dashboard, active recall bank, daily session sheet, exam run sheet, capstone workbook, roadmap, and mastery evidence audit.
+- Added `exam-recall-remediation-audit` to the mastery evidence audit runner default gate set.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `llm_recall_remediation_audit_runner.py` from the note.
+- Recall/remediation fixtures: pass -> exit 0 `recall_remediation_ready`; hold -> exit 1 `recall_remediation_incomplete`; fail -> exit 2 `recall_remediation_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 34 gates, 34 holds.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4949 files, 3078 Markdown files, 913 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

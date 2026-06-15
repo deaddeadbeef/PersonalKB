@@ -63,7 +63,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
 | local-inference | workload/model selection, model custody, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, benchmark, scheduler evidence, evaluation set design, quality |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
-| exam | self-assessment, exam run sheet, capstone workbook/final note |
+| exam | self-assessment, recall/remediation audit, exam run sheet, capstone workbook/final note |
 
 The default gates start in `hold` status. The point is to create a manifest, fill proof links, and rerun until the remaining gaps are explicit.
 
@@ -365,6 +365,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/LLM Mastery Self-Assessment Exam",
         "pass_signal": "Overall score is at least 80 percent with no zero in practical sections and linked remediation.",
+    },
+    {
+        "gate_id": "exam-recall-remediation-audit",
+        "domain": "exam",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/LLM Recall and Remediation Audit Runner",
+        "pass_signal": "Scored recall or exam rows cover required domains, route low-score misses, link remediation artifacts and next reviews, and avoid hard-fail zeroes in applied domains.",
     },
     {
         "gate_id": "exam-run-sheet",
@@ -968,6 +977,7 @@ This runner is useful when:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
+- [[LLM/Study/LLM Recall and Remediation Audit Runner]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Paper Claim Audit Runner]]

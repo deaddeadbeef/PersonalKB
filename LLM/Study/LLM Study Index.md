@@ -10,6 +10,7 @@ Study and review materials for the LLM knowledge base.
 ## Review Drills
 
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]]
+- [[LLM/Study/LLM Recall and Remediation Audit Runner|LLM Recall and Remediation Audit Runner]]
 - [[LLM/Study/Foundations and Architecture - Review Drill|Foundations & Architecture]]
 - [[LLM/Study/Pretraining and Scaling - Review Drill|Pretraining & Scaling]]
 - [[LLM/Study/Alignment and Safety - Review Drill|Alignment & Safety]]
@@ -24,6 +25,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]]
+- [[LLM/Study/LLM Recall and Remediation Audit Runner|LLM Recall and Remediation Audit Runner]]
 - [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]]
 - [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]

@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This is the fill-in artifact for one LLM mastery exam attempt: answer without notes, score each section, link practical evidence, route misses, and decide pass, hold, or retake.
 
-Use this while taking [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]. The exam note contains the question bank and standards. This run sheet is the artifact you fill so the attempt becomes evidence in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. Use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] after proof links are filled to check whether the evidence bundle has any critical gaps.
+Use this while taking [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]. The exam note contains the question bank and standards. This run sheet is the artifact you fill so the attempt becomes evidence in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. Use [[LLM/Study/LLM Recall and Remediation Audit Runner|LLM Recall and Remediation Audit Runner]] after scored rows are filled, then use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] after proof links are filled to check whether the evidence bundle has any critical gaps.
 
 This sheet is not proof unless the answer fields, scores, evidence links, and remediation rows are filled. A pass without linked local-inference and practical-gate evidence does not count.
 
@@ -147,6 +147,7 @@ Do not pass the exam on oral answers alone. Link proof or mark the gap.
 |---|---|---|---|
 | Dashboard route chosen | Today's route, proof artifact, and evidence destination | [[LLM/Study/LLM Mastery Dashboard]] | pass / gap |
 | Active recall | 20 mixed questions or focused retake score | [[LLM/Study/LLM Active Recall Question Bank]] | pass / gap |
+| Recall remediation audit | Recall rows cover required domains; low-score rows have routes, remediation artifacts, next reviews, and applied proof | [[LLM/Study/LLM Recall and Remediation Audit Runner]] | pass / gap |
 | Paper literacy | One cluster summary or protocol row | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]], [[LLM/Study/LLM Paper Reading Protocol]] | pass / gap |
 | Mechanism bridge | Mechanism, control, evidence, and next decision row | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] | pass / gap |
 | Math and tensor shapes | Token/logit/loss/attention/KV-cache explanation | [[LLM/Study/LLM Math and Tensor Shape Primer]] | pass / gap |
@@ -194,6 +195,7 @@ Common routes:
 | RAG/evaluation evidence linked? | yes / no |
 | Security/deployment evidence linked? | yes / no |
 | Miss remediation rows complete? | yes / no |
+| Recall remediation audit linked? | yes / no |
 | Capstone workbook updated? | yes / no |
 | Final decision | pass / hold / retake |
 
@@ -212,6 +214,7 @@ This run sheet is complete only when:
 - [ ] every zero or one has a remediation route
 - [ ] local inference, RAG/evaluation, and security/deployment have no zero scores
 - [ ] practical evidence links are present or explicitly marked as gaps
+- [ ] recall/remediation audit output is linked
 - [ ] the capstone workbook links this attempt
 - [ ] the mastery evidence audit has no critical gaps or links remediation rows
 - [ ] the final decision is pass, hold, or retake
@@ -225,6 +228,7 @@ Internal routes:
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
+- [[LLM/Study/LLM Recall and Remediation Audit Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
