@@ -3402,3 +3402,37 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4967 files, 3096 Markdown files, 931 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add model acquisition license gate runner
+
+Scope: make model source, license, gated access, artifact pinning, and unsafe-file posture auditable before any local download, serving, benchmark, or deployment evidence depends on a candidate model.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Artifact Custody Audit Runner.md`
+- `LLM/Study/Local LLM Artifact Download Cache and Conversion Lab.md`
+- `LLM/Study/Local LLM Model Acquisition and License Gate Runner.md`
+- `LLM/Study/Local LLM Model Acquisition and Provenance Checklist.md`
+- `LLM/Study/Local LLM Model Metadata Card Runner.md`
+- `LLM/Study/Local LLM Runtime Compatibility Runner.md`
+- `LLM/Study/Local LLM Workload to Model Selection Playbook.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Model Acquisition and License Gate Runner]] with a standard-library Python runner that audits a saved candidate manifest without scraping registries, downloading model files, or giving legal advice.
+- The runner checks model-card review, intended-use fit, license scope flags, gated-access status, exact revision/tag/file, safe or unsafe artifact format, `trust_remote_code`, malware/pickle scan status, source proof artifacts, and open-source AI claim basis.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, acquisition checklist, artifact download lab, custody audit, metadata-card runner, workload playbook, and runtime compatibility runner through the new acquisition/license gate.
+- Checked current Hugging Face model-card, gated-model, malware-scan, pickle-scan, Safetensors, SPDX license-list, and Open Source AI Definition sources on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_model_acquisition_license_gate_runner.py` from the note.
+- Model-acquisition fixture checks: clean proof -> `pass` / `acquisition_ready`; commercial use blocked by license -> `fail` / `acquisition_blocked`; gated pending -> `hold` / `acquisition_incomplete`; gated denied -> `fail`; floating `HEAD` revision -> `fail`; unsafe `.bin` file without review -> `fail`; infected scan -> `fail`; open-source AI claim with only open-weights evidence -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4968 files, 3097 Markdown files, 932 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** Choose a local LLM by workload contract, evidence, and hardware fit: define the job, pick the smallest plausible candidate, prove compatibility, run a quality gate, and keep only measured winners.
 
-Use this before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]], [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]. Those notes prove cache fit, memory, custody, and compatibility. This note decides which candidates are worth proving. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the candidate card should become repeatable JSON, Markdown, CSV, and JSONL shortlist evidence.
+Use this before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]], [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]. Those notes prove cache fit, memory, acquisition permission, custody, and compatibility. This note decides which candidates are worth proving. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the candidate card should become repeatable JSON, Markdown, CSV, and JSONL shortlist evidence.
 
 Use it during [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] Stage 2, before spending time downloading, converting, or benchmarking a model. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after the endpoint works to decide whether the candidate actually passes.
 
@@ -278,6 +278,7 @@ This playbook is complete for one candidate decision when you have:
 - [ ] model selection runner output if there is more than one candidate or if the decision must be repeated later
 - [ ] sizing estimate
 - [ ] acquisition/provenance evidence
+- [ ] acquisition/license gate decision when the candidate will be downloaded, served, benchmarked, or deployed
 - [ ] runtime/model compatibility evidence
 - [ ] endpoint smoke response
 - [ ] sampler/template/context controls
@@ -299,6 +300,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Model Acquisition and License Gate Runner]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Serving Runbook]]

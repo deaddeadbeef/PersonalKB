@@ -71,6 +71,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Model selection runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] |  | Candidate shortlist ranks workload, hardware, custody, memory, compatibility, benchmark, quality, and next-route evidence before download or deployment. | Not started |
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
+| Model acquisition license gate | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]] |  | Candidate source, model card, requested use, license flags, gated-access status, pinned artifact, unsafe-file posture, scan status, and source artifacts are audited before download, serving, benchmark, or deployment evidence depends on the candidate. | Not started |
 | Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
 | Model metadata card runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] |  | Config, tokenizer, Ollama show, and inventory artifacts are normalized into architecture, template, context, quantization, unsafe-file, and downstream handoff fields before custody, compatibility, tokenizer, context, or KV-cache proof uses them. | Not started |
 | Artifact custody audit | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] |  | Source identity, local bytes or runtime id, inventory, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup plan are pass or linked to remediation. | Not started |
@@ -540,7 +541,7 @@ Next run:
 - [ ] The first quality probe either records pass/hold/fail rows or explicitly routes to the full quality harness or troubleshooting.
 - [ ] The first inference evidence pack audit passes, or its hold/fail output is linked to the next remediation route.
 - [ ] The quality harness is preceded by evaluation set design output or a linked waiver.
-- [ ] The local model artifact has an acquisition/provenance card.
+- [ ] The local model artifact has an acquisition/provenance card and a model acquisition/license gate output before download, serving, benchmark, or deployment evidence depends on it.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
 - [ ] The local model artifact has an artifact custody audit output before compatibility, serving, benchmark, or deployment evidence depends on it.
 - [ ] The local practicum handoff links every stage artifact, or explicitly marks skipped or blocked stages.
@@ -640,6 +641,7 @@ Next run:
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Model Acquisition and License Gate Runner]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]

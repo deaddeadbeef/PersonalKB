@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** Turn saved model metadata into a checked model card before architecture, tokenizer, context, custody, runtime-compatibility, or KV-cache-sizing claims depend on it.
 
-Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] and [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] have identified the artifact, local path, file list, or runtime package. Use it before [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]], [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]], [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]], [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]], and [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]] whenever a downstream proof needs architecture, tokenizer, template, context, quantization, license, or file-inventory facts.
+Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]], and [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] have identified the artifact, local path, file list, or runtime package. Use it before [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]], [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]], [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]], [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]], and [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]] whenever a downstream proof needs architecture, tokenizer, template, context, quantization, license, or file-inventory facts.
 
 This runner does not download a model, call a model, or query a live endpoint. It audits metadata already saved from `config.json`, tokenizer files, a file inventory, or Ollama `POST /api/show` output, then writes a normalized model metadata card.
 
@@ -39,7 +39,7 @@ Minimum manifest:
   "model_id": "example-local-model",
   "expected_model_id": "example-local-model",
   "source_ref": "hf.co/org/repo@commit-or-ollama-tag",
-  "source_proof": "LLM/Study/Local LLM Model Acquisition and Provenance Checklist",
+  "source_proof": "LLM/Study/Local LLM Model Acquisition and License Gate Runner",
   "revision_or_file": "commit, tag, digest, or file name",
   "required_downstreams": [
     "kv_cache_sizing",
@@ -736,6 +736,7 @@ Internal:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Model Acquisition and License Gate Runner]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]

@@ -84,6 +84,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]]
@@ -204,6 +205,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] — map hardware, boundary, model bytes, runtime, scheduler, route, client/UI, workload, and operations layers before debugging
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] — record model card, license, gated access, exact revision, artifact safety, local path, and digest before serving
+- [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]] — produce machine-checkable pass/hold/fail evidence for candidate source, model card, license, gated access, artifact pinning, unsafe files, and requested local use before download or serving
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] — pin model downloads, inspect cache paths and file lists, verify hashes, import GGUF/Ollama artifacts, and record conversion provenance
 - [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] — normalize config, tokenizer, Ollama show, and file-inventory evidence into a card that feeds custody, compatibility, tokenizer, context, and KV-cache runners
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] — validate artifact source identity, local bytes, inventory, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup plan before serving

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model artifact is ready for serving only when the exact downloaded bytes, cache path, file list, verification result, conversion path, and cleanup plan are known.
 
-Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] approves the source, license, gated-access state, and intended artifact. Use it before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the next risk is "which files did I actually download, where did they go, and can my runtime load that artifact?" Use [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] after file-list, `config.json`, tokenizer, GGUF metadata, or Ollama show capture when downstream checks need normalized model facts. Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] after this lab when the saved rows need machine-checkable proof before compatibility, serving, benchmark, or deployment evidence depends on the artifact. If the risk is earlier - choosing the Windows model store or cache root before a large pull - start with [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]].
+Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] approves the source, license, gated-access state, and intended artifact. If the candidate needs machine-checkable source, license, access, pinning, and unsafe-file evidence, run [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]] before downloading. Use this before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the next risk is "which files did I actually download, where did they go, and can my runtime load that artifact?" Use [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] after file-list, `config.json`, tokenizer, GGUF metadata, or Ollama show capture when downstream checks need normalized model facts. Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] after this lab when the saved rows need machine-checkable proof before compatibility, serving, benchmark, or deployment evidence depends on the artifact. If the risk is earlier - choosing the Windows model store or cache root before a large pull - start with [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]].
 
 This lab is deliberately operational. The acquisition checklist decides whether the artifact is acceptable. This lab proves that the artifact was downloaded, inspected, verified, optionally converted, and handed to the runtime without losing provenance.
 
@@ -49,6 +49,7 @@ Copy this before the download or conversion.
 | --- | --- |
 | Workload |  |
 | Approved source/provenance card |  |
+| Acquisition/license gate output |  |
 | Candidate model repo or URL |  |
 | License/gate status |  |
 | Desired artifact form | HF snapshot / Safetensors / GGUF / Ollama package / adapter / converted derivative |
@@ -191,6 +192,7 @@ The artifact handoff is complete only after these links exist:
 | Handoff | Required evidence |
 | --- | --- |
 | Acquisition | Source, license, gate, intended use, unsafe-file decision. |
+| Acquisition/license gate | Runner output proving pass/hold/fail for requested use, access, pinned artifact, unsafe files, and source artifacts. |
 | Artifact lab | Download path, revision, cache/local dir, file list, verification, conversion/import evidence. |
 | Model metadata | Config, tokenizer, Ollama show, or file-inventory facts are normalized by [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]]. |
 | Compatibility | Runtime supports architecture, file format, quantization, tokenizer, template, route, workload. |
@@ -234,6 +236,7 @@ Do not debug answer quality until the artifact handoff is known. A bad answer fr
 This lab is complete when you have:
 
 - [ ] source/provenance card linked
+- [ ] acquisition/license gate output linked when source, license, gated access, pinning, or unsafe-file posture must be audited before download
 - [ ] dry-run or file-size decision recorded before large download
 - [ ] exact revision/tag/file recorded
 - [ ] cache or local directory recorded
@@ -253,6 +256,7 @@ Internal:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Model Acquisition and License Gate Runner]]
 - [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]

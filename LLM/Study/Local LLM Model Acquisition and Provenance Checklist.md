@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** A local model is not ready to download just because it fits memory; it needs a documented source, license, exact revision, artifact format, safety posture, cache path, and workload boundary.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] proves disk, runtime boundary, and hardware, and before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] turns the candidate into a memory plan. Use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] when the open question is where Windows should store model bytes before the first pull. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] for the first Ollama pull when the model is a runtime tag rather than a manually downloaded GGUF or Hugging Face snapshot. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] after this checklist when the next step is a pinned Hugging Face download, cache inspection, GGUF/Ollama import, or conversion. Use [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] after artifact inspection or `ollama show` capture when downstream runners need architecture, tokenizer, context, quantization, template, or inventory facts. Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] when the saved artifact rows must prove source identity, local bytes, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] after the artifact lab to confirm the exact local bytes can load in the chosen runtime.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] proves disk, runtime boundary, and hardware, and before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] turns the candidate into a memory plan. Use [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]] when the checklist should become machine-checkable pass/hold/fail evidence for source, model card, license, gated access, artifact pinning, unsafe files, and requested use. Use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] when the open question is where Windows should store model bytes before the first pull. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] for the first Ollama pull when the model is a runtime tag rather than a manually downloaded GGUF or Hugging Face snapshot. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] after this checklist when the next step is a pinned Hugging Face download, cache inspection, GGUF/Ollama import, or conversion. Use [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] after artifact inspection or `ollama show` capture when downstream runners need architecture, tokenizer, context, quantization, template, or inventory facts. Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] when the saved artifact rows must prove source identity, local bytes, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] after the artifact lab to confirm the exact local bytes can load in the chosen runtime.
 
 This note answers "am I allowed and prepared to acquire this exact model artifact?" The sizing and serving notes answer "will it fit?" and "can I call it?"
 
@@ -39,8 +39,9 @@ Do not start with `pull` or `download`. Start with this sequence:
 8. Download into a known cache or model directory with enough disk headroom; for Windows first-run storage, complete [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] first.
 9. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] to record the download command, cache/local path, file list, hash or verification result, import/conversion command, and cleanup plan.
 10. Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] before compatibility, serving, benchmark, or deployment evidence depends on the local bytes.
-11. Record file size, cache path, checksum/digest if available, and runtime-visible id.
-12. Only then move to the compatibility matrix and serving runbook.
+11. Use [[LLM/Study/Local LLM Model Acquisition and License Gate Runner|Local LLM Model Acquisition and License Gate Runner]] when this card must become auditable runner output before download, serving, benchmark, or deployment evidence depends on it.
+12. Record file size, cache path, checksum/digest if available, and runtime-visible id.
+13. Only then move to the compatibility matrix and serving runbook.
 
 Pass signal: a future run can identify which bytes were served and why the artifact was acceptable for the workload.
 
@@ -165,6 +166,7 @@ This checklist is complete when you have:
 - [ ] model card or source page reviewed
 - [ ] license and intended-use boundary recorded
 - [ ] gated-access decision recorded
+- [ ] acquisition/license gate runner output linked when the candidate will feed download, serving, benchmark, or deployment evidence
 - [ ] exact artifact format, revision/tag/file, and local path recorded
 - [ ] safe-format or unsafe-format decision recorded
 - [ ] hash, digest, or exact revision proof recorded, or reproducibility marked partial
@@ -184,6 +186,7 @@ Internal:
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Model Acquisition and License Gate Runner]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
