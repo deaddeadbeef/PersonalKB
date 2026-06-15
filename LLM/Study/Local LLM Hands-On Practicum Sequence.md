@@ -83,6 +83,7 @@ Do not download models before this. Otherwise you cannot tell whether a later fa
 Route:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
@@ -93,7 +94,7 @@ Default path:
 
 1. Use Ollama or LM Studio for the first Windows-native proof.
 2. Keep binding on loopback.
-3. Use a small instruct model that fits easily.
+3. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one small instruct model and save list/tags/show metadata.
 4. Send one deterministic smoke prompt.
 5. Save the raw response before judging quality.
 
@@ -343,6 +344,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]

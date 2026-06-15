@@ -76,6 +76,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] — Decide where runtime model stores, Hugging Face caches, GGUF/source mirrors, conversion outputs, and evidence logs live before the first large download
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] — Machine-specific disk, cache-variable, PATH, directory, GPU, listener, and first storage decision evidence before the first model pull
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] — Prove installer source, new-shell PATH, model-store inheritance, listener boundary, and log locations before pulling a model
+- [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] — Freeze the selected Ollama tag, prove model-store placement, capture pull/list/show metadata, and hand off to endpoint smoke testing
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] — Fill-in execution sheet for the first Ollama loopback endpoint proof and evidence folder
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — PowerShell path from Windows preflight to first loopback API response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — Copyable commands for local server startup, route smoke tests, client calls, streaming, benchmark rows, and teardown

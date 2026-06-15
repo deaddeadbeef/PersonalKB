@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** A local model is not ready to download just because it fits memory; it needs a documented source, license, exact revision, artifact format, safety posture, cache path, and workload boundary.
 
-Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] proves disk, runtime boundary, and hardware, and before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] turns the candidate into a memory plan. Use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] when the open question is where Windows should store model bytes before the first pull. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] after this checklist when the next step is a pinned Hugging Face download, cache inspection, GGUF/Ollama import, or conversion. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] after the artifact lab to confirm the exact local bytes can load in the chosen runtime.
+Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] proves disk, runtime boundary, and hardware, and before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] turns the candidate into a memory plan. Use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] when the open question is where Windows should store model bytes before the first pull. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] for the first Ollama pull when the model is a runtime tag rather than a manually downloaded GGUF or Hugging Face snapshot. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] after this checklist when the next step is a pinned Hugging Face download, cache inspection, GGUF/Ollama import, or conversion. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] after the artifact lab to confirm the exact local bytes can load in the chosen runtime.
 
 This note answers "am I allowed and prepared to acquire this exact model artifact?" The sizing and serving notes answer "will it fit?" and "can I call it?"
 
@@ -76,7 +76,7 @@ Use the tool that matches the source. Do not mix model registries and local path
 
 | Source | Pattern | Evidence |
 | --- | --- | --- |
-| Ollama library | `ollama pull <model>:<tag>` | `ollama list`, `ollama show --modelfile <model>`, `/api/show` details, cache path if needed. |
+| Ollama library | `ollama pull <model>:<tag>` | [[LLM/Study/Local LLM First Model Pull Gate|First Model Pull Gate]], `ollama ls`, `/api/tags`, `/api/show` details, cache path if needed. |
 | Hugging Face Hub CLI | `hf download <repo-id> --revision <rev>` | Repo id, revision, local directory, downloaded filenames. |
 | Hugging Face Python | `snapshot_download(repo_id=..., revision=...)` | Script, revision, cache path, allow/ignore file patterns. |
 | Manual GGUF download | Download one named `.gguf` file from the intended repo. | URL, filename, size, checksum/digest if available. |
@@ -179,6 +179,7 @@ Internal:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
+- [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** For this Windows workstation, the first local LLM model should prove the runtime and loopback routes cheaply before testing stronger, larger, or more specialized candidates.
 
-Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The readiness snapshot says what is installed. This ladder says which first model class to pull, what that choice proves, and when to move to a larger tag.
+Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and before [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The readiness snapshot says what is installed. This ladder says which first model class to pull, what that choice proves, and when to move to a larger tag.
 
 Pair this with [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] when estimating memory and [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] when the workload is more specific than a route proof.
 
@@ -49,6 +49,7 @@ Do not start with the largest model that might fit. If a large first pull fails,
 | Slot | Current tag to try | Why this slot exists | What to prove before moving on |
 |---|---|---|---|
 | Route-proof baseline | `qwen3.5:4b` | Source-checked Ollama tag; about 4.66B parameters, Q4_K_M, 3.4GB. Small enough to test install, pull, native route, OpenAI-compatible route, and basic timing before quality work. | `ollama list`, native response JSON, `/api/tags`, `/v1/chat/completions`, listener boundary, and one smoke benchmark row. |
+| Emergency smaller fallback | `qwen3.5:2b` or `qwen3.5:2b-q4_K_M` | Same current Qwen 3.5 family with smaller download size. Use when the goal is only to prove pull/list/show/route and the 4B baseline is blocked by time, disk, or network. | Same route proof as the baseline, plus a note explaining why the smaller model replaced the preferred baseline. |
 | Text-only instruct control | `qwen3:4b-instruct` | Smaller source-checked Qwen3 instruct tag; about 4.02B parameters, Q4_K_M, 2.5GB. Useful if multimodal/reasoning behavior in Qwen3.5 complicates the first text-only smoke proof. | Same route proof as the baseline, plus a note explaining why the control model replaced or supplemented `qwen3.5:4b`. |
 | Practical stretch | `qwen3.5:9b` | Source-checked 9.65B Q4_K_M tag at 6.6GB. Plausible on 12GB VRAM for short, single-user tests, but it is a second run because KV-cache, runtime overhead, and other apps still need headroom. | Baseline route proof must already pass; then run the same prompt, sampler, context, benchmark, and quality rows for comparison. |
 | Alternate text-only stretch | `qwen3:8b` or `qwen3:8b-q4_K_M` | Qwen3 text-only 8B-class control; the Q4_K_M tag is listed around 5.2GB with a 40K context window. Useful when the comparison should avoid Qwen3.5 multimodal features. | Same fixed prompt suite and benchmark fields as the baseline. Do not compare subjective chat feel. |
@@ -63,7 +64,8 @@ Use this decision unless a current model page or local constraint changes it:
 | Field | Decision |
 |---|---|
 | First pull | `qwen3.5:4b` |
-| First fallback | `qwen3:4b-instruct` |
+| First smaller fallback | `qwen3.5:2b` if the 4B pull is blocked by time, disk, or network |
+| First text-only fallback | `qwen3:4b-instruct` if multimodal/reasoning defaults complicate the text-only smoke proof |
 | First stretch | `qwen3.5:9b` |
 | Avoid before baseline passes | `qwen3.5:27b-*`, `qwen3:30b`, `qwen3:235b`, any huge-context RAG run |
 | First prompt class | smoke only, then known-answer and structured-output mini-suite |
@@ -76,6 +78,7 @@ If `qwen3.5:4b` is unavailable at pull time, do not improvise with a much larger
 Move from baseline to stretch only when these are true:
 
 - [ ] the runtime version and model list are saved
+- [ ] [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] has pass status or equivalent pull/list/tags/show evidence
 - [ ] the model tag and pull output are saved
 - [ ] the listener boundary is saved and loopback-only
 - [ ] native route proof exists
@@ -104,6 +107,7 @@ This ladder has served its purpose for one run when:
 - [ ] the benchmark row records whether it was baseline, control, stretch, or rejected
 - [ ] any larger model was tested only after baseline proof existed
 - [ ] rejected candidates include the owner: memory, quality, route, runtime, license, or maintenance
+- [ ] [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] records the final selected tag, source facts, and pull evidence
 - [ ] [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] links the final first-run decision
 
 ## References
@@ -111,6 +115,7 @@ This ladder has served its purpose for one run when:
 Internal routes:
 
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
