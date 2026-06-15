@@ -3230,3 +3230,39 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4962 files, 3091 Markdown files, 926 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add head-aware KV-cache sizing runner
+
+Scope: connect academic attention-cache geometry to local hosting decisions by adding a reusable runner for MHA/MQA/GQA cache memory before hardware sizing, model selection, long-context, or concurrency evidence depends on cache fit.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/2024-2025 - Frontier and Efficiency/KV Cache and Context Reuse.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Math and Tensor Shape Primer.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM Hardware Sizing Runner.md`
+- `LLM/Study/Local LLM KV Cache Sizing Runner.md`
+- `LLM/Study/Local LLM Model Selection Runner.md`
+- `LLM/Study/Local LLM Model and Hardware Sizing Guide.md`
+- `LLM/Study/Local LLM Workload to Model Selection Playbook.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM KV Cache Sizing Runner]] with a standard-library Python runner that writes JSON, Markdown, CSV, and JSONL cache-fit evidence.
+- The runner estimates cache memory from layers, hidden size, `num_attention_heads`, `num_key_value_heads`, context tokens, active sequences, and cache dtype, or accepts measured `kv_cache_gb`.
+- The runner distinguishes MHA, MQA, GQA, measured, and invalid geometry, and holds when `num_key_value_heads`, source proof, cache budget, or quantized-cache proof is missing.
+- Updated the sizing guide, math primer, KV-cache concept page, workload playbook, model-selection runner, hardware-sizing runner, study index, mastery dashboard, capstone workbook, practicum sequence, and LLM MOC so cache-fit proof is routed before long-context, concurrency, model-selection, or hardware-fit claims.
+- Checked current Hugging Face Transformers cache docs, Hugging Face Llama config docs, and vLLM PagedAttention/prefix-cache docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_kv_cache_sizing_runner.py` from the note.
+- KV-cache runner fixture checks: GQA fit -> `pass` / `kv_cache_sizing_ready` with 0.5 GiB estimate; missing `num_key_value_heads` -> `hold`; over-budget cache -> `fail`; quantized cache without proof -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4963 files, 3092 Markdown files, 927 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

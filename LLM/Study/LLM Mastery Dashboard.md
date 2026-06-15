@@ -65,6 +65,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need to know whether the first model tags are still current | [[LLM/Study/Local LLM First Model Source Recheck Runner]] | Current source-page pass/hold/fail for selected tag, digest, size, context, modality, and quantization |
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
 | You need one reviewed command plan before the first local run | [[LLM/Study/Local LLM First Run Command Plan Runner]] | Ordered PowerShell plan, run folder, evidence filenames, loopback checks, and next gate manifests |
+| You have model architecture, context, and concurrency facts but no KV-cache fit proof | [[LLM/Study/Local LLM KV Cache Sizing Runner]] | Head-aware MHA/MQA/GQA cache estimate, cache dtype, budget, margin, fit status, and next route |
 | You have model size, context, and hardware facts but no fit decision | [[LLM/Study/Local LLM Hardware Sizing Runner]] | Weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit status, and next route |
 | You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
 | You have artifact, runtime, tokenizer, or route facts but no compatibility decision | [[LLM/Study/Local LLM Runtime Compatibility Runner]] | Architecture, artifact, quantization, tokenizer, template, runtime, route, custody, sizing, and next proof audit |
@@ -142,6 +143,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | First runtime health runner | [[LLM/Study/Local LLM First Runtime Health Runner]] |  |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |  |
 | First response debrief runner | [[LLM/Study/Local LLM First Response Debrief Runner]] |  |
+| KV-cache sizing runner | [[LLM/Study/Local LLM KV Cache Sizing Runner]] |  |
 | Hardware sizing runner | [[LLM/Study/Local LLM Hardware Sizing Runner]] |  |
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |
@@ -231,6 +233,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first quality probe runner output | [[LLM/Study/Local LLM First Quality Probe Runner]] |
 | One evaluation set design runner output before repeated quality, model/runtime, or deployment decisions | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |
+| One head-aware KV-cache sizing output before long-context, concurrency, or model-selection evidence depends on cache fit | [[LLM/Study/Local LLM KV Cache Sizing Runner]] |
 | One hardware sizing runner output before model selection, model pull, or serving | [[LLM/Study/Local LLM Hardware Sizing Runner]] |
 | One model selection runner output | [[LLM/Study/Local LLM Model Selection Runner]] |
 | One artifact custody audit output before compatibility, serving, benchmark, or deployment evidence depends on local bytes | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |
@@ -319,6 +322,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]
+- [[LLM/Study/Local LLM KV Cache Sizing Runner]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]

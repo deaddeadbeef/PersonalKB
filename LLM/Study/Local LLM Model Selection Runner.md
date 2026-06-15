@@ -8,7 +8,7 @@ last-verified: 2026-06-15
 
 # Local LLM Model Selection Runner
 
-Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] and [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when candidate facts should become a repeatable shortlist. The playbook teaches the decision. The hardware sizing runner proves whether weight memory, KV-cache, overhead, context, active sequences, and headroom fit. This runner turns a workload contract, hardware budget, and candidate manifest into JSON, Markdown, CSV, and JSONL evidence.
+Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] and [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when candidate facts should become a repeatable shortlist. Use [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]] first when GQA/MQA, long context, active sequences, or cache dtype should supply the candidate's `kv_cache_gb`. The playbook teaches the decision. The hardware sizing runner proves whether weight memory, KV-cache, overhead, context, active sequences, and headroom fit. This runner turns a workload contract, hardware budget, and candidate manifest into JSON, Markdown, CSV, and JSONL evidence.
 
 Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] after shortlisting when artifact, quantization, tokenizer, chat-template, route, model-id, custody, and sizing facts need a pass/hold/fail compatibility audit before model pull or endpoint health checks. Use [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] after endpoint, API-contract, benchmark, evaluation-set, quality, security, and operations evidence exists. Model selection answers what to test. Runtime compatibility answers whether the selected artifact/runtime path is coherent. Result synthesis answers whether the tested candidate should be kept, tuned, rejected, rerun, or promoted into a deployment memo.
 
@@ -631,6 +631,7 @@ A `hold` result is not bad. It prevents a smoke response or leaderboard rank fro
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM KV Cache Sizing Runner]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]

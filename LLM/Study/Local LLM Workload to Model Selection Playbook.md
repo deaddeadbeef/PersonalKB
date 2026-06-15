@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** Choose a local LLM by workload contract, evidence, and hardware fit: define the job, pick the smallest plausible candidate, prove compatibility, run a quality gate, and keep only measured winners.
 
-Use this before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]. Those notes prove memory, custody, and compatibility. This note decides which candidates are worth proving. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the candidate card should become repeatable JSON, Markdown, CSV, and JSONL shortlist evidence.
+Use this before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]], [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]. Those notes prove cache fit, memory, custody, and compatibility. This note decides which candidates are worth proving. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the candidate card should become repeatable JSON, Markdown, CSV, and JSONL shortlist evidence.
 
 Use it during [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] Stage 2, before spending time downloading, converting, or benchmarking a model. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after the endpoint works to decide whether the candidate actually passes.
 
@@ -222,7 +222,7 @@ Do not treat a single smoke response as a serving decision. A GPU server candida
 |---|---|
 | Workload gate | Workload contract and required output shape |
 | Candidate gate | Candidate card with model class, source, license, artifact, runtime, and rejection trigger |
-| Sizing gate | Weight memory, KV-cache risk, runtime overhead, and headroom |
+| Sizing gate | Head-aware KV-cache estimate, weight memory, runtime overhead, and headroom |
 | Custody gate | Model card, license, exact revision/tag/file, local path, and safe-file decision |
 | Compatibility gate | Artifact, tokenizer, template, quantization, runtime, route, and workload contract |
 | Endpoint gate | Loopback smoke response and served model id |
@@ -294,6 +294,7 @@ Internal routes:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM KV Cache Sizing Runner]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]

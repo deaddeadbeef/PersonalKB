@@ -10,9 +10,9 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model fits only when weight memory, KV-cache memory, runtime overhead, active sequences, context length, and real hardware headroom fit the selected serving path.
 
-Use this after [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] when the arithmetic should become saved JSON, Markdown, CSV, and JSONL evidence. Use it before [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]], and [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]].
+Use this after [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] when the arithmetic should become saved JSON, Markdown, CSV, and JSONL evidence. Use [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]] first when GQA/MQA attention geometry, long context, active sequences, or cache precision should produce a head-aware `kv_cache_gb` estimate. Use this hardware runner before [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]], [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]], and [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]].
 
-This runner does not scrape model pages or recommend current model names. Model files, quantized derivatives, and runtime support change. Put source-checked model facts into the manifest, then let the runner apply the same memory gates every time.
+This runner does not scrape model pages or recommend current model names. Model files, quantized derivatives, and runtime support change. Put source-checked model facts into the manifest, then let the runner apply the same memory gates every time. When the model uses GQA or MQA, prefer importing `kv_cache_gb` from [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]] instead of relying only on the simplified hidden-size formula.
 
 ## What This Proves
 
@@ -63,7 +63,7 @@ Minimum manifest:
 }
 ```
 
-`weight_memory_gb` and `kv_cache_gb` may be supplied directly when a model card, runtime probe, or prior benchmark gives better numbers than the simplified formulas.
+`weight_memory_gb` and `kv_cache_gb` may be supplied directly when a model card, runtime probe, [[LLM/Study/Local LLM KV Cache Sizing Runner|KV-cache sizing output]], or prior benchmark gives better numbers than the simplified formulas.
 
 ## Standard-Library Runner
 
@@ -578,7 +578,7 @@ This runner is useful when:
 - [ ] hardware budget uses measured or intentionally reserved available VRAM/RAM
 - [ ] every candidate has source evidence and a next route
 - [ ] weight memory is supplied or computed from parameter count and bytes per parameter
-- [ ] KV-cache memory is supplied or computed from layers, hidden size, context, precision, and active sequences
+- [ ] KV-cache memory is supplied from a head-aware cache sizing output, measured runtime proof, or computed from layers, hidden size, context, precision, and active sequences
 - [ ] runtime overhead and extra buffers are explicit, even if they are conservative estimates
 - [ ] thin-headroom, fallback, and no-fit outcomes route to the next controlled evidence artifact
 - [ ] output JSON, Markdown, CSV, and JSONL artifacts are saved before model pull or serving
@@ -587,6 +587,7 @@ This runner is useful when:
 
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM KV Cache Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

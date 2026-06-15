@@ -204,6 +204,8 @@ The `2` is for keys and values. The real implementation may use head dimensions,
 
 This is the bridge from math to local serving: prompt length, RAG chunk count, tool schemas, chat history, and output reserve all become memory and latency pressure.
 
+When the estimate needs to become a saved local-hosting decision, use [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]]. That runner uses the head-aware formula for MHA, MQA, and GQA models instead of assuming every attention head has its own key/value cache.
+
 ## Prefill Versus Decode
 
 | Phase | What happens | Metric |
@@ -266,6 +268,7 @@ This primer is complete when you can:
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
+- [[LLM/Study/Local LLM KV Cache Sizing Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Pre-2017 — Before Transformers/Language Modeling Objectives]]

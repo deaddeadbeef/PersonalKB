@@ -150,6 +150,7 @@ Save:
 | Candidate card | Workload, candidate slot, model class, source, license, artifact options, runtime candidates, rejection trigger |
 | Provenance card | Model card, license/gated access, intended use, revision/tag/file, unsafe-file decision |
 | Artifact card | Cache/local path, file list, hash or verification, import or conversion command |
+| KV-cache sizing row | Attention geometry, context tokens, active sequences, cache dtype, budget, margin |
 | Sizing row | Weight memory, KV-cache risk, runtime overhead, context target, headroom |
 | Compatibility card | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, workload |
 

@@ -78,6 +78,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Mastery Gap Triage Runner|LLM Mastery Gap Triage Runner]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
@@ -192,6 +193,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] — audit endpoint, API contract, client, benchmark, quality, security, and final-decision artifacts before the first local run counts as capstone evidence
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] — execute the local inference path in order, leaving evidence at each stage from endpoint proof to capstone handoff
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] — choose candidate local models from workload contract, hardware, license, compatibility, benchmark, and quality evidence
+- [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM KV Cache Sizing Runner]] — compute head-aware MHA/MQA/GQA KV-cache memory from layers, hidden size, attention heads, KV heads, context, cache dtype, and active sequences
 - [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] — compute weight memory, KV-cache, runtime overhead, active sequences, context, and headroom before model selection or pull
 - [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] — turn workload, hardware, candidate, memory, compatibility, benchmark, and quality facts into repeatable model shortlist evidence
 - [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — reconcile shortlist, endpoint, benchmark, eval-set, quality, security, operations, and rejected-alternative proof into a keep/tune/reject/deploy decision
