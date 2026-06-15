@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this as the first-run binder for [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. Those notes explain the runtime choices and serving sequence. This note tells you exactly what to save so the run becomes capstone evidence.
 
-Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you want the broader ordered path around this packet. This evidence pack is the Stage 1 endpoint proof in that practicum.
+Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you want the broader ordered path around this packet. This evidence pack is the Stage 1 endpoint proof in that practicum. Use [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] when the folder needs a machine-checkable pass/hold/fail decision before capstone promotion.
 
 For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. If the first run is Ollama, use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture model-pull custody, [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] or [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] to save the no-inference listener and model-list state, [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to create the raw response files, [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to interpret the first response, [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] to check the run folder before promotion, [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] for a tiny private quality signal, [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first reusable client-side inference row, and [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] when the first client proof needs perceived-latency evidence before copying benchmark or capstone quality rows. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
 
@@ -36,8 +36,11 @@ local-llm-runs/
     first-benchmark-row/
     benchmark-row.md
     first-quality-probe-suite/
+    first-quality-probe-runner/
     first-client-harness/
     first-streaming-timing/
+    security-privacy-runner/
+    first-inference-evidence-pack-audit/
     quality-row.md
     decision.md
 ```
@@ -230,13 +233,21 @@ Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluatio
 
 Write one sentence explaining the bottleneck using academic terms: weight memory, KV-cache pressure, prefill, decode, quantization loss, chat-template mismatch, retrieval miss, or evaluation failure.
 
-## Step 8.5: Audit The Packet
+## Step 8.5: Audit The Endpoint
 
 Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] before promoting this packet into the capstone workbook. The audit checks that the run folder really contains run card, preflight, model custody, runtime health, smoke response, debrief, boundary, and decision proof.
 
 Pass signal: the audit output says `first_endpoint_evidence_ready`.
 
 Hold signal: the audit output names the first missing gate and route.
+
+## Step 8.6: Audit The Full Packet
+
+Use [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after endpoint proof, API contract, client harness, benchmark row, quality probe, security/privacy row, and final decision evidence exist.
+
+Pass signal: the audit output says `first_inference_pack_ready`.
+
+Hold signal: the audit output names whether the missing layer is endpoint proof, API contract, client evidence, streaming timing, benchmark row, quality probe, security boundary, or final decision.
 
 ## Completion Gate
 
@@ -261,6 +272,7 @@ This evidence pack is complete when you have:
 - [ ] one first quality probe runner output if using scripted probe capture
 - [ ] one security/logging boundary decision
 - [ ] one next decision: keep, tune, replace model, replace runtime, add RAG, add tools, or write deployment memo
+- [ ] first inference evidence pack audit output, or an explicit hold row naming the missing packet gate
 
 ## References
 
@@ -282,6 +294,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, paper claim audit, paper oral defense, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, hardware sizing, model custody, artifact custody audit, runtime compatibility runner, first model pull runner, runtime health runner, first smoke request, first response debrief, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
+| local-inference | workload/model selection, hardware sizing, model custody, artifact custody audit, runtime compatibility runner, first model pull runner, runtime health runner, first smoke request, first response debrief, template/tokenizer compatibility, endpoint, first endpoint evidence audit, first inference pack audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, recall/remediation audit, exam run sheet, capstone workbook/final note |
 
@@ -300,6 +300,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/Local LLM First Endpoint Evidence Audit Runner",
         "pass_signal": "The first endpoint run folder has checked run card, preflight, runtime install state, model custody, runtime health, smoke response, pass-state debrief, template/tokenizer compatibility, boundary, and decision gates.",
+    },
+    {
+        "gate_id": "local-first-inference-pack-audit",
+        "domain": "local-inference",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM First Inference Evidence Pack Audit Runner",
+        "pass_signal": "The first local inference packet has scoped endpoint, API contract, client, streaming, benchmark, quality, security, and final-decision gates audited before capstone promotion.",
     },
     {
         "gate_id": "local-api-client",
@@ -1069,6 +1078,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]

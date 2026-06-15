@@ -3068,3 +3068,35 @@ Verification:
 - Fixture server checks: missing endpoint audit -> `hold` with zero requests; held endpoint audit -> `hold` with zero requests; passing endpoint audit -> five probe requests, five responses, five outputs, and `pass`; explicit endpoint-audit opt-out -> `pass` with `endpoint_audit.status == skipped`.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-16] curate | Add first inference evidence pack audit
+
+Scope: make the first local inference packet auditable as a whole before it can count as mastery or capstone evidence.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Inference Evidence Pack.md`
+- `LLM/Study/Local LLM First Inference Evidence Pack Audit Runner.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] as the full first-run packet gate after endpoint evidence, API contract, client harness, benchmark row, quality probe, security/privacy row, and final decision artifacts exist.
+- Made [[LLM/Study/Local LLM First Inference Evidence Pack]] distinguish endpoint audit from full packet audit.
+- Updated the LLM MOC, study index, mastery dashboard, practicum sequence, capstone workbook, and mastery evidence audit runner so the first local run cannot be promoted on endpoint response alone.
+- Added `local-first-inference-pack-audit` to the mastery evidence audit default gates.
+- Checked current Ollama chat, usage metrics, OpenAI-compatible docs, and OpenAI streaming docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `first_inference_evidence_pack_audit.py` from the note.
+- Fixture checks: complete packet -> `pass` / `first_inference_pack_ready`; missing quality probe -> `hold`; streaming required but absent -> `hold`; failed security artifact -> `fail`; explicitly native-scoped packet -> `pass` with incompatible gates skipped.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default fixture manifest -> `hold`, 43 gates, 43 holds, including `local-first-inference-pack-audit`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4959 files, 3088 Markdown files, 923 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

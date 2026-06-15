@@ -31,7 +31,7 @@ If there is no saved answer or evidence row, the session was reading, not master
 | Field map and papers | Not yet proven today | Explain one paper cluster without notes |
 | Math and mechanisms | Not yet proven today | Work one token/logit/attention/KV-cache explanation |
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
-| First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] after the loopback response |
+| First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before capstone promotion |
 | Model and runtime choice | First model ladder exists; storage decision snapshot points to `D:\Models` | Write provenance, compatibility, or sizing row after runtime install evidence |
 | Benchmark and quality | Not yet proven today | Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] after route proof, then save benchmark and quality row for one prompt class |
 | RAG/tools | Not yet proven today | Save retrieval, citation, structured-output, tool-schema, tool-result, or denied-action row |
@@ -98,6 +98,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need first local inference proof | [[LLM/Study/Local LLM Windows First-Run Quickstart]] | Preflight, model id, response, listener proof |
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
+| You have a first-run folder and need to know whether it is capstone-ready | [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] | Endpoint, API contract, client, benchmark, quality, security, and decision pass/hold/fail audit |
 | You have a local failure | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] | Failed layer, evidence, controlled next change |
 | You have a saved local failure and need proof-quality diagnosis | [[LLM/Study/Local LLM Failure Triage Runner]] | Symptom, failed layer, proof, mechanism owner, ruled-out layers, and one controlled next action |
 | You need to know whether the prompt suite is good enough before scoring quality | [[LLM/Study/Local LLM Evaluation Set Design Runner]] | Workload, held-out/private coverage, contamination controls, rubric, and next-route audit |
@@ -132,7 +133,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Mastery gap triage | [[LLM/Study/LLM Mastery Gap Triage Runner]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
-| First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |  |
+| First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] |  |
 | First model pull runner | [[LLM/Study/Local LLM First Model Pull Runner]] |  |
 | First runtime health runner | [[LLM/Study/Local LLM First Runtime Health Runner]] |  |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |  |
@@ -246,6 +247,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One tool/structured-output runner output | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | One deployment readiness audit output | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
+| One first inference evidence pack audit output | [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One quality prompt-suite design audit | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -335,6 +337,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Command Cookbook]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]

@@ -59,6 +59,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | First response debrief runner | Debrief JSON/Markdown from [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] |  | The first saved response carries health-bound smoke provenance, converted seconds, token rates, mechanism owner, quality boundary, missing-layer list, and next action without sending another inference request. | Not started |
 | First quality probe | Prompt-suite outputs from [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] |  | The first working endpoint has private known-answer, JSON, extraction, grounded-refusal, and constraint-following rows before any workload-quality claim. | Not started |
 | First quality probe runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] |  | The five first quality probes are gated by passing endpoint evidence and have saved requests, responses, outputs, auto-check rows, human-review status, failure owner, and next action before full harness promotion. | Not started |
+| First inference evidence pack audit | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] |  | The first local run packet has scoped endpoint, API contract, client, streaming, benchmark, quality, security, and final-decision gates audited before it counts as capstone evidence. | Not started |
 | Local practicum sequence | Handoff note from [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] |  | Stages 0-10 have evidence links or explicit skipped/blocked notes, including endpoint, client, controls, benchmark, quality, service, and extension proof. | Not started |
 | Workload-to-model selection | Candidate card from [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] |  | Workload contract, candidate slot, source, license, artifact options, runtime candidates, sizing risk, rejection trigger, and pass/hold/fail rule are written before download or serving. | Not started |
 | Hardware sizing runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] |  | Candidate weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit decision, and next route are captured before model selection, pull, or serving. | Not started |
@@ -482,6 +483,7 @@ Next run:
 - A benchmark, loss, judge score, calibration score, latency row, or memory number accepted without naming the claim, dataset/workload, metric family, and missed failure mode.
 - A training-loop claim without shifted targets, causal mask evidence, train/validation loss, and generated samples.
 - A local run that records model size but not artifact, tokenizer, chat template, runtime, route compatibility, and API contract.
+- A first local run promoted into capstone evidence without a first inference evidence pack audit or an explicit hold row naming the missing packet gate.
 - A Windows first-run claim that skips the model-store decision, runtime install gate, first model pull gate, or endpoint run sheet.
 - An Ollama endpoint response accepted without `ollama ls`, `/api/tags`, and `/api/show` evidence for the served model.
 - A vLLM or SGLang-on-Windows claim without WSL CUDA setup proof, including WSL GPU visibility, `/v1/models`, Windows client route, logs, and metrics.
@@ -526,6 +528,7 @@ Next run:
 - [ ] The first model pull gate is linked before any Ollama endpoint proof.
 - [ ] The first response debrief names what the response proves, what it does not prove, the interpreted metric, and the next controlled action.
 - [ ] The first quality probe either records pass/hold/fail rows or explicitly routes to the full quality harness or troubleshooting.
+- [ ] The first inference evidence pack audit passes, or its hold/fail output is linked to the next remediation route.
 - [ ] The quality harness is preceded by evaluation set design output or a linked waiver.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
@@ -608,6 +611,7 @@ Next run:
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]

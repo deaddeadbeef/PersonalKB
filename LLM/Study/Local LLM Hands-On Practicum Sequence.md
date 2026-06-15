@@ -94,6 +94,7 @@ Route:
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 
@@ -108,6 +109,7 @@ Default path:
 7. Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] to check whether the run folder is complete enough to count as endpoint proof.
 8. Save the raw response and debrief before judging quality.
 9. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] before treating smoke output as quality evidence.
+10. Use [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before promoting the first run into the capstone workbook.
 
 Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when this stage needs copyable commands for the run folder, listener check, Ollama native route, OpenAI-compatible route, Python client, or teardown proof.
 
@@ -122,11 +124,12 @@ Save:
 | First response debrief runner output | Debrief JSON/Markdown/JSONL, converted timing, token rates, mechanism owner, quality boundary, next action |
 | First endpoint evidence audit output | Run card, preflight, runtime install state, model custody, runtime health, smoke response, debrief, boundary, and decision gates |
 | First quality probe runner output | Five request/response/output files, results JSON/CSV/Markdown, JSONL, auto-checks, human-review status, next action |
+| First inference evidence pack audit output | Endpoint audit, API contract, client, benchmark, quality, security, streaming scope, and final decision gates |
 | First inference evidence pack | Runtime, model id, base URL, route, request body, response text, timing, safe binding |
 | Endpoint smoke row | Native route or OpenAI-compatible route, status, raw response, error if any |
 | First decision | keep / tune / stronger model / different runtime / stop |
 
-Pass signal: another person could reproduce which model served which request through which endpoint.
+Pass signal: another person could reproduce which model served which request through which endpoint, and the first inference evidence pack audit says the scoped packet is ready.
 
 ## Stage 2: Prove Model Custody And Compatibility
 
@@ -323,6 +326,7 @@ Save one capstone note or folder that links:
 | Proof area | Required link |
 |---|---|
 | First endpoint | Evidence pack and raw response |
+| First packet audit | First inference evidence pack audit output |
 | Runtime stack | Stack Anatomy Card |
 | Model custody | Provenance and artifact cards |
 | Compatibility | Runtime/model compatibility card |
@@ -365,6 +369,7 @@ This practicum sequence is complete when you have:
 - [ ] one service security or lifecycle row if the endpoint will be reused
 - [ ] one deployment readiness audit output before the final deployment memo is accepted
 - [ ] one RAG or tool extension artifact if the goal is more than chat
+- [ ] one first inference evidence pack audit output before the first local run counts as capstone evidence
 - [ ] one capstone handoff note shaped by [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] with links to the evidence
 
 ## References
@@ -388,6 +393,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
