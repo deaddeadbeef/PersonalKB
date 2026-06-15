@@ -78,6 +78,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Observability runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]] |  | `/v1/models`, loaded-model state, metrics, slots, resource snapshot, redacted log-tail status, privacy posture, and next controlled action are captured before accepting service-state claims. | Not started |
 | Service lifecycle and rollback | Change Freeze Card from [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] |  | Runtime/model versions, cache path, startup mode, backup path, upgrade plan, rollback target, and post-change validation are captured. | Not started |
 | Service lifecycle runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] |  | Lifecycle manifest, baseline or post-change artifacts, backups, rollback target, route/model state, missing evidence, and before/after/rollback decision are captured before maintained-service changes. | Not started |
+| Security/privacy runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] |  | Endpoint exposure, expected model visibility, config/log secret scan, RAG/tool/UI/export boundaries, and pass/hold/error decision are captured before non-loopback use or service handoff. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
@@ -258,6 +259,8 @@ Use one paragraph per cluster, not one paragraph per paper.
 | CLI command |  |
 | HTTP endpoint |  |
 | Listener boundary |  |
+| Security/privacy runner |  |
+| RAG/tool/UI/export boundary |  |
 | OpenAI-compatible API contract |  |
 | Decoding/sampling preset |  |
 | Sampler sweep result |  |
@@ -575,6 +578,7 @@ Next run:
 - [[LLM/Study/Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
+- [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

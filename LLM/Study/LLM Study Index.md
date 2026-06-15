@@ -94,6 +94,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
+- [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]]
@@ -159,6 +160,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] — measure first event, first visible content delta, chunks, final text, total latency, usage gaps, and streaming errors
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] — convert first client and streaming run logs into one benchmark row with timing, token, quality, missing-layer, and next-action fields
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — check endpoint exposure, logs, RAG corpus boundaries, prompt injection, and tool permissions
+- [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] — capture no-generation exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error evidence
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured-output controls with reproducible local experiments
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] — run repeatable baseline, temperature, seed, stop-string, and output-cap probes before benchmark or quality comparisons

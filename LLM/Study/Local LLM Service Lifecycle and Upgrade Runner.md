@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Turn a local LLM restart, upgrade, rollback, model-cache move, or UI change into a checked evidence package before anything is changed.
 
-Use this after [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] defines the manual change gate. Use it before changing a daily-use local service, Docker/Compose stack, Open WebUI front end, model cache, runtime package, client contract, or startup wrapper.
+Use this after [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] defines the manual change gate. Use it before changing a daily-use local service, Docker/Compose stack, Open WebUI front end, model cache, runtime package, client contract, or startup wrapper. Use [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] before and after changes that affect endpoint exposure, auth, config/logs, RAG corpora, tool roots, UI storage, or export boundaries.
 
 This runner does not perform the upgrade. It validates a lifecycle manifest, checks that baseline or post-change artifacts exist, captures read-only route/version/model-list evidence when configured, records safe built-in version commands when available, and writes JSON, CSV, Markdown, and JSONL decision artifacts.
 
@@ -1147,6 +1147,7 @@ The runner output is usable when:
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
+- [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]

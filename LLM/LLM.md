@@ -134,6 +134,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — Endpoint smoke tests and failure triage for local model servers
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] — Layer-by-layer diagnosis for local model, route, client, performance, quality, RAG, and security failures
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — Endpoint exposure, logging, RAG corpus, prompt injection, and tool-permission checks for local hosting
+- [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] — Save no-generation exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error evidence before non-loopback use
 
 ## Infrastructure
 - [[LLM/Sources/Sources Index|Sources Index]] — Paper bibliography

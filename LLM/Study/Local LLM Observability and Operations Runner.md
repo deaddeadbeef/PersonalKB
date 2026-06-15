@@ -47,7 +47,7 @@ Write these before running:
 | Privacy boundary | loopback / LAN / shared host / unknown |
 | Next gate | API contract / benchmark / concurrency / cache / speculation / troubleshooting / lifecycle |
 
-If the service is exposed beyond loopback, complete [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before collecting logs.
+If the service is exposed beyond loopback, complete [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] and save [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] evidence before collecting logs.
 
 ## Standard-Library Runner
 
@@ -891,6 +891,7 @@ The runner output is usable when:
 - [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
+- [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]

@@ -19,7 +19,7 @@ This note is a cookbook, not a model recommendation list. Replace placeholders s
 | Rule | Reason |
 |---|---|
 | Save outputs under one run folder | Later benchmark and capstone rows need reproducible evidence. |
-| Keep the first endpoint on `127.0.0.1` or `localhost` | Local inference is still an application server with private prompts and logs. |
+| Keep the first endpoint on `127.0.0.1` or `localhost` | Local inference is still an application server with private prompts and logs; use [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] before non-loopback use. |
 | Change only one variable between runs | Runtime, model, quantization, prompt, sampler, and context can each explain a result. |
 | Prove `/v1/models` before `/v1/chat/completions` | The served model id must match the id sent by the client. |
 | Treat a smoke response as route proof only | Quality still needs [[LLM/Study/Local LLM First Quality Probe Suite]] and then [[LLM/Study/Local LLM Quality Evaluation Harness]]. |
@@ -78,7 +78,7 @@ Get-NetTCPConnection -State Listen |
   Tee-Object -FilePath "$RunRoot\listeners.txt"
 ```
 
-Pass signal: the first proof is bound to loopback. If the listener is on `0.0.0.0`, stop and use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before exposing the server.
+Pass signal: the first proof is bound to loopback. If the listener is on `0.0.0.0`, stop and use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] plus [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] before exposing the server.
 
 ## Ollama Native Smoke
 
@@ -590,6 +590,7 @@ Internal routes:
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
+- [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 
 External/current docs checked 2026-06-15:

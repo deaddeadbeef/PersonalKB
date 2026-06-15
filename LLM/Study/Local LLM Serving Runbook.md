@@ -36,7 +36,7 @@ For containerized vLLM or SGLang, use [[LLM/Study/Local LLM Docker GPU Container
 
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] after the first endpoint works but before tuning throughput, slots, batching, chunked prefill, preemption, or queue policy. That lab separates prefill, decode, KV-cache pressure, continuous batching, and admission-control behavior.
 
-Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
+Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions. Use [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] when those checks need repeatable endpoint exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error artifacts.
 
 ## Success Criteria
 
@@ -79,7 +79,7 @@ Start on loopback only: `127.0.0.1` or `localhost`. Do not bind a model server t
 
 Local LLMs are still application servers. Prompts, retrieved documents, generated outputs, and logs may contain private data.
 
-For the full checklist, see [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]].
+For the full checklist, see [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]. For repeatable evidence, run [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]].
 
 ## Endpoint Map
 
