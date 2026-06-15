@@ -61,6 +61,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
+| Artifact custody audit | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] |  | Source identity, local bytes or runtime id, inventory, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup plan are pass or linked to remediation. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
 | Template/tokenizer compatibility runner | Results JSON/CSV/Markdown from [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] |  | Model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and benchmark or quality link are audited before model-quality blame. | Not started |
 | WSL CUDA serving path | Setup card from [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] when using vLLM/SGLang from Windows |  | Windows driver, WSL 2 distro, WSL GPU visibility, Python environment, launch command, `/v1/models`, Windows client response, logs, metrics, and failure layer are captured. | Not started |
@@ -516,6 +517,7 @@ Next run:
 - [ ] The quality harness is preceded by evaluation set design output or a linked waiver.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
+- [ ] The local model artifact has an artifact custody audit output before compatibility, serving, benchmark, or deployment evidence depends on it.
 - [ ] The local practicum handoff links every stage artifact, or explicitly marks skipped or blocked stages.
 - [ ] The workload-to-model selection card explains why this candidate was tried before larger, smaller, or specialized alternatives.
 - [ ] The runtime stack anatomy card names the lowest unproven layer before any model/runtime blame.
@@ -600,6 +602,7 @@ Next run:
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
+- [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]

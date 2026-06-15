@@ -2806,3 +2806,38 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 34 gates, 34 holds.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4949 files, 3078 Markdown files, 913 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Local LLM artifact custody audit runner
+
+Scope: add a repeatable audit for model artifact custody so local inference evidence can prove the source identity, local bytes, file inventory, verification method, unsafe-file decision, conversion/import trail, runtime handoff, and cleanup plan before compatibility, serving, benchmark, or deployment claims depend on a model.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Artifact Custody Audit Runner.md`
+- `LLM/Study/Local LLM Artifact Download Cache and Conversion Lab.md`
+- `LLM/Study/Local LLM Model Acquisition and Provenance Checklist.md`
+- `LLM/Study/Local LLM Runtime and Model Compatibility Matrix.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library artifact custody audit runner that checks source identity, pinned revision/tag/file/digest, local path or runtime id, inventory proof, verification proof, unsafe-file decisions, conversion/import proof, runtime handoff, cleanup plan, and rejected/blocked artifact failures.
+- Routed the runner from the LLM MOC, study index, mastery dashboard, artifact lab, acquisition checklist, runtime compatibility matrix, capstone workbook, mastery roadmap, mastery evidence audit, and deployment readiness audit.
+- Added `local-artifact-custody-audit` to the mastery evidence audit default gate set.
+- Added `artifact_custody` to the deployment readiness audit default evidence kinds.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_artifact_custody_audit_runner.py` from the note.
+- Artifact custody fixtures: pass -> exit 0 `artifact_custody_ready`; hold -> exit 1 `artifact_custody_incomplete`; fail -> exit 2 `artifact_custody_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 35 gates, 35 holds.
+- Extracted and compiled `llm_deployment_readiness_audit_runner.py`; default empty rows -> exit 1 `deployment_readiness_incomplete`, 15 rows, 15 holds; pass manifest with `artifact_custody` row -> exit 0 `deployment_readiness_ready`, 15 rows, 15 passes.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4950 files, 3079 Markdown files, 914 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

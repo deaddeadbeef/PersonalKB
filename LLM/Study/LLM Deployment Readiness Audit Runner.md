@@ -85,6 +85,7 @@ By default, the audit expects one row for each kind:
 | `workload_contract` | workload, data sensitivity, quality bar, latency or throughput target, failure cost |
 | `deployment_choice` | selected path, candidate paths, decision reason, result-synthesis proof |
 | `model_runtime` | model id, runtime, artifact or revision, compatibility proof |
+| `artifact_custody` | source identity, local bytes or runtime id, verification, unsafe-file decision, conversion/import proof, cleanup plan |
 | `endpoint_client` | route, base URL or client proof, model-list or chat evidence |
 | `application_integration` | app boundary, user flow, response handling, failure behavior, privacy/logging, promotion decision |
 | `benchmark_performance` | timing, throughput, memory, or context metric plus interpretation |
@@ -120,6 +121,7 @@ DEFAULT_REQUIRED_KINDS = [
     "workload_contract",
     "deployment_choice",
     "model_runtime",
+    "artifact_custody",
     "endpoint_client",
     "application_integration",
     "benchmark_performance",
@@ -157,6 +159,11 @@ KIND_HINTS = {
         "owner": "model/runtime",
         "pass_signal": "The model artifact, runtime, tokenizer/template, route, workload compatibility, and template/tokenizer runner evidence are linked when chat behavior affects the decision.",
         "next_route": "LLM/Study/Local LLM Runtime and Model Compatibility Matrix",
+    },
+    "artifact_custody": {
+        "owner": "artifact",
+        "pass_signal": "The selected model artifact has source identity, local bytes or runtime id, inventory, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup evidence.",
+        "next_route": "LLM/Study/Local LLM Artifact Custody Audit Runner",
     },
     "endpoint_client": {
         "owner": "client",
@@ -439,6 +446,17 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
         template_text = " ".join(str(row.get(key, "")) for key in ("compatibility", "tokenizer", "chat_template", "template", "route", "notes")).lower()
         if ("chat" in template_text or "template" in template_text or "tokenizer" in template_text) and not has_text(row, "template_compatibility", "chat_template_compatibility", "template_runner", "compatibility_runner"):
             findings.append(finding("hold", owner, "Model/runtime row has no template/tokenizer runner evidence.", kind, "Run Chat Template and Tokenizer Compatibility Runner or link its output before accepting chat-behavior evidence."))
+    elif kind == "artifact_custody":
+        if not has_text(row, "source_ref", "source", "repo", "artifact_source"):
+            findings.append(finding("hold", owner, "Artifact custody row has no source identity.", kind, "Record registry, URL, source repo, or internal artifact source."))
+        if not has_text(row, "revision", "revision_or_file", "tag", "filename", "digest"):
+            findings.append(finding("hold", owner, "Artifact custody row has no pinned revision, tag, filename, or digest.", kind, "Record the exact artifact identity."))
+        if not has_text(row, "local_path", "runtime_model_id", "artifact_path", "cache_path"):
+            findings.append(finding("hold", owner, "Artifact custody row has no local path or runtime id.", kind, "Link the cache path, GGUF path, local mirror, or runtime-visible model id."))
+        if not has_text(row, "verification", "verification_method", "hash", "digest", "verification_artifact"):
+            findings.append(finding("hold", owner, "Artifact custody row has no verification evidence.", kind, "Link the artifact custody audit output, hash, digest, or verification log."))
+        if not has_text(row, "artifact_custody_audit", "custody_audit", "custody_output"):
+            findings.append(finding("hold", owner, "Artifact custody row has no custody audit output.", kind, "Run Local LLM Artifact Custody Audit Runner and link its JSON or Markdown output."))
     elif kind == "endpoint_client":
         if not has_text(row, "route", "base_url", "client", "api_contract", "request_path"):
             findings.append(finding("hold", owner, "Endpoint/client row has no route or client evidence.", kind, "Add base URL, route, client script, or API contract result."))
@@ -862,16 +880,16 @@ python .\llm_deployment_readiness_audit_runner.py
 | Runner status | Meaning | Next route |
 |---|---|---|
 | `pass/deployment_readiness_ready` | every required deployment-readiness kind is pass or explicitly waived, and critical proof links resolve | copy the output into the final deployment memo |
-| `hold/deployment_readiness_incomplete` | required proof, path choice, benchmark, quality, privacy, operations, cost, or retest evidence is missing | follow each row's `next_route` |
+| `hold/deployment_readiness_incomplete` | required proof, path choice, artifact custody, benchmark, quality, privacy, operations, cost, or retest evidence is missing | follow each row's `next_route` |
 | `fail/deployment_readiness_failed` | a row is explicitly failed, unsafe, rejected, or a critical pass has no proof | resolve the failed row before accepting the deployment |
 
-This runner validates the evidence bundle, not the service itself. Use live runners for endpoint, application integration, quality, observability, scheduler, lifecycle, security, RAG, and tool measurements.
+This runner validates the evidence bundle, not the service itself. Use live runners for artifact custody, endpoint, application integration, quality, observability, scheduler, lifecycle, security, RAG, and tool measurements.
 
 ## Capstone Row
 
 | Gate | Required artifact | Pass signal |
 |---|---|---|
-| Deployment readiness audit | `<run-id>-deployment-readiness-audit.json`, `<run-id>-deployment-readiness-audit.md`, `<run-id>-deployment-readiness-audit.csv`, and one `llm-deployment-readiness-audit-runs.jsonl` row | workload, selected path, result synthesis, model/runtime, endpoint/client, application integration, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are pass or explicitly waived |
+| Deployment readiness audit | `<run-id>-deployment-readiness-audit.json`, `<run-id>-deployment-readiness-audit.md`, `<run-id>-deployment-readiness-audit.csv`, and one `llm-deployment-readiness-audit-runs.jsonl` row | workload, selected path, result synthesis, model/runtime, artifact custody, endpoint/client, application integration, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are pass or explicitly waived |
 
 ## Completion Gate
 
@@ -891,6 +909,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
