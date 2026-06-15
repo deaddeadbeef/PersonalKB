@@ -9,7 +9,7 @@ last-machine-check: 2026-06-16T07:05:33+08:00
 
 # Local LLM Request Lifecycle Proof - 2026-06-16
 
-> **One-line summary** A saved local Ollama native request now has a full eight-phase lifecycle trace from client request through prompt assembly, tokenization, prefill, decode, stop, detokenization, and application handling; the OpenAI-compatible trace is useful route evidence but still lacks native prefill timing.
+> **One-line summary** A saved local Ollama native request now has a full eight-phase lifecycle trace from client request through prompt assembly, tokenization, prefill, decode, stop, detokenization, and application handling; the OpenAI-compatible route has separate client/streaming timing proof but still lacks server-side prefill/decode timing in this lifecycle row.
 
 This note is request-lifecycle proof for the first local endpoint. It uses saved request and response artifacts; it did not send a new generation request. Use it with [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]], [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]], and [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]].
 
@@ -50,6 +50,8 @@ The OpenAI-compatible route returned the same visible text and preserved model, 
 
 This is not an endpoint failure. It means the native route is the stronger source for request-phase timing, while the OpenAI-compatible route remains useful for client compatibility and token accounting.
 
+Follow-up: [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] supplies client latency, TTFT, stream-shape, and usage evidence for the OpenAI-compatible route; it does not alter this lifecycle runner's server-prefill hold.
+
 ## What This Proves
 
 - The first local endpoint proof now has one saved request/response pair mapped across all eight lifecycle phases.
@@ -61,13 +63,13 @@ This is not an endpoint failure. It means the native route is the stronger sourc
 
 - It does not prove long-context behavior, streaming TTFT, concurrency, prompt-cache reuse, or scheduler behavior.
 - It does not prove workload quality; the quality boundary remains the first quality probe plus the calculator and structured-format remediation notes.
-- It does not prove OpenAI-compatible prefill/decode timing. That requires streaming timing, a native timing route, server trace evidence, or a client harness with measured TTFT.
+- It does not prove server-side OpenAI-compatible prefill/decode timing. The separate streaming proof covers client-visible timing and TTFT, not the server's native prefill/decode split.
 - It does not prove academic mastery; a no-notes paper defense and academic-to-local defense matrix are still pending.
 
 ## Next Actions
 
 1. Treat the request-lifecycle runner gate as passed for the native first-smoke request in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
-2. Use [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] or [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] to add client-side TTFT for the OpenAI-compatible route.
+2. Use [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] as the current OpenAI-compatible client/streaming timing evidence; next use benchmark audit only after route, lifecycle, quality, tool, renderer, client-timing, and security ownership are explicit.
 3. Run the first inference evidence-pack audit only after it explicitly reconciles route proof, native lifecycle proof, OpenAI-compatible compatibility, first-quality hold, calculator tool ownership, structured renderer ownership, and loopback security.
 4. Continue the academic track with [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] and [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]].
 
@@ -83,6 +85,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]]
 - [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Runner]]

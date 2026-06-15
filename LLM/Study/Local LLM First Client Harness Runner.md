@@ -3,7 +3,7 @@ tags: [study, llm, inference, local-llm, client, harness, python, openai-compati
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Client Harness Runner
@@ -13,6 +13,8 @@ last-verified: 2026-06-15
 Use this after [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] proves the local `/v1` route and [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] has at least one prompt worth rerunning through a client. The contract lab or runner says which base URL, route, model id, and feature flags are safe. This runner turns that contract into repeatable client-side inference evidence.
 
 Use [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] after this when the next narrow question is perceived latency, first content delta, chunk count, and streaming errors. Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] when the next narrow question is sampler, seed, stop-string, or output-cap reproducibility. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the harness needs retries, multiple prompt suites, tool traces, richer metrics, or integration into a real application. This note is the first small non-streaming pass.
+
+Current dated proof: [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] records a non-streaming client harness pass and a streaming timing pass for the `SMOKE-01` OpenAI-compatible route.
 
 ## What This Proves
 
@@ -42,7 +44,7 @@ Write these before running:
 | Model id |  |
 | Prompt id | `K-01` / `S-01` / workload prompt id |
 | Temperature | `0` |
-| Max tokens | `128` for first client proof |
+| Max tokens | `128` for first client proof, or `512` when a thinking-capable model needs enough room to reach final visible content |
 | Auth behavior | placeholder bearer / none / real token / proxy |
 | Log policy | redacted excerpt / full local-only output / no private content |
 
@@ -76,6 +78,11 @@ for directory in (REQUEST_DIR, RESPONSE_DIR, OUTPUT_DIR):
     directory.mkdir(parents=True, exist_ok=True)
 
 PROMPTS = {
+    "SMOKE-01": {
+        "system": "Answer the user exactly.",
+        "user": "Reply with exactly: local llm ok",
+        "prompt_class": "route smoke",
+    },
     "K-01": {
         "system": "Answer the user exactly. Keep reasoning to one short sentence.",
         "user": "Compute 17 * 23 + 19. Return exactly: answer=<number>; reason=<one short sentence>.",
@@ -107,7 +114,7 @@ payload = {
         {"role": "user", "content": case["user"]},
     ],
     "temperature": 0,
-    "max_tokens": 128,
+    "max_tokens": int(os.environ.get("LOCAL_LLM_MAX_TOKENS", "128")),
     "stream": False,
 }
 

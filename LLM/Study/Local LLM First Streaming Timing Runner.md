@@ -3,7 +3,7 @@ tags: [study, llm, inference, local-llm, streaming, latency, client, harness, ev
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Streaming Timing Runner
@@ -13,6 +13,8 @@ last-verified: 2026-06-15
 Use this after [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] proves one reusable non-streaming call and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] says the local `/v1/chat/completions` route can stream. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] after this when streaming needs retries, prompt suites, tool traces, UI integration, or benchmark automation.
 
 The purpose is narrow: prove what the user actually feels during streaming without confusing perceived latency with total latency or model quality.
+
+Current dated proof: [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] records first SSE event, first visible content, total latency, reasoning chunks, final output, usage, and done-marker evidence for the `SMOKE-01` OpenAI-compatible route.
 
 ## What This Proves
 
@@ -43,7 +45,7 @@ Write these before running:
 | Model id |  |
 | Prompt id | `K-01` / `S-01` / workload prompt id |
 | Temperature | `0` |
-| Max tokens | `128` for first streaming proof |
+| Max tokens | `128` for first streaming proof, or `512` when a thinking-capable model needs enough room to reach final visible content |
 | Include usage request | `LOCAL_LLM_INCLUDE_USAGE=1` only if the contract says the runtime supports it |
 | Log policy | redacted excerpt / full local-only output / no private content |
 
@@ -88,6 +90,11 @@ for directory in (REQUEST_DIR, EVENT_DIR, OUTPUT_DIR):
     directory.mkdir(parents=True, exist_ok=True)
 
 PROMPTS = {
+    "SMOKE-01": {
+        "system": "Answer the user exactly.",
+        "user": "Reply with exactly: local llm ok",
+        "prompt_class": "route smoke",
+    },
     "K-01": {
         "system": "Answer the user exactly. Keep reasoning to one short sentence.",
         "user": "Compute 17 * 23 + 19. Return exactly: answer=<number>; reason=<one short sentence>.",
@@ -119,7 +126,7 @@ payload = {
         {"role": "user", "content": case["user"]},
     ],
     "temperature": 0,
-    "max_tokens": 128,
+    "max_tokens": int(os.environ.get("LOCAL_LLM_MAX_TOKENS", "128")),
     "stream": True,
 }
 if INCLUDE_USAGE:
@@ -190,7 +197,7 @@ try:
                     content_chunk_count += 1
                     parts.append(content)
 
-                if delta.get("thinking"):
+                if delta.get("thinking") or delta.get("reasoning"):
                     thinking_chunk_count += 1
                 if delta.get("tool_calls"):
                     tool_call_chunk_count += 1

@@ -4031,3 +4031,40 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` and `_ops/reports/audit-placeholder-hits.md` found no hits for the request lifecycle proof note, run ids, runner path, or evidence paths.
+
+## [2026-06-16] curate | Prove OpenAI-compatible streaming timing
+
+Scope: fill the OpenAI-compatible client/streaming timing gap left after native request-lifecycle proof, without treating client TTFT as server-side prefill/decode timing.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Client Harness Runner.md`
+- `LLM/Study/Local LLM First Streaming Timing Runner.md`
+- `LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM First Inference Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] with non-streaming client evidence, streaming timing evidence, event JSONL paths, output paths, and caveats.
+- Updated the reusable client and streaming runner notes with `SMOKE-01`, `LOCAL_LLM_MAX_TOKENS`, and 2026-06-16 verification context.
+- Fixed the streaming runner evidence parser to count Ollama OpenAI-compatible `delta.reasoning` chunks as reasoning chunks.
+- Routed the proof through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, first-inference proof, and request-lifecycle proof.
+- Kept the boundary explicit: OpenAI-compatible client TTFT and stream shape are now proven, but native server-side prefill/decode split remains available only from the native lifecycle proof.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty LLM files outside this routed slice.
+
+Verification:
+- `/api/version` returned Ollama `0.30.8`; `/v1/models` exposed `qwen3.5:2b-q4_K_M`.
+- Non-streaming client harness returned `pass` for run `20260616-071926-ab620b98`, latency `6.520s`, finish `stop`, token counts `28/265/293`, and exact output `local llm ok`.
+- Streaming timing harness returned `pass` for run `20260616-072026-b4fd682f`, first event `0.367s`, TTFT `1.721s`, total latency `1.737s`, 224 events, 218 reasoning chunks, 4 content chunks, token counts `28/265/293`, and exact output `local llm ok`.
+- Stream event inspection confirmed `delta.reasoning` chunks before content chunks and final usage.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` and `_ops/reports/audit-placeholder-hits.md` found no hits for the streaming timing proof note, run ids, runner paths, or evidence paths.
