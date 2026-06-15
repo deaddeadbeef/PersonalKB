@@ -47,6 +47,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 
 ## Study Materials
 - [[LLM/Study/LLM Study Index|LLM Study Index]] — Review drills, cheatsheet, 20-paper fast path
+- [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — Daily home base for recall, study route, proof artifact, evidence destination, and next action
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] — Competency gates from field map to local inference and capstone
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] — Prerequisite map connecting academic mechanisms to applied local inference, RAG, tool, evaluation, and deployment proofs
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] — Mixed retrieval-practice prompts for academic mechanisms, paper literacy, evaluation, local hosting, RAG, tools, safety, and deployment

@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This is the operating rhythm for mastering LLMs: every week pairs academic understanding with one applied proof artifact, so reading turns into usable local inference skill.
 
-Use this with [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]], [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]], and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]]. The roadmap says what mastery means. The capstone workbook stores proof. This cadence says what to do this week.
+Use this with [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]], [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]], [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]], and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]]. The dashboard says what to do today. The roadmap says what mastery means. The capstone workbook stores proof. This cadence says what to do this week.
 
 This is not a calendar deadline. If a week fails, repeat the week with a smaller artifact. The goal is durable recall and evidence, not page-count completion.
 
@@ -67,6 +67,7 @@ Goal: make the work measurable.
 Read:
 
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
