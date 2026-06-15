@@ -3702,3 +3702,44 @@ Verification:
 - Runner self-test: 4 cases passed.
 - Live no-install scan from a temporary manifest returned `exit_code=2`, `hold` / `readiness_incomplete`, with expected holds for missing `D:\Models` directories and unset custom cache variables; GPU proof saw `NVIDIA GeForce RTX 3080 Ti`, 12288 MiB VRAM, driver 610.47, with no common local LLM listener active.
 - `git diff --check`: clean before final index/audit rerun.
+
+## [2026-06-16] curate | Add local LLM model-store bootstrap runner
+
+Scope: add the controlled bridge between first-run readiness holds and the Windows runtime install gate: dry-run or apply the run folder, model-store directories, and user cache variables before any model pull.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Run Command Plan Runner.md`
+- `LLM/Study/Local LLM First Run Readiness Runner.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM Model Store Bootstrap Runner.md`
+- `LLM/Study/Local LLM Model Store Readiness Snapshot.md`
+- `LLM/Study/Local LLM Windows First-Run Quickstart.md`
+- `LLM/Study/Local LLM Windows Model Store and Cache Plan.md`
+- `LLM/Study/Local LLM Windows Runtime Install Gate.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Model Store Bootstrap Runner]] with a standard-library Python runner that writes JSON, CSV, Markdown, and JSONL evidence for model-store directory creation plans and user cache-variable actions.
+- The runner defaults to dry-run mode and requires both `--apply` and `confirm_apply=create-model-store-and-user-env` before changing directories or user-level environment variables.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, first-run readiness runner, command-plan runner, model-store snapshot/plan, runtime install gate, Windows quickstart, and hands-on practicum through the new bootstrap step.
+- Updated [[LLM/Study/Local LLM First Run Command Plan Runner]] so custom storage manifests generate a model-store bootstrap manifest instead of only a commented manual `setx` review step.
+- No new current external-source claims were added in this pass; the note is an internal machine-state evidence procedure.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted and compiled `local_llm_model_store_bootstrap_runner.py` and `first_run_command_plan_runner.py` from their notes.
+- Bootstrap runner self-test: 4 cases passed.
+- Real-target dry run against `D:\Models` returned `exit_code=2`, `hold` / `bootstrap_pending`, with 9 planned actions and `D:\Models` still absent afterward.
+- Temporary-path `--apply` run with `set_user_env=false` returned `pass` / `bootstrap_ready_for_new_shell_check` and created only temp run/model directories.
+- Command-plan fixture returned `pass` / `first_run_command_plan_ready`, planned 20 steps, and the generated Markdown/PowerShell included `05b-plan-model-store-bootstrap`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4977 files, 3106 Markdown files, 941 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+- `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new note or embedded bootstrap runner decision strings.

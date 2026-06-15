@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** Generate and audit one ordered PowerShell command plan for the first local LLM run before installing, pulling, or sending any inference request.
 
-Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] have made the first runtime, model, model-store, and loopback assumptions explicit. This runner sits before [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] when you want one generated command sequence with evidence filenames already named. It also generates the manifest for [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] so the installed-runtime check can be audited before the first pull.
+Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] have made the first runtime, model, model-store, and loopback assumptions explicit. This runner sits before [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] when you want one generated command sequence with evidence filenames already named. It also generates the manifests for [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]] and [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] so storage bootstrap and installed-runtime checks can be audited before the first pull.
 
 The runner itself does not install Ollama, pull a model, call `/api/chat`, call `/api/generate`, or call `/v1/chat/completions`. It writes a reviewed command plan: JSON, Markdown, CSV, JSONL, and a PowerShell script that you can inspect before running.
 
@@ -21,7 +21,7 @@ The runner itself does not install Ollama, pull a model, call `/api/chat`, call 
 | Manifest | The intended runtime, model id, run folder, storage decision, install gate, pull gate, and security boundary are named before execution. | The model is downloaded or usable. |
 | Command plan | The first-run sequence has explicit commands and evidence filenames. | The commands have been run. |
 | Loopback check | Planned native and OpenAI-compatible base URLs are loopback unless explicitly waived. | Non-loopback exposure is safe. |
-| Step inventory | Runtime install, model pull, runtime health, smoke request, debrief, endpoint audit, and full packet audit are ordered. | Any downstream audit has passed. |
+| Step inventory | Model-store bootstrap, runtime install, model pull, runtime health, smoke request, debrief, endpoint audit, and full packet audit are ordered. | Any downstream audit has passed. |
 | PowerShell review script | The exact commands can be reviewed as one file before touching the machine. | The script should be run without reading. |
 
 Academic bridge: this is the boundary between planning and measurement. It turns "I will run a local model" into a falsifiable sequence of runtime, model, API route, response, timing, quality, and safety evidence.
@@ -57,7 +57,11 @@ Optional fields:
 {
   "output_root": "D:/llm-runs/command-plans",
   "vault_root": "D:/Vaults/PersonalKB",
+  "model_root": "D:/Models",
   "ollama_models_path": "D:/LocalModels/Ollama",
+  "hf_home": "D:/Models/hf",
+  "hf_hub_cache": "D:/Models/hf/hub",
+  "gguf_dir": "D:/Models/gguf",
   "expected_source_digest": "2a654d98e6fb",
   "source_recheck_snippets": ["2a654d98e6fb", "3.4GB", "parameters 4.66B", "quantization Q4_K_M"],
   "security_review_proof": "",
@@ -206,7 +210,11 @@ def make_step(
 def build_steps(manifest: dict[str, Any]) -> list[dict[str, Any]]:
     include_openai = bool_value(manifest.get("include_openai_route"), True)
     include_streaming = bool_value(manifest.get("include_streaming"), False)
+    model_root = display(manifest.get("model_root"))
     ollama_models_path = display(manifest.get("ollama_models_path"))
+    hf_home = display(manifest.get("hf_home"))
+    hf_hub_cache = display(manifest.get("hf_hub_cache"))
+    gguf_dir = display(manifest.get("gguf_dir"))
     native_prompt = display(manifest.get("native_smoke_prompt")) or "Reply with one sentence: local endpoint ready."
     openai_prompt = display(manifest.get("openai_smoke_prompt")) or (
         "Reply with one sentence: OpenAI-compatible route ready."
@@ -290,21 +298,30 @@ if (Get-Command nvidia-smi -ErrorAction SilentlyContinue) {
         ),
     ]
 
-    if ollama_models_path:
+    if any([model_root, ollama_models_path, hf_home, hf_hub_cache, gguf_dir]):
         steps.append(
             make_step(
-                "05b-review-custom-model-store",
+                "05b-plan-model-store-bootstrap",
                 "model-store",
-                "LLM/Study/Local LLM Windows Model Store and Cache Plan",
-                "model-store-change-review.txt",
+                "LLM/Study/Local LLM Model Store Bootstrap Runner",
+                "model-store-bootstrap-manifest.json",
                 f"""
-# Review before executing in a normal PowerShell session:
-# New-Item -ItemType Directory -Force -Path {ps_quote(ollama_models_path)} | Out-Null
-# setx OLLAMA_MODELS {ps_quote(ollama_models_path)}
-"custom model store requires a new shell after setx" |
-  Set-Content -Path (Join-Path $RunRoot "model-store-change-review.txt") -Encoding utf8
+@{{
+  run_id = "$RunId-model-store-bootstrap"
+  run_root = $RunRoot
+  output_root = $RunRoot
+  model_root = {ps_quote(model_root)}
+  ollama_models_path = {ps_quote(ollama_models_path)}
+  hf_home = {ps_quote(hf_home)}
+  hf_hub_cache = {ps_quote(hf_hub_cache)}
+  gguf_dir = {ps_quote(gguf_dir)}
+  minimum_free_gb = 20
+  set_user_env = $true
+  confirm_apply = "create-model-store-and-user-env"
+}} | ConvertTo-Json -Depth 8 | Set-Content -Path (Join-Path $RunRoot "model-store-bootstrap-manifest.json") -Encoding utf8
+# Extract local_llm_model_store_bootstrap_runner.py, run dry-run first, then rerun with --apply only after reviewing the plan.
 """,
-                "Plan the custom model-store change without applying it inside the planner.",
+                "Generate the bootstrap manifest for model-store directories and user cache variables.",
             )
         )
 
@@ -1030,6 +1047,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]

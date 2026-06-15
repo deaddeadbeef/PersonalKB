@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** Prove the Windows runtime install, PATH refresh, model-store inheritance, log locations, and loopback listener before the first model pull.
 
-Use this after [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store snapshot says this machine is ready to create `D:\Models` and set `OLLAMA_MODELS`; this install gate says how to prove the Ollama runtime itself is installed correctly before downloading model weights. Use [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] after install or existing-runtime discovery when you want the PATH, version, model-store env, loopback listener, `/api/version`, and `/api/tags` checks saved as repeatable JSON, Markdown, CSV, and JSONL evidence. After the first model pull, use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to capture a no-inference listener and model-list artifact before sending a smoke prompt.
+Use this after [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] and [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]], and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store snapshot says this machine is ready to create `D:\Models` and set `OLLAMA_MODELS`; the bootstrap runner proves the actual folder and user-env action; this install gate says how to prove the Ollama runtime itself is installed correctly before downloading model weights. Use [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] after install or existing-runtime discovery when you want the PATH, version, model-store env, loopback listener, `/api/version`, and `/api/tags` checks saved as repeatable JSON, Markdown, CSV, and JSONL evidence. After the first model pull, use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to capture a no-inference listener and model-list artifact before sending a smoke prompt.
 
 This note is an execution gate, not proof that the runtime is installed now. Do not mark it complete until the evidence files exist in a dated run folder.
 
@@ -66,7 +66,7 @@ first_model_pull_allowed=no
 
 ## Step 1: Set Storage Before Runtime Start
 
-This step prevents the first model pull from landing in an unintended user-profile store.
+This step prevents the first model pull from landing in an unintended user-profile store. If you already ran [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]] with `--apply`, use this section as verification from a new PowerShell rather than repeating manual setup.
 
 ```powershell
 $ModelRoot = "D:\Models\ollama"
@@ -293,6 +293,7 @@ Internal:
 
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM Windows Runtime Install Runner]]

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Decide where model weights, runtime stores, artifact caches, conversion outputs, and evidence logs live before the first large local LLM download.
 
-Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], and [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]]. The endpoint run sheet proves the first model call. The artifact lab proves exact downloaded bytes. This note prevents a more basic failure: pulling multi-GB model artifacts into an unknown or hard-to-clean location. For this workstation's latest read-only storage evidence, use [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]].
+Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]], and [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]]. The endpoint run sheet proves the first model call. The artifact lab proves exact downloaded bytes. This note prevents a more basic failure: pulling multi-GB model artifacts into an unknown or hard-to-clean location. For this workstation's latest read-only storage evidence, use [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]. After accepting the decision, use [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]] to dry-run or apply the run folder, model directories, and cache variables.
 
 This is a storage decision note, not an installer. Do not install a runtime, pull a model, or delete a cache until the target path, free disk, owner, and rollback plan are written into the run folder.
 
@@ -232,6 +232,7 @@ Internal:
 
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

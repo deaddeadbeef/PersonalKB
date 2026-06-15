@@ -11,7 +11,7 @@ last-machine-check: 2026-06-15T11:10:33+08:00
 
 > **One-line summary** As of 2026-06-15T11:10:33+08:00, this Windows workstation has enough disk for a first small local model, no local LLM runtime on PATH, no model/cache variables set, no model directories created, and no common local LLM endpoint listening.
 
-Use this after [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and before [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store plan says what to decide. This snapshot records what is true on this machine before the first installer or model pull. Rerun [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] when directory, environment, listener, runtime, or GPU state may have changed.
+Use this after [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and before [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]], [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store plan says what to decide. This snapshot records what is true on this machine before the first installer or model pull. Rerun [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] when directory, environment, listener, runtime, or GPU state may have changed.
 
 This note is read-only evidence. It did not install Ollama, LM Studio, Hugging Face CLI, create `D:\Models`, set environment variables, start a server, or pull a model.
 
@@ -56,13 +56,12 @@ Rationale: the default store would probably work for a small first pull because 
 Do these in order. Stop at the first failure and route it to [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]].
 
 1. Open [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]].
-2. Create the dated run folder before changing the machine.
-3. Create `D:\Models\ollama`, `D:\Models\hf`, and `D:\Models\gguf`.
-4. Set `OLLAMA_MODELS` to `D:\Models\ollama` before the first `ollama pull`.
-5. If Hugging Face tooling is used later, set `HF_HOME` to `D:\Models\hf` before downloads.
-6. Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to install the first runtime and capture `ollama --version` from a new PowerShell.
-7. Only after the runtime works, pull one first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]].
-8. Save native and OpenAI-compatible loopback response evidence.
+2. Use [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]] in dry-run mode to review the dated run folder, `D:\Models` directories, and cache variable actions.
+3. If the dry-run plan is correct, rerun the bootstrap runner with `--apply` to create `D:\Models\ollama`, `D:\Models\hf`, `D:\Models\hf\hub`, and `D:\Models\gguf`, then set `OLLAMA_MODELS`, `HF_HOME`, and `HF_HUB_CACHE` as user variables.
+4. Open a new PowerShell and rerun [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] to prove the new shell sees the storage decision.
+5. Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to install the first runtime and capture `ollama --version` from a new PowerShell.
+6. Only after the runtime works, pull one first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]].
+7. Save native and OpenAI-compatible loopback response evidence.
 
 ## Copyable Decision Card
 
@@ -154,6 +153,7 @@ This snapshot is complete when:
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Run Readiness Runner]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]

@@ -31,7 +31,7 @@ If there is no saved answer or evidence row, the session was reading, not master
 | Field map and papers | Not yet proven today | Explain one paper cluster without notes |
 | Math and mechanisms | Not yet proven today | Work one token/logit/attention/KV-cache explanation |
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
-| First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], verify with [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before capstone promotion |
+| First local endpoint | Readiness and model-store snapshots exist; endpoint proof not yet captured | Use [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]], then [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], verify with [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]], then [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], then [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before capstone promotion |
 | Model and runtime choice | First model ladder exists; storage decision snapshot points to `D:\Models` | Write provenance, compatibility, or sizing row after runtime install evidence |
 | Benchmark and quality | Not yet proven today | Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] after route proof, then save benchmark and quality row for one prompt class |
 | RAG/tools | Not yet proven today | Save retrieval, citation, structured-output, tool-schema, tool-result, or denied-action row |
@@ -66,6 +66,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need fresh machine readiness evidence before install, pull, or smoke request | [[LLM/Study/Local LLM First Run Readiness Runner]] | Command, disk, path, environment, GPU, listener, loopback, pass/hold/fail, and next-route evidence |
 | You need to know whether the first model tags are still current | [[LLM/Study/Local LLM First Model Source Recheck Runner]] | Current source-page pass/hold/fail for selected tag, digest, size, context, modality, and quantization |
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
+| You accepted the storage decision and need to create or prove the folders and cache variables | [[LLM/Study/Local LLM Model Store Bootstrap Runner]] | Dry-run/apply plan, directory actions, user env actions, disk checks, pass/hold/fail, and new-shell handoff |
 | You need one reviewed command plan before the first local run | [[LLM/Study/Local LLM First Run Command Plan Runner]] | Ordered PowerShell plan, run folder, evidence filenames, loopback checks, and next gate manifests |
 | You have config, tokenizer, Ollama show, or file-list evidence but no normalized model facts | [[LLM/Study/Local LLM Model Metadata Card Runner]] | Architecture, tokenizer, template, context, quantization, inventory, and downstream handoff fields |
 | You have model architecture, context, and concurrency facts but no KV-cache fit proof | [[LLM/Study/Local LLM KV Cache Sizing Runner]] | Head-aware MHA/MQA/GQA cache estimate, cache dtype, budget, margin, fit status, and next route |
@@ -155,6 +156,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] |  |
 | First-run readiness runner | [[LLM/Study/Local LLM First Run Readiness Runner]] |  |
+| Model-store bootstrap runner | [[LLM/Study/Local LLM Model Store Bootstrap Runner]] |  |
 | First model pull runner | [[LLM/Study/Local LLM First Model Pull Runner]] |  |
 | First runtime health runner | [[LLM/Study/Local LLM First Runtime Health Runner]] |  |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |  |
@@ -244,6 +246,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One fresh first-run readiness runner output before install, pull, or smoke request | [[LLM/Study/Local LLM First Run Readiness Runner]] |
 | One first model source recheck row | [[LLM/Study/Local LLM First Model Source Recheck Runner]] |
 | One machine-specific model-store decision row | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
+| One model-store bootstrap plan or apply output before runtime install | [[LLM/Study/Local LLM Model Store Bootstrap Runner]] |
 | One reviewed first-run command plan | [[LLM/Study/Local LLM First Run Command Plan Runner]] |
 | One runtime install gate row | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | One runtime install runner output before first model pull | [[LLM/Study/Local LLM Windows Runtime Install Runner]] |
@@ -361,6 +364,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM KV Cache Sizing Runner]]
 - [[LLM/Study/Local LLM Model Metadata Card Runner]]

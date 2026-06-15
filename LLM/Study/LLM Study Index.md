@@ -59,6 +59,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]]
@@ -185,6 +186,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] — verify current model-page snippets for tag, digest, size, context, modality, and quantization before the first pull or command plan
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] — decide where model weights, runtime stores, Hugging Face caches, conversion outputs, and evidence logs live before the first large download
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] — use this workstation's current disk, cache-variable, PATH, directory, GPU, and listener evidence before the first installer or model pull
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]] — dry-run or apply the run folder, model directories, and user cache variables after the storage decision but before runtime install or model pull
 - [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]] — generate the first-run PowerShell plan, run folder, evidence filenames, loopback URLs, and downstream gate manifests before any install, pull, or prompt
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] — prove installer source, new-shell PATH, model-store inheritance, listener boundary, and log locations before the first model pull
 - [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] — save repeatable install-readiness JSON, Markdown, CSV, and JSONL evidence for Ollama command, version, model-store env, listener, `/api/version`, and `/api/tags`

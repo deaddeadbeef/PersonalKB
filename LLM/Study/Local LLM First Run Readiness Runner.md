@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** This no-install runner refreshes the machine evidence needed before the first local LLM install, model pull, or smoke request: runtime commands, GPU visibility, disk, model-store paths, environment variables, common listener ports, and loopback safety.
 
-Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] when either snapshot may be stale. Use it before [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], or [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if the current runtime, storage, listener, or GPU state is uncertain.
+Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] when either snapshot may be stale. Use it before [[LLM/Study/Local LLM Model Store Bootstrap Runner|Local LLM Model Store Bootstrap Runner]], [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]], [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], or [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if the current runtime, storage, listener, or GPU state is uncertain.
 
 The runner does **not** install Ollama or LM Studio, create `D:\Models`, set environment variables, download a model, call an endpoint, or generate text. It only observes the machine and writes evidence files.
 
@@ -470,7 +470,7 @@ Expected current outcome before the first setup pass: `hold/readiness_incomplete
 | Decision | Meaning | Next route |
 |---|---|---|
 | `pass/ready_for_first_runtime_step` | Readiness evidence is fresh, no common LLM listener is exposed beyond loopback, and required run/store paths and env choices are ready for the next first-run step. | [[LLM/Study/Local LLM Windows Runtime Install Gate]] or [[LLM/Study/Local LLM First Model Pull Gate]] depending on runtime state. |
-| `hold/readiness_incomplete` | The machine state is observable but a required run root, model-store path, env variable, disk threshold, listener scan, or path choice is incomplete. | Fix the named hold before install, pull, or smoke request. |
+| `hold/readiness_incomplete` | The machine state is observable but a required run root, model-store path, env variable, disk threshold, listener scan, or path choice is incomplete. | Use [[LLM/Study/Local LLM Model Store Bootstrap Runner]] for storage/env holds, or fix the named hold before install, pull, or smoke request. |
 | `fail/readiness_blocked` | A common local LLM listener is exposed beyond loopback or another safety condition contradicts the first-run boundary. | Stop and route to [[LLM/Study/Local LLM Security and Privacy Runbook]] before prompts or model pulls. |
 
 ## Completion Gate
@@ -491,6 +491,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]

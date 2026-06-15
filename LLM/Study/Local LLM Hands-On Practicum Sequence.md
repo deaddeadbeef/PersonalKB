@@ -65,6 +65,7 @@ Route:
 
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Run Readiness Runner]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 
@@ -74,6 +75,7 @@ Save:
 |---|---|
 | Readiness snapshot | Runtime install state, GPU, listener ports, first runtime choice, first model class, next proof action |
 | Readiness runner output | JSON, CSV, Markdown, and JSONL event files with command, environment, storage, listener, and GPU checks |
+| Model-store bootstrap output | Dry-run/apply JSON, CSV, Markdown, and JSONL files showing run folder, model directories, user cache variables, and new-shell handoff |
 | Preflight snapshot | OS, shell, CPU/RAM, GPU/VRAM or CPU-only note, disk, model cache path, intended host/port |
 | Stack Anatomy Card | Boundary, hardware proof, lowest unproven layer, next action |
 
@@ -393,6 +395,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM First Run Readiness Runner]]
+- [[LLM/Study/Local LLM Model Store Bootstrap Runner]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
