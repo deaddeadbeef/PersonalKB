@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, paper claim audit, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, model custody, runtime compatibility, template/tokenizer compatibility, endpoint, API/client, benchmark, scheduler evidence, evaluation set design, quality |
+| local-inference | workload/model selection, model custody, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, benchmark, scheduler evidence, evaluation set design, quality |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, exam run sheet, capstone workbook/final note |
 
@@ -228,6 +228,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/Local LLM First Endpoint Run Sheet",
         "pass_signal": "Local endpoint returns a response with model id, runtime, command, route, request, response, and timing.",
+    },
+    {
+        "gate_id": "local-first-endpoint-evidence-audit",
+        "domain": "local-inference",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM First Endpoint Evidence Audit Runner",
+        "pass_signal": "The first endpoint run folder has checked run card, preflight, runtime install state, model custody, runtime health, smoke response, debrief, boundary, and decision gates.",
     },
     {
         "gate_id": "local-api-client",
@@ -958,6 +967,7 @@ This runner is useful when:
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
+- [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]

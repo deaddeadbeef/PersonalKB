@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and while executing [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The readiness snapshot says the current machine state. The quickstart explains the full path. This run sheet is the one-session checklist that turns the path into files you can link from [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
 
-This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to decide where model bytes live and prove the runtime install. Then use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture the selected model tag, pull output, list/tags/show metadata, and pass/hold/fail handoff. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] before endpoint smoke testing when you want one no-generation proof that the listener and model-list routes are ready. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] when you want the native and OpenAI-compatible smoke requests saved by one standard runner.
+This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to decide where model bytes live and prove the runtime install. Then use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture the selected model tag, pull output, list/tags/show metadata, and pass/hold/fail handoff. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] before endpoint smoke testing when you want one no-generation proof that the listener and model-list routes are ready. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] when you want the native and OpenAI-compatible smoke requests saved by one standard runner. Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] after response debrief to check whether the run folder is complete enough to promote.
 
 ## Run Contract
 
@@ -27,6 +27,7 @@ This sheet is not endpoint proof until the evidence files exist. A checked box w
 | Model pull gate | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | Runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
 | Smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |
+| Endpoint evidence audit | [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |
 | Model store decision | default / custom `OLLAMA_MODELS` / hold |
 | Native base URL | `http://localhost:11434` |
 | OpenAI-compatible base URL | `http://localhost:11434/v1` |
@@ -55,6 +56,7 @@ storage_snapshot=Local LLM Model Store Readiness Snapshot
 runtime_install_gate=Local LLM Windows Runtime Install Gate
 runtime_health_snapshot=Local LLM First Runtime Health Snapshot
 smoke_request_runner=Local LLM First Smoke Request Runner
+endpoint_evidence_audit=Local LLM First Endpoint Evidence Audit Runner
 native_base_url=http://localhost:11434
 openai_base_url=http://localhost:11434/v1
 security_boundary=loopback only
@@ -273,6 +275,14 @@ Copy this row into [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capston
 | Decision | keep / tune / replace runtime / replace model / stop |
 | Next proof | first quality probe / first client harness runner / model provenance / troubleshooting |
 
+## Step 8.5: Audit The First Endpoint Folder
+
+Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] after the debrief output exists. The audit should pass or explicitly hold before this run sheet is linked as endpoint proof.
+
+Pass signal: the audit output says `first_endpoint_evidence_ready` and links the run card, preflight, runtime install state, model pull or custody, runtime health, smoke response, debrief, and decision artifacts.
+
+Hold signal: the audit names the first missing gate and routes it to the note that should produce the missing file.
+
 ## Failure Forks
 
 | Failure | Likely owner | Next route |
@@ -297,6 +307,7 @@ This run sheet is complete only when:
 - [ ] `ollama-native-request.json` and `ollama-native-response.json` exist
 - [ ] `ollama-tags.json`, `openai-chat-request.json`, and `openai-chat-response.json` exist
 - [ ] [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]], [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]], or equivalent debrief row interprets the first response
+- [ ] [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] checks the run folder before it supports the capstone workbook
 - [ ] [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]], [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]], or equivalent note records whether smoke output has any first quality signal
 - [ ] benchmark row is copied or linked
 - [ ] decision row is copied or linked
@@ -314,6 +325,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
+- [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]

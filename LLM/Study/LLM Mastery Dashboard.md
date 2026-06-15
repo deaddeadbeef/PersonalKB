@@ -66,6 +66,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need to know whether the local runtime is reachable before endpoint smoke | [[LLM/Study/Local LLM First Runtime Health Snapshot]] | Health JSON/Markdown, installed and loaded model ids, OpenAI-compatible ids, missing layer, and next action |
 | You are ready to send the first controlled local inference request | [[LLM/Study/Local LLM First Smoke Request Runner]] | Native and OpenAI-compatible request/response/output files, status, missing layer, and next action |
 | You are ready to execute the first local endpoint proof | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | Filled run folder, native response, OpenAI-compatible response, benchmark row, decision row |
+| You have a first endpoint run folder and need to know whether it counts | [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] | Run card, preflight, model custody, runtime health, smoke response, debrief, boundary, and decision audit |
 | You have the first response JSON and need to interpret it | [[LLM/Study/Local LLM First Response Debrief Card]] | Route claim, timing conversion, mechanism owner, benchmark add-on row, and next controlled action |
 | You want the first saved response interpreted without hand-copying timing fields | [[LLM/Study/Local LLM First Response Debrief Runner]] | Debrief JSON, Markdown, JSONL, converted seconds, token rates, mechanism owner, quality boundary, and next action |
 | You have saved request/response files and need phase evidence | [[LLM/Study/LLM Inference Request Lifecycle Runner]] | Client request, prompt assembly, tokenization, prefill, decode, stop, detokenization, application handling, findings, and next owner |
@@ -118,7 +119,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Mastery evidence audit | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
-| First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] |  |
+| First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |  |
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
@@ -187,6 +188,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
 | One first smoke request summary | [[LLM/Study/Local LLM First Smoke Request Runner]] |
 | One first endpoint run folder | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
+| One first endpoint evidence audit output | [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |
 | One first response debrief row | [[LLM/Study/Local LLM First Response Debrief Card]] |
 | One first response debrief runner output | [[LLM/Study/Local LLM First Response Debrief Runner]] |
 | One request lifecycle runner output | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |
@@ -274,6 +276,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
+- [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Runner]]

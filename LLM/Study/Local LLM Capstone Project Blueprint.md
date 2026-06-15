@@ -58,7 +58,7 @@ The minimal capstone can omit RAG and tools only if the deployment decision expl
 | 3. Windows storage and runtime gate | Model-store decision, Ollama install source, new-shell PATH, version, logs, and listener boundary are captured before model pull. | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | 4. Model custody | Model card, license, artifact, revision, format, local path, safety decision, and first Ollama pull metadata when using Ollama. | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] and [[LLM/Study/Local LLM First Model Pull Gate]] |
 | 5. Runtime compatibility | Tokenizer, chat template, quantization, runtime, route, workload fit, and repeatable template/tokenizer audit when behavior matters. | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] and [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |
-| 6. First endpoint | CLI or server response plus loopback HTTP proof after install and model-pull gates pass. | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
+| 6. First endpoint | CLI or server response plus loopback HTTP proof after install and model-pull gates pass, then a checked first endpoint evidence audit. | [[LLM/Study/Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |
 | 7. Client inference | Reproducible script or client wrapper with request, response, timing, and errors. | [[LLM/Study/Local LLM Client Harness Lab]] |
 | 8. Metric interpretation | TTFT, TPOT, total latency, tokens, memory, queue, quality, and next action. | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
 | 9. Quality gate | Evaluation-set design is audited before workload prompts are scored pass/hold/fail with failure owners; LLM-as-judge rows have calibration proof before they support decisions. | [[LLM/Study/Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Judge Calibration Runner]] |
@@ -83,7 +83,7 @@ Create one dated capstone note or folder with these links:
 | Model card | Model source, license, artifact, revision/tag/file, local path, quantization, tokenizer/template. |
 | Model pull card | Selected tag, source check, pull output, `ollama ls`, `/api/tags`, `/api/show`, pass/hold/fail handoff. |
 | Template/tokenizer compatibility proof | Model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and benchmark or quality link. |
-| Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing. |
+| Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing, and first endpoint evidence audit output. |
 | Failure triage proof | Any failed local run has symptom, failed layer, proof link, mechanism owner, ruled-out layers, and one controlled next action from [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]]. |
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
@@ -201,6 +201,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
+- [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

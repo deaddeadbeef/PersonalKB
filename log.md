@@ -2706,3 +2706,37 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 31 gates, 31 holds.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4946 files, 3075 Markdown files, 910 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | LLM first endpoint evidence audit runner
+
+Scope: add a repeatable audit for first local endpoint run folders so hosting a local LLM and running inference requires machine, model, runtime, route, response, debrief, and decision proof before the run counts.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM First Endpoint Evidence Audit Runner.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/Local LLM First Endpoint Run Sheet.md`
+- `LLM/Study/Local LLM First Inference Evidence Pack.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/Local LLM Capstone Project Blueprint.md`
+- `LLM/Study/Local LLM Windows First-Run Quickstart.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library first endpoint evidence audit runner that checks run card, preflight, runtime install state, model pull or custody, runtime health, smoke summary, native response, OpenAI-compatible response when required, first-response debrief, decision, and optional quality boundary evidence.
+- Routed the runner from the LLM MOC, study index, dashboard, roadmap, capstone workbook, capstone blueprint, hands-on practicum, first endpoint run sheet, first inference evidence pack, and Windows first-run quickstart.
+- Added a `local-first-endpoint-evidence-audit` default gate to the mastery evidence audit runner.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `first_endpoint_audit.py` from the note.
+- First endpoint audit fixtures: pass -> exit 0 `first_endpoint_evidence_ready`; hold -> exit 1 `first_endpoint_evidence_incomplete`; fail -> exit 2 `first_endpoint_evidence_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 32 gates, 32 holds.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4947 files, 3076 Markdown files, 911 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
