@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Before the first inference call, freeze the selected Ollama tag, prove where the bytes will land, pull only one small baseline model, capture model metadata, and decide whether the artifact is ready for endpoint smoke testing.
 
-Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
+Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] before this gate when artifact format, quantization, tokenizer, chat template, route, or model-id support is not already proven. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
 
 This is not a quality test. It is a custody and readiness gate for the first model bytes.
 
@@ -35,6 +35,7 @@ Do not run `ollama pull` until all three are true:
 | Runtime works from a new shell | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | Model store decision is not hold | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | First model slot is chosen | [[LLM/Study/Local LLM First Model Candidate Ladder]] |
+| Runtime/model compatibility is not hold | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |
 
 The first pull changes one variable: model tag. Do not also change runtime, endpoint route, context length, sampler, chat template, or LAN exposure in the same pass.
 
@@ -259,6 +260,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]

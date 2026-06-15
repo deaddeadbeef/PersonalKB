@@ -66,6 +66,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
 | Artifact custody audit | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] |  | Source identity, local bytes or runtime id, inventory, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup plan are pass or linked to remediation. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
+| Runtime compatibility runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] |  | Architecture, artifact container, quantization, runtime support, tokenizer, chat template, route, model-id visibility, custody proof, sizing proof, compatibility decision, and next route are captured before model pull, health check, smoke test, or benchmark. | Not started |
 | Template/tokenizer compatibility runner | Results JSON/CSV/Markdown from [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] |  | Model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and benchmark or quality link are audited before model-quality blame. | Not started |
 | WSL CUDA serving path | Setup card from [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] when using vLLM/SGLang from Windows |  | Windows driver, WSL 2 distro, WSL GPU visibility, Python environment, launch command, `/v1/models`, Windows client response, logs, metrics, and failure layer are captured. | Not started |
 | Docker GPU container path | Setup card from [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] when using containerized vLLM/SGLang or Open WebUI |  | Docker authority, container GPU proof, image tag/digest, model/cache mount, loopback port, `/v1/models`, host chat smoke, logs, metrics, Compose config, Open WebUI provider route, and teardown/rollback decision are captured. | Not started |
@@ -267,6 +268,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Runtime stack anatomy card |  |
 | Lowest unproven layer |  |
 | Compatibility evidence card |  |
+| Runtime compatibility runner |  |
 | WSL CUDA setup card |  |
 | Docker GPU container setup card |  |
 | Quantization/offload decision card |  |
@@ -616,6 +618,7 @@ Next run:
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]

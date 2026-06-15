@@ -65,6 +65,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
 | You have model size, context, and hardware facts but no fit decision | [[LLM/Study/Local LLM Hardware Sizing Runner]] | Weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit status, and next route |
 | You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
+| You have artifact, runtime, tokenizer, or route facts but no compatibility decision | [[LLM/Study/Local LLM Runtime Compatibility Runner]] | Architecture, artifact, quantization, tokenizer, template, runtime, route, custody, sizing, and next proof audit |
 | You need to install Ollama without losing the evidence trail | [[LLM/Study/Local LLM Windows Runtime Install Gate]] | Installer source, new-shell PATH, model-store inheritance, listener, and log proof |
 | You are ready to pull the first Ollama model | [[LLM/Study/Local LLM First Model Pull Gate]] | Model tag decision, store proof, pull output, list/tags/show metadata, and pass/hold/fail route |
 | You need to know whether the local runtime is reachable before endpoint smoke | [[LLM/Study/Local LLM First Runtime Health Snapshot]] | Health JSON/Markdown, installed and loaded model ids, OpenAI-compatible ids, missing layer, and next action |
@@ -133,6 +134,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Hardware sizing runner | [[LLM/Study/Local LLM Hardware Sizing Runner]] |  |
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |
+| Runtime compatibility runner | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
 | Reasoning budget runner | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] |  |
@@ -216,6 +218,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One hardware sizing runner output before model selection, model pull, or serving | [[LLM/Study/Local LLM Hardware Sizing Runner]] |
 | One model selection runner output | [[LLM/Study/Local LLM Model Selection Runner]] |
 | One artifact custody audit output before compatibility, serving, benchmark, or deployment evidence depends on local bytes | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |
+| One runtime compatibility runner output before model pull, runtime health, smoke testing, or benchmarking | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | One decoding control runner output | [[LLM/Study/Decoding and Sampling Controls Runner]] |
 | One reasoning-budget runner output before quality, runtime, result-synthesis, or deployment decisions depend on thinking mode | [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]] |
@@ -300,6 +303,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
+- [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]

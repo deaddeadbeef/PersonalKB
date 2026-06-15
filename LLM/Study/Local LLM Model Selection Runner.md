@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] and [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when candidate facts should become a repeatable shortlist. The playbook teaches the decision. The hardware sizing runner proves whether weight memory, KV-cache, overhead, context, active sequences, and headroom fit. This runner turns a workload contract, hardware budget, and candidate manifest into JSON, Markdown, CSV, and JSONL evidence.
 
-Use [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] after endpoint, API-contract, benchmark, evaluation-set, quality, security, and operations evidence exists. Model selection answers what to test. Result synthesis answers whether the tested candidate should be kept, tuned, rejected, rerun, or promoted into a deployment memo.
+Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] after shortlisting when artifact, quantization, tokenizer, chat-template, route, model-id, custody, and sizing facts need a pass/hold/fail compatibility audit before model pull or endpoint health checks. Use [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] after endpoint, API-contract, benchmark, evaluation-set, quality, security, and operations evidence exists. Model selection answers what to test. Runtime compatibility answers whether the selected artifact/runtime path is coherent. Result synthesis answers whether the tested candidate should be kept, tuned, rejected, rerun, or promoted into a deployment memo.
 
 This runner does not scrape model pages or recommend current models by name. Model cards, licenses, quantized derivatives, and runtime support change. Put the source-checked facts into the manifest, then let the runner apply the gates consistently.
 
@@ -634,6 +634,7 @@ A `hold` result is not bad. It prevents a smoke response or leaderboard rank fro
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

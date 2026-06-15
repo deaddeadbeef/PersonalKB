@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM works only when the model architecture, file format, quantization, tokenizer, chat template, runtime, API route, and workload contract all match.
 
-Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]], [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]], and [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]], and before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist answers "am I allowed and prepared to acquire this exact artifact?" The artifact lab answers "which local bytes, cache path, import, or conversion output do I actually have?" The artifact custody audit answers "is that saved artifact evidence complete enough to count?" The stack anatomy note answers "which layer owns the proof or failure?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?"
+Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]], [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]], and [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]], and before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist answers "am I allowed and prepared to acquire this exact artifact?" The artifact lab answers "which local bytes, cache path, import, or conversion output do I actually have?" The artifact custody audit answers "is that saved artifact evidence complete enough to count?" The stack anatomy note answers "which layer owns the proof or failure?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?" Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] when the card should become repeatable pass/hold/fail JSON, Markdown, CSV, and JSONL evidence before model pull, runtime health, smoke testing, or benchmarking.
 
 Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] after the endpoint responds but before a generic client depends on the compatibility surface. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] when the template/tokenizer evidence should become a repeatable pass/hold/fail artifact before benchmark, quality, or deployment decisions.
 
@@ -162,6 +162,7 @@ Copy this into a benchmark row or capstone run note.
 This matrix is complete for one local deployment decision when you have:
 
 - [ ] a compatibility evidence card
+- [ ] a runtime compatibility runner output from [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] when the compatibility decision supports model pull, runtime health, smoke testing, benchmark, quality, or deployment evidence
 - [ ] a model/runtime choice justified by artifact format and quantization support
 - [ ] artifact custody audit output linked when local bytes support serving, benchmark, or deployment evidence
 - [ ] tokenizer and chat-template evidence or an explicit "runtime does not expose this" note
@@ -185,6 +186,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]

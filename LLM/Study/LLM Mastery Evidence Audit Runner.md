@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, paper claim audit, paper oral defense, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, hardware sizing, model custody, artifact custody audit, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
+| local-inference | workload/model selection, hardware sizing, model custody, artifact custody audit, runtime compatibility runner, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, recall/remediation audit, exam run sheet, capstone workbook/final note |
 
@@ -235,8 +235,8 @@ DEFAULT_GATES = [
         "required": True,
         "critical": True,
         "status": "hold",
-        "route": "LLM/Study/Local LLM Runtime and Model Compatibility Matrix",
-        "pass_signal": "Artifact format, quantization, tokenizer, chat template, runtime, route, and workload fit are proven.",
+        "route": "LLM/Study/Local LLM Runtime Compatibility Runner",
+        "pass_signal": "Architecture, artifact container, quantization, runtime support, tokenizer, chat template, route, model-id visibility, custody proof, sizing proof, compatibility decision, and next route are audited before model pull, health check, smoke test, or benchmark.",
     },
     {
         "gate_id": "local-template-tokenizer-compatibility",
@@ -1026,6 +1026,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
+- [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Application Integration Evidence Runner]]
