@@ -118,6 +118,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — Reusable client wrapper for local endpoint calls, streaming timing, error capture, and run logging
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] — Reproducible run log for local model/runtime comparisons
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] — Explain local serving latency and OOMs through prefill, decode, KV cache, batching, scheduler, slots, and admission control
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]] — Audit scheduler, KV-cache, queue, long-prompt, tuning, capacity, and decision-card evidence before serving-policy changes
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — Measure concurrent requests, queueing, TTFT, TPOT, throughput, saturation, and batch/offline serving decisions
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] — Save a repeatable concurrency ladder with per-request latency, throughput, success/error, saturation, and JSONL evidence
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] — Prove whether repeated system prompts, documents, examples, RAG context, or chat history actually reuse KV/prefix cache instead of just warming the model

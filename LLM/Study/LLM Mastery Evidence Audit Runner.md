@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, metric interpretation, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, model custody, runtime compatibility, endpoint, API/client, benchmark, quality |
+| local-inference | workload/model selection, model custody, runtime compatibility, endpoint, API/client, benchmark, scheduler evidence, quality |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, deployment decision |
 | exam | self-assessment, exam run sheet, capstone workbook/final note |
 
@@ -210,6 +210,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/Local LLM Inference Benchmark Log",
         "pass_signal": "TTFT, TPOT, tokens/sec, total latency, memory, quality, and decision are interpreted.",
+    },
+    {
+        "gate_id": "local-scheduler-evidence",
+        "domain": "local-inference",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM Scheduler Evidence Audit Runner",
+        "pass_signal": "Scheduler, KV-cache, queue, long-prompt, tuning, capacity, and decision-card evidence are audited before serving-policy claims.",
     },
     {
         "gate_id": "local-quality",
@@ -873,6 +882,7 @@ This runner is useful when:
 - [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]

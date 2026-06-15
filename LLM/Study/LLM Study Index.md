@@ -76,6 +76,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]]
@@ -175,6 +176,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] — run repeatable baseline, temperature, seed, stop-string, and output-cap probes before benchmark or quality comparisons
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] — connect PagedAttention, KV-cache pressure, chunked prefill, continuous batching, slots, and queue policy to local measurements
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]] — audit saved scheduler evidence rows before changing concurrency, queue, cache, or deployment policy
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] — run a controlled concurrency ladder and decide whether the setup is single-user, queued, batch, self-hosted, or hosted
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] — run fixed concurrent OpenAI-compatible requests and save p50/p95 latency, throughput, errors, saturation, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] — separate warm-model behavior from true repeated-prefix KV reuse, then measure prompt-cache impact on TTFT, prefill, quality, and cache risk

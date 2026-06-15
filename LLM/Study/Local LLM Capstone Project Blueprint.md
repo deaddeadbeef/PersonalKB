@@ -84,6 +84,7 @@ Create one dated capstone note or folder with these links:
 | Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing. |
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
+| Scheduler proof | Scheduler evidence audit output when concurrency, queue, cache, long-prompt, or serving-policy decisions affect the project. |
 | Quality proof | Prompt suite, rubric, pass/hold/fail, failure owner, next controlled action. |
 | RAG proof | Corpus manifest, chunk policy, embedding/reranker route, top-k evidence, cited answer, refusal. |
 | Tool proof | Schema, validated args, policy check, execution output, injected result, denied unsafe action. |
@@ -114,6 +115,7 @@ A strong project adds:
 - one harmless local tool with schema validation and policy denial
 - one runtime comparison or quantization/offload comparison
 - one context-budget row for a long or RAG prompt
+- one scheduler evidence audit when concurrency, queue, cache, or long-prompt policy affects the workload
 - one observability row with logs or metrics and resource pressure
 - one lifecycle row with restart, backup, upgrade, rollback, and post-change validation
 
@@ -131,6 +133,7 @@ You should be able to answer these without searching:
 | What exact artifact was served? | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] |
 | How do you know the client called the intended local route? | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
 | What metric made you keep, tune, or reject the setup? | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
+| What scheduler evidence supports the queue, cache, or long-prompt policy? | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |
 | What failed first when quality was weak? | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | If RAG is present, did retrieval or generation fail? | [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]] |
 | If a tool is present, who authorized execution? | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
@@ -157,6 +160,7 @@ This blueprint is complete for one project when:
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
 - [ ] the client proof is reproducible without UI-only steps
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
+- [ ] scheduler evidence is audited when the project changes concurrency, queue, cache, long-prompt, or deployment policy
 - [ ] RAG and tool paths are either proven or explicitly out of scope with a reason
 - [ ] security, operations, lifecycle, and deployment rows have pass/hold/fail decisions
 - [ ] [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] has no critical gaps or links remediation rows
@@ -178,6 +182,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

@@ -34,7 +34,7 @@ For vLLM or SGLang launched from a Windows workstation, use [[LLM/Study/Local LL
 
 For containerized vLLM or SGLang, use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before treating the endpoint as a repeatable service. It records Docker authority, GPU container smoke, pinned image tag, cache mount, loopback port publishing, `/v1/models`, host chat smoke, logs, metrics, and Compose validation.
 
-Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] after the first endpoint works but before tuning throughput, slots, batching, chunked prefill, preemption, or queue policy. That lab separates prefill, decode, KV-cache pressure, continuous batching, and admission-control behavior.
+Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] after the first endpoint works but before tuning throughput, slots, batching, chunked prefill, preemption, or queue policy. That lab separates prefill, decode, KV-cache pressure, continuous batching, and admission-control behavior. Use [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]] when those rows should be checked as one evidence bundle before changing concurrency, queue, cache, or deployment policy.
 
 Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions. Use [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] when those checks need repeatable endpoint exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error artifacts.
 
@@ -310,6 +310,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]

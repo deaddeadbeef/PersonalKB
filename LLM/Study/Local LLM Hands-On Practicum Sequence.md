@@ -212,6 +212,7 @@ Route:
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
@@ -231,6 +232,7 @@ Save:
 | Artifact | Minimum fields |
 |---|---|
 | Decision card | Baseline, changed layer, measured result, quality result, rejected alternative, keep/disable/hold |
+| Scheduler audit output | Required when the changed layer is concurrency, queue, cache, long-prompt, or scheduler policy |
 
 Pass signal: the change has a measured reason to keep it, reverse it, or test the next layer.
 
@@ -380,6 +382,8 @@ Internal routes:
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

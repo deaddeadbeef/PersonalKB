@@ -72,6 +72,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
 | Context/token budget runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] |  | Prompt components, exact-or-estimated token counts, reserve, margin, fit/hold/error status, drop plan, and next route are captured before long-context or RAG inference. | Not started |
 | Serving internals and scheduler | Scheduler mechanism row from [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] |  | Cold/warm, short/long, repeated-prefix, scheduler state, KV/cache pressure, queue/preemption/OOM behavior, and one-variable tuning decision are captured. | Not started |
+| Scheduler evidence audit | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]] |  | Hypothesis, latency phase, scheduler state, long-prompt interference, tuning delta, capacity event, decision card, proof links, and next-route output are audited before scheduler, queue, cache, or deployment policy changes. | Not started |
 | Concurrency and batch throughput | Concurrency ladder from [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] |  | Single-request baseline, max concurrency, p95 TTFT, throughput, memory, errors, saturation point, and backpressure policy are captured. | Not started |
 | Concurrency/batch runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] |  | C1/C2/C4 request rows, p50/p95 latency, throughput, success/error counts, optional TTFT, saturation, and next route are captured before shared-use or batch-serving claims. | Not started |
 | Prompt cache and KV reuse | Cache decision card from [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] |  | Cold load, warm model, repeated-prefix run, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are captured. | Not started |
@@ -507,6 +508,7 @@ Next run:
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
 - [ ] Any reasoning-capable local run has effort, parser, latency, quality, and trace-policy evidence.
 - [ ] Any shared, multi-client, or batch local serving claim has scheduler, KV-cache, concurrency, queue, saturation, and backpressure evidence.
+- [ ] Any scheduler, queue, cache, long-prompt, or serving-policy claim has a scheduler evidence audit output or linked remediation row.
 - [ ] Any local serving operations claim has observability evidence: model state, timing, logs/metrics, resource pressure, and next action.
 - [ ] Any maintained local LLM service has lifecycle evidence: pinned versions, cache/data paths, startup mode, backup, rollback, and post-change validation.
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
@@ -581,6 +583,7 @@ Next run:
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
+- [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
