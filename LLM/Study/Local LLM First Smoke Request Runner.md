@@ -35,10 +35,12 @@ Write these before running:
 |---|---|
 | Run folder |  |
 | Runtime health snapshot |  |
+| Runtime health runner JSON |  |
 | Runtime | Ollama / LM Studio / llama.cpp / vLLM / SGLang / other |
 | Native base URL | `http://127.0.0.1:11434` for Ollama |
 | OpenAI-compatible base URL | `http://127.0.0.1:11434/v1` for Ollama |
 | Model id |  |
+| Runtime health JSON |  |
 | Prompt | `Reply with exactly: local llm ok` |
 | Expected text | `local llm ok` |
 | Temperature | `0` |
@@ -70,6 +72,40 @@ def env_bool(name, default):
 
 def write_json(path, data):
     path.write_text(json.dumps(data, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
+
+
+def read_json(path):
+    if not path:
+        return None, "path not set"
+    try:
+        return json.loads(path.read_text(encoding="utf-8")), None
+    except FileNotFoundError:
+        return None, f"missing file: {path}"
+    except json.JSONDecodeError as exc:
+        return None, f"invalid json: {path}: {exc}"
+
+
+def resolve_path(value, base):
+    if not value:
+        return None
+    path = Path(str(value)).expanduser()
+    if not path.is_absolute():
+        path = base / path
+    return path.resolve()
+
+
+def latest_runtime_health(root):
+    patterns = [
+        "*/*runtime-health*.json",
+        "first-runtime-health/*.json",
+        "*runtime-health*.json",
+    ]
+    files = []
+    for pattern in patterns:
+        files.extend(path for path in root.glob(pattern) if path.is_file())
+    if not files:
+        return None
+    return sorted(files, key=lambda item: item.stat().st_mtime, reverse=True)[0]
 
 
 def normalize_text(value):
@@ -182,6 +218,87 @@ def route_decision(result, assistant_text, expected_text):
     return "pass"
 
 
+def health_result(record):
+    if not isinstance(record, dict):
+        return {}
+    result = record.get("result")
+    return result if isinstance(result, dict) else record
+
+
+def validate_runtime_health(path, model, native_base, openai_base, require_health):
+    if path is None:
+        if require_health:
+            return {
+                "status": "hold",
+                "decision": "runtime_health_missing",
+                "path": "",
+                "expected_model": "",
+                "expected_model_visible": False,
+                "missing_layer": "runtime health proof",
+                "block_reason": "runtime health proof is required before the first smoke request",
+            }
+        return {
+            "status": "skipped",
+            "decision": "runtime_health_not_required",
+            "path": "",
+            "expected_model": "",
+            "expected_model_visible": None,
+            "missing_layer": "",
+            "block_reason": "",
+        }
+    data, error = read_json(path)
+    if error:
+        return {
+            "status": "hold",
+            "decision": "runtime_health_unreadable",
+            "path": str(path),
+            "expected_model": "",
+            "expected_model_visible": False,
+            "missing_layer": "runtime health proof",
+            "block_reason": error,
+        }
+    top_status = str(data.get("status") or "").lower() if isinstance(data, dict) else ""
+    top_decision = str(data.get("decision") or "") if isinstance(data, dict) else ""
+    result = health_result(data)
+    expected_model = str(result.get("expected_model") or "")
+    expected_visible = result.get("expected_model_visible")
+    health_native_bases = [str(item).rstrip("/") for item in result.get("native_bases", [])] if isinstance(result.get("native_bases"), list) else []
+    health_openai_bases = [str(item).rstrip("/") for item in result.get("openai_bases", [])] if isinstance(result.get("openai_bases"), list) else []
+    missing = str(result.get("missing_layer") or "")
+
+    findings = []
+    if top_status != "pass":
+        findings.append(f"runtime health status is {top_status or 'missing'}")
+    if expected_model and expected_model != model:
+        findings.append(f"health expected model `{expected_model}` differs from smoke model `{model}`")
+    if expected_visible is False:
+        findings.append("health proof did not show the expected model")
+    if health_native_bases and native_base.rstrip("/") not in health_native_bases:
+        findings.append("native base differs from health proof")
+    if health_openai_bases and openai_base.rstrip("/") not in health_openai_bases:
+        findings.append("OpenAI-compatible base differs from health proof")
+
+    if findings:
+        return {
+            "status": "hold" if top_status != "fail" else "error",
+            "decision": "runtime_health_mismatch",
+            "path": str(path),
+            "expected_model": expected_model,
+            "expected_model_visible": expected_visible,
+            "missing_layer": missing or "runtime health mismatch",
+            "block_reason": "; ".join(findings),
+        }
+    return {
+        "status": "pass",
+        "decision": top_decision or "runtime_health_ready",
+        "path": str(path),
+        "expected_model": expected_model,
+        "expected_model_visible": expected_visible,
+        "missing_layer": missing,
+        "block_reason": "",
+    }
+
+
 def write_markdown(path, record):
     lines = [
         f"# First Smoke Request - {record['run_id']}",
@@ -194,6 +311,8 @@ def write_markdown(path, record):
         f"| Model | {md_cell(record['model'])} |",
         f"| Native base | {md_cell(record['native_base'])} |",
         f"| OpenAI base | {md_cell(record['openai_base'])} |",
+        f"| Runtime health JSON | {md_cell(record['runtime_health']['path'])} |",
+        f"| Runtime health decision | {md_cell(record['runtime_health']['decision'])} |",
         f"| Prompt | {md_cell(record['prompt'])} |",
         f"| Expected text | {md_cell(record['expected_text'])} |",
         f"| Native decision | {md_cell(record['native']['decision'])} |",
@@ -236,6 +355,7 @@ MAX_TOKENS = int(os.environ.get("LOCAL_LLM_MAX_TOKENS", "16"))
 TEMPERATURE = float(os.environ.get("LOCAL_LLM_TEMPERATURE", "0"))
 RUN_NATIVE = env_bool("LOCAL_LLM_RUN_NATIVE", True)
 RUN_OPENAI = env_bool("LOCAL_LLM_RUN_OPENAI", True)
+REQUIRE_RUNTIME_HEALTH = env_bool("LOCAL_LLM_REQUIRE_RUNTIME_HEALTH", True)
 
 out_dir = RUN_ROOT / "first-smoke-request"
 request_dir = out_dir / "requests"
@@ -274,12 +394,22 @@ openai_output_path = output_dir / f"{run_id}-openai-output.txt"
 write_json(native_request_path, native_body)
 write_json(openai_request_path, openai_body)
 
-if RUN_NATIVE:
+health_json_path = resolve_path(os.environ.get("LOCAL_LLM_RUNTIME_HEALTH_JSON"), RUN_ROOT)
+if health_json_path is None:
+    health_json_path = latest_runtime_health(RUN_ROOT)
+runtime_health = validate_runtime_health(health_json_path, MODEL, NATIVE_BASE, OPENAI_BASE, REQUIRE_RUNTIME_HEALTH)
+preflight_block = runtime_health["block_reason"]
+
+if preflight_block:
+    native_result = {"status": "skipped", "reason": preflight_block}
+elif RUN_NATIVE:
     native_result = post_json(f"{NATIVE_BASE}/api/generate", native_body, TIMEOUT_S)
 else:
     native_result = {"status": "skipped", "reason": "LOCAL_LLM_RUN_NATIVE=false"}
 
-if RUN_OPENAI:
+if preflight_block:
+    openai_result = {"status": "skipped", "reason": preflight_block}
+elif RUN_OPENAI:
     openai_result = post_json(
         f"{OPENAI_BASE}/chat/completions",
         openai_body,
@@ -291,8 +421,8 @@ else:
 
 native_extract = extract_native(native_result)
 openai_extract = extract_openai(openai_result)
-native_decision = "skipped" if not RUN_NATIVE else route_decision(native_result, native_extract["assistant_text"], EXPECTED_TEXT)
-openai_decision = "skipped" if not RUN_OPENAI else route_decision(openai_result, openai_extract["assistant_text"], EXPECTED_TEXT)
+native_decision = "skipped" if preflight_block or not RUN_NATIVE else route_decision(native_result, native_extract["assistant_text"], EXPECTED_TEXT)
+openai_decision = "skipped" if preflight_block or not RUN_OPENAI else route_decision(openai_result, openai_extract["assistant_text"], EXPECTED_TEXT)
 
 write_json(native_response_path, native_result)
 write_json(openai_response_path, openai_result)
@@ -300,7 +430,9 @@ native_output_path.write_text(native_extract["assistant_text"] + "\n", encoding=
 openai_output_path.write_text(openai_extract["assistant_text"] + "\n", encoding="utf-8")
 
 enabled_decisions = [decision for decision in (native_decision, openai_decision) if decision != "skipped"]
-if enabled_decisions and all(decision == "pass" for decision in enabled_decisions):
+if preflight_block:
+    status = "error" if runtime_health["status"] == "error" else "hold"
+elif enabled_decisions and all(decision == "pass" for decision in enabled_decisions):
     status = "pass"
 elif enabled_decisions and any(decision in {"pass", "hold"} for decision in enabled_decisions):
     status = "hold"
@@ -308,6 +440,8 @@ else:
     status = "error"
 
 missing = []
+if preflight_block:
+    missing.append(runtime_health["missing_layer"] or "runtime health proof")
 if native_decision == "error":
     missing.append("native route")
 elif native_decision == "hold":
@@ -334,6 +468,8 @@ record = {
     "model": MODEL,
     "native_base": NATIVE_BASE,
     "openai_base": OPENAI_BASE,
+    "require_runtime_health": REQUIRE_RUNTIME_HEALTH,
+    "runtime_health": runtime_health,
     "prompt": PROMPT,
     "expected_text": EXPECTED_TEXT,
     "temperature": TEMPERATURE,
@@ -390,6 +526,8 @@ $env:LOCAL_LLM_RUNTIME = "ollama"
 $env:LOCAL_LLM_MODEL = "<model-tag-from-pull-gate>"
 $env:LOCAL_LLM_NATIVE_BASE = "http://127.0.0.1:11434"
 $env:LOCAL_LLM_OPENAI_BASE = "http://127.0.0.1:11434/v1"
+$env:LOCAL_LLM_RUNTIME_HEALTH_JSON = "<path-to-runtime-health-json>"
+$env:LOCAL_LLM_REQUIRE_RUNTIME_HEALTH = "true"
 $env:LOCAL_LLM_SMOKE_PROMPT = "Reply with exactly: local llm ok"
 $env:LOCAL_LLM_EXPECT_TEXT = "local llm ok"
 $env:LOCAL_LLM_TEMPERATURE = "0"
@@ -397,9 +535,9 @@ $env:LOCAL_LLM_MAX_TOKENS = "16"
 python .\first-smoke-request.py
 ```
 
-Pass signal: `first-smoke-request\<run-id>-summary.json` and `.md` exist, both enabled routes are `pass`, the extracted output text matches `local llm ok`, and the next action is `first response debrief`. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] next when you want the timing conversion, token-rate row, mechanism owner, quality boundary, and next action saved as JSON, Markdown, and JSONL.
+Pass signal: `first-smoke-request\<run-id>-summary.json` and `.md` exist, `runtime_health.decision` is `runtime_health_ready`, both enabled routes are `pass`, the extracted output text matches `local llm ok`, and the next action is `first response debrief`. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] next when you want the timing conversion, token-rate row, mechanism owner, quality boundary, and next action saved as JSON, Markdown, and JSONL.
 
-Hold signal: one route answers but the other route fails, the answer text is not the expected smoke text, or the response shape lacks extractable assistant text. Save the files; do not change prompt, model, runtime, and route at the same time.
+Hold signal: runtime health proof is missing or mismatched, one route answers but the other route fails, the answer text is not the expected smoke text, or the response shape lacks extractable assistant text. Save the files; do not change prompt, model, runtime, and route at the same time.
 
 ## Evidence Row
 
@@ -412,6 +550,8 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 | Model id |  |
 | Native base URL |  |
 | OpenAI-compatible base URL |  |
+| Runtime health JSON |  |
+| Runtime health decision | pass / hold / error / skipped |
 | Prompt |  |
 | Expected text |  |
 | Native request |  |
@@ -432,6 +572,7 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 
 | Observation | Likely owner | Route |
 |---|---|---|
+| Runtime health proof missing, hold, failed, or model/base mismatch | pre-smoke evidence chain | [[LLM/Study/Local LLM First Runtime Health Runner]] |
 | Both routes connection-refuse or time out | server process, listener, firewall, wrong boundary | [[LLM/Study/Local LLM First Runtime Health Snapshot]] or [[LLM/Study/Local LLM Serving Runbook]] |
 | Native works and OpenAI-compatible fails | compatibility base URL, model id, auth placeholder, route shape | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
 | OpenAI-compatible works and native fails | wrong native base URL or non-Ollama runtime | [[LLM/Study/Local LLM Runtime Stack Anatomy]] |
@@ -444,7 +585,8 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 This smoke runner is complete only when:
 
 - [ ] run folder exists
-- [ ] runtime health runner output or snapshot exists, or is explicitly skipped with reason
+- [ ] runtime health runner output exists, or is explicitly skipped with reason
+- [ ] smoke summary records runtime-health JSON path, status, decision, expected model, and model visibility
 - [ ] model id, native base URL, OpenAI-compatible base URL, prompt, expected text, temperature, and max tokens are written
 - [ ] native request/response/output files exist or native route is explicitly skipped
 - [ ] OpenAI-compatible request/response/output files exist or OpenAI route is explicitly skipped
@@ -476,4 +618,5 @@ External/current sources checked 2026-06-15:
 - [Ollama API introduction](https://docs.ollama.com/api/introduction)
 - [Ollama generate endpoint](https://docs.ollama.com/api/generate)
 - [Ollama chat endpoint](https://docs.ollama.com/api/chat)
+- [Ollama usage metrics](https://docs.ollama.com/api/usage)
 - [Ollama OpenAI compatibility](https://docs.ollama.com/api/openai-compatibility)

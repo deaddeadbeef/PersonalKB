@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, paper claim audit, paper oral defense, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, hardware sizing, model custody, artifact custody audit, runtime compatibility runner, first model pull runner, runtime health runner, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
+| local-inference | workload/model selection, hardware sizing, model custody, artifact custody audit, runtime compatibility runner, first model pull runner, runtime health runner, first smoke request, first response debrief, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, recall/remediation audit, exam run sheet, capstone workbook/final note |
 
@@ -255,6 +255,24 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/Local LLM First Runtime Health Runner",
         "pass_signal": "Listener reachability, native runtime API, installed model ids, running-model or idle state, OpenAI-compatible model ids, expected-model visibility, loopback boundary, decision, missing layer, and next route are audited before the first prompt.",
+    },
+    {
+        "gate_id": "local-first-smoke-request",
+        "domain": "local-inference",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM First Smoke Request Runner",
+        "pass_signal": "Runtime-health JSON, model id, native and OpenAI-compatible base URLs, prompt, expected text, temperature, max token cap, request files, response files, extracted output, route decisions, missing layer, and next action are saved for the first controlled local inference prompt.",
+    },
+    {
+        "gate_id": "local-first-response-debrief",
+        "domain": "local-inference",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM First Response Debrief Runner",
+        "pass_signal": "The saved first response is interpreted into route proof, timing conversion, token-rate fields, mechanism owner, quality boundary, missing layer, and next action without sending another request.",
     },
     {
         "gate_id": "local-template-tokenizer-compatibility",
@@ -1047,6 +1065,8 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Runner]]
+- [[LLM/Study/Local LLM First Smoke Request Runner]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Application Integration Evidence Runner]]

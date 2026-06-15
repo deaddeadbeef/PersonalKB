@@ -2922,3 +2922,32 @@ Verification:
 - Extracted and compiled `local_llm_first_model_pull_runner.py`; pass fixture routes to `LLM/Study/Local LLM First Runtime Health Runner` when `next_route` is supplied.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Bind first smoke request to runtime health proof
+
+Scope: tighten the first local inference request so smoke output is bound to saved runtime-health evidence, and make the first smoke request plus first-response debrief explicit mastery gates before endpoint or quality claims.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM First Smoke Request Runner.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Updated the standard-library first smoke request runner to read `LOCAL_LLM_RUNTIME_HEALTH_JSON`, require runtime-health proof by default, record runtime-health path/status/decision/model visibility, and skip both prompt routes when health proof is missing or mismatched.
+- Added `local-first-smoke-request` and `local-first-response-debrief` to the mastery evidence audit default gate set.
+- Updated the dashboard, capstone workbook, roadmap, LLM MOC, and study index so the first controlled prompt is explicitly tied to runtime-health JSON and first-response debrief evidence.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_first_smoke_request_runner.py` from the note.
+- Smoke runner fixtures: fake local server plus valid health proof -> `pass`; missing health proof -> `hold` with both routes skipped; mismatched health proof -> `hold` with both routes skipped.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> 42 gates, 42 holds, including `local-first-smoke-request` and `local-first-response-debrief`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

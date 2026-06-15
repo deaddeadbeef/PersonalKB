@@ -71,7 +71,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You pulled the first model and need to know whether it counts | [[LLM/Study/Local LLM First Model Pull Runner]] | Selected tag, source check, store decision, pull output, CLI/API inventory, show metadata, and next route audit |
 | You need to know whether the local runtime is reachable before endpoint smoke | [[LLM/Study/Local LLM First Runtime Health Snapshot]] | Health JSON/Markdown, installed and loaded model ids, OpenAI-compatible ids, missing layer, and next action |
 | You need a repeatable no-generation runtime health verdict | [[LLM/Study/Local LLM First Runtime Health Runner]] | Listener, native API, `/api/tags`, `/api/ps`, `/v1/models`, expected-model visibility, boundary, and pass/hold/fail output |
-| You are ready to send the first controlled local inference request | [[LLM/Study/Local LLM First Smoke Request Runner]] | Native and OpenAI-compatible request/response/output files, status, missing layer, and next action |
+| You are ready to send the first controlled local inference request | [[LLM/Study/Local LLM First Smoke Request Runner]] | Runtime-health JSON plus native and OpenAI-compatible request/response/output files, status, missing layer, and next action |
 | You are ready to execute the first local endpoint proof | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | Filled run folder, native response, OpenAI-compatible response, benchmark row, decision row |
 | You have a first endpoint run folder and need to know whether it counts | [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] | Run card, preflight, model custody, runtime health, smoke response, debrief, boundary, and decision audit |
 | You have the first response JSON and need to interpret it | [[LLM/Study/Local LLM First Response Debrief Card]] | Route claim, timing conversion, mechanism owner, benchmark add-on row, and next controlled action |
@@ -135,6 +135,8 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |  |
 | First model pull runner | [[LLM/Study/Local LLM First Model Pull Runner]] |  |
 | First runtime health runner | [[LLM/Study/Local LLM First Runtime Health Runner]] |  |
+| First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |  |
+| First response debrief runner | [[LLM/Study/Local LLM First Response Debrief Runner]] |  |
 | Hardware sizing runner | [[LLM/Study/Local LLM Hardware Sizing Runner]] |  |
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |

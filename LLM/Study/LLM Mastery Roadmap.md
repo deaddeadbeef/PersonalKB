@@ -321,6 +321,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [ ] I can compute and audit weight memory, KV-cache memory, runtime overhead, context, active sequences, and headroom before pulling or serving a model.
 - [ ] I can audit a first model pull from saved source, store, compatibility, pull, list, tags, show, digest, and next-route evidence before endpoint smoke.
 - [ ] I can audit runtime health from listener, native API, model-list, running-model, OpenAI-compatible model-list, expected-model, boundary, missing-layer, and next-route evidence before the first prompt.
+- [ ] I can bind the first smoke request to runtime-health JSON, save native and OpenAI-compatible request/response/output files, and debrief the first response before making quality claims.
 - [ ] I can decide when local reasoning effort is worth the latency, token budget, parser, and trace-retention cost, and I can audit that decision with a reasoning-budget runner output.
 - [ ] I can turn scored local prompt-suite rows into quality-evaluation runner output with saved prompt/response artifacts, rubric scores, boundary proof, and pass/hold/fail status.
 - [ ] I can explain whether a local serving bottleneck belongs to queueing, prefill, decode, KV cache, slots, continuous batching, chunked prefill, preemption, or admission control.
