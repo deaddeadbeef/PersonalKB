@@ -3922,3 +3922,37 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new quality remediation note, result id, result path, or held probe ids.
+
+## [2026-06-16] curate | Prove calculator tool remediation for held arithmetic probe
+
+Scope: remediate the held `K-01` arithmetic probe with a deterministic local calculator tool loop before making any broader local-model quality claim.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16]] with native calculator tool-loop evidence for the previously held `K-01` arithmetic prompt.
+- Created and compiled `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\calculator-tool-remediation-runner.py`.
+- Ran the calculator tool remediation runner against `http://127.0.0.1:11434/api/chat` with `qwen3.5:2b-q4_K_M`, loopback boundary, `think=false`, and temperature `0`.
+- Routed the proof through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, and the prior quality remediation note.
+- Kept the remaining quality boundary explicit: `K-01` has a native calculator tool route, but `C-01`, broader quality, request lifecycle, evidence-pack audit, and academic defense remain incomplete.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty LLM files outside this routed slice.
+
+Verification:
+- `python -m py_compile calculator-tool-remediation-runner.py`: clean.
+- Calculator remediation runner returned `pass` / `pass/native_tool_loop_remediation_ready`, 4 pass rows, 1 diagnostic hold, native tool-call status `pass`, native tool-result follow-up status `pass`, direct ad hoc finalizer status `hold`, accepted path `native_tool_loop`.
+- Native tool-result follow-up returned `answer=410; reason=The calculation of 17 multiplied by 23 plus 19 results in 410.`
+- Bad expression denial blocked `__import__('os').system('whoami')` before execution.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the calculator proof note, run id, runner path, or evidence paths.

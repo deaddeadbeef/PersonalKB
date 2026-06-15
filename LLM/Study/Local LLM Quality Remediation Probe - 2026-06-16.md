@@ -9,7 +9,7 @@ last-machine-check: 2026-06-16T06:22:09+08:00
 
 # Local LLM Quality Remediation Probe - 2026-06-16
 
-> **One-line summary** The first focused remediation pass did not clear the quality hold: output-cap changes and stricter prompts did not fix `K-01`, and `C-01` only passed when the exact target bullet template was supplied.
+> **One-line summary** The first focused remediation pass did not clear the quality hold: output-cap changes and stricter prompts did not fix `K-01`, and `C-01` only passed when the exact target bullet template was supplied. A later calculator tool proof remediated the `K-01` arithmetic path, but not the `C-01` strict-format path.
 
 This extends [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]. It is quality diagnosis, not quality readiness.
 
@@ -66,6 +66,18 @@ This extends [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026
 - Arithmetic-like tasks should route to a deterministic tool, a stronger model, or a separate model-selection comparison before this local setup supports real work.
 - Strict formatting tasks need either exact templates, structured-output controls, or a stronger instruction-following model before they count as reliable.
 
+## Follow-Up
+
+[[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] resolved the arithmetic branch of this hold for `K-01` by using a native Ollama calculator tool loop:
+
+- deterministic calculator output: `410`
+- bad expression denial: passed before execution
+- native model tool-call emission: passed
+- native tool-result follow-up: returned `answer=410; reason=The calculation of 17 multiplied by 23 plus 19 results in 410.`
+- direct ad hoc tool-result finalization: held because it copied placeholder-shaped text
+
+The remaining quality owner is not arithmetic. It is strict formatting, structured output, broader prompt-suite quality, or model/runtime selection.
+
 ## What This Does Not Prove
 
 - That every larger local model would fail the same probes.
@@ -75,10 +87,10 @@ This extends [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026
 
 ## Next Actions
 
-1. Route arithmetic remediation through [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] or a deterministic calculator/tool-result-injection proof.
+1. Use [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] as the accepted `K-01` arithmetic remediation route.
 2. Route general quality remediation through [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] or [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] if a stronger local model is tested.
 3. Route strict-format remediation through [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] plus structured-output controls before repeating the full quality probe.
-4. Do not run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] as a pass attempt until the quality route is either remediated or explicitly accepted as a documented hold.
+4. Do not run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] as a pass attempt until the remaining quality route is either remediated or explicitly accepted as a documented hold.
 
 ## References
 
@@ -89,6 +101,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
+- [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Runtime Comparison Runner]]
