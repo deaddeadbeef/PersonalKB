@@ -52,6 +52,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You can summarize a paper but cannot defend its evidence or local implication | [[LLM/Study/LLM Paper Claim Ledger]] | Claim, evidence type, limitation, mechanism, local implication, and follow-up proof |
 | You have paper claim rows but need to know whether academic proof is complete | [[LLM/Study/LLM Paper Claim Audit Runner]] | Fast-path coverage, source proof, claim anatomy, local implication, and follow-up route audit |
 | You have a paper claim but no local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] | Paper claim, mechanism, local implication, route, proof question, and next artifact |
+| You have paper routes and local artifacts but cannot defend why they prove mastery | [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]] | Paper basis, mechanism, local prediction, artifact, metric, failure owner, decision, and oral defense answer |
 | You cannot explain tokens, logits, loss, attention, or KV cache | [[LLM/Study/LLM Math and Tensor Shape Primer]] | Worked explanation or shape row |
 | You can run local commands but cannot explain the whole serving path | [[LLM/Study/Local LLM End-to-End Mental Model]] | One request explained from artifact, tokenizer, runtime, prefill, decode, route, client, quality, and operations |
 | Output continues the prompt, ignores roles, leaks role markers, or behaves unlike the chat model | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] | Model package, tokenizer, chat template, rendered prompt or non-exposure control, route behavior, stop boundary, and downstream evidence audit |
@@ -106,6 +107,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Paper claim ledger | [[LLM/Study/LLM Paper Claim Ledger]] |  |
 | Paper claim audit | [[LLM/Study/LLM Paper Claim Audit Runner]] |  |
 | Paper-to-local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] |  |
+| Academic-to-local defense matrix | [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]] |  |
 | Mechanism bridge | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |  |
 | End-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] |  |
 | Request lifecycle runner | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |  |
@@ -173,6 +175,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One paper claim/evidence/limitation row | [[LLM/Study/LLM Paper Claim Ledger]] |
 | One paper claim audit output | [[LLM/Study/LLM Paper Claim Audit Runner]] |
 | One paper-to-local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] |
+| One academic-to-local defense matrix output | [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]] |
 | One complete daily study session | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] |
 | One mechanism-to-local-control row | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] or capstone note |
 | One end-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] or capstone note |
@@ -260,6 +263,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
+- [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]

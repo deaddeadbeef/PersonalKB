@@ -68,6 +68,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] — Academic claim ledger tying each fast-path paper to evidence, limitation, mechanism, local implication, and follow-up proof
 - [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] — Machine-check fast-path paper coverage, claim anatomy, source proof, local implications, and follow-up proof routes
 - [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] — Route paper claims to local proof artifacts so academic reading ends in inference, RAG, evaluation, adaptation, or deployment evidence
+- [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]] — Audit whether paper claims, local predictions, artifacts, metrics, failure owners, and decisions form a defensible mastery matrix
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — Translate academic mechanisms into local inference controls, failure diagnoses, and proof artifacts
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — Explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] — Core shapes and formulas for tokens, logits, loss, attention, KV cache, and inference metrics

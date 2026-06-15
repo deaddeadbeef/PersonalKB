@@ -59,7 +59,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 
 | Domain | Required gates |
 |---|---|
-| academic | paper map, paper claim ledger, metric interpretation, judge calibration, training pipeline |
+| academic | paper map, paper claim ledger, paper claim audit, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
 | local-inference | workload/model selection, model custody, runtime compatibility, template/tokenizer compatibility, endpoint, API/client, benchmark, scheduler evidence, evaluation set design, quality |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
@@ -111,6 +111,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/LLM Paper Claim Audit Runner",
         "pass_signal": "Fast-path paper coverage, claim anatomy, source proof, local implication, and follow-up proof routes are audited.",
+    },
+    {
+        "gate_id": "academic-to-local-defense-matrix",
+        "domain": "academic",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/LLM Academic-to-Local Defense Matrix Runner",
+        "pass_signal": "Paper basis, mechanism, local prediction, artifact, metric, confounder, failure owner, decision, and oral answer are defended together.",
     },
     {
         "gate_id": "academic-metric-interpretation",
@@ -944,6 +953,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Paper Claim Audit Runner]]
+- [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM Model Selection Runner]]

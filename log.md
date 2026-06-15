@@ -2676,3 +2676,33 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 30 gates, 30 holds.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4945 files, 3074 Markdown files, 909 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | LLM academic-to-local defense matrix runner
+
+Scope: add a repeatable defense matrix for the LLM mastery path so academic paper claims, mechanisms, local predictions, artifacts, metrics, failure owners, and decisions can be checked together before a capstone or oral/practical defense counts.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Academic-to-Local Defense Matrix Runner.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Paper-to-Local Proof Router.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library academic-to-local defense matrix runner that validates expected clusters, paper proof, mechanism, local prediction, local artifact, metric kind, controlled variable, confounder, failure owner, decision, defense answer, and next route.
+- Routed the runner from the LLM MOC, study index, dashboard, roadmap, capstone workbook, paper-to-local proof router, and mastery evidence audit.
+- Added an `academic-to-local-defense-matrix` default gate to the mastery evidence audit runner.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `llm_academic_to_local_defense_matrix_runner.py` from the note.
+- Defense matrix fixtures: pass -> exit 0 `defense_matrix_ready`; hold -> exit 1 `defense_matrix_incomplete`; fail -> exit 2 `defense_matrix_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 31 gates, 31 holds.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4946 files, 3075 Markdown files, 910 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
