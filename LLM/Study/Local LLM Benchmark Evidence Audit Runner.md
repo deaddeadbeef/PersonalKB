@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First
 
 This runner does not benchmark a live endpoint. It audits saved benchmark rows and proof links. That makes it safe to run after Ollama native responses, OpenAI-compatible client logs, vLLM benchmark JSON, SGLang benchmark/profiling output, GenAI-Perf-style metrics, or a hand-entered benchmark-log row.
 
+Current dated proof: [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] records a `pass/benchmark_evidence_ready` audit for the first-smoke OpenAI-compatible benchmark row, scoped to interpretation-only use with quality, capacity, and comparison limits explicit.
+
 ## What This Proves
 
 | Evidence family | Checks | Why it matters |
@@ -651,6 +653,7 @@ Internal:
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]

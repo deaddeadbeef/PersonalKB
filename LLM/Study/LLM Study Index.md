@@ -24,6 +24,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]]
 - [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]]
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]]
@@ -180,6 +181,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] — working local Ollama proof for `qwen3.5:2b-q4_K_M`: store, install, pull, health, native response, OpenAI-compatible response, and debrief
 - [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]] — native first-smoke request lifecycle pass with client, prompt, tokenization, prefill, decode, stop, detokenization, and application rows
 - [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] — OpenAI-compatible non-streaming client pass and streaming timing pass for first event, first visible content, usage, and final output
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] — first-smoke benchmark row and benchmark evidence audit pass for interpretation-only use, with quality/capacity/comparison boundaries explicit
 - [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] — endpoint evidence audit and compatibility pass, plus first quality probe hold with 3/5 passing probes
 - [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] — focused `K-01`/`C-01` remediation held after output-cap and prompt changes; points to tool/model/structured-output remediation
 - [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] — native calculator tool loop cleared the held `K-01` arithmetic probe while direct ad hoc finalization stayed diagnostic
@@ -252,6 +254,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] — measure first event, first visible content delta, chunks, final text, total latency, usage gaps, and streaming errors
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] — convert first client and streaming run logs into one benchmark row with timing, token, quality, missing-layer, and next-action fields
 - [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] — audit benchmark rows for workload, route/model identity, proof, token counts, timing phases, memory/context, fixed settings, quality boundary, and next action before result synthesis
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] — current first-smoke benchmark-row builder and benchmark-audit proof
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — check endpoint exposure, logs, RAG corpus boundaries, prompt injection, and tool permissions
 - [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] — capture no-generation exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error evidence
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement

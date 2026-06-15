@@ -4068,3 +4068,40 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` and `_ops/reports/audit-placeholder-hits.md` found no hits for the streaming timing proof note, run ids, runner paths, or evidence paths.
+
+## [2026-06-16] curate | Prove first benchmark row audit
+
+Scope: convert the OpenAI-compatible client/streaming first-smoke evidence into a normalized benchmark row and benchmark evidence audit without treating the row as quality, capacity, or comparison proof.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Benchmark Evidence Audit Runner.md`
+- `LLM/Study/Local LLM First Benchmark Row Builder.md`
+- `LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM First Inference Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] with the first normalized local benchmark row and passing benchmark evidence audit.
+- Extracted and compiled the benchmark-row builder and benchmark evidence audit runner scripts into the evidence folder for the first OpenAI-compatible route-smoke run.
+- Ran the builder against the saved non-streaming client log, streaming timing log, and native response metadata.
+- Ran the benchmark evidence audit for the first-smoke row and kept the scope limited to interpretation of one local run: no ranking, no capacity claim, and no quality claim.
+- Routed the proof through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, first-inference proof, streaming proof, benchmark-row builder, and benchmark evidence audit runner.
+- Did not copy the row into `LLM/Study/Local LLM Inference Benchmark Log.md` because that live note was already dirty outside this slice.
+
+Verification:
+- `python -m py_compile` passed for `first-benchmark-row.py`.
+- `python -m py_compile` passed for `local_llm_benchmark_evidence_audit_runner.py`.
+- Benchmark-row builder returned `pass` for row `20260616-072026-b4fd682f`: first event `0.367s`, TTFT `1.721s`, total latency `1.737s`, 28 prompt tokens, 265 output tokens, client output `152.562` tokens/s, native eval `31.511` tokens/s.
+- Benchmark evidence audit returned `pass` / `benchmark_evidence_ready`, all 9 required evidence kinds present, and 0 issues.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over audit reports found no hits for the benchmark proof note, benchmark run id, audit run id, builder output path, or audit output path.

@@ -4,7 +4,7 @@ up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
 tier-coverage: [practice]
 last-verified: 2026-06-16
-last-machine-check: 2026-06-16T07:20:26+08:00
+last-machine-check: 2026-06-16T07:35:35+08:00
 ---
 
 # Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16
@@ -12,6 +12,8 @@ last-machine-check: 2026-06-16T07:20:26+08:00
 > **One-line summary** The local Ollama OpenAI-compatible route now has saved client and streaming timing evidence: the non-streaming reusable client call passed, and the streaming call measured first event, first visible content, reasoning chunks, final text, usage, and completion.
 
 Use this after [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]]. The lifecycle proof showed that the OpenAI-compatible response had token/output evidence but no native prefill timing. This note fills the client-observable timing gap. It does not replace native server-side prefill/decode timing from the Ollama native route.
+
+Update: [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] now converts this client/streaming evidence into a first-smoke benchmark row and a passing benchmark evidence audit for interpretation-only use.
 
 ## Verdict
 
@@ -94,7 +96,7 @@ The event stream started with OpenAI-compatible chunks whose `delta.reasoning` f
 
 1. Treat OpenAI-compatible client and streaming timing as evidenced for the first-smoke route.
 2. Keep native timing and OpenAI-compatible timing separate in benchmark and evidence-pack audits: native has server prefill/decode fields, while OpenAI-compatible has client latency and stream timing.
-3. Use [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] or [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] before using these numbers for model/runtime comparisons.
+3. Use [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] as the current interpreted first-smoke benchmark row before any evidence-pack audit.
 4. Continue toward operations with [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]] and lifecycle/rollback proof.
 
 ## References
@@ -108,6 +110,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]]
 

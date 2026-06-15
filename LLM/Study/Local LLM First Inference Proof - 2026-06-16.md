@@ -9,11 +9,11 @@ last-machine-check: 2026-06-16T06:22:09+08:00
 
 # Local LLM First Inference Proof - 2026-06-16
 
-> **One-line summary** This workstation now has a working local Ollama endpoint on loopback: model store, runtime install, model pull, runtime health, native response, OpenAI-compatible response, first response debrief, endpoint audit, native request lifecycle, OpenAI-compatible client/streaming timing, and loopback security/privacy proof all have saved evidence.
+> **One-line summary** This workstation now has a working local Ollama endpoint on loopback: model store, runtime install, model pull, runtime health, native response, OpenAI-compatible response, first response debrief, endpoint audit, native request lifecycle, OpenAI-compatible client/streaming timing, first-smoke benchmark-row audit, and loopback security/privacy proof all have saved evidence.
 
-This is route and loopback-boundary proof, not a quality or mastery certificate. Native request lifecycle proof and OpenAI-compatible client/streaming timing proof now exist, but quality remediation, benchmark audit, OpenAI-compatible server-side prefill/decode timing, non-loopback security, and academic oral-defense proof still need their own rows.
+This is route and loopback-boundary proof, not a quality or mastery certificate. Native request lifecycle proof, OpenAI-compatible client/streaming timing proof, and first-smoke benchmark-row audit now exist, but quality remediation, evidence-pack audit, OpenAI-compatible server-side prefill/decode timing, non-loopback security, and academic oral-defense proof still need their own rows.
 
-Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] records endpoint evidence audit `pass`, chat/template/tokenizer compatibility `pass`, and first quality probe `hold` at 3/5. [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]] records native request lifecycle `pass/lifecycle_trace_ready` and OpenAI-compatible server-side timing contrast `hold/lifecycle_trace_partial`. [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] records OpenAI-compatible non-streaming client `pass` and streaming timing `pass` with first event, TTFT, chunk counts, usage, and exact output. [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] records focused remediation `hold`, 1/8 pass, 7/8 hold, 0 errors. [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] records security/privacy runner `pass/loopback_private_ready` for the current loopback-only endpoint.
+Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] records endpoint evidence audit `pass`, chat/template/tokenizer compatibility `pass`, and first quality probe `hold` at 3/5. [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]] records native request lifecycle `pass/lifecycle_trace_ready` and OpenAI-compatible server-side timing contrast `hold/lifecycle_trace_partial`. [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] records OpenAI-compatible non-streaming client `pass` and streaming timing `pass` with first event, TTFT, chunk counts, usage, and exact output. [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] records benchmark-row builder `pass` and benchmark evidence audit `pass/benchmark_evidence_ready` for interpretation-only use. [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] records focused remediation `hold`, 1/8 pass, 7/8 hold, 0 errors. [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] records security/privacy runner `pass/loopback_private_ready` for the current loopback-only endpoint.
 
 ## Verdict
 
@@ -31,6 +31,7 @@ Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-1
 | First response debrief | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-response-debrief\first-smoke-final-qwen35-2b-q4-debrief.json` |
 | Native request lifecycle | `pass` | [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16]] |
 | OpenAI-compatible client and streaming timing | `pass` | [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] |
+| First benchmark row and benchmark audit | `pass` for interpretation-only use | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] |
 | Endpoint audit and first quality probe | `hold` for quality | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] |
 | Focused quality remediation | `hold` | [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]] |
 | Security/privacy runner | `pass` for loopback | [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] |
@@ -97,13 +98,14 @@ The first fixed-cap smoke runner attempts with `16` and `128` tokens returned HT
 - Native and OpenAI-compatible loopback routes can return a controlled local response.
 - The first response can be interpreted through load, prefill, and decode timing fields, and the native request now has an eight-phase lifecycle trace.
 - The OpenAI-compatible route can be called from a reusable client and can stream final text with measured first event, TTFT, event counts, reasoning chunks, content chunks, and usage.
+- The first-smoke OpenAI-compatible run now has a benchmark row and benchmark evidence audit, scoped to interpretation-only use.
 
 ## What This Does Not Prove
 
 - No-notes academic command of LLM papers or mechanisms.
 - Workload quality for coding, Japanese study, RAG, tools, long context, or structured output. The first quality probe is measured and the focused remediation pass still held.
 - Loopback security/privacy now has a no-generation proof, but non-loopback security, authentication, LAN exposure, UI integration, RAG, and tool safety remain unproven.
-- Stable benchmark performance under repeated runs, concurrency, server-side OpenAI-compatible prefill/decode timing, or service restarts.
+- Stable benchmark performance under repeated runs, capacity/memory headroom, concurrency, server-side OpenAI-compatible prefill/decode timing, or service restarts.
 - Capstone readiness; the endpoint evidence and inference evidence pack audits still need to run.
 
 ## Next Actions
@@ -111,7 +113,7 @@ The first fixed-cap smoke runner attempts with `16` and `128` tokens returned HT
 1. Route the arithmetic failure through [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] or stronger-model selection before trusting calculation-like work.
 2. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] only as a documented hold until quality is resolved or explicitly accepted as a limitation.
 3. Keep the endpoint loopback-only until a separate LAN/auth/firewall/UI/RAG/tool proof exists.
-4. Use [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] as the current OpenAI-compatible client/streaming timing proof; keep native server timing separate from OpenAI-compatible client TTFT.
+4. Use [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] as the current interpreted first-smoke benchmark row; keep it out of model/runtime comparisons.
 5. Continue the academic track with [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] and [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]].
 
 ## References
@@ -123,6 +125,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]]
 - [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]]
 - [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

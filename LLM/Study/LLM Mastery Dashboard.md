@@ -28,13 +28,13 @@ If there is no saved answer or evidence row, the session was reading, not master
 
 | Area | Status | Next proof |
 |---|---|---|
-| Current status snapshot | Endpoint audit, native request lifecycle, OpenAI-compatible streaming timing, and loopback security/privacy proof passed; native calculator loop remediated `K-01`; app-rendered structured IDs remediated `C-01`; academic defense and capstone audits still held | Start from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]], [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]], [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]], [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]], [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]], [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]], [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16|Local LLM Structured Format Remediation Proof - 2026-06-16]], and [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] |
+| Current status snapshot | Endpoint audit, native request lifecycle, OpenAI-compatible streaming timing, first-smoke benchmark-row audit, and loopback security/privacy proof passed; native calculator loop remediated `K-01`; app-rendered structured IDs remediated `C-01`; academic defense and capstone audits still held | Start from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]], [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]], [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]], [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]], [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]], [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]], [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]], [[LLM/Study/Local LLM Structured Format Remediation Proof - 2026-06-16|Local LLM Structured Format Remediation Proof - 2026-06-16]], and [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] |
 | Field map and papers | Not yet proven today | Explain one paper cluster without notes |
 | Math and mechanisms | Not yet proven today | Work one token/logit/attention/KV-cache explanation |
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
-| First local endpoint | Passed for Ollama loopback, endpoint audit, native request lifecycle, OpenAI-compatible client/streaming timing, and loopback security/privacy; first inference evidence pack audit still pending | Do not attempt a pass-state evidence-pack audit until [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] is resolved or explicitly accepted as a held quality boundary |
+| First local endpoint | Passed for Ollama loopback, endpoint audit, native request lifecycle, OpenAI-compatible client/streaming timing, first-smoke benchmark-row interpretation, and loopback security/privacy; first inference evidence pack audit still pending | Use [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] as the current interpreted first-smoke benchmark row; do not attempt a pass-state evidence-pack audit until [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] is resolved or explicitly accepted as a held quality boundary |
 | Model and runtime choice | Ollama `0.30.8` and `qwen3.5:2b-q4_K_M` are proven for endpoint route proof | Keep this model fixed while isolating the quality holds unless the remediation row names model capability as the owner |
-| Benchmark and quality | First quality probe held at 3/5; focused remediation diagnosed `K-01`/`C-01`; calculator loop remediated `K-01`; structured renderer remediated `C-01` | Rerun quality or evidence-pack audit only with row ownership explicit: model-owned, tool-owned, or renderer-owned |
+| Benchmark and quality | First-smoke benchmark row and benchmark evidence audit passed for interpretation-only use; first quality probe held at 3/5; focused remediation diagnosed `K-01`/`C-01`; calculator loop remediated `K-01`; structured renderer remediated `C-01` | Rerun quality or evidence-pack audit only with row ownership explicit: benchmark-row-owned, model-owned, tool-owned, or renderer-owned |
 | RAG/tools | Native calculator tool loop passed for one harmless arithmetic tool; broader tools and RAG are not proven | Save separate retrieval, citation, structured-output, multi-tool, denial, logging, and policy rows before real tool or RAG integration |
 | Operations and deployment | Loopback-only security/privacy proof passed for the current Ollama endpoint; lifecycle, observability, and deployment are not proven | Keep [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] as the current boundary proof, then save lifecycle, observability, or deployment decision rows |
 
@@ -108,6 +108,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row; current first-smoke proof is [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] |
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
 | You have benchmark rows and need to know whether the numbers are interpretable | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] | Workload, route/model identity, proof, token counts, timing, memory/context, fixed settings, quality boundary, and next-action audit |
+| You need the current interpreted first-smoke benchmark row | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] | Benchmark row `20260616-072026-b4fd682f`, audit `pass/benchmark_evidence_ready`, all required evidence kinds present, and boundaries for quality/capacity/comparison |
 | You compared local runtimes and need to know whether the winner is defensible | [[LLM/Study/Local LLM Runtime Comparison Runner]] | Fixed controls, endpoint proof, benchmark audit, quality boundary, security boundary, selected runtime, rejected alternative, and review trigger |
 | You have a long, RAG, tool, or multi-turn prompt and need fit proof | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] | Context manifest, component tokens, reserve, margin, fit decision, drop plan, and JSONL row |
 | You can quote tokens/sec but cannot explain p95 latency under load | [[LLM/Study/Local LLM Queueing and Tail Latency Field Guide]] | Arrival rate, service time, utilization, queue wait, tail latency, prefill/decode, admission policy, and proof worksheet |
@@ -158,7 +159,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Template/tokenizer compatibility | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |  |
 | Failure triage | [[LLM/Study/Local LLM Failure Triage Runner]] |  |
 | Local inference metric interpretation | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |  |
-| Benchmark evidence audit | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] |  |
+| Benchmark evidence audit | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] and [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] | passed for first-smoke interpretation only; not a capacity, quality, or comparison pass |
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Mastery evidence audit | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |  |
 | Mastery gap triage | [[LLM/Study/LLM Mastery Gap Triage Runner]] |  |
@@ -261,7 +262,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One complete daily study session | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] |
 | One mechanism-to-local-control row | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] or capstone note |
 | One end-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] or capstone note |
-| One interpreted local inference benchmark row | [[LLM/Study/Local LLM Inference Metrics Field Guide]] or [[LLM/Study/Local LLM Inference Benchmark Log]] |
+| One interpreted local inference benchmark row | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] |
 | One machine-specific first-run readiness row | [[LLM/Study/Local LLM First Run Readiness Snapshot]] |
 | One fresh first-run readiness runner output before install, pull, or smoke request | [[LLM/Study/Local LLM First Run Readiness Runner]] |
 | One first model source recheck row | [[LLM/Study/Local LLM First Model Source Recheck Runner]] |
@@ -297,8 +298,8 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first client harness run | [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] |
 | One application integration evidence audit output | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |
 | One first streaming timing row | [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] |
-| One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
-| One benchmark evidence audit output before result synthesis or deployment depends on timing, throughput, or memory numbers | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] |
+| One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] |
+| One benchmark evidence audit output before result synthesis or deployment depends on timing, throughput, or memory numbers | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] |
 | One runtime comparison runner output before deployment depends on an Ollama, LM Studio, llama.cpp, vLLM, SGLang, Docker, WSL, or UI-over-provider choice | [[LLM/Study/Local LLM Runtime Comparison Runner]] |
 | One context/token budget runner output | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | One queueing/tail-latency worksheet output | [[LLM/Study/Local LLM Queueing and Tail Latency Field Guide]] |
@@ -317,7 +318,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One deployment readiness audit output | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One first inference evidence pack audit output | [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] |
-| One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
+| One benchmark row | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] |
 | One quality prompt-suite design audit | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | One quality evaluation runner output before result synthesis or deployment readiness depends on quality | [[LLM/Study/Local LLM Quality Evaluation Runner]] |
@@ -417,6 +418,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local Open WebUI Provider Integration Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local LLM Runtime Comparison Runner]]

@@ -3,7 +3,7 @@ tags: [study, llm, inference, local-llm, benchmark, latency, metrics, client, ha
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Benchmark Row Builder
@@ -13,6 +13,8 @@ last-verified: 2026-06-15
 Use this after [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] and [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] produce run logs. Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] first when sampler settings, seed behavior, stop strings, or output caps are not yet fixed. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] first when prompt, history, RAG chunks, tool schemas, or output reserve may explain TTFT, truncation, or memory. Use it before copying anything into [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] or [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. After the row exists, use [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] before that row supports comparison, tuning, result synthesis, or deployment.
 
 The point is not to make a full benchmark suite. The point is to prevent a first local inference run from becoming scattered files that no longer answer: "what exactly ran, how fast did it feel, what token counts are known, what is missing, and what is the next controlled action?"
+
+Current dated proof: [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]] records a builder `pass` for the first-smoke OpenAI-compatible row and a benchmark evidence audit `pass/benchmark_evidence_ready` scoped to interpretation-only use.
 
 ## What This Proves
 
@@ -405,6 +407,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]]
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
