@@ -107,6 +107,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]]
@@ -194,6 +195,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] — pin runtime/model state, startup mode, backups, upgrades, rollback, and post-change validation for a maintainable local LLM service
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] — validate lifecycle manifests, baseline artifacts, backups, rollback targets, route state, and before/after/rollback decisions before changing a local service
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — verify tokenizer, special-token, chat-template, role-boundary, and stop-condition compatibility
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] — turn template/tokenizer compatibility evidence into JSON, CSV, Markdown, and JSONL pass/hold/fail artifacts
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — count rendered prompt tokens, reserve output, pack RAG/tool context, test truncation, and explain TTFT/KV-cache pressure
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] — build context-budget JSON, CSV, Markdown, and JSONL evidence from prompt, history, RAG, tool, reserve, and margin components
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — test thinking mode, reasoning effort, parser separation, trace policy, latency, and quality gain for local reasoning models

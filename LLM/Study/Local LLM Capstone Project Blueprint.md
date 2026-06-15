@@ -57,7 +57,7 @@ The minimal capstone can omit RAG and tools only if the deployment decision expl
 | 2. Machine preflight | OS, shell, CPU/RAM, GPU/VRAM, disk, runtime boundary, and port plan. | [[LLM/Study/Local LLM Environment Preflight Lab]] |
 | 3. Windows storage and runtime gate | Model-store decision, Ollama install source, new-shell PATH, version, logs, and listener boundary are captured before model pull. | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | 4. Model custody | Model card, license, artifact, revision, format, local path, safety decision, and first Ollama pull metadata when using Ollama. | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] and [[LLM/Study/Local LLM First Model Pull Gate]] |
-| 5. Runtime compatibility | Tokenizer, chat template, quantization, runtime, route, and workload fit. | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] |
+| 5. Runtime compatibility | Tokenizer, chat template, quantization, runtime, route, workload fit, and repeatable template/tokenizer audit when behavior matters. | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] and [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |
 | 6. First endpoint | CLI or server response plus loopback HTTP proof after install and model-pull gates pass. | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
 | 7. Client inference | Reproducible script or client wrapper with request, response, timing, and errors. | [[LLM/Study/Local LLM Client Harness Lab]] |
 | 8. Metric interpretation | TTFT, TPOT, total latency, tokens, memory, queue, quality, and next action. | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
@@ -82,6 +82,7 @@ Create one dated capstone note or folder with these links:
 | Runtime install card | Model-store decision, installer source, new-shell PATH, version, listener boundary, log paths, rollback route. |
 | Model card | Model source, license, artifact, revision/tag/file, local path, quantization, tokenizer/template. |
 | Model pull card | Selected tag, source check, pull output, `ollama ls`, `/api/tags`, `/api/show`, pass/hold/fail handoff. |
+| Template/tokenizer compatibility proof | Model package, tokenizer, special tokens, chat template, rendered prompt or non-exposure control, route behavior, tokenizer sanity counts, stop/role boundary, and benchmark or quality link. |
 | Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing. |
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
@@ -162,6 +163,7 @@ This blueprint is complete for one project when:
 - [ ] one dated capstone note or folder links every required evidence item
 - [ ] the academic proof explains at least one paper claim and one mechanism behind a local behavior
 - [ ] Windows first-run gates link model-store, runtime-install, and first-model-pull evidence when Ollama is the first runtime
+- [ ] template/tokenizer compatibility runner output is linked before chat behavior, structured output, benchmark, quality, or deployment decisions rely on the endpoint
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
 - [ ] the client proof is reproducible without UI-only steps
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
@@ -193,6 +195,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]

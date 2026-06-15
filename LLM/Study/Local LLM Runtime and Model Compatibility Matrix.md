@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]], and [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]], and before [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist answers "am I allowed and prepared to acquire this exact artifact?" The artifact lab answers "which local bytes, cache path, import, or conversion output do I actually have?" The stack anatomy note answers "which layer owns the proof or failure?" This note answers "will this exact model artifact work in this exact runtime without hidden format or template mismatches?"
 
-Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] after the endpoint responds but before a generic client depends on the compatibility surface. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model.
+Pair it with [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] after the endpoint responds but before a generic client depends on the compatibility surface. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the server responds but the model behaves unlike the advertised chat model. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] when the template/tokenizer evidence should become a repeatable pass/hold/fail artifact before benchmark, quality, or deployment decisions.
 
 When two compatibility cards are plausible, use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] to compare them with fixed prompts, sampler settings, context target, output cap, benchmark rows, and quality rows before choosing a deployment runtime.
 
@@ -164,6 +164,7 @@ This matrix is complete for one local deployment decision when you have:
 - [ ] a compatibility evidence card
 - [ ] a model/runtime choice justified by artifact format and quantization support
 - [ ] tokenizer and chat-template evidence or an explicit "runtime does not expose this" note
+- [ ] chat-template/tokenizer runner output when template evidence supports a model, runtime, quality, or deployment decision
 - [ ] cache mechanism evidence when the workload depends on repeated prefixes
 - [ ] speculative decoding evidence when the workload depends on draft-model or multi-token verification speedup
 - [ ] a successful native or OpenAI-compatible endpoint smoke test
@@ -196,6 +197,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/2022 — Alignment and Chat/Quantization]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]

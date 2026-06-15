@@ -14,7 +14,7 @@ Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the client depends on thinking mode, `reasoning.effort`, `reasoning_effort`, separated reasoning fields, inline `<think>` tags, or trace visibility controls.
 
-Pair this with [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the failure may come from artifact format, tokenizer, chat template, quantization, or runtime support. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the HTTP call succeeds but chat behavior is wrong.
+Pair this with [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the failure may come from artifact format, tokenizer, chat template, quantization, or runtime support. Pair it with [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] when the HTTP call succeeds but chat behavior is wrong, and use [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] when that evidence needs a repeatable audit artifact before a generic client relies on the endpoint.
 
 ## Outcome
 
@@ -231,6 +231,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]

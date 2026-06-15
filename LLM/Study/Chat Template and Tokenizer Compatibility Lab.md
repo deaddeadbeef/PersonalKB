@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** A local chat model only behaves like the model you chose when the model weights, tokenizer, special tokens, chat template, client messages, and stop conditions all match.
 
-Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when a local endpoint works but the output feels wrong: it continues the prompt, speaks as the user, ignores the system prompt, leaks role markers, or fails structured output. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] first when the problem may be a broader model artifact, quantization, runtime, route, or tokenizer-package mismatch. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] after the template is correct to count the rendered prompt, reserve output tokens, and prove the request fits.
+Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when a local endpoint works but the output feels wrong: it continues the prompt, speaks as the user, ignores the system prompt, leaks role markers, or fails structured output. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] first when the problem may be a broader model artifact, quantization, runtime, route, or tokenizer-package mismatch. Use [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] when the lab evidence needs repeatable JSON, CSV, Markdown, and JSONL output before a benchmark, quality, or deployment decision. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] after the template is correct to count the rendered prompt, reserve output tokens, and prove the request fits.
 
 ## Outcome
 
@@ -157,6 +157,7 @@ This lab is complete when you have:
 - [ ] a tokenizer sanity set with token counts
 - [ ] a stop/role boundary test
 - [ ] one benchmark or quality-harness row updated with template/tokenizer fields
+- [ ] one runner output from [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]] when this evidence supports a model, runtime, quality, or deployment decision
 - [ ] one context-budget row updated if the prompt includes history, RAG, or tool schemas
 - [ ] one failure diagnosis that distinguishes model quality from request formatting
 
@@ -171,6 +172,7 @@ This lab is complete when you have:
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

@@ -151,7 +151,7 @@ KIND_HINTS = {
     },
     "model_runtime": {
         "owner": "model/runtime",
-        "pass_signal": "The model artifact, runtime, tokenizer/template, route, and workload compatibility are linked.",
+        "pass_signal": "The model artifact, runtime, tokenizer/template, route, workload compatibility, and template/tokenizer runner evidence are linked when chat behavior affects the decision.",
         "next_route": "LLM/Study/Local LLM Runtime and Model Compatibility Matrix",
     },
     "endpoint_client": {
@@ -425,6 +425,9 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
             findings.append(finding("hold", owner, "Model/runtime row has no runtime or provider.", kind, "Name Ollama, llama.cpp, vLLM, SGLang, LM Studio, hosted provider, or batch engine."))
         if not has_text(row, "compatibility", "tokenizer", "chat_template", "route", "api_contract"):
             findings.append(finding("hold", owner, "Model/runtime row has no compatibility evidence.", kind, "Link tokenizer/template/route/API contract evidence."))
+        template_text = " ".join(str(row.get(key, "")) for key in ("compatibility", "tokenizer", "chat_template", "template", "route", "notes")).lower()
+        if ("chat" in template_text or "template" in template_text or "tokenizer" in template_text) and not has_text(row, "template_compatibility", "chat_template_compatibility", "template_runner", "compatibility_runner"):
+            findings.append(finding("hold", owner, "Model/runtime row has no template/tokenizer runner evidence.", kind, "Run Chat Template and Tokenizer Compatibility Runner or link its output before accepting chat-behavior evidence."))
     elif kind == "endpoint_client":
         if not has_text(row, "route", "base_url", "client", "api_contract", "request_path"):
             findings.append(finding("hold", owner, "Endpoint/client row has no route or client evidence.", kind, "Add base URL, route, client script, or API contract result."))
@@ -861,6 +864,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

@@ -53,6 +53,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a paper claim but no local proof route | [[LLM/Study/LLM Paper-to-Local Proof Router]] | Paper claim, mechanism, local implication, route, proof question, and next artifact |
 | You cannot explain tokens, logits, loss, attention, or KV cache | [[LLM/Study/LLM Math and Tensor Shape Primer]] | Worked explanation or shape row |
 | You can run local commands but cannot explain the whole serving path | [[LLM/Study/Local LLM End-to-End Mental Model]] | One request explained from artifact, tokenizer, runtime, prefill, decode, route, client, quality, and operations |
+| Output continues the prompt, ignores roles, leaks role markers, or behaves unlike the chat model | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] | Model package, tokenizer, chat template, rendered prompt or non-exposure control, route behavior, stop boundary, and downstream evidence audit |
 | You have local timing or memory numbers but cannot interpret them | [[LLM/Study/Local LLM Inference Metrics Field Guide]] | Metric owner, request phase, confounder, and next controlled action |
 | You are ready for a scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] | Section scores, hard-fail checks, proof links, remediation rows |
 | You need to know whether this machine is ready for a first local run | [[LLM/Study/Local LLM First Run Readiness Snapshot]] | Runtime/GPU/listener readiness card and first execution decision |
@@ -103,6 +104,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Mechanism bridge | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |  |
 | End-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] |  |
 | Request lifecycle runner | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |  |
+| Template/tokenizer compatibility | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |  |
 | Local inference metric interpretation | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |  |
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Mastery evidence audit | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |  |
@@ -176,6 +178,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first response debrief row | [[LLM/Study/Local LLM First Response Debrief Card]] |
 | One first response debrief runner output | [[LLM/Study/Local LLM First Response Debrief Runner]] |
 | One request lifecycle runner output | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |
+| One template/tokenizer compatibility runner output before quality or deployment decisions that depend on chat behavior | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first quality probe runner output | [[LLM/Study/Local LLM First Quality Probe Runner]] |
 | One model selection runner output | [[LLM/Study/Local LLM Model Selection Runner]] |
@@ -236,6 +239,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
+- [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
