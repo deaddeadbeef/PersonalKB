@@ -20,6 +20,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Gate | Required artifact | Proof link/path | Pass signal | Status |
 |---|---|---|---|---|
 | Concept dependency map | Dependency explanation using [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] | [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] | Can move from any failed paper, mechanism, endpoint, RAG, tool, evaluation, or deployment proof to the lowest unproven prerequisite. | Study map drafted; oral proof not yet passed |
+| Active recall bank | Mixed session using [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] |  | At least 20 mixed questions are answered from memory with 80 percent score, no zero in local inference, RAG/evaluation, or safety clusters, and missed prompts have remediation routes. | Not started |
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
 | Study cadence | Weekly log from [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] |  | Each active week has recall answers, a mechanism bridge, one applied artifact, and a capstone link or repeat row. | Not started |
 | Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
@@ -108,6 +109,19 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Security/deployment score |  |
 | Missed-question remediation links |  |
 | Retake date, if needed |  |
+
+## Active Recall Session Template
+
+| Evidence item | Link or value |
+|---|---|
+| Session date |  |
+| Question bank route | [[LLM/Study/LLM Active Recall Question Bank]] |
+| Questions attempted |  |
+| Score |  |
+| Weak clusters | field map / math / training / papers / evaluation / endpoint / serving / model selection / RAG / tools / safety / deployment |
+| Zero-score clusters |  |
+| Remediation routes |  |
+| Next proof artifact |  |
 
 ## Attention Implementation Proof Template
 

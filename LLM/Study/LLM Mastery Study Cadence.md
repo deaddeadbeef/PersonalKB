@@ -19,7 +19,7 @@ Use the same loop for academic and applied work.
 
 | Block | Timebox | Output |
 |---|---:|---|
-| Recall | 10 minutes | Answer yesterday's questions without notes |
+| Recall | 10 minutes | Answer yesterday's questions or prompts from [[LLM/Study/LLM Active Recall Question Bank]] without notes |
 | Study | 30-60 minutes | One paper section, concept note, or lab section read closely |
 | Explain | 10 minutes | One paragraph in your own words |
 | Build or prove | 30-90 minutes | One command output, card, row, sketch, or code artifact |
@@ -68,6 +68,7 @@ Read:
 
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Concept Dependency Map]]
+- [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
