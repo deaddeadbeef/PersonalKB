@@ -59,7 +59,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 
 | Domain | Required gates |
 |---|---|
-| academic | paper map, paper claim ledger, metric interpretation, training pipeline |
+| academic | paper map, paper claim ledger, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
 | local-inference | workload/model selection, model custody, runtime compatibility, endpoint, API/client, benchmark, scheduler evidence, quality |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, deployment readiness audit, deployment decision |
@@ -111,6 +111,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/LLM Metrics and Evaluation Interpretation Guide",
         "pass_signal": "Can classify loss, perplexity, benchmark, preference, calibration, quality, latency, and memory evidence.",
+    },
+    {
+        "gate_id": "academic-judge-calibration",
+        "domain": "academic",
+        "required": True,
+        "critical": False,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM Judge Calibration Runner",
+        "pass_signal": "LLM-as-judge quality evidence has human review, AB/BA order checks, agreement, position-bias, verbosity-bias, and next-route output before supporting repeated decisions.",
     },
     {
         "gate_id": "academic-training-pipeline",
@@ -889,6 +898,7 @@ This runner is useful when:
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]

@@ -15,6 +15,8 @@ Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when
 
 Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when the quality harness is deciding between runtimes rather than only judging one model. Runtime comparison keeps prompt suite, sampler, context, and output caps fixed so quality differences are not caused by request drift.
 
+Use [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] when LLM-as-judge output is used for pairwise comparison, rubric triage, RAG answer scoring, or tool/agent review. The judge score is supporting evidence only after human review, AB/BA order control, agreement, and bias signals are saved.
+
 Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when quality is being compared across FP16/BF16, Q8, Q6/Q5/Q4, AWQ, GPTQ, FP8/INT8, GPU offload levels, or KV-cache precision. A faster lower-bit run fails if it breaks the workload's factuality, formatting, code, citation, or long-context gate.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when judging reasoning models. A higher-effort answer only wins when quality improves enough to justify latency, token budget, parser, and trace-handling costs.
@@ -105,7 +107,8 @@ Use pairwise comparison when choosing between two local setups.
 4. Randomize A/B order across prompts.
 5. Record winner, tie, or loser with the rubric dimension that decided the judgment.
 6. If using an LLM judge, run both AB and BA orderings and compare the verdicts.
-7. Treat LLM-judge output as fast signal, not ground truth; validate important decisions with human review.
+7. Run [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] when the judge result will support model/runtime selection.
+8. Treat LLM-judge output as fast signal, not ground truth; validate important decisions with human review.
 
 Bias controls matter because [[LLM/2023 — Open Models and Agents/LLM-as-Judge|LLM judges]] and humans can prefer position, verbosity, confidence, and familiar style over actual quality. The relevant source notes are [[LLM/_chunks/chunk-llm-237 MT-Bench Multi-Turn LLM Evaluation|MT-Bench multi-turn evaluation]], [[LLM/_chunks/chunk-llm-238 Chatbot Arena Elo Rating System|Chatbot Arena pairwise preference]], [[LLM/_chunks/chunk-llm-239 LLM Judge Agreement Rates and Biases|LLM judge bias]], and [[LLM/_chunks/chunk-llm-240 MT-Bench Chatbot Arena Evaluation Paradigms|modern evaluation paradigms]].
 
@@ -157,6 +160,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
+- [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

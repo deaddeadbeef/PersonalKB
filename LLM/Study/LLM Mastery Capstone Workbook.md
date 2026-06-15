@@ -34,6 +34,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Local inference metric interpretation | Benchmark interpretation row using [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] |  | Can explain TTFT, TPOT, output tokens/sec, total latency, prompt/output tokens, memory, queue, quality, confounders, and next controlled action for one local run. | Not started |
 | Math and tensor shapes | Oral or written proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | Can trace token IDs, embeddings, hidden states, logits, probabilities, shifted targets, cross-entropy, attention shapes, weight memory, and KV-cache growth. | Study map drafted; oral proof not yet passed |
 | Metric interpretation | Metric card from [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] |  | Can classify loss, perplexity, benchmark, preference, calibration, quality, latency, and memory as different evidence types and name what each misses. | Not started |
+| Judge calibration | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] when LLM-as-judge is used |  | Human review, AB and BA judge rows, proof links, inspected rationales, agreement rate, order-stability signal, verbosity-bias signal, and next-route output are captured before judge scores support a quality decision. | Not started |
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] with a filled [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] |  | Overall score is at least 80 percent, no zero in practical sections, proof links are present, and missed-question remediation is linked. | Not started |
 | Mastery evidence audit | Results JSON/CSV/Markdown from [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] |  | Academic, mechanism, local-inference, system, and exam gates are audited with proof links, critical gaps, domain summaries, pass/hold/fail, and next-route output. | Not started |
@@ -476,6 +477,7 @@ Next run:
 - A benchmark without quality evidence.
 - A RAG answer without citations.
 - An LLM judge score without human calibration.
+- An LLM judge score used for keep/reject decisions without a judge calibration runner output or linked remediation row.
 - A fine-tune decision without a baseline failure, held-out eval, and rollback plan.
 - A deployment choice without a real workload.
 - A final deployment memo without a deployment readiness audit output or linked remediation row.
@@ -488,6 +490,7 @@ Next run:
 - [ ] The mechanism-to-inference bridge explains at least one speed, memory, compatibility, quality, and RAG/tool failure with evidence.
 - [ ] The math and tensor-shape proof explains logits, loss, attention, weight memory, KV cache, and one local inference symptom.
 - [ ] The metric interpretation proof separates training, benchmark, preference, calibration, quality, latency, and memory evidence.
+- [ ] Any LLM-as-judge quality evidence has a judge calibration runner output or linked remediation row.
 - [ ] The tiny decoder training lab proves next-token loss, causal masking, validation loss, and generation.
 - [ ] The self-assessment exam has a filled run sheet and is passed, or every failed section has a remediation plan.
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
@@ -536,6 +539,7 @@ Next run:
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
+- [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]

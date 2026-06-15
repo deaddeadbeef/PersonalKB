@@ -87,6 +87,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
 | You have a local failure | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] | Failed layer, evidence, controlled next change |
 | You have quality doubts | [[LLM/Study/Local LLM Quality Evaluation Harness]] | Pass/hold/fail row |
+| You used an LLM judge and need to know whether the score is trustworthy | [[LLM/Study/Local LLM Judge Calibration Runner]] | Human agreement, AB/BA order stability, position bias, verbosity bias, and next-route audit |
 | You need to decide local vs hosted vs hybrid | [[LLM/Study/LLM Deployment Decision Matrix]] | Deployment memo |
 | You have a deployment memo and need to audit whether it is defensible | [[LLM/Study/LLM Deployment Readiness Audit Runner]] | Workload, path, model/runtime, endpoint, benchmark, quality, security, operations, cost, rejected alternative, and retest audit |
 
@@ -122,6 +123,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
+| Judge calibration | [[LLM/Study/Local LLM Judge Calibration Runner]] |  |
 | RAG assistant | [[LLM/Study/Local RAG Minimal Python Harness]] |  |
 | RAG evidence runner | [[LLM/Study/Local RAG Evidence Runner]] |  |
 | Tool loop | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |  |
@@ -196,6 +198,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
+| One judge calibration output when LLM-as-judge is used | [[LLM/Study/Local LLM Judge Calibration Runner]] |
 | One failure diagnosis | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | One scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] |
 | One mastery evidence audit output | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |
@@ -232,6 +235,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
+- [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Paper Claim Ledger]]

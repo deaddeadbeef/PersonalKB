@@ -11,7 +11,7 @@ tier-coverage: [theory, practice]
 
 Use this after [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]], and [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]. Those notes define logits/loss, training stages, and paper reading. This guide tells you how to interpret the numbers without confusing training progress, leaderboard performance, workload quality, and local serving evidence.
 
-Use it before [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when a decision depends on a metric.
+Use it before [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when a decision depends on a metric.
 
 ## The Metric Rule
 
@@ -100,7 +100,7 @@ Preference metrics answer "which answer did someone or something prefer under th
 | --- | --- | --- |
 | Human pairwise win | Overall usefulness/style preference | Blind order, fixed prompt, clear rubric, tie option |
 | Chatbot Arena-style rating | Broad chat preference | Treat as broad signal, not workload proof |
-| LLM-as-judge | Cheap triage, pairwise comparison, rubric draft | Run AB and BA order, inspect rationale, keep human review for important gates |
+| LLM-as-judge | Cheap triage, pairwise comparison, rubric draft | Run AB and BA order, inspect rationale, keep human review for important gates, then audit with [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] |
 | MT-Bench-style multi-turn score | Instruction and conversational follow-through | Check whether the judge rewards verbosity or familiar style |
 
 Common bias patterns:
@@ -111,7 +111,7 @@ Common bias patterns:
 - self-preference or family preference: judge favors familiar style
 - rubric leakage: the answer optimizes the rubric wording rather than the task
 
-Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to keep preference scores as supporting evidence beside human rubric rows, not as a replacement for them.
+Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to keep preference scores as supporting evidence beside human rubric rows, not as a replacement for them. Use [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] before trusting LLM-as-judge rows for repeated local model/runtime decisions.
 
 ## Calibration And Confidence
 
@@ -223,6 +223,7 @@ Internal:
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

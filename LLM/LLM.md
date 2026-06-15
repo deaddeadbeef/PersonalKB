@@ -70,6 +70,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — Explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] — Core shapes and formulas for tokens, logits, loss, attention, KV cache, and inference metrics
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] — Separate loss, perplexity, benchmark, preference, calibration, quality, latency, and memory evidence before making model decisions
+- [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Audit human review, AB/BA judge order, agreement, position bias, verbosity bias, and next-route evidence before using LLM-as-judge scores
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] — Interpret TTFT, TPOT, throughput, memory, concurrency, and quality numbers as phase-specific local inference evidence
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
@@ -132,6 +133,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] — Pin runtime/model state, startup mode, backups, upgrades, rollback, and post-change validation for local LLM services
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] — Validate lifecycle manifests, baseline artifacts, backups, rollback targets, route state, and before/after/rollback decisions before service changes
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — Workload-specific prompt suites, rubrics, pairwise comparison, and RAG/citation gates
+- [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Validate LLM-as-judge agreement and order-bias controls before judge scores support local quality decisions
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — Control thinking mode, reasoning parsers, effort levels, latency, trace visibility, and quality trade-offs
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — Local tool schemas, structured outputs, policy checks, execution loops, and tool failure evaluation
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] — Save structured JSON, required tool-call, tool-result injection, denial, CSV, Markdown, and JSONL evidence for local endpoints

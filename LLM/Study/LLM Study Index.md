@@ -43,6 +43,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]]
+- [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]]
@@ -89,6 +90,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]]
@@ -117,6 +119,7 @@ Study and review materials for the LLM knowledge base.
 
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] — learn the shapes and formulas behind tokens, embeddings, logits, loss, attention, KV cache, and local inference metrics
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] — interpret loss, perplexity, benchmarks, preference scores, calibration, quality rubrics, latency, and memory as different evidence types
+- [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — check human agreement, AB/BA order stability, position bias, verbosity bias, and proof links before using LLM-as-judge scores as quality evidence
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and tensor-shape checks
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a toy causal LM to connect tokens, logits, cross-entropy loss, gradients, validation loss, and generation
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] — trace raw data through pretraining, SFT, preference optimization, adaptation, evaluation, and deployment gates
@@ -194,6 +197,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — count rendered prompt tokens, reserve output, pack RAG/tool context, test truncation, and explain TTFT/KV-cache pressure
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] — build context-budget JSON, CSV, Markdown, and JSONL evidence from prompt, history, RAG, tool, reserve, and margin components
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — test thinking mode, reasoning effort, parser separation, trace policy, latency, and quality gain for local reasoning models
+- [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — validate LLM-as-judge output against human review and reversed-order prompts before it supports model/runtime selection
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — validate tool schemas, execute a harmless local tool, feed back results, bound the loop, and evaluate tool failures
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] — save structured JSON, required tool-call, tool-result injection, denied-argument, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant with retrieval, citations, and failure diagnosis

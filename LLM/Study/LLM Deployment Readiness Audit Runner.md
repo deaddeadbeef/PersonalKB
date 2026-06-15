@@ -166,7 +166,7 @@ KIND_HINTS = {
     },
     "quality_evaluation": {
         "owner": "quality",
-        "pass_signal": "Workload prompts have rubric-backed pass, hold, or fail results with failure owners.",
+        "pass_signal": "Workload prompts have rubric-backed pass, hold, or fail results with failure owners; LLM-as-judge rows have calibration proof when used for the decision.",
         "next_route": "LLM/Study/Local LLM Quality Evaluation Harness",
     },
     "security_privacy": {
@@ -441,6 +441,9 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
             findings.append(finding("hold", owner, "Quality row has no rubric, prompt suite, score, or result.", kind, "Add pass/hold/fail quality evidence for the workload."))
         if not has_text(row, "failure_owner", "next_action", "decision") and not has_any_metric(metrics, ("score", "pass_rate", "win_rate")):
             findings.append(finding("hold", owner, "Quality row has no failure owner or score.", kind, "Add human score, pass rate, failure owner, or next controlled action."))
+        judge_text = " ".join(str(row.get(key, "")) for key in ("method", "evaluator", "rubric", "notes", "result", "decision")).lower()
+        if ("llm-as-judge" in judge_text or "llm judge" in judge_text) and not has_text(row, "judge_calibration", "calibration_proof", "human_calibration", "agreement_rate"):
+            findings.append(finding("hold", owner, "LLM-as-judge quality row has no calibration proof.", kind, "Run Local LLM Judge Calibration Runner or link human agreement, AB/BA order, and bias-audit evidence."))
     elif kind == "security_privacy":
         if not has_text(row, "endpoint_exposure", "binding", "host_classification", "network_boundary"):
             findings.append(finding("hold", owner, "Security row has no endpoint exposure or network boundary.", kind, "Record loopback/LAN/public/provider boundary and model-list exposure."))
@@ -861,6 +864,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]]
