@@ -3436,3 +3436,35 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4968 files, 3097 Markdown files, 932 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add adaptation readiness runner
+
+Scope: make the prompt/RAG/SFT/LoRA/QLoRA/DPO/distillation/continued-pretraining/no-train decision auditable before training, adapter serving, result synthesis, deployment, or capstone evidence depends on it.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide.md`
+- `LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Result Synthesis Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner]] with a standard-library Python runner that audits a saved adaptation manifest without training a model, inspecting private data, or calling a provider.
+- The runner checks baseline failure, selected method, rejected alternatives, dataset format, train/validation/held-out split, preference-pair shape for DPO, leakage and duplicate checks, privacy egress, chat-template proof, LoRA/QLoRA/DPO/distillation config, held-out eval, deployment target, retention, and rollback.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, adaptation guide, result-synthesis runner, and deployment-readiness runner through the new adaptation readiness gate.
+- Checked current Hugging Face TRL SFTTrainer, DPOTrainer, TRL dataset-format, PEFT LoRA, Transformers chat-template docs, plus LoRA, QLoRA, and DPO papers on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted and compiled `llm_adaptation_fine_tuning_readiness_runner.py` from the note.
+- Adaptation runner fixture checks: complete LoRA plan -> `pass` / `adaptation_ready`; training when baseline already passes -> `fail` / `adaptation_blocked`; DPO with prompt-completion data instead of preference pairs -> `fail`; train/held-out overlap -> `fail`; missing held-out eval -> `hold` / `adaptation_incomplete`; private data egress without approval -> `fail`; QLoRA without quantized-base or memory plan -> `hold`; no-train decision without reason -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4969 files, 3098 Markdown files, 933 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

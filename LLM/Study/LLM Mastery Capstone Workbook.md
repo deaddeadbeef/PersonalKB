@@ -119,6 +119,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Tool loop | Tool-calling proof from [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] |  | Tool schema, validated arguments, policy check, execution result, injected tool result, bounded loop, and failure rows are captured. | Not started |
 | Tool/schema runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] |  | Structured JSON, required tool call, argument validation, policy decision, local execution, result injection, denial behavior, and JSONL row are captured before real tool integration. | Not started |
 | Adaptation decision | Memo using [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] |  | Prompting, RAG, SFT, LoRA, QLoRA, DPO, distillation, continued pretraining, or no-train decision is justified from the measured failure mode, data, eval, compute, and rollback evidence. | Not started |
+| Adaptation readiness runner | Results JSON/CSV/Markdown from [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner|LLM Adaptation and Fine-Tuning Readiness Runner]] |  | Baseline failure, method fit, rejected alternatives, data split, contamination/privacy checks, chat template, method config, held-out eval, deployment target, and rollback are audited before training, adapter serving, or no-train acceptance. | Not started |
 | Result synthesis runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] |  | Selected candidate, endpoint/client, compatibility, benchmark, eval-set, quality, security, operations, rejected alternative, and review-trigger evidence are reconciled into keep, tune, reject, rerun, or deployment-memo readiness. | Not started |
 | Deployment decision | Memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] |  | Choice between local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference is justified with workload, quality, latency, memory/cost, privacy, and operational evidence. | Not started |
 | Deployment readiness audit | Results JSON/CSV/Markdown from [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] |  | Workload, selected path, model/runtime, endpoint/client, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are audited before accepting the deployment memo. | Not started |
@@ -443,7 +444,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 
 ## Adaptation Decision Memo
 
-Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before training or deciding not to train.
+Use [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] before training or deciding not to train. Use [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner|LLM Adaptation and Fine-Tuning Readiness Runner]] before accepting the decision as capstone evidence.
 
 Workload:
 
@@ -565,7 +566,7 @@ Next run:
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
 - [ ] Any untrusted, uploaded, external, private, or tool-adjacent RAG content has prompt-injection/source-boundary runner output before app, tool, export, or capstone claims depend on it.
 - [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
-- [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
+- [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence, and the adaptation readiness runner output is linked before result synthesis depends on that decision.
 - [ ] Any local inference failure has a diagnostic row and failure triage runner output that name the failed layer, proof, ruled-out layers, and controlled next change.
 - [ ] The RAG assistant includes a manifest, chunk records, embedding/reranker service card, retrieval evaluation, cited answer, unsupported-question refusal, citation audit, at least one diagnosed failure mode, and one RAG evidence runner output.
 - [ ] The mastery evidence audit runner has a pass or a linked remediation row for every academic, mechanism, local-inference, system, and exam gate.
@@ -586,6 +587,7 @@ Next run:
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]

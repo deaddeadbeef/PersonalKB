@@ -37,6 +37,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner|LLM Adaptation and Fine-Tuning Readiness Runner]]
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]]
@@ -263,6 +264,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] — validate saved RAG artifacts into pass, hold, fail, next-route, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] — validate saved adversarial RAG cases for source trust, context delimiters, poisoned citations, forbidden strings, tool calls, exports, guardrails, and pass/hold/fail routing
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] — decide when to prompt, use RAG, fine-tune, train adapters, optimize preferences, or distill
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner|LLM Adaptation and Fine-Tuning Readiness Runner]] — machine-check baseline failure, method fit, dataset split, leakage/privacy checks, chat template, method config, held-out eval, deployment, and rollback before adaptation
 
 ## Suggested 20-Paper Fast Path
 

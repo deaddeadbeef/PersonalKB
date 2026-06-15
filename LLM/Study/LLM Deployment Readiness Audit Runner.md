@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]], before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The result synthesis runner reconciles keep, tune, reject, rerun, and deployment-memo readiness. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend.
 
-This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, application integration, benchmark, quality, result synthesis, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
+This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, application integration, benchmark, quality, adaptation readiness, result synthesis, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
 
 ## What This Proves
 
@@ -903,6 +903,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [ ] the selected path is one of `local_cpu`, `local_gpu`, `self_hosted_server`, `hosted_api`, `hybrid`, or `batch`
 - [ ] the deployment choice links a result-synthesis output or a remediation row
 - [ ] the quality evidence links [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] output when deployment readiness depends on quality
+- [ ] adaptation readiness proof exists when deployment depends on an adapter, merged model, distillation, continued pretraining, or explicit no-train decision
 - [ ] the deployment choice rejects at least one plausible alternative with evidence
 - [ ] the final review trigger names what change invalidates the decision
 - [ ] outputs are linked from [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
@@ -911,6 +912,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]

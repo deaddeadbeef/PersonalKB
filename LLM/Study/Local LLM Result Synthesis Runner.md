@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model decision is ready only when endpoint, compatibility, benchmark, evaluation-set, quality, safety, and operations evidence point to the same keep, tune, reject, or deploy action.
 
-Use this after [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] have evidence rows. Use it before [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] so the final deployment memo starts from a reconciled local model/runtime decision, not a pile of unrelated artifacts.
+Use this after [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] have evidence rows. If the decision is tune, train, serve an adapter, or explicitly avoid training, include [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner|LLM Adaptation and Fine-Tuning Readiness Runner]] output. Use this before [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] so the final deployment memo starts from a reconciled local model/runtime decision, not a pile of unrelated artifacts.
 
 This runner does not call a model, benchmark an endpoint, scrape model pages, or choose a current model by name. It audits the evidence already collected for one workload and selected candidate.
 
@@ -768,6 +768,7 @@ python .\local_llm_result_synthesis_runner.py
 - [ ] evaluation-set design and quality evaluation runner rows agree
 - [ ] security/privacy and operations rows are pass or explicitly waived
 - [ ] at least one plausible alternative is rejected with evidence
+- [ ] adaptation readiness output is linked when the decision is tune, train, adapter serving, or no-train
 - [ ] the next review trigger is written down
 
 ## References
@@ -780,6 +781,7 @@ python .\local_llm_result_synthesis_runner.py
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Quality Evaluation Runner]]
+- [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
