@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** The LLM capstone is a small local assistant that you can explain academically, run through a local endpoint, evaluate against a workload, secure on loopback, and operate with evidence.
 
-Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] has given you the gates and before filling the final rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The workbook is the ledger. This blueprint is the project spec.
+Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] has given you the gates and before filling the final rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The workbook is the ledger. This blueprint is the project spec. Use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] after the evidence bundle exists to check academic, mechanism, local-inference, system, and exam gates before final defense.
 
 The goal is not to build the largest possible system. The goal is to prove that you can connect paper claims, transformer mechanisms, model artifacts, local runtime behavior, client inference, RAG or tools, quality evaluation, and operations decisions in one defensible local project.
 
@@ -89,6 +89,7 @@ Create one dated capstone note or folder with these links:
 | Tool proof | Schema, validated args, policy check, execution output, injected result, denied unsafe action. |
 | Security proof | Loopback binding, log boundary, RAG data boundary, tool permission boundary. |
 | Operations proof | Logs/metrics, resource state, restart check, backup/rollback, retest trigger. |
+| Mastery audit proof | JSON/Markdown audit output with no critical academic, mechanism, local-inference, system, or exam gaps. |
 | Final memo | Decision, rejected alternative, known limits, next version. |
 
 ## Minimum Project
@@ -158,6 +159,7 @@ This blueprint is complete for one project when:
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
 - [ ] RAG and tool paths are either proven or explicitly out of scope with a reason
 - [ ] security, operations, lifecycle, and deployment rows have pass/hold/fail decisions
+- [ ] [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] has no critical gaps or links remediation rows
 - [ ] [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] links the final capstone note
 
 ## References
@@ -165,6 +167,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
+- [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]

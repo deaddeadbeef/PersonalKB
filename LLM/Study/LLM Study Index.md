@@ -60,6 +60,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]]
+- [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
@@ -129,6 +130,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] — capture one study session as a recall answer, mechanism bridge, applied proof or blocker, and capstone link
 - [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] — build and defend one local assistant with academic, endpoint, client, RAG/tool, evaluation, security, operations, and deployment proof
 - [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] — run one scored oral/practical exam attempt with answer fields, evidence links, hard-fail checks, and remediation rows
+- [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] — validate the academic, mechanism, local-inference, system, and exam proof bundle before a final mastery defense
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] — use this machine's actual runtime, GPU, listener, and first-model state before installing or serving anything
 - [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] — choose the source-checked first Ollama model tag, control tag, stretch tag, and avoid-first class for this RTX 3080 Ti run
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] — decide where model weights, runtime stores, Hugging Face caches, conversion outputs, and evidence logs live before the first large download

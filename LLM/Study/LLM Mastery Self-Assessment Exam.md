@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** You know LLMs when you can explain the field, derive the core mechanisms, read papers skeptically, operate a local model, diagnose failures, and defend adaptation and deployment decisions without guessing.
 
-Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] and before filling the final proof rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The roadmap says what to learn. [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] turns the roadmap into weekly recall and proof work. Use [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] to record one scored attempt, proof links, and remediation rows. The capstone workbook stores final evidence. This exam tests whether the knowledge is available without hand-holding.
+Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] and before filling the final proof rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The roadmap says what to learn. [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] turns the roadmap into weekly recall and proof work. Use [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] to record one scored attempt, proof links, and remediation rows. Use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] when the linked proof bundle should be checked before a final defense. The capstone workbook stores final evidence. This exam tests whether the knowledge is available without hand-holding.
 
 This is not a trivia quiz. Prefer short, precise answers that connect mechanism, evidence, and operational consequence.
 
@@ -28,6 +28,7 @@ Minimum pass:
 - 80 percent or higher overall
 - no zero in the local inference, RAG/evaluation, or safety sections
 - every practical gate has linked evidence in the capstone workbook
+- the mastery evidence audit has no critical gaps before the final pass claim
 - every missed question has a remediation link
 
 Use [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] for the attempt scoreboard, hard-fail checks, answer capture, practical evidence gate, and retake decision.
@@ -233,7 +234,7 @@ These gates are stricter than the oral questions.
 | RAG | Retrieval/citation proof with top-k/rank evidence, citation audit, and at least one diagnosed failure mode. |
 | Deployment | Decision memo using [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] to choose local CPU, local GPU, self-hosted server, hosted API, hybrid, or batch inference. |
 
-Do not mark the capstone complete until every proof link exists in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
+Do not mark the capstone complete until every proof link exists in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] and [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] has no critical gaps.
 
 ## Remediation Map
 
@@ -267,6 +268,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
+- [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]

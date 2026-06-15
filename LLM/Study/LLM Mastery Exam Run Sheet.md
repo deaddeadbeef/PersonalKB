@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This is the fill-in artifact for one LLM mastery exam attempt: answer without notes, score each section, link practical evidence, route misses, and decide pass, hold, or retake.
 
-Use this while taking [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]. The exam note contains the question bank and standards. This run sheet is the artifact you fill so the attempt becomes evidence in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
+Use this while taking [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]. The exam note contains the question bank and standards. This run sheet is the artifact you fill so the attempt becomes evidence in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. Use [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] after proof links are filled to check whether the evidence bundle has any critical gaps.
 
 This sheet is not proof unless the answer fields, scores, evidence links, and remediation rows are filled. A pass without linked local-inference and practical-gate evidence does not count.
 
@@ -157,6 +157,7 @@ Do not pass the exam on oral answers alone. Link proof or mark the gap.
 | RAG or tools | Retrieval/citation proof or safe tool loop proof | [[LLM/Study/Local RAG Minimal Python Harness]], [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] | pass / gap |
 | Security and deployment | Loopback/privacy/logging/tool boundary and deployment memo | [[LLM/Study/Local LLM Security and Privacy Runbook]], [[LLM/Study/LLM Deployment Decision Matrix]] | pass / gap |
 | Capstone ledger | Proof links copied into the workbook | [[LLM/Study/LLM Mastery Capstone Workbook]] | pass / gap |
+| Evidence audit | Mastery audit JSON/Markdown has no critical gaps | [[LLM/Study/LLM Mastery Evidence Audit Runner]] | pass / gap |
 
 ## Miss Routing
 
@@ -212,6 +213,7 @@ This run sheet is complete only when:
 - [ ] local inference, RAG/evaluation, and security/deployment have no zero scores
 - [ ] practical evidence links are present or explicitly marked as gaps
 - [ ] the capstone workbook links this attempt
+- [ ] the mastery evidence audit has no critical gaps or links remediation rows
 - [ ] the final decision is pass, hold, or retake
 
 ## References
@@ -220,6 +222,7 @@ Internal routes:
 
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
+- [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/LLM Concept Dependency Map]]
