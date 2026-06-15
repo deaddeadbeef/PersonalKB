@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environ
 
 Then use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the endpoint smoke test, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] for client compatibility, [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] for metrics/logs, and [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] before tuning batching, queueing, prefix cache, or scheduler settings.
 
+If the next step is a containerized service rather than a WSL Python process, continue into [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] after this lab. The Docker lab proves the container GPU boundary, pinned provider image, model/cache mount, loopback port publishing, Compose file, logs, metrics, and Open WebUI routing.
+
 ## Outcome
 
 After this lab you should be able to:
@@ -289,6 +291,7 @@ If `/metrics` is unavailable, record whether the runtime needs a metrics flag, a
 | You need throughput or multi-client use | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Serving internals]] then [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Concurrency and batch throughput]] |
 | Repeated-prefix prompts should be faster | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Prompt cache and KV reuse]] |
 | First endpoint works and you want a runtime decision | [[LLM/Study/Local LLM Runtime Comparison Lab|Runtime comparison]] |
+| WSL GPU proof works and you want a repeatable container service | [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Docker GPU container serving]] |
 | Binding, auth, or logs might expose private data | [[LLM/Study/Local LLM Security and Privacy Runbook|Security and privacy]] |
 
 ## Failure Triage
@@ -330,6 +333,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]

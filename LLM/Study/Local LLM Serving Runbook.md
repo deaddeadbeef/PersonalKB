@@ -28,6 +28,8 @@ Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Prefli
 
 For vLLM or SGLang launched from a Windows workstation, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before this runbook's smoke test. It records WSL 2, CUDA/GPU visibility, Python environment state, loopback host/port, `/v1/models`, and a Windows PowerShell client call so serving failures are not confused with WSL or driver failures.
 
+For containerized vLLM or SGLang, use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before treating the endpoint as a repeatable service. It records Docker authority, GPU container smoke, pinned image tag, cache mount, loopback port publishing, `/v1/models`, host chat smoke, logs, metrics, and Compose validation.
+
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] after the first endpoint works but before tuning throughput, slots, batching, chunked prefill, preemption, or queue policy. That lab separates prefill, decode, KV-cache pressure, continuous batching, and admission-control behavior.
 
 Before exposing the endpoint beyond a one-person loopback experiment, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to check binding, authentication, logging, RAG data, prompt injection, and tool permissions.
@@ -202,6 +204,8 @@ For Windows-native first experiments, prefer Ollama or LM Studio. For vLLM/SGLan
 
 For the WSL version of that validation, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] and copy the successful `/v1/models` response into the API contract card.
 
+For the Docker version of that validation, use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] and copy the successful container `/v1/models`, host chat smoke, image tag, and cache mount into the API contract card.
+
 ## Phase 4: Measure The First Useful Run
 
 Run the prompt suite from [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] and capture:
@@ -288,6 +292,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]

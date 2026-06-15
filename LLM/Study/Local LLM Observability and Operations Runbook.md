@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 
 Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] first when the operations target is vLLM or SGLang inside WSL; that lab captures the WSL GPU path, launch command, `/v1/models`, Windows client route, initial metrics, and failure layer.
 
+Use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] first when the operations target is a Dockerized vLLM/SGLang provider or Open WebUI. That lab captures Docker authority, container GPU proof, image tag, cache mount, Compose contract, container logs, `docker stats`, `docker exec nvidia-smi`, `/metrics`, and UI provider routing.
+
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] when the operations row needs a mechanism owner: queue, prefill, decode, KV cache, slots, continuous batching, chunked prefill, prefix cache, preemption, or admission control.
 
 This runbook turns academic serving concepts from [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]], [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], and [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]] into local evidence you can inspect.
@@ -250,6 +252,7 @@ Internal:
 
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]

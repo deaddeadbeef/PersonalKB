@@ -28,6 +28,8 @@ Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Rer
 
 Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] when the compatibility card chooses vLLM or SGLang from a Windows workstation. This separates artifact/runtime compatibility from WSL 2, CUDA driver, Python environment, port, and localhost-forwarding failures.
 
+Use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] when the compatibility card chooses a containerized vLLM or SGLang path. This separates model/runtime compatibility from Docker authority, NVIDIA container runtime, image tag, model/cache mount, port publishing, and Open WebUI routing failures.
+
 ## Outcome
 
 After using this matrix you should be able to:
@@ -81,6 +83,7 @@ If any layer is unknown, treat the run as an experiment rather than a deployment
 | llama.cpp | GGUF | CLI and `llama-server` | Low-level control, CPU, edge, exact local-file serving | GGUF metadata, chat template, GPU offload, context, thread settings. |
 | vLLM | Hugging Face model id/path, server quantized checkpoints, supported GGUF cases | OpenAI-compatible server | GPU serving, batching, throughput, PagedAttention practice | Supported architecture, quantization/hardware chart, CUDA/WSL/Linux readiness from the WSL CUDA setup lab. |
 | SGLang | Hugging Face model id/path, server quantized checkpoints | OpenAI-compatible server and programmatic serving | Structured generation, prefix-heavy workloads, high-throughput serving | Offline vs online quantization path, chat template selection, hardware backend, and WSL CUDA setup lab proof when launched from Windows. |
+| Dockerized vLLM/SGLang | Hugging Face model id/path plus provider image tag/digest and cache mount | OpenAI-compatible server through published loopback port | Repeatable GPU serving with Compose, Open WebUI, and lifecycle handoff | Docker GPU runtime, container image, CUDA/backend tag, model/cache mount, and provider route must all match. |
 | Open WebUI | Provider endpoint, not model weights directly | Browser UI over Ollama or compatible APIs | Private chat interface after provider endpoint works | Provider health first; do not debug UI before proving the model API. |
 
 ## Decision Rules
@@ -179,6 +182,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]

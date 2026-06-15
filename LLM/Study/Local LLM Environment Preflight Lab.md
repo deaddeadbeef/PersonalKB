@@ -13,7 +13,7 @@ Use this before [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist
 
 Pair this with [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] when any endpoint listens on a port, and with [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when the preflight evidence becomes part of a model/runtime comparison.
 
-If the runtime path is vLLM or SGLang from a Windows machine, continue into [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] after this generic preflight. That lab proves the Windows driver, WSL 2 distro, WSL `nvidia-smi`, Python environment, loopback forwarding, `/v1/models`, and first OpenAI-compatible response before scheduler or throughput work begins.
+If the runtime path is vLLM or SGLang from a Windows machine, continue into [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] after this generic preflight. That lab proves the Windows driver, WSL 2 distro, WSL `nvidia-smi`, Python environment, loopback forwarding, `/v1/models`, and first OpenAI-compatible response before scheduler or throughput work begins. If the serving path uses Docker, run [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] after WSL/Linux GPU proof to verify the Docker authority, NVIDIA container runtime, image tag, model/cache mount, loopback port mapping, provider endpoint, Compose contract, and Open WebUI route.
 
 ## Outcome
 
@@ -190,7 +190,7 @@ For the full acquisition checklist, use [[LLM/Study/Local LLM Model Acquisition 
 | Windows native desktop | Runtime GUI/CLI opens, model list visible, loopback API responds | Assuming GUI chat success means API route and model id are correct. |
 | Windows native CLI | Command exists, model loads, process appears in listener list if serving | Mixing model caches between tools and testing the wrong model. |
 | WSL server | WSL shell sees Python/runtime and GPU if needed | Windows client base URL, firewall, or localhost forwarding differs from server shell. |
-| Docker server | Container sees model path, port mapping, and GPU if needed | Host has GPU but container has no accelerator access. |
+| Docker server | Container sees model path, port mapping, and GPU if needed; use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Docker GPU Container Serving Lab]] for the full proof. | Host has GPU but container has no accelerator access. |
 | Remote Linux server | SSH shell sees accelerator, disk, and listener | Exposing API before auth, firewall, and logs are planned. |
 
 The practical rule: run the preflight from the same boundary that will load the model. A Windows PowerShell check does not prove Docker GPU access; a WSL check does not prove a Windows desktop GUI can use the same model file.
@@ -256,6 +256,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

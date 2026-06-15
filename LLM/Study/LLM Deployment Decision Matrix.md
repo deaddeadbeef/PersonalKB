@@ -15,6 +15,8 @@ Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving 
 
 Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] first if a Windows workstation is being considered for vLLM/SGLang GPU serving.
 
+Use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] first if the deployment decision depends on Dockerized vLLM/SGLang, Compose, or Open WebUI provider routing.
+
 The question is not "local or cloud?" in the abstract. The question is which path satisfies the workload while preserving the data boundary, quality bar, latency target, cost model, and operational owner.
 
 ## Outcome
@@ -41,6 +43,7 @@ After filling this out, you should be able to:
 | Customization | Prompt-only, RAG, LoRA, fine-tune, tool use, or policy wrapper? | [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|Adaptation and Fine-Tuning Decision Guide]] |
 | Runtime compatibility | Does the selected artifact, quantization, tokenizer, chat template, runtime, route, and workload contract fit together? | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Runtime and Model Compatibility Matrix]] |
 | WSL CUDA serving path | If the choice uses vLLM or SGLang from Windows, does WSL prove GPU visibility, Python environment, loopback route, `/v1/models`, Windows client call, logs, and metrics? | [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|WSL CUDA vLLM/SGLang Setup Lab]] |
+| Docker GPU container path | If the choice uses containerized vLLM/SGLang or Open WebUI, does Docker prove GPU runtime, image tag, cache mount, loopback publish, Compose config, `/v1/models`, logs, metrics, and provider routing? | [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Docker GPU Container Serving Lab]] |
 | Artifact custody | Are the exact downloaded bytes, cache/local path, hash, GGUF/Ollama import, conversion command, and cleanup plan known? | [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Artifact Download Cache and Conversion Lab]] |
 | Quantization/offload | Which quantization, GPU offload, CPU fallback, and KV-cache precision passed both memory and quality gates? | [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Quantization and GPU Offload Lab]] |
 | Runtime comparison | Has the selected runtime beaten at least one plausible alternative under fixed prompts, sampler settings, context, output cap, benchmark rows, and quality rows? | [[LLM/Study/Local LLM Runtime Comparison Lab|Runtime Comparison Lab]] |
@@ -174,6 +177,7 @@ A deployment decision is complete when:
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]

@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this as the first-run binder for [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. Those notes explain the runtime choices and serving sequence. This note tells you exactly what to save so the run becomes capstone evidence.
 
-For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence.
+For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
 
 ## Evidence Packet
 
@@ -87,6 +87,7 @@ Minimum evidence:
 | Exact revision or digest | revision/tag/hash/digest or reproducibility marked partial |
 | Runtime compatibility | tokenizer, chat template, quantization, route, and workload fit are known |
 | WSL CUDA setup | if vLLM/SGLang from Windows, WSL GPU visibility, Python environment, loopback route, `/v1/models`, Windows client call, logs, and metrics are known |
+| Docker GPU container setup | if vLLM/SGLang runs in Docker, Docker authority, container GPU proof, image tag, cache mount, loopback port, `/v1/models`, logs, metrics, and Compose proof are known |
 | Memory estimate | weights plus KV-cache headroom fit the machine |
 
 The first run may be a small model. That is fine. The point is to prove the serving loop before optimizing quality.
@@ -219,6 +220,7 @@ This evidence pack is complete when you have:
 - [ ] model acquisition/provenance evidence
 - [ ] model/runtime compatibility evidence
 - [ ] WSL CUDA setup proof when using vLLM or SGLang from Windows
+- [ ] Docker GPU container proof when using containerized vLLM, SGLang, or Open WebUI
 - [ ] a successful native or OpenAI-compatible smoke response
 - [ ] a route/model-id proof such as `/api/tags`, `/v1/models`, runtime UI, or server log
 - [ ] one client-harness row or an explicit note that the run is smoke-test only
@@ -234,6 +236,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]

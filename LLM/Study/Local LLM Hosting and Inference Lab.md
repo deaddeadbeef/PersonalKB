@@ -26,6 +26,8 @@ If this is your first actual local run on Windows, start with [[LLM/Study/Local 
 
 If the first serious GPU-serving candidate is vLLM or SGLang from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before the vLLM/SGLang lab steps. It proves WSL 2, CUDA visibility, Python environment, loopback port, `/v1/models`, Windows client calls, metrics, and the failed layer if setup breaks.
 
+If the first serious GPU-serving candidate is containerized vLLM or SGLang, use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] after environment, artifact, and compatibility proof. It proves Docker authority, GPU runtime, pinned provider image, cache mount, loopback publishing, Compose, metrics, and Open WebUI provider routing.
+
 For any first actual local run, start a dated [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] before running commands. It keeps the preflight, model choice, endpoint proof, API contract, benchmark, quality decision, and next action together.
 
 Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] so the run is reproducible and the model/runtime choice is based on evidence rather than memory.
@@ -62,8 +64,8 @@ The academic core is not separate from deployment. A local model is slow or fast
 | Ollama | Fast laptop/server experiments with simple model management | Native local API at `http://localhost:11434/api` | Best first stop for "can I run this model and talk to it?" |
 | LM Studio | Desktop model browsing, GUI chat, and local app testing | OpenAI-compatible endpoints, commonly under `http://localhost:1234/v1` | Good for interactive exploration and quick client compatibility tests |
 | llama.cpp | GGUF models, CPU/edge, Apple Silicon, and careful low-level tuning | `llama-server` can expose an OpenAI-compatible local server | Best when hardware is limited or you need exact control over local binaries and quantized files |
-| vLLM | GPU-backed serving where throughput matters | OpenAI-compatible server, default local quickstart port `8000` | Learn this for production-style serving, batching, and PagedAttention; prove WSL CUDA first if starting from Windows. |
-| SGLang | High-throughput structured generation, multi-turn/programmatic workloads, and advanced serving | OpenAI/Hugging Face compatible serving | Learn this after vLLM when prefix reuse, structured generation, or large-scale serving matters; prove WSL CUDA first if starting from Windows. |
+| vLLM | GPU-backed serving where throughput matters | OpenAI-compatible server, default local quickstart port `8000` | Learn this for production-style serving, batching, and PagedAttention; prove WSL CUDA first if starting from Windows and Docker GPU proof if containerized. |
+| SGLang | High-throughput structured generation, multi-turn/programmatic workloads, and advanced serving | OpenAI/Hugging Face compatible serving | Learn this after vLLM when prefix reuse, structured generation, or large-scale serving matters; prove WSL CUDA first if starting from Windows and Docker GPU proof if containerized. |
 | Open WebUI | Self-hosted chat interface over Ollama or OpenAI-compatible providers | Web app front end, provider adapters underneath | Good when you want a private ChatGPT-like surface over local or self-hosted models |
 
 Treat Hugging Face TGI as important historically and operationally, but not the default new choice: Hugging Face documents TGI as maintenance-mode for Inference Endpoints and recommends vLLM or SGLang for new endpoint work.
@@ -269,6 +271,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
+- [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
