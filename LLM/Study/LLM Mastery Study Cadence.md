@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This is the operating rhythm for mastering LLMs: every week pairs academic understanding with one applied proof artifact, so reading turns into usable local inference skill.
 
-Use this with [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]], [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]], [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]], and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]]. The dashboard says what to do today. The roadmap says what mastery means. The capstone workbook stores proof. This cadence says what to do this week.
+Use this with [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]], [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]], [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]], [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]], and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]]. The dashboard says what to do today. The session run sheet captures one study block. The roadmap says what mastery means. The capstone workbook stores proof. This cadence says what to do this week.
 
 This is not a calendar deadline. If a week fails, repeat the week with a smaller artifact. The goal is durable recall and evidence, not page-count completion.
 
@@ -24,6 +24,8 @@ Use the same loop for academic and applied work.
 | Explain | 10 minutes | One paragraph in your own words |
 | Build or prove | 30-90 minutes | One command output, card, row, sketch, or code artifact |
 | Route | 5 minutes | Link the artifact from the capstone workbook or active lab |
+
+Use [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] when a day needs a fill-in artifact rather than loose notes.
 
 If the day only produces highlights, it does not count as progress toward mastery. There must be a recall answer, an explanation, or an evidence artifact.
 
@@ -376,6 +378,7 @@ This cadence has done its job when:
 - [[LLM/LLM — Learning Path]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Daily Mastery Session Run Sheet]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Paper Reading Protocol]]

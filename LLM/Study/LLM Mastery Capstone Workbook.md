@@ -24,6 +24,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Active recall bank | Mixed session using [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] |  | At least 20 mixed questions are answered from memory with 80 percent score, no zero in local inference, RAG/evaluation, or safety clusters, and missed prompts have remediation routes. | Not started |
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
 | Study cadence | Weekly log from [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] |  | Each active week has recall answers, a mechanism bridge, one applied artifact, and a capstone link or repeat row. | Not started |
+| Daily mastery session | Filled [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] or dated session note |  | One session links a recall answer, corrected answer, mechanism-to-local consequence, applied proof or blocker, and next controlled action. | Not started |
 | Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
 | Math and tensor shapes | Oral or written proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | Can trace token IDs, embeddings, hidden states, logits, probabilities, shifted targets, cross-entropy, attention shapes, weight memory, and KV-cache growth. | Study map drafted; oral proof not yet passed |
 | Metric interpretation | Metric card from [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] |  | Can classify loss, perplexity, benchmark, preference, calibration, quality, latency, and memory as different evidence types and name what each misses. | Not started |
@@ -136,6 +137,19 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Zero-score clusters |  |
 | Remediation routes |  |
 | Next proof artifact |  |
+
+## Daily Mastery Session Proof Template
+
+| Evidence item | Link or value |
+|---|---|
+| Session run sheet | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] |
+| Recall prompt answered |  |
+| Corrected answer |  |
+| Mechanism named |  |
+| Local consequence or control |  |
+| Applied proof or blocker |  |
+| Capstone row updated |  |
+| Next controlled action |  |
 
 ## Attention Implementation Proof Template
 
@@ -417,6 +431,7 @@ Next run:
 ## Completion Audit
 
 - [ ] Every gate in the evidence ledger has a proof link.
+- [ ] At least one daily mastery session links recall, mechanism, applied proof, and capstone route.
 - [ ] The training pipeline map explains one capability from data through deployment.
 - [ ] The mechanism-to-inference bridge explains at least one speed, memory, compatibility, quality, and RAG/tool failure with evidence.
 - [ ] The math and tensor-shape proof explains logits, loss, attention, weight memory, KV cache, and one local inference symptom.

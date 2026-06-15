@@ -52,6 +52,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] — Prerequisite map connecting academic mechanisms to applied local inference, RAG, tool, evaluation, and deployment proofs
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] — Mixed retrieval-practice prompts for academic mechanisms, paper literacy, evaluation, local hosting, RAG, tools, safety, and deployment
 - [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] — Weekly operating rhythm that pairs academic recall with applied LLM proof artifacts
+- [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] — One-session artifact for recall, mechanism explanation, applied proof, and capstone routing
 - [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] — Evidence ledger for paper, implementation, inference, RAG, evaluation, adaptation, and deployment proof
 - [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] — Oral and practical exam for academic mechanisms, paper literacy, local inference, RAG, evaluation, adaptation, and deployment
 - [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] — Fill-in attempt sheet for scoring the oral/practical exam, linking proof artifacts, and routing misses

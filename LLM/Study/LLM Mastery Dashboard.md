@@ -19,6 +19,7 @@ Use this before opening the broader map. The vault already has deep notes; this 
 | Concept route |  | [[LLM/Study/LLM Concept Dependency Map]] |
 | Applied proof |  | [[LLM/Study/Local LLM Hands-On Practicum Sequence]] |
 | Evidence destination |  | [[LLM/Study/LLM Mastery Capstone Workbook]] |
+| Session sheet |  | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] |
 | Stop rule | Stop after one saved answer, row, command output, or decision |  |
 
 If there is no saved answer or evidence row, the session was reading, not mastery progress.
@@ -43,6 +44,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | If the problem is | Go to | Produce |
 |---|---|---|
 | You do not know what to study next | [[LLM/Study/LLM Concept Dependency Map]] | Lowest unproven dependency |
+| You need to turn this study block into evidence | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] | Recall answer, mechanism bridge, applied artifact or blocker, capstone link |
 | You need mixed recall | [[LLM/Study/LLM Active Recall Question Bank]] | 20-question score and miss route |
 | You cannot explain a paper | [[LLM/Study/LLM Paper Reading Protocol]] | Claim, method, evidence, limitation, deployment implication |
 | You cannot explain tokens, logits, loss, attention, or KV cache | [[LLM/Study/LLM Math and Tensor Shape Primer]] | Worked explanation or shape row |
@@ -103,6 +105,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | Evidence to add | Destination |
 |---|---|
 | One unanswered recall prompt and corrected answer | [[LLM/Study/LLM Active Recall Question Bank]] or dated study note |
+| One complete daily study session | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] |
 | One mechanism-to-local-control row | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] or capstone note |
 | One machine-specific first-run readiness row | [[LLM/Study/Local LLM First Run Readiness Snapshot]] |
 | One first endpoint run folder | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
@@ -137,6 +140,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Study Cadence]]
+- [[LLM/Study/LLM Daily Mastery Session Run Sheet]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Concept Dependency Map]]
