@@ -3994,3 +3994,40 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` and `_ops/reports/audit-placeholder-hits.md` found no hits for the structured-format proof note, run id, runner path, or evidence paths.
+
+## [2026-06-16] curate | Prove first local request lifecycle
+
+Scope: map the saved first local Ollama request and response across the full request lifecycle before using it as capstone evidence.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Inference Request Lifecycle Lab.md`
+- `LLM/Study/LLM Inference Request Lifecycle Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM End-to-End Mental Model.md`
+- `LLM/Study/Local LLM First Inference Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16]] with native first-smoke lifecycle evidence and OpenAI-compatible contrast evidence.
+- Updated the lifecycle runner code block so native Ollama nested `options` values are surfaced as sampler evidence.
+- Ran the lifecycle runner against the saved native `think=false` first-smoke request/response pair.
+- Ran the lifecycle runner against the saved OpenAI-compatible first-smoke request/response pair as a contrast row.
+- Routed the proof through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, first-inference proof, lifecycle lab, lifecycle runner, and end-to-end mental model.
+- Kept the remaining boundary explicit: native lifecycle proof passed, OpenAI-compatible prefill timing is still missing, and quality/evidence-pack/operations/academic gates are still open.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty LLM files outside this routed slice.
+
+Verification:
+- Native lifecycle runner returned `pass` / `lifecycle_trace_ready`, 8 phase rows, 0 findings.
+- Native phase evidence includes sampler `temperature=0`, `num_predict=32`, `think=false`; `prompt_tokens=20`; `prefill_s=0.1242`; `output_tokens=5`; `decode_s=0.1587`; `decode_tokens_per_s=31.5113`; `finish_reason=stop`; exact output `local llm ok`.
+- OpenAI-compatible contrast runner returned `hold` / `lifecycle_trace_partial` because prefill timing was missing while client request, prompt assembly, tokenization, decode token count, stop, and output parsing passed.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` and `_ops/reports/audit-placeholder-hits.md` found no hits for the request lifecycle proof note, run ids, runner path, or evidence paths.

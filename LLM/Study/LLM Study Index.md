@@ -22,6 +22,7 @@ Study and review materials for the LLM knowledge base.
 
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]]
+- [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]]
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]]
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]]
@@ -176,6 +177,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — choose today's recall prompt, study route, proof artifact, evidence destination, and next action without searching the whole vault
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] — current evidence-based hold/not-started/pass map for academic proof, local endpoint proof, and exact next routes
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] — working local Ollama proof for `qwen3.5:2b-q4_K_M`: store, install, pull, health, native response, OpenAI-compatible response, and debrief
+- [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]] — native first-smoke request lifecycle pass with client, prompt, tokenization, prefill, decode, stop, detokenization, and application rows
 - [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] — endpoint evidence audit and compatibility pass, plus first quality probe hold with 3/5 passing probes
 - [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] — focused `K-01`/`C-01` remediation held after output-cap and prompt changes; points to tool/model/structured-output remediation
 - [[LLM/Study/Local LLM Calculator Tool Remediation Proof - 2026-06-16|Local LLM Calculator Tool Remediation Proof - 2026-06-16]] — native calculator tool loop cleared the held `K-01` arithmetic probe while direct ad hoc finalization stayed diagnostic

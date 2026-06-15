@@ -3,12 +3,14 @@ tags: [study, llm, inference, local-llm, lifecycle, request, metrics, evidence, 
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [core, practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # LLM Inference Request Lifecycle Runner
 
 Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when a saved local request and response should become repeatable evidence. The lab teaches the phases. This runner checks one concrete request against those phases and writes JSON, Markdown, CSV, and JSONL artifacts.
+
+Current dated proof: [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]] records a native Ollama `pass/lifecycle_trace_ready` row and an OpenAI-compatible `hold/lifecycle_trace_partial` contrast row for the first local endpoint.
 
 Use it with files from [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]], [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]], [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]], or any local client that preserves request and response JSON.
 
@@ -237,6 +239,13 @@ def extract_request(request_obj: Any) -> dict[str, Any]:
         "response_format",
     ]
     sampler = {key: request_obj[key] for key in sampler_keys if key in request_obj}
+    options = request_obj.get("options")
+    if isinstance(options, dict):
+        for key in sampler_keys:
+            if key in options and key not in sampler:
+                sampler[key] = options[key]
+    if "think" in request_obj:
+        sampler["think"] = request_obj["think"]
 
     route = "openai_compatible" if "messages" in request_obj else "native_or_raw"
     return {
