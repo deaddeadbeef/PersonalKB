@@ -8,9 +8,9 @@ last-verified: 2026-06-16
 
 # Local LLM First Model Pull Runner
 
-> **One-line summary** The first model pull counts only when the selected tag, source check, store decision, compatibility proof, pull output, model list, API tags, show metadata, and next route are all saved and agree.
+> **One-line summary** The first model pull counts only when the selected tag, source-recheck output, runtime-install runner output, store decision, compatibility proof, pull output, model list, API tags, show metadata, and next route are all saved and agree.
 
-Use this after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when pull artifacts should become repeatable JSON, Markdown, CSV, and JSONL evidence. Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] before pull when the source page needs a machine-checkable dated pass/hold/fail row. Use this runner before [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]].
+Use this after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when pull artifacts should become repeatable JSON, Markdown, CSV, and JSONL evidence. Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] before pull when the source page needs a machine-checkable dated pass/hold/fail row, and use [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] before pull when the installed runtime must prove command, listener, and read-only API readiness. Use this runner before [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]].
 
 This runner does not run `ollama pull` and does not contact a model registry. It audits saved evidence from the pull gate so a failed or partial download cannot be mistaken for endpoint readiness.
 
@@ -19,7 +19,8 @@ This runner does not run `ollama pull` and does not contact a model registry. It
 | Gate | Evidence checked | Why it matters |
 |---|---|---|
 | Intent before download | selected model, fallback, source check, store decision | prevents "whatever was already installed" from becoming first-run proof |
-| Precondition proof | runtime install, model store, compatibility decision | keeps pull evidence tied to the actual machine and runtime path |
+| Upstream runner proof | source-recheck output and runtime-install runner output | proves the mutable registry facts and installed runtime state were checked before pull |
+| Precondition proof | model store, compatibility decision, and install-gate route | keeps pull evidence tied to the actual machine and runtime path |
 | Pull artifact | saved pull output and explicit pull status | separates a completed pull from a partial or failed transfer |
 | Runtime inventory | `ollama ls`, `/api/tags`, `/api/show` evidence | proves the selected model is visible through both CLI and local API metadata |
 | Handoff | pass/hold/fail and next route | decides whether runtime health, endpoint smoke, smaller model, storage fix, or compatibility triage is next |
@@ -38,6 +39,7 @@ Minimum manifest:
   "source_page": "https://ollama.com/library/qwen3.5/tags",
   "source_checked_at": "2026-06-16",
   "source_recheck_output": "D:/llm-runs/first-model-source-recheck/first-model-source-recheck-001-model-source-recheck.json",
+  "runtime_install_runner_output": "D:/llm-runs/windows-runtime-install/first-runtime-install/first-runtime-install-runtime-install.json",
   "expected_digest": "2a654d98e6fb",
   "expected_size": "3.4GB",
   "model_store_decision": "default",
@@ -79,6 +81,8 @@ REQUIRED_FIELDS = [
     "selected_model",
     "source_page",
     "source_checked_at",
+    "source_recheck_output",
+    "runtime_install_runner_output",
     "model_store_decision",
     "pull_status",
     "runtime_install_proof",
@@ -246,6 +250,99 @@ def artifact_has_digest(path: Path | None, expected_digest: str) -> tuple[bool, 
     return digest in normalize_model(content), "digest text search"
 
 
+def status_from_json(data: Any) -> str:
+    if not isinstance(data, dict):
+        return "hold"
+    candidates = [
+        data.get("status"),
+        data.get("decision"),
+        (data.get("result") or {}).get("status") if isinstance(data.get("result"), dict) else "",
+        (data.get("result") or {}).get("decision") if isinstance(data.get("result"), dict) else "",
+    ]
+    for value in candidates:
+        status = status_value(value)
+        if status in {"pass", "hold", "fail"}:
+            return status
+    return "hold"
+
+
+def evaluate_upstream_proof(
+    field: str,
+    label: str,
+    manifest: dict[str, Any],
+    manifest_path: Path,
+    run_root: Path,
+    vault_root: Path,
+    selected_model: str,
+    require_model: bool = False,
+) -> tuple[dict[str, Any], list[dict[str, str]]]:
+    path = resolve_path(manifest.get(field), manifest_path, run_root, vault_root)
+    exists, content = read_artifact(path)
+    row: dict[str, Any] = {
+        "proof": field,
+        "label": label,
+        "path": str(path) if path else "",
+        "exists": exists,
+        "status": "hold",
+        "model_found": None,
+    }
+    findings: list[dict[str, str]] = []
+
+    if not exists:
+        findings.append(finding(
+            "hold",
+            "upstream-proof",
+            f"Required upstream proof `{field}` is missing.",
+            str(path) if path else field,
+            f"Run and link {label} before auditing the first model pull.",
+        ))
+        return row, findings
+
+    data = parse_json_or_none(content)
+    if data is None:
+        findings.append(finding(
+            "hold",
+            "upstream-proof",
+            f"Upstream proof `{field}` is not parseable JSON.",
+            str(path),
+            f"Replace `{field}` with the JSON output from {label}.",
+        ))
+        return row, findings
+
+    status = status_from_json(data)
+    row["status"] = status
+    if status == "fail":
+        findings.append(finding(
+            "fail",
+            "upstream-proof",
+            f"Upstream proof `{field}` reports fail.",
+            str(path),
+            f"Fix the failed {label} before using pull evidence.",
+        ))
+    elif status != "pass":
+        findings.append(finding(
+            "hold",
+            "upstream-proof",
+            f"Upstream proof `{field}` is not pass.",
+            str(path),
+            f"Rerun or complete {label} before using pull evidence.",
+        ))
+
+    if require_model and selected_model:
+        model_found = json_contains_model(data, selected_model)
+        row["model_found"] = model_found
+        if not model_found:
+            findings.append(finding(
+                "hold",
+                "source",
+                f"Selected model `{selected_model}` was not found in `{field}`.",
+                str(path),
+                "Link the source-recheck output for the selected model before accepting the pull.",
+            ))
+
+    return row, findings
+
+
 def evaluate_manifest(manifest: dict[str, Any], manifest_path: Path, run_root: Path, vault_root: Path) -> dict[str, Any]:
     selected_model = text(manifest.get("selected_model"))
     findings: list[dict[str, str]] = []
@@ -287,6 +384,24 @@ def evaluate_manifest(manifest: dict[str, Any], manifest_path: Path, run_root: P
             text(manifest.get("pull_status")),
             "Record pull_status as pass only after the selected model is visible through CLI and API evidence.",
         ))
+
+    upstream_rows: list[dict[str, Any]] = []
+    for field, label, require_model in [
+        ("source_recheck_output", "Local LLM First Model Source Recheck Runner", True),
+        ("runtime_install_runner_output", "Local LLM Windows Runtime Install Runner", False),
+    ]:
+        row, proof_findings = evaluate_upstream_proof(
+            field,
+            label,
+            manifest,
+            manifest_path,
+            run_root,
+            vault_root,
+            selected_model,
+            require_model=require_model,
+        )
+        upstream_rows.append(row)
+        findings.extend(proof_findings)
 
     artifacts = manifest.get("artifacts") or {}
     if not isinstance(artifacts, dict):
@@ -379,18 +494,39 @@ def evaluate_manifest(manifest: dict[str, Any], manifest_path: Path, run_root: P
         "decision": decision,
         "next_route": next_route,
         "next_action": findings[0]["action"] if findings else "Run the first runtime health snapshot before endpoint smoke testing.",
+        "upstream_proofs": upstream_rows,
         "artifacts": artifact_rows,
         "findings": findings,
     }
 
 
-def csv_write(path: Path, artifact_rows: list[dict[str, Any]]) -> None:
-    fields = ["artifact", "path", "exists", "bytes", "model_found", "mode"]
+def csv_write(path: Path, artifact_rows: list[dict[str, Any]], upstream_rows: list[dict[str, Any]]) -> None:
+    fields = ["kind", "name", "path", "exists", "bytes", "status", "model_found", "mode"]
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
+        for row in upstream_rows:
+            writer.writerow({
+                "kind": "upstream-proof",
+                "name": row.get("proof", ""),
+                "path": row.get("path", ""),
+                "exists": row.get("exists", ""),
+                "bytes": "",
+                "status": row.get("status", ""),
+                "model_found": row.get("model_found", ""),
+                "mode": "",
+            })
         for row in artifact_rows:
-            writer.writerow({field: csv_cell(row.get(field)) for field in fields})
+            writer.writerow({
+                "kind": "pull-artifact",
+                "name": row.get("artifact", ""),
+                "path": row.get("path", ""),
+                "exists": row.get("exists", ""),
+                "bytes": row.get("bytes", ""),
+                "status": "",
+                "model_found": row.get("model_found", ""),
+                "mode": row.get("mode", ""),
+            })
 
 
 def render_markdown(record: dict[str, Any]) -> str:
@@ -405,11 +541,30 @@ def render_markdown(record: dict[str, Any]) -> str:
         f"- Source checked: `{result['source_checked_at']}`",
         f"- Next route: {wiki_link(result['next_route'])}",
         "",
+        "## Upstream Proofs",
+        "",
+        "| Proof | Exists | Status | Model found | Path |",
+        "|---|---:|---|---:|---|",
+    ]
+    for row in result["upstream_proofs"]:
+        lines.append(
+            "| "
+            + " | ".join([
+                md_cell(row["proof"]),
+                md_cell(row["exists"]),
+                md_cell(row["status"]),
+                md_cell(row.get("model_found")),
+                md_cell(row["path"]),
+            ])
+            + " |"
+        )
+    lines.extend([
+        "",
         "## Artifact Results",
         "",
         "| Artifact | Exists | Bytes | Model found | Path |",
         "|---|---:|---:|---:|---|",
-    ]
+    ])
     for row in result["artifacts"]:
         lines.append(
             "| "
@@ -471,7 +626,7 @@ def main() -> int:
         "jsonl": str(jsonl_path),
     }
 
-    csv_write(csv_path, result["artifacts"])
+    csv_write(csv_path, result["artifacts"], result["upstream_proofs"])
     json_path.write_text(json.dumps(record, indent=2, ensure_ascii=False), encoding="utf-8")
     markdown_path.write_text(render_markdown(record), encoding="utf-8")
     with jsonl_path.open("a", encoding="utf-8") as handle:
@@ -509,8 +664,8 @@ python .\local_llm_first_model_pull_runner.py
 
 | Runner status | Meaning | Next route |
 |---|---|---|
-| `pass/first_model_pull_ready` | selected model, source check, store decision, preconditions, pull output, CLI list, API tags, and show metadata agree | [[LLM/Study/Local LLM First Runtime Health Runner]] |
-| `hold/first_model_pull_incomplete` | pull artifacts, source check, store decision, compatibility proof, digest, or explicit status is missing | [[LLM/Study/Local LLM First Model Pull Gate]] |
+| `pass/first_model_pull_ready` | selected model, source-recheck output, runtime-install runner output, store decision, preconditions, pull output, CLI list, API tags, and show metadata agree | [[LLM/Study/Local LLM First Runtime Health Runner]] |
+| `hold/first_model_pull_incomplete` | pull artifacts, source-recheck output, install-runner output, store decision, compatibility proof, digest, or explicit status is missing | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | `fail/first_model_pull_failed` | pull failed or runtime inventory contradicts the selected model | fix pull/storage/tag mismatch before runtime health or endpoint smoke |
 
 A `pass` result does not prove inference. It only says the model artifact is visible enough to move to a no-generation runtime health snapshot.
@@ -526,7 +681,8 @@ A `pass` result does not prove inference. It only says the model artifact is vis
 This runner is useful when:
 
 - [ ] the selected model, fallback, source page, source check date, expected size, and expected digest are recorded
-- [ ] source recheck output is linked when the current page facts were machine-checked before pull
+- [ ] source recheck output is linked and reports pass for the selected model
+- [ ] runtime install runner output is linked and reports pass before model pull
 - [ ] runtime install, model store, and runtime compatibility proof links exist
 - [ ] model store decision is not hold
 - [ ] pull output is saved and pull status is explicit
@@ -540,6 +696,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
@@ -547,3 +704,10 @@ This runner is useful when:
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
+
+External/current sources checked 2026-06-16:
+
+- [Ollama CLI reference](https://docs.ollama.com/cli)
+- [Ollama list local models API](https://docs.ollama.com/api/tags)
+- [Ollama show model details API](https://docs.ollama.com/api-reference/show-model-details)
+- [Ollama list running models API](https://docs.ollama.com/api/ps)

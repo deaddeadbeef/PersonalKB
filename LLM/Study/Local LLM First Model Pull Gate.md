@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** Before the first inference call, freeze the selected Ollama tag, prove where the bytes will land, pull only one small baseline model, capture model metadata, and decide whether the artifact is ready for endpoint smoke testing.
 
-Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] immediately before this gate when model-page facts need a dated pass/hold/fail row. Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] before this gate when artifact format, quantization, tokenizer, chat template, route, or model-id support is not already proven. Use [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] after this gate when the saved pull/list/tags/show artifacts should become repeatable pass/hold/fail evidence. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
+Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists, and [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] makes that proof machine-checkable. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] immediately before this gate when model-page facts need a dated pass/hold/fail row. Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] before this gate when artifact format, quantization, tokenizer, chat template, route, or model-id support is not already proven. Use [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] after this gate when the saved source-recheck, install-runner, pull/list/tags/show artifacts should become repeatable pass/hold/fail evidence. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
 
 This is not a quality test. It is a custody and readiness gate for the first model bytes.
 
@@ -33,6 +33,7 @@ Do not run `ollama pull` until all three are true:
 | Required proof | Source |
 |---|---|
 | Runtime works from a new shell | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
+| Runtime install readiness is machine-checked | [[LLM/Study/Local LLM Windows Runtime Install Runner]] |
 | Model store decision is not hold | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | First model slot is chosen | [[LLM/Study/Local LLM First Model Candidate Ladder]] |
 | Current source facts are rechecked | [[LLM/Study/Local LLM First Model Source Recheck Runner]] |
@@ -74,6 +75,7 @@ fallback_model=qwen3.5:2b
 source_page=https://ollama.com/library/qwen3.5/tags
 source_checked_at=2026-06-16
 source_recheck_output=<path-to-model-source-recheck-json>
+runtime_install_runner_output=<path-to-runtime-install-json>
 expected_size=3.4GB
 expected_context=256K
 expected_input=Text, Image
@@ -248,6 +250,7 @@ This gate is complete only when:
 - [ ] `ollama-version-before-pull.txt` exists
 - [ ] `disk-before-pull.txt` and model-store evidence exist
 - [ ] current source page facts were checked by [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] or marked partial with a hold reason
+- [ ] [[LLM/Study/Local LLM Windows Runtime Install Runner|Local LLM Windows Runtime Install Runner]] output exists and reports pass before pull
 - [ ] `ollama-pull.txt` exists
 - [ ] `ollama-ls-after-pull.txt` includes the selected model
 - [ ] `ollama-api-tags-after-pull.json` includes the selected model
@@ -260,6 +263,7 @@ This gate is complete only when:
 Internal routes:
 
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
+- [[LLM/Study/Local LLM Windows Runtime Install Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]

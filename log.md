@@ -3200,3 +3200,33 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4962 files, 3091 Markdown files, 926 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Harden first model pull upstream proof
+
+Scope: make the first model pull runner reject unaudited pulls by requiring upstream source-recheck and runtime-install runner outputs before runtime health or endpoint smoke.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Model Pull Gate.md`
+- `LLM/Study/Local LLM First Model Pull Runner.md`
+- `LLM/Study/Local LLM First Run Command Plan Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Updated [[LLM/Study/Local LLM First Model Pull Runner]] so `source_recheck_output` and `runtime_install_runner_output` are required JSON inputs and must report pass before a model pull can be accepted.
+- The pull runner now writes upstream-proof rows alongside pull-artifact rows and distinguishes missing upstream proof, held upstream proof, and failed upstream proof.
+- Updated [[LLM/Study/Local LLM First Run Command Plan Runner]] so generated plans write pull-gate filenames, capture `/api/show`, and generate `first-model-pull-manifest.json` before runtime health.
+- Updated [[LLM/Study/Local LLM First Model Pull Gate]], the LLM MOC, and the study index to reflect the stricter upstream-proof contract.
+- Checked current Ollama CLI, `/api/tags`, `/api/show`, and `/api/ps` docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_first_model_pull_runner.py` from the note.
+- Model-pull runner fixture checks: complete upstream proof -> `pass` / `first_model_pull_ready`; missing install-runner output -> `hold`; failed install-runner output -> `fail`.
+- Extracted and compiled `first_run_command_plan.py`; complete manifest -> `pass` with 19 planned steps including `10b-capture-model-show` and `10c-plan-first-model-pull-runner`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4962 files, 3091 Markdown files, 926 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

@@ -58,6 +58,7 @@ Optional fields:
   "output_root": "D:/llm-runs/command-plans",
   "vault_root": "D:/Vaults/PersonalKB",
   "ollama_models_path": "D:/LocalModels/Ollama",
+  "expected_source_digest": "2a654d98e6fb",
   "source_recheck_snippets": ["2a654d98e6fb", "3.4GB", "parameters 4.66B", "quantization Q4_K_M"],
   "security_review_proof": "",
   "native_smoke_prompt": "Reply with one sentence: local endpoint ready.",
@@ -403,23 +404,88 @@ try {
                 "09-pull-first-model",
                 "model-pull",
                 "LLM/Study/Local LLM First Model Pull Gate",
-                "model-pull.txt",
+                "ollama-pull.txt",
                 """
-ollama pull $ModelId 2>&1 | Tee-Object -FilePath (Join-Path $RunRoot "model-pull.txt")
-ollama ls 2>&1 | Tee-Object -FilePath (Join-Path $RunRoot "ollama-ls.txt")
+$ModelId | Set-Content -Path (Join-Path $RunRoot "selected-model.txt") -Encoding utf8
+@"
+gate=Local LLM First Model Pull Gate
+runtime=$Runtime
+selected_model=$ModelId
+source_page=$SourcePage
+source_checked_at=$SourceCheckedAt
+source_recheck_output=$(Join-Path $RunRoot "first-model-source-recheck\$RunId-model-source-recheck\$RunId-model-source-recheck-model-source-recheck.json")
+runtime_install_runner_output=$(Join-Path $RunRoot "windows-runtime-install\$RunId-runtime-install\$RunId-runtime-install-runtime-install.json")
+model_store_decision=$ModelStoreDecision
+next_gate=Local LLM First Runtime Health Runner
+"@ | Set-Content -Path (Join-Path $RunRoot "model-pull-decision.txt") -Encoding utf8
+ollama pull $ModelId 2>&1 | Tee-Object -FilePath (Join-Path $RunRoot "ollama-pull.txt")
+ollama ls 2>&1 | Tee-Object -FilePath (Join-Path $RunRoot "ollama-ls-after-pull.txt")
 """,
-                "Pull only the selected first model and save CLI inventory output.",
+                "Pull only the selected first model and save CLI inventory output with pull-gate filenames.",
             ),
             make_step(
                 "10-capture-native-model-list",
                 "model-pull",
                 "LLM/Study/Local LLM First Model Pull Gate",
-                "api-tags.json",
+                "ollama-api-tags-after-pull.json",
                 """
 Invoke-RestMethod -Method Get -Uri "$NativeBase/api/tags" |
-  ConvertTo-Json -Depth 10 | Set-Content -Path (Join-Path $RunRoot "api-tags.json") -Encoding utf8
+  ConvertTo-Json -Depth 10 | Set-Content -Path (Join-Path $RunRoot "ollama-api-tags-after-pull.json") -Encoding utf8
 """,
                 "Capture the native model-list route after the pull.",
+            ),
+            make_step(
+                "10b-capture-model-show",
+                "model-pull",
+                "LLM/Study/Local LLM First Model Pull Gate",
+                "ollama-show-response.json",
+                """
+$ShowBody = @{ model = $ModelId; verbose = $false } | ConvertTo-Json -Depth 4
+$ShowBody | Set-Content -Path (Join-Path $RunRoot "ollama-show-request.json") -Encoding utf8
+Invoke-RestMethod -Method Post -Uri "$NativeBase/api/show" -ContentType "application/json" -Body $ShowBody |
+  ConvertTo-Json -Depth 20 | Set-Content -Path (Join-Path $RunRoot "ollama-show-response.json") -Encoding utf8
+""",
+                "Capture local model metadata before any generation request.",
+            ),
+            make_step(
+                "10c-plan-first-model-pull-runner",
+                "model-pull",
+                "LLM/Study/Local LLM First Model Pull Runner",
+                "first-model-pull-manifest.json",
+                """
+@{
+  run_id = "$RunId-first-model-pull"
+  run_root = $RunRoot
+  vault_root = $VaultRoot
+  selected_model = $ModelId
+  fallback_model = ""
+  source_page = $SourcePage
+  source_checked_at = $SourceCheckedAt
+  source_recheck_output = (Join-Path $RunRoot "first-model-source-recheck\$RunId-model-source-recheck\$RunId-model-source-recheck-model-source-recheck.json")
+  runtime_install_runner_output = (Join-Path $RunRoot "windows-runtime-install\$RunId-runtime-install\$RunId-runtime-install-runtime-install.json")
+  expected_digest = $ExpectedSourceDigest
+  expected_size = ""
+  model_store_decision = $ModelStoreDecision
+  pull_status = "pass"
+  runtime_install_proof = "LLM/Study/Local LLM Windows Runtime Install Gate"
+  model_store_proof = "LLM/Study/Local LLM Model Store Readiness Snapshot"
+  runtime_compatibility_proof = "LLM/Study/Local LLM Runtime Compatibility Runner"
+  artifacts = @{
+    model_pull_decision = (Join-Path $RunRoot "model-pull-decision.txt")
+    pull_output = (Join-Path $RunRoot "ollama-pull.txt")
+    ollama_ls_after_pull = (Join-Path $RunRoot "ollama-ls-after-pull.txt")
+    api_tags_after_pull = (Join-Path $RunRoot "ollama-api-tags-after-pull.json")
+    api_show_response = (Join-Path $RunRoot "ollama-show-response.json")
+  }
+  next_route = "LLM/Study/Local LLM First Runtime Health Runner"
+} | ConvertTo-Json -Depth 10 | Set-Content -Path (Join-Path $RunRoot "first-model-pull-manifest.json") -Encoding utf8
+# Extract local_llm_first_model_pull_runner.py, then run:
+# $env:LOCAL_LLM_FIRST_MODEL_PULL_MANIFEST = Join-Path $RunRoot "first-model-pull-manifest.json"
+# $env:LOCAL_LLM_FIRST_MODEL_PULL_RUN_ROOT = $RunRoot
+# $env:LOCAL_LLM_FIRST_MODEL_PULL_VAULT_ROOT = $VaultRoot
+# python .\\local_llm_first_model_pull_runner.py
+""",
+                "Prepare the pull evidence audit manifest before runtime health.",
             ),
             make_step(
                 "11-plan-runtime-health-runner",
@@ -744,7 +810,9 @@ def render_powershell(record: dict[str, Any]) -> str:
         f"$ModelId = {ps_quote(record['model_id'])}",
         f"$SourcePage = {ps_quote(record['source_page'])}",
         f"$SourceCheckedAt = {ps_quote(record['source_checked_at'])}",
+        f"$ExpectedSourceDigest = {ps_quote(record['expected_source_digest'])}",
         "$SourceRecheckSnippets = @(" + ", ".join(ps_quote(item) for item in record["source_recheck_snippets"] if item) + ")",
+        f"$VaultRoot = {ps_quote(record['vault_root'])}",
         f"$NativeBase = {ps_quote(record['native_base_url'].rstrip('/'))}",
         f"$OpenAIBase = {ps_quote(record['openai_base_url'].rstrip('/'))}",
         f"$SecurityBoundary = {ps_quote(record['security_boundary'])}",
@@ -810,10 +878,12 @@ def main() -> int:
         "model_id": display(manifest.get("model_id")),
         "source_page": display(manifest.get("source_page")),
         "source_checked_at": display(manifest.get("source_checked_at")),
+        "expected_source_digest": display(manifest.get("expected_source_digest") or manifest.get("expected_digest")),
         "source_recheck_snippets": list_value(manifest.get("source_recheck_snippets")) or [
             display(manifest.get("model_id")),
             display(manifest.get("expected_source_digest")),
         ],
+        "vault_root": display(manifest.get("vault_root") or "D:/Vaults/PersonalKB"),
         "native_base_url": display(manifest.get("native_base_url") or "http://127.0.0.1:11434"),
         "openai_base_url": display(manifest.get("openai_base_url") or "http://127.0.0.1:11434/v1"),
         "security_boundary": display(manifest.get("security_boundary")),
@@ -951,7 +1021,7 @@ This command-plan output counts only when:
 - [ ] `require_loopback` remains true for the first run unless a security review is linked
 - [ ] generated JSON, Markdown, PowerShell, CSV, and JSONL outputs exist
 - [ ] generated PowerShell has been reviewed before execution
-- [ ] the generated plan routes to source recheck, runtime install runner, runtime health, smoke request, first response debrief, endpoint audit, and first inference packet audit
+- [ ] the generated plan routes to source recheck, runtime install runner, first model pull runner, runtime health, smoke request, first response debrief, endpoint audit, and first inference packet audit
 - [ ] the copy row is linked from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] or [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
 
 ## References
@@ -967,6 +1037,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM Windows Runtime Install Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
