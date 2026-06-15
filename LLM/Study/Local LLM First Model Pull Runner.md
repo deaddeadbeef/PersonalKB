@@ -3,14 +3,14 @@ tags: [study, llm, inference, local-llm, ollama, model-acquisition, provenance, 
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Model Pull Runner
 
 > **One-line summary** The first model pull counts only when the selected tag, source check, store decision, compatibility proof, pull output, model list, API tags, show metadata, and next route are all saved and agree.
 
-Use this after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when pull artifacts should become repeatable JSON, Markdown, CSV, and JSONL evidence. Use it before [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]].
+Use this after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when pull artifacts should become repeatable JSON, Markdown, CSV, and JSONL evidence. Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] before pull when the source page needs a machine-checkable dated pass/hold/fail row. Use this runner before [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]].
 
 This runner does not run `ollama pull` and does not contact a model registry. It audits saved evidence from the pull gate so a failed or partial download cannot be mistaken for endpoint readiness.
 
@@ -36,7 +36,8 @@ Minimum manifest:
   "selected_model": "qwen3.5:4b",
   "fallback_model": "qwen3.5:2b",
   "source_page": "https://ollama.com/library/qwen3.5/tags",
-  "source_checked_at": "2026-06-15",
+  "source_checked_at": "2026-06-16",
+  "source_recheck_output": "D:/llm-runs/first-model-source-recheck/first-model-source-recheck-001-model-source-recheck.json",
   "expected_digest": "2a654d98e6fb",
   "expected_size": "3.4GB",
   "model_store_decision": "default",
@@ -525,6 +526,7 @@ A `pass` result does not prove inference. It only says the model artifact is vis
 This runner is useful when:
 
 - [ ] the selected model, fallback, source page, source check date, expected size, and expected digest are recorded
+- [ ] source recheck output is linked when the current page facts were machine-checked before pull
 - [ ] runtime install, model store, and runtime compatibility proof links exist
 - [ ] model store decision is not hold
 - [ ] pull output is saved and pull status is explicit
@@ -535,6 +537,7 @@ This runner is useful when:
 ## References
 
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]

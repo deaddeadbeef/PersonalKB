@@ -3,16 +3,18 @@ tags: [study, llm, local-llm, model-selection, ollama, hardware, first-run]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Model Candidate Ladder
 
 > **One-line summary** For this Windows workstation, the first local LLM model should prove the runtime and loopback routes cheaply before testing stronger, larger, or more specialized candidates.
 
-Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and before [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The readiness snapshot says what is installed. This ladder says which first model class to pull, what that choice proves, and when to move to a larger tag.
+Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and before [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]], [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The readiness snapshot says what is installed. This ladder says which first model class to pull, what that choice proves, and when to move to a larger tag.
 
 Pair this with [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] when estimating memory and [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] when the workload is more specific than a route proof. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the first-run ladder should be compared with workload-specific candidates in one repeatable shortlist.
+
+Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] whenever the date changes, a source page changes, or the first pull is about to start. This ladder is a recommendation; the source recheck runner is the dated evidence row.
 
 ## Machine Scope
 
@@ -57,6 +59,18 @@ Do not start with the largest model that might fit. If a large first pull fails,
 
 The advertised context windows are not permission to use huge contexts on the first run. A 256K or 40K context label does not prove local KV-cache headroom, prefill latency, quality, or truncation behavior on this workstation.
 
+## Source Recheck Facts 2026-06-16
+
+| Slot | Source page | Current facts to verify before pull |
+|---|---|---|
+| Route-proof baseline | [Ollama qwen3.5:4b](https://ollama.com/library/qwen3.5:4b) | `qwen3.5:4b`, digest `2a654d98e6fb`, 3.4GB, 256K context, Text/Image input, 4.66B parameters, Q4_K_M, Apache 2.0. |
+| Emergency smaller fallback | [Ollama qwen3.5 tags](https://ollama.com/library/qwen3.5/tags) | `qwen3.5:2b-q4_K_M`, digest `124a03c34777`, 1.9GB, 256K context, Text/Image input. |
+| Text-only instruct control | [Ollama qwen3:4b-instruct](https://ollama.com/library/qwen3:4b-instruct) | `qwen3:4b-instruct`, digest `0edcdef34593`, 2.5GB, 256K context, Text input, 4.02B parameters, Q4_K_M, Apache 2.0. |
+| Practical stretch | [Ollama qwen3.5 tags](https://ollama.com/library/qwen3.5/tags) | `qwen3.5:9b`, digest `6488c96fa5fa`, 6.6GB, 256K context, Text/Image input. |
+| Alternate text-only stretch | [Ollama qwen3 tags](https://ollama.com/library/qwen3/tags) | `qwen3:8b`, digest `500a1f067a9f`, 5.2GB, 40K context, Text input. |
+
+Source-page evidence is still only remote custody evidence. After pull, [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] must compare local `ollama ls`, `/api/tags`, and `/api/show` metadata against the selected model.
+
 ## First Pull Decision
 
 Use this decision unless a current model page or local constraint changes it:
@@ -91,7 +105,7 @@ Move from baseline to stretch only when these are true:
 
 Recheck model pages before pulling when:
 
-- the current date is not 2026-06-15
+- the current date is not 2026-06-16
 - an Ollama pull fails with "not found" or resolves to an unexpected artifact
 - the model page shows a different size, quantization, license, context, or input modality
 - the workload changes from smoke chat to coding, RAG, tools, vision, long context, or batch
@@ -104,6 +118,7 @@ The model ladder is operational guidance, not a timeless leaderboard.
 This ladder has served its purpose for one run when:
 
 - [ ] the run card names the selected slot and model tag
+- [ ] [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] has a pass row, or a hold row names the replacement policy
 - [ ] the benchmark row records whether it was baseline, control, stretch, or rejected
 - [ ] any larger model was tested only after baseline proof existed
 - [ ] rejected candidates include the owner: memory, quality, route, runtime, license, or maintenance
@@ -115,6 +130,7 @@ This ladder has served its purpose for one run when:
 Internal routes:
 
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
@@ -126,9 +142,10 @@ Internal routes:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 
-External/current sources checked 2026-06-15:
+External/current sources checked 2026-06-16:
 
 - [Ollama qwen3.5:4b model page](https://ollama.com/library/qwen3.5:4b)
+- [Ollama qwen3.5:2b model page](https://ollama.com/library/qwen3.5:2b)
 - [Ollama qwen3.5:9b model page](https://ollama.com/library/qwen3.5:9b)
 - [Ollama qwen3.5 tags](https://ollama.com/library/qwen3.5/tags)
 - [Ollama qwen3:4b-instruct model page](https://ollama.com/library/qwen3:4b-instruct)

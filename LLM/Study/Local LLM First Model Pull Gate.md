@@ -3,14 +3,14 @@ tags: [study, llm, inference, local-llm, ollama, model-acquisition, provenance, 
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Model Pull Gate
 
 > **One-line summary** Before the first inference call, freeze the selected Ollama tag, prove where the bytes will land, pull only one small baseline model, capture model metadata, and decide whether the artifact is ready for endpoint smoke testing.
 
-Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] before this gate when artifact format, quantization, tokenizer, chat template, route, or model-id support is not already proven. Use [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] after this gate when the saved pull/list/tags/show artifacts should become repeatable pass/hold/fail evidence. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
+Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] immediately before this gate when model-page facts need a dated pass/hold/fail row. Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] before this gate when artifact format, quantization, tokenizer, chat template, route, or model-id support is not already proven. Use [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] after this gate when the saved pull/list/tags/show artifacts should become repeatable pass/hold/fail evidence. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
 
 This is not a quality test. It is a custody and readiness gate for the first model bytes.
 
@@ -35,20 +35,21 @@ Do not run `ollama pull` until all three are true:
 | Runtime works from a new shell | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | Model store decision is not hold | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | First model slot is chosen | [[LLM/Study/Local LLM First Model Candidate Ladder]] |
+| Current source facts are rechecked | [[LLM/Study/Local LLM First Model Source Recheck Runner]] |
 | Runtime/model compatibility is not hold | [[LLM/Study/Local LLM Runtime Compatibility Runner]] |
 
 The first pull changes one variable: model tag. Do not also change runtime, endpoint route, context length, sampler, chat template, or LAN exposure in the same pass.
 
 ## Current First-Pull Decision
 
-Source check on 2026-06-15:
+Source check on 2026-06-16:
 
 | Slot | Tag | Source facts to recheck before pull | Use |
 |---|---|---|---|
-| Baseline | `qwen3.5:4b` | Ollama tags page listed the tag as 3.4GB, 256K context, Text/Image input, digest `2a654d98e6fb`, updated 3 months ago. | First route-proof model. |
-| Smaller fallback | `qwen3.5:2b` or `qwen3.5:2b-q4_K_M` | Same family, smaller download, still enough to prove pull, tags, show, and route. | Use if disk, time, or network says 4B is too large. |
-| Text-only control | `qwen3:4b-instruct` | Use when multimodal/reasoning defaults complicate a plain text smoke proof. | Control run after or instead of Qwen 3.5 baseline. |
-| Stretch | `qwen3.5:9b` | Listed at 6.6GB with 256K context. | Only after baseline endpoint proof exists. |
+| Baseline | `qwen3.5:4b` | Model page shows digest `2a654d98e6fb`, 3.4GB, 256K context, Text/Image input, 4.66B parameters, Q4_K_M, Apache 2.0. | First route-proof model. |
+| Smaller fallback | `qwen3.5:2b-q4_K_M` | Tags page shows digest `124a03c34777`, 1.9GB, 256K context, Text/Image input. | Use if disk, time, or network says 4B is too large. |
+| Text-only control | `qwen3:4b-instruct` | Model page shows digest `0edcdef34593`, 2.5GB, 256K context, Text input, 4.02B parameters, Q4_K_M. | Control run after or instead of Qwen 3.5 baseline. |
+| Stretch | `qwen3.5:9b` | Tags page shows digest `6488c96fa5fa`, 6.6GB, 256K context, Text/Image input. | Only after baseline endpoint proof exists. |
 | Avoid first | 27B and larger tags | Some tags exceed this machine's 12GB VRAM before KV cache and overhead. | Not first-run material. |
 
 The advertised context window is not a local context budget. Huge context labels do not prove KV-cache headroom, prompt-eval latency, or quality on this machine.
@@ -71,6 +72,8 @@ runtime=Ollama on Windows
 selected_model=qwen3.5:4b
 fallback_model=qwen3.5:2b
 source_page=https://ollama.com/library/qwen3.5/tags
+source_checked_at=2026-06-16
+source_recheck_output=<path-to-model-source-recheck-json>
 expected_size=3.4GB
 expected_context=256K
 expected_input=Text, Image
@@ -121,7 +124,7 @@ Hold signal: the store path is unknown, the drive is too full, or `ollama --vers
 
 ## Step 2: Recheck The Source Page
 
-Before a real pull, open the current model page or tags page and compare:
+Before a real pull, run [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] or manually open the current model page or tags page and compare:
 
 | Field | Expected for baseline | If different |
 |---|---|---|
@@ -244,7 +247,7 @@ This gate is complete only when:
 - [ ] `model-pull-decision.txt` exists
 - [ ] `ollama-version-before-pull.txt` exists
 - [ ] `disk-before-pull.txt` and model-store evidence exist
-- [ ] current source page facts were checked or marked partial
+- [ ] current source page facts were checked by [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] or marked partial with a hold reason
 - [ ] `ollama-pull.txt` exists
 - [ ] `ollama-ls-after-pull.txt` includes the selected model
 - [ ] `ollama-api-tags-after-pull.json` includes the selected model
@@ -258,6 +261,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
+- [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
@@ -270,9 +274,13 @@ Internal routes:
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 
-External/current sources checked 2026-06-15:
+External/current sources checked 2026-06-16:
 
 - [Ollama qwen3.5 tags](https://ollama.com/library/qwen3.5/tags)
+- [Ollama qwen3.5:4b model page](https://ollama.com/library/qwen3.5:4b)
+- [Ollama qwen3.5:2b model page](https://ollama.com/library/qwen3.5:2b)
+- [Ollama qwen3:4b-instruct model page](https://ollama.com/library/qwen3:4b-instruct)
+- [Ollama qwen3 tags](https://ollama.com/library/qwen3/tags)
 - [Ollama CLI reference](https://docs.ollama.com/cli)
 - [Ollama list models API](https://docs.ollama.com/api/tags)
 - [Ollama show model details API](https://docs.ollama.com/api-reference/show-model-details)

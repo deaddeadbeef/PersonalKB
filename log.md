@@ -3132,3 +3132,37 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4960 files, 3089 Markdown files, 924 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-16] curate | Add first model source recheck runner
+
+Scope: make the first local model choice source-verifiable before the command plan, model pull gate, or endpoint run sheet can depend on a mutable registry tag.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Model Candidate Ladder.md`
+- `LLM/Study/Local LLM First Model Pull Gate.md`
+- `LLM/Study/Local LLM First Model Pull Runner.md`
+- `LLM/Study/Local LLM First Model Source Recheck Runner.md`
+- `LLM/Study/Local LLM First Run Command Plan Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM First Model Source Recheck Runner]] with a standard-library Python runner that fetches model pages and checks expected tag, digest, size, context, modality, parameter, license, and quantization snippets before any pull.
+- Updated [[LLM/Study/Local LLM First Model Candidate Ladder]] and [[LLM/Study/Local LLM First Model Pull Gate]] with 2026-06-16 source facts for `qwen3.5:4b`, `qwen3.5:2b-q4_K_M`, `qwen3:4b-instruct`, `qwen3.5:9b`, and `qwen3:8b`.
+- Updated [[LLM/Study/Local LLM First Run Command Plan Runner]] so generated plans now include a source-recheck manifest before the model pull step and hold when the source page or source check date is missing.
+- Routed the LLM MOC, study index, mastery dashboard, and capstone workbook through the source-recheck step before first model pull.
+- Checked current Ollama qwen3.5/qwen3 model pages and tags plus Ollama show/tags API docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `first_model_source_recheck.py` and `first_run_command_plan.py` from their notes.
+- Source-recheck fixture checks: complete source page -> `pass`; missing expected snippet -> `fail`; missing source check date -> `hold`; optional contradicted stretch candidate -> overall `pass` because required candidates passed.
+- Command-plan fixture checks: complete manifest -> `pass` with 16 planned steps including `06-plan-model-source-recheck`; missing source page -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4961 files, 3090 Markdown files, 925 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

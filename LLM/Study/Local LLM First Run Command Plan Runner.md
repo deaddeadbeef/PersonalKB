@@ -37,6 +37,8 @@ Minimum first-run manifest:
   "runtime": "ollama",
   "runtime_boundary": "Windows native Ollama service",
   "model_id": "qwen3.5:4b",
+  "source_page": "https://ollama.com/library/qwen3.5:4b",
+  "source_checked_at": "2026-06-16",
   "native_base_url": "http://127.0.0.1:11434",
   "openai_base_url": "http://127.0.0.1:11434/v1",
   "security_boundary": "loopback only",
@@ -56,6 +58,7 @@ Optional fields:
   "output_root": "D:/llm-runs/command-plans",
   "vault_root": "D:/Vaults/PersonalKB",
   "ollama_models_path": "D:/LocalModels/Ollama",
+  "source_recheck_snippets": ["2a654d98e6fb", "3.4GB", "parameters 4.66B", "quantization Q4_K_M"],
   "security_review_proof": "",
   "native_smoke_prompt": "Reply with one sentence: local endpoint ready.",
   "openai_smoke_prompt": "Reply with one sentence: OpenAI-compatible route ready."
@@ -109,6 +112,16 @@ def bool_value(value: Any, default: bool = False) -> bool:
     if isinstance(value, bool):
         return value
     return str(value).strip().lower() in {"1", "true", "yes", "y", "on"}
+
+
+def list_value(value: Any) -> list[str]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [display(item) for item in value if display(item)]
+    if isinstance(value, str):
+        return [item.strip() for item in re.split(r"[;\n]", value) if item.strip()]
+    return [display(value)] if display(value) else []
 
 
 def load_manifest() -> tuple[Path, dict[str, Any]]:
@@ -279,7 +292,7 @@ if (Get-Command nvidia-smi -ErrorAction SilentlyContinue) {
     if ollama_models_path:
         steps.append(
             make_step(
-                "06-review-custom-model-store",
+                "05b-review-custom-model-store",
                 "model-store",
                 "LLM/Study/Local LLM Windows Model Store and Cache Plan",
                 "model-store-change-review.txt",
@@ -293,6 +306,38 @@ if (Get-Command nvidia-smi -ErrorAction SilentlyContinue) {
                 "Plan the custom model-store change without applying it inside the planner.",
             )
         )
+
+    steps.append(
+        make_step(
+            "06-plan-model-source-recheck",
+            "model-source",
+            "LLM/Study/Local LLM First Model Source Recheck Runner",
+            "first-model-source-recheck-manifest.json",
+            """
+@{
+  run_id = "$RunId-model-source-recheck"
+  run_root = $RunRoot
+  source_checked_at = $SourceCheckedAt
+  next_route = "LLM/Study/Local LLM First Run Command Plan Runner"
+  candidates = @(
+    @{
+      candidate_id = "first-run-selected-model"
+      slot = "selected first-run model"
+      model_id = $ModelId
+      source_url = $SourcePage
+      required = $true
+      expected_snippets = $SourceRecheckSnippets
+      next_route = "LLM/Study/Local LLM First Model Pull Gate"
+    }
+  )
+} | ConvertTo-Json -Depth 10 | Set-Content -Path (Join-Path $RunRoot "first-model-source-recheck-manifest.json") -Encoding utf8
+# Extract first-model-source-recheck.py, then run:
+# $env:LOCAL_LLM_FIRST_MODEL_SOURCE_RECHECK_MANIFEST = Join-Path $RunRoot "first-model-source-recheck-manifest.json"
+# python .\\first-model-source-recheck.py
+""",
+            "Prepare the dated source-page recheck before any model pull.",
+        )
+    )
 
     steps.extend(
         [
@@ -500,6 +545,8 @@ def evaluate_plan(manifest: dict[str, Any], steps: list[dict[str, Any]]) -> dict
         ("runtime", "manifest", "Name the runtime before choosing CLI and API commands."),
         ("runtime_boundary", "runtime", "Name Windows native, WSL, Docker, or another boundary."),
         ("model_id", "model", "Choose one first model id before pull and smoke commands."),
+        ("source_page", "source", "Link the current model page or tags page before pull."),
+        ("source_checked_at", "source", "Record the source check date before pull."),
         ("security_boundary", "security", "State loopback-only or link the exposure review."),
         ("model_store_decision", "storage", "Decide default store or custom OLLAMA_MODELS before pull."),
         ("runtime_install_scope", "runtime", "Scope installer/PATH/listener proof before pull."),
@@ -665,6 +712,9 @@ def render_powershell(record: dict[str, Any]) -> str:
         f"$Runtime = {ps_quote(record['runtime'])}",
         f"$RuntimeBoundary = {ps_quote(record['runtime_boundary'])}",
         f"$ModelId = {ps_quote(record['model_id'])}",
+        f"$SourcePage = {ps_quote(record['source_page'])}",
+        f"$SourceCheckedAt = {ps_quote(record['source_checked_at'])}",
+        "$SourceRecheckSnippets = @(" + ", ".join(ps_quote(item) for item in record["source_recheck_snippets"] if item) + ")",
         f"$NativeBase = {ps_quote(record['native_base_url'].rstrip('/'))}",
         f"$OpenAIBase = {ps_quote(record['openai_base_url'].rstrip('/'))}",
         f"$SecurityBoundary = {ps_quote(record['security_boundary'])}",
@@ -726,6 +776,12 @@ def main() -> int:
         "runtime": display(manifest.get("runtime") or "ollama"),
         "runtime_boundary": display(manifest.get("runtime_boundary")),
         "model_id": display(manifest.get("model_id")),
+        "source_page": display(manifest.get("source_page")),
+        "source_checked_at": display(manifest.get("source_checked_at")),
+        "source_recheck_snippets": list_value(manifest.get("source_recheck_snippets")) or [
+            display(manifest.get("model_id")),
+            display(manifest.get("expected_source_digest")),
+        ],
         "native_base_url": display(manifest.get("native_base_url") or "http://127.0.0.1:11434"),
         "openai_base_url": display(manifest.get("openai_base_url") or "http://127.0.0.1:11434/v1"),
         "security_boundary": display(manifest.get("security_boundary")),
@@ -799,6 +855,9 @@ $Manifest = Join-Path $PlanRoot "first-run-command-plan-manifest.json"
   runtime = "ollama"
   runtime_boundary = "Windows native Ollama service"
   model_id = "qwen3.5:4b"
+  source_page = "https://ollama.com/library/qwen3.5:4b"
+  source_checked_at = "2026-06-16"
+  source_recheck_snippets = @("2a654d98e6fb", "3.4GB", "parameters 4.66B", "quantization Q4_K_M")
   native_base_url = "http://127.0.0.1:11434"
   openai_base_url = "http://127.0.0.1:11434/v1"
   security_boundary = "loopback only"
@@ -854,11 +913,11 @@ Get-Content (Join-Path $PlanRoot "first-local-inference-001\first-local-inferenc
 
 This command-plan output counts only when:
 
-- [ ] manifest names run root, runtime, runtime boundary, model id, native base, OpenAI-compatible base, security boundary, model-store decision, install scope, and pull scope
+- [ ] manifest names run root, runtime, runtime boundary, model id, source page, source check date, native base, OpenAI-compatible base, security boundary, model-store decision, install scope, and pull scope
 - [ ] `require_loopback` remains true for the first run unless a security review is linked
 - [ ] generated JSON, Markdown, PowerShell, CSV, and JSONL outputs exist
 - [ ] generated PowerShell has been reviewed before execution
-- [ ] the generated plan routes to runtime health, smoke request, first response debrief, endpoint audit, and first inference packet audit
+- [ ] the generated plan routes to source recheck, runtime health, smoke request, first response debrief, endpoint audit, and first inference packet audit
 - [ ] the copy row is linked from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] or [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
 
 ## References
@@ -868,6 +927,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
+- [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
@@ -886,6 +946,7 @@ External/current sources checked 2026-06-16:
 - [Ollama Windows download](https://ollama.com/download/windows)
 - [Ollama quickstart](https://docs.ollama.com/quickstart)
 - [Ollama CLI reference](https://docs.ollama.com/cli)
+- [Ollama qwen3.5:4b model page](https://ollama.com/library/qwen3.5:4b)
 - [Ollama list local models API](https://docs.ollama.com/api/tags)
 - [Ollama chat endpoint](https://docs.ollama.com/api/chat)
 - [Ollama generate endpoint](https://docs.ollama.com/api/generate)
