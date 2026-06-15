@@ -63,6 +63,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You are ready for a scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] | Section scores, hard-fail checks, proof links, remediation rows |
 | You need to know whether this machine is ready for a first local run | [[LLM/Study/Local LLM First Run Readiness Snapshot]] | Runtime/GPU/listener readiness card and first execution decision |
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
+| You need one reviewed command plan before the first local run | [[LLM/Study/Local LLM First Run Command Plan Runner]] | Ordered PowerShell plan, run folder, evidence filenames, loopback checks, and next gate manifests |
 | You have model size, context, and hardware facts but no fit decision | [[LLM/Study/Local LLM Hardware Sizing Runner]] | Weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit status, and next route |
 | You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
 | You have artifact, runtime, tokenizer, or route facts but no compatibility decision | [[LLM/Study/Local LLM Runtime Compatibility Runner]] | Architecture, artifact, quantization, tokenizer, template, runtime, route, custody, sizing, and next proof audit |
@@ -96,6 +97,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need endpoint exposure, log, RAG corpus, tool, UI storage, or export-boundary proof | [[LLM/Study/Local LLM Security and Privacy Runner]] | Manifest, host classification, read-only model-list routes, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error decision |
 | You need parseable JSON, tool-call, result-injection, or denial proof | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] | Structured JSON, tool call, validation, policy, execution, result injection, denial, CSV, Markdown, and JSONL row |
 | You need first local inference proof | [[LLM/Study/Local LLM Windows First-Run Quickstart]] | Preflight, model id, response, listener proof |
+| You need a generated first-run command sequence | [[LLM/Study/Local LLM First Run Command Plan Runner]] | Safe planning artifact before install, pull, health, smoke, audit, and capstone routing |
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
 | You have a first-run folder and need to know whether it is capstone-ready | [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] | Endpoint, API contract, client, benchmark, quality, security, and decision pass/hold/fail audit |
@@ -209,6 +211,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One interpreted local inference benchmark row | [[LLM/Study/Local LLM Inference Metrics Field Guide]] or [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One machine-specific first-run readiness row | [[LLM/Study/Local LLM First Run Readiness Snapshot]] |
 | One machine-specific model-store decision row | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
+| One reviewed first-run command plan | [[LLM/Study/Local LLM First Run Command Plan Runner]] |
 | One runtime install gate row | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | One first model pull gate row | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | One first model pull runner output before runtime health or endpoint smoke | [[LLM/Study/Local LLM First Model Pull Runner]] |
@@ -310,6 +313,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]

@@ -84,6 +84,7 @@ Do not download models before this. Otherwise you cannot tell whether a later fa
 Route:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Runtime Health Runner]]
@@ -102,14 +103,15 @@ Default path:
 
 1. Use Ollama or LM Studio for the first Windows-native proof.
 2. Keep binding on loopback.
-3. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one small instruct model and save list/tags/show metadata.
-4. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] or [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] to save listener and model-list proof without generation.
-5. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] to send one deterministic smoke prompt through native and OpenAI-compatible routes.
-6. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to interpret the saved response without sending a second request.
-7. Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] to check whether the run folder is complete enough to count as endpoint proof.
-8. Save the raw response and debrief before judging quality.
-9. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] before treating smoke output as quality evidence.
-10. Use [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before promoting the first run into the capstone workbook.
+3. Use [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]] when you need one reviewed PowerShell plan before install, pull, health, smoke, and audit commands.
+4. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one small instruct model and save list/tags/show metadata.
+5. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] or [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] to save listener and model-list proof without generation.
+6. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] to send one deterministic smoke prompt through native and OpenAI-compatible routes.
+7. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to interpret the saved response without sending a second request.
+8. Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] to check whether the run folder is complete enough to count as endpoint proof.
+9. Save the raw response and debrief before judging quality.
+10. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] before treating smoke output as quality evidence.
+11. Use [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before promoting the first run into the capstone workbook.
 
 Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when this stage needs copyable commands for the run folder, listener check, Ollama native route, OpenAI-compatible route, Python client, or teardown proof.
 
@@ -384,6 +386,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Runtime Health Runner]]

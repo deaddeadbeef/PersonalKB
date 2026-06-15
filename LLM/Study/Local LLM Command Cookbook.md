@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** This is the copyable command layer for local LLM inference: start a local server, prove the route, call it from a client, log timing, and decide which deeper lab owns the next failure.
 
-Use this when you already know the intended runtime and need exact commands. Use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the first guided Windows pass, [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] before the first Ollama model pull, [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] for pull/list/tags/show evidence, [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the full procedure, and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] for the order of evidence artifacts.
+Use this when you already know the intended runtime and need exact commands. Use [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]] when you want those commands generated as one reviewed run-folder plan before execution. Use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the first guided Windows pass, [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] before the first Ollama model pull, [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] for pull/list/tags/show evidence, [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the full procedure, and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] for the order of evidence artifacts.
 
 This note is a cookbook, not a model recommendation list. Replace placeholders such as `<model>`, `<served-model-id>`, `<model.gguf>`, and `<hf-model-id>` with values proven in [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]], [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]].
 
@@ -516,6 +516,7 @@ Get-NetTCPConnection -State Listen |
 | Evidence | Store or route to |
 |---|---|
 | Preflight snapshot | [[LLM/Study/Local LLM Environment Preflight Lab]] |
+| Generated first-run command plan | [[LLM/Study/Local LLM First Run Command Plan Runner]] |
 | First Ollama model pull | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | First runtime health snapshot or runner | [[LLM/Study/Local LLM First Runtime Health Snapshot]] and [[LLM/Study/Local LLM First Runtime Health Runner]] |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |
@@ -564,6 +565,7 @@ This cookbook pass is complete when you have:
 Internal routes:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]

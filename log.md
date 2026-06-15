@@ -3100,3 +3100,35 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default fixture manifest -> `hold`, 43 gates, 43 holds, including `local-first-inference-pack-audit`.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4959 files, 3088 Markdown files, 923 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-16] curate | Add first-run command plan runner
+
+Scope: add a pre-execution planner that generates and audits the first local LLM PowerShell command sequence before install, model pull, runtime health, smoke, and evidence-packet audit commands are run.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Command Cookbook.md`
+- `LLM/Study/Local LLM First Endpoint Run Sheet.md`
+- `LLM/Study/Local LLM First Run Command Plan Runner.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM Windows First-Run Quickstart.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM First Run Command Plan Runner]] with a standard-library Python runner that writes command-plan JSON, Markdown, PowerShell, CSV, and JSONL outputs without installing, pulling, or sending inference requests.
+- The runner validates run root, runtime, model id, runtime boundary, storage decision, install scope, pull scope, and loopback-only API bases before marking the plan ready.
+- Routed the dashboard, study index, LLM MOC, command cookbook, first-run quickstart, endpoint run sheet, practicum sequence, and capstone workbook through the command-plan step before first execution.
+- Checked current Ollama Windows, download, quickstart, CLI, tags, chat, generate, and OpenAI-compatible docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `first_run_command_plan.py` from the note.
+- Fixture checks: complete manifest -> `pass` / `first_run_command_plan_ready` with 15 planned steps; missing model id -> `hold`; wildcard native URL -> `fail`; native-only scope -> `pass` with OpenAI-compatible smoke step omitted.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4960 files, 3089 Markdown files, 924 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
