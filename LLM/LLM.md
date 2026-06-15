@@ -63,6 +63,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — PowerShell path from Windows preflight to first loopback API response
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — One first-run packet for machine, model, runtime, endpoint, response, timing, quality, safety, and next decision
+- [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] — Ordered exercises for first endpoint, client call, controls, benchmark, quality, service hardening, RAG/tools, and capstone handoff
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — Practical path to run, serve, and benchmark local models
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — Hardware, OS, runtime, disk, port, and endpoint-boundary checks before serving
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] — Layer map from hardware and model bytes through runtime, API route, client/UI, workload, and operations evidence

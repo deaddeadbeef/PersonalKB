@@ -28,6 +28,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | Local model endpoint | Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, timing, quality decision, and next action are captured. | Not started |
+| Local practicum sequence | Handoff note from [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] |  | Stages 0-10 have evidence links or explicit skipped/blocked notes, including endpoint, client, controls, benchmark, quality, service, and extension proof. | Not started |
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
@@ -384,6 +385,7 @@ Next run:
 - [ ] The benchmark and quality-harness decisions agree, or the disagreement is explained.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
+- [ ] The local practicum handoff links every stage artifact, or explicitly marks skipped or blocked stages.
 - [ ] The runtime stack anatomy card names the lowest unproven layer before any model/runtime blame.
 - [ ] The local model endpoint has a runtime compatibility evidence card.
 - [ ] Any vLLM/SGLang path from Windows has WSL CUDA setup proof before scheduler, throughput, or deployment claims.
@@ -421,6 +423,7 @@ Next run:
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]

@@ -12,6 +12,8 @@ last-verified: 2026-06-15
 
 Use this as the first-run binder for [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. Those notes explain the runtime choices and serving sequence. This note tells you exactly what to save so the run becomes capstone evidence.
 
+Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you want the broader ordered path around this packet. This evidence pack is the Stage 1 endpoint proof in that practicum.
+
 For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
 
 ## Evidence Packet
@@ -234,6 +236,7 @@ This evidence pack is complete when you have:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]

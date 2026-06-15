@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting
 
 For the first complete run, fill [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] as you go. The evidence pack is the one-page binder; this runbook is the detailed serving procedure.
 
+Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when this runbook is part of the ordered practicum. It decides what evidence belongs before and after the endpoint smoke test.
+
 Use [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] before blaming a model or runtime. It names the layer that owns each proof: hardware, boundary, package environment, model bytes, artifact, tokenizer/template, runtime, scheduler/cache, API route, client/UI, workload, or operations.
 
 If the first run is on Windows, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for a minimal PowerShell path through preflight capture, Ollama or LM Studio API proof, listener check, and first quality mini-suite.
@@ -287,6 +289,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]

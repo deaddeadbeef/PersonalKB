@@ -11,6 +11,8 @@ tier-coverage: [core, practice]
 
 Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] and before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], or [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]]. The preflight proves the machine. This note names the stack layers. The compatibility matrix decides whether a specific artifact fits a specific runtime.
 
+Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you want to execute these layers in order and leave proof at each stage.
+
 Use [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] when you want the inside of one request: prompt assembly, tokenization, prefill, decode, sampling, stopping, streaming, and measurement. Use this note when you want the outside of the endpoint: which layer owns the failure or proof.
 
 ## Stack Rule
@@ -182,6 +184,7 @@ Internal routes:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]

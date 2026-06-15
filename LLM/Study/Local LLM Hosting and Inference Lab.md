@@ -22,6 +22,8 @@ After this lab you should be able to:
 
 This lab is the Level 5 proof gate in [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]].
 
+Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you need the full execution order from machine preflight to capstone handoff. This lab supplies the core endpoint and runtime practice for that sequence.
+
 If this is your first actual local run on Windows, start with [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the exact PowerShell preflight, Ollama/LM Studio smoke tests, listener check, and first evidence row.
 
 If the first serious GPU-serving candidate is vLLM or SGLang from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before the vLLM/SGLang lab steps. It proves WSL 2, CUDA visibility, Python environment, loopback port, `/v1/models`, Windows client calls, metrics, and the failed layer if setup breaks.
@@ -273,6 +275,7 @@ Internal evidence:
 - [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
