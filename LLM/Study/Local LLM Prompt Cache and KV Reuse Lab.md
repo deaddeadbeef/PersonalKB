@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Repeated-prefix local inference is only faster when the runtime can reuse prefill work; prove it with cold/warm separation, stable prompt prefixes, TTFT or prompt-eval timing, cache evidence, and a benchmark decision.
 
-Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. Those notes explain prefill, decode, prompt tokens, and context pressure. This lab tests whether repeated system prompts, few-shot examples, RAG documents, or conversation history are actually being reused across requests.
+Use this after [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. Those notes explain prefill, decode, prompt tokens, and context pressure. This lab tests whether repeated system prompts, few-shot examples, RAG documents, or conversation history are actually being reused across requests. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner|Local LLM Prompt Cache and KV Reuse Runner]] when the repeated-prefix proof should be saved as JSON, CSV, Markdown, and JSONL artifacts.
 
 Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when many requests share prefixes at the same time. Use [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] when cache counters, slots, metrics, or logs are needed. Use [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] when the cache path, runtime version, startup mode, or model residency changed.
 
@@ -298,6 +298,7 @@ This lab is complete when all are true:
 - [ ] Cold load, warm model, and repeated-prefix runs are separated.
 - [ ] Shared prefix and varying suffix token counts are recorded.
 - [ ] A changed-prefix control run exists.
+- [ ] Runner output is saved when the proof needs repeatable JSON, CSV, Markdown, or JSONL evidence.
 - [ ] TTFT, prompt-eval time, or prefill metric is recorded separately from total latency.
 - [ ] Output cap and sampler settings are fixed.
 - [ ] Runtime cache mechanism and evidence strength are named.
@@ -316,6 +317,7 @@ Internal:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
