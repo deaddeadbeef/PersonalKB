@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Academic LLM knowledge becomes durable when every important paper is reduced to a claim, evidence type, limitation, mechanism, and local deployment implication.
 
-Use this with [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]. The protocol tells you how to read one paper. The synthesis map tells the historical story. This ledger is the proof artifact: it records what each paper actually changed and what that claim does or does not justify for local inference, RAG, adaptation, or evaluation.
+Use this with [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]. The protocol tells you how to read one paper. The synthesis map tells the historical story. This ledger is the proof artifact: it records what each paper actually changed and what that claim does or does not justify for local inference, RAG, adaptation, or evaluation. Use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when a filled row needs a concrete local proof route.
 
 ## Ledger Rule
 
@@ -99,6 +99,7 @@ The paper-claim ledger is useful when:
 - [ ] every fast-path paper has claim, evidence, limitation, mechanism, and local implication fields
 - [ ] at least five papers are connected to a local hosting or inference consequence
 - [ ] at least three papers are connected to evaluation or safety consequences
+- [ ] at least one paper-to-local proof route is generated for the current capstone claim set
 - [ ] every new paper outside the fast path receives a row before it changes a wiki note
 - [ ] the capstone workbook links this ledger or a filled copy of it as academic proof
 
@@ -106,6 +107,7 @@ The paper-claim ledger is useful when:
 
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
+- [[LLM/Study/LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]

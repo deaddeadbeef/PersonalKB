@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** The 20-paper fast path is one causal story: attention made scalable sequence modeling possible, pretraining made general representations useful, scaling made prompting work, systems made training and inference practical, alignment made assistants usable, adaptation made local customization cheap, retrieval/tools made applications grounded, and evaluation made trade-offs visible.
 
-Use this after [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] and the paper list in [[LLM/Study/LLM Study Index|LLM Study Index]]. This note is the capstone paper map requested by [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]: it connects architecture, scaling, alignment, retrieval, evaluation, and inference instead of treating the papers as isolated milestones. Use [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] when the next proof needs claim, evidence, limitation, mechanism, and local implication rows for each paper.
+Use this after [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] and the paper list in [[LLM/Study/LLM Study Index|LLM Study Index]]. This note is the capstone paper map requested by [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]: it connects architecture, scaling, alignment, retrieval, evaluation, and inference instead of treating the papers as isolated milestones. Use [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] when the next proof needs claim, evidence, limitation, mechanism, and local implication rows for each paper. Use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when a paper cluster should become a local proof artifact.
 
 Use this before [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]]. If you can reproduce this map without looking, the academic side of the LLM path is starting to become usable knowledge.
 
@@ -106,6 +106,7 @@ The fast-path paper map is complete when:
 - [ ] every paper has a one-sentence "what changed" answer
 - [ ] every paper is tied to at least one mechanism, one evidence type, and one limitation
 - [ ] every cluster has a local deployment implication
+- [ ] the current capstone claim set has a paper-to-local proof route
 - [ ] missed oral-recall answers are remediated with [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]
 
 ## References
@@ -114,6 +115,7 @@ The fast-path paper map is complete when:
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM Paper Claim Ledger]]
+- [[LLM/Study/LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
