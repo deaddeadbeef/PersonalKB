@@ -3,7 +3,7 @@ tags: [study, llm, inference, local-llm, runtime, benchmark]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM Runtime Comparison Lab
@@ -16,7 +16,7 @@ When one candidate is vLLM or SGLang under WSL, complete [[LLM/Study/Local LLM W
 
 When one candidate is containerized vLLM or SGLang, complete [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before comparing throughput or quality. Otherwise Docker context, GPU runtime, image tag, cache mount, port mapping, or Open WebUI routing can masquerade as a runtime difference.
 
-Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to run the same request shape against each endpoint. Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] to interpret TTFT, TPOT, throughput, memory, queue, and quality numbers before deciding what changed. Save speed rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and the final choice in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
+Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to run the same request shape against each endpoint. Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] to interpret TTFT, TPOT, throughput, memory, queue, and quality numbers before deciding what changed. Save speed rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and the final choice in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]]. Use [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] when the decision card needs pass/hold/fail evidence before result synthesis or deployment.
 
 Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when runtime choice depends on batching, queueing, saturation, or multi-client throughput rather than only a single request. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when runtime choice depends on GGUF versus AWQ/GPTQ/FP8/INT8, GPU offload, CPU fallback, or KV-cache precision. Use [[LLM/Study/Local llama.cpp GGUF Server Runner|Local llama.cpp GGUF Server Runner]] before comparing llama.cpp rows so the launch command, GGUF path, alias, health route, model-list route, and chat route are proven. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when runtime choice depends on repeated system prompts, documents, examples, RAG context, tool protocols, or chat history. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when runtime choice depends on draft-model, EAGLE, MTP, n-gram, or another speculative decoding path.
 
@@ -188,6 +188,7 @@ The runtime comparison is complete when:
 - [ ] quality rows explain pass, hold, or fail for the workload
 - [ ] at least one difference is assigned to a concrete layer: artifact, tokenizer, template, runtime, route, sampler, hardware, context, quality, UI, or security
 - [ ] the winning runtime and rejected alternative are written as a decision card
+- [ ] [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] passes, or each hold/fail row has a remediation route
 - [ ] the deployment matrix uses the decision instead of a preference
 
 ## References
@@ -203,6 +204,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM Runtime Comparison Runner]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
@@ -223,7 +225,7 @@ Internal routes:
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding]]
 
-Current external docs checked 2026-06-15:
+Current external docs checked 2026-06-16:
 
 - [Ollama API introduction](https://docs.ollama.com/api/introduction)
 - [Ollama generate endpoint](https://docs.ollama.com/api/generate)

@@ -100,6 +100,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]]
+- [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]]
@@ -221,6 +222,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — choose a quantization format, sweep CPU/GPU offload, test KV-cache precision, and accept only candidates that pass benchmark and quality gates
 - [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] — audit baseline, artifact/runtime support, memory estimate, load state, offload sweep, KV-cache/context, benchmark, quality, rejected alternative, and final keep/reject evidence
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] — compare two local runtimes with frozen prompts, sampler settings, context target, benchmark rows, quality rows, and a decision card
+- [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] — audit two-runtime comparisons for fixed controls, endpoint proof, benchmark audit, quality boundary, security boundary, selected runtime, rejected alternative, and review trigger
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — prove hardware, runtime boundary, storage, ports, and endpoint safety before serving a model
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] — map local inference failures to environment, sizing, server, route, client, prompt, quality, RAG, or security layers
 - [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] — validate saved local failure rows into JSON, CSV, Markdown, and JSONL evidence before changing another variable

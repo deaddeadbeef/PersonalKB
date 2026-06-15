@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A deployment choice is ready only when workload, model, route, app integration, quality, performance, privacy, operations, result synthesis, cost, rejected alternative, and retest evidence are all linked and machine-checkable.
 
-Use this after [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]], before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The result synthesis runner reconciles keep, tune, reject, rerun, and deployment-memo readiness. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend. If the selected path depends on benchmark timing, throughput, or memory evidence, include [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] output. If the selected path depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision, include [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] output in the proof bundle.
+Use this after [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]], before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The result synthesis runner reconciles keep, tune, reject, rerun, and deployment-memo readiness. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend. If the selected path depends on benchmark timing, throughput, or memory evidence, include [[LLM/Study/Local LLM Benchmark Evidence Audit Runner|Local LLM Benchmark Evidence Audit Runner]] output. If the selected path depends on choosing between Ollama, LM Studio, llama.cpp, vLLM, SGLang, Docker/WSL, or UI-over-provider paths, include [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] output. If the selected path depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision, include [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] output in the proof bundle.
 
 This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, application integration, benchmark, quality, adaptation readiness, result synthesis, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
 
@@ -904,6 +904,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [ ] the selected path is one of `local_cpu`, `local_gpu`, `self_hosted_server`, `hosted_api`, `hybrid`, or `batch`
 - [ ] the deployment choice links a result-synthesis output or a remediation row
 - [ ] benchmark evidence audit output is linked when deployment depends on timing, throughput, or memory numbers
+- [ ] runtime comparison runner output is linked when deployment depends on rejecting another runtime path
 - [ ] the quality evidence links [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] output when deployment readiness depends on quality
 - [ ] quantization/offload evidence links [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner|Local LLM Quantization and GPU Offload Evidence Runner]] output when deployment depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision
 - [ ] adaptation readiness proof exists when deployment depends on an adapter, merged model, distillation, continued pretraining, or explicit no-train decision
@@ -916,6 +917,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]]
+- [[LLM/Study/Local LLM Runtime Comparison Runner]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Readiness Runner]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

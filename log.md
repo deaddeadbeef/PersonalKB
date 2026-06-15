@@ -3533,3 +3533,37 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4971 files, 3100 Markdown files, 935 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add runtime comparison runner
+
+Scope: make Ollama, LM Studio, llama.cpp, vLLM, SGLang, Docker/WSL, or UI-over-provider runtime choices auditable before result synthesis or deployment evidence depends on a winner.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Benchmark Evidence Audit Runner.md`
+- `LLM/Study/Local LLM Result Synthesis Runner.md`
+- `LLM/Study/Local LLM Runtime Comparison Lab.md`
+- `LLM/Study/Local LLM Runtime Comparison Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Runtime Comparison Runner]] with a standard-library Python runner that audits saved runtime-comparison manifests without starting servers or benchmarking live endpoints.
+- The runner checks workload contract, candidate identity, endpoint proof, frozen controls, benchmark audit, quality boundary, security boundary, selected runtime, rejected alternative, and decision-card review trigger.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, runtime-comparison lab, benchmark-evidence audit, result-synthesis runner, deployment decision matrix, and deployment-readiness runner through the new runtime-comparison audit gate.
+- Checked current Ollama OpenAI compatibility, LM Studio OpenAI-compatible endpoints, llama.cpp server, vLLM OpenAI-compatible server, and SGLang OpenAI-compatible completions docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted and compiled `local_llm_runtime_comparison_runner.py` from the note.
+- Runtime comparison fixture checks: complete exact two-runtime comparison -> `pass` / `runtime_comparison_ready`; one runtime only -> `hold` / `runtime_comparison_incomplete`; closest-equivalent comparison without approximation reason -> `hold`; selected runtime quality fail -> `fail` / `runtime_comparison_blocked`; exposed `0.0.0.0` endpoint without approval -> `fail`; candidate prompt suites differ -> `fail`; missing benchmark audit proof -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4972 files, 3101 Markdown files, 936 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

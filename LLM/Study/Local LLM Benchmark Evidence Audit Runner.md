@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** A benchmark row is useful only when it proves what ran, which route answered, which timing phase was measured, which token counts normalize it, which confounders were fixed, and what one next action follows.
 
-Use this after [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]], or a runtime-specific benchmark output has produced saved rows. Use it before [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]], [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]], or any decision that says a runtime, model, quantization, context setting, prompt-cache setting, speculative-decoding path, or deployment mode is faster.
+Use this after [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]], or a runtime-specific benchmark output has produced saved rows. Use it before [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] when the benchmark row supports a runtime choice, before [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]], before [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]], or before any decision that says a runtime, model, quantization, context setting, prompt-cache setting, speculative-decoding path, or deployment mode is faster.
 
 This runner does not benchmark a live endpoint. It audits saved benchmark rows and proof links. That makes it safe to run after Ollama native responses, OpenAI-compatible client logs, vLLM benchmark JSON, SGLang benchmark/profiling output, GenAI-Perf-style metrics, or a hand-entered benchmark-log row.
 
@@ -657,6 +657,7 @@ Internal:
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Runner]]
+- [[LLM/Study/Local LLM Runtime Comparison Runner]]
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]

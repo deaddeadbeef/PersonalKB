@@ -95,6 +95,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
 | You have benchmark rows and need to know whether the numbers are interpretable | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] | Workload, route/model identity, proof, token counts, timing, memory/context, fixed settings, quality boundary, and next-action audit |
+| You compared local runtimes and need to know whether the winner is defensible | [[LLM/Study/Local LLM Runtime Comparison Runner]] | Fixed controls, endpoint proof, benchmark audit, quality boundary, security boundary, selected runtime, rejected alternative, and review trigger |
 | You have a long, RAG, tool, or multi-turn prompt and need fit proof | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] | Context manifest, component tokens, reserve, margin, fit decision, drop plan, and JSONL row |
 | You have scheduler, KV-cache, queue, or tuning evidence and need a decision audit | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] | Hypothesis, latency phase, scheduler state, long-prompt interference, tuning delta, capacity event, decision card, and next-route audit |
 | You have quantization, GPU-offload, KV-cache precision, benchmark, and quality rows and need a keep/reject audit | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] | Baseline, artifact/runtime support, memory estimate, load state, offload sweep, KV-cache/context, benchmark, quality, rejected alternative, decision card, and next-route audit |
@@ -177,6 +178,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Application integration audit | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
+| Runtime comparison runner | [[LLM/Study/Local LLM Runtime Comparison Runner]] |  |
 | Evaluation set design | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
 | Quality evaluation runner | [[LLM/Study/Local LLM Quality Evaluation Runner]] |  |
@@ -264,6 +266,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | One benchmark evidence audit output before result synthesis or deployment depends on timing, throughput, or memory numbers | [[LLM/Study/Local LLM Benchmark Evidence Audit Runner]] |
+| One runtime comparison runner output before deployment depends on an Ollama, LM Studio, llama.cpp, vLLM, SGLang, Docker, WSL, or UI-over-provider choice | [[LLM/Study/Local LLM Runtime Comparison Runner]] |
 | One context/token budget runner output | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | One scheduler evidence audit output | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |
 | One quantization/offload evidence runner output before result synthesis depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] |
@@ -375,6 +378,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]]
+- [[LLM/Study/Local LLM Runtime Comparison Runner]]
 - [[LLM/Study/Local RAG Evidence Runner]]
 - [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
