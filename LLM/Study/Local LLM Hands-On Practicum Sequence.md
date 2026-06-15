@@ -107,6 +107,7 @@ Pass signal: another person could reproduce which model served which request thr
 
 Route:
 
+- [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
@@ -116,6 +117,7 @@ Save:
 
 | Artifact | Minimum fields |
 |---|---|
+| Candidate card | Workload, candidate slot, model class, source, license, artifact options, runtime candidates, rejection trigger |
 | Provenance card | Model card, license/gated access, intended use, revision/tag/file, unsafe-file decision |
 | Artifact card | Cache/local path, file list, hash or verification, import or conversion command |
 | Sizing row | Weight memory, KV-cache risk, runtime overhead, context target, headroom |
@@ -332,6 +334,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
