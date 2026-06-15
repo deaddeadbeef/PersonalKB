@@ -80,6 +80,8 @@ Start with candidate slots, not model hype.
 
 Do not start with the stretch candidate. If it fails, you will not know whether the cause is model quality, memory, quantization, runtime, template, or route. Start with a small baseline, prove the path, then scale or specialize.
 
+For the current Windows RTX 3080 Ti first run, use [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] to pick the source-checked baseline, control, stretch, and avoid-first candidate classes before pulling a model.
+
 ## First Candidate Decision Flow
 
 ```text
@@ -290,6 +292,7 @@ Internal routes:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]

@@ -13,6 +13,8 @@ Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]
 
 Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before reserving memory for a draft model, EAGLE/MTP path, or n-gram speculative method. A main model that fits alone may fail once speculation adds draft weights, draft cache, verification buffers, or CUDA graph overhead.
 
+Use [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] when the sizing question is specifically the first RTX 3080 Ti/Ollama route proof. That note pins the baseline, control, stretch, and avoid-first model classes before the first pull.
+
 ## The Core Question
 
 Do not start with "what is the biggest model I can run?" Start with:
@@ -107,7 +109,7 @@ If the model barely fits, it has not really fit. You still need headroom for pro
 
 1. Pick the workload: chat, coding, summarization, extraction, RAG, agent loop, or batch document processing.
 2. Set quality gates before testing: correctness, citation discipline, valid JSON, code passes tests, or human preference.
-3. Choose a small baseline model first.
+3. Choose a small baseline model first; for the current Windows/Ollama first run, use [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]].
 4. Record acquisition provenance and license with [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]].
 5. Record the actual download/cache/import/conversion evidence with [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]].
 6. Choose the least aggressive quantization that fits the memory budget.
@@ -211,6 +213,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]

@@ -35,7 +35,7 @@ The refreshed state is unchanged from the earlier readiness scan. The next block
 | Recommended first runtime | Ollama on Windows, loopback only |
 | GUI alternative | LM Studio local server on `localhost` |
 | First model class | small instruct or reasoning model that fits comfortably before tuning |
-| First candidate tags to evaluate | `qwen3.5:4b`, then `qwen3.5:9b` or `qwen3:8b` if the first path is stable |
+| First candidate tags to evaluate | Use [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]]: `qwen3.5:4b` for route proof, `qwen3:4b-instruct` as text-only control, then `qwen3.5:9b` only after the first path is stable |
 | Avoid as first proof | 27B+ or 30B+ models, LAN binding, RAG, tools, concurrency, prompt caching |
 | First pass target | one loopback smoke response plus model id, route, listener proof, timing, and security boundary |
 
@@ -51,7 +51,7 @@ Do these in order. Stop at the first failed command and write the failure owner 
 | 2 | Decide whether the default model cache path is acceptable or whether `OLLAMA_MODELS` should be set first. | `installer-choice.txt` or run card note | The model cache location is known before large downloads. |
 | 3 | Install the first runtime, preferably Ollama for the Windows-native terminal proof. | installer source and version output | `ollama --version` works in a new PowerShell. |
 | 4 | Rerun `ollama list` and the listener scan. | `ollama-list-after-install.txt`, `listeners-before-smoke.txt` | Runtime is installed; endpoint exposure is understood. |
-| 5 | Pull one small first model and run native plus OpenAI-compatible smoke tests. | native response JSON, model tags JSON, OpenAI-compatible response JSON | Both route proof and model id proof exist, or a native-only decision is written. |
+| 5 | Pull one small first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] and run native plus OpenAI-compatible smoke tests. | native response JSON, model tags JSON, OpenAI-compatible response JSON | Both route proof and model id proof exist, or a native-only decision is written. |
 | 6 | Copy one benchmark/evidence row into the vault. | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Inference Benchmark Log]] | The first run becomes capstone evidence instead of console history. |
 
 Do not start RAG, tools, runtime comparison, concurrency, prompt caching, or deployment work until priority 5 has either passed or produced a named blocker.
@@ -75,7 +75,7 @@ Then execute only one path.
 | 1 | Install Ollama from the official Windows installer or PowerShell installer. | installer source, version, install path if changed |
 | 2 | If the home drive should not store models, set `OLLAMA_MODELS` before pulling. | environment variable value and cache path |
 | 3 | Open a new PowerShell and run `ollama --version` and `ollama list`. | `runtime-version.txt` |
-| 4 | Pull a small first model, preferably `qwen3.5:4b` for route proof. | `ollama-pull.txt`, model tag |
+| 4 | Pull a small first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]], preferably `qwen3.5:4b` for route proof. | `ollama-pull.txt`, model tag |
 | 5 | Run the native Ollama smoke test from [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]. | `ollama-native-generate.json` |
 | 6 | Run the OpenAI-compatible smoke test from the cookbook. | `ollama-openai-chat.json` |
 | 7 | Run the listener check. | `listeners.txt` showing loopback/private boundary |
@@ -122,6 +122,7 @@ This readiness snapshot is complete when:
 Internal routes:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]

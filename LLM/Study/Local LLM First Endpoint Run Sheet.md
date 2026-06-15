@@ -21,7 +21,7 @@ This sheet is not endpoint proof until the evidence files exist. A checked box w
 | Run date |  |
 | Run folder |  |
 | Runtime | Ollama on Windows |
-| First model | `qwen3.5:4b` unless the model page or local constraints force a smaller tag |
+| First model | `qwen3.5:4b` from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] unless the model page or local constraints force a smaller tag |
 | Native base URL | `http://localhost:11434` |
 | OpenAI-compatible base URL | `http://localhost:11434/v1` |
 | Security boundary | loopback only |
@@ -123,7 +123,7 @@ Pass signal: `ollama --version` works from a new PowerShell. If it does not, the
 
 ## Step 3: Pull One First Model
 
-Use the smallest useful model first. The current recommended first tag for this machine is `qwen3.5:4b`.
+Use the smallest useful model first. The current recommended first tag for this machine is `qwen3.5:4b`; verify it against [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] before pulling.
 
 ```powershell
 $RunRoot = "<paste-run-folder-path>"
@@ -272,6 +272,7 @@ This run sheet is complete only when:
 Internal routes:
 
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
@@ -286,3 +287,5 @@ External/current sources checked 2026-06-15:
 - [Ollama quickstart](https://docs.ollama.com/quickstart)
 - [Ollama OpenAI compatibility](https://docs.ollama.com/api/openai-compatibility)
 - [Ollama qwen3.5:4b model page](https://ollama.com/library/qwen3.5:4b)
+- [Ollama qwen3.5:9b model page](https://ollama.com/library/qwen3.5:9b)
+- [Ollama qwen3:4b-instruct model page](https://ollama.com/library/qwen3:4b-instruct)
