@@ -28,6 +28,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Daily mastery session | Filled [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] or dated session note |  | One session links a recall answer, corrected answer, mechanism-to-local consequence, applied proof or blocker, and next controlled action. | Not started |
 | Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
 | End-to-end local inference explanation | Verbal or written pass using [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] |  | Can explain one local request from model artifact and tokenizer through runtime, prefill, decode, route, client, evaluation, and operations decision. | Not started |
+| Request lifecycle runner | Results JSON/CSV/Markdown from [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] |  | One saved request/response pair is mapped to client request, prompt assembly, tokenization, prefill, decode, stop, detokenization, application handling, findings, and next owner. | Not started |
 | Capstone project blueprint | Project spec from [[LLM/Study/Local LLM Capstone Project Blueprint|Local LLM Capstone Project Blueprint]] |  | One dated capstone note or folder defines workload, local endpoint, client, benchmark, quality, optional RAG/tool path, security, operations, and deployment decision evidence. | Not started |
 | Local inference metric interpretation | Benchmark interpretation row using [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] |  | Can explain TTFT, TPOT, output tokens/sec, total latency, prompt/output tokens, memory, queue, quality, confounders, and next controlled action for one local run. | Not started |
 | Math and tensor shapes | Oral or written proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | Can trace token IDs, embeddings, hidden states, logits, probabilities, shifted targets, cross-entropy, attention shapes, weight memory, and KV-cache growth. | Study map drafted; oral proof not yet passed |
@@ -277,6 +278,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Truncation/overflow behavior |  |
 | Successful response |  |
 | First response debrief |  |
+| Request lifecycle runner |  |
 | Benchmark row |  |
 | Quality-harness result |  |
 | Serving issue diagnosed |  |
@@ -541,6 +543,7 @@ Next run:
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
+- [[LLM/Study/LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]

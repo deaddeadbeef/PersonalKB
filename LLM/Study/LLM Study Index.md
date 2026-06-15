@@ -96,6 +96,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]]
@@ -162,6 +163,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] — check endpoint exposure, logs, RAG corpus boundaries, prompt injection, and tool permissions
 - [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] — capture no-generation exposure, model-list, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error evidence
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — trace one request through tokens, prefill, decode, sampling, stopping, streaming, and measurement
+- [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] — convert saved request/response artifacts into lifecycle phase rows, metrics, findings, Markdown, CSV, and JSONL evidence
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured-output controls with reproducible local experiments
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] — run repeatable baseline, temperature, seed, stop-string, and output-cap probes before benchmark or quality comparisons
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows

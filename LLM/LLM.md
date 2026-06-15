@@ -93,6 +93,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] — Hardware, OS, runtime, disk, port, and endpoint-boundary checks before serving
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] — Layer map from hardware and model bytes through runtime, API route, client/UI, workload, and operations evidence
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] — Request-level path from prompt assembly to tokens, prefill, decode, sampling, stopping, streaming, and measurement
+- [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] — Turn saved request/response files into phase rows for client request, prompt assembly, tokenization, prefill, decode, stop, detokenization, and application handling
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — Practical sampler tuning for temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured local inference
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] — Save baseline, temperature, seed, stop-string, output-cap, CSV, Markdown, and JSONL sampler-control evidence
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — Practical checks for tokenizer, special-token, chat-template, role-boundary, and stop-condition mismatches

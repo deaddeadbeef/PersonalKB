@@ -14,6 +14,8 @@ Use this after [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First 
 
 This is a read-only debrief over local files. It does not call `/api/generate`, `/api/chat`, `/v1/chat/completions`, or any other endpoint. That matters because the debrief should explain the first response, not accidentally create a second response with different cache, load, prompt, or sampler state.
 
+Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] next when the saved request/response pair should be mapped into client request, prompt assembly, tokenization, prefill, decode, stop, parser, and application-handling evidence.
+
 ## What This Proves
 
 | Evidence | Proves | Does not prove |
@@ -550,6 +552,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

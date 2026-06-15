@@ -11,6 +11,8 @@ tier-coverage: [core, practice]
 
 Use this after [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] proves the endpoint exists. The hosting lab answers "can I run it?" This lab answers "do I understand what happens during one request?" Use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] for the first small pass that translates one saved Ollama response into route proof, timing, mechanism, and next action. Use [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] first when the whole serving path from artifact to operations still feels like a black box. Use [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] when logits, softmax, token counts, attention shapes, KV cache, or TTFT versus tokens/sec need a grounding pass. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the sampling step needs deeper tuning, reproducibility, or runtime-parameter comparison. Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when reasoning effort, thinking traces, parser separation, or test-time compute changes the request cost and quality. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when prompt length, reserved output, history, RAG context, or tool schemas may change the result. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when the same system prompt, document, examples, chat history, or RAG prefix should reduce prefill or TTFT across requests. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the frozen request should become a reusable script.
 
+Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] when saved request/response artifacts should become repeatable phase rows instead of a hand-written trace.
+
 ## Outcome
 
 After this lab you should be able to:
@@ -168,6 +170,7 @@ This lab is complete when you have:
 - [ ] one stop-sequence or structured-output boundary test
 - [ ] one streaming comparison if the runtime supports streaming
 - [ ] one client harness log row with status, timing, and error fields
+- [ ] one lifecycle runner result if request/response artifacts already exist
 - [ ] one benchmark row updated with request-level fields
 - [ ] one explanation linking the observed bottleneck to tokenization, KV cache, sampling, or serving
 
@@ -185,6 +188,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]

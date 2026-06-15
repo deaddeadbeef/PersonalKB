@@ -11,6 +11,8 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves the endpoint, [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] records the base URL, route, model id, streaming behavior, errors, and feature gaps, and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]] explains one request. Use [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first small reusable Python client run, then [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] for the first narrow perceived-latency row before expanding into retries, multiple prompt suites, or app integration. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] when the harness must freeze sampler settings rather than rely on runtime defaults. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when the harness must log tool calls, validation, policy decisions, execution latency, and tool-result injection. This lab turns one successful call into a repeatable client-side harness.
 
+Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] when a harness run already saved request and response files and you need lifecycle phase evidence without sending another inference request.
+
 For private or document-grounded runs, check [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] before saving prompts, retrieved passages, outputs, or logs.
 
 ## Outcome
@@ -353,6 +355,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
+- [[LLM/Study/LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

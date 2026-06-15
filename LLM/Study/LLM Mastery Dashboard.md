@@ -62,6 +62,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You are ready to execute the first local endpoint proof | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | Filled run folder, native response, OpenAI-compatible response, benchmark row, decision row |
 | You have the first response JSON and need to interpret it | [[LLM/Study/Local LLM First Response Debrief Card]] | Route claim, timing conversion, mechanism owner, benchmark add-on row, and next controlled action |
 | You want the first saved response interpreted without hand-copying timing fields | [[LLM/Study/Local LLM First Response Debrief Runner]] | Debrief JSON, Markdown, JSONL, converted seconds, token rates, mechanism owner, quality boundary, and next action |
+| You have saved request/response files and need phase evidence | [[LLM/Study/LLM Inference Request Lifecycle Runner]] | Client request, prompt assembly, tokenization, prefill, decode, stop, detokenization, application handling, findings, and next owner |
 | You have route proof and need a first quality signal | [[LLM/Study/Local LLM First Quality Probe Suite]] | Private prompt-suite outputs, script-assisted checks, human scores, and pass/hold/fail owner |
 | You want the first quality signal captured as runnable artifacts | [[LLM/Study/Local LLM First Quality Probe Runner]] | Five request/response/output files, results JSON/CSV/Markdown, JSONL, auto-checks, and next action |
 | You have a local `/v1` endpoint and need a client-safe API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] | `/v1/models`, non-streaming chat, streaming, wrong-model failure, contract decision, and JSONL handoff |
@@ -94,6 +95,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Paper claim ledger | [[LLM/Study/LLM Paper Claim Ledger]] |  |
 | Mechanism bridge | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |  |
 | End-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] |  |
+| Request lifecycle runner | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |  |
 | Local inference metric interpretation | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |  |
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
@@ -159,6 +161,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first endpoint run folder | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
 | One first response debrief row | [[LLM/Study/Local LLM First Response Debrief Card]] |
 | One first response debrief runner output | [[LLM/Study/Local LLM First Response Debrief Runner]] |
+| One request lifecycle runner output | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first quality probe runner output | [[LLM/Study/Local LLM First Quality Probe Runner]] |
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
@@ -224,6 +227,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
+- [[LLM/Study/LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
