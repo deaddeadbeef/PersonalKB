@@ -3,14 +3,14 @@ tags: [study, llm, inference, local-llm, api, openai-compatible, contract, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-14
+last-verified: 2026-06-15
 ---
 
 # Local LLM OpenAI-Compatible API Contract Lab
 
 > **One-line summary** A local server is "OpenAI-compatible" only after you prove the base URL, model id, route, request fields, response shape, streaming behavior, errors, and unsupported features that your client actually depends on.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] after the contract says whether `tools`, `tool_choice`, JSON/schema output, and tool-call response fields are dependable.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] when the same checks should be saved as repeatable Python evidence. Use the lab or runner before [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] after the contract says whether `tools`, `tool_choice`, JSON/schema output, and tool-call response fields are dependable.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the client depends on thinking mode, `reasoning.effort`, `reasoning_effort`, separated reasoning fields, inline `<think>` tags, or trace visibility controls.
 
@@ -215,6 +215,7 @@ This lab is complete when you have:
 - [ ] one streaming result or explicit "not required/unsupported" note
 - [ ] one harmless failure row with HTTP status or error class
 - [ ] a list of supported, ignored, and unsupported OpenAI-style fields needed by the workload
+- [ ] optional runner output from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] when the contract needs repeatable evidence
 - [ ] a decision: compatible, partial compatibility with adapter, or not compatible
 - [ ] a client harness config updated from this contract
 - [ ] a handoff to [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] if tools or structured final answers are required
@@ -224,6 +225,7 @@ This lab is complete when you have:
 Internal evidence:
 
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
@@ -238,10 +240,12 @@ Internal evidence:
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
 
-Current external docs checked 2026-06-14:
+Current external docs checked 2026-06-15:
 
 - [Ollama API introduction](https://docs.ollama.com/api/introduction)
 - [Ollama OpenAI compatibility](https://docs.ollama.com/api/openai-compatibility)
+- [OpenAI chat completions API reference](https://platform.openai.com/docs/api-reference/chat/create)
+- [OpenAI model-list API reference](https://platform.openai.com/docs/api-reference/models/list)
 - [LM Studio OpenAI compatibility endpoints](https://lmstudio.ai/docs/developer/openai-compat)
 - [LM Studio REST API](https://lmstudio.ai/docs/developer/rest)
 - [llama.cpp HTTP server README](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)

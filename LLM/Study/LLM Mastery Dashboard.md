@@ -64,6 +64,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You want the first saved response interpreted without hand-copying timing fields | [[LLM/Study/Local LLM First Response Debrief Runner]] | Debrief JSON, Markdown, JSONL, converted seconds, token rates, mechanism owner, quality boundary, and next action |
 | You have route proof and need a first quality signal | [[LLM/Study/Local LLM First Quality Probe Suite]] | Private prompt-suite outputs, script-assisted checks, human scores, and pass/hold/fail owner |
 | You want the first quality signal captured as runnable artifacts | [[LLM/Study/Local LLM First Quality Probe Runner]] | Five request/response/output files, results JSON/CSV/Markdown, JSONL, auto-checks, and next action |
+| You have a local `/v1` endpoint and need a client-safe API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] | `/v1/models`, non-streaming chat, streaming, wrong-model failure, contract decision, and JSONL handoff |
 | You have an API contract and need a reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] | Python client script, request/response/output files, JSONL row, and next route |
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
@@ -89,6 +90,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] |  |
+| OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
@@ -141,6 +143,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first response debrief runner output | [[LLM/Study/Local LLM First Response Debrief Runner]] |
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first quality probe runner output | [[LLM/Study/Local LLM First Quality Probe Runner]] |
+| One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | One first client harness run | [[LLM/Study/Local LLM First Client Harness Runner]] |
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |

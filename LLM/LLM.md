@@ -104,6 +104,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — Choose GGUF/AWQ/GPTQ/FP8/INT8 paths, sweep GPU offload, test KV-cache precision, and keep only measured quality/speed wins
 - [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] — Controlled Ollama, LM Studio, llama.cpp, vLLM, and SGLang comparison workflow
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — Prove local OpenAI-compatible base URLs, routes, streaming, errors, and feature gaps before client integration
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] — Run repeatable `/v1/models`, chat, stream, and wrong-model probes before generic client integration
 - [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] — Turn the first local endpoint into a reusable Python client run with request, response, output, and JSONL evidence
 - [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] — Measure first event, first visible content delta, chunk count, final text, total latency, usage gaps, and stream errors
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] — Convert first client and streaming JSONL evidence into one benchmark row with missing-layer and next-action fields

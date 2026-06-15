@@ -58,6 +58,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Quantization and GPU offload | Decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] |  | Baseline quant, accepted quant, rejected quant, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, benchmark row, and quality row are captured. | Not started |
 | Runtime comparison | Decision card from [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] |  | At least two plausible runtimes are compared with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
+| OpenAI-compatible API contract runner | Results JSON/Markdown from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] |  | `/v1/models`, non-streaming chat, streaming if required, wrong-model failure, missing layers, compatible/partial/not-compatible decision, and next route are captured. | Not started |
 | First client harness runner | JSONL row from [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] |  | A reusable Python client script saves request, response, output, and structured run evidence for one local inference call. | Not started |
 | First streaming timing runner | JSONL row from [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] |  | Streaming client evidence records first event, TTFT, chunk counts, final output, total latency, usage gap, and any stream error. | Not started |
 | First benchmark row builder | Builder output from [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] |  | Client and streaming JSONL evidence are converted into benchmark JSON, Markdown copy row, missing-layer list, and next controlled action. | Not started |
@@ -546,6 +547,7 @@ Next run:
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]

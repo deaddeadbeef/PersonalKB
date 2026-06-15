@@ -496,7 +496,7 @@ Get-NetTCPConnection -State Listen |
 | Symptom | Command | Next route |
 |---|---|---|
 | Connection refused | `Get-NetTCPConnection -State Listen` | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
-| Wrong model id | `Invoke-RestMethod "$BaseUrl/models"` or `ollama list` | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
+| Wrong model id | `Invoke-RestMethod "$BaseUrl/models"` or `ollama list` | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | Route 404 | Check `$BaseUrl` includes `/v1` and route is `/chat/completions` | [[LLM/Study/Local LLM Serving Runbook]] |
 | Startup OOM | `nvidia-smi`, Task Manager, runtime logs | [[LLM/Study/Local LLM Model and Hardware Sizing Guide]] |
 | Long-prompt OOM | Count prompt/history/RAG/tool tokens | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
@@ -520,7 +520,7 @@ Get-NetTCPConnection -State Listen |
 | First quality probe runner | [[LLM/Study/Local LLM First Quality Probe Runner]] |
 | First raw response | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | Startup command and route | [[LLM/Study/Local LLM Serving Runbook]] |
-| `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
+| `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | First reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] |
 | First streaming timing run | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | First benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
@@ -560,6 +560,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]

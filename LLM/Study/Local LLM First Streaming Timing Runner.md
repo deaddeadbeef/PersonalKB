@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** After the first non-streaming client call works, run this streaming harness to measure first event, first visible content delta, chunk count, final text, total latency, usage fields, and stream errors.
 
-Use this after [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] proves one reusable non-streaming call and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] says the local `/v1/chat/completions` route can stream. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] after this when streaming needs retries, prompt suites, tool traces, UI integration, or benchmark automation.
+Use this after [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] proves one reusable non-streaming call and [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] says the local `/v1/chat/completions` route can stream. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] after this when streaming needs retries, prompt suites, tool traces, UI integration, or benchmark automation.
 
 The purpose is narrow: prove what the user actually feels during streaming without confusing perceived latency with total latency or model quality.
 
@@ -344,6 +344,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
