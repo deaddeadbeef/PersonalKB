@@ -4,17 +4,18 @@ up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
 last-verified: 2026-06-15
+last-machine-check: 2026-06-15T10:49:10+08:00
 ---
 
 # Local LLM First Run Readiness Snapshot
 
-> **One-line summary** This is the machine-specific readiness card for the first local LLM run: the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, but no local LLM runtime is installed yet and no endpoint is listening.
+> **One-line summary** This is the machine-specific readiness card for the first local LLM run: as of 2026-06-15T10:49:10+08:00, the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, but no local LLM runtime is installed yet and no endpoint is listening.
 
 Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next.
 
 ## Current State
 
-Checked on 2026-06-15 from Windows PowerShell.
+Checked on 2026-06-15T10:49:10+08:00 from Windows PowerShell.
 
 | Check | Result | Meaning |
 |---|---|---|
@@ -23,6 +24,8 @@ Checked on 2026-06-15 from Windows PowerShell.
 | `nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader` | `NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 610.47` | There is a usable NVIDIA GPU candidate for local inference. |
 | Listener scan on ports `11434, 1234, 8000, 8001, 8080, 30000` | no rows returned | No common local LLM API port is currently listening. |
 | Endpoint proof | not started | No local model response has been captured yet. |
+
+The refreshed state is unchanged from the earlier readiness scan. The next blocker is still runtime installation, not model quality, endpoint routing, RAG, tools, or benchmarking.
 
 ## Readiness Decision
 
@@ -37,6 +40,21 @@ Checked on 2026-06-15 from Windows PowerShell.
 | First pass target | one loopback smoke response plus model id, route, listener proof, timing, and security boundary |
 
 The RTX 3080 Ti makes a 4B-9B quantized first run realistic. It does not make long context, 27B+ models, high concurrency, or RAG quality proven. Context length still creates KV-cache pressure, and model file size is not the full memory budget.
+
+## Immediate Next Action
+
+Do these in order. Stop at the first failed command and write the failure owner into the evidence folder.
+
+| Priority | Action | Evidence destination | Pass signal |
+|---|---|---|---|
+| 1 | Create a dated run folder from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. | `run-root.txt` and `run-card.txt` | Evidence exists before installation or model pull. |
+| 2 | Decide whether the default model cache path is acceptable or whether `OLLAMA_MODELS` should be set first. | `installer-choice.txt` or run card note | The model cache location is known before large downloads. |
+| 3 | Install the first runtime, preferably Ollama for the Windows-native terminal proof. | installer source and version output | `ollama --version` works in a new PowerShell. |
+| 4 | Rerun `ollama list` and the listener scan. | `ollama-list-after-install.txt`, `listeners-before-smoke.txt` | Runtime is installed; endpoint exposure is understood. |
+| 5 | Pull one small first model and run native plus OpenAI-compatible smoke tests. | native response JSON, model tags JSON, OpenAI-compatible response JSON | Both route proof and model id proof exist, or a native-only decision is written. |
+| 6 | Copy one benchmark/evidence row into the vault. | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Inference Benchmark Log]] | The first run becomes capstone evidence instead of console history. |
+
+Do not start RAG, tools, runtime comparison, concurrency, prompt caching, or deployment work until priority 5 has either passed or produced a named blocker.
 
 ## First Execution Card
 

@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-15T10:45:26",
+  "generated_at": "2026-06-15T10:51:28",
   "root": "D:\\Vaults\\PersonalKB",
-  "files_total": 4906,
+  "files_total": 4907,
   "by_extension": {
     "(none)": 2,
     ".base": 1,
     ".jpg": 22,
     ".json": 17,
-    ".md": 3035,
+    ".md": 3036,
     ".mp3": 1810,
     ".py": 14,
     ".txt": 5
   },
-  "markdown_files": 3035,
+  "markdown_files": 3036,
   "candidate_articles": 872,
   "empty_notes": 1,
   "stubs_under_1500_bytes": 20,
