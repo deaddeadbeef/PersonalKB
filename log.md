@@ -2740,3 +2740,37 @@ Verification:
 - Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 32 gates, 32 holds.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4947 files, 3076 Markdown files, 911 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | LLM application integration evidence runner
+
+Scope: add a repeatable audit for the boundary where a proven local endpoint and reusable client are wired into a real app, CLI, UI, job, RAG assistant, or tool loop before result synthesis or deployment readiness can count it.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM Application Integration Evidence Runner.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Capstone Project Blueprint.md`
+- `LLM/Study/Local LLM Client Harness Lab.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library application integration evidence runner that checks app contract, endpoint contract, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation handoff, operations handoff, promotion decision, and optional RAG/tool or concurrency boundaries.
+- Routed the runner from the LLM MOC, study index, dashboard, roadmap, capstone workbook, capstone blueprint, client harness lab, hands-on practicum, deployment readiness audit, and mastery evidence audit.
+- Added `application_integration` to the deployment readiness audit runner and `local-application-integration` to the mastery evidence audit runner.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_application_integration_evidence_runner.py` from the note.
+- Application integration fixtures: pass -> exit 0 `application_integration_ready`; hold -> exit 1 `application_integration_incomplete`; fail -> exit 2 `application_integration_failed`.
+- Extracted and compiled `llm_deployment_readiness_audit_runner.py`; pass manifest with `application_integration` row -> exit 0 `deployment_readiness_ready`, 14 rows, 14 passes.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> exit 1 `mastery_evidence_incomplete`, 33 gates, 33 holds.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4948 files, 3077 Markdown files, 912 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

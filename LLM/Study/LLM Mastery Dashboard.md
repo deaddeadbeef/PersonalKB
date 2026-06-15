@@ -75,6 +75,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have a local `/v1` endpoint and need a client-safe API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] | `/v1/models`, non-streaming chat, streaming, wrong-model failure, contract decision, and JSONL handoff |
 | You have an API contract and need sampler controls fixed | [[LLM/Study/Decoding and Sampling Controls Runner]] | Baseline, temperature, seed, stop-string, output-cap, CSV, Markdown, and JSONL evidence |
 | You have an API contract and need a reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] | Python client script, request/response/output files, JSONL row, and next route |
+| You wired the client into an app, CLI, UI, job, RAG, or tool loop and need to know whether it counts | [[LLM/Study/Local LLM Application Integration Evidence Runner]] | App contract, endpoint, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation, operations, and promotion audit |
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
 | You have client or streaming JSONL and need a benchmark row | [[LLM/Study/Local LLM First Benchmark Row Builder]] | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
 | You have a long, RAG, tool, or multi-turn prompt and need fit proof | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] | Context manifest, component tokens, reserve, margin, fit decision, drop plan, and JSONL row |
@@ -132,6 +133,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Lifecycle runner | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |  |
 | Security/privacy runner | [[LLM/Study/Local LLM Security and Privacy Runner]] |  |
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
+| Application integration audit | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Evaluation set design | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
@@ -200,6 +202,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | One decoding control runner output | [[LLM/Study/Decoding and Sampling Controls Runner]] |
 | One first client harness run | [[LLM/Study/Local LLM First Client Harness Runner]] |
+| One application integration evidence audit output | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | One first benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | One context/token budget runner output | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
@@ -284,6 +287,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]

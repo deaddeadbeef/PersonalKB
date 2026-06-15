@@ -8,11 +8,11 @@ last-verified: 2026-06-15
 
 # LLM Deployment Readiness Audit Runner
 
-> **One-line summary** A deployment choice is ready only when workload, model, route, quality, performance, privacy, operations, result synthesis, cost, rejected alternative, and retest evidence are all linked and machine-checkable.
+> **One-line summary** A deployment choice is ready only when workload, model, route, app integration, quality, performance, privacy, operations, result synthesis, cost, rejected alternative, and retest evidence are all linked and machine-checkable.
 
 Use this after [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]], before the final deployment memo in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The result synthesis runner reconciles keep, tune, reject, rerun, and deployment-memo readiness. The decision matrix explains how to reason. This runner checks whether the saved proof bundle is complete enough to defend.
 
-This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, benchmark, quality, result synthesis, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
+This runner does not call a model, pull weights, contact a provider, or benchmark live traffic. It audits a manifest of evidence already collected from the local endpoint, client harness, application integration, benchmark, quality, result synthesis, security, observability, lifecycle, scheduler, RAG, tool, and capstone notes.
 
 ## What This Proves
 
@@ -22,6 +22,7 @@ This runner does not call a model, pull weights, contact a provider, or benchmar
 | Deployment choice | selected path, candidates, decision reason, result-synthesis proof, path-specific risk | ties the chosen local CPU/GPU, self-hosted, hosted, hybrid, or batch route to reconciled evidence |
 | Model and runtime | model id, artifact, runtime, tokenizer/template, route compatibility | proves the bytes and serving layer match the workload |
 | Endpoint and client | route proof, base URL, model-list, chat call, reusable client | separates UI success from reproducible inference |
+| Application integration | app boundary, user flow, response handling, failure behavior, privacy/logging, promotion evidence | proves the local model is usable through the intended app path, not only through a standalone client |
 | Benchmark and quality | latency, throughput, memory, rubric, pass/hold/fail | prevents speed-only or quality-only decisions |
 | Security and privacy | endpoint exposure, data boundary, logs, RAG/tool/UI/export boundary | keeps local hosting from silently leaking data |
 | Operations and lifecycle | owner, startup, monitoring, backup, rollback, validation | decides whether this is a one-off run or maintained service |
@@ -85,6 +86,7 @@ By default, the audit expects one row for each kind:
 | `deployment_choice` | selected path, candidate paths, decision reason, result-synthesis proof |
 | `model_runtime` | model id, runtime, artifact or revision, compatibility proof |
 | `endpoint_client` | route, base URL or client proof, model-list or chat evidence |
+| `application_integration` | app boundary, user flow, response handling, failure behavior, privacy/logging, promotion decision |
 | `benchmark_performance` | timing, throughput, memory, or context metric plus interpretation |
 | `quality_evaluation` | evaluation-set design proof, rubric, score/result, failure owner or next action |
 | `security_privacy` | endpoint exposure, data boundary, log/export boundary |
@@ -119,6 +121,7 @@ DEFAULT_REQUIRED_KINDS = [
     "deployment_choice",
     "model_runtime",
     "endpoint_client",
+    "application_integration",
     "benchmark_performance",
     "quality_evaluation",
     "security_privacy",
@@ -159,6 +162,11 @@ KIND_HINTS = {
         "owner": "client",
         "pass_signal": "The endpoint route and reusable client evidence prove the intended local or provider route.",
         "next_route": "LLM/Study/Local LLM OpenAI-Compatible API Contract Runner",
+    },
+    "application_integration": {
+        "owner": "application",
+        "pass_signal": "The local model path is proven through the app, CLI, UI, job, RAG assistant, or tool loop with response handling, failure behavior, privacy/logging, evaluation, operations, and promotion evidence.",
+        "next_route": "LLM/Study/Local LLM Application Integration Evidence Runner",
     },
     "benchmark_performance": {
         "owner": "performance",
@@ -436,6 +444,19 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
             findings.append(finding("hold", owner, "Endpoint/client row has no route or client evidence.", kind, "Add base URL, route, client script, or API contract result."))
         if not has_text(row, "model_list", "chat_call", "response", "streaming", "wrong_model_failure"):
             findings.append(finding("hold", owner, "Endpoint/client row has no model-list, chat, streaming, or harmless failure evidence.", kind, "Prove the intended route with saved request/response evidence."))
+    elif kind == "application_integration":
+        if not has_text(row, "app_name", "entry_point", "app_contract", "integration_scope"):
+            findings.append(finding("hold", owner, "Application row has no app boundary.", kind, "Add app name, entry point, app contract, or integration scope."))
+        if not has_text(row, "user_flow", "flow_name", "trigger", "transcript", "visible_output"):
+            findings.append(finding("hold", owner, "Application row has no user-flow evidence.", kind, "Link the CLI/UI/job/RAG/tool-loop trigger and visible result."))
+        if not has_text(row, "response_handling", "parser", "output_path", "acceptance_check"):
+            findings.append(finding("hold", owner, "Application row has no response-handling evidence.", kind, "Show how generated text becomes parsed, displayed, stored, or rejected application state."))
+        if not has_text(row, "failure_handling", "failure_probe", "fallback", "fallback_or_next_action"):
+            findings.append(finding("hold", owner, "Application row has no failure-handling evidence.", kind, "Probe one timeout, wrong-model, server-down, parse, RAG, or tool failure and record the expected app behavior."))
+        if not has_text(row, "privacy_logging", "prompt_storage", "output_storage", "retention", "redaction"):
+            findings.append(finding("hold", owner, "Application row has no privacy/logging evidence.", kind, "Record where prompts, outputs, logs, exports, and private data are stored or redacted."))
+        if not has_text(row, "promotion_decision", "decision", "promote_hold_reject", "app_integration_audit"):
+            findings.append(finding("hold", owner, "Application row has no promotion decision.", kind, "Run Local LLM Application Integration Evidence Runner or link its promote/hold/reject output."))
     elif kind == "benchmark_performance":
         metric_names = ("ttft_ms", "time_to_first_token_ms", "tpot_ms", "tokens_per_second", "total_latency_ms", "p95_latency_ms", "throughput_rps", "peak_vram_mb", "peak_ram_mb", "context_tokens", "batch_tokens_per_second")
         if not has_any_metric(metrics, metric_names):
@@ -844,13 +865,13 @@ python .\llm_deployment_readiness_audit_runner.py
 | `hold/deployment_readiness_incomplete` | required proof, path choice, benchmark, quality, privacy, operations, cost, or retest evidence is missing | follow each row's `next_route` |
 | `fail/deployment_readiness_failed` | a row is explicitly failed, unsafe, rejected, or a critical pass has no proof | resolve the failed row before accepting the deployment |
 
-This runner validates the evidence bundle, not the service itself. Use live runners for endpoint, quality, observability, scheduler, lifecycle, security, RAG, and tool measurements.
+This runner validates the evidence bundle, not the service itself. Use live runners for endpoint, application integration, quality, observability, scheduler, lifecycle, security, RAG, and tool measurements.
 
 ## Capstone Row
 
 | Gate | Required artifact | Pass signal |
 |---|---|---|
-| Deployment readiness audit | `<run-id>-deployment-readiness-audit.json`, `<run-id>-deployment-readiness-audit.md`, `<run-id>-deployment-readiness-audit.csv`, and one `llm-deployment-readiness-audit-runs.jsonl` row | workload, selected path, result synthesis, model/runtime, endpoint/client, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are pass or explicitly waived |
+| Deployment readiness audit | `<run-id>-deployment-readiness-audit.json`, `<run-id>-deployment-readiness-audit.md`, `<run-id>-deployment-readiness-audit.csv`, and one `llm-deployment-readiness-audit-runs.jsonl` row | workload, selected path, result synthesis, model/runtime, endpoint/client, application integration, benchmark, quality, security, operations, scheduler/concurrency, RAG/tool boundary, cost/owner, rejected alternative, and review trigger are pass or explicitly waived |
 
 ## Completion Gate
 
@@ -873,6 +894,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]

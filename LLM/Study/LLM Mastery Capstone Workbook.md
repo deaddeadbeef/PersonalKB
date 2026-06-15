@@ -69,6 +69,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
 | OpenAI-compatible API contract runner | Results JSON/Markdown from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] |  | `/v1/models`, non-streaming chat, streaming if required, wrong-model failure, missing layers, compatible/partial/not-compatible decision, and next route are captured. | Not started |
 | First client harness runner | JSONL row from [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] |  | A reusable Python client script saves request, response, output, and structured run evidence for one local inference call. | Not started |
+| Application integration evidence audit | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Application Integration Evidence Runner|Local LLM Application Integration Evidence Runner]] |  | App contract, endpoint contract, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation handoff, operations handoff, and promotion decision are audited before result synthesis. | Not started |
 | First streaming timing runner | JSONL row from [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] |  | Streaming client evidence records first event, TTFT, chunk counts, final output, total latency, usage gap, and any stream error. | Not started |
 | First benchmark row builder | Builder output from [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] |  | Client and streaming JSONL evidence are converted into benchmark JSON, Markdown copy row, missing-layer list, and next controlled action. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
@@ -607,6 +608,7 @@ Next run:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]

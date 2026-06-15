@@ -107,6 +107,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner|Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]]
@@ -195,6 +196,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] — tune temperature, top-p, top-k, min-p, penalties, seeds, stops, and structured-output controls with reproducible local experiments
 - [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] — run repeatable baseline, temperature, seed, stop-string, and output-cap probes before benchmark or quality comparisons
 - [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] — build a reusable client wrapper that logs request settings, latency, streaming, errors, and benchmark rows
+- [[LLM/Study/Local LLM Application Integration Evidence Runner|Local LLM Application Integration Evidence Runner]] — audit real app, CLI, UI, job, RAG, or tool-loop integration evidence before result synthesis or deployment readiness
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] — connect PagedAttention, KV-cache pressure, chunked prefill, continuous batching, slots, and queue policy to local measurements
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner|Local LLM Scheduler Evidence Audit Runner]] — audit saved scheduler evidence rows before changing concurrency, queue, cache, or deployment policy
 - [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] — check the final deployment evidence bundle before local CPU/GPU, self-hosted, hosted, hybrid, or batch inference is accepted

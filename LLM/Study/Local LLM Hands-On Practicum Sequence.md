@@ -157,6 +157,7 @@ Route:
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 
 Save:
 
@@ -165,8 +166,9 @@ Save:
 | API contract card | Base URL, route, model id, non-streaming response, streaming decision, error shape, unsupported fields |
 | Client harness row | Config, request settings, status, latency, raw excerpt, parsed output, error class |
 | Streaming timing row | First event, TTFT, chunk counts, final output, total latency, usage gap, and stream error if any |
+| Application integration audit | App boundary, endpoint contract, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation, operations, and promotion decision |
 
-Pass signal: the same script can rerun the same request without relying on UI memory or manual clicking.
+Pass signal: the same script can rerun the same request without relying on UI memory or manual clicking, and the app boundary has a pass/hold/fail integration audit before promotion.
 
 ## Stage 4: Freeze Request Controls
 
@@ -390,6 +392,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]

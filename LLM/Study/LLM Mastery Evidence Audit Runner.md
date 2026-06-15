@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, paper claim audit, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, model custody, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, benchmark, scheduler evidence, evaluation set design, quality |
+| local-inference | workload/model selection, model custody, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, benchmark, scheduler evidence, evaluation set design, quality |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, exam run sheet, capstone workbook/final note |
 
@@ -246,6 +246,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/Local LLM OpenAI-Compatible API Contract Runner",
         "pass_signal": "Client route, model id, non-streaming or streaming behavior, and harmless failure are saved.",
+    },
+    {
+        "gate_id": "local-application-integration",
+        "domain": "local-inference",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM Application Integration Evidence Runner",
+        "pass_signal": "The local endpoint is wired into an app, CLI, UI, job, RAG assistant, or tool loop with app contract, user flow, response handling, failure behavior, privacy/logging, evaluation, operations, and promotion evidence.",
     },
     {
         "gate_id": "local-failure-triage",
@@ -968,6 +977,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]

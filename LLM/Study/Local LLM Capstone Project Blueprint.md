@@ -59,7 +59,7 @@ The minimal capstone can omit RAG and tools only if the deployment decision expl
 | 4. Model custody | Model card, license, artifact, revision, format, local path, safety decision, and first Ollama pull metadata when using Ollama. | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] and [[LLM/Study/Local LLM First Model Pull Gate]] |
 | 5. Runtime compatibility | Tokenizer, chat template, quantization, runtime, route, workload fit, and repeatable template/tokenizer audit when behavior matters. | [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]] and [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |
 | 6. First endpoint | CLI or server response plus loopback HTTP proof after install and model-pull gates pass, then a checked first endpoint evidence audit. | [[LLM/Study/Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |
-| 7. Client inference | Reproducible script or client wrapper with request, response, timing, and errors. | [[LLM/Study/Local LLM Client Harness Lab]] |
+| 7. Client and app integration | Reproducible script or client wrapper with request, response, timing, errors, app boundary, user flow, response handling, failure behavior, privacy/logging, evaluation, operations, and promotion evidence. | [[LLM/Study/Local LLM Client Harness Lab]] and [[LLM/Study/Local LLM Application Integration Evidence Runner]] |
 | 8. Metric interpretation | TTFT, TPOT, total latency, tokens, memory, queue, quality, and next action. | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
 | 9. Quality gate | Evaluation-set design is audited before workload prompts are scored pass/hold/fail with failure owners; LLM-as-judge rows have calibration proof before they support decisions. | [[LLM/Study/Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Judge Calibration Runner]] |
 | 10. RAG extension | Corpus, chunks, embedding/reranker proof, retrieval, citations, and refusal. | [[LLM/Study/Local RAG Minimal Python Harness]] |
@@ -86,6 +86,7 @@ Create one dated capstone note or folder with these links:
 | Endpoint proof | Startup command, route, model id, loopback URL, request body, response excerpt, timing, and first endpoint evidence audit output. |
 | Failure triage proof | Any failed local run has symptom, failed layer, proof link, mechanism owner, ruled-out layers, and one controlled next action from [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]]. |
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
+| Application integration proof | App contract, endpoint contract, client flow, user flow, response handling, failure behavior, privacy/logging, evaluation handoff, operations handoff, and promotion decision from [[LLM/Study/Local LLM Application Integration Evidence Runner|Local LLM Application Integration Evidence Runner]]. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
 | Scheduler proof | Scheduler evidence audit output when concurrency, queue, cache, long-prompt, or serving-policy decisions affect the project. |
 | Evaluation set design proof | Workload, decision scope, required task classes, held-out/private rows, contamination controls, expected behavior, rubric, pass criteria, refresh plan, and downstream routes. |
@@ -106,7 +107,7 @@ The smallest acceptable project is:
 
 1. One local model served on loopback.
 2. One model-store, runtime-install, and first-model-pull evidence chain before the endpoint proof.
-3. One client harness call with frozen request settings.
+3. One client harness call with frozen request settings and one application integration audit when the endpoint is wired into an app, CLI, UI, job, RAG assistant, or tool loop.
 4. One benchmark row, one evaluation set design audit, and one quality row; when LLM-as-judge is used, one judge calibration audit.
 5. One academic explanation tying the observed behavior to tokenization, prefill/decode, KV cache, quantization, sampling, or evaluation.
 6. One security row proving the endpoint did not leave loopback.
@@ -141,6 +142,7 @@ You should be able to answer these without searching:
 | Why was this model chosen instead of a larger or smaller one? | [[LLM/Study/Local LLM Workload to Model Selection Playbook]] |
 | What exact artifact was served? | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] |
 | How do you know the client called the intended local route? | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
+| How do you know the local model path works through the actual app boundary? | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |
 | If the local run failed, how did you know which layer failed first? | [[LLM/Study/Local LLM Failure Triage Runner]] |
 | What metric made you keep, tune, or reject the setup? | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
 | What scheduler evidence supports the queue, cache, or long-prompt policy? | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |
@@ -173,6 +175,7 @@ This blueprint is complete for one project when:
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
 - [ ] any failed local run has a failure triage runner output before benchmark, quality, or deployment evidence depends on the rerun
 - [ ] the client proof is reproducible without UI-only steps
+- [ ] any app, CLI, UI, job, RAG, or tool-loop integration has an application integration evidence runner output before result synthesis or deployment readiness
 - [ ] the evaluation set design audit is linked before the full quality row
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
 - [ ] any LLM-as-judge quality row has calibration output before it supports the project decision
@@ -205,6 +208,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Application Integration Evidence Runner]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
