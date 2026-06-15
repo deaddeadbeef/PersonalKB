@@ -4,7 +4,7 @@ up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
 tier-coverage: [practice]
 last-verified: 2026-06-16
-last-machine-check: 2026-06-16T06:05:00+08:00
+last-machine-check: 2026-06-16T06:22:09+08:00
 ---
 
 # Local LLM First Inference Proof - 2026-06-16
@@ -13,7 +13,7 @@ last-machine-check: 2026-06-16T06:05:00+08:00
 
 This is route and loopback-boundary proof, not a quality or mastery certificate. Quality remediation, benchmark audit, lifecycle evidence, non-loopback security, and academic oral-defense proof still need their own rows.
 
-Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] records endpoint evidence audit `pass`, chat/template/tokenizer compatibility `pass`, and first quality probe `hold` at 3/5. [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] records security/privacy runner `pass/loopback_private_ready` for the current loopback-only endpoint.
+Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] records endpoint evidence audit `pass`, chat/template/tokenizer compatibility `pass`, and first quality probe `hold` at 3/5. [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] records focused remediation `hold`, 1/8 pass, 7/8 hold, 0 errors. [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] records security/privacy runner `pass/loopback_private_ready` for the current loopback-only endpoint.
 
 ## Verdict
 
@@ -30,6 +30,7 @@ Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-1
 | Combined smoke summary | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-final\first-smoke-final-qwen35-2b-q4-summary.json` |
 | First response debrief | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-response-debrief\first-smoke-final-qwen35-2b-q4-debrief.json` |
 | Endpoint audit and first quality probe | `hold` for quality | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] |
+| Focused quality remediation | `hold` | [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]] |
 | Security/privacy runner | `pass` for loopback | [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] |
 
 ## Machine And Runtime
@@ -97,15 +98,15 @@ The first fixed-cap smoke runner attempts with `16` and `128` tokens returned HT
 ## What This Does Not Prove
 
 - No-notes academic command of LLM papers or mechanisms.
-- Workload quality for coding, Japanese study, RAG, tools, long context, or structured output. The first quality probe is now measured but held at 3/5.
+- Workload quality for coding, Japanese study, RAG, tools, long context, or structured output. The first quality probe is measured and the focused remediation pass still held.
 - Loopback security/privacy now has a no-generation proof, but non-loopback security, authentication, LAN exposure, UI integration, RAG, and tool safety remain unproven.
 - Stable benchmark performance under repeated runs, streaming, concurrency, or service restarts.
 - Capstone readiness; the endpoint evidence and inference evidence pack audits still need to run.
 
 ## Next Actions
 
-1. Diagnose the two held quality probes in [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] with [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] or [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]].
-2. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after quality remediation has a defensible result.
+1. Route the arithmetic failure through [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] or stronger-model selection before trusting calculation-like work.
+2. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] only as a documented hold until quality is resolved or explicitly accepted as a limitation.
 3. Keep the endpoint loopback-only until a separate LAN/auth/firewall/UI/RAG/tool proof exists.
 4. Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] to map the saved request and response into prompt assembly, tokenization, prefill, decode, stop, detokenization, and application handling.
 5. Continue the academic track with [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] and [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]].
@@ -116,6 +117,7 @@ Internal routes:
 
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]]
 - [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]
+- [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]]
 - [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]]
 - [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

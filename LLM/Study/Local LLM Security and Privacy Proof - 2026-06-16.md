@@ -81,7 +81,7 @@ The first security run held because the manifest scanned the runner source itsel
 
 1. Keep the endpoint loopback-only until a separate LAN/auth/firewall/logging proof exists.
 2. Remediate the held quality rows in [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]].
-3. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after quality remediation has a defensible result.
+3. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] only after quality is remediated or explicitly accepted as a documented hold.
 4. Run [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]], [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]], or [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] before adding UI, RAG, or tools.
 
 ## References
@@ -91,6 +91,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]
+- [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]]
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]
 - [[LLM/Study/Local Open WebUI Provider Integration Runner]]

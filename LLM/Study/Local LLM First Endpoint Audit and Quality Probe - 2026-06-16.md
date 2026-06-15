@@ -4,7 +4,7 @@ up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
 tier-coverage: [practice]
 last-verified: 2026-06-16
-last-machine-check: 2026-06-16T06:05:00+08:00
+last-machine-check: 2026-06-16T06:22:09+08:00
 ---
 
 # Local LLM First Endpoint Audit and Quality Probe - 2026-06-16
@@ -15,6 +15,8 @@ This note extends [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local
 
 Security update: [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] now records security/privacy runner `pass/loopback_private_ready` for the current loopback-only endpoint. That does not change the quality hold.
 
+Remediation update: [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16|Local LLM Quality Remediation Probe - 2026-06-16]] reran the held `K-01` and `C-01` families with output-cap and prompt-contract variants. It stayed `hold`: `1` pass, `7` hold, `0` error.
+
 ## Verdict
 
 | Gate | Status | Evidence |
@@ -23,6 +25,7 @@ Security update: [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|L
 | First endpoint evidence audit | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-endpoint-evidence-audit\first-endpoint-audit-qwen35-2b-q4-2026-06-16\first-endpoint-audit-qwen35-2b-q4-2026-06-16-first-endpoint-evidence-audit.json` |
 | First quality probe, initial run | `hold` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-quality-probe-runner\20260616-055256-first-quality-probe-quality-probe-results.json` |
 | First quality probe, `think=false` rerun | `hold` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-quality-probe-runner\20260616-055447-first-quality-probe-quality-probe-results.json` |
+| Focused quality remediation | `hold` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\quality-remediation-runner\20260616-062209-quality-remediation-quality-remediation-results.json` |
 | Security/privacy runner | `pass` for loopback | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\security-privacy-runner\20260616-060509-security-results.json` |
 | Runner repair | `pass` | [[LLM/Study/Local LLM First Quality Probe Runner]] now records `LOCAL_LLM_THINK` and sends `think` in `/api/chat` requests. |
 
@@ -100,21 +103,24 @@ This endpoint is now credible enough for further controlled local experiments. I
 - The chat/template/tokenizer layer is not the first suspected failure owner for this run.
 - `think=false` is required when this runner checks final answer content for a thinking-capable model.
 - The first model-quality failures are answer discipline and strict instruction following.
+- The first remediation pass did not clear those failures: output-cap changes did not help, stricter prompting did not fix arithmetic, and strict constraints only passed with an exact template.
 - The current security/privacy proof allows only one-person loopback experimentation, not LAN, UI, RAG, tool, or deployment handoff.
-- The next controlled action should test whether the two holds improve with prompt/sampler/output-cap changes before changing the model.
+- The next controlled action should test deterministic arithmetic/tool routing, structured-output controls, or a stronger local model before changing the quality claim.
 
 ## Next Actions
 
-1. Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] or [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] to isolate whether `K-01` and `C-01` are prompt, sampler, thinking-mode, or model-capability failures.
-2. Keep the endpoint loopback-only; run a separate LAN/auth/firewall/UI/RAG/tool proof before any non-loopback, UI, RAG, or tool handoff.
-3. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after the quality remediation row exists.
-4. Keep [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] on the academic track; endpoint proof does not prove paper-level mastery.
+1. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] to prove deterministic arithmetic/tool-result remediation before trusting calculation-like work.
+2. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] or [[LLM/Study/Local LLM Runtime Comparison Runner|Local LLM Runtime Comparison Runner]] if a stronger local model is tested for the held prompts.
+3. Keep the endpoint loopback-only; run a separate LAN/auth/firewall/UI/RAG/tool proof before any non-loopback, UI, RAG, or tool handoff.
+4. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] only as a documented hold until quality is resolved or explicitly accepted as a limitation.
+5. Keep [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] on the academic track; endpoint proof does not prove paper-level mastery.
 
 ## References
 
 Internal routes:
 
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]]
 - [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]

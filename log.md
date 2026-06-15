@@ -3888,3 +3888,37 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new security proof note, result id, manifest, or model id.
+
+## [2026-06-16] curate | Diagnose held local LLM quality probes
+
+Scope: run a focused remediation pass for the two held first-quality probes before promoting the first local endpoint toward capstone evidence.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16.md`
+- `LLM/Study/Local LLM First Inference Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16.md`
+- `LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]] with the focused remediation result, interpretation, and next tool/model/structured-output routes.
+- Created and compiled `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\quality-remediation-runner.py`.
+- Ran eight focused variants over `K-01` and `C-01` while keeping runtime, model, route, boundary, temperature, and thinking mode fixed.
+- Routed the held remediation result through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, first endpoint audit note, first inference proof note, and security proof note.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or non-LLM dirty files.
+
+Verification:
+- `python -m py_compile quality-remediation-runner.py`: clean.
+- Ollama health check returned version `0.30.8` and visible model `qwen3.5:2b-q4_K_M`.
+- Quality remediation runner returned `hold`, 1 pass, 7 hold, 0 error; output-cap changes did not clear `K-01` or `C-01`, prompt hardening did not clear `K-01`, and `C-01` passed only when the exact target template was supplied.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new quality remediation note, result id, result path, or held probe ids.
