@@ -11,7 +11,7 @@ last-machine-check: 2026-06-15T11:10:33+08:00
 
 > **One-line summary** As of 2026-06-15T11:10:33+08:00, this Windows workstation has enough disk for a first small local model, no local LLM runtime on PATH, no model/cache variables set, no model directories created, and no common local LLM endpoint listening.
 
-Use this after [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and before [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store plan says what to decide. This snapshot records what is true on this machine before the first installer or model pull.
+Use this after [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and before [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store plan says what to decide. This snapshot records what is true on this machine before the first installer or model pull. Rerun [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] when directory, environment, listener, runtime, or GPU state may have changed.
 
 This note is read-only evidence. It did not install Ollama, LM Studio, Hugging Face CLI, create `D:\Models`, set environment variables, start a server, or pull a model.
 
@@ -153,6 +153,7 @@ This snapshot is complete when:
 
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]

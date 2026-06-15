@@ -63,6 +63,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have local timing or memory numbers but cannot interpret them | [[LLM/Study/Local LLM Inference Metrics Field Guide]] | Metric owner, request phase, confounder, and next controlled action |
 | You are ready for a scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] | Section scores, hard-fail checks, proof links, remediation rows |
 | You need to know whether this machine is ready for a first local run | [[LLM/Study/Local LLM First Run Readiness Snapshot]] | Runtime/GPU/listener readiness card and first execution decision |
+| You need fresh machine readiness evidence before install, pull, or smoke request | [[LLM/Study/Local LLM First Run Readiness Runner]] | Command, disk, path, environment, GPU, listener, loopback, pass/hold/fail, and next-route evidence |
 | You need to know whether the first model tags are still current | [[LLM/Study/Local LLM First Model Source Recheck Runner]] | Current source-page pass/hold/fail for selected tag, digest, size, context, modality, and quantization |
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
 | You need one reviewed command plan before the first local run | [[LLM/Study/Local LLM First Run Command Plan Runner]] | Ordered PowerShell plan, run folder, evidence filenames, loopback checks, and next gate manifests |
@@ -153,6 +154,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] |  |
+| First-run readiness runner | [[LLM/Study/Local LLM First Run Readiness Runner]] |  |
 | First model pull runner | [[LLM/Study/Local LLM First Model Pull Runner]] |  |
 | First runtime health runner | [[LLM/Study/Local LLM First Runtime Health Runner]] |  |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |  |
@@ -239,6 +241,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One end-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] or capstone note |
 | One interpreted local inference benchmark row | [[LLM/Study/Local LLM Inference Metrics Field Guide]] or [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One machine-specific first-run readiness row | [[LLM/Study/Local LLM First Run Readiness Snapshot]] |
+| One fresh first-run readiness runner output before install, pull, or smoke request | [[LLM/Study/Local LLM First Run Readiness Runner]] |
 | One first model source recheck row | [[LLM/Study/Local LLM First Model Source Recheck Runner]] |
 | One machine-specific model-store decision row | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | One reviewed first-run command plan | [[LLM/Study/Local LLM First Run Command Plan Runner]] |
@@ -355,6 +358,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]

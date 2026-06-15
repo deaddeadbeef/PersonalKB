@@ -47,6 +47,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | First-run readiness | Machine-specific card from [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | Runtime install state, GPU availability, common listener ports, first runtime choice, first model class, and next proof action are captured before installing or serving. | Runtime not installed; ready for first execution |
+| First-run readiness runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] |  | Fresh command, disk, path, environment, listener, GPU, and loopback-boundary evidence exists before installation, model pull, endpoint smoke, or security-sensitive rerun. | Not started |
 | First model source recheck | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] |  | The selected baseline, smaller fallback, and text-only control model pages are fetched and checked for current tag, digest, size, context, modality, and quantization snippets before any pull. | Not started |
 | Windows model-store decision | Disk/cache/storage card from [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | The default store or custom `OLLAMA_MODELS` path is chosen before large downloads, with disk, directory, environment, and rollback evidence. | Store decision drafted; execution proof pending |
 | First-run command plan | Command-plan JSON/Markdown/PowerShell/CSV from [[LLM/Study/Local LLM First Run Command Plan Runner|Local LLM First Run Command Plan Runner]] |  | Run root, runtime, model id, loopback URLs, storage decision, install scope, pull scope, downstream gate manifests, and evidence filenames are reviewed before first execution. | Not started |
@@ -616,6 +617,7 @@ Next run:
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]

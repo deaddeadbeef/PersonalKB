@@ -3670,3 +3670,35 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4975 files, 3104 Markdown files, 939 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
 - `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new note, serving-systems title, FlashAttention, Orca, PagedAttention, Sarathi, SGLang, or RadixAttention terms.
+
+## [2026-06-16] curate | Add local LLM first-run readiness runner
+
+Scope: add a no-install runner that refreshes local machine evidence before the first local LLM installer, model pull, or smoke request.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Run Readiness Runner.md`
+- `LLM/Study/Local LLM First Run Readiness Snapshot.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM Model Store Readiness Snapshot.md`
+- `LLM/Study/Local LLM Windows First-Run Quickstart.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM First Run Readiness Runner]] with a standard-library Python runner that checks command availability, environment variables, model-store paths, disk space, common local LLM listener ports, and NVIDIA GPU visibility before any install or model pull.
+- The runner writes JSON, CSV, Markdown, and JSONL evidence files, then classifies the machine as `pass` / `ready_for_first_runtime_step`, `hold` / `readiness_incomplete`, or `fail` / `readiness_blocked`.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, first-run snapshot, model-store snapshot, Windows quickstart, and hands-on practicum through the new readiness refresh step.
+- No new current external-source claims were added in this pass; the note is an internal machine-state evidence procedure.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted `local_llm_first_run_readiness_runner.py` from the note and ran `python -m py_compile`: clean.
+- Runner self-test: 4 cases passed.
+- Live no-install scan from a temporary manifest returned `exit_code=2`, `hold` / `readiness_incomplete`, with expected holds for missing `D:\Models` directories and unset custom cache variables; GPU proof saw `NVIDIA GeForce RTX 3080 Ti`, 12288 MiB VRAM, driver 610.47, with no common local LLM listener active.
+- `git diff --check`: clean before final index/audit rerun.

@@ -64,6 +64,7 @@ Stop after any stage if the evidence fails. Use the failed row to choose the nex
 Route:
 
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 
@@ -72,6 +73,7 @@ Save:
 | Artifact | Minimum fields |
 |---|---|
 | Readiness snapshot | Runtime install state, GPU, listener ports, first runtime choice, first model class, next proof action |
+| Readiness runner output | JSON, CSV, Markdown, and JSONL event files with command, environment, storage, listener, and GPU checks |
 | Preflight snapshot | OS, shell, CPU/RAM, GPU/VRAM or CPU-only note, disk, model cache path, intended host/port |
 | Stack Anatomy Card | Boundary, hardware proof, lowest unproven layer, next action |
 
@@ -390,6 +392,7 @@ Internal routes:
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
+- [[LLM/Study/Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]

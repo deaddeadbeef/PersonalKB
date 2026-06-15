@@ -54,6 +54,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]]
@@ -179,6 +180,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mastery Gap Triage Runner|LLM Mastery Gap Triage Runner]] — rank incomplete gates from the mastery audit into the next concrete academic or local-inference proof route
 - [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] — audit workload, selected path, model/runtime, endpoint, benchmark, quality, privacy, operations, cost, rejected alternative, and retest proof before accepting the final deployment memo
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] — use this machine's actual runtime, GPU, listener, and first-model state before installing or serving anything
+- [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] — refresh command, disk, path, environment, GPU, listener, and loopback-safety evidence before installing, pulling, or smoking a local model
 - [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] — choose the source-checked first Ollama model tag, control tag, stretch tag, and avoid-first class for this RTX 3080 Ti run
 - [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] — verify current model-page snippets for tag, digest, size, context, modality, and quantization before the first pull or command plan
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] — decide where model weights, runtime stores, Hugging Face caches, conversion outputs, and evidence logs live before the first large download

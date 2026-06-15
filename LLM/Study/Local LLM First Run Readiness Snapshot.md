@@ -11,7 +11,7 @@ last-machine-check: 2026-06-15T11:10:33+08:00
 
 > **One-line summary** This is the machine-specific readiness card for the first local LLM run: as of 2026-06-15T11:10:33+08:00, the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, no local LLM runtime installed, no endpoint listening, and a separate model-store readiness snapshot for the first pull.
 
-Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next. Before any model pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] to decide whether the default model store is acceptable or a custom cache path must be set first.
+Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next. If machine state may have changed, rerun [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] before installing, pulling, or smoking a model. Before any model pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] to decide whether the default model store is acceptable or a custom cache path must be set first.
 
 ## Current State
 
@@ -125,6 +125,7 @@ This readiness snapshot is complete when:
 Internal routes:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Run Readiness Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]

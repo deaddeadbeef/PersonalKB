@@ -87,6 +87,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] — Machine-specific readiness card for this Windows workstation before installing a runtime or pulling a model
+- [[LLM/Study/Local LLM First Run Readiness Runner|Local LLM First Run Readiness Runner]] — Refresh machine readiness evidence for commands, disk, model-store paths, environment variables, GPU, listeners, and loopback safety before install or pull
 - [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] — Source-checked first model ladder for the RTX 3080 Ti first run: route-proof baseline, text-only control, practical stretch, and avoid-first tags
 - [[LLM/Study/Local LLM First Model Source Recheck Runner|Local LLM First Model Source Recheck Runner]] — Fetch current model pages and verify expected first-run tag, digest, size, context, modality, and quantization snippets before the first pull
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] — Decide where runtime model stores, Hugging Face caches, GGUF/source mirrors, conversion outputs, and evidence logs live before the first large download
