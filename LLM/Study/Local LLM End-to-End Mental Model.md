@@ -46,6 +46,7 @@ Mastery means holding all three stories at once.
 | Prompt assembly | Which system prompt, history, RAG chunks, tool schemas, and output reserve fit in context? | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
 | Prefill | How much input must be processed before the first generated token appears? | [[LLM/Study/LLM Inference Request Lifecycle Lab]] |
 | Decode loop | How fast can the runtime generate one token at a time after prefill? | [[LLM/Study/Local LLM Inference Benchmark Log]] |
+| Metric interpretation | Which request phase owns each number, and what confounder must be controlled before tuning? | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
 | Sampler and stops | How do logits become the returned text or schema, and where does generation stop? | [[LLM/Study/Decoding and Sampling Controls Lab]] |
 | Scheduler and cache | What happens when requests, context length, or repeated prefixes compete for memory? | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
 | Quality gate | Did the answer solve the workload under a known rubric, not just return quickly? | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -150,6 +151,7 @@ You understand the end-to-end path when you can answer these without notes:
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]

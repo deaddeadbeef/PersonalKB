@@ -49,6 +49,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You cannot explain a paper | [[LLM/Study/LLM Paper Reading Protocol]] | Claim, method, evidence, limitation, deployment implication |
 | You cannot explain tokens, logits, loss, attention, or KV cache | [[LLM/Study/LLM Math and Tensor Shape Primer]] | Worked explanation or shape row |
 | You can run local commands but cannot explain the whole serving path | [[LLM/Study/Local LLM End-to-End Mental Model]] | One request explained from artifact, tokenizer, runtime, prefill, decode, route, client, quality, and operations |
+| You have local timing or memory numbers but cannot interpret them | [[LLM/Study/Local LLM Inference Metrics Field Guide]] | Metric owner, request phase, confounder, and next controlled action |
 | You are ready for a scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] | Section scores, hard-fail checks, proof links, remediation rows |
 | You need to know whether this machine is ready for a first local run | [[LLM/Study/Local LLM First Run Readiness Snapshot]] | Runtime/GPU/listener readiness card and first execution decision |
 | You are ready to execute the first local endpoint proof | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | Filled run folder, native response, OpenAI-compatible response, benchmark row, decision row |
@@ -68,6 +69,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Paper synthesis | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]] |  |
 | Mechanism bridge | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] |  |
 | End-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] |  |
+| Local inference metric interpretation | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |  |
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
@@ -110,6 +112,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One complete daily study session | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] |
 | One mechanism-to-local-control row | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]] or capstone note |
 | One end-to-end local inference explanation | [[LLM/Study/Local LLM End-to-End Mental Model]] or capstone note |
+| One interpreted local inference benchmark row | [[LLM/Study/Local LLM Inference Metrics Field Guide]] or [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | One machine-specific first-run readiness row | [[LLM/Study/Local LLM First Run Readiness Snapshot]] |
 | One first endpoint run folder | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
@@ -149,6 +152,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
+- [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]

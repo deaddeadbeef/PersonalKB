@@ -66,6 +66,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — Explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] — Core shapes and formulas for tokens, logits, loss, attention, KV cache, and inference metrics
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] — Separate loss, perplexity, benchmark, preference, calibration, quality, latency, and memory evidence before making model decisions
+- [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] — Interpret TTFT, TPOT, throughput, memory, concurrency, and quality numbers as phase-specific local inference evidence
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — Scaled dot-product attention, masking, multi-head tensor shapes, and KV-cache implications
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] — Machine-specific readiness card for this Windows workstation before installing a runtime or pulling a model

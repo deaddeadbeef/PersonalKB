@@ -11,7 +11,7 @@ tier-coverage: [theory, practice]
 
 Use this after [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]], and [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]. Those notes define logits/loss, training stages, and paper reading. This guide tells you how to interpret the numbers without confusing training progress, leaderboard performance, workload quality, and local serving evidence.
 
-Use it before [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when a decision depends on a metric.
+Use it before [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when a decision depends on a metric.
 
 ## The Metric Rule
 
@@ -218,6 +218,7 @@ Internal:
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Training Pipeline Map]]
+- [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]

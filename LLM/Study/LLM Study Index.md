@@ -39,6 +39,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]]
+- [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]
@@ -90,6 +91,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] — choose the lowest unproven prerequisite when a paper, lab, local endpoint, RAG, tool, or deployment proof fails
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] — run mixed recall prompts that combine academic mechanisms with local inference, RAG, tools, safety, and deployment decisions
+- [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] — map TTFT, TPOT, throughput, memory, queue, concurrency, and quality numbers to request phases, confounders, and next actions
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — choose today's recall prompt, study route, proof artifact, evidence destination, and next action without searching the whole vault
 - [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] — follow a weekly rhythm that pairs academic recall with applied proof artifacts and capstone links
 - [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] — capture one study session as a recall answer, mechanism bridge, applied proof or blocker, and capstone link

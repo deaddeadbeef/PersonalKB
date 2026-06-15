@@ -16,7 +16,7 @@ When one candidate is vLLM or SGLang under WSL, complete [[LLM/Study/Local LLM W
 
 When one candidate is containerized vLLM or SGLang, complete [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] before comparing throughput or quality. Otherwise Docker context, GPU runtime, image tag, cache mount, port mapping, or Open WebUI routing can masquerade as a runtime difference.
 
-Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to run the same request shape against each endpoint. Save speed rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and the final choice in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
+Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] to run the same request shape against each endpoint. Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] to interpret TTFT, TPOT, throughput, memory, queue, and quality numbers before deciding what changed. Save speed rows in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], quality rows in [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], and the final choice in [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]].
 
 Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when runtime choice depends on batching, queueing, saturation, or multi-client throughput rather than only a single request. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when runtime choice depends on GGUF versus AWQ/GPTQ/FP8/INT8, GPU offload, CPU fallback, or KV-cache precision. Use [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] when runtime choice depends on repeated system prompts, documents, examples, RAG context, tool protocols, or chat history. Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] when runtime choice depends on draft-model, EAGLE, MTP, n-gram, or another speculative decoding path.
 
@@ -207,6 +207,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
+- [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
