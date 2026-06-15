@@ -68,6 +68,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have artifact, runtime, tokenizer, or route facts but no compatibility decision | [[LLM/Study/Local LLM Runtime Compatibility Runner]] | Architecture, artifact, quantization, tokenizer, template, runtime, route, custody, sizing, and next proof audit |
 | You need to install Ollama without losing the evidence trail | [[LLM/Study/Local LLM Windows Runtime Install Gate]] | Installer source, new-shell PATH, model-store inheritance, listener, and log proof |
 | You are ready to pull the first Ollama model | [[LLM/Study/Local LLM First Model Pull Gate]] | Model tag decision, store proof, pull output, list/tags/show metadata, and pass/hold/fail route |
+| You pulled the first model and need to know whether it counts | [[LLM/Study/Local LLM First Model Pull Runner]] | Selected tag, source check, store decision, pull output, CLI/API inventory, show metadata, and next route audit |
 | You need to know whether the local runtime is reachable before endpoint smoke | [[LLM/Study/Local LLM First Runtime Health Snapshot]] | Health JSON/Markdown, installed and loaded model ids, OpenAI-compatible ids, missing layer, and next action |
 | You are ready to send the first controlled local inference request | [[LLM/Study/Local LLM First Smoke Request Runner]] | Native and OpenAI-compatible request/response/output files, status, missing layer, and next action |
 | You are ready to execute the first local endpoint proof | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | Filled run folder, native response, OpenAI-compatible response, benchmark row, decision row |
@@ -131,6 +132,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |  |
+| First model pull runner | [[LLM/Study/Local LLM First Model Pull Runner]] |  |
 | Hardware sizing runner | [[LLM/Study/Local LLM Hardware Sizing Runner]] |  |
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |
@@ -204,6 +206,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One machine-specific model-store decision row | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] |
 | One runtime install gate row | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | One first model pull gate row | [[LLM/Study/Local LLM First Model Pull Gate]] |
+| One first model pull runner output before runtime health or endpoint smoke | [[LLM/Study/Local LLM First Model Pull Runner]] |
 | One first runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
 | One first smoke request summary | [[LLM/Study/Local LLM First Smoke Request Runner]] |
 | One first endpoint run folder | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
@@ -307,6 +310,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]

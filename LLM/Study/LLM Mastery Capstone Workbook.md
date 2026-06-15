@@ -49,6 +49,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Windows model-store decision | Disk/cache/storage card from [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] and [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] | The default store or custom `OLLAMA_MODELS` path is chosen before large downloads, with disk, directory, environment, and rollback evidence. | Store decision drafted; execution proof pending |
 | Windows runtime install gate | Install/PATH/listener row from [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] |  | Installer source, new-shell `PATH`, `ollama --version`, empty or known model list, log paths, listener boundary, and rollback route are captured before model pull. | Not started |
 | First model pull gate | Pull/list/show row from [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] |  | Selected tag, source-page check, model-store decision, pull output, `ollama ls`, `/api/tags`, `/api/show`, and pass/hold/fail handoff are captured before endpoint smoke. | Not started |
+| First model pull runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] |  | Selected model, source check, store decision, runtime install proof, runtime compatibility proof, pull output, `ollama ls`, `/api/tags`, `/api/show`, model visibility, digest check, pass/hold/fail decision, and next route are audited before runtime health or endpoint smoke. | Not started |
 | First runtime health snapshot | Health JSON/Markdown from [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] |  | Listener reachability, installed model ids, loaded model ids or idle state, OpenAI-compatible model ids, expected model visibility, missing layer, and next action are captured without inference. | Not started |
 | First smoke request runner | Summary JSON/Markdown from [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] |  | Native and OpenAI-compatible request, response, output, route decision, missing layer, and next action are captured for the first controlled local inference prompt. | Not started |
 | Local model endpoint | Filled [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], Windows first-run row from [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] if applicable, first-run packet from [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], plus CLI and HTTP proof from [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] |  | Local endpoint returns a response; model id, runtime, command, loopback URL, request, response, timing, quality decision, and next action are captured after the install and model-pull gates pass. | Not started |
@@ -261,6 +262,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Runtime install gate |  |
 | Acquisition/provenance card |  |
 | First model pull gate |  |
+| First model pull runner |  |
 | Artifact download/cache/conversion card |  |
 | Cache/local path and hash |  |
 | Runtime |  |
@@ -593,6 +595,7 @@ Next run:
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]

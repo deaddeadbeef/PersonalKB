@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Before the first inference call, freeze the selected Ollama tag, prove where the bytes will land, pull only one small baseline model, capture model metadata, and decide whether the artifact is ready for endpoint smoke testing.
 
-Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] before this gate when artifact format, quantization, tokenizer, chat template, route, or model-id support is not already proven. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
+Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] before this gate when artifact format, quantization, tokenizer, chat template, route, or model-id support is not already proven. Use [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] after this gate when the saved pull/list/tags/show artifacts should become repeatable pass/hold/fail evidence. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
 
 This is not a quality test. It is a custody and readiness gate for the first model bytes.
 
@@ -249,6 +249,7 @@ This gate is complete only when:
 - [ ] `ollama-ls-after-pull.txt` includes the selected model
 - [ ] `ollama-api-tags-after-pull.json` includes the selected model
 - [ ] `ollama-show-response.json` exists
+- [ ] [[LLM/Study/Local LLM First Model Pull Runner|Local LLM First Model Pull Runner]] output exists when pull evidence will support runtime health, endpoint smoke, benchmark, quality, or deployment decisions
 - [ ] pass/hold/fail row names exactly one next route
 
 ## References
@@ -261,6 +262,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]
+- [[LLM/Study/Local LLM First Model Pull Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
