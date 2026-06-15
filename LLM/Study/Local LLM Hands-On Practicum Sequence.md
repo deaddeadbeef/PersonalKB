@@ -141,6 +141,7 @@ Route:
 
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
+- [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 
 Save:
@@ -149,6 +150,7 @@ Save:
 |---|---|
 | API contract card | Base URL, route, model id, non-streaming response, streaming decision, error shape, unsupported fields |
 | Client harness row | Config, request settings, status, latency, raw excerpt, parsed output, error class |
+| Streaming timing row | First event, TTFT, chunk counts, final output, total latency, usage gap, and stream error if any |
 
 Pass signal: the same script can rerun the same request without relying on UI memory or manual clicking.
 
@@ -358,6 +360,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
+- [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]

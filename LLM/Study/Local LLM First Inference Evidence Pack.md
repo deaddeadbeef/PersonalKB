@@ -14,7 +14,7 @@ Use this as the first-run binder for [[LLM/Study/Local LLM Hosting and Inference
 
 Use [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] when you want the broader ordered path around this packet. This evidence pack is the Stage 1 endpoint proof in that practicum.
 
-For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. If the first run is Ollama, use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture model-pull custody, [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to create the raw response files, [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] to interpret the first response, [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] for a tiny private quality signal, and [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first reusable client-side inference row before copying benchmark or capstone quality rows. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
+For the first Windows-native proof, use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] and prefer Ollama or LM Studio. If the first run is Ollama, use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture model-pull custody, [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] to create the raw response files, [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] to interpret the first response, [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] for a tiny private quality signal, [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first reusable client-side inference row, and [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] when the first client proof needs perceived-latency evidence before copying benchmark or capstone quality rows. For GGUF/CPU control, use llama.cpp or llama-cpp-python. For production-style GPU serving, use vLLM or SGLang after hardware and Linux/WSL/server support are proven. If that proof starts from Windows, use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] before treating the endpoint as benchmark evidence. If the endpoint is containerized, add [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] evidence before treating Docker, Open WebUI, or Compose as the serving contract.
 
 ## Evidence Packet
 
@@ -29,9 +29,11 @@ local-llm-runs/
     endpoint-smoke.json
     openai-contract.md
     client-harness.jsonl
+    streaming-timing.jsonl
     benchmark-row.md
     first-quality-probe-suite/
     first-client-harness/
+    first-streaming-timing/
     quality-row.md
     decision.md
 ```
@@ -174,14 +176,14 @@ After this passes, use [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|
 
 ## Step 6: Repeatable Client Harness
 
-Use [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first reusable Python client call, then [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the endpoint needs streaming, retries, multiple prompt cases, or application integration. The harness should log:
+Use [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] for the first reusable Python client call, [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] for the first streaming TTFT and event-log row, then [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the endpoint needs retries, multiple prompt cases, or application integration. The harness should log:
 
 | Field | Why |
 |---|---|
 | runtime, base URL, route, model id | proves what was called |
 | request body hash or saved redacted body | makes prompt and settings reproducible |
 | non-streaming status | baseline response proof |
-| streaming status | required if the UI/client streams |
+| streaming status, first event, and TTFT | required if the UI/client streams |
 | timeout and retry policy | prevents silent hangs |
 | latency fields | feeds benchmark log |
 | response excerpt/path | supports quality review |
@@ -232,6 +234,7 @@ This evidence pack is complete when you have:
 - [ ] a route/model-id proof such as `/api/tags`, `/v1/models`, runtime UI, or server log
 - [ ] one client-harness row or an explicit note that the run is smoke-test only
 - [ ] first client harness runner evidence or an explicit note that the run is native-only
+- [ ] first streaming timing row or an explicit note that streaming is unsupported/not required
 - [ ] one benchmark row
 - [ ] one first quality probe or quality decision
 - [ ] one security/logging boundary decision
@@ -249,6 +252,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
+- [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

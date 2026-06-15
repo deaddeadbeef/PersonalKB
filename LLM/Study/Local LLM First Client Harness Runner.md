@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] proves the local `/v1` route and [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] has at least one prompt worth rerunning through a client. The contract lab says which base URL, route, model id, and feature flags are safe. This runner turns that contract into repeatable client-side inference evidence.
 
-Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] after this when the harness needs streaming, retries, multiple prompt suites, tool traces, richer metrics, or integration into a real application. This note is the first small pass.
+Use [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] after this when the next narrow question is perceived latency, first content delta, chunk count, and streaming errors. Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the harness needs retries, multiple prompt suites, tool traces, richer metrics, or integration into a real application. This note is the first small non-streaming pass.
 
 ## What This Proves
 
@@ -286,7 +286,7 @@ Copy this into a dated run note or [[LLM/Study/Local LLM Client Harness Lab|Loca
 | Output tokens |  |
 | Finish reason |  |
 | Status/error |  |
-| Next route | benchmark / quality harness / API contract / troubleshooting |
+| Next route | streaming timing / benchmark / quality harness / API contract / troubleshooting |
 
 ## Failure Routing
 
@@ -317,6 +317,7 @@ This first client runner is complete only when:
 Internal routes:
 
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Command Cookbook]]

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Local inference metrics are useful only when each number is tied to a phase, claim, confounder, and next controlled action.
 
-Use this after [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] and before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], or [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]. Use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] when the immediate job is to interpret one first Ollama response JSON. [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] explains metrics across training, papers, evaluation, and deployment. This note is the local inference field guide: what each measurement means during a real served request.
+Use this after [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] and before [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], or [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]]. Use [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] when the immediate job is to interpret one first Ollama response JSON, and [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] when the immediate job is to separate first stream event, first visible content delta, chunk count, and total latency. [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] explains metrics across training, papers, evaluation, and deployment. This note is the local inference field guide: what each measurement means during a real served request.
 
 ## Measurement Rule
 
@@ -34,7 +34,9 @@ TTFT high -> prefill or queue phase -> prompt/context is expensive
 |---|---|---|---|
 | Load time | Before request or first request | Model residency, disk/load overhead, startup penalty. | Steady-state decode speed or quality. |
 | Queue wait | Before prefill | Server saturation, admission policy, or too much concurrency. | Model weakness. |
+| First stream event | Stream transport | The server began returning streamed events. | The user saw meaningful text. |
 | Time to first token (TTFT) | Queue plus prefill plus first decode step | Cold start, prompt length, context assembly, scheduler, or cache effects. | Later-token speed by itself. |
+| First content delta | Stream parser and first visible token/text | The user-visible answer began. | The final answer is correct or complete. |
 | Prefill tokens/sec | Prompt processing | How efficiently input context is processed when exposed by the runtime. | Answer quality or decode speed. |
 | Time per output token (TPOT) / inter-token latency (ITL) | Decode | Later-token speed, memory bandwidth, kernel/offload path, active sequence pressure. | Prompt/context cost. |
 | Output tokens/sec | Decode as seen by user/client | User-visible generation rate under the measured condition. | Throughput under load or correctness. |
@@ -159,6 +161,7 @@ You understand local inference metrics when you can answer these without notes:
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]

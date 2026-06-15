@@ -189,7 +189,7 @@ The failure row is part of the contract. A local server that only works on happy
 
 ## Client Handoff
 
-After the probes pass, hand these values first to [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]], then to [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the client needs streaming, retries, tool traces, or many prompt cases:
+After the probes pass, hand these values first to [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]], then to [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] if the next proof is perceived latency, and then to [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the client needs retries, tool traces, or many prompt cases:
 
 | Harness field | Source in this lab |
 | --- | --- |
@@ -225,6 +225,7 @@ Internal evidence:
 
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
+- [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]

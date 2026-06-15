@@ -502,7 +502,7 @@ Get-NetTCPConnection -State Listen |
 | Long-prompt OOM | Count prompt/history/RAG/tool tokens | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
 | Slow first token | Compare prompt tokens, retrieved context, queue, and prefix reuse | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
 | Slow later tokens | Compare model size, quantization, offload, backend, and memory bandwidth | [[LLM/Study/Local LLM Quantization and GPU Offload Lab]] |
-| Streaming broken | Run non-streaming smoke and record unsupported or malformed streaming | [[LLM/Study/Local LLM Client Harness Lab]] |
+| Streaming broken | Run non-streaming smoke and record unsupported or malformed streaming | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | Output ignores roles | Verify tokenizer, chat template, EOS, and stop policy | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
 | Tool call wrong or unsafe | Validate schema, policy, tool-choice, and result injection | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 
@@ -518,6 +518,7 @@ Get-NetTCPConnection -State Listen |
 | Startup command and route | [[LLM/Study/Local LLM Serving Runbook]] |
 | `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
 | First reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] |
+| First streaming timing run | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | Python wrapper output | [[LLM/Study/Local LLM Client Harness Lab]] |
 | Timing and throughput row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | Quality pass/hold/fail | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -551,6 +552,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
+- [[LLM/Study/Local LLM First Streaming Timing Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
