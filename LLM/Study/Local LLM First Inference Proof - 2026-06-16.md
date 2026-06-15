@@ -13,6 +13,8 @@ last-machine-check: 2026-06-16T05:31:00+08:00
 
 This is route and operations proof, not a quality or mastery certificate. Quality, security hardening, benchmark audit, and academic oral-defense proof still need their own rows.
 
+Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] now records endpoint evidence audit `pass`, chat/template/tokenizer compatibility `pass`, and first quality probe `hold` at 3/5.
+
 ## Verdict
 
 | Gate | Status | Evidence |
@@ -27,6 +29,7 @@ This is route and operations proof, not a quality or mastery certificate. Qualit
 | OpenAI-compatible smoke response | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-openai-long-cap\openai-chat-response.json` |
 | Combined smoke summary | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-final\first-smoke-final-qwen35-2b-q4-summary.json` |
 | First response debrief | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-response-debrief\first-smoke-final-qwen35-2b-q4-debrief.json` |
+| Endpoint audit and first quality probe | `hold` for quality | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] |
 
 ## Machine And Runtime
 
@@ -93,15 +96,15 @@ The first fixed-cap smoke runner attempts with `16` and `128` tokens returned HT
 ## What This Does Not Prove
 
 - No-notes academic command of LLM papers or mechanisms.
-- Workload quality for coding, Japanese study, RAG, tools, long context, or structured output.
+- Workload quality for coding, Japanese study, RAG, tools, long context, or structured output. The first quality probe is now measured but held at 3/5.
 - Non-loopback security, authentication, LAN exposure, or UI integration safety.
 - Stable benchmark performance under repeated runs, streaming, concurrency, or service restarts.
 - Capstone readiness; the endpoint evidence and inference evidence pack audits still need to run.
 
 ## Next Actions
 
-1. Run [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] before making any quality claim.
-2. Run [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before promoting this to capstone-ready evidence.
+1. Diagnose the two held quality probes in [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] with [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] or [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]].
+2. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after security and quality remediation rows exist.
 3. Run [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] before any non-loopback or UI handoff.
 4. Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] to map the saved request and response into prompt assembly, tokenization, prefill, decode, stop, detokenization, and application handling.
 5. Continue the academic track with [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] and [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]].
@@ -111,6 +114,7 @@ The first fixed-cap smoke runner attempts with `16` and `128` tokens returned HT
 Internal routes:
 
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]]
+- [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]
 - [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/Local LLM Model Store Bootstrap Runner]]

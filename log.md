@@ -3816,3 +3816,41 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new first-inference proof note, selected model id, or evidence folder names.
+
+## [2026-06-16] curate | Audit first local endpoint and run first quality probe
+
+Scope: promote the first Ollama endpoint from route proof to audited endpoint proof, then run the first private quality probe without mistaking a smoke response for model quality.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16.md`
+- `LLM/Study/Local LLM First Inference Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM First Quality Probe Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] with evidence paths for chat/template/tokenizer compatibility, endpoint evidence audit, the initial held quality run, and the `think=false` quality rerun.
+- Extracted and compiled the compatibility, endpoint-audit, and quality-probe runners from the vault notes into `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference`.
+- Added run-folder support artifacts `run-card.md`, `decision.md`, `first-smoke-summary-pass.json`, `ollama-native-response.json`, and `openai-compatible-chat.json` so the default endpoint audit globs can find the already-saved first smoke evidence.
+- Ran chat/template/tokenizer controls against `/api/chat`, including route sentinel output, JSON boundary output, role-marker leak check, and five tokenizer sanity prompt-eval counts.
+- Updated [[LLM/Study/Local LLM First Quality Probe Runner]] so it records `LOCAL_LLM_THINK`, sends `think` in `/api/chat` requests, and includes the `think` column in JSON/CSV outputs.
+- Routed the result through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, and first-inference proof note.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or non-LLM dirty files.
+
+Verification:
+- `python -m py_compile chat_template_tokenizer_compatibility_runner.py first-endpoint-evidence-audit.py first-quality-probe-runner.py`: clean before runner execution.
+- Ollama health check returned version `0.30.8` and visible model `qwen3.5:2b-q4_K_M`.
+- Chat/template/tokenizer compatibility runner returned `pass` / `chat_template_compatibility_ready`, 9 rows, 9 pass, 0 hold, 0 fail.
+- First endpoint evidence audit initially held on default glob mismatches, then passed after root-level evidence aliases: `pass` / `first_endpoint_evidence_ready`, 12 gates, 11 pass, 0 hold, 0 fail, 0 critical gaps.
+- First quality probe without thinking control held 0/5 because responses spent the output cap in `message.thinking` and emitted empty final content.
+- First quality probe with `LOCAL_LLM_THINK=false` returned `hold`, 5 cases, 3 pass, 2 hold, 0 error; JSON, extraction, and grounded refusal passed; arithmetic and strict constraint following held.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new endpoint-audit/quality note, selected evidence paths, or quality-run id.

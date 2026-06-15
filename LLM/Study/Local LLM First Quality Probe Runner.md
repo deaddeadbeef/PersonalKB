@@ -3,7 +3,7 @@ tags: [study, llm, evaluation, local-llm, ollama, quality, inference, evidence, 
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
 tier-coverage: [practice]
-last-verified: 2026-06-15
+last-verified: 2026-06-16
 ---
 
 # Local LLM First Quality Probe Runner
@@ -13,6 +13,8 @@ last-verified: 2026-06-15
 Use this after [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] says the first endpoint run folder is ready. That audit now requires pass-state debrief and template/tokenizer compatibility, so this runner starts from a defensible endpoint instead of probing quality on top of a partial route proof. The manual [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] defines the probe set and scoring intent. This runner turns that suite into repeatable Python evidence.
 
 This runner sends real local inference requests when you run it against an actual endpoint. Do not run it until the model id, endpoint boundary, sampler, evidence folder, and first endpoint evidence audit are fixed. For verification or dry runs, point `LOCAL_LLM_BASE_URL` at a fake local fixture server instead of Ollama.
+
+For thinking-capable models, keep `LOCAL_LLM_THINK=false` when the auto checks inspect final answer content. Otherwise the model can spend the full output cap in `message.thinking`, produce empty `message.content`, and make every probe look like a quality failure when the immediate failure owner is the missing thinking-mode control.
 
 ## What This Proves
 
@@ -42,11 +44,12 @@ Write these before running:
 | Model id |  |
 | Temperature | `0` |
 | Output cap | `256` |
+| Thinking mode | `false` for thinking-capable models when the probe checks final answer content |
 | Route boundary | loopback / exposed / unclear |
 | Scorer | script-assisted plus human review |
 | Next gate | full quality harness / client harness / troubleshooting |
 
-Do not compare two models or runtimes with this runner unless the prompt set, sampler, max tokens, endpoint route, context, and scoring rules are unchanged.
+Do not compare two models or runtimes with this runner unless the prompt set, sampler, max tokens, thinking mode, endpoint route, context, and scoring rules are unchanged.
 
 ## Standard-Library Runner
 
@@ -102,6 +105,9 @@ def bool_env(name, default):
     if value is None:
         return default
     return normalize(value) not in {"0", "false", "no", "off", "skip", "skipped"}
+
+
+THINK = bool_env("LOCAL_LLM_THINK", False)
 
 
 def resolve_path(value, base):
@@ -323,6 +329,7 @@ RESULT_FIELDNAMES = [
     "boundary",
     "temperature",
     "max_tokens",
+    "think",
     "request_path",
     "response_path",
     "output_path",
@@ -424,6 +431,7 @@ for case in ([] if status == "hold" else CASES):
     request_body = {
         "model": MODEL,
         "stream": False,
+        "think": THINK,
         "messages": [
             {"role": "system", "content": case["system"]},
             {"role": "user", "content": case["user"]},
@@ -471,6 +479,7 @@ for case in ([] if status == "hold" else CASES):
         "boundary": BOUNDARY,
         "temperature": TEMPERATURE,
         "max_tokens": MAX_TOKENS,
+        "think": THINK,
         "request_path": str(request_path),
         "response_path": str(response_path),
         "output_path": str(output_path),
@@ -510,6 +519,7 @@ summary = {
     "boundary": BOUNDARY,
     "temperature": TEMPERATURE,
     "max_tokens": MAX_TOKENS,
+    "think": THINK,
     "require_endpoint_audit": require_endpoint_audit,
     "endpoint_audit": endpoint_audit,
     "case_count": len(rows),
@@ -594,6 +604,7 @@ $env:LOCAL_LLM_ROUTE = "/api/chat"
 $env:LOCAL_LLM_BOUNDARY = "loopback"
 $env:LOCAL_LLM_TEMPERATURE = "0"
 $env:LOCAL_LLM_MAX_TOKENS = "256"
+$env:LOCAL_LLM_THINK = "false"
 python .\first-quality-probe-runner.py
 ```
 

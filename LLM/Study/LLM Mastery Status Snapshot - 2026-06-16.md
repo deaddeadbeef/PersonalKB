@@ -4,12 +4,12 @@ up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
 tier-coverage: [intuition, core, deep-dive, practice]
 last-verified: 2026-06-16
-last-machine-check: 2026-06-16T05:31:00+08:00
+last-machine-check: 2026-06-16T05:55:00+08:00
 ---
 
 # LLM Mastery Status Snapshot - 2026-06-16
 
-> **One-line summary** The vault now has a working local Ollama inference proof, but mastery is not proven yet: academic no-notes defense, quality/security audits, and capstone evidence-pack audits still need to pass.
+> **One-line summary** The vault now has a working and audited local Ollama endpoint, but mastery is not proven yet: the first quality probe held at 3/5, and academic no-notes defense, security, remediation, and capstone evidence-pack audits still need to pass.
 
 Use this as the current state card before deciding what to do next in [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]]. It is a status snapshot, not a completion certificate.
 
@@ -19,12 +19,12 @@ Use this as the current state card before deciding what to do next in [[LLM/Stud
 |---|---|---|---|
 | Academic map | `hold` | Paper maps, claim ledger, source index, mechanism bridge, and review drills exist. | Produce one no-notes paper/oral-defense artifact with [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]]. |
 | Mechanism understanding | `hold` | Tensor-shape, attention, KV-cache, metrics, request lifecycle, and serving-system notes exist. | Explain one mechanism through [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]]. |
-| First local endpoint | `pass` | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] proves loopback Ollama native and OpenAI-compatible responses for `qwen3.5:2b-q4_K_M`. | Audit the first endpoint and inference evidence pack before capstone promotion. |
+| First local endpoint | `pass` | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] proves loopback Ollama native and OpenAI-compatible responses for `qwen3.5:2b-q4_K_M`; [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] records endpoint audit pass. | Run security and evidence-pack audits before capstone promotion. |
 | Local model store | `pass` | Bootstrap evidence created `D:\Models`, `D:\Models\ollama`, `D:\Models\hf`, `D:\Models\hf\hub`, and `D:\Models\gguf`, and set user cache variables. | Keep model-store paths unchanged until quality/security probes finish. |
 | Runtime install | `pass` | Ollama for Windows `0.30.8` resolves from `C:\Users\fpan1\AppData\Local\Programs\Ollama\ollama.EXE`; install runner passed. | Capture lifecycle/rollback evidence before upgrades or service changes. |
 | Model pull | `pass` | Source-checked `qwen3.5:2b-q4_K_M` was pulled into `D:\Models\ollama`; pull runner passed. | Use quality and compatibility probes before changing model tags. |
-| Endpoint smoke | `pass` | Native `/api/generate` and OpenAI-compatible `/v1/chat/completions` both returned `local llm ok` in saved loopback evidence. | Run endpoint audit and quality probes; do not treat smoke text as quality proof. |
-| Quality, benchmark, operations | `hold` | First response debrief passed and named `cold load`, but quality, security, endpoint evidence audit, inference pack audit, and lifecycle evidence are not complete. | Run [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]], [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]], and evidence-pack audits. |
+| Endpoint smoke | `pass` | Native `/api/generate` and OpenAI-compatible `/v1/chat/completions` both returned `local llm ok` in saved loopback evidence; endpoint audit now passed. | Keep smoke as route proof, not quality proof. |
+| Quality, benchmark, operations | `hold` | Chat/template/tokenizer compatibility passed; first quality probe reached final content with `think=false` and held at 3/5; security, inference pack audit, and lifecycle evidence are not complete. | Remediate `K-01` and `C-01` with [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] or [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]], then run [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] and evidence-pack audits. |
 | Goal completion | `not complete` | The vault is navigable, but the requested end state requires both academic proof and a working local inference proof. | Complete the proof ladder below. |
 
 ## Initial Machine Evidence
@@ -56,6 +56,8 @@ Initial check from Windows PowerShell at `2026-06-16T05:12:09+08:00` in vault HE
 | Smoke | Native and OpenAI-compatible loopback responses both returned `local llm ok` in saved evidence | Local inference has run successfully. |
 | Debrief | First response debrief returned `pass`, model match `true`, text match `true`, mechanism owner `cold load` | First response is interpretable as route/timing evidence. |
 | Proof note | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]] | Human-facing route to the raw evidence paths and caveats. |
+| Endpoint audit | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] records `pass/first_endpoint_evidence_ready`, 12 gates, 11 pass, 0 hold, 0 fail, 0 critical gaps | First endpoint evidence is now defensible route proof. |
+| First quality probe | `hold`, 3/5 pass after `think=false`; JSON, extraction, and grounded refusal passed; arithmetic and strict constraint following held | First quality evidence exists, but the selected model is not workload-quality ready. |
 
 ## Exact Next Actions
 
@@ -63,11 +65,10 @@ Do not repeat install, pull, or smoke unless a later audit says the evidence is 
 
 ### Applied Track
 
-1. Open [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] and score the first private quality set against the working loopback endpoint.
-2. Run [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] against `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference`.
-3. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] before treating this as capstone-ready evidence.
-4. Run [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] before any non-loopback or UI handoff.
-5. Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] to connect the saved first response to prompt assembly, tokenization, prefill, decode, stop, and application handling.
+1. Diagnose the two held quality probes from [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] with [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] or [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]].
+2. Run [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] before any non-loopback, UI, RAG, or tool handoff.
+3. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after quality remediation and security evidence exist.
+4. Use [[LLM/Study/LLM Inference Request Lifecycle Runner|LLM Inference Request Lifecycle Runner]] to connect the saved first response to prompt assembly, tokenization, prefill, decode, stop, and application handling.
 
 ### Academic Track
 
@@ -88,8 +89,9 @@ The active goal should stay open until all of these are true:
 - [x] runtime health evidence exists
 - [x] first native or OpenAI-compatible smoke response exists
 - [x] first response debrief exists
-- [ ] first endpoint audit passes
-- [ ] at least one benchmark/quality/security row exists
+- [x] first endpoint audit passes
+- [x] at least one benchmark/quality/security row exists, currently as a held first quality probe
+- [ ] first quality remediation or security runner reaches a pass/ready state
 - [ ] capstone workbook links the evidence instead of status text
 - [ ] [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] has enough linked evidence to return a defensible pass
 
@@ -100,6 +102,7 @@ Internal routes:
 - [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Mastery Gap Triage Runner]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
