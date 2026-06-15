@@ -81,6 +81,7 @@ Do not download models before this. Otherwise you cannot tell whether a later fa
 Route:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
@@ -92,6 +93,8 @@ Default path:
 3. Use a small instruct model that fits easily.
 4. Send one deterministic smoke prompt.
 5. Save the raw response before judging quality.
+
+Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when this stage needs copyable commands for the run folder, listener check, Ollama native route, OpenAI-compatible route, Python client, or teardown proof.
 
 Save:
 

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** On Windows, the fastest credible first local LLM proof is: capture preflight evidence, run a small model with Ollama or LM Studio, call the loopback HTTP API from PowerShell, save the response and timing fields, then decide whether to keep, tune, or switch runtime.
 
-Use this note when you want the shortest path from "I have Windows" to "I have a local model answering through an API." After the first response works, expand the evidence with [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
+Use this note when you want the shortest path from "I have Windows" to "I have a local model answering through an API." If you only need the copyable command layer, use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]. After the first response works, expand the evidence with [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]].
 
 ## Runtime Choice For The First Hour
 
@@ -299,6 +299,7 @@ This quickstart is complete when you have:
 Internal routes:
 
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
+- [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

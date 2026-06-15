@@ -33,6 +33,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]]
@@ -79,6 +80,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — translate tokens, attention, KV cache, quantization, sampling, RAG, tools, and evaluation into local controls and failure diagnoses
 - [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] — follow a weekly rhythm that pairs academic recall with applied proof artifacts and capstone links
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — use PowerShell to capture preflight evidence, run Ollama or LM Studio, call the loopback API, and save the first response
+- [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — use copyable commands for server startup, route smoke tests, OpenAI-compatible clients, streaming, benchmark rows, and teardown
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — capture the exact first local run: machine, model, runtime, endpoint, response, timing, quality, safety, and next decision
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] — execute the local inference path in order, leaving evidence at each stage from endpoint proof to capstone handoff
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] — choose candidate local models from workload contract, hardware, license, compatibility, benchmark, and quality evidence
