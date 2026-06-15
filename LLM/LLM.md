@@ -51,6 +51,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] — Current evidence-based status card for what is proven, held, not started, and next
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] — Working Ollama loopback proof with model-store, install, pull, runtime health, native/OpenAI-compatible smoke, and debrief evidence
 - [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] — Endpoint audit and compatibility passed; first quality probe held at 3/5 with exact failure owners
+- [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] — Loopback-only no-generation security/privacy proof passed for the current Ollama endpoint; LAN, UI, RAG, and tool safety remain separate gates
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] — Competency gates from field map to local inference and capstone
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] — Prerequisite map connecting academic mechanisms to applied local inference, RAG, tool, evaluation, and deployment proofs
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]] — Mixed retrieval-practice prompts for academic mechanisms, paper literacy, evaluation, local hosting, RAG, tools, safety, and deployment

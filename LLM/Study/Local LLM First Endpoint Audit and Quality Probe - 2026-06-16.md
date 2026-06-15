@@ -4,7 +4,7 @@ up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
 tier-coverage: [practice]
 last-verified: 2026-06-16
-last-machine-check: 2026-06-16T05:55:00+08:00
+last-machine-check: 2026-06-16T06:05:00+08:00
 ---
 
 # Local LLM First Endpoint Audit and Quality Probe - 2026-06-16
@@ -12,6 +12,8 @@ last-machine-check: 2026-06-16T05:55:00+08:00
 > **One-line summary** The first Ollama endpoint evidence now audits cleanly, but the first quality probe is a real hold: `qwen3.5:2b-q4_K_M` passed 3 of 5 private probes after `think=false`, and failed arithmetic/format discipline plus strict constraint following.
 
 This note extends [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]]. It upgrades the endpoint from route proof to audited endpoint proof, but it does not upgrade the model to workload-quality ready.
+
+Security update: [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] now records security/privacy runner `pass/loopback_private_ready` for the current loopback-only endpoint. That does not change the quality hold.
 
 ## Verdict
 
@@ -21,6 +23,7 @@ This note extends [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local
 | First endpoint evidence audit | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-endpoint-evidence-audit\first-endpoint-audit-qwen35-2b-q4-2026-06-16\first-endpoint-audit-qwen35-2b-q4-2026-06-16-first-endpoint-evidence-audit.json` |
 | First quality probe, initial run | `hold` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-quality-probe-runner\20260616-055256-first-quality-probe-quality-probe-results.json` |
 | First quality probe, `think=false` rerun | `hold` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-quality-probe-runner\20260616-055447-first-quality-probe-quality-probe-results.json` |
+| Security/privacy runner | `pass` for loopback | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\security-privacy-runner\20260616-060509-security-results.json` |
 | Runner repair | `pass` | [[LLM/Study/Local LLM First Quality Probe Runner]] now records `LOCAL_LLM_THINK` and sends `think` in `/api/chat` requests. |
 
 ## Endpoint Audit
@@ -97,13 +100,14 @@ This endpoint is now credible enough for further controlled local experiments. I
 - The chat/template/tokenizer layer is not the first suspected failure owner for this run.
 - `think=false` is required when this runner checks final answer content for a thinking-capable model.
 - The first model-quality failures are answer discipline and strict instruction following.
+- The current security/privacy proof allows only one-person loopback experimentation, not LAN, UI, RAG, tool, or deployment handoff.
 - The next controlled action should test whether the two holds improve with prompt/sampler/output-cap changes before changing the model.
 
 ## Next Actions
 
 1. Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] or [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] to isolate whether `K-01` and `C-01` are prompt, sampler, thinking-mode, or model-capability failures.
-2. Run [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] before any non-loopback, UI, RAG, or tool handoff.
-3. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after the security and quality remediation rows exist.
+2. Keep the endpoint loopback-only; run a separate LAN/auth/firewall/UI/RAG/tool proof before any non-loopback, UI, RAG, or tool handoff.
+3. Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after the quality remediation row exists.
 4. Keep [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] on the academic track; endpoint proof does not prove paper-level mastery.
 
 ## References
@@ -111,10 +115,12 @@ This endpoint is now credible enough for further controlled local experiments. I
 Internal routes:
 
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]]
+- [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]
+- [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

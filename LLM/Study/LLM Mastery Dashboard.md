@@ -28,15 +28,15 @@ If there is no saved answer or evidence row, the session was reading, not master
 
 | Area | Status | Next proof |
 |---|---|---|
-| Current status snapshot | Endpoint audit now passed; first quality probe is held at 3/5; academic defense, security, and capstone audits still held | Start from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] and [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] |
+| Current status snapshot | Endpoint audit and loopback security/privacy proof now passed; first quality probe is held at 3/5; academic defense and capstone audits still held | Start from [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]], [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16|Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]], and [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] |
 | Field map and papers | Not yet proven today | Explain one paper cluster without notes |
 | Math and mechanisms | Not yet proven today | Work one token/logit/attention/KV-cache explanation |
 | Training and alignment | Not yet proven today | Trace one behavior through data, objective, post-training, and evaluation |
-| First local endpoint | Passed for Ollama loopback and endpoint audit; first inference evidence pack audit still pending | Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after security and quality remediation rows exist |
+| First local endpoint | Passed for Ollama loopback, endpoint audit, and loopback security/privacy; first inference evidence pack audit still pending | Run [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner|Local LLM First Inference Evidence Pack Audit Runner]] after quality remediation is defensible |
 | Model and runtime choice | Ollama `0.30.8` and `qwen3.5:2b-q4_K_M` are proven for endpoint route proof | Keep this model fixed while isolating the quality holds unless the remediation row names model capability as the owner |
 | Benchmark and quality | First quality probe held at 3/5 after `think=false`; JSON, extraction, and grounded refusal passed; arithmetic and strict constraints held | Use [[LLM/Study/Decoding and Sampling Controls Runner|Decoding and Sampling Controls Runner]] or [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]] before a broader quality claim |
 | RAG/tools | Not yet proven today | Save retrieval, citation, structured-output, tool-schema, tool-result, or denied-action row |
-| Operations and deployment | Not yet proven today | Save security, lifecycle, observability, or deployment decision row |
+| Operations and deployment | Loopback-only security/privacy proof passed for the current Ollama endpoint; lifecycle, observability, and deployment are not proven | Keep [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16|Local LLM Security and Privacy Proof - 2026-06-16]] as the current boundary proof, then save lifecycle, observability, or deployment decision rows |
 
 Replace "Not yet proven today" only with a link to an artifact or a dated note.
 
@@ -48,6 +48,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need the current proof state before choosing work | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] | Current pass/hold/not-started map, live machine evidence, and exact next academic/applied actions |
 | You need the current working local endpoint proof | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]] | Evidence paths for model store, install, pull, health, native/OpenAI-compatible smoke, debrief, and remaining caveats |
 | You need the audited endpoint and first quality result | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] | Endpoint audit pass, compatibility pass, `think=false` runner repair, 3/5 quality hold, and next remediation route |
+| You need the current loopback security/privacy proof | [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] | `pass/loopback_private_ready`, expected model visibility, loopback host classification, scoped secret scan, and non-goals for LAN/UI/RAG/tools |
 | You need to turn this study block into evidence | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] | Recall answer, mechanism bridge, applied artifact or blocker, capstone link |
 | You are ready to turn the study path into one buildable project | [[LLM/Study/Local LLM Capstone Project Blueprint]] | Local assistant blueprint, evidence bundle, defense questions, and pass/hold/fail decision |
 | You have proof links and need to know whether mastery evidence is defensible | [[LLM/Study/LLM Mastery Evidence Audit Runner]] | Academic, mechanism, local-inference, system, exam, pass/hold/fail, and next-route audit |
@@ -159,7 +160,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Mastery status snapshot | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
-| First local endpoint | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]], [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]], [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] | passed: endpoint proof and endpoint audit; quality probe held; evidence-pack audit still pending |
+| First local endpoint | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]], [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]], [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]], [[LLM/Study/Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]], and [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]] | passed: endpoint proof, endpoint audit, and loopback security/privacy; quality probe held; evidence-pack audit still pending |
 | First-run readiness runner | [[LLM/Study/Local LLM First Run Readiness Runner]] |  |
 | Model-store bootstrap runner | [[LLM/Study/Local LLM Model Store Bootstrap Runner]] |  |
 | First model pull runner | [[LLM/Study/Local LLM First Model Pull Runner]] |  |
@@ -187,7 +188,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Speculative decoding runner | [[LLM/Study/Local LLM Speculative Decoding Runner]] |  |
 | Observability runner | [[LLM/Study/Local LLM Observability and Operations Runner]] |  |
 | Lifecycle runner | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |  |
-| Security/privacy runner | [[LLM/Study/Local LLM Security and Privacy Runner]] |  |
+| Security/privacy runner | [[LLM/Study/Local LLM Security and Privacy Runner]] and [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] | passed for current loopback endpoint only |
 | RAG injection/source boundary | [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]] |  |
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Application integration audit | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |  |
@@ -239,6 +240,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One dated current-state snapshot | [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16]] |
 | One working local inference proof | [[LLM/Study/Local LLM First Inference Proof - 2026-06-16]] |
 | One audited endpoint and first quality result | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] |
+| One loopback security/privacy proof | [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] |
 | One recall/remediation audit output | [[LLM/Study/LLM Recall and Remediation Audit Runner]] |
 | One paper claim/evidence/limitation row | [[LLM/Study/LLM Paper Claim Ledger]] |
 | One paper claim audit output | [[LLM/Study/LLM Paper Claim Audit Runner]] |
@@ -298,7 +300,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One speculative decoding runner output | [[LLM/Study/Local LLM Speculative Decoding Runner]] |
 | One observability runner output | [[LLM/Study/Local LLM Observability and Operations Runner]] |
 | One lifecycle runner output | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |
-| One security/privacy runner output | [[LLM/Study/Local LLM Security and Privacy Runner]] |
+| One security/privacy runner output | [[LLM/Study/Local LLM Security and Privacy Runner]] or [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] |
 | One RAG evidence runner output | [[LLM/Study/Local RAG Evidence Runner]] |
 | One RAG prompt-injection/source-boundary runner output before untrusted retrieved content supports tools, exports, app workflows, or capstone claims | [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]] |
 | One tool/structured-output runner output | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
@@ -326,7 +328,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 - Do not benchmark until model id, route, sampler, and context target are fixed.
 - Do not change two runtime variables in the same comparison.
 - Do not judge RAG generation until retrieval evidence exists.
-- Do not expose a local endpoint beyond loopback until the security row exists.
+- Do not expose a local endpoint beyond loopback until a separate non-loopback security row exists.
 - Do not call a gate complete unless the capstone workbook links the artifact.
 
 ## Completion Gate

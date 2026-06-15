@@ -3854,3 +3854,37 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new endpoint-audit/quality note, selected evidence paths, or quality-run id.
+
+## [2026-06-16] curate | Prove loopback security boundary for first local endpoint
+
+Scope: prove the current Ollama endpoint's local security/privacy boundary without sending another generation request, then route the result through the LLM wiki.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Status Snapshot - 2026-06-16.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16.md`
+- `LLM/Study/Local LLM First Inference Proof - 2026-06-16.md`
+- `LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] with result, manifest, boundary-policy, listener, environment, and rerun explanation evidence paths.
+- Extracted and compiled the security/privacy runner into `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference`.
+- Wrote a security/privacy manifest for the current Ollama loopback endpoint, expected model `qwen3.5:2b-q4_K_M`, local-only export boundary, and empty RAG/tool/UI roots.
+- Ran the first security pass, diagnosed the self-scan hold caused by the runner source containing secret-detection regex examples, replaced that log input with a runner script proof file, and reran to pass.
+- Routed the pass through the LLM MOC, study index, mastery dashboard, status snapshot, capstone workbook, first endpoint audit note, and first inference proof note.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or non-LLM dirty files.
+
+Verification:
+- `python -m py_compile security-privacy-runner.py`: clean.
+- Ollama health check returned version `0.30.8` and visible model `qwen3.5:2b-q4_K_M`.
+- Security/privacy runner returned `pass` / `loopback_private_ready`; `/v1/models`, `/api/tags`, and `/api/ps` returned HTTP 200; expected model was visible; endpoint hosts were classified as loopback; scoped config/log secret scan had no findings.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over `_ops/reports/audit-broken-links.md` found no broken-link hits for the new security proof note, result id, manifest, or model id.
