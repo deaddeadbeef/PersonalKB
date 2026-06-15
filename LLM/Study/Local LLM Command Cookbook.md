@@ -517,7 +517,7 @@ Get-NetTCPConnection -State Listen |
 |---|---|
 | Preflight snapshot | [[LLM/Study/Local LLM Environment Preflight Lab]] |
 | First Ollama model pull | [[LLM/Study/Local LLM First Model Pull Gate]] |
-| First runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
+| First runtime health snapshot or runner | [[LLM/Study/Local LLM First Runtime Health Snapshot]] and [[LLM/Study/Local LLM First Runtime Health Runner]] |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |
 | First response debrief | [[LLM/Study/Local LLM First Response Debrief Card]] |
 | First response debrief runner | [[LLM/Study/Local LLM First Response Debrief Runner]] |
@@ -567,6 +567,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]

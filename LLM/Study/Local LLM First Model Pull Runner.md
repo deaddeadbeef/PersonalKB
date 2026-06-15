@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** The first model pull counts only when the selected tag, source check, store decision, compatibility proof, pull output, model list, API tags, show metadata, and next route are all saved and agree.
 
-Use this after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when pull artifacts should become repeatable JSON, Markdown, CSV, and JSONL evidence. Use it before [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]].
+Use this after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when pull artifacts should become repeatable JSON, Markdown, CSV, and JSONL evidence. Use it before [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]].
 
 This runner does not run `ollama pull` and does not contact a model registry. It audits saved evidence from the pull gate so a failed or partial download cannot be mistaken for endpoint readiness.
 
@@ -51,7 +51,7 @@ Minimum manifest:
     "api_tags_after_pull": "D:/llm-runs/first-model-pull/ollama-api-tags-after-pull.json",
     "api_show_response": "D:/llm-runs/first-model-pull/ollama-show-response.json"
   },
-  "next_route": "LLM/Study/Local LLM First Runtime Health Snapshot"
+  "next_route": "LLM/Study/Local LLM First Runtime Health Runner"
 }
 ```
 
@@ -363,7 +363,7 @@ def evaluate_manifest(manifest: dict[str, Any], manifest_path: Path, run_root: P
 
     next_route = text(manifest.get("next_route"))
     if not next_route:
-        next_route = "LLM/Study/Local LLM First Runtime Health Snapshot" if status == "pass" else "LLM/Study/Local LLM First Model Pull Gate"
+        next_route = "LLM/Study/Local LLM First Runtime Health Runner" if status == "pass" else "LLM/Study/Local LLM First Model Pull Gate"
 
     return {
         "selected_model": selected_model,
@@ -508,7 +508,7 @@ python .\local_llm_first_model_pull_runner.py
 
 | Runner status | Meaning | Next route |
 |---|---|---|
-| `pass/first_model_pull_ready` | selected model, source check, store decision, preconditions, pull output, CLI list, API tags, and show metadata agree | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
+| `pass/first_model_pull_ready` | selected model, source check, store decision, preconditions, pull output, CLI list, API tags, and show metadata agree | [[LLM/Study/Local LLM First Runtime Health Runner]] |
 | `hold/first_model_pull_incomplete` | pull artifacts, source check, store decision, compatibility proof, digest, or explicit status is missing | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | `fail/first_model_pull_failed` | pull failed or runtime inventory contradicts the selected model | fix pull/storage/tag mismatch before runtime health or endpoint smoke |
 
@@ -540,6 +540,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Runtime Compatibility Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]

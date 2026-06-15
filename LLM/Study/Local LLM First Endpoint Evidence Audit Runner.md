@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A first local LLM endpoint counts only when the run folder proves machine state, model tag, runtime health, native or OpenAI-compatible response, debrief, security boundary, and next decision.
 
-Use this after [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] have produced files in a first-run folder.
+Use this after [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] or [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], and [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] have produced files in a first-run folder.
 
 The first endpoint is not proven by a screenshot, a memory of a chat response, or one command printed in the terminal. It is proven when another person can inspect the run folder and see what machine, runtime, model, route, prompt, response, timing, boundary, and decision were used.
 
@@ -69,7 +69,7 @@ Use overrides when the first run is LM Studio, llama.cpp, vLLM, SGLang, or a nat
 | `preflight` | `preflight*.txt`, `preinstall-*.txt`, disk, GPU, or system text files | yes |
 | `runtime-install-state` | runtime version, install gate, or model-list-before text | yes |
 | `model-pull-or-custody` | `model-tag.txt`, pull/list/show output, or provenance card | yes |
-| `runtime-health` | `first-runtime-health/*.json` or runtime-health JSON | yes |
+| `runtime-health` | `first-runtime-health/*.json`, runner `*/*runtime-health*.json`, or runtime-health JSON | yes |
 | `smoke-summary` | `first-smoke-request/*summary.json` or smoke summary JSON | yes |
 | `native-response` | native Ollama response JSON or native response from smoke runner | yes |
 | `openai-response` | OpenAI-compatible response JSON | yes unless `require_openai_route` is false |
@@ -134,10 +134,10 @@ DEFAULT_GATES = [
         "gate_id": "runtime-health",
         "required": True,
         "critical": True,
-        "globs": ["first-runtime-health/*.json", "*runtime-health*.json", "*health*.json"],
-        "route": "LLM/Study/Local LLM First Runtime Health Snapshot",
+        "globs": ["first-runtime-health/*.json", "*/*runtime-health*.json", "*runtime-health*.json", "*health*.json"],
+        "route": "LLM/Study/Local LLM First Runtime Health Runner",
         "accepted_statuses": ["pass"],
-        "pass_signal": "The server can list model state before generation.",
+        "pass_signal": "The server can list model state, model id visibility, and boundary evidence before generation.",
     },
     {
         "gate_id": "smoke-summary",
@@ -636,6 +636,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]

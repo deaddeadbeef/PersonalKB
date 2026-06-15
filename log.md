@@ -2880,3 +2880,45 @@ Verification:
 - Extracted and compiled `local_llm_result_synthesis_runner.py`; reasoning-backed quality row without reasoning-budget audit -> exit 1 `hold_for_missing_or_incomplete_evidence`.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4951 files, 3080 Markdown files, 915 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.
+
+## [2026-06-15] curate | Local LLM first runtime health runner
+
+Scope: add a repeatable no-generation runtime health runner so the first local LLM endpoint path can prove listener reachability, native API state, installed/running/OpenAI-compatible model ids, expected-model visibility, loopback boundary, missing layer, and next route before the first prompt.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/Local LLM First Runtime Health Runner.md`
+- `LLM/Study/Local LLM First Runtime Health Snapshot.md`
+- `LLM/Study/Local LLM First Model Pull Runner.md`
+- `LLM/Study/Local LLM First Smoke Request Runner.md`
+- `LLM/Study/Local LLM First Endpoint Run Sheet.md`
+- `LLM/Study/Local LLM First Endpoint Evidence Audit Runner.md`
+- `LLM/Study/Local LLM First Inference Evidence Pack.md`
+- `LLM/Study/Local LLM Serving Runbook.md`
+- `LLM/Study/Local LLM Command Cookbook.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Evidence Audit Runner.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a standard-library runtime health runner that performs no generation request and emits JSON, Markdown, CSV, and JSONL evidence for listener, native route, `/api/tags`, `/api/ps`, `/v1/models`, expected model, and boundary checks.
+- Routed the first model pull pass path into the runtime health runner before smoke requests.
+- Added `local-runtime-health` to the mastery evidence audit default gate set.
+- Updated the endpoint evidence audit runtime-health gate to discover runner output saved under a run-id folder.
+- Routed the runner from the LLM MOC, study index, dashboard, capstone workbook, roadmap, evidence pack, endpoint sheet, serving runbook, command cookbook, and hands-on practicum sequence.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_first_runtime_health_runner.py` from the note.
+- Runtime health fixtures: pass -> `runtime_health_ready`; hold -> `runtime_health_incomplete`; fail -> `runtime_health_failed`.
+- Extracted and compiled `llm_mastery_evidence_audit_runner.py`; default manifest -> 40 gates, 40 holds, including `local-runtime-health`.
+- Extracted and compiled `local_llm_first_endpoint_evidence_audit_runner.py`; runtime-health gate globs include `*/*runtime-health*.json`.
+- Extracted and compiled `local_llm_first_model_pull_runner.py`; pass fixture routes to `LLM/Study/Local LLM First Runtime Health Runner` when `next_route` is supplied.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4958 files, 3087 Markdown files, 922 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 938 broken-link occurrences.

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** After install, model pull, and runtime health pass, send one controlled local inference request through the native Ollama route and one through the OpenAI-compatible route, then save every request, response, output excerpt, status, and next action.
 
-Use this after [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] says the listener and model-list routes are ready, and before [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]]. The health snapshot does not generate text. This runner does: it is the first proof that a local model can answer a prompt through the endpoint you plan to use.
+Use this after [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] or [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] says the listener and model-list routes are ready, and before [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]]. The health runner does not generate text. This runner does: it is the first proof that a local model can answer a prompt through the endpoint you plan to use.
 
 For the first Windows/Ollama pass, this runner can replace the manual native and OpenAI-compatible smoke snippets in [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. Keep the prompt deliberately boring. The goal is route proof, timing capture, and failure ownership, not model quality. If the smoke run fails and the rerun will support benchmark, quality, operations, or deployment evidence, save the diagnosis with [[LLM/Study/Local LLM Failure Triage Runner|Local LLM Failure Triage Runner]] before changing another variable.
 
@@ -444,7 +444,7 @@ Copy this row into [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM Firs
 This smoke runner is complete only when:
 
 - [ ] run folder exists
-- [ ] runtime health snapshot exists or is explicitly skipped with reason
+- [ ] runtime health runner output or snapshot exists, or is explicitly skipped with reason
 - [ ] model id, native base URL, OpenAI-compatible base URL, prompt, expected text, temperature, and max tokens are written
 - [ ] native request/response/output files exist or native route is explicitly skipped
 - [ ] OpenAI-compatible request/response/output files exist or OpenAI route is explicitly skipped
@@ -457,6 +457,7 @@ This smoke runner is complete only when:
 Internal routes:
 
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]

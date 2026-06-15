@@ -86,6 +86,7 @@ Route:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
@@ -101,7 +102,7 @@ Default path:
 1. Use Ollama or LM Studio for the first Windows-native proof.
 2. Keep binding on loopback.
 3. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one small instruct model and save list/tags/show metadata.
-4. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to save listener and model-list proof without generation.
+4. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] or [[LLM/Study/Local LLM First Runtime Health Runner|Local LLM First Runtime Health Runner]] to save listener and model-list proof without generation.
 5. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] to send one deterministic smoke prompt through native and OpenAI-compatible routes.
 6. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to interpret the saved response without sending a second request.
 7. Use [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner|Local LLM First Endpoint Evidence Audit Runner]] to check whether the run folder is complete enough to count as endpoint proof.
@@ -380,6 +381,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Runtime Health Runner]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
