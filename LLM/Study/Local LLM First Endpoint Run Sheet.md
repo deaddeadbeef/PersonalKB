@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and while executing [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The readiness snapshot says the current machine state. The quickstart explains the full path. This run sheet is the one-session checklist that turns the path into files you can link from [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]].
 
-This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to decide where model bytes live and prove the runtime install. Then use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture the selected model tag, pull output, list/tags/show metadata, and pass/hold/fail handoff. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] before endpoint smoke testing when you want one no-generation proof that the listener and model-list routes are ready.
+This sheet is not endpoint proof until the evidence files exist. A checked box without a saved command output does not count. Before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]], [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]], and [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] to decide where model bytes live and prove the runtime install. Then use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to capture the selected model tag, pull output, list/tags/show metadata, and pass/hold/fail handoff. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] before endpoint smoke testing when you want one no-generation proof that the listener and model-list routes are ready. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] when you want the native and OpenAI-compatible smoke requests saved by one standard runner.
 
 ## Run Contract
 
@@ -26,6 +26,7 @@ This sheet is not endpoint proof until the evidence files exist. A checked box w
 | Runtime install gate | [[LLM/Study/Local LLM Windows Runtime Install Gate]] |
 | Model pull gate | [[LLM/Study/Local LLM First Model Pull Gate]] |
 | Runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
+| Smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |
 | Model store decision | default / custom `OLLAMA_MODELS` / hold |
 | Native base URL | `http://localhost:11434` |
 | OpenAI-compatible base URL | `http://localhost:11434/v1` |
@@ -53,6 +54,7 @@ model=qwen3.5:4b
 storage_snapshot=Local LLM Model Store Readiness Snapshot
 runtime_install_gate=Local LLM Windows Runtime Install Gate
 runtime_health_snapshot=Local LLM First Runtime Health Snapshot
+smoke_request_runner=Local LLM First Smoke Request Runner
 native_base_url=http://localhost:11434
 openai_base_url=http://localhost:11434/v1
 security_boundary=loopback only
@@ -169,6 +171,12 @@ Pass signal: the health snapshot names the native base URL, OpenAI-compatible ba
 
 Hold signal: the listener exists but `/api/tags`, `/api/ps`, or `/v1/models` disagrees with the selected model. Diagnose runtime route or model-id mismatch before sending a generation request.
 
+## Step 4.75: Optional Standard Smoke Runner
+
+Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] if you want Steps 5 and 6 captured by one standard-library Python script. The runner saves native and OpenAI-compatible request files, response files, extracted output text, summary JSON/Markdown, and a JSONL row.
+
+Pass signal: the runner summary says both enabled routes are `pass`, the expected text matches, and the next action is response debrief.
+
 ## Step 5: Native Ollama Smoke
 
 ```powershell
@@ -254,6 +262,7 @@ Copy this row into [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capston
 | Runtime and version |  |
 | Model tag |  |
 | Runtime health snapshot |  |
+| Smoke request summary |  |
 | Native response file |  |
 | OpenAI-compatible response file |  |
 | First response debrief file |  |
@@ -302,6 +311,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]

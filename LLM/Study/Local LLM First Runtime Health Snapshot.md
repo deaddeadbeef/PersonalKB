@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Before treating a local LLM server as ready for inference, capture one no-inference health snapshot: listener reachability, runtime API state, installed models, loaded models, OpenAI-compatible model ids, missing layers, and next action.
 
-Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] proves the runtime command/listener and after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when a model tag should be visible. Use it before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] if you want a compact pre-smoke artifact, and again before [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] if a restart, model pull, cache move, or UI change might have changed server state.
+Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] proves the runtime command/listener and after [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] when a model tag should be visible. Use it before [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] or [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] if you want a compact pre-smoke artifact, and again before [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] if a restart, model pull, cache move, or UI change might have changed server state.
 
 This snapshot does not run inference. It is a readiness artifact for hosting: "Is the server reachable, which model ids does it expose, what is loaded now, and what still blocks an endpoint smoke test?"
 
@@ -337,7 +337,7 @@ This health snapshot is complete only when:
 - [ ] loaded-model state is captured or explicitly marked idle/not yet loaded
 - [ ] health JSON, health Markdown, and health JSONL paths exist
 - [ ] the missing layer and next action are explicit
-- [ ] the snapshot is linked from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], or [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
+- [ ] the snapshot is linked from [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]], [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], or [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]
 
 ## References
 
@@ -345,6 +345,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Serving Runbook]]

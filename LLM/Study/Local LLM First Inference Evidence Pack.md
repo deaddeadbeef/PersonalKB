@@ -27,6 +27,7 @@ local-llm-runs/
     preflight.txt
     model-provenance.md
     first-runtime-health/
+    first-smoke-request/
     endpoint-smoke.json
     openai-contract.md
     client-harness.jsonl
@@ -61,6 +62,7 @@ Fill this before changing anything:
 | Native route |  |
 | OpenAI-compatible route |  |
 | Runtime health snapshot |  |
+| Smoke request summary |  |
 | First response debrief |  |
 | Security boundary | loopback only / LAN / tunnel / remote |
 | Prompt suite | smoke / known-answer / structured / long-context / RAG / tool |
@@ -81,6 +83,7 @@ Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Prefli
 | Planned host/port | `127.0.0.1:<port>` or `localhost:<port>` |
 | Listener proof | `Get-NetTCPConnection`, `Test-NetConnection`, `/api/tags`, or `/v1/models` |
 | No-inference runtime health | [[LLM/Study/Local LLM First Runtime Health Snapshot]] JSON/Markdown when the model has been pulled but no prompt has been sent yet |
+| First smoke request | [[LLM/Study/Local LLM First Smoke Request Runner]] JSON/Markdown after the model has answered one controlled prompt |
 
 Do not diagnose model quality until the runtime boundary is clear. Windows PowerShell, WSL, Docker, and a remote Linux shell can see different hardware and different localhost behavior.
 
@@ -122,7 +125,7 @@ For a private first run, keep the host on loopback. Do not bind to `0.0.0.0` unt
 
 ## Step 4: Native Smoke Test
 
-For Ollama native API, save the full JSON response because the timing fields are useful:
+For Ollama native API, save the full JSON response because the timing fields are useful. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] if you want the native request, response, extracted text, OpenAI-compatible request, OpenAI-compatible response, summary JSON/Markdown, and JSONL row saved by one script.
 
 ```powershell
 $Body = @{
@@ -256,6 +259,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
+- [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
