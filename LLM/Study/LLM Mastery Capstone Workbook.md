@@ -42,6 +42,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Training pipeline map | One capability trace using [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] |  | Can trace raw data, objective, pretraining, post-training, evaluation, adaptation, deployment, and the likely failure owner. | Not started |
 | Self-assessment | Passed [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] with a filled [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] |  | Overall score is at least 80 percent, no zero in practical sections, proof links are present, and missed-question remediation is linked. | Not started |
 | Mastery evidence audit | Results JSON/CSV/Markdown from [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] |  | Academic, mechanism, local-inference, system, and exam gates are audited with proof links, critical gaps, domain summaries, pass/hold/fail, and next-route output. | Not started |
+| Mastery gap triage | Results JSON/CSV/Markdown from [[LLM/Study/LLM Mastery Gap Triage Runner|LLM Mastery Gap Triage Runner]] |  | The current hold/fail gates are ranked into one top next route, owner, next action, priority band, and domain summary. | Not started |
 | Attention implementation | Implementation output from [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] |  | Code or notebook has tensor-shape checks, masking tests, and a plain-language explanation. | Not started |
 | Tiny decoder training | Lab output from [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] |  | Tiny causal LM has shifted-target example, mask test, train/validation loss, generated samples, and overfitting or undertraining explanation. | Not started |
 | First-run readiness | Machine-specific card from [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] | Runtime install state, GPU availability, common listener ports, first runtime choice, first model class, and next proof action are captured before installing or serving. | Runtime not installed; ready for first execution |
@@ -556,6 +557,7 @@ Next run:
 - [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
+- [[LLM/Study/LLM Mastery Gap Triage Runner]]
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]

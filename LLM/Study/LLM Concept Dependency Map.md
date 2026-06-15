@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** This map shows what has to be understood before each LLM skill becomes reliable: text and tokens, transformer mechanisms, training and alignment, evaluation, RAG/tools, and local inference operations.
 
-Use this with [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]], [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]], and [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The roadmap says the gates. This map says the dependency order and the failure route.
+Use this with [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]], [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]], [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]], and [[LLM/Study/LLM Mastery Gap Triage Runner|LLM Mastery Gap Triage Runner]]. The roadmap says the gates. This map says the dependency order and the failure route.
 
 The rule: if a practical proof fails, move backward to the lowest unproven concept or layer. Do not change model, runtime, prompt, sampler, hardware, and evaluation all at once.
 
@@ -127,6 +127,7 @@ This map has served its purpose when:
 - [[LLM/Study/LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
+- [[LLM/Study/LLM Mastery Gap Triage Runner]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]

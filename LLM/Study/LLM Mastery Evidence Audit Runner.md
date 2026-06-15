@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this with [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] when the workbook, capstone folder, or exam attempt should become a repeatable pass, hold, fail, next-route, JSON, Markdown, CSV, and JSONL audit.
 
-Use [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] for the human oral/practical attempt. Use this runner after evidence links exist, or during a calibration pass when you need the next missing proof artifact without rereading the whole vault.
+Use [[LLM/Study/LLM Mastery Exam Run Sheet|LLM Mastery Exam Run Sheet]] for the human oral/practical attempt. Use this runner after evidence links exist, or during a calibration pass when you need the next missing proof artifact without rereading the whole vault. If the output has many hold/fail rows, use [[LLM/Study/LLM Mastery Gap Triage Runner|LLM Mastery Gap Triage Runner]] to rank them into one next action.
 
 This runner does not prove that an answer is intellectually correct by itself. It proves whether the evidence bundle has the required gates, links, statuses, and critical local-inference artifacts needed before a final human defense can count.
 
@@ -975,7 +975,7 @@ python .\llm_mastery_evidence_audit_runner.py
 | Runner status | Meaning | Next route |
 |---|---|---|
 | `pass/mastery_evidence_ready_for_defense` | every required gate is pass, proof links resolve, critical gates have evidence, and waived gates have reasons | take the oral/practical defense using [[LLM/Study/LLM Mastery Exam Run Sheet]] |
-| `hold/mastery_evidence_incomplete` | required evidence, proof link, pass signal, or critical gate is missing | follow each gate's `next_route` |
+| `hold/mastery_evidence_incomplete` | required evidence, proof link, pass signal, or critical gate is missing | use [[LLM/Study/LLM Mastery Gap Triage Runner|LLM Mastery Gap Triage Runner]] when more than one gate is held, otherwise follow the held gate's `next_route` |
 | `fail/mastery_evidence_failed` | a gate is explicitly failed, unsafe, or rejected | fix the failed gate before claiming mastery |
 
 This runner can pass only the evidence bundle. The final mastery claim still needs the human exam and capstone defense.
@@ -996,12 +996,14 @@ This runner is useful when:
 - [ ] waived optional gates include a reason
 - [ ] output JSON, Markdown, CSV, and JSONL artifacts are saved
 - [ ] incomplete gates route to the lowest next proof artifact
+- [ ] if multiple critical gates are incomplete, a gap triage output names the top next action
 
 ## References
 
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Dashboard]]
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Mastery Gap Triage Runner]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Recall and Remediation Audit Runner]]

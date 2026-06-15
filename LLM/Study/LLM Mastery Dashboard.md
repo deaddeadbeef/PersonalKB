@@ -47,6 +47,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need to turn this study block into evidence | [[LLM/Study/LLM Daily Mastery Session Run Sheet]] | Recall answer, mechanism bridge, applied artifact or blocker, capstone link |
 | You are ready to turn the study path into one buildable project | [[LLM/Study/Local LLM Capstone Project Blueprint]] | Local assistant blueprint, evidence bundle, defense questions, and pass/hold/fail decision |
 | You have proof links and need to know whether mastery evidence is defensible | [[LLM/Study/LLM Mastery Evidence Audit Runner]] | Academic, mechanism, local-inference, system, exam, pass/hold/fail, and next-route audit |
+| You have many held gates and need one next action | [[LLM/Study/LLM Mastery Gap Triage Runner]] | Ranked gaps, top route, top action, owner, and domain summary |
 | You need mixed recall | [[LLM/Study/LLM Active Recall Question Bank]] | 20-question score and miss route |
 | You have scored recall/exam rows and need to know whether they count | [[LLM/Study/LLM Recall and Remediation Audit Runner]] | Coverage, scores, misses, remediation artifacts, next reviews, and applied proof |
 | You cannot explain a paper | [[LLM/Study/LLM Paper Reading Protocol]] | Claim, method, evidence, limitation, deployment implication |
@@ -124,6 +125,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Local inference metric interpretation | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |  |
 | Self-assessment exam | [[LLM/Study/LLM Mastery Exam Run Sheet]] |  |
 | Mastery evidence audit | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |  |
+| Mastery gap triage | [[LLM/Study/LLM Mastery Gap Triage Runner]] |  |
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |  |
@@ -240,6 +242,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One machine-checkable failure triage output | [[LLM/Study/Local LLM Failure Triage Runner]] |
 | One scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] |
 | One mastery evidence audit output | [[LLM/Study/LLM Mastery Evidence Audit Runner]] |
+| One mastery gap triage output after a hold/fail audit | [[LLM/Study/LLM Mastery Gap Triage Runner]] |
 | One end-to-end capstone project spec | [[LLM/Study/Local LLM Capstone Project Blueprint]] |
 | One final pass signal | [[LLM/Study/LLM Mastery Capstone Workbook]] |
 
@@ -272,6 +275,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Capstone Project Blueprint]]
 - [[LLM/Study/LLM Mastery Exam Run Sheet]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
+- [[LLM/Study/LLM Mastery Gap Triage Runner]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
