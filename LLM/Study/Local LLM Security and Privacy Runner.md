@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Capture a no-generation security and privacy evidence packet for a local LLM service before trusting logs, RAG data, tools, UI storage, or any non-loopback exposure.
 
-Use this after [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] defines the manual checklist. Use it before exposing Ollama, LM Studio, vLLM, SGLang, llama.cpp, Open WebUI, or a compatible proxy beyond one-person loopback use. If Open WebUI is the UI path, pair it with [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] so provider routing, persistence, and secret-key proof are checked alongside exposure and export boundaries. Use it again after a restart, upgrade, cache move, UI change, RAG corpus change, tool integration, reverse proxy change, or tunnel setup.
+Use this after [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] defines the manual checklist. Use it before exposing Ollama, LM Studio, vLLM, SGLang, llama.cpp, Open WebUI, or a compatible proxy beyond one-person loopback use. If Open WebUI is the UI path, pair it with [[LLM/Study/Local Open WebUI Provider Integration Runner|Local Open WebUI Provider Integration Runner]] so provider routing, persistence, and secret-key proof are checked alongside exposure and export boundaries. If RAG content is untrusted, uploaded, external, private, or tool-adjacent, pair it with [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] so the retrieved text cannot silently become instructions. Use it again after a restart, upgrade, cache move, UI change, RAG corpus change, tool integration, reverse proxy change, or tunnel setup.
 
 This runner does not send a generation request. It only checks endpoint shape, host exposure, read-only model-list routes, optional Ollama state routes, config/log evidence, RAG/tool path boundaries, UI/export boundaries, and obvious secret leaks in local files you explicitly name.
 
@@ -821,5 +821,6 @@ Expected fixture pass: status `pass`, decision `loopback_private_ready`, `/v1/mo
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

@@ -101,6 +101,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need service-state, metrics, slots, logs, or resource-pressure proof | [[LLM/Study/Local LLM Observability and Operations Runner]] | `/v1/models`, loaded models, metrics, slots, local resource snapshot, redacted log tail, privacy posture, and next controlled action |
 | You need restart, upgrade, backup, or rollback proof | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] | Lifecycle manifest, baseline artifacts, backup, rollback target, route state, before/after/rollback decision, CSV, Markdown, and JSONL evidence |
 | You need endpoint exposure, log, RAG corpus, tool, UI storage, or export-boundary proof | [[LLM/Study/Local LLM Security and Privacy Runner]] | Manifest, host classification, read-only model-list routes, config/log secret scan, RAG/tool/UI/export boundary, and pass/hold/error decision |
+| You retrieved untrusted or poisoned RAG content and need to know whether the source boundary held | [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]] | Attack cases, selected context, delimiters, source tags, answer behavior, citations, tools, exports, guardrails, and pass/hold/fail decision |
 | You need parseable JSON, tool-call, result-injection, or denial proof | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] | Structured JSON, tool call, validation, policy, execution, result injection, denial, CSV, Markdown, and JSONL row |
 | You need first local inference proof | [[LLM/Study/Local LLM Windows First-Run Quickstart]] | Preflight, model id, response, listener proof |
 | You need a generated first-run command sequence | [[LLM/Study/Local LLM First Run Command Plan Runner]] | Safe planning artifact before install, pull, health, smoke, audit, and capstone routing |
@@ -165,6 +166,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Observability runner | [[LLM/Study/Local LLM Observability and Operations Runner]] |  |
 | Lifecycle runner | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |  |
 | Security/privacy runner | [[LLM/Study/Local LLM Security and Privacy Runner]] |  |
+| RAG injection/source boundary | [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]] |  |
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Application integration audit | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
@@ -261,6 +263,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One lifecycle runner output | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner]] |
 | One security/privacy runner output | [[LLM/Study/Local LLM Security and Privacy Runner]] |
 | One RAG evidence runner output | [[LLM/Study/Local RAG Evidence Runner]] |
+| One RAG prompt-injection/source-boundary runner output before untrusted retrieved content supports tools, exports, app workflows, or capstone claims | [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]] |
 | One tool/structured-output runner output | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | One deployment readiness audit output | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
@@ -358,6 +361,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]
 - [[LLM/Study/Local RAG Evidence Runner]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack Audit Runner]]

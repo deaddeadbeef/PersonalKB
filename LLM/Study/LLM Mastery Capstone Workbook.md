@@ -113,6 +113,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
 | Quality evaluation runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Quality Evaluation Runner|Local LLM Quality Evaluation Runner]] |  | Saved prompt-suite cases have prompt and response artifacts, rubric scores, evaluation-set proof, boundary-specific evidence, and pass/hold/fail decisions before result synthesis or deployment readiness depends on quality. | Not started |
 | RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], embedding/reranker service card from [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]], retrieval evaluation from [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]], and evidence packet from [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] |  | Corpus manifest, chunking policy, embedding/reranker service proof, index metadata, top-k/rank/reranking evidence, cited answer, unsupported-question refusal, benchmark row, quality row, at least one diagnosed failure, and runner output are captured. | Not started |
+| RAG prompt injection and source boundary | Results JSON/CSV/Markdown from [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] when retrieved content is untrusted, private, external, uploaded, or tool-adjacent |  | Adversarial cases, poisoned/untrusted chunks, selected context delimiters, source tags, answer/refusal behavior, forbidden strings, citation boundary, tool/action boundary, export boundary, guardrail/logging evidence, and pass/hold/fail decision are captured. | Not started |
 | RAG evidence runner | Results JSON/CSV/Markdown from [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] |  | Saved RAG artifacts validate corpus, chunks, config, retrieval, selected context, citations, support, faithfulness, refusal, latency, failure mode, and next route before capstone acceptance. | Not started |
 | Tool loop | Tool-calling proof from [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] |  | Tool schema, validated arguments, policy check, execution result, injected tool result, bounded loop, and failure rows are captured. | Not started |
 | Tool/schema runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] |  | Structured JSON, required tool call, argument validation, policy decision, local execution, result injection, denial behavior, and JSONL row are captured before real tool integration. | Not started |
@@ -561,6 +562,7 @@ Next run:
 - [ ] Any local serving operations claim has observability evidence: model state, timing, logs/metrics, resource pressure, and next action.
 - [ ] Any maintained local LLM service has lifecycle evidence: pinned versions, cache/data paths, startup mode, backup, rollback, and post-change validation.
 - [ ] Any long-context, RAG, tool, or multi-turn run has a context-budget row.
+- [ ] Any untrusted, uploaded, external, private, or tool-adjacent RAG content has prompt-injection/source-boundary runner output before app, tool, export, or capstone claims depend on it.
 - [ ] Any tool-using run has schema validation, policy decision, execution result, and bounded-loop proof.
 - [ ] The adaptation memo either justifies no training or proves the selected adaptation method against held-out evidence.
 - [ ] Any local inference failure has a diagnostic row and failure triage runner output that name the failed layer, proof, ruled-out layers, and controlled next change.
@@ -674,6 +676,7 @@ Next run:
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]

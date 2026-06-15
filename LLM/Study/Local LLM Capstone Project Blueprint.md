@@ -93,7 +93,7 @@ Create one dated capstone note or folder with these links:
 | Evaluation set design proof | Workload, decision scope, required task classes, held-out/private rows, contamination controls, expected behavior, rubric, pass criteria, refresh plan, and downstream routes. |
 | Quality proof | Prompt suite, rubric, pass/hold/fail, failure owner, next controlled action. |
 | Judge calibration proof | Human review, AB and BA judge rows, agreement rate, position-bias signal, verbosity-bias signal, and next route when LLM-as-judge evidence is used. |
-| RAG proof | Corpus manifest, chunk policy, embedding/reranker route, top-k evidence, cited answer, refusal. |
+| RAG proof | Corpus manifest, chunk policy, embedding/reranker route, top-k evidence, cited answer, refusal, and prompt-injection/source-boundary output when retrieved content is untrusted, uploaded, external, private, or tool-adjacent. |
 | Tool proof | Schema, validated args, policy check, execution output, injected result, denied unsafe action. |
 | Security proof | Loopback binding, log boundary, RAG data boundary, tool permission boundary. |
 | Operations proof | Logs/metrics, resource state, restart check, backup/rollback, retest trigger. |
@@ -183,6 +183,7 @@ This blueprint is complete for one project when:
 - [ ] any LLM-as-judge quality row has calibration output before it supports the project decision
 - [ ] scheduler evidence is audited when the project changes concurrency, queue, cache, long-prompt, or deployment policy
 - [ ] RAG and tool paths are either proven or explicitly out of scope with a reason
+- [ ] any untrusted, uploaded, external, private, or tool-adjacent RAG content has prompt-injection/source-boundary runner output before app, tool, export, security, or final capstone evidence depends on it
 - [ ] security, operations, lifecycle, and deployment rows have pass/hold/fail decisions
 - [ ] [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] output is linked before the deployment memo
 - [ ] [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] output is linked before accepting the final deployment memo
@@ -219,6 +220,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]

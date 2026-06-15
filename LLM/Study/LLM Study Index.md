@@ -141,6 +141,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner|Local LLM Reasoning Budget and Test-Time Compute Runner]]
 
 ## Hands-On Labs
@@ -258,6 +259,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] — measure top-k recall, rank, reranking impact, hybrid retrieval, context selection, and citation validity before judging generation
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] — implement a small reproducible RAG harness with corpus manifest, chunk records, persistent index, retrieval evidence, cited answer, refusal test, and failure row
 - [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] — validate saved RAG artifacts into pass, hold, fail, next-route, CSV, Markdown, and JSONL evidence
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] — validate saved adversarial RAG cases for source trust, context delimiters, poisoned citations, forbidden strings, tool calls, exports, guardrails, and pass/hold/fail routing
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide|LLM Adaptation and Fine-Tuning Decision Guide]] — decide when to prompt, use RAG, fine-tune, train adapters, optimize preferences, or distill
 
 ## Suggested 20-Paper Fast Path

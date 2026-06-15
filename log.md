@@ -3369,3 +3369,36 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4966 files, 3095 Markdown files, 930 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add RAG prompt-injection source-boundary runner
+
+Scope: make RAG prompt-injection and source-trust proof repeatable before retrieved untrusted content supports app, tool, export, security, result-synthesis, or capstone claims.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Capstone Project Blueprint.md`
+- `LLM/Study/Local LLM Security and Privacy Runner.md`
+- `LLM/Study/Local RAG Assistant Lab.md`
+- `LLM/Study/Local RAG Evidence Runner.md`
+- `LLM/Study/Local RAG Minimal Python Harness.md`
+- `LLM/Study/Local RAG Prompt Injection and Source Boundary Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]] with a standard-library Python runner that audits saved adversarial RAG artifacts without calling a model, embedding text, or crawling files.
+- The runner checks attack cases, selected/retrieved poisoned chunks, context delimiters, untrusted-context tags, answer/refusal behavior, forbidden strings, poisoned citations, tool-call escalation, export boundary, guardrail/logging evidence, and linked RAG/security proof.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, RAG assistant lab, minimal RAG harness, RAG evidence runner, security/privacy runner, and capstone blueprint through the new source-boundary gate.
+- Checked current OWASP LLM01 prompt injection, OWASP LLM08 vector/embedding weaknesses, OWASP prompt-injection cheat sheet, NCSC prompt-injection guidance, Greshake et al. indirect prompt injection, PoisonedRAG, and NIST AI RMF Generative AI Profile sources on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or the dirty live security runbook.
+
+Verification:
+- Extracted and compiled `local_rag_prompt_injection_source_boundary_runner.py` from the note.
+- RAG injection runner fixture checks: clean poisoned-context case -> `pass` / `rag_injection_boundary_ready`; missing delimiter -> `fail` / `rag_injection_boundary_blocked`; forbidden injected phrase in answer -> `fail`; required refusal not marked -> `fail`; poisoned chunk not retrieved/selected -> `hold` / `rag_injection_boundary_incomplete`; missing high-risk guardrail -> `hold`; disallowed tool call -> `fail`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4967 files, 3096 Markdown files, 931 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

@@ -18,7 +18,7 @@ Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]
 
 Use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] before freezing `rag_config.json` when the embedding provider, vector dimension, normalization, query/document encoding rule, reranker endpoint, or reranker score semantics are not already proven.
 
-Before indexing private notes or project files, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, citation redaction policy, log retention, and prompt-injection tests.
+Before indexing private notes or project files, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, citation redaction policy, log retention, and prompt-injection tests. When adversarial or untrusted-source artifacts exist, use [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] after the RAG evidence runner to prove retrieved content stayed data rather than instructions.
 
 Use [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] after the artifact files exist. It validates the corpus, chunks, config, retrieval rows, selected context, cited answers, refusal behavior, latency, and failure rows into JSON, Markdown, CSV, and JSONL evidence.
 
@@ -340,6 +340,7 @@ This harness is complete when you have:
 - [ ] one benchmark row with retrieval and generation latency separated
 - [ ] one security/privacy note covering corpus boundary, logs, and citation metadata
 - [ ] one [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] output with pass, hold, fail, next-route, CSV, Markdown, and JSONL evidence
+- [ ] one [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] output if the corpus includes untrusted, uploaded, external, private, or tool-adjacent sources
 
 ## References
 
@@ -347,6 +348,7 @@ This harness is complete when you have:
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Evidence Runner]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

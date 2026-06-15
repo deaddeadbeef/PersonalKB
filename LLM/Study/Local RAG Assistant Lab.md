@@ -17,7 +17,7 @@ When the embedding or reranker provider is not yet proven, use [[LLM/Study/Local
 
 When you are ready to implement rather than only design the pipeline, use [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]]. It defines the concrete artifacts for a small reproducible build: corpus manifest, chunks, embedding/index config, retrieval evidence, cited answer, refusal test, failure row, and benchmark/quality rows.
 
-When the harness artifacts exist, use [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] to validate them into pass, hold, fail, next-route, JSON, Markdown, CSV, and JSONL evidence for the capstone.
+When the harness artifacts exist, use [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] to validate them into pass, hold, fail, next-route, JSON, Markdown, CSV, and JSONL evidence for the capstone. If retrieved content includes private, external, uploaded, untrusted, or tool-adjacent material, use [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] before trusting the answer, citations, tool calls, exports, or app integration.
 
 Before indexing private documents, use [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] to define the corpus boundary, log policy, access boundary, and prompt-injection tests.
 
@@ -205,6 +205,7 @@ The lab is complete when you have:
 - a pass/hold/fail decision using [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - a minimal harness artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] if this is being used for the capstone or a real local assistant
 - a [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] output if the artifact set should count as capstone proof
+- a [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] output if the corpus includes untrusted, uploaded, external, private, or tool-adjacent material
 
 ## References
 
@@ -212,6 +213,7 @@ The lab is complete when you have:
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
 - [[LLM/Study/Local RAG Evidence Runner]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Serving Runbook]]

@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] when the experiment folder should become repeatable JSON, Markdown, CSV, and JSONL evidence. The harness explains how to build the local RAG loop. This runner checks whether the saved artifacts prove that loop.
 
-Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] before this runner when top-k, reranking, hybrid retrieval, or citation audit evidence is still being designed. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after this runner when answer quality needs a broader task-specific rubric.
+Use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] before this runner when top-k, reranking, hybrid retrieval, or citation audit evidence is still being designed. Use [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner|Local RAG Prompt Injection and Source Boundary Runner]] after this runner when retrieved content is untrusted, uploaded, external, private, or tool-adjacent. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after this runner when answer quality needs a broader task-specific rubric.
 
 This runner does not call a model, embed text, build an index, or scrape current model pages. It validates artifacts already produced by a local run. That keeps the proof portable across Ollama, llama.cpp, vLLM, SGLang, Chroma, FAISS, Qdrant, flat cosine search, or a custom harness.
 
@@ -843,12 +843,14 @@ This runner is complete when:
 - [ ] support, citation validity, faithfulness, retrieval latency, and answer latency are recorded
 - [ ] at least one failure mode row exists for diagnostic learning
 - [ ] the output JSON, Markdown, CSV, and JSONL artifacts are saved
+- [ ] prompt-injection/source-boundary runner output exists when retrieved content includes untrusted, uploaded, external, private, or tool-adjacent material
 
 ## References
 
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]
+- [[LLM/Study/Local RAG Prompt Injection and Source Boundary Runner]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
