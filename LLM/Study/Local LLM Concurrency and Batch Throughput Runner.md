@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Run a controlled local concurrency ladder against an OpenAI-compatible endpoint and save per-request latency, p50/p95, success/error, throughput, and saturation evidence.
 
-Use this after [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] explains the manual method and after [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] proves the base route. Use it before claiming that a local model can handle shared use, a local queue, multi-client traffic, or offline batch throughput.
+Use this after [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] explains the manual method and after [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]] proves the base route. Use it before claiming that a local model can handle shared use, a local queue, multi-client traffic, or offline batch throughput. Use [[LLM/Study/Local LLM Capacity and SLO Planning Runner|Local LLM Capacity and SLO Planning Runner]] next when the ladder should support a workload service-level decision.
 
 This runner sends real local HTTP requests when pointed at an actual endpoint. For verification or dry runs, point `LOCAL_LLM_BASE_URL` at a fake loopback fixture server. Keep the first real run on loopback, use synthetic prompts, and stop before thermal, memory, queue, or timeout behavior becomes unsafe.
 

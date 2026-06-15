@@ -13,6 +13,8 @@ Use this after [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environ
 
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] first when the deployment choice depends on whether the bottleneck is queueing, prefill, decode, KV-cache pressure, continuous batching, chunked prefill, slots, preemption, or admission control.
 
+Use [[LLM/Study/Local LLM Capacity and SLO Planning Runner|Local LLM Capacity and SLO Planning Runner]] before accepting a local service-level claim. It turns benchmark, concurrency, observability, security, and operations evidence into one workload SLO decision with latency, throughput, target concurrency, error budget, resource headroom, admission policy, owner, and retest trigger.
+
 Use [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab|Local LLM WSL CUDA vLLM and SGLang Setup Lab]] first if a Windows workstation is being considered for vLLM/SGLang GPU serving.
 
 Use [[LLM/Study/Local LLM Docker GPU Container Serving Lab|Local LLM Docker GPU Container Serving Lab]] first if the deployment decision depends on Dockerized vLLM/SGLang, Compose, or Open WebUI provider routing.
@@ -47,6 +49,7 @@ After filling this out, you should be able to:
 | Artifact custody | Are the exact downloaded bytes, cache/local path, hash, GGUF/Ollama import, conversion command, and cleanup plan known? | [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Artifact Download Cache and Conversion Lab]] |
 | Quantization/offload | Which quantization, GPU offload, CPU fallback, and KV-cache precision passed both memory and quality gates? | [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Quantization and GPU Offload Lab]] |
 | Runtime comparison | Has the selected runtime beaten at least one plausible alternative under fixed prompts, sampler settings, context, output cap, benchmark rows, quality rows, and runtime-comparison audit output? | [[LLM/Study/Local LLM Runtime Comparison Runner|Runtime Comparison Runner]] |
+| Capacity/SLO | Do measured latency, throughput, concurrency, error rate, resource headroom, and admission policy satisfy one workload service level? | [[LLM/Study/Local LLM Capacity and SLO Planning Runner|Capacity and SLO Planning Runner]] |
 | Result synthesis | Do endpoint, compatibility, benchmark, evaluation-set, quality, security, operations, and rejected-alternative rows support the same keep/tune/reject action? | [[LLM/Study/Local LLM Result Synthesis Runner|Result Synthesis Runner]] |
 | Operations evidence | Do logs, runtime metrics, queue/KV/cache state, CPU/RAM, GPU/VRAM, and error rows explain the operating point? | [[LLM/Study/Local LLM Observability and Operations Runbook|Observability and Operations Runbook]] |
 | Lifecycle evidence | Are startup mode, pinned versions, model/cache paths, backups, upgrade plan, rollback target, and post-change validation known? | [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Service Lifecycle and Upgrade Runbook]] |
@@ -109,6 +112,7 @@ Do not choose a deployment path until these rows exist or are explicitly marked 
 | Runtime compatibility | Artifact format, tokenizer, template, quantization, API route, and model id are recorded. |
 | Runtime comparison | A [[LLM/Study/Local LLM Runtime Comparison Runner|Runtime Comparison Runner]] output proves fixed controls, endpoint proof, benchmark audit, quality boundary, security boundary, selected runtime, rejected alternative, and review trigger, or one alternative is explicitly not applicable. |
 | Concurrency/backpressure | Multi-request, queue, p95 latency, saturation, and overload behavior are measured when the workload is not strictly single-user. |
+| Capacity/SLO | A [[LLM/Study/Local LLM Capacity and SLO Planning Runner|Capacity and SLO Planning Runner]] output proves the selected service level has explicit latency, throughput, concurrency, error budget, resource headroom, admission, security, owner, cost, and review evidence. |
 | Prompt/cache reuse | Cold load, warm model, repeated-prefix request, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are recorded when the workload reuses long prefixes. |
 | Speculative decoding | No-spec baseline, spec-enabled run, draft method/model, accepted-token evidence, decode-latency delta, memory overhead, and quality result are recorded when the workload depends on faster generation. |
 | Observability | Loaded-model state, route, request timings, logs or metrics, resource pressure, errors, and next controlled action are recorded. |

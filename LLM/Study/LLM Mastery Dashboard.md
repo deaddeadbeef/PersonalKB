@@ -100,6 +100,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You have scheduler, KV-cache, queue, or tuning evidence and need a decision audit | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] | Hypothesis, latency phase, scheduler state, long-prompt interference, tuning delta, capacity event, decision card, and next-route audit |
 | You have quantization, GPU-offload, KV-cache precision, benchmark, and quality rows and need a keep/reject audit | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] | Baseline, artifact/runtime support, memory estimate, load state, offload sweep, KV-cache/context, benchmark, quality, rejected alternative, decision card, and next-route audit |
 | You need concurrency, queue, saturation, or batch-throughput proof | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] | C1/C2/C4 ladder, per-request latency rows, p50/p95, throughput, errors, saturation, and JSONL row |
+| You have measured load evidence and need to know whether it satisfies the workload SLO | [[LLM/Study/Local LLM Capacity and SLO Planning Runner]] | Latency target, throughput target, concurrency limit, error budget, resource headroom, admission policy, security boundary, owner, and retest trigger audit |
 | You need repeated-prefix or prompt-cache proof | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] | Shared-prefix hits, changed-prefix controls, TTFT or prompt-eval timing, optional metrics, cache decision, CSV, Markdown, and JSONL row |
 | You need speculative decoding proof | [[LLM/Study/Local LLM Speculative Decoding Runner]] | No-spec/spec profiles, TTFT, decode-rate speedup, accepted-token signal, quality checks, CSV, Markdown, and JSONL row |
 | You need service-state, metrics, slots, logs, or resource-pressure proof | [[LLM/Study/Local LLM Observability and Operations Runner]] | `/v1/models`, loaded models, metrics, slots, local resource snapshot, redacted log tail, privacy posture, and next controlled action |
@@ -179,6 +180,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Application integration audit | [[LLM/Study/Local LLM Application Integration Evidence Runner]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
 | Runtime comparison runner | [[LLM/Study/Local LLM Runtime Comparison Runner]] |  |
+| Capacity/SLO planning | [[LLM/Study/Local LLM Capacity and SLO Planning Runner]] |  |
 | Evaluation set design | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
 | Quality evaluation runner | [[LLM/Study/Local LLM Quality Evaluation Runner]] |  |
@@ -271,6 +273,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One scheduler evidence audit output | [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]] |
 | One quantization/offload evidence runner output before result synthesis depends on a lower-bit artifact, GPU-offload setting, CPU fallback, or KV-cache precision | [[LLM/Study/Local LLM Quantization and GPU Offload Evidence Runner]] |
 | One concurrency/batch runner output | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] |
+| One capacity/SLO audit output | [[LLM/Study/Local LLM Capacity and SLO Planning Runner]] |
 | One prompt-cache runner output | [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]] |
 | One speculative decoding runner output | [[LLM/Study/Local LLM Speculative Decoding Runner]] |
 | One observability runner output | [[LLM/Study/Local LLM Observability and Operations Runner]] |

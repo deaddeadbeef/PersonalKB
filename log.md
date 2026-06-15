@@ -3567,3 +3567,39 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4972 files, 3101 Markdown files, 936 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add capacity SLO planning runner
+
+Scope: make local LLM service-level claims auditable before measured benchmark, concurrency, observability, security, and runtime-comparison evidence feeds result synthesis or deployment readiness.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Deployment Decision Matrix.md`
+- `LLM/Study/LLM Deployment Readiness Audit Runner.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Capacity and SLO Planning Runner.md`
+- `LLM/Study/Local LLM Concurrency and Batch Throughput Runner.md`
+- `LLM/Study/Local LLM Observability and Operations Runner.md`
+- `LLM/Study/Local LLM Result Synthesis Runner.md`
+- `LLM/Study/Local LLM Runtime Comparison Runner.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Capacity and SLO Planning Runner]] with a standard-library Python runner that audits a saved capacity/SLO manifest without starting a server, loading a model, scraping metrics, or generating traffic.
+- The runner checks workload SLO, selected serving path, demand model, measured capacity, resource headroom, admission/backpressure, quality boundary, security boundary, operations evidence, cost/owner, and retest trigger.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, concurrency runner, observability runner, runtime-comparison runner, result-synthesis runner, deployment decision matrix, and deployment-readiness runner through the new capacity/SLO gate.
+- Checked current vLLM production/design metrics, SGLang production metrics, llama.cpp server metrics/slots, NVIDIA NIM LLM benchmarking metrics, NVIDIA GenAI-Perf, Ollama usage metrics, and LM Studio local server docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- Extracted and compiled `local_llm_capacity_slo_planning_runner.py` from the note.
+- Capacity/SLO fixture checks: complete exact SLO -> `pass` / `capacity_slo_ready`; missing latency target -> `hold` / `capacity_slo_incomplete`; selected p95 latency over target -> `fail` / `capacity_slo_blocked`; error rate above budget -> `fail`; exposed service without security proof -> `fail`; missing capacity proof -> `hold`; shared SLO missing backpressure -> `hold`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4973 files, 3102 Markdown files, 937 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+- `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new runner or embedded code strings.
