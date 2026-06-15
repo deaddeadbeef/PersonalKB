@@ -61,6 +61,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You are ready to send the first controlled local inference request | [[LLM/Study/Local LLM First Smoke Request Runner]] | Native and OpenAI-compatible request/response/output files, status, missing layer, and next action |
 | You are ready to execute the first local endpoint proof | [[LLM/Study/Local LLM First Endpoint Run Sheet]] | Filled run folder, native response, OpenAI-compatible response, benchmark row, decision row |
 | You have the first response JSON and need to interpret it | [[LLM/Study/Local LLM First Response Debrief Card]] | Route claim, timing conversion, mechanism owner, benchmark add-on row, and next controlled action |
+| You want the first saved response interpreted without hand-copying timing fields | [[LLM/Study/Local LLM First Response Debrief Runner]] | Debrief JSON, Markdown, JSONL, converted seconds, token rates, mechanism owner, quality boundary, and next action |
 | You have route proof and need a first quality signal | [[LLM/Study/Local LLM First Quality Probe Suite]] | Private prompt-suite outputs, script-assisted checks, human scores, and pass/hold/fail owner |
 | You have an API contract and need a reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] | Python client script, request/response/output files, JSONL row, and next route |
 | You have a reusable client run and need perceived-latency proof | [[LLM/Study/Local LLM First Streaming Timing Runner]] | Streaming script, event JSONL, TTFT, chunk counts, final output, and usage/error row |
@@ -136,6 +137,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first smoke request summary | [[LLM/Study/Local LLM First Smoke Request Runner]] |
 | One first endpoint run folder | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
 | One first response debrief row | [[LLM/Study/Local LLM First Response Debrief Card]] |
+| One first response debrief runner output | [[LLM/Study/Local LLM First Response Debrief Runner]] |
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first client harness run | [[LLM/Study/Local LLM First Client Harness Runner]] |
 | One first streaming timing row | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
@@ -189,6 +191,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]

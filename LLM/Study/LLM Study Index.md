@@ -52,6 +52,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]
@@ -122,6 +123,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] — run the first controlled native and OpenAI-compatible smoke prompts, saving request, response, extracted output, status, missing layer, and next action
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] — execute the first Ollama endpoint run as a fill-in evidence folder with pass, hold, and fail gates
 - [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] — translate the first saved response JSON into route proof, timing interpretation, mechanism owner, benchmark row, and next action
+- [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] — turn the saved smoke response into debrief JSON, Markdown, JSONL, converted timing, token rates, mechanism owner, and next action without sending another request
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] — run private known-answer, JSON, extraction, grounding, and constraint probes before treating smoke output as quality evidence
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — use PowerShell to capture preflight evidence, run Ollama or LM Studio, call the loopback API, and save the first response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — use copyable commands for server startup, route smoke tests, OpenAI-compatible clients, streaming, benchmark rows, and teardown

@@ -515,6 +515,7 @@ Get-NetTCPConnection -State Listen |
 | First runtime health snapshot | [[LLM/Study/Local LLM First Runtime Health Snapshot]] |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |
 | First response debrief | [[LLM/Study/Local LLM First Response Debrief Card]] |
+| First response debrief runner | [[LLM/Study/Local LLM First Response Debrief Runner]] |
 | First quality probe | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | First raw response | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | Startup command and route | [[LLM/Study/Local LLM Serving Runbook]] |
@@ -552,6 +553,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]

@@ -84,6 +84,7 @@ Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Prefli
 | Listener proof | `Get-NetTCPConnection`, `Test-NetConnection`, `/api/tags`, or `/v1/models` |
 | No-inference runtime health | [[LLM/Study/Local LLM First Runtime Health Snapshot]] JSON/Markdown when the model has been pulled but no prompt has been sent yet |
 | First smoke request | [[LLM/Study/Local LLM First Smoke Request Runner]] JSON/Markdown after the model has answered one controlled prompt |
+| First response debrief | [[LLM/Study/Local LLM First Response Debrief Runner]] JSON/Markdown/JSONL after the first response has been interpreted |
 
 Do not diagnose model quality until the runtime boundary is clear. Windows PowerShell, WSL, Docker, and a remote Linux shell can see different hardware and different localhost behavior.
 
@@ -125,7 +126,7 @@ For a private first run, keep the host on loopback. Do not bind to `0.0.0.0` unt
 
 ## Step 4: Native Smoke Test
 
-For Ollama native API, save the full JSON response because the timing fields are useful. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] if you want the native request, response, extracted text, OpenAI-compatible request, OpenAI-compatible response, summary JSON/Markdown, and JSONL row saved by one script.
+For Ollama native API, save the full JSON response because the timing fields are useful. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] if you want the native request, response, extracted text, OpenAI-compatible request, OpenAI-compatible response, summary JSON/Markdown, and JSONL row saved by one script. Then use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to turn that saved response into converted seconds, token rates, mechanism owner, quality boundary, and next action without sending a second inference request.
 
 ```powershell
 $Body = @{
@@ -262,6 +263,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]

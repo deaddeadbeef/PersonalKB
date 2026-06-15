@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** After the first local response is saved, use this card to translate the raw JSON into route proof, timing interpretation, academic mechanism, benchmark row, quality boundary, and next controlled action.
 
-Use this after [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] or [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] creates `ollama-native-response.json`, a native smoke response, or an equivalent first-response file. The endpoint run sheet proves that a local route answered. The smoke runner preserves request/response/output files in a repeatable shape. This debrief explains what that response proves, what it does not prove, and which next lab owns the next action. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] next when the route works and you need a small private quality signal before the full harness.
+Use this after [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] or [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] creates `ollama-native-response.json`, a native smoke response, or an equivalent first-response file. The endpoint run sheet proves that a local route answered. The smoke runner preserves request/response/output files in a repeatable shape. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] when you want the same debrief as JSON, Markdown, and JSONL without hand-copying the timing fields. This card explains what that response proves, what it does not prove, and which next lab owns the next action. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] next when the route works and you need a small private quality signal before the full harness.
 
 This card is intentionally small. It is the bridge between one saved response and the larger [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], and [[LLM/Study/LLM Inference Request Lifecycle Lab|LLM Inference Request Lifecycle Lab]].
 
@@ -203,6 +203,7 @@ This debrief is complete only when:
 Internal routes:
 
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]

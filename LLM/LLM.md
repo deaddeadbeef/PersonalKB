@@ -81,6 +81,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] — Send the first controlled native and OpenAI-compatible inference requests, then save request, response, output, status, and next-action evidence
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] — Fill-in execution sheet for the first Ollama loopback endpoint proof and evidence folder
 - [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] — Translate the first saved response JSON into route proof, metrics, mechanism interpretation, benchmark row, and next action
+- [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] — Convert the saved first response into debrief JSON, Markdown, JSONL, timing conversions, mechanism owner, quality boundary, and next action
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] — Run the first private quality probes after route proof before promoting smoke output into the full harness
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — PowerShell path from Windows preflight to first loopback API response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — Copyable commands for local server startup, route smoke tests, client calls, streaming, benchmark rows, and teardown

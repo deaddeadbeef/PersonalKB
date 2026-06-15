@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** After install, model pull, and runtime health pass, send one controlled local inference request through the native Ollama route and one through the OpenAI-compatible route, then save every request, response, output excerpt, status, and next action.
 
-Use this after [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] says the listener and model-list routes are ready, and before [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]]. The health snapshot does not generate text. This runner does: it is the first proof that a local model can answer a prompt through the endpoint you plan to use.
+Use this after [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] says the listener and model-list routes are ready, and before [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] or [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]]. The health snapshot does not generate text. This runner does: it is the first proof that a local model can answer a prompt through the endpoint you plan to use.
 
 For the first Windows/Ollama pass, this runner can replace the manual native and OpenAI-compatible smoke snippets in [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. Keep the prompt deliberately boring. The goal is route proof, timing capture, and failure ownership, not model quality.
 
@@ -397,7 +397,7 @@ $env:LOCAL_LLM_MAX_TOKENS = "16"
 python .\first-smoke-request.py
 ```
 
-Pass signal: `first-smoke-request\<run-id>-summary.json` and `.md` exist, both enabled routes are `pass`, the extracted output text matches `local llm ok`, and the next action is `first response debrief`.
+Pass signal: `first-smoke-request\<run-id>-summary.json` and `.md` exist, both enabled routes are `pass`, the extracted output text matches `local llm ok`, and the next action is `first response debrief`. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] next when you want the timing conversion, token-rate row, mechanism owner, quality boundary, and next action saved as JSON, Markdown, and JSONL.
 
 Hold signal: one route answers but the other route fails, the answer text is not the expected smoke text, or the response shape lacks extractable assistant text. Save the files; do not change prompt, model, runtime, and route at the same time.
 
@@ -460,6 +460,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]

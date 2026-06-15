@@ -86,6 +86,7 @@ Route:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
@@ -99,8 +100,9 @@ Default path:
 3. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one small instruct model and save list/tags/show metadata.
 4. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to save listener and model-list proof without generation.
 5. Use [[LLM/Study/Local LLM First Smoke Request Runner|Local LLM First Smoke Request Runner]] to send one deterministic smoke prompt through native and OpenAI-compatible routes.
-6. Save the raw response before judging quality.
-7. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before treating smoke output as quality evidence.
+6. Use [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] to interpret the saved response without sending a second request.
+7. Save the raw response and debrief before judging quality.
+8. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before treating smoke output as quality evidence.
 
 Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when this stage needs copyable commands for the run folder, listener check, Ollama native route, OpenAI-compatible route, Python client, or teardown proof.
 
@@ -112,6 +114,7 @@ Save:
 |---|---|
 | First runtime health snapshot | Listener status, installed model ids, loaded model ids or idle state, OpenAI-compatible model ids, missing layer, next action |
 | First smoke request summary | Native request/response/output, OpenAI-compatible request/response/output, route decisions, missing layer, next action |
+| First response debrief runner output | Debrief JSON/Markdown/JSONL, converted timing, token rates, mechanism owner, quality boundary, next action |
 | First inference evidence pack | Runtime, model id, base URL, route, request body, response text, timing, safe binding |
 | Endpoint smoke row | Native route or OpenAI-compatible route, status, raw response, error if any |
 | First decision | keep / tune / stronger model / different runtime / stop |
@@ -360,6 +363,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Smoke Request Runner]]
+- [[LLM/Study/Local LLM First Response Debrief Runner]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
