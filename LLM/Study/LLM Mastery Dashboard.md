@@ -63,6 +63,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You are ready for a scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] | Section scores, hard-fail checks, proof links, remediation rows |
 | You need to know whether this machine is ready for a first local run | [[LLM/Study/Local LLM First Run Readiness Snapshot]] | Runtime/GPU/listener readiness card and first execution decision |
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
+| You have model size, context, and hardware facts but no fit decision | [[LLM/Study/Local LLM Hardware Sizing Runner]] | Weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit status, and next route |
 | You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
 | You need to install Ollama without losing the evidence trail | [[LLM/Study/Local LLM Windows Runtime Install Gate]] | Installer source, new-shell PATH, model-store inheritance, listener, and log proof |
 | You are ready to pull the first Ollama model | [[LLM/Study/Local LLM First Model Pull Gate]] | Model tag decision, store proof, pull output, list/tags/show metadata, and pass/hold/fail route |
@@ -129,6 +130,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] and [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] |  |
+| Hardware sizing runner | [[LLM/Study/Local LLM Hardware Sizing Runner]] |  |
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | Artifact custody audit | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
@@ -211,6 +213,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first quality probe runner output | [[LLM/Study/Local LLM First Quality Probe Runner]] |
 | One evaluation set design runner output before repeated quality, model/runtime, or deployment decisions | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |
+| One hardware sizing runner output before model selection, model pull, or serving | [[LLM/Study/Local LLM Hardware Sizing Runner]] |
 | One model selection runner output | [[LLM/Study/Local LLM Model Selection Runner]] |
 | One artifact custody audit output before compatibility, serving, benchmark, or deployment evidence depends on local bytes | [[LLM/Study/Local LLM Artifact Custody Audit Runner]] |
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
@@ -294,6 +297,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Runner]]

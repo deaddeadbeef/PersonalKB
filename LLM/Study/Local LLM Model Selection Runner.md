@@ -8,7 +8,7 @@ last-verified: 2026-06-15
 
 # Local LLM Model Selection Runner
 
-Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] when candidate facts should become a repeatable shortlist. The playbook teaches the decision. This runner turns a workload contract, hardware budget, and candidate manifest into JSON, Markdown, CSV, and JSONL evidence.
+Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] and [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when candidate facts should become a repeatable shortlist. The playbook teaches the decision. The hardware sizing runner proves whether weight memory, KV-cache, overhead, context, active sequences, and headroom fit. This runner turns a workload contract, hardware budget, and candidate manifest into JSON, Markdown, CSV, and JSONL evidence.
 
 Use [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] after endpoint, API-contract, benchmark, evaluation-set, quality, security, and operations evidence exists. Model selection answers what to test. Result synthesis answers whether the tested candidate should be kept, tuned, rejected, rerun, or promoted into a deployment memo.
 
@@ -631,6 +631,7 @@ A `hold` result is not bad. It prevents a smoke response or leaderboard rank fro
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]

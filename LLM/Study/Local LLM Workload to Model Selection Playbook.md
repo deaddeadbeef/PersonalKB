@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 > **One-line summary** Choose a local LLM by workload contract, evidence, and hardware fit: define the job, pick the smallest plausible candidate, prove compatibility, run a quality gate, and keep only measured winners.
 
-Use this before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]. Those notes prove memory, custody, and compatibility. This note decides which candidates are worth proving. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the candidate card should become repeatable JSON, Markdown, CSV, and JSONL shortlist evidence.
+Use this before [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]]. Those notes prove memory, custody, and compatibility. This note decides which candidates are worth proving. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the candidate card should become repeatable JSON, Markdown, CSV, and JSONL shortlist evidence.
 
 Use it during [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] Stage 2, before spending time downloading, converting, or benchmarking a model. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after the endpoint works to decide whether the candidate actually passes.
 
@@ -121,6 +121,7 @@ Copy this into the run note before download.
 | Expected quantization |  |
 | Expected weight memory |  |
 | Expected KV-cache risk | low / medium / high |
+| Hardware sizing runner output |  |
 | Chat template or tokenizer risk | low / medium / high / unknown |
 | Tool/JSON/citation risk | low / medium / high / not needed |
 | Why this is the smallest plausible candidate |  |
@@ -293,6 +294,7 @@ Internal routes:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
+- [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]

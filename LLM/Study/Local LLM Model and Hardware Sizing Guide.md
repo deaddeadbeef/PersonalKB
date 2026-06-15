@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Model choice is a memory, latency, quality, and workload decision: estimate weights, add KV-cache headroom, choose a runtime, then prove the result with benchmarks.
 
-Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] before this guide when the workload, candidate slot, model class, or rejection trigger is still unclear. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the sizing estimate should become a ranked candidate shortlist. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before downloading to record model card, license, revision, artifact safety, and local path. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] when disk headroom, cache location, exact downloaded files, GGUF import, or conversion output may decide whether the sizing plan is reproducible. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the context target must be turned into prompt, history, RAG, tool, output, and safety-margin tokens. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when active sequences, queueing, or batch/offline throughput may determine the hardware fit. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when the candidate fits only under quantization/offload assumptions and needs a measured choice between GGUF, AWQ, GPTQ, FP8/INT8, KV-cache precision, CPU fallback, and GPU offload.
+Use this before [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The runbook proves the endpoint; this guide helps decide what model and quantization are worth trying on the hardware you actually have. Use [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] before this guide when the workload, candidate slot, model class, or rejection trigger is still unclear. Use [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when the weight, KV-cache, overhead, context, active-sequence, and headroom estimate should become repeatable pass/hold/fail evidence. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the sizing estimate should become a ranked candidate shortlist. Use [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]] to record what the current machine, runtime boundary, disk, and port can actually support. Use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] before downloading to record model card, license, revision, artifact safety, and local path. Use [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] when disk headroom, cache location, exact downloaded files, GGUF import, or conversion output may decide whether the sizing plan is reproducible. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the context target must be turned into prompt, history, RAG, tool, output, and safety-margin tokens. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when active sequences, queueing, or batch/offline throughput may determine the hardware fit. Use [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the sizing answer still leaves open whether the file format, quantization, tokenizer, chat template, and runtime are compatible. Use [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when the candidate fits only under quantization/offload assumptions and needs a measured choice between GGUF, AWQ, GPTQ, FP8/INT8, KV-cache precision, CPU fallback, and GPU offload.
 
 Use [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] before reserving memory for a draft model, EAGLE/MTP path, or n-gram speculative method. A main model that fits alone may fail once speculation adds draft weights, draft cache, verification buffers, or CUDA graph overhead.
 
@@ -111,13 +111,14 @@ If the model barely fits, it has not really fit. You still need headroom for pro
 2. Set quality gates before testing: correctness, citation discipline, valid JSON, code passes tests, or human preference.
 3. Choose a small baseline model first; for the current Windows/Ollama first run, use [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]].
 4. Record acquisition provenance and license with [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]].
-5. Record the actual download/cache/import/conversion evidence with [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]].
-6. Choose the least aggressive quantization that fits the memory budget.
-7. Run the endpoint proof in [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
-8. Log the run in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-9. If quality fails, scale model size or improve prompt/RAG before blaming hardware.
-10. If latency fails, reduce model size, context, output length, or change runtime.
-11. If memory fails, reduce model size, quantize more, reduce context/concurrency, or move to a different machine.
+5. Run [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] before pulling or serving if the model, context, active sequences, or headroom are not already proven.
+6. Record the actual download/cache/import/conversion evidence with [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]].
+7. Choose the least aggressive quantization that fits the memory budget.
+8. Run the endpoint proof in [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
+9. Log the run in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+10. If quality fails, scale model size or improve prompt/RAG before blaming hardware.
+11. If latency fails, reduce model size, context, output length, or change runtime.
+12. If memory fails, reduce model size, quantize more, reduce context/concurrency, or move to a different machine.
 
 ## Choosing Quantization
 
@@ -199,12 +200,13 @@ To prove you understand local model sizing, produce:
 1. A memory estimate for weights.
 2. A KV-cache risk assessment for the target context and concurrency.
 3. A runtime/format choice with a reason.
-4. A prompt/history/RAG/output budget from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the workload is not a tiny prompt.
-5. A machine/runtime preflight from [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]].
-6. A quantization/offload decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when fit depends on compression or GPU placement.
-7. A completed endpoint smoke test from [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
-8. A completed benchmark row in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
-9. A decision: keep, scale up, quantize more, reduce context, or change runtime.
+4. A hardware sizing runner output from [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when the estimate must be reused in model selection, pull, or serving decisions.
+5. A prompt/history/RAG/output budget from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] when the workload is not a tiny prompt.
+6. A machine/runtime preflight from [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]].
+7. A quantization/offload decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] when fit depends on compression or GPU placement.
+8. A completed endpoint smoke test from [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]].
+9. A completed benchmark row in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]].
+10. A decision: keep, scale up, quantize more, reduce context, or change runtime.
 
 ## References
 
@@ -213,6 +215,7 @@ Internal evidence:
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

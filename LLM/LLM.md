@@ -105,6 +105,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/LLM Mastery Evidence Audit Runner|LLM Mastery Evidence Audit Runner]] — Audit academic, mechanism, local-inference, system, and exam evidence gates before any final mastery claim
 - [[LLM/Study/LLM Mastery Gap Triage Runner|LLM Mastery Gap Triage Runner]] — Rank incomplete mastery gates into the next concrete academic or local-inference proof route
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] — Choose candidate local models from workload, hardware, license, compatibility, benchmark, and quality evidence
+- [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] — Turn weight memory, KV-cache, runtime overhead, active sequences, context, and headroom into pass/hold/fail hardware-fit evidence before model pull
 - [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] — Score workload, hardware, candidate, memory, compatibility, benchmark, and quality facts into a repeatable local model shortlist
 - [[LLM/Study/Local LLM Result Synthesis Runner|Local LLM Result Synthesis Runner]] — Combine shortlist, endpoint, benchmark, prompt-suite, quality, security, operations, and alternative evidence before the deployment memo
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — Practical path to run, serve, and benchmark local models
@@ -119,6 +120,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — Count rendered prompt, history, RAG, tool schema, output reserve, and safety margin against the runtime context limit
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] — Build JSON, CSV, Markdown, and JSONL context-budget evidence from a local prompt manifest before inference
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — Memory, context, quantization, and runtime sizing decisions
+- [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] — Machine-check model weight, KV-cache, runtime overhead, context, concurrency, and headroom fit before shortlisting or serving
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] — Prove pinned downloads, cache paths, file lists, hashes, GGUF/Ollama imports, conversion provenance, and cleanup before serving
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] — Audit model artifact source identity, local bytes, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup plan
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] — Match model artifact, quantization, tokenizer, chat template, runtime, route, and workload before serving

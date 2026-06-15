@@ -22,7 +22,7 @@ This runner does not prove that an answer is intellectually correct by itself. I
 |---|---|---|
 | Academic understanding | paper map, paper claim ledger, metric interpretation, training pipeline | prevents local setup from replacing conceptual mastery |
 | Mechanism bridge | tensor shapes, attention lab, tiny decoder, mechanism-to-inference rows | ties observed behavior to model internals |
-| Local inference | workload, model selection, custody, runtime, endpoint, client, benchmark, quality | proves you can host and call a local model |
+| Local inference | workload, hardware sizing, model selection, custody, runtime, endpoint, client, benchmark, quality | proves you can host and call a local model |
 | Extensions | RAG evidence, tool/schema evidence, adaptation decision | proves you can build a system, not only chat with a model |
 | Safety and operations | security, privacy, observability, lifecycle, deployment decision | prevents unsafe or unmaintainable local serving |
 | Exam and capstone | self-assessment, run sheet, final project note, remediation | proves the knowledge is available without hand-holding |
@@ -61,7 +61,7 @@ If the manifest omits `gates`, the runner uses a default gate list aligned to [[
 |---|---|
 | academic | paper map, paper claim ledger, paper claim audit, paper oral defense, academic-to-local defense matrix, metric interpretation, judge calibration, training pipeline |
 | mechanism | math/tensor shapes, attention implementation, tiny decoder training, mechanism-to-inference bridge |
-| local-inference | workload/model selection, model custody, artifact custody audit, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
+| local-inference | workload/model selection, hardware sizing, model custody, artifact custody audit, runtime compatibility, template/tokenizer compatibility, endpoint, first endpoint evidence audit, API/client, application integration, reasoning budget audit, benchmark, scheduler evidence, evaluation set design, quality evaluation runner |
 | system | RAG or tool proof, security/privacy, observability/lifecycle, result synthesis, deployment readiness audit, deployment decision |
 | exam | self-assessment, recall/remediation audit, exam run sheet, capstone workbook/final note |
 
@@ -201,6 +201,15 @@ DEFAULT_GATES = [
         "status": "hold",
         "route": "LLM/Study/Local LLM Model Selection Runner",
         "pass_signal": "Workload, hardware, candidate, memory, compatibility, benchmark, and quality facts produce a shortlist.",
+    },
+    {
+        "gate_id": "local-hardware-sizing",
+        "domain": "local-inference",
+        "required": True,
+        "critical": True,
+        "status": "hold",
+        "route": "LLM/Study/Local LLM Hardware Sizing Runner",
+        "pass_signal": "Candidate weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit decision, and next route are captured before model pull or serving.",
     },
     {
         "gate_id": "local-model-custody",
@@ -1014,6 +1023,7 @@ This runner is useful when:
 - [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
