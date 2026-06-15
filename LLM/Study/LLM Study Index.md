@@ -45,6 +45,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]]
 - [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]]
+- [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
@@ -163,6 +164,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] — audit no-notes paper answers for claim, evidence, limitation, mechanism, local implication, route, score, and remediation proof
 - [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] — turn paper claim rows into local proof routes for inference, RAG, tools, evaluation, adaptation, deployment, and operations evidence
 - [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]] — validate rows that connect paper basis, mechanism, local prediction, artifact, metric, failure owner, and decision
+- [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]] — map FlashAttention, Orca, PagedAttention, Sarathi-Serve, SGLang, and runtime metrics to local scheduler, KV-cache, queueing, prefix-cache, and observability proof
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] — translate tokens, attention, KV cache, quantization, sampling, RAG, tools, and evaluation into local controls and failure diagnoses
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]] — choose the lowest unproven prerequisite when a paper, lab, local endpoint, RAG, tool, or deployment proof fails
@@ -276,7 +278,7 @@ Study and review materials for the LLM knowledge base.
 
 ## Suggested 20-Paper Fast Path
 
-For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to turn each paper into a claim, mechanism, evidence, limitation, and deployment implication. Use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] to connect the papers into one academic-to-applied story, then use [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] to make the claim/evidence/limitation rows auditable. Use [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] when you need no-notes answer proof, use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when the next local proof route needs to be chosen from the paper claim, and use [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]] when the paper route, local artifact, metric, failure owner, and decision need to be defended together.
+For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to turn each paper into a claim, mechanism, evidence, limitation, and deployment implication. Use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] to connect the papers into one academic-to-applied story, then use [[LLM/Study/LLM Paper Claim Ledger|LLM Paper Claim Ledger]] to make the claim/evidence/limitation rows auditable. Use [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] when you need no-notes answer proof, use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when the next local proof route needs to be chosen from the paper claim, use [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]] when the claim is about serving kernels, schedulers, KV cache, batching, prefix reuse, or metrics, and use [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]] when the paper route, local artifact, metric, failure owner, and decision need to be defended together.
 
 1. Attention Is All You Need (Vaswani et al. 2017)
 2. BERT (Devlin et al. 2018)

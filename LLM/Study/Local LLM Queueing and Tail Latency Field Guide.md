@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** Local LLM hosting becomes predictable when you can explain p95 latency as arrival rate, service time, queue wait, prefill, decode, KV-cache pressure, batching policy, and admission control instead of treating tokens/sec as capacity.
 
-Use this after [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] and before [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]], [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]], or [[LLM/Study/Local LLM Capacity and SLO Planning Runner|Local LLM Capacity and SLO Planning Runner]] when the question is "will this local endpoint feel responsive under my workload?" rather than "can one prompt return?"
+Use this after [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] and before [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]], [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]], or [[LLM/Study/Local LLM Capacity and SLO Planning Runner|Local LLM Capacity and SLO Planning Runner]] when the question is "will this local endpoint feel responsive under my workload?" rather than "can one prompt return?" Use [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]] when the queueing hypothesis comes from Orca, PagedAttention, Sarathi-Serve, SGLang, or current vLLM/SGLang metrics documentation.
 
 This guide is not a replacement for measurement. LLM serving is not a textbook M/M/1 queue: request lengths vary, prefill and decode stress different hardware paths, continuous batching changes service time, and KV-cache memory can become the real limiter. The queueing model is a discipline for asking the right questions before the local endpoint silently becomes an unbounded waiting room.
 
@@ -541,6 +541,7 @@ This guide has served its purpose when:
 Internal:
 
 - [[LLM/Sources/Sources Index]]
+- [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Scheduler Evidence Audit Runner]]

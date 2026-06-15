@@ -28,6 +28,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Paper claim audit runner | Results JSON/CSV/Markdown from [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] |  | Fast-path coverage, claim anatomy, source proof, local implication, and follow-up proof routes are complete or have remediation rows. | Not started |
 | Paper oral defense runner | Results JSON/CSV/Markdown from [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] |  | Core paper clusters have no-notes answers with claim, evidence, limitation, mechanism, local implication, follow-up route, score, and remediation. | Not started |
 | Paper-to-local proof route | Results JSON/CSV/Markdown from [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] |  | At least one paper claim set is routed to local proof artifacts with primary route, proof question, confounder, and next action. | Not started |
+| Serving systems paper-to-local proof | Proof card from [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]] |  | At least one serving-systems claim from FlashAttention, Orca, PagedAttention, Sarathi-Serve, SGLang, or runtime metrics predicts a local symptom and links the proof artifact, metric, confounder, and next route. | Not started |
 | Academic-to-local defense matrix | Results JSON/CSV/Markdown from [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner|LLM Academic-to-Local Defense Matrix Runner]] |  | Required defense clusters connect paper basis, mechanism, local prediction, artifact, metric, confounder, failure owner, decision, and oral answer. | Not started |
 | Study cadence | Weekly log from [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] |  | Each active week has recall answers, a mechanism bridge, one applied artifact, and a capstone link or repeat row. | Not started |
 | Daily mastery session | Filled [[LLM/Study/LLM Daily Mastery Session Run Sheet|LLM Daily Mastery Session Run Sheet]] or dated session note |  | One session links a recall answer, corrected answer, mechanism-to-local consequence, applied proof or blocker, and next controlled action. | Not started |
@@ -605,6 +606,7 @@ Next run:
 - [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Paper Oral Defense Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
+- [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map]]
 - [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]

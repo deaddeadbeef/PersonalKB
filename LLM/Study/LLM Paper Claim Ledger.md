@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Academic LLM knowledge becomes durable when every important paper is reduced to a claim, evidence type, limitation, mechanism, and local deployment implication.
 
-Use this with [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]. The protocol tells you how to read one paper. The synthesis map tells the historical story. This ledger is the proof artifact: it records what each paper actually changed and what that claim does or does not justify for local inference, RAG, adaptation, or evaluation. Use [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] when the claim set needs machine-checkable coverage and source-proof audit. Use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when a filled row needs a concrete local proof route.
+Use this with [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] and [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]]. The protocol tells you how to read one paper. The synthesis map tells the historical story. This ledger is the proof artifact: it records what each paper actually changed and what that claim does or does not justify for local inference, RAG, adaptation, or evaluation. Use [[LLM/Study/LLM Paper Claim Audit Runner|LLM Paper Claim Audit Runner]] when the claim set needs machine-checkable coverage and source-proof audit. Use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when a filled row needs a concrete local proof route. Use [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]] when a systems paper row needs to become a scheduler, KV-cache, queueing, prefix-cache, or observability proof card.
 
 ## Ledger Rule
 
@@ -59,6 +59,17 @@ If any field is blank, the paper is still a reading target, not usable knowledge
 | RAG | Retrieval can add external knowledge and attribution to generation. | Knowledge-intensive task evidence. | Retrieval and generation failures are separable. | Retriever, top-k evidence, context assembly, generator. | Evaluate retrieval recall, citation support, and answer faithfulness before blaming the model. |
 | ReAct | Interleaving reasoning and actions improves interactive problem solving. | Agent/task examples and tool-use evaluations. | Tool execution, safety, and observation reliability are outside the model. | Thought-action-observation loop. | Local tool loops require schema validation, policy gates, execution logs, and bounded retries. |
 | HELM | Model evaluation must be multi-scenario and multi-metric. | Holistic benchmark framework across metrics. | Benchmark coverage is still not your private workload. | Scenario taxonomy, robustness, calibration, fairness, efficiency. | Local model choice needs quality, latency, memory, privacy, safety, and workload-specific gates. |
+
+## Serving Systems Addendum
+
+Use these rows when the capstone question is local hosting behavior rather than the broader 20-paper historical map.
+
+| Paper/source | Main claim to retain | Evidence type | Limitation to remember | Mechanism anchor | Local implication |
+|---|---|---|---|---|---|
+| Orca | Autoregressive LLM serving benefits from iteration-level scheduling and selective batching. | Systems latency/throughput measurements. | Results depend on serving workload, hardware, and implementation. | Token-iteration scheduling and dynamic batching. | Mixed-length concurrency should be tested with scheduler and p95 evidence, not average latency only. |
+| PagedAttention/vLLM | KV-cache block management can reduce memory waste and raise throughput at a fixed latency target. | Serving throughput and memory-efficiency measurements. | Benefit depends on cache pressure, context, concurrency, and runtime configuration. | Paged KV cache blocks and sharing. | Preemption, OOM, or concurrency cliffs need KV-cache sizing and metrics proof before changing model size. |
+| Sarathi-Serve | Chunked prefill can reduce the throughput-latency conflict between long prefills and decode work. | Mixed-workload scheduler measurements. | A better scheduler setting can still hurt a different SLO. | Prefill/decode disaggregation and chunked prefill. | Long/short prompt mixes need p95 TTFT, queue, and admission evidence. |
+| SGLang/RadixAttention | Structured LLM programs can reuse KV work across shared prefixes. | Runtime benchmark and cache-hit evidence. | Prefix reuse disappears when the prefix changes, is evicted, or crosses an unsafe boundary. | Radix-tree prefix cache and KV reuse. | Prompt-cache claims require repeated-prefix and changed-prefix controls. |
 
 ## Paper Row Template
 
@@ -110,6 +121,7 @@ The paper-claim ledger is useful when:
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Paper Claim Audit Runner]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
+- [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]

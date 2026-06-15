@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Local LLM hosting is easier to reason about when every runtime decision is tied to a model mechanism: tokens, attention, positional encoding, KV cache, quantization, sampling, batching, RAG, tools, and evaluation.
 
-Use this after [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] and before the local inference labs. The paper map explains how the field got here. This bridge explains why the academic mechanisms show up as concrete local knobs, failures, and evidence rows. Use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when a paper claim should choose a local proof route automatically. Use [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] when you need the whole local serving story from model bytes to operations decision.
+Use this after [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] and before the local inference labs. The paper map explains how the field got here. This bridge explains why the academic mechanisms show up as concrete local knobs, failures, and evidence rows. Use [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] when a paper claim should choose a local proof route automatically. Use [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]] when the mechanism is a serving-systems claim about attention kernels, iteration scheduling, KV cache, chunked prefill, prefix reuse, or runtime metrics. Use [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] when you need the whole local serving story from model bytes to operations decision.
 
 ## The Bridge Rule
 
@@ -43,7 +43,7 @@ Examples:
 | Sampling and constraints | Logits become text through temperature, filters, penalties, stops, or grammar/schema constraints. | Frozen sampler settings and A/B sweep. | [[LLM/Study/Decoding and Sampling Controls Lab]] |
 | Prefill versus decode | Long input mainly hurts time to first token; model size and memory bandwidth often dominate later tokens/sec. | Short-vs-long prompt timing. | [[LLM/Study/LLM Inference Request Lifecycle Lab]] |
 | Inference metrics | TTFT, TPOT, output tokens/sec, total latency, memory, queue, and quality each prove different local claims. | Metric owner, phase, confounder, and next controlled action. | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
-| Batching and PagedAttention | Serving many requests is a cache-management and scheduling problem, not only a model-quality problem. | Concurrency, throughput, latency, queue, slot, preemption, and cache notes. | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
+| Batching and PagedAttention | Serving many requests is a cache-management and scheduling problem, not only a model-quality problem. | Concurrency, throughput, latency, queue, slot, preemption, and cache notes. | [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map]], then [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
 | Prompt caching | Repeated prefixes can reuse cache work when the runtime supports compatible prefix reuse. | Repeated-prefix benchmark and cache setting. | [[LLM/2026 — Reasoning and Agents/Prompt Caching and Inference Infrastructure]] |
 | RAG context assembly | Retrieval controls what evidence the model can see; generation quality cannot rescue missing or wrong context. | Corpus manifest, top-k evidence, cited answer, refusal row. | [[LLM/Study/Local RAG Minimal Python Harness]] |
 | Embedding and reranking inference | The retriever and reranker are separate model calls with their own dimensions, routes, batching, score semantics, and latency. | Embedding/reranker service card, vector-shape check, rerank gain row. | [[LLM/Study/Local Embedding and Reranker Hosting Lab]] |
@@ -139,6 +139,7 @@ Internal routes:
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM Paper-to-Local Proof Router]]
+- [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
 - [[LLM/Study/Local LLM End-to-End Mental Model]]
 - [[LLM/Study/Attention Implementation Lab]]

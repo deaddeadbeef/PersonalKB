@@ -3637,3 +3637,36 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4974 files, 3103 Markdown files, 938 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
 - `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new guide or embedded worksheet strings.
+
+## [2026-06-16] curate | Add serving systems paper-to-local proof map
+
+Scope: add the academic-to-applied bridge for serving-systems papers so FlashAttention, Orca, PagedAttention/vLLM, Sarathi-Serve, SGLang/RadixAttention, and runtime metrics claims can be defended with local scheduler, KV-cache, queueing, prefix-cache, observability, and deployment proof.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM 20-Paper Fast Path Synthesis Map.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Mastery Roadmap.md`
+- `LLM/Study/LLM Mechanism-to-Inference Bridge Map.md`
+- `LLM/Study/LLM Paper Claim Ledger.md`
+- `LLM/Study/LLM Serving Systems Paper-to-Local Proof Map.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Queueing and Tail Latency Field Guide.md`
+- `LLM/Study/Local LLM Serving Internals and Scheduler Lab.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map]] with a read order, systems-claim matrix, local proof routing table, oral-defense prompts, and proof-card template.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, mastery roadmap, 20-paper map, paper claim ledger, mechanism bridge, queueing guide, and serving-internals lab through the new paper-to-local systems bridge.
+- Added a serving-systems addendum to [[LLM/Study/LLM Paper Claim Ledger]] for Orca, PagedAttention/vLLM, Sarathi-Serve, and SGLang/RadixAttention.
+- Checked current FlashAttention, Orca, PagedAttention/vLLM, Sarathi-Serve, vLLM optimization/metrics, SGLang paper/docs/metrics sources on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, dirty older LLM edits, or dirty live local-inference notes.
+
+Verification:
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4975 files, 3104 Markdown files, 939 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+- `rg` over `_ops/reports/audit-broken-links.md` found no false broken-link hits for the new note, serving-systems title, FlashAttention, Orca, PagedAttention, Sarathi, SGLang, or RadixAttention terms.
