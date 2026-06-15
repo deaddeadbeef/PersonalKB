@@ -48,6 +48,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]]
@@ -116,6 +117,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] — use this workstation's current disk, cache-variable, PATH, directory, GPU, and listener evidence before the first installer or model pull
 - [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] — prove installer source, new-shell PATH, model-store inheritance, listener boundary, and log locations before the first model pull
 - [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] — freeze the selected Ollama tag, pull only one baseline model, capture list/tags/show metadata, and decide whether endpoint smoke is allowed
+- [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] — capture one no-inference runtime health artifact: listener reachability, `/api/tags`, `/api/ps`, `/v1/models`, expected model visibility, missing layer, and next action
 - [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] — execute the first Ollama endpoint run as a fill-in evidence folder with pass, hold, and fail gates
 - [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] — translate the first saved response JSON into route proof, timing interpretation, mechanism owner, benchmark row, and next action
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] — run private known-answer, JSON, extraction, grounding, and constraint probes before treating smoke output as quality evidence

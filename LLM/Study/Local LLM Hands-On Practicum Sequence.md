@@ -84,6 +84,7 @@ Route:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
@@ -95,9 +96,10 @@ Default path:
 1. Use Ollama or LM Studio for the first Windows-native proof.
 2. Keep binding on loopback.
 3. Use [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] to pull exactly one small instruct model and save list/tags/show metadata.
-4. Send one deterministic smoke prompt.
-5. Save the raw response before judging quality.
-6. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before treating smoke output as quality evidence.
+4. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to save listener and model-list proof without generation.
+5. Send one deterministic smoke prompt.
+6. Save the raw response before judging quality.
+7. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] before treating smoke output as quality evidence.
 
 Use [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] when this stage needs copyable commands for the run folder, listener check, Ollama native route, OpenAI-compatible route, Python client, or teardown proof.
 
@@ -107,6 +109,7 @@ Save:
 
 | Artifact | Minimum fields |
 |---|---|
+| First runtime health snapshot | Listener status, installed model ids, loaded model ids or idle state, OpenAI-compatible model ids, missing layer, next action |
 | First inference evidence pack | Runtime, model id, base URL, route, request body, response text, timing, safe binding |
 | Endpoint smoke row | Native route or OpenAI-compatible route, status, raw response, error if any |
 | First decision | keep / tune / stronger model / different runtime / stop |
@@ -353,6 +356,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
+- [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]

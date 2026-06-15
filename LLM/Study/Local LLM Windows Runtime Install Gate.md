@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Prove the Windows runtime install, PATH refresh, model-store inheritance, log locations, and loopback listener before the first model pull.
 
-Use this after [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store snapshot says this machine is ready to create `D:\Models` and set `OLLAMA_MODELS`; this install gate says how to prove the Ollama runtime itself is installed correctly before downloading model weights.
+Use this after [[LLM/Study/Local LLM Model Store Readiness Snapshot|Local LLM Model Store Readiness Snapshot]] and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The model-store snapshot says this machine is ready to create `D:\Models` and set `OLLAMA_MODELS`; this install gate says how to prove the Ollama runtime itself is installed correctly before downloading model weights. After the first model pull, use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] to capture a no-inference listener and model-list artifact before sending a smoke prompt.
 
 This note is an execution gate, not proof that the runtime is installed now. Do not mark it complete until the evidence files exist in a dated run folder.
 
@@ -22,6 +22,7 @@ After this gate you should be able to:
 - prove `OLLAMA_MODELS` was set before the runtime starts and before any model pull
 - prove a new PowerShell sees the `ollama` command
 - prove the local API listener is expected, loopback-only, and not a stale unrelated process
+- know which no-inference health snapshot should be captured after the first model pull and before endpoint smoke
 - know where to look for Windows logs, binaries, default model/config files, and temporary files
 - decide whether to proceed to the first model pull or stop at install/PATH/service diagnosis
 
@@ -290,6 +291,7 @@ Internal:
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
+- [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook]]

@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** Before the first inference call, freeze the selected Ollama tag, prove where the bytes will land, pull only one small baseline model, capture model metadata, and decide whether the artifact is ready for endpoint smoke testing.
 
-Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download.
+Use this after [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] passes and before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The install gate proves the runtime exists. This pull gate proves the first model artifact is the one you meant to download. Use [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]] after this gate when you want one no-inference proof that the listener, native model list, running-model list, and OpenAI-compatible model list agree before the first prompt.
 
 This is not a quality test. It is a custody and readiness gate for the first model bytes.
 
@@ -23,6 +23,7 @@ After this gate you should know:
 - whether the source page still matches the expected size, modality, and context claim
 - whether the pull completed into the intended local store
 - what Ollama reports through `ollama ls`, `/api/tags`, and `/api/show`
+- whether a no-inference health snapshot should be saved before endpoint smoke
 - whether the next action is endpoint smoke, smaller model, storage fix, provenance hold, or troubleshooting
 
 ## Gate Rule
@@ -201,7 +202,7 @@ Interpretation:
 
 | Decision | Evidence | Next route |
 |---|---|---|
-| Pass | pull output saved, `ollama ls` shows model, `/api/tags` shows model, `/api/show` saved, store path matches decision | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
+| Pass | pull output saved, `ollama ls` shows model, `/api/tags` shows model, `/api/show` saved, store path matches decision | [[LLM/Study/Local LLM First Runtime Health Snapshot]] before [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
 | Hold | source page changed, storage unclear, disk low, pull partial, tag mismatch, metadata missing, license unclear | [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]] or [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
 | Fail | runtime cannot pull/list/show any selected model, or model store is wrong and must be reset | Roll back, fix install/store/runtime, then rerun this gate |
 
@@ -218,6 +219,7 @@ Copy this row into [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM
 | `ollama ls` output |  |
 | `/api/tags` output |  |
 | `/api/show` output |  |
+| First runtime health snapshot |  |
 | Model store decision | default / custom / hold |
 | License/provenance status | pass / partial / hold |
 | Next action | endpoint smoke / smaller model / storage fix / troubleshooting |
@@ -257,6 +259,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
+- [[LLM/Study/Local LLM First Runtime Health Snapshot]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
