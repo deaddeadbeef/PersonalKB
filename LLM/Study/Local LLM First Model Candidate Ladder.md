@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]] and before [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] and [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. The readiness snapshot says what is installed. This ladder says which first model class to pull, what that choice proves, and when to move to a larger tag.
 
-Pair this with [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] when estimating memory and [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] when the workload is more specific than a route proof.
+Pair this with [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] when estimating memory and [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] when the workload is more specific than a route proof. Use [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] when the first-run ladder should be compared with workload-specific candidates in one repeatable shortlist.
 
 ## Machine Scope
 
@@ -120,6 +120,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

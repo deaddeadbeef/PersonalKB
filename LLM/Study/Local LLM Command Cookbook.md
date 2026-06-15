@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this when you already know the intended runtime and need exact commands. Use [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] for the first guided Windows pass, [[LLM/Study/Local LLM Windows Runtime Install Gate|Local LLM Windows Runtime Install Gate]] before the first Ollama model pull, [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]] for pull/list/tags/show evidence, [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the full procedure, and [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] for the order of evidence artifacts.
 
-This note is a cookbook, not a model recommendation list. Replace placeholders such as `<model>`, `<served-model-id>`, `<model.gguf>`, and `<hf-model-id>` with values proven in [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]].
+This note is a cookbook, not a model recommendation list. Replace placeholders such as `<model>`, `<served-model-id>`, `<model.gguf>`, and `<hf-model-id>` with values proven in [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]], [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], and [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]].
 
 ## Command Rules
 
@@ -525,6 +525,7 @@ Get-NetTCPConnection -State Listen |
 | First quality probe | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | First quality probe runner | [[LLM/Study/Local LLM First Quality Probe Runner]] |
 | First raw response | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
+| Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |
 | Startup command and route | [[LLM/Study/Local LLM Serving Runbook]] |
 | `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] or [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | First reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] |
@@ -572,6 +573,7 @@ Internal routes:
 - [[LLM/Study/LLM Inference Request Lifecycle Runner]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
+- [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]

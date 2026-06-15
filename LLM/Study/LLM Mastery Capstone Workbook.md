@@ -51,6 +51,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | First quality probe runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] |  | The five first quality probes have saved requests, responses, outputs, auto-check rows, human-review status, failure owner, and next action before full harness promotion. | Not started |
 | Local practicum sequence | Handoff note from [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] |  | Stages 0-10 have evidence links or explicit skipped/blocked notes, including endpoint, client, controls, benchmark, quality, service, and extension proof. | Not started |
 | Workload-to-model selection | Candidate card from [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] |  | Workload contract, candidate slot, source, license, artifact options, runtime candidates, sizing risk, rejection trigger, and pass/hold/fail rule are written before download or serving. | Not started |
+| Model selection runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] |  | Candidate shortlist ranks workload, hardware, custody, memory, compatibility, benchmark, quality, and next-route evidence before download or deployment. | Not started |
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
@@ -234,6 +235,8 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Hardware |  |
 | First-run readiness card |  |
 | Model-store decision |  |
+| Workload-to-model selection |  |
+| Model selection runner |  |
 | Runtime install gate |  |
 | Acquisition/provenance card |  |
 | First model pull gate |  |
@@ -551,6 +554,7 @@ Next run:
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]

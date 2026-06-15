@@ -56,6 +56,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You are ready for a scored oral/practical exam attempt | [[LLM/Study/LLM Mastery Exam Run Sheet]] | Section scores, hard-fail checks, proof links, remediation rows |
 | You need to know whether this machine is ready for a first local run | [[LLM/Study/Local LLM First Run Readiness Snapshot]] | Runtime/GPU/listener readiness card and first execution decision |
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
+| You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
 | You need to install Ollama without losing the evidence trail | [[LLM/Study/Local LLM Windows Runtime Install Gate]] | Installer source, new-shell PATH, model-store inheritance, listener, and log proof |
 | You are ready to pull the first Ollama model | [[LLM/Study/Local LLM First Model Pull Gate]] | Model tag decision, store proof, pull output, list/tags/show metadata, and pass/hold/fail route |
 | You need to know whether the local runtime is reachable before endpoint smoke | [[LLM/Study/Local LLM First Runtime Health Snapshot]] | Health JSON/Markdown, installed and loaded model ids, OpenAI-compatible ids, missing layer, and next action |
@@ -103,6 +104,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Attention implementation | [[LLM/Study/Attention Implementation Lab]] |  |
 | Tiny decoder training | [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]] |  |
 | First local endpoint | [[LLM/Study/Local LLM First Inference Evidence Pack]] |  |
+| Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
 | OpenAI-compatible API contract | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |  |
 | Decoding control runner | [[LLM/Study/Decoding and Sampling Controls Runner]] |  |
 | Context/token budget runner | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |  |
@@ -167,6 +169,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One request lifecycle runner output | [[LLM/Study/LLM Inference Request Lifecycle Runner]] |
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first quality probe runner output | [[LLM/Study/Local LLM First Quality Probe Runner]] |
+| One model selection runner output | [[LLM/Study/Local LLM Model Selection Runner]] |
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | One decoding control runner output | [[LLM/Study/Decoding and Sampling Controls Runner]] |
 | One first client harness run | [[LLM/Study/Local LLM First Client Harness Runner]] |
@@ -224,6 +227,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot]]
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
+- [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Windows Runtime Install Gate]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]
 - [[LLM/Study/Local LLM First Runtime Health Snapshot]]

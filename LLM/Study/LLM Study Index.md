@@ -61,6 +61,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]]
+- [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Environment Preflight Lab|Local LLM Environment Preflight Lab]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]]
@@ -145,6 +146,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — capture the exact first local run: machine, model, runtime, endpoint, response, timing, quality, safety, and next decision
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] — execute the local inference path in order, leaving evidence at each stage from endpoint proof to capstone handoff
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]] — choose candidate local models from workload contract, hardware, license, compatibility, benchmark, and quality evidence
+- [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]] — turn workload, hardware, candidate, memory, compatibility, benchmark, and quality facts into repeatable model shortlist evidence
 - [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] — map hardware, boundary, model bytes, runtime, scheduler, route, client/UI, workload, and operations layers before debugging
 - [[LLM/Study/Local LLM Hosting and Inference Lab|Local LLM Hosting and Inference Lab]] — run a local model, call a local API, choose a runtime, and benchmark inference
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] — record model card, license, gated access, exact revision, artifact safety, local path, and digest before serving
