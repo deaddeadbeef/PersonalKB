@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Local inference starts with proving the machine, runtime path, storage, accelerator, and network boundary before diagnosing model quality.
 
-Use this before [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist decides whether the candidate artifact is allowed and reproducible; the sizing guide estimates what should fit; this lab records what the current machine and runtime can actually see.
+Use this before [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], and [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]]. The provenance checklist decides whether the candidate artifact is allowed and reproducible; the sizing guide estimates what should fit; this lab records what the current machine and runtime can actually see. If the next action is the first Windows model pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] before downloading so the cache path and disk owner are explicit.
 
 Pair this with [[LLM/Study/Local LLM Security and Privacy Runbook|Local LLM Security and Privacy Runbook]] when any endpoint listens on a port, and with [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] when the preflight evidence becomes part of a model/runtime comparison.
 
@@ -181,7 +181,7 @@ Before serving a model, record where the weights came from and where they live.
 | Checksum | Hash if available or required by workflow |
 | Sensitive data | Whether the model, adapter, or prompt data is private |
 
-For the full acquisition checklist, use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]]. This connects practical setup to [[LLM/2023 — Open Models and Agents/Open-Weight Model Ecosystem|Open-Weight Model Ecosystem]] and [[LLM/2022 — Alignment and Chat/Quantization|Quantization]]. Open weights give deployment control, but license, format, and runtime compatibility still matter.
+For Windows cache and model-store placement before the first pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]]. For the full acquisition checklist, use [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]]. This connects practical setup to [[LLM/2023 — Open Models and Agents/Open-Weight Model Ecosystem|Open-Weight Model Ecosystem]] and [[LLM/2022 — Alignment and Chat/Quantization|Quantization]]. Open weights give deployment control, but license, format, and runtime compatibility still matter.
 
 ## Runtime Path Matrix
 
@@ -253,6 +253,7 @@ This lab is complete when you have:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Hosting and Inference Lab]]
+- [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]

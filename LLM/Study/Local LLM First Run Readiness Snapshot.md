@@ -11,7 +11,7 @@ last-machine-check: 2026-06-15T10:49:10+08:00
 
 > **One-line summary** This is the machine-specific readiness card for the first local LLM run: as of 2026-06-15T10:49:10+08:00, the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, but no local LLM runtime is installed yet and no endpoint is listening.
 
-Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next.
+Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next. Before any model pull, use [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]] to decide whether the default model store is acceptable or a custom cache path must be set first.
 
 ## Current State
 
@@ -48,7 +48,7 @@ Do these in order. Stop at the first failed command and write the failure owner 
 | Priority | Action | Evidence destination | Pass signal |
 |---|---|---|---|
 | 1 | Create a dated run folder from [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]]. | `run-root.txt` and `run-card.txt` | Evidence exists before installation or model pull. |
-| 2 | Decide whether the default model cache path is acceptable or whether `OLLAMA_MODELS` should be set first. | `installer-choice.txt` or run card note | The model cache location is known before large downloads. |
+| 2 | Decide whether the default model cache path is acceptable or whether `OLLAMA_MODELS` should be set first using [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]]. | `installer-choice.txt`, `model-cache-env-before.json`, or run card note | The model cache location is known before large downloads. |
 | 3 | Install the first runtime, preferably Ollama for the Windows-native terminal proof. | installer source and version output | `ollama --version` works in a new PowerShell. |
 | 4 | Rerun `ollama list` and the listener scan. | `ollama-list-after-install.txt`, `listeners-before-smoke.txt` | Runtime is installed; endpoint exposure is understood. |
 | 5 | Pull one small first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]] and run native plus OpenAI-compatible smoke tests. | native response JSON, model tags JSON, OpenAI-compatible response JSON | Both route proof and model id proof exist, or a native-only decision is written. |
@@ -73,7 +73,7 @@ Then execute only one path.
 | Step | Action | Evidence to save |
 |---|---|---|
 | 1 | Install Ollama from the official Windows installer or PowerShell installer. | installer source, version, install path if changed |
-| 2 | If the home drive should not store models, set `OLLAMA_MODELS` before pulling. | environment variable value and cache path |
+| 2 | If the home drive should not store models, set `OLLAMA_MODELS` before pulling and save the storage decision from [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]]. | environment variable value and cache path |
 | 3 | Open a new PowerShell and run `ollama --version` and `ollama list`. | `runtime-version.txt` |
 | 4 | Pull a small first model from [[LLM/Study/Local LLM First Model Candidate Ladder|Local LLM First Model Candidate Ladder]], preferably `qwen3.5:4b` for route proof. | `ollama-pull.txt`, model tag |
 | 5 | Run the native Ollama smoke test from [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]. | `ollama-native-generate.json` |
@@ -123,6 +123,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM First Model Candidate Ladder]]
+- [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]

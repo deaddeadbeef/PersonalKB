@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model artifact is ready for serving only when the exact downloaded bytes, cache path, file list, verification result, conversion path, and cleanup plan are known.
 
-Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] approves the source, license, gated-access state, and intended artifact. Use it before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the next risk is "which files did I actually download, where did they go, and can my runtime load that artifact?"
+Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] approves the source, license, gated-access state, and intended artifact. Use it before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the next risk is "which files did I actually download, where did they go, and can my runtime load that artifact?" If the risk is earlier - choosing the Windows model store or cache root before a large pull - start with [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]].
 
 This lab is deliberately operational. The acquisition checklist decides whether the artifact is acceptable. This lab proves that the artifact was downloaded, inspected, verified, optionally converted, and handed to the runtime without losing provenance.
 
@@ -250,6 +250,7 @@ Internal:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
