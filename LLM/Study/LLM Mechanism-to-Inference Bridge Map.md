@@ -33,6 +33,7 @@ Examples:
 |---|---|---|---|
 | Tokenization | Text becomes token IDs; token counts decide context use, cost, and prefill work. | Rendered prompt, token count, special-token check. | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
 | Chat template | Messages become one model-specific string or token sequence. | System/user/assistant rendering and stop boundaries. | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
+| Runtime stack ownership | Local inference failures belong to a layer: hardware, boundary, package environment, model bytes, artifact, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, or operations. | Stack Anatomy Card with the lowest unproven layer. | [[LLM/Study/Local LLM Runtime Stack Anatomy]] |
 | Decoder-only autoregression | Generation is a next-token loop, not one whole answer computed at once. | Prompt tokens, output tokens, stop reason, streaming trace. | [[LLM/Study/LLM Inference Request Lifecycle Lab]] |
 | Causal self-attention | A token reads prior tokens through Q/K/V attention while future tokens are masked. | Worked tensor shapes or implementation output. | [[LLM/Study/Attention Implementation Lab]] |
 | Positional encoding | The model needs position information; RoPE/ALiBi/context-extension choices affect long-context behavior. | Context limit, rendered length, long-prompt quality test. | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] |
@@ -140,6 +141,7 @@ Internal routes:
 - [[LLM/Study/Attention Implementation Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
+- [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]

@@ -30,6 +30,8 @@ If the first serious GPU-serving candidate is containerized vLLM or SGLang, use 
 
 For any first actual local run, start a dated [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] before running commands. It keeps the preflight, model choice, endpoint proof, API contract, benchmark, quality decision, and next action together.
 
+Use [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] after preflight to name the stack layer you are proving: hardware, runtime boundary, package environment, model bytes, artifact format, tokenizer/template, runtime loader, scheduler/cache, route, client/UI, workload, or operations.
+
 Save each experiment in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] so the run is reproducible and the model/runtime choice is based on evidence rather than memory.
 
 When you are ready to expose a repeatable local endpoint, use [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] for the endpoint map and smoke tests. If the run fails, use [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] to locate the failed layer before changing the model or runtime.
@@ -46,7 +48,7 @@ After the endpoint works, use [[LLM/Study/Local RAG Assistant Lab|Local RAG Assi
 
 ## Mental Model
 
-Local inference has four layers:
+Local inference starts with four broad layers:
 
 | Layer | Question | Study anchor |
 | --- | --- | --- |
@@ -56,6 +58,8 @@ Local inference has four layers:
 | Application surface | CLI, web UI, REST API, or OpenAI-compatible client? | [[Function Calling]], [[Structured Output and Constrained Generation]] |
 
 The academic core is not separate from deployment. A local model is slow or fast because of Transformer decoding, KV-cache growth, memory bandwidth, quantization, batching, and scheduling. Read this lab alongside [[KV Cache and Context Reuse]], [[Batching and Continuous Batching]], [[Speculative Decoding]], and [[Serving Architectures and Throughput-Latency Trade-offs]]. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when a working endpoint must be tested as a queue, shared service, or offline batch worker.
+
+Use [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] when these four layers need to be expanded into an evidence chain from hardware and model bytes through route, client/UI, workload, and operations.
 
 ## Runtime Choice
 
@@ -270,6 +274,7 @@ Internal evidence:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
