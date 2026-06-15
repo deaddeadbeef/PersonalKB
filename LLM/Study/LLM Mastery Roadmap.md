@@ -16,7 +16,7 @@ Use this note as the operational definition of "I know LLMs" for this vault. Rea
 Move in order:
 
 1. Map the field chronologically with [[LLM/LLM — Learning Path|LLM Learning Path]].
-2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] while reading architecture notes and papers.
+2. Use [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]], [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]], [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] while reading architecture notes and papers.
 3. Use the review drills in [[LLM/Study/LLM Study Index|LLM Study Index]] for active recall.
 4. Use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to connect raw data, objectives, pretraining, post-training, adaptation, evaluation, and deployment.
 5. Use [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] to connect attention, next-token loss, gradients, validation, and generation in a toy model.
@@ -161,6 +161,7 @@ Read:
 - [[LLM/2024–2025 — Frontier and Efficiency/Speculative Decoding|Speculative Decoding]]
 - [[LLM/2026 — Reasoning and Agents/Prompt Caching and Inference Infrastructure|Prompt Caching and Inference Infrastructure]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]]
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]]
@@ -252,7 +253,7 @@ Proof:
 
 Complete these in order:
 
-1. **Paper map:** use [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] to explain the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]] and translate at least five mechanisms into local inference controls, then use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to remediate any paper you cannot explain.
+1. **Paper and dependency map:** use [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]], [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]], and [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] to explain the 20-paper fast path from [[LLM/Study/LLM Study Index|LLM Study Index]] and translate at least five mechanisms into local inference controls, then use [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] to remediate any paper you cannot explain.
 2. **Training pipeline map:** use [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] to trace one capability from data and objective through post-training, evaluation, adaptation, and deployment.
 3. **Attention implementation:** complete [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] and explain the tensor shapes.
 4. **Tiny decoder training:** complete [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] and explain next-token loss, causal masking, validation loss, and generation.
@@ -305,6 +306,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]
+- [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/LLM Paper Reading Protocol]]

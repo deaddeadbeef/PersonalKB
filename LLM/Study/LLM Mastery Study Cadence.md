@@ -67,6 +67,7 @@ Goal: make the work measurable.
 Read:
 
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]
