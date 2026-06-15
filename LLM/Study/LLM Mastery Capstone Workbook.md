@@ -56,6 +56,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
 | First client harness runner | JSONL row from [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] |  | A reusable Python client script saves request, response, output, and structured run evidence for one local inference call. | Not started |
 | First streaming timing runner | JSONL row from [[LLM/Study/Local LLM First Streaming Timing Runner|Local LLM First Streaming Timing Runner]] |  | Streaming client evidence records first event, TTFT, chunk counts, final output, total latency, usage gap, and any stream error. | Not started |
+| First benchmark row builder | Builder output from [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] |  | Client and streaming JSONL evidence are converted into benchmark JSON, Markdown copy row, missing-layer list, and next controlled action. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
 | Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, and trace policy are captured. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
@@ -539,6 +540,7 @@ Next run:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]

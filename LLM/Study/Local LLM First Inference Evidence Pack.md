@@ -30,6 +30,7 @@ local-llm-runs/
     openai-contract.md
     client-harness.jsonl
     streaming-timing.jsonl
+    first-benchmark-row/
     benchmark-row.md
     first-quality-probe-suite/
     first-client-harness/
@@ -193,6 +194,8 @@ Manual one-off `curl` is enough for a smoke test. It is not enough for repeatabl
 
 ## Step 7: First Benchmark Row
 
+If the run folder already contains `first-client-harness/client-runs.jsonl` or `first-streaming-timing/streaming-runs.jsonl`, use [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] to create a benchmark JSON file, Markdown copy row, and missing-layer list before copying a row into the benchmark log.
+
 Copy one row into [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]:
 
 | Run id | Runtime | Model | Quantization | Hardware | Prompt class | Prompt tokens | Output tokens | TTFT | Tokens/sec | Peak RAM/VRAM | Quality decision | Notes |
@@ -235,6 +238,7 @@ This evidence pack is complete when you have:
 - [ ] one client-harness row or an explicit note that the run is smoke-test only
 - [ ] first client harness runner evidence or an explicit note that the run is native-only
 - [ ] first streaming timing row or an explicit note that streaming is unsupported/not required
+- [ ] first benchmark-row builder output or an explicit note that the run is benchmark-pending
 - [ ] one benchmark row
 - [ ] one first quality probe or quality decision
 - [ ] one security/logging boundary decision
@@ -253,6 +257,7 @@ This evidence pack is complete when you have:
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Docker GPU Container Serving Lab]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]

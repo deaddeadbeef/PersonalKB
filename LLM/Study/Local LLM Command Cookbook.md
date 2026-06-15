@@ -519,6 +519,7 @@ Get-NetTCPConnection -State Listen |
 | `/v1/models`, non-streaming, streaming, errors | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]] |
 | First reusable client run | [[LLM/Study/Local LLM First Client Harness Runner]] |
 | First streaming timing run | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
+| First benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | Python wrapper output | [[LLM/Study/Local LLM Client Harness Lab]] |
 | Timing and throughput row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
 | Quality pass/hold/fail | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
@@ -553,6 +554,7 @@ Internal routes:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]

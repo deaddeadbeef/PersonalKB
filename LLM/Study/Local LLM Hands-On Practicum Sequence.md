@@ -179,6 +179,7 @@ Pass signal: benchmark or quality changes can be attributed to the model/runtime
 Route:
 
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
@@ -187,6 +188,7 @@ Save:
 
 | Artifact | Minimum fields |
 |---|---|
+| First benchmark-row builder output | Benchmark JSON, Markdown copy row, missing-layer list, and next controlled action |
 | Benchmark row | Model, runtime, quantization, hardware, context, TTFT, tokens/sec, memory, prompt class |
 | Metric card | Claim, metric family, workload, what the metric proves, what it misses |
 | Quality row | Prompt id, rubric scores, pass/hold/fail, failure owner, next action |
@@ -361,12 +363,14 @@ Internal routes:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Security and Privacy Runbook]]

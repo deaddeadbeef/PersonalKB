@@ -311,7 +311,7 @@ Copy this into a dated run note or [[LLM/Study/Local LLM Client Harness Lab|Loca
 | Output tokens |  |
 | Finish reason |  |
 | Status/error |  |
-| Next route | benchmark / quality harness / API contract / troubleshooting |
+| Next route | benchmark row builder / quality harness / API contract / troubleshooting |
 
 ## Failure Routing
 
@@ -335,7 +335,7 @@ This first streaming runner is complete only when:
 - [ ] request, event JSONL, output, and run-log paths exist
 - [ ] `first_event_s`, `ttft_s`, `total_latency_s`, event count, content chunk count, and status are recorded
 - [ ] missing usage fields are recorded as missing instead of guessed
-- [ ] one benchmark or client-harness row consumes the timing fields, or a blocker route is named
+- [ ] one [[LLM/Study/Local LLM First Benchmark Row Builder|benchmark row builder]] or client-harness row consumes the timing fields, or a blocker route is named
 - [ ] private prompts and outputs are logged according to the security decision
 
 ## References
@@ -344,6 +344,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]

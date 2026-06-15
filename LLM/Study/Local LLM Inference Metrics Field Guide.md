@@ -88,7 +88,7 @@ If two rows differ on more than one confounder, treat the result as exploratory.
 
 ## Minimum Benchmark Row
 
-Use this row for the first credible local inference benchmark:
+Use [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] to generate this row from the first client and streaming logs when those files already exist. Use this row for the first credible local inference benchmark:
 
 | Field | Value |
 |---|---|
@@ -162,6 +162,7 @@ You understand local inference metrics when you can answer these without notes:
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Local LLM First Response Debrief Card]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]

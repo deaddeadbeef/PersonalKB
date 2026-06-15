@@ -296,6 +296,8 @@ For private work, store redacted excerpts or local-only output paths instead of 
 
 ## Benchmark Mapping
 
+Use [[LLM/Study/Local LLM First Benchmark Row Builder|Local LLM First Benchmark Row Builder]] when the first job is to turn existing `client-runs.jsonl` and `streaming-runs.jsonl` files into one copyable row before expanding the full harness.
+
 | Client harness field | Benchmark log field |
 | --- | --- |
 | `run_id` | Source commit/config or run identifier |
@@ -348,6 +350,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

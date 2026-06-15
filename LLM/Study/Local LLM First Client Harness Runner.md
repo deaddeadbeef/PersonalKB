@@ -286,7 +286,7 @@ Copy this into a dated run note or [[LLM/Study/Local LLM Client Harness Lab|Loca
 | Output tokens |  |
 | Finish reason |  |
 | Status/error |  |
-| Next route | streaming timing / benchmark / quality harness / API contract / troubleshooting |
+| Next route | streaming timing / benchmark row builder / quality harness / API contract / troubleshooting |
 
 ## Failure Routing
 
@@ -318,6 +318,7 @@ Internal routes:
 
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
 - [[LLM/Study/Local LLM First Streaming Timing Runner]]
+- [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM Command Cookbook]]
