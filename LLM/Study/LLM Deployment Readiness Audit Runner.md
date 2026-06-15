@@ -85,7 +85,7 @@ By default, the audit expects one row for each kind:
 | `model_runtime` | model id, runtime, artifact or revision, compatibility proof |
 | `endpoint_client` | route, base URL or client proof, model-list or chat evidence |
 | `benchmark_performance` | timing, throughput, memory, or context metric plus interpretation |
-| `quality_evaluation` | rubric, score/result, failure owner or next action |
+| `quality_evaluation` | evaluation-set design proof, rubric, score/result, failure owner or next action |
 | `security_privacy` | endpoint exposure, data boundary, log/export boundary |
 | `operations_lifecycle` | owner, startup/restart, observability, backup or rollback |
 | `scheduler_concurrency` | scheduler/concurrency/backpressure proof, or explicit single-user waiver |
@@ -166,7 +166,7 @@ KIND_HINTS = {
     },
     "quality_evaluation": {
         "owner": "quality",
-        "pass_signal": "Workload prompts have rubric-backed pass, hold, or fail results with failure owners; LLM-as-judge rows have calibration proof when used for the decision.",
+        "pass_signal": "Workload prompts have evaluation-set design proof, rubric-backed pass, hold, or fail results with failure owners; LLM-as-judge rows have calibration proof when used for the decision.",
         "next_route": "LLM/Study/Local LLM Quality Evaluation Harness",
     },
     "security_privacy": {
@@ -442,6 +442,8 @@ def evaluate_kind_requirements(row: dict[str, Any], kind: str, manifest: dict[st
     elif kind == "quality_evaluation":
         if not has_text(row, "rubric", "quality_bar", "prompt_suite", "score", "result"):
             findings.append(finding("hold", owner, "Quality row has no rubric, prompt suite, score, or result.", kind, "Add pass/hold/fail quality evidence for the workload."))
+        if not has_text(row, "eval_set_design", "evaluation_set_design", "prompt_suite_design", "heldout_proof"):
+            findings.append(finding("hold", owner, "Quality row has no evaluation-set design proof.", kind, "Run Local LLM Evaluation Set Design Runner or link held-out/private prompt-suite and contamination-control evidence."))
         if not has_text(row, "failure_owner", "next_action", "decision") and not has_any_metric(metrics, ("score", "pass_rate", "win_rate")):
             findings.append(finding("hold", owner, "Quality row has no failure owner or score.", kind, "Add human score, pass rate, failure owner, or next controlled action."))
         judge_text = " ".join(str(row.get(key, "")) for key in ("method", "evaluator", "rubric", "notes", "result", "decision")).lower()
@@ -868,6 +870,7 @@ This runner validates the evidence bundle, not the service itself. Use live runn
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Security and Privacy Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runner]]

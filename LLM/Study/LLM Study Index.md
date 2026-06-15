@@ -43,6 +43,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]]
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM First Run Readiness Snapshot|Local LLM First Run Readiness Snapshot]]
@@ -89,6 +90,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]
@@ -120,6 +122,7 @@ Study and review materials for the LLM knowledge base.
 
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] — learn the shapes and formulas behind tokens, embeddings, logits, loss, attention, KV cache, and local inference metrics
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] — interpret loss, perplexity, benchmarks, preference scores, calibration, quality rubrics, latency, and memory as different evidence types
+- [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — audit prompt-suite workload fit, held-out/private coverage, contamination controls, expected behavior, rubric, and downstream routes before quality scoring
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — check human agreement, AB/BA order stability, position bias, verbosity bias, and proof links before using LLM-as-judge scores as quality evidence
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and tensor-shape checks
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a toy causal LM to connect tokens, logits, cross-entropy loss, gradients, validation loss, and generation
@@ -151,6 +154,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] — turn the saved smoke response into debrief JSON, Markdown, JSONL, converted timing, token rates, mechanism owner, and next action without sending another request
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] — run private known-answer, JSON, extraction, grounding, and constraint probes before treating smoke output as quality evidence
 - [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] — execute the first five private quality probes with a standard-library Python runner and save request, response, output, auto-check, CSV, Markdown, and JSONL evidence
+- [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — validate the full prompt suite before repeated model, runtime, RAG, tool, or deployment quality decisions
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — use PowerShell to capture preflight evidence, run Ollama or LM Studio, call the loopback API, and save the first response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — use copyable commands for server startup, route smoke tests, OpenAI-compatible clients, streaming, benchmark rows, and teardown
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — capture the exact first local run: machine, model, runtime, endpoint, response, timing, quality, safety, and next decision

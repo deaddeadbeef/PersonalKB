@@ -11,7 +11,7 @@ tier-coverage: [theory, practice]
 
 Use this after [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]], [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]], and [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]]. Those notes define logits/loss, training stages, and paper reading. This guide tells you how to interpret the numbers without confusing training progress, leaderboard performance, workload quality, and local serving evidence.
 
-Use it before [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when a decision depends on a metric.
+Use it before [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]], [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]], and [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] when a decision depends on a metric.
 
 ## The Metric Rule
 
@@ -88,6 +88,7 @@ Benchmark red flags:
 - the metric is saturated
 - examples may be in pretraining data
 - prompt format or few-shot examples differ from local use
+- the private/local evaluation set has no design audit, held-out split, or contamination control
 - sampling budget, pass@k, or self-consistency is hidden
 - failure examples are absent
 - latency, cost, and memory are missing even though deployment is the claim
@@ -111,7 +112,7 @@ Common bias patterns:
 - self-preference or family preference: judge favors familiar style
 - rubric leakage: the answer optimizes the rubric wording rather than the task
 
-Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to keep preference scores as supporting evidence beside human rubric rows, not as a replacement for them. Use [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] before trusting LLM-as-judge rows for repeated local model/runtime decisions.
+Use [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] before the quality harness when the prompt suite itself must support repeated decisions. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] to keep preference scores as supporting evidence beside human rubric rows, not as a replacement for them. Use [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] before trusting LLM-as-judge rows for repeated local model/runtime decisions.
 
 ## Calibration And Confidence
 
@@ -192,7 +193,7 @@ Use this when selecting a local model/runtime.
 | Symptom | Likely mistake | Better next step |
 | --- | --- | --- |
 | Lower perplexity model fails instructions | Treating next-token fit as assistant behavior | Run chat/template and quality harness checks. |
-| High benchmark score fails private workload | Benchmark distribution mismatch | Build local held-out prompts. |
+| High benchmark score fails private workload | Benchmark distribution mismatch | Build local held-out prompts and audit them with the evaluation set design runner. |
 | Fast model gives unsupported citations | Treating latency as quality | Run RAG retrieval and citation audit. |
 | Pairwise judge prefers verbose wrong answer | Judge bias | Run human rubric and AB/BA order control. |
 | Model passes with high temperature only | Sampling hides instability | Freeze sampler for deterministic gates. |
@@ -209,7 +210,7 @@ This guide is complete for one paper or local decision when you can:
 - [ ] explain at least one failure mode the metric misses
 - [ ] separate training loss, benchmark score, preference score, calibration, quality rubric, latency, and memory evidence
 - [ ] fill either a paper metric card or a local decision metric card
-- [ ] route the next proof to the correct lab: benchmark, quality harness, RAG evaluation, runtime comparison, API contract, or deployment matrix
+- [ ] route the next proof to the correct lab: evaluation set design, benchmark, quality harness, RAG evaluation, runtime comparison, API contract, or deployment matrix
 
 ## References
 
@@ -222,6 +223,7 @@ Internal:
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
 - [[LLM/Study/LLM Mechanism-to-Inference Bridge Map]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

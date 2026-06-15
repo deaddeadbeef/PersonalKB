@@ -11,6 +11,8 @@ tier-coverage: [practice]
 
 Use this after [[LLM/Study/Local LLM Workload to Model Selection Playbook|Local LLM Workload to Model Selection Playbook]], [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]], [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], and [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]]. The selection playbook defines the workload and candidate slots, the sizing guide chooses plausible model/runtime candidates, the runbook proves the endpoint, the benchmark log records performance, and this harness decides whether the output quality is acceptable. Use [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] or [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] first when the endpoint has only smoke output and needs a tiny private probe before this full harness. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when a loss, benchmark, pairwise, judge, calibration, latency, or memory number is being used as evidence for the quality decision.
 
+Use [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] before this harness when the prompt suite will support repeated keep, tune, reject, deploy, model-selection, runtime-selection, RAG, or tool decisions. That runner checks workload fit, held-out/private rows, contamination controls, expected behavior, rubric, pass criteria, and downstream routes before any quality score is trusted.
+
 Use [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when each prompt-suite case needs to run through the same client code and produce comparable output paths, latency fields, and error records. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] before judging two outputs if sampler settings, seeds, stop rules, or output caps differ. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] when quality depends on choosing, validating, denying, executing, or using tool calls, and use [[LLM/Study/Local LLM Tool Calling and Structured Output Runner|Local LLM Tool Calling and Structured Output Runner]] when the tool boundary needs saved JSON/CSV/Markdown proof first.
 
 Use [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] when the quality harness is deciding between runtimes rather than only judging one model. Runtime comparison keeps prompt suite, sampler, context, and output caps fixed so quality differences are not caused by request drift.
@@ -141,7 +143,7 @@ Public benchmarks are useful for shared vocabulary, but local acceptance should 
 - Refresh prompts when the model, corpus, or task changes.
 - Keep a small held-out set that you do not tune prompts against.
 
-This protects the decision from the failure mode described in [[LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage|Contamination and Data Leakage]] and keeps broad benchmark results in the right role described by [[LLM/2018–2019 — Pretrained Language Models/Knowledge and Reasoning Benchmarks|Knowledge and Reasoning Benchmarks]]. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when you need to explain why perplexity, pass@k, win rate, calibration, latency, or memory evidence can support the quality gate but cannot replace the local rubric.
+This protects the decision from the failure mode described in [[LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage|Contamination and Data Leakage]] and keeps broad benchmark results in the right role described by [[LLM/2018–2019 — Pretrained Language Models/Knowledge and Reasoning Benchmarks|Knowledge and Reasoning Benchmarks]]. Use [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] when those checks need machine-readable JSON, CSV, Markdown, and JSONL proof. Use [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] when you need to explain why perplexity, pass@k, win rate, calibration, latency, or memory evidence can support the quality gate but cannot replace the local rubric.
 
 ## Log Template
 
@@ -158,6 +160,7 @@ Record the final decision in [[LLM/Study/Local LLM Inference Benchmark Log|Local
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Quality Probe Runner]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]

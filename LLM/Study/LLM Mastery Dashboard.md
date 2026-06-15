@@ -87,6 +87,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need exact commands | [[LLM/Study/Local LLM Command Cookbook]] | Saved command output in one run folder |
 | You have a response but no evidence packet | [[LLM/Study/Local LLM First Inference Evidence Pack]] | First-run evidence row |
 | You have a local failure | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] | Failed layer, evidence, controlled next change |
+| You need to know whether the prompt suite is good enough before scoring quality | [[LLM/Study/Local LLM Evaluation Set Design Runner]] | Workload, held-out/private coverage, contamination controls, rubric, and next-route audit |
 | You have quality doubts | [[LLM/Study/Local LLM Quality Evaluation Harness]] | Pass/hold/fail row |
 | You used an LLM judge and need to know whether the score is trustworthy | [[LLM/Study/Local LLM Judge Calibration Runner]] | Human agreement, AB/BA order stability, position bias, verbosity bias, and next-route audit |
 | You need to decide local vs hosted vs hybrid | [[LLM/Study/LLM Deployment Decision Matrix]] | Deployment memo |
@@ -124,6 +125,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | Security/privacy runner | [[LLM/Study/Local LLM Security and Privacy Runner]] |  |
 | Reproducible client call | [[LLM/Study/Local LLM Client Harness Lab]] |  |
 | Runtime comparison | [[LLM/Study/Local LLM Runtime Comparison Lab]] |  |
+| Evaluation set design | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |  |
 | Quality evaluation | [[LLM/Study/Local LLM Quality Evaluation Harness]] |  |
 | Judge calibration | [[LLM/Study/Local LLM Judge Calibration Runner]] |  |
 | RAG assistant | [[LLM/Study/Local RAG Minimal Python Harness]] |  |
@@ -181,6 +183,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One template/tokenizer compatibility runner output before quality or deployment decisions that depend on chat behavior | [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]] |
 | One first quality probe suite | [[LLM/Study/Local LLM First Quality Probe Suite]] |
 | One first quality probe runner output | [[LLM/Study/Local LLM First Quality Probe Runner]] |
+| One evaluation set design runner output before repeated quality, model/runtime, or deployment decisions | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |
 | One model selection runner output | [[LLM/Study/Local LLM Model Selection Runner]] |
 | One OpenAI-compatible contract runner output | [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner]] |
 | One decoding control runner output | [[LLM/Study/Decoding and Sampling Controls Runner]] |
@@ -200,6 +203,7 @@ Use [[LLM/Study/LLM Mastery Study Cadence]] for the full weekly rhythm. This tab
 | One deployment readiness audit output | [[LLM/Study/LLM Deployment Readiness Audit Runner]] |
 | One first endpoint command output | [[LLM/Study/Local LLM First Inference Evidence Pack]] |
 | One benchmark row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
+| One quality prompt-suite design audit | [[LLM/Study/Local LLM Evaluation Set Design Runner]] |
 | One quality decision | [[LLM/Study/Local LLM Quality Evaluation Harness]] |
 | One judge calibration output when LLM-as-judge is used | [[LLM/Study/Local LLM Judge Calibration Runner]] |
 | One failure diagnosis | [[LLM/Study/Local LLM Troubleshooting Decision Tree]] |
@@ -239,6 +243,7 @@ This dashboard is useful when:
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
 - [[LLM/Study/LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank]]

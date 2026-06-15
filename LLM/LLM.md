@@ -70,6 +70,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM End-to-End Mental Model|Local LLM End-to-End Mental Model]] — Explain the full path from model artifact and tokenizer through runtime, prefill, decode, API route, client, evaluation, and operations evidence
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] — Core shapes and formulas for tokens, logits, loss, attention, KV cache, and inference metrics
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] — Separate loss, perplexity, benchmark, preference, calibration, quality, latency, and memory evidence before making model decisions
+- [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — Audit prompt-suite coverage, held-out/private rows, contamination controls, rubric, and pass/fail readiness before quality scoring
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Audit human review, AB/BA judge order, agreement, position bias, verbosity bias, and next-route evidence before using LLM-as-judge scores
 - [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] — Interpret TTFT, TPOT, throughput, memory, concurrency, and quality numbers as phase-specific local inference evidence
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]] — Quick-reference tables
@@ -87,6 +88,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM First Response Debrief Runner|Local LLM First Response Debrief Runner]] — Convert the saved first response into debrief JSON, Markdown, JSONL, timing conversions, mechanism owner, quality boundary, and next action
 - [[LLM/Study/Local LLM First Quality Probe Suite|Local LLM First Quality Probe Suite]] — Run the first private quality probes after route proof before promoting smoke output into the full harness
 - [[LLM/Study/Local LLM First Quality Probe Runner|Local LLM First Quality Probe Runner]] — Run the first five private quality probes through a local chat endpoint, saving request, response, output, score, CSV, Markdown, and JSONL evidence
+- [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — Check that the full quality prompt suite is representative, held out, private/local, and contamination-aware before scoring a model
 - [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]] — PowerShell path from Windows preflight to first loopback API response
 - [[LLM/Study/Local LLM Command Cookbook|Local LLM Command Cookbook]] — Copyable commands for local server startup, route smoke tests, client calls, streaming, benchmark rows, and teardown
 - [[LLM/Study/Local LLM First Inference Evidence Pack|Local LLM First Inference Evidence Pack]] — One first-run packet for machine, model, runtime, endpoint, response, timing, quality, safety, and next decision
@@ -133,6 +135,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]] — Save no-generation route, loaded-model, metrics, slots, resource, log-tail, privacy, and next-action evidence for a local service
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] — Pin runtime/model state, startup mode, backups, upgrades, rollback, and post-change validation for local LLM services
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runner|Local LLM Service Lifecycle and Upgrade Runner]] — Validate lifecycle manifests, baseline artifacts, backups, rollback targets, route state, and before/after/rollback decisions before service changes
+- [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — Machine-check prompt-suite workload fit, held-out/private coverage, leakage controls, rubrics, and downstream routes before the quality harness
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — Workload-specific prompt suites, rubrics, pairwise comparison, and RAG/citation gates
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — Validate LLM-as-judge agreement and order-bias controls before judge scores support local quality decisions
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] — Control thinking mode, reasoning parsers, effort levels, latency, trace visibility, and quality trade-offs

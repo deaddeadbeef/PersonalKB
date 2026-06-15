@@ -88,6 +88,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Security/privacy runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Security and Privacy Runner|Local LLM Security and Privacy Runner]] |  | Endpoint exposure, expected model visibility, config/log secret scan, RAG/tool/UI/export boundaries, and pass/hold/error decision are captured before non-loopback use or service handoff. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
+| Evaluation set design runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] |  | Workload, decision scope, required task classes, held-out/private prompts, contamination controls, expected behavior, rubric, pass criteria, refresh plan, and downstream routes are complete before quality scoring. | Not started |
 | Local quality gate | Prompt-suite result from [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] |  | Known-answer, schema, RAG/citation, long-context, multi-turn, and workload prompts have scored pass/hold/fail decisions where relevant. | Not started |
 | RAG assistant | Local retrieval assistant from [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]], embedding/reranker service card from [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]], retrieval evaluation from [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]], artifact set from [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]], and evidence packet from [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] |  | Corpus manifest, chunking policy, embedding/reranker service proof, index metadata, top-k/rank/reranking evidence, cited answer, unsupported-question refusal, benchmark row, quality row, at least one diagnosed failure, and runner output are captured. | Not started |
 | RAG evidence runner | Results JSON/CSV/Markdown from [[LLM/Study/Local RAG Evidence Runner|Local RAG Evidence Runner]] |  | Saved RAG artifacts validate corpus, chunks, config, retrieval, selected context, citations, support, faithfulness, refusal, latency, failure mode, and next route before capstone acceptance. | Not started |
@@ -476,6 +477,7 @@ Next run:
 - A benchmark that changes temperature, filters, penalties, seeds, stops, or output caps without saying so.
 - An endpoint without a benchmark.
 - A benchmark without quality evidence.
+- A quality score from a prompt suite with no held-out/private design audit.
 - A RAG answer without citations.
 - An LLM judge score without human calibration.
 - An LLM judge score used for keep/reject decisions without a judge calibration runner output or linked remediation row.
@@ -500,6 +502,7 @@ Next run:
 - [ ] The first model pull gate is linked before any Ollama endpoint proof.
 - [ ] The first response debrief names what the response proves, what it does not prove, the interpreted metric, and the next controlled action.
 - [ ] The first quality probe either records pass/hold/fail rows or explicitly routes to the full quality harness or troubleshooting.
+- [ ] The quality harness is preceded by evaluation set design output or a linked waiver.
 - [ ] The local model artifact has an acquisition/provenance card.
 - [ ] The local model artifact has a download/cache/conversion card proving the exact local bytes and any derived artifact.
 - [ ] The local practicum handoff links every stage artifact, or explicitly marks skipped or blocked stages.
@@ -543,6 +546,7 @@ Next run:
 - [[LLM/Study/LLM Deployment Readiness Audit Runner]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Paper Reading Protocol]]
 - [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map]]
@@ -609,6 +613,7 @@ Next run:
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Assistant Lab]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]

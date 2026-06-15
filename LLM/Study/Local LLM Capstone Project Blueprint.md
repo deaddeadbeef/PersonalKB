@@ -61,7 +61,7 @@ The minimal capstone can omit RAG and tools only if the deployment decision expl
 | 6. First endpoint | CLI or server response plus loopback HTTP proof after install and model-pull gates pass. | [[LLM/Study/Local LLM First Endpoint Run Sheet]] |
 | 7. Client inference | Reproducible script or client wrapper with request, response, timing, and errors. | [[LLM/Study/Local LLM Client Harness Lab]] |
 | 8. Metric interpretation | TTFT, TPOT, total latency, tokens, memory, queue, quality, and next action. | [[LLM/Study/Local LLM Inference Metrics Field Guide]] |
-| 9. Quality gate | Workload prompts scored pass/hold/fail with failure owners; LLM-as-judge rows have calibration proof before they support decisions. | [[LLM/Study/Local LLM Quality Evaluation Harness]] and [[LLM/Study/Local LLM Judge Calibration Runner]] |
+| 9. Quality gate | Evaluation-set design is audited before workload prompts are scored pass/hold/fail with failure owners; LLM-as-judge rows have calibration proof before they support decisions. | [[LLM/Study/Local LLM Evaluation Set Design Runner]], [[LLM/Study/Local LLM Quality Evaluation Harness]], and [[LLM/Study/Local LLM Judge Calibration Runner]] |
 | 10. RAG extension | Corpus, chunks, embedding/reranker proof, retrieval, citations, and refusal. | [[LLM/Study/Local RAG Minimal Python Harness]] |
 | 11. Tool extension | Tool schema, validation, policy decision, execution log, and bounded retry. | [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]] |
 | 12. Security and privacy | Loopback binding, logs, data boundary, RAG corpus boundary, tool permissions. | [[LLM/Study/Local LLM Security and Privacy Runbook]] |
@@ -87,6 +87,7 @@ Create one dated capstone note or folder with these links:
 | Client proof | Script/config path, request settings, non-streaming or streaming result, error handling. |
 | Benchmark proof | Prompt id, prompt/output tokens, TTFT, TPOT, tokens/sec, total latency, memory, decision. |
 | Scheduler proof | Scheduler evidence audit output when concurrency, queue, cache, long-prompt, or serving-policy decisions affect the project. |
+| Evaluation set design proof | Workload, decision scope, required task classes, held-out/private rows, contamination controls, expected behavior, rubric, pass criteria, refresh plan, and downstream routes. |
 | Quality proof | Prompt suite, rubric, pass/hold/fail, failure owner, next controlled action. |
 | Judge calibration proof | Human review, AB and BA judge rows, agreement rate, position-bias signal, verbosity-bias signal, and next route when LLM-as-judge evidence is used. |
 | RAG proof | Corpus manifest, chunk policy, embedding/reranker route, top-k evidence, cited answer, refusal. |
@@ -104,7 +105,7 @@ The smallest acceptable project is:
 1. One local model served on loopback.
 2. One model-store, runtime-install, and first-model-pull evidence chain before the endpoint proof.
 3. One client harness call with frozen request settings.
-4. One benchmark row and one quality row; when LLM-as-judge is used, one judge calibration audit.
+4. One benchmark row, one evaluation set design audit, and one quality row; when LLM-as-judge is used, one judge calibration audit.
 5. One academic explanation tying the observed behavior to tokenization, prefill/decode, KV cache, quantization, sampling, or evaluation.
 6. One security row proving the endpoint did not leave loopback.
 7. One deployment memo rejecting at least one alternative.
@@ -166,6 +167,7 @@ This blueprint is complete for one project when:
 - [ ] template/tokenizer compatibility runner output is linked before chat behavior, structured output, benchmark, quality, or deployment decisions rely on the endpoint
 - [ ] the endpoint proof includes model id, runtime, route, request, response, and loopback boundary
 - [ ] the client proof is reproducible without UI-only steps
+- [ ] the evaluation set design audit is linked before the full quality row
 - [ ] benchmark and quality rows agree on a keep/hold/fail decision
 - [ ] any LLM-as-judge quality row has calibration output before it supports the project decision
 - [ ] scheduler evidence is audited when the project changes concurrency, queue, cache, long-prompt, or deployment policy
@@ -196,6 +198,7 @@ This blueprint is complete for one project when:
 - [[LLM/Study/Local LLM Inference Metrics Field Guide]]
 - [[LLM/Study/Local LLM Judge Calibration Runner]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Runner]]
+- [[LLM/Study/Local LLM Evaluation Set Design Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
