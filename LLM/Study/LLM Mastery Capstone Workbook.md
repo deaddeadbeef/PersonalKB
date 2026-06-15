@@ -75,6 +75,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Speculative decoding | Decision card from [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] |  | No-spec baseline, spec-enabled run, draft method/model, accepted-token evidence, decode-latency delta, memory overhead, quality result, and keep/disable decision are captured. | Not started |
 | Speculative decoding runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]] |  | No-spec/spec profile rows, TTFT, decode-rate speedup, accepted-token signal, quality checks, prompt hashes, and keep/disable decision are captured before enabling a draft path. | Not started |
 | Observability and operations | Operations row from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] |  | Loaded-model state, route, request timings, logs or metrics, resource pressure, error evidence, privacy handling, and next controlled action are captured. | Not started |
+| Observability runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]] |  | `/v1/models`, loaded-model state, metrics, slots, resource snapshot, redacted log-tail status, privacy posture, and next controlled action are captured before accepting service-state claims. | Not started |
 | Service lifecycle and rollback | Change Freeze Card from [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] |  | Runtime/model versions, cache path, startup mode, backup path, upgrade plan, rollback target, and post-change validation are captured. | Not started |
 | Benchmark record | Run entry in [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]] |  | Model, runtime, quantization, hardware, context length, TTFT, tokens/sec, memory, and quality decision are recorded. | Not started |
 | Failure diagnosis | Diagnostic row from [[LLM/Study/Local LLM Troubleshooting Decision Tree|Local LLM Troubleshooting Decision Tree]] |  | At least one failure or explicit no-failure row names the layer, evidence, controlled change, and result. | Not started |
@@ -264,6 +265,7 @@ Use one paragraph per cluster, not one paragraph per paper.
 | Quantization/offload benchmark row |  |
 | Prompt-cache decision row |  |
 | Speculative-decoding decision row |  |
+| Observability runner decision row |  |
 | Lifecycle/change card |  |
 | Startup mode |  |
 | Backup and rollback proof |  |
@@ -568,6 +570,7 @@ Next run:
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]

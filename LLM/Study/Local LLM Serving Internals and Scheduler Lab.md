@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM server is understandable when you can explain each latency or OOM symptom as scheduler, prefill, decode, KV-cache, batching, slot, or admission-control behavior instead of vague runtime magic.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves one endpoint and before [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] or [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] when the next question is why throughput, TTFT, TPOT, queueing, or OOM changes under load. Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] first if the timing and memory numbers have not yet been mapped to request phases and confounders. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] first when prompt length, RAG context, history, or tool schemas may be the prefill or KV-cache driver.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves one endpoint and before [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] or [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] when the next question is why throughput, TTFT, TPOT, queueing, or OOM changes under load. Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] first if the timing and memory numbers have not yet been mapped to request phases and confounders. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] first when prompt length, RAG context, history, or tool schemas may be the prefill or KV-cache driver. Use [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]] when the scheduler claim needs repeatable route, loaded-model, metrics, slots, resource, and log-tail artifacts.
 
 Read it with [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]. Those notes explain the mechanisms. This lab turns them into local evidence rows for vLLM, SGLang, llama.cpp, LM Studio, and similar servers.
 
@@ -206,7 +206,7 @@ This lab is complete when all are true:
 - [ ] Preemption, OOM, or queue behavior has a named owner when present.
 - [ ] The final decision card states best concurrency/slots, queue policy, long-prompt policy, and retest trigger.
 - [ ] [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] receives the selected concurrency and saturation evidence.
-- [ ] [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] receives the operations evidence.
+- [ ] [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] receives the operations evidence, with [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]] output when service state, metrics, slots, logs, or resource pressure are part of the claim.
 - [ ] [[LLM/Study/LLM Deployment Decision Matrix|LLM Deployment Decision Matrix]] receives the deployment decision when the run affects a real workload.
 
 ## References
@@ -221,6 +221,7 @@ Internal:
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Runner]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]

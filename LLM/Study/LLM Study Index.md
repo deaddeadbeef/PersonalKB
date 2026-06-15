@@ -80,6 +80,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]]
+- [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]]
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]]
@@ -169,6 +170,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] — decide whether draft-model, EAGLE, MTP, or n-gram speculative decoding actually improves local decode latency without quality or memory regressions
 - [[LLM/Study/Local LLM Speculative Decoding Runner|Local LLM Speculative Decoding Runner]] — run no-spec versus spec-enabled profile comparisons and save TTFT, decode-rate, accepted-token signal, quality, CSV, Markdown, and JSONL evidence
 - [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] — prove model state, request timing, runtime metrics, logs, resource pressure, and the next controlled operations change
+- [[LLM/Study/Local LLM Observability and Operations Runner|Local LLM Observability and Operations Runner]] — run a no-generation service snapshot that saves `/v1/models`, loaded-model, metrics, slots, resource, redacted log-tail, privacy, and next-action evidence
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook|Local LLM Service Lifecycle and Upgrade Runbook]] — pin runtime/model state, startup mode, backups, upgrades, rollback, and post-change validation for a maintainable local LLM service
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab|Chat Template and Tokenizer Compatibility Lab]] — verify tokenizer, special-token, chat-template, role-boundary, and stop-condition compatibility
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] — count rendered prompt tokens, reserve output, pack RAG/tool context, test truncation, and explain TTFT/KV-cache pressure
