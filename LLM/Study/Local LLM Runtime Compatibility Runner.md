@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A model is ready to load only when its artifact format, architecture, quantization, tokenizer, chat template, runtime, hardware path, model id, and API route have explicit compatibility evidence.
 
-Use this after [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]], and [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when compatibility facts should become JSON, Markdown, CSV, and JSONL evidence. Use it before [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]], and [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]].
+Use this after [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]], [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]], and [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]] when compatibility facts should become JSON, Markdown, CSV, and JSONL evidence. Use it before [[LLM/Study/Local LLM First Model Pull Gate|Local LLM First Model Pull Gate]], [[LLM/Study/Local LLM First Runtime Health Snapshot|Local LLM First Runtime Health Snapshot]], [[LLM/Study/Local LLM OpenAI-Compatible API Contract Runner|Local LLM OpenAI-Compatible API Contract Runner]], [[LLM/Study/Chat Template and Tokenizer Compatibility Runner|Chat Template and Tokenizer Compatibility Runner]], and [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]].
 
 This runner does not scrape runtime documentation or decide whether a model family is currently supported. Runtime support, quantization kernels, model cards, and import paths change. Put source-checked facts into the manifest, then let the runner check whether the evidence is complete enough to load, serve, benchmark, or reject the candidate.
 
@@ -60,6 +60,7 @@ Minimum manifest:
       "tokenizer_source": "runtime metadata or model package",
       "chat_template_source": "Modelfile or runtime metadata",
       "stop_policy": "runtime default checked in template runner",
+      "model_metadata_card": "LLM/Study/Local LLM Model Metadata Card Runner",
       "artifact_custody_proof": "LLM/Study/Local LLM Artifact Custody Audit Runner",
       "hardware_sizing_proof": "LLM/Study/Local LLM Hardware Sizing Runner",
       "next_route": "LLM/Study/Local LLM First Runtime Health Snapshot"
@@ -616,6 +617,7 @@ This runner is useful when:
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Runtime Stack Anatomy]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
+- [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]

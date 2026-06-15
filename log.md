@@ -3266,3 +3266,40 @@ Verification:
 - `git diff --check`: clean.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: 4963 files, 3092 Markdown files, 927 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.
+
+## [2026-06-16] curate | Add local model metadata card runner
+
+Scope: make saved model metadata a first-class evidence gate before custody, compatibility, tokenizer, context, or KV-cache runners consume architecture and tokenizer facts.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `LLM/Study/LLM Mastery Capstone Workbook.md`
+- `LLM/Study/LLM Mastery Dashboard.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Study/Local LLM Artifact Custody Audit Runner.md`
+- `LLM/Study/Local LLM Artifact Download Cache and Conversion Lab.md`
+- `LLM/Study/Local LLM Hands-On Practicum Sequence.md`
+- `LLM/Study/Local LLM KV Cache Sizing Runner.md`
+- `LLM/Study/Local LLM Model Acquisition and Provenance Checklist.md`
+- `LLM/Study/Local LLM Model Metadata Card Runner.md`
+- `LLM/Study/Local LLM Model and Hardware Sizing Guide.md`
+- `LLM/Study/Local LLM Runtime Compatibility Runner.md`
+- `LLM/Study/Local LLM Runtime and Model Compatibility Matrix.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Study/Local LLM Model Metadata Card Runner]] with a standard-library Python runner that audits saved `config.json`, tokenizer config, special tokens, generation config, Ollama `/api/show`, and file-inventory artifacts without downloading, querying, or running inference.
+- The runner writes JSON, Markdown, CSV, and JSONL metadata-card outputs with normalized architecture, tokenizer/template, Ollama package, inventory, and downstream handoff fields.
+- The runner holds on missing downstream metadata, such as absent `num_key_value_heads` before KV-cache sizing, and fails on contradictory attention geometry or blocked unsafe-file decisions.
+- Routed the LLM MOC, study index, mastery dashboard, capstone workbook, practicum sequence, acquisition checklist, artifact lab, custody audit, runtime compatibility, compatibility matrix, sizing guide, and KV-cache runner through the metadata-card gate.
+- Checked current Hugging Face Hub download, Hugging Face Transformers configuration, Ollama `/api/show`, Ollama Modelfile, and Ollama context-length docs on 2026-06-16.
+- Did not modify unrelated active-vault Japanese, CS, recipe, or dirty older LLM edits.
+
+Verification:
+- Extracted and compiled `local_llm_model_metadata_card_runner.py` from the note.
+- Metadata-card fixture checks: complete Hugging Face-style metadata -> `pass` / `model_metadata_ready`; missing `num_key_value_heads` -> `hold` / `metadata_incomplete`; `num_key_value_heads` greater than `num_attention_heads` -> `fail` / `metadata_conflict`; Ollama show-only metadata -> `hold` / `metadata_incomplete`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: 4964 files, 3093 Markdown files, 928 candidate articles, 20 stubs, 250 missing references, 79 placeholder hits, 939 broken-link occurrences.

@@ -140,6 +140,7 @@ Route:
 - [[LLM/Study/Local LLM Workload to Model Selection Playbook]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
+- [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 
@@ -150,6 +151,7 @@ Save:
 | Candidate card | Workload, candidate slot, model class, source, license, artifact options, runtime candidates, rejection trigger |
 | Provenance card | Model card, license/gated access, intended use, revision/tag/file, unsafe-file decision |
 | Artifact card | Cache/local path, file list, hash or verification, import or conversion command |
+| Model metadata card | Architecture, tokenizer, template, context, quantization, inventory, and downstream handoff fields |
 | KV-cache sizing row | Attention geometry, context tokens, active sequences, cache dtype, budget, margin |
 | Sizing row | Weight memory, KV-cache risk, runtime overhead, context target, headroom |
 | Compatibility card | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, workload |

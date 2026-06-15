@@ -71,6 +71,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Runtime stack anatomy | Stack Anatomy Card from [[LLM/Study/Local LLM Runtime Stack Anatomy|Local LLM Runtime Stack Anatomy]] |  | Hardware, boundary, package environment, model bytes, artifact format, tokenizer/template, runtime, scheduler/cache, route, client/UI, workload, and operations layers are named with the lowest unproven layer. | Not started |
 | Model acquisition | Provenance card from [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] |  | Model card, license, gated access, artifact format, revision/tag/digest, local path, and unsafe-file decision are captured. | Not started |
 | Artifact download/cache/conversion | Artifact card from [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] |  | Download command, revision/tag/file, cache or local path, file list, hash or verification result, GGUF/Ollama import or conversion command, output hash when derived, and cleanup plan are captured. | Not started |
+| Model metadata card runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] |  | Config, tokenizer, Ollama show, and inventory artifacts are normalized into architecture, template, context, quantization, unsafe-file, and downstream handoff fields before custody, compatibility, tokenizer, context, or KV-cache proof uses them. | Not started |
 | Artifact custody audit | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] |  | Source identity, local bytes or runtime id, inventory, verification, unsafe-file decision, conversion/import proof, runtime handoff, and cleanup plan are pass or linked to remediation. | Not started |
 | Runtime compatibility | Evidence card from [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] |  | Artifact format, quantization, tokenizer, chat template, runtime, model id, route, and workload contract are captured. | Not started |
 | Runtime compatibility runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Runtime Compatibility Runner|Local LLM Runtime Compatibility Runner]] |  | Architecture, artifact container, quantization, runtime support, tokenizer, chat template, route, model-id visibility, custody proof, sizing proof, compatibility decision, and next route are captured before model pull, health check, smoke test, or benchmark. | Not started |
@@ -634,6 +635,7 @@ Next run:
 - [[LLM/Study/Local LLM Failure Triage Runner]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
+- [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]

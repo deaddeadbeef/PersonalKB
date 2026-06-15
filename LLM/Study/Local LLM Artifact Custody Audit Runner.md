@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model should not be served until the exact bytes, source, revision, verification evidence, unsafe-file decision, conversion or import trail, runtime handoff, and cleanup plan can be audited.
 
-Use this after [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] has produced artifact rows. Use it before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], or [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] when the next decision depends on knowing which model bytes are actually under test.
+Use this after [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab|Local LLM Artifact Download Cache and Conversion Lab]] has produced artifact rows. Use [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] before or alongside this runner when file inventory, `config.json`, tokenizer files, GGUF metadata, or Ollama show output need to become normalized architecture/tokenizer/runtime facts. Use this before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]], [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]], or [[LLM/Study/LLM Deployment Readiness Audit Runner|LLM Deployment Readiness Audit Runner]] when the next decision depends on knowing which model bytes are actually under test.
 
 This runner does not download models, inspect registries, or hash files for you. It audits the evidence you saved: source/provenance card, pinned source identity, local path or runtime id, file inventory, hash or verification result, unsafe-file decision, conversion/import proof, runtime handoff, cleanup plan, and rejected-artifact boundary.
 
@@ -69,6 +69,7 @@ Minimum manifest:
 | `provenance_artifact` | always | model acquisition card or source/provenance note |
 | `local_path` or `runtime_model_id` | always | concrete local bytes or runtime-visible package id |
 | `file_inventory_artifact` | always | file list, shard list, runtime show output, or metadata output |
+| `model_metadata_card` | compatibility, tokenizer, context, or KV-cache handoffs | output from [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] when normalized model facts support downstream evidence |
 | `verification_method` | always | `sha256`, `digest`, `hf_cache_verify`, `runtime_show`, `scanner`, `partial`, or similar |
 | `hash_or_digest` or `verification_artifact` | always | actual verification value or output file |
 | `unsafe_file_decision` | always | `none`, `reviewed`, `sandboxed`, `learning-only`, `blocked`, or equivalent |
@@ -585,6 +586,7 @@ This runner is complete for one artifact custody pass when:
 
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
 - [[LLM/Study/Local LLM Artifact Download Cache and Conversion Lab]]
+- [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM First Model Pull Gate]]

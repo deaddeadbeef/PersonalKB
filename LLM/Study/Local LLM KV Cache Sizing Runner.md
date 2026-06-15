@@ -10,7 +10,7 @@ last-verified: 2026-06-16
 
 > **One-line summary** Estimate KV-cache memory from the model's attention geometry before choosing context length, active sequences, runtime cache precision, or a local serving candidate.
 
-Use this after [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] or [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]] when the cache arithmetic needs to become saved evidence. Use it before [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]], [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]], and [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] whenever context length, active sequences, or GQA/MQA cache savings might decide whether the model can run locally.
+Use this after [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] or [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]] when the cache arithmetic needs to become saved evidence. Use [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] first when layers, hidden size, attention heads, key/value heads, context length, or tokenizer limits still need to be extracted from `config.json`, tokenizer files, GGUF metadata, or Ollama show output. Use this before [[LLM/Study/Local LLM Hardware Sizing Runner|Local LLM Hardware Sizing Runner]], [[LLM/Study/Local LLM Model Selection Runner|Local LLM Model Selection Runner]], [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]], and [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] whenever context length, active sequences, or GQA/MQA cache savings might decide whether the model can run locally.
 
 The simplified planning formula `2 * layers * sequence length * hidden size * bytes * active sequences` is exact enough only for multi-head attention when key/value heads match query heads. Modern local models often use grouped-query attention (GQA) or multi-query attention (MQA), so a defensible fit estimate should use `num_attention_heads` and `num_key_value_heads` when those fields are available from a model config, model card, runtime metadata, or source-checked local artifact.
 
@@ -626,6 +626,7 @@ Internal routes:
 
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
+- [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]

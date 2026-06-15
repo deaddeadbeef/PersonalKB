@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local model artifact is ready for serving only when the exact downloaded bytes, cache path, file list, verification result, conversion path, and cleanup plan are known.
 
-Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] approves the source, license, gated-access state, and intended artifact. Use it before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the next risk is "which files did I actually download, where did they go, and can my runtime load that artifact?" Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] after this lab when the saved rows need machine-checkable proof before compatibility, serving, benchmark, or deployment evidence depends on the artifact. If the risk is earlier - choosing the Windows model store or cache root before a large pull - start with [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]].
+Use this after [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist|Local LLM Model Acquisition and Provenance Checklist]] approves the source, license, gated-access state, and intended artifact. Use it before [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix|Local LLM Runtime and Model Compatibility Matrix]] when the next risk is "which files did I actually download, where did they go, and can my runtime load that artifact?" Use [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]] after file-list, `config.json`, tokenizer, GGUF metadata, or Ollama show capture when downstream checks need normalized model facts. Use [[LLM/Study/Local LLM Artifact Custody Audit Runner|Local LLM Artifact Custody Audit Runner]] after this lab when the saved rows need machine-checkable proof before compatibility, serving, benchmark, or deployment evidence depends on the artifact. If the risk is earlier - choosing the Windows model store or cache root before a large pull - start with [[LLM/Study/Local LLM Windows Model Store and Cache Plan|Local LLM Windows Model Store and Cache Plan]].
 
 This lab is deliberately operational. The acquisition checklist decides whether the artifact is acceptable. This lab proves that the artifact was downloaded, inspected, verified, optionally converted, and handed to the runtime without losing provenance.
 
@@ -192,6 +192,7 @@ The artifact handoff is complete only after these links exist:
 | --- | --- |
 | Acquisition | Source, license, gate, intended use, unsafe-file decision. |
 | Artifact lab | Download path, revision, cache/local dir, file list, verification, conversion/import evidence. |
+| Model metadata | Config, tokenizer, Ollama show, or file-inventory facts are normalized by [[LLM/Study/Local LLM Model Metadata Card Runner|Local LLM Model Metadata Card Runner]]. |
 | Compatibility | Runtime supports architecture, file format, quantization, tokenizer, template, route, workload. |
 | Sizing | Weights, context, KV-cache, runtime overhead, and disk headroom fit the machine. |
 | Serving | Runtime-visible model id returns a smoke response on the intended endpoint. |
@@ -237,6 +238,7 @@ This lab is complete when you have:
 - [ ] exact revision/tag/file recorded
 - [ ] cache or local directory recorded
 - [ ] required files and unsafe file types inspected
+- [ ] model metadata card produced when config, tokenizer, Ollama show, context, quantization, or architecture fields feed later runners
 - [ ] hash, `hf cache verify`, runtime digest, or partial-verification note recorded
 - [ ] GGUF/import/conversion path chosen with evidence
 - [ ] derived artifact hash recorded if converted
@@ -251,6 +253,7 @@ Internal:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local LLM Model Acquisition and Provenance Checklist]]
+- [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
 - [[LLM/Study/Local LLM Windows Model Store and Cache Plan]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]

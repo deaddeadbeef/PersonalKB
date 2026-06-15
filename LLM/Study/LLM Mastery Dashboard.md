@@ -65,6 +65,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | You need to know whether the first model tags are still current | [[LLM/Study/Local LLM First Model Source Recheck Runner]] | Current source-page pass/hold/fail for selected tag, digest, size, context, modality, and quantization |
 | You need to decide storage before the first model pull | [[LLM/Study/Local LLM Model Store Readiness Snapshot]] | Disk/cache/PATH evidence and model-store decision card |
 | You need one reviewed command plan before the first local run | [[LLM/Study/Local LLM First Run Command Plan Runner]] | Ordered PowerShell plan, run folder, evidence filenames, loopback checks, and next gate manifests |
+| You have config, tokenizer, Ollama show, or file-list evidence but no normalized model facts | [[LLM/Study/Local LLM Model Metadata Card Runner]] | Architecture, tokenizer, template, context, quantization, inventory, and downstream handoff fields |
 | You have model architecture, context, and concurrency facts but no KV-cache fit proof | [[LLM/Study/Local LLM KV Cache Sizing Runner]] | Head-aware MHA/MQA/GQA cache estimate, cache dtype, budget, margin, fit status, and next route |
 | You have model size, context, and hardware facts but no fit decision | [[LLM/Study/Local LLM Hardware Sizing Runner]] | Weight memory, KV-cache, runtime overhead, active sequences, context target, headroom, fit status, and next route |
 | You have workload and candidate facts but no shortlist | [[LLM/Study/Local LLM Model Selection Runner]] | Ranked candidates, memory fit, custody, compatibility, benchmark/quality status, and next route |
@@ -143,6 +144,7 @@ Replace "Not yet proven today" only with a link to an artifact or a dated note.
 | First runtime health runner | [[LLM/Study/Local LLM First Runtime Health Runner]] |  |
 | First smoke request runner | [[LLM/Study/Local LLM First Smoke Request Runner]] |  |
 | First response debrief runner | [[LLM/Study/Local LLM First Response Debrief Runner]] |  |
+| Model metadata card runner | [[LLM/Study/Local LLM Model Metadata Card Runner]] |  |
 | KV-cache sizing runner | [[LLM/Study/Local LLM KV Cache Sizing Runner]] |  |
 | Hardware sizing runner | [[LLM/Study/Local LLM Hardware Sizing Runner]] |  |
 | Model selection runner | [[LLM/Study/Local LLM Model Selection Runner]] |  |
@@ -323,6 +325,7 @@ This dashboard is useful when:
 - [[LLM/Study/Local LLM Model Store Readiness Snapshot]]
 - [[LLM/Study/Local LLM First Run Command Plan Runner]]
 - [[LLM/Study/Local LLM KV Cache Sizing Runner]]
+- [[LLM/Study/Local LLM Model Metadata Card Runner]]
 - [[LLM/Study/Local LLM Hardware Sizing Runner]]
 - [[LLM/Study/Local LLM Model Selection Runner]]
 - [[LLM/Study/Local LLM Artifact Custody Audit Runner]]
