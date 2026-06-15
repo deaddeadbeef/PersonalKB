@@ -69,6 +69,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Context/token budget runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] |  | Prompt components, exact-or-estimated token counts, reserve, margin, fit/hold/error status, drop plan, and next route are captured before long-context or RAG inference. | Not started |
 | Serving internals and scheduler | Scheduler mechanism row from [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] |  | Cold/warm, short/long, repeated-prefix, scheduler state, KV/cache pressure, queue/preemption/OOM behavior, and one-variable tuning decision are captured. | Not started |
 | Concurrency and batch throughput | Concurrency ladder from [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] |  | Single-request baseline, max concurrency, p95 TTFT, throughput, memory, errors, saturation point, and backpressure policy are captured. | Not started |
+| Concurrency/batch runner | Results JSON/CSV/Markdown from [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] |  | C1/C2/C4 request rows, p50/p95 latency, throughput, success/error counts, optional TTFT, saturation, and next route are captured before shared-use or batch-serving claims. | Not started |
 | Prompt cache and KV reuse | Cache decision card from [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab|Local LLM Prompt Cache and KV Reuse Lab]] |  | Cold load, warm model, repeated-prefix run, changed-prefix control, cache evidence, TTFT/prefill delta, quality impact, and privacy boundary are captured. | Not started |
 | Speculative decoding | Decision card from [[LLM/Study/Local LLM Speculative Decoding Lab|Local LLM Speculative Decoding Lab]] |  | No-spec baseline, spec-enabled run, draft method/model, accepted-token evidence, decode-latency delta, memory overhead, quality result, and keep/disable decision are captured. | Not started |
 | Observability and operations | Operations row from [[LLM/Study/Local LLM Observability and Operations Runbook|Local LLM Observability and Operations Runbook]] |  | Loaded-model state, route, request timings, logs or metrics, resource pressure, error evidence, privacy handling, and next controlled action are captured. | Not started |
@@ -559,6 +560,7 @@ Next run:
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Speculative Decoding Lab]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]

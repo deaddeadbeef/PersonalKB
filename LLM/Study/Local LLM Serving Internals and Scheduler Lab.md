@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM server is understandable when you can explain each latency or OOM symptom as scheduler, prefill, decode, KV-cache, batching, slot, or admission-control behavior instead of vague runtime magic.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves one endpoint and before [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] when the next question is why throughput, TTFT, TPOT, queueing, or OOM changes under load. Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] first if the timing and memory numbers have not yet been mapped to request phases and confounders. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] first when prompt length, RAG context, history, or tool schemas may be the prefill or KV-cache driver.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves one endpoint and before [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab|Local LLM Concurrency and Batch Throughput Lab]] or [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] when the next question is why throughput, TTFT, TPOT, queueing, or OOM changes under load. Use [[LLM/Study/Local LLM Inference Metrics Field Guide|Local LLM Inference Metrics Field Guide]] first if the timing and memory numbers have not yet been mapped to request phases and confounders. Use [[LLM/Study/Local LLM Context Window and Token Budgeting Runner|Local LLM Context Window and Token Budgeting Runner]] first when prompt length, RAG context, history, or tool schemas may be the prefill or KV-cache driver.
 
 Read it with [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache and Context Reuse]], [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching|Batching and Continuous Batching]], and [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Serving Architectures and Throughput-Latency Trade-offs]]. Those notes explain the mechanisms. This lab turns them into local evidence rows for vLLM, SGLang, llama.cpp, LM Studio, and similar servers.
 
@@ -219,6 +219,7 @@ Internal:
 - [[LLM/Study/Local LLM WSL CUDA vLLM and SGLang Setup Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Observability and Operations Runbook]]
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]]
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]

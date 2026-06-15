@@ -501,6 +501,7 @@ Get-NetTCPConnection -State Listen |
 | Startup OOM | `nvidia-smi`, Task Manager, runtime logs | [[LLM/Study/Local LLM Model and Hardware Sizing Guide]] |
 | Long-prompt OOM | Count prompt/history/RAG/tool tokens | [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]] or [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
 | Slow first token | Compare prompt tokens, retrieved context, queue, and prefix reuse | [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] |
+| Shared use is slow or unstable | Run a fixed concurrency ladder and compare p95 latency, throughput, errors, and saturation | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] |
 | Slow later tokens | Compare model size, quantization, offload, backend, and memory bandwidth | [[LLM/Study/Local LLM Quantization and GPU Offload Lab]] |
 | Streaming broken | Run non-streaming smoke and record unsupported or malformed streaming | [[LLM/Study/Local LLM First Streaming Timing Runner]] |
 | Output ignores roles | Verify tokenizer, chat template, EOS, and stop policy | [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]] |
@@ -526,6 +527,7 @@ Get-NetTCPConnection -State Listen |
 | First benchmark-row builder output | [[LLM/Study/Local LLM First Benchmark Row Builder]] |
 | Sampler, seed, stop, and cap controls | [[LLM/Study/Decoding and Sampling Controls Runner]] |
 | Context, history, RAG, tool, reserve, and margin budget | [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]] |
+| Concurrency ladder, saturation, and batch-throughput proof | [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]] |
 | Structured JSON, tool-call, result-injection, and denial proof | [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]] |
 | Python wrapper output | [[LLM/Study/Local LLM Client Harness Lab]] |
 | Timing and throughput row | [[LLM/Study/Local LLM Inference Benchmark Log]] |
@@ -569,6 +571,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Benchmark Row Builder]]
 - [[LLM/Study/Decoding and Sampling Controls Runner]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Runner]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]

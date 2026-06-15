@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** A local LLM server is not ready for shared use or batch work until concurrency, queueing, TTFT, TPOT, throughput, memory headroom, and failure behavior are measured under controlled load.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. Those notes prove a single request and its evidence schema. This lab proves what happens when more than one request is active.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]], [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]], [[LLM/Study/Local LLM Inference Benchmark Log|Local LLM Inference Benchmark Log]], and [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]]. Those notes prove a single request and its evidence schema. This lab proves what happens when more than one request is active. Use [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner|Local LLM Concurrency and Batch Throughput Runner]] when the ladder should be saved as repeatable JSON, CSV, Markdown, and JSONL artifacts.
 
 Use [[LLM/Study/Local LLM Serving Internals and Scheduler Lab|Local LLM Serving Internals and Scheduler Lab]] before tuning concurrency when the symptom may come from prefill, decode, slots, PagedAttention/KV-cache pressure, chunked prefill, preemption, queueing, or admission control. This lab measures the ladder; the scheduler lab explains which mechanism owns the result.
 
@@ -195,6 +195,7 @@ This lab is complete when:
 - [ ] concurrency ladder has at least C1, C2, and one higher setting or a named blocker
 - [ ] p50/p95 TTFT or equivalent latency evidence is recorded
 - [ ] throughput and success/error counts are recorded
+- [ ] runner output is saved when the claim needs repeatable JSON, CSV, Markdown, or JSONL evidence
 - [ ] peak memory or headroom is recorded
 - [ ] quality is checked under the selected concurrency setting
 - [ ] backpressure or queue behavior is explicit
@@ -208,6 +209,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]
+- [[LLM/Study/Local LLM Concurrency and Batch Throughput Runner]]
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide]]
