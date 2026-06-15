@@ -249,7 +249,7 @@ Copy this row into [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capston
 | Listener boundary | loopback / exposed / unclear |
 | Mechanism named | install/PATH / model artifact / route / prefill / decode / KV cache / quality |
 | Decision | keep / tune / replace runtime / replace model / stop |
-| Next proof | quality harness / client harness / model provenance / troubleshooting |
+| Next proof | first quality probe / first client harness runner / model provenance / troubleshooting |
 
 ## Failure Forks
 
@@ -296,6 +296,7 @@ Internal routes:
 - [[LLM/Study/Local LLM First Quality Probe Suite]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 

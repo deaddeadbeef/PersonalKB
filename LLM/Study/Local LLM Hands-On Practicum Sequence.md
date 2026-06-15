@@ -47,7 +47,7 @@ You do not need full paper mastery before the first local run. You do need enoug
 | 0 | Machine and boundary preflight | Readiness and preflight snapshot |
 | 1 | First loopback endpoint | Raw local response |
 | 2 | Model custody and compatibility | Provenance and compatibility cards |
-| 3 | Repeatable client call | Client harness row |
+| 3 | Repeatable client call | First client runner row, then client harness row |
 | 4 | Request controls | Sampler, context, and template rows |
 | 5 | Benchmark and first quality | Benchmark plus first quality or quality-harness decision |
 | 6 | Runtime comparison | Decision card with rejected alternative |
@@ -140,6 +140,7 @@ Pass signal: you can explain why this exact artifact should load in this exact r
 Route:
 
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 
 Save:
@@ -296,7 +297,7 @@ Save one capstone note or folder that links:
 | Runtime stack | Stack Anatomy Card |
 | Model custody | Provenance and artifact cards |
 | Compatibility | Runtime/model compatibility card |
-| API | Contract card and client harness row |
+| API | Contract card, first client runner row, and client harness row |
 | Request controls | Template, sampler, context, request lifecycle rows |
 | Measurement | Benchmark, metric, and quality rows |
 | Service | Observability, security, lifecycle, deployment rows |
@@ -356,6 +357,7 @@ Internal routes:
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/LLM Inference Request Lifecycle Lab]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]

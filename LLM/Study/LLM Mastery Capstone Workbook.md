@@ -54,6 +54,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Quantization and GPU offload | Decision card from [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] |  | Baseline quant, accepted quant, rejected quant, GPU offload, CPU/GPU split, KV-cache precision, memory headroom, benchmark row, and quality row are captured. | Not started |
 | Runtime comparison | Decision card from [[LLM/Study/Local LLM Runtime Comparison Lab|Local LLM Runtime Comparison Lab]] |  | At least two plausible runtimes are compared with fixed prompts, sampler settings, context target, output cap, benchmark rows, quality rows, and a rejected alternative. | Not started |
 | OpenAI-compatible API contract | Contract card from [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] |  | Base URL, route, served model id, non-streaming response, streaming decision, harmless failure, and required feature gaps are captured. | Not started |
+| First client harness runner | JSONL row from [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] |  | A reusable Python client script saves request, response, output, and structured run evidence for one local inference call. | Not started |
 | Decoding controls | Sweep from [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] |  | Baseline sampler settings, temperature/filter sweep, penalty test, stop/schema result, and runtime support gaps are captured. | Not started |
 | Reasoning budget | Effort sweep from [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] |  | Thinking mode, parser setting, effort levels, trace visibility, latency, quality delta, and trace policy are captured. | Not started |
 | Context/token budget | Budget row from [[LLM/Study/Local LLM Context Window and Token Budgeting Lab|Local LLM Context Window and Token Budgeting Lab]] |  | Runtime context limit, rendered prompt tokens, output reserve, RAG/tool/history tokens, safety margin, and truncation policy are captured. | Not started |
@@ -474,6 +475,7 @@ Next run:
 - [ ] Any containerized vLLM/SGLang/Open WebUI path has Docker GPU container proof before scheduler, UI, lifecycle, or deployment claims.
 - [ ] The runtime choice has a comparison decision card, or the skipped comparison is explicitly justified.
 - [ ] Any generic client integration has an OpenAI-compatible API contract card.
+- [ ] The first reusable client runner logs request, response, output, and JSONL evidence before broader client automation.
 - [ ] Sampler settings are frozen or intentionally varied with a decoding-controls note.
 - [ ] Any reasoning-capable local run has effort, parser, latency, quality, and trace-policy evidence.
 - [ ] Any shared, multi-client, or batch local serving claim has scheduler, KV-cache, concurrency, queue, saturation, and backpressure evidence.
@@ -534,6 +536,7 @@ Next run:
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab]]
 - [[LLM/Study/Local LLM Runtime Comparison Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]]
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]]

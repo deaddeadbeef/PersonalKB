@@ -12,7 +12,7 @@ last-verified: 2026-06-15
 
 Use this after [[LLM/Study/Local LLM First Response Debrief Card|Local LLM First Response Debrief Card]] has interpreted the first saved response. The debrief proves the local route answered and names the timing mechanism. This suite asks the next question: can the same local endpoint handle a few controlled quality probes without changing model, runtime, sampler, route, or evidence folder?
 
-Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after this when a real workload, model selection, quantization decision, RAG assistant, or deployment choice needs a scored acceptance gate. This note is smaller: it is the first quality bridge between smoke output and a formal harness.
+Use [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] when one of these prompts should be rerun through a reusable OpenAI-compatible client instead of a native Ollama route. Use [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] after this when a real workload, model selection, quantization decision, RAG assistant, or deployment choice needs a scored acceptance gate. This note is smaller: it is the first quality bridge between smoke output and a formal harness.
 
 ## What This Proves
 
@@ -258,6 +258,7 @@ Internal routes:
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide]]
 - [[LLM/Study/Decoding and Sampling Controls Lab]]
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab]]
+- [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM Troubleshooting Decision Tree]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]

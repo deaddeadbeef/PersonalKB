@@ -10,7 +10,7 @@ last-verified: 2026-06-14
 
 > **One-line summary** A local server is "OpenAI-compatible" only after you prove the base URL, model id, route, request fields, response shape, streaming behavior, errors, and unsupported features that your client actually depends on.
 
-Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] after the contract says whether `tools`, `tool_choice`, JSON/schema output, and tool-call response fields are dependable.
+Use this after [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] proves that a model endpoint answers at all. Use it before [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]] and [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] so the harness is testing a known API contract instead of guessing at a runtime's compatibility surface. Use [[LLM/Study/Decoding and Sampling Controls Lab|Decoding and Sampling Controls Lab]] to decide which sampler fields must be accepted, ignored, translated, or rejected for the workload. Use [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] after the contract says whether `tools`, `tool_choice`, JSON/schema output, and tool-call response fields are dependable.
 
 Use [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab|Local LLM Reasoning Budget and Test-Time Compute Lab]] when the client depends on thinking mode, `reasoning.effort`, `reasoning_effort`, separated reasoning fields, inline `<think>` tags, or trace visibility controls.
 
@@ -189,7 +189,7 @@ The failure row is part of the contract. A local server that only works on happy
 
 ## Client Handoff
 
-After the probes pass, hand these values to [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]]:
+After the probes pass, hand these values first to [[LLM/Study/Local LLM First Client Harness Runner|Local LLM First Client Harness Runner]], then to [[LLM/Study/Local LLM Client Harness Lab|Local LLM Client Harness Lab]] when the client needs streaming, retries, tool traces, or many prompt cases:
 
 | Harness field | Source in this lab |
 | --- | --- |
@@ -224,6 +224,7 @@ This lab is complete when you have:
 Internal evidence:
 
 - [[LLM/Study/Local LLM Serving Runbook]]
+- [[LLM/Study/Local LLM First Client Harness Runner]]
 - [[LLM/Study/Local LLM Client Harness Lab]]
 - [[LLM/Study/Local LLM Runtime and Model Compatibility Matrix]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
