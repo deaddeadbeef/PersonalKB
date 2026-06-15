@@ -10,7 +10,7 @@ last-verified: 2026-06-15
 
 > **One-line summary** This is the machine-specific readiness card for the first local LLM run: the workstation has an NVIDIA RTX 3080 Ti with 12 GB VRAM, but no local LLM runtime is installed yet and no endpoint is listening.
 
-Use this before [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next.
+Use this before [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] and [[LLM/Study/Local LLM Windows First-Run Quickstart|Local LLM Windows First-Run Quickstart]]. The quickstart says what to do in general. This snapshot says what is true on this machine right now, what the lowest unproven layer is, and what exact evidence should be produced next.
 
 ## Current State
 
@@ -39,6 +39,8 @@ Checked on 2026-06-15 from Windows PowerShell.
 The RTX 3080 Ti makes a 4B-9B quantized first run realistic. It does not make long context, 27B+ models, high concurrency, or RAG quality proven. Context length still creates KV-cache pressure, and model file size is not the full memory budget.
 
 ## First Execution Card
+
+Use [[LLM/Study/Local LLM First Endpoint Run Sheet|Local LLM First Endpoint Run Sheet]] when you are ready to execute these steps and save the evidence folder.
 
 Use one dated run folder:
 
@@ -102,6 +104,7 @@ This readiness snapshot is complete when:
 Internal routes:
 
 - [[LLM/Study/Local LLM Windows First-Run Quickstart]]
+- [[LLM/Study/Local LLM First Endpoint Run Sheet]]
 - [[LLM/Study/Local LLM Command Cookbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Environment Preflight Lab]]
