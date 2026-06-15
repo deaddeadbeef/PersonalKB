@@ -9,7 +9,7 @@ tier-coverage: [practice]
 
 > **One-line summary** Mastery becomes credible only when the conceptual, mechanism-to-inference, implementation, local inference, RAG, evaluation, adaptation, and deployment artifacts are linked in one evidence ledger.
 
-Use this with [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]. The roadmap defines the gates; this workbook collects the proof.
+Use this with [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] and [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]]. The roadmap defines the gates; the cadence turns them into weekly work; this workbook collects the proof.
 
 ## How to Use
 
@@ -20,6 +20,7 @@ Copy the blank ledger into a dated capstone note, or fill the proof links direct
 | Gate | Required artifact | Proof link/path | Pass signal | Status |
 |---|---|---|---|---|
 | Paper map | One-page map of the 20-paper fast path using [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] | [[LLM/Study/LLM 20-Paper Fast Path Synthesis Map|LLM 20-Paper Fast Path Synthesis Map]] | Can explain architecture, scaling, alignment, RAG, evaluation, and inference links without notes. | Study map drafted; oral proof not yet passed |
+| Study cadence | Weekly log from [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] |  | Each active week has recall answers, a mechanism bridge, one applied artifact, and a capstone link or repeat row. | Not started |
 | Mechanism-to-inference bridge | Translation row using [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | [[LLM/Study/LLM Mechanism-to-Inference Bridge Map|LLM Mechanism-to-Inference Bridge Map]] | Can name the mechanism, local control, evidence artifact, and next decision for at least one speed, memory, quality, compatibility, and RAG/tool failure. | Study map drafted; proof rows not yet filled |
 | Math and tensor shapes | Oral or written proof using [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] | Can trace token IDs, embeddings, hidden states, logits, probabilities, shifted targets, cross-entropy, attention shapes, weight memory, and KV-cache growth. | Study map drafted; oral proof not yet passed |
 | Metric interpretation | Metric card from [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] |  | Can classify loss, perplexity, benchmark, preference, calibration, quality, latency, and memory as different evidence types and name what each misses. | Not started |
@@ -412,6 +413,7 @@ Next run:
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab]]

@@ -48,6 +48,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 ## Study Materials
 - [[LLM/Study/LLM Study Index|LLM Study Index]] — Review drills, cheatsheet, 20-paper fast path
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] — Competency gates from field map to local inference and capstone
+- [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] — Weekly operating rhythm that pairs academic recall with applied LLM proof artifacts
 - [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]] — Evidence ledger for paper, implementation, inference, RAG, evaluation, adaptation, and deployment proof
 - [[LLM/Study/LLM Mastery Self-Assessment Exam|LLM Mastery Self-Assessment Exam]] — Oral and practical exam for academic mechanisms, paper literacy, local inference, RAG, evaluation, adaptation, and deployment
 - [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]] — Trace raw data through pretraining, SFT, preference optimization, adaptation, evaluation, and deployment gates

@@ -11,7 +11,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 ## How to Use This Roadmap
 
-Use this note as the operational definition of "I know LLMs" for this vault. Reading is necessary, but it is not enough. Each level has a knowledge gate, a build gate, and an evaluation gate.
+Use this note as the operational definition of "I know LLMs" for this vault. Reading is necessary, but it is not enough. Each level has a knowledge gate, a build gate, and an evaluation gate. Use [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] when you need the weekly operating rhythm for turning these gates into recall answers and capstone artifacts.
 
 Move in order:
 
@@ -299,6 +299,7 @@ Track the proof links and pass signals in [[LLM/Study/LLM Mastery Capstone Workb
 - [[LLM/Sources/Sources Index]]
 - [[LLM/LLM — Learning Path]]
 - [[LLM/Study/LLM Study Index]]
+- [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Self-Assessment Exam]]
 - [[LLM/Study/LLM Architecture Cheatsheet]]

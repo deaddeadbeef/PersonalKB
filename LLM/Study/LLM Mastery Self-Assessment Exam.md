@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** You know LLMs when you can explain the field, derive the core mechanisms, read papers skeptically, operate a local model, diagnose failures, and defend adaptation and deployment decisions without guessing.
 
-Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] and before filling the final proof rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The roadmap says what to learn. The capstone workbook stores evidence. This exam tests whether the knowledge is available without hand-holding.
+Use this after [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]] and before filling the final proof rows in [[LLM/Study/LLM Mastery Capstone Workbook|LLM Mastery Capstone Workbook]]. The roadmap says what to learn. [[LLM/Study/LLM Mastery Study Cadence|LLM Mastery Study Cadence]] turns the roadmap into weekly recall and proof work. The capstone workbook stores evidence. This exam tests whether the knowledge is available without hand-holding.
 
 This is not a trivia quiz. Prefer short, precise answers that connect mechanism, evidence, and operational consequence.
 
@@ -260,6 +260,7 @@ Do not mark the capstone complete until every proof link exists in [[LLM/Study/L
 - [[LLM/LLM — Learning Path]]
 - [[LLM/Study/LLM Study Index]]
 - [[LLM/Study/LLM Mastery Roadmap]]
+- [[LLM/Study/LLM Mastery Study Cadence]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Training Pipeline Map]]
 - [[LLM/Study/LLM Adaptation and Fine-Tuning Decision Guide]]
