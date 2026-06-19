@@ -66,7 +66,7 @@ Count: 79
 | LLM/Pre-2017 — Before Transformers/Language Modeling Objectives.md | 92 | *(To be populated as chunks are created)* |
 | LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability.md | 98 | *(To be populated as chunks are created)* |
 | LLM/Pre-2017 — Before Transformers/Perplexity and Intrinsic Metrics.md | 85 | *(To be populated as chunks are created)* |
-| LLM/Pre-2017 — Before Transformers/Pre-Transformer Foundations.md | 95 | *(To be populated as chunks are created)* |
+| LLM/Pre-2017 — Before Transformers/Pre-Transformer Foundations.md | 98 | *(To be populated as chunks are created)* |
 | LLM/Pre-2017 — Before Transformers/Tokenization.md | 94 | *(To be populated as chunks are created)* |
 | NES Emulation/_queries/QnA - Chunk Coverage Map.md | 14 | \| NES Hardware \| 4 \| TBD \| - \| |
 | NES Emulation/_queries/QnA - Chunk Coverage Map.md | 15 | \| CPU 6502 \| 5 \| TBD \| - \| |

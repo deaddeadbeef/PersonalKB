@@ -18,6 +18,8 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 Before transformers dominated NLP, the field progressed through a series of architectures—from simple count-based n-gram models to dense word embeddings and recurrent neural networks—each solving one limitation while introducing another, ultimately setting the stage for the attention-based revolution of 2017.
 
+For the neural-network-specific spine behind this transition, read [[Pre-LLM Neural Network Foundations]] first: it separates backpropagation, embeddings, recurrence, gating, encoder-decoder models, and attention into the ideas that survived into modern LLMs and the limitations transformers solved.
+
 ---
 
 ## ⚙️ Core Mechanics
@@ -56,6 +58,7 @@ Statistical language modeling began with **n-gram models**, which estimated the 
 - RNNs, LSTMs, and GRUs modeled sequence order directly, but sequential processing made them slow and hard to scale.
 - Bahdanau attention was a crucial precursor to transformer self-attention.
 - ELMo showed the power of contextualized embeddings and helped establish the pre-train/fine-tune workflow later used by BERT and GPT.
+- The pre-LLM neural-network lineage is best read as a set of reusable mechanisms, not as obsolete history: embeddings, logits, losses, attention, and sequence-state trade-offs still appear directly in local LLM inference diagnostics.
 
 ---
 
@@ -88,7 +91,7 @@ Every major idea in transformers—embeddings, attention, contextual representat
 ### Challenge
 1. Argue which pre-transformer invention contributed most directly to modern LLMs: dense embeddings, gated recurrence, encoder-decoder attention, or contextualized embeddings.
 
-*See also:* [[Pre-2017 — Before Transformers Overview]], [[LLM/Sources/Sources Index]]
+*See also:* [[Pre-2017 — Before Transformers Overview]], [[Pre-LLM Neural Network Foundations]], [[LLM/Sources/Sources Index]]
 
 ## Supporting Chunks / References
 ### Supporting Chunks

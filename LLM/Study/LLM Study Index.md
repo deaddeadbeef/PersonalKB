@@ -26,6 +26,7 @@ Study and review materials for the LLM knowledge base.
 - [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16|Local LLM First Benchmark Row Proof - 2026-06-16]]
 - [[LLM/Study/LLM Architecture Cheatsheet|LLM Architecture Cheatsheet]]
+- [[LLM/Pre-2017 — Before Transformers/Pre-LLM Neural Network Foundations|Pre-LLM Neural Network Foundations]]
 - [[LLM/Study/LLM Mastery Roadmap|LLM Mastery Roadmap]]
 - [[LLM/Study/LLM Concept Dependency Map|LLM Concept Dependency Map]]
 - [[LLM/Study/LLM Active Recall Question Bank|LLM Active Recall Question Bank]]
@@ -159,6 +160,7 @@ Study and review materials for the LLM knowledge base.
 ## Hands-On Labs
 
 - [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Primer]] — learn the shapes and formulas behind tokens, embeddings, logits, loss, attention, KV cache, and local inference metrics
+- [[LLM/Pre-2017 — Before Transformers/Pre-LLM Neural Network Foundations|Pre-LLM Neural Network Foundations]] — trace backpropagation, embeddings, recurrence, gating, encoder-decoder models, and attention into modern LLM and local inference mechanisms
 - [[LLM/Study/LLM Metrics and Evaluation Interpretation Guide|LLM Metrics and Evaluation Interpretation Guide]] — interpret loss, perplexity, benchmarks, preference scores, calibration, quality rubrics, latency, and memory as different evidence types
 - [[LLM/Study/Local LLM Evaluation Set Design Runner|Local LLM Evaluation Set Design Runner]] — audit prompt-suite workload fit, held-out/private coverage, contamination controls, expected behavior, rubric, and downstream routes before quality scoring
 - [[LLM/Study/Local LLM Judge Calibration Runner|Local LLM Judge Calibration Runner]] — check human agreement, AB/BA order stability, position bias, verbosity bias, and proof links before using LLM-as-judge scores as quality evidence

@@ -4105,3 +4105,32 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over audit reports found no hits for the benchmark proof note, benchmark run id, audit run id, builder output path, or audit output path.
+
+## [2026-06-20] curate | Enhance pre-LLM neural-network foundations
+
+Scope: deepen the pre-2017/pre-LLM neural-network section so the LLM chronology explains how backpropagation, distributed representations, recurrence, gating, encoder-decoder models, and attention feed into modern transformers and local inference concepts.
+
+Changed wiki/source files:
+- `.tasks/2026-06-20-llm-pre-llm-neural-network-foundations.md`
+- `LLM/LLM.md`
+- `LLM/Pre-2017 — Before Transformers/Pre-2017 — Before Transformers Overview.md`
+- `LLM/Pre-2017 — Before Transformers/Pre-LLM Neural Network Foundations.md`
+- `LLM/Pre-2017 — Before Transformers/Pre-Transformer Foundations.md`
+- `LLM/Study/LLM Study Index.md`
+- `_ops/reports/audit-placeholder-hits.md`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/Pre-2017 — Before Transformers/Pre-LLM Neural Network Foundations]] as the academic spine for pre-LLM neural networks, with external primary-paper references for backpropagation, Elman RNNs, LSTM, CNN document recognition, neural probabilistic language modeling, Word2Vec, GloVe, GRU/encoder-decoder, seq2seq, Bahdanau attention, and ELMo as a boundary case.
+- Routed the new note from the pre-2017 era hub, existing pre-transformer foundations note, LLM MOC, and LLM study index.
+- Added explicit bridges from pre-LLM mechanisms to modern local-inference objects: embeddings, logits, losses, KV cache, attention, sampler controls, and architecture/workload choices.
+- Kept dirty live-vault LLM operational notes and `LLM/LLM — Learning Path.md` untouched.
+
+Verification:
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json` with `missing_references` and `placeholder_hits` back at the prior baseline counts after fixing the new note's references section and placeholder wording.
+- Targeted `rg` over audit reports found no hits for `Pre-LLM Neural Network Foundations` in missing references, placeholder hits, broken links, missing up, missing confidence, stubs, or orphan reports.
+- `_ops/reports/audit-placeholder-hits.md` changed only because a pre-existing placeholder in `Pre-Transformer Foundations` moved from line 95 to line 98 after the route paragraph was added.

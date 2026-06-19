@@ -12,8 +12,8 @@ up: "[[Welcome]]"
 ## The Timeline
 
 ### [[Pre-2017 — Before Transformers Overview|Pre-2017 — Before Transformers]]
-N-grams, RNNs, word embeddings, and the foundations that made everything possible.
-*7 pages — Language modeling, tokenization, embeddings, optimization*
+N-grams, neural-network foundations, RNNs, word embeddings, and the foundations that made everything possible.
+*8 pages — Language modeling, neural-network lineage, tokenization, embeddings, optimization*
 
 ### [[2017 — The Transformer Overview|2017 — The Transformer]]
 "Attention Is All You Need" — one paper replaces recurrence and launches the modern era.
