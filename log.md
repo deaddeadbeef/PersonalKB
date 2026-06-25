@@ -4134,3 +4134,30 @@ Verification:
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json` with `missing_references` and `placeholder_hits` back at the prior baseline counts after fixing the new note's references section and placeholder wording.
 - Targeted `rg` over audit reports found no hits for `Pre-LLM Neural Network Foundations` in missing references, placeholder hits, broken links, missing up, missing confidence, stubs, or orphan reports.
 - `_ops/reports/audit-placeholder-hits.md` changed only because a pre-existing placeholder in `Pre-Transformer Foundations` moved from line 95 to line 98 after the route paragraph was added.
+
+## [2026-06-25] curate | Add complete LLM corpus index
+
+Scope: make the LLM corpus consumable by adding one generated Obsidian index page that links every Markdown note under `LLM/`, grouped by navigation layer and backed by a reusable refresh script.
+
+Changed wiki/source files:
+- `.tasks/2026-06-25-llm-complete-corpus-index.md`
+- `LLM/LLM Corpus Index.md`
+- `_ops/generate_llm_corpus_index.py`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added `_ops/generate_llm_corpus_index.py` to build a complete LLM corpus map from `LLM/**/*.md`.
+- Generated [[LLM/LLM Corpus Index]] with fast routes for the main chronology, learning path, study index, local hosting lab, command cookbook, end-to-end mental model, mechanism bridge, and sources.
+- Included every LLM Markdown note in the complete link map: wiki articles, study notes, runners, labs, source index, raw paper notes, chunk notes, queries, and templates.
+- Avoided editing dirty live-vault navigation files, including `LLM/LLM.md` and `LLM/Study/LLM Study Index.md`.
+
+Verification:
+- `python _ops\generate_llm_corpus_index.py`: generated `LLM/LLM Corpus Index.md`.
+- `python -m py_compile _ops\generate_llm_corpus_index.py`: passed; transient `__pycache__` removed before final audit.
+- Set comparison between `LLM/**/*.md` and wikilinks in the generated page returned expected `581`, seen LLM targets `581`, missing `0`, extra `0`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over audit reports found no hits for `LLM Corpus Index`, `llm-complete-corpus-index`, or `generate_llm_corpus_index`.
