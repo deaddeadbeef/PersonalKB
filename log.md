@@ -4190,3 +4190,43 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over audit reports found no hits for `LLM Book Reading Spine`, `llm-book-reading-spine`, or `generate_llm_corpus_index`.
+
+## [2026-06-25] curate | Add all-topic book reading spines
+
+Scope: make the non-LLM wiki topics readable like a shelf of coherent books by adding one root reading guide and one generated book spine per committed top-level topic folder.
+
+Changed wiki/source files:
+- `.tasks/2026-06-25-all-topic-reading-spines.md`
+- `PersonalKB Book Reading Guide.md`
+- `CS Algorithms/CS Algorithms Book Reading Spine.md`
+- `CS Data Structures/CS Data Structures Book Reading Spine.md`
+- `CS Operating Systems/CS Operating Systems Book Reading Spine.md`
+- `Japanese/Japanese Book Reading Spine.md`
+- `NES Emulation/NES Emulation Book Reading Spine.md`
+- `Programming Languages/Programming Languages Book Reading Spine.md`
+- `Project Hail Mary/Project Hail Mary Book Reading Spine.md`
+- `Recipes/Recipes Book Reading Spine.md`
+- `SpaceX/SpaceX Book Reading Spine.md`
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[PersonalKB Book Reading Guide]] as the root shelf for all book-style topic spines.
+- Added generated reading spines for CS Algorithms, CS Data Structures, CS Operating Systems, Japanese, NES Emulation, Programming Languages, Project Hail Mary, Recipes, and SpaceX.
+- Added `_ops/generate_topic_reading_spines.py` so these spines can be regenerated with the same curated chapter maps.
+- Covered 705 reader-facing non-LLM topic articles while intentionally excluding raw, chunk, template, query, audio, and operations folders.
+- Used an encoded Markdown internal link for the `C# — Language Profile` filename edge case to avoid adding a broken `#` wikilink.
+- Left live dirty LLM files and other dirty Obsidian article edits untouched.
+
+Verification:
+- `python _ops\generate_topic_reading_spines.py`: generated nine topic spines plus `PersonalKB Book Reading Guide.md`.
+- Current-script compile check using Python `compile(...)`: passed without creating bytecode.
+- Generated-page link check: 10 pages, 747 links checked, 0 missing targets.
+- Per-topic coverage check: 9 topics, 705 expected reader-facing articles, 705 linked, 0 missing.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json` with 3133 Markdown files and 964 candidate articles.
+- Targeted `rg` over audit reports found no hits for `PersonalKB Book Reading Guide`, `Book Reading Spine`, `generate_topic_reading_spines`, or `all-topic-reading-spines`.
+- No `.pyc` files remained after verification.
