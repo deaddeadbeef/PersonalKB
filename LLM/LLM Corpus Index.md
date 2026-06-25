@@ -16,6 +16,7 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 ## Fast Routes
 
 - **Start here:** [[LLM/LLM|LLM]] — Chronological MOC and era overview.
+- **Book mode:** [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] — Curated narrative reading order.
 - **Learning path:** [[LLM/LLM — Learning Path|LLM — Learning Path]] — Guided study sequence.
 - **Complete corpus:** [[LLM/LLM Corpus Index|LLM Corpus Index]] — This all-links map.
 - **Study index:** [[LLM/Study/LLM Study Index|LLM Study Index]] — Study notes, runners, labs, and drills.
@@ -28,13 +29,13 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 
 ## Corpus Counts
 
-- Total linked Markdown notes under `LLM/`: **581**
+- Total linked Markdown notes under `LLM/`: **582**
 - Scope includes wiki articles, study notes, runners, labs, source indexes, raw paper notes, chunk evidence, queries, and templates.
 - Protected source layers are linked for navigation only; this index does not rewrite `_raw`, `_chunks`, or `_templates`.
 
 | Section | Linked notes |
 |---|---:|
-| Root Navigation | 3 |
+| Root Navigation | 4 |
 | Pre-2017 — Before Transformers | 9 |
 | 2017 — The Transformer | 6 |
 | 2018–2019 — Pretrained Language Models | 10 |
@@ -53,15 +54,17 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 
 ## How To Use This Index
 
-1. Use [[LLM/LLM|Large Language Models — A Chronicle]] when you want the story by era.
-2. Use [[LLM/Study/LLM Study Index|LLM Study Index]] when you want labs, runners, drills, and local hosting proof artifacts.
-3. Use this page when search fails, when a note is buried, or when you need to verify that a page exists somewhere in the corpus.
-4. Treat `_raw`, `_chunks`, and `_queries` as evidence layers, not the normal reading path.
+1. Use [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] when you want the corpus to read like a book.
+2. Use [[LLM/LLM|Large Language Models — A Chronicle]] when you want the story by era.
+3. Use [[LLM/Study/LLM Study Index|LLM Study Index]] when you want labs, runners, drills, and local hosting proof artifacts.
+4. Use this page when search fails, when a note is buried, or when you need to verify that a page exists somewhere in the corpus.
+5. Treat `_raw`, `_chunks`, and `_queries` as evidence layers, not the normal reading path.
 
 ## Complete Link Map
 
 ### Root Navigation
 
+- [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]]
 - [[LLM/LLM Corpus Index|LLM Corpus Index]]
 - [[LLM/LLM — Learning Path|LLM — Learning Path]]
 - [[LLM/LLM|LLM]]

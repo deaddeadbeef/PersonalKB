@@ -31,6 +31,7 @@ ORDER = [
 
 FAST_ROUTES = [
     ("Start here", "LLM/LLM", "Chronological MOC and era overview."),
+    ("Book mode", "LLM/LLM Book Reading Spine", "Curated narrative reading order."),
     ("Learning path", "LLM/LLM — Learning Path", "Guided study sequence."),
     ("Complete corpus", "LLM/LLM Corpus Index", "This all-links map."),
     ("Study index", "LLM/Study/LLM Study Index", "Study notes, runners, labs, and drills."),
@@ -136,10 +137,11 @@ def build() -> str:
             "",
             "## How To Use This Index",
             "",
-            "1. Use [[LLM/LLM|Large Language Models — A Chronicle]] when you want the story by era.",
-            "2. Use [[LLM/Study/LLM Study Index|LLM Study Index]] when you want labs, runners, drills, and local hosting proof artifacts.",
-            "3. Use this page when search fails, when a note is buried, or when you need to verify that a page exists somewhere in the corpus.",
-            "4. Treat `_raw`, `_chunks`, and `_queries` as evidence layers, not the normal reading path.",
+            "1. Use [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] when you want the corpus to read like a book.",
+            "2. Use [[LLM/LLM|Large Language Models — A Chronicle]] when you want the story by era.",
+            "3. Use [[LLM/Study/LLM Study Index|LLM Study Index]] when you want labs, runners, drills, and local hosting proof artifacts.",
+            "4. Use this page when search fails, when a note is buried, or when you need to verify that a page exists somewhere in the corpus.",
+            "5. Treat `_raw`, `_chunks`, and `_queries` as evidence layers, not the normal reading path.",
             "",
             "## Complete Link Map",
             "",

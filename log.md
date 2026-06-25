@@ -4161,3 +4161,32 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
 - Targeted `rg` over audit reports found no hits for `LLM Corpus Index`, `llm-complete-corpus-index`, or `generate_llm_corpus_index`.
+
+## [2026-06-25] curate | Add LLM book reading spine
+
+Scope: make the LLM wiki readable like a coherent book by adding a curated narrative reading spine that separates first-pass article reading from labs, runners, raw notes, chunks, and the complete corpus index.
+
+Changed wiki/source files:
+- `.tasks/2026-06-25-llm-book-reading-spine.md`
+- `LLM/LLM Book Reading Spine.md`
+- `LLM/LLM Corpus Index.md`
+- `_ops/generate_llm_corpus_index.py`
+- `_ops/reports/audit-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[LLM/LLM Book Reading Spine]] with a prologue, eight historical books, a local LLM practicum book, a defense/papers book, reader checkpoints, and appendices.
+- Added `Book mode` to the generated corpus index fast routes.
+- Regenerated [[LLM/LLM Corpus Index]] so the complete map includes the book spine and reports 582 linked LLM Markdown notes.
+- Avoided editing dirty live-vault navigation files, including `LLM/LLM.md`, `LLM/LLM — Learning Path.md`, and `LLM/Study/LLM Study Index.md`.
+
+Verification:
+- `python _ops\generate_llm_corpus_index.py`: regenerated `LLM/LLM Corpus Index.md`.
+- `python -m py_compile _ops\generate_llm_corpus_index.py`: passed; transient `__pycache__` removed before final audit.
+- Link check over `LLM/LLM Book Reading Spine.md`: 145 wikilinks, 0 missing targets.
+- Set comparison between `LLM/**/*.md` and wikilinks in the generated corpus index returned expected `582`, seen LLM targets `582`, missing `0`, extra `0`.
+- `git diff --check`: clean.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json`.
+- Targeted `rg` over audit reports found no hits for `LLM Book Reading Spine`, `llm-book-reading-spine`, or `generate_llm_corpus_index`.
