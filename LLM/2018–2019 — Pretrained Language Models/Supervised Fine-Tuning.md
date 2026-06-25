@@ -122,7 +122,7 @@ SFT became the standard bridge between pretrained base models and useful downstr
 - [[Domain Adaptation]] — Combining continued pretraining with SFT
 - [[Continual Fine-Tuning and Catastrophic Forgetting]] — Challenges of sequential SFT
 
-See [[LLM Sources Index]] for papers on:
+See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers on:
 - InstructGPT (Ouyang et al. 2022) — RLHF pipeline starting with SFT
 - FLAN papers (Wei et al. 2021, Chung et al. 2022) — Instruction tuning methodology
 - Alpaca (Taori et al. 2023) — Low-cost SFT demonstration

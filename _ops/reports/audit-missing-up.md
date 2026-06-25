@@ -1,6 +1,6 @@
 # Missing up Frontmatter
 
-Count: 29
+Count: 28
 
 - [[CS Operating Systems/CS Operating Systems — Learning Path|CS Operating Systems — Learning Path]] (`CS Operating Systems/CS Operating Systems — Learning Path.md`)
 - [[LLM/Architecture Variants/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] (`LLM/Architecture Variants/Efficient Attention and Long-Context Variants.md`)
@@ -9,7 +9,6 @@ Count: 29
 - [[NES Emulation/NES Emulation|NES Emulation]] (`NES Emulation/NES Emulation.md`)
 - [[Programming Languages/Programming Languages — Learning Path|Programming Languages — Learning Path]] (`Programming Languages/Programming Languages — Learning Path.md`)
 - [[Programming Languages/Programming Languages|Programming Languages — Design Philosophies]] (`Programming Languages/Programming Languages.md`)
-- [[Project Hail Mary/_phm_phase11_completion_state|PHM Phase 11 Completion State]] (`Project Hail Mary/_phm_phase11_completion_state.md`)
 - [[Project Hail Mary/Adaptation/Novel vs Film Adaptation|Novel vs Film Adaptation]] (`Project Hail Mary/Adaptation/Novel vs Film Adaptation.md`)
 - [[Project Hail Mary/Adaptation/Rocky on Screen|Rocky on Screen]] (`Project Hail Mary/Adaptation/Rocky on Screen.md`)
 - [[Project Hail Mary/Adaptation/Science Exposition on Screen|Science Exposition on Screen]] (`Project Hail Mary/Adaptation/Science Exposition on Screen.md`)

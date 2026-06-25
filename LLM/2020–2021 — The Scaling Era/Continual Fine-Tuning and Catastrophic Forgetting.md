@@ -161,7 +161,7 @@ Catastrophic forgetting became one of the central reasons continual learning is 
 - [[Domain Adaptation]] — Balancing specialization and generalization
 - [[Knowledge Distillation]] — Teacher-student preservation methods
 
-See [[LLM Sources Index]] for papers:
+See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Kirkpatrick et al. 2017: Elastic Weight Consolidation (EWC)
 - Zenke et al. 2017: Synaptic Intelligence
 - Rusu et al. 2016: Progressive Neural Networks

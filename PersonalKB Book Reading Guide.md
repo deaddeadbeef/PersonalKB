@@ -34,12 +34,14 @@ This is the front door for reading the vault as a shelf of books instead of a pi
 ## Back-Of-Book Tools
 
 - [[index|PersonalKB Index]] — generated exhaustive vault index.
+- [[PersonalKB Wiki Quality Dashboard]] — current reader-facing quality verdict and next cleanup order.
 - [[log|PersonalKB Maintenance Log]] — maintenance history.
 - [[LLM/LLM Corpus Index|LLM Corpus Index]] — complete LLM corpus map.
 
 ## References
 
 - [[index|PersonalKB Index]]
+- [[PersonalKB Wiki Quality Dashboard]]
 - [[log|PersonalKB Maintenance Log]]
 
-Generated: 2026-06-25T21:21:36
+Generated: 2026-06-25T21:34:40

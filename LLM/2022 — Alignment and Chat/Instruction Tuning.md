@@ -145,7 +145,7 @@ Design a small instruction-tuning dataset for a domain assistant. List at least 
 
 ### References
 
-See [[LLM Sources Index]] for papers:
+See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Wei et al. 2021: FLAN original paper
 - Chung et al. 2022: Scaling instruction tuning (FLAN-PaLM)
 - Wang et al. 2022: Self-Instruct methodology

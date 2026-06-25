@@ -4230,3 +4230,51 @@ Verification:
 - `python _ops\personal_kb.py audit`: regenerated `_ops/reports/audit-summary.json` with 3133 Markdown files and 964 candidate articles.
 - Targeted `rg` over audit reports found no hits for `PersonalKB Book Reading Guide`, `Book Reading Spine`, `generate_topic_reading_spines`, or `all-topic-reading-spines`.
 - No `.pyc` files remained after verification.
+
+## [2026-06-25] lint | Add reader-facing wiki quality dashboard
+
+Scope: answer whether the wiki corpus is good enough by separating reader-facing wiki health from raw, chunk, template, query, and operations-layer audit noise.
+
+Changed wiki/source files:
+- `.tasks/2026-06-25-wiki-quality-housekeeping.md`
+- `PersonalKB Book Reading Guide.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md`
+- `LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning.md`
+- `LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting.md`
+- `LLM/2020–2021 — The Scaling Era/Few-Shot Prompting.md`
+- `LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms.md`
+- `LLM/2020–2021 — The Scaling Era/LoRA and QLoRA.md`
+- `LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning.md`
+- `LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting.md`
+- `LLM/2022 — Alignment and Chat/Instruction Tuning.md`
+- `LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md`
+- `LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md`
+- `LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md`
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `_ops/reports/audit-broken-links.md`
+- `_ops/reports/audit-missing-confidence.md`
+- `_ops/reports/audit-missing-references.md`
+- `_ops/reports/audit-missing-up.md`
+- `_ops/reports/audit-orphans.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-broken-links.md`
+- `_ops/reports/wiki-placeholder-hits.md`
+- `_ops/reports/wiki-quality-summary.json`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added [[PersonalKB Wiki Quality Dashboard]] with a direct verdict: readable with the new book spines, but not yet good enough as a polished wiki.
+- Added reader-facing audit metrics and reports so templates, chunks, queries, and generated dashboard examples do not distort normal reading quality.
+- Linked the dashboard from [[PersonalKB Book Reading Guide]].
+- Fixed 13 reader-facing `LLM Sources Index` links by routing them to [[LLM/Sources/Sources Index|LLM Sources Index]].
+- Excluded underscore-prefixed operational notes from reader-facing article counts.
+
+Verification:
+- `python _ops\generate_topic_reading_spines.py`: regenerated `PersonalKB Book Reading Guide.md` with the quality dashboard route.
+- `python _ops\personal_kb.py audit`: regenerated full and reader-facing reports.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- Latest reader-facing quality counts: 963 candidate articles, 374 broken links, 58 placeholder hits, 249 missing references, 247 missing confidence, 28 missing up, 20 stubs, 1 empty note, 0 orphans.
+- The `LLM Sources Index` cleanup reduced reader-facing broken links by 13, from 387 to 374.

@@ -131,7 +131,7 @@ Domain adaptation turned general LLMs into more useful expert tools for code, me
 
 ---
 
-*See also:* [[2018–2019 — Pretrained Language Models Overview]], [[Continued Pretraining vs Fine-Tuning]], [[Catastrophic Forgetting]], [[Retrieval-Augmented Generation (RAG)]], [[Code Models and Code Understanding]], [[Medical and Scientific LLMs]], [[LLM Sources Index]]
+*See also:* [[2018–2019 — Pretrained Language Models Overview]], [[Continued Pretraining vs Fine-Tuning]], [[Catastrophic Forgetting]], [[Retrieval-Augmented Generation (RAG)]], [[Code Models and Code Understanding]], [[Medical and Scientific LLMs]], [[LLM/Sources/Sources Index|LLM Sources Index]]
 
 ## Supporting Chunks / References
 ### Supporting Chunks
@@ -142,7 +142,7 @@ Domain adaptation turned general LLMs into more useful expert tools for code, me
 - [[Medical and Scientific LLMs]] — Healthcare/science domain specifics
 
 ### References
-See [[LLM Sources Index]] for papers:
+See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Rozière et al. 2023: Code Llama
 - Guo et al. 2024: DeepSeek-Coder
 - Li et al. 2023: StarCoder

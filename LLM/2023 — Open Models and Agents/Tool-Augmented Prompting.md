@@ -119,7 +119,7 @@ Design a tool-augmented prompt setup for an assistant that must answer policy qu
 
 ### References
 
-- [[LLM Sources Index]]
+- [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Schick et al. (2023) - "Toolformer: Language Models Can Teach Themselves to Use Tools"
 - Yao et al. (2022) - "ReAct: Synergizing Reasoning and Acting in Language Models"
 - Qin et al. (2023) - "Tool Learning with Foundation Models"

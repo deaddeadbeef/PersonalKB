@@ -102,7 +102,7 @@ CoT changed prompting practice across the field by showing that latent reasoning
 
 ## References
 
-→ [[LLM Sources Index]]
+→ [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Wei et al. (2022) - "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
 - Kojima et al. (2022) - "Large Language Models are Zero-Shot Reasoners"
 - Wang et al. (2022) - "Self-Consistency Improves Chain of Thought Reasoning"

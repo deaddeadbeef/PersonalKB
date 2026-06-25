@@ -1,11 +1,10 @@
 # Broken Wiki Links
 
-Count: 939
+Count: 925
 
 | file | target | embedded |
 | --- | --- | --- |
 | AGENTS.md | Page Name | False |
-| index.md | Programming Languages/Language Profiles/C | False |
 | CS Algorithms/Backtracking/Backtracking Overview.md | CS Algorithms Index | False |
 | CS Algorithms/Backtracking/Backtracking Overview.md | Dynamic Programming Overview | False |
 | CS Algorithms/Backtracking/Backtracking Overview.md | Recursion and Call Stack | False |
@@ -558,54 +557,43 @@ Count: 939
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Retrieval-Augmented Generation (RAG) | False |
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Code Models and Code Understanding | False |
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Medical and Scientific LLMs | False |
-| LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | LLM Sources Index | False |
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Continued Pretraining vs Fine-Tuning | False |
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Catastrophic Forgetting | False |
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Retrieval-Augmented Generation (RAG) | False |
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Code Models and Code Understanding | False |
 | LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | Medical and Scientific LLMs | False |
-| LLM/2018–2019 — Pretrained Language Models/Domain Adaptation.md | LLM Sources Index | False |
-| LLM/2018–2019 — Pretrained Language Models/Supervised Fine-Tuning.md | LLM Sources Index | False |
 | LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting.md | Multi-Task Learning | False |
 | LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting.md | Knowledge Distillation | False |
 | LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting.md | Multi-Task Learning | False |
 | LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting.md | Knowledge Distillation | False |
-| LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting.md | LLM Sources Index | False |
 | LLM/2020–2021 — The Scaling Era/Few-Shot Prompting.md | Example Selection for ICL | False |
 | LLM/2020–2021 — The Scaling Era/Few-Shot Prompting.md | Prompt Sensitivity and Calibration | False |
 | LLM/2020–2021 — The Scaling Era/Few-Shot Prompting.md | ICL Scaling Laws | False |
-| LLM/2020–2021 — The Scaling Era/Few-Shot Prompting.md | LLM Sources Index | False |
 | LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms.md | ICL Scaling Laws | False |
 | LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms.md | Induction Heads | False |
 | LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms.md | Meta-Learning vs ICL | False |
 | LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms.md | Task Vectors | False |
 | LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms.md | ICL Theoretical Models | False |
-| LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms.md | LLM Sources Index | False |
 | LLM/2020–2021 — The Scaling Era/LoRA and QLoRA.md | Quantization Techniques | False |
 | LLM/2020–2021 — The Scaling Era/LoRA and QLoRA.md | Multi-Adapter Serving | False |
-| LLM/2020–2021 — The Scaling Era/LoRA and QLoRA.md | LLM Sources Index | False |
 | LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning.md | Adapter Architectures | False |
 | LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning.md | Multi-Adapter Serving | False |
 | LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning.md | Adapter Architectures | False |
 | LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning.md | Multi-Adapter Serving | False |
-| LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning.md | LLM Sources Index | False |
 | LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting.md | Self-Consistency Decoding | False |
 | LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting.md | Tree-of-Thought Reasoning | False |
 | LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting.md | Program-of-Thought | False |
 | LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting.md | Reasoning Faithfulness | False |
 | LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting.md | Zero-Shot Prompting | False |
-| LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting.md | LLM Sources Index | False |
 | LLM/2022 — Alignment and Chat/Instruction Tuning.md | Self-Instruct and Data Generation | False |
 | LLM/2022 — Alignment and Chat/Instruction Tuning.md | Zero-Shot and Few-Shot Learning | False |
 | LLM/2022 — Alignment and Chat/Instruction Tuning.md | RLHF (Reinforcement Learning from Human Feedback) | False |
-| LLM/2022 — Alignment and Chat/Instruction Tuning.md | LLM Sources Index | False |
 | LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md | Prompt Injection Attacks | False |
 | LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md | Instruction Hierarchy | False |
 | LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md | Role Prompting | False |
 | LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md | Multi-Turn Context Management | False |
 | LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md | Prompt Security | False |
 | LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md | System Prompt Patterns | False |
-| LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning.md | LLM Sources Index | False |
 | LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md | JSON Schema Specification | False |
 | LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md | Grammar-Constrained Decoding | False |
 | LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md | Function Calling Conventions | False |
@@ -613,7 +601,6 @@ Count: 939
 | LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md | Outlines Library | False |
 | LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md | Guidance Library | False |
 | LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md | Parsing LLM Outputs | False |
-| LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation.md | LLM Sources Index | False |
 | LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md | ReAct Pattern | False |
 | LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md | Tool Selection Strategies | False |
 | LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md | Retrieval-Augmented Generation | False |
@@ -621,7 +608,6 @@ Count: 939
 | LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md | Error Handling in Tool Use | False |
 | LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md | Calculator Problem | False |
 | LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md | Toolformer | False |
-| LLM/2023 — Open Models and Agents/Tool-Augmented Prompting.md | LLM Sources Index | False |
 | LLM/2026 — Reasoning and Agents/Agentic Coding Systems.md | chunk-llm-251 Claude Code operates as terminal agent with direct filesystem shell access and multi-file editing | False |
 | LLM/2026 — Reasoning and Agents/Agentic Coding Systems.md | chunk-llm-252 GitHub Copilot coding agent enables asynchronous PR-based task delegation with CI integration | False |
 | LLM/2026 — Reasoning and Agents/Agentic Coding Systems.md | chunk-llm-253 Agentic coding shifts developer role from writing code to reviewing and directing autonomous agents | False |
@@ -838,7 +824,7 @@ Count: 939
 | Programming Languages/Study/Review Drill - Compilation and Metaprogramming.md | Macro Systems | False |
 | Programming Languages/Study/Review Drill - Concurrency and Error Handling.md | Async-Await Patterns | False |
 | Programming Languages/Study/Review Drill - Type Systems and Inference.md | Gradual Typing | False |
-| Programming Languages/_chunks/chunk-pl-121 CSharp Evolution from Java Clone to Innovation Leader.md | C | False |
+| Programming Languages/_chunks/chunk-pl-121 CSharp Evolution from Java Clone to Innovation Leader.md | C# Language Profile | False |
 | Programming Languages/_chunks/chunk-pl-127 Package Registry Design and Supply Chain Security.md | Dependency Management | False |
 | Programming Languages/_chunks/chunk-pl-151 Monads Demystified From Haskell to Everywhere.md | Haskell – Language Profile | False |
 | Programming Languages/_chunks/chunk-pl-152 OCaml The Pragmatic ML.md | OCaml – Language Profile | False |

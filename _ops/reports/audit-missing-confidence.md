@@ -1,6 +1,6 @@
 # Missing confidence Frontmatter
 
-Count: 248
+Count: 247
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -175,7 +175,6 @@ Count: 248
 - [[Programming Languages/Type Systems/Static vs Dynamic Typing|Static vs Dynamic Typing]] (`Programming Languages/Type Systems/Static vs Dynamic Typing.md`)
 - [[Programming Languages/Type Systems/Type Inference and Hindley-Milner|Type Inference and Hindley-Milner]] (`Programming Languages/Type Systems/Type Inference and Hindley-Milner.md`)
 - [[Programming Languages/Type Systems/Type Systems Overview|Type Systems Overview]] (`Programming Languages/Type Systems/Type Systems Overview.md`)
-- [[Project Hail Mary/_phm_phase11_completion_state|PHM Phase 11 Completion State]] (`Project Hail Mary/_phm_phase11_completion_state.md`)
 - [[Project Hail Mary/Adaptation/Novel vs Film Adaptation|Novel vs Film Adaptation]] (`Project Hail Mary/Adaptation/Novel vs Film Adaptation.md`)
 - [[Project Hail Mary/Adaptation/Rocky on Screen|Rocky on Screen]] (`Project Hail Mary/Adaptation/Rocky on Screen.md`)
 - [[Project Hail Mary/Adaptation/Science Exposition on Screen|Science Exposition on Screen]] (`Project Hail Mary/Adaptation/Science Exposition on Screen.md`)

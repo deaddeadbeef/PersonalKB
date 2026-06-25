@@ -118,7 +118,7 @@ Design a structured-output interface for an LLM-powered support bot that must re
 
 ### References
 
-- [[LLM Sources Index]]
+- [[LLM/Sources/Sources Index|LLM Sources Index]]
 - OpenAI Structured Outputs documentation
 - Willard & Louf (2023) - "Efficient Guided Generation for Large Language Models"
 - Beurer-Kellner et al. (2023) - "Guiding Large Language Models via Directional Stimulus Prompting"

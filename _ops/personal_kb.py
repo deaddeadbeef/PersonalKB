@@ -30,6 +30,8 @@ NON_WIKI_PARTS = {
     "_audio",
 }
 ROOT_NON_ARTICLES = {"AGENTS.md", "index.md", "log.md", "Untitled.base"}
+WIKI_QUALITY_DASHBOARD = "PersonalKB Wiki Quality Dashboard.md"
+ROOT_NON_ARTICLES.add(WIKI_QUALITY_DASHBOARD)
 PLACEHOLDER_RE = re.compile(
     r"\b(TBD|TODO|FIXME)\b|"
     r"Pending chunk extraction|"
@@ -79,15 +81,21 @@ def content_markdown_files() -> list[Path]:
     return [
         path
         for path in markdown_files()
-        if set(path.relative_to(ROOT).parts).isdisjoint(EXCLUDED_CONTENT_PARTS)
+        if path.name != WIKI_QUALITY_DASHBOARD
+        and set(path.relative_to(ROOT).parts).isdisjoint(EXCLUDED_CONTENT_PARTS)
     ]
 
 
 def is_wiki_article(path: Path) -> bool:
     if path.name in ROOT_NON_ARTICLES:
         return False
-    parts = set(path.relative_to(ROOT).parts)
-    return path.suffix.lower() == ".md" and parts.isdisjoint(NON_WIKI_PARTS)
+    rel_parts = path.relative_to(ROOT).parts
+    parts = set(rel_parts)
+    return (
+        path.suffix.lower() == ".md"
+        and parts.isdisjoint(NON_WIKI_PARTS)
+        and not any(part.startswith("_") for part in rel_parts)
+    )
 
 
 def strip_frontmatter(text: str) -> str:
@@ -159,7 +167,7 @@ def word_count(text: str) -> int:
 def wikilink_targets(text: str) -> Iterable[tuple[str, bool]]:
     for match in WIKILINK_RE.finditer(text):
         raw = match.group(2)
-        target = raw.split("|", 1)[0].split("#", 1)[0].strip()
+        target = raw.split("|", 1)[0].strip()
         if target:
             yield target, bool(match.group(1))
 
@@ -168,6 +176,8 @@ def build_link_index(files: list[Path]) -> tuple[set[str], set[str], dict[str, P
     note_keys: set[str] = set()
     file_keys: set[str] = set()
     note_key_to_path: dict[str, Path] = {}
+    note_keys.add(Path(WIKI_QUALITY_DASHBOARD).stem.lower())
+    note_keys.add(Path(WIKI_QUALITY_DASHBOARD).with_suffix("").as_posix().lower())
     for path in files:
         file_keys.add(path.name.lower())
         if path.suffix.lower() != ".md":
@@ -187,6 +197,12 @@ def resolve_wikilink(target: str, note_keys: set[str], file_keys: set[str]) -> b
         return True
     if Path(normalized).name in note_keys:
         return True
+    if "#" in normalized:
+        anchorless = normalized.split("#", 1)[0].strip()
+        if anchorless in note_keys:
+            return True
+        if Path(anchorless).name in note_keys:
+            return True
     suffix = Path(target).suffix.lower()
     if suffix:
         if file_keys.__contains__(Path(target).name.lower()):
@@ -219,7 +235,8 @@ def audit() -> dict[str, object]:
     files = all_files()
     md_files = markdown_files()
     content_md_files = content_markdown_files()
-    articles = load_notes(path for path in md_files if is_wiki_article(path))
+    article_paths = [path for path in md_files if is_wiki_article(path)]
+    articles = load_notes(article_paths)
     note_keys, file_keys, note_key_to_path = build_link_index(files)
 
     by_extension = Counter(path.suffix.lower() or "(none)" for path in files)
@@ -238,6 +255,12 @@ def audit() -> dict[str, object]:
         for line_no, line in enumerate(note.text.splitlines(), start=1):
             if PLACEHOLDER_RE.search(line):
                 placeholder_hits.append({"file": note.rel, "line": line_no, "text": line.strip()})
+
+    reader_placeholder_hits = []
+    for note in articles:
+        for line_no, line in enumerate(note.text.splitlines(), start=1):
+            if PLACEHOLDER_RE.search(line):
+                reader_placeholder_hits.append({"file": note.rel, "line": line_no, "text": line.strip()})
 
     heavy_audio_embed_pages = []
     for note in load_notes(content_md_files):
@@ -259,6 +282,12 @@ def audit() -> dict[str, object]:
             full_key = target.replace("\\", "/").lower()
             inbound[full_key] += 1
 
+    reader_broken_links = []
+    for note in articles:
+        for target, embedded in wikilink_targets(note.text):
+            if not resolve_wikilink(target, note_keys, file_keys):
+                reader_broken_links.append({"file": note.rel, "target": target, "embedded": embedded})
+
     orphans = []
     for note in articles:
         base = note.path.stem.lower()
@@ -279,12 +308,15 @@ def audit() -> dict[str, object]:
         "missing_confidence": len(missing_confidence),
         "missing_references": len(missing_references),
         "placeholder_hits": len(placeholder_hits),
+        "reader_placeholder_hits": len(reader_placeholder_hits),
         "heavy_audio_embed_pages": len(heavy_audio_embed_pages),
         "broken_link_occurrences": len(broken_links),
+        "reader_broken_link_occurrences": len(reader_broken_links),
         "orphan_articles": len(orphans),
     }
 
     write_json(REPORT_DIR / "audit-summary.json", summary)
+    write_json(REPORT_DIR / "wiki-quality-summary.json", summary)
     write_note_list(REPORT_DIR / "audit-empty-notes.md", "Empty Notes", empty_notes)
     write_note_list(REPORT_DIR / "audit-stubs.md", "Stubs Under 1500 Bytes", stubs)
     write_note_list(REPORT_DIR / "audit-missing-up.md", "Missing up Frontmatter", missing_up)
@@ -292,15 +324,155 @@ def audit() -> dict[str, object]:
     write_note_list(REPORT_DIR / "audit-missing-references.md", "Missing References Section", missing_references)
     write_rows(REPORT_DIR / "audit-placeholder-hits.md", "Placeholder Hits", placeholder_hits, ["file", "line", "text"])
     write_rows(
+        REPORT_DIR / "wiki-placeholder-hits.md",
+        "Reader-Facing Placeholder Hits",
+        reader_placeholder_hits,
+        ["file", "line", "text"],
+    )
+    write_rows(
         REPORT_DIR / "audit-heavy-audio-embed-pages.md",
         "Heavy Audio Embed Pages",
         heavy_audio_embed_pages,
         ["file", "audio_embeds", "limit"],
     )
     write_rows(REPORT_DIR / "audit-broken-links.md", "Broken Wiki Links", broken_links, ["file", "target", "embedded"])
+    write_rows(
+        REPORT_DIR / "wiki-broken-links.md",
+        "Reader-Facing Broken Wiki Links",
+        reader_broken_links,
+        ["file", "target", "embedded"],
+    )
     write_note_list(REPORT_DIR / "audit-orphans.md", "Orphan Articles", orphans)
+    write_wiki_quality_dashboard(
+        summary=summary,
+        missing_up=missing_up,
+        missing_confidence=missing_confidence,
+        missing_references=missing_references,
+        reader_placeholder_hits=reader_placeholder_hits,
+        reader_broken_links=reader_broken_links,
+        stubs=stubs,
+        orphans=orphans,
+    )
 
     return summary
+
+
+def wiki_quality_verdict(summary: dict[str, object]) -> str:
+    reader_broken = int(summary["reader_broken_link_occurrences"])
+    reader_placeholders = int(summary["reader_placeholder_hits"])
+    missing_refs = int(summary["missing_references"])
+    missing_confidence = int(summary["missing_confidence"])
+    if reader_broken == 0 and reader_placeholders == 0 and missing_refs == 0 and missing_confidence == 0:
+        return "Ready as a clean reference wiki."
+    if reader_broken == 0 and reader_placeholders == 0:
+        return "Good enough for guided reading, but not yet clean enough to call finished."
+    return "Readable with the new book spines, but not yet good enough as a polished wiki."
+
+
+def report_link(path: str, label: str) -> str:
+    return f"[{label}](<{path}>)"
+
+
+def write_wiki_quality_dashboard(
+    *,
+    summary: dict[str, object],
+    missing_up: list[Note],
+    missing_confidence: list[Note],
+    missing_references: list[Note],
+    reader_placeholder_hits: list[dict[str, object]],
+    reader_broken_links: list[dict[str, object]],
+    stubs: list[Note],
+    orphans: list[Note],
+) -> None:
+    verdict = wiki_quality_verdict(summary)
+    lines = [
+        "---",
+        "type: generated-quality-dashboard",
+        "tags: [vault-index, quality, audit, navigation]",
+        'up: "[[PersonalKB Book Reading Guide]]"',
+        "confidence: verified",
+        "tier-coverage: [core, practice]",
+        "---",
+        "# PersonalKB Wiki Quality Dashboard",
+        "",
+        "## Verdict",
+        "",
+        verdict,
+        "",
+        "The wiki is now navigable as a reading shelf because every committed top-level topic has a book-style spine. It is not yet clean as a finished reference set because reader-facing pages still have unresolved links, placeholder lines, and incomplete provenance metadata.",
+        "",
+        "## Reader-Facing Wiki Health",
+        "",
+        "| Check | Count | Meaning |",
+        "| --- | ---: | --- |",
+        f"| Candidate reader-facing articles | {summary['candidate_articles']} | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |",
+        f"| Broken links in reader-facing articles | {summary['reader_broken_link_occurrences']} | Navigation defects that affect normal reading |",
+        f"| Placeholder lines in reader-facing articles | {summary['reader_placeholder_hits']} | Draft markers visible to readers |",
+        f"| Missing references sections | {summary['missing_references']} | Pages that still need a source/provenance footer |",
+        f"| Missing confidence frontmatter | {summary['missing_confidence']} | Pages without confidence classification |",
+        f"| Missing up frontmatter | {summary['missing_up']} | Pages without explicit parent navigation |",
+        f"| Stubs under 1500 bytes | {summary['stubs_under_1500_bytes']} | Thin pages that may not carry their topic yet |",
+        f"| Empty notes | {summary['empty_notes']} | Notes with no body text |",
+        f"| Orphan articles | {summary['orphan_articles']} | Reader-facing pages with no inbound wikilinks |",
+        "",
+        "## Maintenance-Layer Noise",
+        "",
+        "These counts are still useful, but they include chunks, templates, queries, schema examples, and operational notes. Do not use them alone to judge reading quality.",
+        "",
+        "| Check | Count |",
+        "| --- | ---: |",
+        f"| All broken wikilink occurrences | {summary['broken_link_occurrences']} |",
+        f"| All placeholder hits | {summary['placeholder_hits']} |",
+        f"| Heavy audio embed pages | {summary['heavy_audio_embed_pages']} |",
+        "",
+        "## Next Housekeeping Order",
+        "",
+        "1. Fix reader-facing broken links first; they interrupt reading and graph traversal.",
+        "2. Remove visible placeholder lines from reader-facing LLM and SpaceX pages.",
+        "3. Add references sections and confidence frontmatter to high-traffic book-spine targets.",
+        "4. Only then spend time on chunk/query/template noise.",
+        "",
+        "## Top Reader-Facing Broken Links",
+        "",
+    ]
+    if reader_broken_links:
+        for row in reader_broken_links[:25]:
+            lines.append(f"- `{row['file']}` -> `{row['target']}`")
+    else:
+        lines.append("- None.")
+
+    lines.extend(["", "## Top Reader-Facing Placeholder Hits", ""])
+    if reader_placeholder_hits:
+        for row in reader_placeholder_hits[:25]:
+            lines.append(f"- `{row['file']}:{row['line']}` -> {row['text']}")
+    else:
+        lines.append("- None.")
+
+    lines.extend(
+        [
+            "",
+            "## Report Files",
+            "",
+            f"- {report_link('_ops/reports/wiki-quality-summary.json', 'Reader-facing quality summary JSON')}",
+            f"- {report_link('_ops/reports/wiki-broken-links.md', 'Reader-facing broken links')}",
+            f"- {report_link('_ops/reports/wiki-placeholder-hits.md', 'Reader-facing placeholder hits')}",
+            f"- {report_link('_ops/reports/audit-summary.json', 'Full audit summary JSON')}",
+            f"- {report_link('_ops/reports/audit-broken-links.md', 'Full broken-link report')}",
+            f"- {report_link('_ops/reports/audit-placeholder-hits.md', 'Full placeholder report')}",
+            "",
+            "## References",
+            "",
+            "- [[PersonalKB Book Reading Guide]]",
+            "- [[index|PersonalKB Index]]",
+            "- [[log|PersonalKB Maintenance Log]]",
+            f"- {report_link('_ops/reports/wiki-quality-summary.json', 'Generated wiki quality summary')}",
+            f"- {report_link('_ops/reports/audit-summary.json', 'Generated full audit summary')}",
+            "",
+            f"Generated: {summary['generated_at']}",
+            "",
+        ]
+    )
+    (ROOT / WIKI_QUALITY_DASHBOARD).write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
 def write_json(path: Path, data: object) -> None:

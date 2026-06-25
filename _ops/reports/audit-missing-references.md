@@ -1,6 +1,6 @@
 # Missing References Section
 
-Count: 250
+Count: 249
 
 - [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] (`CS Algorithms/Analysis/Foundations and Analysis Overview.md`)
 - [[CS Algorithms/Backtracking/Backtracking Overview — Domain|Backtracking Overview — Domain]] (`CS Algorithms/Backtracking/Backtracking Overview — Domain.md`)
@@ -179,7 +179,6 @@ Count: 250
 - [[Programming Languages/Programming Paradigms/Logic and Constraint Programming|Logic and Constraint Programming]] (`Programming Languages/Programming Paradigms/Logic and Constraint Programming.md`)
 - [[Programming Languages/Programming Paradigms/Object-Oriented Programming Philosophies|Object-Oriented Programming Philosophies]] (`Programming Languages/Programming Paradigms/Object-Oriented Programming Philosophies.md`)
 - [[Programming Languages/Programming Paradigms/Prototype vs Class-Based OOP|Prototype vs Class-Based OOP]] (`Programming Languages/Programming Paradigms/Prototype vs Class-Based OOP.md`)
-- [[Project Hail Mary/_phm_phase11_completion_state|PHM Phase 11 Completion State]] (`Project Hail Mary/_phm_phase11_completion_state.md`)
 - [[Project Hail Mary/Project Hail Mary — Learning Path|Project Hail Mary — Learning Path]] (`Project Hail Mary/Project Hail Mary — Learning Path.md`)
 - [[Project Hail Mary/Project Hail Mary|Project Hail Mary]] (`Project Hail Mary/Project Hail Mary.md`)
 - [[Project Hail Mary/Sources/Sources Index|Sources Index]] (`Project Hail Mary/Sources/Sources Index.md`)

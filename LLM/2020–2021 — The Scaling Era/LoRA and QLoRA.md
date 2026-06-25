@@ -136,7 +136,7 @@ LoRA is the default PEFT method because it matches full fine-tuning quality on m
 - [[Supervised Fine-Tuning]] — Full fine-tuning baseline
 
 ### References to Sources Index
-See [[LLM Sources Index]] for papers:
+See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Hu et al. 2021: LoRA original paper
 - Dettmers et al. 2023: QLoRA (4-bit quantization + LoRA)
 - Dettmers et al. 2022: 8-bit optimizers and quantization

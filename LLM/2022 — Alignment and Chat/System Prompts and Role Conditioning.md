@@ -120,7 +120,7 @@ Design a secure system-prompt strategy for an LLM application that reads externa
 
 ### References
 
-→ [[LLM Sources Index]]
+→ [[LLM/Sources/Sources Index|LLM Sources Index]]
 - OpenAI Chat Completions API documentation
 - Perez & Ribeiro (2022) - "Ignore Previous Prompt: Attack Techniques For Language Models"
 - Greshake et al. (2023) - "Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications"

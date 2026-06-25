@@ -91,7 +91,7 @@ Few-shot prompting was one of the defining ideas of the scaling era. It helped e
 - [[Prompt Sensitivity and Calibration]]
 - [[ICL Scaling Laws]]
 
-→ [[LLM Sources Index]]
+→ [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Brown et al. (2020) - "Language Models are Few-Shot Learners" (GPT-3)
 - Liu et al. (2021) - "What Makes Good In-Context Examples for GPT-3?"
 - Lu et al. (2022) - "Fantastically Ordered Prompts"

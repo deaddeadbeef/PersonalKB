@@ -120,7 +120,7 @@ PEFT changed fine-tuning from an expensive, cluster-heavy workflow into somethin
 - [[Multi-Adapter Serving]] — Deploying many PEFT adapters efficiently
 
 ### References to Sources Index
-See [[LLM Sources Index]] for papers:
+See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Houlsby et al. 2019: Adapter modules
 - Li & Liang 2021: Prefix tuning
 - Lester et al. 2021: Prompt tuning

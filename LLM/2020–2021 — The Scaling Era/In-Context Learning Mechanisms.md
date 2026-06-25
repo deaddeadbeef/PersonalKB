@@ -97,7 +97,7 @@ ICL became one of the defining discoveries of large-scale language modeling. It 
 - [[Task Vectors]]
 - [[ICL Theoretical Models]]
 
-→ [[LLM Sources Index]]
+→ [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Brown et al. (2020) - "Language Models are Few-Shot Learners"
 - Olsson et al. (2022) - "In-context Learning and Induction Heads"
 - Xie et al. (2021) - "An Explanation of In-context Learning as Implicit Bayesian Inference"
