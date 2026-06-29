@@ -99,6 +99,28 @@ This era established the basic template that still governs the field: transforme
 *See also:*
 
 ## Supporting Chunks / References
-*(To be populated as chunks are created)*
+### Supporting Chunks
+- [[LLM/_chunks/chunk-llm-001 Scaled Dot-Product Attention Formula|Scaled dot-product attention formula]]
+- [[LLM/_chunks/chunk-llm-002 Multi-Head Attention Parallel Projections|Multi-head attention parallel projections]]
+- [[LLM/_chunks/chunk-llm-003 Positional Encoding for Permutation-Invariant Attention|Positional encoding for permutation-invariant attention]]
+- [[LLM/_chunks/chunk-llm-004 Residual Connections and Layer Normalization|Residual connections and layer normalization]]
+- [[LLM/_chunks/chunk-llm-005 In-Context Learning Emerges at Scale|In-context learning emerges at scale]]
+- [[LLM/_chunks/chunk-llm-006 Power-Law Scaling of Task Performance|Power-law scaling of task performance]]
+- [[LLM/_chunks/chunk-llm-008 GPT-3 Training Data Composition|GPT-3 training data composition]]
+- [[LLM/_chunks/chunk-llm-009 Masked Language Modeling Strategy|Masked language modeling strategy]]
+- [[LLM/_chunks/chunk-llm-011 Next Sentence Prediction Shown Unnecessary|Next Sentence Prediction shown unnecessary]]
+- [[LLM/_chunks/chunk-llm-012 Bidirectional Context Produces Richer Representations|Bidirectional context produces richer representations]]
+- [[LLM/_chunks/chunk-llm-045 T5 Text-to-Text Task Framing|T5 text-to-text task framing]]
+- [[LLM/_chunks/chunk-llm-121 GPT-1 Pre-Train Fine-Tune Paradigm|GPT-1 pre-train/fine-tune paradigm]]
+- [[LLM/_chunks/chunk-llm-125 GPT-2 Zero-Shot Task Transfer|GPT-2 zero-shot task transfer]]
+- [[LLM/_chunks/chunk-llm-127 GPT-2 Scaling from 117M to 1.5B|GPT-2 scaling from 117M to 1.5B]]
 
+### References
+- [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
+- [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
+- [[LLM/_raw/raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers|raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers]]
+- [[LLM/_raw/raw-llm-004 Scaling Laws for Neural Language Models|raw-llm-004 Scaling Laws for Neural Language Models]]
+- [[LLM/_raw/raw-llm-012 T5 Unified Text-to-Text Transformer|raw-llm-012 T5 Unified Text-to-Text Transformer]]
+- [[LLM/_raw/raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training|raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training]]
+- [[LLM/_raw/raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners|raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners]]
 - [[LLM/Sources/Sources Index]]
