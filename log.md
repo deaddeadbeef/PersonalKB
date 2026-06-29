@@ -6,6 +6,27 @@ tags: [vault-log, generated]
 
 Append-only record of ingest, query, lint, and refinement operations.
 
+## [2026-06-29] query | LLM Wiki and second brain strategy
+
+Scope: source-check Karpathy's LLM Wiki pattern and Second Brain/PARA framing, then map both to the current PersonalKB vault without modifying raw sources, chunks, or existing LLM wiki articles.
+
+Changed files:
+- `.tasks/2026-06-29-llm-wiki-second-brain.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/llm-wiki-second-brain-strategy.md`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance notes:
+- Added a sourced strategy report that distinguishes LLM Wiki from ordinary RAG and maps the pattern to PersonalKB's raw, wiki, schema, index, log, and audit layers.
+- Recommended stabilizing navigation/provenance first, then using the LLM domain as the flagship compounding Second Brain domain.
+- Deferred source ingestion and article rewrites to a later, narrower pass.
+
+Verification:
+- `python _ops\personal_kb.py audit`: exited 0; latest reader-facing counts remained 963 candidate articles, 374 broken links, 58 placeholder hits, 249 missing references, and 247 missing confidence fields.
+- `git diff --check`: exited 0.
+
 ## [2026-04-27] setup | LLM wiki operating loop
 
 Scope: initialized agent schema, audit tooling, generated index, and maintenance log.
