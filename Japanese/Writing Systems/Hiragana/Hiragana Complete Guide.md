@@ -48,13 +48,13 @@ Hiragana (ひらがな ![[hira-001-hiragana.mp3]]) is the foundation of Japanese
 
 ### Vowels (5)
 
-| Kana | Romaji | Sound |
-|------|--------|-------|
-| あ ![[hira-002-a.mp3]] | a | "ah" as in father |
-| い ![[hira-003-i.mp3]] | i | "ee" as in feet |
-| う ![[hira-004-u.mp3]] | u | "oo" as in food (less rounded) |
-| え ![[hira-005-e.mp3]] | e | "eh" as in pet |
-| お ![[hira-006-o.mp3]] | o | "oh" as in go |
+| Kana                  | Romaji | Sound                          |
+| --------------------- | ------ | ------------------------------ |
+| あ ![[hira-002-a.mp3]] | a      | "ah" as in father              |
+| い ![[hira-003-i.mp3]] | i      | "ee" as in feet                |
+| う ![[hira-004-u.mp3]] | u      | "oo" as in food (less rounded) |
+| え ![[hira-005-e.mp3]] | e      | "eh" as in pet                 |
+| お ![[hira-006-o.mp3]] | o      | "oh" as in go                  |
 
 
 ### K-row

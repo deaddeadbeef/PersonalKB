@@ -26,13 +26,13 @@ flowchart TD
 
 ## At a Store
 
-| Japanese    | English                    | Audio                                            |
-| ----------- | -------------------------- | ------------------------------------------------ |
+| Japanese    | English                    | Audio                                     |
+| ----------- | -------------------------- | ----------------------------------------- |
 | いらっしゃいませ    | Welcome! (staff says this) | ![[daily-001-irasshaimase.mp3]]           |
 | これをください     | This one, please           | ![[daily-002-kore-wo-kudasai.mp3]]        |
 | いくらですか      | How much?                  | ![[daily-003-ikura-desu-ka.mp3]]          |
 | カードでおねがいします | Card, please               | ![[daily-004-kaado-de-onegaishimasu.mp3]] |
-| 大丈夫です       | No, I'm fine               | ![[gap-080-phrase.mp3]] |
+| 大丈夫です       | No, I'm fine               | ![[gap-080-phrase.mp3]]                   |
 
 
 ## At a Restaurant
