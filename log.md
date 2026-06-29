@@ -27,6 +27,26 @@ Verification:
 - `python _ops\personal_kb.py audit`: exited 0; latest reader-facing counts remained 963 candidate articles, 374 broken links, 58 placeholder hits, 249 missing references, and 247 missing confidence fields.
 - `git diff --check`: exited 0.
 
+## [2026-06-29] refine | Port reviewed Japanese table formatting
+
+Scope: port the safe Japanese Markdown table-formatting changes from the dirty local `master` checkout onto a clean branch from `origin/main`.
+
+Changed files:
+- `Japanese/Speaking/Conversation Patterns/Conversation Patterns — Daily Interactions.md`
+- `Japanese/Writing Systems/Hiragana/Hiragana Complete Guide.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Review notes:
+- Ported only alignment-only table edits.
+- Did not port the `Culture Overview` Keigo link change because its target was an empty root-level note and would create a bad navigation path.
+
+Verification:
+- `python _ops\personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-04-27] setup | LLM wiki operating loop
 
 Scope: initialized agent schema, audit tooling, generated index, and maintenance log.
