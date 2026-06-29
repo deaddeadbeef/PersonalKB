@@ -6,6 +6,36 @@ tags: [vault-log, generated]
 
 Append-only record of ingest, query, lint, and refinement operations.
 
+## [2026-06-29] refine | Wire LLM placeholder articles to evidence
+
+Scope: continue the Karpathy-style LLM wiki pass by replacing the first ten LLM placeholder support sections with existing chunk, raw-source, and explicit evidence-gap links.
+
+Changed files:
+- `LLM/2017 — The Transformer/Attention Mechanism.md`
+- `LLM/2017 — The Transformer/Encoder-Decoder Models.md`
+- `LLM/2017 — The Transformer/Positional Encoding.md`
+- `LLM/2017 — The Transformer/Transformer Architecture.md`
+- `LLM/2017 — The Transformer/Transformer Breakthrough and Scaling Era.md`
+- `LLM/2018–2019 — Pretrained Language Models/BERT and Encoder Lineage.md`
+- `LLM/2018–2019 — Pretrained Language Models/Data Curation and Deduplication.md`
+- `LLM/2018–2019 — Pretrained Language Models/Decoder-Only Models.md`
+- `LLM/2018–2019 — Pretrained Language Models/Encoder-Only Models.md`
+- `LLM/2018–2019 — Pretrained Language Models/GPT and Decoder-Only Lineage.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `_ops/reports/audit-placeholder-hits.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-placeholder-hits.md`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance notes:
+- Replaced generated empty support markers with path-qualified links to existing LLM chunks and raw source captures.
+- Kept the article bodies intact and limited the pass to provenance, references, related-note grouping, and evidence-gap markers.
+- Marked missing coverage explicitly for UL2, YaRN, current data-corpus notes, modern embedding-model lineages, and frontier-model freshness.
+
+Verification:
+- `python _ops\personal_kb.py audit`: exited 0; latest reader-facing counts are 963 candidate articles, 374 broken links, 48 placeholder hits, 249 missing references, and 247 missing confidence fields.
+
 ## [2026-06-29] query | LLM Wiki and second brain strategy
 
 Scope: source-check Karpathy's LLM Wiki pattern and Second Brain/PARA framing, then map both to the current PersonalKB vault without modifying raw sources, chunks, or existing LLM wiki articles.

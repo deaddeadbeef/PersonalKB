@@ -1,19 +1,9 @@
 # Reader-Facing Placeholder Hits
 
-Count: 58
+Count: 48
 
 | file | line | text |
 | --- | --- | --- |
-| LLM/2017 — The Transformer/Attention Mechanism.md | 93 | *(To be populated as chunks are created)* |
-| LLM/2017 — The Transformer/Encoder-Decoder Models.md | 78 | *(To be populated as chunks are created)* |
-| LLM/2017 — The Transformer/Positional Encoding.md | 94 | *(To be populated as chunks are created)* |
-| LLM/2017 — The Transformer/Transformer Architecture.md | 104 | *(To be populated as chunks are created)* |
-| LLM/2017 — The Transformer/Transformer Breakthrough and Scaling Era.md | 102 | *(To be populated as chunks are created)* |
-| LLM/2018–2019 — Pretrained Language Models/BERT and Encoder Lineage.md | 92 | *(To be populated as chunks are created)* |
-| LLM/2018–2019 — Pretrained Language Models/Data Curation and Deduplication.md | 98 | *(To be populated as chunks are created)* |
-| LLM/2018–2019 — Pretrained Language Models/Decoder-Only Models.md | 85 | *(To be populated as chunks are created)* |
-| LLM/2018–2019 — Pretrained Language Models/Encoder-Only Models.md | 91 | *(To be populated as chunks are created)* |
-| LLM/2018–2019 — Pretrained Language Models/GPT and Decoder-Only Lineage.md | 98 | *(To be populated as chunks are created)* |
 | LLM/2018–2019 — Pretrained Language Models/Knowledge and Reasoning Benchmarks.md | 98 | *(To be populated as chunks are created)* |
 | LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage.md | 105 | *(To be populated as chunks are created)* |
 | LLM/2020–2021 — The Scaling Era/Mixture-of-Experts Models.md | 89 | *(To be populated as chunks are created)* |

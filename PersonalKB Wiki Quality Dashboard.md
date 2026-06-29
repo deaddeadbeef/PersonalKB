@@ -19,7 +19,7 @@ The wiki is now navigable as a reading shelf because every committed top-level t
 | --- | ---: | --- |
 | Candidate reader-facing articles | 963 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
 | Broken links in reader-facing articles | 374 | Navigation defects that affect normal reading |
-| Placeholder lines in reader-facing articles | 58 | Draft markers visible to readers |
+| Placeholder lines in reader-facing articles | 48 | Draft markers visible to readers |
 | Missing references sections | 249 | Pages that still need a source/provenance footer |
 | Missing confidence frontmatter | 247 | Pages without confidence classification |
 | Missing up frontmatter | 28 | Pages without explicit parent navigation |
@@ -34,7 +34,7 @@ These counts are still useful, but they include chunks, templates, queries, sche
 | Check | Count |
 | --- | ---: |
 | All broken wikilink occurrences | 925 |
-| All placeholder hits | 79 |
+| All placeholder hits | 69 |
 | Heavy audio embed pages | 0 |
 
 ## Next Housekeeping Order
@@ -74,16 +74,6 @@ These counts are still useful, but they include chunks, templates, queries, sche
 
 ## Top Reader-Facing Placeholder Hits
 
-- `LLM/2017 — The Transformer/Attention Mechanism.md:93` -> *(To be populated as chunks are created)*
-- `LLM/2017 — The Transformer/Encoder-Decoder Models.md:78` -> *(To be populated as chunks are created)*
-- `LLM/2017 — The Transformer/Positional Encoding.md:94` -> *(To be populated as chunks are created)*
-- `LLM/2017 — The Transformer/Transformer Architecture.md:104` -> *(To be populated as chunks are created)*
-- `LLM/2017 — The Transformer/Transformer Breakthrough and Scaling Era.md:102` -> *(To be populated as chunks are created)*
-- `LLM/2018–2019 — Pretrained Language Models/BERT and Encoder Lineage.md:92` -> *(To be populated as chunks are created)*
-- `LLM/2018–2019 — Pretrained Language Models/Data Curation and Deduplication.md:98` -> *(To be populated as chunks are created)*
-- `LLM/2018–2019 — Pretrained Language Models/Decoder-Only Models.md:85` -> *(To be populated as chunks are created)*
-- `LLM/2018–2019 — Pretrained Language Models/Encoder-Only Models.md:91` -> *(To be populated as chunks are created)*
-- `LLM/2018–2019 — Pretrained Language Models/GPT and Decoder-Only Lineage.md:98` -> *(To be populated as chunks are created)*
 - `LLM/2018–2019 — Pretrained Language Models/Knowledge and Reasoning Benchmarks.md:98` -> *(To be populated as chunks are created)*
 - `LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage.md:105` -> *(To be populated as chunks are created)*
 - `LLM/2020–2021 — The Scaling Era/Mixture-of-Experts Models.md:89` -> *(To be populated as chunks are created)*
@@ -99,6 +89,16 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - `LLM/2022 — Alignment and Chat/Mechanistic Interpretability.md:121` -> *(To be populated as chunks are created)*
 - `LLM/2022 — Alignment and Chat/Red-Teaming and Safety Evaluations.md:123` -> *(To be populated as chunks are created)*
 - `LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback.md:129` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Chunking Strategies.md:98` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Embeddings and Vector Databases.md:109` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Frontier Labs and Open vs Closed Models.md:101` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Function Calling.md:99` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Hybrid Search.md:95` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/LLM-as-Judge.md:100` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Multimodal Tokenization and Fusion.md:109` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Open-Weight Model Ecosystem.md:118` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/Planning and Task Decomposition.md:109` -> *(To be populated as chunks are created)*
+- `LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes.md:115` -> *(To be populated as chunks are created)*
 
 ## Report Files
 
@@ -117,4 +117,4 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - [Generated wiki quality summary](<_ops/reports/wiki-quality-summary.json>)
 - [Generated full audit summary](<_ops/reports/audit-summary.json>)
 
-Generated: 2026-06-29T21:56:50
+Generated: 2026-06-29T22:05:35

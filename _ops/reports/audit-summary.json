@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T21:56:50",
-  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\port-llm-troubleshooting-tree",
+  "generated_at": "2026-06-29T22:05:35",
+  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\llm-placeholder-provenance-pass",
   "files_total": 5013,
   "by_extension": {
     "(none)": 2,
@@ -19,8 +19,8 @@
   "missing_up": 28,
   "missing_confidence": 247,
   "missing_references": 249,
-  "placeholder_hits": 79,
-  "reader_placeholder_hits": 58,
+  "placeholder_hits": 69,
+  "reader_placeholder_hits": 48,
   "heavy_audio_embed_pages": 0,
   "broken_link_occurrences": 925,
   "reader_broken_link_occurrences": 374,

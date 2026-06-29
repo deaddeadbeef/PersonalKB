@@ -95,6 +95,27 @@ The GPT lineage established decoder-only transformers as the winning architectur
 *See also:* —
 
 ## Supporting Chunks / References
-*(To be populated as chunks are created)*
+### Supporting Chunks
+- [[LLM/_chunks/chunk-llm-005 In-Context Learning Emerges at Scale|In-context learning emerges at scale]]
+- [[LLM/_chunks/chunk-llm-006 Power-Law Scaling of Task Performance|Power-law scaling of task performance]]
+- [[LLM/_chunks/chunk-llm-007 Few-Shot Prompting Outperforms Zero-Shot|Few-shot prompting outperforms zero-shot]]
+- [[LLM/_chunks/chunk-llm-008 GPT-3 Training Data Composition|GPT-3 training data composition]]
+- [[LLM/_chunks/chunk-llm-021 RLHF Three-Stage Pipeline|RLHF three-stage pipeline]]
+- [[LLM/_chunks/chunk-llm-022 Alignment Matters More Than Scale for Usefulness|Alignment matters more than scale for usefulness]]
+- [[LLM/_chunks/chunk-llm-069 GPT-4 Multimodal Input|GPT-4 multimodal input]]
+- [[LLM/_chunks/chunk-llm-070 GPT-4 Reasoning Benchmark Performance|GPT-4 reasoning benchmark performance]]
+- [[LLM/_chunks/chunk-llm-071 GPT-4 Closed Research Shift|GPT-4 closed research shift]]
+- [[LLM/_chunks/chunk-llm-121 GPT-1 Pre-Train Fine-Tune Paradigm|GPT-1 pre-train/fine-tune paradigm]]
+- [[LLM/_chunks/chunk-llm-122 GPT-1 12-Layer Decoder Architecture|GPT-1 12-layer decoder architecture]]
+- [[LLM/_chunks/chunk-llm-125 GPT-2 Zero-Shot Task Transfer|GPT-2 zero-shot task transfer]]
+- [[LLM/_chunks/chunk-llm-126 WebText Dataset Curation|WebText dataset curation]]
+- [[LLM/_chunks/chunk-llm-127 GPT-2 Scaling from 117M to 1.5B|GPT-2 scaling from 117M to 1.5B]]
+- [[LLM/_chunks/chunk-llm-128 GPT-2 Staged Release for Safety|GPT-2 staged release for safety]]
 
+### References
+- [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
+- [[LLM/_raw/raw-llm-006 InstructGPT Training with Human Feedback|raw-llm-006 InstructGPT Training with Human Feedback]]
+- [[LLM/_raw/raw-llm-018 GPT-4 Technical Report|raw-llm-018 GPT-4 Technical Report]]
+- [[LLM/_raw/raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training|raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training]]
+- [[LLM/_raw/raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners|raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners]]
 - [[LLM/Sources/Sources Index]]

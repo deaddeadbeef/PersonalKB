@@ -101,6 +101,18 @@ The transformer made large-scale modern AI training feasible because, unlike RNN
 *See also:* [[LLM/Architecture Variants/Decoder-Only Models|Decoder-Only Models]] — the dominant variant in modern LLMs; [[LLM/Architecture Variants/State Space Models and Mamba|Mamba]] — the leading non-transformer alternative
 
 ## Supporting Chunks / References
-*(To be populated as chunks are created)*
+### Supporting Chunks
+- [[LLM/_chunks/chunk-llm-001 Scaled Dot-Product Attention Formula|Scaled dot-product attention formula]]
+- [[LLM/_chunks/chunk-llm-002 Multi-Head Attention Parallel Projections|Multi-head attention parallel projections]]
+- [[LLM/_chunks/chunk-llm-003 Positional Encoding for Permutation-Invariant Attention|Positional encoding for permutation-invariant attention]]
+- [[LLM/_chunks/chunk-llm-004 Residual Connections and Layer Normalization|Residual connections and layer normalization]]
+- [[LLM/_chunks/chunk-llm-035 LLaMA Architecture Choices Became Standard|LLaMA architecture choices became standard]]
+- [[LLM/_chunks/chunk-llm-161 LayerNorm Normalizes Across Features Not Batch|LayerNorm normalizes across features]]
+- [[LLM/_chunks/chunk-llm-163 Pre-LN vs Post-LN Placement Affects Training Stability|Pre-LN vs post-LN placement]]
+- [[LLM/_chunks/chunk-llm-164 LayerNorm Is a Core Transformer Building Block|LayerNorm as a core transformer building block]]
 
+### References
+- [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
+- [[LLM/_raw/raw-llm-009 LLaMA Open Foundation Language Models|raw-llm-009 LLaMA Open Foundation Language Models]]
+- [[LLM/_raw/raw-llm-041 Layer Normalization|raw-llm-041 Layer Normalization]]
 - [[LLM/Sources/Sources Index]]

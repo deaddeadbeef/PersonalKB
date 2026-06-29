@@ -95,7 +95,20 @@ This pipeline—crawl, filter, deduplicate, then mix—became the standard recip
 
 ## Supporting Chunks / References
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- [[LLM/_chunks/chunk-llm-008 GPT-3 Training Data Composition|GPT-3 training data composition]]
+- [[LLM/_chunks/chunk-llm-047 T5 Scale and Data Quality Matter Most|T5 scale and data quality findings]]
+- [[LLM/_chunks/chunk-llm-126 WebText Dataset Curation|WebText dataset curation]]
+- [[LLM/_chunks/chunk-llm-173 The Pile Combines 22 Diverse Sources Into 825 GiB|The Pile source mix]]
+- [[LLM/_chunks/chunk-llm-174 Data Diversity Matters as Much as Volume|Data diversity matters as much as volume]]
+- [[LLM/_chunks/chunk-llm-175 The Pile Became the Standard Open Pre-Training Dataset|The Pile as an open pretraining dataset]]
+- [[LLM/_chunks/chunk-llm-176 Pile Data Quality Through Filtering and Deduplication|Pile filtering and deduplication]]
 
 ### References
+- [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
+- [[LLM/_raw/raw-llm-012 T5 Unified Text-to-Text Transformer|raw-llm-012 T5 Unified Text-to-Text Transformer]]
+- [[LLM/_raw/raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners|raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners]]
+- [[LLM/_raw/raw-llm-044 The Pile An 800GB Dataset|raw-llm-044 The Pile An 800GB Dataset]]
 - [[LLM/Sources/Sources Index]]
+
+### Evidence Gaps
+- RedPajama, FineWeb, and DCLM are named in the article body, but their size and pipeline details need dedicated raw captures or current-source verification before further refinement.

@@ -89,7 +89,23 @@ BERT and its descendants established the modern **pre-train/fine-tune** workflow
 
 ## Supporting Chunks / References
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- [[LLM/_chunks/chunk-llm-009 Masked Language Modeling Strategy|Masked language modeling strategy]]
+- [[LLM/_chunks/chunk-llm-010 CLS Token as Sequence Embedding|CLS token as sequence embedding]]
+- [[LLM/_chunks/chunk-llm-011 Next Sentence Prediction Shown Unnecessary|Next Sentence Prediction shown unnecessary]]
+- [[LLM/_chunks/chunk-llm-012 Bidirectional Context Produces Richer Representations|Bidirectional context produces richer representations]]
+- [[LLM/_chunks/chunk-llm-129 RoBERTa Removes Next Sentence Prediction|RoBERTa removes Next Sentence Prediction]]
+- [[LLM/_chunks/chunk-llm-130 Dynamic Masking Outperforms Static|Dynamic masking outperforms static masking]]
+- [[LLM/_chunks/chunk-llm-131 RoBERTa Larger Batches and More Data|RoBERTa larger batches and more data]]
+- [[LLM/_chunks/chunk-llm-132 RoBERTa SOTA Without Architecture Changes|RoBERTa SOTA without architecture changes]]
+- [[LLM/_chunks/chunk-llm-133 DeBERTa Disentangled Attention Mechanism|DeBERTa disentangled attention mechanism]]
+- [[LLM/_chunks/chunk-llm-134 DeBERTa Enhanced Mask Decoder|DeBERTa enhanced mask decoder]]
+- [[LLM/_chunks/chunk-llm-136 DeBERTa Three Attention Interaction Terms|DeBERTa attention interaction terms]]
 
 ### References
+- [[LLM/_raw/raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers|raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers]]
+- [[LLM/_raw/raw-llm-033 RoBERTa A Robustly Optimized BERT Pretraining Approach|raw-llm-033 RoBERTa A Robustly Optimized BERT Pretraining Approach]]
+- [[LLM/_raw/raw-llm-034 DeBERTa Decoding-enhanced BERT with Disentangled Attention|raw-llm-034 DeBERTa Decoding-enhanced BERT with Disentangled Attention]]
 - [[LLM/Sources/Sources Index]]
+
+### Evidence Gaps
+- Sentence-BERT, E5, BGE, and GTE are discussed in the article body, but no dedicated chunks are linked yet for those embedding-model lineages.
