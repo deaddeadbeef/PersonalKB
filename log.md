@@ -47,6 +47,25 @@ Verification:
 - `python _ops\personal_kb.py audit`
 - `git diff --check`
 
+## [2026-06-29] refine | Port LLM troubleshooting route cleanup
+
+Scope: port the reviewed local `master` edit that removes the WSL CUDA vLLM/SGLang setup gate from the local LLM troubleshooting decision tree.
+
+Changed files:
+- `LLM/Study/Local LLM Troubleshooting Decision Tree.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Review notes:
+- Kept the change isolated to the decision-tree routing note.
+- The edit renumbers the diagnostic ladder after removing the WSL-specific gate.
+
+Verification:
+- `python _ops\personal_kb.py audit`
+- `git diff --check`
+
 ## [2026-04-27] setup | LLM wiki operating loop
 
 Scope: initialized agent schema, audit tooling, generated index, and maintenance log.
