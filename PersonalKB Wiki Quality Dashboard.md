@@ -117,4 +117,4 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - [Generated wiki quality summary](<_ops/reports/wiki-quality-summary.json>)
 - [Generated full audit summary](<_ops/reports/audit-summary.json>)
 
-Generated: 2026-06-29T21:54:21
+Generated: 2026-06-29T21:56:50
