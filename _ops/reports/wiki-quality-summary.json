@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-25T21:40:15",
-  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\wiki-quality-housekeeping",
-  "files_total": 5011,
+  "generated_at": "2026-06-29T20:59:17",
+  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\llm-wiki-second-brain",
+  "files_total": 5013,
   "by_extension": {
     "(none)": 2,
     ".base": 1,
     ".jpg": 22,
     ".json": 18,
-    ".md": 3137,
+    ".md": 3139,
     ".mp3": 1810,
     ".py": 16,
     ".txt": 5
   },
-  "markdown_files": 3137,
+  "markdown_files": 3139,
   "candidate_articles": 963,
   "empty_notes": 1,
   "stubs_under_1500_bytes": 20,
