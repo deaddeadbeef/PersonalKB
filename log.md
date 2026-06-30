@@ -4405,3 +4405,32 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - Latest reader-facing quality counts: 963 candidate articles, 374 broken links, 58 placeholder hits, 249 missing references, 247 missing confidence, 28 missing up, 20 stubs, 1 empty note, 0 orphans.
 - The `LLM Sources Index` cleanup reduced reader-facing broken links by 13, from 387 to 374.
+
+## [2026-06-30] lint/refine | Vault-wide reader wiki repair pass
+
+Scope: repair all reader-facing wiki health failures across the committed vault while preserving protected raw, chunk, template, media, and Obsidian configuration layers.
+
+Changed files:
+- Reader-facing wiki articles across CS Algorithms, CS Data Structures, CS Operating Systems, Japanese, LLM, NES Emulation, Programming Languages, Project Hail Mary, Recipes, SpaceX, and root navigation.
+- `_ops/repair_wiki_health.py`
+- `_ops/reports/*`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `log.md`
+
+Maintenance changes:
+- Added a reproducible `_ops/repair_wiki_health.py` repair pass for wikilink normalization, missing `up` and `confidence` frontmatter, missing `## References` sections, visible placeholder cleanup, and the empty LLM alias note.
+- Repaired reader-facing broken links by routing high-confidence aliases to existing notes and converting unresolved future-note targets to plain text instead of leaving broken graph edges.
+- Added source-index references to substantive articles that lacked a references section, using existing domain `Sources Index` pages when available.
+- Replaced visible LLM chunk placeholders with explicit missing-chunk statements and changed SpaceX table to-be-determined cells to `not confirmed in vault sources` rather than inventing current claims.
+- Regenerated the root index and quality dashboard.
+
+Verification:
+- `python _ops\repair_wiki_health.py`: idempotent final run; no further link, placeholder, metadata, or empty-note edits required.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated full and reader-facing reports.
+- `git diff --check`: clean.
+- Protected-path check: 0 `_raw`, `_chunks`, `_templates`, `.obsidian`, image, or audio files changed.
+- Duplicate references check: 0 reader-facing files with multiple `## References` sections.
+- Latest reader-facing quality counts: 963 candidate articles, 0 broken links, 0 placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 21 stubs, 0 empty notes, 0 orphans.
+- Remaining full-audit noise is confined to protected or non-reader layers: 551 broken wikilinks in chunk/raw/template operational material and 21 placeholder hits in templates, queries, and a protected Project Hail Mary phase-state note.

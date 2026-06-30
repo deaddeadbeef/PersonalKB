@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/ginger-beef-stir-fry.jpg"
 photo-status: ok
 protein-per-serving-g: 63
 calories-per-serving: 787
+confidence: policy
 ---
-
 # Ginger Beef Stir-Fry
 
 ![[ginger-beef-stir-fry.jpg]]

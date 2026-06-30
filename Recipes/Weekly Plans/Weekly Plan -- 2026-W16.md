@@ -4,8 +4,8 @@ up: "[[Recipes]]"
 week: 2026-W16
 daily-protein-target-g: 200
 daily-calorie-target-kcal: 2200-2300
+confidence: policy
 ---
-
 # Weekly Plan -- 2026-W16
 
 > Week of April 14-20, 2026. First week using the recipe wiki.
@@ -248,3 +248,6 @@ extra shopping -- they share ingredients already on the list):
 > **Note:** Thu lunch swap (Grilled Chicken Pesto Sub) requires 4 extra
 > ingredients. Prefer keeping the Turkish Lamb Wrap if possible since all
 > its ingredients are already on the shopping list.
+
+## References
+- [[index|PersonalKB Index]]

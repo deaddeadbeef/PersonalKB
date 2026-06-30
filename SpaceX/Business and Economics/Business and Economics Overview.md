@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Business and Economics Overview
 
 SpaceX has disrupted the global launch industry by offering prices roughly 60–80% below legacy providers while maintaining profitability through reusability and vertical integration. Understanding SpaceX's business model reveals how commercial space economics work and why the company's approach has reshaped a $400 billion industry.
@@ -32,15 +32,18 @@ SpaceX's success has catalyzed a global response from launch providers. ULA deve
 SpaceX has become a major national security space launch provider through the NSSL (National Security Space Launch) program. The company competes for and wins classified launches for the U.S. Space Force, NRO, and other agencies. Starshield, a government-focused variant of Starlink, provides secure communications and Earth observation capabilities for defense customers.
 
 ## Pages in This Domain
-- [[Funding and Valuation]]
+- [[SpaceX Funding and Valuation|Funding and Valuation]]
 - [[NASA Contracts and Partnerships]]
 - [[Commercial Launch Market]]
-- [[Cost Revolution]]
-- [[Competition and Industry Response]]
-- [[Defense and National Security Space]]
+- [[Cost Revolution in Spaceflight|Cost Revolution]]
+- [[Competition Landscape|Competition and Industry Response]]
+- Defense and National Security Space
 
 ## Related Domains
 - [[Reusability Overview]] — the technical foundation of SpaceX's cost advantage
 - [[Starlink Overview]] — the revenue engine driving valuation growth
 - [[Origins and History Overview]] — early funding struggles and breakthrough contracts
 - [[Missions and Payloads Overview]] — the customer base across markets
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

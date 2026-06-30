@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/miso-tofu-egg-bento.jpg"
 photo-status: ok
 protein-per-serving-g: 44
 calories-per-serving: 707
+confidence: policy
 ---
-
 # Miso Tofu & Egg Bento
 
 ![[miso-tofu-egg-bento.jpg]]

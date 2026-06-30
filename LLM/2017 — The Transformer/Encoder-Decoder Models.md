@@ -74,7 +74,7 @@ The architecture preserved the original transformer seq2seq design and proved th
 
 *See also:* [[Language Model Fundamentals]] — seq2seq foundations before the transformer era; [[Encoder-Only Models]] — BERT derives from the encoder half of the architecture; [[Decoder-Only Models]] — GPT derives from the decoder half of the architecture; [[Supervised Fine-Tuning]] — fine-tuning encoder-decoder models like T5; [[Scaling Laws]] — scaling encoder-decoder vs decoder-only architectures
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LLM/_chunks/chunk-llm-001 Scaled Dot-Product Attention Formula|Scaled dot-product attention formula]]
 - [[LLM/_chunks/chunk-llm-002 Multi-Head Attention Parallel Projections|Multi-head attention parallel projections]]
@@ -86,7 +86,7 @@ The architecture preserved the original transformer seq2seq design and proved th
 - [[LLM/_chunks/chunk-llm-138 BART Five Noising Schemes|BART five noising schemes]]
 - [[LLM/_chunks/chunk-llm-140 BART Encoder-Decoder vs Decoder-Only Trade-off|BART encoder-decoder trade-off]]
 
-### References
+## References
 - [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
 - [[LLM/_raw/raw-llm-012 T5 Unified Text-to-Text Transformer|raw-llm-012 T5 Unified Text-to-Text Transformer]]
 - [[LLM/_raw/raw-llm-035 BART Denoising Sequence-to-Sequence Pre-training|raw-llm-035 BART Denoising Sequence-to-Sequence Pre-training]]

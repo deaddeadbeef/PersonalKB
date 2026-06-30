@@ -94,11 +94,11 @@ CoT changed prompting practice across the field by showing that latent reasoning
 ## Supporting Chunks
 
 - [[Few-Shot Prompting]]
-- [[Self-Consistency Decoding]]
-- [[Tree-of-Thought Reasoning]]
-- [[Program-of-Thought]]
-- [[Reasoning Faithfulness]]
-- [[Zero-Shot Prompting]]
+- Self-Consistency Decoding
+- Tree-of-Thought Reasoning
+- Program-of-Thought
+- Reasoning Faithfulness
+- Zero-Shot Prompting
 
 ## References
 

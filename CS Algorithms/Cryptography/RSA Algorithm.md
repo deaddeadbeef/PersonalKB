@@ -131,13 +131,13 @@ RSA is used only for **key exchange**, not bulk encryption. See [[Cryptography F
 
 *See also:* [[NP Completeness]], [[P vs NP]], [[Asymptotic Notation]], [[Cryptography Foundations]], [[Random Number Generation]], [[CS Data Structures]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
 - [[Cryptography - RSA security rests on the hardness of integer factorisation]]
 - [[Cryptography - Hybrid encryption combines public-key exchange with symmetric bulk encryption]]
 
-### References
+## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 8.

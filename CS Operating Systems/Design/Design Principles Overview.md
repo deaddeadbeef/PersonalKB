@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Design Principles Overview
 
@@ -47,3 +48,6 @@ High-level principles that guide OS design decisions. These principles recur thr
 
 - **[[OS Foundations Overview]]** — OS structural decisions (monolithic vs microkernel) are direct applications of the design principles here.
 - **[[Case Studies Overview]]** — Linux VFS, Windows NT HAL, and Android's Binder are mechanism-vs-policy in real systems.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

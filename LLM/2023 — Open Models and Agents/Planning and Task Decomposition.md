@@ -102,12 +102,12 @@ The lasting insight is that good agents do not merely have more tools; they need
 
 Design a planning approach for an agent that must research a topic, write a draft, verify sources, and revise errors. Decide which parts should use upfront planning, which should use ReAct-style adaptation, and where a human checkpoint would be most valuable.
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]

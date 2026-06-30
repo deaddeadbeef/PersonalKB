@@ -104,19 +104,19 @@ The enduring lesson is that reliability comes from enforcement, not just instruc
 
 Design a structured-output interface for an LLM-powered support bot that must return a JSON object with `intent`, `priority`, `customer_sentiment`, `recommended_action`, and `requires_human_review`. Decide whether prompt-only formatting is sufficient or whether strict constrained decoding is required, and justify your answer.
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-- [[JSON Schema Specification]]
-- [[Grammar-Constrained Decoding]]
-- [[Function Calling Conventions]]
-- [[OpenAI Structured Outputs]]
-- [[Outlines Library]]
-- [[Guidance Library]]
-- [[Parsing LLM Outputs]]
+- JSON Schema Specification
+- Grammar-Constrained Decoding
+- [[Function Calling|Function Calling Conventions]]
+- OpenAI Structured Outputs
+- Outlines Library
+- Guidance Library
+- Parsing LLM Outputs
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index|LLM Sources Index]]
 - OpenAI Structured Outputs documentation

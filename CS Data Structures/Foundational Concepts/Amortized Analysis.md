@@ -106,7 +106,7 @@ Three techniques formalize this:
 
 ---
 
-*See also:* [[Asymptotic Analysis and Big-O Notation]] | [[Dynamic Arrays]] | [[Splay Trees]] | [[Fibonacci Heaps]] | [[Abstract Data Types]] | **CS Algorithms:** [[Dijkstra's Algorithm]] | [[Graph Algorithm Complexity]]
+*See also:* [[Asymptotic Analysis and Big-O Notation]] | [[Arrays and Dynamic Arrays|Dynamic Arrays]] | [[Splay Trees and Treaps|Splay Trees]] | [[Fibonacci Heaps]] | [[Abstract Data Types]] | **CS Algorithms:** [[Dijkstra's Algorithm]] | Graph Algorithm Complexity
 
 ## Supporting Chunks
 

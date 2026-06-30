@@ -106,19 +106,19 @@ They also made prompt security a first-class field. Research on prompt injection
 
 Design a secure system-prompt strategy for an LLM application that reads external documents and calls tools. Specify the system prompt’s role, the instruction hierarchy you want, and the non-prompt safeguards you would add to reduce injection and prompt leakage risk.
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-- [[Prompt Injection Attacks]]
-- [[Instruction Hierarchy]]
+- Prompt Injection Attacks
+- Instruction Hierarchy
 - [[Constitutional AI]]
-- [[Role Prompting]]
-- [[Multi-Turn Context Management]]
-- [[Prompt Security]]
-- [[System Prompt Patterns]]
+- Role Prompting
+- Multi-Turn Context Management
+- Prompt Security
+- System Prompt Patterns
 
-### References
+## References
 
 → [[LLM/Sources/Sources Index|LLM Sources Index]]
 - OpenAI Chat Completions API documentation

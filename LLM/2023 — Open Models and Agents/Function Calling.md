@@ -93,14 +93,14 @@ Design a small tool interface for a weather assistant with two tools. Define the
 
 ---
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ### See Also
 - [[LLM/Prompting and In-Context Learning/Structured Output and Constrained Generation|Structured Output]] — function calls are a form of structured generation
 - [[LLM/Prompting and In-Context Learning/Tool-Augmented Prompting|Tool-Augmented Prompting]] — prompting techniques for tool use
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

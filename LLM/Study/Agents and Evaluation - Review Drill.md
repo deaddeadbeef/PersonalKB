@@ -1,8 +1,8 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
+confidence: policy
 ---
-
 # Agents & Evaluation — Review Drill
 
 ## Quick-Fire Questions
@@ -43,3 +43,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab|Local LLM Tool Calling and Structured Output Lab]] — build a small local tool loop with validated arguments, policy checks, error rows, and bounded stopping.
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — score tool and agent behavior with workload-specific prompts instead of trusting fluent prose.
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

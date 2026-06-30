@@ -122,3 +122,6 @@ The trend is toward: (1) richer type-level effect tracking (what can this functi
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

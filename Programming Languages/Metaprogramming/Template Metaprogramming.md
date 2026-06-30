@@ -2,8 +2,8 @@
 tags: [programming-languages, metaprogramming, templates]
 up: "[[Metaprogramming Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Template Metaprogramming
 
 ## 🎯 Intuition

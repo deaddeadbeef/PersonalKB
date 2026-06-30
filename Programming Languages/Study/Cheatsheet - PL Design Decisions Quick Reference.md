@@ -1,8 +1,8 @@
 ---
 tags: [pl, study, cheatsheet]
 up: "[[Programming Languages Study Index]]"
+confidence: policy
 ---
-
 # Cheatsheet — PL Design Decisions Quick Reference
 
 ## Type System Quick Compare

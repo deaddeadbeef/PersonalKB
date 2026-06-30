@@ -2,8 +2,8 @@
 tags: [programming-languages, metaprogramming, decorators]
 up: "[[Metaprogramming Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Decorators, Annotations, and Attributes
 
 ## 🎯 Intuition

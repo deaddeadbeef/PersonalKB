@@ -95,11 +95,11 @@ Suffix arrays are the practical indexing layer behind full-text search, compress
 
 *See also:* [[Suffix Trees]], [[Compressed Tries and Radix Trees]], [[Tries and Prefix Trees]], [[Ternary Search Trees]] | Cross-wiki links
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[chunk-ds-014 Suffix arrays replace suffix trees with less space]]
 - [[chunk-ds-033 Suffix arrays plus LCP match suffix tree power in less space]]
 - [[chunk-ds-130 SA-IS builds suffix arrays in On time]]
 
-### References
+## References
 - [[CS Data Structures/Sources/Sources Index|Sources Index]]

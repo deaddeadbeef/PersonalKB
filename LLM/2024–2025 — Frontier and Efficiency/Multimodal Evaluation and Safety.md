@@ -99,7 +99,7 @@ Text benchmarks like MMLU and HumanEval are comparatively standardized and trust
 - Compare why benchmark saturation is a bigger problem for multimodal evaluation than it first appears.
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

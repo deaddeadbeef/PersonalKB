@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/chicken-shawarma-rice-bowl.jpg"
 photo-status: ok
 protein-per-serving-g: 49
 calories-per-serving: 706
+confidence: policy
 ---
-
 # Chicken Shawarma Rice Bowl
 
 ![[chicken-shawarma-rice-bowl.jpg]]

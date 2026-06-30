@@ -2,8 +2,8 @@
 tags: [programming-languages, type-systems, inference]
 up: "[[Type Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Type Inference and Hindley-Milner
 
 ## 🎯 Intuition

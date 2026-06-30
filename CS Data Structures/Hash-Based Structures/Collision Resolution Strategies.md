@@ -110,7 +110,7 @@ flowchart TD
 
 ---
 
-*See also:* [[Hash Tables and Hash Functions]] | [[Cuckoo Hashing]] | [[Universal and Perfect Hashing]] | [[Robin Hood Hashing]] | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
+*See also:* [[Hash Tables and Hash Functions]] | [[Cuckoo Hashing]] | [[Universal and Perfect Hashing]] | Robin Hood Hashing | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
 
 ## Supporting Chunks
 

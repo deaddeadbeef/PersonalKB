@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/chicken-tikka-crunchwrap.jpg"
 photo-status: ok
 protein-per-serving-g: 63
 calories-per-serving: 888
+confidence: policy
 ---
-
 # Chicken Tikka Crunchwrap
 
 ![[chicken-tikka-crunchwrap.jpg]]

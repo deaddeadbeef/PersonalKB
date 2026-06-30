@@ -100,3 +100,6 @@ SpaceX spent years qualifying this architecture with the U.S. Space Force's 45th
 ---
 
 *See also:* [[Mission Control and Launch Operations]], [[Avionics and Flight Software]], [[Launch Cadence and Turnaround Records]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

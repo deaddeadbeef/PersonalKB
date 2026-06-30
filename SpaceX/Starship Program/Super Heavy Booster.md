@@ -82,3 +82,6 @@ Compared with Saturn V's S-IC and the SLS core stage, Super Heavy stands out not
 
 ### Challenge
 - Propose an operational recovery sequence for Super Heavy that minimizes turnaround time while still accounting for the risks of boostback, grid-fin guidance, and tower catch precision.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

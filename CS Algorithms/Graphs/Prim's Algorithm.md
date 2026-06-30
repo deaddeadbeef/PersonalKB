@@ -116,7 +116,7 @@ At each step, the algorithm maintains a cut (S, V−S) where S = vertices alread
 
 ---
 
-*See also:* [[Minimum Spanning Trees]] · [[Kruskal's Algorithm]] · [[BFS and DFS]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[Priority Queues and Heaps]] · [[Adjacency List vs Matrix]]
+*See also:* [[Minimum Spanning Trees]] · [[Kruskal's Algorithm]] · [[BFS and DFS]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[Priority Queues and Heaps]] · [[Adjacency List and Adjacency Matrix|Adjacency List vs Matrix]]
 
 ## References
 -> [[Sources Index]]

@@ -98,7 +98,7 @@ Thinking in ADTs lets you defer implementation decisions until you understand th
 
 ---
 
-*See also:* [[Pointer-Based vs Array-Based Structures]] | [[Data Structure Comparison and Selection]] | [[Asymptotic Analysis and Big-O Notation]] | [[Stacks and Queues]] | [[Hash Tables]] | **CS Algorithms:** [[Algorithm Design Paradigms]]
+*See also:* [[Pointer-Based vs Array-Based Structures]] | [[Data Structure Comparison and Selection]] | [[Asymptotic Analysis and Big-O Notation]] | Stacks and Queues | [[Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** Algorithm Design Paradigms
 
 ## Supporting Chunks
 

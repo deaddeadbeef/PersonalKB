@@ -2,8 +2,8 @@
 tags: [programming-languages, type-systems, static-dynamic]
 up: "[[Type Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Static vs Dynamic Typing
 
 ## 🎯 Intuition

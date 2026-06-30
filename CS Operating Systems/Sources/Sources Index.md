@@ -1,15 +1,15 @@
 ---
 tags: [cs-os, sources]
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
-
 # Sources Index
 
 ## Primary Text
 
 | # | Title | Author | Year | Raw Note |
 |---|-------|--------|------|----------|
-| 1 | Modern Operating Systems | Andrew S. Tanenbaum | 2014 | [[raw-os-001]] |
+| 1 | Modern Operating Systems | Andrew S. Tanenbaum | 2014 | `raw-os-001` |
 
 ## OS Topics (Raw Notes 002-040)
 
@@ -54,3 +54,6 @@ up: "[[CS Operating Systems]]"
 | 38 | Microkernels vs Monolithic | [[raw-os-038]] |
 | 39 | SELinux and MAC | [[raw-os-039]] |
 | 40 | Kernel Sync Primitives | [[raw-os-040]] |
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

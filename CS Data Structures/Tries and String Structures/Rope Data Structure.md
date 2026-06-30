@@ -122,7 +122,7 @@ Implement a **collaborative text editor backend** using a persistent rope with o
 
 ---
 
-*See also:* [[Tries and Prefix Trees]] · [[Suffix Trees]] · [[Suffix Arrays]] · [[Persistent and Immutable Structures]] | **CS Algorithms:** [[String Algorithms]] · [[Text Editor Internals]]
+*See also:* [[Tries and Prefix Trees]] · [[Suffix Trees]] · [[Suffix Arrays]] · [[Persistent and Immutable Structures]] | **CS Algorithms:** String Algorithms · Text Editor Internals
 
 ## Supporting Chunks
 - [[chunk-ds-046 Ropes make string insertion Ologn vs On for flat strings]]

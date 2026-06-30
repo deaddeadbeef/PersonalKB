@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/philly-cheesesteak-sub.jpg"
 photo-status: ok
 protein-per-serving-g: 68
 calories-per-serving: 790
+confidence: policy
 ---
-
 # Philly Cheesesteak Sub
 
 ![[philly-cheesesteak-sub.jpg]]

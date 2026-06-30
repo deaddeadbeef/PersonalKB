@@ -123,7 +123,7 @@ Space: $O(V + E)$ for the residual graph.
 
 ---
 
-*See also:* [[BFS and DFS]] · [[Minimum Spanning Trees]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[Queues]] · [[Adjacency List vs Matrix]]
+*See also:* [[BFS and DFS]] · [[Minimum Spanning Trees]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[Queues and Deques|Queues]] · [[Adjacency List and Adjacency Matrix|Adjacency List vs Matrix]]
 
 ## References
 -> [[Sources Index]]

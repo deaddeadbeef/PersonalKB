@@ -1,7 +1,8 @@
 ---
 tags: [moc, nes-emulation]
+up: "[[index]]"
+confidence: plausible
 ---
-
 # NES Emulation
 
 A comprehensive knowledge base covering NES hardware theory and emulation practice, with OxideNES (a cycle-accurate Rust NES emulator) as the concrete implementation reference.
@@ -40,3 +41,6 @@ A comprehensive knowledge base covering NES hardware theory and emulation practi
 
 - [[Sources Index]] — Primary sources and raw material catalog
 - [[NES Emulation Study Index]] — Review drills and cheatsheets
+
+## References
+- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]

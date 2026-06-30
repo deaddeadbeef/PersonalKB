@@ -112,9 +112,9 @@ Argue whether DeepSeek R1's bigger contribution was scientific insight about rea
 
 ## Supporting Chunks
 
-- [[chunk-llm-244 DeepSeek R1-Zero develops chain-of-thought reasoning through pure reinforcement learning without supervised fine-tuning]]
-- [[chunk-llm-245 DeepSeek R1 matches o1 on benchmarks using GRPO training at fraction of frontier cost]]
-- [[chunk-llm-246 R1 distilled 14B model outperforms o1-mini demonstrating effective reasoning transfer to smaller architectures]]
+- [[LLM/_chunks/chunk-llm-244 DeepSeek R1-Zero develops chain-of-thought reasoning through pure reinforcement learning without SFT|chunk-llm-244 DeepSeek R1-Zero develops chain-of-thought reasoning through pure reinforcement learning without supervised fine-tuning]]
+- [[LLM/_chunks/chunk-llm-245 DeepSeek R1 uses GRPO to eliminate the critic model reducing training cost|chunk-llm-245 DeepSeek R1 matches o1 on benchmarks using GRPO training at fraction of frontier cost]]
+- [[LLM/_chunks/chunk-llm-246 DeepSeek R1 distilled 14B model outperforms o1-mini on reasoning benchmarks|chunk-llm-246 R1 distilled 14B model outperforms o1-mini demonstrating effective reasoning transfer to smaller architectures]]
 
 ## References
 

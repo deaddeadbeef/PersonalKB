@@ -84,9 +84,9 @@ Switch Transformer showed MoE could scale to trillion-parameter regimes with top
 
 *See also:* [[Transformer Architecture]] — MoE extends the standard transformer with sparse routing; [[Compute Data and Parameter Trade-offs]] — MoE decouples parameter count from compute cost; [[Open-Weight Model Ecosystem]] — open MoE models like Mixtral; [[Speculative Decoding]] — draft models can leverage MoE efficiency; [[Efficient Attention and Long-Context Variants]] — combining MoE with efficient attention
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Multiprocessor Overview
 
@@ -49,3 +50,6 @@ Modern machines have multiple CPUs sharing memory or connected via interconnects
 - **[[Synchronization Overview]]** — spinlocks and lock-free data structures are the multiprocessor extensions of single-CPU synchronization.
 - **[[Virtualization Overview]]** — cloud VMs run on NUMA hosts; hypervisor scheduling must be NUMA-aware.
 - **[[Processes Overview]]** — process/thread scheduling on a uniprocessor is the foundation that multiprocessor scheduling extends.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

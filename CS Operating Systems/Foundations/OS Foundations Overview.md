@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # OS Foundations Overview
 
@@ -51,3 +52,6 @@ The conceptual bedrock of operating systems: what an OS is, why it exists, how i
 - **[[Processes Overview]]** — once you know what an OS is (Foundations), the next natural question is how it manages running programs (Processes).
 - **[[Design Principles Overview]]** — the Mechanism vs Policy distinction directly shapes OS structural decisions.
 - **[[Case Studies Overview]]** — Linux (monolithic + modules), Windows NT (hybrid), Minix (microkernel) are Foundations concepts in practice.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

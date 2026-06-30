@@ -100,3 +100,6 @@ The modern synthesis of multi-paradigm design emerged from decades of paradigm c
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

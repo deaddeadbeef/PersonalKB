@@ -99,3 +99,6 @@ Their lattice geometry is central to the design choice. At supersonic speed it c
 ---
 
 *See also:* [[Technology Deep Dives Overview]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

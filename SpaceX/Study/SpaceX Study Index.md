@@ -1,8 +1,8 @@
 ---
 tags: [spacex, study]
 up: "[[SpaceX]]"
+confidence: policy
 ---
-
 # SpaceX Study Index
 
 ## Quick-Start Reading Path
@@ -57,3 +57,6 @@ New to SpaceX? Read these 10 pages in order for a solid foundation:
 - Use the **Common Distinctions** tables in each page for comparison learning
 - Follow the hub order in [[SpaceX|the root MOC]] for systematic coverage
 - Cross-reference the [[Sources Index]] for primary source material
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

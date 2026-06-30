@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Starship Program Overview
 
 Starship is SpaceX's fully reusable super-heavy-lift launch system designed to carry both crew and cargo to Earth orbit, the Moon, Mars, and beyond. With a projected payload capacity exceeding 100 metric tons to LEO in fully reusable configuration, it represents the most ambitious rocket development program in history.
@@ -32,15 +32,18 @@ NASA selected Starship as the Human Landing System for the Artemis program, awar
 SpaceX envisions multiple Starship configurations: a standard cargo/tanker variant, the HLS lunar lander, a crew transport variant with cabins and life support, a point-to-point Earth transport vehicle, and potentially a space station or orbital depot. The common airframe and engine set across variants is intended to drive down per-unit costs through high production rates.
 
 ## Pages in This Domain
-- [[Starship Architecture]]
+- Starship Architecture
 - [[Super Heavy Booster]]
-- [[Starship Flight Test Campaign]]
+- [[Integrated Flight Tests|Starship Flight Test Campaign]]
 - [[Orbital Refueling]]
-- [[Human Landing System (HLS)]]
-- [[Starship Variants]]
+- [[Human Landing System|Human Landing System (HLS)]]
+- [[Starship Variants and Applications|Starship Variants]]
 
 ## Related Domains
 - [[Engines and Propulsion Overview]] — Raptor engine powering Starship
 - [[Reusability Overview]] — Mechazilla catch and full reuse architecture
 - [[Mars and Beyond Overview]] — the mission Starship is ultimately built for
 - [[Launch Operations and Facilities Overview]] — Starbase and launch infrastructure
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

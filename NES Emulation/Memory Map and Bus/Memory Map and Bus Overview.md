@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # Memory Map and Bus Overview
 
 The NES CPU sees a 64 KB address space (0x0000-0xFFFF) shared between RAM, PPU registers, APU registers, and cartridge ROM. The PPU has its own separate 16 KB address space. Understanding the memory map is essential for emulating how all components communicate.

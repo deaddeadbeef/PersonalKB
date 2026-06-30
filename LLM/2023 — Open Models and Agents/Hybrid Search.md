@@ -89,10 +89,10 @@ Design a retrieval stack for an enterprise wiki that contains product SKUs, acro
 
 ---
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

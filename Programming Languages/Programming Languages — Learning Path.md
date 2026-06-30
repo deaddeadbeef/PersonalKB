@@ -1,5 +1,7 @@
 ---
 tags: [pl, learning-path]
+up: "[[Programming Languages/Programming Languages|Programming Languages]]"
+confidence: policy
 ---
 # Programming Languages — Learning Path
 
@@ -181,3 +183,6 @@ Build active-recall skill through drills and comparative exercises.
 
 ### Capstone
 Pick three languages from different paradigms and implement the same small project (e.g., a URL shortener, a Markdown parser, or a task queue). Compare the experience across all dimensions studied.
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

@@ -1,8 +1,8 @@
 ---
 tags: [pl, study, index]
 up: "[[Programming Languages]]"
+confidence: policy
 ---
-
 # Programming Languages Study Index
 
 ## Review Drills

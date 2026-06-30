@@ -1,7 +1,8 @@
 ---
 tags: [pl, moc]
+up: "[[index]]"
+confidence: plausible
 ---
-
 # Programming Languages — Design Philosophies
 
 > A dimension-first exploration of how 16 programming languages answer fundamental design questions about types, memory, concurrency, errors, paradigms, and more.
@@ -49,7 +50,7 @@ tags: [pl, moc]
 | [[Kotlin — Language Profile]] | JVM / Modern |
 | [[Ruby — Language Profile]] | Scripting / OOP |
 | [[Zig — Language Profile]] | Systems / Explicit |
-| [[Historical Languages — Overview]] | Fortran, COBOL, Smalltalk, ML, Prolog |
+| [[Historical Languages Overview]] | Fortran, COBOL, Smalltalk, ML, Prolog |
 
 ## Study Materials
 
@@ -67,4 +68,3 @@ tags: [pl, moc]
 
 ## References
 → [[Sources Index]]
-

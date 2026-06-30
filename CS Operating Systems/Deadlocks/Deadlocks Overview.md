@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Deadlocks Overview
 
@@ -52,3 +53,6 @@ A deadlock occurs when a set of processes each hold a resource and wait for anot
 
 - **[[Synchronization Overview]]** — improper synchronization (acquiring locks in wrong order) is the typical *cause* of deadlock. Understand synchronization primitives before deadlock conditions.
 - **[[Processes Overview]]** — deadlock involves competing processes; the resource-allocation context is established there.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

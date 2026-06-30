@@ -153,3 +153,6 @@ Early compilers (1950s–60s, e.g., FORTRAN I) were monolithic and hand-crafted.
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

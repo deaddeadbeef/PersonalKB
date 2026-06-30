@@ -125,10 +125,13 @@ Prolog emerged in 1972 from Alain Colmerauer's work on natural language processi
 
 ---
 
-*See also:* [[Programming Paradigms Overview]] · [[Functional Programming]] · [[Declarative Programming]]
+*See also:* [[Programming Paradigms Overview]] · Functional Programming · Declarative Programming
 
 ---
 
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

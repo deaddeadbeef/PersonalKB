@@ -126,7 +126,7 @@ A binary counter represented as an array of bits, incremented by 1.
 
 ---
 
-*See also:* [[Two Pointers and Sliding Window]] · [[Divide and Conquer Overview]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Dynamic Arrays]] · [[Union-Find (Disjoint Sets)]] · [[Splay Trees]]
+*See also:* [[Two Pointers and Sliding Window]] · [[Divide and Conquer Overview]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Dynamic Arrays]] · [[Disjoint Sets and Union-Find|Union-Find (Disjoint Sets)]] · [[Splay Trees and Treaps|Splay Trees]]
 
 ## References
 -> [[Sources Index]]

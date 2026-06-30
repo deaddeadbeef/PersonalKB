@@ -142,7 +142,7 @@ The actor model's practical success is rooted in the telecom industry. Ericsson 
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · [[CSP and Go Channels]] · [[Software Transactional Memory]] · [[Erlang and OTP]] · [[Fault-Tolerant Systems]]
+*See also:* [[Concurrency Models Overview]] · CSP and Go Channels · [[Software Transactional Memory]] · Erlang and OTP · Fault-Tolerant Systems
 
 ---
 
@@ -151,3 +151,6 @@ The actor model's practical success is rooted in the telecom industry. Ericsson 
 - Hewitt, C. (1973). *A Universal Modular ACTOR Formalism for Artificial Intelligence*
 - Armstrong, J. (2003). *Making Reliable Distributed Systems in the Presence of Software Errors* (Erlang thesis)
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

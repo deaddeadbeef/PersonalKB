@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # 2026 — Reasoning and Agents
 
 > The year LLMs learned to think longer and act autonomously.
@@ -37,3 +37,6 @@ Reasoning capabilities proved surprisingly transferable through distillation. Sm
 ## Related Eras
 
 ← [[2024–2025 — Frontier and Efficiency Overview|2024–2025 — Frontier and Efficiency]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

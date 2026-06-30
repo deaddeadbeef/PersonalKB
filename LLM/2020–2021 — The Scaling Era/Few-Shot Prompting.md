@@ -87,12 +87,15 @@ Few-shot prompting was one of the defining ideas of the scaling era. It helped e
 ## Supporting Chunks / References
 - [[In-Context Learning Mechanisms]]
 - [[Chain-of-Thought Prompting]]
-- [[Example Selection for ICL]]
-- [[Prompt Sensitivity and Calibration]]
-- [[ICL Scaling Laws]]
+- Example Selection for ICL
+- Prompt Sensitivity and Calibration
+- [[Scaling Laws|ICL Scaling Laws]]
 
 → [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Brown et al. (2020) - "Language Models are Few-Shot Learners" (GPT-3)
 - Liu et al. (2021) - "What Makes Good In-Context Examples for GPT-3?"
 - Lu et al. (2022) - "Fantastically Ordered Prompts"
 - Min et al. (2022) - "Rethinking the Role of Demonstrations"
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

@@ -1,15 +1,15 @@
 ---
 tags: [cs-algorithms, sources]
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
-
 # Sources Index
 
 ## Primary Text
 
 | # | Title | Author | Year | Raw Note |
 |---|-------|--------|------|----------|
-| 1 | Algorithms Unlocked | Thomas H. Cormen | 2013 | [[raw-algo-001]] - [[raw-algo-005]] |
+| 1 | Algorithms Unlocked | Thomas H. Cormen | 2013 | `raw-algo-001` - `raw-algo-005` |
 
 ## Algorithm Topics (Raw Notes 006-040)
 
@@ -50,3 +50,6 @@ up: "[[CS Algorithms]]"
 | 38 | Strongly Connected Components | [[raw-algo-038]] |
 | 39 | FFT and Polynomial Multiplication | [[raw-algo-039]] |
 | 40 | Linear Programming | [[raw-algo-040]] |
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

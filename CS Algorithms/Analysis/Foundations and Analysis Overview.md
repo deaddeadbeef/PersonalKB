@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Foundations and Analysis Overview
 
@@ -62,3 +63,6 @@ The analytical toolkit every algorithm chapter draws on. Master this domain firs
 - **[[Strings Overview]]** — LCS and Edit Distance are the canonical DP examples that extend the Dynamic Programming page.
 - **[[Graphs Overview]]** — Bellman-Ford and Floyd-Warshall apply DP to graph shortest paths.
 - **[[Complexity Theory Overview]]** — builds on asymptotic reasoning to distinguish tractable from intractable problems.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

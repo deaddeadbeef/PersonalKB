@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Strings Overview
 
@@ -51,3 +52,6 @@ String algorithms compute relationships between sequences — exact matches, lon
 
 - **[[Foundations and Analysis Overview]]** — all three algorithms rely on dynamic programming (see [[Dynamic Programming]]) and asymptotic analysis. The KMP failure function is analysed with amortised reasoning.
 - **[[Graphs Overview]]** — sequence alignment generalises to DAG shortest paths; edit distance DP is equivalent to a shortest path on a grid DAG.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

@@ -5,6 +5,7 @@ tags:
   - csos/synchronization
   - csos/deadlocks
 up: "[[OS Study Index]]"
+confidence: policy
 ---
 # Synchronization and Deadlocks — Review Drill
 
@@ -143,3 +144,6 @@ A: Each process declares its maximum resource needs at start. When a process req
 - [[Deadlock Detection and Recovery]] — wait-for graph; recovery options
 - [[Synchronization Overview]] — hub for synchronisation
 - [[Deadlocks Overview]] — hub for deadlocks
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

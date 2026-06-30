@@ -2,8 +2,8 @@
 tags: [programming-languages, type-systems, nominal-structural]
 up: "[[Type Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Nominal vs Structural Typing
 
 ## 🎯 Intuition

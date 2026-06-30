@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # CPU — The 6502 Processor Overview
 
 The Ricoh 2A03 is a modified MOS 6502 running at 1.789773 MHz (NTSC). It lacks the 6502's BCD (Binary Coded Decimal) mode but integrates the APU on the same die. The CPU is the heart of the NES, executing game logic and orchestrating all other subsystems.

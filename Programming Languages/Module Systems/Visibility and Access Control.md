@@ -2,8 +2,8 @@
 tags: [programming-languages, module-systems, visibility]
 up: "[[Module Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Visibility and Access Control
 
 ## 🎯 Intuition

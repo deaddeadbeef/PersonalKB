@@ -125,12 +125,12 @@ graph TD
 
 ---
 
-*See also:* [[P vs NP]], [[Halting Problem]], [[Approximation Algorithms]], [[Complexity Theory Overview]], [[Dijkstra’s Algorithm]], [[RSA Algorithm]], [[Dynamic Programming]]
+*See also:* [[P vs NP]], [[Halting Problem]], [[Approximation Algorithms]], [[Complexity Theory Overview]], [[Dijkstra's Algorithm]], [[RSA Algorithm]], [[Dynamic Programming]]
 
 ## Supporting Chunks
 
 - [[Complexity - NP-complete problems are in NP and NP-hard with no known poly-time solution]]
-- [[Complexity - The Halting Problem is undecidable via Turing’s diagonalisation argument]]
+- [[CS Algorithms/_chunks/Complexity - The Halting Problem is undecidable via Turing's diagonalisation argument]]
 - [[Complexity - Approximation algorithms trade optimality for polynomial running time with a provable ratio]]
 - [[Complexity - NP-hardness is established by polynomial reduction from a known NP-hard problem]]
 

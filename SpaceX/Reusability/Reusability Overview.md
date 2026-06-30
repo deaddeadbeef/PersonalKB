@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Reusability Overview
 
 Reusability is the single most important innovation SpaceX has brought to the launch industry. By recovering and reflying rocket hardware that was previously discarded after every mission, SpaceX has fundamentally altered the economics of space access and forced the entire industry to rethink expendable architectures.
@@ -32,15 +32,18 @@ SpaceX reuses Dragon capsules across cargo and crew missions, trunk fairings, an
 For Starship, SpaceX is pioneering a tower-based catch system nicknamed "Mechazilla" at Starbase. Instead of landing legs, the Super Heavy booster flies back to the launch tower and is caught by massive mechanical arms ("chopsticks"). This eliminates landing leg mass, enables rapid restacking, and represents the most ambitious reusability concept yet attempted.
 
 ## Pages in This Domain
-- [[Propulsive Landing Development]]
-- [[Booster Recovery Operations]]
+- Propulsive Landing Development
+- Booster Recovery Operations
 - [[Fairing Recovery and Reuse]]
-- [[Economics of Reuse]]
-- [[Reusable Hardware Across Programs]]
-- [[Mechazilla and Tower Catch System]]
+- Economics of Reuse
+- Reusable Hardware Across Programs
+- Mechazilla and Tower Catch System
 
 ## Related Domains
 - [[Falcon Program Overview]] — the vehicle that proved reusability works
 - [[Starship Program Overview]] — full reusability as the design baseline
 - [[Business and Economics Overview]] — financial impact of reuse on the launch market
 - [[Technology Deep Dives Overview]] — engineering systems enabling landing and catch
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

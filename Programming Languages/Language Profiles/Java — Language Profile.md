@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, java]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Java — Language Profile
 
 ## 🎯 Intuition

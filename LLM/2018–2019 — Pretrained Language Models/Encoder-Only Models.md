@@ -87,7 +87,7 @@ Encoder-only models established self-supervised pretraining as a dominant paradi
 
 *See also:* [[Transformer Architecture]], [[Attention Mechanism]], [[Embeddings and Vector Databases]], [[Scaling Laws]], [[Mechanistic Interpretability]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LLM/_chunks/chunk-llm-009 Masked Language Modeling Strategy|Masked language modeling strategy]]
 - [[LLM/_chunks/chunk-llm-010 CLS Token as Sequence Embedding|CLS token as sequence embedding]]
@@ -101,7 +101,7 @@ Encoder-only models established self-supervised pretraining as a dominant paradi
 - [[LLM/_chunks/chunk-llm-134 DeBERTa Enhanced Mask Decoder|DeBERTa enhanced mask decoder]]
 - [[LLM/_chunks/chunk-llm-136 DeBERTa Three Attention Interaction Terms|DeBERTa attention interaction terms]]
 
-### References
+## References
 - [[LLM/_raw/raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers|raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers]]
 - [[LLM/_raw/raw-llm-033 RoBERTa A Robustly Optimized BERT Pretraining Approach|raw-llm-033 RoBERTa A Robustly Optimized BERT Pretraining Approach]]
 - [[LLM/_raw/raw-llm-034 DeBERTa Decoding-enhanced BERT with Disentangled Attention|raw-llm-034 DeBERTa Decoding-enhanced BERT with Disentangled Attention]]

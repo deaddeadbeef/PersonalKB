@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[Welcome]]"
+confidence: verified
 ---
 # CS Algorithms
 
@@ -147,3 +148,6 @@ Drill notes for active recall and review.
 | [[CS Algorithms/_queries/QnA - Chunk Coverage Map|QnA - Chunk Coverage Map]] | Which wiki notes have supporting chunks |
 | [[CS Algorithms/_queries/QnA - Canonical Coverage|QnA - Canonical Coverage]] | Which canonical topics have wiki pages |
 | [[CS Algorithms/_queries/QnA System Roadmap|QnA System Roadmap]] | Phase plan for the query system |
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

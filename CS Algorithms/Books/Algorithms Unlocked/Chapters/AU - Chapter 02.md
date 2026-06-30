@@ -11,6 +11,7 @@ tags:
   - csa
   - book-chapter
 up: "[[Chapter Index]]"
+confidence: verified
 ---
 # AU — Chapter 02: How to Describe and Evaluate Computer Algorithms
 

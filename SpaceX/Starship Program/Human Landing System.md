@@ -83,3 +83,6 @@ Starship HLS is not just another lunar lander; it is dramatically larger than Ap
 
 ### Challenge
 - Design a notional Artemis surface mission that uses Starship HLS's extra habitable volume and cargo capacity in ways Apollo never could, while still accounting for its dependence on orbital refueling and orbital crew transfer.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

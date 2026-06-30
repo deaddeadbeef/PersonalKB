@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, ocaml]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # OCaml — Language Profile
 
 **Designer:** Xavier Leroy, Didier Remy, et al. (INRIA, 1996; ML lineage from 1973)
@@ -86,3 +86,6 @@ OCaml carries forward the ML tradition into practical software engineering. Its 
 ### References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

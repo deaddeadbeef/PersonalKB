@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # 2017 — The Transformer
 
 One paper changes everything. "Attention Is All You Need" (Vaswani et al., June 2017) replaces recurrence with parallelizable self-attention, enabling the scaling revolution that followed. The transformer architecture is the foundation of every modern large language model — GPT, BERT, LLaMA, PaLM, and their successors all descend directly from this design.
@@ -47,3 +47,6 @@ Within months, the transformer was adopted across NLP. It replaced RNNs in langu
 
 ← Previous: [[Pre-2017 — Before Transformers Overview|Pre-2017 — Before Transformers]]
 → Next: [[2018–2019 — Pretrained Language Models Overview|2018–2019 — Pretrained Language Models]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

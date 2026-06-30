@@ -116,7 +116,7 @@ Implement a simplified **FM-index** for a DNA sequence (alphabet {A, C, G, T}):
 
 ---
 
-*See also:* [[Bloom Filter]] · [[Tries]] · [[Suffix Trees and Arrays]] | **CS Algorithms:** [[Information Theory]] · [[Compression Algorithms]]
+*See also:* [[Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[Tries and Prefix Trees|Tries]] · Suffix Trees and Arrays | **CS Algorithms:** Information Theory · Compression Algorithms
 
 ## References
 -> [[Sources Index]]

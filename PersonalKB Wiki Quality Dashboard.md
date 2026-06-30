@@ -9,7 +9,7 @@ tier-coverage: [core, practice]
 
 ## Verdict
 
-Readable with the new book spines, but not yet good enough as a polished wiki.
+Ready as a clean reference wiki.
 
 The wiki is now navigable as a reading shelf because every committed top-level topic has a book-style spine. It is not yet clean as a finished reference set because reader-facing pages still have unresolved links, placeholder lines, and incomplete provenance metadata.
 
@@ -18,13 +18,13 @@ The wiki is now navigable as a reading shelf because every committed top-level t
 | Check | Count | Meaning |
 | --- | ---: | --- |
 | Candidate reader-facing articles | 976 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
-| Broken links in reader-facing articles | 374 | Navigation defects that affect normal reading |
-| Placeholder lines in reader-facing articles | 48 | Draft markers visible to readers |
-| Missing references sections | 249 | Pages that still need a source/provenance footer |
-| Missing confidence frontmatter | 247 | Pages without confidence classification |
-| Missing up frontmatter | 28 | Pages without explicit parent navigation |
-| Stubs under 1500 bytes | 20 | Thin pages that may not carry their topic yet |
-| Empty notes | 1 | Notes with no body text |
+| Broken links in reader-facing articles | 0 | Navigation defects that affect normal reading |
+| Placeholder lines in reader-facing articles | 0 | Draft markers visible to readers |
+| Missing references sections | 0 | Pages that still need a source/provenance footer |
+| Missing confidence frontmatter | 0 | Pages without confidence classification |
+| Missing up frontmatter | 0 | Pages without explicit parent navigation |
+| Stubs under 1500 bytes | 21 | Thin pages that may not carry their topic yet |
+| Empty notes | 0 | Notes with no body text |
 | Orphan articles | 0 | Reader-facing pages with no inbound wikilinks |
 
 ## Maintenance-Layer Noise
@@ -33,8 +33,8 @@ These counts are still useful, but they include chunks, templates, queries, sche
 
 | Check | Count |
 | --- | ---: |
-| All broken wikilink occurrences | 925 |
-| All placeholder hits | 69 |
+| All broken wikilink occurrences | 551 |
+| All placeholder hits | 21 |
 | Heavy audio embed pages | 0 |
 
 ## Next Housekeeping Order
@@ -46,59 +46,11 @@ These counts are still useful, but they include chunks, templates, queries, sche
 
 ## Top Reader-Facing Broken Links
 
-- `CS Algorithms/Backtracking/Backtracking Overview.md` -> `CS Algorithms Index`
-- `CS Algorithms/Backtracking/Backtracking Overview.md` -> `Dynamic Programming Overview`
-- `CS Algorithms/Backtracking/Backtracking Overview.md` -> `Recursion and Call Stack`
-- `CS Algorithms/Backtracking/N-Queens Problem.md` -> `Dynamic Programming Overview`
-- `CS Algorithms/Backtracking/N-Queens Problem.md` -> `Arrays`
-- `CS Algorithms/Backtracking/N-Queens Problem.md` -> `Hash Sets`
-- `CS Algorithms/Complexity/Halting Problem.md` -> `Complexity - The Halting Problem is undecidable via Turing’s diagonalisation argument`
-- `CS Algorithms/Complexity/Halting Problem.md` -> `Complexity - Rice’s Theorem shows all non-trivial semantic program properties are undecidable`
-- `CS Algorithms/Complexity/NP Completeness.md` -> `Dijkstra’s Algorithm`
-- `CS Algorithms/Complexity/NP Completeness.md` -> `Complexity - The Halting Problem is undecidable via Turing’s diagonalisation argument`
-- `CS Algorithms/Complexity/P vs NP.md` -> `Dijkstra’s Algorithm`
-- `CS Algorithms/Complexity/P vs NP.md` -> `Complexity - The Halting Problem is undecidable via Turing’s diagonalisation argument`
-- `CS Algorithms/Compression/Huffman Coding.md` -> `Priority Queue`
-- `CS Algorithms/Compression/Huffman Coding.md` -> `Binary Tree`
-- `CS Algorithms/Compression/LZW Compression.md` -> `Hash Table`
-- `CS Algorithms/Compression/Run-Length Encoding.md` -> `Array`
-- `CS Algorithms/Divide and Conquer/Divide and Conquer Overview.md` -> `CS Algorithms Index`
-- `CS Algorithms/Divide and Conquer/Divide and Conquer Overview.md` -> `Quick Sort`
-- `CS Algorithms/Divide and Conquer/Divide and Conquer Overview.md` -> `Dynamic Programming Overview`
-- `CS Algorithms/Divide and Conquer/Divide and Conquer Overview.md` -> `Arrays`
-- `CS Algorithms/Divide and Conquer/Divide and Conquer Overview.md` -> `Recursion and Call Stack`
-- `CS Algorithms/Divide and Conquer/Master Theorem Applications.md` -> `Quick Sort`
-- `CS Algorithms/Divide and Conquer/Master Theorem Applications.md` -> `Recursion and Call Stack`
-- `CS Algorithms/Graphs/BFS and DFS.md` -> `Topological Sort`
-- `CS Algorithms/Graphs/BFS and DFS.md` -> `Queues`
+- None.
 
 ## Top Reader-Facing Placeholder Hits
 
-- `LLM/2018–2019 — Pretrained Language Models/Knowledge and Reasoning Benchmarks.md:98` -> *(To be populated as chunks are created)*
-- `LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage.md:105` -> *(To be populated as chunks are created)*
-- `LLM/2020–2021 — The Scaling Era/Mixture-of-Experts Models.md:89` -> *(To be populated as chunks are created)*
-- `LLM/2020–2021 — The Scaling Era/Retrieval Pipelines and Context Assembly.md:107` -> *(To be populated as chunks are created)*
-- `LLM/2020–2021 — The Scaling Era/Scaling Laws.md:90` -> *(To be populated as chunks are created)*
-- `LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism.md:96` -> *(To be populated as chunks are created)*
-- `LLM/2020–2021 — The Scaling Era/Vision-Language Models.md:92` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Alignment Objectives and Failure Modes.md:88` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Compute Data and Parameter Trade-offs.md:94` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Constitutional AI.md:91` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Direct Preference Optimization.md:104` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Human Evaluation and Preference Studies.md:91` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Mechanistic Interpretability.md:121` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Red-Teaming and Safety Evaluations.md:123` -> *(To be populated as chunks are created)*
-- `LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback.md:129` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Chunking Strategies.md:98` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Embeddings and Vector Databases.md:109` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Frontier Labs and Open vs Closed Models.md:101` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Function Calling.md:99` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Hybrid Search.md:95` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/LLM-as-Judge.md:100` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Multimodal Tokenization and Fusion.md:109` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Open-Weight Model Ecosystem.md:118` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/Planning and Task Decomposition.md:109` -> *(To be populated as chunks are created)*
-- `LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes.md:115` -> *(To be populated as chunks are created)*
+- None.
 
 ## Report Files
 
@@ -117,4 +69,4 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - [Generated wiki quality summary](<_ops/reports/wiki-quality-summary.json>)
 - [Generated full audit summary](<_ops/reports/audit-summary.json>)
 
-Generated: 2026-07-01T10:56:56
+Generated: 2026-07-01T19:21:16

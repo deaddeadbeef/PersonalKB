@@ -95,7 +95,7 @@ Implement a simplified **Cache-Oblivious B-tree** with search, insert, and range
 
 ---
 
-*See also:* [[B-Trees and B+ Trees]] · [[External Memory Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[Divide and Conquer]] · [[External Sorting]]
+*See also:* [[B-Trees and B-Plus Trees|B-Trees and B+ Trees]] · [[External Memory Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[Divide and Conquer Overview|Divide and Conquer]] · External Sorting
 
 ## References
 -> [[Sources Index]]

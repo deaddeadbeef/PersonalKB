@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Backtracking Overview — Domain
 
@@ -49,3 +50,6 @@ Backtracking is systematic trial-and-error: build a candidate solution increment
 - **[[Graphs Overview]]** — DFS is the traversal strategy underlying backtracking.
 - **[[Complexity Theory Overview]]** — many backtracking problems are NP-complete; approximation algorithms provide alternatives.
 - **[[Divide and Conquer Overview — Domain]]** — contrasting paradigm: D&C divides into independent subproblems rather than exploring a decision tree.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

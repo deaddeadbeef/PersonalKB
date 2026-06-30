@@ -1,5 +1,7 @@
 ---
 tags: [spacex, learning-path]
+up: "[[SpaceX/SpaceX|SpaceX]]"
+confidence: policy
 ---
 # SpaceX — Learning Path
 
@@ -203,3 +205,6 @@ Build active-recall skill through drills and tracking.
 - Follow current Starship test campaign and update [[Integrated Flight Tests]]
 - Track Starlink subscriber growth and V2 deployment
 - Monitor [[Competition Landscape]] for competitor milestones
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

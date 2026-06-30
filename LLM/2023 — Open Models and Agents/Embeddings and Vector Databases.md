@@ -103,10 +103,10 @@ For a local applied workflow, use [[LLM/Study/Local Embedding and Reranker Hosti
 
 ---
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ### See Also
 - [[LLM/Foundations/Embeddings and Representation Geometry|Embeddings Foundations]] — the theoretical basis for text embeddings
@@ -114,5 +114,5 @@ For a local applied workflow, use [[LLM/Study/Local Embedding and Reranker Hosti
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]] — local embedding service, vector-shape, normalization, and index-compatibility proof
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]] — local top-k, rank, hybrid-search, and citation evaluation
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

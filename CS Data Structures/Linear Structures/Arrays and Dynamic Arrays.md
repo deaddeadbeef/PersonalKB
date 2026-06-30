@@ -117,7 +117,7 @@ function deleteAt(arr, index):
 
 ---
 
-*See also:* [[Singly Linked Lists]] | [[Queues and Deques]] | [[Hash Tables]] | [[Heaps and Priority Queues]] | **CS Algorithms:** [[Binary Search]], [[Merge Sort]]
+*See also:* [[Singly Linked Lists]] | [[Queues and Deques]] | [[Hash Tables and Hash Functions|Hash Tables]] | Heaps and Priority Queues | **CS Algorithms:** [[Binary Search]], [[Merge Sort]]
 
 ## Supporting Chunks
 

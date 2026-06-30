@@ -2,8 +2,8 @@
 tags: [programming-languages, module-systems, packages]
 up: "[[Module Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Package and Namespace Systems
 
 ## 🎯 Intuition

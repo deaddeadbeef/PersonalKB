@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, rust]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Rust — Language Profile
 
 ## 🎯 Intuition

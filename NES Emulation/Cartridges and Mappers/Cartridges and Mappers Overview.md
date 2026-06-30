@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # Cartridges and Mappers Overview
 
 NES cartridges contain ROM chips and optional mapper hardware that extends the console's capabilities far beyond its base specifications. Mappers perform bank switching, allowing games to access much more memory than the CPU or PPU can directly address.

@@ -90,12 +90,12 @@ ICL became one of the defining discoveries of large-scale language modeling. It 
 
 ## Supporting Chunks / References
 - [[Few-Shot Prompting]]
-- [[ICL Scaling Laws]]
-- [[Induction Heads]]
-- [[Meta-Learning vs ICL]]
+- [[Scaling Laws|ICL Scaling Laws]]
+- Induction Heads
+- Meta-Learning vs ICL
 - [[Mechanistic Interpretability]]
-- [[Task Vectors]]
-- [[ICL Theoretical Models]]
+- Task Vectors
+- ICL Theoretical Models
 
 → [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Brown et al. (2020) - "Language Models are Few-Shot Learners"
@@ -104,3 +104,6 @@ ICL became one of the defining discoveries of large-scale language modeling. It 
 - von Oswald et al. (2023) - "Transformers Learn In-Context by Gradient Descent"
 - Chan et al. (2022) - "Data Distributional Properties Drive Emergent In-Context Learning"
 - Garg et al. (2022) - "What Can Transformers Learn In-Context?"
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

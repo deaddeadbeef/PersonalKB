@@ -92,7 +92,7 @@ Suppose you need a model for 256K-token legal documents. Explain which efficient
 
 ## Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ---
 

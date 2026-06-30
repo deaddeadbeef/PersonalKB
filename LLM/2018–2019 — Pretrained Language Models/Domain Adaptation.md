@@ -131,17 +131,17 @@ Domain adaptation turned general LLMs into more useful expert tools for code, me
 
 ---
 
-*See also:* [[2018–2019 — Pretrained Language Models Overview]], [[Continued Pretraining vs Fine-Tuning]], [[Catastrophic Forgetting]], [[Retrieval-Augmented Generation (RAG)]], [[Code Models and Code Understanding]], [[Medical and Scientific LLMs]], [[LLM/Sources/Sources Index|LLM Sources Index]]
+*See also:* [[2018–2019 — Pretrained Language Models Overview]], Continued Pretraining vs Fine-Tuning, [[Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]], Retrieval-Augmented Generation (RAG), Code Models and Code Understanding, Medical and Scientific LLMs, [[LLM/Sources/Sources Index|LLM Sources Index]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-- [[Continued Pretraining vs Fine-Tuning]] — When to use each
-- [[Catastrophic Forgetting]] — Preserving general capabilities
-- [[Retrieval-Augmented Generation (RAG)]] — Alternative to knowledge injection
-- [[Code Models and Code Understanding]] — Deep dive into code domain
-- [[Medical and Scientific LLMs]] — Healthcare/science domain specifics
+- Continued Pretraining vs Fine-Tuning — When to use each
+- [[Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]] — Preserving general capabilities
+- Retrieval-Augmented Generation (RAG) — Alternative to knowledge injection
+- Code Models and Code Understanding — Deep dive into code domain
+- Medical and Scientific LLMs — Healthcare/science domain specifics
 
-### References
+## References
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Rozière et al. 2023: Code Llama
 - Guo et al. 2024: DeepSeek-Coder

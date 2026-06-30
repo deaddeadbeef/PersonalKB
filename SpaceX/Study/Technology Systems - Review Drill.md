@@ -1,8 +1,8 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
+confidence: policy
 ---
-
 # Technology Systems — Review Drill
 
 > 15 Q&A pairs · Avionics, TPS, structures, landing, and more
@@ -76,3 +76,6 @@ up: "[[SpaceX Study Index]]"
 
 **Q15. What was the first flight to demonstrate a successful booster tower catch?**
 > **A15.** IFT-5 (13 October 2024) achieved the first successful tower catch of a Super Heavy booster.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

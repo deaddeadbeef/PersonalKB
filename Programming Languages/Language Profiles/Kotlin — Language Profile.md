@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, kotlin]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Kotlin — Language Profile
 
 **Designer:** JetBrains (Andrey Breslav, 2011; 1.0 in 2016)
@@ -71,3 +71,6 @@ Kotlin became Java's most successful modern successor on Android and a serious J
 ### References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

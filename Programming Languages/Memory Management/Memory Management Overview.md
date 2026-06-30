@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, memory-management]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Memory Management Overview
 
 How a language manages memory is perhaps its most consequential low-level design decision. It determines performance characteristics, safety guarantees, and the mental model programmers must maintain. Every language answers the question: who is responsible for allocating and freeing memory?

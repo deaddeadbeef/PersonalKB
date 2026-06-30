@@ -1,5 +1,7 @@
 ---
 tags: [llm, learning-path]
+up: "[[LLM/LLM|LLM]]"
+confidence: policy
 ---
 # LLM — Learning Path
 
@@ -206,3 +208,6 @@ Build active-recall skill through drills and hands-on experimentation.
 
 ### Capstone
 Build a complete RAG-powered assistant: document ingestion → chunking → embedding → vector store → retrieval → reranking → generation → evaluation with LLM-as-Judge.
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

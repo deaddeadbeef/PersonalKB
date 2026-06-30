@@ -102,7 +102,7 @@ Propose a benchmark ladder for evaluating an AI coding assistant from simple fun
 ---
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ---
 

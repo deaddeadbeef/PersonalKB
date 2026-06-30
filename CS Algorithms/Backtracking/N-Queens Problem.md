@@ -125,7 +125,7 @@ Without pruning, the search space is $N^{N}$ (try any column in any row). Row-ba
 
 ---
 
-*See also:* [[Backtracking Overview]] · [[Greedy Algorithms Overview]] · [[Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays]] · [[Hash Sets]]
+*See also:* [[Backtracking Overview]] · [[Greedy Algorithms Overview]] · [[Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Arrays]] · [[Hash Tables and Hash Functions|Hash Sets]]
 
 ## References
 -> [[Sources Index]]

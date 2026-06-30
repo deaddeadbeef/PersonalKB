@@ -89,9 +89,9 @@ The choice of tokenizer affects model efficiency, multilingual capability, and e
 
 *See also:* [[LLM/Multimodal/Multimodal Tokenization and Fusion|Multimodal Tokenization]], [[LLM/Pretraining/Data Curation and Deduplication|Data Curation]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

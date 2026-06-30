@@ -37,11 +37,11 @@ flowchart TD
 |---|---|---|---|---|---|
 | Falcon 9 | SpaceX | ~22,800 kg | Yes (booster) | 2010 | ~$67M |
 | Falcon Heavy | SpaceX | ~63,800 kg | Yes (boosters) | 2018 | ~$97M |
-| Starship | SpaceX | ~100,000 kg+ | Yes (full stack) | 2025 (orbital) | TBD |
+| Starship | SpaceX | ~100,000 kg+ | Yes (full stack) | 2025 (orbital) | not confirmed in vault sources |
 | Vulcan Centaur | ULA | ~27,200 kg | No | 2024 | ~$110M+ |
 | Ariane 6 (A64) | Arianespace | ~21,650 kg | No | 2024 | ~€75M |
 | New Glenn | Blue Origin | ~45,000 kg | Yes (booster) | 2025 | ~$70-100M (est.) |
-| Neutron | Rocket Lab | ~13,000 kg | Yes (booster) | TBD (~2026) | ~$55M |
+| Neutron | Rocket Lab | ~13,000 kg | Yes (booster) | not confirmed in vault sources (~2026) | ~$55M |
 | Long March 5 | CASC (China) | ~25,000 kg | No | 2016 | N/A (state-funded) |
 | H3 | JAXA (Japan) | ~6,500 kg | No | 2024 | ~$50M |
 | Electron | Rocket Lab | ~300 kg | Partial (recovery) | 2018 | ~$7.5M |
@@ -99,3 +99,6 @@ SpaceX's strongest advantage is not just one rocket but a system-level combinati
 
 ### Challenge
 - Build a go-to-market strategy for a launch startup entering a market where the leader already has lower prices, more reliability data, and higher cadence.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

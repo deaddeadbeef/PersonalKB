@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, type-systems]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Type Systems Overview
 
 A type system is a set of rules that assigns a type to every expression in a program. It is the single most impactful design decision in a programming language — it shapes how programmers think, what errors are caught when, and how code composes. Every language designer must answer: How much should the compiler know about your data?

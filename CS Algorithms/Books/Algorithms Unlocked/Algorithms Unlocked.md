@@ -3,6 +3,7 @@ tags:
   - csa
   - book-moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Algorithms Unlocked
 

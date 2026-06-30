@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # APU — Audio Processing Unit Overview
 
 The APU is integrated into the Ricoh 2A03 alongside the CPU. It generates audio through 5 channels: two pulse waves, one triangle wave, one noise generator, and one delta modulation channel (DMC). The APU's distinctive sound defined the 8-bit era.

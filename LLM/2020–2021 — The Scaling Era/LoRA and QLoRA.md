@@ -128,14 +128,14 @@ LoRA is the default PEFT method because it matches full fine-tuning quality on m
 
 *See also:* [[LLM/Inference and Serving/Quantization|Quantization]] — QLoRA combines quantization with LoRA; [[LLM/Fine-Tuning and Adaptation/Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]] — LoRA mitigates forgetting by freezing base weights
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[Parameter-Efficient Fine-Tuning]] — PEFT landscape overview
-- [[Quantization Techniques]] — 4-bit NF4, GPTQ, AWQ details
-- [[Multi-Adapter Serving]] — Deployment architectures
+- [[Quantization|Quantization Techniques]] — 4-bit NF4, GPTQ, AWQ details
+- Multi-Adapter Serving — Deployment architectures
 - [[Supervised Fine-Tuning]] — Full fine-tuning baseline
 
-### References to Sources Index
+## References
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Hu et al. 2021: LoRA original paper
 - Dettmers et al. 2023: QLoRA (4-bit quantization + LoRA)

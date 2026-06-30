@@ -1,8 +1,8 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
+confidence: policy
 ---
-
 # Foundations & Architecture — Review Drill
 
 ## Quick-Fire Questions
@@ -58,3 +58,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 - [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] — implement scaled dot-product attention, causal masking, multi-head reshaping, and shape tests.
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a tiny causal LM and connect shifted targets, cross-entropy loss, validation loss, and generation.
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Cryptography Overview
 
@@ -51,3 +52,6 @@ Cryptographic algorithms secure communication and data by exploiting mathematica
 
 - **[[Complexity Theory Overview]]** — RSA's security rests on the hardness of integer factorisation (an NP-intermediate problem). The P vs NP and NP-hardness discussions underpin all public-key cryptographic assumptions.
 - **[[Foundations and Analysis Overview]]** — Modular exponentiation uses fast exponentiation (repeated squaring); asymptotic analysis applies to key-generation and primality-testing algorithms.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Virtualization Overview
 
@@ -49,3 +50,6 @@ Virtualization allows multiple operating systems to run concurrently on a single
 - **[[Memory Management Overview]]** — virtualisation adds a second layer of address translation (nested paging / EPT); understanding single-level paging first is essential.
 - **[[OS Foundations Overview]]** — the kernel/user-mode distinction and privilege levels are what the hypervisor exploits to intercept guest OS behaviour.
 - **[[Multiprocessor Overview]]** — cloud VMs run on NUMA multiprocessor hosts; scheduler affinity and NUMA-awareness apply to hypervisor scheduling.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

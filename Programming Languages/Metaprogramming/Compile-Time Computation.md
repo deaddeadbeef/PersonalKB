@@ -2,8 +2,8 @@
 tags: [programming-languages, metaprogramming, comptime]
 up: "[[Metaprogramming Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Compile-Time Computation
 
 ## 🎯 Intuition

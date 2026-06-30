@@ -1,8 +1,8 @@
 ---
 tags: [pl, study, compilation, metaprogramming]
 up: "[[Programming Languages Study Index]]"
+confidence: policy
 ---
-
 # Review Drill — Compilation and Metaprogramming
 
 ## Quick Recall — Compilation
@@ -61,7 +61,7 @@ up: "[[Programming Languages Study Index]]"
 - [[Compilation and Runtime Overview]] — hub page
 - [[Metaprogramming Overview]] — hub page
 - [[AOT vs JIT Compilation]] — compilation strategies
-- [[Macro Systems]] — macro deep dive
+- [[Macro Systems Compared|Macro Systems]] — macro deep dive
 
 ## References
 → [[Sources Index]]

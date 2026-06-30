@@ -134,16 +134,16 @@ Design a small instruction-tuning dataset for a domain assistant. List at least 
 - [[Open-Weight Model Ecosystem]] — open instruction-tuned model families
 - [[Multi-Agent Systems]] — instruction-following capability enables agent use cases
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
 - [[Supervised Fine-Tuning]] — The underlying training mechanism
-- [[Self-Instruct and Data Generation]] — Synthetic data creation methods
-- [[Zero-Shot and Few-Shot Learning]] — Evaluation paradigms
-- [[RLHF (Reinforcement Learning from Human Feedback)]] — Post-instruction-tuning alignment
+- Self-Instruct and Data Generation — Synthetic data creation methods
+- Zero-Shot and Few-Shot Learning — Evaluation paradigms
+- [[Reinforcement Learning from Human Feedback|RLHF (Reinforcement Learning from Human Feedback)]] — Post-instruction-tuning alignment
 
-### References
+## References
 
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Wei et al. 2021: FLAN original paper

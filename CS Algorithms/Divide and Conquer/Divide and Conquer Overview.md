@@ -1,6 +1,6 @@
 ---
 tags: [csa, csa/divide-and-conquer]
-up: "[[CS Algorithms Index]]"
+up: "[[CS Algorithms|CS Algorithms Index]]"
 confidence: verified
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -102,7 +102,7 @@ See [[Master Theorem Applications]] for worked examples.
 
 ---
 
-*See also:* [[Master Theorem Applications]] · [[Merge Sort]] · [[Quick Sort]] · [[Greedy Algorithms Overview]] · [[Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays]] · [[Recursion and Call Stack]]
+*See also:* [[Master Theorem Applications]] · [[Merge Sort]] · [[Quicksort|Quick Sort]] · [[Greedy Algorithms Overview]] · [[Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Arrays]] · Recursion and Call Stack
 
 ## References
 -> [[Sources Index]]

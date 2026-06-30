@@ -94,10 +94,10 @@ Design an evaluation protocol for comparing two assistant prompts. Include wheth
 
 ---
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

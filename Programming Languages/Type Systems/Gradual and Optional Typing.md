@@ -2,8 +2,8 @@
 tags: [programming-languages, type-systems, gradual]
 up: "[[Type Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Gradual and Optional Typing
 
 ## 🎯 Intuition

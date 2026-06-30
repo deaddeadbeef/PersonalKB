@@ -102,13 +102,13 @@ Design a retrieval pipeline for a medium-size enterprise knowledge base. Choose 
 
 For a local applied workflow, use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] to prove the reranker endpoint, launch mode, score semantics, `top_n` behavior, and latency before using [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to compare first relevant rank, context precision, and latency before and after reranking.
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]

@@ -104,20 +104,20 @@ Its legacy is broad: modern assistants, agents, and coding systems all rely on s
 
 Design a tool-augmented prompt setup for an assistant that must answer policy questions, do arithmetic, and file support tickets. Specify which tools are needed, when each should be called, how the model should represent tool calls, and what fallback behavior should occur if a tool fails.
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-- [[ReAct Pattern]]
+- ReAct Pattern
 - [[Function Calling]]
-- [[Tool Selection Strategies]]
-- [[Retrieval-Augmented Generation]]
-- [[LLM Agents]]
-- [[Error Handling in Tool Use]]
-- [[Calculator Problem]]
-- [[Toolformer]]
+- Tool Selection Strategies
+- Retrieval-Augmented Generation
+- LLM Agents
+- Error Handling in Tool Use
+- Calculator Problem
+- Toolformer
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Schick et al. (2023) - "Toolformer: Language Models Can Teach Themselves to Use Tools"

@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, paradigms]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Programming Paradigms Overview
 
 A programming paradigm is a fundamental approach to structuring computation. It determines how programmers conceptualize problems, organize solutions, and compose abstractions. While modern languages are multi-paradigm, understanding the pure paradigms reveals the design principles each language prioritizes.

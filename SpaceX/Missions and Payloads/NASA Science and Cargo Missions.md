@@ -97,3 +97,6 @@ SpaceX's pricing — roughly one-third to one-half the cost of legacy launch veh
 ---
 
 *See also:* [[Missions and Payloads Overview]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

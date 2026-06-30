@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/harissa-lamb-kofta-rice-bowl.jpg"
 photo-status: ok
 protein-per-serving-g: 50
 calories-per-serving: 699
+confidence: policy
 ---
-
 # Harissa Lamb Kofta Rice Bowl
 
 ![[harissa-lamb-kofta-rice-bowl.jpg]]

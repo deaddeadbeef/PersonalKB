@@ -137,3 +137,6 @@ FP originated in academia — rooted in Alonzo Church's lambda calculus (1930s) 
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

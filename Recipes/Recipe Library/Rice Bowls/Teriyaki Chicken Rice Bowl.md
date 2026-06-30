@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/teriyaki-chicken-rice-bowl.jpg"
 photo-status: ok
 protein-per-serving-g: 61
 calories-per-serving: 846
+confidence: policy
 ---
-
 # Teriyaki Chicken Rice Bowl
 
 ![[teriyaki-chicken-rice-bowl.jpg]]

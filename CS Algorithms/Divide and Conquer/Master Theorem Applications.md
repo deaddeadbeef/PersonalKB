@@ -116,7 +116,7 @@ Summing all levels: if the leaf level dominates → Case 1; if all levels contri
 
 ---
 
-*See also:* [[Divide and Conquer Overview]] · [[Merge Sort]] · [[Quick Sort]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Recursion and Call Stack]]
+*See also:* [[Divide and Conquer Overview]] · [[Merge Sort]] · [[Quicksort|Quick Sort]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** Recursion and Call Stack
 
 ## References
 -> [[Sources Index]]

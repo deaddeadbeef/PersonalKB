@@ -84,7 +84,7 @@ The result is a more competitive market where no single lab dominates every cate
 
 - [[Reasoning Models and Test-Time Compute]] — the reasoning paradigm these models incorporate
 - [[Open-Weight Model Ecosystem]] — the open model landscape
-- [[Scaling Laws and Chinchilla]] — the scaling principles underlying these models
+- [[Scaling Laws|Scaling Laws and Chinchilla]] — the scaling principles underlying these models
 - [[Agentic Coding Systems]] — how these models are deployed as agents
 
 ---
@@ -110,10 +110,10 @@ Choose one deployment scenario—enterprise assistant, coding agent, or research
 
 ## Supporting Chunks
 
-- [[chunk-llm-247 Claude 4 series introduces extended thinking computer use and deep MCP integration]]
-- [[chunk-llm-248 GPT-5 family unifies reasoning and knowledge eliminating separate o-series and GPT-series models]]
-- [[chunk-llm-249 Gemini 2.5 Pro adds native thinking mode with one million plus token context window]]
-- [[chunk-llm-250 Llama 4 adopts mixture-of-experts architecture competitive with closed frontier models]]
+- [[LLM/_chunks/chunk-llm-247 Claude 4 series introduces extended thinking with visible chain-of-thought tokens|chunk-llm-247 Claude 4 series introduces extended thinking computer use and deep MCP integration]]
+- [[LLM/_chunks/chunk-llm-248 GPT-5 unifies reasoning and knowledge model lines into a single architecture|chunk-llm-248 GPT-5 family unifies reasoning and knowledge eliminating separate o-series and GPT-series models]]
+- [[LLM/_chunks/chunk-llm-249 Gemini 2.5 combines native thinking mode with 1M-plus token context windows|chunk-llm-249 Gemini 2.5 Pro adds native thinking mode with one million plus token context window]]
+- [[LLM/_chunks/chunk-llm-250 Llama 4 adopts mixture-of-experts for frontier performance with open weights|chunk-llm-250 Llama 4 adopts mixture-of-experts architecture competitive with closed frontier models]]
 
 ## References
 

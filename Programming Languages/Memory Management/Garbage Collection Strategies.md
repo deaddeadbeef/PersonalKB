@@ -2,8 +2,8 @@
 tags: [programming-languages, memory-management, gc]
 up: "[[Memory Management Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Garbage Collection Strategies
 
 ## 🎯 Intuition

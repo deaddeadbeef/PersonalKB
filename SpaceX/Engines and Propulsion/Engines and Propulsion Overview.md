@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Engines and Propulsion Overview
 
 Rocket engines are the most complex and performance-critical components in any launch vehicle, and SpaceX's engine development has been central to its competitive advantage. From the Merlin that powers Falcon 9 to the Raptor that will take humans to Mars, SpaceX designs and manufactures all of its engines in-house.
@@ -36,7 +36,7 @@ Raptor has undergone rapid iteration: Raptor 1 flew on early Starship tests, Rap
 - [[Raptor Engine]]
 - [[Draco and SuperDraco Thrusters]]
 - [[Full-Flow Staged Combustion Cycle]]
-- [[Engine Manufacturing]]
+- Engine Manufacturing
 - [[Raptor Evolution and Raptor 3]]
 
 ## Related Domains
@@ -44,3 +44,6 @@ Raptor has undergone rapid iteration: Raptor 1 flew on early Starship tests, Rap
 - [[Starship Program Overview]] — the vehicle powered by Raptor
 - [[Technology Deep Dives Overview]] — advanced engineering behind engine systems
 - [[Reusability Overview]] — how engine reuse drives down costs
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

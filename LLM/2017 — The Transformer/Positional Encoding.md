@@ -90,7 +90,7 @@ Position encoding choice directly affects long-context capability. RoPE's domina
 
 *See also:* [[Encoder-Only Models]] — learned positional embeddings in BERT and variants; [[Efficient Attention and Long-Context Variants]] — extending position representation to long contexts; [[State Space Models and Mamba]] — alternative architectures that handle position implicitly; [[KV Cache and Context Reuse]] — positional encoding interplay with cached keys and values
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LLM/_chunks/chunk-llm-003 Positional Encoding for Permutation-Invariant Attention|Positional encoding for permutation-invariant attention]]
 - [[LLM/_chunks/chunk-llm-041 RoPE Rotation Matrices Encode Relative Position|RoPE rotation matrices encode relative position]]
@@ -101,7 +101,7 @@ Position encoding choice directly affects long-context capability. RoPE's domina
 - [[LLM/_chunks/chunk-llm-166 ALiBi Enables Length Extrapolation Beyond Training|ALiBi length extrapolation]]
 - [[LLM/_chunks/chunk-llm-168 Position Encoding Design Space for Transformers|Transformer position encoding design space]]
 
-### References
+## References
 - [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
 - [[LLM/_raw/raw-llm-011 RoFormer Rotary Position Embedding|raw-llm-011 RoFormer Rotary Position Embedding]]
 - [[LLM/_raw/raw-llm-042 ALiBi Train Short Test Long|raw-llm-042 ALiBi Train Short Test Long]]

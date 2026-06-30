@@ -80,16 +80,16 @@ The debate between causal and masked objectives influenced architecture choices 
 1. Propose a hybrid pretraining objective for a future model that must excel at both long-form generation and precise infilling, and explain what trade-offs it makes relative to causal LM and MLM.
 
 *See also:*
-- [[BERT]]
-- [[T5]]
+- [[BERT and Encoder Lineage|BERT]]
+- T5
 - [[Decoder-Only Models]]
-- [[Code Models]]
-- [[PaLM]]
+- Code Models
+- PaLM
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — make the causal LM objective concrete with shifted targets and cross-entropy loss
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

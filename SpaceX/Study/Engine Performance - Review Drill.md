@@ -1,8 +1,8 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
+confidence: policy
 ---
-
 # Engine Performance — Review Drill
 
 > 15 Q&A pairs · Covers every SpaceX engine from Draco to Raptor 3
@@ -71,3 +71,6 @@ up: "[[SpaceX Study Index]]"
 
 **Q15. Raptor is the first operational FFSC engine. What was the only prior FFSC engine to reach test-stand level?**
 > **A15.** The Soviet RD-270, developed in the 1960s for the UR-700 program. It used N₂O₄/UDMH and reached full-power test firings but never flew. (The Integrated Powerhead Demonstrator by Aerojet in the 2000s also demonstrated the cycle at component level.)
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

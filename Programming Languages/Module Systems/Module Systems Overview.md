@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, module-systems]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Module Systems Overview
 
 A module system determines how code is organized, how dependencies are managed, how names are scoped, and how abstractions are enforced at scale. While type systems get more attention, module systems are equally important for building large programs — they determine whether a codebase remains maintainable as it grows.

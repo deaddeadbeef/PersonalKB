@@ -4,6 +4,7 @@ tags:
   - csos/study
   - csos/processes
 up: "[[OS Study Index]]"
+confidence: policy
 ---
 # Processes and Scheduling — Review Drill
 
@@ -141,3 +142,6 @@ A: A pipe is a kernel-managed FIFO with built-in blocking semantics — a reader
 - [[CPU Scheduling]] — scheduling metrics; FCFS/SJF/RR/Priority/MLFQ
 - [[Interprocess Communication]] — pipes, shared memory, message queues, sockets
 - [[Processes Overview]] — hub for the entire domain
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/study
 up: "[[CS Algorithms]]"
+confidence: policy
 ---
 # Algorithms Study Index
 
@@ -68,3 +69,6 @@ Each drill note uses `up: [[Algorithms Study Index]]` and provides `## Links Bac
 - Content is distilled from the `_chunks/` layer and canonical wiki pages; go there for proofs and derivations.
 - These notes are intentionally concise — the goal is retrieval, not re-explanation.
 - Update drill notes when canonical pages are substantially deepened.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

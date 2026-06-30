@@ -93,7 +93,7 @@ Modern training infrastructure made GPT-3-scale and larger runs practical by com
 
 ## Supporting Chunks / References
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

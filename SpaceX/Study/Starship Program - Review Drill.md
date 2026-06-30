@@ -1,8 +1,8 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
+confidence: policy
 ---
-
 # Starship Program — Review Drill
 
 > 15 Q&A pairs · IFT campaigns, HLS, refueling, and variants
@@ -78,3 +78,6 @@ up: "[[SpaceX Study Index]]"
 
 **Q15. What is the significance of orbital refueling for Mars colonization?**
 > **A15.** Without refueling, Starship cannot carry meaningful payload beyond LEO due to the tyranny of the rocket equation. Orbital refueling breaks this constraint by allowing the vehicle to launch nearly empty (maximizing structural payload to orbit), then top off propellant for the high-delta-v trans-Mars injection. This architecture makes 100+ tonne payloads to Mars feasible with a reusable system — the cornerstone of SpaceX's Mars colonization plan.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

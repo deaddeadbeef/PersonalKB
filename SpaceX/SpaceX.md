@@ -1,7 +1,8 @@
 ---
 tags: [spacex, moc]
+up: "[[index]]"
+confidence: plausible
 ---
-
 # SpaceX — Complete Knowledge Base
 
 > From a startup in a warehouse to humanity's bridge to Mars.
@@ -69,3 +70,6 @@ The launches that built SpaceX's track record and reputation.
 - [[Sources Index]] — Source bibliography
 - [[QnA - Chunk Coverage Map]] — Chunk backing dashboard
 - [[QnA System Roadmap]] — Build progress tracker
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

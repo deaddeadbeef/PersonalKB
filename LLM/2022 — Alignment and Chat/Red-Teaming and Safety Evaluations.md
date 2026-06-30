@@ -116,12 +116,12 @@ It also strengthened the case for layered defenses. Rather than expecting one tr
 
 Design a safety evaluation plan for a new chat model. Include manual red-teaming, one automated jailbreak method, at least two benchmarks, and a deployment-time mitigation layer. Explain what each layer can catch and what it might still miss.
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]

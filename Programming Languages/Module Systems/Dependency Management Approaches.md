@@ -2,8 +2,8 @@
 tags: [programming-languages, module-systems, dependency-management]
 up: "[[Module Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Dependency Management Approaches
 
 ## 🎯 Intuition

@@ -11,6 +11,7 @@ tags:
   - csos
   - book-chapter
 up: "[[Chapter Index]]"
+confidence: verified
 ---
 # MOS — Chapter 10: Case Study 1 — UNIX, Linux, and Android
 

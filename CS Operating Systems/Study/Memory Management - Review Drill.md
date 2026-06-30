@@ -4,6 +4,7 @@ tags:
   - csos/study
   - csos/memory
 up: "[[OS Study Index]]"
+confidence: policy
 ---
 # Memory Management — Review Drill
 
@@ -126,3 +127,6 @@ A: Segmentation divides a process's address space into **variable-size**, logica
 - [[Page Replacement Algorithms]] — OPT, FIFO, LRU, Clock, NRU; Bélády's anomaly; thrashing
 - [[Segmentation]] — variable-size regions; base/limit registers; comparison with paging
 - [[Memory Management Overview]] — hub for the entire domain
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

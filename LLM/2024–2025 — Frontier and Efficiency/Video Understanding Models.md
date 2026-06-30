@@ -90,7 +90,7 @@ Automated video understanding could unlock large-scale moderation, retrieval, pr
 - Why is hierarchical summarization often necessary for hour-long video understanding?
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

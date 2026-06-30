@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Memory Management Overview
 
@@ -54,3 +55,6 @@ How the OS gives each process the illusion of private, contiguous memory while e
 - **[[Virtualization Overview]]** — hypervisors add another layer of address translation (nested paging); memory management is extended, not replaced.
 - **[[Processes Overview]]** — each process has its own address space; the process model explains why isolation matters.
 - **[[File Systems Overview]]** — memory-mapped files (mmap) bridge virtual memory and the file system.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

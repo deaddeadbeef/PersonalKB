@@ -5,6 +5,7 @@ tags:
   - science
   - scorecard
 up: "[[Project Hail Mary]]"
+confidence: fictional
 ---
 # Science Accuracy Scorecard
 

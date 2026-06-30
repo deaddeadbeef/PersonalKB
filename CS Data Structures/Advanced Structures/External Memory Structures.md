@@ -107,7 +107,7 @@ Design and implement an **LSM-tree storage engine** with: (a) an in-memory AVL/r
 
 ---
 
-*See also:* [[B-Trees and B-Plus Trees]] · [[Cache-Oblivious Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[External Sorting]] · [[Disk-Based Algorithms]]
+*See also:* [[B-Trees and B-Plus Trees]] · [[Cache-Oblivious Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** External Sorting · Disk-Based Algorithms
 
 ## Supporting Chunks
 - [[chunk-ds-009 B-trees minimize disk IO by matching node size to pages]]

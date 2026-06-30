@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, ruby]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Ruby — Language Profile
 
 ## 🎯 Intuition

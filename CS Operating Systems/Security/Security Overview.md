@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Security Overview
 
@@ -55,3 +56,6 @@ Operating system security defines who can do what, detects and recovers from att
 - **[[OS Foundations Overview]]** — kernel/user-mode separation and protection rings are the hardware enforcement mechanism for OS security.
 - **[[Processes Overview]]** — process isolation and address space separation are the OS's primary security primitives.
 - **[[Case Studies Overview]]** — Android's permission model and Windows' mandatory integrity control are Security concepts applied in real systems.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

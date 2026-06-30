@@ -2,8 +2,8 @@
 tags: [programming-languages, memory-management, manual]
 up: "[[Memory Management Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Manual Memory Management
 
 ## 🎯 Intuition

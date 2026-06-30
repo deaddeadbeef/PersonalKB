@@ -122,7 +122,7 @@ function moveToFront(dll, node):
 
 ---
 
-*See also:* [[Singly Linked Lists]] | [[Stacks]] | [[Queues and Deques]] | [[Circular Buffers]] | [[Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
+*See also:* [[Singly Linked Lists]] | [[Stacks]] | [[Queues and Deques]] | [[Circular Buffers]] | [[Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
 
 ## Supporting Chunks
 

@@ -114,12 +114,12 @@ Sketch an interpretability workflow for investigating whether a model uses a dec
 - [[LLM/Foundations/Embeddings and Representation Geometry|Representation Geometry]] — the geometric structure interpretability tries to decode
 - [[LLM/Prompting and In-Context Learning/In-Context Learning Mechanisms|ICL Mechanisms]] — induction heads as a mechanistic explanation
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]

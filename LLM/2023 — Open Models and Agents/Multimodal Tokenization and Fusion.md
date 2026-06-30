@@ -103,10 +103,10 @@ Design a multimodal assistant for screenshots plus spoken notes. Choose tokeniza
 
 ---
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

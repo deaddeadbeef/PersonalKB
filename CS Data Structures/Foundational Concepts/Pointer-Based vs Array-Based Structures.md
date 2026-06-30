@@ -101,7 +101,7 @@ created: 2025-07-14
 
 ---
 
-*See also:* [[Memory Layout and Cache Performance]] | [[Abstract Data Types]] | [[Dynamic Arrays]] | [[Linked Lists]] | [[Data Structure Comparison and Selection]] | **CS Algorithms:** [[Algorithm Implementation Strategies]] | [[Cache-Aware Algorithm Design]]
+*See also:* [[Memory Layout and Cache Performance]] | [[Abstract Data Types]] | [[Arrays and Dynamic Arrays|Dynamic Arrays]] | Linked Lists | [[Data Structure Comparison and Selection]] | **CS Algorithms:** Algorithm Implementation Strategies | Cache-Aware Algorithm Design
 
 ## Supporting Chunks
 

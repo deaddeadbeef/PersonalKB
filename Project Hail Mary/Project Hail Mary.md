@@ -2,6 +2,8 @@
 tags:
   - phm
   - moc
+up: "[[index]]"
+confidence: fictional
 ---
 # Project Hail Mary
 
@@ -146,3 +148,6 @@ Tools for searching and cross-referencing the knowledge base.
 - *Alternative Biochemistry → Rocky → Xenolinguistics*
 - *Hail Mary Drive → Relativity → Torpor*
 - *Raw → Chunks → Wiki notes (evidence pipeline)*
+
+## References
+- [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]]

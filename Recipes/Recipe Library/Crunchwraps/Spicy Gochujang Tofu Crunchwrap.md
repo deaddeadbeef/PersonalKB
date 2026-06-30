@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/spicy-gochujang-tofu-crunchwrap.jpg"
 photo-status: ok
 protein-per-serving-g: 44
 calories-per-serving: 859
+confidence: policy
 ---
-
 # Spicy Gochujang Tofu Crunchwrap
 
 ![[spicy-gochujang-tofu-crunchwrap.jpg]]

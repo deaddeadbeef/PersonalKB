@@ -109,13 +109,13 @@ After pass k, d[v] is the shortest-path distance using at most k edges. Any shor
 
 *See also:* [[Dynamic Programming]], [[Asymptotic Notation]], [[NP Completeness]], [[Dijkstra's Algorithm]], [[Floyd-Warshall Algorithm]], [[Shortest Path Overview]], [[CS Data Structures]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
 - [[Graphs - Bellman-Ford handles negative weights and detects negative cycles]]
 - [[Graphs - Dijkstra's greedy approach requires non-negative edge weights]]
 
-### References
+## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 6. See [[Dijkstra's Algorithm]] for the non-negative case and [[Floyd-Warshall Algorithm]] for all-pairs.

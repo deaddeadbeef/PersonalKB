@@ -102,9 +102,9 @@ Retrieval pipelines turned RAG from a simple retrieval trick into a systems-desi
 
 *See also:* [[Chunking Strategies]]; [[Embeddings and Vector Databases]]; [[Reranking]]; [[Supervised Fine-Tuning]]; [[Efficient Attention and Long-Context Variants]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # Extended Features Overview
 
 Beyond core NES emulation, OxideNES includes several modern quality-of-life features that enhance the retro gaming experience.

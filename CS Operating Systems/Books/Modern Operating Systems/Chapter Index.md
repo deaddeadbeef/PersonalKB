@@ -3,6 +3,7 @@ tags:
   - csos
   - chapter-index
 up: "[[Modern Operating Systems]]"
+confidence: verified
 ---
 # Chapter Index — Modern Operating Systems
 
@@ -30,3 +31,6 @@ Status key: `unread` · `seeded` · `in-progress` · `processed`
 ## Back to Book
 
 [[Modern Operating Systems]] · [[Tanenbaum 2015 - Modern Operating Systems]]
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

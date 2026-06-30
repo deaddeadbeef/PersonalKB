@@ -92,10 +92,10 @@ Design a chunking policy for a mixed corpus of PDFs, HTML docs, and wiki notes. 
 
 ---
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ### See Also
 - [[Tokenization]] — sub-word tokenization interacts with chunk boundaries
@@ -103,5 +103,5 @@ Design a chunking policy for a mixed corpus of PDFs, HTML docs, and wiki notes. 
 - [[KV Cache and Context Reuse]] — chunk size affects context window utilization
 - [[Efficient Attention and Long-Context Variants]] — long-context models reduce chunking needs
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

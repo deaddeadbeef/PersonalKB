@@ -80,7 +80,7 @@ Implicit graphs power state-space search in Rubik's Cube solvers, game trees, pr
 
 ---
 
-*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[Graph Search — BFS and DFS]] | [[External Memory and Streaming Algorithms]] | [[Weighted and Directed Graphs]] | Cross-wiki links
+*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[BFS and DFS|Graph Search — BFS and DFS]] | External Memory and Streaming Algorithms | [[Weighted and Directed Graphs]] | Cross-wiki links
 
 ## Supporting Chunks
 

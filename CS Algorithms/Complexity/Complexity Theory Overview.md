@@ -111,3 +111,6 @@ P  ⊆  NP  ⊆  PSPACE  ⊆  EXPTIME
 - **[[Cryptography Overview]]** — RSA security rests on the *conjectured* hardness of factoring (an NP-intermediate problem). Many cryptographic hardness assumptions link directly to complexity theory.
 - **[[Graphs Overview]]** — Traveling Salesman, clique, and graph coloring are canonical NP-complete problems.
 - **[[Foundations and Analysis Overview]]** — Asymptotic notation and the notion of polynomial time are prerequisites.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

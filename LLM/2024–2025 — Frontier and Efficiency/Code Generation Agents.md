@@ -90,7 +90,7 @@ Design a safe execution environment for a production code agent that can run tes
 ---
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ---
 

@@ -110,7 +110,7 @@ Choose a deployment target (consumer laptop CPU, single consumer GPU, or multi-G
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimating memory and quantization trade-offs before serving
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — validating GGUF/AWQ/GPTQ/FP8/INT8 choices, GPU offload, KV-cache precision, speed, and quality
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
@@ -121,7 +121,7 @@ Choose a deployment target (consumer laptop CPU, single consumer GPU, or multi-G
 - [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]] — AWQ's edge and on-device deployment relevance
 - [[chunk-llm-085 QLoRA 4-bit Quantization with LoRA]] — quantization for parameter-efficient fine-tuning
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/_raw/raw-llm-052 GPTQ Accurate Post-Training Quantization|GPTQ Accurate Post-Training Quantization]]

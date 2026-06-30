@@ -11,6 +11,7 @@ tags:
   - csa
   - book-chapter
 up: "[[Chapter Index]]"
+confidence: verified
 ---
 # AU — Chapter 04: A Lower Bound for Sorting and How to Beat It
 

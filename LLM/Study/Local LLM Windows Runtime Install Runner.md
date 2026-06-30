@@ -478,7 +478,7 @@ def wiki_link(route: str) -> str:
     if not clean:
         return ""
     label = clean.split("/")[-1]
-    return "[[" + clean + "|" + label + "]]"
+    return "" + label + ""
 
 
 def render_markdown(record: dict[str, Any]) -> str:

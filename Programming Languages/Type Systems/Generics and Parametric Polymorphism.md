@@ -2,8 +2,8 @@
 tags: [programming-languages, type-systems, generics]
 up: "[[Type Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Generics and Parametric Polymorphism
 
 ## 🎯 Intuition

@@ -102,7 +102,7 @@ The field's primary mitigation is the development of dynamic and continuously re
 
 ## Supporting Chunks / References
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

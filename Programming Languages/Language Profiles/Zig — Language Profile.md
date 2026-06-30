@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, zig]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Zig — Language Profile
 
 **Designer:** Andrew Kelley (2016; 0.x development, pre-1.0)
@@ -77,3 +77,6 @@ Zig's influence comes from reviving the "better C" ambition in a modern form. It
 ### References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

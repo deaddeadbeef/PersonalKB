@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, compilation]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Compilation and Runtime Overview
 
 How a language is compiled and executed determines its performance characteristics, deployment model, debugging experience, and developer workflow. The compilation strategy is one of the most consequential design decisions — it shapes what optimizations are possible, how fast programs start, and how code is distributed.

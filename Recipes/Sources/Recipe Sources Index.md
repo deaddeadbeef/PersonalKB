@@ -1,8 +1,8 @@
 ---
 tags: [recipes, sources]
 up: "[[Recipes]]"
+confidence: policy
 ---
-
 # Recipe Sources Index
 
 > Bibliography for adapted recipes and image attributions. Each external source
@@ -45,3 +45,6 @@ entries below for exact terms.
 | Sesame Tempeh & Edamame Bento | `sesame-tempeh-edamame-bento.jpg` | [Spicy tofu bento](https://commons.wikimedia.org/wiki/File:Spicy_tofu_bento_(4880286653).jpg) | CC BY 2.0 |
 | Hot Honey Turkey Cutlet Sub | `hot-honey-turkey-cutlet-sub.jpg` | [6 inch Subway turkey sandwich](https://commons.wikimedia.org/wiki/File:6_inch_Subway_turkey_sandwich_-_September_2022_-_Sarah_Stierch.jpg) | CC BY 4.0 |
 | Ginger Sesame Tofu & Edamame Stir-Fry | `ginger-sesame-tofu-edamame-stir-fry.jpg` | [Stir Fry with Tofu](https://commons.wikimedia.org/wiki/File:Stir_Fry_with_Tofu.JPG) | Public domain |
+
+## References
+- [[index|PersonalKB Index]]

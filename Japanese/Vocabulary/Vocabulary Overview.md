@@ -1,8 +1,8 @@
 ---
 tags: [japanese, vocabulary, hub]
 up: "[[Japanese]]"
+confidence: plausible
 ---
-
 # Vocabulary Overview
 
 Building vocabulary is the single biggest factor in reading comprehension. Japanese has three major word origins with distinct patterns.
@@ -38,13 +38,13 @@ Building vocabulary is the single biggest factor in reading comprehension. Japan
 - [[Core 1000 — Conversational Fluency]] — understand ~85% of spoken Japanese
 
 ## Thematic Vocabulary Sets
-- [[Thematic — Food and Dining]]
-- [[Thematic — Travel and Transportation]]
-- [[Thematic — Work and Business]]
-- [[Thematic — Home and Family]]
-- [[Thematic — Nature and Weather]]
-- [[Thematic — Body and Health]]
-- [[Thematic — Numbers, Time, and Dates]]
+- [[Thematic Vocabulary — Food and Drink|Thematic — Food and Dining]]
+- [[Thematic Vocabulary — Travel and Transportation|Thematic — Travel and Transportation]]
+- [[Thematic Vocabulary — Work and Office|Thematic — Work and Business]]
+- [[Thematic Vocabulary — Home and Daily Life|Thematic — Home and Family]]
+- [[Thematic Vocabulary — Nature and Weather|Thematic — Nature and Weather]]
+- [[Thematic Vocabulary — Body and Health|Thematic — Body and Health]]
+- [[Thematic Vocabulary — Numbers, Time, and Dates|Thematic — Numbers, Time, and Dates]]
 
 ## Special Vocabulary
 - [[Counters — The Japanese Counting System]]

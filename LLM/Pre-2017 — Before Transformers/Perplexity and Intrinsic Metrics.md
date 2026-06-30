@@ -80,9 +80,9 @@ During pre-training, scaling-law research (Chinchilla, Kaplan et al.) uses cross
 
 *See also:* [[Pre-2017 — Before Transformers Overview]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

@@ -92,7 +92,7 @@ Voice mode in systems like **GPT-4o** and **Gemini Live** signals a shift from t
 - Why is turn-taking a core systems challenge for real-time voice mode?
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

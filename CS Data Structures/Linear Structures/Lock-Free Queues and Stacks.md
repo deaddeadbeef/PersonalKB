@@ -108,7 +108,7 @@ This is the building block of task-parallel runtimes (Cilk, TBB, Tokio). Test wi
 
 ---
 
-*See also:* [[Concurrent Data Structures]] · [[Queues]] · [[Stacks]] | **CS Algorithms:** [[Parallel Algorithms]] · [[Synchronization Primitives]]
+*See also:* [[Concurrent Data Structures]] · [[Queues and Deques|Queues]] · [[Stacks]] | **CS Algorithms:** Parallel Algorithms · Synchronization Primitives
 
 ## References
 -> [[Sources Index]]

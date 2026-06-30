@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # Pre-2017 — Before Transformers
 
 The foundations of modern language AI — from counting words to learning representations. Every technique that powers today's frontier models traces back to ideas developed in this era: statistical language modeling, dense vector representations, recurrent sequence processing, and subword segmentation. Understanding these roots is essential for understanding why the transformer was such a breakthrough.
@@ -53,3 +53,6 @@ Despite this progress, pre-transformer NLP suffered from three critical limitati
 ## Related Eras
 
 → Next: [[2017 — The Transformer Overview|2017 — The Transformer]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

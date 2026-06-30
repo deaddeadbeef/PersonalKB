@@ -1,8 +1,8 @@
 ---
 tags: [study, llm]
 up: "[[LLM/LLM]]"
+confidence: policy
 ---
-
 # LLM Study Index
 
 Study and review materials for the LLM knowledge base.
@@ -323,3 +323,6 @@ For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/
 18. RAG (Lewis et al. 2020)
 19. ReAct (Yao et al. 2022)
 20. HELM (Liang et al. 2022)
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

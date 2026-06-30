@@ -2,8 +2,8 @@
 tags: [programming-languages, module-systems, imports]
 up: "[[Module Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Import and Export Mechanisms
 
 ## 🎯 Intuition

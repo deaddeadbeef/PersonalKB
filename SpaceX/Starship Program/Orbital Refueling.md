@@ -80,3 +80,6 @@ Orbital refueling changes mission design from a one-launch brute-force problem i
 
 ### Challenge
 - Propose a lunar refueling architecture that balances depot size, tanker cadence, and boiloff control while still meeting the requirement to fully load a mission Starship before departure.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

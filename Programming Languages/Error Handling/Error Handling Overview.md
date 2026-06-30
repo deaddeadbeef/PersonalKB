@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, error-handling]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Error Handling Overview
 
 How a language handles errors reveals its philosophy about failure, safety, and programmer responsibility. Error handling is a design axis where languages diverge dramatically — from C's trust-the-programmer approach to Rust's make-errors-impossible-to-ignore approach.

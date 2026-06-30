@@ -112,7 +112,7 @@ For loops, multiply the number of iterations by the cost per iteration. For recu
 
 ---
 
-*See also:* [[Amortized Analysis]] | [[Data Structure Comparison and Selection]] | [[Memory Layout and Cache Performance]] | [[Sorting Algorithms Overview]] | [[Recursion and Recurrences]] | **CS Algorithms:** [[Asymptotic Notation]] | [[Master Theorem]]
+*See also:* [[Amortized Analysis]] | [[Data Structure Comparison and Selection]] | [[Memory Layout and Cache Performance]] | [[Sorting Overview|Sorting Algorithms Overview]] | Recursion and Recurrences | **CS Algorithms:** [[Asymptotic Notation]] | [[Master Theorem]]
 
 ## Supporting Chunks
 

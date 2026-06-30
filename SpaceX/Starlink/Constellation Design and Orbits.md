@@ -101,3 +101,6 @@ Starlink's shell design differs from traditional GEO satellite systems by tradin
 ---
 
 *See also:* [[Satellite Generations]], [[Laser Inter-Satellite Links]], [[Ground Infrastructure]], [[SpaceX Funding and Valuation]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

@@ -121,10 +121,13 @@ A well-known critique of async/await: it creates a **"function color" split**. A
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · [[Coroutines and Fibers]] · [[Thread Pools and Work Stealing]] · [[Structured Concurrency]]
+*See also:* [[Concurrency Models Overview]] · Coroutines and Fibers · Thread Pools and Work Stealing · Structured Concurrency
 
 ---
 
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

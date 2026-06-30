@@ -96,7 +96,7 @@ Design a **distributed Count-Min Sketch** system for a cluster of 100 nodes, eac
 
 ---
 
-*See also:* [[Bloom Filter]] · [[HyperLogLog]] · [[Cuckoo Filter]] | **CS Algorithms:** [[Streaming Algorithms]] · [[Randomized Algorithms]]
+*See also:* [[Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[HyperLogLog]] · Cuckoo Filter | **CS Algorithms:** Streaming Algorithms · Randomized Algorithms
 
 ## References
 -> [[Sources Index]]

@@ -97,3 +97,6 @@ Starship extended the same logic to primary structure. SpaceX abandoned an earli
 ---
 
 *See also:* [[Technology Deep Dives Overview]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

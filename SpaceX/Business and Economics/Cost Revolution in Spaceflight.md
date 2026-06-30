@@ -94,3 +94,6 @@ The broader context is that lower launch costs do not just make old missions che
 
 ### Challenge
 - Develop a business case for a startup whose product only works if launch costs stay below a specific threshold per kilogram.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

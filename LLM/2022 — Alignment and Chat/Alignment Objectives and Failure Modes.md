@@ -85,7 +85,7 @@ This taxonomy shapes how modern post-training methods are evaluated. It explains
 1. Design an evaluation setup that could detect whether a model is being helpful, harmless, and honest without simply incentivizing it to game the metrics.
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

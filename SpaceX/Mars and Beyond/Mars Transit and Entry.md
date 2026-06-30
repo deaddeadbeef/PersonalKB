@@ -109,3 +109,6 @@ Mars entry is among the most demanding phases. The vehicle arrives at approximat
 ---
 
 *See also:* [[Mars and Beyond Overview]], [[Sources Index]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

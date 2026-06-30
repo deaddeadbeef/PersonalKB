@@ -98,3 +98,6 @@ Competitors such as Arianespace, Blue Origin, Rocket Lab, ULA, and Chinese launc
 
 ### Challenge
 - Design a strategy for a rival launch provider trying to win commercial market share without matching SpaceX's full launch cadence.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

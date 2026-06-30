@@ -113,8 +113,8 @@ Design a small AI workflow using one MCP client and three MCP servers, and expla
 
 ## Supporting Chunks
 
-- [[chunk-llm-256 MCP standardises LLM tool integration via JSON-RPC client-server architecture with tools resources and prompts]]
-- [[chunk-llm-257 MCP solves N-times-M integration problem adopted by Claude Desktop Cursor VS Code and 100 plus servers]]
+- [[LLM/_chunks/chunk-llm-256 MCP uses client-server JSON-RPC architecture with tools resources and prompts|chunk-llm-256 MCP standardises LLM tool integration via JSON-RPC client-server architecture with tools resources and prompts]]
+- [[LLM/_chunks/chunk-llm-257 MCP solves the N times M integration problem reducing it to N plus M|chunk-llm-257 MCP solves N-times-M integration problem adopted by Claude Desktop Cursor VS Code and 100 plus servers]]
 
 ## References
 

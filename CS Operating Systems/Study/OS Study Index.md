@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/study
 up: "[[CS Operating Systems]]"
+confidence: policy
 ---
 # OS Study Index
 
@@ -69,3 +70,6 @@ Note: Synchronization and Deadlocks share a drill note because they are tightly 
 - Content is distilled from the `_chunks/` layer and canonical wiki pages; go there for derivations and full explanations.
 - These notes are intentionally concise — the goal is retrieval, not re-explanation.
 - Update drill notes when canonical pages are substantially deepened.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

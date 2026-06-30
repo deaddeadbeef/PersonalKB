@@ -117,7 +117,7 @@ Design an **adaptive cache** that dynamically switches between LRU and LFU behav
 
 ---
 
-*See also:* [[Hash Tables]] · [[Doubly Linked Lists]] · [[Cache-Oblivious Structures]] | **CS Algorithms:** [[Online Algorithms]] · [[Competitive Analysis]]
+*See also:* [[Hash Tables and Hash Functions|Hash Tables]] · [[Doubly Linked Lists and Circular Lists|Doubly Linked Lists]] · [[Cache-Oblivious Structures]] | **CS Algorithms:** Online Algorithms · Competitive Analysis
 
 ## Supporting Chunks
 - [[chunk-ds-004 DLL plus hash map gives O1 LRU cache operations]]

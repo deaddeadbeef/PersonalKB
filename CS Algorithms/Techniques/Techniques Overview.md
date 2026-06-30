@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Techniques Overview
 
@@ -48,3 +49,6 @@ Some algorithmic ideas are not tied to a single problem domain — they are cros
 - **[[Foundations and Analysis Overview]]** — asymptotic analysis and recurrences complement the amortized perspective.
 - **[[Sorting Overview]]** — two-pointer patterns underpin partition-based algorithms like quicksort.
 - **[[Strings Overview]]** — sliding window drives many substring search and matching algorithms.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

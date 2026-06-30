@@ -4,6 +4,7 @@ tags:
   - csa/study
   - csa/cryptography
 up: "[[Algorithms Study Index]]"
+confidence: policy
 ---
 # Cryptography — Review Drill
 
@@ -133,3 +134,6 @@ A: A PRNG (pseudorandom number generator) passes statistical tests but may be pr
 - [[Cryptography Foundations]] — substitution ciphers, one-time pad, symmetric vs asymmetric, hybrid encryption
 - [[RSA Algorithm]] — key generation, encryption/decryption, modular exponentiation, primality testing
 - [[Random Number Generation]] — PRBG definition, seed entropy, CSPRNG, why poor randomness breaks security
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

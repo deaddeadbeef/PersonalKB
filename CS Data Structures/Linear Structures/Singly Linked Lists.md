@@ -137,7 +137,7 @@ function hasCycle(head):
 
 ---
 
-*See also:* [[Doubly Linked Lists and Circular Lists]] | [[Stacks]] | [[Arrays and Dynamic Arrays]] | [[Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
+*See also:* [[Doubly Linked Lists and Circular Lists]] | [[Stacks]] | [[Arrays and Dynamic Arrays]] | [[Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
 
 ## Supporting Chunks
 

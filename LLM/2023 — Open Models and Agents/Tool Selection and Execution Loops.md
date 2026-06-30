@@ -121,12 +121,12 @@ Their legacy is practical rather than purely conceptual: production agents now d
 
 Design an execution loop for an agent that must search documentation, call an API, summarize results, and recover gracefully if the API fails. Specify how tools are selected, which calls can run in parallel, what the stopping conditions are, and what fallback chain should be used if a step breaks.
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]

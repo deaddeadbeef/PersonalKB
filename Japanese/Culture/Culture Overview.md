@@ -1,8 +1,8 @@
 ---
 tags: [japanese, culture, hub]
 up: "[[Japanese]]"
+confidence: plausible
 ---
-
 # Culture Overview
 
 Japanese language and culture are deeply intertwined. Understanding cultural context is not optional — it's part of fluency.
@@ -10,9 +10,9 @@ Japanese language and culture are deeply intertwined. Understanding cultural con
 ## Keigo (敬語) — Honorific Language ![[cultov-001-keigo.mp3]]
 The most important cultural-linguistic feature. Three levels:
 - [[Keigo — Overview and Register System]] — when and why
-- [[Keigo — Sonkeigo]] — respectful language (elevating others)
-- [[Keigo — Kenjougo]] — humble language (lowering yourself)
-- [[Keigo — Teineigo]] — polite language (です/ます system)
+- [[Keigo — Sonkeigo (Honorific)|Keigo — Sonkeigo]] — respectful language (elevating others)
+- [[Keigo — Kenjōgo (Humble)|Keigo — Kenjougo]] — humble language (lowering yourself)
+- [[Keigo — Teineigo (Polite)|Keigo — Teineigo]] — polite language (です/ます system)
 
 ## Social Register
 - [[Social Register — When to Use What]]
@@ -20,9 +20,9 @@ The most important cultural-linguistic feature. Three levels:
 - Age, social status, in-group/out-group (内/外) all affect language choice
 
 ## Cultural Context
-- [[Japanese Business Culture and Language]]
-- [[Seasonal Greetings and Customs]]
-- [[Common Idioms and Proverbs]]
+- Japanese Business Culture and Language
+- [[Seasonal Greetings and Cultural Expressions|Seasonal Greetings and Customs]]
+- [[Idioms and Proverbs — ことわざ|Common Idioms and Proverbs]]
 - [[Numbers and Superstitions]]
 
 ## Key Cultural Concepts

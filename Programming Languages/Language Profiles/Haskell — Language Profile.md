@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, haskell]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Haskell — Language Profile
 
 ## 🎯 Intuition
@@ -76,3 +76,6 @@ Compilers and DSLs, concurrent systems (STM), financial modeling, cryptography, 
 - Paradigm: [[Functional Programming Principles]]
 - Compilation: [[Compilation Pipeline Stages]]
 - References: [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

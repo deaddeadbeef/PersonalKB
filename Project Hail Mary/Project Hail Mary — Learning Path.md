@@ -1,5 +1,7 @@
 ---
 tags: [phm, learning-path]
+up: "[[Project Hail Mary/Project Hail Mary|Project Hail Mary]]"
+confidence: fictional
 ---
 # Project Hail Mary — Learning Path
 
@@ -170,3 +172,6 @@ Build active-recall skill through drills and cross-referencing.
 - Use the [[QnA - Chunk Coverage Map]] to find evidence-backed claims
 - Cross-reference novel chapters with science domain pages
 - Compare Weir's fictional Astrophage with real extremophile research in the chunks
+
+## References
+- [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]]

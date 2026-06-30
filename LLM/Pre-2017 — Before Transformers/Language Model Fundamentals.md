@@ -86,9 +86,9 @@ The core language-modeling setup became the basis of the modern LLM stack. Autor
 - [[Instruction Tuning]] — adapting pretrained language models to follow instructions
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — implement next-token loss, teacher forcing, and autoregressive generation in a toy decoder-only model
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

@@ -4,6 +4,7 @@ tags:
   - book-chapter
   - chapter-index
 up: "[[Algorithms Unlocked]]"
+confidence: verified
 ---
 # Chapter Index — Algorithms Unlocked
 
@@ -23,3 +24,6 @@ Navigation table for all chapter notes. See [[Algorithms Unlocked]] for the full
 | 10 | [[AU - Chapter 10]] | processed | 3 | P/NP, NP-completeness, approximation algorithms, undecidability |
 
 **Total chunks extracted:** 37 unique chunk notes, 38 chapter-to-chunk references. The difference of 1 arises from the [[Analysis - Asymptotic notation drops constants to compare algorithm growth rates|Asymptotic Notation]] chunk being cited in both Chapter 01 and Chapter 02. See [[CS Algorithms/_queries/QnA - Chapter Coverage|QnA — Chapter Coverage]] for live tracking.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
