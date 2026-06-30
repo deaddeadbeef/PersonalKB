@@ -4,6 +4,7 @@ tags:
   - sources
   - bibliography
 up: "[[Project Hail Mary]]"
+confidence: fictional
 ---
 # Sources Index
 
@@ -172,3 +173,6 @@ SlashFilm, "Project Hail Mary Book-to-Movie Changes." — Itemized comparison of
 
 ### CinemaBlend Production
 CinemaBlend, production coverage and anecdotes. — Behind-the-scenes context on casting, VFX, and tonal decisions.
+
+## References
+- [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]]

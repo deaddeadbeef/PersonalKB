@@ -30,7 +30,7 @@ Speaking Japanese requires mastering pronunciation, pitch accent, appropriate fo
 - [[Conversation Patterns — Greetings and Introductions]]
 - [[Conversation Patterns — Daily Interactions]]
 - [[Conversation Patterns — Shopping and Restaurants]]
-- [[Conversation Patterns — Expressing Opinions]]
+- Conversation Patterns — Expressing Opinions
 - [[Self-Introduction Template]]
 
 ### Fluency Tools

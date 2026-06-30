@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # IO Overview
 
@@ -54,3 +55,6 @@ The I/O subsystem connects the OS to storage, network, and peripheral hardware. 
 
 - **[[File Systems Overview]]** — file systems sit directly above the I/O subsystem; disk scheduling affects file-system throughput.
 - **[[OS Foundations Overview]]** — interrupts are the general mechanism by which devices signal the OS; system calls and interrupts share the same trap mechanism.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

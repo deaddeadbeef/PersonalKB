@@ -122,12 +122,12 @@ Design an RLHF pipeline for a specialized assistant. Specify what you would coll
 - [[LLM/Alignment and Safety/Direct Preference Optimization|DPO]] — simplified alternative to RLHF
 - [[LLM/Fine-Tuning and Adaptation/Supervised Fine-Tuning|SFT]] — the first stage of the RLHF pipeline
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]

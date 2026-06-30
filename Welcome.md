@@ -1,6 +1,8 @@
 ---
 type: home
 tags: [moc, playbook, vault-home]
+up: "[[index]]"
+confidence: policy
 ---
 # PersonalKB — Vault Playbook
 
@@ -107,4 +109,5 @@ See **[[QnA System Roadmap]]** for the phased plan.
 
 > **First time here?** Open [[Project Hail Mary]] — it's the fully worked example of every convention above. For language learning, start with [[Japanese]] — it has a guided 5-phase learning path.
 
-
+## References
+- [[index|PersonalKB Index]]

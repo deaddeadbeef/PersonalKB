@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # 2018–2019 — Pretrained Language Models
 
 The pretrain-then-fine-tune paradigm emerges. The architecture splits into encoder-only vs decoder-only paths, establishing a divergence that defines the field to this day. Transfer learning — long successful in computer vision — finally works for NLP, and a single pretrained model can be adapted to dozens of downstream tasks with minimal task-specific data.
@@ -55,3 +55,6 @@ As pretrained models grew, efficiency became a concern. DistilBERT (Sanh et al.,
 
 ← Previous: [[2017 — The Transformer Overview|2017 — The Transformer]]
 → Next: [[2020–2021 — The Scaling Era Overview|2020–2021 — The Scaling Era]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

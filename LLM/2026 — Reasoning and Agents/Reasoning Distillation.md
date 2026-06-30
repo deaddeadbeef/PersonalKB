@@ -86,7 +86,7 @@ Reasoning distillation democratizes advanced reasoning by moving it from expensi
 - [[DeepSeek R1 and Open Reasoning]] — the primary source of distilled reasoning models
 - [[Reasoning Models and Test-Time Compute]] — the capability being distilled
 - [[Distillation and Model Compression]] — classical distillation techniques
-- [[Scaling Laws and Chinchilla]] — how distillation interacts with scaling
+- [[Scaling Laws|Scaling Laws and Chinchilla]] — how distillation interacts with scaling
 
 ---
 
@@ -111,8 +111,8 @@ Defend or reject the claim that reasoning distillation matters more for deployme
 
 ## Supporting Chunks
 
-- [[chunk-llm-258 Reasoning distillation trains small models on chain-of-thought traces transferring how to think not just what to know]]
-- [[chunk-llm-259 DeepSeek distilled 32B model outperforms 70B base models demonstrating reasoning compresses efficiently]]
+- [[LLM/_chunks/chunk-llm-258 Reasoning distillation trains small models on teacher reasoning traces|chunk-llm-258 Reasoning distillation trains small models on chain-of-thought traces transferring how to think not just what to know]]
+- [[LLM/_chunks/chunk-llm-259 DeepSeek 7B distilled model outperforms Llama 3.1 70B on math reasoning|chunk-llm-259 DeepSeek distilled 32B model outperforms 70B base models demonstrating reasoning compresses efficiently]]
 
 ## References
 

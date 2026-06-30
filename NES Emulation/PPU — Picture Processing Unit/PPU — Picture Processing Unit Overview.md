@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # PPU — Picture Processing Unit Overview
 
 The Ricoh 2C02 (NTSC) is the NES's dedicated graphics processor. It renders 256x240 pixels at ~60 Hz by racing the electron beam across 262 scanlines of 341 dots each. The PPU has its own 14-bit address bus, separate from the CPU, accessing pattern tables and nametables through the cartridge.

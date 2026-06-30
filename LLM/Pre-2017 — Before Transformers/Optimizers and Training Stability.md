@@ -86,16 +86,16 @@ AdamW's adaptive learning rates handle the diverse scales of transformer paramet
 1. Suppose you want to transfer hyperparameters from a small transformer to a much wider one. Explain how μP would guide initialization and learning-rate scaling, and what practical evidence you would want before trusting that transfer.
 
 *See also:*
-- [[AdamW]]
-- [[Mixed Precision Training]]
-- [[Gradient Clipping]]
-- [[Checkpointing]]
-- [[μP]]
+- AdamW
+- Mixed Precision Training
+- Gradient Clipping
+- Checkpointing
+- μP
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — observe AdamW, gradient clipping, train/validation loss, and overfitting in a small model
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

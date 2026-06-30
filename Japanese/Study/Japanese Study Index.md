@@ -212,7 +212,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 ## Quick Reference
 - [[Counters — The Japanese Counting System]]
 - [[Common Filler Words and Discourse Markers]]
-- [[Common Idioms and Proverbs]]
+- [[Idioms and Proverbs — ことわざ|Common Idioms and Proverbs]]
 - [[Grammar — Comparison Across Levels]]
 
 ## References

@@ -1,8 +1,8 @@
 ---
 tags: [study, nes-emulation, mapper]
 up: "[[NES Emulation Study Index]]"
+confidence: policy
 ---
-
 # Review Drill — Mappers and Bank Switching
 
 Test your understanding of NES cartridge mapper hardware.
@@ -32,3 +32,6 @@ Test your understanding of NES cartridge mapper hardware.
 
 **Q8:** How does OxideNES persist battery-backed save RAM?
 > Saves to ~/.nes-emulator/saves/<rom-crc32>.sav on emulator exit, loads on ROM open. The 8 KB SRAM at - is also included in save state snapshots.
+
+## References
+- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]

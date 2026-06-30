@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[Welcome]]"
+confidence: verified
 ---
 # CS Operating Systems
 
@@ -166,3 +167,6 @@ Drill notes for active recall and review.
 | [[CS Operating Systems/_queries/QnA - Chunk Coverage Map|QnA - Chunk Coverage Map]] | Which wiki notes have supporting chunks |
 | [[CS Operating Systems/_queries/QnA - Canonical Coverage|QnA - Canonical Coverage]] | Which canonical topics have wiki pages |
 | [[CS Operating Systems/_queries/QnA System Roadmap|QnA System Roadmap]] | Phase plan for the query system |
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

@@ -4,6 +4,7 @@ tags:
   - csa/study
   - csa/compression
 up: "[[Algorithms Study Index]]"
+confidence: policy
 ---
 # Data Compression — Review Drill
 
@@ -142,3 +143,6 @@ A: LZW was patented by Unisys. GIF images use LZW compression and required royal
 - [[Huffman Coding]] — greedy optimal prefix-free code construction, $\Theta(n \lg n)$ build time
 - [[Run-Length Encoding]] — count-symbol pairs, when to use, worst-case expansion
 - [[LZW Compression]] — adaptive dictionary, single-pass encoding/decoding, patent history
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

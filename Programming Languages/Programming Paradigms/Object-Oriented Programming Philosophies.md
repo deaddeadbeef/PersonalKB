@@ -127,3 +127,6 @@ The trend is clear: newer languages retain objects and encapsulation but discard
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

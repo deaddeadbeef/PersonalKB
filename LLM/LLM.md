@@ -1,8 +1,8 @@
 ---
 tags: [llm, moc]
 up: "[[Welcome]]"
+confidence: plausible
 ---
-
 # Large Language Models — A Chronicle
 
 > From statistical n-grams to autonomous agents: the story of how machines learned to speak.
@@ -207,3 +207,6 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/Sources/Sources Index|Sources Index]] — Paper bibliography
 - [[LLM/_queries/QnA - Chunk Coverage Map|QnA — Chunk Coverage Map]] — Chunk backing dashboard
 - [[LLM/_queries/QnA System Roadmap|QnA — System Roadmap]] — Build progress tracker
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

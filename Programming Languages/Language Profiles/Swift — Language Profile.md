@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, swift]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Swift — Language Profile
 
 **Designer:** Chris Lattner (Apple, 2014)
@@ -74,3 +74,6 @@ Swift's broader significance is that it helped popularize a mainstream systems-a
 ### References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

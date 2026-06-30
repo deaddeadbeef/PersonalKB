@@ -1,8 +1,8 @@
 ---
 tags: [study, nes-emulation, cheatsheet]
 up: "[[NES Emulation Study Index]]"
+confidence: policy
 ---
-
 # Cheatsheet — NES Memory Maps and Registers
 
 Quick reference for NES address spaces and register layouts.
@@ -77,3 +77,6 @@ Quick reference for NES address spaces and register layouts.
 | 1 | Tile index (8x16: bit 0 = pattern table) |
 | 2 | Attributes: palette (0-1), priority (5), H-flip (6), V-flip (7) |
 | 3 | X position |
+
+## References
+- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]

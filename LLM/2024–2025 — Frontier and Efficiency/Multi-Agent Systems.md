@@ -109,7 +109,7 @@ Design a multi-agent workflow for software engineering with separate planning, c
 ---
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ---
 

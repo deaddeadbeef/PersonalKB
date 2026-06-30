@@ -1,6 +1,7 @@
 ---
 tags: [japanese, jlpt, study]
 up: "[[Japanese]]"
+confidence: policy
 ---
 # JLPT Overview — N5 to N1
 The Japanese-Language Proficiency Test (JLPT) is the standard benchmark for Japanese ability. Five levels, N5 (easiest) to N1 (hardest).

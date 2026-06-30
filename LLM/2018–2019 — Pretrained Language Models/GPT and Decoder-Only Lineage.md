@@ -94,7 +94,7 @@ The GPT lineage established decoder-only transformers as the winning architectur
 
 *See also:* —
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LLM/_chunks/chunk-llm-005 In-Context Learning Emerges at Scale|In-context learning emerges at scale]]
 - [[LLM/_chunks/chunk-llm-006 Power-Law Scaling of Task Performance|Power-law scaling of task performance]]
@@ -112,7 +112,7 @@ The GPT lineage established decoder-only transformers as the winning architectur
 - [[LLM/_chunks/chunk-llm-127 GPT-2 Scaling from 117M to 1.5B|GPT-2 scaling from 117M to 1.5B]]
 - [[LLM/_chunks/chunk-llm-128 GPT-2 Staged Release for Safety|GPT-2 staged release for safety]]
 
-### References
+## References
 - [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
 - [[LLM/_raw/raw-llm-006 InstructGPT Training with Human Feedback|raw-llm-006 InstructGPT Training with Human Feedback]]
 - [[LLM/_raw/raw-llm-018 GPT-4 Technical Report|raw-llm-018 GPT-4 Technical Report]]

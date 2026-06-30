@@ -1,3 +1,7 @@
+---
+up: "[[Project Hail Mary/Project Hail Mary|Project Hail Mary]]"
+confidence: fictional
+---
 ﻿---
 tags:
   - phm

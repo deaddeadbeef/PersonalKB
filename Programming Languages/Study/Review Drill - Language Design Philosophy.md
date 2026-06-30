@@ -1,8 +1,8 @@
 ---
 tags: [pl, study, design-philosophy]
 up: "[[Programming Languages Study Index]]"
+confidence: policy
 ---
-
 # Review Drill — Language Design Philosophy
 
 ## Quick Recall

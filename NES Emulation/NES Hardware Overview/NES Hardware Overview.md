@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # NES Hardware Overview
 
 The Nintendo Entertainment System (1983 in Japan as Famicom, 1985 in North America) defined console gaming for a generation. Understanding its hardware is the foundation for building an accurate emulator.

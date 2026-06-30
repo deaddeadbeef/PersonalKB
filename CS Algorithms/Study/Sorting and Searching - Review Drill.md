@@ -4,6 +4,7 @@ tags:
   - csa/study
   - csa/sorting
 up: "[[Algorithms Study Index]]"
+confidence: policy
 ---
 # Sorting and Searching — Review Drill
 
@@ -205,3 +206,6 @@ Key contrast: insertion sort adapts to order (inversions-sensitive), selection s
 - [[Inversions]] — inversion count definition, sortedness metric, merge-sort counter
 - [[Binary Search]] — $O(\lg n)$ search on sorted arrays; optimal comparison search
 - [[Comparison Sort Lower Bound]] — $\Omega(n \lg n)$ decision-tree proof
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

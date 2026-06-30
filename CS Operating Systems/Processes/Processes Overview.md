@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Processes Overview
 
@@ -65,3 +66,6 @@ How operating systems create, manage, schedule, and communicate between running 
 - **[[Synchronization Overview]]** — once processes/threads share resources, you need synchronization to avoid race conditions.
 - **[[OS Foundations Overview]]** — the OS structure and system-call mechanism underpin everything in this domain.
 - **[[Deadlocks Overview]]** — blocking on shared resources (covered in Processes) can lead to deadlock.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

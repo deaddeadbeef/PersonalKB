@@ -1,8 +1,8 @@
 ---
 tags: [japanese, grammar, hub]
 up: "[[Japanese]]"
+confidence: plausible
 ---
-
 # Grammar Overview
 
 Japanese grammar is fundamentally different from English. Understanding the core patterns unlocks the entire language.

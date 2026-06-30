@@ -1,8 +1,8 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
+confidence: policy
 ---
-
 # Vehicles and Specs — Review Drill
 
 > 15 Q&A pairs · Mix of quick-fire recall and conceptual questions
@@ -60,3 +60,6 @@ up: "[[SpaceX Study Index]]"
 
 **Q15. What are the Crew Dragon's crew capacity and pressurized volume?**
 > **A15.** Up to 4 crew for NASA missions (rated for up to 7). Pressurized volume is ~9.3 m³ (328 ft³).
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

@@ -94,7 +94,7 @@ Directed graphs model hyperlinks, prerequisite chains, call graphs, and one-way 
 
 ---
 
-*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[Graph Properties and Terminology]] | [[Shortest Path Algorithms]] | [[Minimum Spanning Trees]] | Cross-wiki links
+*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[Graph Properties and Terminology]] | Shortest Path Algorithms | [[Minimum Spanning Trees]] | Cross-wiki links
 
 ## Supporting Chunks
 

@@ -1,8 +1,8 @@
 ---
 tags: [pl, study, type-systems]
 up: "[[Programming Languages Study Index]]"
+confidence: policy
 ---
-
 # Review Drill — Type Systems and Inference
 
 ## Quick Recall
@@ -40,7 +40,7 @@ up: "[[Programming Languages Study Index]]"
 - [[Static vs Dynamic Typing]] — core dimension
 - [[Type Inference and Hindley-Milner]] — inference algorithms
 - [[Generics and Parametric Polymorphism]] — generic systems
-- [[Gradual Typing]] — hybrid approach
+- [[Gradual and Optional Typing|Gradual Typing]] — hybrid approach
 
 ## References
 → [[Sources Index]]

@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, genealogy]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Language Genealogy Overview
 
 Programming languages evolve through a process of inheritance, reaction, and synthesis. Each new language emerges from specific frustrations with existing tools and embodies a set of design beliefs about how programmers should work. Understanding this genealogy reveals why languages are designed the way they are.

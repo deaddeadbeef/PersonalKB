@@ -93,7 +93,7 @@ This pipeline—crawl, filter, deduplicate, then mix—became the standard recip
 
 *See also:* [[2018–2019 — Pretrained Language Models Overview]], [[Language Model Fundamentals]], [[Scaling Laws]], [[Contamination and Data Leakage]], [[Compute Data and Parameter Trade-offs]], [[Open-Weight Model Ecosystem]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LLM/_chunks/chunk-llm-008 GPT-3 Training Data Composition|GPT-3 training data composition]]
 - [[LLM/_chunks/chunk-llm-047 T5 Scale and Data Quality Matter Most|T5 scale and data quality findings]]
@@ -103,7 +103,7 @@ This pipeline—crawl, filter, deduplicate, then mix—became the standard recip
 - [[LLM/_chunks/chunk-llm-175 The Pile Became the Standard Open Pre-Training Dataset|The Pile as an open pretraining dataset]]
 - [[LLM/_chunks/chunk-llm-176 Pile Data Quality Through Filtering and Deduplication|Pile filtering and deduplication]]
 
-### References
+## References
 - [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
 - [[LLM/_raw/raw-llm-012 T5 Unified Text-to-Text Transformer|raw-llm-012 T5 Unified Text-to-Text Transformer]]
 - [[LLM/_raw/raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners|raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners]]

@@ -2,8 +2,8 @@
 tags: [pl, language-profile, csharp, dotnet]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # C# — Language Profile
 
 ## 🎯 Intuition
@@ -207,3 +207,6 @@ C# launched as Microsoft's answer to Java but has since become one of the most r
 ### Cross-References
 
 - References: [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

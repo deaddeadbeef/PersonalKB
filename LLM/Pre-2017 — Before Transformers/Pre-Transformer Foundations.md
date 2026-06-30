@@ -93,9 +93,9 @@ Every major idea in transformers—embeddings, attention, contextual representat
 
 *See also:* [[Pre-2017 — Before Transformers Overview]], [[Pre-LLM Neural Network Foundations]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

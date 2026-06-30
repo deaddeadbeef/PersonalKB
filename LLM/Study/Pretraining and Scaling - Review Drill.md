@@ -1,8 +1,8 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
+confidence: policy
 ---
-
 # Pretraining & Scaling — Review Drill
 
 ## Quick-Fire Questions
@@ -42,3 +42,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 12. **What does a tiny decoder-only training lab prove?**
     It proves the causal LM objective end to end: shifted next-token targets, masked self-attention, logits, cross-entropy loss, gradients, train/validation loss, and autoregressive generation. See [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]].
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

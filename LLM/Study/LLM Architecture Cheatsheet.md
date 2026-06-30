@@ -1,8 +1,8 @@
 ---
 tags: [study, llm, cheatsheet]
 up: "[[LLM/Study/LLM Study Index]]"
+confidence: policy
 ---
-
 # LLM Architecture Cheatsheet
 
 Quick-reference for key architectural decisions, formulas, and model specifications.
@@ -88,3 +88,6 @@ Use [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Prime
 | TGI | HuggingFace integration | Quick deployment |
 | SGLang | Structured generation focus | Constrained output |
 | llama.cpp | CPU inference, GGUF quantization | Local/edge deployment |
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

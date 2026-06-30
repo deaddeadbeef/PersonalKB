@@ -141,7 +141,7 @@ function minSubarrayLen(arr, target):
 
 ---
 
-*See also:* [[Amortized Analysis for Algorithms]] · [[BFS and DFS]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Arrays]] · [[Hash Tables]] · [[Deques]]
+*See also:* [[Amortized Analysis for Algorithms]] · [[BFS and DFS]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Arrays]] · [[Hash Tables and Hash Functions|Hash Tables]] · [[Queues and Deques|Deques]]
 
 ## References
 -> [[Sources Index]]

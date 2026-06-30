@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Starlink Overview
 
 Starlink is SpaceX's satellite internet constellation designed to provide high-speed, low-latency broadband connectivity worldwide. With thousands of satellites in low Earth orbit, it is both the largest satellite constellation ever deployed and a critical revenue engine funding SpaceX's Mars ambitions.
@@ -32,11 +32,11 @@ Starlink's direct-to-cell service, developed in partnership with T-Mobile and ot
 Starlink generates revenue through consumer and enterprise subscriptions, government contracts (including military and disaster response), and aviation/maritime connectivity. Analyst estimates place Starlink's annual revenue in the multi-billion dollar range, making it SpaceX's largest revenue source. This cash flow is essential for funding Starship development and the Mars program.
 
 ## Pages in This Domain
-- [[Starlink Constellation Design]]
-- [[Starlink Satellite Generations]]
+- [[Constellation Design and Orbits|Starlink Constellation Design]]
+- [[Satellite Generations|Starlink Satellite Generations]]
 - [[Laser Inter-Satellite Links]]
-- [[Starlink Ground Infrastructure]]
-- [[Direct-to-Cell]]
+- [[Ground Infrastructure|Starlink Ground Infrastructure]]
+- [[Direct-to-Cell Technology|Direct-to-Cell]]
 - [[Starlink Business Model]]
 
 ## Related Domains
@@ -44,3 +44,6 @@ Starlink generates revenue through consumer and enterprise subscriptions, govern
 - [[Falcon Program Overview]] — the launch vehicle deploying Starlink satellites
 - [[Starship Program Overview]] — future launch vehicle for larger v2 satellites
 - [[Technology Deep Dives Overview]] — phased array and laser link engineering
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

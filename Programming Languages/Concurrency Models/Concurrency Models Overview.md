@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, concurrency]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Concurrency Models Overview
 
 Concurrency — executing multiple computations in overlapping time periods — is the defining challenge of modern software. How a language handles concurrency reveals its deepest assumptions about safety, performance, and programmer ergonomics. The choices are not just technical — they're philosophical.

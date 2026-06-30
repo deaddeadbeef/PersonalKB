@@ -70,7 +70,7 @@ The model you choose shapes how you think about code reuse, extensibility, and s
 - **Class-based disadvantages:** Rigid — creating a new kind of object requires defining a new class. Hierarchy decisions must be made upfront and are expensive to change. Diamond problem: multiple inheritance creates ambiguity (which parent's method?). Class hierarchies often model the wrong abstraction.
 - **Prototype-based advantages:** More flexible — no upfront hierarchy design needed. Objects can be modified at runtime. Simpler mental model (only objects, no meta-layer of classes).
 - **Prototype-based disadvantages:** Less structured — no type system enforcement of relationships. Harder for tooling to analyze. Can lead to unclear object identity and delegation chains.
-- **JavaScript's Prototype System:** JavaScript is the only mainstream prototype-based language. Every object has a hidden `[[Prototype]]` link to another object. Method calls traverse the prototype chain until found or exhausted. Constructor functions and `Object.create()` set up prototype relationships. JavaScript added `class` syntax in ES2015, but it's syntactic sugar over prototypes — the underlying mechanism is unchanged. This caused confusion: JavaScript looks class-based but behaves prototype-based. Understanding this distinction is essential for advanced JavaScript programming.
+- **JavaScript's Prototype System:** JavaScript is the only mainstream prototype-based language. Every object has a hidden `[[Prototype vs Class-Based OOP|Prototype]]` link to another object. Method calls traverse the prototype chain until found or exhausted. Constructor functions and `Object.create()` set up prototype relationships. JavaScript added `class` syntax in ES2015, but it's syntactic sugar over prototypes — the underlying mechanism is unchanged. This caused confusion: JavaScript looks class-based but behaves prototype-based. Understanding this distinction is essential for advanced JavaScript programming.
 
 ---
 
@@ -124,3 +124,6 @@ Self (1986, Ungar and Smith at Xerox PARC) pioneered prototype-based OOP. Its co
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

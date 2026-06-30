@@ -109,9 +109,9 @@ If the result has fewer than n vertices when the queue empties, some vertices we
 
 ---
 
-*See also:* [[Dynamic Programming]], [[Asymptotic Notation]], [[NP Completeness]], [[Graph Fundamentals]], [[Bellman-Ford Algorithm]], [[Queue]], [[CS Data Structures]]
+*See also:* [[Dynamic Programming]], [[Asymptotic Notation]], [[NP Completeness]], [[Graph Fundamentals]], [[Bellman-Ford Algorithm]], [[Queues and Deques|Queue]], [[CS Data Structures]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
@@ -119,6 +119,6 @@ If the result has fewer than n vertices when the queue empties, some vertices we
 - [[Graphs - PERT critical path is the longest path in a task-duration DAG]]
 - [[Graphs - DAG shortest paths use topological-order relaxation handling negative weights]]
 
-### References
+## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 5. See [[Graph Fundamentals]] for prerequisite vocabulary.

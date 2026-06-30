@@ -101,10 +101,13 @@ The thread-and-lock model descends from early multiprogramming systems of the 19
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · [[Actor Model]] · [[Software Transactional Memory]] · [[Async-Await]]
+*See also:* [[Concurrency Models Overview]] · Actor Model · [[Software Transactional Memory]] · Async-Await
 
 ---
 
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

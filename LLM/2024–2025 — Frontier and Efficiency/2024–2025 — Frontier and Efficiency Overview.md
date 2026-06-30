@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # 2024–2025 — Frontier and Efficiency
 
 Pushing the frontier on two axes — maximum capability (multimodal, agents, million-token context) and maximum efficiency (serving, inference, architecture alternatives). The field matures from research prototypes to production systems processing billions of requests daily, and the tension between capability and cost drives innovation at every layer of the stack.
@@ -64,3 +64,6 @@ The frontier is expanding along multiple axes simultaneously: reasoning models (
 
 ← Previous: [[2023 — Open Models and Agents Overview|2023 — Open Models and Agents]]
 → Next: [[2026 — Reasoning and Agents Overview|2026 — Reasoning and Agents]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

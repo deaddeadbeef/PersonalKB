@@ -4,6 +4,7 @@ tags:
   - csa/study
   - csa/complexity
 up: "[[Algorithms Study Index]]"
+confidence: policy
 ---
 # Complexity Theory — Review Drill
 
@@ -150,3 +151,6 @@ If any NP-complete problem is in P, then P = NP.
 - [[NP Completeness]] — NP-hard, NP-complete, Cook-Levin, reductions, examples
 - [[Halting Problem]] — undecidability, Turing diagonalisation, Rice's Theorem
 - [[Approximation Algorithms]] — α-approximation, vertex cover, load balancing, proof template
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

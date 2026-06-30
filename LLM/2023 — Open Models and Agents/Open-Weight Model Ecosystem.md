@@ -111,12 +111,12 @@ You are advising an organization that wants to avoid external API dependence whi
 - [[LLM/Fine-Tuning and Adaptation/LoRA and QLoRA|LoRA]] — the PEFT method that made open model adaptation practical
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] — the operational checklist for maintaining local open-weight services
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 
 - [[LLM/Sources/Sources Index]]

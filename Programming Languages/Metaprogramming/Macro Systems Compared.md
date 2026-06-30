@@ -2,8 +2,8 @@
 tags: [programming-languages, metaprogramming, macros]
 up: "[[Metaprogramming Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Macro Systems Compared
 
 ## 🎯 Intuition

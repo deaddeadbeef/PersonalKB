@@ -2,8 +2,8 @@
 tags: [programming-languages, module-systems, ml-modules]
 up: "[[Module Systems Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # ML Module System and Functors
 
 ## 🎯 Intuition

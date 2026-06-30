@@ -89,7 +89,7 @@ CLIP established contrastive alignment as the first broadly successful image-lan
 
 ## Supporting Chunks / References
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Greedy Overview
 
@@ -51,3 +52,6 @@ Greedy algorithms make the locally optimal choice at each step, hoping to find a
 - **[[Graphs Overview]]** — Dijkstra's, Kruskal's, and Prim's are greedy graph algorithms.
 - **[[Foundations and Analysis Overview]]** — dynamic programming handles problems where greedy fails.
 - **[[Complexity Theory Overview]]** — greedy approximation algorithms for NP-hard problems.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

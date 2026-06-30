@@ -84,3 +84,6 @@ Compared with Saturn V, SLS, and Falcon 9, Starship combines super-heavy lift wi
 - Outline a mission architecture that uses Starship's large payload volume and full-stack reusability to do something neither Falcon 9 nor SLS could do as efficiently.
 
 *See also:* [[Super Heavy Booster]], [[Raptor Engine]], [[Thermal Protection System]], [[Starship Variants and Applications]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

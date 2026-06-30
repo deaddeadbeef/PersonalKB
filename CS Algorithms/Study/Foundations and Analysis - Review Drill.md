@@ -4,6 +4,7 @@ tags:
   - csa/study
   - csa/analysis
 up: "[[Algorithms Study Index]]"
+confidence: policy
 ---
 # Foundations and Analysis — Review Drill
 
@@ -173,3 +174,6 @@ A: Yes. Searching in a sorted array needs ≥ n+1 leaves → height ≥ lg(n+1) 
 - [[Dynamic Programming]] — optimal substructure, overlapping subproblems
 - [[Recurrence Relations]] — divide-and-conquer recurrences
 - [[Master Theorem]] — three-case reference card
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

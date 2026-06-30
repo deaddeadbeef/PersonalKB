@@ -2,8 +2,8 @@
 tags: [programming-languages, memory-management, value-reference]
 up: "[[Memory Management Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Value Types vs Reference Types
 
 ## 🎯 Intuition

@@ -90,11 +90,11 @@ Distillation and model compression are foundational for turning powerful but exp
 
 ---
 
-*See also:* [[2018–2019 — Pretrained Language Models Overview]], [[Inference and Serving Overview]]
+*See also:* [[2018–2019 — Pretrained Language Models Overview]], Inference and Serving Overview
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 _Placeholder for links to specific techniques, implementation details, and case studies._
 
-### References
+## References
 _Placeholder for references to papers, documentation, and source materials._

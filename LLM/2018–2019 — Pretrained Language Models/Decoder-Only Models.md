@@ -80,7 +80,7 @@ Decoder-only transformers became the foundation of frontier AI. GPT-1 establishe
 
 *See also:* [[2018–2019 — Pretrained Language Models Overview]], [[Transformer Architecture]], [[Scaling Laws]], [[Few-Shot Prompting]], [[Reinforcement Learning from Human Feedback]], [[Open-Weight Model Ecosystem]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LLM/_chunks/chunk-llm-005 In-Context Learning Emerges at Scale|In-context learning emerges at scale]]
 - [[LLM/_chunks/chunk-llm-007 Few-Shot Prompting Outperforms Zero-Shot|Few-shot prompting outperforms zero-shot]]
@@ -95,7 +95,7 @@ Decoder-only transformers became the foundation of frontier AI. GPT-1 establishe
 - [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|KV cache memory bandwidth bottleneck]]
 - [[LLM/_chunks/chunk-llm-220 GQA Default Attention Modern LLMs|Grouped-query attention as a modern default]]
 
-### References
+## References
 - [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
 - [[LLM/_raw/raw-llm-009 LLaMA Open Foundation Language Models|raw-llm-009 LLaMA Open Foundation Language Models]]
 - [[LLM/_raw/raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training|raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training]]

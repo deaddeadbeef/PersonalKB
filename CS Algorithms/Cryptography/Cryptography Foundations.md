@@ -108,7 +108,7 @@ Design a simplified key exchange protocol: two parties who have never met must a
 
 *See also:* [[RSA Algorithm]], [[Random Number Generation]], [[NP Completeness]], [[P vs NP]], [[CS Data Structures]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
@@ -118,6 +118,6 @@ Design a simplified key exchange protocol: two parties who have never met must a
 - [[Cryptography - The one-time pad achieves perfect secrecy but requires a key as long as the message]]
 - [[Cryptography - Pseudorandom bit generation from a short seed approximates the security of a one-time pad]]
 
-### References
+## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 8. See [[RSA Algorithm]] for the full RSA description. See [[Random Number Generation]] for how practical cryptographic key material is generated from a short random seed.

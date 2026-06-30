@@ -118,8 +118,8 @@ flowchart TD
 
 ## Supporting Chunks
 
-- [[Complexity - The Halting Problem is undecidable via Turing’s diagonalisation argument]]
-- [[Complexity - Rice’s Theorem shows all non-trivial semantic program properties are undecidable]]
+- [[CS Algorithms/_chunks/Complexity - The Halting Problem is undecidable via Turing's diagonalisation argument]]
+- [[CS Algorithms/_chunks/Complexity - Rice's Theorem shows all non-trivial semantic program properties are undecidable]]
 
 ## References
 

@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, language-profiles]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Language Profiles Overview
 
 While the dimension hubs compare languages along specific design axes, these profiles provide a holistic view of each language — its design philosophy, historical context, ecosystem, and how its design choices interact to create a coherent (or sometimes incoherent) whole.
@@ -24,7 +24,7 @@ Cross-references to dimension hubs let you drill into specific design axes (type
 ### Application and Enterprise Languages
 - [[Java — Language Profile]]
 - [[Kotlin — Language Profile]]
-- [[C Sharp — Language Profile]] (not yet created)
+- [[C# — Language Profile|C Sharp — Language Profile]] (not yet created)
 
 ### Scripting and Dynamic Languages
 - [[Python — Language Profile]]
@@ -47,4 +47,3 @@ Cross-references to dimension hubs let you drill into specific design axes (type
 ## References
 
 - [[Sources Index]]
-

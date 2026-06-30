@@ -131,8 +131,11 @@ The panic concept evolved from early abort mechanisms in C (`abort()`, `exit()`)
 
 ---
 
-*See also:* [[Error Handling Overview]], [[Result and Option Types]], [[Exception Hierarchies]]
+*See also:* [[Error Handling Overview]], [[Result and Option Types]], Exception Hierarchies
 
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

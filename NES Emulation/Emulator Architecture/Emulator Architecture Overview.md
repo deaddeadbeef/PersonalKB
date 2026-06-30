@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # Emulator Architecture Overview
 
 OxideNES is a cycle-accurate NES emulator written in Rust, designed for both accuracy and performance. The architecture follows a modular design with the Bus as central coordinator.

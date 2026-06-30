@@ -78,7 +78,7 @@ Test-time compute opened a second frontier for capability improvement and enable
 ### Related Notes
 
 - [[Chain-of-Thought Prompting]] — the prompting technique that inspired reasoning models
-- [[Scaling Laws and Chinchilla]] — training-time scaling laws that reasoning models complement
+- [[Scaling Laws|Scaling Laws and Chinchilla]] — training-time scaling laws that reasoning models complement
 - [[DeepSeek R1 and Open Reasoning]] — open-source replication of the reasoning paradigm
 - [[LLM/Study/Local LLM Reasoning Budget and Test-Time Compute Lab]] — practical local harness for thinking mode, reasoning effort, parser separation, latency, quality, and trace policy.
 - [[Frontier Models 2025-2026]] — the broader model generation context
@@ -108,7 +108,7 @@ Argue whether future capability progress is more likely to come from larger base
 
 - [[chunk-llm-241 Test-time compute scaling improves performance by allocating more inference tokens to harder problems]]
 - [[chunk-llm-242 OpenAI o1 scores 83 percent on AIME 2024 via hidden chain-of-thought reasoning]]
-- [[chunk-llm-243 o3-mini offers configurable thinking budgets trading latency for accuracy following inference scaling laws]]
+- [[LLM/_chunks/chunk-llm-243 Inference scaling laws predict model performance as a function of thinking time|chunk-llm-243 o3-mini offers configurable thinking budgets trading latency for accuracy following inference scaling laws]]
 
 ## References
 

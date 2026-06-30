@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/sesame-tempeh-edamame-bento.jpg"
 photo-status: ok
 protein-per-serving-g: 54
 calories-per-serving: 890
+confidence: policy
 ---
-
 # Sesame Tempeh & Edamame Bento
 
 ![[sesame-tempeh-edamame-bento.jpg]]

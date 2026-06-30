@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # 2020–2021 — The Scaling Era
 
 GPT-3 proves that scale is a strategy. Few-shot learning, scaling laws, and parameter-efficient methods rewrite the rules. Models jump from 1.5B to 175B parameters in a single generation, and the field discovers that emergent capabilities — abilities not present in smaller models — appear as scale increases. The investment thesis for building ever-larger models takes hold.
@@ -61,3 +61,6 @@ Scale brought new problems. Benchmark contamination — where training data inad
 
 ← Previous: [[2018–2019 — Pretrained Language Models Overview|2018–2019 — Pretrained Language Models]]
 → Next: [[2022 — Alignment and Chat Overview|2022 — Alignment and Chat]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

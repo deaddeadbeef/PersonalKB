@@ -1,5 +1,7 @@
 ---
 tags: [csos, learning-path]
+up: "[[CS Operating Systems/CS Operating Systems|CS Operating Systems]]"
+confidence: policy
 ---
 # CS Operating Systems — Learning Path
 
@@ -171,3 +173,6 @@ Build active-recall skill through drills and applied exercises.
 
 ### Capstone
 Pick one case study ([[Linux Architecture Overview]], [[Android Architecture]], or [[Windows NT Architecture]]) and map every concept from Passes 1–3 onto the real system.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

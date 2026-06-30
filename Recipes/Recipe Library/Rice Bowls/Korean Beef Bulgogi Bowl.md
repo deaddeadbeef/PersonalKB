@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/korean-beef-bulgogi-bowl.jpg"
 photo-status: ok
 protein-per-serving-g: 62
 calories-per-serving: 711
+confidence: policy
 ---
-
 # Korean Beef Bulgogi Bowl
 
 ![[korean-beef-bulgogi-bowl.jpg]]

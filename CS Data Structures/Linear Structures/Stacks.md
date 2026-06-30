@@ -104,7 +104,7 @@ function isEmpty(s):
 ### Real-World Usage
 - **Call stack** — every running program uses a hardware-assisted call stack for function invocations, local variables, and return addresses.
 - **Depth-first search (DFS)** — an explicit stack replaces recursion for DFS on graphs and trees, avoiding stack overflow on large inputs → see [[BFS and DFS]].
-- **Backtracking** — sudoku solvers, N-queens, and constraint-satisfaction problems push partial solutions and backtrack (pop) on dead ends → see [[Backtracking]].
+- **Backtracking** — sudoku solvers, N-queens, and constraint-satisfaction problems push partial solutions and backtrack (pop) on dead ends → see [[Backtracking Overview|Backtracking]].
 - **Expression evaluation** — the shunting-yard algorithm uses two stacks (operands and operators) to convert infix to postfix and evaluate.
 - **Undo systems** — text editors push each action onto a stack; Ctrl+Z pops and reverses the most recent action.
 - **Browser history** — the back button pops from a "back stack" and pushes onto a "forward stack."
@@ -122,11 +122,11 @@ function isEmpty(s):
 2. **Daily Temperatures** (LeetCode 739) — Use a monotonic stack to find the next warmer day for each entry. Push indices onto the stack; pop when the current temperature exceeds the stack top. $O(n)$ time.
 
 ### Challenge
-1. **Largest Rectangle in Histogram** (LeetCode 84) — Maintain a stack of bar indices in increasing height order. When a shorter bar arrives, pop and compute areas. This is the canonical hard monotonic-stack problem and connects stacks to [[BFS and DFS]] (DFS-based variants exist) and [[Backtracking]] patterns.
+1. **Largest Rectangle in Histogram** (LeetCode 84) — Maintain a stack of bar indices in increasing height order. When a shorter bar arrives, pop and compute areas. This is the canonical hard monotonic-stack problem and connects stacks to [[BFS and DFS]] (DFS-based variants exist) and [[Backtracking Overview|Backtracking]] patterns.
 
 ---
 
-*See also:* [[Queues and Deques]] | [[Singly Linked Lists]] | [[Recursion and the Call Stack]] | **CS Algorithms:** [[BFS and DFS]], [[Backtracking]]
+*See also:* [[Queues and Deques]] | [[Singly Linked Lists]] | Recursion and the Call Stack | **CS Algorithms:** [[BFS and DFS]], [[Backtracking Overview|Backtracking]]
 
 ## Supporting Chunks
 

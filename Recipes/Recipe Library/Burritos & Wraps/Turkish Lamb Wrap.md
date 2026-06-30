@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/turkish-lamb-wrap.jpg"
 photo-status: ok
 protein-per-serving-g: 61
 calories-per-serving: 734
+confidence: policy
 ---
-
 # Turkish Lamb Wrap
 
 ![[turkish-lamb-wrap.jpg]]

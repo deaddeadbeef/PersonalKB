@@ -1,8 +1,8 @@
 ---
 tags: [study, nes-emulation, cpu]
 up: "[[NES Emulation Study Index]]"
+confidence: policy
 ---
-
 # Review Drill — 6502 CPU and Addressing
 
 Test your understanding of the MOS 6502 processor as implemented in the NES.
@@ -32,3 +32,6 @@ Test your understanding of the MOS 6502 processor as implemented in the NES.
 
 **Q8:** Why does the NES not implement BCD (decimal) mode despite the D flag existing?
 > Ricoh disabled BCD arithmetic in the 2A03 to avoid patent royalties to MOS Technology. The D flag can be set/cleared but has no effect on ADC/SBC operations.
+
+## References
+- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]

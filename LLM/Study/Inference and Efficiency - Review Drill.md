@@ -1,8 +1,8 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
+confidence: policy
 ---
-
 # Inference & Efficiency — Review Drill
 
 ## Quick-Fire Questions
@@ -69,3 +69,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 - [[LLM/Study/Local LLM Serving Runbook|Local LLM Serving Runbook]] — prove native and OpenAI-compatible endpoints, then diagnose serving failures.
 - [[LLM/Study/Local LLM OpenAI-Compatible API Contract Lab|Local LLM OpenAI-Compatible API Contract Lab]] — prove base URL, route, model id, streaming, error behavior, and feature gaps before client integration.
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — score local model quality with workload prompts, rubrics, pairwise comparison, and RAG/citation checks.
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

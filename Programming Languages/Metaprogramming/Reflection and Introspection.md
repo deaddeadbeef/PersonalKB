@@ -2,8 +2,8 @@
 tags: [programming-languages, metaprogramming, reflection]
 up: "[[Metaprogramming Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Reflection and Introspection
 
 ## 🎯 Intuition

@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/chicken-katsu-bento.jpg"
 photo-status: ok
 protein-per-serving-g: 72
 calories-per-serving: 774
+confidence: policy
 ---
-
 # Chicken Katsu Bento
 
 ![[chicken-katsu-bento.jpg]]

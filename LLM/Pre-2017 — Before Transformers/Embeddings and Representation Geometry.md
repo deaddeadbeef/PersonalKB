@@ -75,14 +75,14 @@ Embedding geometry underlies retrieval systems because semantic similarity can b
 1. Design an experiment using linear probes or representation engineering to test whether a model contains a robust “truthfulness” direction rather than a probe artifact.
 
 *See also:*
-- [[Retrieval-Augmented Generation]]
+- Retrieval-Augmented Generation
 - [[Mechanistic Interpretability]]
-- [[Sparse Autoencoders]]
-- [[Representation Engineering]]
+- Sparse Autoencoders
+- Representation Engineering
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
-### References
+## References
 - [[LLM/Sources/Sources Index]]

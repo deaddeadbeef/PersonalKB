@@ -1,8 +1,8 @@
 ---
 tags: [sources, nes-emulation]
 up: "[[NES Emulation]]"
+confidence: verified
 ---
-
 # Sources Index — NES Emulation
 
 ## Primary Sources
@@ -49,3 +49,6 @@ up: "[[NES Emulation]]"
 | [[raw-nes-028]] | Test ROMs | nestest, PPU/APU tests, mapper tests, strategy |
 | [[raw-nes-029]] | DMA Mechanisms | OAM DMA timing, DMC DMA stalls, interactions |
 | [[raw-nes-030]] | TAS Support | Input recording, frame advance, determinism |
+
+## References
+- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]

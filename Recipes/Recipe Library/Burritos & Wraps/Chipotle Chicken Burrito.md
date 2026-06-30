@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/chipotle-chicken-burrito.jpg"
 photo-status: ok
 protein-per-serving-g: 86
 calories-per-serving: 1012
+confidence: policy
 ---
-
 # Chipotle Chicken Burrito
 
 ![[chipotle-chicken-burrito.jpg]]

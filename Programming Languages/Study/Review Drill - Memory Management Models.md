@@ -1,8 +1,8 @@
 ---
 tags: [pl, study, memory-management]
 up: "[[Programming Languages Study Index]]"
+confidence: policy
 ---
-
 # Review Drill — Memory Management Models
 
 ## Quick Recall

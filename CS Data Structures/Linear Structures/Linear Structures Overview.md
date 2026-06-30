@@ -3,8 +3,8 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
+confidence: verified
 ---
-
 # Linear Structures Overview
 
 Linear structures arrange elements in a sequential order where each item has at most one predecessor and one successor. They are the workhorses of everyday programming: function-call stacks, task queues, resizable lists, and streaming buffers all rely on some form of linear storage. This hub traces the family from the simplest contiguous array to specialised queue variants tuned for concurrency and bounded memory.
@@ -40,3 +40,6 @@ In concurrent systems, traditional locks introduce contention and potential dead
 - [[Foundational Concepts Overview]] — ADTs, complexity, and memory trade-offs underlying every linear structure
 - [[Hash-Based Structures Overview]] — arrays as the backbone of hash tables
 - [[Heaps and Priority Queues Overview]] — array-backed heaps as a specialised linear layout
+
+## References
+- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]

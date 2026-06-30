@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Missions and Payloads Overview
 
 SpaceX's mission manifest is the empirical record of everything the company has achieved — from the first Falcon 1 flight to over 300 Falcon 9 launches and beyond. Analyzing missions by customer, orbit, and payload type reveals how SpaceX built its track record and expanded into every segment of the launch market.
@@ -32,15 +32,18 @@ The Starship integrated flight test campaign represents a new category of SpaceX
 SpaceX holds numerous records: highest annual launch rate by any provider, most reflights of an orbital-class booster, fastest turnaround between launches from the same pad, and the most satellites deployed by a single operator. Tracking these statistics provides a quantitative picture of SpaceX's operational maturity and its growing dominance in global launch share.
 
 ## Pages in This Domain
-- [[Commercial Satellite Missions]]
-- [[NASA Missions]]
-- [[Rideshare and SmallSat Missions]]
-- [[National Security Missions]]
-- [[Starship Test Flights]]
-- [[Launch Statistics and Records]]
+- Commercial Satellite Missions
+- NASA Missions
+- Rideshare and SmallSat Missions
+- National Security Missions
+- Starship Test Flights
+- Launch Statistics and Records
 
 ## Related Domains
 - [[Falcon Program Overview]] — the vehicle flying the majority of missions
 - [[Dragon and Human Spaceflight Overview]] — crew and cargo mission details
 - [[Business and Economics Overview]] — revenue from mission contracts
 - [[Launch Operations and Facilities Overview]] — pads and infrastructure supporting missions
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

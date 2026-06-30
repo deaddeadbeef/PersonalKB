@@ -1,8 +1,8 @@
 ---
 tags: [pl, sources]
 up: "[[Programming Languages]]"
+confidence: verified
 ---
-
 # Sources Index
 
 ## Primary Textbooks and References
@@ -90,4 +90,3 @@ up: "[[Programming Languages]]"
 
 ## References
 This page serves as the sources hub for the [[Programming Languages]] wiki.
-

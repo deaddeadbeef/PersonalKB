@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/greek-chicken-souvlaki-wrap.jpg"
 photo-status: ok
 protein-per-serving-g: 49
 calories-per-serving: 701
+confidence: policy
 ---
-
 # Greek Chicken Souvlaki Wrap
 
 ![[greek-chicken-souvlaki-wrap.jpg]]

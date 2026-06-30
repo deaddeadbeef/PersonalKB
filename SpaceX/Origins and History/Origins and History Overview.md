@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Origins and History Overview
 
 SpaceX was founded in 2002 by Elon Musk with the audacious goal of reducing space transportation costs and enabling the colonization of Mars. Understanding the company's origins reveals the risk tolerance, iterative engineering philosophy, and long-term vision that continue to define every program SpaceX undertakes.
@@ -35,11 +35,14 @@ From its inception, SpaceX has been oriented toward making humanity a multiplane
 - [[Founding of SpaceX]]
 - [[Falcon 1 Program]]
 - [[Key Milestones Timeline]]
-- [[SpaceX Culture and Philosophy]]
-- [[Failures and Lessons Learned]]
+- SpaceX Culture and Philosophy
+- Failures and Lessons Learned
 - [[Elon Musk's Mars Vision]]
 
 ## Related Domains
 - [[Falcon Program Overview]] — the vehicle family that grew from Falcon 1's success
 - [[Business and Economics Overview]] — how early funding and contracts sustained the company
 - [[Mars and Beyond Overview]] — the ultimate goal that motivated the founding
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

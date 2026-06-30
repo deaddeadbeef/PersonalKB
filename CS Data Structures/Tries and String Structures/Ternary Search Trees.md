@@ -106,9 +106,9 @@ TSTs are well suited to large alphabets, ordered dictionaries, autocomplete, spe
 
 *See also:* [[Tries and Prefix Trees]], [[Compressed Tries and Radix Trees]], [[Suffix Trees]], [[Suffix Arrays]] | Cross-wiki links
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[chunk-ds-071 TST uses less memory than tries for sparse alphabets]]
 
-### References
+## References
 - [[CS Data Structures/Sources/Sources Index|Sources Index]]

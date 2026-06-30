@@ -110,13 +110,13 @@ Given a directed graph, determine the minimum number of edges to remove to make 
 
 *See also:* [[Dynamic Programming]], [[Asymptotic Notation]], [[NP Completeness]], [[DAG and Topological Sort]], [[Dijkstra's Algorithm]], [[Bellman-Ford Algorithm]], [[Floyd-Warshall Algorithm]], [[CS Data Structures]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
 - [[Graphs - Graph representation uses adjacency lists for sparse graphs and adjacency matrices for dense graphs]]
 - [[Graphs - DAG topological sort processes vertices in precedence order in Theta(n+m)]]
 
-### References
+## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 5. See [[DAG and Topological Sort]] for the first algorithm built on this vocabulary.

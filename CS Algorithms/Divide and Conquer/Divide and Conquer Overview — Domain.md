@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Divide and Conquer Overview — Domain
 
@@ -49,3 +50,6 @@ Divide and conquer breaks a problem into smaller subproblems of the same type, s
 - **[[Foundations and Analysis Overview]]** — recurrence relations and the Master Theorem itself.
 - **[[Sorting Overview]]** — merge sort and quicksort are canonical D&C algorithms.
 - **[[Greedy Overview]]** — contrasting paradigm: greedy makes one choice per step rather than recursing.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

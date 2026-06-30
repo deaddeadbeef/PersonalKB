@@ -98,7 +98,7 @@ Design a **sliding-window HyperLogLog** that estimates the number of distinct el
 
 ---
 
-*See also:* [[Bloom Filter]] · [[Count-Min Sketch]] · [[Cuckoo Filter]] | **CS Algorithms:** [[Streaming Algorithms]] · [[Randomized Algorithms]]
+*See also:* [[Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[Count-Min Sketch]] · Cuckoo Filter | **CS Algorithms:** Streaming Algorithms · Randomized Algorithms
 
 ## References
 -> [[Sources Index]]

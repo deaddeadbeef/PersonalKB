@@ -95,6 +95,9 @@ These benchmarks created the standard reporting framework for LLM progress and m
 *See also:* —
 
 ## Supporting Chunks / References
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 - [[LLM/Sources/Sources Index]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

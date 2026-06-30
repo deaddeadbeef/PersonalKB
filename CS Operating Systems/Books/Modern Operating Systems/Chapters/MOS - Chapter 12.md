@@ -11,6 +11,7 @@ tags:
   - csos
   - book-chapter
 up: "[[Chapter Index]]"
+confidence: verified
 ---
 # MOS — Chapter 12: Operating System Design
 

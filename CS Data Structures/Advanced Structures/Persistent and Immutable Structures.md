@@ -109,7 +109,7 @@ Use path copying. Given an initial array of N elements and Q updates, analyze to
 
 ---
 
-*See also:* [[Red-Black Trees]] · [[Concurrent Data Structures]] · [[Rope Data Structure]] | **CS Algorithms:** [[Functional Programming Patterns]] · [[Version Control Internals]]
+*See also:* [[Red-Black Trees]] · [[Concurrent Data Structures]] · [[Rope Data Structure]] | **CS Algorithms:** Functional Programming Patterns · Version Control Internals
 
 ## Supporting Chunks
 - [[chunk-ds-026 Path copying makes BSTs persistent with Ologn overhead]]

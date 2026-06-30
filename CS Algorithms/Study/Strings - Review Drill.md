@@ -4,6 +4,7 @@ tags:
   - csa/study
   - csa/strings
 up: "[[Algorithms Study Index]]"
+confidence: policy
 ---
 # Strings — Review Drill
 
@@ -143,3 +144,6 @@ A: P = "abcabc". failure = [0, 0, 0, 1, 2, 3]. After matching "abcab" and then a
 - [[LCS - Longest Common Subsequence]] — DP table, recurrence, backtracking, application
 - [[Edit Distance]] — Levenshtein recurrence, generalised costs, relation to LCS
 - [[String Matching - KMP]] — failure function construction, matching algorithm, $\Theta(n+m)$ analysis
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

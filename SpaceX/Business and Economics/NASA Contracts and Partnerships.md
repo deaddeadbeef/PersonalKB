@@ -100,3 +100,6 @@ NASA's approach with SpaceX became an influential procurement model across civil
 ---
 
 *See also:* [[Commercial Crew Development]], [[Cargo Dragon]], [[Human Landing System]], [[SpaceX Funding and Valuation]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

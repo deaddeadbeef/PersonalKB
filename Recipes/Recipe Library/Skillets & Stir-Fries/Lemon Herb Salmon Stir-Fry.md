@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/lemon-herb-salmon-stir-fry.jpg"
 photo-status: ok
 protein-per-serving-g: 48
 calories-per-serving: 772
+confidence: policy
 ---
-
 # Lemon Herb Salmon Stir-Fry
 
 ![[lemon-herb-salmon-stir-fry.jpg]]

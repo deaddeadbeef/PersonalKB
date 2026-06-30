@@ -1,5 +1,7 @@
 ---
 tags: [nes-emulation, learning-path]
+up: "[[NES Emulation/NES Emulation|NES Emulation]]"
+confidence: policy
 ---
 # NES Emulation — Learning Path
 
@@ -168,3 +170,6 @@ Use the [[NES Emulation Study Index]] for review drills and cheatsheets.
 | Mega Man 2 | Complex sprites, MMC3 IRQ |
 | Castlevania III | MMC5, expansion audio |
 | Kirby's Adventure | MMC3, many sprites, complex scrolling |
+
+## References
+- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]

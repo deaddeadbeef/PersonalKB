@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # 2023 — Open Models and Agents
 
 LLMs break out of the chatbox. Open-weight models democratize access, RAG becomes production infrastructure, and agents begin using tools autonomously. The field fragments from a two-player race (OpenAI vs Google) into a broad ecosystem where startups, open-source communities, and research labs all contribute frontier-competitive models and tooling.
@@ -64,3 +64,6 @@ GPT-4V (September 2023) and LLaVA (Liu et al.) demonstrated that vision encoders
 
 ← Previous: [[2022 — Alignment and Chat Overview|2022 — Alignment and Chat]]
 → Next: [[2024–2025 — Frontier and Efficiency Overview|2024–2025 — Frontier and Efficiency]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

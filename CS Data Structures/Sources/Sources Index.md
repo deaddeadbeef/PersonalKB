@@ -1,8 +1,8 @@
 ---
 tags: [cs-ds, sources]
 up: "[[CS Data Structures]]"
+confidence: verified
 ---
-
 # Sources Index — CS Data Structures
 
 ## Primary Sources
@@ -58,3 +58,6 @@ up: "[[CS Data Structures]]"
 | [[raw-ds-038]] | Leftist, Skew, and Pairing Heaps | Tarjan | 1985 |
 | [[raw-ds-039]] | LSM Trees and Write-Optimized Structures | Various | 1996 |
 | [[raw-ds-040]] | Succinct Data Structures | Various | 2020 |
+
+## References
+- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]

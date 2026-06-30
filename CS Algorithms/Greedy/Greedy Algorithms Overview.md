@@ -1,6 +1,6 @@
 ---
 tags: [csa, csa/greedy]
-up: "[[CS Algorithms Index]]"
+up: "[[CS Algorithms|CS Algorithms Index]]"
 confidence: verified
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -96,7 +96,7 @@ The standard technique is an **exchange argument**:
 
 ---
 
-*See also:* [[Activity Selection Problem]] · [[Fractional Knapsack]] · [[Dynamic Programming Overview]] | **CS Data Structures:** [[Priority Queues and Heaps]] · [[Sorted Arrays]]
+*See also:* [[Activity Selection Problem]] · [[Fractional Knapsack]] · [[Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[Priority Queues and Heaps]] · Sorted Arrays
 
 ## References
 -> [[Sources Index]]

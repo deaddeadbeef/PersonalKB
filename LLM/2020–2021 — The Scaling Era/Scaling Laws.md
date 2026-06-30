@@ -87,7 +87,7 @@ Scaling laws made large-scale pretraining forecastable, enabling GPT-3-era resou
 
 ## Supporting Chunks / References
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

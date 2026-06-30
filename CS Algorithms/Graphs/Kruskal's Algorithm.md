@@ -117,7 +117,7 @@ Kruskal's correctness follows from the **cut property**:
 
 ---
 
-*See also:* [[Minimum Spanning Trees]] · [[Prim's Algorithm]] · [[BFS and DFS]] | **CS Data Structures:** [[Union-Find (Disjoint Sets)]] · [[Sorting Algorithms]]
+*See also:* [[Minimum Spanning Trees]] · [[Prim's Algorithm]] · [[BFS and DFS]] | **CS Data Structures:** [[Disjoint Sets and Union-Find|Union-Find (Disjoint Sets)]] · Sorting Algorithms
 
 ## References
 -> [[Sources Index]]

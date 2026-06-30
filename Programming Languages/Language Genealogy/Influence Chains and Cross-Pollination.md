@@ -150,3 +150,6 @@ Ideas don't just flow from research to mainstream — they flow back. Java's exp
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

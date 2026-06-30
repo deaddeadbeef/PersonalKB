@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # CRT Simulation Overview
 
 OxideNES features a comprehensive CRT simulation pipeline that transforms the raw 256x240 NES output into a convincing vintage television image. The CRT filter is the most performance-intensive part of the emulator, processing ~691K pixels per frame with multiple effect passes.

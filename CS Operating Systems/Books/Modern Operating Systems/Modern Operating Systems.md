@@ -3,6 +3,7 @@ tags:
   - csos
   - book-moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Modern Operating Systems
 

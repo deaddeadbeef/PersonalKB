@@ -138,3 +138,6 @@ Early Unix systems used only static linking (`ar` archives → `ld`). Dynamic li
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

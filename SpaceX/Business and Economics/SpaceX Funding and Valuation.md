@@ -100,3 +100,6 @@ SpaceX is unusual because it combines aerospace manufacturing, launch services, 
 ---
 
 *See also:* [[NASA Contracts and Partnerships]], [[Starlink Business Model]], [[Cost Revolution in Spaceflight]], [[Competition Landscape]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

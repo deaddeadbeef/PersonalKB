@@ -88,7 +88,7 @@ Chatbot Arena became the public leaderboard that many practitioners treat as the
 1. Design a human-evaluation protocol that reduces verbosity and position bias while staying affordable enough to run at scale.
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

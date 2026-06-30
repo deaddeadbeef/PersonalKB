@@ -1,8 +1,8 @@
 ---
 tags: [spacex, sources]
 up: "[[SpaceX]]"
+confidence: verified
 ---
-
 # Sources Index
 
 ## Books
@@ -91,3 +91,6 @@ up: "[[SpaceX]]"
 | 15 | Mars Base Concepts | 2024 | [[raw-spacex-055]] |
 | 16 | IAC Presentations | 2017 | [[raw-spacex-056]] |
 | 17 | Point-to-Point Transport | 2022 | [[raw-spacex-059]] |
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

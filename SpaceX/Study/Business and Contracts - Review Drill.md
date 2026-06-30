@@ -1,8 +1,8 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
+confidence: policy
 ---
-
 # Business and Contracts — Review Drill
 
 > 15 Q&A pairs · Founding, funding, contracts, and competition
@@ -87,3 +87,6 @@ up: "[[SpaceX Study Index]]"
 
 **Q15. How does SpaceX's internal cost advantage compare to competitors?**
 > **A15.** SpaceX's reuse model gives it an estimated 2–5× cost advantage per kg to orbit over expendable competitors. Vertical integration (SpaceX manufactures ~80% of components in-house) further reduces costs. This pricing pressure has driven competitors (ULA, Arianespace, Blue Origin) to develop partially or fully reusable next-generation vehicles.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

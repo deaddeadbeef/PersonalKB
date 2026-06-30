@@ -91,7 +91,7 @@ The field's post-Chinchilla shift toward ~20:1 token-to-parameter ratios influen
 1. Suppose you are training a model for a product that will serve billions of daily requests. How would you choose between a Chinchilla-optimal model and a smaller over-trained model, and what costs would dominate your decision?
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## See Also
 

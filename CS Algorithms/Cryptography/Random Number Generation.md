@@ -94,13 +94,13 @@ These are complementary: PRBG is about *stretching* a secret into a keystream; h
 
 *See also:* [[Cryptography Foundations]], [[RSA Algorithm]], [[CS Data Structures]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
 - [[Cryptography - Pseudorandom bit generation from a short seed approximates the security of a one-time pad]]
 - [[Cryptography - PRNG security requires a high-entropy seed not a low-entropy value such as a timestamp]]
 
-### References
+## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Cormen 2013]], Chapter 8. See [[CS Algorithms/Sources/Sources Index#MIT OpenCourseWare 6.006|MIT OCW 6.006]], Lecture 14. See [[Cryptography Foundations]] for the broader cryptographic context and [[RSA Algorithm]] for the public-key mechanism used in hybrid encryption to exchange session keys.

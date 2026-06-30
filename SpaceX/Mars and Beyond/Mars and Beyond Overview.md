@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Mars and Beyond Overview
 
 Making life multiplanetary is the founding purpose of SpaceX — everything from Falcon 9's revenue to Starlink's cash flow to Starship's design is oriented toward establishing a self-sustaining human presence on Mars. This domain covers the architecture, technology, and challenges of interplanetary colonization.
@@ -33,14 +33,17 @@ While Mars is the primary target, Starship's capabilities open possibilities for
 
 ## Pages in This Domain
 - [[Mars Colonization Architecture]]
-- [[In-Situ Resource Utilization (ISRU)]]
-- [[Mars Transit Challenges]]
-- [[Life Support for Long-Duration Missions]]
-- [[Mars Base Design]]
-- [[Deep Space Missions]]
+- [[In-Situ Resource Utilization|In-Situ Resource Utilization (ISRU)]]
+- Mars Transit Challenges
+- Life Support for Long-Duration Missions
+- Mars Base Design
+- Deep Space Missions
 
 ## Related Domains
 - [[Starship Program Overview]] — the vehicle designed to reach Mars
 - [[Origins and History Overview]] — the founding vision that drives everything
 - [[Engines and Propulsion Overview]] — methane choice driven by Mars ISRU
 - [[Technology Deep Dives Overview]] — radiation shielding, TPS, and life support engineering
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

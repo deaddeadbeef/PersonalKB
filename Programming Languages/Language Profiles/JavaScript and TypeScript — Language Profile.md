@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, javascript, typescript]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # JavaScript and TypeScript — Language Profile
 
 ## 🎯 Intuition

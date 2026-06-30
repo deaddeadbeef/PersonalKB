@@ -1,8 +1,8 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
+confidence: plausible
 ---
-
 # 2022 — Alignment and Chat
 
 Making LLMs helpful, harmless, and honest. RLHF, instruction tuning, and chain-of-thought transform raw language models into usable assistants — and ChatGPT changes the world. This year marks the transition from models that complete text to models that follow instructions, and from research artifacts to consumer products used by hundreds of millions.
@@ -70,3 +70,6 @@ Traditional NLP benchmarks (GLUE, SuperGLUE) were saturated. Evaluation shifted 
 
 ← Previous: [[2020–2021 — The Scaling Era Overview|2020–2021 — The Scaling Era]]
 → Next: [[2023 — Open Models and Agents Overview|2023 — Open Models and Agents]]
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

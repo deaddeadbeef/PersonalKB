@@ -3,8 +3,8 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
+confidence: verified
 ---
-
 # Trees Overview
 
 Trees introduce hierarchy: each node may have multiple children, creating branching paths from a single root. This deceptively simple idea underpins file systems, databases, compilers, and countless search algorithms. The structures in this hub progress from unbalanced binary trees through self-balancing variants to disk-optimised multi-way trees, each trading implementation complexity for stronger performance guarantees.
@@ -36,3 +36,6 @@ When data lives on disk, minimising I/O reads matters more than CPU comparisons.
 - [[Heaps and Priority Queues Overview]] — tree-shaped structures with a different ordering invariant
 - [[Tries and String Structures Overview]] — tree variants specialised for string keys
 - [[Advanced Structures Overview]] — segment trees, interval trees, and k-d trees
+
+## References
+- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]

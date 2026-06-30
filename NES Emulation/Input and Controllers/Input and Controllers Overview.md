@@ -1,8 +1,8 @@
 ---
 tags: [nes, hub]
 up: "[[NES Emulation]]"
+confidence: plausible
 ---
-
 # Input and Controllers Overview
 
 The NES controller is a simple but elegant input device with a D-pad, two action buttons (A, B), and two meta buttons (Start, Select). The console communicates with controllers via a serial shift register protocol.

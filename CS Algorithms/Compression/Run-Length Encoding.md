@@ -104,15 +104,15 @@ RLE works best when the **expected run length is significantly greater than 2**.
 
 ---
 
-*See also:* [[Huffman Coding]], [[LZW Compression]], [[Data Compression Overview]], [[Asymptotic Notation]], [[Array]], [[CS Data Structures]]
+*See also:* [[Huffman Coding]], [[LZW Compression]], [[Data Compression Overview]], [[Asymptotic Notation]], [[Arrays and Dynamic Arrays|Array]], [[CS Data Structures]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 
 ### Supporting Chunks
 
 - [[Compression - Run-length encoding encodes same-symbol runs as count-symbol pairs]]
 - [[Compression - Run-length encoding is effective only when expected run length exceeds two symbols]]
 
-### References
+## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]], Chapter 9. See [[CS Algorithms/Sources/Sources Index#CP Algorithms - Online Reference|Sources Index]], RLE article. See [[Data Compression Overview]] for context among lossless compression methods. See [[Huffman Coding]] for the statistical approach.

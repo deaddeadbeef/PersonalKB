@@ -1,8 +1,8 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
+confidence: plausible
 ---
-
 # Dragon and Human Spaceflight Overview
 
 Dragon is SpaceX's spacecraft family for cargo delivery and crew transport to the International Space Station and beyond. The Crew Dragon variant restored American human orbital launch capability in 2020, ending a nine-year dependence on Russian Soyuz vehicles after the Space Shuttle retirement.
@@ -33,14 +33,17 @@ Dragon's Environmental Control and Life Support System (ECLSS) manages atmospher
 
 ## Pages in This Domain
 - [[Cargo Dragon]]
-- [[Crew Dragon]]
-- [[Commercial Crew Program]]
+- [[Crew Dragon Design|Crew Dragon]]
+- Commercial Crew Program
 - [[Operational Crew Missions]]
-- [[Private and Commercial Missions]]
-- [[Life Support and Safety Systems]]
+- Private and Commercial Missions
+- Life Support and Safety Systems
 
 ## Related Domains
 - [[Origins and History Overview]] — the COTS contract that funded Dragon's development
 - [[Falcon Program Overview]] — the launch vehicle that carries Dragon to orbit
 - [[Starship Program Overview]] — the next-generation vehicle with its own crew variant
 - [[Missions and Payloads Overview]] — Dragon mission details and statistics
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

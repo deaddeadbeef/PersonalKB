@@ -87,7 +87,7 @@ where *p* is a prime larger than the key universe, and *a*, *b* are chosen unifo
 
 ---
 
-*See also:* [[Hash Tables and Hash Functions]] | [[Collision Resolution Strategies]] | [[Cuckoo Hashing]] | [[Randomized Algorithms]] | [[Birthday Paradox]] | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
+*See also:* [[Hash Tables and Hash Functions]] | [[Collision Resolution Strategies]] | [[Cuckoo Hashing]] | Randomized Algorithms | Birthday Paradox | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
 
 ## Supporting Chunks
 

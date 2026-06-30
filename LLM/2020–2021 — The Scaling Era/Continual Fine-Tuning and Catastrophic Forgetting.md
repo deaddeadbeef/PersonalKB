@@ -152,14 +152,14 @@ Catastrophic forgetting became one of the central reasons continual learning is 
 
 ---
 
-*See also:* [[LoRA and QLoRA]] — PEFT as forgetting mitigation; [[Multi-Task Learning]] — Training on multiple tasks simultaneously; [[Supervised Fine-Tuning]] — Forgetting risks in standard SFT; [[Domain Adaptation]] — Balancing specialization and generalization; [[Knowledge Distillation]] — Teacher-student preservation methods
+*See also:* [[LoRA and QLoRA]] — PEFT as forgetting mitigation; Multi-Task Learning — Training on multiple tasks simultaneously; [[Supervised Fine-Tuning]] — Forgetting risks in standard SFT; [[Domain Adaptation]] — Balancing specialization and generalization; Knowledge Distillation — Teacher-student preservation methods
 
 ## Supporting Chunks / References
 - [[LoRA and QLoRA]] — PEFT as forgetting mitigation
-- [[Multi-Task Learning]] — Training on multiple tasks simultaneously
+- Multi-Task Learning — Training on multiple tasks simultaneously
 - [[Supervised Fine-Tuning]] — Forgetting risks in standard SFT
 - [[Domain Adaptation]] — Balancing specialization and generalization
-- [[Knowledge Distillation]] — Teacher-student preservation methods
+- Knowledge Distillation — Teacher-student preservation methods
 
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Kirkpatrick et al. 2017: Elastic Weight Consolidation (EWC)
@@ -169,3 +169,6 @@ See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Hu et al. 2021: LoRA (implicit forgetting mitigation)
 - French 1999: Catastrophic forgetting in neural networks (foundational)
 - Parisi et al. 2019: Continual lifelong learning with neural networks (survey)
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

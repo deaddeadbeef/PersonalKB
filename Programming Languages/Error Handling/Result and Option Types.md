@@ -132,10 +132,13 @@ The Option/Result pattern originates in the ML family of languages (Standard ML,
 
 ---
 
-*See also:* [[Error Handling Overview]] · [[Algebraic Data Types]] · [[Monads]] · [[Rust Error Handling]] · [[Go Idioms]]
+*See also:* [[Error Handling Overview]] · Algebraic Data Types · Monads · Rust Error Handling · Go Idioms
 
 ---
 
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

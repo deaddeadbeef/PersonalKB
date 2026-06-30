@@ -96,3 +96,6 @@ Laser ISLs shift Starlink from a gateway-dense architecture toward a more autono
 - Design a routing strategy for intercontinental Starlink traffic that minimizes latency while preserving redundancy if one or more laser links fail.
 
 ---
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

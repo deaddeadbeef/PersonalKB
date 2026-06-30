@@ -1,9 +1,10 @@
 # Stubs Under 1500 Bytes
 
-Count: 20
+Count: 21
 
 - [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures Study Index]] (`CS Data Structures/Study/CS Data Structures Study Index.md`)
 - [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index — Modern Operating Systems]] (`CS Operating Systems/Books/Modern Operating Systems/Chapter Index.md`)
+- [[LLM/Architecture Variants/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] (`LLM/Architecture Variants/Efficient Attention and Long-Context Variants.md`)
 - [[NES Emulation/APU — Audio Processing Unit/APU — Audio Processing Unit Overview|APU — Audio Processing Unit Overview]] (`NES Emulation/APU — Audio Processing Unit/APU — Audio Processing Unit Overview.md`)
 - [[NES Emulation/Cartridges and Mappers/Cartridges and Mappers Overview|Cartridges and Mappers Overview]] (`NES Emulation/Cartridges and Mappers/Cartridges and Mappers Overview.md`)
 - [[NES Emulation/CPU — The 6502 Processor/CPU — The 6502 Processor Overview|CPU — The 6502 Processor Overview]] (`NES Emulation/CPU — The 6502 Processor/CPU — The 6502 Processor Overview.md`)

@@ -164,3 +164,6 @@ The four major lineages trace back to distinct research traditions: C emerged fr
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

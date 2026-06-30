@@ -1,8 +1,8 @@
 ---
 tags: [programming-languages, metaprogramming]
 up: "[[Programming Languages]]"
+confidence: plausible
 ---
-
 # Metaprogramming Overview
 
 Metaprogramming is writing code that writes or manipulates other code. It is the most powerful and most dangerous tool in a language designer's toolkit — enabling elegant abstractions but also enabling incomprehensible complexity. How a language supports metaprogramming reveals its philosophy about abstraction, safety, and trust.

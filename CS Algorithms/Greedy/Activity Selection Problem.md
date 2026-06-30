@@ -85,7 +85,7 @@ Time is dominated by sorting; the selection pass is $O(n)$. Space is $O(1)$ extr
 - **Sorting by start time instead of finish time does NOT work** — classic mistake. Counter-example: one long activity starting earliest can block many shorter ones.
 
 ### Comparison with Alternatives
-- **Weighted Activity Selection** requires DP (each activity has a profit; maximize total profit). See [[Dynamic Programming Overview]].
+- **Weighted Activity Selection** requires DP (each activity has a profit; maximize total profit). See [[Dynamic Programming|Dynamic Programming Overview]].
 - **Interval Scheduling Maximization** is the same problem; **Interval Partitioning** (minimum rooms) is a different problem (solved by a different greedy or priority queue approach).
 - **Brute force** checks all 2ⁿ subsets — exponential.
 
@@ -112,7 +112,7 @@ Time is dominated by sorting; the selection pass is $O(n)$. Space is $O(1)$ extr
 
 ---
 
-*See also:* [[Greedy Algorithms Overview]] · [[Fractional Knapsack]] · [[Dynamic Programming Overview]] | **CS Data Structures:** [[Priority Queues and Heaps]] · [[Interval Trees]]
+*See also:* [[Greedy Algorithms Overview]] · [[Fractional Knapsack]] · [[Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[Priority Queues and Heaps]] · [[Interval Trees and Range Trees|Interval Trees]]
 
 ## References
 -> [[Sources Index]]

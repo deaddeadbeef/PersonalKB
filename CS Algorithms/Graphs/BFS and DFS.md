@@ -153,7 +153,7 @@ When DFS explores edge (u, v):
 
 ---
 
-*See also:* [[Minimum Spanning Trees]] · [[Kruskal's Algorithm]] · [[Prim's Algorithm]] · [[Network Flow — Ford-Fulkerson]] · [[Topological Sort]] | **CS Data Structures:** [[Queues]] · [[Stacks]] · [[Adjacency List vs Matrix]]
+*See also:* [[Minimum Spanning Trees]] · [[Kruskal's Algorithm]] · [[Prim's Algorithm]] · [[Network Flow — Ford-Fulkerson]] · [[DAG and Topological Sort|Topological Sort]] | **CS Data Structures:** [[Queues and Deques|Queues]] · [[Stacks]] · [[Adjacency List and Adjacency Matrix|Adjacency List vs Matrix]]
 
 ## References
 -> [[Sources Index]]

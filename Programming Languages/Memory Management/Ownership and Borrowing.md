@@ -2,8 +2,8 @@
 tags: [programming-languages, memory-management, ownership]
 up: "[[Memory Management Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Ownership and Borrowing
 
 ## 🎯 Intuition

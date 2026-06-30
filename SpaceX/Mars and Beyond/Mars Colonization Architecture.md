@@ -108,3 +108,6 @@ The long-term target is a self-sustaining city of approximately one million peop
 ---
 
 *See also:* [[In-Situ Resource Utilization]], [[Starship Variants and Applications]], [[Elon Musk's Mars Vision]], [[Mars Transit and Entry]], [[Mars and Beyond Overview]], [[Sources Index]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

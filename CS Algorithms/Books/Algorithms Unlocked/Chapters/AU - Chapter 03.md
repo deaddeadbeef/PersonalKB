@@ -11,6 +11,7 @@ tags:
   - csa
   - book-chapter
 up: "[[Chapter Index]]"
+confidence: verified
 ---
 # AU — Chapter 03: Algorithms for Sorting and Searching
 

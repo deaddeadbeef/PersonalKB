@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/ginger-sesame-tofu-edamame-stir-fry.jpg"
 photo-status: ok
 protein-per-serving-g: 42
 calories-per-serving: 732
+confidence: policy
 ---
-
 # Ginger Sesame Tofu & Edamame Stir-Fry
 
 ![[ginger-sesame-tofu-edamame-stir-fry.jpg]]

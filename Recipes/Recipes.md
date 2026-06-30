@@ -1,7 +1,8 @@
 ---
 tags: [recipes, moc]
+up: "[[index]]"
+confidence: policy
 ---
-
 # Recipes
 
 > High-protein portable meals — lunch & dinner. **22 recipes** across 6 categories.
@@ -36,3 +37,6 @@ tags: [recipes, moc]
 ## Quick Links
 
 - [[Recipe Sources Index]]
+
+## References
+- [[index|PersonalKB Index]]

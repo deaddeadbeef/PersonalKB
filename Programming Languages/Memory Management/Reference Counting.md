@@ -2,8 +2,8 @@
 tags: [programming-languages, memory-management, refcounting]
 up: "[[Memory Management Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Reference Counting
 
 ## 🎯 Intuition

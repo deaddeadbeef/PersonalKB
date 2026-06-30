@@ -5,6 +5,7 @@ tags:
   - csos/filesystems
   - csos/io
 up: "[[OS Study Index]]"
+confidence: policy
 ---
 # File Systems and IO — Review Drill
 
@@ -139,3 +140,6 @@ A: **FCFS**: service requests in arrival order; fairness but high seek time if r
 - [[Disk Scheduling Algorithms]] — FCFS, SSTF, SCAN, C-SCAN; seek time optimisation
 - [[File Systems Overview]] — hub for file systems
 - [[IO Overview]] — hub for I/O
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

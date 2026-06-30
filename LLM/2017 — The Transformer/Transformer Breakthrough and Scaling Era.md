@@ -98,7 +98,7 @@ This era established the basic template that still governs the field: transforme
 
 *See also:*
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LLM/_chunks/chunk-llm-001 Scaled Dot-Product Attention Formula|Scaled dot-product attention formula]]
 - [[LLM/_chunks/chunk-llm-002 Multi-Head Attention Parallel Projections|Multi-head attention parallel projections]]
@@ -115,7 +115,7 @@ This era established the basic template that still governs the field: transforme
 - [[LLM/_chunks/chunk-llm-125 GPT-2 Zero-Shot Task Transfer|GPT-2 zero-shot task transfer]]
 - [[LLM/_chunks/chunk-llm-127 GPT-2 Scaling from 117M to 1.5B|GPT-2 scaling from 117M to 1.5B]]
 
-### References
+## References
 - [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
 - [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
 - [[LLM/_raw/raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers|raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers]]

@@ -134,10 +134,13 @@ Imperative programming traces from raw machine code through assembly language to
 
 ---
 
-*See also:* [[Programming Paradigms Overview]] · [[Object-Oriented Programming]] · [[Functional Programming]]
+*See also:* [[Programming Paradigms Overview]] · [[Object-Oriented Programming Philosophies|Object-Oriented Programming]] · Functional Programming
 
 ---
 
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

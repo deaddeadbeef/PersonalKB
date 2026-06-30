@@ -1,8 +1,8 @@
 ---
 tags: [japanese, culture, keigo]
 up: "[[Culture Overview]]"
+confidence: plausible
 ---
-
 # Keigo — Overview and Register System
 
 敬語 (keigo) is the Japanese honorific speech system. It's not optional — misusing register is a social error.

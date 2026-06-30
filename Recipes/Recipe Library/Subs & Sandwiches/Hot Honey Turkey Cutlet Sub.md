@@ -13,8 +13,8 @@ hero-image: "Assets/Recipe Photos/hot-honey-turkey-cutlet-sub.jpg"
 photo-status: ok
 protein-per-serving-g: 77
 calories-per-serving: 871
+confidence: policy
 ---
-
 # Hot Honey Turkey Cutlet Sub
 
 ![[hot-honey-turkey-cutlet-sub.jpg]]

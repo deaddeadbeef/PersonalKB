@@ -2,8 +2,8 @@
 tags: [programming-languages, language-profiles, lisp, scheme]
 up: "[[Language Profiles Overview]]"
 tier-coverage: full
+confidence: plausible
 ---
-
 # Lisp and Scheme — Language Profile
 
 **Designers:** John McCarthy (1958) / Guy Steele and Gerald Sussman (Scheme, 1975)
@@ -84,3 +84,6 @@ Paul Graham: *"Lisp is worth learning for the profound enlightenment experience 
 ### References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

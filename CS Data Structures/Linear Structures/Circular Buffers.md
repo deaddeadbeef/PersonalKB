@@ -132,7 +132,7 @@ function peek(cb):
 
 ---
 
-*See also:* [[Queues and Deques]] | [[Producer-Consumer Pattern]] | [[Memory-Mapped I/O]] | **CS Algorithms:** [[BFS and DFS]]
+*See also:* [[Queues and Deques]] | Producer-Consumer Pattern | Memory-Mapped I/O | **CS Algorithms:** [[BFS and DFS]]
 
 ## Supporting Chunks
 

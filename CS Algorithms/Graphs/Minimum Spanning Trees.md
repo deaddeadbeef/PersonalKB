@@ -105,7 +105,7 @@ Let (S, V−S) be any cut. Let e = (u,v) be the minimum-weight edge crossing the
 
 ---
 
-*See also:* [[Kruskal's Algorithm]] · [[Prim's Algorithm]] · [[BFS and DFS]] · [[Network Flow — Ford-Fulkerson]] | **CS Data Structures:** [[Union-Find (Disjoint Sets)]] · [[Priority Queues and Heaps]]
+*See also:* [[Kruskal's Algorithm]] · [[Prim's Algorithm]] · [[BFS and DFS]] · [[Network Flow — Ford-Fulkerson]] | **CS Data Structures:** [[Disjoint Sets and Union-Find|Union-Find (Disjoint Sets)]] · [[Priority Queues and Heaps]]
 
 ## References
 -> [[Sources Index]]

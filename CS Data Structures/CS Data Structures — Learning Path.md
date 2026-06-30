@@ -1,6 +1,7 @@
 ---
 tags: [cs-ds, learning-path]
 up: "[[CS Data Structures]]"
+confidence: policy
 ---
 # CS Data Structures — Learning Path
 
@@ -191,3 +192,6 @@ up: "[[CS Data Structures]]"
 ---
 
 *Part of [[CS Data Structures]]. See also: [[CS Algorithms — Learning Path]]*
+
+## References
+- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]

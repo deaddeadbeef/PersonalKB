@@ -96,3 +96,6 @@ Direct-to-cell differs from standard Starlink broadband by targeting continuity 
 - Propose a phased rollout plan for direct-to-cell that starts with emergency messaging and grows toward broader consumer service without overpromising bandwidth.
 
 ---
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

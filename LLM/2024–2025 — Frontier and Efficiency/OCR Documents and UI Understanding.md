@@ -100,7 +100,7 @@ Document understanding directly supports automation for invoices, receipts, cont
 - If OCR makes a mistake on a key invoice field, describe how that error can cascade through a traditional pipeline.
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

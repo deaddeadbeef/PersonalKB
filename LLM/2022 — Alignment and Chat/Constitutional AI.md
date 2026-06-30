@@ -88,7 +88,7 @@ Constitutional AI helped formalize the idea that alignment criteria can be expli
 1. Draft three constitutional principles for a domain-specific assistant and explain how weaknesses in those principles could still produce misalignment.
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## References
 - [[LLM/Sources/Sources Index]]

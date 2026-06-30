@@ -1,8 +1,8 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
+confidence: policy
 ---
-
 # Alignment & Safety — Review Drill
 
 ## Quick-Fire Questions
@@ -39,3 +39,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 
 11. **Where does alignment sit in the full training pipeline?**
     After broad pretraining and usually after SFT. Alignment/post-training shapes assistant behavior with preference data, reward models, DPO-style losses, or constitutional feedback; it does not replace corpus quality, retrieval grounding, or deployment policy. See [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]].
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

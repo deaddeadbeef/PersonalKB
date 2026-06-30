@@ -1,8 +1,8 @@
 ---
 tags: [spacex, study, cheatsheet]
 up: "[[SpaceX Study Index]]"
+confidence: policy
 ---
-
 # SpaceX Vehicle Comparison Cheatsheet
 
 > Quick-reference tables — all key numbers in one place.
@@ -90,3 +90,6 @@ up: "[[SpaceX Study Index]]"
 ¹ Amos-6 static fire pad anomaly (Sep 2016) destroyed the vehicle pre-launch; counted by some tallies, excluded by others.
 
 > **Source notes:** Numbers are approximate and compiled from public SpaceX data, NSF/SpaceFlight Now flight logs, and NASA press releases. Updated through late 2024.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

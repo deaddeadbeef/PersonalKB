@@ -101,7 +101,7 @@ DPO became one of the most important post-RLHF alignment methods because it lowe
 1. Propose a hybrid training setup that preserves DPO's simple loss but reduces its distribution-shift problem, and explain what new complexity that introduces.
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## See Also
 

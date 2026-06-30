@@ -1,8 +1,8 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
+confidence: policy
 ---
-
 # RAG & Prompting — Review Drill
 
 ## Quick-Fire Questions
@@ -42,3 +42,6 @@ up: "[[LLM/Study/LLM Study Index]]"
 - [[LLM/Study/Local RAG Assistant Lab|Local RAG Assistant Lab]] — build a local document-grounded assistant, then diagnose retrieval misses, context poisoning, extraction failure, and hallucination.
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] — measure top-k hits, first relevant rank, reranking impact, hybrid retrieval, context selection, and citation support before generation.
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] — capture the corpus manifest, chunk records, retrieval evidence, cited answer, refusal test, benchmark row, quality row, and failure row for the assistant.
+
+## References
+- [[LLM/Sources/Sources Index|LLM Sources Index]]

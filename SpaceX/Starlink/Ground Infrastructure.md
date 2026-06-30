@@ -101,3 +101,6 @@ Ground infrastructure is the interface between Starlink's space segment and the 
 - Design a rollout strategy for a new region that balances gateway siting, PoP placement, and terminal affordability to maximize customer growth.
 
 ---
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

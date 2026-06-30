@@ -110,16 +110,16 @@ PEFT changed fine-tuning from an expensive, cluster-heavy workflow into somethin
 ### Challenge
 1. Develop a decision framework for choosing among full fine-tuning, adapters, LoRA, prefix tuning, prompt tuning, P-Tuning v2, and (IA)³ for a new LLM product, and explain how model scale, latency budget, and deployment style affect the choice.
 
-*See also:* [[LoRA and QLoRA]]; [[Adapter Architectures]]; [[Multi-Adapter Serving]]; [[Supervised Fine-Tuning]]
+*See also:* [[LoRA and QLoRA]]; Adapter Architectures; Multi-Adapter Serving; [[Supervised Fine-Tuning]]
 
-## Supporting Chunks / References
+## Supporting Chunks
 ### Supporting Chunks
 - [[LoRA and QLoRA]] — Most popular PEFT method (detailed breakdown)
 - [[Supervised Fine-Tuning]] — Full fine-tuning baseline
-- [[Adapter Architectures]] — Deep dive into adapter design patterns
-- [[Multi-Adapter Serving]] — Deploying many PEFT adapters efficiently
+- Adapter Architectures — Deep dive into adapter design patterns
+- Multi-Adapter Serving — Deploying many PEFT adapters efficiently
 
-### References to Sources Index
+## References
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Houlsby et al. 2019: Adapter modules
 - Li & Liang 2021: Prefix tuning

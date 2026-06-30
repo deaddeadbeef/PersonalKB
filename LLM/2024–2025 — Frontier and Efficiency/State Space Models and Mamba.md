@@ -90,7 +90,7 @@ SSMs offer a plausible path beyond pure transformers for long-sequence modeling.
 - If a task needs exact retrieval from far back in context, why might a transformer still outperform an SSM?
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ## See Also
 - [[Language Model Fundamentals]] — SSMs revisit core sequence modeling fundamentals

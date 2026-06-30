@@ -11,6 +11,7 @@ tags:
   - csa
   - book-chapter
 up: "[[Chapter Index]]"
+confidence: verified
 ---
 # AU — Chapter 01: What Are Algorithms and Why Should You Care?
 

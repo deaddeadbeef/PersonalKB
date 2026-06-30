@@ -96,3 +96,6 @@ The Ukraine war highlighted the strategic value of commercial satellite constell
 
 ### Challenge
 - Propose a procurement strategy that balances lower cost from SpaceX with the government's need to avoid overdependence on any single launch and satellite provider.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

@@ -107,3 +107,6 @@ Starlink blends telecom, SaaS-like recurring revenue, hardware sales, and govern
 ---
 
 *See also:* [[Direct-to-Cell Technology]], [[SpaceX Funding and Valuation]], [[Commercial Launch Market]], [[Reusability Economics]]
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

@@ -101,7 +101,7 @@ Design a memory system for a coding agent that must preserve task goals, reposit
 ---
 
 ## Supporting Chunks
-*(To be populated as chunks are created)*
+- No supporting chunk notes are attached yet.
 
 ---
 

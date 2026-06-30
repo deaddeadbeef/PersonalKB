@@ -3,6 +3,7 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
+confidence: verified
 ---
 # Graphs Overview
 
@@ -77,3 +78,6 @@ Graph algorithms model relationships between entities. This domain covers graph 
 - **[[Foundations and Analysis Overview]]** — Bellman-Ford and Floyd-Warshall are DP algorithms; the Master Theorem analysis for graph recursions lives there.
 - **[[Greedy Overview]]** — Dijkstra's, Kruskal's, and Prim's are greedy algorithms; the greedy domain explores the paradigm.
 - **[[Complexity Theory Overview]]** — graph problems (TSP, clique) are canonical NP-complete benchmarks; Network Flow bridges combinatorial optimization and complexity.
+
+## References
+- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]

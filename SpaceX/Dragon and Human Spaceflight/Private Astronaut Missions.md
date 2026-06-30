@@ -61,7 +61,7 @@ Private astronaut missions demonstrate that Crew Dragon is flexible enough for m
 | Ax-2 | May 2023 | 4 | ISS | ~10 days | Saudi astronauts to ISS |
 | Ax-3 | Jan 2024 | 4 | ISS | ~18 days | Turkish astronaut; ESA-sponsored crew |
 | Polaris Dawn | Sept 2024 | 4 | Free-flight (~1,400 km) | ~5 days | First commercial EVA |
-| Ax-4 | TBD | 4 | ISS | ~14 days (est.) | Continued Axiom program |
+| Ax-4 | not confirmed in vault sources | 4 | ISS | ~14 days (est.) | Continued Axiom program |
 
 ## 🏋️ Practice
 ### Warm-Up — 3 Conceptual Questions

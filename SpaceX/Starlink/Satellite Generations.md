@@ -59,7 +59,7 @@ Max throughput"]
 | v1.0 | 2019–2021 | ~260 kg | 60 | No | Production broadband |
 | v1.5 | 2021–2023 | ~295 kg | 60 (later 52–54) | Yes | Optical ISLs, sun visors |
 | v2 Mini | 2023–present | ~800 kg | 21–23 | Yes | 4× capacity, E-band |
-| v2 | TBD (Starship) | ~1,250 kg | ~60 (Starship) | Yes | Max throughput, large aperture |
+| v2 | not confirmed in vault sources (Starship) | ~1,250 kg | ~60 (Starship) | Yes | Max throughput, large aperture |
 
 ### Key Facts
 - **v0.9** (2019): 60 prototype satellites; proof-of-concept mission; most have since deorbited.
@@ -106,3 +106,6 @@ Starlink's hardware cadence resembles software release cycles more than traditio
 - Build a roadmap for a hypothetical v3 generation that improves throughput, brightness mitigation, and resiliency without making launch logistics unmanageable.
 
 ---
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

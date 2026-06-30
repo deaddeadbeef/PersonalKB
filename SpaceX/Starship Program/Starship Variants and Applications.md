@@ -81,3 +81,6 @@ The variant table shows how Starship shifts from a cargo launcher to a refueling
 
 ### Challenge
 - Design a phased roadmap for which Starship variants should be prioritized first if the goal is to build a self-supporting lunar and Mars logistics ecosystem as quickly as possible.
+
+## References
+- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]

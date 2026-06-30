@@ -144,3 +144,6 @@ No language has fully resolved this tension; each era's contribution is a new tr
 ## Supporting Chunks / References
 
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]

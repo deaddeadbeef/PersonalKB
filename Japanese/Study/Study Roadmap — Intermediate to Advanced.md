@@ -48,7 +48,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [ ] Participate in conversations on abstract topics
 - [ ] Use appropriate keigo in business/formal settings
 - [ ] Express complex opinions and hypotheticals
-- **Resources:** [[Japanese Business Culture and Language]], [[Keigo — Sonkeigo]]
+- **Resources:** Japanese Business Culture and Language, [[Keigo — Sonkeigo (Honorific)|Keigo — Sonkeigo]]
 
 ## Phase 5: Mastery (N1 Target)
 

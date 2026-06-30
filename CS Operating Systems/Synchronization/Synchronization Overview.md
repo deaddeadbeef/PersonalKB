@@ -3,6 +3,7 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
+confidence: verified
 ---
 # Synchronization Overview
 
@@ -52,3 +53,6 @@ When multiple processes or threads share resources, correct behavior requires co
 
 - **[[Processes Overview]]** — synchronization is needed because processes and threads share resources; the threading model is defined there.
 - **[[Deadlocks Overview]]** — improper synchronization (circular wait on locked resources) causes deadlock; the two domains are tightly coupled.
+
+## References
+- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]

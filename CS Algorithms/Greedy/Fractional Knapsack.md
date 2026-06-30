@@ -114,7 +114,7 @@ Sorting dominates. The greedy pass is $O(n)$. Space depends on sorting algorithm
 
 ---
 
-*See also:* [[Greedy Algorithms Overview]] · [[Activity Selection Problem]] · [[Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays]] · [[Sorted Arrays]]
+*See also:* [[Greedy Algorithms Overview]] · [[Activity Selection Problem]] · [[Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Arrays]] · Sorted Arrays
 
 ## References
 -> [[Sources Index]]

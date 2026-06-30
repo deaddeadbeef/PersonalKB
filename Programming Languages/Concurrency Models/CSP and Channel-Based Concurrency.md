@@ -137,7 +137,7 @@ Hoare's 1978 CSP paper preceded practical implementations by decades. Occam (198
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · [[Actor Model]] · [[Mutex and Lock-Based Concurrency]] · [[Go Concurrency Patterns]]
+*See also:* [[Concurrency Models Overview]] · Actor Model · Mutex and Lock-Based Concurrency · Go Concurrency Patterns
 
 ---
 
@@ -148,3 +148,6 @@ Hoare's 1978 CSP paper preceded practical implementations by decades. Occam (198
 - Pike, Rob. "Concurrency Is Not Parallelism." Talk, 2012.
 - Milner, Robin. *The Polyadic π-Calculus: A Tutorial.* 1992.
 - [[Sources Index]]
+
+## References
+- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
