@@ -11,6 +11,7 @@ tags:
   - engineering
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # The Eridian Vessel
@@ -129,9 +130,9 @@ flowchart LR
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary novel source
-- [[Sources Index#PHM Secondary Chapter Summaries Registry]] — original secondary-mode synthesis basis (now superseded by primary chapter layer)
-- [[Sources Index#Chris West Ship Analysis]] — *Hail Mary* drive and propulsion analysis (human-side comparison only; Chris West did not analyze the Eridian vessel directly)
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary novel source
+- [[Project Hail Mary/Sources/Sources Index#PHM Secondary Chapter Summaries Registry|PHM Secondary Chapter Summaries Registry]] — original secondary-mode synthesis basis (now superseded by primary chapter layer)
+- [[Project Hail Mary/Sources/Sources Index#Chris West Ship Analysis|Chris West Ship Analysis]] — *Hail Mary* drive and propulsion analysis (human-side comparison only; Chris West did not analyze the Eridian vessel directly)
 
 ## Supporting Chunks
 

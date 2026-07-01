@@ -2,6 +2,7 @@
 tags: [japanese, culture, keigo, sonkeigo]
 up: "[[Culture Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -99,4 +100,4 @@ flowchart TD
 You're calling a client's office. Write a phone script that uses all three keigo types: teineigo for the call structure, sonkeigo when referring to the client, and kenjōgo for your own actions.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

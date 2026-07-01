@@ -1,7 +1,9 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
-confidence: plausible
+confidence: established
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # 2024–2025 — Frontier and Efficiency
 
@@ -9,11 +11,11 @@ Pushing the frontier on two axes — maximum capability (multimodal, agents, mil
 
 ## Beyond Attention
 
-State space models challenge the transformer's dominance. Mamba (Gu & Dao, December 2023) introduced a selective state space mechanism with input-dependent gating, achieving transformer-competitive language modeling quality with linear-time sequence processing. Mamba-2 refined the approach, and hybrid architectures (Jamba, StripedHyena) combined SSM layers with attention layers to get the best of both worlds — linear-time long-sequence processing with the in-context learning strength of attention. Whether SSMs can fully replace attention at frontier scale remains an open question. See [[State Space Models and Mamba]] and [[Efficient Attention and Long-Context Variants]].
+State space models challenge the transformer's dominance. Mamba (Gu & Dao, December 2023) introduced a selective state space mechanism with input-dependent gating, achieving transformer-competitive language modeling quality with linear-time sequence processing. Mamba-2 refined the approach, and hybrid architectures (Jamba, StripedHyena) combined SSM layers with attention layers to get the best of both worlds — linear-time long-sequence processing with the in-context learning strength of attention. Whether SSMs can fully replace attention at frontier scale remains an open question. See [[State Space Models and Mamba]] and [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]].
 
 ## The Long-Context Revolution
 
-Context windows expanded from 4K tokens (GPT-3.5) to 128K (GPT-4 Turbo), 200K (Claude 3), and 1M+ tokens (Gemini 1.5 Pro). Techniques enabling this include RoPE scaling (NTK-aware interpolation, YaRN), ring attention for distributed long-context training, and architectural improvements that reduce the quadratic cost of full attention. Long context enables processing entire codebases, books, and document collections in a single call, partially substituting for traditional RAG retrieval. However, "lost in the middle" effects and degraded attention at extreme lengths remain active challenges. See [[Efficient Attention and Long-Context Variants]].
+Context windows expanded from 4K tokens (GPT-3.5) to 128K (GPT-4 Turbo), 200K (Claude 3), and 1M+ tokens (Gemini 1.5 Pro). Techniques enabling this include RoPE scaling (NTK-aware interpolation, YaRN), ring attention for distributed long-context training, and architectural improvements that reduce the quadratic cost of full attention. Long context enables processing entire codebases, books, and document collections in a single call, partially substituting for traditional RAG retrieval. However, "lost in the middle" effects and degraded attention at extreme lengths remain active challenges. See [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]].
 
 ## Inference at Scale
 
@@ -45,7 +47,7 @@ The frontier is expanding along multiple axes simultaneously: reasoning models (
 
 ## Pages in This Era
 
-- [[Efficient Attention and Long-Context Variants]]
+- [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]]
 - [[State Space Models and Mamba]]
 - [[KV Cache and Context Reuse]]
 - [[Speculative Decoding]]
@@ -66,4 +68,7 @@ The frontier is expanding along multiple axes simultaneously: reasoning models (
 → Next: [[2026 — Reasoning and Agents Overview|2026 — Reasoning and Agents]]
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/LLM Book Reading Spine]]

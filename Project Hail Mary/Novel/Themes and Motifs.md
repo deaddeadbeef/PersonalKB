@@ -6,6 +6,7 @@ tags:
   - analysis
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Themes and Motifs
@@ -124,8 +125,8 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary source (fictional)
-- [[Sources Index#Weir Interviews Taumoeba]] — author commentary on thematic intent
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary source (fictional)
+- [[Project Hail Mary/Sources/Sources Index#Weir Interviews Taumoeba|Weir Interviews Taumoeba]] — author commentary on thematic intent
 
 ## Supporting Chunks
 

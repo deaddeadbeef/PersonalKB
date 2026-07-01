@@ -2,6 +2,7 @@
 tags: [spacex, starlink]
 up: "[[Starlink Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -103,4 +104,7 @@ Ground infrastructure is the interface between Starlink's space segment and the 
 ---
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

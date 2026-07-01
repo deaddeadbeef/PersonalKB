@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, mental-model, serving, systems]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [intuition, core, practice]
 last-verified: 2026-06-15
 ---

@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CRT Simulation Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # CRT Rendering Pipeline
@@ -89,4 +90,4 @@ OxideNES implements the entire seven-stage pipeline in sequence: upscale, phosph
 *See also:* [[Barrel Distortion and Shadow Mask]], [[Scanline and Phosphor Effects]], [[Glass Reflections and Chromatic Aberration]], [[CRT Simulation Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

@@ -1,7 +1,9 @@
 ---
 tags: [japanese, culture, hub]
 up: "[[Japanese]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Culture Overview
 
@@ -10,9 +12,9 @@ Japanese language and culture are deeply intertwined. Understanding cultural con
 ## Keigo (敬語) — Honorific Language ![[cultov-001-keigo.mp3]]
 The most important cultural-linguistic feature. Three levels:
 - [[Keigo — Overview and Register System]] — when and why
-- [[Keigo — Sonkeigo (Honorific)|Keigo — Sonkeigo]] — respectful language (elevating others)
-- [[Keigo — Kenjōgo (Humble)|Keigo — Kenjougo]] — humble language (lowering yourself)
-- [[Keigo — Teineigo (Polite)|Keigo — Teineigo]] — polite language (です/ます system)
+- [[Japanese/Culture/Keigo/Keigo — Sonkeigo (Honorific)|Keigo — Sonkeigo]] — respectful language (elevating others)
+- [[Japanese/Culture/Keigo/Keigo — Kenjōgo (Humble)|Keigo — Kenjougo]] — humble language (lowering yourself)
+- [[Japanese/Culture/Keigo/Keigo — Teineigo (Polite)|Keigo — Teineigo]] — polite language (です/ます system)
 
 ## Social Register
 - [[Social Register — When to Use What]]
@@ -20,9 +22,9 @@ The most important cultural-linguistic feature. Three levels:
 - Age, social status, in-group/out-group (内/外) all affect language choice
 
 ## Cultural Context
-- Japanese Business Culture and Language
-- [[Seasonal Greetings and Cultural Expressions|Seasonal Greetings and Customs]]
-- [[Idioms and Proverbs — ことわざ|Common Idioms and Proverbs]]
+- [[Japanese/Culture/Culture Overview|Japanese Business Culture and Language]]
+- [[Japanese/Culture/Seasonal Greetings and Cultural Expressions|Seasonal Greetings and Customs]]
+- [[Japanese/Culture/Idioms and Proverbs — ことわざ|Common Idioms and Proverbs]]
 - [[Numbers and Superstitions]]
 
 ## Key Cultural Concepts
@@ -53,4 +55,4 @@ A uniquely Japanese concept of presuming on others' goodwill. Affects how reques
 | Winter | お正月 (New Year), Christmas | あけましておめでとうございます | ![[cultov-009-oshougatsu.mp3]] / ![[culture-006-akemashite-omedetou.mp3]] |
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

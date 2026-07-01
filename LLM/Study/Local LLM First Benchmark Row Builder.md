@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, benchmark, latency, metrics, client, harness, evidence]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-16
 ---

@@ -2,6 +2,7 @@
 tags: [study, llm, local-llm, inference, lifecycle, ollama, evidence, proof]
 up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, practice]
 last-verified: 2026-06-16
 last-machine-check: 2026-06-16T07:05:33+08:00

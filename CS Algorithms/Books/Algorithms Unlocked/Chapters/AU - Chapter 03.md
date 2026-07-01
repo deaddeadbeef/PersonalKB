@@ -10,8 +10,10 @@ source: "[[Cormen 2013 - Algorithms Unlocked]]"
 tags:
   - csa
   - book-chapter
-up: "[[Chapter Index]]"
-confidence: verified
+up: "[[CS Algorithms/Books/Algorithms Unlocked/Chapter Index|Chapter Index]]"
+confidence: established
+freshness: stable
+tier-coverage: [core]
 ---
 # AU — Chapter 03: Algorithms for Sorting and Searching
 

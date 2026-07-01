@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, compilation]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Compilation and Runtime Overview
 
@@ -36,4 +38,4 @@ Most modern language implementations blur these categories. Python has bytecode 
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

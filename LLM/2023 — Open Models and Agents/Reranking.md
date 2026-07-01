@@ -2,6 +2,7 @@
 tags: [llm, rag]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -102,13 +103,12 @@ Design a retrieval pipeline for a medium-size enterprise knowledge base. Choose 
 
 For a local applied workflow, use [[LLM/Study/Local Embedding and Reranker Hosting Lab|Local Embedding and Reranker Hosting Lab]] to prove the reranker endpoint, launch mode, score semantics, `top_n` behavior, and latency before using [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to compare first relevant rank, context precision, and latency before and after reranking.
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]]

@@ -3,6 +3,7 @@ tags: [spacex, facilities]
 up: "[[Launch Operations and Facilities Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # McGregor Test Facility
@@ -81,4 +82,4 @@ Explain how McGregor acts as a reliability multiplier for Falcon 9, Dragon, and 
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

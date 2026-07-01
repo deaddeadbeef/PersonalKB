@@ -2,6 +2,7 @@
 tags: [llm, index, corpus, navigation]
 up: "[[LLM/LLM]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -9,7 +10,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** A complete linked map of every Markdown note in the LLM corpus, grouped for navigation instead of scattered across era, study, source, query, raw, and chunk layers.
 
-Generated on 2026-06-25 from `LLM/**/*.md` by `_ops/generate_llm_corpus_index.py`.
+Generated on 2026-06-30 from `LLM/**/*.md` by `_ops/generate_llm_corpus_index.py`.
 
 This page is intentionally exhaustive. Use the fast routes first, then drop into the complete link map when you need to find a specific page, runner, paper note, chunk, or query.
 

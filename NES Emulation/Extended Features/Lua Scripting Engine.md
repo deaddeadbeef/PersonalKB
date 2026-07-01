@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Extended Features Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Lua Scripting Engine
@@ -81,4 +82,4 @@ In OxideNES, the `mlua`-backed `ScriptEngine` exposes a narrow API for memory re
 *See also:* [[Achievement System]], [[Input Recording and TAS]], [[Netplay — UDP Multiplayer]], [[Extended Features Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

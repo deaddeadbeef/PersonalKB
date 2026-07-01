@@ -2,6 +2,7 @@
 tags: [cs-ds, advanced]
 up: "[[Advanced Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # k-d Trees and Spatial Data Structures

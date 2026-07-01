@@ -3,6 +3,7 @@ tags: [spacex, facilities]
 up: "[[Launch Operations and Facilities Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Vandenberg SLC-4E
@@ -75,4 +76,4 @@ Explain why SLC-4E is not just a backup to Florida pads, but a fundamentally dif
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

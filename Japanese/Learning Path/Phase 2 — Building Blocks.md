@@ -2,6 +2,7 @@
 tags: [japanese, learning-path, phase-2]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -200,7 +201,7 @@ Before moving to Phase 3, verify:
 Find one Japanese person to have a 5-minute conversation with (in person, online, or via language exchange app). Use ONLY what you've learned in this phase.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Second Month Japanese Study Plan]]
 - [[Third Month Japanese Study Plan]]
 - [[Phase 2 Authentic Audio Spine]]

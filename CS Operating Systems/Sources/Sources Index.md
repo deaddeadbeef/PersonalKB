@@ -2,14 +2,32 @@
 tags: [cs-os, sources]
 up: "[[CS Operating Systems]]"
 confidence: verified
+freshness: stable
+tier-coverage: [provenance]
 ---
 # Sources Index
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Verify an OS mechanism | Start with the textbook chapter notes or the matching raw note below | Record the boundary: kernel/user, process/thread, virtual/physical, file/device, or policy/mechanism |
+| Debug a systems symptom | Pair this source index with [[CS Operating Systems/Study/OS Study Index|OS Study Index]] | Tie the symptom to a source-backed mechanism before proposing a fix |
+| Read normally | Use [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] first | Open sources when the mechanism, guarantee, or case-study claim matters |
+| Maintain the wiki | Keep OS theory, implementation examples, and current-platform facts distinct | Add freshness notes for platform-specific behavior that may change |
 
 ## Primary Text
 
 | # | Title | Author | Year | Raw Note |
 |---|-------|--------|------|----------|
-| 1 | Modern Operating Systems | Andrew S. Tanenbaum | 2014 | `raw-os-001` |
+| 1 | Modern Operating Systems | Andrew S. Tanenbaum | 2014 | [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Modern Operating Systems chapter notes]] |
+
+## Citation Anchors
+
+These headings are stable targets for article-level source citations. Keep the heading text stable when reorganizing the source tables so links such as `[[CS Operating Systems/Sources/Sources Index#Tanenbaum 2015]]` continue to land on a useful provenance entry.
+
+### Tanenbaum 2015
+Primary textbook route: [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Modern Operating Systems chapter notes]].
 
 ## OS Topics (Raw Notes 002-040)
 
@@ -56,4 +74,6 @@ confidence: verified
 | 40 | Kernel Sync Primitives | [[raw-os-040]] |
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/CS Operating Systems]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

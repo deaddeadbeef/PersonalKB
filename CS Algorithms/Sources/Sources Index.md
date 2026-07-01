@@ -2,14 +2,47 @@
 tags: [cs-algorithms, sources]
 up: "[[CS Algorithms]]"
 confidence: verified
+freshness: stable
+tier-coverage: [provenance]
 ---
 # Sources Index
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Verify a proof or complexity claim | Start with [[CS Algorithms/Books/Algorithms Unlocked/Algorithms Unlocked|Algorithms Unlocked]] or the matching raw note below | Record the theorem, invariant, recurrence, or reduction before trusting the summary |
+| Choose an algorithm for implementation | Pair this source index with [[CS Algorithms/Study/Algorithms Study Index|Algorithms Study Index]] | Name the input model, required guarantee, and source-backed limitation |
+| Read normally | Use [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] first | Open sources only when a proof, bound, or selection decision matters |
+| Maintain the wiki | Add or update source rows only when a reader-facing article depends on that source | Keep source names stable so article references do not break |
 
 ## Primary Text
 
 | # | Title | Author | Year | Raw Note |
 |---|-------|--------|------|----------|
-| 1 | Algorithms Unlocked | Thomas H. Cormen | 2013 | `raw-algo-001` - `raw-algo-005` |
+| 1 | Algorithms Unlocked | Thomas H. Cormen | 2013 | [[CS Algorithms/Books/Algorithms Unlocked/Chapter Index|Algorithms Unlocked chapter notes]] |
+
+## Citation Anchors
+
+These headings are stable targets for article-level source citations. Keep the heading text stable when reorganizing the source tables so links such as `[[CS Algorithms/Sources/Sources Index#Cormen 2013]]` continue to land on a useful provenance entry.
+
+### Cormen 2013
+Primary textbook route: [[CS Algorithms/Books/Algorithms Unlocked/Chapter Index|Algorithms Unlocked chapter notes]].
+
+### Erickson 2019
+Primary free textbook reference for algorithms design, proofs, and selected advanced topics.
+
+### MIT OpenCourseWare 6.006
+Lecture-backed algorithm reference used for recurrence, sorting, hashing, graph, compression, and cryptography drills.
+
+### CP Algorithms - Online Reference
+Implementation-oriented reference used for competitive-programming variants and concise algorithm descriptions.
+
+### Princeton Algorithms 4e
+Course/textbook reference used for sorting, searching, and elementary data-structure comparisons.
+
+### CLRS 2022
+Reference edition for formal algorithm statements, recurrence methods, and complexity-theory chapters.
 
 ## Algorithm Topics (Raw Notes 006-040)
 
@@ -52,4 +85,6 @@ confidence: verified
 | 40 | Linear Programming | [[raw-algo-040]] |
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Books/Algorithms Unlocked/Algorithms Unlocked]]

@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, metaprogramming, reflection]
 up: "[[Metaprogramming Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -77,4 +79,4 @@ Smalltalk (1970s) pioneered reflection as a core language feature — every obje
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

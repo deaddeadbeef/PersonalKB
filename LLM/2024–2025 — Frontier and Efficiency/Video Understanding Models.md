@@ -2,6 +2,7 @@
 tags: [llm, multimodal]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -90,7 +91,7 @@ Automated video understanding could unlock large-scale moderation, retrieval, pr
 - Why is hierarchical summarization often necessary for hour-long video understanding?
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

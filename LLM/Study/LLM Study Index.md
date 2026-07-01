@@ -1,11 +1,39 @@
 ---
 tags: [study, llm]
 up: "[[LLM/LLM]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # LLM Study Index
 
 Study and review materials for the LLM knowledge base.
+
+## Start Here By Goal
+
+Do not read this index linearly. Use it as a router.
+
+| Goal | Start with | Then use | Proof you should leave behind |
+|---|---|---|---|
+| Understand the field as a book | [[LLM/LLM Book Reading Spine]] | [[LLM/Study/LLM Mastery Roadmap]], [[LLM/Study/LLM Concept Dependency Map]] | One explained concept dependency and next route |
+| Host a local model and run first inference | [[LLM/Study/Local LLM Hands-On Practicum Sequence]] | [[LLM/Study/Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] | A run folder, first response, debrief, and endpoint audit |
+| Explain what happened inside one request | [[LLM/Study/Local LLM End-to-End Mental Model]] | [[LLM/Study/LLM Inference Request Lifecycle Lab]], [[LLM/Study/Local LLM Runtime Stack Anatomy]], [[LLM/Study/Local LLM Inference Metrics Field Guide]] | A request lifecycle explanation tied to timing and tokens |
+| Decide whether a local model is good enough | [[LLM/Study/LLM Deployment Decision Matrix]] | [[LLM/Study/Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Result Synthesis Runner]], [[LLM/Study/LLM Deployment Readiness Audit Runner]] | A keep, tune, reject, or deploy decision row |
+| Connect papers to local operations | [[LLM/Study/LLM Paper Reading Protocol]] | [[LLM/Study/LLM Paper-to-Local Proof Router]], [[LLM/Study/LLM Academic-to-Local Defense Matrix Runner]] | Claim, evidence, limitation, local implication, and proof route |
+
+## Local Inference Minimum Path
+
+If the immediate goal is "host a local LLM and run inference," use this order:
+
+1. [[LLM/Study/Local LLM Hands-On Practicum Sequence]] - read the practicum rule and stage overview.
+2. [[LLM/Study/Local LLM Environment Preflight Lab]] - identify OS, hardware, runtime boundary, disk, and port.
+3. [[LLM/Study/Local LLM Windows First-Run Quickstart]] - create a run folder, capture preflight, pick Ollama or LM Studio, and call the loopback API.
+4. [[LLM/Study/Local LLM First Endpoint Run Sheet]] - save the actual request, response, timing, and decision row.
+5. [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] - check whether the run counts as endpoint proof.
+6. [[LLM/Study/LLM Inference Request Lifecycle Lab]] - explain prompt assembly, tokenization, prefill, decode, sampling, stop, and output handling.
+7. [[LLM/Study/LLM Deployment Decision Matrix]] - decide whether to keep local, tune, switch runtime/model, or use a hosted/hybrid path.
+
+Stop when one proof artifact is saved. The next session starts from the failed or missing evidence row, not from another browsing pass.
 
 ## Review Drills
 
@@ -325,4 +353,7 @@ For a rapid orientation to the LLM field, read these papers in order. Use [[LLM/
 20. HELM (Liang et al. 2022)
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Study/LLM Study Index]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Book Reading Spine]]

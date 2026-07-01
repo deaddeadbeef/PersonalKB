@@ -2,6 +2,7 @@
 tags: [spacex, business]
 up: "[[Business and Economics Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -102,4 +103,7 @@ SpaceX is unusual because it combines aerospace manufacturing, launch services, 
 *See also:* [[NASA Contracts and Partnerships]], [[Starlink Business Model]], [[Cost Revolution in Spaceflight]], [[Competition Landscape]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

@@ -1,11 +1,24 @@
 ---
 tags: [phm, learning-path]
-up: "[[Project Hail Mary/Project Hail Mary|Project Hail Mary]]"
-confidence: fictional
+up: "[[Project Hail Mary/Project Hail Mary]]"
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # Project Hail Mary — Learning Path
 
 > A guided, progressive tour through the science and story of *Project Hail Mary*. Four passes, each building on the last.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read the topic like a book | [[Project Hail Mary/Project Hail Mary Book Reading Spine|Project Hail Mary Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Separate real science, plausible extrapolation, and fiction | [[Project Hail Mary/Science Accuracy Scorecard|Science Accuracy Scorecard]] |
+| Verify novel, science, interview, or adaptation claims | [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]] |
+
+Use this path when you want staged coverage of the story and science. Use the book spine for the best reading flow, and use the scorecard plus sources whenever you reuse a claim outside the novel context.
 
 ## How to Use This Path
 
@@ -26,7 +39,7 @@ Read ONLY the 🎯 Intuition section of each page. Build a mental map of the nov
 Start with the chapter-level view of the story. Read the overview of each chapter to understand the dual-timeline structure.
 
 1. [[PHM Timeline Map]] — dual-timeline navigation: present spine vs flashback spine
-2. [[Chapter Index]] — map of all chapter notes
+2. [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] — map of all chapter notes
 3. [[PHM Novel - Chapter 01]] — waking up alone, amnesia, pendulum gravity
 4. [[PHM Novel - Chapter 02]] — first memories, lab discovery
 5. [[PHM Novel - Chapter 03]] — Astrophage revelation
@@ -174,4 +187,6 @@ Build active-recall skill through drills and cross-referencing.
 - Compare Weir's fictional Astrophage with real extremophile research in the chunks
 
 ## References
-- [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]]
+
+- [[Project Hail Mary/Project Hail Mary]]
+- [[Project Hail Mary/Sources/Sources Index]]

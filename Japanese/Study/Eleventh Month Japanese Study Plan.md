@@ -2,6 +2,7 @@
 tags: [japanese, study, phase-5, month-11, audio, native-source, advanced]
 up: "[[Japanese Learning Dashboard]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 
@@ -13,7 +14,7 @@ tier-coverage: [practice]
 
 This page is the Month 11 execution path. It follows [[Tenth Month Japanese Study Plan]] and wraps Block 1 of [[Phase 5 Audio Assignment Ladder]].
 
-Use it only after the [[Tenth Month Japanese Study Plan#Month-Ten Success Criteria|Month 10 success criteria]] and the [[Phase 4 — Intermediate Mastery#Phase 4 Checkpoint|Phase 4 checkpoint]] are real. If native-speed Phase 4 listening still becomes passive background, repeat the relevant Week 41-44 work before starting this page.
+Use it only after the [[Tenth Month Japanese Study Plan#Month-Ten Success Criteria|Month 10 success criteria]] and the [[Phase 4 — Intermediate Mastery#✅ Phase 4 Checkpoint|Phase 4 checkpoint]] are real. If native-speed Phase 4 listening still becomes passive background, repeat the relevant Week 41-44 work before starting this page.
 
 ## Before Week 45
 

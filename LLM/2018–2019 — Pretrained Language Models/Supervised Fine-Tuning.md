@@ -2,6 +2,7 @@
 tags: [llm, fine-tuning]
 up: "[[2018–2019 — Pretrained Language Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Supervised Fine-Tuning
@@ -116,7 +117,7 @@ SFT became the standard bridge between pretrained base models and useful downstr
 
 *See also:* [[Language Model Fundamentals]], [[LoRA and QLoRA]], [[Instruction Tuning]], [[Reinforcement Learning from Human Feedback]], [[Open-Weight Model Ecosystem]]
 
-## Supporting Chunks / References
+## References
 - [[Instruction Tuning]] — Scaling SFT across diverse tasks for generalization
 - [[LoRA and QLoRA]] — Efficient alternative to full SFT
 - [[Domain Adaptation]] — Combining continued pretraining with SFT

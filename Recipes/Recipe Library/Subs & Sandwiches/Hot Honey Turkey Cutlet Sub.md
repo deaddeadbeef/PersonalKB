@@ -1,6 +1,9 @@
 ---
 tags: [recipes, subs-sandwiches]
 up: "[[Subs & Sandwiches]]"
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 portable: true
 lunch-safe: true
 leftover-lunch-safe: false

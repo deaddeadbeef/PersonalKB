@@ -2,6 +2,7 @@
 tags: [llm, inference]
 up: "[[2018–2019 — Pretrained Language Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Distillation and Model Compression
@@ -90,11 +91,8 @@ Distillation and model compression are foundational for turning powerful but exp
 
 ---
 
-*See also:* [[2018–2019 — Pretrained Language Models Overview]], Inference and Serving Overview
-
-## Supporting Chunks
-### Supporting Chunks
-_Placeholder for links to specific techniques, implementation details, and case studies._
+*See also:* [[2018–2019 — Pretrained Language Models Overview]], [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs|Inference and Serving Overview]]
 
 ## References
-_Placeholder for references to papers, documentation, and source materials._
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]

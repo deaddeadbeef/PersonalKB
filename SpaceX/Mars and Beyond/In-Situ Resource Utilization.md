@@ -2,6 +2,7 @@
 tags: [spacex, mars]
 up: "[[Mars and Beyond Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # In-Situ Resource Utilization
@@ -99,7 +100,10 @@ NASA's MOXIE (Mars Oxygen In-Situ Resource Utilization Experiment) aboard the Pe
 
 ---
 
-*See also:* [[Autogenous Pressurization]], [[Mars Base Design Concepts]], [[Raptor Engine]], [[Mars Transit and Entry]], [[Mars and Beyond Overview]], [[Sources Index]]
+*See also:* [[Autogenous Pressurization]], [[Mars Base Design Concepts]], [[Raptor Engine]], [[Mars Transit and Entry]], [[Mars and Beyond Overview]], [[SpaceX/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

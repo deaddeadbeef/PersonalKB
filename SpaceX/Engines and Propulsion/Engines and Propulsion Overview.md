@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Engines and Propulsion Overview
 
@@ -36,7 +38,7 @@ Raptor has undergone rapid iteration: Raptor 1 flew on early Starship tests, Rap
 - [[Raptor Engine]]
 - [[Draco and SuperDraco Thrusters]]
 - [[Full-Flow Staged Combustion Cycle]]
-- Engine Manufacturing
+- [[SpaceX/Engines and Propulsion/Engine Manufacturing and Testing|Engine Manufacturing]]
 - [[Raptor Evolution and Raptor 3]]
 
 ## Related Domains
@@ -46,4 +48,7 @@ Raptor has undergone rapid iteration: Raptor 1 flew on early Starship tests, Rap
 - [[Reusability Overview]] — how engine reuse drives down costs
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

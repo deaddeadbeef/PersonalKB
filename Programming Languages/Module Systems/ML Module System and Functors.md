@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, module-systems, ml-modules]
 up: "[[Module Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -90,4 +92,4 @@ The ML module system sits at the far end of the expressiveness spectrum. It enab
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

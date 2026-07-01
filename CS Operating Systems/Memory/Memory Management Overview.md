@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Memory Management Overview
 
@@ -57,4 +59,6 @@ How the OS gives each process the illusion of private, contiguous memory while e
 - **[[File Systems Overview]]** — memory-mapped files (mmap) bridge virtual memory and the file system.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

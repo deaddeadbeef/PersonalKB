@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, speculative-decoding, draft-model, latency, benchmarking, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, practice, deep-dive]
 last-verified: 2026-06-15
 ---
@@ -298,11 +299,11 @@ Internal:
 
 Supporting chunks:
 
-- [[chunk-llm-221 Speculative Decoding Draft-Verify Algorithm]]
-- [[chunk-llm-222 Speculative Sampling Distribution Guarantee]]
-- [[chunk-llm-223 Speculative Decoding Speedup Analysis]]
-- [[chunk-llm-224 Speculative Decoding Production Adoption]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
+- [[LLM/_chunks/chunk-llm-221 Speculative Decoding Draft-Verify Algorithm|chunk-llm-221]]
+- [[LLM/_chunks/chunk-llm-222 Speculative Sampling Distribution Guarantee|chunk-llm-222]]
+- [[LLM/_chunks/chunk-llm-223 Speculative Decoding Speedup Analysis|chunk-llm-223]]
+- [[LLM/_chunks/chunk-llm-224 Speculative Decoding Production Adoption|chunk-llm-224]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
 
 Current external docs checked 2026-06-15:
 

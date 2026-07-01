@@ -2,6 +2,7 @@
 tags: [programming-languages, error-handling, panic]
 up: "[[Error Handling Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -131,11 +132,14 @@ The panic concept evolved from early abort mechanisms in C (`abort()`, `exit()`)
 
 ---
 
-*See also:* [[Error Handling Overview]], [[Result and Option Types]], Exception Hierarchies
+*See also:* [[Error Handling Overview]], [[Result and Option Types]], [[Programming Languages/Error Handling/Exception-Based Error Handling|Exception Hierarchies]]
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

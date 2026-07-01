@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, metaprogramming, macros]
 up: "[[Metaprogramming Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -84,4 +86,4 @@ The C preprocessor (1972) set the floor: macros as textual find-and-replace, inh
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

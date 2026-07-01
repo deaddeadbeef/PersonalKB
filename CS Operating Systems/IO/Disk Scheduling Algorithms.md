@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/io
 confidence: verified
+freshness: stable
 up: "[[IO Overview]]"
 tier-coverage:
   - intuition

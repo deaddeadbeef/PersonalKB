@@ -2,6 +2,7 @@
 tags: [llm, history]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -111,12 +112,11 @@ You are advising an organization that wants to avoid external API dependence whi
 - [[LLM/Fine-Tuning and Adaptation/LoRA and QLoRA|LoRA]] — the PEFT method that made open model adaptation practical
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] — the operational checklist for maintaining local open-weight services
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]

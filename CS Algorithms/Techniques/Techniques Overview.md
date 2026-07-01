@@ -3,7 +3,9 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Techniques Overview
 
@@ -51,4 +53,6 @@ Some algorithmic ideas are not tied to a single problem domain — they are cros
 - **[[Strings Overview]]** — sliding window drives many substring search and matching algorithms.
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

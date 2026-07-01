@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, paradigms]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Programming Paradigms Overview
 
@@ -37,4 +39,4 @@ No paradigm is universally superior — each excels at different problem types. 
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

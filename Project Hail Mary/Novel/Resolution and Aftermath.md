@@ -7,6 +7,7 @@ tags:
   - aftermath
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Resolution and Aftermath
@@ -144,10 +145,10 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary source for plot depictions (fictional)
-- [[Sources Index#Weir Interviews Taumoeba]] — author commentary on resolution design
-- [[Sources Index#Bdellovibrio Sockett 2009]] — biological control science anchor
-- [[Sources Index#Northeastern Accuracy Discussion]] — public accuracy discussion including resolution
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary source for plot depictions (fictional)
+- [[Project Hail Mary/Sources/Sources Index#Weir Interviews Taumoeba|Weir Interviews Taumoeba]] — author commentary on resolution design
+- [[Project Hail Mary/Sources/Sources Index#Bdellovibrio Sockett 2009|Bdellovibrio Sockett 2009]] — biological control science anchor
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — public accuracy discussion including resolution
 
 ## Supporting Chunks
 

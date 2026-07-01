@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CRT Simulation Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Barrel Distortion and Shadow Mask
@@ -76,4 +77,4 @@ In OxideNES, the barrel distortion pass performs coordinate remapping, while the
 *See also:* [[CRT Rendering Pipeline]], [[Scanline and Phosphor Effects]], [[Glass Reflections and Chromatic Aberration]], [[CRT Simulation Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

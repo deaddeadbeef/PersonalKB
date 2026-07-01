@@ -2,6 +2,7 @@
 tags: [llm, rag]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -108,13 +109,12 @@ A RAG system answers a question incorrectly even though the correct passage is s
 
 For a local applied workflow, use [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab|Local RAG Retrieval Evaluation and Reranking Lab]] to separate top-k misses, low-rank evidence, context poisoning, reranking gains, and citation failures before tuning the generator.
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]]

@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, memory-management, value-reference]
-up: "[[Memory Management Overview]]"
+up: "[[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -83,4 +85,4 @@ C++ has the most complex value/reference model: lvalues, rvalues, xvalues, prval
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

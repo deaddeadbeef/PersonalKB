@@ -2,12 +2,13 @@
 tags: [japanese, study, roadmap]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Study Roadmap — Beginner to Intermediate
 
-> **A structured path from kana-literate beginner to solid N3 level.**
+> **One-line summary:** A structured path from kana-literate beginner to solid N3 level.
 
 ## 🎯 Intuition
 
@@ -121,4 +122,4 @@ See [[Daily Study Routine Templates]] for detailed schedules.
 You're at a konbini (convenience store). The clerk asks これでよろしいですか？ How do you respond if you also want to add a drink? Use appropriate particles and polite form.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, windows, storage, cache, readiness, evidence]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-15
 last-machine-check: 2026-06-15T11:10:33+08:00

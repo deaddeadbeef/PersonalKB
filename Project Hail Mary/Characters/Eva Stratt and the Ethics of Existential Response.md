@@ -6,6 +6,7 @@ tags:
   - governance
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Eva Stratt and the Ethics of Existential Response
@@ -95,8 +96,6 @@ graph TD
 ### Creative Challenge
 - **What if...** Stratt had been forced to justify every major Hail Mary decision before a multinational democratic body instead of acting unilaterally?
 
-## References
-
 ## Supporting Chunks
 
 - [[Ethics - Existential threats need globally legitimate decision authority]]
@@ -107,3 +106,7 @@ graph TD
 - [[Ethics - Antarctic nuclear detonations release subglacial methane as extreme planetary triage]] — Ch13: extreme planetary triage
 - [[Ethics - Stratt s coercive conscription of Grace is the sharpest expression of mission-survival logic]] — Ch22: conscription as ethical fulcrum
 - [[Ethics - Stratt s war famine pestilence and death framing articulates the existential stakes]] — Ch25: Stratt's moral self-accounting
+
+## References
+- [[Project Hail Mary/Sources/Sources Index]]
+- [[Project Hail Mary/Novel/Chapter Index]]

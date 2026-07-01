@@ -2,6 +2,7 @@
 tags: [programming-languages, concurrency, stm]
 up: "[[Concurrency Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -133,11 +134,14 @@ Design a concurrency strategy for an application that needs to update several sh
 
 ---
 
-*See also:* [[Concurrency Models Overview]], [[Sources Index]]
+*See also:* [[Concurrency Models Overview]], [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

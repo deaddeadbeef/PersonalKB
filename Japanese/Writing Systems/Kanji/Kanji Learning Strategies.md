@@ -2,6 +2,7 @@
 tags: [japanese, kanji, strategy]
 up: "[[Kanji — How Kanji Work]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -119,4 +120,4 @@ GOOD: Learn 食べる ![[kanjistrategy-002-tabe-ru-shokuji-washoku.mp3]] (taberu
 Write a short self-introduction using all three scripts: your name in katakana, a greeting in hiragana, and at least one common kanji (人, 大, 日).
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

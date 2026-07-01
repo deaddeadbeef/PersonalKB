@@ -1,7 +1,3 @@
----
-up: "[[Project Hail Mary/Project Hail Mary|Project Hail Mary]]"
-confidence: fictional
----
 ﻿---
 tags:
   - phm
@@ -11,6 +7,7 @@ tags:
   - vfx
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Rocky on Screen
@@ -124,6 +121,6 @@ flowchart LR
 
 ## References
 
-- [[Sources Index#No Film School Goddard Interview]] — screenwriter's adaptation approach
-- [[Sources Index#CinemaBlend Production]] — behind-the-scenes production context
-- [[Sources Index#Nature Film Review]] — science-journal perspective on the film
+- [[Project Hail Mary/Sources/Sources Index#No Film School Goddard Interview|No Film School Goddard Interview]] — screenwriter's adaptation approach
+- [[Project Hail Mary/Sources/Sources Index#CinemaBlend Production|CinemaBlend Production]] — behind-the-scenes production context
+- [[Project Hail Mary/Sources/Sources Index#Nature Film Review|Nature Film Review]] — science-journal perspective on the film

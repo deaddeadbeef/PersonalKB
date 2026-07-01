@@ -4,6 +4,7 @@ tags: [spacex, dragon, human-spaceflight]
 up: "[[Dragon and Human Spaceflight Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Private Astronaut Missions
@@ -61,7 +62,7 @@ Private astronaut missions demonstrate that Crew Dragon is flexible enough for m
 | Ax-2 | May 2023 | 4 | ISS | ~10 days | Saudi astronauts to ISS |
 | Ax-3 | Jan 2024 | 4 | ISS | ~18 days | Turkish astronaut; ESA-sponsored crew |
 | Polaris Dawn | Sept 2024 | 4 | Free-flight (~1,400 km) | ~5 days | First commercial EVA |
-| Ax-4 | not confirmed in vault sources | 4 | ISS | ~14 days (est.) | Continued Axiom program |
+| Ax-4 | Peggy Whitson | 4 | ISS | ~18 days | Fourth Axiom private astronaut mission |
 
 ## 🏋️ Practice
 ### Warm-Up — 3 Conceptual Questions
@@ -77,4 +78,6 @@ Private astronaut missions demonstrate that Crew Dragon is flexible enough for m
 Compare Inspiration4, Axiom ISS missions, and Polaris Dawn as three different business and mission models enabled by the same spacecraft.
 
 ## References
-→ [[Sources Index]]
+- [[SpaceX/Sources/Sources Index]]
+- [Axiom Mission 4](https://www.axiomspace.com/missions/ax4)
+- [Ax-4 Recap: 18 Highlights for 18 Days On-Orbit](https://www.axiomspace.com/mission-blog/ax4-18-highlights)

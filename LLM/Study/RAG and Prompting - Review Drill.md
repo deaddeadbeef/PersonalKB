@@ -1,7 +1,9 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # RAG & Prompting — Review Drill
 
@@ -44,4 +46,7 @@ confidence: policy
 - [[LLM/Study/Local RAG Minimal Python Harness|Local RAG Minimal Python Harness]] — capture the corpus manifest, chunk records, retrieval evidence, cited answer, refusal test, benchmark row, quality row, and failure row for the assistant.
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Study/LLM Study Index]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Book Reading Spine]]

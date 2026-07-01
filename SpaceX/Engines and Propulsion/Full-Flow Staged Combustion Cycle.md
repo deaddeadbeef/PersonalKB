@@ -3,6 +3,7 @@ tags: [spacex, engines]
 up: "[[Engines and Propulsion Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Full-Flow Staged Combustion Cycle
@@ -80,4 +81,4 @@ Explain why FFSC was historically attractive but operationally difficult. Your a
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

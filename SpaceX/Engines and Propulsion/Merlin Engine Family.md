@@ -3,6 +3,7 @@ tags: [spacex, engines]
 up: "[[Engines and Propulsion Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Merlin Engine Family
@@ -82,4 +83,4 @@ Compare Merlin's design philosophy with a higher-efficiency staged-combustion en
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

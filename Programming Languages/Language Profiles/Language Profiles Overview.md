@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, language-profiles]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Language Profiles Overview
 
@@ -24,7 +26,7 @@ Cross-references to dimension hubs let you drill into specific design axes (type
 ### Application and Enterprise Languages
 - [[Java — Language Profile]]
 - [[Kotlin — Language Profile]]
-- [[C# — Language Profile|C Sharp — Language Profile]] (not yet created)
+- [[Programming Languages/Language Profiles/C# — Language Profile|C Sharp — Language Profile]] (not yet created)
 
 ### Scripting and Dynamic Languages
 - [[Python — Language Profile]]
@@ -46,4 +48,4 @@ Cross-references to dimension hubs let you drill into specific design axes (type
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [spacex, starship]
 up: "[[Starship Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -86,4 +87,7 @@ Compared with Saturn V, SLS, and Falcon 9, Starship combines super-heavy lift wi
 *See also:* [[Super Heavy Booster]], [[Raptor Engine]], [[Thermal Protection System]], [[Starship Variants and Applications]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

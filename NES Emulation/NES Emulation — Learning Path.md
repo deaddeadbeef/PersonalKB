@@ -1,11 +1,24 @@
 ---
 tags: [nes-emulation, learning-path]
-up: "[[NES Emulation/NES Emulation|NES Emulation]]"
-confidence: policy
+up: "[[NES Emulation/NES Emulation]]"
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # NES Emulation — Learning Path
 
 > A guided, progressive tour through NES hardware and emulation. Four passes, each building on the last.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read NES emulation like a book | [[NES Emulation/NES Emulation Book Reading Spine|NES Emulation Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Route a bug or review target to a subsystem | [[NES Emulation/Study/NES Emulation Study Index|NES Emulation Study Index]] |
+| Verify hardware behavior, timing, tests, or OxideNES-specific claims | [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]] |
+
+Use this path when you want staged coverage of the machine. Use the book spine for the reconstruction story, and use the study index when you need a trace, test ROM, or regression proof.
 
 ## How to Use This Path
 
@@ -172,4 +185,6 @@ Use the [[NES Emulation Study Index]] for review drills and cheatsheets.
 | Kirby's Adventure | MMC3, many sprites, complex scrolling |
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/NES Emulation]]
+- [[NES Emulation/Sources/Sources Index]]

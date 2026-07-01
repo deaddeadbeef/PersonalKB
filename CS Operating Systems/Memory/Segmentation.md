@@ -3,7 +3,8 @@ tags:
   - csos
   - csos/memory
 confidence: verified
-up: "[[Memory Management Overview]]"
+freshness: stable
+up: "[[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]]"
 tier-coverage:
   - intuition
   - core

@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 08
 
-← [[PHM Novel - Chapter 07]] | [[Chapter Index]] | [[PHM Novel - Chapter 09]] →
+← [[PHM Novel - Chapter 07]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 09]] →
 
 > **One-line summary** — Grace and the alien crew trade materials, a docking tunnel is built, and first contact becomes physically immediate.
 
@@ -95,4 +96,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 168–183
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

@@ -2,6 +2,7 @@
 tags: [llm, alignment]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -88,7 +89,7 @@ Constitutional AI helped formalize the idea that alignment criteria can be expli
 1. Draft three constitutional principles for a domain-specific assistant and explain how weaknesses in those principles could still produce misalignment.
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

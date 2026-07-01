@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[NES Hardware Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # NES vs Other 8-bit Consoles
@@ -80,4 +81,4 @@ Argue whether the NES should be described as underpowered, well-balanced, or exp
 *See also:* [[NES Console Architecture]], [[NES Technical Specifications]], [[NES History and Legacy]], [[NES Hardware Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [japanese, speaking, output, register, phase-5, audio, feedback]
 up: "[[Phase 5 Authentic Audio Spine]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[PPU — Picture Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PPU Scrolling
@@ -83,4 +84,4 @@ OxideNES `ppu.rs` implements the full Loopy register mechanism with `increment_s
 *See also:* [[PPU Registers and Timing]], [[PPU Rendering Pipeline]], [[Backgrounds and Nametables]], [[Sprites and OAM]], [[PPU — Picture Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

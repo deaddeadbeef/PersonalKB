@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[PPU — Picture Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Sprites and OAM
@@ -81,4 +82,4 @@ OxideNES `ppu.rs` scans all 64 OAM entries at cycle 257 of each visible scanline
 *See also:* [[PPU Rendering Pipeline]], [[Backgrounds and Nametables]], [[PPU Registers and Timing]], [[OAM DMA]], [[PPU — Picture Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

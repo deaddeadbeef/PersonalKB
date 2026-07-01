@@ -2,6 +2,7 @@
 tags: [spacex, origins-history]
 up: "[[Origins and History Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -99,4 +100,4 @@ Starship extends this philosophy to full-scale experimental iteration. IFT-1 on 
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

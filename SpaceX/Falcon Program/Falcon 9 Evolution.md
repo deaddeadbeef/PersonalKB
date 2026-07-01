@@ -2,6 +2,7 @@
 tags: [spacex, falcon]
 up: "[[Falcon Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -78,4 +79,4 @@ Block 5, the definitive production version, debuted on 11 May 2018 carrying Bang
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

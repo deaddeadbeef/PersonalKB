@@ -1,7 +1,9 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # 2020–2021 — The Scaling Era
 
@@ -63,4 +65,7 @@ Scale brought new problems. Benchmark contamination — where training data inad
 → Next: [[2022 — Alignment and Chat Overview|2022 — Alignment and Chat]]
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/LLM Book Reading Spine]]

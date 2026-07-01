@@ -2,6 +2,7 @@
 tags: [llm, history]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -95,10 +96,9 @@ Pick one frontier lab and argue whether its strategy is more likely to win on pr
 
 ---
 
-## Supporting Chunks
-
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
-
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

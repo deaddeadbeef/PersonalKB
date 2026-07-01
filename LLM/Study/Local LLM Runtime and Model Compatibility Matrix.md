@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, runtime, compatibility, quantization]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, practice]
 last-verified: 2026-06-15
 ---
@@ -210,12 +211,12 @@ Internal evidence:
 
 Supporting chunks:
 
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
-- [[chunk-llm-118 vLLM Continuous Batching Throughput]]
-- [[chunk-llm-120 vLLM De Facto Serving Framework]]
-- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]]
-- [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]]
+- [[LLM/_chunks/chunk-llm-118 vLLM Continuous Batching Throughput|chunk-llm-118]]
+- [[LLM/_chunks/chunk-llm-120 vLLM De Facto Serving Framework|chunk-llm-120]]
+- [[LLM/_chunks/chunk-llm-208 GPTQ Standard for Open-Source Deployment|chunk-llm-208]]
+- [[LLM/_chunks/chunk-llm-211 AWQ INT4 Edge Deployment Performance|chunk-llm-211]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
 
 Current external docs checked 2026-06-14:
 

@@ -2,6 +2,7 @@
 tags: [japanese, speaking, pitch-accent, phase-3, audio, practice]
 up: "[[Pitch Accent — Introduction]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, practice]
 ---
 
@@ -78,4 +79,4 @@ Record clip-quality problems in [[Pronunciation Correction Log]]. Record normal 
 - [[Pitch Accent — Common Patterns]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
-- [[Sources Index#Pronunciation Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Pronunciation Sources Checked 2026-06-06|Pronunciation Sources Checked 2026-06-06]]

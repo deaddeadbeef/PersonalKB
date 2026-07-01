@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n5, sentence-patterns]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -153,7 +154,7 @@ You are done with this page for now when you can explain:
 - How to turn 学生です into a question.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[chunk-jp-028]]
 - [[chunk-jp-029]]
 - [[chunk-jp-030]]

@@ -2,6 +2,7 @@
 tags: [japanese, listening, phase-5, audio, practice, native-source]
 up: "[[Advanced Listening Resources]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -231,4 +232,4 @@ After listening, write one line in [[Phase 5 Weekly Review]]:
 - [[Pronunciation Correction Log]]
 - [[Advanced Listening Resources]]
 - [[Audio Index]]
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

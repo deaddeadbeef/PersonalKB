@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, memory-management]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Memory Management Overview
 
@@ -36,4 +38,4 @@ How a language manages memory is perhaps its most consequential low-level design
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [llm, architecture]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Mixture-of-Experts Models
@@ -82,11 +83,11 @@ Switch Transformer showed MoE could scale to trillion-parameter regimes with top
 ### Challenge
 1. Explain why a model with 8× the total parameters but only 2× the active parameters can capture much of the benefit of a larger dense model, and analyze where communication, routing quality, and memory overhead may still erase those gains in practice.
 
-*See also:* [[Transformer Architecture]] — MoE extends the standard transformer with sparse routing; [[Compute Data and Parameter Trade-offs]] — MoE decouples parameter count from compute cost; [[Open-Weight Model Ecosystem]] — open MoE models like Mixtral; [[Speculative Decoding]] — draft models can leverage MoE efficiency; [[Efficient Attention and Long-Context Variants]] — combining MoE with efficient attention
-
-## Supporting Chunks
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
+*See also:* [[Transformer Architecture]] — MoE extends the standard transformer with sparse routing; [[Compute Data and Parameter Trade-offs]] — MoE decouples parameter count from compute cost; [[Open-Weight Model Ecosystem]] — open MoE models like Mixtral; [[Speculative Decoding]] — draft models can leverage MoE efficiency; [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] — combining MoE with efficient attention
 
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

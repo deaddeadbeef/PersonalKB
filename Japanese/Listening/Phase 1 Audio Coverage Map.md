@@ -2,6 +2,7 @@
 tags: [japanese, listening, phase-1, audio, coverage]
 up: "[[Listening Overview]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, practice]
 ---
 
@@ -88,4 +89,4 @@ These are real gaps:
 - [[Beginner Listening Resources]]
 - [[Phase 2 Audio Coverage Map]]
 - [[Phase 2 Weekly Review]]
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

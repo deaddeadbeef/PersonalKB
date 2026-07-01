@@ -2,6 +2,7 @@
 tags: [study, llm, papers, research-literacy, local-llm, evidence, routing, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [core, practice, deep-dive]
 last-verified: 2026-06-15
 ---

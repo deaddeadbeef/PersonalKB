@@ -7,9 +7,10 @@ tags:
   - first-contact
   - language
   - rocky
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 source_mode: primary-synthesis
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Arc - Xenolinguistics Progression
@@ -143,7 +144,7 @@ flowchart TD
 ## References
 - [[PHM Chapter Summaries - Secondary Sources Registry]]
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (fictional)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Xenolinguistics and First Contact]]
 - [[Rocky and the Eridians]]
 - [[Xenolinguistics - Alien signals can be treated as cryptanalysis problems]]

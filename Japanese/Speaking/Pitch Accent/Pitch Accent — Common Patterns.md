@@ -2,6 +2,7 @@
 tags: [japanese, speaking, pitch-accent]
 up: "[[Speaking Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -102,6 +103,6 @@ No drop. First mora low, rest high.
 Role-play arriving at a Japanese office for the first time. Include: greeting the receptionist, introducing yourself to your new team, and responding to their questions with appropriate aizuchi.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Phase 3 Pitch Accent Practice Path]]

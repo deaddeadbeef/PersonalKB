@@ -1,7 +1,9 @@
 ---
 tags: [study, nes-emulation, cpu]
 up: "[[NES Emulation Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — 6502 CPU and Addressing
 
@@ -34,4 +36,7 @@ Test your understanding of the MOS 6502 processor as implemented in the NES.
 > Ricoh disabled BCD arithmetic in the 2A03 to avoid patent royalties to MOS Technology. The D flag can be set/cleared but has no effect on ADC/SBC operations.
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/Study/NES Emulation Study Index]]
+- [[NES Emulation/Sources/Sources Index]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]

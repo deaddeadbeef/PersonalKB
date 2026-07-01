@@ -4,6 +4,7 @@ tags: [spacex, dragon, human-spaceflight]
 up: "[[Dragon and Human Spaceflight Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Crew Dragon Design
@@ -104,4 +105,4 @@ Describe how Crew Dragon combines crew safety, docking, reentry protection, and 
 - [[Operational Crew Missions]]
 
 ## References
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

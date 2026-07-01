@@ -2,6 +2,7 @@
 tags: [study, llm, papers, local-llm, defense, evidence, audit, capstone, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, deep-dive, practice]
 last-verified: 2026-06-15
 ---
@@ -701,7 +702,7 @@ This defense matrix is complete when:
 - [[LLM/Study/Local LLM Result Synthesis Runner]]
 - [[LLM/Study/LLM Mastery Capstone Workbook]]
 - [[LLM/Study/LLM Mastery Evidence Audit Runner]]
-- [[chunk-llm-049 FlashAttention Exact Attention with Tiling]]
-- [[chunk-llm-093 RAG Combines Parametric and Retrieval]]
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
-- [[chunk-llm-221 Speculative Decoding Draft-Verify Algorithm]]
+- [[LLM/_chunks/chunk-llm-049 FlashAttention Exact Attention with Tiling|chunk-llm-049]]
+- [[LLM/_chunks/chunk-llm-093 RAG Combines Parametric and Retrieval|chunk-llm-093]]
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]]
+- [[LLM/_chunks/chunk-llm-221 Speculative Decoding Draft-Verify Algorithm|chunk-llm-221]]

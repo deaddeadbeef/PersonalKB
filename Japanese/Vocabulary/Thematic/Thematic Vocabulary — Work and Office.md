@@ -2,10 +2,13 @@
 tags: [japanese, vocabulary, thematic, work]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Thematic Vocabulary — Work and Office
+
+> **One-line summary:** Work and office vocabulary ties job titles, workplace relationships, meetings, tools, and polite requests to professional Japanese.
 
 ```mermaid
 flowchart TD
@@ -20,9 +23,9 @@ flowchart TD
 
 ## 🎯 Intuition
 
-**The Core Idea:** Understanding Thematic Vocabulary — Work and Office is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+**The Core Idea:** Learn office words with hierarchy attached: who is speaking, who is being addressed, and how polite the phrase must be.
+**Analogy:** Workplace vocabulary is an org chart plus a tool cabinet: nouns name roles and objects, while register decides how safe the sentence is.
+**Why It Matters:** Meetings, introductions, email, scheduling, and workplace small talk all depend on accurate role and register choices.
 
 ## ⚙️ Core Mechanics
 
@@ -90,4 +93,4 @@ flowchart TD
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

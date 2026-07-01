@@ -2,6 +2,7 @@
 tags: [llm, agents]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -93,14 +94,13 @@ Design a small tool interface for a weather assistant with two tools. Define the
 
 ---
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ### See Also
 - [[LLM/Prompting and In-Context Learning/Structured Output and Constrained Generation|Structured Output]] — function calls are a form of structured generation
 - [[LLM/Prompting and In-Context Learning/Tool-Augmented Prompting|Tool-Augmented Prompting]] — prompting techniques for tool use
 
-## References
+### References
 - [[LLM/Sources/Sources Index]]

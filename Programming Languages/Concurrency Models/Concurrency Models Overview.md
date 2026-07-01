@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, concurrency]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Concurrency Models Overview
 
@@ -42,4 +44,4 @@ Shared mutable state plus concurrency equals bugs. When multiple threads can rea
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

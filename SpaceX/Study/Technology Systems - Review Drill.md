@@ -1,7 +1,9 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
-confidence: policy
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [practice]
 ---
 # Technology Systems — Review Drill
 
@@ -78,4 +80,7 @@ confidence: policy
 > **A15.** IFT-5 (13 October 2024) achieved the first successful tower catch of a Super Heavy booster.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Study/SpaceX Study Index]]
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]

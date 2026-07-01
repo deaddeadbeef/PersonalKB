@@ -2,6 +2,7 @@
 tags: [spacex, technology]
 up: "[[Technology Deep Dives Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -99,4 +100,7 @@ Starship extended the same logic to primary structure. SpaceX abandoned an earli
 *See also:* [[Technology Deep Dives Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

@@ -2,6 +2,7 @@
 tags: [llm, multimodal]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Vision-Language Models
@@ -87,9 +88,8 @@ CLIP established contrastive alignment as the first broadly successful image-lan
 
 *See also:* [[LLM/Multimodal/Multimodal Tokenization and Fusion|Tokenization & Fusion]], [[LLM/Multimodal/Multimodal Evaluation and Safety|Multimodal Safety]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks / References
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

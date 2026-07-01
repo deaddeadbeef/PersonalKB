@@ -4,11 +4,22 @@ tags:
   - sources
   - bibliography
 up: "[[Project Hail Mary]]"
-confidence: fictional
+confidence: verified
+freshness: stable
+tier-coverage: [provenance]
 ---
 # Sources Index
 
-Shared bibliography for the [[Project Hail Mary]] knowledge base. Notes link here using heading anchors (e.g., `[[Sources Index#Dadachova 2007]]`).
+Shared bibliography for the [[Project Hail Mary]] knowledge base. Notes link here using heading anchors (e.g., `[[Project Hail Mary/Sources/Sources Index#Dadachova 2007|Dadachova 2007]]`).
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Separate novel fact from real-world science | Start with the novel source, then the relevant science section below | Classify each claim as fictional, real science, plausible extrapolation, or adaptation commentary |
+| Check a science note | Pair this source index with [[Project Hail Mary/Science Accuracy Scorecard|Science Accuracy Scorecard]] | Record what the source proves and what the novel adds beyond it |
+| Read normally | Use [[Project Hail Mary/Project Hail Mary Book Reading Spine|Project Hail Mary Book Reading Spine]] first | Open sources when reusing a science, story, or adaptation claim |
+| Maintain the wiki | Keep secondary chapter summaries legally and rhetorically separate from novel text | Use original paraphrase and preserve the primary-source limitation note |
 
 ---
 
@@ -175,4 +186,6 @@ SlashFilm, "Project Hail Mary Book-to-Movie Changes." — Itemized comparison of
 CinemaBlend, production coverage and anecdotes. — Behind-the-scenes context on casting, VFX, and tonal decisions.
 
 ## References
-- [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]]
+
+- [[Project Hail Mary/Project Hail Mary]]
+- [[Project Hail Mary/Project Hail Mary Book Reading Spine]]

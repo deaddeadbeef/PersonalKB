@@ -3,6 +3,7 @@ tags: [spacex, reusability]
 up: "[[Reusability Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Propulsive Landing Technology
@@ -86,4 +87,4 @@ SpaceX achieved the first successful orbital-class propulsive landing on Decembe
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

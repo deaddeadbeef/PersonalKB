@@ -8,6 +8,7 @@ tags:
   - tau-ceti
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # The Adrian Ecology
@@ -100,8 +101,8 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary source for Adrian depictions (fictional)
-- [[Sources Index#Weir Interviews Taumoeba]] — author commentary on ecological design
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary source for Adrian depictions (fictional)
+- [[Project Hail Mary/Sources/Sources Index#Weir Interviews Taumoeba|Weir Interviews Taumoeba]] — author commentary on ecological design
 
 ## Supporting Chunks
 

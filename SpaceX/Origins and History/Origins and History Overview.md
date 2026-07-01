@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Origins and History Overview
 
@@ -35,8 +37,8 @@ From its inception, SpaceX has been oriented toward making humanity a multiplane
 - [[Founding of SpaceX]]
 - [[Falcon 1 Program]]
 - [[Key Milestones Timeline]]
-- SpaceX Culture and Philosophy
-- Failures and Lessons Learned
+- [[SpaceX/Origins and History/SpaceX Culture and Operations|SpaceX Culture and Philosophy]]
+- [[SpaceX/Origins and History/Failures Recovery and Lessons Learned|Failures and Lessons Learned]]
 - [[Elon Musk's Mars Vision]]
 
 ## Related Domains
@@ -45,4 +47,7 @@ From its inception, SpaceX has been oriented toward making humanity a multiplane
 - [[Mars and Beyond Overview]] — the ultimate goal that motivated the founding
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

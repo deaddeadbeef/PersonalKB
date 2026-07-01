@@ -1,11 +1,24 @@
 ---
 tags: [cs-ds, learning-path]
 up: "[[CS Data Structures]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # CS Data Structures — Learning Path
 
 > This path is designed for **progressive learning** — you don't read everything at once. Make multiple passes, each going deeper.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read data structures like a book | [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Choose a structure for code or review costs | [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures Study Index]] |
+| Verify operation costs, workload assumptions, or source claims | [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]] |
+
+Use this path when you want staged coverage. Use the book spine when you want the story of memory and access patterns, and use the study index when the goal is a concrete selection decision.
 
 ## How to Use This Path
 
@@ -194,4 +207,6 @@ confidence: policy
 *Part of [[CS Data Structures]]. See also: [[CS Algorithms — Learning Path]]*
 
 ## References
-- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]
+
+- [[CS Data Structures/CS Data Structures Book Reading Spine]]
+- [[CS Data Structures/Sources/Sources Index]]

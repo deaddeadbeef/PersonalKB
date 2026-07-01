@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Falcon Program Overview
 
@@ -33,11 +35,11 @@ Falcon 9 delivers approximately 22,800 kg to LEO and 8,300 kg to GTO in reusable
 
 ## Pages in This Domain
 - [[Falcon 9 Architecture]]
-- [[Falcon 9 Evolution|Falcon 9 Evolution and Versions]]
-- Block 5 Design and Reuse
-- [[Falcon Heavy Design and Missions|Falcon Heavy]]
-- Launch Cadence and Reliability
-- [[Falcon Performance Specifications|Falcon Specifications and Performance]]
+- [[SpaceX/Falcon Program/Falcon 9 Evolution|Falcon 9 Evolution and Versions]]
+- [[SpaceX/Falcon Program/Block 5 and Fleet Management|Block 5 Design and Reuse]]
+- [[SpaceX/Falcon Program/Falcon Heavy Design and Missions|Falcon Heavy]]
+- [[SpaceX/Falcon Program/Launch Cadence and Turnaround Records|Launch Cadence and Reliability]]
+- [[SpaceX/Falcon Program/Falcon Performance Specifications|Falcon Specifications and Performance]]
 
 ## Related Domains
 - [[Origins and History Overview]] — the Falcon 1 origins that led to Falcon 9
@@ -46,4 +48,7 @@ Falcon 9 delivers approximately 22,800 kg to LEO and 8,300 kg to GTO in reusable
 - [[Missions and Payloads Overview]] — the launches Falcon has performed
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

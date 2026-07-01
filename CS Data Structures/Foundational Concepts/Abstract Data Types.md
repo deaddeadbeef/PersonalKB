@@ -2,6 +2,7 @@
 tags: [cs-ds, foundational]
 up: "[[Foundational Concepts Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 created: 2025-07-14
 ---
@@ -98,7 +99,7 @@ Thinking in ADTs lets you defer implementation decisions until you understand th
 
 ---
 
-*See also:* [[Pointer-Based vs Array-Based Structures]] | [[Data Structure Comparison and Selection]] | [[Asymptotic Analysis and Big-O Notation]] | Stacks and Queues | [[Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** Algorithm Design Paradigms
+*See also:* [[Pointer-Based vs Array-Based Structures]] | [[Data Structure Comparison and Selection]] | [[Asymptotic Analysis and Big-O Notation]] | [[CS Data Structures/Linear Structures/Stacks|Stacks and Queues]] | [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[CS Algorithms/CS Algorithms|Algorithm Design Paradigms]]
 
 ## Supporting Chunks
 

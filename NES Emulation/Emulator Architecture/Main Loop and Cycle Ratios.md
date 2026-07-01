@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Emulator Architecture Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Main Loop and Cycle Ratios
@@ -104,4 +105,4 @@ Design a timing test that would reveal whether an emulator is only matching fram
 *See also:* [[OxideNES Module Architecture]], [[Performance Optimization in OxideNES]], [[Emulator Architecture Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

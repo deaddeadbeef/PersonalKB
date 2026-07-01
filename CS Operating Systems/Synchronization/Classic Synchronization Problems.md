@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/synchronization
 confidence: verified
+freshness: stable
 up: "[[Synchronization Overview]]"
 tier-coverage:
   - intuition

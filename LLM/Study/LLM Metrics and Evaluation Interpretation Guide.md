@@ -2,6 +2,7 @@
 tags: [study, llm, evaluation, metrics, perplexity, calibration, benchmark, local-llm]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [theory, practice]
 ---
 

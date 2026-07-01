@@ -10,6 +10,7 @@ tags:
   - astrophage
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # The Hail Mary Drive
@@ -93,10 +94,10 @@ flowchart LR
 
 ## References
 
-- [[Sources Index#Baez Relativistic Rocket]] — relativistic rocket equations
-- [[Sources Index#Chris West Ship Analysis]] — fan-physicist mass/thrust analysis
-- [[Sources Index#Ashish Fuel Critique]] — mass-ratio concerns
-- [[Sources Index#Morgan 1998]] — neutrino propulsion limits
+- [[Project Hail Mary/Sources/Sources Index#Baez Relativistic Rocket|Baez Relativistic Rocket]] — relativistic rocket equations
+- [[Project Hail Mary/Sources/Sources Index#Chris West Ship Analysis|Chris West Ship Analysis]] — fan-physicist mass/thrust analysis
+- [[Project Hail Mary/Sources/Sources Index#Ashish Fuel Critique|Ashish Fuel Critique]] — mass-ratio concerns
+- [[Project Hail Mary/Sources/Sources Index#Morgan 1998|Morgan 1998]] — neutrino propulsion limits
 
 ## Supporting Chunks
 

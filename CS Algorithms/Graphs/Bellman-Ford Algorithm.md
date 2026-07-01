@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/graphs
 confidence: verified
+freshness: stable
 up: "[[Shortest Path Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -119,3 +120,8 @@ After pass k, d[v] is the shortest-path distance using at most k edges. Any shor
 ## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 6. See [[Dijkstra's Algorithm]] for the non-negative case and [[Floyd-Warshall Algorithm]] for all-pairs.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

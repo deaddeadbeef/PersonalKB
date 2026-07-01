@@ -2,6 +2,7 @@
 tags: [cs-ds, study, drill]
 up: "[[CS Data Structures Study Index]]"
 confidence: verified
+freshness: stable
 ---
 
 # DS Review — Trees and Balancing

@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n5, verbs]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -205,4 +206,4 @@ Your Japanese friend asks 今日何する？ (What are you doing today?). Respon
 - Shadow native speakers using different verb forms
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

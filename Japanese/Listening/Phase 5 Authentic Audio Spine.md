@@ -2,6 +2,7 @@
 tags: [japanese, listening, phase-5, audio, native-audio]
 up: "[[Advanced Listening Resources]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -99,5 +100,5 @@ At the end of each week, record:
 - [[NHK World — News Listening Practice]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
-- [[Sources Index#Audio Sources Checked 2026-06-06]]
-- [[Sources Index#Pronunciation Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Audio Sources Checked 2026-06-06|Audio Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Pronunciation Sources Checked 2026-06-06|Pronunciation Sources Checked 2026-06-06]]

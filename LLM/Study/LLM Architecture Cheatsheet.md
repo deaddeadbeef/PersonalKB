@@ -1,7 +1,9 @@
 ---
 tags: [study, llm, cheatsheet]
 up: "[[LLM/Study/LLM Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # LLM Architecture Cheatsheet
 
@@ -90,4 +92,7 @@ Use [[LLM/Study/LLM Math and Tensor Shape Primer|LLM Math and Tensor Shape Prime
 | llama.cpp | CPU inference, GGUF quantization | Local/edge deployment |
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Study/LLM Study Index]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Book Reading Spine]]

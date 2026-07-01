@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/foundations
 confidence: verified
+freshness: stable
 up: "[[OS Foundations Overview]]"
 tier-coverage:
   - intuition

@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, go]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # Go — Language Profile
 
@@ -64,7 +65,10 @@ Go dominates: cloud infrastructure (Docker, Kubernetes, Terraform), network serv
 - Compilation: [[AOT vs JIT Compilation]], [[Linking and Loading]]
 - Paradigm: [[Imperative and Procedural Programming]]
 - Modules: [[Package and Namespace Systems]], [[Dependency Management Approaches]]
-- References: [[Sources Index]]
+- References: [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

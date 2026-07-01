@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CPU — The 6502 Processor Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # 6502 Addressing Modes
@@ -81,4 +82,4 @@ The `get_operand_address()` method in OxideNES cpu.rs handles all 13 modes via a
 *See also:* [[6502 Instruction Set]], [[6502 Registers and Status Flags]], [[CPU Cycle Accuracy and Timing]], [[CPU — The 6502 Processor Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

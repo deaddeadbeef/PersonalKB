@@ -1,8 +1,10 @@
 ---
 type: home
 tags: [moc, playbook, vault-home]
-up: "[[index]]"
-confidence: policy
+up: "[[index|PersonalKB Index]]"
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # PersonalKB — Vault Playbook
 
@@ -10,6 +12,21 @@ confidence: policy
 > The old OneDrive copy is backup only — do not treat it as the active vault.
 
 This is a personal knowledge base built in Obsidian. It is designed to be **human-readable first, structured enough for automation, and progressively enhanced** — no plugins required to browse or edit, but everything is schema-ready for Dataview, RAG, or semantic search later.
+
+---
+
+## If You Are Here To Read
+
+Use this page as the maintainer playbook. For normal reading, start with the reader-facing routes below.
+
+| Need | Open | Why |
+|---|---|---|
+| Read the whole vault like a shelf of books | [[PersonalKB Book Reading Guide]] | Cross-topic routes, book spines, operating modes, and proof targets |
+| Pick one topic | Any project in Active Projects below | Each root topic now has a first-screen router for book mode, study, sources, and catalog browsing |
+| Learn local LLM hosting and inference | [[LLM/Study/LLM Study Index|LLM Study Index]] | Goal router plus the local inference minimum path |
+| Check whether the wiki is clean | [[PersonalKB Wiki Quality Dashboard]] | Current reader-facing audit verdict and maintenance-layer noise classification |
+| Browse everything exhaustively | [[index|PersonalKB Index]] | Generated catalog for search and agent queries; not the best first reading path |
+| Verify a claim | A topic's `Sources/Sources Index` page | Source indexes now explain how to use evidence, freshness checks, and raw-note routes |
 
 ---
 
@@ -27,7 +44,7 @@ Every topic follows a **four-layer pipeline**:
 **Design principles (keep these stable):**
 - Every content note has YAML frontmatter with `up:` parent link and `tags:`.
 - Cross-link aggressively so the graph view is immediately useful.
-- `## References` footer on every wiki note pointing to `[[Sources Index]]`.
+- `## References` footer on every wiki note pointing to `Sources Index`.
 - Confidence taxonomy: *verified · plausible · fictional · policy · uncertain*.
 - No full copyrighted text in the vault — summaries, metadata, and short fair-use quotes only.
 
@@ -71,16 +88,16 @@ Every topic follows a **four-layer pipeline**:
 |---------|--------|-------------|
 | 🚀 **[[Project Hail Mary]]** | Mature | Science, fiction & adaptation analysis of Andy Weir's novel — the reference implementation of this vault's workflow |
 | 📊 [[Science Accuracy Scorecard]] | Complete | Grounded / extrapolated / impossible ratings for every major science claim |
-| 📚 **[[CS Algorithms]]** | Active | Source notes, 60 chunk notes, 36 canonical wiki pages, 9 study notes, hub-based navigation — built from Cormen's *Algorithms Unlocked* |
-| 🖥️ **[[CS Operating Systems]]** | Active | 42 canonical wiki pages, learning-path navigation, 6 study notes — built from Tanenbaum's *Modern Operating Systems* |
-| 🤖 **[[LLM/LLM\|Large Language Models]]** | Active | Full-stack LLM knowledge base — transformers, pretraining, alignment, inference, RAG, agents, evaluation, multimodal — 13 hubs, 88 wiki pages, 120-paper source catalog |
-| 🚀 **[[SpaceX/SpaceX\|SpaceX]]** | Active | Complete SpaceX knowledge base — origins, Falcon, engines, reusability, Dragon, Starship, Starlink, facilities, technology, business, Mars — 12 hubs, 72 wiki pages |
-| 🏗️ **[[CS Data Structures/CS Data Structures\|CS Data Structures]]** | Active | Data structures knowledge base — arrays, linked lists, trees, heaps, hash tables, graphs, tries, advanced — 8 hubs, 45 wiki pages |
-| 🎮 **[[NES Emulation]]** | Active | NES hardware theory and OxideNES emulator deep dive — CPU, PPU, APU, mappers, rendering pipeline — 50 wiki pages, 30 raw, 120 chunks |
-| 💻 **[[Programming Languages]]** | Active | Design philosophies across 16 languages — type systems, memory, concurrency, paradigms — 78 wiki pages, 50 raw, 200 chunks |
-| 🇯🇵 **[[Japanese]]** | Active | Japanese language learning wiki — writing systems, grammar (N5–N3), vocabulary, listening, speaking, culture, keigo — 5-phase learning path, 75 wiki pages, 40 raw, 150 chunks |
-| 🍱 **[[Recipes]]** | Active | High-protein portable meal wiki — burritos, crunchwraps, rice bowls, bentos, subs, stir-fries — 12 recipes, weekly meal plans with consolidated shopping lists |
-| 📈 **[[Stock Trading]]** | Active | Ground-up stock-market learning wiki — ownership, market mechanics, account rules, filings, price action, risk management, and paper-trading drills |
+| 📚 **[[CS Algorithms]]** | Active | Algorithms as proof, cost, families, graphs, strings, compression, and computational limits |
+| 🖥️ **[[CS Operating Systems]]** | Active | OS mechanisms from processes and memory through files, I/O, virtualization, security, and case studies |
+| 🤖 **[[LLM/LLM\|Large Language Models]]** | Active | Full-stack LLM knowledge base: history, mechanisms, papers, inference, evaluation, RAG, agents, and local hosting |
+| 🚀 **[[SpaceX/SpaceX\|SpaceX]]** | Active | SpaceX as an industrial story: Falcon, engines, reuse, Dragon, Starship, Starlink, business, and Mars architecture |
+| 🏗️ **[[CS Data Structures/CS Data Structures\|CS Data Structures]]** | Active | Storage shapes, operation costs, memory locality, trees, hashes, graphs, strings, and advanced access patterns |
+| 🎮 **[[NES Emulation]]** | Active | NES hardware theory and OxideNES-oriented emulator practice: CPU, PPU, APU, bus, mappers, timing, and tests |
+| 💻 **[[Programming Languages]]** | Active | Language design trade-offs across type systems, memory, concurrency, errors, modules, runtimes, and paradigms |
+| 🇯🇵 **[[Japanese]]** | Active | Japanese learning control system: phases, routines, audio, grammar, vocabulary, speaking, culture, and proof logs |
+| 🍱 **[[Recipes]]** | Active | High-protein portable meal system: recipe categories, weekly execution, source attribution, and repeat/revise/retire notes |
+| 📈 **[[Stock Trading]]** | Active | Ground-up stock-market learning wiki: ownership, market mechanics, account rules, filings, price action, risk management, and paper-trading drills |
 
 ---
 
@@ -107,7 +124,10 @@ See **[[QnA System Roadmap]]** for the phased plan.
 
 ---
 
-> **First time here?** Open [[Project Hail Mary]] — it's the fully worked example of every convention above. For language learning, start with [[Japanese]] — it has a guided 5-phase learning path.
+> **First time here?** Open [[PersonalKB Book Reading Guide]] if you want to read. Open [[Project Hail Mary]] if you want to study the workflow conventions.
 
 ## References
+
 - [[index|PersonalKB Index]]
+- [[PersonalKB Book Reading Guide]]
+- [[PersonalKB Wiki Quality Dashboard]]

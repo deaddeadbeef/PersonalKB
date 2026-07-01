@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CPU — The 6502 Processor Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # 6502 Instruction Set
@@ -96,4 +97,4 @@ OxideNES cpu.rs uses a massive match statement on the opcode byte (0x00-0xFF) in
 *See also:* [[6502 Addressing Modes]], [[6502 Registers and Status Flags]], [[CPU Cycle Accuracy and Timing]], [[Interrupts — NMI, IRQ, and Reset]], [[CPU — The 6502 Processor Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

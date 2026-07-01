@@ -2,6 +2,7 @@
 tags: [spacex, missions]
 up: "[[Missions and Payloads Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -100,4 +101,7 @@ Under the **National Security Space Launch (NSSL) Phase 2** competition in 2020,
 *See also:* [[Missions and Payloads Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

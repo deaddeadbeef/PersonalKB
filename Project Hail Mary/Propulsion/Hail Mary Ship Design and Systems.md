@@ -1,7 +1,3 @@
----
-up: "[[Project Hail Mary/Project Hail Mary|Project Hail Mary]]"
-confidence: fictional
----
 ﻿---
 tags:
   - phm
@@ -10,6 +6,7 @@ tags:
   - engineering
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Hail Mary Ship Design and Systems
@@ -106,8 +103,6 @@ flowchart LR
 ### Creative Challenge
 - **What if...** the *Hail Mary* had been designed from the start as a dual-species vessel instead of being retrofitted mid-mission?
 
-## References
-
 ## Supporting Chunks
 
 - [[Propulsion - The Hail Mary drive depends on energy density far beyond chemistry]]
@@ -121,3 +116,7 @@ flowchart LR
 - [[Engineering - Autonomous Beetle deployment delivers Taumoeba-82.5 to Earth without requiring Grace's return]]
 - [[Astrophage - Astrophage super cross-section turns the fuel layer into a hull radiation shield]] — Ch12: fuel as radiation shield
 - [[Propulsion - Dimitri s 60000 N carrier demonstration is the most technically detailed Astrophage propulsion validation in the novel]] — Ch08 flashback: practical carrier-based propulsion validation
+
+## References
+- [[Project Hail Mary/Sources/Sources Index]]
+- [[Project Hail Mary/Novel/Chapter Index]]

@@ -2,6 +2,7 @@
 tags: [csa, csa/techniques]
 up: "[[Techniques Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Amortized Analysis for Algorithms
@@ -126,7 +127,7 @@ A binary counter represented as an array of bits, incremented by 1.
 
 ---
 
-*See also:* [[Two Pointers and Sliding Window]] · [[Divide and Conquer Overview]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Dynamic Arrays]] · [[Disjoint Sets and Union-Find|Union-Find (Disjoint Sets)]] · [[Splay Trees and Treaps|Splay Trees]]
+*See also:* [[Two Pointers and Sliding Window]] · [[Divide and Conquer Overview]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Dynamic Arrays]] · [[CS Data Structures/Advanced Structures/Disjoint Sets and Union-Find|Union-Find (Disjoint Sets)]] · [[CS Data Structures/Trees/Splay Trees and Treaps|Splay Trees]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

@@ -1,7 +1,8 @@
 ---
 tags: [cs-ds, graphs]
-up: "[[Graphs Overview]]"
+up: "[[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Implicit and Compressed Graph Representations
@@ -80,7 +81,7 @@ Implicit graphs power state-space search in Rubik's Cube solvers, game trees, pr
 
 ---
 
-*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[BFS and DFS|Graph Search — BFS and DFS]] | External Memory and Streaming Algorithms | [[Weighted and Directed Graphs]] | Cross-wiki links
+*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[CS Algorithms/Graphs/BFS and DFS|Graph Search — BFS and DFS]] | [[CS Algorithms/Techniques/Streaming Algorithms|External Memory and Streaming Algorithms]] | [[Weighted and Directed Graphs]] | Cross-wiki links
 
 ## Supporting Chunks
 

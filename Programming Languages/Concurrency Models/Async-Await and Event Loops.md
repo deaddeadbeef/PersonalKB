@@ -2,6 +2,7 @@
 tags: [programming-languages, concurrency, async]
 up: "[[Concurrency Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -121,13 +122,16 @@ A well-known critique of async/await: it creates a **"function color" split**. A
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · Coroutines and Fibers · Thread Pools and Work Stealing · Structured Concurrency
+*See also:* [[Concurrency Models Overview]] · [[Programming Languages/_chunks/chunk-pl-131 Stackful vs Stackless Coroutines|Coroutines and Fibers]] · [[Programming Languages/Concurrency Models/Threads and Locks|Thread Pools and Work Stealing]] · [[Programming Languages/_chunks/chunk-pl-147 Structured Concurrency The Next Paradigm|Structured Concurrency]]
 
 ---
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

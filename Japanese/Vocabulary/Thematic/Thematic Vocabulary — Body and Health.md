@@ -2,10 +2,13 @@
 tags: [japanese, vocabulary, thematic, body]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Thematic Vocabulary — Body and Health
+
+> **One-line summary:** Body and health vocabulary is the practical set for naming body parts, symptoms, pharmacy needs, and doctor visits without falling back to English.
 
 ```mermaid
 flowchart TD
@@ -20,9 +23,9 @@ flowchart TD
 
 ## 🎯 Intuition
 
-**The Core Idea:** Understanding Thematic Vocabulary — Body and Health is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+**The Core Idea:** Learn this domain as emergency-ready sentence frames: body part + が痛いです, symptom + があります, medicine + をください.
+**Analogy:** Treat the list like a first-aid kit, not a dictionary chapter: each word should help you describe a situation.
+**Why It Matters:** Health words are high-stakes travel language; clear pronunciation and polite phrasing matter when you need help.
 
 ## ⚙️ Core Mechanics
 
@@ -95,4 +98,4 @@ flowchart TD
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

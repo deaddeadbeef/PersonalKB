@@ -2,6 +2,7 @@
 tags: [llm, prompting]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -104,19 +105,18 @@ The enduring lesson is that reliability comes from enforcement, not just instruc
 
 Design a structured-output interface for an LLM-powered support bot that must return a JSON object with `intent`, `priority`, `customer_sentiment`, `recommended_action`, and `requires_human_review`. Decide whether prompt-only formatting is sufficient or whether strict constrained decoding is required, and justify your answer.
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- JSON Schema Specification
-- Grammar-Constrained Decoding
-- [[Function Calling|Function Calling Conventions]]
-- OpenAI Structured Outputs
-- Outlines Library
-- Guidance Library
-- Parsing LLM Outputs
+- [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|JSON Schema Specification]]
+- [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|Grammar-Constrained Decoding]]
+- [[LLM/2023 — Open Models and Agents/Function Calling|Function Calling Conventions]]
+- [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|OpenAI Structured Outputs]]
+- [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|Outlines Library]]
+- [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|Guidance Library]]
+- [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation|Parsing LLM Outputs]]
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index|LLM Sources Index]]
 - OpenAI Structured Outputs documentation

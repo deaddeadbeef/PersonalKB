@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/design
 confidence: verified
+freshness: stable
 up: "[[Design Principles Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---

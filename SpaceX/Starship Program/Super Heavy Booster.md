@@ -2,6 +2,7 @@
 tags: [spacex, starship]
 up: "[[Starship Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -84,4 +85,7 @@ Compared with Saturn V's S-IC and the SLS core stage, Super Heavy stands out not
 - Propose an operational recovery sequence for Super Heavy that minimizes turnaround time while still accounting for the risks of boostback, grid-fin guidance, and tower catch precision.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

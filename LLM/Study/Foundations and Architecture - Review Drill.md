@@ -1,7 +1,9 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Foundations & Architecture — Review Drill
 
@@ -60,4 +62,7 @@ confidence: policy
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — train a tiny causal LM and connect shifted targets, cross-entropy loss, validation loss, and generation.
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Study/LLM Study Index]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Book Reading Spine]]

@@ -2,6 +2,7 @@
 tags: [japanese, audio, proof, review]
 up: "[[Japanese Learning Dashboard]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

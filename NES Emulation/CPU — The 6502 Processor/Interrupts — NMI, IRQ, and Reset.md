@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CPU — The 6502 Processor Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Interrupts — NMI, IRQ, and Reset
@@ -83,4 +84,4 @@ The OxideNES `Bus` struct provides `poll_nmi()`, `poll_apu_irq()`, and `poll_map
 *See also:* [[CPU Cycle Accuracy and Timing]], [[6502 Registers and Status Flags]], [[PPU Registers and Timing]], [[CPU — The 6502 Processor Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

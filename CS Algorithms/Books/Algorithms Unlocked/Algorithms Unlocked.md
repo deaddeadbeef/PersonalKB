@@ -3,7 +3,9 @@ tags:
   - csa
   - book-moc
 up: "[[CS Algorithms]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [core]
 ---
 # Algorithms Unlocked
 
@@ -35,7 +37,7 @@ A concise, accessible introduction to algorithms — what they are, how to evalu
 
 ## Chapter Index
 
-→ [[Chapter Index]] — navigable chapter table with status tracking
+→ [[CS Algorithms/Books/Algorithms Unlocked/Chapter Index|Chapter Index]] — navigable chapter table with status tracking
 
 ---
 

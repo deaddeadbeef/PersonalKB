@@ -5,7 +5,9 @@ tags:
   - csos/filesystems
   - csos/io
 up: "[[OS Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # File Systems and IO — Review Drill
 
@@ -142,4 +144,6 @@ A: **FCFS**: service requests in arrival order; fairness but high seek time if r
 - [[IO Overview]] — hub for I/O
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/CS Operating Systems]]
+- [[CS Operating Systems/Sources/Sources Index]]

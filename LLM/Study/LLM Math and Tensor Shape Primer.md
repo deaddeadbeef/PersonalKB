@@ -2,6 +2,7 @@
 tags: [study, llm, math, tensors, attention, inference]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, deep-dive, practice]
 ---
 

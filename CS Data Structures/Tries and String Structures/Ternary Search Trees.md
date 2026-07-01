@@ -2,6 +2,7 @@
 tags: [cs-ds, tries]
 up: "[[Tries and String Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Ternary Search Trees
@@ -112,3 +113,8 @@ TSTs are well suited to large alphabets, ordered dictionaries, autocomplete, spe
 
 ## References
 - [[CS Data Structures/Sources/Sources Index|Sources Index]]
+
+## References
+
+- [[CS Data Structures/Sources/Sources Index]]
+- [[CS Data Structures/CS Data Structures Book Reading Spine]]

@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[PPU — Picture Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Backgrounds and Nametables
@@ -83,4 +84,4 @@ OxideNES `ppu.rs` fetches nametable bytes, attribute bytes, and pattern data in 
 *See also:* [[PPU Rendering Pipeline]], [[PPU Scrolling]], [[PPU Registers and Timing]], [[Sprites and OAM]], [[PPU — Picture Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [study, llm, local-llm, ollama, tools, calculator, quality, remediation, evidence]
 up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-16
 last-machine-check: 2026-06-16T06:38:01+08:00

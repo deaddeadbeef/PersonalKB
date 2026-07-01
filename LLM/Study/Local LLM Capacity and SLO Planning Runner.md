@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, capacity, slo, throughput, latency, queueing, operations, evidence, audit, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice, deep-dive]
 last-verified: 2026-06-16
 ---

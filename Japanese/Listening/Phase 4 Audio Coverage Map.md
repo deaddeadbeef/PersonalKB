@@ -2,6 +2,7 @@
 tags: [japanese, listening, phase-4, audio, coverage]
 up: "[[Listening Overview]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, practice]
 ---
 
@@ -100,5 +101,5 @@ These are real gaps:
 - [[Advanced Listening Resources]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
-- [[Sources Index#Audio Sources Checked 2026-06-06]]
-- [[Sources Index#Pronunciation Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Audio Sources Checked 2026-06-06|Audio Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Pronunciation Sources Checked 2026-06-06|Pronunciation Sources Checked 2026-06-06]]

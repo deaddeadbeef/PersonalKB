@@ -2,6 +2,7 @@
 tags: [japanese, listening, anime, drama]
 up: "[[Listening Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -110,4 +111,4 @@ Dramas use more realistic Japanese than anime:
 Watch a 5-minute segment of a Japanese drama WITHOUT subtitles. Write a summary of what happened, then check with subtitles. How much did you catch?
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

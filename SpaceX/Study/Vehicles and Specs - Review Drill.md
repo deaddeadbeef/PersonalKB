@@ -1,7 +1,9 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
-confidence: policy
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [practice]
 ---
 # Vehicles and Specs — Review Drill
 
@@ -62,4 +64,7 @@ confidence: policy
 > **A15.** Up to 4 crew for NASA missions (rated for up to 7). Pressurized volume is ~9.3 m³ (328 ft³).
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Study/SpaceX Study Index]]
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]

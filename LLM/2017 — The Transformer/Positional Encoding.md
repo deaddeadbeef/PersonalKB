@@ -2,6 +2,7 @@
 tags: [llm, foundations]
 up: "[[2017 — The Transformer Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -88,24 +89,9 @@ Position encoding choice directly affects long-context capability. RoPE's domina
 
 ---
 
-*See also:* [[Encoder-Only Models]] — learned positional embeddings in BERT and variants; [[Efficient Attention and Long-Context Variants]] — extending position representation to long contexts; [[State Space Models and Mamba]] — alternative architectures that handle position implicitly; [[KV Cache and Context Reuse]] — positional encoding interplay with cached keys and values
-
-## Supporting Chunks
-### Supporting Chunks
-- [[LLM/_chunks/chunk-llm-003 Positional Encoding for Permutation-Invariant Attention|Positional encoding for permutation-invariant attention]]
-- [[LLM/_chunks/chunk-llm-041 RoPE Rotation Matrices Encode Relative Position|RoPE rotation matrices encode relative position]]
-- [[LLM/_chunks/chunk-llm-042 RoPE NTK-Aware Scaling for Length Extrapolation|RoPE NTK-aware scaling for length extrapolation]]
-- [[LLM/_chunks/chunk-llm-043 RoPE Dominates Modern LLM Position Encoding|RoPE dominates modern LLM position encoding]]
-- [[LLM/_chunks/chunk-llm-044 RoPE Relative Distance Property|RoPE relative distance property]]
-- [[LLM/_chunks/chunk-llm-165 ALiBi Adds Linear Bias Distance Penalty to Attention|ALiBi linear bias distance penalty]]
-- [[LLM/_chunks/chunk-llm-166 ALiBi Enables Length Extrapolation Beyond Training|ALiBi length extrapolation]]
-- [[LLM/_chunks/chunk-llm-168 Position Encoding Design Space for Transformers|Transformer position encoding design space]]
+*See also:* [[Encoder-Only Models]] — learned positional embeddings in BERT and variants; [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] — extending position representation to long contexts; [[State Space Models and Mamba]] — alternative architectures that handle position implicitly; [[KV Cache and Context Reuse]] — positional encoding interplay with cached keys and values
 
 ## References
-- [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
-- [[LLM/_raw/raw-llm-011 RoFormer Rotary Position Embedding|raw-llm-011 RoFormer Rotary Position Embedding]]
-- [[LLM/_raw/raw-llm-042 ALiBi Train Short Test Long|raw-llm-042 ALiBi Train Short Test Long]]
-- [[LLM/Sources/Sources Index]]
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-### Evidence Gaps
-- YaRN is named in the article body, but no dedicated raw source or chunk is linked yet.
+- [[LLM/Sources/Sources Index]]

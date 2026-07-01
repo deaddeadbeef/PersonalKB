@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Input and Controllers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -86,4 +87,4 @@ main.rs handles input through minifb keyboard events and gilrs gamepad events. B
 *See also:* [[NES Joypad Protocol]], [[Input and Controllers Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

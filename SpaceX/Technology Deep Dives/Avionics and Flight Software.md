@@ -2,6 +2,7 @@
 tags: [spacex, technology]
 up: "[[Technology Deep Dives Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -103,4 +104,7 @@ The software philosophy extends beyond launch vehicles. Dragon performs autonomo
 *See also:* [[Technology Deep Dives Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

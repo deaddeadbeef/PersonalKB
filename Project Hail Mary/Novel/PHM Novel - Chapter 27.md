@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 27
 
-← [[PHM Novel - Chapter 26]] | [[Chapter Index]] | [[PHM Novel - Chapter 28]] →
+← [[PHM Novel - Chapter 26]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 28]] →
 
 > **One-line summary** — Grace discovers that the evolved Taumoeba strain can pass through xenonite, which means Rocky's all-xenonite ship is in immediate danger.
 
@@ -105,7 +106,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (p. 482–491)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Taumoeba and the Biological Solution]]
 - [[Ryland Grace]]
 - [[Rocky and the Eridians]]

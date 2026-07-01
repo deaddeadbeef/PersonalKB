@@ -1,7 +1,8 @@
 ---
 tags: [csa, csa/backtracking]
-up: "[[CS Algorithms|CS Algorithms Index]]"
+up: "[[CS Algorithms/CS Algorithms|CS Algorithms Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Backtracking Overview
@@ -95,7 +96,7 @@ Where b = branching factor and d = depth of the search tree.
 
 ---
 
-*See also:* [[N-Queens Problem]] · [[Dynamic Programming|Dynamic Programming Overview]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Stacks]] · Recursion and Call Stack
+*See also:* [[N-Queens Problem]] · [[CS Algorithms/Analysis/Dynamic Programming|Dynamic Programming Overview]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Stacks]] · [[CS Data Structures/Linear Structures/Stacks|Recursion and Call Stack]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

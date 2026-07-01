@@ -2,6 +2,7 @@
 tags: [spacex, origins-history]
 up: "[[Origins and History Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -101,4 +102,4 @@ These milestones matter not just internally. They forced competitors and governm
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

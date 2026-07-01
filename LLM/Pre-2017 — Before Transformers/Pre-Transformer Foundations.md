@@ -2,6 +2,7 @@
 tags: [llm, history]
 up: "[[Pre-2017 — Before Transformers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -93,9 +94,9 @@ Every major idea in transformers—embeddings, attention, contextual representat
 
 *See also:* [[Pre-2017 — Before Transformers Overview]], [[Pre-LLM Neural Network Foundations]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
-
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

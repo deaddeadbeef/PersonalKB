@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Memory Map and Bus Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # CPU Memory Map
@@ -92,4 +93,4 @@ OxideNES bus.rs `cpu_read()` uses range matching: `0x0000..=0x1FFF` masks to `ad
 *See also:* [[PPU Memory Map]], [[OAM DMA]], [[Memory Map and Bus Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Extended Features Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Input Recording and TAS
@@ -83,4 +84,4 @@ In OxideNES, `InputRecording` captures controller state frame-by-frame, writes `
 *See also:* [[Achievement System]], [[Lua Scripting Engine]], [[Netplay — UDP Multiplayer]], [[Extended Features Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

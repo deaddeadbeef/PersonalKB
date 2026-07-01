@@ -1,7 +1,9 @@
 ---
 tags: [study, nes-emulation, mapper]
 up: "[[NES Emulation Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — Mappers and Bank Switching
 
@@ -34,4 +36,7 @@ Test your understanding of NES cartridge mapper hardware.
 > Saves to ~/.nes-emulator/saves/<rom-crc32>.sav on emulator exit, loads on ROM open. The 8 KB SRAM at - is also included in save state snapshots.
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/Study/NES Emulation Study Index]]
+- [[NES Emulation/Sources/Sources Index]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]

@@ -33,8 +33,54 @@ SKIP_NOTE_NAMES = {
     "LLM Book Reading Spine.md",
 }
 WIKILINK_INLINE_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|([^\]]+))?\]\]")
+SINGLE_LINK_BULLET_RE = re.compile(r"^(\s*-\s+\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\])(?:\s+—\s+.*)?$")
 AUDIO_EMBED_RE = re.compile(r"!\[\[[^\]]+\.mp3(?:[#|][^\]]*)?\]\]", re.IGNORECASE)
 EMBED_RE = re.compile(r"!\[\[[^\]]+\]\]")
+DIAGRAM_DIRECTIVE_RE = re.compile(
+    r"^(?:flowchart|graph)\s+(?:TD|TB|BT|LR|RL)\b|"
+    r"^(?:sequenceDiagram|classDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|mindmap|timeline|gitGraph)\b"
+)
+GENERIC_SUMMARY_RE = re.compile(
+    r"(?:The Core Idea:\s*)?Understanding .* is fundamental|"
+    r"(?:Analogy:\s*)?Each concept in Japanese has parallels|"
+    r"(?:Why It Matters:\s*)?You'll encounter this in everyday Japanese"
+)
+SUMMARY_LABEL_RE = re.compile(
+    r"^(?:One-line summary:?|The Core Idea:|Analogy:|Why It Matters:|Philosophy:|Best For:|Who Uses It:)\s*",
+    re.IGNORECASE,
+)
+ROUTE_SUMMARY_SKIP_RE = re.compile(
+    r"^(?:\d+\.\s|Use sources in this order:|Every .* needs three things:|Pick exactly one|Create a dated copy|Do this once:|"
+    r"Use this path|Navigation table|This note is|"
+    r"(?:Author|Designer|Paradigm|Typing|Memory|Compiled|Executed|Publisher|Level|Source):)"
+)
+TITLE_FIRST_SUMMARY_RE = re.compile(
+    r"\b(?:DS Review|Review Drill|Audio Assignment Ladder|Weekly Review|Audio Coverage Map|"
+    r"Authentic Audio Spine|Keigo and Register Production Checklist|Pitch Accent Practice Path|"
+    r"Study Plan|Learning Path|Study Index|Sources Index|Chapter Index|Language Profile|"
+    r"Algorithms Unlocked|Modern Operating Systems|Priority Queues and Heaps)\b",
+    re.IGNORECASE,
+)
+SUMMARY_ABBREVIATIONS = {
+    "al.",
+    "ch.",
+    "dr.",
+    "e.g.",
+    "ed.",
+    "eds.",
+    "etc.",
+    "fig.",
+    "i.e.",
+    "jr.",
+    "mr.",
+    "mrs.",
+    "ms.",
+    "no.",
+    "prof.",
+    "sr.",
+    "st.",
+    "vs.",
+}
 MONTH_WORD_ORDER = {
     "first": 1,
     "second": 2,
@@ -235,6 +281,10 @@ def strip_frontmatter(text: str) -> str:
     return text[match.end() :] if match else text
 
 
+def strip_code_fences(text: str) -> str:
+    return re.sub(r"^```.*?^```\s*", "", text, flags=re.MULTILINE | re.DOTALL)
+
+
 def clean_text(value: str) -> str:
     value = AUDIO_EMBED_RE.sub("", value)
     value = EMBED_RE.sub("", value)
@@ -249,6 +299,7 @@ def clean_text(value: str) -> str:
     value = WIKILINK_INLINE_RE.sub(replace_link, value)
     value = value.replace("**", "").replace("__", "").replace("*", "")
     value = value.replace("`", "")
+    value = SUMMARY_LABEL_RE.sub("", value)
     value = re.sub(r"\s+", " ", value).strip(" -")
     value = value.strip(" -—")
     return value.replace("|", "/")
@@ -262,30 +313,176 @@ def title_for(path: Path) -> str:
     return path.stem.replace("|", "/")
 
 
-def summary_for(path: Path, limit: int = 150) -> str:
-    text = strip_frontmatter(read_text(path))
-    for line in text.splitlines():
-        cleaned = line.strip()
-        if cleaned.startswith(">"):
-            cleaned = cleaned.lstrip("> ").strip()
-            cleaned = re.sub(r"\*\*One-line summary\*\*:?", "", cleaned).strip()
-            if cleaned:
-                return truncate(clean_text(cleaned), limit)
-    for line in text.splitlines():
-        cleaned = line.strip()
-        if not cleaned or cleaned.startswith("#") or cleaned.startswith("|") or cleaned.startswith("```"):
-            continue
-        if cleaned.startswith("- ") or cleaned.startswith("* "):
-            continue
-        return truncate(clean_text(cleaned), limit)
+def fallback_summary_for_title(title: str) -> str:
+    title = clean_text(title)
+    if not title:
+        return ""
+    if title == "Algorithms Unlocked":
+        return "Primary algorithms textbook route through correctness, growth rates, sorting, graphs, strings, cryptography, compression, and complexity."
+    if title == "Modern Operating Systems":
+        return "Primary operating-systems textbook route through processes, memory, file systems, I/O, virtualization, multiprocessors, security, and case studies."
+    if title == "Priority Queues and Heaps":
+        return "Navigation guide for choosing the right heap or priority-queue implementation."
+    if "Language Profile" in title:
+        topic = re.sub(r"\s*[—-]\s*Language Profile\b", "", title, flags=re.IGNORECASE).strip(" -—")
+        return f"Language profile for {topic}, covering philosophy, runtime model, strengths, tradeoffs, and ecosystem." if topic else "Language profile covering philosophy, runtime model, strengths, tradeoffs, and ecosystem."
+    if "Learning Path" in title:
+        topic = re.sub(r"\s*[—-]\s*Learning Path\b", "", title, flags=re.IGNORECASE).strip(" -—")
+        return f"Pass-based learning path for {topic}." if topic else "Pass-based learning path."
+    if "Study Index" in title:
+        topic = re.sub(r"\s*Study Index\b", "", title, flags=re.IGNORECASE).strip(" -—")
+        return f"Study router for {topic} drills, labs, proof artifacts, and review sessions." if topic else "Study router for drills, labs, proof artifacts, and review sessions."
+    if "Sources Index" in title or "Recipe Sources Index" in title:
+        topic = re.sub(r"\s*(?:Recipe )?Sources Index\b", "", title, flags=re.IGNORECASE).strip(" -—")
+        return f"Source and provenance map for {topic}." if topic else "Source and provenance map."
+    if "Chapter Index" in title:
+        topic = re.sub(r"^Chapter Index\s*[—-]?\s*", "", title, flags=re.IGNORECASE).strip(" -—")
+        return f"Chapter-by-chapter route through {topic}." if topic else "Chapter-by-chapter route through the source text."
+    if title.startswith("DS Review"):
+        topic = re.sub(r"^DS Review\s*[—-]\s*", "", title).strip(" -—")
+        return f"Data structures review drill for {topic}." if topic else "Data structures review drill."
+    if re.search(r"\bReview Drill\b", title, flags=re.IGNORECASE):
+        topic = re.sub(r"\s*[—-]\s*Review Drill\b", "", title, flags=re.IGNORECASE)
+        topic = re.sub(r"^Review Drill\s*[—-]\s*", "", topic, flags=re.IGNORECASE).strip(" -—")
+        return f"Review drill for {topic}." if topic else "Review drill for active recall."
+    if "Audio Assignment Ladder" in title:
+        topic = title.replace("Audio Assignment Ladder", "").strip(" -—")
+        return f"Audio assignment ladder for {topic}." if topic else "Audio assignment ladder."
+    if "Weekly Review" in title:
+        topic = title.replace("Weekly Review", "").strip(" -—")
+        return f"Weekly review checklist for {topic}." if topic else "Weekly review checklist."
+    if "Audio Coverage Map" in title:
+        topic = title.replace("Audio Coverage Map", "").strip(" -—")
+        return f"Audio coverage map for {topic}." if topic else "Audio coverage map."
+    if "Authentic Audio Spine" in title:
+        topic = title.replace("Authentic Audio Spine", "").strip(" -—")
+        return f"Authentic-audio route for {topic}." if topic else "Authentic-audio route."
+    if "Keigo and Register Production Checklist" in title:
+        return "Production checklist for keigo and register-sensitive output."
+    if "Pitch Accent Practice Path" in title:
+        return "Practice path for pitch-accent awareness and correction."
+    if "Study Plan" in title:
+        topic = title.replace("Japanese Study Plan", "").replace("Study Plan", "").strip(" -—")
+        return f"Study plan for {topic}." if topic else "Study plan."
     return ""
+
+
+def prefer_title_summary(title: str) -> bool:
+    return bool(TITLE_FIRST_SUMMARY_RE.search(title))
+
+
+def one_line_summary_blocks(text: str) -> list[str]:
+    blocks: list[str] = []
+    lines = text.splitlines()
+    index = 0
+    while index < len(lines):
+        cleaned = lines[index].strip()
+        if cleaned.startswith(">") and re.search(r"\bOne-line summary\b", cleaned, flags=re.IGNORECASE):
+            block: list[str] = []
+            while index < len(lines) and lines[index].strip().startswith(">"):
+                block.append(lines[index].strip().lstrip("> ").strip())
+                index += 1
+            value = " ".join(block)
+            value = re.sub(r"\*\*One-line summary:?\*\*:?", "", value, flags=re.IGNORECASE).strip()
+            if value:
+                blocks.append(value)
+            continue
+        index += 1
+    return blocks
+
+
+def paragraph_summary_candidates(text: str) -> list[str]:
+    candidates: list[str] = []
+    block: list[str] = []
+
+    def flush() -> None:
+        if block:
+            candidates.append(" ".join(block).strip())
+            block.clear()
+
+    for line in text.splitlines():
+        cleaned = line.strip()
+        if not cleaned or cleaned in {"---", "***"}:
+            flush()
+            continue
+        if (
+            cleaned.startswith("#")
+            or cleaned.startswith("|")
+            or cleaned.startswith(">")
+            or cleaned.startswith("→")
+            or cleaned.startswith("```")
+            or cleaned.startswith("- ")
+            or cleaned.startswith("* ")
+            or DIAGRAM_DIRECTIVE_RE.match(cleaned)
+            or ROUTE_SUMMARY_SKIP_RE.match(cleaned)
+            or GENERIC_SUMMARY_RE.search(cleaned)
+            or GENERIC_SUMMARY_RE.search(clean_text(cleaned))
+        ):
+            flush()
+            continue
+        block.append(cleaned)
+    flush()
+    return candidates
+
+
+def summary_for(path: Path, limit: int = 220) -> str:
+    text = strip_code_fences(strip_frontmatter(read_text(path)))
+    for cleaned in one_line_summary_blocks(text):
+        return truncate(clean_text(cleaned), limit)
+    title = title_for(path)
+    fallback = fallback_summary_for_title(title)
+    if fallback and prefer_title_summary(title):
+        return truncate(fallback, limit)
+    for candidate in paragraph_summary_candidates(text):
+        cleaned_text = clean_text(candidate)
+        if (
+            not cleaned_text
+            or ROUTE_SUMMARY_SKIP_RE.match(cleaned_text)
+            or GENERIC_SUMMARY_RE.search(cleaned_text)
+        ):
+            continue
+        if cleaned_text:
+            return truncate(cleaned_text, limit)
+    return truncate(fallback, limit)
+
+
+def finish_summary(value: str) -> str:
+    value = value.strip().rstrip(" ,;:—-")
+    if not value:
+        return value
+    if re.search(r'[.!?][)"\']?$', value):
+        return value
+    return f"{value}."
 
 
 def truncate(value: str, limit: int) -> str:
     value = re.sub(r"\s+", " ", value).strip()
     if len(value) <= limit:
-        return value
-    return value[: limit - 1].rstrip() + "..."
+        return finish_summary(value)
+    minimum = min(80, max(40, limit // 3))
+    sentence_ends = [
+        match.start()
+        for match in re.finditer(r"(?<=[.!?])\s+", value)
+        if minimum <= match.start() <= limit and is_sentence_boundary(value, match.start())
+    ]
+    if sentence_ends:
+        return finish_summary(value[: sentence_ends[-1]])
+    for delimiter in ("; ", ": ", " — ", " - ", ", "):
+        boundary = value.rfind(delimiter, 0, limit + 1)
+        if boundary >= minimum:
+            return finish_summary(value[:boundary])
+    boundary = value.rfind(" ", 0, limit + 1)
+    if boundary >= minimum:
+        return finish_summary(value[:boundary])
+    return finish_summary(value[:limit])
+
+
+def is_sentence_boundary(value: str, boundary: int) -> bool:
+    token = value[:boundary].strip().rsplit(" ", 1)[-1]
+    bare = token.rstrip(".!?")
+    if re.fullmatch(r"[A-Z]", bare):
+        return False
+    return token.lower() not in SUMMARY_ABBREVIATIONS
 
 
 def natural_key(path: Path) -> tuple[object, ...]:
@@ -490,7 +687,42 @@ def render_topic(topic: Topic) -> tuple[Path, int]:
     return output, linked_count
 
 
+def resolve_wikilink_target(target: str) -> Path:
+    path = ROOT / target
+    if path.suffix.lower() != ".md":
+        path = path.with_suffix(".md")
+    return path
+
+
+def enrich_llm_book_spine() -> tuple[Path, int, int]:
+    output = ROOT / "LLM" / "LLM Book Reading Spine.md"
+    lines = read_text(output).splitlines()
+    enriched = 0
+    changed = 0
+    skip_rest = False
+    next_lines: list[str] = []
+    for line in lines:
+        if line.startswith("## Appendices") or line.startswith("## References"):
+            skip_rest = True
+        if not skip_rest:
+            match = SINGLE_LINK_BULLET_RE.match(line)
+            if match:
+                target_path = resolve_wikilink_target(match.group(2))
+                if target_path.exists():
+                    summary = summary_for(target_path)
+                    if summary:
+                        enriched += 1
+                        next_line = f"{match.group(1)} — {summary}"
+                        if next_line != line:
+                            changed += 1
+                        line = next_line
+        next_lines.append(line)
+    output.write_text("\n".join(next_lines).rstrip() + "\n", encoding="utf-8")
+    return output, enriched, changed
+
+
 def render_root_guide(results: list[tuple[Topic, Path, int]]) -> Path:
+    llm_count = sum(1 for path in (ROOT / "LLM").rglob("*.md") if is_reader_article(path))
     lines = [
         "---",
         "type: generated-reading-guide",
@@ -510,16 +742,100 @@ def render_root_guide(results: list[tuple[Topic, Path, int]]) -> Path:
         "3. Use study pages, drills, checklists, labs, or recipe plans only after the main story makes sense.",
         "4. Use source indexes when you need provenance, citations, or a factual audit trail.",
         "",
+        "## One Reading Session",
+        "",
+        "Use this loop when you sit down to read. It keeps the vault from becoming passive browsing.",
+        "",
+        "| Step | Do | Leave behind |",
+        "| --- | --- | --- |",
+        "| 1. Choose | Pick one route, one topic spine, and one Book section | A single page or section target |",
+        "| 2. Read | Read the overview first, then at most three linked articles | Three claims, mechanisms, or decisions worth remembering |",
+        "| 3. Explain | Close the page and explain the mechanism, story, or tradeoff in your own words | A short note, spoken explanation, or margin summary |",
+        "| 4. Prove | Use a drill, lab, source index, recipe execution, or decision table only if the claim matters | One proof artifact, source check, run result, or next action |",
+        "| 5. Stop | Stop when the proof target is satisfied or the missing evidence is named | The next session starts from that evidence gap |",
+        "",
+        "A good session is small enough to finish. If you open more than one shelf, write down why the second shelf changes the first one.",
+        "",
         "## Reading Shelf",
         "",
         "| Topic | Book spine | Linked reader-facing articles |",
         "| --- | --- | ---: |",
-        f"| LLM | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] | existing spine |",
+        f"| LLM | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] | {llm_count} |",
     ]
     for topic, output, count in results:
         lines.append(f"| {topic.title} | {internal_link(output, output.stem, ROOT)} | {count} |")
     lines.extend(
         [
+            "",
+            "## Choose A Reading Route",
+            "",
+            "Use these routes when you do not know which shelf to open next. Each route is intentionally cross-topic: a second brain is strongest when it turns isolated notes into reusable judgment.",
+            "",
+            "### Route A: Local LLM Builder",
+            "",
+            "Goal: understand LLMs academically and operate local inference with enough systems intuition to debug real failures.",
+            "",
+            "1. [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] — read through architecture, training, inference, evaluation, and the local-hosting practicum.",
+            "2. [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures Book Reading Spine]] — focus on memory layout, tries, indexes, caches, and persistent structures.",
+            "3. [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] — focus on asymptotics, search, graphs, strings, compression, and approximation limits.",
+            "4. [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] — focus on processes, memory, file systems, I/O, virtualization, and security.",
+            "5. [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] — focus on runtimes, memory management, concurrency, modules, and error handling.",
+            "",
+            "Proof target: after this route, you should be able to explain a local inference request from prompt text to tokens, tensors, KV cache, scheduler, sampling, output parsing, evaluation, and deployment decision.",
+            "",
+            "### Route B: Computer Science Backbone",
+            "",
+            "Goal: build the stable CS substrate that supports systems work, emulator work, language design, and LLM infrastructure.",
+            "",
+            "1. [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms]] — procedures, proof, cost, graphs, strings, compression, and limits.",
+            "2. [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures]] — storage shapes, operation costs, memory locality, trees, hashes, graphs, and advanced indexes.",
+            "3. [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems]] — resource abstraction, concurrency, memory, files, I/O, virtualization, and protection.",
+            "4. [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages]] — type systems, modules, runtimes, memory models, concurrency models, and metaprogramming.",
+            "",
+            "Proof target: choose a data structure, algorithm, runtime model, and OS constraint for a concrete program without relying on vibes or memorized names.",
+            "",
+            "### Route C: Builder And Emulator",
+            "",
+            "Goal: turn low-level CS knowledge into an implementation-grade mental model.",
+            "",
+            "1. [[NES Emulation/NES Emulation Book Reading Spine|NES Emulation]] — rebuild the machine from CPU, PPU, APU, bus, mapper, input, and architecture notes.",
+            "2. [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems]] — use scheduling, memory, I/O, and synchronization to reason about emulator correctness and performance.",
+            "3. [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages]] — use runtime, memory, error, and concurrency tradeoffs to judge implementation choices.",
+            "4. [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms]] and [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures]] — use only the parts needed for testing, indexing, state snapshots, and performance.",
+            "",
+            "Proof target: explain one emulator bug as a mismatch between hardware state, timing, memory mapping, and frontend behavior.",
+            "",
+            "### Route D: Language Learner",
+            "",
+            "Goal: keep Japanese study operational instead of letting the vault become an attractive distraction.",
+            "",
+            "1. [[Japanese/Japanese Book Reading Spine|Japanese Book Reading Spine]] — follow the phase path before browsing grammar or culture pages.",
+            "2. Use [[Japanese/Study/Japanese Learning Dashboard|Japanese Learning Dashboard]] as the daily control panel.",
+            "3. Use grammar, vocabulary, listening, and speaking pages only when they support the current phase.",
+            "4. Use source pages when choosing resources or checking audio/provenance.",
+            "",
+            "Proof target: every reading session should end in a concrete review item, listening loop, speaking script, or phase checkpoint.",
+            "",
+            "### Route E: Science, Space, And Story",
+            "",
+            "Goal: read ambitious technical narratives without losing the boundary between evidence, extrapolation, fiction, and current events.",
+            "",
+            "1. [[SpaceX/SpaceX Book Reading Spine|SpaceX]] — read the industrial story from Falcon through Starship, Starlink, business logic, and Mars architecture.",
+            "2. [[Project Hail Mary/Project Hail Mary Book Reading Spine|Project Hail Mary]] — read the novel and science ledger side by side.",
+            "3. Use source indexes aggressively: these topics mix stable engineering, live company facts, speculative architecture, and fictional claims.",
+            "",
+            "Proof target: classify a claim as verified, plausible, uncertain, policy, or fictional before reusing it.",
+            "",
+            "## Operating Modes",
+            "",
+            "- **Story mode:** read only book spines and overview pages. Stop before drills, chunks, raw notes, and operational runners.",
+            "- **Mechanism mode:** open the detailed articles in spine order and explain the causal machinery in your own words.",
+            "- **Proof mode:** use study pages, labs, drills, benchmarks, recipes, or source indexes to produce evidence that you can apply the idea.",
+            "- **Maintenance mode:** use [[PersonalKB Wiki Quality Dashboard]] and [[log|PersonalKB Maintenance Log]] only when improving the vault itself.",
+            "",
+            "## What To Read Next",
+            "",
+            "If a topic feels overwhelming, read its spine prologue and first Book section only. If a page feels too easy, jump to its practice or source appendix. If a claim matters for a decision, leave the article path and go to the source index before trusting it.",
             "",
             "## Back-Of-Book Tools",
             "",
@@ -544,6 +860,11 @@ def render_root_guide(results: list[tuple[Topic, Path, int]]) -> Path:
 
 
 def main() -> int:
+    llm_output, llm_enriched, llm_changed = enrich_llm_book_spine()
+    print(
+        f"wrote {llm_output.relative_to(ROOT).as_posix()} "
+        f"({llm_enriched} enriched chapter links, {llm_changed} changed)"
+    )
     results: list[tuple[Topic, Path, int]] = []
     for topic in TOPICS:
         output, count = render_topic(topic)

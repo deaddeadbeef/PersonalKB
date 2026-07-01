@@ -1,7 +1,8 @@
 ---
 tags: [cs-ds, graphs]
-up: "[[Graphs Overview]]"
+up: "[[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Graph Properties and Terminology

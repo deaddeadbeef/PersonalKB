@@ -1,7 +1,9 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Pre-2017 — Before Transformers
 
@@ -55,4 +57,7 @@ Despite this progress, pre-transformer NLP suffered from three critical limitati
 → Next: [[2017 — The Transformer Overview|2017 — The Transformer]]
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/LLM Book Reading Spine]]

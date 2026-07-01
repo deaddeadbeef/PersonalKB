@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n4, potential, volitional]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -140,4 +141,4 @@ In casual speech, Group 2 verbs drop ら:
 Your friend visits Japan for the first time. Suggest 3 activities using volitional form and ask about their abilities using potential form.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

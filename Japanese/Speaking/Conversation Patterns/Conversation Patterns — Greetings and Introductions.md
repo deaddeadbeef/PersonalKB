@@ -2,6 +2,7 @@
 tags: [japanese, speaking, conversation]
 up: "[[Speaking Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -107,4 +108,4 @@ ESSENTIAL in Japanese conversation — silence feels awkward!
 Role-play arriving at a Japanese office for the first time. Include: greeting the receptionist, introducing yourself to your new team, and responding to their questions with appropriate aizuchi.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

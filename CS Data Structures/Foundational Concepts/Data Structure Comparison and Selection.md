@@ -2,6 +2,7 @@
 tags: [cs-ds, foundational]
 up: "[[Foundational Concepts Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 created: 2025-07-14
 ---
@@ -106,7 +107,7 @@ Context determines the right answer. A 50-element collection rarely needs anythi
 
 ---
 
-*See also:* [[Abstract Data Types]] | [[Asymptotic Analysis and Big-O Notation]] | [[Memory Layout and Cache Performance]] | [[Pointer-Based vs Array-Based Structures]] | [[Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** Algorithm Selection and Design | Sorting Algorithm Selection
+*See also:* [[Abstract Data Types]] | [[Asymptotic Analysis and Big-O Notation]] | [[Memory Layout and Cache Performance]] | [[Pointer-Based vs Array-Based Structures]] | [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[CS Data Structures/Foundational Concepts/Data Structure Comparison and Selection|Algorithm Selection and Design]] | [[CS Algorithms/Sorting/Sorting Overview|Sorting Algorithm Selection]]
 
 ## Supporting Chunks
 

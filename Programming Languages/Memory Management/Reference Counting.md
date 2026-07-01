@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, memory-management, refcounting]
-up: "[[Memory Management Overview]]"
+up: "[[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -68,4 +70,4 @@ RC works best when object lifetimes are mostly hierarchical (tree-structured own
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

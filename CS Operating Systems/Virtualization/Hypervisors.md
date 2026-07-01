@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/virtualization
 confidence: verified
+freshness: stable
 up: "[[Virtualization Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---

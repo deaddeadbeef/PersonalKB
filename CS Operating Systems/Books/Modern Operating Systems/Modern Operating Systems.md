@@ -3,7 +3,9 @@ tags:
   - csos
   - book-moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [core]
 ---
 # Modern Operating Systems
 
@@ -37,7 +39,7 @@ A definitive, comprehensive textbook on operating system theory and practice. Co
 
 ## Chapter Index
 
-→ [[Chapter Index]] — navigable chapter table with status tracking
+→ [[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index]] — navigable chapter table with status tracking
 
 ---
 
@@ -47,4 +49,4 @@ A definitive, comprehensive textbook on operating system theory and practice. Co
 
 ## References
 
-See [[Sources Index#Tanenbaum 2015]].
+See [[CS Operating Systems/Sources/Sources Index#Tanenbaum 2015|Tanenbaum 2015]].

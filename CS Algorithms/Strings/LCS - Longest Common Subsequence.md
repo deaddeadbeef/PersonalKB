@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/strings
 confidence: verified
+freshness: stable
 up: "[[Strings Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -98,15 +99,20 @@ The recurrence is correct because: if X[i] = Y[j], the optimal LCS must include 
 
 ---
 
-*See also:* [[Dynamic Programming]], [[Floyd-Warshall Algorithm]], [[Asymptotic Notation]], [[DAG and Topological Sort]], [[Edit Distance]], [[String Matching - KMP]], [[Arrays and Dynamic Arrays|Array]], [[CS Data Structures]]
+*See also:* [[Dynamic Programming]], [[Floyd-Warshall Algorithm]], [[Asymptotic Notation]], [[DAG and Topological Sort]], [[Edit Distance]], [[String Matching - KMP]], [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Array]], [[CS Data Structures]]
 
-## Supporting Chunks
+## Supporting Chunks / References
 
 ### Supporting Chunks
 
 - [[Strings - LCS dynamic programming fills an m by n table in Theta(mn)]]
 - [[Analysis - Dynamic programming solves problems with overlapping subproblems by memoising a table]]
 
-## References
+### References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 7. See [[Edit Distance]] for the related string transformation problem.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

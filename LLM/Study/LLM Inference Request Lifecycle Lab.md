@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [core, practice]
 ---
 
@@ -199,6 +200,6 @@ This lab is complete when you have:
 - [[LLM/Study/LLM Math and Tensor Shape Primer]]
 - [[LLM/Study/Chat Template and Tokenizer Compatibility Lab]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
-- [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
-- [[chunk-llm-222 Speculative Sampling Distribution Guarantee]]
+- [[LLM/_chunks/chunk-llm-119 PagedAttention Copy-on-Write Sharing|chunk-llm-119]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
+- [[LLM/_chunks/chunk-llm-222 Speculative Sampling Distribution Guarantee|chunk-llm-222]]

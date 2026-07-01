@@ -2,6 +2,7 @@
 tags: [japanese, speaking, self-introduction]
 up: "[[Speaking Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -130,4 +131,4 @@ Role-play arriving at a Japanese office for the first time. Include: greeting th
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

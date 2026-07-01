@@ -2,6 +2,7 @@
 tags: [spacex, mars]
 up: "[[Mars and Beyond Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Mars Colonization Architecture
@@ -107,7 +108,10 @@ The long-term target is a self-sustaining city of approximately one million peop
 
 ---
 
-*See also:* [[In-Situ Resource Utilization]], [[Starship Variants and Applications]], [[Elon Musk's Mars Vision]], [[Mars Transit and Entry]], [[Mars and Beyond Overview]], [[Sources Index]]
+*See also:* [[In-Situ Resource Utilization]], [[Starship Variants and Applications]], [[Elon Musk's Mars Vision]], [[Mars Transit and Entry]], [[Mars and Beyond Overview]], [[SpaceX/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

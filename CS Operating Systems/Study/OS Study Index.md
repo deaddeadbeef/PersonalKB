@@ -3,11 +3,24 @@ tags:
   - csos
   - csos/study
 up: "[[CS Operating Systems]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # OS Study Index
 
 Central index for all CS Operating Systems active-recall drill notes. Each drill note covers one domain of the wiki, distilled into questions, contrasts, and common-mistake warnings. Use this index to plan review sessions and track which areas need more repetitions.
+
+## Start Here By Goal
+
+Do not treat operating systems as isolated vocabulary. Use this page to route from a practical systems question to the right mechanism.
+
+| Goal | Start with | Then use | Proof you should leave behind |
+|---|---|---|---|
+| Read OS as a book | [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] | [[CS Operating Systems/Foundations/OS Foundations Overview|OS Foundations Overview]], [[CS Operating Systems/Processes/Processes Overview|Processes Overview]], [[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]] | A map from program execution to process, address space, files, devices, and protection |
+| Debug a performance or correctness issue | [[CS Operating Systems/Processes/Processes Overview|Processes Overview]] | [[CS Operating Systems/Synchronization/Synchronization Overview|Synchronization Overview]], [[CS Operating Systems/IO/IO Overview|IO Overview]], [[CS Operating Systems/File Systems/File Systems Overview|File Systems Overview]] | A trace that names the blocked resource, scheduling point, memory behavior, or I/O boundary |
+| Reason about isolation and safety | [[CS Operating Systems/Virtualization/Virtualization Overview|Virtualization Overview]] | [[CS Operating Systems/Security/Security Overview|Security Overview]], [[CS Operating Systems/Case Studies/Case Studies Overview|Case Studies Overview]] | A threat or isolation boundary explanation tied to a real OS mechanism |
+| Prepare for recall | [[CS Operating Systems/Study/Processes and Scheduling - Review Drill|Processes and Scheduling - Review Drill]] | The matching drill note in the table below | A set of missed questions routed back to canonical mechanism pages |
 
 ---
 
@@ -72,4 +85,6 @@ Note: Synchronization and Deadlocks share a drill note because they are tightly 
 - Update drill notes when canonical pages are substantially deepened.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/CS Operating Systems]]
+- [[CS Operating Systems/Sources/Sources Index]]

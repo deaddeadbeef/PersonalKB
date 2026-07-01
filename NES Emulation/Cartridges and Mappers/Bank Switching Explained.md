@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Cartridges and Mappers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -91,4 +92,4 @@ Each mapper in mapper.rs implements `read_prg(addr)`/`write_prg(addr, data)` and
 *See also:* [[Common Mappers]], [[Advanced Mappers]], [[iNES ROM Format]], [[Cartridges and Mappers Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/graphs
 confidence: verified
+freshness: stable
 up: "[[Shortest Path Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -108,15 +109,20 @@ When vertex u is extracted from Q, d[u] is the true shortest-path distance from 
 
 ---
 
-*See also:* [[Dynamic Programming]], [[P vs NP]], [[Huffman Coding]], [[Bellman-Ford Algorithm]], [[Floyd-Warshall Algorithm]], [[Graph Fundamentals]], [[Shortest Path Overview]], [[Priority Queue ADT|Priority Queue]], [[CS Data Structures]]
+*See also:* [[Dynamic Programming]], [[P vs NP]], [[Huffman Coding]], [[Bellman-Ford Algorithm]], [[Floyd-Warshall Algorithm]], [[Graph Fundamentals]], [[Shortest Path Overview]], [[CS Data Structures/Heaps and Priority Queues/Priority Queue ADT|Priority Queue]], [[CS Data Structures]]
 
-## Supporting Chunks
+## Supporting Chunks / References
 
 ### Supporting Chunks
 
 - [[Graphs - Dijkstra's greedy approach requires non-negative edge weights]]
 - [[Graphs - Dijkstra's algorithm maintains a cut invariant that guarantees correctness on non-negative graphs]]
 
-## References
+### References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]], Chapter 6. See [[CS Algorithms/Sources/Sources Index#Erickson 2019|Sources Index]], Chapter 8. See [[Graph Fundamentals]] for graph vocabulary, [[Bellman-Ford Algorithm]] for the negative-weight case, and [[Shortest Path Overview]] for algorithm selection guidance.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

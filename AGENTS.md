@@ -27,7 +27,7 @@ This vault follows an LLM-maintained wiki pattern. Raw sources are preserved as 
 3. Do not silently update time-sensitive claims from memory. For current domains such as LLM and SpaceX, use web verification and cite the source in the note or maintenance log.
 4. Do not rewrite a whole article just to change style. Prefer targeted edits that improve correctness, navigation, evidence, or learning value.
 5. Maintain YAML frontmatter. Keep `tags`, `up`, `confidence`, and `tier-coverage` when present.
-6. Use Obsidian links for internal navigation. Prefer the shortest unambiguous `[[Page Name]]` link, or a path-qualified link when duplicate names exist.
+6. Use Obsidian links for internal navigation. Prefer the shortest unambiguous Obsidian page-name link, or a path-qualified link when duplicate names exist.
 7. Every substantive wiki article should have a references section. Use the domain source index when no more specific source is available.
 8. Every maintenance pass should append to `log.md` with date, operation, scope, changed files, and verification command.
 9. Keep generated reports in `_ops/reports/`. Do not mix operational reports into topic folders.

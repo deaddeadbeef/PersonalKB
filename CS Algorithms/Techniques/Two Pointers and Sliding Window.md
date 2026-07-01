@@ -2,6 +2,7 @@
 tags: [csa, csa/techniques]
 up: "[[Techniques Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Two Pointers and Sliding Window
@@ -141,7 +142,7 @@ function minSubarrayLen(arr, target):
 
 ---
 
-*See also:* [[Amortized Analysis for Algorithms]] · [[BFS and DFS]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Arrays]] · [[Hash Tables and Hash Functions|Hash Tables]] · [[Queues and Deques|Deques]]
+*See also:* [[Amortized Analysis for Algorithms]] · [[BFS and DFS]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Arrays]] · [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] · [[CS Data Structures/Linear Structures/Queues and Deques|Deques]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

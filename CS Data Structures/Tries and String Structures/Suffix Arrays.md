@@ -2,6 +2,7 @@
 tags: [cs-ds, tries]
 up: "[[Tries and String Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Suffix Arrays
@@ -103,3 +104,8 @@ Suffix arrays are the practical indexing layer behind full-text search, compress
 
 ## References
 - [[CS Data Structures/Sources/Sources Index|Sources Index]]
+
+## References
+
+- [[CS Data Structures/Sources/Sources Index]]
+- [[CS Data Structures/CS Data Structures Book Reading Spine]]

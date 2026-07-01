@@ -2,6 +2,7 @@
 tags: [llm, pretraining]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Training Infrastructure and Parallelism
@@ -91,9 +92,8 @@ Modern training infrastructure made GPT-3-scale and larger runs practical by com
 
 *See also:* [[Transformer Architecture]], [[Compute Data and Parameter Trade-offs]], [[Quantization]], [[Open-Weight Model Ecosystem]], [[Batching and Continuous Batching]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks / References
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

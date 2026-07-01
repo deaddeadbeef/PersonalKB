@@ -2,6 +2,7 @@
 tags: [study, llm, mastery, exam, self-assessment]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 

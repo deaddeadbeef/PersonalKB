@@ -7,6 +7,7 @@ tags:
   - friendship
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Rocky
@@ -124,9 +125,9 @@ graph TD
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary source for character depictions (fictional)
-- [[Sources Index#Weir Interviews Taumoeba]] — author interviews on Rocky's design
-- [[Sources Index#Northeastern Accuracy Discussion]] — public discussion of Rocky's plausibility
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary source for character depictions (fictional)
+- [[Project Hail Mary/Sources/Sources Index#Weir Interviews Taumoeba|Weir Interviews Taumoeba]] — author interviews on Rocky's design
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — public discussion of Rocky's plausibility
 
 ## Supporting Chunks
 

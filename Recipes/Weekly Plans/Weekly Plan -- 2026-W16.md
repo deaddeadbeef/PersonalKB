@@ -1,10 +1,12 @@
 ---
 tags: [recipes, weekly-plan]
 up: "[[Recipes]]"
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 week: 2026-W16
 daily-protein-target-g: 200
 daily-calorie-target-kcal: 2200-2300
-confidence: policy
 ---
 # Weekly Plan -- 2026-W16
 
@@ -250,4 +252,7 @@ extra shopping -- they share ingredients already on the list):
 > its ingredients are already on the shopping list.
 
 ## References
-- [[index|PersonalKB Index]]
+
+- [[Recipes/Sources/Recipe Sources Index]]
+- [[Recipes/Recipes]]
+- [[Recipes/Recipes Book Reading Spine]]

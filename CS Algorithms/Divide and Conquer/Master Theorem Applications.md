@@ -2,6 +2,7 @@
 tags: [csa, csa/divide-and-conquer]
 up: "[[Divide and Conquer Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Master Theorem Applications
@@ -116,7 +117,7 @@ Summing all levels: if the leaf level dominates → Case 1; if all levels contri
 
 ---
 
-*See also:* [[Divide and Conquer Overview]] · [[Merge Sort]] · [[Quicksort|Quick Sort]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** Recursion and Call Stack
+*See also:* [[Divide and Conquer Overview]] · [[Merge Sort]] · [[CS Algorithms/Sorting/Quicksort|Quick Sort]] · [[Greedy Algorithms Overview]] | **CS Data Structures:** [[CS Data Structures/Linear Structures/Stacks|Recursion and Call Stack]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

@@ -8,6 +8,7 @@ tags:
   - resolution
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Taumoeba and the Biological Solution
@@ -55,6 +56,9 @@ The conceptual leap from *Bdellovibrio* to Taumoeba is substantial. What carries
 Taumoeba matters not just as a plot solution but as a *scientific method* showcase. The novel depicts Grace: (1) observing that Tau Ceti's dimming is less severe than expected and inferring a controlling agent exists, (2) collecting Astrophage samples and discovering an organism consuming them, (3) characterizing Taumoeba's properties, testing its host-specificity, and assessing its safety, and (4) designing a delivery mechanism to introduce it to the Solar System. This arc models real scientific process (observation → hypothesis → experiment → application) more faithfully than most science fiction. The solution is biological and ecological, which fits a microbiologist-protagonist.
 
 The resolution is not without complications. Introducing Taumoeba to a system it did not evolve in raises genuine ecological questions the novel acknowledges but does not fully resolve:
+
+### Open Questions the Novel Raises
+
 - Could Taumoeba affect organisms other than Astrophage once in the Solar System?
 - Will Astrophage evolve resistance to Taumoeba, leading to a new crisis?
 - What are the long-term population dynamics once the predator-prey system is established in a new environment?
@@ -119,11 +123,11 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Bdellovibrio Sockett 2009]] — *Bdellovibrio* predation biology review
-- [[Sources Index#Bdellovibrio Ecology Jurkevitch 2006]] — predatory prokaryote ecology volume
-- [[Sources Index#Bdellovibrio Coevolution Rotem 2015]] — arms-race co-evolution in *Bdellovibrio*
-- [[Sources Index#Weir Interviews Taumoeba]] — author's stated design intent (unprocessed)
-- [[Sources Index#Weir 2021 Novel]] — in-universe Taumoeba depictions (fictional source)
+- [[Project Hail Mary/Sources/Sources Index#Bdellovibrio Sockett 2009|Bdellovibrio Sockett 2009]] — *Bdellovibrio* predation biology review
+- [[Project Hail Mary/Sources/Sources Index#Bdellovibrio Ecology Jurkevitch 2006|Bdellovibrio Ecology Jurkevitch 2006]] — predatory prokaryote ecology volume
+- [[Project Hail Mary/Sources/Sources Index#Bdellovibrio Coevolution Rotem 2015|Bdellovibrio Coevolution Rotem 2015]] — arms-race co-evolution in *Bdellovibrio*
+- [[Project Hail Mary/Sources/Sources Index#Weir Interviews Taumoeba|Weir Interviews Taumoeba]] — author's stated design intent (unprocessed)
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — in-universe Taumoeba depictions (fictional source)
 
 ## Supporting Chunks
 

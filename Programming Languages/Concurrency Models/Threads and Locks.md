@@ -2,6 +2,7 @@
 tags: [programming-languages, concurrency, threads]
 up: "[[Concurrency Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -101,13 +102,16 @@ The thread-and-lock model descends from early multiprogramming systems of the 19
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · Actor Model · [[Software Transactional Memory]] · Async-Await
+*See also:* [[Concurrency Models Overview]] · [[Programming Languages/Concurrency Models/The Actor Model|Actor Model]] · [[Software Transactional Memory]] · [[Programming Languages/Concurrency Models/Async-Await and Event Loops|Async-Await]]
 
 ---
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

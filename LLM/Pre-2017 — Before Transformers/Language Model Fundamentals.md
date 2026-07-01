@@ -2,6 +2,7 @@
 tags: [llm, foundations]
 up: "[[Pre-2017 — Before Transformers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -86,9 +87,9 @@ The core language-modeling setup became the basis of the modern LLM stack. Autor
 - [[Instruction Tuning]] — adapting pretrained language models to follow instructions
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — implement next-token loss, teacher forcing, and autoregressive generation in a toy decoder-only model
 
-## Supporting Chunks
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
-
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

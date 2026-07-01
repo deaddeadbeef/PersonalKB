@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Cartridges and Mappers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -79,4 +80,4 @@ All advanced mappers are implemented in mapper.rs. Expansion audio channels impl
 *See also:* [[Bank Switching Explained]], [[Common Mappers]], [[Expansion Audio]], [[Cartridges and Mappers Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

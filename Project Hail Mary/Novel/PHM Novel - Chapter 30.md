@@ -13,13 +13,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 30
 
-← [[PHM Novel - Chapter 29]] | [[Chapter Index]] | [[PHM Novel - Epilogue]] →
+← [[PHM Novel - Chapter 29]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Epilogue]] →
 
 > **One-line summary** — Grace learns he cannot survive a return to Earth, then commits to life on Erid when Rocky realizes Taumoeba can keep him alive.
 
@@ -104,7 +105,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source; EPUB pages ~508–510 (conservative boundary; no OCR chapter header present)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Rocky and the Eridians]]
 - [[Resolution and Aftermath]]
 - [[Relativistic Travel and Time Dilation]]

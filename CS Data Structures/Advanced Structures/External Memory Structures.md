@@ -2,6 +2,7 @@
 tags: [cs-ds, external-memory]
 up: "[[Advanced Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # External Memory Structures
@@ -107,7 +108,7 @@ Design and implement an **LSM-tree storage engine** with: (a) an in-memory AVL/r
 
 ---
 
-*See also:* [[B-Trees and B-Plus Trees]] · [[Cache-Oblivious Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** External Sorting · Disk-Based Algorithms
+*See also:* [[B-Trees and B-Plus Trees]] · [[Cache-Oblivious Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[CS Algorithms/Sorting/External Sorting|External Sorting]] · [[CS Operating Systems/IO/Disk Scheduling Algorithms|Disk-Based Algorithms]]
 
 ## Supporting Chunks
 - [[chunk-ds-009 B-trees minimize disk IO by matching node size to pages]]

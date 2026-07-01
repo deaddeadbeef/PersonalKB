@@ -1,28 +1,83 @@
 {
-  "generated_at": "2026-07-01T19:21:16",
-  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\vault-wide-wiki-repair",
-  "files_total": 5029,
+  "generated_at": "2026-07-01T19:28:38",
+  "root": "C:\\Users\\fpan1\\.config\\superpowers\\worktrees\\PersonalKB\\port-master-working-tree",
+  "files_total": 5047,
   "by_extension": {
     "(none)": 2,
     ".base": 1,
     ".jpg": 22,
     ".json": 18,
-    ".md": 3154,
+    ".md": 3171,
     ".mp3": 1810,
-    ".py": 17,
+    ".py": 18,
     ".txt": 5
   },
-  "markdown_files": 3154,
-  "candidate_articles": 976,
+  "markdown_files": 3171,
+  "candidate_articles": 984,
   "empty_notes": 0,
-  "stubs_under_1500_bytes": 21,
+  "stubs_under_1500_bytes": 0,
   "missing_up": 0,
   "missing_confidence": 0,
+  "missing_freshness": 29,
+  "current_sensitive_articles": 237,
+  "current_sensitive_without_review_date": 120,
   "missing_references": 0,
-  "placeholder_hits": 21,
+  "empty_references": 0,
+  "placeholder_hits": 10,
   "reader_placeholder_hits": 0,
+  "template_placeholder_hits": 10,
+  "operational_placeholder_hits": 0,
   "heavy_audio_embed_pages": 0,
-  "broken_link_occurrences": 551,
+  "broken_link_occurrences": 516,
   "reader_broken_link_occurrences": 0,
-  "orphan_articles": 0
+  "reader_broken_anchor_occurrences": 0,
+  "reader_ambiguous_wikilink_occurrences": 0,
+  "protected_broken_link_occurrences": 516,
+  "operational_broken_link_occurrences": 0,
+  "orphan_articles": 0,
+  "editorial_readiness": [
+    {
+      "gate": "Human front door",
+      "status": "Ready",
+      "evidence": "[[Welcome]] routes readers to book, study, quality, catalog, and source paths",
+      "missing": []
+    },
+    {
+      "gate": "Book-mode reading",
+      "status": "Ready",
+      "evidence": "[[PersonalKB Book Reading Guide]] provides shelf order, cross-topic routes, operating modes, and proof targets",
+      "missing": []
+    },
+    {
+      "gate": "Topic root routers",
+      "status": "Ready",
+      "evidence": "Major topic roots expose book mode, study or practice, provenance, and catalog browsing before domain lists",
+      "missing": []
+    },
+    {
+      "gate": "Study and proof routing",
+      "status": "Ready",
+      "evidence": "Learning paths and study indexes explain when to use book spines, pass-based curricula, drills, labs, and proof artifacts",
+      "missing": []
+    },
+    {
+      "gate": "Provenance routing",
+      "status": "Ready",
+      "evidence": "Source indexes explain how to verify claims, classify source type, and handle freshness-sensitive facts",
+      "missing": []
+    },
+    {
+      "gate": "Generated summary prose",
+      "status": "Ready",
+      "evidence": "Generated index and book-spine summaries use reader prose instead of Mermaid directives, summary labels, generic template claims, or example-only snippets",
+      "missing": []
+    },
+    {
+      "gate": "Exhaustive catalog boundary",
+      "status": "Ready",
+      "evidence": "[[index]] labels itself as the generated catalog for search and agent queries, not the first reading path",
+      "missing": []
+    }
+  ],
+  "editorial_readiness_ready": true
 }

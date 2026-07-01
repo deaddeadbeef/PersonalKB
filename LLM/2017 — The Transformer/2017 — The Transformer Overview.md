@@ -1,7 +1,9 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # 2017 — The Transformer
 
@@ -49,4 +51,7 @@ Within months, the transformer was adopted across NLP. It replaced RNNs in langu
 → Next: [[2018–2019 — Pretrained Language Models Overview|2018–2019 — Pretrained Language Models]]
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/LLM Book Reading Spine]]

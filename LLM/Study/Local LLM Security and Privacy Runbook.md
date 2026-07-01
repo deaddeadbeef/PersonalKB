@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, security, privacy, runbook]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [practice]
 ---
 
@@ -170,5 +171,5 @@ Move from loopback experiment to shared service only when all are true:
 - [[LLM/2023 — Open Models and Agents/Structured Output and Constrained Generation]]
 - [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
-- [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
-- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
+- [[LLM/_chunks/chunk-llm-119 PagedAttention Copy-on-Write Sharing|chunk-llm-119]]
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]]

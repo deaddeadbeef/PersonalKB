@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/compression
 confidence: verified
+freshness: stable
 up: "[[Data Compression Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -122,15 +123,20 @@ Huffman coding produces the optimal prefix-free code for the given frequencies. 
 
 ---
 
-*See also:* [[Asymptotic Notation]], [[Dijkstra's Algorithm]], [[Comparison Sort Lower Bound]], [[LZW Compression]], [[Run-Length Encoding]], [[Data Compression Overview]], [[Priority Queue ADT|Priority Queue]], [[Binary Trees and Traversals|Binary Tree]], [[CS Data Structures]]
+*See also:* [[Asymptotic Notation]], [[Dijkstra's Algorithm]], [[Comparison Sort Lower Bound]], [[LZW Compression]], [[Run-Length Encoding]], [[Data Compression Overview]], [[CS Data Structures/Heaps and Priority Queues/Priority Queue ADT|Priority Queue]], [[CS Data Structures/Trees/Binary Trees and Traversals|Binary Tree]], [[CS Data Structures]]
 
-## Supporting Chunks
+## Supporting Chunks / References
 
 ### Supporting Chunks
 
 - [[Compression - Huffman coding builds the optimal prefix-free code with a greedy merge]]
 - [[Compression - Adaptive Huffman coding enables single-pass encoding at the cost of implementation complexity]]
 
-## References
+### References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]], Chapter 9. See [[CS Algorithms/Sources/Sources Index#MIT OpenCourseWare 6.006|Sources Index]], Lecture 12. See [[Data Compression Overview]] for context and comparison with LZW.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

@@ -76,7 +76,7 @@ Executed a structured breadth pass to increase MOC density and category coverage
 | **Adaptation** | 3 | Intentionally limited (film source scarcity) |
 | **Characters** | 4 | Expanded via Phase 11 |
 | **Novel Analysis** | 11 | Expanded via Phase 11 synthesis |
-| **Engineering** | — | **Deferred to future phase** (standalone folder/cluster TBD) |
+| **Engineering** | — | **Deferred to future phase** (standalone folder or cluster not scheduled) |
 
 ---
 

@@ -1,7 +1,8 @@
 ---
 tags: [cs-ds, graphs]
-up: "[[Graphs Overview]]"
+up: "[[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]]"
 confidence: verified
+freshness: stable
 created: 2025-07-14
 ---
 

@@ -1,7 +1,8 @@
 ---
 tags: [cs-ds, graphs]
-up: "[[Graphs Overview]]"
+up: "[[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Weighted and Directed Graphs
@@ -94,7 +95,7 @@ Directed graphs model hyperlinks, prerequisite chains, call graphs, and one-way 
 
 ---
 
-*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[Graph Properties and Terminology]] | Shortest Path Algorithms | [[Minimum Spanning Trees]] | Cross-wiki links
+*See also:* [[Graph Representations Overview]] | [[Adjacency List and Adjacency Matrix]] | [[Graph Properties and Terminology]] | [[CS Algorithms/Graphs/Shortest Path Overview|Shortest Path Algorithms]] | [[Minimum Spanning Trees]] | Cross-wiki links
 
 ## Supporting Chunks
 

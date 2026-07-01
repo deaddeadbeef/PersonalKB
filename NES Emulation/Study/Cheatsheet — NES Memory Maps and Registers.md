@@ -1,7 +1,9 @@
 ---
 tags: [study, nes-emulation, cheatsheet]
 up: "[[NES Emulation Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Cheatsheet — NES Memory Maps and Registers
 
@@ -79,4 +81,7 @@ Quick reference for NES address spaces and register layouts.
 | 3 | X position |
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/Study/NES Emulation Study Index]]
+- [[NES Emulation/Sources/Sources Index]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]

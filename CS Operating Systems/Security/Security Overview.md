@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Security Overview
 
@@ -58,4 +60,6 @@ Operating system security defines who can do what, detects and recovers from att
 - **[[Case Studies Overview]]** — Android's permission model and Windows' mandatory integrity control are Security concepts applied in real systems.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

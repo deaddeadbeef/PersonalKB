@@ -2,12 +2,22 @@
 tags: [japanese, sources]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Sources Index — Japanese
 
 This page records the source layer behind the Japanese vault. Raw notes and chunks remain the internal evidence base; checked external sources are used for current resource links and learning-policy claims.
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Choose a course, audio route, or tool | Start with the checked external-source sections and their access dates | Preserve the source URL, access date, and the exact learning-policy claim it supports |
+| Verify pronunciation or pitch claims | Use the pronunciation and audio source sections below | Record dictionary/source route, word or phrase, and whether the claim is standard accent, native sample, or learner practice |
+| Read normally | Use [[Japanese/Japanese Book Reading Spine|Japanese Book Reading Spine]] or [[Japanese/Study/Japanese Study Index|Japanese Study Index]] first | Open sources when choosing resources, correcting audio, or changing the study policy |
+| Maintain the wiki | Recheck external course and audio links before changing the daily workflow | Add a new checked-date section rather than overwriting old evidence |
 
 ## Checked External Sources
 

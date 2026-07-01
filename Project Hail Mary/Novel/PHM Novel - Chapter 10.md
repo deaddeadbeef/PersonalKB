@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 10
 
-← [[PHM Novel - Chapter 09]] | [[Chapter Index]] | [[PHM Novel - Chapter 11]] →
+← [[PHM Novel - Chapter 09]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 11]] →
 
 > **One-line summary** — Grace and Rocky build more reliable exchange methods as Grace deduces Rocky's blindness and a Stratt flashback shows earthly power at its most extreme.
 
@@ -96,4 +97,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 201–213
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

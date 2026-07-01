@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, module-systems]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Module Systems Overview
 
@@ -36,4 +38,4 @@ A module system determines how code is organized, how dependencies are managed, 
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

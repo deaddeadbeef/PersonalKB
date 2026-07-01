@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, docker, gpu, cuda, vllm, sglang, open-webui, serving]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-15
 ---

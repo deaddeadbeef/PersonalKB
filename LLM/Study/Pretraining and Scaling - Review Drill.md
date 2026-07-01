@@ -1,7 +1,9 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Pretraining & Scaling — Review Drill
 
@@ -44,4 +46,7 @@ confidence: policy
     It proves the causal LM objective end to end: shifted next-token targets, masked self-attention, logits, cross-entropy loss, gradients, train/validation loss, and autoregressive generation. See [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]].
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Study/LLM Study Index]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Book Reading Spine]]

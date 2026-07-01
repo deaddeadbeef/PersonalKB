@@ -3,7 +3,9 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Trees Overview
 
@@ -38,4 +40,6 @@ When data lives on disk, minimising I/O reads matters more than CPU comparisons.
 - [[Advanced Structures Overview]] — segment trees, interval trees, and k-d trees
 
 ## References
-- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]
+
+- [[CS Data Structures/Sources/Sources Index]]
+- [[CS Data Structures/CS Data Structures Book Reading Spine]]

@@ -4,7 +4,9 @@ tags:
   - csa/study
   - csa/analysis
 up: "[[Algorithms Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Foundations and Analysis — Review Drill
 
@@ -176,4 +178,6 @@ A: Yes. Searching in a sorted array needs ≥ n+1 leaves → height ≥ lg(n+1) 
 - [[Master Theorem]] — three-case reference card
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Sources/Sources Index]]

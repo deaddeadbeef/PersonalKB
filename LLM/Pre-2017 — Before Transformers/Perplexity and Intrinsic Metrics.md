@@ -2,6 +2,7 @@
 tags: [llm, evaluation]
 up: "[[Pre-2017 — Before Transformers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -80,9 +81,9 @@ During pre-training, scaling-law research (Chinchilla, Kaplan et al.) uses cross
 
 *See also:* [[Pre-2017 — Before Transformers Overview]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
-
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

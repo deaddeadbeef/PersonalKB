@@ -2,6 +2,7 @@
 tags: [llm, history, neural-networks, foundations]
 up: "[[Pre-2017 — Before Transformers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 

@@ -2,6 +2,7 @@
 tags: [llm, architecture]
 up: "[[2018–2019 — Pretrained Language Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Encoder-Only Models
@@ -87,32 +88,12 @@ Encoder-only models established self-supervised pretraining as a dominant paradi
 
 *See also:* [[Transformer Architecture]], [[Attention Mechanism]], [[Embeddings and Vector Databases]], [[Scaling Laws]], [[Mechanistic Interpretability]]
 
-## Supporting Chunks
-### Supporting Chunks
-- [[LLM/_chunks/chunk-llm-009 Masked Language Modeling Strategy|Masked language modeling strategy]]
-- [[LLM/_chunks/chunk-llm-010 CLS Token as Sequence Embedding|CLS token as sequence embedding]]
-- [[LLM/_chunks/chunk-llm-011 Next Sentence Prediction Shown Unnecessary|Next Sentence Prediction shown unnecessary]]
-- [[LLM/_chunks/chunk-llm-012 Bidirectional Context Produces Richer Representations|Bidirectional context produces richer representations]]
-- [[LLM/_chunks/chunk-llm-129 RoBERTa Removes Next Sentence Prediction|RoBERTa removes Next Sentence Prediction]]
-- [[LLM/_chunks/chunk-llm-130 Dynamic Masking Outperforms Static|Dynamic masking outperforms static masking]]
-- [[LLM/_chunks/chunk-llm-131 RoBERTa Larger Batches and More Data|RoBERTa larger batches and more data]]
-- [[LLM/_chunks/chunk-llm-132 RoBERTa SOTA Without Architecture Changes|RoBERTa SOTA without architecture changes]]
-- [[LLM/_chunks/chunk-llm-133 DeBERTa Disentangled Attention Mechanism|DeBERTa disentangled attention mechanism]]
-- [[LLM/_chunks/chunk-llm-134 DeBERTa Enhanced Mask Decoder|DeBERTa enhanced mask decoder]]
-- [[LLM/_chunks/chunk-llm-136 DeBERTa Three Attention Interaction Terms|DeBERTa attention interaction terms]]
-
 ## References
-- [[LLM/_raw/raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers|raw-llm-003 BERT Pre-training of Deep Bidirectional Transformers]]
-- [[LLM/_raw/raw-llm-033 RoBERTa A Robustly Optimized BERT Pretraining Approach|raw-llm-033 RoBERTa A Robustly Optimized BERT Pretraining Approach]]
-- [[LLM/_raw/raw-llm-034 DeBERTa Decoding-enhanced BERT with Disentangled Attention|raw-llm-034 DeBERTa Decoding-enhanced BERT with Disentangled Attention]]
-- [[LLM/Sources/Sources Index]]
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-### Related Notes
 - [[Transformer Architecture]] — the shared foundation architecture for all encoder models
 - [[Attention Mechanism]] — bidirectional self-attention that drives encoder representations
 - [[Embeddings and Vector Databases]] — encoder models power modern embedding retrieval
 - [[Scaling Laws]] — how encoder model performance scales with compute and data
 - [[Mechanistic Interpretability]] — probing and interpreting encoder representations
-
-### Evidence Gaps
-- E5, BGE, GTE, and Nomic Embed are named in the article body, but no dedicated chunks are linked yet for those embedding-model lineages.
+- [[LLM/Sources/Sources Index]]

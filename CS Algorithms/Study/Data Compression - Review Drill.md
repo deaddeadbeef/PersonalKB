@@ -4,7 +4,9 @@ tags:
   - csa/study
   - csa/compression
 up: "[[Algorithms Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Data Compression — Review Drill
 
@@ -145,4 +147,6 @@ A: LZW was patented by Unisys. GIF images use LZW compression and required royal
 - [[LZW Compression]] — adaptive dictionary, single-pass encoding/decoding, patent history
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Sources/Sources Index]]

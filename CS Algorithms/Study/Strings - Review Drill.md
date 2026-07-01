@@ -4,7 +4,9 @@ tags:
   - csa/study
   - csa/strings
 up: "[[Algorithms Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Strings — Review Drill
 
@@ -146,4 +148,6 @@ A: P = "abcabc". failure = [0, 0, 0, 1, 2, 3]. After matching "abcab" and then a
 - [[String Matching - KMP]] — failure function construction, matching algorithm, $\Theta(n+m)$ analysis
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Sources/Sources Index]]

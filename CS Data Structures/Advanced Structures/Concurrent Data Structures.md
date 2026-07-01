@@ -2,6 +2,7 @@
 tags: [cs-ds, concurrency]
 up: "[[Advanced Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Concurrent Data Structures
@@ -114,7 +115,7 @@ Test with 8 threads performing mixed read/write workloads and measure throughput
 
 ---
 
-*See also:* [[Lock-Free Queues and Stacks]] · [[Hash Tables and Hash Functions|Hash Tables]] · [[Skip Lists]] | **CS Algorithms:** Parallel Algorithms · Synchronization Primitives
+*See also:* [[Lock-Free Queues and Stacks]] · [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] · [[Skip Lists]] | **CS Algorithms:** [[CS Algorithms/Techniques/Parallel Algorithms|Parallel Algorithms]] · [[CS Operating Systems/Synchronization/Synchronization Overview|Synchronization Primitives]]
 
 ## Supporting Chunks
 - [[chunk-ds-024 Lock-free guarantees system-wide progress without deadlock]]

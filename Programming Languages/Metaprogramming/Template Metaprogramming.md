@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, metaprogramming, templates]
 up: "[[Metaprogramming Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -83,4 +85,4 @@ The trend: instead of encoding computation in the type system (TMP), just run no
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

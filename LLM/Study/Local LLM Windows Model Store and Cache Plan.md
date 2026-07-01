@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, windows, storage, cache, ollama, hugging-face]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-15
 ---

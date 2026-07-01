@@ -3,6 +3,7 @@ tags: [spacex, engines]
 up: "[[Engines and Propulsion Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Raptor Engine
@@ -83,4 +84,4 @@ Defend the claim that Raptor is not just a larger engine, but a different propul
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

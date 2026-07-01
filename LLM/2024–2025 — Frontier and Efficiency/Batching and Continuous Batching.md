@@ -2,6 +2,7 @@
 tags: [llm, inference]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -97,12 +98,12 @@ For a local hands-on version, use [[LLM/Study/Local LLM Serving Internals and Sc
 
 ## Supporting Chunks
 
-- [[chunk-llm-118 vLLM Continuous Batching Throughput]] — continuous batching plus PagedAttention throughput evidence
+- [[LLM/_chunks/chunk-llm-118 vLLM Continuous Batching Throughput|chunk-llm-118]] — continuous batching plus PagedAttention throughput evidence
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] — local scheduler evidence for continuous batching, chunked prefill, queueing, and slots
 - [[LLM/Study/Local LLM Observability and Operations Runbook]] — operations evidence for queueing, cache pressure, logs, and resource counters
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — why continuous batching depends on efficient KV-cache allocation
-- [[chunk-llm-120 vLLM De Facto Serving Framework]] — serving-stack adoption context
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] — why decode batching improves hardware utilization
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]] — why continuous batching depends on efficient KV-cache allocation
+- [[LLM/_chunks/chunk-llm-120 vLLM De Facto Serving Framework|chunk-llm-120]] — serving-stack adoption context
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]] — why decode batching improves hardware utilization
 
 ---
 

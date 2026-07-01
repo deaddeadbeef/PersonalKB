@@ -6,133 +6,6 @@ tags: [vault-log, generated]
 
 Append-only record of ingest, query, lint, and refinement operations.
 
-## [2026-07-01] curate | Add Stock Trading starter wiki
-
-Scope: start a new Stock Trading domain for relearning stock-market mechanics from the ground up, with current official SEC/Investor.gov and FINRA sources.
-
-Changed files:
-- `.tasks/2026-07-01-stock-trading-wiki.md`
-- `Stock Trading/Stock Trading.md`
-- `Stock Trading/Stock Trading - Learning Path.md`
-- `Stock Trading/Foundations/Stocks and Ownership.md`
-- `Stock Trading/Foundations/Returns Risk and Time Horizon.md`
-- `Stock Trading/Market Mechanics/How Stock Markets Work.md`
-- `Stock Trading/Market Mechanics/Order Types and Execution.md`
-- `Stock Trading/Market Mechanics/Accounts Settlement and Margin.md`
-- `Stock Trading/Analysis/Reading Company Filings and Fundamentals.md`
-- `Stock Trading/Analysis/Price Action Momentum and Volatility.md`
-- `Stock Trading/Risk Management/Position Sizing and Trade Journaling.md`
-- `Stock Trading/Study/Stock Trading Study Index.md`
-- `Stock Trading/Study/Stock Market Basics - Review Drill.md`
-- `Stock Trading/Sources/Sources Index.md`
-- `Welcome.md`
-- `index.md`
-- `_ops/reports/*`
-- `PersonalKB Wiki Quality Dashboard.md`
-- `log.md`
-
-Maintenance notes:
-- Added a source-backed first-pass stock trading curriculum that starts with ownership, risk, order/account mechanics, company filings, price-action vocabulary, and paper-trading discipline.
-- Used official SEC/Investor.gov and FINRA pages for current settlement, order, margin, brokerage-account, risk, due diligence, and volatility claims.
-- Did not add raw source captures or chunks in this pass; this is a compiled wiki starter layer.
-
-Verification:
-- `python _ops\personal_kb.py index`: regenerated `index.md`.
-- `python _ops\personal_kb.py audit`: exited 0; branch audit now sees 976 candidate articles. Pre-existing `origin/main` reader debt remains outside Stock Trading: 374 reader broken-link occurrences, 48 reader placeholder hits, 249 missing references, 247 missing confidence fields, and 28 missing `up` fields.
-- Targeted Stock Trading metadata and wikilink check: 13 notes, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 placeholder hits, 0 broken links; `Welcome.md`, `index.md`, and `log.md` routes present.
-- `git diff --check`: clean.
-- `git diff --cached --check`: clean after staging.
-
-## [2026-06-29] refine | Wire LLM placeholder articles to evidence
-
-Scope: continue the Karpathy-style LLM wiki pass by replacing the first ten LLM placeholder support sections with existing chunk, raw-source, and explicit evidence-gap links.
-
-Changed files:
-- `LLM/2017 — The Transformer/Attention Mechanism.md`
-- `LLM/2017 — The Transformer/Encoder-Decoder Models.md`
-- `LLM/2017 — The Transformer/Positional Encoding.md`
-- `LLM/2017 — The Transformer/Transformer Architecture.md`
-- `LLM/2017 — The Transformer/Transformer Breakthrough and Scaling Era.md`
-- `LLM/2018–2019 — Pretrained Language Models/BERT and Encoder Lineage.md`
-- `LLM/2018–2019 — Pretrained Language Models/Data Curation and Deduplication.md`
-- `LLM/2018–2019 — Pretrained Language Models/Decoder-Only Models.md`
-- `LLM/2018–2019 — Pretrained Language Models/Encoder-Only Models.md`
-- `LLM/2018–2019 — Pretrained Language Models/GPT and Decoder-Only Lineage.md`
-- `PersonalKB Wiki Quality Dashboard.md`
-- `_ops/reports/audit-placeholder-hits.md`
-- `_ops/reports/audit-summary.json`
-- `_ops/reports/wiki-placeholder-hits.md`
-- `_ops/reports/wiki-quality-summary.json`
-- `log.md`
-
-Maintenance notes:
-- Replaced generated empty support markers with path-qualified links to existing LLM chunks and raw source captures.
-- Kept the article bodies intact and limited the pass to provenance, references, related-note grouping, and evidence-gap markers.
-- Marked missing coverage explicitly for UL2, YaRN, current data-corpus notes, modern embedding-model lineages, and frontier-model freshness.
-
-Verification:
-- `python _ops\personal_kb.py audit`: exited 0; latest reader-facing counts are 963 candidate articles, 374 broken links, 48 placeholder hits, 249 missing references, and 247 missing confidence fields.
-
-## [2026-06-29] query | LLM Wiki and second brain strategy
-
-Scope: source-check Karpathy's LLM Wiki pattern and Second Brain/PARA framing, then map both to the current PersonalKB vault without modifying raw sources, chunks, or existing LLM wiki articles.
-
-Changed files:
-- `.tasks/2026-06-29-llm-wiki-second-brain.md`
-- `PersonalKB Wiki Quality Dashboard.md`
-- `_ops/reports/audit-summary.json`
-- `_ops/reports/llm-wiki-second-brain-strategy.md`
-- `_ops/reports/wiki-quality-summary.json`
-- `log.md`
-
-Maintenance notes:
-- Added a sourced strategy report that distinguishes LLM Wiki from ordinary RAG and maps the pattern to PersonalKB's raw, wiki, schema, index, log, and audit layers.
-- Recommended stabilizing navigation/provenance first, then using the LLM domain as the flagship compounding Second Brain domain.
-- Deferred source ingestion and article rewrites to a later, narrower pass.
-
-Verification:
-- `python _ops\personal_kb.py audit`: exited 0; latest reader-facing counts remained 963 candidate articles, 374 broken links, 58 placeholder hits, 249 missing references, and 247 missing confidence fields.
-- `git diff --check`: exited 0.
-
-## [2026-06-29] refine | Port reviewed Japanese table formatting
-
-Scope: port the safe Japanese Markdown table-formatting changes from the dirty local `master` checkout onto a clean branch from `origin/main`.
-
-Changed files:
-- `Japanese/Speaking/Conversation Patterns/Conversation Patterns — Daily Interactions.md`
-- `Japanese/Writing Systems/Hiragana/Hiragana Complete Guide.md`
-- `PersonalKB Wiki Quality Dashboard.md`
-- `_ops/reports/audit-summary.json`
-- `_ops/reports/wiki-quality-summary.json`
-- `log.md`
-
-Review notes:
-- Ported only alignment-only table edits.
-- Did not port the `Culture Overview` Keigo link change because its target was an empty root-level note and would create a bad navigation path.
-
-Verification:
-- `python _ops\personal_kb.py audit`
-- `git diff --check`
-
-## [2026-06-29] refine | Port LLM troubleshooting route cleanup
-
-Scope: port the reviewed local `master` edit that removes the WSL CUDA vLLM/SGLang setup gate from the local LLM troubleshooting decision tree.
-
-Changed files:
-- `LLM/Study/Local LLM Troubleshooting Decision Tree.md`
-- `PersonalKB Wiki Quality Dashboard.md`
-- `_ops/reports/audit-summary.json`
-- `_ops/reports/wiki-quality-summary.json`
-- `log.md`
-
-Review notes:
-- Kept the change isolated to the decision-tree routing note.
-- The edit renumbers the diagnostic ladder after removing the WSL-specific gate.
-
-Verification:
-- `python _ops\personal_kb.py audit`
-- `git diff --check`
-
 ## [2026-04-27] setup | LLM wiki operating loop
 
 Scope: initialized agent schema, audit tooling, generated index, and maintenance log.
@@ -4406,31 +4279,801 @@ Verification:
 - Latest reader-facing quality counts: 963 candidate articles, 374 broken links, 58 placeholder hits, 249 missing references, 247 missing confidence, 28 missing up, 20 stubs, 1 empty note, 0 orphans.
 - The `LLM Sources Index` cleanup reduced reader-facing broken links by 13, from 387 to 374.
 
-## [2026-06-30] lint/refine | Vault-wide reader wiki repair pass
+## [2026-06-30] lint | Classify protected maintenance-layer noise
 
-Scope: repair all reader-facing wiki health failures across the committed vault while preserving protected raw, chunk, template, media, and Obsidian configuration layers.
+Scope: continue second-brain housekeeping after the reader-facing wiki reached clean status by separating actionable operational audit defects from protected raw, chunk, and template-layer noise.
 
-Changed files:
-- Reader-facing wiki articles across CS Algorithms, CS Data Structures, CS Operating Systems, Japanese, LLM, NES Emulation, Programming Languages, Project Hail Mary, Recipes, SpaceX, and root navigation.
-- `_ops/repair_wiki_health.py`
-- `_ops/reports/*`
+Changed wiki/source files:
+- `AGENTS.md`
+- `NES Emulation/_queries/QnA - Chunk Coverage Map.md`
+- `Programming Languages/_queries/QnA - Chunk Coverage Map.md`
+- `Programming Languages/_queries/QnA System Roadmap.md`
+- `Project Hail Mary/_phm_phase11_completion_state.md`
+- `_ops/personal_kb.py`
+- `_ops/reports/audit-operational-broken-links.md`
+- `_ops/reports/audit-operational-placeholder-hits.md`
+- `_ops/reports/audit-protected-broken-links.md`
+- `_ops/reports/audit-template-placeholder-hits.md`
 - `PersonalKB Wiki Quality Dashboard.md`
+
+Maintenance changes:
+- Fixed stale `Programming Languages/_queries` wikilinks by routing them to existing article paths.
+- Replaced the `AGENTS.md` example wikilink that intentionally pointed to a nonexistent page.
+- Replaced NES chunk-coverage placeholder entries with refreshed supporting-chunk counts and documented overlap semantics.
+- Reworded a Project Hail Mary deferred-phase marker so it no longer reads as unresolved placeholder text.
+- Extended `_ops/personal_kb.py` to report operational vs protected-layer broken links and operational vs template placeholder hits.
+- Updated [[PersonalKB Wiki Quality Dashboard]] so full-audit noise is classified instead of presented as undifferentiated debt.
+
+Verification:
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:25:13`.
+- `python -m py_compile _ops\personal_kb.py`: passed; transient `personal_kb.cpython-311.pyc` removed after the check.
+- Reader-facing quality counts: 971 candidate articles, 0 broken links, 0 placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, 0 orphans.
+- Operational maintenance counts: 0 broken wikilinks outside protected layers and 0 placeholder hits outside templates.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Add cross-topic reading routes
+
+Scope: improve the root reading experience now that reader-facing lint defects are clean, so the vault answers what to read next instead of only listing topic shelves.
+
+Changed wiki/source files:
+- `PersonalKB Book Reading Guide.md`
+- `CS Algorithms/CS Algorithms Book Reading Spine.md`
+- `CS Data Structures/CS Data Structures Book Reading Spine.md`
+- `CS Operating Systems/CS Operating Systems Book Reading Spine.md`
+- `Japanese/Japanese Book Reading Spine.md`
+- `NES Emulation/NES Emulation Book Reading Spine.md`
+- `Programming Languages/Programming Languages Book Reading Spine.md`
+- `Project Hail Mary/Project Hail Mary Book Reading Spine.md`
+- `Recipes/Recipes Book Reading Spine.md`
+- `SpaceX/SpaceX Book Reading Spine.md`
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
 - `index.md`
 - `log.md`
 
 Maintenance changes:
-- Added a reproducible `_ops/repair_wiki_health.py` repair pass for wikilink normalization, missing `up` and `confidence` frontmatter, missing `## References` sections, visible placeholder cleanup, and the empty LLM alias note.
-- Repaired reader-facing broken links by routing high-confidence aliases to existing notes and converting unresolved future-note targets to plain text instead of leaving broken graph edges.
-- Added source-index references to substantive articles that lacked a references section, using existing domain `Sources Index` pages when available.
-- Replaced visible LLM chunk placeholders with explicit missing-chunk statements and changed SpaceX table to-be-determined cells to `not confirmed in vault sources` rather than inventing current claims.
-- Regenerated the root index and quality dashboard.
+- Added goal-based routes to [[PersonalKB Book Reading Guide]]: Local LLM Builder, Computer Science Backbone, Builder and Emulator, Language Learner, and Science, Space, and Story.
+- Added operating modes for story, mechanism, proof, and maintenance reading.
+- Added proof targets so routes end in usable judgment rather than passive browsing.
+- Replaced the LLM shelf row's generic label with the generated reader-facing article count.
+- Kept the route layer in `_ops/generate_topic_reading_spines.py` so the guide survives regeneration.
 
 Verification:
-- `python _ops\repair_wiki_health.py`: idempotent final run; no further link, placeholder, metadata, or empty-note edits required.
+- `python _ops\generate_topic_reading_spines.py`: regenerated nine topic spines plus `PersonalKB Book Reading Guide.md`.
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
-- `python _ops\personal_kb.py audit`: regenerated full and reader-facing reports.
-- `git diff --check`: clean.
-- Protected-path check: 0 `_raw`, `_chunks`, `_templates`, `.obsidian`, image, or audio files changed.
-- Duplicate references check: 0 reader-facing files with multiple `## References` sections.
-- Latest reader-facing quality counts: 963 candidate articles, 0 broken links, 0 placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 21 stubs, 0 empty notes, 0 orphans.
-- Remaining full-audit noise is confined to protected or non-reader layers: 551 broken wikilinks in chunk/raw/template operational material and 21 placeholder hits in templates, queries, and a protected Project Hail Mary phase-state note.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:30:35` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+
+## [2026-06-30] curate | Add LLM study entry router
+
+Scope: make the LLM study area work as a book entry point and a practical local-inference route before the exhaustive study catalog.
+
+Changed wiki/source files:
+- `LLM/Study/LLM Study Index.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added a goal-based router at the top of [[LLM/Study/LLM Study Index]] for book reading, first local inference, request-lifecycle explanation, model-readiness decisions, and paper-to-local operations.
+- Added a seven-step local inference minimum path from preflight through endpoint evidence and deployment decision.
+- Kept the long review-drill and quick-reference catalog available below the entry route instead of making it the first reading experience.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:34:03` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Add study-index goal routers
+
+Scope: continue making the wiki readable like a set of books by turning topic study indexes into route pickers before they become drill catalogs.
+
+Changed wiki/source files:
+- `CS Algorithms/Study/Algorithms Study Index.md`
+- `CS Data Structures/Study/CS Data Structures Study Index.md`
+- `CS Operating Systems/Study/OS Study Index.md`
+- `Programming Languages/Study/Programming Languages Study Index.md`
+- `NES Emulation/Study/NES Emulation Study Index.md`
+- `SpaceX/Study/SpaceX Study Index.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added `Start Here By Goal` routers to Algorithms, Data Structures, Operating Systems, Programming Languages, NES Emulation, and SpaceX study indexes.
+- Routed each topic from a concrete reading or application goal to existing book spines, overview pages, drills, source indexes, and proof targets.
+- Reframed the SpaceX study index so fast-changing company and launch numbers are treated as memory aids that need source and as-of checks before reuse.
+- Replaced unchecked SpaceX reference-card entries with existing source and reading-spine routes.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:38:31` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Add root shelf reader routers
+
+Scope: make every major topic root page behave as a readable front door instead of forcing the reader to infer the difference between book spine, study route, sources, and catalog.
+
+Changed wiki/source files:
+- `LLM/LLM.md`
+- `CS Algorithms/CS Algorithms.md`
+- `CS Data Structures/CS Data Structures.md`
+- `CS Operating Systems/CS Operating Systems.md`
+- `Japanese/Japanese.md`
+- `NES Emulation/NES Emulation.md`
+- `Programming Languages/Programming Languages.md`
+- `Project Hail Mary/Project Hail Mary.md`
+- `Recipes/Recipes.md`
+- `SpaceX/SpaceX.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added compact root-level reader routers for book-mode reading, guided learning paths, study/practice routes, provenance checks, and catalog browsing.
+- Promoted book spines and study indexes from back references into first-screen choices on each major shelf.
+- Added topic-specific proof intent where useful: local LLM hosting, data-structure selection, OS debugging, emulator subsystem tracing, Japanese daily control, SpaceX freshness checks, Project Hail Mary fact/fiction separation, and recipe execution.
+- Left existing MOC/domain sections in place below the new routers so exhaustive navigation remains available.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:41:49` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Add source-index provenance routers
+
+Scope: improve the provenance layer now that topic roots point readers to source indexes, so source pages explain how to verify claims rather than only listing raw material.
+
+Changed wiki/source files:
+- `LLM/Sources/Sources Index.md`
+- `CS Algorithms/Sources/Sources Index.md`
+- `CS Data Structures/Sources/Sources Index.md`
+- `CS Operating Systems/Sources/Sources Index.md`
+- `Japanese/Sources/Sources Index.md`
+- `NES Emulation/Sources/Sources Index.md`
+- `Programming Languages/Sources/Sources Index.md`
+- `Project Hail Mary/Sources/Sources Index.md`
+- `Recipes/Sources/Recipe Sources Index.md`
+- `SpaceX/Sources/Sources Index.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added `How To Use Sources` provenance routers to the major source indexes.
+- Clarified source-use habits for proof claims, operation-cost claims, OS mechanisms, language-design comparisons, NES hardware behavior, Japanese resource policy, Project Hail Mary fact/fiction separation, recipe attribution, and SpaceX freshness-sensitive facts.
+- Added freshness and source-type rules where claims can age or vary by implementation, especially SpaceX current facts, Japanese external resources, language ecosystem behavior, and OS platform details.
+- Kept the existing source tables intact so article references and raw-note routes remain stable.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:44:51` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Make Welcome and generated index reader-first
+
+Scope: improve the true vault front door so a human reader lands on book routes, quality state, local LLM study, and provenance routes before maintenance conventions or exhaustive inventory.
+
+Changed wiki/source files:
+- `Welcome.md`
+- `_ops/personal_kb.py`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added an `If You Are Here To Read` router to [[Welcome]] pointing to the book guide, topic roots, LLM study index, quality dashboard, generated index, and source indexes.
+- Reframed `Welcome.md` as the maintainer playbook while sending normal reading to [[PersonalKB Book Reading Guide]].
+- Removed brittle page-count descriptions from the Active Projects table and replaced them with topic-purpose descriptions.
+- Updated `_ops/personal_kb.py` so generated `index.md` explains that it is an exhaustive catalog for search and agent queries, then points human readers back to the book guide, quality dashboard, and Welcome playbook.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:47:36` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Align learning paths with book and proof routes
+
+Scope: make the prominent learning-path pages cooperate with the newer book spines, study routers, and source-index provenance rules instead of competing as parallel front doors.
+
+Changed wiki/source files:
+- `LLM/LLM — Learning Path.md`
+- `CS Algorithms/CS Algorithms — Learning Path.md`
+- `CS Data Structures/CS Data Structures — Learning Path.md`
+- `CS Operating Systems/CS Operating Systems — Learning Path.md`
+- `NES Emulation/NES Emulation — Learning Path.md`
+- `Programming Languages/Programming Languages — Learning Path.md`
+- `Project Hail Mary/Project Hail Mary — Learning Path.md`
+- `SpaceX/SpaceX — Learning Path.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added `Where This Fits` sections to eight learning paths.
+- Clarified when to use a learning path versus a book spine, study index, source index, scorecard, or local proof route.
+- Preserved the existing pass-based learning structures below the new orientation blocks.
+- Added topic-specific guardrails for local LLM evidence, algorithm selection, data-structure selection, OS mechanism debugging, language comparison, emulator regression proof, Project Hail Mary fact/fiction separation, and SpaceX freshness-sensitive facts.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:50:35` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Add editorial readiness gates to quality dashboard
+
+Scope: make the generated quality dashboard report both hard lint health and the reader-facing structure needed to use the vault as a book, study system, and provenance-backed reference.
+
+Changed wiki/source files:
+- `_ops/personal_kb.py`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added an `Editorial Readiness` section to the generated [[PersonalKB Wiki Quality Dashboard]].
+- Documented readiness gates for the human front door, book-mode reading, topic root routers, study/proof routing, provenance routing, and generated-index boundary.
+- Kept the mechanical audit counts intact so reader-facing broken links, placeholders, metadata gaps, stubs, empty notes, and orphans remain measurable.
+- Updated `_ops/personal_kb.py` so the editorial readiness section survives future audit regeneration.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:53:02` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Make editorial readiness gates evidence-based
+
+Scope: harden the generated quality dashboard so editorial readiness gates are checked from current files instead of being written as fixed `Ready` rows.
+
+Changed wiki/source files:
+- `_ops/personal_kb.py`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added evidence-based editorial readiness checks to `_ops/personal_kb.py`.
+- Wrote `editorial_readiness` rows and `editorial_readiness_ready` into the generated audit JSON summaries.
+- Made the dashboard verdict sensitive to editorial readiness regressions while preserving the existing mechanical lint verdicts.
+- Checked current files for the human front door, book guide, topic root routers, learning-path and study-index routes, source-index provenance routers, and generated-index boundary.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T01:57:08` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all six gates `Ready`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Add book-guide reading session loop
+
+Scope: make the root book guide operational for a single reading session, so routes and proof targets turn into a repeatable read, explain, prove, and stop loop.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `PersonalKB Book Reading Guide.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added `One Reading Session` to the generated [[PersonalKB Book Reading Guide]].
+- Made each session choose one route/topic/Book section, read only a bounded set of pages, explain the idea, produce one proof artifact or source check, and stop on a named next evidence gap.
+- Updated the generated editorial readiness checker so the book-mode gate requires the session loop.
+- Regenerated topic book spines and the root reading guide from `_ops/generate_topic_reading_spines.py`.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:00:57` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all six gates `Ready`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Clean generated summaries in book routes
+
+Scope: remove diagram syntax leakage from generated reader summaries so the root index and book spines read like prose instead of exposing Mermaid internals such as `flowchart TD`.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `PersonalKB Book Reading Guide.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- topic `* Book Reading Spine.md` files
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Updated the book-spine generator to strip fenced code blocks before extracting one-line summaries.
+- Updated the root index generator to strip fenced code blocks, skip Mermaid directive lines, and remove inline markdown emphasis from generated summaries.
+- Added a `Generated summary prose` editorial readiness gate so the dashboard flags future Mermaid directive leakage in `index.md` or book-spine summaries.
+- Regenerated topic book spines, the root book guide, the exhaustive index, and the quality dashboard.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:05:23` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- `rg -n -e '( -|—) (flowchart|graph|sequenceDiagram|classDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|mindmap|timeline|gitGraph)\b' --glob 'index.md' --glob '*Book Reading Spine.md' .`: returned no matches.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`, including `Generated summary prose`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Replace generic Japanese thematic summaries
+
+Scope: make the Japanese thematic vocabulary pages and their generated route summaries read like useful book entries instead of template text.
+
+Changed wiki/source files:
+- `Japanese/Vocabulary/Thematic/Thematic Vocabulary — Body and Health.md`
+- `Japanese/Vocabulary/Thematic/Thematic Vocabulary — Food and Drink.md`
+- `Japanese/Vocabulary/Thematic/Thematic Vocabulary — Home and Daily Life.md`
+- `Japanese/Vocabulary/Thematic/Thematic Vocabulary — Nature and Weather.md`
+- `Japanese/Vocabulary/Thematic/Thematic Vocabulary — Numbers, Time, and Dates.md`
+- `Japanese/Vocabulary/Thematic/Thematic Vocabulary — Travel and Transportation.md`
+- `Japanese/Vocabulary/Thematic/Thematic Vocabulary — Work and Office.md`
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `Japanese/Japanese Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added specific one-line summaries to seven Japanese thematic vocabulary pages.
+- Replaced generic `Understanding X is fundamental` intuition blocks with domain-specific reading guidance for health, food, home, weather, numbers, travel, and work vocabulary.
+- Updated both generated-summary extractors to strip `One-line summary` labels consistently.
+- Taught both generators to skip generic template summary lines as fallback summary candidates.
+- Expanded the `Generated summary prose` editorial readiness gate so it rejects Mermaid directives and generic template claims in generated index/spine summaries.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:09:55` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- `rg -n --glob '*.md' "The Core Idea: Understanding .* is fundamental|Analogy: Each concept|Why It Matters: You'll encounter this" .`: returned no matches.
+- `rg -n -e '( -|—) (flowchart|graph|sequenceDiagram|classDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|mindmap|timeline|gitGraph)\b|(?: -|—) (?:One-line summary:|The Core Idea:\s*)?Understanding .* is fundamental' --glob 'index.md' --glob '*Book Reading Spine.md' .`: returned no matches.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`, including the expanded `Generated summary prose` gate.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Strip labels from generated route summaries
+
+Scope: make generated reader routes read as prose by removing leading summary labels such as `The Core Idea:`, `Analogy:`, `Why It Matters:`, and `One-line summary:` from index and book-spine snippets.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added shared summary-label stripping to the book-spine and root-index summary cleaners.
+- Expanded the generated-summary readiness gate so generated route summaries reject Mermaid directives, summary labels, and generic template claims.
+- Regenerated all topic book spines, the root book guide, the exhaustive index, and the quality dashboard.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:13:11` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- `rg -n -e '( -|—) (flowchart|graph|sequenceDiagram|classDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|mindmap|timeline|gitGraph)\b|(?: -|—) (?:One-line summary|The Core Idea|Analogy|Why It Matters):|(?: -|—) (?:The Core Idea:\s*)?Understanding .* is fundamental' --glob 'index.md' --glob '*Book Reading Spine.md' .`: returned no matches.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`, including the expanded `Generated summary prose` gate.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Stop example quotes from becoming route summaries
+
+Scope: make generated book and index routes ignore quoted examples, callout markers, and arrow-only navigation lines when choosing summaries.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `Japanese/Study/Study Roadmap — Beginner to Intermediate.md`
+- `Japanese/Study/Study Roadmap — Intermediate to Advanced.md`
+- `Programming Languages/Programming Languages.md`
+- `Programming Languages/Study/Cheatsheet - PL Design Decisions Quick Reference.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Changed generated-summary extraction so blockquotes are used only when they explicitly declare `One-line summary`.
+- Skipped ordinary quote/example lines and arrow-only navigation lines during summary fallback.
+- Added explicit one-line summaries to two Japanese roadmap pages, the Programming Languages root page, and the PL design-cheatsheet page.
+- Expanded the generated-summary readiness gate to reject example-only snippets such as short Japanese example phrases, `Staff:` dialogue starts, callout markers, and `→ Sources Index`.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:18:32` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- `rg -n -e '( -|—) (flowchart|graph|sequenceDiagram|classDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|mindmap|timeline|gitGraph)\b|(?: -|—) (?:The Core Idea:\s*)?Understanding .* is fundamental|(?: -|—) (?:One-line summary|The Core Idea|Analogy|Why It Matters):|(?: -|—) (?:私|これは|お世話|乾杯|はじめまして|いらっしゃいませ|らりるれろ|Staff:|→ Sources Index|\[!)' --glob 'index.md' --glob '*Book Reading Spine.md' .`: returned no matches.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`, including the expanded `Generated summary prose` gate.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Replace checklist-question generated summaries
+
+Scope: keep generated index and book-spine routes from using first checklist questions, setup instructions, ordered-list items, table footnotes, or diagram labels as summaries.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `Japanese/Study/Study Roadmap — Beginner to Intermediate.md`
+- `Japanese/Study/Study Roadmap — Intermediate to Advanced.md`
+- `Programming Languages/Programming Languages.md`
+- `Programming Languages/Study/Cheatsheet - PL Design Decisions Quick Reference.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added ordered-list and setup-instruction skipping to both generated-summary extractors.
+- Added title-based fallback summaries for review drills, data-structure reviews, audio assignment ladders, weekly reviews, audio maps/spines, study plans, pitch-accent paths, and keigo/register checklists.
+- Made known drill/ladder/review/audio utility pages prefer title-derived summaries after explicit one-line summaries, so tables, prompts, and diagram labels cannot become route summaries.
+- Added explicit one-line summaries to two Japanese roadmaps, the Programming Languages root, and the PL design-cheatsheet.
+- Expanded the generated-summary readiness gate so route summaries reject numbered-list starts and setup-instruction starts.
+- Fixed an extractor edge case where a cleaned empty line could prevent fallback summary generation.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:26:25` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Targeted generated-summary `rg` check returned no matches for numbered-list starts, setup-instruction starts, Mermaid directives, summary labels, or generic template claims in `index.md` / `* Book Reading Spine.md`.
+- Sampled generated routes now show deterministic summaries such as `Data structures review drill for Linear Structures.`, `Review drill for Language Design Philosophy.`, `Audio assignment ladder for Phase 4.`, and `Weekly review checklist for Phase 5.`
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`, including the expanded `Generated summary prose` gate.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Enrich the LLM book spine with chapter summaries
+
+Scope: make the hand-curated LLM book spine read more like a guided book by giving each main chapter link an inline reader-facing summary while preserving the custom chapter prose, checkpoints, and appendix structure.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `LLM/LLM Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added an LLM-specific enrichment pass to the book-spine generator that appends summaries to bare single-link bullets before the LLM appendices.
+- Kept appendix/reference links separate so back-of-book tools can stay compact.
+- Expanded the generated-summary readiness gate to reject bare non-reference LLM chapter bullets.
+- Regenerated all topic spines, the root book guide, the exhaustive index, the dashboard, and audit reports.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed without writing bytecode.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed without writing bytecode.
+- `python _ops\generate_topic_reading_spines.py`: enriched `LLM/LLM Book Reading Spine.md` with 131 chapter-link summaries and regenerated topic spines plus `PersonalKB Book Reading Guide.md`.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:30:50` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Python route check found 0 bare non-reference LLM bullets in `LLM/LLM Book Reading Spine.md`.
+- `rg --pcre2` targeted generated-summary check returned no matches for numbered-list starts, setup-instruction starts, Mermaid directives, summary labels, generic template claims, or bare non-reference LLM chapter bullets in `index.md` / `* Book Reading Spine.md`.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`, including the expanded `Generated summary prose` gate.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Remove ellipsis truncation from generated route summaries
+
+Scope: make generated book spines and the root index read less like search snippets by replacing hard `...` truncation with sentence-aware and word-boundary summary clipping.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `LLM/LLM Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Raised generated route summary limits from short snippet length to book-margin length.
+- Changed both generated-summary cutters to prefer complete sentence boundaries, then readable clause/word boundaries, instead of appending `...`.
+- Added abbreviation protection so initials such as `Thomas H. Cormen` are not treated as sentence endings.
+- Expanded the generated-summary readiness gate so route summaries ending in `...` are rejected.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`; the LLM enrichment pass kept 131 enriched chapter links and changed 94 route summaries after the new clipping rule.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:37:19` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Generated-route summary scan found 1,805 summaries and 0 ellipsis-ended summaries, including 0 ellipsis-ended book-spine summaries.
+- Targeted `rg --pcre2` generated-summary check returned no matches for numbered-list starts, setup-instruction starts, Mermaid directives, summary labels, generic template claims, ellipsis-ended summaries, or bare non-reference LLM chapter bullets in `index.md` / `* Book Reading Spine.md`.
+- Spot check confirmed abbreviation clipping keeps `Thomas H. Cormen` and `Andrew S. Tanenbaum` intact in generated summaries.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`, including the expanded `Generated summary prose` gate.
+- `_ops` bytecode cache is back to the pre-existing baseline: only `personal_kb_monitor.cpython-311.pyc`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Remove administrative generated route summaries
+
+Scope: keep generated book spines and the root index from using metadata or maintenance wording such as `Author:`, `Designer:`, `Navigation table`, `Use this path`, or `This note is` as route summaries.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `LLM/LLM Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Taught both generated-summary extractors to skip metadata starts: `Author:`, `Designer:`, `Paradigm:`, `Typing:`, `Memory:`, `Compiled:`, `Executed:`, `Publisher:`, `Level:`, `Source:`, `Navigation table`, `Use this path`, and `This note is`.
+- Added title-derived summaries for learning paths, study plans, study indexes, source indexes, chapter indexes, language profiles, textbook MOCs, and the priority-queue navigation page.
+- Added `Philosophy:`, `Best For:`, and `Who Uses It:` to summary-label stripping so language profiles can still produce prose when title fallback is not preferred.
+- Expanded the generated-summary readiness gate so administrative starts are rejected in generated route summaries.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic spines and `PersonalKB Book Reading Guide.md`; LLM enrichment kept 131 enriched chapter links.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:41:01` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Targeted generated-summary `rg --pcre2` check returned no matches for numbered/setup/Mermaid/label/admin/ellipsis/bare-LLM patterns in `index.md` / `* Book Reading Spine.md`.
+- Python generated-route scan found 0 summaries starting with `Author:`, `Designer:`, `Navigation table`, `Use this path`, `This note is`, or ending with `...`.
+- Spot checks confirmed book-like replacements for Algorithms Unlocked, Modern Operating Systems, learning paths, language profiles, priority queues, and Japanese study plans.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Join wrapped paragraphs in generated route summaries
+
+Scope: make generated book spines and the root index stop summarizing physical Markdown lines as if they were complete thoughts. Wrapped paragraphs were producing chopped route summaries such as recipe descriptions ending after `The` or `hit decent`.
+
+Changed wiki/source files:
+- `_ops/generate_topic_reading_spines.py`
+- `_ops/personal_kb.py`
+- `LLM/LLM Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Changed both generated-summary extractors to collect wrapped paragraph blocks before cleaning and clipping.
+- Preserved dedicated `One-line summary` blockquote handling while allowing multi-line blockquote summaries if they wrap.
+- Added sentence-ending normalization so generated route summaries finish like prose instead of dangling mid-clause.
+- Expanded the generated-summary readiness gate to reject generated route summaries that do not end with sentence punctuation.
+- Tightened that readiness regex to use spaces/tabs around route separators so it cannot accidentally span between adjacent reference bullets.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; LLM enrichment kept 131 enriched chapter links and changed 15 LLM route summaries.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:49:10` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Targeted generated-summary `rg --pcre2` check returned no matches for numbered/setup/Mermaid/label/admin/ellipsis/bare-LLM/non-sentence patterns in `index.md` / `* Book Reading Spine.md`.
+- Python generated-route scan found 1,817 generated summaries and 0 summaries without sentence-ending punctuation.
+- Spot checks confirmed wrapped recipe and local-LLM summaries now read as complete sentences in both `Recipes/Recipes Book Reading Spine.md` and `index.md`.
+- `_ops` bytecode cache is back to the pre-existing baseline: only `personal_kb_monitor.cpython-311.pyc`.
+- Editorial readiness JSON reports `editorial_readiness_ready: true` with all seven gates `Ready`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Require populated reference footers
+
+Scope: close the gap where a reader-facing article could pass the provenance gate with an empty `## References` heading or literal placeholder reference prose.
+
+Changed wiki/source files:
+- `_ops/personal_kb.py`
+- `LLM/2018–2019 — Pretrained Language Models/Distillation and Model Compression.md`
+- `LLM/2020–2021 — The Scaling Era/Contamination and Data Leakage.md`
+- `LLM/2020–2021 — The Scaling Era/Scaling Laws.md`
+- `LLM/2020–2021 — The Scaling Era/Training Infrastructure and Parallelism.md`
+- `LLM/2020–2021 — The Scaling Era/Vision-Language Models.md`
+- `Project Hail Mary/Characters/Eva Stratt and the Ethics of Existential Response.md`
+- `Project Hail Mary/Novel/Chapter Index.md`
+- `Project Hail Mary/Novel/Novel Ingestion Guide.md`
+- `Project Hail Mary/Propulsion/Hail Mary Ship Design and Systems.md`
+- `LLM/LLM Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/audit-empty-references.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Removed duplicate empty `## References` headings from four LLM scaling-era notes that already had supporting chunks and source-index links below.
+- Replaced placeholder reference text in `Distillation and Model Compression` with LLM source and corpus links.
+- Reordered Project Hail Mary supporting chunks before populated `## References` footers where the reference heading had been empty.
+- Added source-index links to the Project Hail Mary chapter index and ingestion guide.
+- Added `empty_references` to the audit summary, dashboard table, report files, and housekeeping priority.
+- Expanded placeholder detection to catch explicit placeholder-reference prose in reader-facing notes.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed.
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; LLM enrichment kept 131 enriched chapter links.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T02:54:45` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing placeholder hits, 0 missing references, 0 empty references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Focused provenance scan found 971 reader-facing articles, 0 missing reference sections, 0 empty reference sections, and 0 placeholder reference footers.
+- `audit-empty-references.md` reports `Count: 0`.
+- `PersonalKB Wiki Quality Dashboard.md` now includes an `Empty references sections` row and report link.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Validate reader-facing section anchors
+
+Scope: make reader-facing `Page#Heading` wikilinks land on real headings, especially source-index citation anchors that previously passed note-level link checks even when the requested section did not exist.
+
+Changed wiki/source files:
+- `_ops/personal_kb.py`
+- `CS Algorithms/Sources/Sources Index.md`
+- `CS Operating Systems/Sources/Sources Index.md`
+- `CS Algorithms/Cryptography/Cryptography Foundations.md`
+- `Japanese/Study/Eleventh Month Japanese Study Plan.md`
+- `Japanese/Study/Tenth Month Japanese Study Plan.md`
+- `Project Hail Mary/Astrophage/Taumoeba and the Biological Solution.md`
+- `LLM/LLM Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/wiki-broken-anchor-links.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added stable `Citation Anchors` headings to CS Algorithms and CS Operating Systems source indexes for cited sources such as `Cormen 2013`, `Tanenbaum 2015`, `Erickson 2019`, and `MIT OpenCourseWare 6.006`.
+- Added explicit target headings for `Hybrid Encryption (Real-World Practice)` and `Open Questions the Novel Raises`.
+- Updated two Japanese study-plan links to target the exact `✅ Phase 4 Checkpoint` heading.
+- Added source-aware reader-facing section-anchor validation to `_ops/personal_kb.py`.
+- Added `reader_broken_anchor_occurrences`, `wiki-broken-anchor-links.md`, a dashboard health row, a top-broken-section-links section, and a report link.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed.
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; LLM enrichment kept 131 enriched chapter links.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T03:03:12` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing broken section links, 0 reader-facing placeholder hits, 0 missing references, 0 empty references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Independent source-aware anchor scan found 317 reader-facing section links and 0 broken anchors.
+- `wiki-broken-anchor-links.md` reports `Count: 0`.
+- `PersonalKB Wiki Quality Dashboard.md` includes a `Broken section links in reader-facing articles` row and a `Reader-facing broken section links` report link.
+- `_ops` bytecode cache stayed at the pre-existing baseline: only `personal_kb_monitor.cpython-311.pyc`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Qualify ambiguous reader wikilinks
+
+Scope: remove reader-facing wikilinks whose note basename exists in multiple topics, such as generic `Sources Index`, `Chapter Index`, `Graphs Overview`, `Memory Management Overview`, and `Efficient Attention and Long-Context Variants` links.
+
+Changed wiki/source files:
+- `_ops/personal_kb.py`
+- `Welcome.md`
+- 426 reader-facing article notes across CS Algorithms, CS Data Structures, CS Operating Systems, Japanese, LLM, NES Emulation, Programming Languages, Project Hail Mary, and SpaceX
+- `LLM/LLM Book Reading Spine.md`
+- `PersonalKB Book Reading Guide.md`
+- topic `* Book Reading Spine.md` files
+- `PersonalKB Wiki Quality Dashboard.md`
+- `index.md`
+- `_ops/reports/wiki-ambiguous-wikilinks.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Mechanically qualified 607 ambiguous duplicate-name links while preserving visible link labels.
+- Converted the generic Welcome reference to `Sources Index` from a wikilink into plain code text because there is no single universal source-index note.
+- Pointed the nine LLM efficient-attention duplicate links to the full `2024-2025 Frontier and Efficiency` chapter rather than the bridge page.
+- Added `reader_ambiguous_wikilink_occurrences`, `wiki-ambiguous-wikilinks.md`, a dashboard health row, a top ambiguous-links section, a report link, and housekeeping priority text.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed.
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; LLM enrichment kept 131 enriched chapter links.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T03:10:17` with 971 candidate reader-facing articles, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 missing references, 0 empty references, 0 missing confidence, 0 missing up, 0 stubs, 0 empty notes, and 0 orphans.
+- Independent ambiguous-link scan found 0 unqualified reader-facing links whose note basename exists in multiple reader-facing topics.
+- `wiki-ambiguous-wikilinks.md` reports `Count: 0`.
+- `PersonalKB Wiki Quality Dashboard.md` includes an `Ambiguous wikilinks in reader-facing articles` row and a `Reader-facing ambiguous wikilinks` report link.
+- `_ops` bytecode cache stayed at the pre-existing baseline: only `personal_kb_monitor.cpython-311.pyc`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Add freshness classification and currentness review queue
+
+Scope: make time-sensitive wiki drift visible without pretending every live LLM or SpaceX claim was reverified in this pass.
+
+Changed wiki/source files:
+- `_ops/personal_kb.py`
+- 971 reader-facing article notes received `freshness:` frontmatter
+- `PersonalKB Wiki Quality Dashboard.md`
+- `_ops/reports/audit-missing-freshness.md`
+- `_ops/reports/wiki-current-sensitive-review.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added `freshness:` classification to every reader-facing article: 731 `stable` pages and 240 `current-sensitive` pages.
+- Marked SpaceX, recent/frontier LLM, and local-inference operational pages as `current-sensitive`; marked durable academic, language, recipe, fiction, and systems pages as `stable`.
+- Added audit fields for `missing_freshness`, `current_sensitive_articles`, and `current_sensitive_without_review_date`.
+- Added `audit-missing-freshness.md` and `wiki-current-sensitive-review.md`.
+- Updated the quality dashboard with a `Freshness And Currency` section, a missing-freshness health row, a current-sensitive review queue, and report links.
+- Kept `last-verified`, `as-of`, and `source-date` as evidence markers for actual dated refreshes; this pass classified pages but did not assert fresh verification for live claims.
+
+Verification:
+- `python -c "from pathlib import Path; compile(Path('_ops/personal_kb.py').read_text(encoding='utf-8'), '_ops/personal_kb.py', 'exec')"`: passed.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T03:18:45` with 971 candidate reader-facing articles, 0 missing freshness classifications, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans.
+- Independent freshness scan found 731 `stable` reader-facing articles, 240 `current-sensitive` reader-facing articles, 0 missing freshness classifications, and 121 current-sensitive pages missing a dated review marker.
+- `audit-missing-freshness.md` reports `Count: 0`.
+- `wiki-current-sensitive-review.md` reports `Count: 121`; this is the next dated-source refresh queue, not a structural wiki failure.
+- `PersonalKB Wiki Quality Dashboard.md` now reports `Ready as a clean reference wiki, with a visible current-sensitive review queue.`
+- `_ops` bytecode cache stayed at the pre-existing baseline: only `personal_kb_monitor.cpython-311.pyc`.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-06-30] curate | Refresh first LLM frontier-model currentness page
+
+Scope: take the first source-backed item from the current-sensitive review queue and replace stale live-model claims with an explicitly dated snapshot.
+
+Changed wiki/source files:
+- `LLM/2026 — Reasoning and Agents/Frontier Models 2025-2026.md`
+- `LLM/2026 — Reasoning and Agents/2026 — Reasoning and Agents Overview.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `_ops/reports/wiki-current-sensitive-review.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `log.md`
+
+Maintenance changes:
+- Added `last-verified: 2026-06-30` to the detailed frontier-model article and its 2026 era overview.
+- Replaced the stale Claude 4 / GPT-5.4 / Gemini 2.5-centered snapshot with a dated 2026-06-30 snapshot covering Claude Fable/Mythos 5 with Opus 4.8 availability fallback, GPT-5.5 / GPT-5.4, Gemini 3.x / 3.5, Llama 4, DeepSeek-R1, Qwen3, Mistral 3, and Cohere Command A-family models.
+- Added external source links directly in the frontier-model article for OpenAI, Anthropic, Google, Meta, DeepSeek, Qwen, Mistral, and Cohere.
+- Kept the page framed as a snapshot, not a timeless leaderboard.
+- Removed the superseded supporting-chunk block whose visible link labels still described the older Claude 4 / GPT-5.4 / Gemini 2.5 snapshot.
+
+Verification:
+- Web sources checked: OpenAI model docs and GPT-5.5 announcement; Anthropic model overview and Fable/Mythos 5 update; Google Gemini model docs and Gemini 3.5 announcement; Meta Llama 4 announcement; DeepSeek-R1 repository; Qwen3 announcement; Mistral 3 announcement; Cohere Command A+ announcement.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-06-30T03:25:51` with 971 candidate reader-facing articles, 0 missing freshness classifications, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans.
+- `wiki-current-sensitive-review.md` now reports `Count: 120`.
+- `PersonalKB Wiki Quality Dashboard.md` now reports 240 current-sensitive reader-facing articles and 120 current-sensitive pages missing a dated review marker.
+- Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.

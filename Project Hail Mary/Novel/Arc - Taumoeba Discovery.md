@@ -6,9 +6,10 @@ tags:
   - taumoeba
   - science
   - discovery
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 source_mode: primary-synthesis
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Arc - Taumoeba Discovery
@@ -172,7 +173,7 @@ flowchart TD
 ## References
 - [[PHM Chapter Summaries - Secondary Sources Registry]]
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (fictional)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Taumoeba and the Biological Solution]]
 - [[Astrophage Life Cycle and Migration]]
 - [[Taumoeba - Fictional predator of Astrophage native to Tau Ceti system]]

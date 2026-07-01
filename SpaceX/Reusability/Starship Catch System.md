@@ -3,6 +3,7 @@ tags: [spacex, reusability]
 up: "[[Reusability Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Starship Catch System
@@ -89,4 +90,4 @@ On October 13, 2024, during IFT-5, Booster 13 launched, separated from the Ship,
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

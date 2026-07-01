@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Emulator Architecture Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Save States and Rewind
@@ -81,4 +82,4 @@ Design a validation test that would prove `load_state()` restores not only visib
 *See also:* [[OxideNES Module Architecture]], [[Main Loop and Cycle Ratios]], [[Emulator Architecture Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

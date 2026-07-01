@@ -2,10 +2,13 @@
 tags: [japanese, vocabulary, thematic, travel]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Thematic Vocabulary — Travel and Transportation
+
+> **One-line summary:** Travel and transportation vocabulary covers vehicles, stations, places, directions, tickets, and movement verbs for getting around.
 
 ```mermaid
 flowchart TD
@@ -20,9 +23,9 @@ flowchart TD
 
 ## 🎯 Intuition
 
-**The Core Idea:** Understanding Thematic Vocabulary — Travel and Transportation is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+**The Core Idea:** Combine place nouns with movement verbs and particles: place + に/へ行く, vehicle + で行く, and destination + まで.
+**Analogy:** Travel vocabulary is a route plan: each word tells you where you are, where you are going, and how you get there.
+**Why It Matters:** Stations, tickets, directions, delays, and hotel check-ins are common moments where passive vocabulary is not enough.
 
 ## ⚙️ Core Mechanics
 
@@ -91,4 +94,4 @@ flowchart TD
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

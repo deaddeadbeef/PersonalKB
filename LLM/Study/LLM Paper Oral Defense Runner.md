@@ -2,6 +2,7 @@
 tags: [study, llm, papers, oral-defense, recall, academic, local-llm, audit, evidence, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, deep-dive, practice]
 last-verified: 2026-06-15
 ---

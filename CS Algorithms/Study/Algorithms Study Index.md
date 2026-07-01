@@ -3,11 +3,24 @@ tags:
   - csa
   - csa/study
 up: "[[CS Algorithms]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Algorithms Study Index
 
 Central index for all CS Algorithms active-recall drill notes. Each drill note covers one domain of the wiki, distilled into questions, contrasts, and common-mistake warnings. Use this index to plan review sessions and track which areas need more repetitions.
+
+## Start Here By Goal
+
+Do not start with drills unless you are already reviewing. Use this page to choose the next kind of work.
+
+| Goal | Start with | Then use | Proof you should leave behind |
+|---|---|---|---|
+| Read algorithms as a book | [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] | [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]], [[CS Algorithms/Techniques/Techniques Overview|Techniques Overview]] | A one-page map from problem shape to algorithm family |
+| Choose an algorithm for implementation | [[CS Algorithms/Study/Algorithm Complexity Cheatsheet|Algorithm Complexity Cheatsheet]] | [[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]], [[CS Algorithms/Strings/Strings Overview|Strings Overview]], [[CS Algorithms/Compression/Data Compression Overview|Data Compression Overview]] | A constraint table: input size, graph/string/data shape, cost target, and failure mode |
+| Prove or explain a cost bound | [[CS Algorithms/Analysis/Foundations and Analysis Overview|Foundations and Analysis Overview]] | [[CS Algorithms/Complexity/Complexity Theory Overview|Complexity Theory Overview]], [[CS Algorithms/Divide and Conquer/Divide and Conquer Overview|Divide and Conquer Overview]] | A recurrence, invariant, reduction, or lower-bound explanation in your own words |
+| Prepare for recall | [[CS Algorithms/Study/Foundations and Analysis - Review Drill|Foundations and Analysis - Review Drill]] | The matching drill note in the table below | A list of missed questions and the canonical pages reopened to fix them |
 
 ---
 
@@ -71,4 +84,6 @@ Each drill note uses `up: [[Algorithms Study Index]]` and provides `## Links Bac
 - Update drill notes when canonical pages are substantially deepened.
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Sources/Sources Index]]

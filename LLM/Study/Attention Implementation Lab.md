@@ -2,6 +2,7 @@
 tags: [study, llm, attention, implementation, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice, deep-dive]
 ---
 

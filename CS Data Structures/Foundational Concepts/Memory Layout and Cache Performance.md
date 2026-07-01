@@ -2,6 +2,7 @@
 tags: [cs-ds, foundational]
 up: "[[Foundational Concepts Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 created: 2025-07-14
 ---
@@ -103,7 +104,7 @@ These effects reshape data-structure selection. B-trees outperform binary search
 
 ---
 
-*See also:* [[Pointer-Based vs Array-Based Structures]] | [[Asymptotic Analysis and Big-O Notation]] | [[B-Trees and B-Plus Trees|B-Trees]] | [[Hash Tables and Hash Functions|Hash Tables]] | [[Data Structure Comparison and Selection]] | **CS Algorithms:** Cache-Oblivious Algorithms | External Memory Algorithms
+*See also:* [[Pointer-Based vs Array-Based Structures]] | [[Asymptotic Analysis and Big-O Notation]] | [[CS Data Structures/Trees/B-Trees and B-Plus Trees|B-Trees]] | [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] | [[Data Structure Comparison and Selection]] | **CS Algorithms:** [[CS Data Structures/Advanced Structures/Cache-Oblivious Structures|Cache-Oblivious Algorithms]] | [[CS Data Structures/Advanced Structures/External Memory Structures|External Memory Algorithms]]
 
 ## Supporting Chunks
 

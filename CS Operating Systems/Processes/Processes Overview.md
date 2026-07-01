@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Processes Overview
 
@@ -68,4 +70,6 @@ How operating systems create, manage, schedule, and communicate between running 
 - **[[Deadlocks Overview]]** — blocking on shared resources (covered in Processes) can lead to deadlock.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

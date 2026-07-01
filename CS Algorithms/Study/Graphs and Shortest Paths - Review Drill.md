@@ -4,7 +4,9 @@ tags:
   - csa/study
   - csa/graphs
 up: "[[Algorithms Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Graphs and Shortest Paths — Review Drill
 
@@ -175,4 +177,6 @@ A: After the algorithm finishes, check the diagonal: if D[i][i] < 0 for any i, v
 - [[Floyd-Warshall Algorithm]] — all-pairs DP; $\Theta(n³)$; negative cycle detection
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Sources/Sources Index]]

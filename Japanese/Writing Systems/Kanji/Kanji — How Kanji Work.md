@@ -2,6 +2,7 @@
 tags: [japanese, kanji, writing-systems]
 up: "[[Writing Systems Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -134,4 +135,4 @@ See [[Kanji Learning Strategies]] for detailed approaches.
 Write a short self-introduction using all three scripts: your name in katakana, a greeting in hiragana, and at least one common kanji (人, 大, 日).
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

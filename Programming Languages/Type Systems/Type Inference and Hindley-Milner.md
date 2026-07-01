@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, type-systems, inference]
 up: "[[Type Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -70,4 +72,4 @@ Historically, HM matters because it established a sweet spot: expressive enough 
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

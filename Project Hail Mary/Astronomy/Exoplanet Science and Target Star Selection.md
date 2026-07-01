@@ -8,6 +8,7 @@ tags:
   - habitability
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Exoplanet Science and Target Star Selection
@@ -122,7 +123,7 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Britannica PHM Science]] — star system context
-- [[Sources Index#Northeastern Accuracy Discussion]] — fact-check of astronomical claims
+- [[Project Hail Mary/Sources/Sources Index#Britannica PHM Science|Britannica PHM Science]] — star system context
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — fact-check of astronomical claims
 
 ## Supporting Chunks

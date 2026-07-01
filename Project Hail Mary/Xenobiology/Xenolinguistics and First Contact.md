@@ -11,6 +11,7 @@ tags:
   - seti
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Xenolinguistics and First Contact
@@ -158,8 +159,8 @@ graph TD
 
 ## References
 
-- [[Sources Index#Linguistic Discovery Eridian]] — academic analysis of Eridian language design
-- [[Sources Index#Northeastern Accuracy Discussion]] — communication plausibility
+- [[Project Hail Mary/Sources/Sources Index#Linguistic Discovery Eridian|Linguistic Discovery Eridian]] — academic analysis of Eridian language design
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — communication plausibility
 
 ## Supporting Chunks
 

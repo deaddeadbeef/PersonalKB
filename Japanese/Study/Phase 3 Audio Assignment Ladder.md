@@ -2,6 +2,7 @@
 tags: [japanese, audio, phase-3, assignment, practice, pitch]
 up: "[[Phase 3 Weekly Review]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

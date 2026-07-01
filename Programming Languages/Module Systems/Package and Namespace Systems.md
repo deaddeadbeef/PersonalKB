@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, module-systems, packages]
 up: "[[Module Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -92,4 +94,4 @@ JavaScript's module history — from global scripts, through CommonJS and AMD, t
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

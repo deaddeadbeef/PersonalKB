@@ -1,7 +1,9 @@
 ---
 tags: [study, nes-emulation, architecture]
 up: "[[NES Emulation Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — Emulator Architecture
 
@@ -34,4 +36,7 @@ Test your understanding of OxideNES design and features.
 > Core (bus, cpu, ppu, apu, mapper) handles pure emulation. main.rs (~7,572 lines) wraps it with window, CRT pipeline, input, audio, save states, rewind, netplay, Lua, achievements, and config. This keeps the core testable and platform-independent.
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/Study/NES Emulation Study Index]]
+- [[NES Emulation/Sources/Sources Index]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]

@@ -2,6 +2,7 @@
 tags: [cs-ds, study, cheatsheet]
 up: "[[CS Data Structures Study Index]]"
 confidence: verified
+freshness: stable
 ---
 
 # DS Cheatsheet — Operation Complexities

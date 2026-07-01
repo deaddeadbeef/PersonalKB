@@ -2,6 +2,7 @@
 tags: [llm, evaluation]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -88,7 +89,7 @@ Chatbot Arena became the public leaderboard that many practitioners treat as the
 1. Design a human-evaluation protocol that reduces verbosity and position bias while staying affordable enough to run at scale.
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

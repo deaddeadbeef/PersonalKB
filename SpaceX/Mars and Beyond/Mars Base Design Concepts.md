@@ -2,6 +2,7 @@
 tags: [spacex, mars]
 up: "[[Mars and Beyond Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Mars Base Design Concepts
@@ -98,7 +99,10 @@ Radiation protection shapes every structural decision. Mars lacks a global magne
 
 ---
 
-*See also:* [[Mars and Beyond Overview]], [[Sources Index]]
+*See also:* [[Mars and Beyond Overview]], [[SpaceX/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

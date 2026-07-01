@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Case Studies Overview
 
@@ -52,9 +54,11 @@ Abstract OS concepts become concrete in real systems. This domain examines three
 
 - **[[OS Foundations Overview]]** — Linux and Windows NT are direct applications of the monolithic/hybrid architecture concepts.
 - **[[Processes Overview]]** — CFS scheduling (Linux) and Windows NT process model are Processes concepts in practice.
-- **[[Memory Management Overview]]** — Linux's memory subsystem (zone allocator, SLUB, mmap) is virtual memory applied.
+- **[[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]]** — Linux's memory subsystem (zone allocator, SLUB, mmap) is virtual memory applied.
 - **[[Security Overview]]** — Android's permission model and Windows NT's access token system are Security concepts in action.
 - **[[Design Principles Overview]]** — VFS (Linux) and HAL (Windows NT) are textbook applications of mechanism-vs-policy.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

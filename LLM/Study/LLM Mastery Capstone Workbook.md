@@ -2,6 +2,7 @@
 tags: [study, llm, capstone, mastery]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

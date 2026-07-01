@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 24
 
-← [[PHM Novel - Chapter 23]] | [[Chapter Index]] | [[PHM Novel - Chapter 25]] →
+← [[PHM Novel - Chapter 23]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 25]] →
 
 > **One-line summary** — Grace and Rocky successfully breed nitrogen-tolerant Taumoeba, refuel both missions, exchange gifts, and say goodbye.
 
@@ -103,7 +104,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (p. 445–465)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Taumoeba and the Biological Solution]]
 - [[Rocky and the Eridians]]
 - [[The Hail Mary Drive]]

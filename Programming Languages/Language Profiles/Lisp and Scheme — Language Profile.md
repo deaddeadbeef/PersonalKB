@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, lisp, scheme]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # Lisp and Scheme — Language Profile
 
@@ -83,7 +84,10 @@ Paul Graham: *"Lisp is worth learning for the profound enlightenment experience 
 
 ### References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

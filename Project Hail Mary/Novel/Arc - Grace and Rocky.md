@@ -7,9 +7,10 @@ tags:
   - rocky
   - first-contact
   - relationship
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 source_mode: primary-synthesis
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Arc - Grace and Rocky
@@ -169,6 +170,6 @@ flowchart TD
 
 - [[PHM Chapter Summaries - Secondary Sources Registry]] — secondary sources for chapter-note bootstrap
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (fictional)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Rocky and the Eridians]]
 - [[Ryland Grace]]

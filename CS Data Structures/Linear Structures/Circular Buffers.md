@@ -2,6 +2,7 @@
 tags: [cs-ds, linear]
 up: "[[Linear Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Circular Buffers
@@ -132,7 +133,7 @@ function peek(cb):
 
 ---
 
-*See also:* [[Queues and Deques]] | Producer-Consumer Pattern | Memory-Mapped I/O | **CS Algorithms:** [[BFS and DFS]]
+*See also:* [[Queues and Deques]] | [[CS Operating Systems/Synchronization/Synchronization Overview|Producer-Consumer Pattern]] | [[CS Operating Systems/IO/IO Overview|Memory-Mapped I/O]] | **CS Algorithms:** [[BFS and DFS]]
 
 ## Supporting Chunks
 

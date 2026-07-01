@@ -2,6 +2,7 @@
 tags: [csa, csa/greedy]
 up: "[[Greedy Algorithms Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Fractional Knapsack
@@ -114,7 +115,7 @@ Sorting dominates. The greedy pass is $O(n)$. Space depends on sorting algorithm
 
 ---
 
-*See also:* [[Greedy Algorithms Overview]] · [[Activity Selection Problem]] · [[Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Arrays]] · Sorted Arrays
+*See also:* [[Greedy Algorithms Overview]] · [[Activity Selection Problem]] · [[CS Algorithms/Analysis/Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Arrays]] · [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Sorted Arrays]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

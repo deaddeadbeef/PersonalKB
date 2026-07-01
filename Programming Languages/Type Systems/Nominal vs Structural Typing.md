@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, type-systems, nominal-structural]
 up: "[[Type Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -70,4 +72,4 @@ OCaml's split design is historically interesting because it demonstrates that a 
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

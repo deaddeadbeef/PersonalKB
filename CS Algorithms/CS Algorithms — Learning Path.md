@@ -1,11 +1,24 @@
 ---
 tags: [csa, learning-path]
 up: "[[CS Algorithms]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # CS Algorithms — Learning Path
 
 > This path is designed for **progressive learning** — you don't read everything at once. Make multiple passes, each going deeper.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read algorithms like a book | [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Choose drills or an algorithm-selection route | [[CS Algorithms/Study/Algorithms Study Index|Algorithms Study Index]] |
+| Verify proof, recurrence, complexity, or source claims | [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]] |
+
+Use this path when you want breadth-before-depth progression. Use the book spine when you want the narrative order, and use the study index when you are testing recall or making an implementation choice.
 
 ## How to Use This Path
 
@@ -198,4 +211,6 @@ confidence: policy
 *Part of [[CS Algorithms]]. See also: [[CS Data Structures — Learning Path]]*
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]
+- [[CS Algorithms/Sources/Sources Index]]

@@ -2,6 +2,7 @@
 tags: [japanese, learning-path, phase-1]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -128,7 +129,7 @@ Before moving to [[Phase 2 — Building Blocks]], verify:
 **Next:** [[Phase 2 — Building Blocks]]
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Phase 1 Audio Coverage Map]]
 - [[Phase 1 Authentic Audio Spine]]
 - [[Phase 1 Local Audio Practice]]

@@ -2,6 +2,7 @@
 tags: [japanese, moc]
 up: "[[Welcome]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -14,6 +15,16 @@ tier-coverage: [intuition, core, deep-dive, practice]
 This vault is for learning Japanese in a systematic way: kana first, then basic grammar and survival vocabulary, then listening, reading, speaking, and kanji in a controlled sequence. Treat JLPT levels as a map of proficiency, not as the only goal.
 
 The main rule is focus. Use one course spine, keep reviews daily, and use the rest of the vault as explanation and retrieval practice rather than as a pile of pages to read randomly.
+
+## Reader Router
+
+| Need | Open | Why |
+|---|---|---|
+| Decide what to do today | [[Japanese Learning Dashboard]] | Daily control panel for current phase, routine, checkpoint, and next action |
+| Read Japanese like a book | [[Japanese/Japanese Book Reading Spine|Japanese Book Reading Spine]] | Curated staged path through scripts, grammar, vocabulary, listening, output, and culture |
+| Find all study material | [[Japanese/Study/Japanese Study Index|Japanese Study Index]] | Central route to plans, routines, audio ladders, drills, and resources |
+| Check sources and resource policy | [[Japanese/Sources/Sources Index|Japanese Sources Index]] | Source map for learning materials, audio, tools, and provenance |
+| Consume the full vault in order | The Start Here path below | Phase-by-phase reading order with proof checkpoints |
 
 ## Start Here
 
@@ -235,7 +246,7 @@ Use these when you need lookup or comparison, not as required first-pass reading
 - [[Speaking Overview]]
 - [[Culture Overview]]
 - [[Japanese Study Index]]
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 
 ## Learning Path
 
@@ -355,4 +366,4 @@ The phase pages are the backbone. The Start Here sequence above tells you the co
 ---
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

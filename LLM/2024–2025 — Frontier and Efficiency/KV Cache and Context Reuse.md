@@ -2,6 +2,7 @@
 tags: [llm, inference]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -98,16 +99,16 @@ For local operations, use [[LLM/Study/Local LLM KV Cache Sizing Runner|Local LLM
 
 ## Supporting Chunks
 
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] — decode bottleneck caused by reading cached keys and values
-- [[chunk-llm-213 Multi-Query Attention Shared KV Heads]] — MQA as an architectural cache-size reduction
-- [[chunk-llm-217 GQA Mechanism Interpolating MHA and MQA]] — GQA as the practical middle ground between MHA and MQA
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — cache allocation as virtual-memory-style paging
-- [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]] — shared-prefix and beam-search cache reuse
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]] — decode bottleneck caused by reading cached keys and values
+- [[LLM/_chunks/chunk-llm-213 Multi-Query Attention Shared KV Heads|chunk-llm-213]] — MQA as an architectural cache-size reduction
+- [[LLM/_chunks/chunk-llm-217 GQA Mechanism Interpolating MHA and MQA|chunk-llm-217]] — GQA as the practical middle ground between MHA and MQA
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]] — cache allocation as virtual-memory-style paging
+- [[LLM/_chunks/chunk-llm-119 PagedAttention Copy-on-Write Sharing|chunk-llm-119]] — shared-prefix and beam-search cache reuse
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] — local evidence for KV pressure, preemption, slots, and batching decisions
 - [[LLM/Study/Local LLM KV Cache Sizing Runner]] — head-aware local cache sizing evidence for MHA, MQA, and GQA model choices
 - [[LLM/Study/Local LLM Observability and Operations Runbook]] — local evidence for cache pressure and resource counters
 - [[LLM/Study/Local LLM Prompt Cache and KV Reuse Lab]] — local repeated-prefix, prompt-cache, and cache-hit evidence
-- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]] — prefix caching for repeated context
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]] — prefix caching for repeated context
 
 ---
 

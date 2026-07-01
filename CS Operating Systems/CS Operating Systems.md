@@ -4,12 +4,22 @@ tags:
   - moc
 up: "[[Welcome]]"
 confidence: verified
+freshness: stable
+tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # CS Operating Systems
 
 Master index for the *CS Operating Systems* knowledge base. Built around Andrew S. Tanenbaum's *Modern Operating Systems*, 4th ed. (Pearson, 2015) as the primary entry point — a comprehensive treatment of OS theory and practice covering processes, memory management, file systems, I/O, deadlocks, virtualisation, multiprocessors, security, and major case studies.
 
-> 📚 **New here?** Start with the [[CS Operating Systems — Learning Path|Learning Path]] for a guided, progressive tour.
+## Start Here
+
+| Need | Open | Why |
+|---|---|---|
+| Read operating systems like a book | [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] | Curated path from processes and memory to files, I/O, virtualization, security, and case studies |
+| Follow the textbook route | [[CS Operating Systems/CS Operating Systems — Learning Path|CS Operating Systems Learning Path]] | Guided progression built around Modern Operating Systems |
+| Debug a systems question or review | [[CS Operating Systems/Study/OS Study Index|OS Study Index]] | Goal router, active-recall drills, and mechanism-to-symptom routes |
+| Check provenance | [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]] | Source map for textbook and supporting material |
+| Browse the catalog | This page below | Domain hubs, books, study pages, sources, and infrastructure |
 
 ---
 
@@ -20,7 +30,7 @@ Follow the hubs in this dependency order for a coherent first pass through the k
 1. [[OS Foundations Overview]] — what an OS is; kernel/user space; monolithic vs microkernel
 2. [[Processes Overview]] — process model; scheduling; threads; IPC
 3. [[Synchronization Overview]] — race conditions; semaphores; monitors; classic problems
-4. [[Memory Management Overview]] — address spaces; paging; TLBs; page replacement
+4. [[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]] — address spaces; paging; TLBs; page replacement
 5. [[File Systems Overview]] — file abstraction; directories; inodes; journaling
 6. [[IO Overview]] — device controllers; interrupts; DMA; disk scheduling
 7. [[Deadlocks Overview]] — Coffman conditions; prevention; avoidance; detection
@@ -60,7 +70,7 @@ Race conditions, critical sections, and the primitives (semaphores, monitors) an
 
 From bare address spaces through virtual memory, paging, TLBs, and page-replacement algorithms — the complete memory abstraction stack.
 
-→ **[[Memory Management Overview]]**
+→ **[[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]]**
 
 ---
 
@@ -169,4 +179,6 @@ Drill notes for active recall and review.
 | [[CS Operating Systems/_queries/QnA System Roadmap|QnA System Roadmap]] | Phase plan for the query system |
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]
+- [[CS Operating Systems/Sources/Sources Index]]

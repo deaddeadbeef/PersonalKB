@@ -2,6 +2,7 @@
 tags: [cs-ds, caching]
 up: "[[Advanced Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # LRU and LFU Caches
@@ -117,7 +118,7 @@ Design an **adaptive cache** that dynamically switches between LRU and LFU behav
 
 ---
 
-*See also:* [[Hash Tables and Hash Functions|Hash Tables]] · [[Doubly Linked Lists and Circular Lists|Doubly Linked Lists]] · [[Cache-Oblivious Structures]] | **CS Algorithms:** Online Algorithms · Competitive Analysis
+*See also:* [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] · [[CS Data Structures/Linear Structures/Doubly Linked Lists and Circular Lists|Doubly Linked Lists]] · [[Cache-Oblivious Structures]] | **CS Algorithms:** [[CS Algorithms/Techniques/Online Algorithms and Competitive Analysis|Online Algorithms]] · [[CS Algorithms/Techniques/Online Algorithms and Competitive Analysis|Competitive Analysis]]
 
 ## Supporting Chunks
 - [[chunk-ds-004 DLL plus hash map gives O1 LRU cache operations]]

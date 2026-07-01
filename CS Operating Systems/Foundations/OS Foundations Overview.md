@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # OS Foundations Overview
 
@@ -54,4 +56,6 @@ The conceptual bedrock of operating systems: what an OS is, why it exists, how i
 - **[[Case Studies Overview]]** — Linux (monolithic + modules), Windows NT (hybrid), Minix (microkernel) are Foundations concepts in practice.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

@@ -3,7 +3,9 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Divide and Conquer Overview — Domain
 
@@ -52,4 +54,6 @@ Divide and conquer breaks a problem into smaller subproblems of the same type, s
 - **[[Greedy Overview]]** — contrasting paradigm: greedy makes one choice per step rather than recursing.
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

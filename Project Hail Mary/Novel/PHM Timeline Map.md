@@ -9,9 +9,10 @@ tags:
   - timeline
   - navigation
   - moc
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 source_mode: primary-synthesis
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Timeline Map
@@ -27,7 +28,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 Navigation foundation for the chapter layer of *Project Hail Mary*. Use this note to orient yourself in the novel's dual-timeline structure before drilling into individual chapters or arc notes.
 
 > [!info] Primary-synthesis note
-> This note synthesizes the primary-mode chapter notes in [[Chapter Index]], all verified directly from [[Weir 2021 - Project Hail Mary Novel]]. Chapter boundary placements, beat assignments, and thematic groupings are based on EPUB-verified chapter content.
+> This note synthesizes the primary-mode chapter notes in [[Project Hail Mary/Novel/Chapter Index|Chapter Index]], all verified directly from [[Weir 2021 - Project Hail Mary Novel]]. Chapter boundary placements, beat assignments, and thematic groupings are based on EPUB-verified chapter content.
 
 ---
 
@@ -149,7 +150,7 @@ The map highlights how Weir uses alternating timelines to distribute exposition 
 
 ### Connections
 
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Arc - Grace and Rocky]]
 - [[Arc - Astrophage Crisis Escalation]]
 - [[Arc - Xenolinguistics Progression]]
@@ -181,7 +182,7 @@ flowchart TD
 
 ## References
 
-- [[Chapter Index]] — full chapter list with source-mode legend
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] — full chapter list with source-mode legend
 - [[PHM Chapter Summaries - Secondary Sources Registry]] — secondary sources used for the chapter bootstrap
 - [[Arc - Grace and Rocky]]
 - [[Arc - Astrophage Crisis Escalation]]

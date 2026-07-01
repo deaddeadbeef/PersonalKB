@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/strings
 confidence: verified
+freshness: stable
 up: "[[Strings Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -134,15 +135,20 @@ When a mismatch occurs at position q+1 in P, instead of resetting q to 0 (naïve
 
 ---
 
-*See also:* [[LCS - Longest Common Subsequence]], [[Edit Distance]], [[Asymptotic Notation]], [[Arrays and Dynamic Arrays|Array]], [[CS Data Structures]]
+*See also:* [[LCS - Longest Common Subsequence]], [[Edit Distance]], [[Asymptotic Notation]], [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Array]], [[CS Data Structures]]
 
-## Supporting Chunks
+## Supporting Chunks / References
 
 ### Supporting Chunks
 
 - [[Strings - KMP failure function enables Theta(n+m) string matching]]
 - [[Strings - KMP failure function is computed on the pattern alone and is independent of the text]]
 
-## References
+### References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]], Chapter 7. See [[CS Algorithms/Sources/Sources Index#CP Algorithms - Online Reference|Sources Index]], KMP article. See [[LCS - Longest Common Subsequence]] and [[Edit Distance]] for other string algorithms.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

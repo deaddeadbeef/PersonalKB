@@ -2,6 +2,7 @@
 tags: [study, llm, adaptation, fine-tuning, sft, peft, lora, qlora, dpo, dataset, evaluation, evidence, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [deep-dive, practice]
 last-verified: 2026-06-16
 ---

@@ -2,6 +2,7 @@
 tags: [llm, alignment]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -85,7 +86,7 @@ This taxonomy shapes how modern post-training methods are evaluated. It explains
 1. Design an evaluation setup that could detect whether a model is being helpful, harmless, and honest without simply incentivizing it to game the metrics.
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

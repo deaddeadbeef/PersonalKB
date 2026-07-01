@@ -2,6 +2,7 @@
 tags: [spacex, starship]
 up: "[[Starship Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -83,4 +84,7 @@ The variant table shows how Starship shifts from a cargo launcher to a refueling
 - Design a phased roadmap for which Starship variants should be prioritized first if the goal is to build a self-supporting lunar and Mars logistics ecosystem as quickly as possible.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

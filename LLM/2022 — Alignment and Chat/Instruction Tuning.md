@@ -2,6 +2,7 @@
 tags: [llm, fine-tuning]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -134,16 +135,15 @@ Design a small instruction-tuning dataset for a domain assistant. List at least 
 - [[Open-Weight Model Ecosystem]] — open instruction-tuned model families
 - [[Multi-Agent Systems]] — instruction-following capability enables agent use cases
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
 - [[Supervised Fine-Tuning]] — The underlying training mechanism
-- Self-Instruct and Data Generation — Synthetic data creation methods
-- Zero-Shot and Few-Shot Learning — Evaluation paradigms
-- [[Reinforcement Learning from Human Feedback|RLHF (Reinforcement Learning from Human Feedback)]] — Post-instruction-tuning alignment
+- [[LLM/_raw/raw-llm-051 Self-Instruct Aligning LMs with Self-Generated Instructions|Self-Instruct and Data Generation]] — Synthetic data creation methods
+- [[LLM/2020–2021 — The Scaling Era/Few-Shot Prompting|Zero-Shot and Few-Shot Learning]] — Evaluation paradigms
+- [[LLM/2022 — Alignment and Chat/Reinforcement Learning from Human Feedback|RLHF]] — Post-instruction-tuning alignment
 
-## References
+### References
 
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Wei et al. 2021: FLAN original paper

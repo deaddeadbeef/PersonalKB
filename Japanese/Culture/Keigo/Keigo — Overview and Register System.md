@@ -1,7 +1,9 @@
 ---
 tags: [japanese, culture, keigo]
 up: "[[Culture Overview]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Keigo — Overview and Register System
 
@@ -46,4 +48,4 @@ Your boss is uchi when talking to a client (so you use humble forms for your bos
 - [[Social Register — When to Use What]]
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [japanese, speaking, hub]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -30,7 +31,7 @@ Speaking Japanese requires mastering pronunciation, pitch accent, appropriate fo
 - [[Conversation Patterns — Greetings and Introductions]]
 - [[Conversation Patterns — Daily Interactions]]
 - [[Conversation Patterns — Shopping and Restaurants]]
-- Conversation Patterns — Expressing Opinions
+- [[Japanese/Speaking/Conversation Patterns/Conversation Patterns — Daily Interactions|Conversation Patterns — Expressing Opinions]]
 - [[Self-Introduction Template]]
 
 ### Fluency Tools
@@ -61,7 +62,7 @@ For Phase 5 production, use [[Phase 5 Audio Assignment Ladder]] to choose the cu
 6. **Role-play** — practice situational dialogues
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Phase 3 Pitch Accent Practice Path]]

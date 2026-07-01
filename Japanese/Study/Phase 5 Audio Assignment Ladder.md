@@ -2,6 +2,7 @@
 tags: [japanese, audio, phase-5, assignment, practice, native-source, output]
 up: "[[Phase 5 Weekly Review]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

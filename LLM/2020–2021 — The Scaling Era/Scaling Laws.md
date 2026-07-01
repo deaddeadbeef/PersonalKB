@@ -2,6 +2,7 @@
 tags: [llm, pretraining]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Scaling Laws
@@ -85,9 +86,8 @@ Scaling laws made large-scale pretraining forecastable, enabling GPT-3-era resou
 
 *See also:* [[LLM/Pretraining/Compute Data and Parameter Trade-offs|Compute-Data Trade-offs]], [[LLM/Evaluation and Benchmarks/Knowledge and Reasoning Benchmarks|Benchmarks]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks / References
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

@@ -2,6 +2,7 @@
 tags: [llm, fine-tuning]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # LoRA and QLoRA
@@ -126,16 +127,16 @@ LoRA is the default PEFT method because it matches full fine-tuning quality on m
 ### Challenge
 1. If a 65B model must be fine-tuned on a single 48GB GPU, explain how NF4 quantization, double quantization, paged optimizers, and low-rank adapters work together to make that feasible—and where the remaining bottlenecks still are.
 
-*See also:* [[LLM/Inference and Serving/Quantization|Quantization]] — QLoRA combines quantization with LoRA; [[LLM/Fine-Tuning and Adaptation/Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]] — LoRA mitigates forgetting by freezing base weights
-
-## Supporting Chunks
-### Supporting Chunks
-- [[Parameter-Efficient Fine-Tuning]] — PEFT landscape overview
-- [[Quantization|Quantization Techniques]] — 4-bit NF4, GPTQ, AWQ details
-- Multi-Adapter Serving — Deployment architectures
-- [[Supervised Fine-Tuning]] — Full fine-tuning baseline
+*See also:* [[LLM/2022 — Alignment and Chat/Quantization|Quantization]] — QLoRA combines quantization with LoRA; [[LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]] — LoRA mitigates forgetting by freezing base weights
 
 ## References
+### Supporting Chunks
+- [[Parameter-Efficient Fine-Tuning]] — PEFT landscape overview
+- [[LLM/2022 — Alignment and Chat/Quantization|Quantization Techniques]] — 4-bit NF4, GPTQ, AWQ details
+- [[LLM/_chunks/chunk-llm-028 Multi-Adapter Serving on Shared Base Model|Multi-Adapter Serving]] — Deployment architectures
+- [[Supervised Fine-Tuning]] — Full fine-tuning baseline
+
+### References to Sources Index
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Hu et al. 2021: LoRA original paper
 - Dettmers et al. 2023: QLoRA (4-bit quantization + LoRA)

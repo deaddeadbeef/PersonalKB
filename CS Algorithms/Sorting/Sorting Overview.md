@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/sorting
 confidence: verified
+freshness: stable
 up: "[[CS Algorithms]]"
 ---
 # Sorting Overview

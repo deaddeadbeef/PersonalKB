@@ -11,6 +11,7 @@ tags:
   - xenonite
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Xenonite — Eridian Structural Material
@@ -159,8 +160,8 @@ graph TD
 
 ## References
 
-- [[Sources Index#NASA NTRS UHTC]] — ultra-high-temperature ceramics properties and aerospace applications
-- [[Sources Index#Northeastern Accuracy Discussion]] — xenonite plausibility in overall accuracy assessment
+- [[Project Hail Mary/Sources/Sources Index#NASA NTRS UHTC|NASA NTRS UHTC]] — ultra-high-temperature ceramics properties and aerospace applications
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — xenonite plausibility in overall accuracy assessment
 
 ## Supporting Chunks
 

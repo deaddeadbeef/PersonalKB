@@ -4,13 +4,22 @@ tags:
   - moc
 up: "[[Welcome]]"
 confidence: verified
+freshness: stable
+tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # CS Algorithms
 
 Master index for the *CS Algorithms* knowledge base. Built around Thomas H. Cormen's *Algorithms Unlocked* (MIT Press, 2013) as the primary entry point — an accessible introduction covering correctness, asymptotic analysis, sorting, searching, graphs, strings, cryptography, compression, and complexity theory.
-> 📚 **New here?** Start with the [[CS Algorithms — Learning Path|Learning Path]] for a guided, progressive tour.
 
+## Start Here
 
+| Need | Open | Why |
+|---|---|---|
+| Read algorithms like a book | [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] | Curated narrative path through proof, cost, families, graphs, strings, compression, and limits |
+| Follow the original course path | [[CS Algorithms/CS Algorithms — Learning Path|CS Algorithms Learning Path]] | Guided progression built around the source material |
+| Practice retrieval or choose a review route | [[CS Algorithms/Study/Algorithms Study Index|Algorithms Study Index]] | Goal router, active-recall drills, and session patterns |
+| Check provenance | [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]] | Source map for textbook and supporting material |
+| Browse the catalog | This page below | Domain hubs, books, study pages, sources, and infrastructure |
 
 ---
 
@@ -34,7 +43,7 @@ Comparison sorts, non-comparison sorts, the $\Omega(n \lg n)$ lower bound, and b
 
 Graph vocabulary, topological ordering, traversal (BFS/DFS), shortest-path algorithms, minimum spanning trees, and network flow. Start at the Graphs hub; sub-hubs route you to the right algorithm.
 
-→ **[[Graphs Overview]]**
+→ **[[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]**
 
 ---
 
@@ -150,4 +159,6 @@ Drill notes for active recall and review.
 | [[CS Algorithms/_queries/QnA System Roadmap|QnA System Roadmap]] | Phase plan for the query system |
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]
+- [[CS Algorithms/Sources/Sources Index]]

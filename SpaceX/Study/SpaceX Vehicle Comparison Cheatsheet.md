@@ -1,7 +1,9 @@
 ---
 tags: [spacex, study, cheatsheet]
 up: "[[SpaceX Study Index]]"
-confidence: policy
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [practice]
 ---
 # SpaceX Vehicle Comparison Cheatsheet
 
@@ -92,4 +94,7 @@ confidence: policy
 > **Source notes:** Numbers are approximate and compiled from public SpaceX data, NSF/SpaceFlight Now flight logs, and NASA press releases. Updated through late 2024.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Study/SpaceX Study Index]]
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]

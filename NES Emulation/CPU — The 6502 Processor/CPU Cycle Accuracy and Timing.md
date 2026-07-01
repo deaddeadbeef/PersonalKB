@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CPU — The 6502 Processor Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # CPU Cycle Accuracy and Timing
@@ -94,4 +95,4 @@ The OxideNES main loop in bus.rs calls `tick(cpu_cycles)` which runs `ppu.tick()
 *See also:* [[6502 Instruction Set]], [[6502 Addressing Modes]], [[Interrupts — NMI, IRQ, and Reset]], [[PPU Registers and Timing]], [[CPU — The 6502 Processor Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

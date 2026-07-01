@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, zig]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # Zig — Language Profile
 
@@ -76,7 +77,10 @@ Zig's influence comes from reviving the "better C" ambition in a modern form. It
 
 ### References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

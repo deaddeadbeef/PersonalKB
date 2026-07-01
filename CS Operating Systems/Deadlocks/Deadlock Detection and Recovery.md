@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/deadlocks
 confidence: verified
+freshness: stable
 up: "[[Deadlocks Overview]]"
 tier-coverage:
   - intuition

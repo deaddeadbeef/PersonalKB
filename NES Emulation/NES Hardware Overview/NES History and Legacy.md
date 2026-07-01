@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[NES Hardware Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # NES History and Legacy
@@ -75,4 +76,4 @@ Use the platform's history to explain why an emulator author might care about di
 *See also:* [[NES Console Architecture]], [[NES Technical Specifications]], [[NES vs Other 8-bit Consoles]], [[NES Hardware Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

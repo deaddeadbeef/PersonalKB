@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Memory Map and Bus Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # OAM DMA
@@ -71,4 +72,4 @@ OxideNES bus.rs tracks DMA state with `dma_active()` and `dma_tick()`. The DMA s
 *See also:* [[CPU Memory Map]], [[PPU Memory Map]], [[Sprites and OAM]], [[Memory Map and Bus Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

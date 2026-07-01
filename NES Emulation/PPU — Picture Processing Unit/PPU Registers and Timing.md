@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[PPU — Picture Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PPU Registers and Timing
@@ -83,4 +84,4 @@ OxideNES `ppu.rs` implements all register behaviors in `cpu_read()` and `cpu_wri
 *See also:* [[PPU Rendering Pipeline]], [[PPU Scrolling]], [[Backgrounds and Nametables]], [[Sprites and OAM]], [[PPU — Picture Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

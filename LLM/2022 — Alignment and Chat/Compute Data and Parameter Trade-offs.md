@@ -2,6 +2,7 @@
 tags: [llm, pretraining]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -91,7 +92,7 @@ The field's post-Chinchilla shift toward ~20:1 token-to-parameter ratios influen
 1. Suppose you are training a model for a product that will serve billions of daily requests. How would you choose between a Chinchilla-optimal model and a smaller over-trained model, and what costs would dominate your decision?
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## See Also
 

@@ -1,7 +1,9 @@
 ---
 tags: [study, nes-emulation, apu]
 up: "[[NES Emulation Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — APU Audio Channels
 
@@ -34,4 +36,7 @@ Test your understanding of the NES Audio Processing Unit.
 > VRC6: 2 enhanced pulse channels (8 duty cycles) + sawtooth. VRC7: 6-channel FM synthesis with YM2413 derivative, 15 instrument patches. Also: Namco 163 (wavetable), Sunsoft 5B (3 PSG channels).
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/Study/NES Emulation Study Index]]
+- [[NES Emulation/Sources/Sources Index]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]

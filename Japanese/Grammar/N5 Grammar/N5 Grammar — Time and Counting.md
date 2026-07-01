@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n5, counting]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -189,4 +190,4 @@ You're at a konbini (convenience store). The clerk asks これでよろしいで
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

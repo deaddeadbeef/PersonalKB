@@ -1,9 +1,13 @@
 ---
 tags: [pl, study, cheatsheet]
 up: "[[Programming Languages Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Cheatsheet — PL Design Decisions Quick Reference
+
+> **One-line summary:** A compact comparison sheet for programming-language design choices across type systems, memory management, concurrency, errors, modules, runtimes, and paradigms.
 
 ## Type System Quick Compare
 
@@ -93,4 +97,4 @@ confidence: policy
 | Zig | No hidden control flow, simple is better |
 
 ## References
-→ [[Sources Index]]
+→ [[Programming Languages/Sources/Sources Index|Sources Index]]

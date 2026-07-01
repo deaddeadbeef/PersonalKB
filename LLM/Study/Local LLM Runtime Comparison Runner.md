@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, runtime, comparison, benchmark, quality, evidence, audit, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice, deep-dive]
 last-verified: 2026-06-16
 ---

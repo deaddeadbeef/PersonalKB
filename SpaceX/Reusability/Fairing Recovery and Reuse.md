@@ -3,6 +3,7 @@ tags: [spacex, reusability]
 up: "[[Reusability Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Fairing Recovery and Reuse
@@ -94,4 +95,4 @@ The Fairing 2.0 design incorporated improvements for reusability: upgraded therm
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

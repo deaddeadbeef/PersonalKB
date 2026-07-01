@@ -2,6 +2,7 @@
 tags: [programming-languages, error-handling, error-codes]
 up: "[[Error Handling Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -116,13 +117,16 @@ Error codes are the original error mechanism, dating to early C and assembly. PO
 
 ---
 
-*See also:* [[Error Handling Overview]] · [[Exception-Based Error Handling|Exceptions]] · [[Result and Option Types]] · Algebraic Error Handling
+*See also:* [[Error Handling Overview]] · [[Programming Languages/Error Handling/Exception-Based Error Handling|Exceptions]] · [[Result and Option Types]] · [[Programming Languages/Error Handling/Result and Option Types|Algebraic Error Handling]]
 
 ---
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

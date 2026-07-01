@@ -1,13 +1,23 @@
 ---
 tags: [moc, nes-emulation]
-up: "[[index]]"
-confidence: plausible
+up: "[[Welcome]]"
+confidence: verified
+freshness: stable
+tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # NES Emulation
 
 A comprehensive knowledge base covering NES hardware theory and emulation practice, with OxideNES (a cycle-accurate Rust NES emulator) as the concrete implementation reference.
 
-> 📚 **New here?** Start with the [[NES Emulation — Learning Path|Learning Path]] for a guided, progressive tour.
+## Start Here
+
+| Need | Open | Why |
+|---|---|---|
+| Read NES emulation like a book | [[NES Emulation/NES Emulation Book Reading Spine|NES Emulation Book Reading Spine]] | Curated reconstruction path through hardware, CPU, PPU, APU, memory, mappers, and architecture |
+| Follow a guided course path | [[NES Emulation/NES Emulation — Learning Path|NES Emulation Learning Path]] | Progressive tour through the emulator domain |
+| Debug or review implementation knowledge | [[NES Emulation/Study/NES Emulation Study Index|NES Emulation Study Index]] | Goal router from symptom to subsystem, review drills, and proof targets |
+| Check provenance | [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]] | Source map for hardware and emulator references |
+| Browse the catalog | This page below | Domain hubs, infrastructure, and references |
 
 ## Wiki Statistics
 
@@ -39,8 +49,11 @@ A comprehensive knowledge base covering NES hardware theory and emulation practi
 
 ## Infrastructure
 
-- [[Sources Index]] — Primary sources and raw material catalog
+- [[NES Emulation/Sources/Sources Index|Sources Index]] — Primary sources and raw material catalog
 - [[NES Emulation Study Index]] — Review drills and cheatsheets
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[Welcome]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]
+- [[NES Emulation/Sources/Sources Index]]

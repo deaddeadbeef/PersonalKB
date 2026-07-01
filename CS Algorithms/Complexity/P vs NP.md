@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/complexity
 confidence: verified
+freshness: stable
 up: '[[Complexity Theory Overview]]'
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -130,12 +131,12 @@ flowchart TD
 
 ---
 
-*See also:* [[NP Completeness]], [[Halting Problem]], [[Approximation Algorithms]], [[Complexity Theory Overview]], [[Dijkstra's Algorithm]], [[RSA Algorithm]], [[Asymptotic Notation]]
+*See also:* [[NP Completeness]], [[Halting Problem]], [[Approximation Algorithms]], [[Complexity Theory Overview]], [[CS Algorithms/Graphs/Dijkstra's Algorithm|Dijkstra’s Algorithm]], [[RSA Algorithm]], [[Asymptotic Notation]]
 
 ## Supporting Chunks
 
 - [[Complexity - NP-complete problems are in NP and NP-hard with no known poly-time solution]]
-- [[CS Algorithms/_chunks/Complexity - The Halting Problem is undecidable via Turing's diagonalisation argument]]
+- [[CS Algorithms/_chunks/Complexity - The Halting Problem is undecidable via Turing's diagonalisation argument|Halting Problem diagonalisation chunk]]
 - [[Complexity - NP-hardness is established by polynomial reduction from a known NP-hard problem]]
 
 ## References

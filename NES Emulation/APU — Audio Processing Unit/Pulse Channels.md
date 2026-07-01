@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[APU — Audio Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Pulse Channels
@@ -74,4 +75,4 @@ The OxideNES `Pulse` struct in `apu.rs` contains timer, duty_cycle, envelope, sw
 *See also:* [[Triangle and Noise Channels]], [[APU Frame Sequencer]], [[DMC — Delta Modulation Channel]], [[APU — Audio Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

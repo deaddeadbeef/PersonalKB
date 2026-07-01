@@ -2,6 +2,7 @@
 tags: [programming-languages, compilation, aot-jit]
 up: "[[Compilation and Runtime Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # AOT vs JIT Compilation
@@ -132,7 +133,10 @@ GraalVM also offers **Native Image** — AOT compilation of Java programs to nat
 *See also:* [[Compilation and Runtime Overview]], [[Virtual Machines and Bytecode]]
 
 ## Supporting Chunks / References
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

@@ -2,6 +2,7 @@
 tags: [spacex, falcon]
 up: "[[Falcon Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -92,4 +93,4 @@ Fleet management involves strategic decisions about which boosters fly which mis
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

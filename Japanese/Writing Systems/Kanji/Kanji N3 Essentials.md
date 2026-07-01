@@ -2,6 +2,7 @@
 tags: [japanese, kanji, n3]
 up: "[[Kanji — How Kanji Work]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -158,4 +159,4 @@ At this level, you start seeing patterns everywhere:
 Write a short self-introduction using all three scripts: your name in katakana, a greeting in hiragana, and at least one common kanji (人, 大, 日).
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

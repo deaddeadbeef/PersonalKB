@@ -2,6 +2,7 @@
 tags: [study, llm, fine-tuning, adaptation, peft, local-llm, decision]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, deep-dive, practice]
 ---
 

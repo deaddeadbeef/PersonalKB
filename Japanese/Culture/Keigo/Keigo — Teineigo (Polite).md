@@ -2,6 +2,7 @@
 tags: [japanese, culture, keigo, teineigo]
 up: "[[Culture Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -102,4 +103,4 @@ Adding お/ご to make words more refined: ![[teinei-009-o-go.mp3]]
 You're calling a client's office. Write a phone script that uses all three keigo types: teineigo for the call structure, sonkeigo when referring to the client, and kenjōgo for your own actions.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

@@ -1,7 +1,9 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Alignment & Safety — Review Drill
 
@@ -41,4 +43,7 @@ confidence: policy
     After broad pretraining and usually after SFT. Alignment/post-training shapes assistant behavior with preference data, reward models, DPO-style losses, or constitutional feedback; it does not replace corpus quality, retrieval grounding, or deployment policy. See [[LLM/Study/LLM Training Pipeline Map|LLM Training Pipeline Map]].
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Study/LLM Study Index]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Book Reading Spine]]

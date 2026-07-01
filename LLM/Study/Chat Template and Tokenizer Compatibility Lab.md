@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, tokenizer, chat-template]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, practice]
 ---
 
@@ -177,7 +178,7 @@ This lab is complete when you have:
 - [[LLM/Study/Local LLM Inference Benchmark Log]]
 - [[LLM/Study/Local LLM Quality Evaluation Harness]]
 - [[LLM/Study/Local LLM Context Window and Token Budgeting Lab]]
-- [[chunk-llm-092 Instruction Tuning Bridges to Following]]
-- [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
-- [[chunk-llm-169 SentencePiece Processes Raw Unicode Without Pre-Tokenization]]
-- [[chunk-llm-171 SentencePiece Guarantees Lossless Detokenization]]
+- [[LLM/_chunks/chunk-llm-092 Instruction Tuning Bridges to Following|chunk-llm-092]]
+- [[LLM/_chunks/chunk-llm-119 PagedAttention Copy-on-Write Sharing|chunk-llm-119]]
+- [[LLM/_chunks/chunk-llm-169 SentencePiece Processes Raw Unicode Without Pre-Tokenization|chunk-llm-169]]
+- [[LLM/_chunks/chunk-llm-171 SentencePiece Guarantees Lossless Detokenization|chunk-llm-171]]

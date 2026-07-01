@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, swift]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # Swift — Language Profile
 
@@ -73,7 +74,10 @@ Swift's broader significance is that it helped popularize a mainstream systems-a
 
 ### References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

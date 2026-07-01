@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n5, particles]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -179,4 +180,4 @@ Describe your morning routine using at least 5 different particles (は、を、
 - Listen for particles in natural speech — they're often swallowed
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

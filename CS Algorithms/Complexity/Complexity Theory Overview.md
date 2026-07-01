@@ -4,6 +4,7 @@ tags:
   - moc
 up: '[[CS Algorithms]]'
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Complexity Theory Overview
@@ -80,7 +81,7 @@ P  ⊆  NP  ⊆  PSPACE  ⊆  EXPTIME
 
 ### Real-World Implications
 - **Cryptography** ([[Cryptography Overview]]): RSA security rests on the conjectured hardness of factoring — directly tied to complexity theory
-- **Graph algorithms** ([[Graphs Overview]]): TSP, clique, and graph colouring are canonical NP-complete problems
+- **Graph algorithms** ([[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]): TSP, clique, and graph colouring are canonical NP-complete problems
 - **Foundations** ([[Foundations and Analysis Overview]]): Asymptotic notation and polynomial time are prerequisites
 
 ---
@@ -100,7 +101,7 @@ P  ⊆  NP  ⊆  PSPACE  ⊆  EXPTIME
 
 ---
 
-*See also:* [[CS Algorithms]], [[Cryptography Overview]], [[Graphs Overview]], [[Foundations and Analysis Overview]]
+*See also:* [[CS Algorithms]], [[Cryptography Overview]], [[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]], [[Foundations and Analysis Overview]]
 
 ## Supporting Chunks
 
@@ -109,8 +110,10 @@ P  ⊆  NP  ⊆  PSPACE  ⊆  EXPTIME
 ## Related Domains
 
 - **[[Cryptography Overview]]** — RSA security rests on the *conjectured* hardness of factoring (an NP-intermediate problem). Many cryptographic hardness assumptions link directly to complexity theory.
-- **[[Graphs Overview]]** — Traveling Salesman, clique, and graph coloring are canonical NP-complete problems.
+- **[[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]** — Traveling Salesman, clique, and graph coloring are canonical NP-complete problems.
 - **[[Foundations and Analysis Overview]]** — Asymptotic notation and the notion of polynomial time are prerequisites.
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

@@ -1,7 +1,9 @@
 ---
 tags: [pl, study, design-philosophy]
 up: "[[Programming Languages Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — Language Design Philosophy
 
@@ -70,4 +72,4 @@ Explicit ------+------ Implicit
 - [[Language Profiles Overview]] — per-language details
 
 ## References
-→ [[Sources Index]]
+→ [[Programming Languages/Sources/Sources Index|Sources Index]]

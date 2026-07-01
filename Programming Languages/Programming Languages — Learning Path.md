@@ -1,11 +1,24 @@
 ---
 tags: [pl, learning-path]
-up: "[[Programming Languages/Programming Languages|Programming Languages]]"
-confidence: policy
+up: "[[Programming Languages/Programming Languages]]"
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # Programming Languages — Learning Path
 
 > A guided, progressive tour through programming-language design and philosophy. Four passes, each building on the last.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read programming languages like a book | [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Compare languages or design a toy language | [[Programming Languages/Study/Programming Languages Study Index|Programming Languages Study Index]] |
+| Verify theory, manual, implementation, or ecosystem claims | [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]] |
+
+Use this path when you want staged exposure to the design dimensions. Use the book spine for narrative reading, and use the study index when you need a comparison row or language-design decision.
 
 ## How to Use This Path
 
@@ -46,7 +59,7 @@ Read ONLY the 🎯 Intuition section of each page. Build a broad mental map of h
 17. [[Gradual and Optional Typing]] — adding types incrementally (TypeScript, mypy)
 
 ### Memory Management
-18. [[Memory Management Overview]] — the memory-management hub
+18. [[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]] — the memory-management hub
 19. [[Manual Memory Management]] — malloc/free, the C way
 20. [[Garbage Collection Strategies]] — mark-sweep, generational, concurrent GC
 21. [[Ownership and Borrowing]] — Rust's compile-time memory safety
@@ -185,4 +198,6 @@ Build active-recall skill through drills and comparative exercises.
 Pick three languages from different paradigms and implement the same small project (e.g., a URL shortener, a Markdown parser, or a task queue). Compare the experience across all dimensions studied.
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Programming Languages]]
+- [[Programming Languages/Sources/Sources Index]]

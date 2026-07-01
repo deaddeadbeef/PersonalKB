@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, model-selection, evaluation, deployment]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [core, practice]
 ---
 

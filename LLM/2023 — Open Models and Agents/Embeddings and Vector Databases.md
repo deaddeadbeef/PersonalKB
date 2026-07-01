@@ -2,6 +2,7 @@
 tags: [llm, rag]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -103,16 +104,15 @@ For a local applied workflow, use [[LLM/Study/Local Embedding and Reranker Hosti
 
 ---
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ### See Also
 - [[LLM/Foundations/Embeddings and Representation Geometry|Embeddings Foundations]] — the theoretical basis for text embeddings
-- [[LLM/Architecture Variants/Encoder-Only Models|Encoder-Only Models]] — modern embedding models descend from BERT
+- [[LLM/2018–2019 — Pretrained Language Models/Encoder-Only Models|Encoder-Only Models]] — modern embedding models descend from BERT
 - [[LLM/Study/Local Embedding and Reranker Hosting Lab]] — local embedding service, vector-shape, normalization, and index-compatibility proof
 - [[LLM/Study/Local RAG Retrieval Evaluation and Reranking Lab]] — local top-k, rank, hybrid-search, and citation evaluation
 
-## References
+### References
 - [[LLM/Sources/Sources Index]]

@@ -1,7 +1,9 @@
 ---
 tags: [japanese, vocabulary, hub]
 up: "[[Japanese]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Vocabulary Overview
 
@@ -38,13 +40,13 @@ Building vocabulary is the single biggest factor in reading comprehension. Japan
 - [[Core 1000 — Conversational Fluency]] — understand ~85% of spoken Japanese
 
 ## Thematic Vocabulary Sets
-- [[Thematic Vocabulary — Food and Drink|Thematic — Food and Dining]]
-- [[Thematic Vocabulary — Travel and Transportation|Thematic — Travel and Transportation]]
-- [[Thematic Vocabulary — Work and Office|Thematic — Work and Business]]
-- [[Thematic Vocabulary — Home and Daily Life|Thematic — Home and Family]]
-- [[Thematic Vocabulary — Nature and Weather|Thematic — Nature and Weather]]
-- [[Thematic Vocabulary — Body and Health|Thematic — Body and Health]]
-- [[Thematic Vocabulary — Numbers, Time, and Dates|Thematic — Numbers, Time, and Dates]]
+- [[Japanese/Vocabulary/Thematic/Thematic Vocabulary — Food and Drink|Thematic — Food and Dining]]
+- [[Japanese/Vocabulary/Thematic/Thematic Vocabulary — Travel and Transportation|Thematic — Travel and Transportation]]
+- [[Japanese/Vocabulary/Thematic/Thematic Vocabulary — Work and Office|Thematic — Work and Business]]
+- [[Japanese/Vocabulary/Thematic/Thematic Vocabulary — Home and Daily Life|Thematic — Home and Family]]
+- [[Japanese/Vocabulary/Thematic/Thematic Vocabulary — Nature and Weather|Thematic — Nature and Weather]]
+- [[Japanese/Vocabulary/Thematic/Thematic Vocabulary — Body and Health|Thematic — Body and Health]]
+- [[Japanese/Vocabulary/Thematic/Thematic Vocabulary — Numbers, Time, and Dates|Thematic — Numbers, Time, and Dates]]
 
 ## Special Vocabulary
 - [[Counters — The Japanese Counting System]]
@@ -67,4 +69,4 @@ Building vocabulary is the single biggest factor in reading comprehension. Japan
 | N1 | ~10,000 | Native-level reading |
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

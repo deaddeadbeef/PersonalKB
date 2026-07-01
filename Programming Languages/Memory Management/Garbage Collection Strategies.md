@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, memory-management, gc]
-up: "[[Memory Management Overview]]"
+up: "[[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -94,4 +96,4 @@ This debate illuminated that "systems programming" means different things to dif
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, memory-management, ownership]
-up: "[[Memory Management Overview]]"
+up: "[[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -89,4 +91,4 @@ OCaml programmers often note similarity to Rust's discipline: OCaml's immutable-
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

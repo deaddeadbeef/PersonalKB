@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/compression
 confidence: verified
+freshness: stable
 up: "[[Data Compression Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -126,15 +127,20 @@ LZW is presented alongside [[Huffman Coding]] and [[Run-Length Encoding]] as the
 
 ---
 
-*See also:* [[String Matching - KMP]], [[Asymptotic Notation]], [[Binary Search]], [[Huffman Coding]], [[Run-Length Encoding]], [[Data Compression Overview]], [[Hash Tables and Hash Functions|Hash Table]], [[CS Data Structures]]
+*See also:* [[String Matching - KMP]], [[Asymptotic Notation]], [[Binary Search]], [[Huffman Coding]], [[Run-Length Encoding]], [[Data Compression Overview]], [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Table]], [[CS Data Structures]]
 
-## Supporting Chunks
+## Supporting Chunks / References
 
 ### Supporting Chunks
 
 - [[Compression - LZW builds a shared codebook dynamically requiring no transmitted dictionary]]
 - [[Compression - LZW patent history and PNG DEFLATE choice illustrate how IP affects algorithm adoption]]
 
-## References
+### References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]], Chapter 9. See [[CS Algorithms/Sources/Sources Index#Erickson 2019|Sources Index]], Chapter 11. See [[Data Compression Overview]] for the full compression context. See [[Huffman Coding]] for the alternative greedy approach.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

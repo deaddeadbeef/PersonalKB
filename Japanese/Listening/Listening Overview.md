@@ -2,6 +2,7 @@
 tags: [japanese, listening, hub]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -122,7 +123,7 @@ For Phase 5, use [[Phase 5 Audio Assignment Ladder]] to choose the current nativ
 | 30 min | Background immersion | All |
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
 - [[Phase 1 Audio Coverage Map]]

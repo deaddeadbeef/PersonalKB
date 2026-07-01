@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n5, adjectives]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -184,4 +185,4 @@ Write a review of your favorite restaurant using at least 3 い-adjectives and 2
 - Describe things around you using both い and な adjectives
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 22
 
-← [[PHM Novel - Chapter 21]] | [[Chapter Index]] | [[PHM Novel - Chapter 23]] →
+← [[PHM Novel - Chapter 21]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 23]] →
 
 > **One-line summary** — As Grace and Rocky head for Blip-A, flashbacks reveal that Grace did not choose the mission freely: Stratt forced him onto it and erased his recent memories.
 
@@ -106,7 +107,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (p. 416–429)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Ryland Grace]]
 - [[Eva Stratt and the Ethics of Existential Response]]
 - [[Taumoeba and the Biological Solution]]

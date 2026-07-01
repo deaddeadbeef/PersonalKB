@@ -2,6 +2,7 @@
 tags: [llm, alignment]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -116,12 +117,11 @@ It also strengthened the case for layered defenses. Rather than expecting one tr
 
 Design a safety evaluation plan for a new chat model. Include manual red-teaming, one automated jailbreak method, at least two benchmarks, and a deployment-time mitigation layer. Explain what each layer can catch and what it might still miss.
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]

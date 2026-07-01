@@ -2,6 +2,7 @@
 tags: [spacex, technology]
 up: "[[Technology Deep Dives Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -101,4 +102,7 @@ Their lattice geometry is central to the design choice. At supersonic speed it c
 *See also:* [[Technology Deep Dives Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

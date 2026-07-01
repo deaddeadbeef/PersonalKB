@@ -1,6 +1,9 @@
 ---
 tags: [recipes, burritos-wraps]
 up: "[[Burritos & Wraps]]"
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 portable: true
 lunch-safe: true
 leftover-lunch-safe: true

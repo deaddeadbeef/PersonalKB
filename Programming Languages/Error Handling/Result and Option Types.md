@@ -2,6 +2,7 @@
 tags: [programming-languages, error-handling, result-types]
 up: "[[Error Handling Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -132,13 +133,16 @@ The Option/Result pattern originates in the ML family of languages (Standard ML,
 
 ---
 
-*See also:* [[Error Handling Overview]] · Algebraic Data Types · Monads · Rust Error Handling · Go Idioms
+*See also:* [[Error Handling Overview]] · [[Programming Languages/_chunks/chunk-pl-016 Algebraic Data Types and Pattern Matching|Algebraic Data Types]] · [[Programming Languages/_chunks/chunk-pl-151 Monads Demystified From Haskell to Everywhere|Monads]] · [[Programming Languages/_chunks/chunk-pl-081 Rust Error Handling Best Practices|Rust Error Handling]] · [[Programming Languages/Language Profiles/Go — Language Profile|Go Idioms]]
 
 ---
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]
