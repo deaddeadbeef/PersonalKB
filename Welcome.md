@@ -78,6 +78,7 @@ Every topic follows a **four-layer pipeline**:
 | 💻 **[[Programming Languages]]** | Active | Design philosophies across 16 languages — type systems, memory, concurrency, paradigms — 78 wiki pages, 50 raw, 200 chunks |
 | 🇯🇵 **[[Japanese]]** | Active | Japanese language learning wiki — writing systems, grammar (N5–N3), vocabulary, listening, speaking, culture, keigo — 5-phase learning path, 75 wiki pages, 40 raw, 150 chunks |
 | 🍱 **[[Recipes]]** | Active | High-protein portable meal wiki — burritos, crunchwraps, rice bowls, bentos, subs, stir-fries — 12 recipes, weekly meal plans with consolidated shopping lists |
+| 📈 **[[Stock Trading]]** | Active | Ground-up stock-market learning wiki — ownership, market mechanics, account rules, filings, price action, risk management, and paper-trading drills |
 
 ---
 

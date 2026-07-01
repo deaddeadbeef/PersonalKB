@@ -6,6 +6,43 @@ tags: [vault-log, generated]
 
 Append-only record of ingest, query, lint, and refinement operations.
 
+## [2026-07-01] curate | Add Stock Trading starter wiki
+
+Scope: start a new Stock Trading domain for relearning stock-market mechanics from the ground up, with current official SEC/Investor.gov and FINRA sources.
+
+Changed files:
+- `.tasks/2026-07-01-stock-trading-wiki.md`
+- `Stock Trading/Stock Trading.md`
+- `Stock Trading/Stock Trading - Learning Path.md`
+- `Stock Trading/Foundations/Stocks and Ownership.md`
+- `Stock Trading/Foundations/Returns Risk and Time Horizon.md`
+- `Stock Trading/Market Mechanics/How Stock Markets Work.md`
+- `Stock Trading/Market Mechanics/Order Types and Execution.md`
+- `Stock Trading/Market Mechanics/Accounts Settlement and Margin.md`
+- `Stock Trading/Analysis/Reading Company Filings and Fundamentals.md`
+- `Stock Trading/Analysis/Price Action Momentum and Volatility.md`
+- `Stock Trading/Risk Management/Position Sizing and Trade Journaling.md`
+- `Stock Trading/Study/Stock Trading Study Index.md`
+- `Stock Trading/Study/Stock Market Basics - Review Drill.md`
+- `Stock Trading/Sources/Sources Index.md`
+- `Welcome.md`
+- `index.md`
+- `_ops/reports/*`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `log.md`
+
+Maintenance notes:
+- Added a source-backed first-pass stock trading curriculum that starts with ownership, risk, order/account mechanics, company filings, price-action vocabulary, and paper-trading discipline.
+- Used official SEC/Investor.gov and FINRA pages for current settlement, order, margin, brokerage-account, risk, due diligence, and volatility claims.
+- Did not add raw source captures or chunks in this pass; this is a compiled wiki starter layer.
+
+Verification:
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: exited 0; branch audit now sees 976 candidate articles. Pre-existing `origin/main` reader debt remains outside Stock Trading: 374 reader broken-link occurrences, 48 reader placeholder hits, 249 missing references, 247 missing confidence fields, and 28 missing `up` fields.
+- Targeted Stock Trading metadata and wikilink check: 13 notes, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 placeholder hits, 0 broken links; `Welcome.md`, `index.md`, and `log.md` routes present.
+- `git diff --check`: clean.
+- `git diff --cached --check`: clean after staging.
+
 ## [2026-06-29] refine | Wire LLM placeholder articles to evidence
 
 Scope: continue the Karpathy-style LLM wiki pass by replacing the first ten LLM placeholder support sections with existing chunk, raw-source, and explicit evidence-gap links.
