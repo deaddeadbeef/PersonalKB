@@ -20,6 +20,7 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 | 3 - How to read a company | [[Reading Company Filings and Fundamentals]], [[Company Filing Worksheet]] | Read a filing and identify business, risks, financials, ratios, and invalidation evidence | One completed company filing worksheet |
 | 4 - How prices move | [[Price Action Momentum and Volatility]] | Recognize volatility, momentum, beta, and price-action traps | One annotated chart journal entry |
 | 5 - Practice loop | [[Stock Market Basics - Review Drill]], [[Position Sizing and Trade Journaling]], [[Paper Trading Lab]] | Paper-trade only, with review discipline | Ten paper trades with planned risk and postmortems |
+| 6 - Systematic strategy boundary | [[Quantitative Trading]], [[Algorithmic Trading]] | Understand model risk, backtesting limits, and automation controls | One rejected-or-approved paper-only strategy spec |
 
 ## First Seven Sessions
 
@@ -32,6 +33,7 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 7. Complete [[Company Filing Worksheet]] for one company before looking at a chart.
 8. Read [[Position Sizing and Trade Journaling]]. Create a paper-trade journal row template.
 9. Start [[Paper Trading Lab]] only after every earlier artifact exists.
+10. Read [[Quantitative Trading]] and [[Algorithmic Trading]] only after the paper-trade batch exists.
 
 ## Study Sequence
 
@@ -46,6 +48,8 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 9. [[Position Sizing and Trade Journaling]]
 10. [[Paper Trading Lab]]
 11. [[Stock Market Basics - Review Drill]]
+12. [[Quantitative Trading]]
+13. [[Algorithmic Trading]]
 
 ## Progress Tracker
 
@@ -61,6 +65,8 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 | Price Action Momentum and Volatility | [ ] | [ ] | [ ] |
 | Position Sizing and Trade Journaling | [ ] | [ ] | [ ] |
 | Paper Trading Lab | [ ] | [ ] | [ ] |
+| Quantitative Trading | [ ] | [ ] | [ ] |
+| Algorithmic Trading | [ ] | [ ] | [ ] |
 
 ## Rules for Advancement
 
@@ -68,12 +74,16 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 - Do not move to Pass 3 until you can explain cash settlement and margin risk without notes.
 - Do not move to Pass 4 until a company thesis has filing evidence and a written invalidation condition.
 - Do not move to paper trading until every journal row has planned entry, invalidation, size, exit, and review fields.
+- Do not move to Pass 6 until the first paper batch has a written postmortem.
+- Do not automate order generation until the algorithm can be expressed in a plain-English spec with hard risk limits, logs, and a kill switch.
 - Do not use real capital from this learning path alone.
 
 ## References
 
 - [[Stock Trading]]
 - [[Stock Trading Book Reading Spine]]
+- [[Quantitative Trading]]
+- [[Algorithmic Trading]]
 - [[Stock Trading/Sources/Sources Index|Sources Index]]
 - [Investor.gov - Types of Orders](https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders)
 - [FINRA - Risk](https://www.finra.org/investors/investing/investing-basics/risk)

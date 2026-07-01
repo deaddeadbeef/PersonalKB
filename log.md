@@ -5120,3 +5120,36 @@ Verification:
 - `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; Stock Trading produced 15 linked articles.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated reports with 987 candidate reader-facing articles, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans. The 16 remaining missing freshness rows are outside the Stock Trading scope.
+
+## [2026-07-01] refine | Add Stock Trading algo and quant strategy articles
+
+Scope: add beginner-safe algorithmic trading and quantitative trading articles to the Stock Trading wiki without moving the topic into live automation or investment advice.
+
+Changed wiki/source files:
+- `Stock Trading/Strategies/Algorithmic Trading.md`
+- `Stock Trading/Strategies/Quantitative Trading.md`
+- `Stock Trading/Stock Trading.md`
+- `Stock Trading/Stock Trading - Learning Path.md`
+- `Stock Trading/Stock Trading Book Reading Spine.md`
+- `Stock Trading/Study/Stock Trading Study Index.md`
+- `Stock Trading/Sources/Sources Index.md`
+- `PersonalKB Book Reading Guide.md`
+- `_ops/generate_topic_reading_spines.py`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `log.md`
+
+Maintenance changes:
+- Added `Algorithmic Trading` as an automation, order-control, and kill-switch boundary article.
+- Added `Quantitative Trading` as a model-research, backtesting, and model-risk boundary article.
+- Added a generated Stock Trading `Strategies` chapter so the book spine treats systematic strategy work as later-stage material.
+- Updated the learning path, study index, source index, and root guide route with paper-only strategy-spec requirements.
+
+Verification:
+- Web sources checked: FINRA Algorithmic Trading, FINRA Regulatory Notices 15-09 and 15-06, SEC Staff Report on Algorithmic Trading in U.S. Capital Markets, SEC Rule 15c3-5 Market Access Compliance Guide, Investor.gov Performance Claims, and Federal Reserve Supervisory Guidance on Model Risk Management.
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; Stock Trading produced 17 linked articles.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports with 989 candidate reader-facing articles, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans. The 16 remaining missing freshness rows are outside the Stock Trading scope.
