@@ -38,6 +38,11 @@ tier-coverage: [core, practice]
 - [[Company Filing Worksheet]] - turn one filing into a bounded thesis before a chart read or paper trade
 - [[Price Action Momentum and Volatility]] - chart vocabulary, momentum, beta, volatility, and why price action is a risk surface
 
+### Strategies
+
+- [[Quantitative Trading]] - model-driven research, backtesting boundaries, model risk, and research journaling
+- [[Algorithmic Trading]] - automation, order-generation controls, kill switches, and paper-only simulation boundaries
+
 ### Risk Process
 
 - [[Position Sizing and Trade Journaling]] - convert a thesis into a bounded experiment with entry, invalidation, size, exit, and review
@@ -50,6 +55,7 @@ tier-coverage: [core, practice]
 3. Do not use margin, short selling, or options in the first pass.
 4. Use [[Paper Trading Lab|paper trading]] and historical examples until the journal can show repeatable decision quality.
 5. Refresh current rules before applying anything involving settlement, margin, day trading, or taxes.
+6. Treat [[Quantitative Trading|quantitative]] and [[Algorithmic Trading|algorithmic]] strategies as advanced research artifacts until manual risk, order, and journal discipline are stable.
 
 ## Current-Rules Watchlist
 
@@ -58,6 +64,7 @@ These topics are current-sensitive and must be rechecked before use:
 - U.S. settlement cycle: the standard cycle for covered securities moved to T+1 for applicable transactions on or after May 28, 2024.
 - Intraday margin: FINRA published new risk-based intraday margin guidance in 2026, replacing the older pattern-day-trader framing in key investor education material.
 - Broker-specific margin, order-routing, short-locate, cash-sweep, and fee rules.
+- Algorithmic trading, market access, automated order controls, and broker API behavior.
 - Tax treatment of short-term gains, wash sales, dividends, and account type.
 
 ## References
@@ -65,6 +72,8 @@ These topics are current-sensitive and must be rechecked before use:
 - [[Stock Trading/Sources/Sources Index|Sources Index]]
 - [[Stock Trading Book Reading Spine]]
 - [[Paper Trading Lab]]
+- [[Quantitative Trading]]
+- [[Algorithmic Trading]]
 - [Investor.gov - Introduction to Investing](https://www.investor.gov/introduction-investing)
 - [Investor.gov - Stocks](https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks)
 - [Investor.gov - New T+1 Settlement Cycle](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/new-t1-settlement-cycle-what-investors-need-know-investor-bulletin)

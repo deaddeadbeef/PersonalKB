@@ -9,7 +9,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Stock Trading Book Reading Spine
 
-Read stock trading as a controlled learning system: ownership, market plumbing, filings, risk limits, and paper practice before real capital.
+Read stock trading as a controlled learning system: ownership, market plumbing, filings, risk limits, systematic research, and paper practice before real capital.
 
 This page is the reader-facing spine. Treat it like the table of contents of a good book: read the chapter openers first, then deepen through the linked articles, then use study notes and sources as appendices.
 
@@ -50,7 +50,14 @@ Use filings, fundamentals, price action, momentum, and volatility as evidence la
 - [[Stock Trading/Analysis/Price Action Momentum and Volatility|Price Action Momentum and Volatility]] — Price action shows what buyers and sellers are doing, but it does not explain by itself why a move is happening or whether it is sustainable.
 - [[Stock Trading/Analysis/Reading Company Filings and Fundamentals|Reading Company Filings and Fundamentals]] — Fundamental stock analysis starts with how the company makes money, what risks it faces, what its filings disclose, and what price investors are paying for the business.
 
-## Book IV: Risk And Paper Practice
+## Book IV: Systematic Strategy Research
+
+Separate quantitative research and algorithmic execution, then keep both paper-only until risk controls are explicit.
+
+- [[Stock Trading/Strategies/Algorithmic Trading|Algorithmic Trading]] — Algorithmic trading uses software rules to generate, route, modify, or execute orders; it is an automation layer, not proof that the trading idea has an edge.
+- [[Stock Trading/Strategies/Quantitative Trading|Quantitative Trading]] — Quantitative trading turns a market hypothesis into a data-defined, testable model; the model is evidence to inspect, not a machine that removes uncertainty.
+
+## Book V: Risk And Paper Practice
 
 Turn every idea into a bounded paper experiment with a journal, review rule, and proof artifact.
 
@@ -67,7 +74,7 @@ Refresh official sources before relying on settlement, margin, tax, broker, or r
 
 ## Coverage
 
-- Reader-facing articles linked here: 15
+- Reader-facing articles linked here: 17
 - Protected raw, chunk, template, query, audio, and operations folders are intentionally not expanded here.
 - The root vault index remains the exhaustive generated listing across every topic.
 

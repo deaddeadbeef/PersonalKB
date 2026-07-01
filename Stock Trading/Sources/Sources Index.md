@@ -38,10 +38,18 @@ This source index records the first official source layer for the Stock Trading 
 | [Stock Investing and Due Diligence](https://www.finra.org/investors/insights/stock-investing-due-diligence) | FINRA | Investor insight | Due diligence workflow and research sources |
 | [What Is Momentum Investing?](https://www.finra.org/investors/insights/momentum-investing) | FINRA | Investor insight | Momentum and technical-analysis risk framing |
 | [Financial Tips for New Investors](https://www.finra.org/investors/insights/tips-new-investors) | FINRA | Investor insight | Goals, time horizon, and beginner guardrails |
+| [Algorithmic Trading](https://www.finra.org/rules-guidance/key-topics/algorithmic-trading) | FINRA | Regulatory topic hub | Algorithmic-trading supervision, testing, validation, and control categories |
+| [Regulatory Notice 15-09](https://www.finra.org/rules-guidance/notices/15-09) | FINRA | Regulatory notice | Effective supervision and control practices for algorithmic strategies |
+| [Regulatory Notice 15-06](https://www.finra.org/rules-guidance/notices/15-06) | FINRA | Regulatory notice | Working scope of algorithmic trading strategy and automated order messages |
+| [Staff Report on Algorithmic Trading in U.S. Capital Markets](https://www.sec.gov/files/algo_trading_report_2020.pdf) | SEC | Staff report | Algorithmic-trading market role, benefits, risks, and execution decisions |
+| [Rule 15c3-5 Market Access Compliance Guide](https://www.sec.gov/files/rules/final/2010/34-63241-secg.htm) | SEC | Compliance guide | Broker-dealer market-access risk controls for automated trading |
+| [Performance Claims](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47) | SEC Investor.gov | Investor bulletin | Backtesting and hypothetical performance caveats |
+| [Supervisory Guidance on Model Risk Management](https://www.federalreserve.gov/frrs/guidance/supervisory-guidance-on-model-risk-management.htm) | Federal Reserve, OCC, FDIC | Supervisory guidance | Model-risk vocabulary and model lifecycle controls |
 
 ## Refresh Rules
 
 - Recheck settlement and margin notes whenever the date-sensitive account mechanics matter.
+- Recheck algorithmic-trading and broker API notes before any operational automation work.
 - Treat broker-specific account pages as the controlling operational source for a real account.
 - Add tax sources before writing tax treatment pages.
 - Add raw source captures only when doing a formal ingest pass.

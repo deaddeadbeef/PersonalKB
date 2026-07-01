@@ -13,6 +13,8 @@ tier-coverage: [practice]
 - [[Stock Market Basics - Review Drill]]
 - [[Company Filing Worksheet]]
 - [[Paper Trading Lab]]
+- [[Quantitative Trading]]
+- [[Algorithmic Trading]]
 
 ## First Practice Loop
 
@@ -24,6 +26,8 @@ tier-coverage: [practice]
 6. Create ten paper journal rows using [[Position Sizing and Trade Journaling]].
 7. Run the first ten-trade batch in [[Paper Trading Lab]].
 8. Review misses with [[Stock Market Basics - Review Drill]].
+9. Write one paper-only model spec from [[Quantitative Trading]].
+10. Translate the model spec into a non-live control checklist from [[Algorithmic Trading]].
 
 ## Competency Gates
 
@@ -35,12 +39,15 @@ tier-coverage: [practice]
 | Fundamental reading | Can complete [[Company Filing Worksheet]] from one filing before reading commentary |
 | Risk process | Can calculate paper position size from entry, invalidation, and planned risk |
 | Journal discipline | Has ten [[Paper Trading Lab|paper trades]] with pre-trade plan and post-trade review |
+| Quant boundary | Can explain why backtested performance is hypothetical and where model risk enters |
+| Automation boundary | Can name the kill switch, max order size, max position size, and logging fields before code |
 
 ## Navigation
 
 - Foundations: [[Stocks and Ownership]], [[Returns Risk and Time Horizon]]
 - Mechanics: [[How Stock Markets Work]], [[Order Types and Execution]], [[Accounts Settlement and Margin]]
 - Analysis: [[Reading Company Filings and Fundamentals]], [[Company Filing Worksheet]], [[Price Action Momentum and Volatility]]
+- Strategies: [[Quantitative Trading]], [[Algorithmic Trading]]
 - Risk process: [[Position Sizing and Trade Journaling]], [[Paper Trading Lab]]
 
 ## References
