@@ -17,7 +17,7 @@ The wiki is now navigable as a reading shelf because every committed top-level t
 
 | Check | Count | Meaning |
 | --- | ---: | --- |
-| Candidate reader-facing articles | 963 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
+| Candidate reader-facing articles | 976 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
 | Broken links in reader-facing articles | 374 | Navigation defects that affect normal reading |
 | Placeholder lines in reader-facing articles | 48 | Draft markers visible to readers |
 | Missing references sections | 249 | Pages that still need a source/provenance footer |
@@ -117,4 +117,4 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - [Generated wiki quality summary](<_ops/reports/wiki-quality-summary.json>)
 - [Generated full audit summary](<_ops/reports/audit-summary.json>)
 
-Generated: 2026-06-29T22:05:35
+Generated: 2026-07-01T10:56:56
