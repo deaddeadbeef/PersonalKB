@@ -17,7 +17,7 @@ The wiki is navigable for normal reading: reader-facing broken links and visible
 
 | Check | Count | Meaning |
 | --- | ---: | --- |
-| Candidate reader-facing articles | 984 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
+| Candidate reader-facing articles | 987 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
 | Broken links in reader-facing articles | 0 | Navigation defects that affect normal reading |
 | Broken section links in reader-facing articles | 0 | Wikilinks whose target note exists but requested heading does not |
 | Ambiguous wikilinks in reader-facing articles | 0 | Unqualified links whose note name exists in multiple reader-facing topics |
@@ -25,7 +25,7 @@ The wiki is navigable for normal reading: reader-facing broken links and visible
 | Missing references sections | 0 | Pages that still need a source/provenance footer |
 | Empty references sections | 0 | Pages with a references heading but no provenance links or notes |
 | Missing confidence frontmatter | 0 | Pages without confidence classification |
-| Missing freshness frontmatter | 29 | Pages without stable/current-sensitive currency classification |
+| Missing freshness frontmatter | 16 | Pages without stable/current-sensitive currency classification |
 | Missing up frontmatter | 0 | Pages without explicit parent navigation |
 | Stubs under 1500 bytes | 0 | Thin pages that may not carry their topic yet |
 | Empty notes | 0 | Notes with no body text |
@@ -37,7 +37,7 @@ Freshness classification is metadata, not a claim that every current fact has ju
 
 | Check | Count | Meaning |
 | --- | ---: | --- |
-| Current-sensitive reader-facing articles | 237 | Pages about live models, local-inference tooling, SpaceX operations, or other facts likely to age |
+| Current-sensitive reader-facing articles | 253 | Pages about live models, local-inference tooling, SpaceX operations, or other facts likely to age |
 | Current-sensitive pages missing dated review marker | 120 | Refresh queue for pages that need explicit source-date evidence before relying on live claims |
 
 ## Editorial Readiness
@@ -144,4 +144,4 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - [Generated wiki quality summary](<_ops/reports/wiki-quality-summary.json>)
 - [Generated full audit summary](<_ops/reports/audit-summary.json>)
 
-Generated: 2026-07-01T19:28:38
+Generated: 2026-07-01T20:45:04

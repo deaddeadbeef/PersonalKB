@@ -2,6 +2,8 @@
 tags: [stock-trading, market-mechanics, orders]
 up: "[[Stock Trading]]"
 confidence: verified
+freshness: current-sensitive
+last-verified: 2026-07-01
 tier-coverage: [core, practice]
 ---
 # Order Types and Execution

@@ -2,6 +2,8 @@
 tags: [stock-trading, analysis, price-action]
 up: "[[Stock Trading]]"
 confidence: verified
+freshness: current-sensitive
+last-verified: 2026-07-01
 tier-coverage: [core, practice]
 ---
 # Price Action Momentum and Volatility
@@ -62,6 +64,7 @@ For any chart observation, write:
 ## References
 
 - [[Stock Trading/Sources/Sources Index|Sources Index]]
+- [[Paper Trading Lab]]
 - [FINRA - What Is Momentum Investing?](https://www.finra.org/investors/insights/momentum-investing)
 - [FINRA - Volatility](https://www.finra.org/investors/investing/investing-basics/volatility)
 - [FINRA - Risk](https://www.finra.org/investors/investing/investing-basics/risk)

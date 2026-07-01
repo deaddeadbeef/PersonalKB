@@ -2,6 +2,8 @@
 tags: [stock-trading, sources]
 up: "[[Stock Trading]]"
 confidence: verified
+freshness: current-sensitive
+last-verified: 2026-07-01
 tier-coverage: [core]
 ---
 # Sources Index - Stock Trading
@@ -23,6 +25,8 @@ This source index records the first official source layer for the Stock Trading 
 | [Stock Market Circuit Breakers](https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-market-circuit-breakers) | SEC Investor.gov | Glossary/investor education | Market-wide and single-stock trading pauses |
 | [Using EDGAR to Research Investments](https://www.investor.gov/introduction-investing/getting-started/researching-investments/using-edgar-research-investments) | SEC Investor.gov | Investor education | EDGAR and filing route |
 | [How to Read a 10-K](https://www.investor.gov/introduction-investing/getting-started/researching-investments/how-read-10-k) | SEC Investor.gov | Investor education | 10-K sections and filing literacy |
+| [How to Read a 10-K/10-Q](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/how-read) | SEC Investor.gov | Investor bulletin | Annual and quarterly filing worksheet fields |
+| [How to Read an 8-K](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/how-read-8) | SEC Investor.gov | Investor bulletin | Current-event filing awareness |
 | [Asset Allocation and Diversification](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) | SEC Investor.gov | Investor education | Time horizon, risk tolerance, diversification, rebalancing |
 | [Investing Basics](https://www.finra.org/investors/investing/investing-basics) | FINRA | Investor education | Securities basics and stock ownership wording |
 | [Risk](https://www.finra.org/investors/investing/investing-basics/risk) | FINRA | Investor education | Risk taxonomy and concentration risk |
@@ -33,6 +37,7 @@ This source index records the first official source layer for the Stock Trading 
 | [Evaluating Stocks](https://www.finra.org/investors/investing/investment-products/stocks/evaluating-stocks) | FINRA | Investor education | Due diligence questions and valuation ratios |
 | [Stock Investing and Due Diligence](https://www.finra.org/investors/insights/stock-investing-due-diligence) | FINRA | Investor insight | Due diligence workflow and research sources |
 | [What Is Momentum Investing?](https://www.finra.org/investors/insights/momentum-investing) | FINRA | Investor insight | Momentum and technical-analysis risk framing |
+| [Financial Tips for New Investors](https://www.finra.org/investors/insights/tips-new-investors) | FINRA | Investor insight | Goals, time horizon, and beginner guardrails |
 
 ## Refresh Rules
 

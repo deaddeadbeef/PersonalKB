@@ -5077,3 +5077,46 @@ Verification:
 - `wiki-current-sensitive-review.md` now reports `Count: 120`.
 - `PersonalKB Wiki Quality Dashboard.md` now reports 240 current-sensitive reader-facing articles and 120 current-sensitive pages missing a dated review marker.
 - Remaining full-audit noise is protected scaffolding only: 516 protected raw/chunk/template broken wikilinks and 10 template placeholder hits.
+
+## [2026-07-01] refine | Stock Trading reading spine and practice artifacts
+
+Scope: refine the Stock Trading wiki into a book-style route with filing and paper-trading proof artifacts.
+
+Changed wiki/source files:
+- `Stock Trading/Stock Trading.md`
+- `Stock Trading/Stock Trading - Learning Path.md`
+- `Stock Trading/Stock Trading Book Reading Spine.md`
+- `Stock Trading/Analysis/Company Filing Worksheet.md`
+- `Stock Trading/Analysis/Reading Company Filings and Fundamentals.md`
+- `Stock Trading/Analysis/Price Action Momentum and Volatility.md`
+- `Stock Trading/Foundations/Returns Risk and Time Horizon.md`
+- `Stock Trading/Foundations/Stocks and Ownership.md`
+- `Stock Trading/Market Mechanics/Accounts Settlement and Margin.md`
+- `Stock Trading/Market Mechanics/How Stock Markets Work.md`
+- `Stock Trading/Market Mechanics/Order Types and Execution.md`
+- `Stock Trading/Risk Management/Position Sizing and Trade Journaling.md`
+- `Stock Trading/Study/Paper Trading Lab.md`
+- `Stock Trading/Study/Stock Market Basics - Review Drill.md`
+- `Stock Trading/Study/Stock Trading Study Index.md`
+- `Stock Trading/Sources/Sources Index.md`
+- `PersonalKB Book Reading Guide.md`
+- `_ops/generate_topic_reading_spines.py`
+- `index.md`
+- `_ops/reports/audit-missing-freshness.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `log.md`
+
+Maintenance changes:
+- Added Stock Trading to the generated book-reading-spine system and the global guide route.
+- Added `Company Filing Worksheet` and `Paper Trading Lab` as practice artifacts for evidence-first study.
+- Added current-sensitive freshness and `last-verified: 2026-07-01` to Stock Trading pages touched in this pass.
+- Added official Investor.gov and FINRA source rows to the Stock Trading source index.
+
+Verification:
+- Web sources checked: Investor.gov Stocks, Types of Orders, How to Read a 10-K, How to Read a 10-K/10-Q, How to Read an 8-K; FINRA Risk, Volatility, Evaluating Stocks, and Financial Tips for New Investors.
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; Stock Trading produced 15 linked articles.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports with 987 candidate reader-facing articles, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans. The 16 remaining missing freshness rows are outside the Stock Trading scope.

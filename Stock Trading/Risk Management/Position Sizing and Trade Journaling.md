@@ -2,6 +2,8 @@
 tags: [stock-trading, risk-management, journaling]
 up: "[[Stock Trading]]"
 confidence: policy
+freshness: current-sensitive
+last-verified: 2026-07-01
 tier-coverage: [core, practice]
 ---
 # Position Sizing and Trade Journaling
@@ -34,6 +36,10 @@ Then check whether the resulting position size is reasonable relative to:
 - Settlement and account rules.
 
 If the size is too large, the answer is not to ignore the invalidation point. The answer is to reduce planned risk, choose a different setup, or skip the trade.
+
+## Practice Batch
+
+Use [[Paper Trading Lab]] after this page. The lab forces ten journal rows to be reviewed as a batch, so one lucky result does not get mistaken for skill.
 
 ## Trade Journal Row
 
@@ -73,6 +79,7 @@ If the size is too large, the answer is not to ignore the invalidation point. Th
 ## References
 
 - [[Stock Trading/Sources/Sources Index|Sources Index]]
+- [[Paper Trading Lab]]
 - [FINRA - Risk](https://www.finra.org/investors/investing/investing-basics/risk)
 - [FINRA - Frequent Intraday Trading](https://www.finra.org/investors/insights/frequent-intraday-trading)
 - [Investor.gov - Types of Orders](https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders)
