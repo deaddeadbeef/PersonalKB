@@ -1,6 +1,6 @@
 # Missing freshness Frontmatter
 
-Count: 29
+Count: 16
 
 - [[LLM/2023 — Open Models and Agents/2023 — Open Models and Agents Overview|2023 — Open Models and Agents]] (`LLM/2023 — Open Models and Agents/2023 — Open Models and Agents Overview.md`)
 - [[LLM/Pre-2017 — Before Transformers/Embeddings and Representation Geometry|Embeddings and Representation Geometry]] (`LLM/Pre-2017 — Before Transformers/Embeddings and Representation Geometry.md`)
@@ -18,16 +18,3 @@ Count: 29
 - [[Project Hail Mary/Xenobiology/Rocky and the Eridians|Rocky and the Eridians]] (`Project Hail Mary/Xenobiology/Rocky and the Eridians.md`)
 - [[Project Hail Mary/Xenobiology/Xenolinguistics and First Contact|Xenolinguistics and First Contact]] (`Project Hail Mary/Xenobiology/Xenolinguistics and First Contact.md`)
 - [[Project Hail Mary/Xenobiology/Xenonite - Eridian Structural Material|Xenonite — Eridian Structural Material]] (`Project Hail Mary/Xenobiology/Xenonite - Eridian Structural Material.md`)
-- [[Stock Trading/Analysis/Price Action Momentum and Volatility|Price Action Momentum and Volatility]] (`Stock Trading/Analysis/Price Action Momentum and Volatility.md`)
-- [[Stock Trading/Analysis/Reading Company Filings and Fundamentals|Reading Company Filings and Fundamentals]] (`Stock Trading/Analysis/Reading Company Filings and Fundamentals.md`)
-- [[Stock Trading/Foundations/Returns Risk and Time Horizon|Returns Risk and Time Horizon]] (`Stock Trading/Foundations/Returns Risk and Time Horizon.md`)
-- [[Stock Trading/Foundations/Stocks and Ownership|Stocks and Ownership]] (`Stock Trading/Foundations/Stocks and Ownership.md`)
-- [[Stock Trading/Market Mechanics/Accounts Settlement and Margin|Accounts Settlement and Margin]] (`Stock Trading/Market Mechanics/Accounts Settlement and Margin.md`)
-- [[Stock Trading/Market Mechanics/How Stock Markets Work|How Stock Markets Work]] (`Stock Trading/Market Mechanics/How Stock Markets Work.md`)
-- [[Stock Trading/Market Mechanics/Order Types and Execution|Order Types and Execution]] (`Stock Trading/Market Mechanics/Order Types and Execution.md`)
-- [[Stock Trading/Risk Management/Position Sizing and Trade Journaling|Position Sizing and Trade Journaling]] (`Stock Trading/Risk Management/Position Sizing and Trade Journaling.md`)
-- [[Stock Trading/Sources/Sources Index|Sources Index - Stock Trading]] (`Stock Trading/Sources/Sources Index.md`)
-- [[Stock Trading/Stock Trading - Learning Path|Stock Trading - Learning Path]] (`Stock Trading/Stock Trading - Learning Path.md`)
-- [[Stock Trading/Stock Trading|Stock Trading]] (`Stock Trading/Stock Trading.md`)
-- [[Stock Trading/Study/Stock Market Basics - Review Drill|Stock Market Basics - Review Drill]] (`Stock Trading/Study/Stock Market Basics - Review Drill.md`)
-- [[Stock Trading/Study/Stock Trading Study Index|Stock Trading Study Index]] (`Stock Trading/Study/Stock Trading Study Index.md`)

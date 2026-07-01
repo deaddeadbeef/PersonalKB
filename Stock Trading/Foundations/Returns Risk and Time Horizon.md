@@ -2,6 +2,8 @@
 tags: [stock-trading, foundations, risk]
 up: "[[Stock Trading]]"
 confidence: verified
+freshness: current-sensitive
+last-verified: 2026-07-01
 tier-coverage: [core]
 ---
 # Returns Risk and Time Horizon

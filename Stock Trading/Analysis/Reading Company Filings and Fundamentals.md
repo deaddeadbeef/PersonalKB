@@ -2,6 +2,8 @@
 tags: [stock-trading, analysis, fundamentals]
 up: "[[Stock Trading]]"
 confidence: verified
+freshness: current-sensitive
+last-verified: 2026-07-01
 tier-coverage: [core, practice]
 ---
 # Reading Company Filings and Fundamentals
@@ -50,6 +52,10 @@ FINRA's stock-evaluation guidance suggests starting with basic operating and fin
 
 Ratios are comparison tools, not final answers. Compare them against the company's history, peers, industry economics, growth rate, margins, debt load, and risk profile.
 
+## Dedicated Worksheet
+
+Use [[Company Filing Worksheet]] when turning one filing into a paper-trade candidate. This keeps the evidence step separate from the later chart and order-entry steps.
+
 ## Beginner Filing Worksheet
 
 For one company, fill this before reading commentary:
@@ -68,6 +74,7 @@ For one company, fill this before reading commentary:
 ## References
 
 - [[Stock Trading/Sources/Sources Index|Sources Index]]
+- [[Company Filing Worksheet]]
 - [Investor.gov - Using EDGAR to Research Investments](https://www.investor.gov/introduction-investing/getting-started/researching-investments/using-edgar-research-investments)
 - [Investor.gov - How to Read a 10-K](https://www.investor.gov/introduction-investing/getting-started/researching-investments/how-read-10-k)
 - [FINRA - Evaluating Stocks](https://www.finra.org/investors/investing/investment-products/stocks/evaluating-stocks)

@@ -44,6 +44,7 @@ A good session is small enough to finish. If you open more than one shelf, write
 | Programming Languages | [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] | 81 |
 | Project Hail Mary | [[Project Hail Mary/Project Hail Mary Book Reading Spine|Project Hail Mary Book Reading Spine]] | 73 |
 | Recipes | [[Recipes/Recipes Book Reading Spine|Recipes Book Reading Spine]] | 31 |
+| Stock Trading | [[Stock Trading/Stock Trading Book Reading Spine|Stock Trading Book Reading Spine]] | 15 |
 | SpaceX | [[SpaceX/SpaceX Book Reading Spine|SpaceX Book Reading Spine]] | 95 |
 
 ## Choose A Reading Route
@@ -105,6 +106,16 @@ Goal: read ambitious technical narratives without losing the boundary between ev
 
 Proof target: classify a claim as verified, plausible, uncertain, policy, or fictional before reusing it.
 
+### Route F: Market Literacy And Trading Discipline
+
+Goal: relearn stocks from ownership and market plumbing through evidence, risk, and paper-trading discipline without turning early knowledge into live-capital action.
+
+1. [[Stock Trading/Stock Trading Book Reading Spine|Stock Trading]] — read ownership, return, market mechanics, account rules, filings, price action, and risk in order.
+2. [[Stock Trading/Analysis/Company Filing Worksheet|Company Filing Worksheet]] — turn one filing into a bounded thesis before looking for trade setups.
+3. [[Stock Trading/Study/Paper Trading Lab|Paper Trading Lab]] — run a ten-trade paper batch with planned risk and post-trade review.
+
+Proof target: produce one completed filing worksheet and ten paper-trade journal rows with no live capital, no margin, and no unplanned order types.
+
 ## Operating Modes
 
 - **Story mode:** read only book spines and overview pages. Stop before drills, chunks, raw notes, and operational runners.
@@ -129,4 +140,4 @@ If a topic feels overwhelming, read its spine prologue and first Book section on
 - [[PersonalKB Wiki Quality Dashboard]]
 - [[log|PersonalKB Maintenance Log]]
 
-Generated: 2026-06-30T03:10:04
+Generated: 2026-07-01T20:41:28

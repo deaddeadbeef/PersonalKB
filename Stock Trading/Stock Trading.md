@@ -2,6 +2,8 @@
 tags: [stock-trading, moc]
 up: "[[Welcome]]"
 confidence: verified
+freshness: current-sensitive
+last-verified: 2026-07-01
 tier-coverage: [core, practice]
 ---
 # Stock Trading
@@ -13,6 +15,7 @@ tier-coverage: [core, practice]
 ## Start Here
 
 - [[Stock Trading - Learning Path]] - progressive route from vocabulary to paper-trading discipline
+- [[Stock Trading Book Reading Spine]] - book-style route through the topic
 - [[Stock Trading Study Index]] - drills, recall prompts, and first practice loop
 - [[Stock Trading/Sources/Sources Index|Sources Index]] - official source layer for this domain
 
@@ -32,18 +35,20 @@ tier-coverage: [core, practice]
 ### Analysis
 
 - [[Reading Company Filings and Fundamentals]] - 10-K, 10-Q, EDGAR, business model, risk factors, financial statements, and valuation ratios
+- [[Company Filing Worksheet]] - turn one filing into a bounded thesis before a chart read or paper trade
 - [[Price Action Momentum and Volatility]] - chart vocabulary, momentum, beta, volatility, and why price action is a risk surface
 
 ### Risk Process
 
 - [[Position Sizing and Trade Journaling]] - convert a thesis into a bounded experiment with entry, invalidation, size, exit, and review
+- [[Paper Trading Lab]] - ten-trade paper batch for testing decision quality without live capital
 
 ## Operating Rules
 
 1. Learn the market object before learning the button: stock, broker, order, settlement, account type, and risk.
 2. Treat every trade as a hypothesis with a known maximum planned loss before entry.
 3. Do not use margin, short selling, or options in the first pass.
-4. Use paper trading and historical examples until the journal can show repeatable decision quality.
+4. Use [[Paper Trading Lab|paper trading]] and historical examples until the journal can show repeatable decision quality.
 5. Refresh current rules before applying anything involving settlement, margin, day trading, or taxes.
 
 ## Current-Rules Watchlist
@@ -58,6 +63,8 @@ These topics are current-sensitive and must be rechecked before use:
 ## References
 
 - [[Stock Trading/Sources/Sources Index|Sources Index]]
+- [[Stock Trading Book Reading Spine]]
+- [[Paper Trading Lab]]
 - [Investor.gov - Introduction to Investing](https://www.investor.gov/introduction-investing)
 - [Investor.gov - Stocks](https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks)
 - [Investor.gov - New T+1 Settlement Cycle](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/new-t1-settlement-cycle-what-investors-need-know-investor-bulletin)

@@ -117,6 +117,8 @@ class Topic:
     up: str
     promise: str
     sections: tuple[Section, ...]
+    freshness: str = "stable"
+    last_verified: str | None = None
 
 
 TOPICS = (
@@ -253,6 +255,24 @@ TOPICS = (
         ),
     ),
     Topic(
+        folder="Stock Trading",
+        title="Stock Trading",
+        slug="stock-trading",
+        spine_name="Stock Trading Book Reading Spine.md",
+        up="[[Stock Trading/Stock Trading|Stock Trading]]",
+        promise="Read stock trading as a controlled learning system: ownership, market plumbing, filings, risk limits, and paper practice before real capital.",
+        sections=(
+            Section("Prologue: No Live Capital Yet", (), "Start with the map, learning path, study index, and source index before touching strategy.", root=True),
+            Section("Book I: What A Stock Is", ("Foundations",), "Build the object model: equity ownership, returns, risk, time horizon, and diversification."),
+            Section("Book II: Market Plumbing And Account Rules", ("Market Mechanics",), "Learn how orders, brokers, settlement, cash accounts, and margin rules shape every trade."),
+            Section("Book III: Evidence Before Thesis", ("Analysis",), "Use filings, fundamentals, price action, momentum, and volatility as evidence layers rather than signals to chase."),
+            Section("Book IV: Risk And Paper Practice", ("Risk Management", "Study"), "Turn every idea into a bounded paper experiment with a journal, review rule, and proof artifact."),
+            Section("Appendix: Sources", ("Sources",), "Refresh official sources before relying on settlement, margin, tax, broker, or regulatory claims."),
+        ),
+        freshness="current-sensitive",
+        last_verified="2026-07-01",
+    ),
+    Topic(
         folder="SpaceX",
         title="SpaceX",
         slug="spacex",
@@ -268,6 +288,7 @@ TOPICS = (
             Section("Book V: Business And Mars", ("Business and Economics", "Mars and Beyond"), "End with market disruption, funding logic, and the long-range settlement architecture."),
             Section("Appendices: Practice And Sources", ("Study", "Sources"), "Use drills, cheatsheets, and source indexes after the narrative pass."),
         ),
+        freshness="current-sensitive",
     ),
 )
 
@@ -622,22 +643,29 @@ def render_topic(topic: Topic) -> tuple[Path, int]:
         f"tags: [{topic.slug}, index, book, reading-path, navigation]",
         f'up: "{topic.up}"',
         "confidence: verified",
-        "tier-coverage: [intuition, core, deep-dive, practice]",
-        "---",
-        f"# {topic.title} Book Reading Spine",
-        "",
-        topic.promise,
-        "",
-        "This page is the reader-facing spine. Treat it like the table of contents of a good book: read the chapter openers first, then deepen through the linked articles, then use study notes and sources as appendices.",
-        "",
-        "## How To Read This Topic",
-        "",
-        "1. **First pass: story.** Read the prologue and each Book heading, opening only overview and learning-path pages first.",
-        "2. **Second pass: mechanism.** Return to every linked article in order and follow the concepts inside each chapter.",
-        "3. **Third pass: practice.** Use study drills, checklists, labs, plans, or recipes to prove the knowledge operationally.",
-        "4. **Fourth pass: evidence.** Use source indexes when a claim matters or when the page is time-sensitive.",
-        "",
+        f"freshness: {topic.freshness}",
     ]
+    if topic.last_verified:
+        lines.append(f"last-verified: {topic.last_verified}")
+    lines.extend(
+        [
+            "tier-coverage: [intuition, core, deep-dive, practice]",
+            "---",
+            f"# {topic.title} Book Reading Spine",
+            "",
+            topic.promise,
+            "",
+            "This page is the reader-facing spine. Treat it like the table of contents of a good book: read the chapter openers first, then deepen through the linked articles, then use study notes and sources as appendices.",
+            "",
+            "## How To Read This Topic",
+            "",
+            "1. **First pass: story.** Read the prologue and each Book heading, opening only overview and learning-path pages first.",
+            "2. **Second pass: mechanism.** Return to every linked article in order and follow the concepts inside each chapter.",
+            "3. **Third pass: practice.** Use study drills, checklists, labs, plans, or recipes to prove the knowledge operationally.",
+            "4. **Fourth pass: evidence.** Use source indexes when a claim matters or when the page is time-sensitive.",
+            "",
+        ]
+    )
 
     linked_count = 0
     for section in topic.sections:
@@ -729,6 +757,7 @@ def render_root_guide(results: list[tuple[Topic, Path, int]]) -> Path:
         "tags: [vault-index, book, reading-path, navigation]",
         'up: "[[index]]"',
         "confidence: verified",
+        "freshness: stable",
         "tier-coverage: [intuition, core, deep-dive, practice]",
         "---",
         "# PersonalKB Book Reading Guide",
@@ -825,6 +854,16 @@ def render_root_guide(results: list[tuple[Topic, Path, int]]) -> Path:
             "3. Use source indexes aggressively: these topics mix stable engineering, live company facts, speculative architecture, and fictional claims.",
             "",
             "Proof target: classify a claim as verified, plausible, uncertain, policy, or fictional before reusing it.",
+            "",
+            "### Route F: Market Literacy And Trading Discipline",
+            "",
+            "Goal: relearn stocks from ownership and market plumbing through evidence, risk, and paper-trading discipline without turning early knowledge into live-capital action.",
+            "",
+            "1. [[Stock Trading/Stock Trading Book Reading Spine|Stock Trading]] — read ownership, return, market mechanics, account rules, filings, price action, and risk in order.",
+            "2. [[Stock Trading/Analysis/Company Filing Worksheet|Company Filing Worksheet]] — turn one filing into a bounded thesis before looking for trade setups.",
+            "3. [[Stock Trading/Study/Paper Trading Lab|Paper Trading Lab]] — run a ten-trade paper batch with planned risk and post-trade review.",
+            "",
+            "Proof target: produce one completed filing worksheet and ten paper-trade journal rows with no live capital, no margin, and no unplanned order types.",
             "",
             "## Operating Modes",
             "",
