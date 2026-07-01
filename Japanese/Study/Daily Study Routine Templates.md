@@ -2,6 +2,7 @@
 tags: [japanese, study, routine]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -94,7 +95,7 @@ When the day is busy, do only this:
 This keeps the chain alive without pretending every day is ideal.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Phase 1 — Foundation]]
 - [[Japanese Learning Dashboard]]
 - [[Daily Audio Loop]]

@@ -1,7 +1,9 @@
 ---
 tags: [japanese, grammar, hub]
 up: "[[Japanese]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Grammar Overview
 
@@ -87,4 +89,4 @@ Verbs and adjectives conjugate for tense, negation, formality, and mood. Nouns d
 | Transitive/Intransitive pairs | 開ける/開く, 消す/消える<br>![[gramov-021-hirakeru-hiraku-kesu-kieru.mp3]]|
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

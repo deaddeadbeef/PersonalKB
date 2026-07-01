@@ -2,6 +2,7 @@
 tags: [llm, fine-tuning]
 up: "[[2018–2019 — Pretrained Language Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Domain Adaptation
@@ -131,17 +132,17 @@ Domain adaptation turned general LLMs into more useful expert tools for code, me
 
 ---
 
-*See also:* [[2018–2019 — Pretrained Language Models Overview]], Continued Pretraining vs Fine-Tuning, [[Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]], Retrieval-Augmented Generation (RAG), Code Models and Code Understanding, Medical and Scientific LLMs, [[LLM/Sources/Sources Index|LLM Sources Index]]
-
-## Supporting Chunks
-### Supporting Chunks
-- Continued Pretraining vs Fine-Tuning — When to use each
-- [[Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]] — Preserving general capabilities
-- Retrieval-Augmented Generation (RAG) — Alternative to knowledge injection
-- Code Models and Code Understanding — Deep dive into code domain
-- Medical and Scientific LLMs — Healthcare/science domain specifics
+*See also:* [[2018–2019 — Pretrained Language Models Overview]], [[LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting|Continued Pretraining vs Fine-Tuning]], [[LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]], [[LLM/2020–2021 — The Scaling Era/Retrieval Pipelines and Context Assembly|Retrieval-Augmented Generation (RAG)]], [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation|Code Models and Code Understanding]], [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation|Medical and Scientific LLMs]], [[LLM/Sources/Sources Index|LLM Sources Index]]
 
 ## References
+### Supporting Chunks
+- [[LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting|Continued Pretraining vs Fine-Tuning]] — When to use each
+- [[LLM/2020–2021 — The Scaling Era/Continual Fine-Tuning and Catastrophic Forgetting|Catastrophic Forgetting]] — Preserving general capabilities
+- [[LLM/2020–2021 — The Scaling Era/Retrieval Pipelines and Context Assembly|Retrieval-Augmented Generation (RAG)]] — Alternative to knowledge injection
+- [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation|Code Models and Code Understanding]] — Deep dive into code domain
+- [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation|Medical and Scientific LLMs]] — Healthcare/science domain specifics
+
+### References
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Rozière et al. 2023: Code Llama
 - Guo et al. 2024: DeepSeek-Coder

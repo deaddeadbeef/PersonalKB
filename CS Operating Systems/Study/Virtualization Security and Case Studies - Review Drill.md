@@ -6,7 +6,9 @@ tags:
   - csos/security
   - csos/casestudies
 up: "[[OS Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Virtualization, Security, and Case Studies — Review Drill
 
@@ -156,4 +158,6 @@ A: Windows NT is a **hybrid** (not fully microkernel) design. A thin HAL (Hardwa
 - [[Security Overview]] — hub for security
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/CS Operating Systems]]
+- [[CS Operating Systems/Sources/Sources Index]]

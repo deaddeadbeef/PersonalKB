@@ -2,10 +2,13 @@
 tags: [japanese, vocabulary, thematic, nature]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Thematic Vocabulary — Nature and Weather
+
+> **One-line summary:** Nature and weather vocabulary supports small talk, travel planning, seasonal descriptions, and basic explanations of what is happening outside.
 
 ```mermaid
 flowchart TD
@@ -20,9 +23,9 @@ flowchart TD
 
 ## 🎯 Intuition
 
-**The Core Idea:** Understanding Thematic Vocabulary — Nature and Weather is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+**The Core Idea:** Learn weather words as reportable conditions: 今日/明日 + は + weather, season, temperature, or natural event.
+**Analogy:** Weather vocabulary is a shared window: it gives you safe small talk and practical context before harder conversation.
+**Why It Matters:** Forecasts, travel plans, seasonal greetings, and everyday chat all rely on these words.
 
 ## ⚙️ Core Mechanics
 
@@ -92,4 +95,4 @@ flowchart TD
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

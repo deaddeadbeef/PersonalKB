@@ -13,13 +13,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 28
 
-← [[PHM Novel - Chapter 27]] | [[Chapter Index]] | [[PHM Novel - Chapter 29]] →
+← [[PHM Novel - Chapter 27]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 29]] →
 
 > **One-line summary** — Grace sends the Taumoeba solution toward Earth, then sacrifices his own return by turning back to search for Rocky.
 
@@ -107,7 +108,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source; EPUB pages 492–502
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[PHM Novel - Chapter 27]]
 - [[PHM Novel - Chapter 29]]
 - [[Ryland Grace]]

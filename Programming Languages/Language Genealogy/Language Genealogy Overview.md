@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, genealogy]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Language Genealogy Overview
 
@@ -33,4 +35,4 @@ Erlang (1986) brought the actor model to practical systems programming with ligh
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

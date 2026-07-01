@@ -1,7 +1,9 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
-confidence: policy
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [practice]
 ---
 # Engine Performance — Review Drill
 
@@ -73,4 +75,7 @@ confidence: policy
 > **A15.** The Soviet RD-270, developed in the 1960s for the UR-700 program. It used N₂O₄/UDMH and reached full-power test firings but never flew. (The Integrated Powerhead Demonstrator by Aerojet in the 2000s also demonstrated the cycle at component level.)
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Study/SpaceX Study Index]]
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]

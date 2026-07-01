@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 21
 
-← [[PHM Novel - Chapter 20]] | [[Chapter Index]] | [[PHM Novel - Chapter 22]] →
+← [[PHM Novel - Chapter 20]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 22]] →
 
 > **One-line summary** — Grace discovers Taumoeba has eaten the ship's Astrophage fuel, then salvages the mission by turning the Beetles into improvised engines.
 
@@ -100,7 +101,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (p. 395–415)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Taumoeba and the Biological Solution]]
 - [[The Hail Mary Drive]]
 - [[Rocky and the Eridians]]

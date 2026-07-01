@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/searching
 confidence: verified
+freshness: stable
 up: '[[Sorting Overview]]'
 tier-coverage: [intuition, core, deep-dive, practice]
 ---

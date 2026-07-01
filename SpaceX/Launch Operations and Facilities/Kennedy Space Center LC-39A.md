@@ -3,6 +3,7 @@ tags: [spacex, facilities]
 up: "[[Launch Operations and Facilities Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Kennedy Space Center LC-39A
@@ -84,4 +85,4 @@ Use LC-39A to explain how launch infrastructure can preserve historical continui
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

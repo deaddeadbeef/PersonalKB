@@ -4,6 +4,7 @@ tags:
   - hub
 up: "[[CS Data Structures]]"
 confidence: verified
+freshness: stable
 ---
 
 # Tries and String Structures Overview

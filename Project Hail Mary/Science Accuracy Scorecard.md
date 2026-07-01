@@ -5,7 +5,9 @@ tags:
   - science
   - scorecard
 up: "[[Project Hail Mary]]"
-confidence: fictional
+confidence: verified
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Science Accuracy Scorecard
 
@@ -115,5 +117,5 @@ The novel's **strongest science** is in astronomy (spectroscopy, energy budgets,
 
 ## References
 
-- [[Sources Index]] — full bibliography
+- [[Project Hail Mary/Sources/Sources Index|Sources Index]] — full bibliography
 - Individual notes linked in each row above

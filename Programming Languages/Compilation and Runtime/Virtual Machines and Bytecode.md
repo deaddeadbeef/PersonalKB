@@ -2,6 +2,7 @@
 tags: [programming-languages, compilation, virtual-machines]
 up: "[[Compilation and Runtime Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -139,10 +140,13 @@ Design a VM for a new language. Would you choose a stack-based or register-based
 
 ---
 
-*See also:* [[Compilation and Runtime Overview]], [[Sources Index]]
+*See also:* [[Compilation and Runtime Overview]], [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## Supporting Chunks / References
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

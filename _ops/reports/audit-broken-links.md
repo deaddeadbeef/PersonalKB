@@ -1,12 +1,10 @@
 # Broken Wiki Links
 
-Count: 551
+Count: 516
 
 | file | target | embedded |
 | --- | --- | --- |
-| AGENTS.md | Page Name | False |
 | CS Algorithms/_chunks/chunk-algo-061 Quicksort Average-Case Comparisons.md | Comparison Sort Bounds | False |
-| CS Algorithms/_chunks/chunk-algo-062 Randomized Quicksort Expected Guarantee.md | Randomized Algorithms | False |
 | CS Algorithms/_chunks/chunk-algo-063 Introsort Worst-Case Guarantee.md | Heapsort | False |
 | CS Algorithms/_chunks/chunk-algo-063 Introsort Worst-Case Guarantee.md | Hybrid Sorting | False |
 | CS Algorithms/_chunks/chunk-algo-064 Quicksort In-Place Space Complexity.md | Space Complexity | False |
@@ -75,12 +73,8 @@ Count: 551
 | CS Algorithms/_chunks/chunk-algo-112 TSP Held-Karp DP Runs in O(n squared 2^n).md | NP-Completeness | False |
 | CS Algorithms/_chunks/chunk-algo-113 Dynamic Array O(1) Amortized Append via Doubling.md | Dynamic Arrays | False |
 | CS Algorithms/_chunks/chunk-algo-114 Splay Trees O(log n) Amortized via Access Lemma.md | Splay Trees | False |
-| CS Algorithms/_chunks/chunk-algo-117 Randomized Quicksort Expected 2n ln n Comparisons.md | Randomized Algorithms | False |
-| CS Algorithms/_chunks/chunk-algo-118 Miller-Rabin Primality Error Bounded by 4^(-k).md | Randomized Algorithms | False |
 | CS Algorithms/_chunks/chunk-algo-118 Miller-Rabin Primality Error Bounded by 4^(-k).md | Primality Testing | False |
-| CS Algorithms/_chunks/chunk-algo-119 Karger Min-Cut Succeeds with Probability 2 over n(n-1).md | Randomized Algorithms | False |
 | CS Algorithms/_chunks/chunk-algo-119 Karger Min-Cut Succeeds with Probability 2 over n(n-1).md | Graph Algorithms | False |
-| CS Algorithms/_chunks/chunk-algo-120 Chernoff Bounds Give Exponential Tail Decay.md | Randomized Algorithms | False |
 | CS Algorithms/_chunks/chunk-algo-120 Chernoff Bounds Give Exponential Tail Decay.md | Probability Theory | False |
 | CS Algorithms/_chunks/chunk-algo-124 Transitive Closure via Warshall Boolean DP in O(V cubed).md | Graph Algorithms | False |
 | CS Algorithms/_chunks/chunk-algo-125 Max-Flow Equals Min-Cut Duality Theorem.md | Network Flow | False |
@@ -279,8 +273,6 @@ Count: 551
 | CS Algorithms/_chunks/chunk-algo-200 LP Relaxation Integer Programming Bounds.md | Linear Programming | False |
 | CS Algorithms/_chunks/chunk-algo-200 LP Relaxation Integer Programming Bounds.md | Integer Programming | False |
 | CS Algorithms/_templates/Chapter Summary Template.md | page name | False |
-| CS Algorithms/_templates/Chunk Template.md | raw note name | False |
-| CS Algorithms/_templates/Chunk Template.md | wiki note name | False |
 | CS Algorithms/_templates/Raw Material Template.md | note name | False |
 | CS Data Structures/_chunks/chunk-ds-049 K-d trees partition space alternating dimensions On space.md | k-d Trees and Spatial Data | False |
 | CS Data Structures/_chunks/chunk-ds-054 Leftist heaps enable Ologn merge via right-spine bias.md | Binary Heaps and Heapsort | False |
@@ -405,8 +397,6 @@ Count: 551
 | CS Operating Systems/_chunks/chunk-os-209 Kernel Mutexes Sleep Not Spin.md | Kernel Synchronization | False |
 | CS Operating Systems/_chunks/chunk-os-210 Seqlocks Favor Writers Sequence Counter.md | Kernel Synchronization | False |
 | CS Operating Systems/_templates/Chapter Summary Template.md | Page Name | False |
-| CS Operating Systems/_templates/Chunk Template.md | raw note name | False |
-| CS Operating Systems/_templates/Chunk Template.md | wiki note name | False |
 | CS Operating Systems/_templates/Raw Material Template.md | note name | False |
 | Japanese/_templates/Japanese Page Template.md | {{hub}} | False |
 | LLM/_chunks/chunk-llm-121 GPT-1 Pre-Train Fine-Tune Paradigm.md | raw-llm-031 | False |
@@ -520,33 +510,8 @@ Count: 551
 | Programming Languages/_chunks/chunk-pl-189 Let It Crash vs Make Illegal States Unrepresentable.md | Panic and Recovery | False |
 | Programming Languages/_chunks/chunk-pl-193 The Function Coloring Problem Async vs Sync.md | Async-Await Patterns | False |
 | Programming Languages/_chunks/chunk-pl-196 Monorepo vs Multi-Repo Language Tooling Impact.md | Dependency Management | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Nominal vs Structural Subtyping | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Gradual Typing | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Reference Counting and ARC | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | CSP and Channels | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Async-Await Patterns | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Exceptions | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Panic and Recovery | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Effect Systems and Algebraic Effects | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Error Codes and Return Values | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Imperative and Procedural | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | OOP Philosophies | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Prototype-Based vs Class-Based | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Macro Systems | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Decorators and Annotations | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Runtime Systems | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | ML Modules and Functors | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Dependency Management | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Import and Export Patterns | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Dependency Management | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | History and Eras | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Historical Languages — Overview | False |
-| Programming Languages/_queries/QnA - Chunk Coverage Map.md | Influence Chains | False |
-| Programming Languages/_queries/QnA System Roadmap.md | Nominal vs Structural Subtyping | False |
-| Programming Languages/_queries/QnA System Roadmap.md | CSP and Channels | False |
 | Programming Languages/_templates/Chunk Template.md | raw-pl-NNN | False |
 | Programming Languages/_templates/Chunk Template.md | Parent Page | False |
-| Project Hail Mary/_templates/Chapter Summary Template.md | <Topic> Chapter Summaries - Secondary Sources Registry | False |
 | Project Hail Mary/_templates/Chapter Summary Template.md | Related Concept A | False |
 | Project Hail Mary/_templates/Chapter Summary Template.md | Related Concept B | False |
 | Project Hail Mary/_templates/Chunk Template.md | raw note name | False |

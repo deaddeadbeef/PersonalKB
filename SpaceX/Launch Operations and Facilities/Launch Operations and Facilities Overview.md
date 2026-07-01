@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Launch Operations and Facilities Overview
 
@@ -32,12 +34,12 @@ The McGregor, Texas facility is SpaceX's primary engine and stage testing site. 
 SpaceX operates its primary mission control from its Hawthorne, California headquarters, with additional facilities at launch sites. The mission control team manages countdowns, flight monitoring, landing operations, and Dragon missions. SpaceX's operations team also manages drone ship fleet operations and booster processing at port facilities.
 
 ## Pages in This Domain
-- LC-39A Kennedy Space Center
-- SLC-40 Cape Canaveral
-- Vandenberg Space Force Base
+- [[SpaceX/Launch Operations and Facilities/Kennedy Space Center LC-39A|LC-39A Kennedy Space Center]]
+- [[SpaceX/Launch Operations and Facilities/Cape Canaveral SLC-40|SLC-40 Cape Canaveral]]
+- [[SpaceX/Launch Operations and Facilities/Vandenberg SLC-4E|Vandenberg Space Force Base]]
 - [[Starbase Boca Chica]]
 - [[McGregor Test Facility]]
-- Mission Control and Operations
+- [[SpaceX/Launch Operations and Facilities/Mission Control and Launch Operations|Mission Control and Operations]]
 
 ## Related Domains
 - [[Falcon Program Overview]] — the vehicles launching from these facilities
@@ -46,4 +48,7 @@ SpaceX operates its primary mission control from its Hawthorne, California headq
 - [[Missions and Payloads Overview]] — launches conducted from each site
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

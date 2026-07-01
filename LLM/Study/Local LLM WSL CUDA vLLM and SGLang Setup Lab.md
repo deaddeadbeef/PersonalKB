@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, wsl, cuda, vllm, sglang, serving]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-15
 ---
@@ -345,9 +346,9 @@ Internal evidence:
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
-- [[chunk-llm-118 vLLM Continuous Batching Throughput]]
-- [[chunk-llm-120 vLLM De Facto Serving Framework]]
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]]
+- [[LLM/_chunks/chunk-llm-118 vLLM Continuous Batching Throughput|chunk-llm-118]]
+- [[LLM/_chunks/chunk-llm-120 vLLM De Facto Serving Framework|chunk-llm-120]]
 
 Current external docs checked 2026-06-15:
 

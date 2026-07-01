@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, type-systems, static-dynamic]
 up: "[[Type Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -73,4 +75,4 @@ Historically, the sharp boundary between these camps is eroding. Dynamic languag
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

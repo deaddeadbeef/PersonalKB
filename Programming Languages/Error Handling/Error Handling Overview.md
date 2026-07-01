@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, error-handling]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Error Handling Overview
 
@@ -31,4 +33,4 @@ Every error handling system navigates a tension between **ergonomics** and **vis
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

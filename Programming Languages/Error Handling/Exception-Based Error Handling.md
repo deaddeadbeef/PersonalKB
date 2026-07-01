@@ -2,6 +2,7 @@
 tags: [programming-languages, error-handling, exceptions]
 up: "[[Error Handling Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -86,4 +87,4 @@ Design the error-handling strategy for a new language. Would you choose checked 
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

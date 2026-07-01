@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/filesystems
 confidence: verified
+freshness: stable
 up: "[[File Systems Overview]]"
 tier-coverage:
   - intuition

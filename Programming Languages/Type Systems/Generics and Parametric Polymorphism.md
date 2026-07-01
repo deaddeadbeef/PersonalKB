@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, type-systems, generics]
 up: "[[Type Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -68,4 +70,4 @@ Bounded polymorphism and variance show that "generic" does not mean "anything go
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

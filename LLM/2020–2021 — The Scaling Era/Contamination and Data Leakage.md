@@ -2,6 +2,7 @@
 tags: [llm, evaluation]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Contamination and Data Leakage
@@ -100,9 +101,8 @@ The field's primary mitigation is the development of dynamic and continuously re
 
 *See also:* [[LLM/Pretraining/Data Curation and Deduplication|Data Curation]] — contamination is a data quality problem; [[LLM/Evaluation and Benchmarks/Knowledge and Reasoning Benchmarks|Benchmarks]] — the benchmarks being contaminated
 
-## Supporting Chunks / References
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

@@ -2,6 +2,7 @@
 tags: [japanese, study, phase-5, month-13, audio, nuance, pitch, idioms, advanced]
 up: "[[Japanese Learning Dashboard]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

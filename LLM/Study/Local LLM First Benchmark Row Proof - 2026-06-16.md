@@ -2,6 +2,7 @@
 tags: [study, llm, local-llm, inference, benchmark, latency, metrics, evidence, audit, proof]
 up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-16
 last-machine-check: 2026-06-16T07:35:35+08:00

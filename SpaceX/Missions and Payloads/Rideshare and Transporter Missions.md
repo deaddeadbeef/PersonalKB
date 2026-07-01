@@ -2,6 +2,7 @@
 tags: [spacex, missions]
 up: "[[Missions and Payloads Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -98,4 +99,7 @@ In 2023, SpaceX introduced **Bandwagon** missions — a new rideshare product ta
 *See also:* [[Missions and Payloads Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, memory-management, manual]
-up: "[[Memory Management Overview]]"
+up: "[[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -83,4 +85,4 @@ The industry consensus is shifting: new systems languages (Rust, Zig, Swift) all
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

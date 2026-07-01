@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/strings
 confidence: verified
+freshness: stable
 up: "[[Strings Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -106,9 +107,9 @@ The cost[i,j] recurrence has optimal substructure: an optimal alignment of X[1..
 
 ---
 
-*See also:* [[Dynamic Programming]], [[Floyd-Warshall Algorithm]], [[Asymptotic Notation]], [[Bellman-Ford Algorithm]], [[LCS - Longest Common Subsequence]], [[String Matching - KMP]], [[Arrays and Dynamic Arrays|Array]], [[CS Data Structures]]
+*See also:* [[Dynamic Programming]], [[Floyd-Warshall Algorithm]], [[Asymptotic Notation]], [[Bellman-Ford Algorithm]], [[LCS - Longest Common Subsequence]], [[String Matching - KMP]], [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Array]], [[CS Data Structures]]
 
-## Supporting Chunks
+## Supporting Chunks / References
 
 ### Supporting Chunks
 
@@ -116,6 +117,11 @@ The cost[i,j] recurrence has optimal substructure: an optimal alignment of X[1..
 - [[Strings - Edit Distance DP table fills in Theta(mn) time and O(mn) space]]
 - [[Analysis - Dynamic programming solves problems with overlapping subproblems by memoising a table]]
 
-## References
+### References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 7. See also [[String Matching - KMP]] for exact pattern matching.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

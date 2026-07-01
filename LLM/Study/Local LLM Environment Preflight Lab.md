@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, environment, hardware, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [practice]
 ---
 
@@ -267,7 +268,7 @@ This lab is complete when you have:
 - [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
-- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]]
-- [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]]
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
+- [[LLM/_chunks/chunk-llm-208 GPTQ Standard for Open-Source Deployment|chunk-llm-208]]
+- [[LLM/_chunks/chunk-llm-211 AWQ INT4 Edge Deployment Performance|chunk-llm-211]]
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]]

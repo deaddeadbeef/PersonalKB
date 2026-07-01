@@ -2,6 +2,7 @@
 tags: [llm, agents]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -121,12 +122,11 @@ Their legacy is practical rather than purely conceptual: production agents now d
 
 Design an execution loop for an agent that must search documentation, call an API, summarize results, and recover gracefully if the API fails. Specify how tools are selected, which calls can run in parallel, what the stopping conditions are, and what fallback chain should be used if a step breaks.
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]

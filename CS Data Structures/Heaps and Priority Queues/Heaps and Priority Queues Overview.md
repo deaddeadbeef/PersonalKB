@@ -4,6 +4,7 @@ tags:
   - hub
 up: "[[CS Data Structures]]"
 confidence: verified
+freshness: stable
 ---
 
 # Heaps and Priority Queues Overview

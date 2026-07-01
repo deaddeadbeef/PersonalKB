@@ -2,6 +2,7 @@
 tags: [cs-ds, foundational]
 up: "[[Foundational Concepts Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 created: 2025-07-14
 ---
@@ -112,7 +113,7 @@ For loops, multiply the number of iterations by the cost per iteration. For recu
 
 ---
 
-*See also:* [[Amortized Analysis]] | [[Data Structure Comparison and Selection]] | [[Memory Layout and Cache Performance]] | [[Sorting Overview|Sorting Algorithms Overview]] | Recursion and Recurrences | **CS Algorithms:** [[Asymptotic Notation]] | [[Master Theorem]]
+*See also:* [[Amortized Analysis]] | [[Data Structure Comparison and Selection]] | [[Memory Layout and Cache Performance]] | [[CS Algorithms/Sorting/Sorting Overview|Sorting Algorithms Overview]] | [[CS Algorithms/Analysis/Recurrence Relations|Recursion and Recurrences]] | **CS Algorithms:** [[Asymptotic Notation]] | [[Master Theorem]]
 
 ## Supporting Chunks
 

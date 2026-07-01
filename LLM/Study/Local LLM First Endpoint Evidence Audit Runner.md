@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, endpoint, evidence, audit, hosting, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-15
 ---

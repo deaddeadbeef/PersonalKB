@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 25
 
-← [[PHM Novel - Chapter 24]] | [[Chapter Index]] | [[PHM Novel - Chapter 26]] →
+← [[PHM Novel - Chapter 24]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 26]] →
 
 > **One-line summary** — A final flashback to Stratt's apocalyptic justification gives way to a new disaster on the return trip: Taumoeba has contaminated Grace's fuel again.
 
@@ -101,7 +102,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (p. 466–476)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Eva Stratt and the Ethics of Existential Response]]
 - [[Taumoeba and the Biological Solution]]
 - [[Ryland Grace]]

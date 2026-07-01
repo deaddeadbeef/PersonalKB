@@ -2,6 +2,7 @@
 tags: [cs-ds, linear]
 up: "[[Linear Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Doubly Linked Lists and Circular Lists
@@ -122,7 +123,7 @@ function moveToFront(dll, node):
 
 ---
 
-*See also:* [[Singly Linked Lists]] | [[Stacks]] | [[Queues and Deques]] | [[Circular Buffers]] | [[Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
+*See also:* [[Singly Linked Lists]] | [[Stacks]] | [[Queues and Deques]] | [[Circular Buffers]] | [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
 
 ## Supporting Chunks
 

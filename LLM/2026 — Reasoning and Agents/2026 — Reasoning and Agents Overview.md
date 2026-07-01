@@ -1,7 +1,10 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
-confidence: plausible
+confidence: uncertain
+freshness: current-sensitive
+last-verified: 2026-06-30
+tier-coverage: [intuition, core, deep-dive]
 ---
 # 2026 — Reasoning and Agents
 
@@ -13,7 +16,7 @@ The biggest paradigm shift since scaling laws: rather than making models bigger,
 
 ## Frontier Model Generation
 
-A new generation of frontier models arrived: Claude 4 series (Sonnet 4, Opus 4.5, Opus 4.6) from Anthropic, GPT-5 family (5.1 through 5.4) from OpenAI, Gemini 2.0/2.5 from Google DeepMind, and Llama 4 from Meta. These models exhibit substantially improved instruction following, reduced hallucination, better tool use, and native multimodal capabilities. The gap between open and closed models narrowed further.
+As of 2026-06-30, the current frontier snapshot has moved beyond the earlier Claude 4 / GPT-5.4 / Gemini 2.5 framing. Anthropic's public model docs place Claude Fable/Mythos 5 above Opus-tier capability but Anthropic's June 12 update says access was suspended, making Opus 4.8 the practical public fallback in the docs; OpenAI's model docs and release notes center GPT-5.5 and GPT-5.4 variants; Google positions Gemini 3.x / 3.5 around long-context, multimodal, coding, and agentic workflows; Meta's Llama 4 Scout and Maverick provide open-weight multimodal MoE alternatives. These models exhibit substantially improved instruction following, better tool use, native multimodal capability, and more agent-friendly long-horizon behavior. The gap between open and closed models narrowed further, but remains workload- and ecosystem-dependent.
 
 ## Agentic AI
 
@@ -39,4 +42,11 @@ Reasoning capabilities proved surprisingly transferable through distillation. Sm
 ← [[2024–2025 — Frontier and Efficiency Overview|2024–2025 — Frontier and Efficiency]]
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/LLM Book Reading Spine]]
+- [OpenAI model docs](https://developers.openai.com/api/docs/models/all)
+- [Anthropic Claude model overview](https://platform.claude.com/docs/en/about-claude/models/overview)
+- [Google Gemini Enterprise model docs](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models)
+- [Meta Llama 4 announcement](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)

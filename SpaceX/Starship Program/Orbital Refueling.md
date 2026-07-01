@@ -2,6 +2,7 @@
 tags: [spacex, starship]
 up: "[[Starship Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -82,4 +83,7 @@ Orbital refueling changes mission design from a one-launch brute-force problem i
 - Propose a lunar refueling architecture that balances depot size, tanker cadence, and boiloff control while still meeting the requirement to fully load a mission Starship before departure.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

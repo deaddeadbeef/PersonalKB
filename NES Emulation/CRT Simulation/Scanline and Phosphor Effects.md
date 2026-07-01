@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CRT Simulation Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Scanline and Phosphor Effects
@@ -87,4 +88,4 @@ In OxideNES, `sv_table` merges scanline darkening with vignette darkening into o
 *See also:* [[CRT Rendering Pipeline]], [[Barrel Distortion and Shadow Mask]], [[Glass Reflections and Chromatic Aberration]], [[CRT Simulation Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

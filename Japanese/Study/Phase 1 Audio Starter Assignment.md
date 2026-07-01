@@ -2,6 +2,7 @@
 tags: [japanese, audio, phase-1, starter, practice]
 up: "[[Daily Audio Loop]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

@@ -2,6 +2,7 @@
 tags: [study, llm, mastery, exam, oral-exam, evidence, run-sheet]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 

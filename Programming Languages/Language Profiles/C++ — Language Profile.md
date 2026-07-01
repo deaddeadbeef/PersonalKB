@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, cpp]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # C++ — Language Profile
 
@@ -86,7 +87,10 @@ C++ demonstrated that high-level abstraction and systems-level performance are c
 - Metaprogramming: [[Template Metaprogramming]]
 - Error handling: [[Exception-Based Error Handling]]
 - Compilation: [[Compilation Pipeline Stages]]
-- References: [[Sources Index]]
+- References: [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

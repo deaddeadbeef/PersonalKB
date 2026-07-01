@@ -2,6 +2,7 @@
 tags: [spacex, origins-history]
 up: "[[Origins and History Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -93,4 +94,4 @@ Falcon 1 mattered beyond its own modest performance. Musk has said SpaceX origin
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

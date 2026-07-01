@@ -2,6 +2,7 @@
 tags: [cs-ds, compression]
 up: "[[Foundational Concepts Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Succinct and Compressed Data Structures
@@ -116,7 +117,7 @@ Implement a simplified **FM-index** for a DNA sequence (alphabet {A, C, G, T}):
 
 ---
 
-*See also:* [[Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[Tries and Prefix Trees|Tries]] · Suffix Trees and Arrays | **CS Algorithms:** Information Theory · Compression Algorithms
+*See also:* [[CS Data Structures/Hash-Based Structures/Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[CS Data Structures/Tries and String Structures/Tries and Prefix Trees|Tries]] · [[CS Data Structures/Tries and String Structures/Suffix Trees|Suffix Trees and Arrays]] | **CS Algorithms:** [[CS Data Structures/Foundational Concepts/Succinct and Compressed Data Structures|Information Theory]] · [[CS Algorithms/Compression/Data Compression Overview|Compression Algorithms]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Data Structures/Sources/Sources Index|Sources Index]]

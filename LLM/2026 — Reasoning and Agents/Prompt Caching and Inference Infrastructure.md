@@ -2,6 +2,7 @@
 tags: [llm, reasoning-agents]
 up: "[[2026 — Reasoning and Agents Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -111,8 +112,8 @@ For a local applied workflow, use [[LLM/Study/Local LLM Prompt Cache and KV Reus
 
 ## Supporting Chunks
 
-- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260 Prompt caching stores KV attention states for common prefixes reducing agentic workflow costs by 60 to 90 percent]]
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]]
 
 ## References
 
-→ [[Sources Index]]
+→ [[LLM/Sources/Sources Index|Sources Index]]

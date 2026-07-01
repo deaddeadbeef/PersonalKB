@@ -2,6 +2,7 @@
 tags: [japanese, audio, phase-2, assignment, practice]
 up: "[[Phase 2 Weekly Review]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

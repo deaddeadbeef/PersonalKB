@@ -2,8 +2,19 @@
 tags: [pl, sources]
 up: "[[Programming Languages]]"
 confidence: verified
+freshness: stable
+tier-coverage: [provenance]
 ---
 # Sources Index
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Verify a language-design claim | Start with the relevant textbook, manual, or raw note below | Record whether the claim is semantic theory, implementation practice, ecosystem convention, or language philosophy |
+| Compare languages for a project | Pair this source index with [[Programming Languages/Study/Programming Languages Study Index|Programming Languages Study Index]] | Keep type, memory, runtime, concurrency, error, and module trade-offs separate |
+| Read normally | Use [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] first | Open sources when a comparison or design judgment needs backing |
+| Maintain the wiki | Prefer official manuals for current-language behavior and textbooks for theory | Add an as-of date when citing evolving tooling, package, or ecosystem claims |
 
 ## Primary Textbooks and References
 

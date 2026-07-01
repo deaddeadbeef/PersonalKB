@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Dragon and Human Spaceflight Overview
 
@@ -33,11 +35,11 @@ Dragon's Environmental Control and Life Support System (ECLSS) manages atmospher
 
 ## Pages in This Domain
 - [[Cargo Dragon]]
-- [[Crew Dragon Design|Crew Dragon]]
-- Commercial Crew Program
+- [[SpaceX/Dragon and Human Spaceflight/Crew Dragon Design|Crew Dragon]]
+- [[SpaceX/Dragon and Human Spaceflight/Commercial Crew Development|Commercial Crew Program]]
 - [[Operational Crew Missions]]
-- Private and Commercial Missions
-- Life Support and Safety Systems
+- [[SpaceX/Dragon and Human Spaceflight/Private Astronaut Missions|Private and Commercial Missions]]
+- [[SpaceX/Dragon and Human Spaceflight/Life Support and Abort Systems|Life Support and Safety Systems]]
 
 ## Related Domains
 - [[Origins and History Overview]] — the COTS contract that funded Dragon's development
@@ -46,4 +48,7 @@ Dragon's Environmental Control and Life Support System (ECLSS) manages atmospher
 - [[Missions and Payloads Overview]] — Dragon mission details and statistics
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

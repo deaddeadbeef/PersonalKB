@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[NES Hardware Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # NES Technical Specifications
@@ -88,4 +89,4 @@ List the emulator constants you would define first for CPU timing, PPU timing, R
 *See also:* [[NES Console Architecture]], [[NES History and Legacy]], [[NES vs Other 8-bit Consoles]], [[NES Hardware Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

@@ -12,6 +12,7 @@ tags:
   - biosonar
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Eridian Sensory Biology
@@ -146,8 +147,8 @@ graph TD
 
 ## References
 
-- [[Sources Index#Cetacean Biosonar 2024]] — cetacean biosonar neural processing and information bandwidth
-- [[Sources Index#Northeastern Accuracy Discussion]] — Eridian sensory design plausibility assessment
+- [[Project Hail Mary/Sources/Sources Index#Cetacean Biosonar 2024|Cetacean Biosonar 2024]] — cetacean biosonar neural processing and information bandwidth
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — Eridian sensory design plausibility assessment
 
 ## Supporting Chunks
 

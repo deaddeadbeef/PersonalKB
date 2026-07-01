@@ -6,6 +6,7 @@ tags:
   - petrova-line
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Stellar Dimming and the Petrova Line
@@ -87,10 +88,10 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#OpenStax Spectroscopy]] — textbook spectroscopy
-- [[Sources Index#Tabby's Star Overview]] — real anomalous dimming
-- [[Sources Index#Britannica PHM Science]] — contextualizing PHM's astronomy
-- [[Sources Index#NASA Earth Energy Budget]] — solar constant data
+- [[Project Hail Mary/Sources/Sources Index#OpenStax Spectroscopy|OpenStax Spectroscopy]] — textbook spectroscopy
+- [[Project Hail Mary/Sources/Sources Index#Tabby's Star Overview|Tabby's Star Overview]] — real anomalous dimming
+- [[Project Hail Mary/Sources/Sources Index#Britannica PHM Science|Britannica PHM Science]] — contextualizing PHM's astronomy
+- [[Project Hail Mary/Sources/Sources Index#NASA Earth Energy Budget|NASA Earth Energy Budget]] — solar constant data
 
 ## Supporting Chunks
 

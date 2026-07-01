@@ -2,8 +2,19 @@
 tags: [spacex, sources]
 up: "[[SpaceX]]"
 confidence: verified
+freshness: current-sensitive
+tier-coverage: [provenance]
 ---
 # Sources Index
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Verify durable engineering concepts | Start with technical documents and technical analyses below | Record vehicle, subsystem, source type, year, and what the source actually proves |
+| Verify current company, launch, Starlink, valuation, or Starship facts | Start here, then recheck against a current primary or high-quality source before reuse | Add an as-of date and freshness risk; do not treat old counts as live facts |
+| Read normally | Use [[SpaceX/SpaceX Book Reading Spine|SpaceX Book Reading Spine]] first | Open sources when numbers, dates, contracts, or performance claims matter |
+| Review or study | Pair this source index with [[SpaceX/Study/SpaceX Study Index|SpaceX Study Index]] | Classify claims as official, reported, estimated, historical, or speculative |
 
 ## Books
 
@@ -93,4 +104,6 @@ confidence: verified
 | 17 | Point-to-Point Transport | 2022 | [[raw-spacex-059]] |
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/SpaceX]]
+- [[SpaceX/SpaceX Book Reading Spine]]

@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/security
 confidence: verified
+freshness: stable
 up: "[[Security Overview]]"
 tier-coverage:
   - intuition

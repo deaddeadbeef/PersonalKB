@@ -2,6 +2,7 @@
 tags: [study, llm, mastery, recall, remediation, audit, evidence, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 last-verified: 2026-06-15
 ---

@@ -2,6 +2,7 @@
 tags: [llm, agents]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -102,12 +103,11 @@ The lasting insight is that good agents do not merely have more tools; they need
 
 Design a planning approach for an agent that must research a topic, write a draft, verify sources, and revise errors. Decide which parts should use upfront planning, which should use ReAct-style adaptation, and where a human checkpoint would be most valuable.
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]

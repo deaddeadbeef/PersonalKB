@@ -1,7 +1,3 @@
----
-up: "[[Project Hail Mary/Project Hail Mary|Project Hail Mary]]"
-confidence: fictional
----
 ﻿---
 tags:
   - phm
@@ -10,6 +6,7 @@ tags:
   - novel
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Novel vs Film Adaptation
@@ -120,8 +117,8 @@ flowchart LR
 
 ## References
 
-- [[Sources Index#Nature Film Review]] — science-journal perspective
-- [[Sources Index#Science News Review]] — science coverage of the adaptation
-- [[Sources Index#No Film School Goddard Interview]] — screenwriter's adaptation choices
-- [[Sources Index#SlashFilm Changes]] — book-to-movie change list
-- [[Sources Index#CinemaBlend Production]] — behind-the-scenes context
+- [[Project Hail Mary/Sources/Sources Index#Nature Film Review|Nature Film Review]] — science-journal perspective
+- [[Project Hail Mary/Sources/Sources Index#Science News Review|Science News Review]] — science coverage of the adaptation
+- [[Project Hail Mary/Sources/Sources Index#No Film School Goddard Interview|No Film School Goddard Interview]] — screenwriter's adaptation choices
+- [[Project Hail Mary/Sources/Sources Index#SlashFilm Changes|SlashFilm Changes]] — book-to-movie change list
+- [[Project Hail Mary/Sources/Sources Index#CinemaBlend Production|CinemaBlend Production]] — behind-the-scenes context

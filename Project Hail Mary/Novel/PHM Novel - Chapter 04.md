@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 04
 
-← [[PHM Novel - Chapter 03]] | [[Chapter Index]] | [[PHM Novel - Chapter 05]] →
+← [[PHM Novel - Chapter 03]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 05]] →
 
 > **One-line summary** — Grace solves the Petrova Line mechanism as the Hail Mary mission and Astrophage propulsion are formally revealed.
 
@@ -95,4 +96,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 84–111
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

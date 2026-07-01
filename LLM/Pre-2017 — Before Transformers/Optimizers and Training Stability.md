@@ -2,6 +2,7 @@
 tags: [llm, pretraining]
 up: "[[Pre-2017 — Before Transformers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -86,16 +87,16 @@ AdamW's adaptive learning rates handle the diverse scales of transformer paramet
 1. Suppose you want to transfer hyperparameters from a small transformer to a much wider one. Explain how μP would guide initialization and learning-rate scaling, and what practical evidence you would want before trusting that transfer.
 
 *See also:*
-- AdamW
-- Mixed Precision Training
-- Gradient Clipping
-- Checkpointing
-- μP
+- [[LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability|AdamW]]
+- [[LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability|Mixed Precision Training]]
+- [[LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability|Gradient Clipping]]
+- [[LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability|Checkpointing]]
+- [[LLM/Pre-2017 — Before Transformers/Optimizers and Training Stability|μP]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — observe AdamW, gradient clipping, train/validation loss, and overfitting in a small model
 
-## Supporting Chunks
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
-
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

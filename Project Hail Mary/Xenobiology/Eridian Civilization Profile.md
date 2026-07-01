@@ -10,6 +10,7 @@ tags:
   - civilization
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Eridian Civilization Profile
@@ -133,9 +134,9 @@ graph TD
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary novel source
-- [[Sources Index#PHM Secondary Chapter Summaries Registry]] — original secondary-mode synthesis basis (now superseded by primary chapter layer)
-- [[Sources Index#Linguistic Discovery Eridian]] — Eridian language design analysis
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary novel source
+- [[Project Hail Mary/Sources/Sources Index#PHM Secondary Chapter Summaries Registry|PHM Secondary Chapter Summaries Registry]] — original secondary-mode synthesis basis (now superseded by primary chapter layer)
+- [[Project Hail Mary/Sources/Sources Index#Linguistic Discovery Eridian|Linguistic Discovery Eridian]] — Eridian language design analysis
 
 
 ## Supporting Chunks

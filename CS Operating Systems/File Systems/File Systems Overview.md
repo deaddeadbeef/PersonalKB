@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # File Systems Overview
 
@@ -61,7 +63,9 @@ File systems give persistent, named structure to raw block storage. This domain 
 ## Related Domains
 
 - **[[IO Overview]]** — the I/O subsystem (device drivers, disk scheduling) sits below the file system; file system performance depends heavily on I/O stack efficiency.
-- **[[Memory Management Overview]]** — memory-mapped files (mmap) bridge virtual memory and the file system layer.
+- **[[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]]** — memory-mapped files (mmap) bridge virtual memory and the file system layer.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

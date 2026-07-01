@@ -2,6 +2,7 @@
 tags: [programming-languages, compilation, linking]
 up: "[[Compilation and Runtime Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -137,7 +138,10 @@ Early Unix systems used only static linking (`ar` archives → `ld`). Dynamic li
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

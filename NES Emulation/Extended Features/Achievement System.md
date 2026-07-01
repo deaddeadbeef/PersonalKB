@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Extended Features Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Achievement System
@@ -95,4 +96,4 @@ In OxideNES, `AchievementEngine` snapshots RAM every frame, compares current and
 *See also:* [[Input Recording and TAS]], [[Lua Scripting Engine]], [[Netplay — UDP Multiplayer]], [[Extended Features Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

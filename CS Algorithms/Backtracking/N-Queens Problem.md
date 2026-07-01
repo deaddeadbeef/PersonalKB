@@ -2,6 +2,7 @@
 tags: [csa, csa/backtracking]
 up: "[[Backtracking Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # N-Queens Problem
@@ -125,7 +126,7 @@ Without pruning, the search space is $N^{N}$ (try any column in any row). Row-ba
 
 ---
 
-*See also:* [[Backtracking Overview]] · [[Greedy Algorithms Overview]] · [[Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[Arrays and Dynamic Arrays|Arrays]] · [[Hash Tables and Hash Functions|Hash Sets]]
+*See also:* [[Backtracking Overview]] · [[Greedy Algorithms Overview]] · [[CS Algorithms/Analysis/Dynamic Programming|Dynamic Programming Overview]] | **CS Data Structures:** [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Arrays]] · [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Sets]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

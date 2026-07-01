@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-14
 ---
@@ -90,10 +91,10 @@ For the full worksheet, see [[LLM/Study/Local LLM Model and Hardware Sizing Guid
 
 Key theory links:
 
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] explains why decode speed is often memory-bandwidth-bound.
-- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]] and [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]] explain why 4-bit deployment became practical.
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] and [[chunk-llm-118 vLLM Continuous Batching Throughput]] explain why production servers care so much about KV-cache memory management.
-- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]] explains why repeated system prompts and agent loops need prefix reuse.
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]] explains why decode speed is often memory-bandwidth-bound.
+- [[LLM/_chunks/chunk-llm-208 GPTQ Standard for Open-Source Deployment|chunk-llm-208]] and [[LLM/_chunks/chunk-llm-211 AWQ INT4 Edge Deployment Performance|chunk-llm-211]] explain why 4-bit deployment became practical.
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]] and [[LLM/_chunks/chunk-llm-118 vLLM Continuous Batching Throughput|chunk-llm-118]] explain why production servers care so much about KV-cache memory management.
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]] explains why repeated system prompts and agent loops need prefix reuse.
 
 ## Lab 1: Fast Local Chat With Ollama
 
@@ -265,14 +266,14 @@ Read in this order if you want the theory to match the practical knobs:
 Internal evidence:
 
 - [[LLM/Sources/Sources Index]]
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
-- [[chunk-llm-118 vLLM Continuous Batching Throughput]]
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]]
+- [[LLM/_chunks/chunk-llm-118 vLLM Continuous Batching Throughput|chunk-llm-118]]
 - [[LLM/Study/Local LLM Concurrency and Batch Throughput Lab]]
-- [[chunk-llm-120 vLLM De Facto Serving Framework]]
-- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]]
-- [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
-- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
+- [[LLM/_chunks/chunk-llm-120 vLLM De Facto Serving Framework|chunk-llm-120]]
+- [[LLM/_chunks/chunk-llm-208 GPTQ Standard for Open-Source Deployment|chunk-llm-208]]
+- [[LLM/_chunks/chunk-llm-211 AWQ INT4 Edge Deployment Performance|chunk-llm-211]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]]
 - [[LLM/Study/Local LLM Serving Runbook]]
 - [[LLM/Study/Local LLM First Inference Evidence Pack]]
 - [[LLM/Study/Local LLM Hands-On Practicum Sequence]]

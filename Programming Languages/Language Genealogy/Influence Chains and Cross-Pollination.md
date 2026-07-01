@@ -2,6 +2,7 @@
 tags: [programming-languages, genealogy, influence]
 up: "[[Language Genealogy Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -149,7 +150,10 @@ Ideas don't just flow from research to mainstream — they flow back. Java's exp
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

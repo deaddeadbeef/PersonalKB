@@ -2,6 +2,7 @@
 tags: [programming-languages, concurrency, csp]
 up: "[[Concurrency Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -137,7 +138,7 @@ Hoare's 1978 CSP paper preceded practical implementations by decades. Occam (198
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · Actor Model · Mutex and Lock-Based Concurrency · Go Concurrency Patterns
+*See also:* [[Concurrency Models Overview]] · [[Programming Languages/Concurrency Models/The Actor Model|Actor Model]] · [[Programming Languages/Concurrency Models/Threads and Locks|Mutex and Lock-Based Concurrency]] · [[Programming Languages/Language Profiles/Go — Language Profile|Go Concurrency Patterns]]
 
 ---
 
@@ -147,7 +148,10 @@ Hoare's 1978 CSP paper preceded practical implementations by decades. Occam (198
 - Hoare, C.A.R. *Communicating Sequential Processes* (book). Prentice Hall, 1985.
 - Pike, Rob. "Concurrency Is Not Parallelism." Talk, 2012.
 - Milner, Robin. *The Polyadic π-Calculus: A Tutorial.* 1992.
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

@@ -2,14 +2,22 @@
 tags: [cs-ds, moc]
 up: "[[Welcome]]"
 confidence: verified
+freshness: stable
 ---
 
 # CS Data Structures
 
 > A comprehensive knowledge base on data structures — the fundamental building blocks of efficient software.
-> 📚 **New here?** Start with the [[CS Data Structures — Learning Path|Learning Path]] for a guided, progressive tour.
 
+## Start Here
 
+| Need | Open | Why |
+|---|---|---|
+| Read data structures like a book | [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures Book Reading Spine]] | Curated path from memory layout to trees, hashes, graphs, and advanced access patterns |
+| Follow a guided course path | [[CS Data Structures/CS Data Structures — Learning Path|CS Data Structures Learning Path]] | Progressive tour through the domain |
+| Choose a structure for code | [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures Study Index]] | Selection router, operation-cost drills, and evidence-of-mastery loop |
+| Check provenance | [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]] | Source map for the data-structures wiki |
+| Browse the catalog | This page below | Domain hubs, statistics, infrastructure, and references |
 
 ## Domain Hubs
 
@@ -33,7 +41,7 @@ Heap-ordered structures for efficient priority-based access.
 Hash functions, collision resolution, and probabilistic data structures.
 *8 pages — Hash tables, open addressing, chaining, Bloom filters, cuckoo hashing, Count-Min Sketch, HyperLogLog*
 
-### [[Graphs Overview]]
+### [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]]
 Graph representations and the data structures that support graph algorithms.
 *5 pages — Adjacency list, adjacency matrix, weighted/directed graphs*
 
@@ -59,7 +67,7 @@ Sophisticated structures for specialised problems: range queries, spatial indexi
 
 ## Infrastructure
 
-- [[Sources Index]] — raw source material
+- [[CS Data Structures/Sources/Sources Index|Sources Index]] — raw source material
 - [[CS Data Structures Study Index]] — review drills and cheatsheets
 - [[QnA - Chunk Coverage Map]] — chunk coverage tracking
 - [[QnA System Roadmap]] — expansion plans
@@ -71,4 +79,4 @@ Sophisticated structures for specialised problems: range queries, spatial indexi
 → [[CS Data Structures/Sources/Sources Index|Sources Index]]
 
 *Part of the [[Welcome|PersonalKB]] knowledge system.*
-*Primary sources: 4 total — see [[Sources Index]].*
+*Primary sources: 4 total — see [[CS Data Structures/Sources/Sources Index|Sources Index]].*

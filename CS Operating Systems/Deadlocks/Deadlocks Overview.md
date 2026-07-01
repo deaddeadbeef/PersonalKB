@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Deadlocks Overview
 
@@ -55,4 +57,6 @@ A deadlock occurs when a set of processes each hold a resource and wait for anot
 - **[[Processes Overview]]** — deadlock involves competing processes; the resource-allocation context is established there.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

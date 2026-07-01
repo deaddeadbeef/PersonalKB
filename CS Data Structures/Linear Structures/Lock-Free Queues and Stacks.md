@@ -2,6 +2,7 @@
 tags: [cs-ds, concurrency]
 up: "[[Linear Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Lock-Free Queues and Stacks
@@ -108,7 +109,7 @@ This is the building block of task-parallel runtimes (Cilk, TBB, Tokio). Test wi
 
 ---
 
-*See also:* [[Concurrent Data Structures]] · [[Queues and Deques|Queues]] · [[Stacks]] | **CS Algorithms:** Parallel Algorithms · Synchronization Primitives
+*See also:* [[Concurrent Data Structures]] · [[CS Data Structures/Linear Structures/Queues and Deques|Queues]] · [[Stacks]] | **CS Algorithms:** [[CS Algorithms/Techniques/Parallel Algorithms|Parallel Algorithms]] · [[CS Operating Systems/Synchronization/Synchronization Overview|Synchronization Primitives]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Data Structures/Sources/Sources Index|Sources Index]]

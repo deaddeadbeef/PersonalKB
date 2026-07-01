@@ -2,6 +2,7 @@
 tags: [study, llm, mastery, capstone, evidence, audit, local-llm, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-15
 ---

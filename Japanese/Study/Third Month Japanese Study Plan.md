@@ -2,6 +2,7 @@
 tags: [japanese, study, phase-2, month-3, audio, n5]
 up: "[[Japanese Learning Dashboard]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

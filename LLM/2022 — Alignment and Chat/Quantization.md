@@ -2,6 +2,7 @@
 tags: [llm, inference]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -110,18 +111,17 @@ Choose a deployment target (consumer laptop CPU, single consumer GPU, or multi-G
 - [[LLM/Study/Local LLM Model and Hardware Sizing Guide|Local LLM Model and Hardware Sizing Guide]] — estimating memory and quantization trade-offs before serving
 - [[LLM/Study/Local LLM Quantization and GPU Offload Lab|Local LLM Quantization and GPU Offload Lab]] — validating GGUF/AWQ/GPTQ/FP8/INT8 choices, GPU offload, KV-cache precision, speed, and quality
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- [[chunk-llm-205 GPTQ Hessian-Based Weight Quantization]] — GPTQ's second-order rounding method
-- [[chunk-llm-207 GPTQ 3-4 Bit Accuracy vs FP16]] — 4-bit and 3-bit quality trade-offs
-- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]] — why GPTQ became common in open-weight deployment
-- [[chunk-llm-209 AWQ Activation-Aware Salient Channels]] — AWQ's activation-aware saliency criterion
-- [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]] — AWQ's edge and on-device deployment relevance
-- [[chunk-llm-085 QLoRA 4-bit Quantization with LoRA]] — quantization for parameter-efficient fine-tuning
+- [[LLM/_chunks/chunk-llm-205 GPTQ Hessian-Based Weight Quantization|chunk-llm-205]] — GPTQ's second-order rounding method
+- [[LLM/_chunks/chunk-llm-207 GPTQ 3-4 Bit Accuracy vs FP16|chunk-llm-207]] — 4-bit and 3-bit quality trade-offs
+- [[LLM/_chunks/chunk-llm-208 GPTQ Standard for Open-Source Deployment|chunk-llm-208]] — why GPTQ became common in open-weight deployment
+- [[LLM/_chunks/chunk-llm-209 AWQ Activation-Aware Salient Channels|chunk-llm-209]] — AWQ's activation-aware saliency criterion
+- [[LLM/_chunks/chunk-llm-211 AWQ INT4 Edge Deployment Performance|chunk-llm-211]] — AWQ's edge and on-device deployment relevance
+- [[LLM/_chunks/chunk-llm-085 QLoRA 4-bit Quantization with LoRA|chunk-llm-085]] — quantization for parameter-efficient fine-tuning
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]
 - [[LLM/_raw/raw-llm-052 GPTQ Accurate Post-Training Quantization|GPTQ Accurate Post-Training Quantization]]

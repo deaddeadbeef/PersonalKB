@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/complexity
 confidence: verified
+freshness: stable
 up: '[[Complexity Theory Overview]]'
 tier-coverage: [intuition, core, deep-dive, practice]
 ---

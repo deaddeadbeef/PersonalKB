@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, erlang, elixir]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # Erlang and Elixir — Language Profile
 
@@ -59,7 +60,10 @@ Real-time messaging (WhatsApp served 2B users on Erlang), telecom infrastructure
 - Paradigm: [[Functional Programming Principles]]
 - Compilation: [[Virtual Machines and Bytecode]]
 - Metaprogramming: [[Macro Systems Compared]]
-- References: [[Sources Index]]
+- References: [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

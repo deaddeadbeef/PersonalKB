@@ -2,6 +2,7 @@
 tags: [spacex, technology]
 up: "[[Technology Deep Dives Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -99,4 +100,7 @@ SpaceX has iterated tile generations based on flight data, improving bond reliab
 *See also:* [[Starship Vehicle Architecture]], [[Integrated Flight Tests]], [[Mars Transit and Entry]], [[Manufacturing Innovation]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

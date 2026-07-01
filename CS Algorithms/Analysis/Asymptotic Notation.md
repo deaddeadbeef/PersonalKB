@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/analysis
 confidence: verified
+freshness: stable
 up: "[[Foundations and Analysis Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---

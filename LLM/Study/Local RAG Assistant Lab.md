@@ -2,6 +2,7 @@
 tags: [study, llm, rag, local-llm, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [practice]
 ---
 

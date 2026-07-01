@@ -2,6 +2,7 @@
 tags: [study, llm, reasoning, inference, local-llm, test-time-compute]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, practice, deep-dive]
 last-verified: 2026-06-15
 ---

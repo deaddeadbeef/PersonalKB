@@ -2,6 +2,7 @@
 tags: [llm, rag]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -92,16 +93,15 @@ Design a chunking policy for a mixed corpus of PDFs, HTML docs, and wiki notes. 
 
 ---
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ### See Also
 - [[Tokenization]] — sub-word tokenization interacts with chunk boundaries
 - [[Retrieval Pipelines and Context Assembly]] — chunking feeds retrieval pipelines
 - [[KV Cache and Context Reuse]] — chunk size affects context window utilization
-- [[Efficient Attention and Long-Context Variants]] — long-context models reduce chunking needs
+- [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] — long-context models reduce chunking needs
 
-## References
+### References
 - [[LLM/Sources/Sources Index]]

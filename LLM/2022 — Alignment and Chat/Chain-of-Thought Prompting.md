@@ -2,6 +2,7 @@
 tags: [llm, prompting]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -94,11 +95,11 @@ CoT changed prompting practice across the field by showing that latent reasoning
 ## Supporting Chunks
 
 - [[Few-Shot Prompting]]
-- Self-Consistency Decoding
-- Tree-of-Thought Reasoning
-- Program-of-Thought
-- Reasoning Faithfulness
-- Zero-Shot Prompting
+- [[LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting|Self-Consistency Decoding]]
+- [[LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting|Tree-of-Thought Reasoning]]
+- [[LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting|Program-of-Thought]]
+- [[LLM/2022 — Alignment and Chat/Chain-of-Thought Prompting|Reasoning Faithfulness]]
+- [[LLM/2020–2021 — The Scaling Era/Few-Shot Prompting|Zero-Shot Prompting]]
 
 ## References
 

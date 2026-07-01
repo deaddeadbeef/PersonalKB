@@ -2,6 +2,7 @@
 tags: [japanese, listening, shadowing]
 up: "[[Listening Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -89,4 +90,4 @@ Watch a 5-minute segment of a Japanese drama WITHOUT subtitles. Write a summary 
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

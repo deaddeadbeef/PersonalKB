@@ -2,6 +2,7 @@
 tags: [japanese, listening, phase-1, audio, native-audio]
 up: "[[Beginner Listening Resources]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -79,4 +80,4 @@ At the end of each week, record evidence in [[Phase 1 Weekly Review]]:
 - [[Phase 1 Local Audio Practice]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Beginner Listening Resources]]
-- [[Sources Index#Audio Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Audio Sources Checked 2026-06-06|Audio Sources Checked 2026-06-06]]

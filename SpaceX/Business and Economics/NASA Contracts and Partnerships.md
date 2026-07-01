@@ -2,6 +2,7 @@
 tags: [spacex, business]
 up: "[[Business and Economics Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -102,4 +103,7 @@ NASA's approach with SpaceX became an influential procurement model across civil
 *See also:* [[Commercial Crew Development]], [[Cargo Dragon]], [[Human Landing System]], [[SpaceX Funding and Valuation]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

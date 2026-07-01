@@ -2,6 +2,7 @@
 tags: [llm, alignment]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -122,12 +123,11 @@ Design an RLHF pipeline for a specialized assistant. Specify what you would coll
 - [[LLM/Alignment and Safety/Direct Preference Optimization|DPO]] — simplified alternative to RLHF
 - [[LLM/Fine-Tuning and Adaptation/Supervised Fine-Tuning|SFT]] — the first stage of the RLHF pipeline
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]

@@ -2,6 +2,7 @@
 tags: [llm, foundations]
 up: "[[2017 — The Transformer Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -87,19 +88,10 @@ Use [[LLM/Study/Attention Implementation Lab|Attention Implementation Lab]] to i
 
 ---
 
-*See also:* [[LLM/Architecture Variants/Efficient Attention and Long-Context Variants|Efficient Attention]] — reducing attention's $O(n²)$ cost; [[LLM/Inference and Serving/KV Cache and Context Reuse|KV Cache]] — caching attention computations for fast generation
-
-## Supporting Chunks
-### Supporting Chunks
-- [[LLM/_chunks/chunk-llm-001 Scaled Dot-Product Attention Formula|Scaled dot-product attention formula]]
-- [[LLM/_chunks/chunk-llm-002 Multi-Head Attention Parallel Projections|Multi-head attention parallel projections]]
-- [[LLM/_chunks/chunk-llm-004 Residual Connections and Layer Normalization|Residual connections and layer normalization]]
-- [[LLM/_chunks/chunk-llm-213 Multi-Query Attention Shared KV Heads|Multi-query attention shared KV heads]]
-- [[LLM/_chunks/chunk-llm-220 GQA Default Attention Modern LLMs|Grouped-query attention as a modern default]]
+*See also:* [[LLM/Architecture Variants/Efficient Attention and Long-Context Variants|Efficient Attention]] — reducing attention's $O(n²)$ cost; [[LLM/2024–2025 — Frontier and Efficiency/KV Cache and Context Reuse|KV Cache]] — caching attention computations for fast generation
 
 ## References
-- [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
-- [[LLM/_raw/raw-llm-054 Fast Transformer Decoding One Write-Head MQA|raw-llm-054 Fast Transformer Decoding One Write-Head MQA]]
-- [[LLM/_raw/raw-llm-055 GQA Training Generalized Multi-Query Transformer Models|raw-llm-055 GQA Training Generalized Multi-Query Transformer Models]]
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
 - [[LLM/Sources/Sources Index]]
 - [[LLM/Study/Attention Implementation Lab]]

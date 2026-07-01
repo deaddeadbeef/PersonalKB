@@ -1,11 +1,24 @@
 ---
 tags: [llm, learning-path]
-up: "[[LLM/LLM|LLM]]"
-confidence: policy
+up: "[[LLM/LLM]]"
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # LLM — Learning Path
 
 > A guided, progressive tour through the history and technology of large language models. Four passes, each building on the last.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read the LLM wiki like a book | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Choose drills, labs, local inference work, or proof artifacts | [[LLM/Study/LLM Study Index|LLM Study Index]] |
+| Verify paper or model claims | [[LLM/Sources/Sources Index|LLM Sources Index]] |
+
+Use this path when you want a structured study progression. Use the book spine when you want the narrative first, and use the study index when you are ready to produce evidence such as a local endpoint run, benchmark row, evaluation, or deployment decision.
 
 ## How to Use This Path
 
@@ -105,7 +118,7 @@ Read ONLY the 🎯 Intuition section of each page. Build a chronological mental 
 ### 2024–2025 — Frontier and Efficiency
 65. [[2024–2025 — Frontier and Efficiency Overview]] — the frontier era hub
 66. [[State Space Models and Mamba]] — alternatives to attention
-67. [[Efficient Attention and Long-Context Variants]] — 1M+ token contexts
+67. [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] — 1M+ token contexts
 68. [[Speculative Decoding]] — draft-verify acceleration
 69. [[KV Cache and Context Reuse]] — memory optimization for inference
 70. [[Batching and Continuous Batching]] — throughput optimization
@@ -183,7 +196,7 @@ Read the 🔬 Deep Dive sections for areas you want to master.
 - [[Quantization]] — GPTQ, AWQ, GGUF formats
 - [[Speculative Decoding]] — draft model selection, acceptance rates
 - [[KV Cache and Context Reuse]] — paged attention, prefix caching
-- [[Efficient Attention and Long-Context Variants]] — ring attention, flash attention
+- [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]] — ring attention, flash attention
 - [[Serving Architectures and Throughput-Latency Trade-offs]] — batching strategies
 
 ---
@@ -210,4 +223,7 @@ Build active-recall skill through drills and hands-on experimentation.
 Build a complete RAG-powered assistant: document ingestion → chunking → embedding → vector store → retrieval → reranking → generation → evaluation with LLM-as-Judge.
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/LLM]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/Study/LLM Study Index]]

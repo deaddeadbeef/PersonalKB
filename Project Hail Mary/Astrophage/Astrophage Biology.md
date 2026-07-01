@@ -6,6 +6,7 @@ tags:
   - extremophiles
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Astrophage Biology
@@ -79,11 +80,11 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Dadachova 2007]] — melanin + ionizing radiation in fungi
-- [[Sources Index#Casadevall 2017]] — melanized fungi and radiation review
-- [[Sources Index#Shunk 2020]] — ISS *C. sphaerospermum* experiment
-- [[Sources Index#Royal Institution Article]] — science-behind-fiction overview
-- [[Sources Index#NASA PHM Science]] — NASA's PHM breakdown
+- [[Project Hail Mary/Sources/Sources Index#Dadachova 2007|Dadachova 2007]] — melanin + ionizing radiation in fungi
+- [[Project Hail Mary/Sources/Sources Index#Casadevall 2017|Casadevall 2017]] — melanized fungi and radiation review
+- [[Project Hail Mary/Sources/Sources Index#Shunk 2020|Shunk 2020]] — ISS *C. sphaerospermum* experiment
+- [[Project Hail Mary/Sources/Sources Index#Royal Institution Article|Royal Institution Article]] — science-behind-fiction overview
+- [[Project Hail Mary/Sources/Sources Index#NASA PHM Science|NASA PHM Science]] — NASA's PHM breakdown
 
 ## Supporting Chunks
 

@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, language-profiles, ruby]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -76,4 +78,4 @@ Ruby on Rails (2004) made Ruby famous. Rails demonstrated that a small team coul
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

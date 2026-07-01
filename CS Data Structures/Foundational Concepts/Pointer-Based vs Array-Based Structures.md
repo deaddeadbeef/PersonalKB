@@ -2,6 +2,7 @@
 tags: [cs-ds, foundational]
 up: "[[Foundational Concepts Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 created: 2025-07-14
 ---
@@ -101,7 +102,7 @@ created: 2025-07-14
 
 ---
 
-*See also:* [[Memory Layout and Cache Performance]] | [[Abstract Data Types]] | [[Arrays and Dynamic Arrays|Dynamic Arrays]] | Linked Lists | [[Data Structure Comparison and Selection]] | **CS Algorithms:** Algorithm Implementation Strategies | Cache-Aware Algorithm Design
+*See also:* [[Memory Layout and Cache Performance]] | [[Abstract Data Types]] | [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Dynamic Arrays]] | [[CS Data Structures/Linear Structures/Singly Linked Lists|Linked Lists]] | [[Data Structure Comparison and Selection]] | **CS Algorithms:** [[CS Data Structures/Foundational Concepts/Pointer-Based vs Array-Based Structures|Algorithm Implementation Strategies]] | [[CS Data Structures/Foundational Concepts/Memory Layout and Cache Performance|Cache-Aware Algorithm Design]]
 
 ## Supporting Chunks
 

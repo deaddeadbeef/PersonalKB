@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n4, passive, causative]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -117,4 +118,4 @@ flowchart TD
 Describe a childhood experience using both passive (something done to you) and causative (something you were made to do) forms.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

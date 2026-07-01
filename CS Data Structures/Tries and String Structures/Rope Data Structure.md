@@ -2,6 +2,7 @@
 tags: [cs-ds, string-structures]
 up: "[[Tries and String Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Rope Data Structure
@@ -122,7 +123,7 @@ Implement a **collaborative text editor backend** using a persistent rope with o
 
 ---
 
-*See also:* [[Tries and Prefix Trees]] · [[Suffix Trees]] · [[Suffix Arrays]] · [[Persistent and Immutable Structures]] | **CS Algorithms:** String Algorithms · Text Editor Internals
+*See also:* [[Tries and Prefix Trees]] · [[Suffix Trees]] · [[Suffix Arrays]] · [[Persistent and Immutable Structures]] | **CS Algorithms:** [[CS Algorithms/Strings/Strings Overview|String Algorithms]] · [[Text Editor Internals]]
 
 ## Supporting Chunks
 - [[chunk-ds-046 Ropes make string insertion Ologn vs On for flat strings]]

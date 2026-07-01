@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Design Principles Overview
 
@@ -50,4 +52,6 @@ High-level principles that guide OS design decisions. These principles recur thr
 - **[[Case Studies Overview]]** — Linux VFS, Windows NT HAL, and Android's Binder are mechanism-vs-policy in real systems.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

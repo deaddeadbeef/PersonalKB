@@ -4,6 +4,7 @@ tags:
   - hub
 up: "[[CS Data Structures]]"
 confidence: plausible
+freshness: stable
 tier-coverage:
   - overview
   - core

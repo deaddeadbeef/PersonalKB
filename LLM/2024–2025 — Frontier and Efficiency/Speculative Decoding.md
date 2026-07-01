@@ -2,6 +2,7 @@
 tags: [llm, inference]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 

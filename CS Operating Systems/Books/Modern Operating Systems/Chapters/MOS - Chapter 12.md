@@ -10,8 +10,10 @@ source: "[[Tanenbaum 2015 - Modern Operating Systems]]"
 tags:
   - csos
   - book-chapter
-up: "[[Chapter Index]]"
-confidence: verified
+up: "[[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index]]"
+confidence: established
+freshness: stable
+tier-coverage: [core]
 ---
 # MOS — Chapter 12: Operating System Design
 
@@ -41,4 +43,4 @@ The final chapter steps back from mechanisms to discuss OS design philosophy. Ta
 
 ## References
 
-See [[Sources Index#Tanenbaum 2015]].
+See [[CS Operating Systems/Sources/Sources Index#Tanenbaum 2015|Tanenbaum 2015]].

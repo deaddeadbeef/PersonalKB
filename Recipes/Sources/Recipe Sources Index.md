@@ -1,13 +1,24 @@
 ---
 tags: [recipes, sources]
 up: "[[Recipes]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [provenance]
 ---
 # Recipe Sources Index
 
 > Bibliography for adapted recipes and image attributions. Each external source
 > is listed once with a short annotation. Individual recipe pages link back
 > here from their References section.
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Check a recipe adaptation | Use the adapted-recipes table when an external recipe is imported | Record what changed: protein target, calories, portion size, ingredient swap, or cooking method |
+| Check image provenance | Use the hero-photo attribution table below | Preserve source URL, license, local filename, and recipe page link |
+| Read normally | Use [[Recipes/Recipes Book Reading Spine|Recipes Book Reading Spine]] first | Open sources when attribution or adaptation provenance matters |
+| Maintain the library | Add one source row before publishing an externally adapted recipe | Keep original recipe inspiration separate from tested personal modifications |
 
 ## Adapted Recipes
 
@@ -47,4 +58,6 @@ entries below for exact terms.
 | Ginger Sesame Tofu & Edamame Stir-Fry | `ginger-sesame-tofu-edamame-stir-fry.jpg` | [Stir Fry with Tofu](https://commons.wikimedia.org/wiki/File:Stir_Fry_with_Tofu.JPG) | Public domain |
 
 ## References
-- [[index|PersonalKB Index]]
+
+- [[Recipes/Recipes]]
+- [[Recipes/Recipes Book Reading Spine]]

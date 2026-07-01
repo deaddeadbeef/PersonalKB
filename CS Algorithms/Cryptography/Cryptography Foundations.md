@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/cryptography
 confidence: verified
+freshness: stable
 up: "[[Cryptography Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -24,6 +25,8 @@ tier-coverage: [intuition, core, deep-dive, practice]
 3. **Symmetric Encryption** (fast, key problem): both parties share a secret key (e.g., AES). Fast for bulk data, but requires a secure channel to exchange the key.
 4. **Public-Key Cryptography** (solves key distribution): each party has a public key (freely shared) and a private key (secret). Messages encrypted with the public key can only be decrypted with the private key. Primary implementation: [[RSA Algorithm]].
 5. **Hybrid Encryption** (real-world solution): use public-key crypto to exchange a random session key, then encrypt bulk data with a symmetric cipher using that session key.
+
+### Hybrid Encryption (Real-World Practice)
 
 **Figure:** Hybrid encryption — RSA key exchange + AES bulk encryption
 
@@ -121,3 +124,8 @@ Design a simplified key exchange protocol: two parties who have never met must a
 ## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 8. See [[RSA Algorithm]] for the full RSA description. See [[Random Number Generation]] for how practical cryptographic key material is generated from a short random seed.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

@@ -3,7 +3,9 @@ tags:
   - cs-ds
   - hub
 up: "[[CS Data Structures]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Linear Structures Overview
 
@@ -42,4 +44,6 @@ In concurrent systems, traditional locks introduce contention and potential dead
 - [[Heaps and Priority Queues Overview]] — array-backed heaps as a specialised linear layout
 
 ## References
-- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]
+
+- [[CS Data Structures/Sources/Sources Index]]
+- [[CS Data Structures/CS Data Structures Book Reading Spine]]

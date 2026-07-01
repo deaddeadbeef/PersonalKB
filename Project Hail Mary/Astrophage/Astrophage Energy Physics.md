@@ -6,6 +6,7 @@ tags:
   - thermodynamics
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Astrophage Energy Physics
@@ -82,9 +83,9 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Morgan 1998]] — neutrino propulsion thrust analysis
-- [[Sources Index#NASA PHM Science]] — NASA's PHM science overview
-- [[Sources Index#Northeastern Accuracy Discussion]] — broad accuracy fact-check
+- [[Project Hail Mary/Sources/Sources Index#Morgan 1998|Morgan 1998]] — neutrino propulsion thrust analysis
+- [[Project Hail Mary/Sources/Sources Index#NASA PHM Science|NASA PHM Science]] — NASA's PHM science overview
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — broad accuracy fact-check
 
 
 ## Supporting Chunks

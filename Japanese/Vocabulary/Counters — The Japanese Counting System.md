@@ -2,6 +2,7 @@
 tags: [japanese, vocabulary, counters]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -156,4 +157,4 @@ Number + Counter comes AFTER the noun or with の:
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

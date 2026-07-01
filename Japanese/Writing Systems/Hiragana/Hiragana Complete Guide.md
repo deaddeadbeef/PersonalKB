@@ -2,6 +2,7 @@
 tags: [japanese, hiragana, writing-systems]
 up: "[[Writing Systems Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -218,7 +219,7 @@ You are ready to move to katakana when you can read a mixed hiragana row without
 - Long vowels matter. おばさん and おばあさん are different words.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[chunk-jp-001]]
 - [[chunk-jp-002]]
 - [[chunk-jp-003]]

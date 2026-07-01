@@ -2,6 +2,7 @@
 tags: [spacex, starship]
 up: "[[Starship Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -80,7 +81,10 @@ The flight sequence shows how Starship development advanced from simply leaving 
 ### Challenge
 - Create a proposed objective ladder for the next three IFT missions that balances bold new goals against the need to protect the rapid-iteration cadence.
 
-*See also:* [[Super Heavy Booster]], [[Starship Catch System]], Hot Staging Development, [[Failures Recovery and Lessons Learned]]
+*See also:* [[Super Heavy Booster]], [[Starship Catch System]], [[SpaceX/Starship Program/Integrated Flight Tests|Hot Staging Development]], [[Failures Recovery and Lessons Learned]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

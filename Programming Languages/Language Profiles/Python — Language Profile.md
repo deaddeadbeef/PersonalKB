@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, language-profiles, python]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -100,4 +102,4 @@ Python is the glue language: write the high-level logic in Python, call optimize
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

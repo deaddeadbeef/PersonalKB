@@ -2,8 +2,19 @@
 tags: [sources, nes-emulation]
 up: "[[NES Emulation]]"
 confidence: verified
+freshness: stable
+tier-coverage: [provenance]
 ---
 # Sources Index — NES Emulation
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Verify hardware behavior | Start with NESdev, the 6502 manual, or the matching raw note below | Record register, address range, timing boundary, side effect, and test evidence |
+| Debug emulator correctness | Pair this source index with [[NES Emulation/Study/NES Emulation Study Index|NES Emulation Study Index]] | Tie each symptom to a subsystem, expected trace, and ROM or test that would catch it |
+| Read normally | Use [[NES Emulation/NES Emulation Book Reading Spine|NES Emulation Book Reading Spine]] first | Open sources when behavior must be exact enough to implement |
+| Maintain the wiki | Keep OxideNES implementation facts separate from NES hardware facts | Mark implementation notes as emulator-specific unless they are hardware requirements |
 
 ## Primary Sources
 
@@ -51,4 +62,6 @@ confidence: verified
 | [[raw-nes-030]] | TAS Support | Input recording, frame advance, determinism |
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/NES Emulation]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]

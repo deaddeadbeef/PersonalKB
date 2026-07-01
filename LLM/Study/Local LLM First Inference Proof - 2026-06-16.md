@@ -17,24 +17,24 @@ Update: [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-1
 
 ## Verdict
 
-| Gate | Status | Evidence |
-|---|---|---|
-| Model store bootstrap | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-model-store-bootstrap\first-local-llm-model-store-bootstrap-model-store-bootstrap.json` |
-| Post-bootstrap readiness | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-model-store-bootstrap\first-local-llm-post-bootstrap-readiness-readiness.json` |
-| Windows runtime install | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-ollama-install-gate\first-local-inference-runtime-install\first-local-inference-runtime-install-runtime-install.json` |
-| Selected model source check | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-model-source-recheck\first-model-source-recheck-selected-qwen35-2b-q4\first-model-source-recheck-selected-qwen35-2b-q4-model-source-recheck.json` |
-| Model pull audit | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-qwen35-2b-q4-pull\first-qwen35-2b-q4-pull-first-model-pull.json` |
-| Runtime health | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-runtime-health-qwen35-2b-q4\first-runtime-health-qwen35-2b-q4-runtime-health.json` |
-| Native smoke response | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-think-false\native-generate-response.json` |
-| OpenAI-compatible smoke response | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-openai-long-cap\openai-chat-response.json` |
-| Combined smoke summary | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-final\first-smoke-final-qwen35-2b-q4-summary.json` |
-| First response debrief | `pass` | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-response-debrief\first-smoke-final-qwen35-2b-q4-debrief.json` |
-| Native request lifecycle | `pass` | [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16]] |
-| OpenAI-compatible client and streaming timing | `pass` | [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]] |
-| First benchmark row and benchmark audit | `pass` for interpretation-only use | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]] |
-| Endpoint audit and first quality probe | `hold` for quality | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]] |
-| Focused quality remediation | `hold` | [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]] |
-| Security/privacy runner | `pass` for loopback | [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]] |
+| Gate                                          | Status                             | Evidence                                                                                                                                                                                                                          |
+| --------------------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Model store bootstrap                         | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-model-store-bootstrap\first-local-llm-model-store-bootstrap-model-store-bootstrap.json`                                                                                       |
+| Post-bootstrap readiness                      | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-model-store-bootstrap\first-local-llm-post-bootstrap-readiness-readiness.json`                                                                                                |
+| Windows runtime install                       | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-ollama-install-gate\first-local-inference-runtime-install\first-local-inference-runtime-install-runtime-install.json`                                                         |
+| Selected model source check                   | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-model-source-recheck\first-model-source-recheck-selected-qwen35-2b-q4\first-model-source-recheck-selected-qwen35-2b-q4-model-source-recheck.json` |
+| Model pull audit                              | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-qwen35-2b-q4-pull\first-qwen35-2b-q4-pull-first-model-pull.json`                                                                                  |
+| Runtime health                                | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-runtime-health-qwen35-2b-q4\first-runtime-health-qwen35-2b-q4-runtime-health.json`                                                                |
+| Native smoke response                         | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-think-false\native-generate-response.json`                                                                                          |
+| OpenAI-compatible smoke response              | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-openai-long-cap\openai-chat-response.json`                                                                                          |
+| Combined smoke summary                        | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-smoke-request-final\first-smoke-final-qwen35-2b-q4-summary.json`                                                                                  |
+| First response debrief                        | `pass`                             | `C:\Users\fpan1\Documents\local-llm-runs\2026-06-16-first-local-inference\first-response-debrief\first-smoke-final-qwen35-2b-q4-debrief.json`                                                                                     |
+| Native request lifecycle                      | `pass`                             | [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16]]                                                                                                                                                                      |
+| OpenAI-compatible client and streaming timing | `pass`                             | [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]]                                                                                                                                                     |
+| First benchmark row and benchmark audit       | `pass` for interpretation-only use | [[LLM/Study/Local LLM First Benchmark Row Proof - 2026-06-16]]                                                                                                                                                                    |
+| Endpoint audit and first quality probe        | `hold` for quality                 | [[LLM/Study/Local LLM First Endpoint Audit and Quality Probe - 2026-06-16]]                                                                                                                                                       |
+| Focused quality remediation                   | `hold`                             | [[LLM/Study/Local LLM Quality Remediation Probe - 2026-06-16]]                                                                                                                                                                    |
+| Security/privacy runner                       | `pass` for loopback                | [[LLM/Study/Local LLM Security and Privacy Proof - 2026-06-16]]                                                                                                                                                                   |
 
 ## Machine And Runtime
 

@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/cryptography
 confidence: verified
+freshness: stable
 up: "[[Cryptography Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -104,3 +105,8 @@ These are complementary: PRBG is about *stretching* a secret into a keystream; h
 ## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Cormen 2013]], Chapter 8. See [[CS Algorithms/Sources/Sources Index#MIT OpenCourseWare 6.006|MIT OCW 6.006]], Lecture 14. See [[Cryptography Foundations]] for the broader cryptographic context and [[RSA Algorithm]] for the public-key mechanism used in hybrid encryption to exchange session keys.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

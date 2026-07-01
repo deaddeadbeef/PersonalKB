@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, tokenization, context-window, benchmarking, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, practice]
 last-verified: 2026-06-15
 ---
@@ -222,10 +223,10 @@ This lab is complete when you have:
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2023 — Open Models and Agents/Chunking Strategies]]
 - [[LLM/2023 — Open Models and Agents/RAG Evaluation and Failure Modes]]
-- [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
-- [[chunk-llm-169 SentencePiece Processes Raw Unicode Without Pre-Tokenization]]
-- [[chunk-llm-171 SentencePiece Guarantees Lossless Detokenization]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
+- [[LLM/_chunks/chunk-llm-119 PagedAttention Copy-on-Write Sharing|chunk-llm-119]]
+- [[LLM/_chunks/chunk-llm-169 SentencePiece Processes Raw Unicode Without Pre-Tokenization|chunk-llm-169]]
+- [[LLM/_chunks/chunk-llm-171 SentencePiece Guarantees Lossless Detokenization|chunk-llm-171]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
 
 Current external docs checked 2026-06-15:
 

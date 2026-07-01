@@ -2,6 +2,7 @@
 tags: [programming-languages, compilation, runtime-systems]
 up: "[[Compilation and Runtime Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -109,10 +110,13 @@ Design a new language intended for high-concurrency backend services. Decide whe
 
 ---
 
-*See also:* [[Compilation and Runtime Overview]], [[Sources Index]]
+*See also:* [[Compilation and Runtime Overview]], [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## Supporting Chunks / References
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

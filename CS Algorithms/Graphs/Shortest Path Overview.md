@@ -3,7 +3,8 @@ tags:
   - csa
   - csa/graphs
 confidence: verified
-up: '[[Graphs Overview]]'
+freshness: stable
+up: '[[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]'
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Shortest Path Overview
@@ -93,7 +94,7 @@ The algorithms differ in the order they apply relaxation:
 
 ---
 
-*See also:* [[Dijkstra's Algorithm]], [[Bellman-Ford Algorithm]], [[Floyd-Warshall Algorithm]], [[DAG and Topological Sort]], [[Graphs Overview]]
+*See also:* [[Dijkstra's Algorithm]], [[Bellman-Ford Algorithm]], [[Floyd-Warshall Algorithm]], [[DAG and Topological Sort]], [[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]
 
 ## Supporting Chunks
 

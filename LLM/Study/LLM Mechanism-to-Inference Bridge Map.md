@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, architecture, systems]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, practice, deep-dive]
 last-verified: 2026-06-15
 ---
@@ -160,10 +161,10 @@ Internal routes:
 - [[LLM/Study/Local RAG Minimal Python Harness]]
 - [[LLM/Study/Local LLM Tool Calling and Structured Output Lab]]
 - [[LLM/Study/LLM Deployment Decision Matrix]]
-- [[chunk-llm-049 FlashAttention Exact Attention with Tiling]]
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
-- [[chunk-llm-217 GQA Mechanism Interpolating MHA and MQA]]
-- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
+- [[LLM/_chunks/chunk-llm-049 FlashAttention Exact Attention with Tiling|chunk-llm-049]]
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]]
+- [[LLM/_chunks/chunk-llm-217 GQA Mechanism Interpolating MHA and MQA|chunk-llm-217]]
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]]
 
 External/current sources checked 2026-06-15:
 

@@ -2,6 +2,7 @@
 tags: [spacex, technology]
 up: "[[Technology Deep Dives Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -100,4 +101,7 @@ The motivation is strategic as well as mechanical. Helium is finite, price-volat
 *See also:* [[Technology Deep Dives Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

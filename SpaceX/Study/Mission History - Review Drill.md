@@ -1,7 +1,9 @@
 ---
 tags: [spacex, study, drill]
 up: "[[SpaceX Study Index]]"
-confidence: policy
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [practice]
 ---
 # Mission History — Review Drill
 
@@ -81,4 +83,7 @@ confidence: policy
 > **A15.** Over 99% — with only two failures (CRS-7 in June 2015 and Amos-6 pad anomaly in September 2016) and one partial failure (CRS-1 secondary payload, Oct 2012) across 300+ missions.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Study/SpaceX Study Index]]
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]

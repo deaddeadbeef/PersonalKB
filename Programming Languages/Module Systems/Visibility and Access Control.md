@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, module-systems, visibility]
 up: "[[Module Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -88,4 +90,4 @@ C++'s `friend` is an escape hatch from class-based encapsulation. It's useful fo
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [spacex, missions]
 up: "[[Missions and Payloads Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -101,4 +102,7 @@ Landing demonstrations were woven into operational missions. **CRS-8** (April 20
 *See also:* [[Missions and Payloads Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

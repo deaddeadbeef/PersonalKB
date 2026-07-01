@@ -2,6 +2,7 @@
 tags: [study, llm, papers, research-literacy, claims, evidence, synthesis]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, deep-dive, practice]
 last-verified: 2026-06-15
 ---

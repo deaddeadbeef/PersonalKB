@@ -1,11 +1,24 @@
 ---
 tags: [csos, learning-path]
-up: "[[CS Operating Systems/CS Operating Systems|CS Operating Systems]]"
-confidence: policy
+up: "[[CS Operating Systems/CS Operating Systems]]"
+confidence: verified
+freshness: stable
+tier-coverage: [core, practice]
 ---
 # CS Operating Systems — Learning Path
 
 > A guided, progressive tour through operating-systems theory and practice. Four passes, each building on the last.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read operating systems like a book | [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Route from a symptom or review goal to OS mechanisms | [[CS Operating Systems/Study/OS Study Index|OS Study Index]] |
+| Verify textbook, mechanism, or platform-specific claims | [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]] |
+
+Use this path when you want broad staged coverage. Use the book spine for the main narrative, and use the study index when you need to explain a performance, correctness, isolation, or safety question.
 
 ## How to Use This Path
 
@@ -37,7 +50,7 @@ Read ONLY the 🎯 Intuition section of each page. Build a broad mental map of h
 10. [[Interprocess Communication]] — pipes, shared memory, message passing
 
 ### Memory
-11. [[Memory Management Overview]] — the memory abstraction hub
+11. [[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]] — the memory abstraction hub
 12. [[Address Spaces]] — logical vs physical addresses
 13. [[Virtual Memory and Paging]] — page tables, TLBs, demand paging
 14. [[Page Replacement Algorithms]] — FIFO, LRU, clock, working set
@@ -175,4 +188,6 @@ Build active-recall skill through drills and applied exercises.
 Pick one case study ([[Linux Architecture Overview]], [[Android Architecture]], or [[Windows NT Architecture]]) and map every concept from Passes 1–3 onto the real system.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/CS Operating Systems]]
+- [[CS Operating Systems/Sources/Sources Index]]

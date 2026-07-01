@@ -1,7 +1,8 @@
 ---
 tags: [csa, csa/graphs]
-up: "[[Graphs Overview]]"
+up: "[[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Kruskal's Algorithm
@@ -117,7 +118,7 @@ Kruskal's correctness follows from the **cut property**:
 
 ---
 
-*See also:* [[Minimum Spanning Trees]] · [[Prim's Algorithm]] · [[BFS and DFS]] | **CS Data Structures:** [[Disjoint Sets and Union-Find|Union-Find (Disjoint Sets)]] · Sorting Algorithms
+*See also:* [[Minimum Spanning Trees]] · [[Prim's Algorithm]] · [[BFS and DFS]] | **CS Data Structures:** [[CS Data Structures/Advanced Structures/Disjoint Sets and Union-Find|Union-Find (Disjoint Sets)]] · [[CS Algorithms/Sorting/Sorting Overview|Sorting Algorithms]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

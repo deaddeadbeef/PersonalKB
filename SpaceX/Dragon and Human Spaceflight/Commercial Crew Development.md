@@ -4,6 +4,7 @@ tags: [spacex, dragon, human-spaceflight]
 up: "[[Dragon and Human Spaceflight Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Commercial Crew Development
@@ -81,4 +82,4 @@ Commercial Crew marked a major procurement change from traditional **cost-plus g
 Use the timeline to explain how NASA moved from early concept funding to an operational crew transportation service, and include why the April 2019 capsule loss did not end the program.
 
 ## References
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [llm, architecture]
 up: "[[2017 — The Transformer Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -74,23 +75,7 @@ The architecture preserved the original transformer seq2seq design and proved th
 
 *See also:* [[Language Model Fundamentals]] — seq2seq foundations before the transformer era; [[Encoder-Only Models]] — BERT derives from the encoder half of the architecture; [[Decoder-Only Models]] — GPT derives from the decoder half of the architecture; [[Supervised Fine-Tuning]] — fine-tuning encoder-decoder models like T5; [[Scaling Laws]] — scaling encoder-decoder vs decoder-only architectures
 
-## Supporting Chunks
-### Supporting Chunks
-- [[LLM/_chunks/chunk-llm-001 Scaled Dot-Product Attention Formula|Scaled dot-product attention formula]]
-- [[LLM/_chunks/chunk-llm-002 Multi-Head Attention Parallel Projections|Multi-head attention parallel projections]]
-- [[LLM/_chunks/chunk-llm-004 Residual Connections and Layer Normalization|Residual connections and layer normalization]]
-- [[LLM/_chunks/chunk-llm-045 T5 Text-to-Text Task Framing|T5 text-to-text task framing]]
-- [[LLM/_chunks/chunk-llm-046 T5 Span Corruption Pretraining|T5 span corruption pretraining]]
-- [[LLM/_chunks/chunk-llm-048 T5 Unified Multi-Task Training|T5 unified multi-task training]]
-- [[LLM/_chunks/chunk-llm-137 BART Denoising Seq2Seq Architecture|BART denoising seq2seq architecture]]
-- [[LLM/_chunks/chunk-llm-138 BART Five Noising Schemes|BART five noising schemes]]
-- [[LLM/_chunks/chunk-llm-140 BART Encoder-Decoder vs Decoder-Only Trade-off|BART encoder-decoder trade-off]]
-
 ## References
-- [[LLM/_raw/raw-llm-001 Attention Is All You Need|raw-llm-001 Attention Is All You Need]]
-- [[LLM/_raw/raw-llm-012 T5 Unified Text-to-Text Transformer|raw-llm-012 T5 Unified Text-to-Text Transformer]]
-- [[LLM/_raw/raw-llm-035 BART Denoising Sequence-to-Sequence Pre-training|raw-llm-035 BART Denoising Sequence-to-Sequence Pre-training]]
-- [[LLM/Sources/Sources Index]]
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-### Evidence Gaps
-- UL2 is named in the article body, but no dedicated UL2 raw source or chunk is linked yet.
+- [[LLM/Sources/Sources Index]]

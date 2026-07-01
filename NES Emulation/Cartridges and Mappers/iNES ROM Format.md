@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Cartridges and Mappers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -91,4 +92,4 @@ cartridge.rs `new()` validates magic bytes, detects dirty headers, extracts mapp
 *See also:* [[Common Mappers]], [[Bank Switching Explained]], [[Cartridges and Mappers Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

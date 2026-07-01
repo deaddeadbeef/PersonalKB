@@ -2,6 +2,7 @@
 tags: [japanese, culture, register]
 up: "[[Culture Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -81,4 +82,4 @@ Natural conversations SHIFT registers:
 You receive a business card from a Japanese colleague. Describe the proper protocol step-by-step, then write a follow-up thank-you email using appropriate formal language.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

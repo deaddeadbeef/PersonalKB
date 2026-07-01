@@ -2,6 +2,7 @@
 tags: [japanese, speaking, pronunciation, audio, qa, log]
 up: "[[Pronunciation and Audio Accuracy]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

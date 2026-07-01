@@ -3,7 +3,9 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Cryptography Overview
 
@@ -54,4 +56,6 @@ Cryptographic algorithms secure communication and data by exploiting mathematica
 - **[[Foundations and Analysis Overview]]** — Modular exponentiation uses fast exponentiation (repeated squaring); asymptotic analysis applies to key-generation and primality-testing algorithms.
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

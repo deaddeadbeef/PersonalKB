@@ -1,13 +1,23 @@
 ---
 tags: [spacex, moc]
-up: "[[index]]"
-confidence: plausible
+up: "[[Welcome]]"
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # SpaceX — Complete Knowledge Base
 
 > From a startup in a warehouse to humanity's bridge to Mars.
 
-> 📚 **New here?** Start with the [[SpaceX — Learning Path|Learning Path]] for a guided, progressive tour.
+## Start Here
+
+| Need | Open | Why |
+|---|---|---|
+| Read SpaceX like a technical story | [[SpaceX/SpaceX Book Reading Spine|SpaceX Book Reading Spine]] | Curated industrial narrative from Falcon through reusability, Dragon, Starship, Starlink, business, and Mars |
+| Follow a guided course path | [[SpaceX/SpaceX — Learning Path|SpaceX Learning Path]] | Progressive tour through the topic hubs |
+| Review vehicles, engines, missions, or business | [[SpaceX/Study/SpaceX Study Index|SpaceX Study Index]] | Goal router with drills, comparison aids, and freshness rules |
+| Check current or factual claims | [[SpaceX/Sources/Sources Index|SpaceX Sources Index]] | Source route for live-company facts, launch data, vehicle claims, and estimates |
+| Browse the catalog | This page below | Suggested learning path, study materials, infrastructure, and references |
 
 ## Suggested Learning Path
 
@@ -67,9 +77,12 @@ The launches that built SpaceX's track record and reputation.
 - [[SpaceX Study Index]] — Review drills, cheatsheet, reading path
 
 ## Infrastructure
-- [[Sources Index]] — Source bibliography
+- [[SpaceX/Sources/Sources Index|Sources Index]] — Source bibliography
 - [[QnA - Chunk Coverage Map]] — Chunk backing dashboard
 - [[QnA System Roadmap]] — Build progress tracker
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[Welcome]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/Sources/Sources Index]]

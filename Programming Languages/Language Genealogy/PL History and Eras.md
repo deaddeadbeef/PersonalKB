@@ -2,6 +2,7 @@
 tags: [programming-languages, genealogy, history]
 up: "[[Language Genealogy Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -143,7 +144,10 @@ No language has fully resolved this tension; each era's contribution is a new tr
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

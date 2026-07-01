@@ -3,7 +3,8 @@ tags:
   - csa
   - csa/graphs
 confidence: verified
-up: "[[Graphs Overview]]"
+freshness: stable
+up: "[[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Graph Fundamentals
@@ -120,3 +121,8 @@ Given a directed graph, determine the minimum number of edges to remove to make 
 ## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 5. See [[DAG and Topological Sort]] for the first algorithm built on this vocabulary.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

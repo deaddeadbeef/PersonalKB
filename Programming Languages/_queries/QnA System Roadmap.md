@@ -21,7 +21,7 @@ This roadmap defines the question-answer pairs that drive active recall across t
 
 3. **Q:** What is the difference between nominal and structural typing?
    **A:** Nominal: types are distinct if they have different names (Java, Rust, C#). Structural: types are compatible if they have the same shape (Go interfaces, TypeScript, OCaml modules). Trade-off: nominal prevents accidental compatibility; structural enables decoupled design.
-   **Sources:** [[Nominal vs Structural Subtyping]], [[chunk-pl-003 Nominal vs Structural Typing]]
+   **Sources:** [[Programming Languages/Type Systems/Nominal vs Structural Typing|Nominal vs Structural Typing]], [[chunk-pl-003 Nominal vs Structural Typing]]
 
 ### Memory Management
 4. **Q:** How does Rust prevent use-after-free without garbage collection?
@@ -39,7 +39,7 @@ This roadmap defines the question-answer pairs that drive active recall across t
 
 7. **Q:** How does Go's concurrency model differ from Erlang's?
    **A:** Go uses CSP (goroutines + channels) with shared memory possible. Erlang uses actors (processes + messages) with NO shared memory. Go's race detector catches bugs at runtime; Erlang's isolation prevents them by design. Erlang sacrifices raw performance for fault tolerance.
-   **Sources:** [[CSP and Channels]], [[The Actor Model]], [[chunk-pl-010 CSP Channels and the Actor Model]]
+   **Sources:** [[Programming Languages/Concurrency Models/CSP and Channel-Based Concurrency|CSP and Channel-Based Concurrency]], [[The Actor Model]], [[chunk-pl-010 CSP Channels and the Actor Model]]
 
 ## Tier 2 — Design Philosophy Questions
 

@@ -2,6 +2,7 @@
 tags: [cs-ds, persistent]
 up: "[[Advanced Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Persistent and Immutable Structures
@@ -109,7 +110,7 @@ Use path copying. Given an initial array of N elements and Q updates, analyze to
 
 ---
 
-*See also:* [[Red-Black Trees]] · [[Concurrent Data Structures]] · [[Rope Data Structure]] | **CS Algorithms:** Functional Programming Patterns · Version Control Internals
+*See also:* [[Red-Black Trees]] · [[Concurrent Data Structures]] · [[Rope Data Structure]] | **CS Algorithms:** [[Programming Languages/Programming Paradigms/Functional Programming Principles|Functional Programming Patterns]] · [[Version Control Internals]]
 
 ## Supporting Chunks
 - [[chunk-ds-026 Path copying makes BSTs persistent with Ologn overhead]]

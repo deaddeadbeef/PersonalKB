@@ -2,6 +2,7 @@
 tags: [llm, prompting]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # In-Context Learning Mechanisms
@@ -88,14 +89,14 @@ ICL became one of the defining discoveries of large-scale language modeling. It 
 
 *See also:* [[Attention Mechanism]] — attention heads implement implicit in-context learning algorithms; [[Transformer Architecture]] — ICL is an emergent property of the transformer architecture; [[Chain-of-Thought Prompting]] — CoT leverages ICL for multi-step reasoning; [[Mechanistic Interpretability]] — interpreting the circuits behind in-context learning; [[Decoder-Only Models]] — ICL studied primarily in decoder-only models
 
-## Supporting Chunks / References
+## References
 - [[Few-Shot Prompting]]
-- [[Scaling Laws|ICL Scaling Laws]]
-- Induction Heads
-- Meta-Learning vs ICL
+- [[LLM/2020–2021 — The Scaling Era/Scaling Laws|ICL Scaling Laws]]
+- [[LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms|Induction Heads]]
+- [[LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms|Meta-Learning vs ICL]]
 - [[Mechanistic Interpretability]]
-- Task Vectors
-- ICL Theoretical Models
+- [[LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms|Task Vectors]]
+- [[LLM/2020–2021 — The Scaling Era/In-Context Learning Mechanisms|ICL Theoretical Models]]
 
 → [[LLM/Sources/Sources Index|LLM Sources Index]]
 - Brown et al. (2020) - "Language Models are Few-Shot Learners"
@@ -104,6 +105,3 @@ ICL became one of the defining discoveries of large-scale language modeling. It 
 - von Oswald et al. (2023) - "Transformers Learn In-Context by Gradient Descent"
 - Chan et al. (2022) - "Data Distributional Properties Drive Emergent In-Context Learning"
 - Garg et al. (2022) - "What Can Transformers Learn In-Context?"
-
-## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]

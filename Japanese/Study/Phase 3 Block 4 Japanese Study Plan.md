@@ -2,6 +2,7 @@
 tags: [japanese, study, phase-3, block-4, audio, pitch, listening]
 up: "[[Japanese Learning Dashboard]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

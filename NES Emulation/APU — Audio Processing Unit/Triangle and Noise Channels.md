@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[APU — Audio Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Triangle and Noise Channels
@@ -87,4 +88,4 @@ OxideNES `apu.rs` implements `Triangle` and `Noise` structs. The triangle steps 
 *See also:* [[Pulse Channels]], [[APU Frame Sequencer]], [[DMC — Delta Modulation Channel]], [[APU — Audio Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

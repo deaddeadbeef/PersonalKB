@@ -2,6 +2,7 @@
 tags: [spacex, starlink]
 up: "[[Starlink Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -109,4 +110,7 @@ Starlink blends telecom, SaaS-like recurring revenue, hardware sales, and govern
 *See also:* [[Direct-to-Cell Technology]], [[SpaceX Funding and Valuation]], [[Commercial Launch Market]], [[Reusability Economics]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

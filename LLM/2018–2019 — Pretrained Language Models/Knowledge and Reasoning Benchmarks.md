@@ -2,6 +2,7 @@
 tags: [llm, evaluation]
 up: "[[2018–2019 — Pretrained Language Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Knowledge and Reasoning Benchmarks
@@ -94,10 +95,7 @@ These benchmarks created the standard reporting framework for LLM progress and m
 
 *See also:* —
 
-## Supporting Chunks / References
-- No supporting chunk notes are attached yet.
+## References
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 - [[LLM/Sources/Sources Index]]
-
-## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]

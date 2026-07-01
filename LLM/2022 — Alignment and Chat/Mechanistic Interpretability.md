@@ -2,6 +2,7 @@
 tags: [llm, alignment]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -114,12 +115,11 @@ Sketch an interpretability workflow for investigating whether a model uses a dec
 - [[LLM/Foundations/Embeddings and Representation Geometry|Representation Geometry]] — the geometric structure interpretability tries to decode
 - [[LLM/Prompting and In-Context Learning/In-Context Learning Mechanisms|ICL Mechanisms]] — induction heads as a mechanistic explanation
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-## References
+### References
 
 - [[LLM/Sources/Sources Index]]

@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, type-systems]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Type Systems Overview
 
@@ -34,4 +36,4 @@ Neither extreme is objectively better — they represent different trade-offs be
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

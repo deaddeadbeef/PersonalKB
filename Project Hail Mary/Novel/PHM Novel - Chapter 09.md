@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 09
 
-← [[PHM Novel - Chapter 08]] | [[Chapter Index]] | [[PHM Novel - Chapter 10]] →
+← [[PHM Novel - Chapter 08]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 10]] →
 
 > **One-line summary** — Grace makes first visual and auditory contact with Rocky and establishes the first shared unit of time.
 
@@ -88,4 +89,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 184–200
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

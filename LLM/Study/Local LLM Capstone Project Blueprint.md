@@ -2,6 +2,7 @@
 tags: [study, llm, capstone, local-llm, project, inference, rag, tools, evaluation]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [core, deep-dive, practice]
 last-verified: 2026-06-15
 ---

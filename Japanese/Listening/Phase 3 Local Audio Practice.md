@@ -2,6 +2,7 @@
 tags: [japanese, listening, phase-3, audio, practice, pitch]
 up: "[[Intermediate Listening Resources]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -222,4 +223,4 @@ After listening, write one line in [[Phase 3 Weekly Review]]:
 - [[Pronunciation Correction Log]]
 - [[Intermediate Listening Resources]]
 - [[Audio Index]]
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

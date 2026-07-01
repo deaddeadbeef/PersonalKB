@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Emulator Architecture Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Performance Optimization in OxideNES
@@ -91,4 +92,4 @@ Choose one optimization from the CPU table, one from the PPU table, and one from
 *See also:* [[Main Loop and Cycle Ratios]], [[OxideNES Module Architecture]], [[Emulator Architecture Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

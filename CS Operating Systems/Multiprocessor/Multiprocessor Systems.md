@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/multiprocessor
 confidence: verified
+freshness: stable
 up: "[[Multiprocessor Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---

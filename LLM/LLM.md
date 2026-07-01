@@ -1,13 +1,23 @@
 ---
 tags: [llm, moc]
 up: "[[Welcome]]"
-confidence: plausible
+confidence: verified
+freshness: stable
+tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Large Language Models — A Chronicle
 
 > From statistical n-grams to autonomous agents: the story of how machines learned to speak.
 
-> 📚 **New here?** Start with the [[LLM — Learning Path|Learning Path]] for a guided, progressive tour.
+## Start Here
+
+| Need | Open | Why |
+|---|---|---|
+| Read the field like a book | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] | Narrative path from pre-transformer foundations through local inference and mastery |
+| Run a learning session | [[LLM/Study/LLM Study Index|LLM Study Index]] | Goal router, drills, labs, local-hosting run sheets, and evidence runners |
+| Host a local model | [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] | Practical path from environment preflight to first endpoint proof |
+| Check sources | [[LLM/Sources/Sources Index|LLM Sources Index]] | Paper and source bibliography for claims |
+| Browse everything | [[LLM/LLM Corpus Index|LLM Corpus Index]] | Exhaustive back-of-book map of the LLM corpus |
 
 ## The Timeline
 
@@ -209,4 +219,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 - [[LLM/_queries/QnA System Roadmap|QnA — System Roadmap]] — Build progress tracker
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/LLM Book Reading Spine]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/Sources/Sources Index]]

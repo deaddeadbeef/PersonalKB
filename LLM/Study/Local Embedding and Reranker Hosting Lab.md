@@ -2,6 +2,7 @@
 tags: [study, llm, rag, embeddings, reranking, local-llm, inference, serving]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [core, practice]
 last-verified: 2026-06-15
 ---

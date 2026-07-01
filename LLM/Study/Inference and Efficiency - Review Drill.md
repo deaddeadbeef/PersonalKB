@@ -1,7 +1,9 @@
 ---
 tags: [study, llm, drill]
 up: "[[LLM/Study/LLM Study Index]]"
-confidence: policy
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [practice]
 ---
 # Inference & Efficiency — Review Drill
 
@@ -71,4 +73,7 @@ confidence: policy
 - [[LLM/Study/Local LLM Quality Evaluation Harness|Local LLM Quality Evaluation Harness]] — score local model quality with workload prompts, rubrics, pairwise comparison, and RAG/citation checks.
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Study/LLM Study Index]]
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Book Reading Spine]]

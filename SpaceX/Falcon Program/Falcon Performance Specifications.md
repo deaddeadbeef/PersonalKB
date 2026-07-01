@@ -2,6 +2,7 @@
 tags: [spacex, falcon]
 up: "[[Falcon Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -96,4 +97,4 @@ SpaceX lists the Falcon 9 launch price at approximately $67 million, translating
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CPU — The 6502 Processor Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # 6502 Registers and Status Flags
@@ -89,4 +90,4 @@ The OxideNES `Cpu` struct stores each register as a field. Flags are stored as a
 *See also:* [[6502 Instruction Set]], [[6502 Addressing Modes]], [[Interrupts — NMI, IRQ, and Reset]], [[CPU — The 6502 Processor Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

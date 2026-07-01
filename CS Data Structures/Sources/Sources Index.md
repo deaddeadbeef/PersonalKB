@@ -2,8 +2,19 @@
 tags: [cs-ds, sources]
 up: "[[CS Data Structures]]"
 confidence: verified
+freshness: stable
+tier-coverage: [provenance]
 ---
 # Sources Index — CS Data Structures
+
+## How To Use Sources
+
+| Need | Use | Evidence habit |
+|---|---|---|
+| Verify an operation cost | Start with the primary source or raw note for that structure | Record the operation, amortized or worst-case model, and hidden memory assumption |
+| Choose a data structure | Pair this source index with [[CS Data Structures/Study/CS Data Structures Study Index|CS Data Structures Study Index]] | Name workload shape, constraints, rejected alternatives, and the source behind the trade-off |
+| Read normally | Use [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures Book Reading Spine]] first | Open sources only when implementation or selection depends on the detail |
+| Maintain the wiki | Keep textbook rows separate from raw-note topic rows | Avoid mixing source authority with generated summary coverage |
 
 ## Primary Sources
 
@@ -60,4 +71,6 @@ confidence: verified
 | [[raw-ds-040]] | Succinct Data Structures | Various | 2020 |
 
 ## References
-- [[CS Data Structures/Sources/Sources Index|CS Data Structures Sources Index]]
+
+- [[CS Data Structures/CS Data Structures]]
+- [[CS Data Structures/CS Data Structures Book Reading Spine]]

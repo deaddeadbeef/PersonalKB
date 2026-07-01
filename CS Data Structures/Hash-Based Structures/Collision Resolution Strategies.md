@@ -2,6 +2,7 @@
 tags: [cs-ds, hash]
 up: "[[Hash-Based Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Collision Resolution Strategies
@@ -110,7 +111,7 @@ flowchart TD
 
 ---
 
-*See also:* [[Hash Tables and Hash Functions]] | [[Cuckoo Hashing]] | [[Universal and Perfect Hashing]] | Robin Hood Hashing | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
+*See also:* [[Hash Tables and Hash Functions]] | [[Cuckoo Hashing]] | [[Universal and Perfect Hashing]] | [[CS Data Structures/Hash-Based Structures/Collision Resolution Strategies|Robin Hood Hashing]] | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
 
 ## Supporting Chunks
 

@@ -2,6 +2,7 @@
 tags: [spacex, origins-history]
 up: "[[Origins and History Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -95,4 +96,4 @@ The effect of the vision goes beyond SpaceX itself. Before SpaceX, Mars coloniza
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

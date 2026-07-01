@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/casestudies
 confidence: verified
+freshness: stable
 up: "[[Case Studies Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---

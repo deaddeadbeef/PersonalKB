@@ -2,6 +2,7 @@
 tags: [study, llm, local-llm, security, privacy, ollama, evidence, proof]
 up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-16
 last-machine-check: 2026-06-16T06:05:00+08:00

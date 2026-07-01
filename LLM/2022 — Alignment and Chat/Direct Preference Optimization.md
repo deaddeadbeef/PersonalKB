@@ -2,6 +2,7 @@
 tags: [llm, alignment]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -101,7 +102,7 @@ DPO became one of the most important post-RLHF alignment methods because it lowe
 1. Propose a hybrid training setup that preserves DPO's simple loss but reduces its distribution-shift problem, and explain what new complexity that introduces.
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## See Also
 

@@ -2,14 +2,24 @@
 tags:
   - phm
   - moc
-up: "[[index]]"
-confidence: fictional
+up: "[[Welcome]]"
+confidence: verified
+freshness: stable
+tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Project Hail Mary
 
 Master index for the *Project Hail Mary* knowledge base. Andy Weir's novel blends real science with speculative fiction — these notes separate what's grounded from what's invented, and track how the story translates to film.
 
-> 📚 **New here?** Start with the [[Project Hail Mary — Learning Path|Learning Path]] for a guided, progressive tour.
+## Start Here
+
+| Need | Open | Why |
+|---|---|---|
+| Read the topic like a book | [[Project Hail Mary/Project Hail Mary Book Reading Spine|Project Hail Mary Book Reading Spine]] | Curated path through the novel spine and the science ledger behind it |
+| Follow a guided course path | [[Project Hail Mary/Project Hail Mary — Learning Path|Project Hail Mary Learning Path]] | Progressive tour through story, science, and adaptation notes |
+| Separate fact from fiction | [[Project Hail Mary/Science Accuracy Scorecard|Science Accuracy Scorecard]] | Quick classification of grounded science, plausible extrapolation, and invention |
+| Check provenance | [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]] | Source route for science, interviews, adaptation coverage, and raw material |
+| Browse the catalog | This page below | Astrophage, astronomy, propulsion, xenobiology, characters, adaptation, and evidence layers |
 
 **Quick overview** → [[Science Accuracy Scorecard]]
 
@@ -78,7 +88,7 @@ The people (and decisions) behind the mission.
 Chapter-level analysis of the novel itself — plot, timeline, and science annotations.
 
 - [[PHM Timeline Map]] — Dual-timeline navigation: present spine, flashback spine, pivot chapters, and arc entry points
-- [[Chapter Index]] — Map of all chapter notes (present vs. flashback timeline)
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] — Map of all chapter notes (present vs. flashback timeline)
 - [[Arc - Grace and Rocky]] — The central relationship from first contact through the final choice
 - [[Arc - Astrophage Crisis Escalation]] — The Earth-side flashback strand: anomaly → Stratt → mission buildout
 - [[Arc - Xenolinguistics Progression]] — First contact to working language to long-term exchange
@@ -91,7 +101,7 @@ Chapter-level analysis of the novel itself — plot, timeline, and science annot
 
 ## Sources
 
-- [[Sources Index]] — Shared bibliography with annotations across all topics
+- [[Project Hail Mary/Sources/Sources Index|Sources Index]] — Shared bibliography with annotations across all topics
 
 ## Raw Materials
 
@@ -150,4 +160,7 @@ Tools for searching and cross-referencing the knowledge base.
 - *Raw → Chunks → Wiki notes (evidence pipeline)*
 
 ## References
-- [[Project Hail Mary/Sources/Sources Index|Project Hail Mary Sources Index]]
+
+- [[Welcome]]
+- [[Project Hail Mary/Project Hail Mary Book Reading Spine]]
+- [[Project Hail Mary/Sources/Sources Index]]

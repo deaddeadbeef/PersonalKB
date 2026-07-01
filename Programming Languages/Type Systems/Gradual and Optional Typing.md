@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, type-systems, gradual]
 up: "[[Type Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -78,4 +80,4 @@ Gradual typing has proven that the static/dynamic debate is a false dichotomy. T
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

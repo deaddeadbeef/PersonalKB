@@ -2,6 +2,7 @@
 tags: [japanese, vocabulary, core, n5, n4]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -264,4 +265,4 @@ You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for d
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

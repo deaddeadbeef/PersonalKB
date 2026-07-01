@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Extended Features Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Netplay — UDP Multiplayer
@@ -100,4 +101,4 @@ In OxideNES, `NetplaySession` performs a UDP handshake using `NH`, `NC`, and `NA
 *See also:* [[Achievement System]], [[Input Recording and TAS]], [[Lua Scripting Engine]], [[Extended Features Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

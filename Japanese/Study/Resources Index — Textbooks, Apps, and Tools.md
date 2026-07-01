@@ -2,6 +2,7 @@
 tags: [japanese, resources, study]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -81,5 +82,5 @@ Do not buy or configure these during Phase 1 unless there is a specific reason.
 Start with [[Authentic Audio Source Setup]], [[Phase 1 Local Audio Practice]], and [[Phase 1 Authentic Audio Spine]] during the first month. When Phase 1 is complete, continue with [[Phase 2 Audio Assignment Ladder]], [[Phase 2 Local Audio Practice]], and [[Phase 2 Authentic Audio Spine]], and use [[Phase 2 Audio Coverage Map]] to match N5 grammar, vocabulary, kanji, and conversation pages to audio support. For N4, pitch, and intermediate listening, continue with [[Phase 3 Audio Assignment Ladder]], [[Phase 3 Local Audio Practice]], and [[Phase 3 Authentic Audio Spine]], and use [[Phase 3 Audio Coverage Map]] and [[Phase 3 Weekly Review]] for evidence. For N3, keigo, business, register, and native-speed listening, use [[Phase 4 Audio Assignment Ladder]], [[Phase 4 Local Audio Practice]], and [[Phase 4 Authentic Audio Spine]], and use [[Phase 4 Audio Coverage Map]] and [[Phase 4 Weekly Review]]. For N2/N1 direction, native media, professional output, and advanced nuance, use [[Phase 5 Audio Assignment Ladder]], [[Phase 5 Local Audio Practice]], and [[Phase 5 Authentic Audio Spine]], and use [[Phase 5 Audio Coverage Map]], [[Advanced Output and Register Feedback Log]], and [[Phase 5 Weekly Review]]. See [[Listening Overview]] and [[Beginner Listening Resources]] for broader audio resource curation.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Authentic Audio Source Setup]]

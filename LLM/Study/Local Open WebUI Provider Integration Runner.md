@@ -2,6 +2,7 @@
 tags: [study, llm, local-llm, open-webui, provider, ui, integration, security, evidence, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-16
 ---

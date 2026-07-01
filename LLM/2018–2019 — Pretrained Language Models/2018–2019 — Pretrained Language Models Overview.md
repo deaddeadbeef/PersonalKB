@@ -1,7 +1,9 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # 2018–2019 — Pretrained Language Models
 
@@ -57,4 +59,7 @@ As pretrained models grew, efficiency became a concern. DistilBERT (Sanh et al.,
 → Next: [[2020–2021 — The Scaling Era Overview|2020–2021 — The Scaling Era]]
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/LLM Book Reading Spine]]

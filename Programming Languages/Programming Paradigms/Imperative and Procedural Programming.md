@@ -2,6 +2,7 @@
 tags: [programming-languages, paradigms, imperative]
 up: "[[Programming Paradigms Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -134,13 +135,16 @@ Imperative programming traces from raw machine code through assembly language to
 
 ---
 
-*See also:* [[Programming Paradigms Overview]] · [[Object-Oriented Programming Philosophies|Object-Oriented Programming]] · Functional Programming
+*See also:* [[Programming Paradigms Overview]] · [[Programming Languages/Programming Paradigms/Object-Oriented Programming Philosophies|Object-Oriented Programming]] · [[Programming Languages/Programming Paradigms/Functional Programming Principles|Functional Programming]]
 
 ---
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

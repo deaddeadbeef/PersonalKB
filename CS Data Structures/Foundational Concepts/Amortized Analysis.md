@@ -2,6 +2,7 @@
 tags: [cs-ds, foundational]
 up: "[[Foundational Concepts Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 created: 2025-07-14
 ---
@@ -106,7 +107,7 @@ Three techniques formalize this:
 
 ---
 
-*See also:* [[Asymptotic Analysis and Big-O Notation]] | [[Arrays and Dynamic Arrays|Dynamic Arrays]] | [[Splay Trees and Treaps|Splay Trees]] | [[Fibonacci Heaps]] | [[Abstract Data Types]] | **CS Algorithms:** [[Dijkstra's Algorithm]] | Graph Algorithm Complexity
+*See also:* [[Asymptotic Analysis and Big-O Notation]] | [[CS Data Structures/Linear Structures/Arrays and Dynamic Arrays|Dynamic Arrays]] | [[CS Data Structures/Trees/Splay Trees and Treaps|Splay Trees]] | [[Fibonacci Heaps]] | [[Abstract Data Types]] | **CS Algorithms:** [[Dijkstra's Algorithm]] | [[CS Algorithms/Graphs/Shortest Path Overview|Graph Algorithm Complexity]]
 
 ## Supporting Chunks
 

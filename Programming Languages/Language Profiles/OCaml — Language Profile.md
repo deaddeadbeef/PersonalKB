@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, ocaml]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # OCaml — Language Profile
 
@@ -85,7 +86,10 @@ OCaml carries forward the ML tradition into practical software engineering. Its 
 
 ### References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

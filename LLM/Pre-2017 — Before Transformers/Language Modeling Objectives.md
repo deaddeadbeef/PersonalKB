@@ -2,6 +2,7 @@
 tags: [llm, pretraining]
 up: "[[Pre-2017 — Before Transformers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -80,16 +81,16 @@ The debate between causal and masked objectives influenced architecture choices 
 1. Propose a hybrid pretraining objective for a future model that must excel at both long-form generation and precise infilling, and explain what trade-offs it makes relative to causal LM and MLM.
 
 *See also:*
-- [[BERT and Encoder Lineage|BERT]]
-- T5
+- [[LLM/2018–2019 — Pretrained Language Models/BERT and Encoder Lineage|BERT]]
+- [[LLM/2017 — The Transformer/Encoder-Decoder Models|T5]]
 - [[Decoder-Only Models]]
-- Code Models
-- PaLM
+- [[LLM/2018–2019 — Pretrained Language Models/Domain Adaptation|Code Models]]
+- [[LLM/2020–2021 — The Scaling Era/Scaling Laws|PaLM]]
 - [[LLM/Study/Tiny Decoder-Only Transformer Training Lab|Tiny Decoder-Only Transformer Training Lab]] — make the causal LM objective concrete with shifted targets and cross-entropy loss
 
-## Supporting Chunks
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
-
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

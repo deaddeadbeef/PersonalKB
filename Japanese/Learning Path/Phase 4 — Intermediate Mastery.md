@@ -2,6 +2,7 @@
 tags: [japanese, learning-path, phase-4]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -203,7 +204,7 @@ Push into faster, more natural content.
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Seventh Month Japanese Study Plan]]
 - [[Eighth Month Japanese Study Plan]]
 - [[Ninth Month Japanese Study Plan]]

@@ -3,8 +3,9 @@ tags:
   - phm
   - novel
   - system
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Novel Ingestion Guide
@@ -146,7 +147,7 @@ For each chapter (1–30 + epilogue):
 ### After All Chapters
 
 - Update [[Weir 2021 - Project Hail Mary Novel]] status to `fully-chunked`.
-- Update [[Chapter Index]] with any title annotations if desired.
+- Update [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] with any title annotations if desired.
 - Update the master MOC [[Project Hail Mary]] if new wiki note links were created.
 - Run [[QnA - Novel Chapter Coverage]] to verify completeness.
 
@@ -184,7 +185,7 @@ Although procedural, the page mirrors the novel’s own logic: incremental probl
 
 ### Connections
 
-- [[Chapter Index]] — MOC for all chapter notes
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] — MOC for all chapter notes
 - [[Chapter Summary Template]] — Template for individual chapters
 - [[Chunk Template]] — Template for atomic claims
 - [[Weir 2021 - Project Hail Mary Novel]] — Source registration
@@ -214,3 +215,6 @@ flowchart TD
 - **What if...** the only available source were a flawed PDF instead of the OCR EPUB—how would you adapt this workflow while preserving the same verification standards?
 
 ## References
+- [[Project Hail Mary/Sources/Sources Index]]
+- [[Project Hail Mary/Novel/Weir 2021 - Project Hail Mary Novel]]
+- [[Project Hail Mary/Novel/Chapter Index]]

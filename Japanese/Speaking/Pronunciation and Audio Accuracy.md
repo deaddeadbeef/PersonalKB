@@ -2,6 +2,7 @@
 tags: [japanese, speaking, pronunciation, audio, quality]
 up: "[[Speaking Overview]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -109,4 +110,4 @@ One correction per day is enough. Pronunciation improves by repeated accurate co
 - [[Pitch Accent — Common Patterns]]
 - [[Phase 3 Pitch Accent Practice Path]]
 - [[Phase 4 Keigo and Register Production Checklist]]
-- [[Sources Index#Pronunciation Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Pronunciation Sources Checked 2026-06-06|Pronunciation Sources Checked 2026-06-06]]

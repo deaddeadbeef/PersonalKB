@@ -2,6 +2,7 @@
 tags: [llm, fine-tuning]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Parameter-Efficient Fine-Tuning
@@ -110,16 +111,16 @@ PEFT changed fine-tuning from an expensive, cluster-heavy workflow into somethin
 ### Challenge
 1. Develop a decision framework for choosing among full fine-tuning, adapters, LoRA, prefix tuning, prompt tuning, P-Tuning v2, and (IA)³ for a new LLM product, and explain how model scale, latency budget, and deployment style affect the choice.
 
-*See also:* [[LoRA and QLoRA]]; Adapter Architectures; Multi-Adapter Serving; [[Supervised Fine-Tuning]]
+*See also:* [[LoRA and QLoRA]]; [[LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning|Adapter Architectures]]; [[LLM/_chunks/chunk-llm-028 Multi-Adapter Serving on Shared Base Model|Multi-Adapter Serving]]; [[Supervised Fine-Tuning]]
 
-## Supporting Chunks
+## References
 ### Supporting Chunks
 - [[LoRA and QLoRA]] — Most popular PEFT method (detailed breakdown)
 - [[Supervised Fine-Tuning]] — Full fine-tuning baseline
-- Adapter Architectures — Deep dive into adapter design patterns
-- Multi-Adapter Serving — Deploying many PEFT adapters efficiently
+- [[LLM/2020–2021 — The Scaling Era/Parameter-Efficient Fine-Tuning|Adapter Architectures]] — Deep dive into adapter design patterns
+- [[LLM/_chunks/chunk-llm-028 Multi-Adapter Serving on Shared Base Model|Multi-Adapter Serving]] — Deploying many PEFT adapters efficiently
 
-## References
+### References to Sources Index
 See [[LLM/Sources/Sources Index|LLM Sources Index]] for papers:
 - Houlsby et al. 2019: Adapter modules
 - Li & Liang 2021: Prefix tuning

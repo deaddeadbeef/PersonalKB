@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 06
 
-← [[PHM Novel - Chapter 05]] | [[Chapter Index]] | [[PHM Novel - Chapter 07]] →
+← [[PHM Novel - Chapter 05]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 07]] →
 
 > **One-line summary** — Grace confirms the alien ship is intelligent, establishes mirrored communication, and retrieves the first artefact from another species.
 
@@ -91,4 +92,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 134–148
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

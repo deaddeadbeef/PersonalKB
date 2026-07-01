@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 03
 
-← [[PHM Novel - Chapter 02]] | [[Chapter Index]] | [[PHM Novel - Chapter 04]] →
+← [[PHM Novel - Chapter 02]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 04]] →
 
 > **One-line summary** — Grace explores the Hail Mary, buries his dead crewmates, and realizes the mission was always one-way.
 
@@ -97,4 +98,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 62–83
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

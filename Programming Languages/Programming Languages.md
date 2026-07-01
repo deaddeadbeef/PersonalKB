@@ -1,13 +1,23 @@
 ---
 tags: [pl, moc]
-up: "[[index]]"
-confidence: plausible
+up: "[[Welcome]]"
+confidence: verified
+freshness: stable
+tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Programming Languages — Design Philosophies
 
-> A dimension-first exploration of how 16 programming languages answer fundamental design questions about types, memory, concurrency, errors, paradigms, and more.
+> **One-line summary:** A dimension-first exploration of how 16 programming languages answer fundamental design questions about types, memory, concurrency, errors, paradigms, and more.
 
-> 📚 **New here?** Start with the [[Programming Languages — Learning Path|Learning Path]] for a guided, progressive tour.
+## Start Here
+
+| Need | Open | Why |
+|---|---|---|
+| Read programming languages like a book | [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] | Curated path through families, paradigms, types, modules, runtimes, memory, concurrency, and metaprogramming |
+| Follow a guided course path | [[Programming Languages/Programming Languages — Learning Path|Programming Languages Learning Path]] | Progressive tour through the design dimensions |
+| Compare languages for a decision | [[Programming Languages/Study/Programming Languages Study Index|Programming Languages Study Index]] | Goal router, comparison drills, cheatsheet route, and toy-language synthesis path |
+| Check provenance | [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]] | Source map for the language-design wiki |
+| Browse the catalog | This page below | Dimension hubs, language profiles, study materials, and pipeline |
 
 ## Wiki Statistics
 - **Domain Pages:** 78
@@ -22,7 +32,7 @@ confidence: plausible
 |-----|-------|
 | [[Language Genealogy Overview]] | History, eras, family trees, influence chains |
 | [[Type Systems Overview]] | Static/dynamic, inference, generics, gradual typing |
-| [[Memory Management Overview]] | Manual, GC, ownership, ARC, value vs reference |
+| [[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]] | Manual, GC, ownership, ARC, value vs reference |
 | [[Concurrency Models Overview]] | Threads, CSP, actors, async/await, STM |
 | [[Programming Paradigms Overview]] | Imperative, OOP, FP, logic, prototype-based |
 | [[Error Handling Overview]] | Exceptions, Result/Option, panic, effect systems |
@@ -50,7 +60,7 @@ confidence: plausible
 | [[Kotlin — Language Profile]] | JVM / Modern |
 | [[Ruby — Language Profile]] | Scripting / OOP |
 | [[Zig — Language Profile]] | Systems / Explicit |
-| [[Historical Languages Overview]] | Fortran, COBOL, Smalltalk, ML, Prolog |
+| [[Programming Languages/Language Profiles/Historical Languages Overview|Historical Languages — Overview]] | Fortran, COBOL, Smalltalk, ML, Prolog |
 
 ## Study Materials
 
@@ -61,10 +71,10 @@ confidence: plausible
 
 | Layer | Count | Location |
 |-------|-------|----------|
-| Raw Notes | 50 | [[Sources Index]] → _raw/raw-pl-*.md |
+| Raw Notes | 50 | [[Programming Languages/Sources/Sources Index|Sources Index]] → _raw/raw-pl-*.md |
 | Chunks | 200 | _chunks/chunk-pl-*.md |
 | Domain Pages | 78 | 10 hubs + Language Profiles |
 | Study | 7 | 5 drills + 1 cheatsheet + index |
 
 ## References
-→ [[Sources Index]]
+→ [[Programming Languages/Sources/Sources Index|Sources Index]]

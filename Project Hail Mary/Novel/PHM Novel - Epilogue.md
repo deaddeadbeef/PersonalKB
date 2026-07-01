@@ -15,13 +15,14 @@ tags:
   - novel
   - chapter
   - epilogue
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Epilogue
 
-← [[PHM Novel - Chapter 30]] | [[Chapter Index]]
+← [[PHM Novel - Chapter 30]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 
 > **One-line summary** — Years later on Erid, Grace learns Earth was saved and embraces his new life as Rocky's friend and a teacher to Eridian children.
 
@@ -114,7 +115,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source; EPUB pages 511–517
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Rocky and the Eridians]]
 - [[Resolution and Aftermath]]
 - [[Relativistic Travel and Time Dilation]]

@@ -2,6 +2,7 @@
 tags: [spacex, origins-history]
 up: "[[Origins and History Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -98,4 +99,4 @@ This culture has direct strategic consequences. SpaceX moved through five major 
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

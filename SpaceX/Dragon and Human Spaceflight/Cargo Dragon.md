@@ -4,6 +4,7 @@ tags: [spacex, dragon, human-spaceflight]
 up: "[[Dragon and Human Spaceflight Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Cargo Dragon
@@ -86,4 +87,4 @@ Dragon's operational significance comes from combining multiple roles in one spa
 Explain why Cargo Dragon is not just "another cargo spacecraft" by comparing its docking method, reuse, and return-to-Earth capability with at least two other ISS cargo vehicles.
 
 ## References
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

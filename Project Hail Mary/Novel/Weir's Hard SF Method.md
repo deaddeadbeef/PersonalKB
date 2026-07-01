@@ -7,6 +7,7 @@ tags:
   - weir
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Weir's Hard SF Method
@@ -132,9 +133,9 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary source (fictional)
-- [[Sources Index#Weir Interviews Taumoeba]] — author interviews on method and design choices
-- [[Sources Index#Northeastern Accuracy Discussion]] — public discussion of scientific accuracy
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary source (fictional)
+- [[Project Hail Mary/Sources/Sources Index#Weir Interviews Taumoeba|Weir Interviews Taumoeba]] — author interviews on method and design choices
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — public discussion of scientific accuracy
 
 ## Supporting Chunks
 

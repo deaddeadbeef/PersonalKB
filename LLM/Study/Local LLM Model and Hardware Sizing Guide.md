@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, hardware, quantization]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: current-sensitive
 tier-coverage: [practice]
 ---
 
@@ -250,9 +251,9 @@ Internal evidence:
 
 Supporting chunks:
 
-- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]]
-- [[chunk-llm-211 AWQ INT4 Edge Deployment Performance]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
-- [[chunk-llm-213 Multi-Query Attention Shared KV Heads]]
-- [[chunk-llm-217 GQA Mechanism Interpolating MHA and MQA]]
-- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
+- [[LLM/_chunks/chunk-llm-208 GPTQ Standard for Open-Source Deployment|chunk-llm-208]]
+- [[LLM/_chunks/chunk-llm-211 AWQ INT4 Edge Deployment Performance|chunk-llm-211]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
+- [[LLM/_chunks/chunk-llm-213 Multi-Query Attention Shared KV Heads|chunk-llm-213]]
+- [[LLM/_chunks/chunk-llm-217 GQA Mechanism Interpolating MHA and MQA|chunk-llm-217]]
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]]

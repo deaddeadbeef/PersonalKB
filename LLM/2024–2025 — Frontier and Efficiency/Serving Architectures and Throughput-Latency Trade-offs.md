@@ -2,6 +2,7 @@
 tags: [llm, inference]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -95,16 +96,16 @@ For a practical local experiment, use [[LLM/Study/Local LLM Serving Internals an
 
 ## Supporting Chunks
 
-- [[chunk-llm-120 vLLM De Facto Serving Framework]] — why vLLM became the baseline open serving stack
-- [[chunk-llm-118 vLLM Continuous Batching Throughput]] — throughput evidence for continuous batching
+- [[LLM/_chunks/chunk-llm-120 vLLM De Facto Serving Framework|chunk-llm-120]] — why vLLM became the baseline open serving stack
+- [[LLM/_chunks/chunk-llm-118 vLLM Continuous Batching Throughput|chunk-llm-118]] — throughput evidence for continuous batching
 - [[LLM/Study/Local LLM Serving Internals and Scheduler Lab]] — local scheduler, prefill/decode, KV-cache, slot, preemption, and admission-control evidence
 - [[LLM/Study/Local LLM Observability and Operations Runbook]] — practical local metrics, logs, resource counters, and operations rows
 - [[LLM/Study/Local LLM Service Lifecycle and Upgrade Runbook]] — practical startup, upgrade, backup, rollback, and post-change validation rows
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]] — memory-management mechanism behind high concurrency
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]] — decode-stage hardware bottleneck
-- [[chunk-llm-223 Speculative Decoding Speedup Analysis]] — latency gains from draft-target verification
-- [[chunk-llm-224 Speculative Decoding Production Adoption]] — production adoption context for speculative decoding
-- [[chunk-llm-208 GPTQ Standard for Open-Source Deployment]] — quantization as a serving-cost lever
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]] — memory-management mechanism behind high concurrency
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]] — decode-stage hardware bottleneck
+- [[LLM/_chunks/chunk-llm-223 Speculative Decoding Speedup Analysis|chunk-llm-223]] — latency gains from draft-target verification
+- [[LLM/_chunks/chunk-llm-224 Speculative Decoding Production Adoption|chunk-llm-224]] — production adoption context for speculative decoding
+- [[LLM/_chunks/chunk-llm-208 GPTQ Standard for Open-Source Deployment|chunk-llm-208]] — quantization as a serving-cost lever
 
 ## References
 

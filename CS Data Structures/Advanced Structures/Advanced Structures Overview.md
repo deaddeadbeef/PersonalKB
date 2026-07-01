@@ -4,6 +4,7 @@ tags:
   - hub
 up: "[[CS Data Structures]]"
 confidence: verified
+freshness: stable
 ---
 
 # Advanced Structures Overview
@@ -48,7 +49,7 @@ Some structures are designed not for a specific query type but for a specific ha
 
 - [[Trees Overview]] — foundational tree concepts extended here
 - [[Foundational Concepts Overview]] — amortised and worst-case analysis for advanced structures
-- [[Graphs Overview]] — union-find and spatial structures applied in graph algorithms
+- [[CS Data Structures/Graphs/Graphs Overview|Graphs Overview]] — union-find and spatial structures applied in graph algorithms
 - [[Heaps and Priority Queues Overview]] — priority-based structures complementing range-query tools
 
 ## References

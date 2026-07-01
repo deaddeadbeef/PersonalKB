@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[CRT Simulation Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Glass Reflections and Chromatic Aberration
@@ -89,4 +90,4 @@ In OxideNES, the reflection pass computes a ghost image from the current frame, 
 *See also:* [[CRT Rendering Pipeline]], [[Barrel Distortion and Shadow Mask]], [[Scanline and Phosphor Effects]], [[CRT Simulation Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

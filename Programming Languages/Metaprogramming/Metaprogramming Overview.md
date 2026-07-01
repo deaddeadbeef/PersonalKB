@@ -1,7 +1,9 @@
 ---
 tags: [programming-languages, metaprogramming]
 up: "[[Programming Languages]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Metaprogramming Overview
 
@@ -33,4 +35,4 @@ More metaprogramming power means more abstraction ability but also more potentia
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

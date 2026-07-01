@@ -2,6 +2,7 @@
 tags: [japanese, speaking, phase-4, keigo, register, audio, practice]
 up: "[[Speaking Overview]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, practice]
 ---
 
@@ -84,4 +85,4 @@ Clip-quality problems go to [[Pronunciation Correction Log]]. Normal learner cor
 - [[Business Japanese — Workplace Communication]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Pronunciation Correction Log]]
-- [[Sources Index#Audio Sources Checked 2026-06-06]]
+- [[Japanese/Sources/Sources Index#Audio Sources Checked 2026-06-06|Audio Sources Checked 2026-06-06]]

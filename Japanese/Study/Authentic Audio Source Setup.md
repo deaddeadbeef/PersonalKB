@@ -2,6 +2,7 @@
 tags: [japanese, audio, setup, pronunciation]
 up: "[[Resources Index — Textbooks, Apps, and Tools]]"
 confidence: verified
+freshness: stable
 tier-coverage: [core, practice]
 ---
 
@@ -87,4 +88,4 @@ If a local clip sounds wrong, use [[Pronunciation Correction Log]] and run the c
 - [[Phase 3 Authentic Audio Spine]]
 - [[Phase 4 Authentic Audio Spine]]
 - [[Phase 5 Authentic Audio Spine]]
-- [[Sources Index#Audio Source Setup Checked 2026-06-07]]
+- [[Japanese/Sources/Sources Index#Audio Source Setup Checked 2026-06-07|Audio Source Setup Checked 2026-06-07]]

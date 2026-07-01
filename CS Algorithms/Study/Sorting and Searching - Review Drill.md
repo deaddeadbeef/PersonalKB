@@ -4,7 +4,9 @@ tags:
   - csa/study
   - csa/sorting
 up: "[[Algorithms Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Sorting and Searching — Review Drill
 
@@ -208,4 +210,6 @@ Key contrast: insertion sort adapts to order (inversions-sensitive), selection s
 - [[Comparison Sort Lower Bound]] — $\Omega(n \lg n)$ decision-tree proof
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Sources/Sources Index]]

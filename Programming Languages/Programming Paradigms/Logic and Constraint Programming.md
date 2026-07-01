@@ -2,6 +2,7 @@
 tags: [programming-languages, paradigms, logic]
 up: "[[Programming Paradigms Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -125,13 +126,16 @@ Prolog emerged in 1972 from Alain Colmerauer's work on natural language processi
 
 ---
 
-*See also:* [[Programming Paradigms Overview]] · Functional Programming · Declarative Programming
+*See also:* [[Programming Paradigms Overview]] · [[Programming Languages/Programming Paradigms/Functional Programming Principles|Functional Programming]] · [[Programming Languages/_chunks/chunk-pl-057 Logic Programming and Declarative Influence|Declarative Programming]]
 
 ---
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

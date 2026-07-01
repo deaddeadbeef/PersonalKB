@@ -5,6 +5,7 @@ tags:
   - moc
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Chapter Index
@@ -147,3 +148,6 @@ flowchart TD
 - **What if...** the novel were reorganized into strict chronological order—how would this index need to change to preserve the same analytical value?
 
 ## References
+- [[Project Hail Mary/Sources/Sources Index]]
+- [[Project Hail Mary/Novel/Novel Ingestion Guide]]
+- [[Project Hail Mary/Novel/Weir 2021 - Project Hail Mary Novel]]

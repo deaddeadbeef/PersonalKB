@@ -2,6 +2,7 @@
 tags: [spacex, mars]
 up: "[[Mars and Beyond Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Mars Transit and Entry
@@ -108,7 +109,10 @@ Mars entry is among the most demanding phases. The vehicle arrives at approximat
 
 ---
 
-*See also:* [[Mars and Beyond Overview]], [[Sources Index]]
+*See also:* [[Mars and Beyond Overview]], [[SpaceX/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

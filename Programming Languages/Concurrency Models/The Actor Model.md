@@ -2,6 +2,7 @@
 tags: [programming-languages, concurrency, actors]
 up: "[[Concurrency Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -142,7 +143,7 @@ The actor model's practical success is rooted in the telecom industry. Ericsson 
 
 ---
 
-*See also:* [[Concurrency Models Overview]] · CSP and Go Channels · [[Software Transactional Memory]] · Erlang and OTP · Fault-Tolerant Systems
+*See also:* [[Concurrency Models Overview]] · [[Programming Languages/Concurrency Models/CSP and Channel-Based Concurrency|CSP and Go Channels]] · [[Software Transactional Memory]] · [[Programming Languages/Language Profiles/Erlang and Elixir — Language Profile|Erlang and OTP]] · [[Programming Languages/Concurrency Models/The Actor Model|Fault-Tolerant Systems]]
 
 ---
 
@@ -150,7 +151,10 @@ The actor model's practical success is rooted in the telecom industry. Ericsson 
 
 - Hewitt, C. (1973). *A Universal Modular ACTOR Formalism for Artificial Intelligence*
 - Armstrong, J. (2003). *Making Reliable Distributed Systems in the Presence of Software Errors* (Erlang thesis)
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

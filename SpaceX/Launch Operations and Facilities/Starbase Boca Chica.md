@@ -3,6 +3,7 @@ tags: [spacex, facilities]
 up: "[[Launch Operations and Facilities Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Starbase Boca Chica
@@ -89,4 +90,4 @@ Explain how Starbase's layout reflects SpaceX's broader strategy of rapid iterat
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

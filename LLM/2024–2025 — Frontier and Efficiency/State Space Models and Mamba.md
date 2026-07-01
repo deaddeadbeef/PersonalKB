@@ -2,6 +2,7 @@
 tags: [llm, architecture]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -90,7 +91,7 @@ SSMs offer a plausible path beyond pure transformers for long-sequence modeling.
 - If a task needs exact retrieval from far back in context, why might a transformer still outperform an SSM?
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## See Also
 - [[Language Model Fundamentals]] — SSMs revisit core sequence modeling fundamentals

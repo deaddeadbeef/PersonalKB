@@ -1,7 +1,9 @@
 ---
 tags: [pl, study, memory-management]
 up: "[[Programming Languages Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — Memory Management Models
 
@@ -43,10 +45,10 @@ confidence: policy
 - What is the "zero-cost abstraction" ideal and how close does Rust get?
 
 ## Connections to Explore
-- [[Memory Management Overview]] — hub page
+- [[Programming Languages/Memory Management/Memory Management Overview|Memory Management Overview]] — hub page
 - [[Ownership and Borrowing]] — Rust's model
 - [[Garbage Collection Strategies]] — GC approaches
 - [[Value Types vs Reference Types]] — data layout
 
 ## References
-→ [[Sources Index]]
+→ [[Programming Languages/Sources/Sources Index|Sources Index]]

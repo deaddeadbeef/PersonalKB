@@ -2,6 +2,7 @@
 tags: [cs-ds, linear]
 up: "[[Linear Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Singly Linked Lists
@@ -137,7 +138,7 @@ function hasCycle(head):
 
 ---
 
-*See also:* [[Doubly Linked Lists and Circular Lists]] | [[Stacks]] | [[Arrays and Dynamic Arrays]] | [[Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
+*See also:* [[Doubly Linked Lists and Circular Lists]] | [[Stacks]] | [[Arrays and Dynamic Arrays]] | [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] | **CS Algorithms:** [[Merge Sort]], [[BFS and DFS]]
 
 ## Supporting Chunks
 

@@ -2,6 +2,7 @@
 tags: [spacex, business]
 up: "[[Business and Economics Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -100,4 +101,7 @@ Competitors such as Arianespace, Blue Origin, Rocket Lab, ULA, and Chinese launc
 - Design a strategy for a rival launch provider trying to win commercial market share without matching SpaceX's full launch cadence.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

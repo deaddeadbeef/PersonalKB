@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, decoding, sampling, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [core, practice]
 last-verified: 2026-06-15
 ---

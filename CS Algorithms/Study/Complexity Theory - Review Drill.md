@@ -4,7 +4,9 @@ tags:
   - csa/study
   - csa/complexity
 up: "[[Algorithms Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Complexity Theory — Review Drill
 
@@ -153,4 +155,6 @@ If any NP-complete problem is in P, then P = NP.
 - [[Approximation Algorithms]] — α-approximation, vertex cover, load balancing, proof template
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/CS Algorithms]]
+- [[CS Algorithms/Sources/Sources Index]]

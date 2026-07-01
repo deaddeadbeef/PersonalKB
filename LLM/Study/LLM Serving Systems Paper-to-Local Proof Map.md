@@ -2,6 +2,7 @@
 tags: [study, llm, papers, serving, systems, inference, local-llm, scheduler, kv-cache, batching, proof]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, deep-dive, practice]
 last-verified: 2026-06-16
 ---

@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Mars and Beyond Overview
 
@@ -33,11 +35,11 @@ While Mars is the primary target, Starship's capabilities open possibilities for
 
 ## Pages in This Domain
 - [[Mars Colonization Architecture]]
-- [[In-Situ Resource Utilization|In-Situ Resource Utilization (ISRU)]]
-- Mars Transit Challenges
-- Life Support for Long-Duration Missions
-- Mars Base Design
-- Deep Space Missions
+- [[SpaceX/Mars and Beyond/In-Situ Resource Utilization|In-Situ Resource Utilization (ISRU)]]
+- [[SpaceX/Mars and Beyond/Mars Transit and Entry|Mars Transit Challenges]]
+- [[SpaceX/Mars and Beyond/Life Support for Mars|Life Support for Long-Duration Missions]]
+- [[SpaceX/Mars and Beyond/Mars Base Design Concepts|Mars Base Design]]
+- [[SpaceX/Mars and Beyond/Beyond Mars|Deep Space Missions]]
 
 ## Related Domains
 - [[Starship Program Overview]] — the vehicle designed to reach Mars
@@ -46,4 +48,7 @@ While Mars is the primary target, Starship's capabilities open possibilities for
 - [[Technology Deep Dives Overview]] — radiation shielding, TPS, and life support engineering
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

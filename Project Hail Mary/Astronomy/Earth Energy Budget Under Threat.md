@@ -6,6 +6,7 @@ tags:
   - energy-budget
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Earth Energy Budget Under Threat
@@ -83,9 +84,9 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#NASA Earth Energy Budget]] — authoritative energy budget data
-- [[Sources Index#NOAA Incoming Sunlight]] — solar variability and Maunder Minimum
-- [[Sources Index#Britannica PHM Science]] — PHM astronomy context
+- [[Project Hail Mary/Sources/Sources Index#NASA Earth Energy Budget|NASA Earth Energy Budget]] — authoritative energy budget data
+- [[Project Hail Mary/Sources/Sources Index#NOAA Incoming Sunlight|NOAA Incoming Sunlight]] — solar variability and Maunder Minimum
+- [[Project Hail Mary/Sources/Sources Index#Britannica PHM Science|Britannica PHM Science]] — PHM astronomy context
 
 ## Supporting Chunks
 

@@ -1,6 +1,9 @@
 ---
 tags: [recipes, bento-boxes]
 up: "[[Bento Boxes]]"
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 portable: true
 lunch-safe: true
 leftover-lunch-safe: true

@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, language-profiles, javascript, typescript]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -93,4 +95,4 @@ JavaScript's original combination of prototypes, closures, and event-driven exec
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

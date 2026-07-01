@@ -2,6 +2,7 @@
 tags: [japanese, speaking, pronunciation]
 up: "[[Speaking Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -177,5 +178,5 @@ In Tokyo dialect, い and う become whispered between voiceless consonants:
 Role-play arriving at a Japanese office for the first time. Include: greeting the receptionist, introducing yourself to your new team, and responding to their questions with appropriate aizuchi.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Pronunciation and Audio Accuracy]]

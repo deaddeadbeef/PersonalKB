@@ -2,6 +2,7 @@
 tags: [cs-ds, probabilistic]
 up: "[[Hash-Based Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # HyperLogLog
@@ -98,7 +99,7 @@ Design a **sliding-window HyperLogLog** that estimates the number of distinct el
 
 ---
 
-*See also:* [[Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[Count-Min Sketch]] · Cuckoo Filter | **CS Algorithms:** Streaming Algorithms · Randomized Algorithms
+*See also:* [[CS Data Structures/Hash-Based Structures/Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[Count-Min Sketch]] · [[CS Data Structures/Hash-Based Structures/Cuckoo Filters|Cuckoo Filter]] | **CS Algorithms:** [[CS Algorithms/Techniques/Streaming Algorithms|Streaming Algorithms]] · [[CS Algorithms/Techniques/Randomized Algorithms|Randomized Algorithms]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Data Structures/Sources/Sources Index|Sources Index]]

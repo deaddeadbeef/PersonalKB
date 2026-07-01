@@ -2,6 +2,7 @@
 tags: [japanese, writing-systems, hub]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -81,4 +82,4 @@ A typical Japanese sentence mixes all three:
 - [[Kanji Learning Strategies]]
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

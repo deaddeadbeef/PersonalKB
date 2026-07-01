@@ -2,6 +2,7 @@
 tags: [spacex, starlink]
 up: "[[Starlink Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -98,4 +99,7 @@ Laser ISLs shift Starlink from a gateway-dense architecture toward a more autono
 ---
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

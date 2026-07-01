@@ -11,6 +11,7 @@ tags:
   - first-contact
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Rocky and the Eridians
@@ -144,10 +145,10 @@ graph TD
 
 ## References
 
-- [[Sources Index#Frontiers Extremophiles 2019]] — extremophile diversity
-- [[Sources Index#CUNY Alternative Biochemistry]] — alternative solvent systems
-- [[Sources Index#Northeastern Accuracy Discussion]] — plausibility assessment
-- [[Sources Index#Linguistic Discovery Eridian]] — language design analysis
+- [[Project Hail Mary/Sources/Sources Index#Frontiers Extremophiles 2019|Frontiers Extremophiles 2019]] — extremophile diversity
+- [[Project Hail Mary/Sources/Sources Index#CUNY Alternative Biochemistry|CUNY Alternative Biochemistry]] — alternative solvent systems
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — plausibility assessment
+- [[Project Hail Mary/Sources/Sources Index#Linguistic Discovery Eridian|Linguistic Discovery Eridian]] — language design analysis
 
 
 ## Supporting Chunks

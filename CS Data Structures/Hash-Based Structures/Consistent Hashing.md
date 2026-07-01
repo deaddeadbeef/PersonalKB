@@ -2,6 +2,7 @@
 tags: [cs-ds, hash]
 up: "[[Hash-Based Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Consistent Hashing

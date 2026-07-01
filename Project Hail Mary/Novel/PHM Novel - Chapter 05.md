@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 05
 
-← [[PHM Novel - Chapter 04]] | [[Chapter Index]] | [[PHM Novel - Chapter 06]] →
+← [[PHM Novel - Chapter 04]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 06]] →
 
 > **One-line summary** — Grace accepts the likelihood of his own death, confirms Astrophage at Tau Ceti, and detects the object that will become first contact.
 
@@ -92,4 +93,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 112–133
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

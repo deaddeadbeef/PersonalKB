@@ -1,6 +1,9 @@
 ---
 tags: [recipes, skillets-stir-fries]
 up: "[[Skillets & Stir-Fries]]"
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 portable: true
 lunch-safe: true
 leftover-lunch-safe: true

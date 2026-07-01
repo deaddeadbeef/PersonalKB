@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/cryptography
 confidence: verified
+freshness: stable
 up: "[[Cryptography Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -141,3 +142,8 @@ RSA is used only for **key exchange**, not bulk encryption. See [[Cryptography F
 ## References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]]. Chapter 8.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

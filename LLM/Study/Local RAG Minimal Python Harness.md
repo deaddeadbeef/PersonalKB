@@ -2,6 +2,7 @@
 tags: [study, llm, rag, local-llm, implementation, harness]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, practice]
 last-verified: 2026-06-15
 ---

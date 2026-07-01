@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, ollama, endpoint, audit, quality, evidence]
 up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice]
 last-verified: 2026-06-16
 last-machine-check: 2026-06-16T06:22:09+08:00

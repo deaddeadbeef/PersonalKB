@@ -2,6 +2,7 @@
 tags: [cs-ds, heaps]
 up: "[[CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview|Heaps and Priority Queues Overview]]"
 confidence: verified
+freshness: stable
 ---
 
 # Priority Queues and Heaps

@@ -2,6 +2,7 @@
 tags: [programming-languages, compilation, pipeline]
 up: "[[Compilation and Runtime Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -146,13 +147,16 @@ Early compilers (1950s–60s, e.g., FORTRAN I) were monolithic and hand-crafted.
 
 ---
 
-*See also:* [[Compilation and Runtime Overview]] · [[Sources Index]]
+*See also:* [[Compilation and Runtime Overview]] · [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ---
 
 ## Supporting Chunks / References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

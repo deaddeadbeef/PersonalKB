@@ -2,6 +2,7 @@
 tags: [llm, reasoning-agents]
 up: "[[2026 — Reasoning and Agents Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -112,10 +113,10 @@ Argue whether DeepSeek R1's bigger contribution was scientific insight about rea
 
 ## Supporting Chunks
 
-- [[LLM/_chunks/chunk-llm-244 DeepSeek R1-Zero develops chain-of-thought reasoning through pure reinforcement learning without SFT|chunk-llm-244 DeepSeek R1-Zero develops chain-of-thought reasoning through pure reinforcement learning without supervised fine-tuning]]
-- [[LLM/_chunks/chunk-llm-245 DeepSeek R1 uses GRPO to eliminate the critic model reducing training cost|chunk-llm-245 DeepSeek R1 matches o1 on benchmarks using GRPO training at fraction of frontier cost]]
-- [[LLM/_chunks/chunk-llm-246 DeepSeek R1 distilled 14B model outperforms o1-mini on reasoning benchmarks|chunk-llm-246 R1 distilled 14B model outperforms o1-mini demonstrating effective reasoning transfer to smaller architectures]]
+- [[LLM/_chunks/chunk-llm-244 DeepSeek R1-Zero develops chain-of-thought reasoning through pure reinforcement learning without SFT|chunk-llm-244]]
+- [[LLM/_chunks/chunk-llm-245 DeepSeek R1 uses GRPO to eliminate the critic model reducing training cost|chunk-llm-245]]
+- [[LLM/_chunks/chunk-llm-246 DeepSeek R1 distilled 14B model outperforms o1-mini on reasoning benchmarks|chunk-llm-246]]
 
 ## References
 
-→ [[Sources Index]]
+→ [[LLM/Sources/Sources Index|Sources Index]]

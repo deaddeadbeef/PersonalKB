@@ -2,6 +2,7 @@
 tags: [study, llm, mastery, status, local-llm, evidence, snapshot]
 up: "[[LLM/Study/LLM Mastery Dashboard]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 last-verified: 2026-06-16
 last-machine-check: 2026-06-16T07:35:35+08:00

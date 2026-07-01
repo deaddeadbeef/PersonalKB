@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Starship Program Overview
 
@@ -32,12 +34,12 @@ NASA selected Starship as the Human Landing System for the Artemis program, awar
 SpaceX envisions multiple Starship configurations: a standard cargo/tanker variant, the HLS lunar lander, a crew transport variant with cabins and life support, a point-to-point Earth transport vehicle, and potentially a space station or orbital depot. The common airframe and engine set across variants is intended to drive down per-unit costs through high production rates.
 
 ## Pages in This Domain
-- Starship Architecture
+- [[SpaceX/Starship Program/Starship Vehicle Architecture|Starship Architecture]]
 - [[Super Heavy Booster]]
-- [[Integrated Flight Tests|Starship Flight Test Campaign]]
+- [[SpaceX/Starship Program/Integrated Flight Tests|Starship Flight Test Campaign]]
 - [[Orbital Refueling]]
-- [[Human Landing System|Human Landing System (HLS)]]
-- [[Starship Variants and Applications|Starship Variants]]
+- [[SpaceX/Starship Program/Human Landing System|Human Landing System (HLS)]]
+- [[SpaceX/Starship Program/Starship Variants and Applications|Starship Variants]]
 
 ## Related Domains
 - [[Engines and Propulsion Overview]] — Raptor engine powering Starship
@@ -46,4 +48,7 @@ SpaceX envisions multiple Starship configurations: a standard cargo/tanker varia
 - [[Launch Operations and Facilities Overview]] — Starbase and launch infrastructure
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

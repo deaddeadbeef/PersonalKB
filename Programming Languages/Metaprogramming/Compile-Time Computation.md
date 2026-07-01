@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, metaprogramming, comptime]
 up: "[[Metaprogramming Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -90,4 +92,4 @@ The concept evolved from simple constant folding in early compilers to executing
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 23
 
-← [[PHM Novel - Chapter 22]] | [[Chapter Index]] | [[PHM Novel - Chapter 24]] →
+← [[PHM Novel - Chapter 22]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 24]] →
 
 > **One-line summary** — After confronting the truth of his forced mission, Grace and Rocky discover that nitrogen kills Taumoeba and begin evolving a resistant strain.
 
@@ -104,7 +105,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (p. 430–444)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Ryland Grace]]
 - [[Taumoeba and the Biological Solution]]
 - [[Rocky and the Eridians]]

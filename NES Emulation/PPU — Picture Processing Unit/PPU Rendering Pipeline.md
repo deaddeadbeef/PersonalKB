@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[PPU — Picture Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PPU Rendering Pipeline
@@ -100,4 +101,4 @@ The OxideNES `tick()` method in `ppu.rs` models every dot of every scanline. Bac
 *See also:* [[PPU Registers and Timing]], [[Backgrounds and Nametables]], [[PPU Scrolling]], [[Sprites and OAM]], [[PPU — Picture Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

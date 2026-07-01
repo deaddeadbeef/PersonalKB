@@ -11,6 +11,7 @@ tags:
   - spaceflight
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Artificial Gravity and Induced Torpor
@@ -98,9 +99,9 @@ flowchart LR
 
 ## References
 
-- [[Sources Index#NASA STASH Torpor]] — NASA torpor research for Mars missions
-- [[Sources Index#Atomic Rockets Artificial Gravity]] — comprehensive spin-gravity reference
-- [[Sources Index#Northeastern Accuracy Discussion]] — spaceflight accuracy analysis
+- [[Project Hail Mary/Sources/Sources Index#NASA STASH Torpor|NASA STASH Torpor]] — NASA torpor research for Mars missions
+- [[Project Hail Mary/Sources/Sources Index#Atomic Rockets Artificial Gravity|Atomic Rockets Artificial Gravity]] — comprehensive spin-gravity reference
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — spaceflight accuracy analysis
 
 ## Supporting Chunks
 

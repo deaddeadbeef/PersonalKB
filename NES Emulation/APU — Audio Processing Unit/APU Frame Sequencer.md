@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[APU — Audio Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # APU Frame Sequencer
@@ -87,4 +88,4 @@ OxideNES `apu.rs` implements the frame sequencer with separate counters for 4-st
 *See also:* [[Pulse Channels]], [[Triangle and Noise Channels]], [[DMC — Delta Modulation Channel]], [[APU — Audio Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

@@ -2,10 +2,13 @@
 tags: [japanese, vocabulary, thematic, numbers]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Thematic Vocabulary — Numbers, Time, and Dates
+
+> **One-line summary:** Numbers, time, and dates are the counting system behind schedules, prices, ages, quantities, and calendar plans.
 
 ```mermaid
 flowchart TD
@@ -20,9 +23,9 @@ flowchart TD
 
 ## 🎯 Intuition
 
-**The Core Idea:** Understanding Thematic Vocabulary — Numbers, Time, and Dates is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+**The Core Idea:** Japanese numbers become useful only when paired with readings, counters, time expressions, and the many irregular date forms.
+**Analogy:** Treat this as measurement grammar: the number is not complete until the language knows what kind of thing is being counted.
+**Why It Matters:** Prices, appointments, birthdays, train times, ages, and quantities all break down if the number system is shaky.
 
 ## ⚙️ Core Mechanics
 
@@ -121,4 +124,4 @@ flowchart TD
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

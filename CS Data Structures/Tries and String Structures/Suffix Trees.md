@@ -2,6 +2,7 @@
 tags: [cs-ds, tries]
 up: "[[Tries and String Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Suffix Trees

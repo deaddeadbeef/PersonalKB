@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n4, giving-receiving]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -149,4 +150,4 @@ Describe 3 recent favors: one you did for someone (あげる), one someone did f
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

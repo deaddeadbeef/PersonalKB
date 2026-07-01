@@ -2,6 +2,7 @@
 tags: [japanese, learning-path, phase-5]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -155,7 +156,7 @@ The invisible layer that separates "speaks Japanese" from "understands Japan."
 Find one Japanese person to have a 5-minute conversation with (in person, online, or via language exchange app). Use ONLY what you've learned in this phase.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Eleventh Month Japanese Study Plan]]
 - [[Twelfth Month Japanese Study Plan]]
 - [[Thirteenth Month Japanese Study Plan]]

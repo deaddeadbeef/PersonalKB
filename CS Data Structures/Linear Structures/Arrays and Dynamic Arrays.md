@@ -2,6 +2,7 @@
 tags: [cs-ds, linear]
 up: "[[Linear Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Arrays and Dynamic Arrays
@@ -117,7 +118,7 @@ function deleteAt(arr, index):
 
 ---
 
-*See also:* [[Singly Linked Lists]] | [[Queues and Deques]] | [[Hash Tables and Hash Functions|Hash Tables]] | Heaps and Priority Queues | **CS Algorithms:** [[Binary Search]], [[Merge Sort]]
+*See also:* [[Singly Linked Lists]] | [[Queues and Deques]] | [[CS Data Structures/Hash-Based Structures/Hash Tables and Hash Functions|Hash Tables]] | [[CS Data Structures/Heaps and Priority Queues/Heaps and Priority Queues Overview|Heaps and Priority Queues]] | **CS Algorithms:** [[Binary Search]], [[Merge Sort]]
 
 ## Supporting Chunks
 

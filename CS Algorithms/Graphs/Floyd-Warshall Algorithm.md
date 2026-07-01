@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/graphs
 confidence: verified
+freshness: stable
 up: "[[Shortest Path Overview]]"
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -118,15 +119,20 @@ After running the algorithm, if any diagonal entry D[u][u] < 0, a negative-weigh
 
 ---
 
-*See also:* [[Dynamic Programming]], [[Edit Distance]], [[NP Completeness]], [[Dijkstra's Algorithm]], [[Bellman-Ford Algorithm]], [[Shortest Path Overview]], [[Adjacency List and Adjacency Matrix|Adjacency Matrix]], [[CS Data Structures]]
+*See also:* [[Dynamic Programming]], [[Edit Distance]], [[NP Completeness]], [[Dijkstra's Algorithm]], [[Bellman-Ford Algorithm]], [[Shortest Path Overview]], [[CS Data Structures/Graphs/Adjacency List and Adjacency Matrix|Adjacency Matrix]], [[CS Data Structures]]
 
-## Supporting Chunks
+## Supporting Chunks / References
 
 ### Supporting Chunks
 
 - [[Graphs - Floyd-Warshall solves all-pairs shortest paths in Theta(n cubed)]]
 - [[Graphs - Floyd-Warshall negative-cycle detection uses the diagonal of the distance matrix]]
 
-## References
+### References
 
 See [[CS Algorithms/Sources/Sources Index#Cormen 2013|Sources Index]], Chapter 6. See [[CS Algorithms/Sources/Sources Index#Erickson 2019|Sources Index]], Chapter 9. See [[Dijkstra's Algorithm]] and [[Bellman-Ford Algorithm]] for single-source variants. See [[Shortest Path Overview]] for algorithm selection guidance.
+
+## References
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

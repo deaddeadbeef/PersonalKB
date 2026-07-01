@@ -2,6 +2,7 @@
 tags: [llm, prompting]
 up: "[[2022 — Alignment and Chat Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -106,19 +107,18 @@ They also made prompt security a first-class field. Research on prompt injection
 
 Design a secure system-prompt strategy for an LLM application that reads external documents and calls tools. Specify the system prompt’s role, the instruction hierarchy you want, and the non-prompt safeguards you would add to reduce injection and prompt leakage risk.
 
-## Supporting Chunks
-
+## References
 ### Supporting Chunks
 
-- Prompt Injection Attacks
-- Instruction Hierarchy
+- [[LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning|Prompt Injection Attacks]]
+- [[LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning|Instruction Hierarchy]]
 - [[Constitutional AI]]
-- Role Prompting
-- Multi-Turn Context Management
-- Prompt Security
-- System Prompt Patterns
+- [[LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning|Role Prompting]]
+- [[LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning|Multi-Turn Context Management]]
+- [[LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning|Prompt Security]]
+- [[LLM/2022 — Alignment and Chat/System Prompts and Role Conditioning|System Prompt Patterns]]
 
-## References
+### References
 
 → [[LLM/Sources/Sources Index|LLM Sources Index]]
 - OpenAI Chat Completions API documentation

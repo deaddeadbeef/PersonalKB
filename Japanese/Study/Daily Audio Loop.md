@@ -2,6 +2,7 @@
 tags: [japanese, audio, study, routine]
 up: "[[Daily Study Routine Templates]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

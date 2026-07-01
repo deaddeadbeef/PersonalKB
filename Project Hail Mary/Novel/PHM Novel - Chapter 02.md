@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 02
 
-← [[PHM Novel - Chapter 01]] | [[Chapter Index]] | [[PHM Novel - Chapter 03]] →
+← [[PHM Novel - Chapter 01]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 03]] →
 
 > **One-line summary** — Grace proves he is far from Earth while flashbacks name Astrophage and explain its link to Venus.
 
@@ -92,4 +93,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 25–61
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

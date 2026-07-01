@@ -10,8 +10,10 @@ source: "[[Tanenbaum 2015 - Modern Operating Systems]]"
 tags:
   - csos
   - book-chapter
-up: "[[Chapter Index]]"
-confidence: verified
+up: "[[CS Operating Systems/Books/Modern Operating Systems/Chapter Index|Chapter Index]]"
+confidence: established
+freshness: stable
+tier-coverage: [core]
 ---
 # MOS — Chapter 10: Case Study 1 — UNIX, Linux, and Android
 
@@ -43,4 +45,4 @@ The first case study traces the UNIX lineage from Bell Labs through BSD to the L
 
 ## References
 
-See [[Sources Index#Tanenbaum 2015]].
+See [[CS Operating Systems/Sources/Sources Index#Tanenbaum 2015|Tanenbaum 2015]].

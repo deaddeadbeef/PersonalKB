@@ -2,6 +2,7 @@
 tags: [spacex, business]
 up: "[[Business and Economics Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -98,4 +99,7 @@ The Ukraine war highlighted the strategic value of commercial satellite constell
 - Propose a procurement strategy that balances lower cost from SpaceX with the government's need to avoid overdependence on any single launch and satellite provider.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

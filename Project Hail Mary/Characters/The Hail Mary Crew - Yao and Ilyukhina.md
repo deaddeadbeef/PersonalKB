@@ -7,6 +7,7 @@ tags:
   - ilyukhina
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # The Hail Mary Crew — Yáo and Ilyukhina
@@ -110,7 +111,7 @@ graph TD
 
 ## References
 
-- [[Sources Index#Weir 2021 Novel]] — primary source for crew depictions (fictional)
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — primary source for crew depictions (fictional)
 
 ## Supporting Chunks
 

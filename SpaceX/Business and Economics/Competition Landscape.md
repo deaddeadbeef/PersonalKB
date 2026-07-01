@@ -2,6 +2,7 @@
 tags: [spacex, business]
 up: "[[Business and Economics Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -37,11 +38,11 @@ flowchart TD
 |---|---|---|---|---|---|
 | Falcon 9 | SpaceX | ~22,800 kg | Yes (booster) | 2010 | ~$67M |
 | Falcon Heavy | SpaceX | ~63,800 kg | Yes (boosters) | 2018 | ~$97M |
-| Starship | SpaceX | ~100,000 kg+ | Yes (full stack) | 2025 (orbital) | not confirmed in vault sources |
+| Starship | SpaceX | ~100,000 kg+ | Yes (full stack) | Flight-test campaign; not routine orbital service | Not published |
 | Vulcan Centaur | ULA | ~27,200 kg | No | 2024 | ~$110M+ |
 | Ariane 6 (A64) | Arianespace | ~21,650 kg | No | 2024 | ~€75M |
 | New Glenn | Blue Origin | ~45,000 kg | Yes (booster) | 2025 | ~$70-100M (est.) |
-| Neutron | Rocket Lab | ~13,000 kg | Yes (booster) | not confirmed in vault sources (~2026) | ~$55M |
+| Neutron | Rocket Lab | ~13,000 kg | Yes (booster) | Planned debut window: 2026 | ~$55M |
 | Long March 5 | CASC (China) | ~25,000 kg | No | 2016 | N/A (state-funded) |
 | H3 | JAXA (Japan) | ~6,500 kg | No | 2024 | ~$50M |
 | Electron | Rocket Lab | ~300 kg | Partial (recovery) | 2018 | ~$7.5M |
@@ -101,4 +102,7 @@ SpaceX's strongest advantage is not just one rocket but a system-level combinati
 - Build a go-to-market strategy for a launch startup entering a market where the leader already has lower prices, more reliability data, and higher cadence.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [SpaceX Updates](https://www.spacex.com/updates)
+- [Rocket Lab Neutron and Electron multi-launch deal, 2026-2029 baseline](https://rocketlabcorp.com/updates/rocket-labs-biggest-launch-deal-yet-confidential-customer-books-multiple-neutron-and-electron-launches/)

@@ -1,7 +1,8 @@
 ---
 tags: [csa, csa/graphs]
-up: "[[Graphs Overview]]"
+up: "[[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Prim's Algorithm
@@ -116,7 +117,7 @@ At each step, the algorithm maintains a cut (S, V−S) where S = vertices alread
 
 ---
 
-*See also:* [[Minimum Spanning Trees]] · [[Kruskal's Algorithm]] · [[BFS and DFS]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[Priority Queues and Heaps]] · [[Adjacency List and Adjacency Matrix|Adjacency List vs Matrix]]
+*See also:* [[Minimum Spanning Trees]] · [[Kruskal's Algorithm]] · [[BFS and DFS]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[Priority Queues and Heaps]] · [[CS Data Structures/Graphs/Adjacency List and Adjacency Matrix|Adjacency List vs Matrix]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

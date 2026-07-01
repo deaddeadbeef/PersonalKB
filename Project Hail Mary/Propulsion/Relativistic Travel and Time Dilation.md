@@ -10,6 +10,7 @@ tags:
   - time-dilation
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Relativistic Travel and Time Dilation
@@ -100,9 +101,9 @@ flowchart LR
 
 ## References
 
-- [[Sources Index#Baez Relativistic Rocket]] — derivation of relativistic rocket equations
-- [[Sources Index#Chris West Ship Analysis]] — velocity and time analysis for the Hail Mary
-- [[Sources Index#Northeastern Accuracy Discussion]] — broad accuracy assessment
+- [[Project Hail Mary/Sources/Sources Index#Baez Relativistic Rocket|Baez Relativistic Rocket]] — derivation of relativistic rocket equations
+- [[Project Hail Mary/Sources/Sources Index#Chris West Ship Analysis|Chris West Ship Analysis]] — velocity and time analysis for the Hail Mary
+- [[Project Hail Mary/Sources/Sources Index#Northeastern Accuracy Discussion|Northeastern Accuracy Discussion]] — broad accuracy assessment
 
 ## Supporting Chunks
 

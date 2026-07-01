@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, language-profiles, rust]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -93,4 +95,4 @@ Systems programming (OS components, embedded), WebAssembly, CLI tools, network s
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

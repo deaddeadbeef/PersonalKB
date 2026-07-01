@@ -1,7 +1,9 @@
 ---
 tags: [llm, era-hub]
 up: "[[LLM]]"
-confidence: plausible
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core, deep-dive]
 ---
 # 2022 — Alignment and Chat
 
@@ -72,4 +74,7 @@ Traditional NLP benchmarks (GLUE, SuperGLUE) were saturated. Evaluation shifted 
 → Next: [[2023 — Open Models and Agents Overview|2023 — Open Models and Agents]]
 
 ## References
-- [[LLM/Sources/Sources Index|LLM Sources Index]]
+
+- [[LLM/Sources/Sources Index]]
+- [[LLM/LLM Corpus Index]]
+- [[LLM/LLM Book Reading Spine]]

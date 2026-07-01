@@ -2,6 +2,7 @@
 tags: [llm, rag]
 up: "[[2023 — Open Models and Agents Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -89,10 +90,9 @@ Design a retrieval stack for an enterprise wiki that contains product SKUs, acro
 
 ---
 
-## Supporting Chunks
-
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
-
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

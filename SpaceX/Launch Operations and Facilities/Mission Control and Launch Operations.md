@@ -3,6 +3,7 @@ tags: [spacex, facilities]
 up: "[[Launch Operations and Facilities Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Mission Control and Launch Operations
@@ -89,4 +90,4 @@ Explain how countdown timing, onboard automation, AFTS, and first-stage recovery
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

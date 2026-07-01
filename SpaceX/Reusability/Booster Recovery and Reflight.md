@@ -3,6 +3,7 @@ tags: [spacex, reusability]
 up: "[[Reusability Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Booster Recovery and Reflight
@@ -92,4 +93,4 @@ Building customer trust was gradual. Early reflight customers received significa
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

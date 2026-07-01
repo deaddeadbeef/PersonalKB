@@ -2,6 +2,7 @@
 tags: [llm, rag]
 up: "[[2020–2021 — The Scaling Era Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Retrieval Pipelines and Context Assembly
@@ -100,11 +101,11 @@ Retrieval pipelines turned RAG from a simple retrieval trick into a systems-desi
 ### Challenge
 1. Propose a production-grade multi-hop RAG pipeline for questions that require synthesizing evidence across documents, and explain how you would control token budget, retrieval fusion, passage ordering, and citation verification without sacrificing answer quality.
 
-*See also:* [[Chunking Strategies]]; [[Embeddings and Vector Databases]]; [[Reranking]]; [[Supervised Fine-Tuning]]; [[Efficient Attention and Long-Context Variants]]
-
-## Supporting Chunks
-### Supporting Chunks
-- No supporting chunk notes are attached yet.
+*See also:* [[Chunking Strategies]]; [[Embeddings and Vector Databases]]; [[Reranking]]; [[Supervised Fine-Tuning]]; [[LLM/2024–2025 — Frontier and Efficiency/Efficient Attention and Long-Context Variants|Efficient Attention and Long-Context Variants]]
 
 ## References
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
+
+### References
 - [[LLM/Sources/Sources Index]]

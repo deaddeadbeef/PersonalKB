@@ -2,6 +2,7 @@
 tags: [spacex, missions]
 up: "[[Missions and Payloads Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -96,4 +97,7 @@ Later missions extended SpaceX's reach into higher-energy direct-to-GEO profiles
 *See also:* [[Missions and Payloads Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

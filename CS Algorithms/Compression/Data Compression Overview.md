@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/compression
 confidence: verified
+freshness: stable
 up: "[[CS Algorithms]]"
 ---
 # Data Compression Overview

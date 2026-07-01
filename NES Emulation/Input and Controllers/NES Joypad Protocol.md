@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Input and Controllers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -86,4 +87,4 @@ joypad.rs `write()` handles the strobe signal. On strobe falling edge (1→0), b
 *See also:* [[Controller Features in OxideNES]], [[Input and Controllers Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

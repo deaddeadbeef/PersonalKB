@@ -2,6 +2,7 @@
 tags: [japanese, study, phase-1, review, audio]
 up: "[[Japanese Learning Dashboard]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

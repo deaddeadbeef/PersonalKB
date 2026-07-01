@@ -3,6 +3,7 @@ tags: [spacex, engines]
 up: "[[Engines and Propulsion Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Engine Manufacturing and Testing
@@ -83,4 +84,4 @@ Write a short trade study comparing a high-rate in-house engine factory with a s
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

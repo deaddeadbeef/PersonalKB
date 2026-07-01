@@ -2,6 +2,7 @@
 tags: [study, llm, inference, local-llm, kv-cache, prompt-cache, prefix-caching, benchmarking, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [core, practice, deep-dive]
 last-verified: 2026-06-15
 ---
@@ -326,10 +327,10 @@ Internal:
 - [[LLM/2024–2025 — Frontier and Efficiency/Serving Architectures and Throughput-Latency Trade-offs]]
 - [[LLM/2024–2025 — Frontier and Efficiency/Batching and Continuous Batching]]
 - [[LLM/2026 — Reasoning and Agents/Prompt Caching and Inference Infrastructure]]
-- [[chunk-llm-117 PagedAttention Eliminates KV Fragmentation]]
-- [[chunk-llm-119 PagedAttention Copy-on-Write Sharing]]
-- [[chunk-llm-214 KV Cache Memory Bandwidth Bottleneck]]
-- [[chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]]
+- [[LLM/_chunks/chunk-llm-117 PagedAttention Eliminates KV Fragmentation|chunk-llm-117]]
+- [[LLM/_chunks/chunk-llm-119 PagedAttention Copy-on-Write Sharing|chunk-llm-119]]
+- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|chunk-llm-214]]
+- [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260]]
 
 Current external docs checked 2026-06-15:
 

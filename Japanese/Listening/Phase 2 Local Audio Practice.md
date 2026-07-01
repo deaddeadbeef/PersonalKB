@@ -2,6 +2,7 @@
 tags: [japanese, listening, phase-2, audio, practice]
 up: "[[Beginner Listening Resources]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -216,4 +217,4 @@ After listening, write one line in [[Phase 2 Weekly Review]]:
 - [[Pronunciation Correction Log]]
 - [[Beginner Listening Resources]]
 - [[Audio Index]]
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

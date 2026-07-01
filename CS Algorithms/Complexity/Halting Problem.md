@@ -3,6 +3,7 @@ tags:
   - csa
   - csa/complexity
 confidence: verified
+freshness: stable
 up: '[[Complexity Theory Overview]]'
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
@@ -118,8 +119,8 @@ flowchart TD
 
 ## Supporting Chunks
 
-- [[CS Algorithms/_chunks/Complexity - The Halting Problem is undecidable via Turing's diagonalisation argument]]
-- [[CS Algorithms/_chunks/Complexity - Rice's Theorem shows all non-trivial semantic program properties are undecidable]]
+- [[CS Algorithms/_chunks/Complexity - The Halting Problem is undecidable via Turing's diagonalisation argument|Halting Problem diagonalisation chunk]]
+- [[CS Algorithms/_chunks/Complexity - Rice's Theorem shows all non-trivial semantic program properties are undecidable|Rice theorem chunk]]
 
 ## References
 

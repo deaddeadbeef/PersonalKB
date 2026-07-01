@@ -4,6 +4,7 @@ tags: [spacex, dragon, human-spaceflight]
 up: "[[Dragon and Human Spaceflight Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Life Support and Abort Systems
@@ -92,4 +93,4 @@ Crew Dragon's safety architecture works because the systems are layered rather t
 Trace how Crew Dragon protects a crew during a launch emergency, starting with detection of the emergency and ending at splashdown, naming the major systems involved.
 
 ## References
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

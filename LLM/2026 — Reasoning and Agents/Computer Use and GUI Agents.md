@@ -2,6 +2,7 @@
 tags: [llm, reasoning-agents]
 up: "[[2026 — Reasoning and Agents Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -111,9 +112,9 @@ Pick a legacy business workflow and explain when a GUI agent would be preferable
 
 ## Supporting Chunks
 
-- [[LLM/_chunks/chunk-llm-254 Computer use operates via screenshot-action loop predicting pixel coordinates|chunk-llm-254 Claude computer use operates via screenshot-action loop perceiving screens and executing mouse keyboard actions]]
-- [[LLM/_chunks/chunk-llm-255 OSWorld benchmark shows computer use at 14.9 percent vs human 70 percent|chunk-llm-255 OSWorld benchmark shows computer use agents at 14.9 percent versus human 72 percent on desktop tasks]]
+- [[LLM/_chunks/chunk-llm-254 Computer use operates via screenshot-action loop predicting pixel coordinates|chunk-llm-254]]
+- [[LLM/_chunks/chunk-llm-255 OSWorld benchmark shows computer use at 14.9 percent vs human 70 percent|chunk-llm-255]]
 
 ## References
 
-→ [[Sources Index]]
+→ [[LLM/Sources/Sources Index|Sources Index]]

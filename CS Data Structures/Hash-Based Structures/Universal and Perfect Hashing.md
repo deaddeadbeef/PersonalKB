@@ -2,6 +2,7 @@
 tags: [cs-ds, hash]
 up: "[[Hash-Based Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Universal and Perfect Hashing
@@ -87,7 +88,7 @@ where *p* is a prime larger than the key universe, and *a*, *b* are chosen unifo
 
 ---
 
-*See also:* [[Hash Tables and Hash Functions]] | [[Collision Resolution Strategies]] | [[Cuckoo Hashing]] | Randomized Algorithms | Birthday Paradox | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
+*See also:* [[Hash Tables and Hash Functions]] | [[Collision Resolution Strategies]] | [[Cuckoo Hashing]] | [[CS Algorithms/Techniques/Randomized Algorithms|Randomized Algorithms]] | [[CS Data Structures/Hash-Based Structures/Universal and Perfect Hashing|Birthday Paradox]] | **CS Algorithms:** [[Dijkstra's Algorithm]], [[Huffman Coding]]
 
 ## Supporting Chunks
 

@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n4, conditionals]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -118,4 +119,4 @@ When in doubt, use たら. It works in the most situations.
 A friend asks you to recommend what to do in Tokyo. Give 3 pieces of advice using different conditional forms (たら, ば, なら).
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

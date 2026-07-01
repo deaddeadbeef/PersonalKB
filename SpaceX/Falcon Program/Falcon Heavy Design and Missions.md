@@ -2,6 +2,7 @@
 tags: [spacex, falcon]
 up: "[[Falcon Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -84,4 +85,4 @@ Falcon Heavy can deliver approximately 63,800 kg to LEO, 26,700 kg to GTO, and 1
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Memory Map and Bus Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PPU Memory Map
@@ -89,4 +90,4 @@ OxideNES ppu.rs implements `ppu_read()`/`ppu_write()` with `mirror_vram_addr()` 
 *See also:* [[CPU Memory Map]], [[OAM DMA]], [[Backgrounds and Nametables]], [[Memory Map and Bus Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

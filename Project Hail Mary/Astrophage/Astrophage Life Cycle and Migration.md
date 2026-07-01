@@ -7,6 +7,7 @@ tags:
   - ecology
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Astrophage Life Cycle and Migration
@@ -105,10 +106,10 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#Shunk 2020]] — ISS radiotrophic fungi (real-science anchor)
-- [[Sources Index#Dadachova 2007]] — melanin + radiation energy transduction
-- [[Sources Index#Baez Relativistic Rocket]] — photon-thrust physics context
-- [[Sources Index#Weir 2021 Novel]] — in-universe lifecycle depictions (fictional source)
+- [[Project Hail Mary/Sources/Sources Index#Shunk 2020|Shunk 2020]] — ISS radiotrophic fungi (real-science anchor)
+- [[Project Hail Mary/Sources/Sources Index#Dadachova 2007|Dadachova 2007]] — melanin + radiation energy transduction
+- [[Project Hail Mary/Sources/Sources Index#Baez Relativistic Rocket|Baez Relativistic Rocket]] — photon-thrust physics context
+- [[Project Hail Mary/Sources/Sources Index#Weir 2021 Novel|Weir 2021 Novel]] — in-universe lifecycle depictions (fictional source)
 
 ## Supporting Chunks
 

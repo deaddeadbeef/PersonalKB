@@ -2,10 +2,13 @@
 tags: [japanese, vocabulary, thematic, home]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Thematic Vocabulary — Home and Daily Life
+
+> **One-line summary:** Home and daily-life vocabulary gives you the rooms, objects, chores, and routine verbs needed to describe ordinary life in Japanese.
 
 ```mermaid
 flowchart TD
@@ -20,9 +23,9 @@ flowchart TD
 
 ## 🎯 Intuition
 
-**The Core Idea:** Understanding Thematic Vocabulary — Home and Daily Life is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+**The Core Idea:** Use home vocabulary to attach objects to locations and routines: where something is, what you do there, and who uses it.
+**Analogy:** Think of the house as a map for particles: に marks locations, で marks actions, and を marks the object being used.
+**Why It Matters:** Daily-life words make self-introductions, schedules, family talk, errands, and beginner reading feel concrete.
 
 ## ⚙️ Core Mechanics
 
@@ -93,4 +96,4 @@ flowchart TD
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

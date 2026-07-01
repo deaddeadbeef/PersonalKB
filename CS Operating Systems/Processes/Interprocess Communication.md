@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/processes
 confidence: verified
+freshness: stable
 up: "[[Processes Overview]]"
 tier-coverage:
   - intuition

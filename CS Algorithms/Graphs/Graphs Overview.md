@@ -3,7 +3,9 @@ tags:
   - csa
   - moc
 up: "[[CS Algorithms]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Graphs Overview
 
@@ -80,4 +82,6 @@ Graph algorithms model relationships between entities. This domain covers graph 
 - **[[Complexity Theory Overview]]** — graph problems (TSP, clique) are canonical NP-complete benchmarks; Network Flow bridges combinatorial optimization and complexity.
 
 ## References
-- [[CS Algorithms/Sources/Sources Index|CS Algorithms Sources Index]]
+
+- [[CS Algorithms/Sources/Sources Index]]
+- [[CS Algorithms/CS Algorithms Book Reading Spine]]

@@ -1,11 +1,24 @@
 ---
 tags: [spacex, learning-path]
-up: "[[SpaceX/SpaceX|SpaceX]]"
-confidence: policy
+up: "[[SpaceX/SpaceX]]"
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [core, practice]
 ---
 # SpaceX — Learning Path
 
 > A guided, progressive tour through SpaceX's history, technology, and ambitions. Four passes, each building on the last.
+
+## Where This Fits
+
+| Need | Use |
+|---|---|
+| Read SpaceX like a technical story | [[SpaceX/SpaceX Book Reading Spine|SpaceX Book Reading Spine]] |
+| Follow a pass-based curriculum | This learning path |
+| Review vehicles, engines, missions, business, or Starship | [[SpaceX/Study/SpaceX Study Index|SpaceX Study Index]] |
+| Verify current, numerical, contract, launch, or company claims | [[SpaceX/Sources/Sources Index|SpaceX Sources Index]] |
+
+Use this path when you want staged coverage. Use the book spine for the industrial narrative, and use the source index before reusing any live or fast-changing fact with numbers, dates, valuation, subscriber counts, launch totals, or Starship status.
 
 ## How to Use This Path
 
@@ -207,4 +220,6 @@ Build active-recall skill through drills and tracking.
 - Monitor [[Competition Landscape]] for competitor milestones
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/SpaceX]]
+- [[SpaceX/Sources/Sources Index]]

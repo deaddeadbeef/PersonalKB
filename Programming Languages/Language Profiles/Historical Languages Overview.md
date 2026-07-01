@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, language-profiles, historical]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -89,4 +91,4 @@ The influence chains are explicit across the page:
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

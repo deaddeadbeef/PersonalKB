@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 07
 
-← [[PHM Novel - Chapter 06]] | [[Chapter Index]] | [[PHM Novel - Chapter 08]] →
+← [[PHM Novel - Chapter 06]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 08]] →
 
 > **One-line summary** — Grace decodes the alien cylinder into a model of 40 Eridani while a ship-design flashback explains how the Hail Mary became viable.
 
@@ -92,4 +93,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 149–167
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

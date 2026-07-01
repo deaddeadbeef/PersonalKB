@@ -2,6 +2,7 @@
 tags: [llm, architecture]
 up: "[[2018–2019 — Pretrained Language Models Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Decoder-Only Models
@@ -80,29 +81,9 @@ Decoder-only transformers became the foundation of frontier AI. GPT-1 establishe
 
 *See also:* [[2018–2019 — Pretrained Language Models Overview]], [[Transformer Architecture]], [[Scaling Laws]], [[Few-Shot Prompting]], [[Reinforcement Learning from Human Feedback]], [[Open-Weight Model Ecosystem]], [[LLM/Sources/Sources Index]]
 
-## Supporting Chunks
-### Supporting Chunks
-- [[LLM/_chunks/chunk-llm-005 In-Context Learning Emerges at Scale|In-context learning emerges at scale]]
-- [[LLM/_chunks/chunk-llm-007 Few-Shot Prompting Outperforms Zero-Shot|Few-shot prompting outperforms zero-shot]]
-- [[LLM/_chunks/chunk-llm-008 GPT-3 Training Data Composition|GPT-3 training data composition]]
-- [[LLM/_chunks/chunk-llm-012 Bidirectional Context Produces Richer Representations|Bidirectional vs decoder-only trade-off]]
-- [[LLM/_chunks/chunk-llm-035 LLaMA Architecture Choices Became Standard|LLaMA architecture choices became standard]]
-- [[LLM/_chunks/chunk-llm-121 GPT-1 Pre-Train Fine-Tune Paradigm|GPT-1 pre-train/fine-tune paradigm]]
-- [[LLM/_chunks/chunk-llm-122 GPT-1 12-Layer Decoder Architecture|GPT-1 12-layer decoder architecture]]
-- [[LLM/_chunks/chunk-llm-125 GPT-2 Zero-Shot Task Transfer|GPT-2 zero-shot task transfer]]
-- [[LLM/_chunks/chunk-llm-127 GPT-2 Scaling from 117M to 1.5B|GPT-2 scaling from 117M to 1.5B]]
-- [[LLM/_chunks/chunk-llm-213 Multi-Query Attention Shared KV Heads|Multi-query attention shared KV heads]]
-- [[LLM/_chunks/chunk-llm-214 KV Cache Memory Bandwidth Bottleneck|KV cache memory bandwidth bottleneck]]
-- [[LLM/_chunks/chunk-llm-220 GQA Default Attention Modern LLMs|Grouped-query attention as a modern default]]
-
 ## References
-- [[LLM/_raw/raw-llm-002 GPT-3 Language Models are Few-Shot Learners|raw-llm-002 GPT-3 Language Models are Few-Shot Learners]]
-- [[LLM/_raw/raw-llm-009 LLaMA Open Foundation Language Models|raw-llm-009 LLaMA Open Foundation Language Models]]
-- [[LLM/_raw/raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training|raw-llm-031 GPT-1 Improving Language Understanding by Generative Pre-Training]]
-- [[LLM/_raw/raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners|raw-llm-032 GPT-2 Language Models are Unsupervised Multitask Learners]]
-- [[LLM/_raw/raw-llm-054 Fast Transformer Decoding One Write-Head MQA|raw-llm-054 Fast Transformer Decoding One Write-Head MQA]]
-- [[LLM/_raw/raw-llm-055 GQA Training Generalized Multi-Query Transformer Models|raw-llm-055 GQA Training Generalized Multi-Query Transformer Models]]
-- [[LLM/Sources/Sources Index]]
+### Supporting Chunks
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
-### Evidence Gaps
-- The current frontier-model examples and context-window ranges should be refreshed from current model cards before future edits treat them as up-to-date.
+### References
+- [[LLM/Sources/Sources Index]]

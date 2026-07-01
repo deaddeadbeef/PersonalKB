@@ -2,6 +2,7 @@
 tags: [japanese, speaking, pitch-accent]
 up: "[[Speaking Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -100,6 +101,6 @@ Role-play arriving at a Japanese office for the first time. Include: greeting th
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[Pronunciation and Audio Accuracy]]
 - [[Phase 3 Pitch Accent Practice Path]]

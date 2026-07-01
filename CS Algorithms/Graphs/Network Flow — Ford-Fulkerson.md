@@ -1,7 +1,8 @@
 ---
 tags: [csa, csa/graphs]
-up: "[[Graphs Overview]]"
+up: "[[CS Algorithms/Graphs/Graphs Overview|Graphs Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Network Flow — Ford-Fulkerson
@@ -123,7 +124,7 @@ Space: $O(V + E)$ for the residual graph.
 
 ---
 
-*See also:* [[BFS and DFS]] · [[Minimum Spanning Trees]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[Queues and Deques|Queues]] · [[Adjacency List and Adjacency Matrix|Adjacency List vs Matrix]]
+*See also:* [[BFS and DFS]] · [[Minimum Spanning Trees]] · [[Dijkstra's Algorithm]] | **CS Data Structures:** [[CS Data Structures/Linear Structures/Queues and Deques|Queues]] · [[CS Data Structures/Graphs/Adjacency List and Adjacency Matrix|Adjacency List vs Matrix]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Algorithms/Sources/Sources Index|Sources Index]]

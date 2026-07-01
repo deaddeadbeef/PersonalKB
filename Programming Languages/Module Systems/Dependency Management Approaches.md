@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, module-systems, dependency-management]
 up: "[[Module Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -70,4 +72,4 @@ Most tools use a SAT-solver approach: find the newest compatible set of versions
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

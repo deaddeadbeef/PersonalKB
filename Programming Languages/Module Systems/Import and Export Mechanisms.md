@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, module-systems, imports]
 up: "[[Module Systems Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -118,4 +120,4 @@ Go's compile-error on unused imports is the strictest approach. Most other langu
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

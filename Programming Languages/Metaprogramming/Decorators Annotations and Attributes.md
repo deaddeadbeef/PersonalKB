@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, metaprogramming, decorators]
 up: "[[Metaprogramming Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -101,4 +103,4 @@ Java introduced annotations in Java 5 (2004) explicitly as a safer alternative t
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

@@ -4,13 +4,15 @@ tags:
   - csos/study
   - csos/memory
 up: "[[OS Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Memory Management — Review Drill
 
 Active-recall drill for virtual memory, paging mechanics, TLBs, segmentation, and page replacement algorithms.
 
-**Canon pages:** [[Address Spaces]] · [[Virtual Memory and Paging]] · [[Page Replacement Algorithms]] · [[Segmentation]] · [[Memory Management Overview]]
+**Canon pages:** [[Address Spaces]] · [[Virtual Memory and Paging]] · [[Page Replacement Algorithms]] · [[Segmentation]] · [[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]]
 
 ---
 
@@ -126,7 +128,9 @@ A: Segmentation divides a process's address space into **variable-size**, logica
 - [[Virtual Memory and Paging]] — paging mechanics; PTE flags; demand paging; multi-level tables
 - [[Page Replacement Algorithms]] — OPT, FIFO, LRU, Clock, NRU; Bélády's anomaly; thrashing
 - [[Segmentation]] — variable-size regions; base/limit registers; comparison with paging
-- [[Memory Management Overview]] — hub for the entire domain
+- [[CS Operating Systems/Memory/Memory Management Overview|Memory Management Overview]] — hub for the entire domain
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/CS Operating Systems]]
+- [[CS Operating Systems/Sources/Sources Index]]

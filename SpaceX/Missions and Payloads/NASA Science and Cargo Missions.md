@@ -2,6 +2,7 @@
 tags: [spacex, missions]
 up: "[[Missions and Payloads Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -99,4 +100,7 @@ SpaceX's pricing — roughly one-third to one-half the cost of legacy launch veh
 *See also:* [[Missions and Payloads Overview]]
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

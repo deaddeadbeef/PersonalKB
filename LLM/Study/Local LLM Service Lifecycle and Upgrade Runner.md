@@ -2,6 +2,7 @@
 tags: [study, llm, local-llm, operations, lifecycle, upgrade, rollback, evidence, python]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [practice, deep-dive]
 last-verified: 2026-06-15
 ---

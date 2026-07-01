@@ -13,13 +13,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 29
 
-← [[PHM Novel - Chapter 28]] | [[Chapter Index]] | [[PHM Novel - Chapter 30]] →
+← [[PHM Novel - Chapter 28]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 30]] →
 
 > **One-line summary** — After months of searching, Grace finds the stranded Blip-A and reunites with Rocky, proving his rescue gamble was worth it.
 
@@ -97,7 +98,7 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source; EPUB pages 503–507
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[PHM Novel - Chapter 28]]
 - [[Ryland Grace]]
 - [[Rocky and the Eridians]]

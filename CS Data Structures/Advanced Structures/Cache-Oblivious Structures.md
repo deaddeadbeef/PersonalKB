@@ -2,6 +2,7 @@
 tags: [cs-ds, memory-hierarchy]
 up: "[[Advanced Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Cache-Oblivious Structures
@@ -95,7 +96,7 @@ Implement a simplified **Cache-Oblivious B-tree** with search, insert, and range
 
 ---
 
-*See also:* [[B-Trees and B-Plus Trees|B-Trees and B+ Trees]] · [[External Memory Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[Divide and Conquer Overview|Divide and Conquer]] · External Sorting
+*See also:* [[CS Data Structures/Trees/B-Trees and B-Plus Trees|B-Trees and B+ Trees]] · [[External Memory Structures]] · [[LRU and LFU Caches]] | **CS Algorithms:** [[CS Algorithms/Divide and Conquer/Divide and Conquer Overview|Divide and Conquer]] · [[CS Algorithms/Sorting/External Sorting|External Sorting]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Data Structures/Sources/Sources Index|Sources Index]]

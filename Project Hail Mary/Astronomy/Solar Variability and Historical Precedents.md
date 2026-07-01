@@ -7,6 +7,7 @@ tags:
   - maunder-minimum
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Solar Variability and Historical Precedents
@@ -111,9 +112,9 @@ flowchart TD
 
 ## References
 
-- [[Sources Index#NOAA Incoming Sunlight]] — solar variability and Maunder Minimum context
-- [[Sources Index#NASA Earth Energy Budget]] — energy budget data
-- [[Sources Index#Britannica PHM Science]] — PHM astronomy context
+- [[Project Hail Mary/Sources/Sources Index#NOAA Incoming Sunlight|NOAA Incoming Sunlight]] — solar variability and Maunder Minimum context
+- [[Project Hail Mary/Sources/Sources Index#NASA Earth Energy Budget|NASA Earth Energy Budget]] — energy budget data
+- [[Project Hail Mary/Sources/Sources Index#Britannica PHM Science|Britannica PHM Science]] — PHM astronomy context
 
 ## Supporting Chunks
 

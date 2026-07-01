@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Cartridges and Mappers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -75,4 +76,4 @@ OxideNES mixes expansion audio by summing the mapper's `audio_output()` with the
 *See also:* [[Advanced Mappers]], [[Common Mappers]], [[Cartridges and Mappers Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

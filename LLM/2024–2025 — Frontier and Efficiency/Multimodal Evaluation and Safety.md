@@ -2,6 +2,7 @@
 tags: [llm, multimodal]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -99,7 +100,7 @@ Text benchmarks like MMLU and HumanEval are comparatively standardized and trust
 - Compare why benchmark saturation is a bigger problem for multimodal evaluation than it first appears.
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ## References
 - [[LLM/Sources/Sources Index]]

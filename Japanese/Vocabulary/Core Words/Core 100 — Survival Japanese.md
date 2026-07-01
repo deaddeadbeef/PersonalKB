@@ -2,6 +2,7 @@
 tags: [japanese, vocabulary, core, n5]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -186,6 +187,6 @@ You are ready to move on when you can produce five practical sentences from this
 
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[chunk-jp-051]]
 - [[chunk-jp-052]]

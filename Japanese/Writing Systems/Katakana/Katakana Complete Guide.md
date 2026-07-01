@@ -2,6 +2,7 @@
 tags: [japanese, katakana, writing-systems]
 up: "[[Writing Systems Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -146,7 +147,7 @@ You are ready to move on when you can read common katakana words without convert
 - Long vowels usually use ー: コーヒー.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]
 - [[chunk-jp-005]]
 - [[chunk-jp-006]]
 - [[chunk-jp-007]]

@@ -2,10 +2,13 @@
 tags: [japanese, vocabulary, thematic, food]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Thematic Vocabulary — Food and Drink
+
+> **One-line summary:** Food and drink vocabulary connects meal names, ingredients, ordering phrases, preferences, and allergy constraints into usable restaurant language.
 
 ```mermaid
 flowchart TD
@@ -20,9 +23,9 @@ flowchart TD
 
 ## 🎯 Intuition
 
-**The Core Idea:** Understanding Thematic Vocabulary — Food and Drink is fundamental to Japanese language mastery.
-**Analogy:** Each concept in Japanese has parallels in English, but with its own unique twist.
-**Why It Matters:** You'll encounter this in everyday Japanese reading, writing, and conversation.
+**The Core Idea:** Group food words by eating situation: meals, staples, drinks, ordering, likes, dislikes, and dietary constraints.
+**Analogy:** This is a menu-reading toolkit: nouns identify the item, particles frame the request, and polite endings make it usable.
+**Why It Matters:** Food vocabulary is daily-life language; it turns passive recognition into ordering, shopping, and hosting conversations.
 
 ## ⚙️ Core Mechanics
 
@@ -113,4 +116,4 @@ flowchart TD
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

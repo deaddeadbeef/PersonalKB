@@ -2,6 +2,7 @@
 tags: [japanese, grammar, n4, compound]
 up: "[[Grammar Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -158,4 +159,4 @@ Sequential actions or descriptions:
 You're at a konbini (convenience store). The clerk asks これでよろしいですか？ How do you respond if you also want to add a drink? Use appropriate particles and polite form.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

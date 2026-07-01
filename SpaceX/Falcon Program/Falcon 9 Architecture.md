@@ -2,6 +2,7 @@
 tags: [spacex, falcon]
 up: "[[Falcon Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -102,4 +103,4 @@ Connecting the two stages is a composite interstage equipped with pneumatic push
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

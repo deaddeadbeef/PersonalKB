@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, c]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # C — Language Profile
 
@@ -84,7 +85,10 @@ C is the most influential programming language in history. Virtually every major
 - Error handling: [[Error Codes and Sentinel Values]]
 - Compilation: [[AOT vs JIT Compilation]], [[Linking and Loading]]
 - Paradigm: [[Imperative and Procedural Programming]]
-- References: [[Sources Index]]
+- References: [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

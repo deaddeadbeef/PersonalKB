@@ -2,6 +2,7 @@
 tags: [spacex, starship]
 up: "[[Starship Program Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -85,4 +86,7 @@ Starship HLS is not just another lunar lander; it is dramatically larger than Ap
 - Design a notional Artemis surface mission that uses Starship HLS's extra habitable volume and cargo capacity in ways Apollo never could, while still accounting for its dependence on orbital refueling and orbital crew transfer.
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

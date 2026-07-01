@@ -2,6 +2,7 @@
 tags: [cs-ds, linear]
 up: "[[Linear Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Queues and Deques

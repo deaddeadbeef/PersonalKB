@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 01
 
-[[Chapter Index]] | [[PHM Novel - Chapter 02]] →
+[[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 02]] →
 
 > **One-line summary** — Grace wakes alone and amnesiac while a brief Petrova flashback plants the mystery that will define the novel.
 
@@ -85,4 +86,4 @@ flowchart LR
 
 ## References
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source, p. 7–24
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]

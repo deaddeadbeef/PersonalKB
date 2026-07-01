@@ -1,6 +1,8 @@
 ---
 tags: [programming-languages, language-profiles, java]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
 confidence: plausible
 ---
@@ -95,4 +97,4 @@ Java's lasting influence includes proving that managed languages can be fast, th
 
 ## References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]

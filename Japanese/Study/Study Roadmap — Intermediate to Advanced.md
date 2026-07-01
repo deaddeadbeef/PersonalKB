@@ -2,12 +2,13 @@
 tags: [japanese, study, roadmap]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
 # Study Roadmap — Intermediate to Advanced
 
-> **From N3 to N1 — the long march to fluency.**
+> **One-line summary:** From N3 to N1 — the long march to fluency.
 
 ## 🎯 Intuition
 
@@ -48,7 +49,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 - [ ] Participate in conversations on abstract topics
 - [ ] Use appropriate keigo in business/formal settings
 - [ ] Express complex opinions and hypotheticals
-- **Resources:** Japanese Business Culture and Language, [[Keigo — Sonkeigo (Honorific)|Keigo — Sonkeigo]]
+- **Resources:** [[Japanese/Culture/Culture Overview|Japanese Business Culture and Language]], [[Japanese/Culture/Keigo/Keigo — Sonkeigo (Honorific)|Keigo — Sonkeigo]]
 
 ## Phase 5: Mastery (N1 Target)
 
@@ -114,4 +115,4 @@ tier-coverage: [intuition, core, deep-dive, practice]
 You're at a konbini (convenience store). The clerk asks これでよろしいですか？ How do you respond if you also want to add a drink? Use appropriate particles and polite form.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

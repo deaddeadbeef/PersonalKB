@@ -1,8 +1,9 @@
 ---
 tags: [programming-languages, language-profiles, kotlin]
 up: "[[Language Profiles Overview]]"
+confidence: established
+freshness: stable
 tier-coverage: full
-confidence: plausible
 ---
 # Kotlin — Language Profile
 
@@ -70,7 +71,10 @@ Kotlin became Java's most successful modern successor on Android and a serious J
 
 ### References
 
-- [[Sources Index]]
+- [[Programming Languages/Sources/Sources Index|Sources Index]]
 
 ## References
-- [[Programming Languages/Sources/Sources Index|Programming Languages Sources Index]]
+
+- [[Programming Languages/Sources/Sources Index]]
+- [[Programming Languages/Programming Languages Book Reading Spine]]
+- [[Programming Languages/Programming Languages]]

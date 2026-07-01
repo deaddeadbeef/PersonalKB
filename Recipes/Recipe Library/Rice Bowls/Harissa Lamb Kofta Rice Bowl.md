@@ -1,6 +1,9 @@
 ---
 tags: [recipes, rice-bowls]
 up: "[[Rice Bowls]]"
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 portable: true
 lunch-safe: true
 leftover-lunch-safe: true

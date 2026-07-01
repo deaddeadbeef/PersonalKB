@@ -2,6 +2,7 @@
 tags: [cs-ds, heaps]
 up: "[[Heaps and Priority Queues Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Fibonacci Heaps

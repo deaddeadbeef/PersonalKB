@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Technology Deep Dives Overview
 
@@ -32,10 +34,10 @@ SpaceX develops its avionics and flight software in-house, running triple-redund
 SpaceX's vertical integration extends to advanced manufacturing techniques including friction stir welding of rocket tankage, 3D-printed engine components (SuperDraco chambers are entirely 3D-printed), automated fiber placement for fairings, and high-rate production lines for Starlink satellites. The company produces hardware at rates that would be considered impossible by traditional aerospace standards.
 
 ## Pages in This Domain
-- Autonomous Flight Safety System (AFTS)
+- [[SpaceX/Technology Deep Dives/Autonomous Flight Termination System|Autonomous Flight Safety System (AFTS)]]
 - [[Grid Fins and Aerodynamic Control]]
 - [[Autogenous Pressurization]]
-- [[Thermal Protection System|Thermal Protection System (TPS)]]
+- [[SpaceX/Technology Deep Dives/Thermal Protection System|Thermal Protection System (TPS)]]
 - [[Avionics and Flight Software]]
 - [[Manufacturing Innovation]]
 
@@ -46,4 +48,7 @@ SpaceX's vertical integration extends to advanced manufacturing techniques inclu
 - [[Starlink Overview]] — satellite manufacturing at unprecedented scale
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

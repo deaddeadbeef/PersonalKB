@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Emulator Architecture Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # OxideNES Module Architecture
@@ -109,4 +110,4 @@ Propose how you would add a new optional subsystem without violating the current
 *See also:* [[Main Loop and Cycle Ratios]], [[Performance Optimization in OxideNES]], [[Save States and Rewind]], [[Emulator Architecture Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

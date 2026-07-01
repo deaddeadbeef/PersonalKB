@@ -2,6 +2,7 @@
 tags: [japanese, vocabulary, core, n4, n3]
 up: "[[Vocabulary Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -147,4 +148,4 @@ The next 1,000 words (1,000-2,000) only add ~10% more coverage — diminishing r
 You're lost in Tokyo. Using only vocabulary from this list, ask a stranger for directions to the nearest train station, thank them, and say goodbye.
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

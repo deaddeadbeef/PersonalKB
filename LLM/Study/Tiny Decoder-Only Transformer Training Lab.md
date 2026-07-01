@@ -2,6 +2,7 @@
 tags: [study, llm, transformer, training, decoder-only, implementation, lab]
 up: "[[LLM/Study/LLM Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [core, deep-dive, practice]
 ---
 

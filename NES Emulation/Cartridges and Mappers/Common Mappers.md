@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[Cartridges and Mappers Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -88,4 +89,4 @@ Each mapper is a separate struct in mapper.rs implementing the Mapper trait. The
 *See also:* [[Advanced Mappers]], [[Bank Switching Explained]], [[iNES ROM Format]], [[Cartridges and Mappers Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

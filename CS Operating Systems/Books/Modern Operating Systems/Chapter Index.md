@@ -3,7 +3,9 @@ tags:
   - csos
   - chapter-index
 up: "[[Modern Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [core]
 ---
 # Chapter Index — Modern Operating Systems
 
@@ -32,5 +34,17 @@ Status key: `unread` · `seeded` · `in-progress` · `processed`
 
 [[Modern Operating Systems]] · [[Tanenbaum 2015 - Modern Operating Systems]]
 
+## Reading Workflow
+
+Treat the chapter notes as a book-progress ledger. A `seeded` chapter has enough extracted concepts to orient the wiki, but it is not the same as a finished reading pass. Move a chapter to `in-progress` when you are actively reconciling the textbook with the topic pages, and move it to `processed` only after the core mechanisms have been routed into the relevant OS domains.
+
+The highest-value reading path is not strictly chapter order. Read chapters 1-3 first for the process, thread, address-space, and memory vocabulary. Then branch by implementation need: file systems and I/O for storage behavior, deadlocks and synchronization for concurrency hazards, virtualization for isolation boundaries, and security for threat models.
+
+## What To Extract
+
+For every chapter, extract three things: the abstraction boundary, the failure mode, and the implementation trade-off. Operating systems are best remembered as controlled compromises. Processes hide CPU multiplexing, virtual memory hides physical memory scarcity, file systems hide device details, and synchronization hides interleaving risk. The notes should make those compromises explicit enough that they can guide emulator, runtime, or systems-programming decisions later.
+
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Books/Modern Operating Systems/Modern Operating Systems]]
+- [[CS Operating Systems/Sources/Sources Index]]

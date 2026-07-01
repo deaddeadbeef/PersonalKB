@@ -3,6 +3,7 @@ tags:
   - csos
   - csos/casestudies
 confidence: verified
+freshness: stable
 up: "[[Case Studies Overview]]"
 ---
 # Linux Architecture Overview

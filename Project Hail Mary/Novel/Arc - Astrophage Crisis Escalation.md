@@ -7,9 +7,10 @@ tags:
   - stratt
   - crisis
   - flashback
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 source_mode: primary-synthesis
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Arc - Astrophage Crisis Escalation
@@ -162,7 +163,7 @@ flowchart TD
 
 - [[PHM Chapter Summaries - Secondary Sources Registry]]
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (fictional)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Eva Stratt and the Ethics of Existential Response]]
 - [[Astrophage Biology]]
 - [[Earth Energy Budget Under Threat]]

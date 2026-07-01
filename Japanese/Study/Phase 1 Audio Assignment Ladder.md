@@ -2,6 +2,7 @@
 tags: [japanese, audio, phase-1, assignment, practice]
 up: "[[Phase 1 Audio Starter Assignment]]"
 confidence: policy
+freshness: stable
 tier-coverage: [practice]
 ---
 

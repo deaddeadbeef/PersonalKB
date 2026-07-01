@@ -2,6 +2,7 @@
 tags: [cs-ds, trees]
 up: "[[Trees Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # B-Trees and B+ Trees
@@ -124,7 +125,7 @@ B-trees don't use rotations — they use **splits** and **merges**:
 - **Database indexes:** MySQL InnoDB, PostgreSQL, SQL Server, Oracle all use B+ tree variants for primary and secondary indexes.
 - **File systems:** NTFS, HFS+, Btrfs, ext4 (htree for directory indexing).
 - **Write-optimised descendants:** The B+ tree's leaf-linked architecture provides the conceptual basis for **LSM trees** and **fractal-tree indexes** (TokuDB) used in write-heavy workloads.
-- **External sorting:** B-trees connect to External Sorting via the I/O model — both optimise for sequential disk access.
+- **External sorting:** B-trees connect to [[CS Algorithms/Sorting/External Sorting|External Sorting]] via the I/O model — both optimise for sequential disk access.
 
 ---
 
@@ -143,7 +144,7 @@ B-trees don't use rotations — they use **splits** and **merges**:
 
 ---
 
-*See also:* [[Binary Search Trees]] | [[Red-Black Trees]] | [[AVL Trees]] | [[Heaps and Priority Queues Overview]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], External Sorting
+*See also:* [[Binary Search Trees]] | [[Red-Black Trees]] | [[AVL Trees]] | [[Heaps and Priority Queues Overview]] | [[Trees Overview]] | **CS Algorithms:** [[Binary Search]], [[CS Algorithms/Sorting/External Sorting|External Sorting]]
 
 ## Supporting Chunks
 

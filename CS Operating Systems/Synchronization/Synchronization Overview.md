@@ -3,7 +3,9 @@ tags:
   - csos
   - moc
 up: "[[CS Operating Systems]]"
-confidence: verified
+confidence: established
+freshness: stable
+tier-coverage: [intuition, core]
 ---
 # Synchronization Overview
 
@@ -55,4 +57,6 @@ When multiple processes or threads share resources, correct behavior requires co
 - **[[Deadlocks Overview]]** — improper synchronization (circular wait on locked resources) causes deadlock; the two domains are tightly coupled.
 
 ## References
-- [[CS Operating Systems/Sources/Sources Index|CS Operating Systems Sources Index]]
+
+- [[CS Operating Systems/Sources/Sources Index]]
+- [[CS Operating Systems/CS Operating Systems Book Reading Spine]]

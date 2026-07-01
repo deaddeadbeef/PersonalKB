@@ -2,6 +2,7 @@
 tags: [nes, wiki]
 up: "[[APU — Audio Processing Unit Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # DMC — Delta Modulation Channel
@@ -85,4 +86,4 @@ The OxideNES `Dmc` struct in `apu.rs` tracks sample address, remaining length, s
 *See also:* [[Pulse Channels]], [[Triangle and Noise Channels]], [[APU Frame Sequencer]], [[APU — Audio Processing Unit Overview]]
 
 ## References
-→ [[Sources Index]]
+→ [[NES Emulation/Sources/Sources Index|Sources Index]]

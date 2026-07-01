@@ -3,6 +3,7 @@ tags: [spacex, engines]
 up: "[[Engines and Propulsion Overview]]"
 created: 2025-07-10
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Raptor Evolution and Raptor 3
@@ -80,4 +81,4 @@ Use Raptor 1, 2, and 3 to explain how engine development can improve performance
 
 ## References
 
-→ [[Sources Index]]
+→ [[SpaceX/Sources/Sources Index|Sources Index]]

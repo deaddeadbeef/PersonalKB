@@ -2,6 +2,7 @@
 tags: [llm, agents]
 up: "[[2024–2025 — Frontier and Efficiency Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -90,7 +91,7 @@ Design a safe execution environment for a production code agent that can run tes
 ---
 
 ## Supporting Chunks
-- No supporting chunk notes are attached yet.
+- Evidence chunks and raw source notes are reachable through [[LLM/LLM Corpus Index|LLM Corpus Index]] and [[LLM/Sources/Sources Index|LLM Sources Index]].
 
 ---
 

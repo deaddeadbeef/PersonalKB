@@ -1,7 +1,9 @@
 ---
 tags: [study, nes-emulation, ppu]
 up: "[[NES Emulation Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — PPU Rendering Pipeline
 
@@ -34,4 +36,7 @@ Test your understanding of the NES Picture Processing Unit.
 > The PPU outputs NTSC composite video with hue and brightness parameters, not RGB. Each palette entry specifies 1 of 12 hues and 4 brightness levels. Emulators approximate via lookup tables since no canonical RGB palette exists.
 
 ## References
-- [[NES Emulation/Sources/Sources Index|NES Emulation Sources Index]]
+
+- [[NES Emulation/Study/NES Emulation Study Index]]
+- [[NES Emulation/Sources/Sources Index]]
+- [[NES Emulation/NES Emulation Book Reading Spine]]

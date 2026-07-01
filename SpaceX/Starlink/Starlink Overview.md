@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Starlink Overview
 
@@ -32,11 +34,11 @@ Starlink's direct-to-cell service, developed in partnership with T-Mobile and ot
 Starlink generates revenue through consumer and enterprise subscriptions, government contracts (including military and disaster response), and aviation/maritime connectivity. Analyst estimates place Starlink's annual revenue in the multi-billion dollar range, making it SpaceX's largest revenue source. This cash flow is essential for funding Starship development and the Mars program.
 
 ## Pages in This Domain
-- [[Constellation Design and Orbits|Starlink Constellation Design]]
-- [[Satellite Generations|Starlink Satellite Generations]]
+- [[SpaceX/Starlink/Constellation Design and Orbits|Starlink Constellation Design]]
+- [[SpaceX/Starlink/Satellite Generations|Starlink Satellite Generations]]
 - [[Laser Inter-Satellite Links]]
-- [[Ground Infrastructure|Starlink Ground Infrastructure]]
-- [[Direct-to-Cell Technology|Direct-to-Cell]]
+- [[SpaceX/Starlink/Ground Infrastructure|Starlink Ground Infrastructure]]
+- [[SpaceX/Starlink/Direct-to-Cell Technology|Direct-to-Cell]]
 - [[Starlink Business Model]]
 
 ## Related Domains
@@ -46,4 +48,7 @@ Starlink generates revenue through consumer and enterprise subscriptions, govern
 - [[Technology Deep Dives Overview]] — phased array and laser link engineering
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

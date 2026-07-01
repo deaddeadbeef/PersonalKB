@@ -12,13 +12,14 @@ tags:
   - phm
   - novel
   - chapter
-up: "[[Chapter Index]]"
+up: "[[Project Hail Mary/Novel/Chapter Index|Chapter Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # PHM Novel - Chapter 26
 
-← [[PHM Novel - Chapter 25]] | [[Chapter Index]] | [[PHM Novel - Chapter 27]] →
+← [[PHM Novel - Chapter 25]] | [[Project Hail Mary/Novel/Chapter Index|Chapter Index]] | [[PHM Novel - Chapter 27]] →
 
 > **One-line summary** — Grace contains the second Taumoeba outbreak with a shipwide nitrogen sterilization and a careful quarantine of every possible source.
 
@@ -101,6 +102,6 @@ flowchart LR
 ## References
 
 - [[Weir 2021 - Project Hail Mary Novel]] — primary source (p. 477–481)
-- [[Chapter Index]]
+- [[Project Hail Mary/Novel/Chapter Index|Chapter Index]]
 - [[Taumoeba and the Biological Solution]]
 - [[Ryland Grace]]

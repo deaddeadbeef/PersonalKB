@@ -2,6 +2,7 @@
 tags: [cs-ds, probabilistic]
 up: "[[Hash-Based Structures Overview]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Count-Min Sketch
@@ -96,7 +97,7 @@ Design a **distributed Count-Min Sketch** system for a cluster of 100 nodes, eac
 
 ---
 
-*See also:* [[Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[HyperLogLog]] · Cuckoo Filter | **CS Algorithms:** Streaming Algorithms · Randomized Algorithms
+*See also:* [[CS Data Structures/Hash-Based Structures/Bloom Filters and Probabilistic Structures|Bloom Filter]] · [[HyperLogLog]] · [[CS Data Structures/Hash-Based Structures/Cuckoo Filters|Cuckoo Filter]] | **CS Algorithms:** [[CS Algorithms/Techniques/Streaming Algorithms|Streaming Algorithms]] · [[CS Algorithms/Techniques/Randomized Algorithms|Randomized Algorithms]]
 
 ## References
--> [[Sources Index]]
+-> [[CS Data Structures/Sources/Sources Index|Sources Index]]

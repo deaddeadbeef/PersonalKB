@@ -2,6 +2,7 @@
 tags: [llm, reasoning-agents]
 up: "[[2026 — Reasoning and Agents Overview]]"
 confidence: verified
+freshness: current-sensitive
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -108,10 +109,10 @@ Pick one software task such as a bug fix or small refactor and map which parts y
 
 ## Supporting Chunks
 
-- [[LLM/_chunks/chunk-llm-251 Agentic coding loop plans implements tests and iterates autonomously|chunk-llm-251 Claude Code operates as terminal agent with direct filesystem shell access and multi-file editing]]
-- [[LLM/_chunks/chunk-llm-252 Claude Code reads entire files and traces dependencies for deep context understanding|chunk-llm-252 GitHub Copilot coding agent enables asynchronous PR-based task delegation with CI integration]]
-- [[LLM/_chunks/chunk-llm-253 GitHub Copilot coding agent enables async PR-based task delegation|chunk-llm-253 Agentic coding shifts developer role from writing code to reviewing and directing autonomous agents]]
+- [[LLM/_chunks/chunk-llm-251 Agentic coding loop plans implements tests and iterates autonomously|chunk-llm-251]]
+- [[LLM/_chunks/chunk-llm-252 Claude Code reads entire files and traces dependencies for deep context understanding|chunk-llm-252]]
+- [[LLM/_chunks/chunk-llm-253 GitHub Copilot coding agent enables async PR-based task delegation|chunk-llm-253]]
 
 ## References
 
-→ [[Sources Index]]
+→ [[LLM/Sources/Sources Index|Sources Index]]

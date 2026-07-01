@@ -2,6 +2,7 @@
 tags: [japanese, study, index]
 up: "[[Japanese]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 
@@ -212,8 +213,8 @@ tier-coverage: [intuition, core, deep-dive, practice]
 ## Quick Reference
 - [[Counters — The Japanese Counting System]]
 - [[Common Filler Words and Discourse Markers]]
-- [[Idioms and Proverbs — ことわざ|Common Idioms and Proverbs]]
+- [[Japanese/Culture/Idioms and Proverbs — ことわざ|Common Idioms and Proverbs]]
 - [[Grammar — Comparison Across Levels]]
 
 ## References
-- [[Sources Index]]
+- [[Japanese/Sources/Sources Index|Sources Index]]

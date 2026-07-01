@@ -1,7 +1,3 @@
----
-up: "[[Project Hail Mary/Project Hail Mary|Project Hail Mary]]"
-confidence: fictional
----
 ﻿---
 tags:
   - phm
@@ -11,6 +7,7 @@ tags:
   - hard-sf
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Science Exposition on Screen
@@ -122,6 +119,6 @@ flowchart LR
 
 ## References
 
-- [[Sources Index#No Film School Goddard Interview]] — screenwriter's approach to adaptation
-- [[Sources Index#Nature Film Review]] — science-journal perspective
-- [[Sources Index#SlashFilm Changes]] — book-to-movie change tracking
+- [[Project Hail Mary/Sources/Sources Index#No Film School Goddard Interview|No Film School Goddard Interview]] — screenwriter's approach to adaptation
+- [[Project Hail Mary/Sources/Sources Index#Nature Film Review|Nature Film Review]] — science-journal perspective
+- [[Project Hail Mary/Sources/Sources Index#SlashFilm Changes|SlashFilm Changes]] — book-to-movie change tracking

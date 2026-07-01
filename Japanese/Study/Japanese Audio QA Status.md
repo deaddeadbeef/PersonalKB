@@ -2,6 +2,7 @@
 tags: [japanese, audio, qa, pronunciation, obsidian]
 up: "[[Japanese Study Index]]"
 confidence: verified
+freshness: stable
 tier-coverage: [core, practice]
 ---
 

@@ -1,7 +1,9 @@
 ---
 tags: [pl, study, concurrency, error-handling]
 up: "[[Programming Languages Study Index]]"
-confidence: policy
+confidence: verified
+freshness: stable
+tier-coverage: [practice]
 ---
 # Review Drill — Concurrency and Error Handling
 
@@ -58,8 +60,8 @@ confidence: policy
 ## Connections to Explore
 - [[Concurrency Models Overview]] — hub page
 - [[Error Handling Overview]] — hub page
-- Async-Await Patterns — async deep dive
+- [[Programming Languages/Concurrency Models/Async-Await and Event Loops|Async-Await Patterns]] — async deep dive
 - [[Result and Option Types]] — result pattern
 
 ## References
-→ [[Sources Index]]
+→ [[Programming Languages/Sources/Sources Index|Sources Index]]

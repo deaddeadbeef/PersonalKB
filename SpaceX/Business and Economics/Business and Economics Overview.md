@@ -1,7 +1,9 @@
 ---
 tags: [spacex, hub]
 up: "[[SpaceX]]"
-confidence: plausible
+confidence: verified
+freshness: current-sensitive
+tier-coverage: [intuition, core, deep-dive]
 ---
 # Business and Economics Overview
 
@@ -32,12 +34,12 @@ SpaceX's success has catalyzed a global response from launch providers. ULA deve
 SpaceX has become a major national security space launch provider through the NSSL (National Security Space Launch) program. The company competes for and wins classified launches for the U.S. Space Force, NRO, and other agencies. Starshield, a government-focused variant of Starlink, provides secure communications and Earth observation capabilities for defense customers.
 
 ## Pages in This Domain
-- [[SpaceX Funding and Valuation|Funding and Valuation]]
+- [[SpaceX/Business and Economics/SpaceX Funding and Valuation|Funding and Valuation]]
 - [[NASA Contracts and Partnerships]]
 - [[Commercial Launch Market]]
-- [[Cost Revolution in Spaceflight|Cost Revolution]]
-- [[Competition Landscape|Competition and Industry Response]]
-- Defense and National Security Space
+- [[SpaceX/Business and Economics/Cost Revolution in Spaceflight|Cost Revolution]]
+- [[SpaceX/Business and Economics/Competition Landscape|Competition and Industry Response]]
+- [[SpaceX/Business and Economics/Defense and National Security Contracts|Defense and National Security Space]]
 
 ## Related Domains
 - [[Reusability Overview]] — the technical foundation of SpaceX's cost advantage
@@ -46,4 +48,7 @@ SpaceX has become a major national security space launch provider through the NS
 - [[Missions and Payloads Overview]] — the customer base across markets
 
 ## References
-- [[SpaceX/Sources/Sources Index|SpaceX Sources Index]]
+
+- [[SpaceX/Sources/Sources Index]]
+- [[SpaceX/SpaceX Book Reading Spine]]
+- [[SpaceX/SpaceX]]

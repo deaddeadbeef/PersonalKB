@@ -2,6 +2,7 @@
 tags: [japanese, study, dashboard, learning-path]
 up: "[[Japanese Study Index]]"
 confidence: policy
+freshness: stable
 tier-coverage: [intuition, core, practice]
 ---
 
@@ -206,7 +207,7 @@ Every Sunday, open the review page for the current phase: [[Phase 1 Weekly Revie
 
 ## References
 
-- [[Sources Index#Checked External Sources]]
+- [[Japanese/Sources/Sources Index#Checked External Sources|Checked External Sources]]
 - [[Japanese#Start Here]]
 - [[Daily Study Routine Templates]]
 - [[Daily Audio Loop]]

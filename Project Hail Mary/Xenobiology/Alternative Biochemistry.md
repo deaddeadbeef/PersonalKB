@@ -11,6 +11,7 @@ tags:
   - silicon
 up: "[[Project Hail Mary]]"
 confidence: verified
+freshness: stable
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Alternative Biochemistry
@@ -142,9 +143,9 @@ graph TD
 
 ## References
 
-- [[Sources Index#CUNY Alternative Biochemistry]] — ammonia/methane biosolvent overview
-- [[Sources Index#MDPI Silicon 2020]] — silicon as a building block evaluation
-- [[Sources Index#Frontiers Extremophiles 2019]] — extremophile diversity review
+- [[Project Hail Mary/Sources/Sources Index#CUNY Alternative Biochemistry|CUNY Alternative Biochemistry]] — ammonia/methane biosolvent overview
+- [[Project Hail Mary/Sources/Sources Index#MDPI Silicon 2020|MDPI Silicon 2020]] — silicon as a building block evaluation
+- [[Project Hail Mary/Sources/Sources Index#Frontiers Extremophiles 2019|Frontiers Extremophiles 2019]] — extremophile diversity review
 
 ## Supporting Chunks
 
