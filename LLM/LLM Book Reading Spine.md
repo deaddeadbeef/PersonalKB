@@ -23,6 +23,10 @@ Read in passes:
 
 Do not try to read the whole corpus linearly. Runners are machines for producing evidence. Raw notes are source records. Chunks are footnotes. The book is the ordered path below.
 
+## PDF-Aligned Progressive Overlay
+
+Use [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] when you want the vault to reveal itself like a first-principles-to-systems guide. It keeps agentic AI late in the route: first model mechanics, then training and systems constraints, then post-training and reasoning, then evaluation, then agent loops, harnesses, MCP, local proof, and defense.
+
 ## Prologue: What A Language Model Is
 
 Start with the basic object: a model estimates text probability, turns symbols into vectors, trains against a prediction objective, and is judged by metrics that only partially predict usefulness.

@@ -17,7 +17,7 @@ The wiki is navigable for normal reading: reader-facing broken links and visible
 
 | Check | Count | Meaning |
 | --- | ---: | --- |
-| Candidate reader-facing articles | 992 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
+| Candidate reader-facing articles | 993 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
 | Broken links in reader-facing articles | 0 | Navigation defects that affect normal reading |
 | Broken section links in reader-facing articles | 0 | Wikilinks whose target note exists but requested heading does not |
 | Ambiguous wikilinks in reader-facing articles | 0 | Unqualified links whose note name exists in multiple reader-facing topics |
@@ -144,4 +144,4 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - [Generated wiki quality summary](<_ops/reports/wiki-quality-summary.json>)
 - [Generated full audit summary](<_ops/reports/audit-summary.json>)
 
-Generated: 2026-07-02T10:43:28
+Generated: 2026-07-02T19:48:33

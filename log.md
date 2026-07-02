@@ -5198,3 +5198,38 @@ Verification:
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated reports with 992 candidate reader-facing articles, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans. The 16 remaining missing freshness rows are outside the Stock Trading scope.
 - Targeted Stock Trading check: 21 Stock Trading markdown files, 0 empty files, 0 frontmatter-only files, 0 broken wikilinks, 0 ambiguous wikilinks, and 0 empty worksheet table cells.
+
+## [2026-07-02] ingest/refine | Add Agentic AI survey and progressive LLM route
+
+Scope: add `C:\Users\fpan1\OneDrive\2606.24937v1.pdf` as an LLM source record and refine LLM entry points around a progressive foundations-to-agentic-systems route.
+
+Changed wiki/source files:
+- `LLM/_raw/raw-llm-071.md`
+- `LLM/_chunks/chunk-llm-261` through `LLM/_chunks/chunk-llm-268`
+- `LLM/Study/LLM Progressive Systems Route.md`
+- `LLM/LLM.md`
+- `LLM/LLM — Learning Path.md`
+- `LLM/LLM Book Reading Spine.md`
+- `LLM/Study/LLM Study Index.md`
+- `LLM/Sources/Sources Index.md`
+- `LLM/LLM Corpus Index.md`
+- `PersonalKB Book Reading Guide.md`
+- `index.md`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+
+Maintenance changes:
+- Added the Roitman 2026 survey metadata, local PDF path, arXiv/DOI/license links, page evidence, and eight paraphrased evidence chunks.
+- Added `LLM Progressive Systems Route` as the new route for revealing model mechanics, systems constraints, post-training, reasoning, evaluation, agentic loops, harnesses, and proof artifacts in order.
+- Updated the LLM root, learning path, study index, book spine, corpus fast routes, and global book guide so the new route is visible from Obsidian entry points.
+- Updated `_ops/generate_llm_sources_index.py` so source-index regeneration preserves the source-use guidance and keeps `raw-llm-071` under Reasoning and Agents.
+- Updated `_ops/generate_llm_corpus_index.py` and `_ops/generate_topic_reading_spines.py` so generated navigation keeps the progressive route.
+
+Verification:
+- `python -m py_compile _ops\generate_llm_sources_index.py`, `_ops\generate_llm_corpus_index.py`, `_ops\generate_topic_reading_spines.py`, and `_ops\personal_kb.py`: passed.
+- `python _ops\generate_llm_sources_index.py`: regenerated the LLM source index with 71 raw source notes.
+- `python _ops\generate_llm_corpus_index.py`: regenerated the LLM corpus index with 592 LLM Markdown notes, including 71 raw notes and 268 chunks.
+- `python _ops\generate_topic_reading_spines.py`: regenerated topic book spines and the global book-reading guide.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports at `2026-07-02T19:48:33` with 993 candidate reader-facing articles, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans. The 16 remaining missing freshness rows are unchanged existing debt outside this LLM route pass.

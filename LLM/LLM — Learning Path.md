@@ -14,11 +14,14 @@ tier-coverage: [core, practice]
 | Need | Use |
 |---|---|
 | Read the LLM wiki like a book | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] |
+| Reveal the stack from foundations to agentic systems | [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] |
 | Follow a pass-based curriculum | This learning path |
 | Choose drills, labs, local inference work, or proof artifacts | [[LLM/Study/LLM Study Index|LLM Study Index]] |
 | Verify paper or model claims | [[LLM/Sources/Sources Index|LLM Sources Index]] |
 
 Use this path when you want a structured study progression. Use the book spine when you want the narrative first, and use the study index when you are ready to produce evidence such as a local endpoint run, benchmark row, evaluation, or deployment decision.
+
+Use [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] when the corpus feels too wide. It turns the 2026 agentic-AI survey route into a vault-native sequence: model pipeline first, systems constraints second, post-training and reasoning third, evaluation before agents, then harnesses and proof artifacts.
 
 ## How to Use This Path
 

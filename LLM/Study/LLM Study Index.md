@@ -16,6 +16,7 @@ Do not read this index linearly. Use it as a router.
 | Goal | Start with | Then use | Proof you should leave behind |
 |---|---|---|---|
 | Understand the field as a book | [[LLM/LLM Book Reading Spine]] | [[LLM/Study/LLM Mastery Roadmap]], [[LLM/Study/LLM Concept Dependency Map]] | One explained concept dependency and next route |
+| Reveal the LLM stack progressively | [[LLM/Study/LLM Progressive Systems Route]] | [[LLM/LLM Book Reading Spine]], [[LLM/Study/LLM Mastery Roadmap]], [[LLM/Study/LLM Mastery Evidence Audit Runner]] | One stage explanation plus a proof artifact or missing-evidence row |
 | Host a local model and run first inference | [[LLM/Study/Local LLM Hands-On Practicum Sequence]] | [[LLM/Study/Local LLM Windows First-Run Quickstart]], [[LLM/Study/Local LLM First Endpoint Run Sheet]], [[LLM/Study/Local LLM First Endpoint Evidence Audit Runner]] | A run folder, first response, debrief, and endpoint audit |
 | Explain what happened inside one request | [[LLM/Study/Local LLM End-to-End Mental Model]] | [[LLM/Study/LLM Inference Request Lifecycle Lab]], [[LLM/Study/Local LLM Runtime Stack Anatomy]], [[LLM/Study/Local LLM Inference Metrics Field Guide]] | A request lifecycle explanation tied to timing and tokens |
 | Decide whether a local model is good enough | [[LLM/Study/LLM Deployment Decision Matrix]] | [[LLM/Study/Local LLM Quality Evaluation Harness]], [[LLM/Study/Local LLM Result Synthesis Runner]], [[LLM/Study/LLM Deployment Readiness Audit Runner]] | A keep, tune, reject, or deploy decision row |
@@ -49,6 +50,7 @@ Stop when one proof artifact is saved. The next session starts from the failed o
 ## Quick References
 
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]]
+- [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]]
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]]
 - [[LLM/Study/Local LLM Request Lifecycle Proof - 2026-06-16|Local LLM Request Lifecycle Proof - 2026-06-16]]
 - [[LLM/Study/Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16|Local LLM OpenAI-Compatible Streaming Timing Proof - 2026-06-16]]
