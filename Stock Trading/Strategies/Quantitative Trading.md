@@ -3,7 +3,7 @@ tags: [stock-trading, strategies, quantitative-trading, model-risk]
 up: "[[Stock Trading]]"
 confidence: verified
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [core, deep-dive, practice]
 ---
 # Quantitative Trading
@@ -65,19 +65,19 @@ Every quant idea should leave a journal row before any code is trusted:
 
 | Field | Required entry |
 | --- | --- |
-| Hypothesis | |
-| Economic or behavioral rationale | |
-| Universe | |
-| Data sources | |
-| Signal formula | |
-| Rebalance or holding period | |
-| Cost assumptions | |
-| Risk limit | |
-| In-sample period | |
-| Out-of-sample period | |
-| Largest drawdown | |
-| Failure condition | |
-| Reason to reject | |
+| Hypothesis | Write one falsifiable claim |
+| Economic or behavioral rationale | Explain why the effect might exist |
+| Universe | Define eligible symbols and exclusions |
+| Data sources | Link dataset cards or source notes |
+| Signal formula | Write exact formula or rule |
+| Rebalance or holding period | Define timing before testing |
+| Cost assumptions | Include spread, commission, slippage, borrow, and taxes when relevant |
+| Risk limit | Define position, portfolio, and drawdown limits |
+| In-sample period | State design period |
+| Out-of-sample period | State validation period |
+| Largest drawdown | Fill in after test or write `not tested` |
+| Failure condition | Define rejection threshold |
+| Reason to reject | Write rejection reason before revision |
 
 ## Red Flags
 
@@ -95,6 +95,9 @@ Quantitative trading belongs after the learner can complete [[Company Filing Wor
 ## See Also
 
 - [[Algorithmic Trading]]
+- [[Backtesting and Simulation]]
+- [[Market Data and Data Quality]]
+- [[Broker APIs and Automation Controls]]
 - [[Company Filing Worksheet]]
 - [[Price Action Momentum and Volatility]]
 - [[Position Sizing and Trade Journaling]]

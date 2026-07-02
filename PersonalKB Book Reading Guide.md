@@ -44,7 +44,7 @@ A good session is small enough to finish. If you open more than one shelf, write
 | Programming Languages | [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] | 81 |
 | Project Hail Mary | [[Project Hail Mary/Project Hail Mary Book Reading Spine|Project Hail Mary Book Reading Spine]] | 73 |
 | Recipes | [[Recipes/Recipes Book Reading Spine|Recipes Book Reading Spine]] | 31 |
-| Stock Trading | [[Stock Trading/Stock Trading Book Reading Spine|Stock Trading Book Reading Spine]] | 17 |
+| Stock Trading | [[Stock Trading/Stock Trading Book Reading Spine|Stock Trading Book Reading Spine]] | 20 |
 | SpaceX | [[SpaceX/SpaceX Book Reading Spine|SpaceX Book Reading Spine]] | 95 |
 
 ## Choose A Reading Route
@@ -141,4 +141,4 @@ If a topic feels overwhelming, read its spine prologue and first Book section on
 - [[PersonalKB Wiki Quality Dashboard]]
 - [[log|PersonalKB Maintenance Log]]
 
-Generated: 2026-07-01T20:54:57
+Generated: 2026-07-02T10:42:22

@@ -17,7 +17,7 @@ The wiki is navigable for normal reading: reader-facing broken links and visible
 
 | Check | Count | Meaning |
 | --- | ---: | --- |
-| Candidate reader-facing articles | 989 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
+| Candidate reader-facing articles | 992 | Wiki pages outside raw, chunk, query, template, audio, task, and ops layers |
 | Broken links in reader-facing articles | 0 | Navigation defects that affect normal reading |
 | Broken section links in reader-facing articles | 0 | Wikilinks whose target note exists but requested heading does not |
 | Ambiguous wikilinks in reader-facing articles | 0 | Unqualified links whose note name exists in multiple reader-facing topics |
@@ -37,7 +37,7 @@ Freshness classification is metadata, not a claim that every current fact has ju
 
 | Check | Count | Meaning |
 | --- | ---: | --- |
-| Current-sensitive reader-facing articles | 255 | Pages about live models, local-inference tooling, SpaceX operations, or other facts likely to age |
+| Current-sensitive reader-facing articles | 258 | Pages about live models, local-inference tooling, SpaceX operations, or other facts likely to age |
 | Current-sensitive pages missing dated review marker | 120 | Refresh queue for pages that need explicit source-date evidence before relying on live claims |
 
 ## Editorial Readiness
@@ -144,4 +144,4 @@ These counts are still useful, but they include chunks, templates, queries, sche
 - [Generated wiki quality summary](<_ops/reports/wiki-quality-summary.json>)
 - [Generated full audit summary](<_ops/reports/audit-summary.json>)
 
-Generated: 2026-07-01T20:56:05
+Generated: 2026-07-02T10:43:28

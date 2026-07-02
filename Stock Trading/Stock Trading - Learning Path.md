@@ -3,7 +3,7 @@ tags: [stock-trading, learning-path]
 up: "[[Stock Trading]]"
 confidence: policy
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [core, practice]
 ---
 # Stock Trading - Learning Path
@@ -20,7 +20,7 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 | 3 - How to read a company | [[Reading Company Filings and Fundamentals]], [[Company Filing Worksheet]] | Read a filing and identify business, risks, financials, ratios, and invalidation evidence | One completed company filing worksheet |
 | 4 - How prices move | [[Price Action Momentum and Volatility]] | Recognize volatility, momentum, beta, and price-action traps | One annotated chart journal entry |
 | 5 - Practice loop | [[Stock Market Basics - Review Drill]], [[Position Sizing and Trade Journaling]], [[Paper Trading Lab]] | Paper-trade only, with review discipline | Ten paper trades with planned risk and postmortems |
-| 6 - Systematic strategy boundary | [[Quantitative Trading]], [[Algorithmic Trading]] | Understand model risk, backtesting limits, and automation controls | One rejected-or-approved paper-only strategy spec |
+| 6 - Systematic strategy boundary | [[Quantitative Trading]], [[Backtesting and Simulation]], [[Market Data and Data Quality]], [[Algorithmic Trading]], [[Broker APIs and Automation Controls]] | Understand model risk, backtesting limits, data quality, and automation controls | One rejected-or-approved paper-only strategy spec |
 
 ## First Seven Sessions
 
@@ -33,7 +33,7 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 7. Complete [[Company Filing Worksheet]] for one company before looking at a chart.
 8. Read [[Position Sizing and Trade Journaling]]. Create a paper-trade journal row template.
 9. Start [[Paper Trading Lab]] only after every earlier artifact exists.
-10. Read [[Quantitative Trading]] and [[Algorithmic Trading]] only after the paper-trade batch exists.
+10. Read [[Quantitative Trading]], [[Backtesting and Simulation]], [[Market Data and Data Quality]], [[Algorithmic Trading]], and [[Broker APIs and Automation Controls]] only after the paper-trade batch exists.
 
 ## Study Sequence
 
@@ -49,7 +49,10 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 10. [[Paper Trading Lab]]
 11. [[Stock Market Basics - Review Drill]]
 12. [[Quantitative Trading]]
-13. [[Algorithmic Trading]]
+13. [[Backtesting and Simulation]]
+14. [[Market Data and Data Quality]]
+15. [[Algorithmic Trading]]
+16. [[Broker APIs and Automation Controls]]
 
 ## Progress Tracker
 
@@ -66,7 +69,10 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 | Position Sizing and Trade Journaling | [ ] | [ ] | [ ] |
 | Paper Trading Lab | [ ] | [ ] | [ ] |
 | Quantitative Trading | [ ] | [ ] | [ ] |
+| Backtesting and Simulation | [ ] | [ ] | [ ] |
+| Market Data and Data Quality | [ ] | [ ] | [ ] |
 | Algorithmic Trading | [ ] | [ ] | [ ] |
+| Broker APIs and Automation Controls | [ ] | [ ] | [ ] |
 
 ## Rules for Advancement
 
@@ -84,6 +90,9 @@ This path relearns stocks from the ground up. It separates market literacy, acco
 - [[Stock Trading Book Reading Spine]]
 - [[Quantitative Trading]]
 - [[Algorithmic Trading]]
+- [[Backtesting and Simulation]]
+- [[Market Data and Data Quality]]
+- [[Broker APIs and Automation Controls]]
 - [[Stock Trading/Sources/Sources Index|Sources Index]]
 - [Investor.gov - Types of Orders](https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders)
 - [FINRA - Risk](https://www.finra.org/investors/investing/investing-basics/risk)

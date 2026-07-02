@@ -3,7 +3,7 @@ tags: [stock-trading, study, paper-trading]
 up: "[[Stock Trading Study Index]]"
 confidence: policy
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [practice]
 ---
 # Paper Trading Lab
@@ -39,16 +39,16 @@ Before the first paper trade, complete:
 
 | Trade | Setup source | Planned risk | Order type | Invalidation | Result in R | Process grade |
 | --- | --- | ---: | --- | --- | ---: | --- |
-| 1 | | | | | | |
-| 2 | | | | | | |
-| 3 | | | | | | |
-| 4 | | | | | | |
-| 5 | | | | | | |
-| 6 | | | | | | |
-| 7 | | | | | | |
-| 8 | | | | | | |
-| 9 | | | | | | |
-| 10 | | | | | | |
+| 1 | not started | not set | not set | not set | not recorded | not graded |
+| 2 | not started | not set | not set | not set | not recorded | not graded |
+| 3 | not started | not set | not set | not set | not recorded | not graded |
+| 4 | not started | not set | not set | not set | not recorded | not graded |
+| 5 | not started | not set | not set | not set | not recorded | not graded |
+| 6 | not started | not set | not set | not set | not recorded | not graded |
+| 7 | not started | not set | not set | not set | not recorded | not graded |
+| 8 | not started | not set | not set | not set | not recorded | not graded |
+| 9 | not started | not set | not set | not set | not recorded | not graded |
+| 10 | not started | not set | not set | not set | not recorded | not graded |
 
 ## Process Grade
 

@@ -3,7 +3,7 @@ tags: [stock-trading, strategies, algorithmic-trading]
 up: "[[Stock Trading]]"
 confidence: verified
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [core, deep-dive, practice]
 ---
 # Algorithmic Trading
@@ -66,18 +66,18 @@ Before coding, write the algorithm in plain English:
 
 | Field | Required entry |
 | --- | --- |
-| Strategy name | |
-| Market and symbols | |
-| Data needed | |
-| Signal rule | |
-| Entry rule | |
-| Exit rule | |
-| Order type | |
-| Maximum order size | |
-| Maximum position size | |
-| Maximum daily loss | |
-| Conditions that stop the system | |
-| Logs required for review | |
+| Strategy name | Write plain-English name |
+| Market and symbols | List explicit paper-only universe |
+| Data needed | Name data source and timestamp rule |
+| Signal rule | Write exact condition |
+| Entry rule | Write exact trigger and order type |
+| Exit rule | Write exit, stop, or review condition |
+| Order type | Choose studied order type only |
+| Maximum order size | Define share and notional cap |
+| Maximum position size | Define exposure cap |
+| Maximum daily loss | Define paper shutoff threshold |
+| Conditions that stop the system | List kill-switch and error conditions |
+| Logs required for review | List signal, request, response, fill, cancel, and error logs |
 
 If the table cannot be completed, the algorithm is not ready to be coded.
 
@@ -97,6 +97,9 @@ No live algorithmic trading belongs in the first Stock Trading pass. The first a
 ## See Also
 
 - [[Quantitative Trading]]
+- [[Backtesting and Simulation]]
+- [[Market Data and Data Quality]]
+- [[Broker APIs and Automation Controls]]
 - [[Order Types and Execution]]
 - [[Position Sizing and Trade Journaling]]
 - [[Paper Trading Lab]]

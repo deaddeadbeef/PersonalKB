@@ -5153,3 +5153,48 @@ Verification:
 - `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; Stock Trading produced 17 linked articles.
 - `python _ops\personal_kb.py index`: regenerated `index.md`.
 - `python _ops\personal_kb.py audit`: regenerated reports with 989 candidate reader-facing articles, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans. The 16 remaining missing freshness rows are outside the Stock Trading scope.
+
+## [2026-07-02] refine | Fill Stock Trading blank tables and missing strategy support notes
+
+Scope: fix Stock Trading articles that looked blank in Obsidian and add the missing support layer for systematic strategy work.
+
+Root-cause notes:
+- Current `origin/main` had no empty Stock Trading files and no unresolved Stock Trading wikilinks.
+- The visible `D:\Vaults\PersonalKB` vault is still a dirty `master` worktree with an older Stock Trading copy, which can make newer merged pages appear missing locally.
+- The clean Stock Trading topic still had worksheet-style tables with empty cells, so this pass replaced them with explicit prompts to avoid blank-looking articles.
+
+Changed wiki/source files:
+- `Stock Trading/Strategies/Backtesting and Simulation.md`
+- `Stock Trading/Strategies/Market Data and Data Quality.md`
+- `Stock Trading/Strategies/Broker APIs and Automation Controls.md`
+- `Stock Trading/Strategies/Algorithmic Trading.md`
+- `Stock Trading/Strategies/Quantitative Trading.md`
+- `Stock Trading/Analysis/Company Filing Worksheet.md`
+- `Stock Trading/Analysis/Reading Company Filings and Fundamentals.md`
+- `Stock Trading/Study/Paper Trading Lab.md`
+- `Stock Trading/Study/Stock Trading Study Index.md`
+- `Stock Trading/Stock Trading.md`
+- `Stock Trading/Stock Trading - Learning Path.md`
+- `Stock Trading/Stock Trading Book Reading Spine.md`
+- `Stock Trading/Sources/Sources Index.md`
+- `PersonalKB Book Reading Guide.md`
+- `_ops/generate_topic_reading_spines.py`
+- `index.md`
+- `_ops/reports/audit-summary.json`
+- `_ops/reports/wiki-quality-summary.json`
+- `PersonalKB Wiki Quality Dashboard.md`
+- `log.md`
+
+Maintenance changes:
+- Added missing support notes for backtesting, market-data quality, and broker/API automation controls.
+- Replaced blank worksheet cells with explicit source, evidence, or `not started` prompts.
+- Updated Stock Trading routes so the strategies chapter includes the full quant-to-automation support path.
+- Bumped touched Stock Trading current-sensitive pages to `last-verified: 2026-07-02`.
+
+Verification:
+- Web sources checked: FINRA Algorithmic Trading, FINRA Regulatory Notices 15-09 and 15-06, SEC Staff Report on Algorithmic Trading in U.S. Capital Markets, SEC Rule 15c3-5 Market Access Compliance Guide, Investor.gov Performance Claims, and Federal Reserve Supervisory Guidance on Model Risk Management.
+- `python -c "from pathlib import Path; compile(Path('_ops/generate_topic_reading_spines.py').read_text(encoding='utf-8'), '_ops/generate_topic_reading_spines.py', 'exec')"`: passed.
+- `python _ops\generate_topic_reading_spines.py`: regenerated all topic spines and `PersonalKB Book Reading Guide.md`; Stock Trading produced 20 linked articles.
+- `python _ops\personal_kb.py index`: regenerated `index.md`.
+- `python _ops\personal_kb.py audit`: regenerated reports with 992 candidate reader-facing articles, 0 missing `up`, 0 missing `confidence`, 0 missing references, 0 empty references, 0 reader-facing broken links, 0 reader-facing broken section links, 0 ambiguous reader-facing wikilinks, 0 reader-facing placeholder hits, 0 stubs, 0 empty notes, and 0 orphans. The 16 remaining missing freshness rows are outside the Stock Trading scope.
+- Targeted Stock Trading check: 21 Stock Trading markdown files, 0 empty files, 0 frontmatter-only files, 0 broken wikilinks, 0 ambiguous wikilinks, and 0 empty worksheet table cells.
