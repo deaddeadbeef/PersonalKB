@@ -35,7 +35,7 @@ A good session is small enough to finish. If you open more than one shelf, write
 
 | Topic | Book spine | Linked reader-facing articles |
 | --- | --- | ---: |
-| LLM | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] | 245 |
+| LLM | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] | 246 |
 | CS Algorithms | [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] | 88 |
 | CS Data Structures | [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures Book Reading Spine]] | 76 |
 | CS Operating Systems | [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] | 77 |
@@ -55,11 +55,12 @@ Use these routes when you do not know which shelf to open next. Each route is in
 
 Goal: understand LLMs academically and operate local inference with enough systems intuition to debug real failures.
 
-1. [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] — read through architecture, training, inference, evaluation, and the local-hosting practicum.
-2. [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures Book Reading Spine]] — focus on memory layout, tries, indexes, caches, and persistent structures.
-3. [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] — focus on asymptotics, search, graphs, strings, compression, and approximation limits.
-4. [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] — focus on processes, memory, file systems, I/O, virtualization, and security.
-5. [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] — focus on runtimes, memory management, concurrency, modules, and error handling.
+1. [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] — use the first-principles-to-agentic-systems reveal order before opening deep runners.
+2. [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] — read through architecture, training, inference, evaluation, and the local-hosting practicum.
+3. [[CS Data Structures/CS Data Structures Book Reading Spine|CS Data Structures Book Reading Spine]] — focus on memory layout, tries, indexes, caches, and persistent structures.
+4. [[CS Algorithms/CS Algorithms Book Reading Spine|CS Algorithms Book Reading Spine]] — focus on asymptotics, search, graphs, strings, compression, and approximation limits.
+5. [[CS Operating Systems/CS Operating Systems Book Reading Spine|CS Operating Systems Book Reading Spine]] — focus on processes, memory, file systems, I/O, virtualization, and security.
+6. [[Programming Languages/Programming Languages Book Reading Spine|Programming Languages Book Reading Spine]] — focus on runtimes, memory management, concurrency, modules, and error handling.
 
 Proof target: after this route, you should be able to explain a local inference request from prompt text to tokens, tensors, KV cache, scheduler, sampling, output parsing, evaluation, and deployment decision.
 
@@ -141,4 +142,4 @@ If a topic feels overwhelming, read its spine prologue and first Book section on
 - [[PersonalKB Wiki Quality Dashboard]]
 - [[log|PersonalKB Maintenance Log]]
 
-Generated: 2026-07-02T10:42:22
+Generated: 2026-07-02T19:46:59

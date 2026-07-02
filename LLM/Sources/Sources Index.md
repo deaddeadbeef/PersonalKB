@@ -12,7 +12,7 @@ tier-coverage: [core, deep-dive, provenance]
 
 This note anchors the sources used in the LLM knowledge base. Each row links to a raw source note; use the article pages and book spine for normal reading, and use this index when you need provenance.
 
-Total raw source notes: **70**
+Total raw source notes: **71**
 
 ## How To Use Sources
 
@@ -117,6 +117,7 @@ Total raw source notes: **70**
 | 068 | Computer Use and GUI Agents | Various | 2025 | technical_analysis | [[LLM/_raw/raw-llm-068|raw-llm-068]] |
 | 069 | Llama 4 and the Evolution of Open Models | Meta AI | 2025 | technical_report | [[LLM/_raw/raw-llm-069|raw-llm-069]] |
 | 070 | Reasoning Distillation: From Frontier to Compact Models | Various | 2025 | technical_analysis | [[LLM/_raw/raw-llm-070|raw-llm-070]] |
+| 071 | The Hitchhiker's Guide to Agentic AI: From Foundations to Systems | Haggai Roitman | 2026 | survey_pdf | [[LLM/_raw/raw-llm-071|raw-llm-071]] |
 
 ## References
 

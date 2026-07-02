@@ -28,7 +28,7 @@ SECTIONS = (
     ("Architecture and Training", range(11, 21)),
     ("Methods and Applications", range(21, 31)),
     ("Extended Catalog", range(31, 61)),
-    ("Reasoning and Agents", range(61, 71)),
+    ("Reasoning and Agents", range(61, 76)),
 )
 
 
@@ -112,6 +112,7 @@ def build() -> str:
         "tags: [index, llm, sources]",
         'up: "[[LLM/LLM]]"',
         "confidence: verified",
+        "freshness: stable",
         "tier-coverage: [core, deep-dive, provenance]",
         "---",
         "",
@@ -122,6 +123,15 @@ def build() -> str:
         "This note anchors the sources used in the LLM knowledge base. Each row links to a raw source note; use the article pages and book spine for normal reading, and use this index when you need provenance.",
         "",
         f"Total raw source notes: **{len(sources)}**",
+        "",
+        "## How To Use Sources",
+        "",
+        "| Need | Use | Evidence habit |",
+        "|---|---|---|",
+        "| Verify an architecture or training claim | Start with the relevant paper row, then return to [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] | Capture claim, paper, year, mechanism, limitation, and the article that reused it |",
+        "| Connect papers to local inference | Pair this index with [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] | State the local implication and the run sheet, benchmark, or evaluation that could test it |",
+        "| Compare model families or eras | Use the paper groups below, then read the matching era overview | Keep chronology explicit so later models are not used as evidence for earlier claims |",
+        "| Reuse a current model or vendor claim | Check the raw note date and treat product claims as freshness-sensitive | Add an as-of date before using the claim in deployment or model-selection notes |",
         "",
     ]
 

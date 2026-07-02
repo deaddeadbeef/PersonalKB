@@ -14,6 +14,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 | Need | Open | Why |
 |---|---|---|
 | Read the field like a book | [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] | Narrative path from pre-transformer foundations through local inference and mastery |
+| Reveal the stack progressively | [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] | PDF-aligned route from model mechanics to systems, reasoning, evaluation, agents, harnesses, and proof |
 | Run a learning session | [[LLM/Study/LLM Study Index|LLM Study Index]] | Goal router, drills, labs, local-hosting run sheets, and evidence runners |
 | Host a local model | [[LLM/Study/Local LLM Hands-On Practicum Sequence|Local LLM Hands-On Practicum Sequence]] | Practical path from environment preflight to first endpoint proof |
 | Check sources | [[LLM/Sources/Sources Index|LLM Sources Index]] | Paper and source bibliography for claims |
@@ -57,6 +58,7 @@ LLMs learn to think longer and act autonomously. Reasoning models, coding agents
 
 ## Study Materials
 - [[LLM/Study/LLM Study Index|LLM Study Index]] — Review drills, cheatsheet, 20-paper fast path
+- [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] — PDF-aligned route that reveals the stack from model pipeline to agent harnesses and proof artifacts
 - [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — Daily home base for recall, study route, proof artifact, evidence destination, and next action
 - [[LLM/Study/LLM Mastery Status Snapshot - 2026-06-16|LLM Mastery Status Snapshot - 2026-06-16]] — Current evidence-based status card for what is proven, held, not started, and next
 - [[LLM/Study/Local LLM First Inference Proof - 2026-06-16|Local LLM First Inference Proof - 2026-06-16]] — Working Ollama loopback proof with model-store, install, pull, runtime health, native/OpenAI-compatible smoke, and debrief evidence

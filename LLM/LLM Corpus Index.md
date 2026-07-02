@@ -10,7 +10,7 @@ tier-coverage: [intuition, core, deep-dive, practice]
 
 > **One-line summary** A complete linked map of every Markdown note in the LLM corpus, grouped for navigation instead of scattered across era, study, source, query, raw, and chunk layers.
 
-Generated on 2026-06-30 from `LLM/**/*.md` by `_ops/generate_llm_corpus_index.py`.
+Generated on 2026-07-02 from `LLM/**/*.md` by `_ops/generate_llm_corpus_index.py`.
 
 This page is intentionally exhaustive. Use the fast routes first, then drop into the complete link map when you need to find a specific page, runner, paper note, chunk, or query.
 
@@ -19,6 +19,7 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 - **Start here:** [[LLM/LLM|LLM]] — Chronological MOC and era overview.
 - **Book mode:** [[LLM/LLM Book Reading Spine|LLM Book Reading Spine]] — Curated narrative reading order.
 - **Learning path:** [[LLM/LLM — Learning Path|LLM — Learning Path]] — Guided study sequence.
+- **Progressive systems route:** [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] — PDF-aligned first-principles-to-agentic-systems route.
 - **Complete corpus:** [[LLM/LLM Corpus Index|LLM Corpus Index]] — This all-links map.
 - **Study index:** [[LLM/Study/LLM Study Index|LLM Study Index]] — Study notes, runners, labs, and drills.
 - **Mastery dashboard:** [[LLM/Study/LLM Mastery Dashboard|LLM Mastery Dashboard]] — Daily navigation and next proof route.
@@ -30,7 +31,7 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 
 ## Corpus Counts
 
-- Total linked Markdown notes under `LLM/`: **582**
+- Total linked Markdown notes under `LLM/`: **592**
 - Scope includes wiki articles, study notes, runners, labs, source indexes, raw paper notes, chunk evidence, queries, and templates.
 - Protected source layers are linked for navigation only; this index does not rewrite `_raw`, `_chunks`, or `_templates`.
 
@@ -46,11 +47,11 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 | 2024–2025 — Frontier and Efficiency | 15 |
 | 2026 — Reasoning and Agents | 9 |
 | Architecture Variants | 1 |
-| Study | 151 |
+| Study | 152 |
 | Sources | 1 |
 | Evidence Layer: `_queries` | 2 |
-| Evidence Layer: `_raw` | 70 |
-| Evidence Layer: `_chunks` | 260 |
+| Evidence Layer: `_raw` | 71 |
+| Evidence Layer: `_chunks` | 268 |
 | Evidence Layer: `_templates` | 4 |
 
 ## How To Use This Index
@@ -227,6 +228,7 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 - [[LLM/Study/LLM Paper Oral Defense Runner|LLM Paper Oral Defense Runner]] <small>`Study/LLM Paper Oral Defense Runner.md`</small>
 - [[LLM/Study/LLM Paper Reading Protocol|LLM Paper Reading Protocol]] <small>`Study/LLM Paper Reading Protocol.md`</small>
 - [[LLM/Study/LLM Paper-to-Local Proof Router|LLM Paper-to-Local Proof Router]] <small>`Study/LLM Paper-to-Local Proof Router.md`</small>
+- [[LLM/Study/LLM Progressive Systems Route|LLM Progressive Systems Route]] <small>`Study/LLM Progressive Systems Route.md`</small>
 - [[LLM/Study/LLM Recall and Remediation Audit Runner|LLM Recall and Remediation Audit Runner]] <small>`Study/LLM Recall and Remediation Audit Runner.md`</small>
 - [[LLM/Study/LLM Serving Systems Paper-to-Local Proof Map|LLM Serving Systems Paper-to-Local Proof Map]] <small>`Study/LLM Serving Systems Paper-to-Local Proof Map.md`</small>
 - [[LLM/Study/LLM Study Index|LLM Study Index]] <small>`Study/LLM Study Index.md`</small>
@@ -422,6 +424,7 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 - [[LLM/_raw/raw-llm-068|raw-llm-068]] <small>`_raw/raw-llm-068.md`</small>
 - [[LLM/_raw/raw-llm-069|raw-llm-069]] <small>`_raw/raw-llm-069.md`</small>
 - [[LLM/_raw/raw-llm-070|raw-llm-070]] <small>`_raw/raw-llm-070.md`</small>
+- [[LLM/_raw/raw-llm-071|raw-llm-071]] <small>`_raw/raw-llm-071.md`</small>
 
 ### Evidence Layer: `_chunks`
 
@@ -685,6 +688,14 @@ This page is intentionally exhaustive. Use the fast routes first, then drop into
 - [[LLM/_chunks/chunk-llm-258 Reasoning distillation trains small models on teacher reasoning traces|chunk-llm-258 Reasoning distillation trains small models on teacher reasoning traces]] <small>`_chunks/chunk-llm-258 Reasoning distillation trains small models on teacher reasoning traces.md`</small>
 - [[LLM/_chunks/chunk-llm-259 DeepSeek 7B distilled model outperforms Llama 3.1 70B on math reasoning|chunk-llm-259 DeepSeek 7B distilled model outperforms Llama 3.1 70B on math reasoning]] <small>`_chunks/chunk-llm-259 DeepSeek 7B distilled model outperforms Llama 3.1 70B on math reasoning.md`</small>
 - [[LLM/_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes|chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes]] <small>`_chunks/chunk-llm-260 Prompt caching reduces input token costs 50-90 percent by reusing KV cache for repeated prefixes.md`</small>
+- [[LLM/_chunks/chunk-llm-261 Agentic AI requires a full-stack first-principles-to-production curriculum|chunk-llm-261 Agentic AI requires a full-stack first-principles-to-production curriculum]] <small>`_chunks/chunk-llm-261 Agentic AI requires a full-stack first-principles-to-production curriculum.md`</small>
+- [[LLM/_chunks/chunk-llm-262 LLM foundations start with text to tokens to representations to logits|chunk-llm-262 LLM foundations start with text to tokens to representations to logits]] <small>`_chunks/chunk-llm-262 LLM foundations start with text to tokens to representations to logits.md`</small>
+- [[LLM/_chunks/chunk-llm-263 RL for LLMs splits into preference alignment and verifiable reward capability learning|chunk-llm-263 RL for LLMs splits into preference alignment and verifiable reward capability learning]] <small>`_chunks/chunk-llm-263 RL for LLMs splits into preference alignment and verifiable reward capability learning.md`</small>
+- [[LLM/_chunks/chunk-llm-264 Reasoning RL treats multi-step reasoning as verifiable search under sparse rewards|chunk-llm-264 Reasoning RL treats multi-step reasoning as verifiable search under sparse rewards]] <small>`_chunks/chunk-llm-264 Reasoning RL treats multi-step reasoning as verifiable search under sparse rewards.md`</small>
+- [[LLM/_chunks/chunk-llm-265 LLM evaluation must handle open-ended multidimensional language outputs|chunk-llm-265 LLM evaluation must handle open-ended multidimensional language outputs]] <small>`_chunks/chunk-llm-265 LLM evaluation must handle open-ended multidimensional language outputs.md`</small>
+- [[LLM/_chunks/chunk-llm-266 Agentic AI is an observation reason action loop with memory grounding action and safety|chunk-llm-266 Agentic AI is an observation reason action loop with memory grounding action and safety]] <small>`_chunks/chunk-llm-266 Agentic AI is an observation reason action loop with memory grounding action and safety.md`</small>
+- [[LLM/_chunks/chunk-llm-267 Agent harness design separates reasoning execution memory communication and observability|chunk-llm-267 Agent harness design separates reasoning execution memory communication and observability]] <small>`_chunks/chunk-llm-267 Agent harness design separates reasoning execution memory communication and observability.md`</small>
+- [[LLM/_chunks/chunk-llm-268 Agentic AI learning should end in self-assessment and proof artifacts|chunk-llm-268 Agentic AI learning should end in self-assessment and proof artifacts]] <small>`_chunks/chunk-llm-268 Agentic AI learning should end in self-assessment and proof artifacts.md`</small>
 
 ### Evidence Layer: `_templates`
 
