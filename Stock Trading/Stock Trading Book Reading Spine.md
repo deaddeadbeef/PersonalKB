@@ -4,7 +4,7 @@ tags: [stock-trading, index, book, reading-path, navigation]
 up: "[[Stock Trading/Stock Trading|Stock Trading]]"
 confidence: verified
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [intuition, core, deep-dive, practice]
 ---
 # Stock Trading Book Reading Spine
@@ -55,6 +55,9 @@ Use filings, fundamentals, price action, momentum, and volatility as evidence la
 Separate quantitative research and algorithmic execution, then keep both paper-only until risk controls are explicit.
 
 - [[Stock Trading/Strategies/Algorithmic Trading|Algorithmic Trading]] — Algorithmic trading uses software rules to generate, route, modify, or execute orders; it is an automation layer, not proof that the trading idea has an edge.
+- [[Stock Trading/Strategies/Backtesting and Simulation|Backtesting and Simulation]] — Backtesting checks whether a written rule would have survived historical data; it is a rejection tool first and never proof that a strategy will work next.
+- [[Stock Trading/Strategies/Broker APIs and Automation Controls|Broker APIs and Automation Controls]] — A broker API turns software mistakes into order messages, so controls, logs, and shutoff paths must exist before any automation touches an account.
+- [[Stock Trading/Strategies/Market Data and Data Quality|Market Data and Data Quality]] — Quantitative trading is only as good as its data definitions, timestamps, adjustments, and missing-data handling.
 - [[Stock Trading/Strategies/Quantitative Trading|Quantitative Trading]] — Quantitative trading turns a market hypothesis into a data-defined, testable model; the model is evidence to inspect, not a machine that removes uncertainty.
 
 ## Book V: Risk And Paper Practice
@@ -74,7 +77,7 @@ Refresh official sources before relying on settlement, margin, tax, broker, or r
 
 ## Coverage
 
-- Reader-facing articles linked here: 17
+- Reader-facing articles linked here: 20
 - Protected raw, chunk, template, query, audio, and operations folders are intentionally not expanded here.
 - The root vault index remains the exhaustive generated listing across every topic.
 

@@ -3,7 +3,7 @@ tags: [stock-trading, sources]
 up: "[[Stock Trading]]"
 confidence: verified
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [core]
 ---
 # Sources Index - Stock Trading
@@ -50,6 +50,7 @@ This source index records the first official source layer for the Stock Trading 
 
 - Recheck settlement and margin notes whenever the date-sensitive account mechanics matter.
 - Recheck algorithmic-trading and broker API notes before any operational automation work.
+- Recheck data-source, market-data, and backtesting assumptions before citing quantitative results.
 - Treat broker-specific account pages as the controlling operational source for a real account.
 - Add tax sources before writing tax treatment pages.
 - Add raw source captures only when doing a formal ingest pass.

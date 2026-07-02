@@ -3,7 +3,7 @@ tags: [stock-trading, moc]
 up: "[[Welcome]]"
 confidence: verified
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [core, practice]
 ---
 # Stock Trading
@@ -42,6 +42,9 @@ tier-coverage: [core, practice]
 
 - [[Quantitative Trading]] - model-driven research, backtesting boundaries, model risk, and research journaling
 - [[Algorithmic Trading]] - automation, order-generation controls, kill switches, and paper-only simulation boundaries
+- [[Backtesting and Simulation]] - historical replay, simulation ladder, cost assumptions, and rejection rules
+- [[Market Data and Data Quality]] - dataset cards, timestamps, point-in-time safety, and missing-data rules
+- [[Broker APIs and Automation Controls]] - paper-only API boundaries, credential safety, limits, logs, and kill switches
 
 ### Risk Process
 
@@ -74,6 +77,9 @@ These topics are current-sensitive and must be rechecked before use:
 - [[Paper Trading Lab]]
 - [[Quantitative Trading]]
 - [[Algorithmic Trading]]
+- [[Backtesting and Simulation]]
+- [[Market Data and Data Quality]]
+- [[Broker APIs and Automation Controls]]
 - [Investor.gov - Introduction to Investing](https://www.investor.gov/introduction-investing)
 - [Investor.gov - Stocks](https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks)
 - [Investor.gov - New T+1 Settlement Cycle](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/new-t1-settlement-cycle-what-investors-need-know-investor-bulletin)

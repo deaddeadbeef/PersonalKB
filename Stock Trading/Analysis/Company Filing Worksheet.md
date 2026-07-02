@@ -3,7 +3,7 @@ tags: [stock-trading, analysis, worksheet]
 up: "[[Reading Company Filings and Fundamentals]]"
 confidence: policy
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [practice]
 ---
 # Company Filing Worksheet
@@ -20,23 +20,23 @@ No company thesis is valid in this wiki until it names the filing, the period, t
 
 | Field | Entry |
 | --- | --- |
-| Company | |
-| Ticker | |
+| Company | Fill in company legal name |
+| Ticker | Fill in ticker and exchange |
 | Filing type | 10-K, 10-Q, 8-K, proxy, or other |
-| Period covered | |
-| Filing date | |
-| EDGAR link | |
-| Read date | |
+| Period covered | Fill in reporting period |
+| Filing date | Fill in filing date |
+| EDGAR link | Paste source link |
+| Read date | Fill in review date |
 
 ## Business Model
 
 | Question | Evidence from filing |
 | --- | --- |
-| What does the company sell? | |
-| Who pays it? | |
-| Which segment matters most? | |
-| What geography, customer, or product concentration exists? | |
-| What does management say changed this period? | |
+| What does the company sell? | Write from business section |
+| Who pays it? | Write from revenue/customer discussion |
+| Which segment matters most? | Name segment and evidence |
+| What geography, customer, or product concentration exists? | Cite filing location or write `not found` |
+| What does management say changed this period? | Summarize management discussion |
 
 ## Risk Factors
 
@@ -44,21 +44,21 @@ List the three risks that could most directly damage the thesis.
 
 | Risk | Why it matters | Evidence location |
 | --- | --- | --- |
-| 1 | | |
-| 2 | | |
-| 3 | | |
+| 1 | Explain thesis impact | Cite risk-factor section |
+| 2 | Explain thesis impact | Cite risk-factor section |
+| 3 | Explain thesis impact | Cite risk-factor section |
 
 ## Financial Statement Pass
 
 | Check | Direction | Note |
 | --- | --- | --- |
-| Revenue | growing, shrinking, unstable, or unclear | |
-| Gross margin | improving, deteriorating, stable, or not applicable | |
-| Operating income | positive, negative, or volatile | |
-| Net income | positive, negative, or volatile | |
-| Operating cash flow | positive, negative, or volatile | |
-| Debt and interest burden | light, manageable, heavy, or unclear | |
-| Dilution | share count rising, falling, stable, or unclear | |
+| Revenue | growing, shrinking, unstable, or unclear | Write period comparison |
+| Gross margin | improving, deteriorating, stable, or not applicable | Write driver if stated |
+| Operating income | positive, negative, or volatile | Write period comparison |
+| Net income | positive, negative, or volatile | Write period comparison |
+| Operating cash flow | positive, negative, or volatile | Write cash-flow note |
+| Debt and interest burden | light, manageable, heavy, or unclear | Write debt note |
+| Dilution | share count rising, falling, stable, or unclear | Write share-count note |
 
 ## Valuation Snapshot
 
@@ -66,22 +66,22 @@ Do not treat a ratio as a conclusion. Use it to force comparison.
 
 | Measure | Current value | Comparison |
 | --- | --- | --- |
-| Market cap | | company history and peers |
-| P/E or earnings yield | | useful only if earnings are meaningful |
-| P/S | | useful when margins and growth are understood |
-| Debt-to-equity or net debt | | compare with cash flow and cyclicality |
-| Free-cash-flow yield, if calculated | | define the calculation used |
+| Market cap | Fill in current value and date | company history and peers |
+| P/E or earnings yield | Fill in or write `not meaningful` | useful only if earnings are meaningful |
+| P/S | Fill in or write `not meaningful` | useful when margins and growth are understood |
+| Debt-to-equity or net debt | Fill in current value and source | compare with cash flow and cyclicality |
+| Free-cash-flow yield, if calculated | Fill in formula result | define the calculation used |
 
 ## Thesis Boundary
 
 | Prompt | Answer |
 | --- | --- |
-| Why might the stock be mispriced? | |
-| What evidence supports that view? | |
-| What evidence argues against it? | |
-| What event or metric would invalidate the view? | |
-| Is the next known event earnings, guidance, a regulatory decision, debt maturity, product launch, or something else? | |
-| Does this belong in the [[Paper Trading Lab]] yet? | |
+| Why might the stock be mispriced? | Write one falsifiable claim |
+| What evidence supports that view? | Cite filing or source evidence |
+| What evidence argues against it? | Cite contrary evidence |
+| What event or metric would invalidate the view? | Define invalidation condition |
+| Is the next known event earnings, guidance, a regulatory decision, debt maturity, product launch, or something else? | Name event or write `unknown` |
+| Does this belong in the [[Paper Trading Lab]] yet? | Answer yes/no with reason |
 
 ## Output
 

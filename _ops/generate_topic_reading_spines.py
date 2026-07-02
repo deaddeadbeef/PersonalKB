@@ -271,7 +271,7 @@ TOPICS = (
             Section("Appendix: Sources", ("Sources",), "Refresh official sources before relying on settlement, margin, tax, broker, or regulatory claims."),
         ),
         freshness="current-sensitive",
-        last_verified="2026-07-01",
+        last_verified="2026-07-02",
     ),
     Topic(
         folder="SpaceX",

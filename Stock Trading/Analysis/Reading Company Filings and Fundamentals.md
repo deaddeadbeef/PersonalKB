@@ -3,7 +3,7 @@ tags: [stock-trading, analysis, fundamentals]
 up: "[[Stock Trading]]"
 confidence: verified
 freshness: current-sensitive
-last-verified: 2026-07-01
+last-verified: 2026-07-02
 tier-coverage: [core, practice]
 ---
 # Reading Company Filings and Fundamentals
@@ -62,14 +62,14 @@ For one company, fill this before reading commentary:
 
 | Question | Answer |
 | --- | --- |
-| What does the company sell? | |
-| Who pays it? | |
-| What are the top three risk factors? | |
-| Is revenue growing, shrinking, or unstable? | |
-| Is net income positive? | |
-| Is operating cash flow positive? | |
-| What is the debt situation? | |
-| What would make the thesis wrong? | |
+| What does the company sell? | Write from the business section |
+| Who pays it? | Write customer or revenue source |
+| What are the top three risk factors? | List and cite risk-factor locations |
+| Is revenue growing, shrinking, or unstable? | Write period comparison |
+| Is net income positive? | Write yes/no and period |
+| Is operating cash flow positive? | Write yes/no and period |
+| What is the debt situation? | Summarize debt, maturities, and interest burden |
+| What would make the thesis wrong? | Define one invalidation condition |
 
 ## References
 
